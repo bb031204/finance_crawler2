@@ -302,10 +302,14 @@ class Engine:
             log_scope(self.cfg, self.root, discover, process, start, end)
             if discover:
                 try:self.discover(report)
-                except Exception as exc:report["errors"].append({"stage":"discovery","error":str(exc)[:400]})
+                except Exception as exc:
+                    report["errors"].append({"stage":"discovery","error":str(exc)[:400]})
+                    log("搜索阶段失败", short(exc, 200))
             if process:
                 try:self.process(report)
-                except Exception as exc:report["errors"].append({"stage":"processing","error":str(exc)[:400]})
+                except Exception as exc:
+                    report["errors"].append({"stage":"processing","error":str(exc)[:400]})
+                    log("处理阶段失败", short(exc, 200))
             if process:
                 from .query import export_events
                 paths = export_events(self.repo,self.root/self.cfg.output.export_dir)
