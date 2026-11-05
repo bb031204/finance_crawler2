@@ -1,6 +1,6 @@
 # Qwen 主导的金融信息采集
 
-在 `D:\financial_data_project2` 使用原有 `finance_crawler` 环境。正式结果只有 `data/CN.jsonl`、`data/US.jsonl`、`data/GLOBAL.jsonl`，每行是一篇原文的摘要。
+在 `D:\financial_data_project2` 使用原有 `finance_crawler` 环境。正式结果放在 `data/CN/`、`data/US/`、`data/GLOBAL/`，每篇原文单独保存为一个 JSON 文件。
 
 ## 运行
 
@@ -47,12 +47,24 @@ python main.py --reprocess-saved  # 重新评估缓存正文；仍受本轮篇�
 
 ## 模型负责什么
 
-`Qwen 搜索规划 → 搜索结果 → Qwen 判断是否下载 → Crawl4AI/HTTP 或 PDF 读取 → Qwen 判定用途、来源发布时间、分类、关键词、段落摘要 → 六字段 JSONL`。
+`Qwen 搜索规划 → 搜索结果 → Qwen 判断是否下载 → Crawl4AI/HTTP 或 PDF 读取 → Qwen 判定用途、来源发布时间、分类、关键词、段落摘要 → 独立的六字段 JSON 文件`。
 
-提示词集中在 `qwen_agent.py`：`PLAN_PROMPT`、`SCREEN_PROMPT`、`READ_PROMPT`、`MERGE_PROMPT`。
+提示词集中在 `qwen_agent.py`：`PLAN_PROMPT`、`SCREEN_PROMPT`、`READ_PROMPT`、`MERGE_PROMPT`、`INDUSTRY_PROMPT`。主要产业由 Qwen 提炼，仅用于文件命名，不增加正式记录字段。
 Python 负责执行请求、限制范围与调用次数、缓存、去重和保存，不再要求 Qwen 填写数值事实表、主体映射、逐句证据块或预测分数。Qwen 可以概括有归属的专家观点，不自行预测股价。
 
 HTML 优先保留主文章及其嵌入式正文，并处理 UTF-8/GBK 编码。PDF 先恢复可读文字，再交 Qwen 整理；没有可读文字的扫描件当前留待处理，不冒充已经读完。无法读取的乱码不会因为交给模型就自动变成可信信息。
+
+## 独立文件命名
+
+`原始时间_分类_主要产业_来源网站.json`
+
+原始时间优先使用来源时区的 `YYYY_MM_DD_HH_mm`，只有日期则用 `YYYY_MM_DD`，不补造时分。秒数和时区仍保留在 JSON 的“时间”字段中。
+
+分类与主要产业均由 Qwen 提炼；产业只用于文件名。来源键由原始 URL 的域名确定，例如雪球 `xueqiu`、巨潮 `cninfo`、财联社 `cls`、证监会 `csrc`、上交所 `sse`、SEC `sec`、NASDAQ `nasdaq`。其他来源按域名生成简称。
+
+同一分钟、同分类、同产业、同网站可能存在多篇文章，重名时自动追加 `source_id`，避免覆盖。Windows 文件名中的非法字符会替换；同一记录更新分类、产业或市场时，保存新文件后移除旧副本。
+
+旧的三个 JSONL 已逐条迁移，原文件在 `archive/jsonl_records_*.zip` 中经过逐字节校验后保存，活动数据目录不再同时保留 JSONL。后续运行 `main.py` 会直接保存独立 JSON，不需要手动拆分。
 
 ## 六字段数据
 
@@ -62,7 +74,7 @@ HTML 优先保留主文章及其嵌入式正文，并处理 UTF-8/GBK 编码。P
 
 上述仅示意格式，不会写入正式文件。`source_id` 用于 URL 去重，不是股票编号。正式数据没有额外的 evidence、paragraphs、semantic_candidate、ready 等字段。
 
-`时间` 只记录原始来源的发布日期/时刻。只有日期则保存 `YYYY-MM-DD`，不伪造零点或分钟；模型确认了可靠时刻则保留明确时区；仅确认到日期时只保存日期。事件发生日与政策生效日可写入摘要，不另设重复时间字段。模型内部需要引用来源日期以检查是否臆造，但该检查信息不会出现在正式六字段中。无法确认发布日期的文章不会进入正式 JSONL。
+`时间` 只记录原始来源的发布日期/时刻。只有日期则保存 `YYYY-MM-DD`，不伪造零点或分钟；模型确认了可靠时刻则保留明确时区；仅确认到日期时只保存日期。事件发生日与政策生效日可写入摘要，不另设重复时间字段。模型内部需要引用来源日期以检查是否臆造，但该检查信息不会出现在正式六字段中。无法确认发布日期的文章不会进入正式 JSON 文件。
 
 一篇原文合为一条摘要，同一 URL 更新后可替换原记录。不同网站转述同一新闻仍可能各有一条，当前没有做跨来源的语义去重。
 
@@ -75,14 +87,17 @@ main.py              # 唯一运行入口
 config.yaml          # 统一配置，包含本机密钥，不要分享
 qwen_agent.py        # Qwen 提示词与调用
 web_sources.py       # 搜索、网页和 PDF 阅读
-simple_crawler.py    # 队列、去重、JSONL 保存
+simple_crawler.py    # 队列与运行控制
+record_files.py      # 逐条JSON、文件名、去重与迁移
 finance_agent/       # 少量公共网络、PDF 和运行环境工具
 vendor/              # 原有 PDF 依赖，无需重装
 windows_ocr.ps1       # 旧 PDF 工具保留的辅助脚本，默认不启用 OCR
 data/
-  CN.jsonl
-  US.jsonl
-  GLOBAL.jsonl
+  CN/
+    2026_11_04_17_28_银行业动态_银行业_cls.json
+  US/
+    2026_10_15_18_35_金融_银行业_cls.json
+  GLOBAL/
 logs/
   latest_run.json    # 当前范围、统计、错误、Qwen 调用次数
 .runtime/simple/    # 待处理任务、正文缓存、模型缓存，不是模型输入数据集

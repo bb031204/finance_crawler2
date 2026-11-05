@@ -7,6 +7,7 @@ import httpx
 from finance_agent.runtime import setup
 setup(Path(__file__).resolve().parents[1])
 from simple_crawler import Config,Dataset,Crawler,FIELDS,load_config,source_id
+from record_files import record_name, source_key, original_time, safe_part
 from qwen_agent import preserve_precision,Note,parse_time,grounded_time,Qwen,Decision,ModelBudget,OutputError
 from web_sources import read_html,decode_html,Sources
 from finance_agent.core import dump
@@ -41,8 +42,11 @@ class FakeQwen:
         return {'useful':self.useful,'reason':'离线筛选夹具'}
     def summarize(self,p,m):
         self.calls+=1
-        return {'useful':True,'market':'CN','time':None if self.missing else '2026-11-02','category':'离线夹具','keywords':['测试'],
+        return {'useful':True,'market':'CN','time':None if self.missing else '2026-11-02','category':'离线夹具','industry':'银行业','keywords':['测试'],
             'content':'这是一段仅在临时目录中保存的离线测试摘要，用于确认程序不会把测试样本写入真实数据目录。'}
+    def industry(self,row):
+        self.calls+=1
+        return "银行业"
     def close(self):pass
 
 class SimpleTests(unittest.TestCase):
@@ -53,14 +57,14 @@ class SimpleTests(unittest.TestCase):
     def crawler(self,model=None,sources=None):return Crawler(config(),self.root,sources or FakeSources(),model or FakeQwen())
     def test_output_exact_six_fields_and_dedup(self):
         c=self.crawler();c.queue(candidate());c.run(resume=True)
-        row=json.loads((self.root/'data/CN.jsonl').read_text(encoding='utf-8'))
+        row=json.loads(next((self.root/'data/CN').glob('*.json')).read_text(encoding='utf-8'))
         self.assertEqual(set(row),FIELDS);self.assertEqual(row['source_id'],source_id(candidate()['url']))
         c.queue(candidate());c.run(resume=True)
-        self.assertEqual(len((self.root/'data/CN.jsonl').read_text(encoding='utf-8').strip().split(chr(10))),1)
+        self.assertEqual(len(list((self.root/'data/CN').glob('*.json'))),1)
         self.assertEqual(c.sources.fetched,1)
     def test_deleted_dataset_can_be_rebuilt(self):
         c=self.crawler();c.queue(candidate());c.run(resume=True)
-        (self.root/'data/CN.jsonl').unlink()
+        next((self.root/'data/CN').glob('*.json')).unlink()
         restored=self.crawler();restored.queue(candidate());result=restored.run(resume=True)
         self.assertEqual(result['saved'],1);self.assertEqual(restored.sources.fetched,0)
     def test_changed_scope_reconsiders_previous_rejection(self):
@@ -74,7 +78,7 @@ class SimpleTests(unittest.TestCase):
     def test_missing_date_not_formal(self):
         c=self.crawler(FakeQwen(missing=True));c.queue(candidate());r=c.run(resume=True)
         self.assertEqual(r['pending'],1);self.assertEqual(r['saved'],0)
-        self.assertEqual((self.root/'data/CN.jsonl').stat().st_size,0)
+        self.assertEqual(len(list((self.root/'data/CN').glob('*.json'))),0)
     def test_resume_uses_cached_page(self):
         c=self.crawler(FakeQwen(missing=True));c.queue(candidate());c.run(resume=True)
         c.model=FakeQwen();c.run(resume=True);self.assertEqual(c.sources.fetched,1)
@@ -94,9 +98,47 @@ class SimpleTests(unittest.TestCase):
         self.assertEqual(c.model.calls,0);self.assertEqual(r['saved'],0)
     def test_outbox_recovery(self):
         row={'source_id':'test','url':'https://example.com','时间':'2026-11-02','分类':'测试','关键词':['测试'],'主要内容':'离线测试'}
-        dump(self.root/'.runtime/simple/outbox.json',[['CN',row]])
+        dump(self.root/'.runtime/simple/record_outbox.json',{'market':'CN','row':row,'target':'data/CN/'+record_name(row,'银行业'),'previous':None})
         ds=Dataset(self.root,'data');self.assertIn('test',ds.rows)
-        self.assertFalse(ds.outbox.exists());self.assertTrue((self.root/'data/US.jsonl').exists())
+        self.assertFalse(ds.outbox.exists());self.assertEqual(len(list((self.root/'data/CN').glob('*.json'))),1)
+    def sample_row(self, identity='one'):
+        return {'source_id':identity,'url':'https://www.cls.cn/detail/'+identity,'时间':'2026-11-02T20:30:58+08:00',
+            '分类':'监管政策','关键词':['离线测试'],'主要内容':'仅为离线测试夹具，不是真实金融新闻。'}
+    def test_filename_uses_date_category_industry_website(self):
+        self.assertEqual(record_name(self.sample_row(),'银行业'),'2026_11_02_20_30_监管政策_银行业_cls.json')
+        self.assertEqual(source_key('https://static.cninfo.com.cn/a.pdf'),'cninfo')
+        self.assertEqual(source_key('https://www.jvlang.com/a'),'jvlang')
+    def test_date_only_does_not_invent_clock(self):
+        self.assertEqual(original_time('2026-11-02'),'2026_11_02')
+    def test_filename_sanitizes_windows_invalid_characters(self):
+        name=record_name(dict(self.sample_row(),分类='政策/公告:*'), '银行/金融')
+        self.assertNotIn('/',name);self.assertNotIn(':',name);self.assertNotIn('*',name)
+        self.assertNotEqual(safe_part('CON').upper(),'CON')
+    def test_same_minute_collision_keeps_both_records(self):
+        ds=Dataset(self.root,'data');a=ds.save('CN',self.sample_row('a'),'银行业');b=ds.save('CN',self.sample_row('b'),'银行业')
+        self.assertNotEqual(a,b);self.assertEqual(len(list((self.root/'data/CN').glob('*.json'))),2)
+        self.assertEqual(Dataset(self.root,'data').industries,{'a':'银行业','b':'银行业'})
+    def test_update_renames_and_changes_market_without_stale_copy(self):
+        ds=Dataset(self.root,'data');old=ds.save('CN',self.sample_row(),'银行业')
+        new=ds.save('US',dict(self.sample_row(),分类='财报'),'半导体')
+        self.assertFalse(old.exists());self.assertTrue(new.exists())
+        self.assertEqual(Dataset(self.root,'data').rows['one'][0],'US')
+    def test_jsonl_migration_backs_up_and_preserves_exact_six_fields(self):
+        folder=self.root/'data';folder.mkdir();row=self.sample_row()
+        for market in ['CN','US','GLOBAL']:(folder/(market+'.jsonl')).write_text(json.dumps(row,ensure_ascii=False)+'\n' if market=='CN' else '',encoding='utf-8')
+        model=FakeQwen();ds=Dataset(self.root,'data');report=ds.migrate(model)
+        self.assertEqual(report['migrated'],1);self.assertTrue(Path(report['backup']).exists())
+        self.assertEqual(list(folder.glob('*.jsonl')),[]);self.assertTrue((folder/'GLOBAL').is_dir())
+        self.assertEqual(json.loads(next((folder/'CN').glob('*.json')).read_text(encoding='utf-8')),row)
+        again=Dataset(self.root,'data');again.migrate(model);self.assertEqual(model.calls,1)
+    def test_failed_industry_keeps_original_jsonl(self):
+        folder=self.root/'data';folder.mkdir();row=self.sample_row()
+        path=folder/'CN.jsonl';path.write_text(json.dumps(row,ensure_ascii=False)+'\n',encoding='utf-8')
+        model=FakeQwen()
+        def fail(row):raise OutputError('离线失败')
+        model.industry=fail
+        with self.assertRaises(OutputError):Dataset(self.root,'data').migrate(model)
+        self.assertTrue(path.exists());self.assertEqual(json.loads(path.read_text(encoding='utf-8')),row)
     def test_output_root_bound(self):
         p=self.root/'bad.yaml';p.write_text('collection:\n  start_date: "2026-11-01"\n  end_date: "2026-11-05"\nsearch:\n  website_mode: unrestricted\noutput_dir: ../escape',encoding='utf-8')
         with self.assertRaises(ValueError):load_config(p,self.root)

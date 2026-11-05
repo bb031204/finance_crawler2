@@ -14,8 +14,7 @@ from finance_agent.safety import canonical, FetchError
 from qwen_agent import Qwen, ModelBudget, OutputError, PLAN_PROMPT
 from web_sources import Sources
 
-FIELDS = {"source_id", "url", "时间", "分类", "关键词", "主要内容"}
-MARKETS = ["CN", "US", "GLOBAL"]
+from record_files import Dataset, FIELDS, MARKETS, source_id
 
 class Strict(BaseModel):
     model_config = ConfigDict(extra="forbid", hide_input_in_errors=True)
@@ -135,57 +134,6 @@ def load_config(path=None, root=ROOT):
     return cfg
 
 
-def source_id(url):
-    return digest(canonical(url).encode("utf-8"))[:24]
-
-
-class Dataset:
-    def __init__(self, root, directory):
-        self.root = root
-        self.directory = bounded(root / directory, root)
-        self.outbox = root / ".runtime/simple/outbox.json"
-        self.rows = {}
-        if self.outbox.exists():
-            rows = json.loads(self.outbox.read_text(encoding="utf-8"))
-            self.write(rows)
-        for market in MARKETS:
-            path = self.directory / (market + ".jsonl")
-            if not path.exists():
-                continue
-            with path.open(encoding="utf-8") as source:
-                for line in source:
-                    if not line.strip():
-                        continue
-                    row = json.loads(line)
-                    if set(row) != FIELDS:
-                        raise ValueError("JSONL字段与简化版六字段不一致：" + str(path))
-                    self.rows[row["source_id"]] = (market, row)
-
-    def write(self, rows):
-        rows = list(rows)
-        dump(self.outbox, rows)
-        self.directory.mkdir(parents=True, exist_ok=True)
-        temporary = []
-        for market in MARKETS:
-            path = self.directory / (market + ".jsonl")
-            temp = bounded(path.with_suffix(".jsonl.tmp"), self.root)
-            chosen = [row for key, row in rows if key == market]
-            chosen.sort(key=lambda row: (row["时间"], row["source_id"]))
-            if any(set(row) != FIELDS for row in chosen):
-                raise ValueError("正式数据只允许六个字段")
-            temp.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in chosen), encoding="utf-8", newline="\n")
-            temporary.append((temp, path))
-        for temp, path in temporary:
-            temp.replace(path)
-        self.outbox.unlink()
-
-    def save(self, market, row):
-        if set(row) != FIELDS or market not in MARKETS:
-            raise ValueError("输出字段或市场错误")
-        updated = dict(self.rows)
-        updated[row["source_id"]] = (market, row)
-        self.write(updated.values())
-        self.rows = updated
 
 
 class Crawler:
@@ -226,6 +174,9 @@ class Crawler:
                   "downloaded": 0, "saved": 0, "skipped": 0, "pending": 0, "errors": [], "budget_pause": False}
         self.model.calls = 0
         self.model.cache_hits = 0
+        migration = self.dataset.migrate(self.model)
+        if migration["migrated"]:
+            log("迁移", f"已将{migration['migrated']}条记录转为独立JSON，旧JSONL已备份")
         start, end = self.window()
         report.update(range=[start, end], markets=self.cfg.monitoring.markets, directions=self.cfg.monitoring.directions, queries=[])
         log("范围", f"{start}至{end} | 市场={','.join(self.cfg.monitoring.markets)} | 方向={','.join(self.cfg.monitoring.directions)} | 股票/公司={','.join(self.cfg.monitoring.securities) or '按方向查询'}")
@@ -309,11 +260,11 @@ class Crawler:
                     url = canonical(page["url"])
                     row = {"source_id": source_id(url), "url": url, "时间": note["time"], "分类": note["category"],
                            "关键词": list(dict.fromkeys(note["keywords"])), "主要内容": note["content"].strip()}
-                    self.dataset.save(note["market"], row)
+                    saved_path = self.dataset.save(note["market"], row, note["industry"])
                     self.state["records"][identity] = {"status": "saved", "reason": "Qwen已整理", "at": now()}
                     self.state["pending"].pop(identity, None)
                     report["saved"] += 1
-                    log("保存", f"{note['market']}.jsonl | {row['时间']} | {row['分类']} | {len(row['主要内容'])}字")
+                    log("保存", f"{saved_path.relative_to(self.root)} | {len(row['主要内容'])}字")
                 self.persist()
             except ModelBudget as error:
                 report["budget_pause"] = True
@@ -328,8 +279,7 @@ class Crawler:
                 log("待处理", short(error, 180))
                 self.persist()
         self.persist()
-        if not any((self.root / self.cfg.output_dir / (market + ".jsonl")).exists() for market in MARKETS):
-            self.dataset.write(self.dataset.rows.values())
+        self.dataset.ensure_dirs()
         report.update(status="partial" if self.state["pending"] else "completed", finished_at=now(), pending=len(self.state["pending"]), model_calls=self.model.calls,
                       model_cache_hits=self.model.cache_hits, total_records=len(self.dataset.rows))
         dump(self.root / "logs/latest_run.json", report)
@@ -339,7 +289,7 @@ class Crawler:
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Qwen主导的信息采集：筛选、阅读、段落摘要，输出六字段JSONL")
+    parser = argparse.ArgumentParser(description="Qwen主导的信息采集：筛选、阅读、段落摘要，每篇输出独立的六字段JSON")
     parser.add_argument("--config", type=Path, default=ROOT / "config.yaml")
     parser.add_argument("--validate-config", action="store_true")
     parser.add_argument("--doctor", action="store_true")
