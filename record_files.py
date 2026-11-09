@@ -29,7 +29,7 @@ def source_key(url):
     host = (urlsplit(url).hostname or "").lower()
     if not host:
         raise ValueError("来源URL缺少网站域名")
-    for domain, key in {"xueqiu.com":"xueqiu", "cninfo.com.cn":"cninfo", "cls.cn":"cls",
+    for domain, key in {"irm.cninfo.com.cn":"irm", "guba.eastmoney.com":"guba", "xueqiu.com":"xueqiu", "cninfo.com.cn":"cninfo", "cls.cn":"cls",
         "csrc.gov.cn":"csrc", "sse.com.cn":"sse", "sec.gov":"sec", "nasdaq.com":"nasdaq", "stocktwits.com":"stocktwits"}.items():
         if host == domain or host.endswith("." + domain):
             return key

@@ -55,6 +55,102 @@ class SimpleTests(unittest.TestCase):
         self.tmp=tempfile.TemporaryDirectory(dir=folder);self.root=Path(self.tmp.name)
     def tearDown(self):self.tmp.cleanup()
     def crawler(self,model=None,sources=None):return Crawler(config(),self.root,sources or FakeSources(),model or FakeQwen())
+    def test_auto_batches_drain_existing_queue(self):
+        c=self.crawler();c.cfg.collection.max_documents_per_cycle=2
+        for n in range(7):c.queue(candidate(str(n)))
+        r=c.collect(resume=True)
+        self.assertEqual(r['batches'],4);self.assertEqual(r['saved'],7)
+        self.assertEqual(r['pending'],0);self.assertEqual(r['searched'],0)
+        self.assertEqual(len(list((self.root/'data/CN').glob('*.json'))),7)
+    def discovery_crawler(self):
+        from pydantic import SecretStr
+        class SearchSources(FakeSources):
+            searches=0
+            def search(self,*args):
+                self.searches+=1
+                return [candidate(str(n)) for n in range(7)]
+        class PlanningModel(FakeQwen):
+            def plan(self,monitoring,limit):
+                self.calls+=1
+                return [{'market':'CN','query':'离线测试'}]
+        c=self.crawler(PlanningModel(),SearchSources());c.cfg.search.api_key=SecretStr('offline-fixture')
+        c.cfg.collection.max_documents_per_cycle=2
+        return c
+    def test_auto_batches_search_only_once(self):
+        c=self.discovery_crawler();r=c.collect()
+        self.assertEqual(c.sources.searches,1);self.assertEqual(r['searched'],1)
+        self.assertEqual(r['found'],7);self.assertEqual(r['saved'],7)
+        self.assertEqual(r['model_calls'],15)
+    def test_auto_batches_do_not_retry_network_failures(self):
+        class MixedSources(FakeSources):
+            attempts={}
+            def fetch(self,item):
+                self.attempts[item['url']]=self.attempts.get(item['url'],0)+1
+                if item['url'].endswith('bad'):raise FetchError('network_error','离线测试故障')
+                return super().fetch(item)
+        c=self.crawler(sources=MixedSources());c.cfg.collection.max_documents_per_cycle=1
+        c.queue(candidate('bad'));c.queue(candidate('good'))
+        r=c.collect(resume=True)
+        self.assertEqual(r['saved'],1);self.assertEqual(r['deferred'],1);self.assertEqual(r['unprocessed'],0)
+        self.assertEqual(c.sources.attempts[candidate('bad')['url']],1)
+    def test_auto_batches_missing_dates_finish_without_loop(self):
+        c=self.crawler(FakeQwen(missing=True));c.cfg.collection.max_documents_per_cycle=1
+        c.queue(candidate('a'));c.queue(candidate('b'));r=c.collect(resume=True)
+        self.assertEqual(r['batches'],2);self.assertEqual(r['deferred'],2)
+        self.assertEqual(r['model_calls'],4);self.assertEqual(r['unprocessed'],0)
+    def test_auto_batches_context_failure_continues_other_records(self):
+        class ContextModel(FakeQwen):
+            def screen(self,item,monitoring):
+                if item['url'].endswith('bad'):
+                    self.calls+=1
+                    raise ModelBudget('离线上下文不足')
+                return super().screen(item,monitoring)
+        c=self.crawler(ContextModel());c.queue(candidate('bad'));c.queue(candidate('good'))
+        r=c.collect(resume=True)
+        self.assertEqual(r['saved'],1);self.assertEqual(r['batches'],2);self.assertEqual(r['deferred'],1)
+    def test_auto_batches_resume_call_budget_and_reuse_page(self):
+        class OnceBudget(FakeQwen):
+            tried=False
+            def summarize(self,page,monitoring):
+                if not self.tried:
+                    self.tried=True;self.calls=30
+                    raise ModelBudget('离线调用上限')
+                return super().summarize(page,monitoring)
+        c=self.crawler(OnceBudget());c.queue(candidate())
+        r=c.collect(resume=True,force=True)
+        self.assertEqual(r['batches'],2);self.assertEqual(r['saved'],1)
+        self.assertEqual(c.sources.fetched,1)
+    def test_auto_batches_budget_continuation_bounded(self):
+        class AlwaysBudget(FakeQwen):
+            def screen(self,item,monitoring):
+                if item['url'].endswith('bad'):
+                    self.calls=30
+                    raise ModelBudget('离线调用上限')
+                return super().screen(item,monitoring)
+        c=self.crawler(AlwaysBudget());c.queue(candidate('bad'));c.queue(candidate('good'))
+        r=c.collect(resume=True)
+        self.assertEqual(r['batches'],5);self.assertEqual(r['saved'],1);self.assertEqual(r['deferred'],1)
+        self.assertEqual(r['budget_continuations'][source_id(candidate('bad')['url'])],3)
+    def test_once_keeps_single_batch_option(self):
+        c=self.crawler();c.cfg.collection.max_documents_per_cycle=2
+        for n in range(5):c.queue(candidate(str(n)))
+        r=c.collect(resume=True,one_batch=True)
+        self.assertEqual(r['batches'],1);self.assertEqual(r['saved'],2)
+        self.assertEqual(r['unprocessed'],3)
+    def test_main_default_drains_all_batches(self):
+        import simple_crawler
+        c=self.discovery_crawler()
+        with patch.object(simple_crawler,'ROOT',self.root),patch.object(simple_crawler,'load_config',return_value=c.cfg),patch.object(simple_crawler,'Crawler',return_value=c):
+            result=simple_crawler.main([])
+        self.assertEqual(result,0);self.assertEqual(len(c.dataset.rows),7)
+        self.assertEqual(c.sources.searches,1)
+    def test_main_resume_also_drains_all_batches(self):
+        import simple_crawler
+        c=self.crawler();c.cfg.collection.max_documents_per_cycle=1
+        for n in range(3):c.queue(candidate(str(n)))
+        with patch.object(simple_crawler,'ROOT',self.root),patch.object(simple_crawler,'load_config',return_value=c.cfg),patch.object(simple_crawler,'Crawler',return_value=c):
+            result=simple_crawler.main(['--resume'])
+        self.assertEqual(result,0);self.assertEqual(len(c.dataset.rows),3)
     def test_output_exact_six_fields_and_dedup(self):
         c=self.crawler();c.queue(candidate());c.run(resume=True)
         row=json.loads(next((self.root/'data/CN').glob('*.json')).read_text(encoding='utf-8'))

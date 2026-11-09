@@ -18,16 +18,21 @@ python main.py
 & C:/Users/marti/anaconda3/envs/finance_crawler/python.exe D:/financial_data_project2/main.py
 ```
 
-历史模式执行一轮；实时模式按配置间隔循环，Ctrl+C 停止。
+历史模式搜索一次后自动分批处理新结果和已有队列，直到全部候选都尝试过，失败记录保留待复核。实时模式在完成本轮自动批次后，按配置间隔开始下一轮。Ctrl+C 可停止，已保存的数据和缓存保留。
 
 ```powershell
 python main.py --validate-config  # 检查配置，隐藏密钥，不进行搜索
 python main.py --doctor           # 检查本地 Ollama 是否有 qwen3:8b
-python main.py --resume           # 只继续待处理任务，不新增搜索
-python main.py --reprocess-saved  # 重新评估缓存正文；仍受本轮篇数/调用上限限制
+python main.py --resume           # 可选：跳过搜索，自动处理现有队列
+python main.py --reprocess-saved  # 自动分批重新评估缓存正文
+python main.py --once             # 可选调试：仅处理一批后退出
 ```
 
-正常运行会先搜索，再处理队列；每轮最多处理 `max_documents_per_cycle` 个候选，包括被跳过的候选。未处理完的自动保留，下一次可用 `--resume`。已保存的 URL 不重复调用 Qwen。`--force` 会强制重新判断并下载本轮候选，通常不需要使用。
+直接运行 `main.py` 即可。程序先搜索，然后自动连续处理队列，每批最多 `max_documents_per_cycle` 篇；达到篇数上限会自动进入下一批，不再直接退出。后续批次不重复调用 Tavily。已保存的 URL 不重复调用 Qwen；`--force` 可强制重新判断和下载，通常不需要使用。
+
+Qwen 调用上限也是每批上限。达到调用次数时会自动开新批次并复用缓存续读长文，同一记录最多自动跨批续处理3次，防止卡住。网络失败、日期不足、解析失败或上下文不足的记录本次留待复核，继续处理其他候选，不在后续批次反复重试。
+
+正常采集不需要再手动执行 `--resume`；它仅用于不想新增搜索、只继续现有队列的场景。`--once` 才表示处理一批后退出。最终终端和 `logs/latest_run.json` 会区分“未尝试”和“失败待复核”，汇总所有自动批次。
 
 ## 配置
 
@@ -36,11 +41,11 @@ python main.py --reprocess-saved  # 重新评估缓存正文；仍受本轮篇�
 - `include_keywords` / `exclude_keywords`：提供给 Qwen 的筛选偏好。
 - `collection.mode`：`historical` 指定起止日期，格式 `"2026-11-01"`；`realtime` 时两项日期设为 `null`。
 - `max_queries_per_cycle`：每轮搜索次数上限，至少等于启用市场数。CN 使用中文查询，US 使用英文查询。
-- `max_candidates_per_query`：每次最多返回多少条搜索结果。`max_documents_per_cycle`：每轮最多评估多少个候选。
+- `max_candidates_per_query`：每次最多返回多少条搜索结果。`max_documents_per_cycle`：每批最多评估多少个候选，默认运行会自动继续下一批。
 - `search.provider`：默认 `tavily`，密钥填在 `search.api_key`；可改 `rss` 并填写订阅地址。Tavily 搜索与本地模型运行是不同组件。
 - `search.website_mode`：`restricted` 按市场限制域名；`unrestricted` 不限制网站。`exclude_domains` 两种模式都生效。
-- `search.market_domains.CN`：当前为 `cninfo.com.cn`、`xueqiu.com`、`csrc.gov.cn`、`cls.cn`、`sse.com.cn`。US 为 `sec.gov`、`nasdaq.com`。可直接增删域名。
-- `ollama`：本地 `qwen3:8b`，默认关闭思考，4096 上下文，串行处理，适合先在 8GB 显存环境验证。长文分段概括再合并，不逐句生成记录。每轮调用次数由 `max_calls_per_cycle` 控制。
+- `search.market_domains.CN`：当前为 `cninfo.com.cn`、`xueqiu.com`、`csrc.gov.cn`、`cls.cn`、`sse.com.cn`、`pbc.gov.cn`、`yicai.com`、`cnstock.com`、`guba.eastmoney.com`、`irm.cninfo.com.cn`、`stats.gov.cn`。US 为 `sec.gov`、`nasdaq.com`。可直接增删域名。
+- `ollama`：本地 `qwen3:8b`，默认关闭思考，4096 上下文，串行处理，适合先在 8GB 显存环境验证。长文分段概括再合并，不逐句生成记录。每批调用次数由 `max_calls_per_cycle` 控制；整次自动采集的总调用次数可能高于这个值。
 - `fetch.proxy_url` / `allow_fake_ip`：保留已有本机代理和 Fake-IP 兼容方式；不会修改 Clash Verge 或 TUN 配置。
 
 限制网站表示搜索和下载只允许这些域名，不保证网站开放全部内容，也不等于逐站穷尽所有历史公告。登录、验证码、robots 或网络拒绝会留在待处理日志中。
@@ -109,3 +114,22 @@ archive/             # 重构前的完整备份，不再参与运行
 离线测试：`python -B -m unittest discover -s tests -v`。夹具只写入 `.runtime` 下临时目录，不混入正式数据。真实验证结论见 `IMPLEMENTATION_STATUS.md`。
 
 旧代码、旧数据库、原件及旧配置完整保存在 `archive/legacy_20261105_173510.zip`，有 SHA-256 校验清单。旧的事件文件不作为新格式数据直接导入；已经保存的原网页交给新 Qwen 流程重新判断和概括。备份含本机旧配置和密钥，同样不要分享。
+
+## A股网站范围补充
+
+config.yaml 的 search.market_domains.CN 已纳入以下来源；原有巨潮资讯、雪球、上交所保留。
+
+| 网站 | 配置域名 | 文件名来源键 |
+| --- | --- | --- |
+| 中国证监会 | csrc.gov.cn | csrc |
+| 中国人民银行 | pbc.gov.cn | pbc |
+| 财联社 | cls.cn | cls |
+| 第一财经 | yicai.com | yicai |
+| 中国证券网（上海证券报） | cnstock.com | cnstock |
+| 东方财富股吧 | guba.eastmoney.com | guba |
+| 互动易 | irm.cninfo.com.cn | irm |
+| 国家统计局 | stats.gov.cn | stats |
+
+证监会和财联社原本已配置，未重复添加。互动易属于 cninfo.com.cn 子域名，现明确列出，并在文件名中区分 irm 与 cninfo；股吧仅开放指定论坛子域名，不扩大为整个东方财富网站。
+
+restricted 模式下，下次运行 main.py 会将新域名传入搜索与下载范围。这里是允许搜索和采集的网站范围，不保证每次结果一定覆盖全部网站，也不代表登录、动态页面或访问限制已经逐站验证通过。本次未执行 Tavily 搜索或消费正式采集队列。

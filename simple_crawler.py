@@ -169,9 +169,9 @@ class Crawler:
             yield {"url": page["url"], "title": page["title"], "snippet": page["text"][:450],
                    "origin_market": page["origin_market"], "page_path": str(path.relative_to(self.root))}
 
-    def run(self, resume=False, reprocess=False, force=False):
+    def run(self, resume=False, reprocess=False, force=False, exclude_ids=None, batch_number=None):
         report = {"started_at": now(), "searched": 0, "found": 0, "considered": 0,
-                  "downloaded": 0, "saved": 0, "skipped": 0, "pending": 0, "errors": [], "budget_pause": False}
+                  "downloaded": 0, "saved": 0, "skipped": 0, "pending": 0, "errors": [], "budget_pause": False, "attempted_ids": [], "budget_kind": None, "budget_item": None}
         self.model.calls = 0
         self.model.cache_hits = 0
         migration = self.dataset.migrate(self.model)
@@ -179,10 +179,11 @@ class Crawler:
             log("迁移", f"已将{migration['migrated']}条记录转为独立JSON，旧JSONL已备份")
         start, end = self.window()
         report.update(range=[start, end], markets=self.cfg.monitoring.markets, directions=self.cfg.monitoring.directions, queries=[])
-        log("范围", f"{start}至{end} | 市场={','.join(self.cfg.monitoring.markets)} | 方向={','.join(self.cfg.monitoring.directions)} | 股票/公司={','.join(self.cfg.monitoring.securities) or '按方向查询'}")
-        for market in self.cfg.monitoring.markets:
-            log("网站", f"{market} | " + (", ".join(self.sources.domains(market)) or "不限制网站"))
-        log("配置", f"Qwen={self.cfg.ollama.model} | Ollama={self.cfg.ollama.base_url} | 输出={self.root/self.cfg.output_dir}")
+        if batch_number in {None, 1}:
+            log("范围", f"{start}至{end} | 市场={','.join(self.cfg.monitoring.markets)} | 方向={','.join(self.cfg.monitoring.directions)} | 股票/公司={','.join(self.cfg.monitoring.securities) or '按方向查询'}")
+            for market in self.cfg.monitoring.markets:
+                log("网站", f"{market} | " + (", ".join(self.sources.domains(market)) or "不限制网站"))
+            log("配置", f"Qwen={self.cfg.ollama.model} | Ollama={self.cfg.ollama.base_url} | 输出={self.root/self.cfg.output_dir}")
         if reprocess:
             for candidate in self.saved_pages():
                 self.queue(candidate)
@@ -211,6 +212,8 @@ class Crawler:
                     self.queue(candidate)
                 self.persist()
         for identity, candidate in list(self.state["pending"].items()):
+            if exclude_ids and identity in exclude_ids:
+                continue
             if report["considered"] >= self.cfg.collection.max_documents_per_cycle:
                 break
             previous = self.state["records"].get(identity, {})
@@ -219,6 +222,7 @@ class Crawler:
                 report["skipped"] += 1
                 continue
             report["considered"] += 1
+            report["attempted_ids"].append(identity)
             log("候选", f"[{report['considered']}/{self.cfg.collection.max_documents_per_cycle}] {short(candidate['title'], 75)} | {candidate['url']}")
             try:
                 if candidate["origin_market"] not in self.cfg.monitoring.markets or not self.sources.allowed(candidate["url"], candidate["origin_market"]):
@@ -232,7 +236,7 @@ class Crawler:
                     self.persist()
                     continue
                 page_path = bounded(self.root / candidate.get("page_path", ".runtime/simple/pages/" + identity + ".json"), self.root)
-                if page_path.exists() and not force:
+                if page_path.exists() and (not force or (resume and previous.get("budget_resume"))):
                     page = json.loads(page_path.read_text(encoding="utf-8"))
                     log("正文缓存", f"复用{len(page['text'])}字符")
                 else:
@@ -268,6 +272,9 @@ class Crawler:
                 self.persist()
             except ModelBudget as error:
                 report["budget_pause"] = True
+                report["budget_item"] = identity
+                report["budget_kind"] = "calls" if self.model.calls >= self.cfg.ollama.max_calls_per_cycle else "context"
+                self.state["records"][identity] = {"status":"pending", "reason":str(error)[:200], "budget_resume":True, "at":now()}
                 log("预算", str(error))
                 self.persist()
                 break
@@ -283,8 +290,66 @@ class Crawler:
         report.update(status="partial" if self.state["pending"] else "completed", finished_at=now(), pending=len(self.state["pending"]), model_calls=self.model.calls,
                       model_cache_hits=self.model.cache_hits, total_records=len(self.dataset.rows))
         dump(self.root / "logs/latest_run.json", report)
-        log("汇总", f"搜索{report['searched']}次，返回{report['found']}条，检查{report['considered']}篇，保存{report['saved']}篇，跳过{report['skipped']}条，待处理{report['pending']}条")
+        log("批次汇总" if batch_number else "汇总", f"搜索{report['searched']}次，返回{report['found']}条，检查{report['considered']}篇，保存{report['saved']}篇，跳过{report['skipped']}条，待处理{report['pending']}条")
         log("组件", f"Qwen实际调用{report['model_calls']}次，模型缓存{report['model_cache_hits']}次 | 数据共{report['total_records']}篇 | 详情logs/latest_run.json")
+        return report
+
+
+    def collect(self, resume=False, reprocess=False, force=False, one_batch=False):
+        """Discover once and automatically visit every queued candidate, with bounded continuation."""
+        seen, continuations, batches = set(), {}, []
+        totals = {key:0 for key in ["searched", "found", "considered", "downloaded", "saved", "skipped", "model_calls", "model_cache_hits"]}
+        started = now()
+        first = True
+        while first or any(identity not in seen for identity in self.state["pending"]):
+            number = len(batches) + 1
+            log("自动批次", f"第{number}批 | 每批最多{self.cfg.collection.max_documents_per_cycle}篇 | " +
+                ("执行搜索并处理队列" if first and not resume and not reprocess else "继续队列，不新增搜索"))
+            batch = self.run(resume=resume if first else True, reprocess=reprocess if first else False,
+                             force=force, exclude_ids=seen, batch_number=number)
+            batches.append(batch)
+            for key in totals:
+                totals[key] += batch[key]
+            attempted = set(batch["attempted_ids"])
+            seen.update(attempted)
+            if not one_batch and batch["budget_kind"] == "calls":
+                identity = batch["budget_item"]
+                used = continuations.get(identity, 0)
+                if used < 3:
+                    continuations[identity] = used + 1
+                    seen.discard(identity)
+                    log("自动续处理", f"本批Qwen调用上限已到，下一批复用缓存继续长文（{used+1}/3），不重新搜索")
+                else:
+                    reason = "同一记录已自动跨批续处理3次，仍未完成；保留缓存，继续其他记录"
+                    self.state["records"][identity] = {"status":"pending", "reason":reason, "at":now()}
+                    self.persist()
+                    log("待复核", reason)
+            elif batch["budget_kind"] == "context":
+                log("待复核", "当前记录上下文不足，本次保留并继续其他记录，不反复重试")
+            first = False
+            if one_batch:
+                break
+            # A malfunctioning worker must not cause an endless outer loop.
+            if not attempted and batch["pending"] and any(identity not in seen for identity in self.state["pending"]):
+                log("停止", "本批没有处理进展，已保留队列")
+                break
+        remaining = set(self.state["pending"])
+        deferred = len(remaining & seen)
+        unprocessed = len(remaining - seen)
+        report = dict(batches[0])
+        report.update(totals)
+        report.update(started_at=started, finished_at=now(), status="partial" if remaining else "completed",
+            batches=len(batches), pending=len(remaining), deferred=deferred, unprocessed=unprocessed,
+            total_records=len(self.dataset.rows), errors=[error for batch in batches for error in batch["errors"]],
+            budget_pause=any(batch["budget_pause"] for batch in batches), budget_continuations=continuations,
+            attempted_ids=list(dict.fromkeys(identity for batch in batches for identity in batch["attempted_ids"])),
+            batch_reports=batches, one_batch=one_batch)
+        report.pop("budget_item", None)
+        report.pop("budget_kind", None)
+        dump(self.root / "logs/latest_run.json", report)
+        log("最终汇总", f"自动处理{len(batches)}批，搜索{totals['searched']}次，返回{totals['found']}条，保存{totals['saved']}篇，跳过{totals['skipped']}条")
+        log("队列", f"未尝试{unprocessed}条，失败/日期不足等待复核{deferred}条 | 数据共{len(self.dataset.rows)}篇")
+        log("组件总计", f"Qwen实际调用{totals['model_calls']}次，缓存{totals['model_cache_hits']}次 | 详情logs/latest_run.json")
         return report
 
 
@@ -293,7 +358,7 @@ def main(argv=None):
     parser.add_argument("--config", type=Path, default=ROOT / "config.yaml")
     parser.add_argument("--validate-config", action="store_true")
     parser.add_argument("--doctor", action="store_true")
-    parser.add_argument("--once", action="store_true")
+    parser.add_argument("--once", action="store_true", help="只处理一批；不加此参数时自动继续后续批次")
     parser.add_argument("--resume", "--extract-only", dest="resume", action="store_true")
     parser.add_argument("--reprocess-saved", action="store_true")
     parser.add_argument("--force", action="store_true")
@@ -310,7 +375,7 @@ def main(argv=None):
                     print(json.dumps(crawler.model.check(), ensure_ascii=False))
                     return 0
                 while True:
-                    crawler.run(args.resume, args.reprocess_saved, args.force)
+                    crawler.collect(args.resume, args.reprocess_saved, args.force, one_batch=args.once)
                     if cfg.collection.mode != "realtime" or args.once or args.resume or args.reprocess_saved:
                         return 0
                     log("等待", f"{cfg.collection.poll_interval_seconds}秒后开始下一轮，Ctrl+C停止")
