@@ -28,8 +28,9 @@ def public_url(url,allowed=None,resolver=None,excluded=None,allow_fake_ip=False)
     try:
         addresses=(resolver or socket.getaddrinfo)(p.hostname,p.port or (443 if p.scheme=="https" else 80),type=socket.SOCK_STREAM)
         ips = sorted({ipaddress.ip_address(address[4][0]) for address in addresses}, key=str)
-        fake_network = ipaddress.ip_network("198.18.0.0/15")
-        fake_ips = [ip for ip in ips if ip.version == 4 and ip in fake_network]
+        # Only explicit local-proxy Fake-IP compatibility may accept these benchmark ranges.
+        fake_networks = (ipaddress.ip_network("198.18.0.0/15"), ipaddress.ip_network("2001:2::/48"))
+        fake_ips = [ip for ip in ips if any(ip.version == net.version and ip in net for net in fake_networks)]
         try:
             ipaddress.ip_address(p.hostname)
             hostname_is_literal = True
@@ -66,17 +67,17 @@ class PublicHTTP:
         self.last={}
         self.blocked=set()
     def close(self):self.client.close()
-    def get(self,url,robots=True,allowed=None,excluded=None):
+    def get(self,url,robots=True,allowed=None,excluded=None,headers=None):
         for hop in range(self.cfg.max_redirects+1):
             url=public_url(url,allowed,excluded=excluded,allow_fake_ip=self.cfg.allow_fake_ip)
             origin=urlsplit(url).netloc.lower()
             if origin in self.blocked:raise FetchError("blocked","本轮该主机已返回访问限制")
             if robots and self.cfg.respect_robots:
-                self.check_robots(url,allowed=allowed,excluded=excluded)
+                self.check_robots(url,allowed=allowed,excluded=excluded,headers=headers)
             time.sleep(max(0,1-(time.monotonic()-self.last.get(origin,0))))
             self.last[origin]=time.monotonic()
             try:
-                with self.client.stream("GET",url) as r:
+                with self.client.stream("GET",url,headers=headers) as r:
                     info={"url":url,"status_code":r.status_code,"content_type":r.headers.get("content-type","")}
                     if r.status_code in {401,403}:
                         self.blocked.add(origin)
@@ -107,16 +108,17 @@ class PublicHTTP:
             except httpx.HTTPError as exc:
                 raise FetchError("network_error",type(exc).__name__) from None
         raise FetchError("download_invalid","重定向次数超限")
-    def check_robots(self,url,allowed=None,excluded=None):
+    def check_robots(self,url,allowed=None,excluded=None,headers=None):
         p=urlsplit(url);origin=p.scheme+"://"+p.netloc
         if origin not in self.robots:
             try:
-                raw,_=self.get(origin+"/robots.txt",robots=False,allowed=allowed,excluded=excluded)
+                raw,_=self.get(origin+"/robots.txt",robots=False,allowed=allowed,excluded=excluded,headers=headers)
                 parser=RobotFileParser();parser.parse(raw.decode("utf-8",errors="replace").splitlines())
                 self.robots[origin]=parser
             except FetchError as exc:
                 if exc.status=="not_found":self.robots[origin]=None
                 else:raise
         parser=self.robots[origin]
-        if parser is not None and not parser.can_fetch("FinanceResearchAgent",url):
+        agent = (headers or {}).get("User-Agent", "FinanceResearchAgent")
+        if parser is not None and not parser.can_fetch(agent,url):
             raise FetchError("blocked","robots.txt不允许该抓取路径")

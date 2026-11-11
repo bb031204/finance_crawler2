@@ -7,6 +7,7 @@ import httpx
 from finance_agent.runtime import setup
 setup(Path(__file__).resolve().parents[1])
 from simple_crawler import Config,Dataset,Crawler,FIELDS,load_config,source_id
+from record_time import with_time_information
 from record_files import record_name, source_key, original_time, safe_part
 from qwen_agent import preserve_precision,Note,parse_time,grounded_time,Qwen,Decision,ModelBudget,OutputError
 from web_sources import read_html,decode_html,Sources
@@ -70,7 +71,7 @@ class SimpleTests(unittest.TestCase):
                 self.searches+=1
                 return [candidate(str(n)) for n in range(7)]
         class PlanningModel(FakeQwen):
-            def plan(self,monitoring,limit):
+            def plan(self,monitoring,limit,*dates):
                 self.calls+=1
                 return [{'market':'CN','query':'离线测试'}]
         c=self.crawler(PlanningModel(),SearchSources());c.cfg.search.api_key=SecretStr('offline-fixture')
@@ -151,7 +152,7 @@ class SimpleTests(unittest.TestCase):
         with patch.object(simple_crawler,'ROOT',self.root),patch.object(simple_crawler,'load_config',return_value=c.cfg),patch.object(simple_crawler,'Crawler',return_value=c):
             result=simple_crawler.main(['--resume'])
         self.assertEqual(result,0);self.assertEqual(len(c.dataset.rows),3)
-    def test_output_exact_six_fields_and_dedup(self):
+    def test_output_fields_include_time_information_and_dedup(self):
         c=self.crawler();c.queue(candidate());c.run(resume=True)
         row=json.loads(next((self.root/'data/CN').glob('*.json')).read_text(encoding='utf-8'))
         self.assertEqual(set(row),FIELDS);self.assertEqual(row['source_id'],source_id(candidate()['url']))
@@ -162,7 +163,7 @@ class SimpleTests(unittest.TestCase):
         c=self.crawler();c.queue(candidate());c.run(resume=True)
         next((self.root/'data/CN').glob('*.json')).unlink()
         restored=self.crawler();restored.queue(candidate());result=restored.run(resume=True)
-        self.assertEqual(result['saved'],1);self.assertEqual(restored.sources.fetched,0)
+        self.assertEqual(result['saved'],1);self.assertEqual(restored.sources.fetched,1)
     def test_changed_scope_reconsiders_previous_rejection(self):
         c=self.crawler(FakeQwen(useful=False));c.queue(candidate());c.run(resume=True)
         cfg=config();cfg.monitoring.directions=['新监测范围']
@@ -198,8 +199,8 @@ class SimpleTests(unittest.TestCase):
         ds=Dataset(self.root,'data');self.assertIn('test',ds.rows)
         self.assertFalse(ds.outbox.exists());self.assertEqual(len(list((self.root/'data/CN').glob('*.json'))),1)
     def sample_row(self, identity='one'):
-        return {'source_id':identity,'url':'https://www.cls.cn/detail/'+identity,'时间':'2026-11-02T20:30:58+08:00',
-            '分类':'监管政策','关键词':['离线测试'],'主要内容':'仅为离线测试夹具，不是真实金融新闻。'}
+        return with_time_information({'source_id':identity,'url':'https://www.cls.cn/detail/'+identity,'时间':'2026-11-02T20:30:58+08:00',
+            '分类':'监管政策','关键词':['离线测试'],'主要内容':'仅为离线测试夹具，不是真实金融新闻。'},available_at='2026-11-03T00:00:00+00:00')
     def test_filename_uses_date_category_industry_website(self):
         self.assertEqual(record_name(self.sample_row(),'银行业'),'2026_11_02_20_30_监管政策_银行业_cls.json')
         self.assertEqual(source_key('https://static.cninfo.com.cn/a.pdf'),'cninfo')
@@ -219,13 +220,17 @@ class SimpleTests(unittest.TestCase):
         new=ds.save('US',dict(self.sample_row(),分类='财报'),'半导体')
         self.assertFalse(old.exists());self.assertTrue(new.exists())
         self.assertEqual(Dataset(self.root,'data').rows['one'][0],'US')
-    def test_jsonl_migration_backs_up_and_preserves_exact_six_fields(self):
+    def test_jsonl_migration_preserves_content_and_adds_time_information(self):
         folder=self.root/'data';folder.mkdir();row=self.sample_row()
+        row.pop('时间信息')
         for market in ['CN','US','GLOBAL']:(folder/(market+'.jsonl')).write_text(json.dumps(row,ensure_ascii=False)+'\n' if market=='CN' else '',encoding='utf-8')
         model=FakeQwen();ds=Dataset(self.root,'data');report=ds.migrate(model)
         self.assertEqual(report['migrated'],1);self.assertTrue(Path(report['backup']).exists())
         self.assertEqual(list(folder.glob('*.jsonl')),[]);self.assertTrue((folder/'GLOBAL').is_dir())
-        self.assertEqual(json.loads(next((folder/'CN').glob('*.json')).read_text(encoding='utf-8')),row)
+        saved=json.loads(next((folder/'CN').glob('*.json')).read_text(encoding='utf-8'))
+        self.assertEqual({k:saved[k] for k in row},row)
+        self.assertEqual(set(saved), FIELDS)
+        self.assertEqual(saved['时间信息']['availability_basis'],'migration')
         again=Dataset(self.root,'data');again.migrate(model);self.assertEqual(model.calls,1)
     def test_failed_industry_keeps_original_jsonl(self):
         folder=self.root/'data';folder.mkdir();row=self.sample_row()
