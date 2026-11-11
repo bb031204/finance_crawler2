@@ -39,9 +39,9 @@ def plan_summary_cleanup(dataset):
         audit=json.loads(path.read_text(encoding='utf-8')) if path.is_file() else {}
         if audit.get('record_hash')!=digest(row):
             unverified.append(identity);continue
-        quarantine=not text.strip() or wrapper
+        quarantine=not text.strip()
         operations.append({'source_id':identity,'market':market,'previous':row,'text':text,'tags':tags,
-            'quarantine':quarantine,'audit_path':path,'audit':audit})
+            'quarantine':quarantine,'review_wrapper':wrapper,'review_only':not tags,'audit_path':path,'audit':audit})
     return operations,unverified
 
 
@@ -50,6 +50,8 @@ def clean_saved_summaries(dataset):
     operations,unverified=plan_summary_cleanup(dataset)
     report={'version':NOISE_VERSION,'cleaned_records':0,'cleaned_files':0,'quarantined_records':0,
         'unverified_skipped':unverified,'changes':[],'backup':None,'finished_at':None}
+    report['needs_review']=[item['source_id'] for item in operations if item.get('review_wrapper')]
+    operations=[item for item in operations if not item.get('review_only')]
     if not operations:report['finished_at']=now();return report
     originals={}
     for item in operations:
@@ -66,7 +68,7 @@ def clean_saved_summaries(dataset):
     for item in operations:
         identity=item['source_id'];row=item['previous'];stamp=now()
         if item['quarantine']:
-            target=dataset.quarantine(identity,'仅含报告发布/附件/例行披露包装，无可识别的实质市场内容；原件已备份')
+            target=dataset.quarantine(identity,'全部正文为完整匹配的确定噪声模板，清理后为空；原件已备份')
             report['quarantined_records']+=1
             change={'source_id':identity,'action':'quarantined','path':str(target.relative_to(dataset.root))}
         else:

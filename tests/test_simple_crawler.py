@@ -7,6 +7,7 @@ import httpx
 from finance_agent.runtime import setup
 setup(Path(__file__).resolve().parents[1])
 from simple_crawler import Config,Dataset,Crawler,FIELDS,load_config,source_id
+from record_files import LEGACY_ANALYSIS_FIELDS
 from record_time import with_time_information
 from record_files import record_name, source_key, original_time, safe_part
 from qwen_agent import preserve_precision,Note,parse_time,grounded_time,Qwen,Decision,ModelBudget,OutputError
@@ -229,7 +230,7 @@ class SimpleTests(unittest.TestCase):
         self.assertEqual(list(folder.glob('*.jsonl')),[]);self.assertTrue((folder/'GLOBAL').is_dir())
         saved=json.loads(next((folder/'CN').glob('*.json')).read_text(encoding='utf-8'))
         self.assertEqual({k:saved[k] for k in row},row)
-        self.assertEqual(set(saved), FIELDS)
+        self.assertEqual(set(saved), LEGACY_ANALYSIS_FIELDS)
         self.assertEqual(saved['时间信息']['availability_basis'],'migration')
         again=Dataset(self.root,'data');again.migrate(model);self.assertEqual(model.calls,1)
     def test_failed_industry_keeps_original_jsonl(self):

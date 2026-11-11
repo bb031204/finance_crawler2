@@ -6,7 +6,7 @@ from typing import Literal
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import httpx
-from pydantic import BaseModel, ConfigDict, Field, create_model
+from pydantic import BaseModel, ConfigDict, Field, create_model, ValidationError
 from finance_agent.core import bounded, digest, dump
 from finance_agent.progress import log, short
 from record_quality import language_hint,primary_article_text,validate_securities,preserve_securities,grounded_securities
@@ -16,7 +16,7 @@ from analysis_metadata import validate_industries, validate_scopes, preserve_ana
 from search_topics import english_direction_hint
 from numeric_qualifiers import validate_numeric_qualifiers
 from summary_quality import validate_summary_quality
-from financial_noise import trim_financial_noise,only_filing_wrapper
+from financial_noise import trim_financial_noise
 
 from pathlib import Path
 
@@ -122,7 +122,53 @@ class ModelBudget(RuntimeError):
     pass
 
 class OutputError(ValueError):
-    pass
+    def __init__(self,message,code=None):
+        super().__init__(message)
+        self.code=code
+
+
+def output_repair_hint(schema,payload,error):
+    """Keep content limits and factual obligations visible on the repair attempt."""
+    instruction='完整返回原结构JSON，不续写残缺JSON，不解释。'
+    if schema is Publication:
+        return instruction+'无法确认来源发布日期则time=null，不用修改/生效/报告期替代。'
+    if schema in {ContentNote,CompactNote,Note}:
+        instruction+=('正文中文200至350字、英文120至190词，短讯不凑数。必留原文时间/报告期、'
+            '具体公司/股票代码、具体行业、关键数字/比较基准及批准条件，不猜日期或代码。'
+            '删重复和模板；quote最短逐字短引，reason短语，关键词去重，勿复制正文进元数据。')
+        if '截断' in str(error):instruction+='总JSON已截断，从头生成更精简的完整JSON，不增加输出预算。'
+        if schema is CompactNote and payload.get('content_token_limit'):
+            instruction+='content还须满足给定content_token_limit。'
+    return instruction
+
+
+def source_cut(text,start,end):
+    """Prefer a late paragraph/sentence boundary; preserve every source character."""
+    if end>=len(text):return len(text)
+    floor=start+max(1,int((end-start)*0.65))
+    window=text[floor:end]
+    for pattern in [r'\n\s*\n',r'\n',r'[。！？]|[.!?]\s+']:
+        matches=list(re.finditer(pattern,window))
+        if matches:return floor+matches[-1].end()
+    return end
+
+
+def keep_quoted_time_precision(value,quote,block,market):
+    """Restore an explicit quoted publication instant; never infer a missing clock/zone."""
+    if len(value)!=10:return value
+    stamps=[]
+    for line in quote.splitlines():
+        if not PUBLICATION.search(line) or NON_PUBLICATION.search(line):continue
+        label=r'(?:datePublished|publish(?:ed)?(?:[_ ](?:date|time|at))?|pubdate|release[_ ]date|发布时间|发布日期|发表时间|刊发时间)'
+        stamp=r'\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}(?::\d{2})?(?:Z|[+-]\d{2}:\d{2})(?![\d:])'
+        for match in re.finditer(label+r'(?:\s*[:=]\s*|\s+)(?P<stamp>'+stamp+r')',line,re.I):
+            literal=match['stamp']
+            # Use the existing evidence checks; a date is not permission to guess a time.
+            checked=grounded_time(literal,line,block,market)
+            stamps.append(checked)
+    instants={datetime.fromisoformat(stamp.replace('Z','+00:00')).astimezone(timezone.utc) for stamp in stamps}
+    if len(instants)>1:raise ValueError('发布证据含多个不同时刻，请引用唯一发布时间或time=null')
+    return next((stamp for stamp in stamps if stamp[:10]==value),value)
 
 
 def tokens(text):
@@ -306,6 +352,7 @@ class Qwen:
         self.calls = 0
         self.cache_hits = 0
         self.model_digest = None
+        self._oversize_chunks=set()
 
     def close(self):
         self.http.close()
@@ -329,9 +376,16 @@ class Qwen:
         if max_predict is not None:prediction_limit=min(prediction_limit,max_predict)
         options = {"num_ctx": self.cfg.num_ctx, "num_predict": prediction_limit,
                    "temperature": 0.0, "seed": 42}
-        key = digest([VALIDATION_VERSION,SECURITY_VALIDATION_VERSION,self.model_digest, prompt, payload, schema.model_json_schema(), options])
+        merging=schema is ContentNote and purpose=='段落合并'
+        response_schema=schema.model_json_schema()
+        if merging:
+            for field in ['securities','industries','impact_scope']:response_schema['properties'][field]['maxItems']=0
+        key = digest([VALIDATION_VERSION,SECURITY_VALIDATION_VERSION,self.model_digest, prompt, payload, response_schema, options])
         cache = bounded(self.root / ".runtime/simple/model_cache" / (key + ".json"), self.root)
         def parse(value):
+            if merging:
+                value=dict(value)
+                for field in ['securities','industries','impact_scope']:value[field]=[]
             result = partial_parser(value) if partial_parser else schema.model_validate(value).model_dump()
             return validate(result) if validate else result
         if cache.exists():
@@ -353,10 +407,12 @@ class Qwen:
             raw = {}
             try:
                 response = self.http.post("/api/chat", json={"model": self.cfg.model, "think": False, "stream": False,
-                    "format": schema.model_json_schema(), "messages": messages, "options": options, "keep_alive": "5m"})
+                    "format": response_schema, "messages": messages, "options": options, "keep_alive": "5m"})
                 response.raise_for_status()
                 raw = response.json()
                 if raw.get("done_reason") == "length":
+                    if raw.get('eval_count') is not None:
+                        log('Qwen预算',f"完整JSON输出{raw['eval_count']}/{prediction_limit} token | 输入{raw.get('prompt_eval_count','未知')} token | 不接收残缺结果")
                     raise ValueError("模型输出被截断")
                 value = json.loads(raw["message"]["content"])
                 result = parse(value)
@@ -368,11 +424,12 @@ class Qwen:
                      {"purpose": purpose, "error": str(error), "response": raw})
                 log("Qwen错误", f"{purpose} | {short(error, 130)}")
                 if attempt:
-                    raise OutputError("Qwen整理失败：" + str(error)[:180]) from None
-                instruction='；仅修正本问题，按原结构返回JSON。'
-                if schema is Publication:instruction+='无法确认日期则time=null。'
+                    body_too_long=isinstance(error,ValidationError) and any(item['loc']==('content',) and item['type']=='string_too_long' for item in error.errors())
+                    code='output_length' if schema is ContentNote and ('截断' in str(error) or '主要内容偏长' in str(error) or body_too_long) else None
+                    raise OutputError("Qwen整理失败：" + str(error)[:180],code=code) from None
+                instruction=output_repair_hint(schema,payload,error)
                 messages[-1] = {"role": "user", "content": json.dumps(payload, ensure_ascii=False) +
-                    "\n修正：" + str(error)[:80] + instruction}
+                    "\n修正：" + str(error)[:80] + '；'+instruction}
 
     def plan(self, monitoring, limit, start=None, end=None):
         payload = {"markets": monitoring.markets, "directions": monitoring.directions,
@@ -473,6 +530,7 @@ class Qwen:
                 if collapse(result['date_quote']) not in collapse(block):continue
                 try:
                     result['time']=grounded_time(result['time'],result['date_quote'],block,page['origin_market'])
+                    result['time']=keep_quoted_time_precision(result['time'],result['date_quote'],block,page['origin_market'])
                     break
                 except ValueError as error:errors.append(error)
             else:raise errors[-1] if errors else ValueError('来源发布时间缺少对应证据块')
@@ -515,14 +573,20 @@ class Qwen:
 
     def read_chunks(self,text,context,check_only=False):
         baseline=tokens(READ_PROMPT+json.dumps(context,ensure_ascii=False))
-        budget=self.cfg.num_ctx-self.cfg.num_predict-550-baseline
+        repair_reserve=tokens(output_repair_hint(ContentNote,{},'模型输出被截断'))+200
+        budget=self.cfg.num_ctx-self.cfg.num_predict-350-baseline-repair_reserve-50
         if budget<300:raise ModelBudget('前置检查：固定输入超过正文上下文预算，尚未开始正文提炼')
         if check_only:return []
         chunks=[];start=0
         while start<len(text):
+            sample=text[start:start+2400]
+            numbers=len(re.findall(r'\d+(?:[,.]\d+)*',sample))
+            dense=sample.count('\n')>=4 and numbers>=12 and numbers/max(1,len(re.findall(r'\S+',sample)))>=0.2
+            block_budget=min(budget,600 if dense else 900)
             end=start;spent=0.0
-            while end<len(text) and spent+(1.5 if ord(text[end])>127 else .35)<budget:
+            while end<len(text) and spent+(1.5 if ord(text[end])>127 else .35)<block_budget:
                 spent+=1.5 if ord(text[end])>127 else .35;end+=1
+            end=source_cut(text,start,end)
             chunks.append(text[start:end]);start=end
         return chunks
 
@@ -535,14 +599,16 @@ class Qwen:
             date_context=context['date_context'],notes=[note['content'] for note in notes])
 
     def merge_content_limit(self,context):
-        overhead=self.request_cost(MERGE_PROMPT,self.merge_payload(context,[{'content':''},{'content':''}]))
+        repair_reserve=tokens(output_repair_hint(ContentNote,{},'模型输出被截断'))+200
+        overhead=self.request_cost(MERGE_PROMPT,self.merge_payload(context,[{'content':''},{'content':''}]))+repair_reserve
         limit=(self.cfg.num_ctx-overhead-40)//2
         if limit<100:raise ModelBudget('前置检查：合并固定输入与输出预算没有足够余量，尚未开始正文提炼')
         return limit
 
     def merge_pair(self,group,context,validate):
         payload=self.merge_payload(context,group)
-        if self.request_cost(MERGE_PROMPT,payload)>self.cfg.num_ctx:
+        repair_reserve=tokens(output_repair_hint(ContentNote,{},'模型输出被截断'))+200
+        if self.request_cost(MERGE_PROMPT,payload)+repair_reserve>self.cfg.num_ctx:
             limit=self.merge_content_limit(context);group=[dict(note) for note in group]
             for note in group:
                 if tokens(note['content'])<=limit:continue
@@ -556,8 +622,17 @@ class Qwen:
                     max_predict=min(self.cfg.num_predict,max(300,limit+160)))
                 note['content']=result['content']
             payload=self.merge_payload(context,group)
-            if self.request_cost(MERGE_PROMPT,payload)>self.cfg.num_ctx:raise ModelBudget('整理后的笔记仍无法安全合并，保留待复核，不截断原文')
-        return self.ask('段落合并',MERGE_PROMPT,payload,ContentNote,validate)
+            if self.request_cost(MERGE_PROMPT,payload)+repair_reserve>self.cfg.num_ctx:raise ModelBudget('整理后的笔记仍无法安全合并，保留待复核，不截断原文')
+        result=self.ask('段落合并',MERGE_PROMPT,payload,ContentNote,validate)
+        # These fields were grounded against original text during reading. Carry
+        # them in Python rather than spend output tokens regenerating evidence.
+        for field in ['securities','industries']:
+            result[field]=[]
+            for note in group:
+                for item in note.get(field,[]):
+                    if item not in result[field]:result[field].append(dict(item))
+        result['impact_scope']=validate_scopes([scope for note in group for scope in note.get('impact_scope',[])])
+        return result
 
     def summarize(self, page, monitoring, prepared=None):
         prepared=prepared if prepared is not None else self.preflight(page,monitoring)
@@ -577,7 +652,7 @@ class Qwen:
                 validate_summary_securities(result,validation_source)
                 result['content'],removed=trim_financial_noise(result['content'])
                 if removed:result['summary_cleanup']=removed
-                if not result['content'].strip() or only_filing_wrapper(result['content']):
+                if not result['content'].strip():
                     result['useful']=False;result['reason']='仅有披露包装或程序性套话，没有可保留的实质市场信息'
                     return result
                 validate_numeric_qualifiers(result['content'],validation_source)
@@ -598,12 +673,26 @@ class Qwen:
                     raise ValueError("英文原文的行业名称也应保持英文")
             return result
         notes = []
-        for index, chunk in enumerate(chunks):
+        work=[(chunk,0) for chunk in chunks];index=0
+        while index<len(work):
+            chunk,depth=work[index]
             validation_source = chunk
-            log("阅读", f"{short(page['title'], 55)} | 片段{index+1}/{len(chunks)}")
-            note = self.ask("正文整理", READ_PROMPT, dict(context, text=chunk), ContentNote, validate)
+            log("阅读", f"{short(page['title'], 55)} | 片段{index+1}/{len(work)}")
+            chunk_key=digest([context,chunk])
+            try:
+                if chunk_key in self._oversize_chunks:raise OutputError('复用本进程已确认的连续超长结果',code='output_length')
+                note = self.ask("正文整理", READ_PROMPT, dict(context, text=chunk), ContentNote, validate)
+            except OutputError as error:
+                if error.code!='output_length' or depth>=2 or tokens(chunk)<400:raise
+                self._oversize_chunks.add(chunk_key)
+                middle=source_cut(chunk,0,len(chunk)//2)
+                if not 0<middle<len(chunk):raise
+                work[index:index+1]=[(chunk[:middle],depth+1),(chunk[middle:],depth+1)]
+                log('阅读重分片',f'片段连续超长，按原文边界分为2段 | 深度{depth+1}/2 | 不丢正文、不重选发布时间')
+                continue
             if note["useful"]:
                 notes.append(note)
+            index+=1
         if not notes:
             return {"useful": False, "reason": "Qwen判断正文没有有用市场信息"}
         source_notes = list(notes)

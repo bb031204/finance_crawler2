@@ -2,7 +2,7 @@
 import re
 from summary_quality import trim_routine_sentences
 
-NOISE_VERSION='financial_sentences_v1'
+NOISE_VERSION='financial_sentences_v2_strict_templates'
 ABBREVIATION=re.compile(r'\b(?:Inc|Ltd|Corp|Co|U\.S|U\.K|Mr|Ms|Dr|L\.P|S\.A)\.',re.I)
 MATERIAL=re.compile(
     r'[$€£￥¥]\s*\d|(?:USD|EUR|RMB|CNY)\s*\d|\d[\d,.]*\s*(?:%|percent|million|billion|trillion|basis points?|bps|shares?|亿元|万元|基点|股)|'
@@ -30,27 +30,23 @@ def sentences(text):
 
 
 def noise_kind(sentence):
-    text=sentence.strip()
+    """Only positively identified whole templates are removable; unknown clauses stay."""
+    text=sentence.strip().replace('“','"').replace('”','"').replace('’',"'")
     if not text or MATERIAL.search(text) or CHANGE.search(text):return None
-    profile=(re.search(r'\b(?:based|headquartered) in\b',text,re.I)
-        and re.search(r'\b\d[\d,]*\s+employees\b',text,re.I)
-        and re.search(r'\b\d[\d,]*\s+countries\b',text,re.I))
-    if profile and not re.search(r'\b(?:new|changed|moved|relocat\w*|open\w*|clos\w*|expan\w*|reduc\w*|cut|hir\w*|strike|tariff\w*|sanction\w*|exposure|geopolit\w*|lockdown)\b',text,re.I):
-        return 'static_company_profile'
-    if (re.search(r'\b(?:not (?:be )?(?:deemed|considered)|not deemed|shall not be deemed|not incorporated|incorporated by reference)\b',text,re.I)
-            and re.search(r'Section\s+18|Securities (?:Exchange )?Act|Exchange Act|registration statement|filing',text,re.I)):
-        return 'filing_legal_boilerplate'
-    if re.match(r'^(?:the |such |a )?(?:press release|presentation|slides|report|document|information|exhibit)',text,re.I):
-        if re.search(r'\b(?:attached|included|incorporated by reference)\b',text,re.I) and re.search(r'\b(?:exhibit|form\s+8-k|registration statements?)\b',text,re.I):
-            return 'filing_attachment_reference'
-        if re.search(r'\b(?:was signed by|is signed by|includes a signature|confirming the filing)\b',text,re.I):
-            return 'filing_signature'
-    if re.match(r'^(?:for more information|to learn more|please visit|更多信息请|详情请访问)',text,re.I):
-        return 'visit_promotion'
-    if re.fullmatch(r"The press release provides details on the company['’]s financial performance for the specified period\.?",text,re.I):
-        return 'empty_filing_summary'
-    if re.match(r'^(?:this|the)\s+(?:article|report|filing|release|document)\s+(?:provides?|offers?|demonstrates?|reflects?)\b',text,re.I):
-        if re.search(r'valuable insights|reference value|transparency|worth watching',text,re.I):return 'empty_evaluation'
+    legal=(r'(?:The|Such) information(?: (?:provided|disclosed|furnished))?(?: in (?:this|the) (?:report|filing))? '
+        r'(?:is|shall be) not (?:deemed|considered) ["\']?filed["\']? (?:for purposes of|under) '
+        r'Section 18 of the Securities Exchange Act of 1934(?:, as amended)?[.]?')
+    attachment=(r'(?:The|A) press release (?:is|was) (?:included|attached) as Exhibit [0-9]+(?:[.][0-9]+)? '
+        r'(?:to|in) (?:this|the) (?:Current Report on )?Form 8-K[.]?')
+    role=r'(?:Chief Financial Officer|Chief Executive Officer|Senior Vice President and Chief Financial Officer)'
+    person=r"(?:[A-Z][A-Za-z'-]*|[A-Z]\.)(?:\s+(?:[A-Z][A-Za-z'-]*|[A-Z]\.)){1,5}"
+    signature=rf'The (?:report|document|filing) (?:is|was) signed by (?:the )?(?:{role}|{person}, {role})[.]?'
+    visit=r'(?:For more information|To learn more|Please visit)[, ]+(?:visit )?(?:our (?:website|site)|https?://[^\s]+)[.]?'
+    empty=r"(?:This|The) (?:article|report|filing|release|document) (?:provides|offers) (?:valuable|important) insights for investors[.]?"
+    empty_filing=r"The press release provides details on the company's financial performance for the specified period[.]?"
+    for label,pattern in [('filing_legal_boilerplate',legal),('filing_attachment_reference',attachment),
+            ('filing_signature',signature),('visit_promotion',visit),('empty_evaluation',empty),('empty_filing_summary',empty_filing)]:
+        if re.fullmatch(pattern,text,re.I):return label
     return None
 
 

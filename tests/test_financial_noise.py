@@ -7,7 +7,7 @@ from zipfile import ZipFile
 from finance_agent.core import digest,dump
 from financial_noise import trim_financial_noise,only_filing_wrapper
 from summary_maintenance import clean_saved_summaries,load_summary_snapshot,plan_summary_cleanup
-from record_files import Dataset,FIELDS
+from record_files import Dataset,FIELDS,LEGACY_ANALYSIS_FIELDS
 from record_time import with_time_information
 from analysis_metadata import public_analysis
 
@@ -42,9 +42,9 @@ class FinancialNoiseTests(unittest.TestCase):
         text='TSMC increased output by 60%. U.S. Commerce Secretary Gina Raimondo called for greater market transparency to address the chip shortage.'
         self.assertEqual(trim_financial_noise(text),(text,[]))
 
-    def test_static_multi_attribute_profile_is_removed_without_financial_change(self):
+    def test_static_profile_is_left_to_semantic_review_not_keyword_deletion(self):
         text='Acme, based in Germany, has around 650 employees and operates in over 80 countries.'
-        self.assertEqual(trim_financial_noise(text),('', ['static_company_profile']))
+        self.assertEqual(trim_financial_noise(text),(text,[]))
         changed='Acme, based in Germany, cut its workforce from 650 employees and closed operations in 80 countries.'
         self.assertEqual(trim_financial_noise(changed),(changed,[]))
         risk='Acme, based in Germany, has 650 employees in 80 countries and faces tariff exposure.'
@@ -98,7 +98,7 @@ class FinancialNoiseTests(unittest.TestCase):
         ds,original=self.dataset(facts+' '+LEGAL);paths=list(ds.replicas[original['source_id']].values())
         report=clean_saved_summaries(ds);row=ds.rows[original['source_id']][1]
         self.assertEqual(report['cleaned_records'],1);self.assertEqual(report['cleaned_files'],3)
-        self.assertEqual(row['主要内容'],facts);self.assertEqual(set(row),FIELDS);self.assertEqual(row['时间'],original['时间'])
+        self.assertEqual(row['主要内容'],facts);self.assertEqual(set(row),LEGACY_ANALYSIS_FIELDS);self.assertEqual(row['时间'],original['时间'])
         self.assertGreater(row['时间信息']['feature_available_at'],original['时间信息']['feature_available_at'])
         self.assertEqual(row['时间信息']['availability_basis'],'migration')
         for path in paths:self.assertEqual(json.loads(path.read_text(encoding='utf-8')),row)
@@ -108,13 +108,14 @@ class FinancialNoiseTests(unittest.TestCase):
             self.assertEqual(json.loads(archive.read(str(paths[0].relative_to(self.root)).replace('\\','/'))),original)
         self.assertEqual(clean_saved_summaries(Dataset(self.root,'data'))['cleaned_records'],0)
 
-    def test_pure_cover_moves_to_quarantine_without_deleting_raw_cache(self):
+    def test_suspected_cover_is_retained_for_review_without_deleting_raw_cache(self):
         text='Example Inc. issued a press release regarding its financial results for the fourth quarter 2019. '+LEGAL
         ds,row=self.dataset(text);raw=self.root/'.runtime/simple/pages/noise_fixture.json';dump(raw,{'preserve':'original'})
         report=clean_saved_summaries(ds)
-        self.assertEqual(report['quarantined_records'],1);self.assertNotIn(row['source_id'],ds.rows)
+        self.assertEqual(report['quarantined_records'],0);self.assertIn(row['source_id'],ds.rows)
+        self.assertIn(row['source_id'],report['needs_review'])
         self.assertTrue(raw.exists());self.assertTrue(report['backup'])
-        self.assertTrue(list((self.root/'.runtime/simple/quarantine').glob('*.json')))
+        self.assertFalse(list((self.root/'.runtime/simple/quarantine').glob('*.json')))
 
     def test_backup_failure_preserves_original_files(self):
         ds,row=self.dataset('Example Company has $231 million in cash. '+LEGAL)

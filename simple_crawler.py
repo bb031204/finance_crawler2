@@ -318,8 +318,8 @@ class Crawler:
             if identity in seen:continue
             origin=next((key for key in self.cfg.monitoring.markets if self.sources.allowed(row["url"],key)),None)
             if not origin:continue
-            yield {"url":row["url"],"title":" / ".join(row["关键词"][:4]),"snippet":row["主要内容"][:450],
-                "origin_market":origin,"reprocess":True}
+            yield {"url":row["url"],"title":row.get('title') or " / ".join(row["关键词"][:4]),"snippet":row["主要内容"][:450],
+                "title_is_source":bool(row.get('title')),"origin_market":origin,"reprocess":True}
 
     def search_discover(self, report, start, end):
         if self.cfg.search.provider == "tavily":
@@ -389,6 +389,8 @@ class Crawler:
             dump(self.root/'logs/latest_summary_cleanup.json',cleanup)
             self._summary_cleanup_done=True
             report['maintenance'].update(summary_cleaned=cleanup['cleaned_records'],summary_quarantined=cleanup['quarantined_records'])
+            if cleanup.get('needs_review'):
+                log('摘要待复核',f"{len(cleanup['needs_review'])}条疑似披露包装保留原记录，不按关键词自动隔离；详情logs/latest_summary_cleanup.json")
             if cleanup['cleaned_records'] or cleanup['quarantined_records']:
                 log('摘要去噪',f"已备份清理{cleanup['cleaned_records']}条，隔离仅披露包装{cleanup['quarantined_records']}条；详情logs/latest_summary_cleanup.json")
         if report["quarantined_dates"]:log("日期隔离",f"{len(report['quarantined_dates'])}条旧记录日期依据不合格；已备份并转待复核")
@@ -609,7 +611,10 @@ class Crawler:
                 else:
                     stage = "save"
                     url = canonical(page["url"])
-                    row = {"source_id": source_id(url), "url": url, "时间": note["time"], "分类": note["category"],
+                    raw_title=page.get('source_title',page.get('title'))
+                    if 'source_title' not in page and page.get('cleaning')=='PDF' and not candidate.get('title_is_source',True):raw_title=None
+                    title=raw_title.strip() if isinstance(raw_title,str) and raw_title.strip() else None
+                    row = {"source_id": source_id(url), "url": url, "title":title,"时间": note["time"], "分类": note["category"],
                            "关键词": list(dict.fromkeys(note["keywords"])), "主要内容": note["content"].strip()}
                     row.update(public_analysis(note))
                     row = with_time_information(row,candidate,page)

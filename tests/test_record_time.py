@@ -2,7 +2,7 @@ import json,tempfile,unittest
 from pathlib import Path
 from unittest.mock import patch
 from finance_agent.core import dump,digest
-from record_files import Dataset,FIELDS,record_name
+from record_files import Dataset,FIELDS,LEGACY_ANALYSIS_FIELDS,record_name
 from record_time import with_time_information,upgrade_time_information,validate_time_information
 
 
@@ -47,7 +47,7 @@ class RecordTimeTests(unittest.TestCase):
         class NoModel:
             def industry(self,row):raise AssertionError('No Qwen call is needed')
         ds=Dataset(self.root,'data');first=ds.migrate(NoModel())
-        timed=ds.rows['offline'][1];self.assertEqual(set(timed),FIELDS);self.assertEqual(first['time_upgraded'],1)
+        timed=ds.rows['offline'][1];self.assertEqual(set(timed),LEGACY_ANALYSIS_FIELDS);self.assertEqual(first['time_upgraded'],1)
         second=Dataset(self.root,'data');report=second.migrate(NoModel());self.assertEqual(report['time_upgraded'],0)
         self.assertEqual(second.rows['offline'][1],timed)
         for market in ['CN','US','GLOBAL']:

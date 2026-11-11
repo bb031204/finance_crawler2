@@ -11,7 +11,8 @@ from analysis_metadata import ANALYSIS_FIELDS, validate_public_analysis, upgrade
 
 LEGACY_FIELDS = {"source_id", "url", "时间", "分类", "关键词", "主要内容"}
 TIMED_FIELDS = LEGACY_FIELDS | {"时间信息"}
-FIELDS = TIMED_FIELDS | ANALYSIS_FIELDS
+LEGACY_ANALYSIS_FIELDS = TIMED_FIELDS | ANALYSIS_FIELDS
+FIELDS = LEGACY_ANALYSIS_FIELDS | {"title"}
 MARKETS = ["CN", "US", "GLOBAL"]
 
 
@@ -103,10 +104,13 @@ class Dataset:
 
     @staticmethod
     def validate(market, row):
-        if market not in MARKETS or set(row) not in (LEGACY_FIELDS,TIMED_FIELDS,FIELDS):
+        if market not in MARKETS or set(row) not in (LEGACY_FIELDS,TIMED_FIELDS,LEGACY_ANALYSIS_FIELDS,FIELDS,
+                LEGACY_FIELDS|{'title'},TIMED_FIELDS|{'title'}):
             raise ValueError("正式记录必须属于CN/US/GLOBAL，字段须符合当前或旧版格式")
         if not isinstance(row["source_id"], str) or not row["source_id"]:
             raise ValueError("source_id不能为空")
+        if 'title' in row and row['title'] is not None and (not isinstance(row['title'],str) or not row['title'].strip()):
+            raise ValueError('title须为非空原文标题，无法取得时使用null')
         original_time(row["时间"])
         if "时间信息" in row:validate_time_information(row)
         if ANALYSIS_FIELDS <= set(row):validate_public_analysis(row)

@@ -58,6 +58,9 @@ def prepare_record_audit(root, row, note, page, candidate, model, market, paths=
         "record_paths":[str(p.relative_to(root)) for p in paths],"raw_deleted":[],"cleanup_errors":[]}
     if page.get("document_url"): audit["source_document_url"] = page["document_url"]
     audit['request_url']=canonical(candidate.get('url',page['url']))
+    if 'title' in row:
+        audit['title']=row['title']
+        audit['title_origin']=page.get('title_origin','legacy_page_title')
     if page.get('article_binding_version'):audit['article_binding_version']=page['article_binding_version']
     return audit
 
@@ -113,7 +116,7 @@ def quarantine_invalid_publication_records(crawler):
         target=crawler.dataset.quarantine(identity,reason)
         origin=next((m for m in crawler.cfg.monitoring.markets if crawler.sources.allowed(row["url"],m)),None)
         if origin:
-            crawler.queue({"url":row["url"],"title":" / ".join(row["关键词"][:4]),"snippet":"需重新核对原始发布日期", "origin_market":origin,"reprocess":True,
+            crawler.queue({"url":row["url"],"title":row.get('title') or " / ".join(row["关键词"][:4]),"title_is_source":bool(row.get('title')),"snippet":"需重新核对原始发布日期", "origin_market":origin,"reprocess":True,
                 "first_seen_at":row.get("时间信息",{}).get("first_seen_at")})
         crawler.state["records"][identity]={"status":"needs_review","reason":reason,"at":now()}
         repaired.append({"source_id":identity,"path":str(target.relative_to(crawler.root)),"reason":reason})

@@ -86,36 +86,41 @@ def unrelated_payload_path(path):
 
 
 def bound_article_payloads(tree,payloads,url,title):
-    """Use only article nodes bound to this URL, headline or source article ID."""
-    ids=set(re.findall(r'\d{4,}',urlsplit(url).path))
-    headlines=[title]+[' '.join(node.itertext()).strip() for node in tree.xpath('//h1')]
-    compact=lambda text:re.sub(r'\s+','',text).casefold()
-    matches=[]
+    """Prefer URL/ID evidence; a different explicit article URL defeats a title match."""
+    ids={value for value in re.findall(r'\d{4,}',urlsplit(url).path) if not 1900<=int(value)<=2099}
+    compact=lambda value:re.sub(r'\s+','',value).casefold()
+    headings=tree.xpath('//h1')
+    names=[' '.join(headings[0].itertext()).strip()] if headings else [title,re.split(r'\s+[|｜]\s+',title,maxsplit=1)[0]]
+    names={compact(name) for name in names if name}
+    strong=[];fallback=[]
     for payload in payloads:
         for path,item in walk(payload):
             if unrelated_payload_path(path):continue
             identity=str(item.get('article_id',item.get('id','')))
             headline=str(item.get('title',item.get('headline','')))
-            types=item.get('@type','');types=types if isinstance(types,list) else [types]
-            article_like=any(any(word in str(kind).lower() for word in ['article','blogposting','socialmediapost']) for kind in types)
-            article_like=article_like or any(isinstance(item.get(key),str) and len(item[key])>80 for key in ['articleBody','content','body','text'])
-            names=bool(len(compact(headline))>=4 and any(compact(value).startswith(compact(headline)) for value in headlines if value))
+            kinds=item.get('@type',[]);kinds=kinds if isinstance(kinds,list) else [kinds]
+            article=any(any(word in str(kind).lower() for word in ['article','blogposting','socialmediapost']) for kind in kinds)
+            article=article or any(isinstance(item.get(key),str) and len(item[key])>80 for key in ['articleBody','content','body','text'])
             links=[]
             for key in ['url','@id','mainEntityOfPage']:
                 value=item.get(key)
                 if isinstance(value,dict):value=value.get('@id') or value.get('url')
-                if isinstance(value,str) and value:links.append(urljoin(url,value))
-            linked=article_like and any(canonical(link)==canonical(url) for link in links)
-            if (identity and identity in ids) or names or linked:matches.append((path,item))
-    return matches
+                if isinstance(value,str) and value:
+                    link=urljoin(url,value)
+                    if urlsplit(link).scheme in {'http','https'}:links.append(link)
+            linked=any(canonical(link)==canonical(url) for link in links)
+            if links and not linked:continue
+            if (linked and article) or (identity and identity in ids):strong.append((path,item))
+            elif article and len(compact(headline))>=4 and compact(headline) in names:fallback.append((path,item))
+    return strong or fallback
 
 
 def usable_page_cache(page,url):
     if not isinstance(page,dict) or not isinstance(page.get('text'),str) or not page['text'].strip():return False
     linked=canonical(page.get('url',''))==canonical(url) or page.get('request_url')==canonical(url)
     if not linked:return False
-    # These known v2 fallback caches may contain a main wrapper's comments/recommendations.
-    if page.get('article_binding')=='visible_only' and page.get('article_binding_version',0)<3:return False
+    # Older versioned caches may contain unrelated cards matched by a title prefix.
+    if page.get('article_binding_version') is not None and page.get('article_binding_version',0)<4:return False
     return not any(unrelated_payload_path(line.partition('=')[0]) for line in page.get('date_context','').splitlines())
 
 
@@ -126,6 +131,12 @@ def read_html(raw, url, use_crawl4ai=True, content_type=""):
     payloads = list(json_objects(tree))
     primary = bound_article_payloads(tree,payloads,url,title)
     drop_secondary_sections(tree)
+    headings=main_article_node(tree).xpath('.//h1')
+    heading=' '.join(headings[0].itertext()).strip() if headings else ''
+    bound_titles=[item.get('headline') or item.get('title') for _,item in primary]
+    bound_title=next((value.strip() for value in bound_titles if isinstance(value,str) and value.strip()),'')
+    source_title=heading or bound_title or title or None
+    title_origin='heading' if heading else 'bound_metadata' if bound_title else 'html_title' if title else 'unknown'
     data = primary
     embedded = []
     descriptions = []
@@ -196,8 +207,8 @@ def read_html(raw, url, use_crawl4ai=True, content_type=""):
     if combined.count("\ufffd") > max(2, len(combined) // 100):
         raise ValueError("正文存在大量无法解码字符，保留URL待检查")
     date_context = "\n".join(dict.fromkeys(clues))[:1050]
-    return {"title": title, "text": combined, "date_context": date_context, "cleaning": cleaning,
-        'article_binding_version':3,'article_binding':'matched_payload' if primary else 'visible_only'}
+    return {"title": title, "source_title":source_title,'title_origin':title_origin,"text": combined, "date_context": date_context, "cleaning": cleaning,
+        'article_binding_version':4,'article_binding':'matched_payload' if primary else 'visible_only'}
 
 
 class Sources:
@@ -284,7 +295,8 @@ class Sources:
         if primary and parts.path != prefix + quote(primary, safe="/"):
             raise ValueError("SEC公司目录与申报索引的主文档不一致，保留待复核")
         body, info = self.sec_get(document_url)
-        page = self.page_from_bytes(body, document_url, "US", info.get("content_type", ""), candidate["title"])
+        page = self.page_from_bytes(body, document_url, "US", info.get("content_type", ""), candidate["title"],
+            candidate.get('title_is_source',candidate.get('discovery_source')!='sec_edgar'))
         page.update(url=index_url, document_url=document_url, sec_filing_date=filing_date,
                     date_context="SEC filing datePublished=" + filing_date, fetched_at=now())
         log("抓取", f"SEC主文档 | {form} | 官方申报日期={filing_date} | 正文{len(page['text'])}字符")
@@ -335,7 +347,8 @@ class Sources:
                 break
         return results[:limit]
 
-    def page_from_bytes(self, raw, url, origin_market, content_type="text/html", title=""):
+    def page_from_bytes(self, raw, url, origin_market, content_type="text/html", title="",title_is_source=True):
+        listing_title=title.strip() if isinstance(title,str) else ''
         if raw.lstrip().startswith(b"%PDF"):
             if not self.cfg.fetch.allow_pdf:
                 raise ValueError("配置未启用PDF")
@@ -345,6 +358,8 @@ class Sources:
                 raise ValueError("PDF缺少可读正文，需要OCR，当前简化版保留URL待处理")
             text = "\n\n".join(parsed["paragraphs"])
             result = {"title": title, "text": text, "date_context": text if len(text)<=600 else text[:250]+"\n[中间正文另行分段阅读]\n"+text[-350:], "cleaning": "PDF"}
+            result.update(source_title=listing_title if title_is_source and listing_title else None,
+                title_origin='source_listing' if title_is_source and listing_title else 'unknown')
         else:
             if urlsplit(url).path.lower().endswith(".pdf"):
                 raise ValueError("PDF链接返回的内容并非PDF")
@@ -371,7 +386,7 @@ class Sources:
         else:
             raw, info = self.http.get(candidate["url"], allowed=self.domains(market) or None,
                                       excluded=self.cfg.search.exclude_domains)
-        page = self.page_from_bytes(raw, info["url"], market, info.get("content_type", ""), candidate["title"])
+        page = self.page_from_bytes(raw, info["url"], market, info.get("content_type", ""), candidate["title"],candidate.get('title_is_source',True))
         page['request_url']=canonical(candidate['url'])
         page["fetched_at"] = now()
         log("抓取", f"{page['cleaning']} | 正文{len(page['text'])}字符 | {short(page['title'], 65)}")

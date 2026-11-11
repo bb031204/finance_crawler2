@@ -40,7 +40,9 @@ class RichRecordTests(unittest.TestCase):
             value={'useful':True,'market':'CN','time':'2026-11-02','date_quote':'公告发布日期：2026年11月2日','date_kind':'published',
                 'category':'离线夹具','industry':'银行业','securities':[],'industries':[],'impact_scope':[],'keywords':['600000','离线测试'],
                 'content':'这是一段离线测试摘要，不是真实公告。'*18,'reason':'offline'}
-            fields=json.loads(request.content)['format']['properties'];value={k:v for k,v in value.items() if k in fields}
+            fields=json.loads(request.content)['format']['properties']
+            if set(fields)=={'content'}:value['content']='这是一段离线测试摘要，不是真实公告。'*6
+            value={k:v for k,v in value.items() if k in fields}
             return httpx.Response(200,json={'message':{'content':json.dumps(value,ensure_ascii=False)}})
         q=Qwen(cfg.ollama,self.root,httpx.Client(base_url='http://localhost',transport=httpx.MockTransport(handler)))
         try:

@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 from zipfile import ZipFile
 from analysis_metadata import ANALYSIS_FIELDS, public_analysis, preserve_analysis, validate_industries, validate_public_analysis, grounded_industries
-from record_files import Dataset, FIELDS, record_name
+from record_files import Dataset, FIELDS, LEGACY_ANALYSIS_FIELDS, record_name
 from record_quality import validate_securities, grounded_securities, retain_explicit_tickers
 from record_time import with_time_information
 from finance_agent.core import dump, digest
@@ -86,10 +86,12 @@ class AnalysisTests(unittest.TestCase):
         self.assertEqual(result[0]['ticker'],'AAPL')
         self.assertEqual(result[0]['exchange'],'NASDAQ')
 
-    def test_optional_industry_downgrades_inference_and_drops_invented_support(self):
-        items=grounded_industries([dict(TOPIC,name='Semiconductors'),dict(TOPIC,quote='invented evidence')],SOURCE)
-        self.assertEqual(len(items),1)
+    def test_optional_industry_downgrades_inference_and_recovers_only_exact_source_names(self):
+        items=grounded_industries([dict(TOPIC,name='Semiconductors'),dict(TOPIC,quote='invented evidence'),
+            dict(TOPIC,name='Coal Mining',quote='invented evidence')],SOURCE)
+        self.assertEqual(len(items),2)
         self.assertEqual(items[0]['basis'],'inferred')
+        self.assertEqual(items[1],dict(name='semiconductor chips',basis='explicit',quote='semiconductor chips'))
 
     def test_exchange_from_another_company_is_rejected(self):
         text='Apple Inc. (NASDAQ: AAPL) and Other Company (NYSE: XYZ).'
@@ -166,7 +168,7 @@ class AnalysisTests(unittest.TestCase):
             with self.assertRaises(OSError): ds.migrate(self.NoModel())
         self.assertTrue(ds.outbox.exists())
         restored = Dataset(self.root, 'data'); row = restored.rows['offline'][1]
-        self.assertEqual(set(row), FIELDS); self.assertFalse(restored.outbox.exists())
+        self.assertEqual(set(row), LEGACY_ANALYSIS_FIELDS); self.assertFalse(restored.outbox.exists())
         audit = json.loads((self.root/'.runtime/simple/audit/offline.json').read_text(encoding='utf-8'))
         self.assertEqual(audit['record_hash'], digest(row))
 
@@ -214,7 +216,7 @@ class AnalysisTests(unittest.TestCase):
         with patch.object(simple_crawler, 'ROOT', self.root), patch.object(simple_crawler, 'load_config', return_value=config()), \
              patch.object(simple_crawler, 'Crawler', side_effect=AssertionError('must not collect')):
             self.assertEqual(simple_crawler.main(['--upgrade-records']), 0)
-        self.assertEqual(set(Dataset(self.root, 'data').rows['offline'][1]), FIELDS)
+        self.assertEqual(set(Dataset(self.root, 'data').rows['offline'][1]), LEGACY_ANALYSIS_FIELDS)
 
 
 if __name__ == '__main__': unittest.main()

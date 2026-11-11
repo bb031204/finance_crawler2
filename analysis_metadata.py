@@ -1,5 +1,6 @@
 """Public market-analysis metadata, with evidence retained only in internal audits."""
 import json
+import re
 from finance_agent.core import bounded, digest, now
 
 ANALYSIS_FIELDS = {"股票实体", "涉及行业", "影响范围"}
@@ -29,7 +30,16 @@ def grounded_industries(items, source_text):
         if item.get("basis")=="explicit" and compact(item["name"]) not in compact(item.get("quote", "")):
             item["basis"]="inferred"
         try:result.extend(validate_industries([item],source_text))
-        except ValueError:continue
+        except ValueError:
+            # A generated long quote may be inaccurate while the exact sector name
+            # is literally present. Recover only that literal phrase, never a guess.
+            words=item.get('name','').strip().split()
+            if not words:continue
+            pattern=r'(?<![A-Za-z0-9])'+r'\s+'.join(re.escape(word) for word in words)+r'(?![A-Za-z0-9])'
+            match=re.search(pattern,source_text,re.I)
+            if not match:continue
+            exact=dict(name=item['name'],basis='explicit',quote=match[0])
+            result.extend(validate_industries([exact],source_text))
     return result
 
 

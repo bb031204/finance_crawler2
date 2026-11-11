@@ -139,7 +139,7 @@ class PreflightPipelineTests(unittest.TestCase):
         raw=b'<title>Company results</title><main><article><h1>Company results</h1><time datetime="2021-06-17T08:30:00Z">Published Thursday</time><p>Original financial report.</p></article><section id="comments">Future 2026 bankruptcy comment</section></main>'
         page=read_html(raw,'https://example.com/main',False)
         self.assertNotIn('2026',page['text']);self.assertIn('2021-06-17T08:30:00Z',page['date_context'])
-        self.assertEqual(page['article_binding_version'],3)
+        self.assertEqual(page['article_binding_version'],4)
 
     def test_modified_time_is_not_promoted_to_published(self):
         raw=b'<article><h1>Company results</h1><time datetime="2021-06-17">Last Updated Thursday</time><p>Company earnings details.</p></article>'
