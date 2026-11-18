@@ -1,0 +1,103 @@
+{
+  "source_id": "b3e511d93e56c92a2462307a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_09_Lease-Agreement-Termination_Biotechnology_sec.json",
+      "sha256": "c909c6b17f774350f0dff6992eb8f4e4f5572c63184e48bd6e5e0bd8b0db3062",
+      "filename": "2018_01_09_Lease-Agreement-Termination_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "11d89c570ebd7ea79771544b085496717c57d2e5725f87408819428ee9982b20",
+  "input_hash": "f8dcfd5880fbd13d9aae0d2ec38a48f7c1557aecfbd9ad3f3000d569d9fe1dcc",
+  "matching_audit_hash": "c1d15123f9d56fcda6670c0d2af860edcf888ba71c3471916cbde2de3a01f518",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d5345ed7875e329dbd7ba5e0e066e8332997d30a53ec7ecdddea27c5da6e02ba",
+    "raw_sha256": "29e2c6b609c62cc053e229e1ae9f9392f0a991e4c6bec804e5967556dfe51cf1",
+    "date_quote": "SEC filing datePublished=2018-01-09",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000114420418001493/tv482986_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "aa81b24708e54615c2d93e7299e0c7ee4c7ddc9e77cc9479f5002acc3e97a303",
+  "outputs": [
+    {
+      "path": "US\\2018_01_09_Lease-Agreement-Termination_Biotechnology_sec.json",
+      "sha256": "d1e54d313c2e1a75f0b361c83528ca7143602e261b26f865291b51d8660c0764"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+    "fetched_at": "2026-11-11T13:11:30.000721+00:00",
+    "feature_available_at": "2026-11-11T13:11:45.304053+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:08.728517+00:00",
+  "feature_available_at": "2026-11-12T14:42:08.736558+00:00",
+  "commit_verified_at": "2026-11-12T14:42:08.736558+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a lease agreement termination, including the termination fee and expected expenses, which are relevant for financial and operational data.",
+    "securities": [
+      {
+        "name": "NOVAVAX, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NOVAVAX, Inc."
+      },
+      {
+        "name": "IP9 1201 Clopper Road, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IP9 1201 Clopper Road, LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": "lease agreement"
+      },
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": "NOVAVAX, Inc."
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "NOVAVAX, Inc.": "company",
+      "IP9 1201 Clopper Road, LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

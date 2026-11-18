@@ -1,0 +1,105 @@
+{
+  "source_id": "8a0165a9ea13535ba94e4992",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_11_27_13_53_Sales_Automotive_prnewswire.json",
+      "sha256": "9631dfe7a25881e86b8f4dae88126472166dcf38083c6cd40d50a7007bc85bf6",
+      "filename": "2012_11_27_13_53_Sales_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "50526ca3168628dc23b703e60d2661491886664b87000e784ecf612ad83c9f7e",
+  "input_hash": "af3b6f18cef943f3899a5a7441f968a07614847bcb7e329cb8a8a7e3e58e7c5c",
+  "matching_audit_hash": "573952e5c2a7c7ef0e703aab73a9cffb3cda64bd2c286b907bcb4c151679589d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "89ca9eee9dda99f508ec1377159f0ecc5c5433b8699f470cfbdde9767cbd2ac8",
+    "raw_sha256": "fb2f667ab95721308577d08266362f8fa065596a1420a9cd9d9597d440c88d0f",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2012-11-27T13:53:00Z\ndate=2012-11-27T13:53:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Subaru of America, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Subaru of America, Inc."
+    }
+  ],
+  "record_hash": "eab7e592204bebdd96daedf0f5eca6e4dfcb3a50260218707a8cd8c0263c357a",
+  "outputs": [
+    {
+      "path": "US\\2012_11_27_13_53_Sales_Automotive_prnewswire.json",
+      "sha256": "cde308afb3e18849d1f56d2ae8932d911317703914726bcf6bcecb3294bb4232"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-11-27T13:53:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:39:53.711457+00:00",
+    "fetched_at": "2026-11-10T21:21:15.124174+00:00",
+    "feature_available_at": "2026-11-11T08:42:59.258773+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:59:11.430260+00:00",
+  "feature_available_at": "2026-11-12T13:59:11.439648+00:00",
+  "commit_verified_at": "2026-11-12T13:59:11.439648+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about Subaru of America's sales milestones, including the sale of the six millionth vehicle, sales growth, and product lifespan",
+    "securities": [
+      {
+        "name": "Subaru of America, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of America, Inc."
+      },
+      {
+        "name": "Subaru of Georgetown",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of Georgetown"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": "automaker"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Subaru of America, Inc.": "company",
+      "Subaru of Georgetown": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

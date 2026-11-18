@@ -1,0 +1,98 @@
+{
+  "source_id": "45acbf217f3bf4f011356827",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_08_03_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "e5ffc026a43b139349173fb01177aaaac2c8cf593e601491a30cc7de1ecfa31e",
+      "filename": "2015_08_03_Energy_Coal-Mining_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "9f6a88aa6d0f4564a05020f3a52f7d8582007935739c249214147456eed76d64",
+  "input_hash": "a3c2c1fb3e5eea1822e642474a9bfeec4ac6a417d78d10e9376d88ab40977b5f",
+  "matching_audit_hash": "4a27f3f64a025b7e5bf44f4d9f740fc1109369350bfc3aa948049726fe53e06b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "24e08223cfe39ecca2536ac558f8c5bbd23201ab9f6fa771837586648ff79ef1",
+    "raw_sha256": "0506ea4bfac8c05b35445f99b50801b4d60c0c1a1e472b7ec6772ae5acead1c2",
+    "date_quote": "August 3, 2015 at 12:47 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "02dc323f86de5a5a7ec93863ddc0c790c25497690b0fd6ee78a397a0666351d0",
+  "outputs": [
+    {
+      "path": "US\\2015_08_03_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "53060d4e25d97756a1d3240a9b2dc8331fd2485968a4a97e722a25aa686a68d1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-08-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:35:55.925272+00:00",
+    "fetched_at": "2026-11-10T15:05:25.604842+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.578740+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:28:32.944514+00:00",
+  "feature_available_at": "2026-11-12T14:28:32.977792+00:00",
+  "commit_verified_at": "2026-11-12T14:28:32.977792+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the bankruptcy of Alpha Natural Resources Inc., the coal industry's downturn, and the impact of declining demand and prices on the sector.",
+    "securities": [
+      {
+        "name": "Alpha Natural Resources Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alpha Natural Resources Inc."
+      },
+      {
+        "name": "Massey Energy Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Massey Energy Co."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Coal industry",
+        "basis": "explicit",
+        "quote": "coal industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Alpha Natural Resources Inc.": "company",
+      "Massey Energy Co.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "source_id": "c110f208839fd5bba61e604b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_18_stock_Technology,-Consumer-Staples,-Biotechnol_fool.json",
+      "sha256": "5bd63144067100d02a302d60ec61f07963c9d60d182cc1544ade2ee16a67217c",
+      "filename": "2018_03_18_stock_Technology,-Consumer-Staples,-Biotechnol_fool.json"
+    }
+  ],
+  "original_record_hash": "ac2b5134fd5ac1dc4708f64c2b64aa3df246f935af5b8d1e7e591df70a8ba2f8",
+  "input_hash": "5e42ef9e6c5958d5424e1a092c7a110a350563e2e5c80f1f1f6201214413213b",
+  "matching_audit_hash": "c3c3dbec8f6e87500117a712858ff3b0f09336606cfe1936f45627f9f5814e3d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f02aac52b40577d41eb0905a579aed67e204ffb4e6140701f11796f41e7919a0",
+    "raw_sha256": "960267da083fd07196f38b838fea09817fcf8f66f4eaf3504aebf99dae177b67",
+    "date_quote": "Mar 18, 2018 at 10:30AM EST",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Microsoft Corporation"
+    },
+    {
+      "name": "Hormel Foods Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Hormel Foods Corp."
+    },
+    {
+      "name": "Celgene Corporation",
+      "ticker": "CELG",
+      "exchange": null,
+      "quote": "Celgene Corporation (CELG +0.00%) are stocks you could hold for the next 20 years or more."
+    },
+    {
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "exchange": null,
+      "quote": "Microsoft NASDAQ: MSFT $533.21 (-2.20%)-$11.97"
+    },
+    {
+      "name": "Hormel Foods",
+      "ticker": "HRL",
+      "exchange": null,
+      "quote": "Hormel Foods NYSE: HRL $22.16 (-0.45%)-$0.10"
+    }
+  ],
+  "record_hash": "4fbb0773b21275af78fec21750d7ab394b2f0feefd5498ae9763daf54e7585d6",
+  "outputs": [
+    {
+      "path": "US\\2018_03_18_stock_Technology,-Consumer-Staples,-Biotechnol_fool.json",
+      "sha256": "72495ecb6955199d513346dcc40f59eb83742e65eff61bbe2a4963839dd14389"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:47.745898+00:00",
+    "fetched_at": "2026-11-10T20:45:01.220519+00:00",
+    "feature_available_at": "2026-11-10T20:46:05.644297+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:21.221766+00:00",
+  "commit_verified_at": "2026-11-12T13:53:21.221766+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Microsoft Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Microsoft Corporation"
+      },
+      {
+        "name": "Hormel Foods Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hormel Foods Corp."
+      },
+      {
+        "name": "Celgene Corporation",
+        "ticker": "CELG",
+        "exchange": null,
+        "quote": "Celgene Corporation (CELG +0.00%) are stocks you could hold for the next 20 years or more."
+      },
+      {
+        "name": "Microsoft",
+        "ticker": "MSFT",
+        "exchange": null,
+        "quote": "Microsoft NASDAQ: MSFT $533.21 (-2.20%)-$11.97"
+      },
+      {
+        "name": "Hormel Foods",
+        "ticker": "HRL",
+        "exchange": null,
+        "quote": "Hormel Foods NYSE: HRL $22.16 (-0.45%)-$0.10"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Food and Beverage",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Food & Beverage",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Consumer Staples",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

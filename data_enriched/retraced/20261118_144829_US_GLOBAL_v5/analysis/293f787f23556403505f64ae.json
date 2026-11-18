@@ -1,0 +1,280 @@
+{
+  "source_id": "293f787f23556403505f64ae",
+  "status": "completed",
+  "source_record_hash": "52d7e9d29ce64e1c7cc2ae4491279e5748bc5a05eb3795bfc71248f4e546bb8d",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001193125-15-099744-index.html",
+    "attempted_at": "2026-11-18T10:26:04.706007+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001193125-15-099744-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312515099744/d897493d6k.htm",
+    "fetched_at": "2026-11-18T10:26:23.122297+00:00",
+    "source_body_hash": "10a3a0ece8fca193a7dbb538403f14a41bf1d07e11184ad61025e353a1e2d0cf",
+    "raw_sha256": "8ac640414f7905bdffd0e8b0cbcc241f715245f8e712658643bcbbd3f08668a4",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312515099744/d897493d6k.htm",
+        "type": "6-K",
+        "description": "6-K",
+        "raw_sha256": "8ac640414f7905bdffd0e8b0cbcc241f715245f8e712658643bcbbd3f08668a4",
+        "text_sha256": "2901b091b90d30a6bb6a8902271c76a9551b5e7c169383ebb5303d81ca05b7b8",
+        "text_start": 0,
+        "text_end": 1762
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312515099744/d897493dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "07e60c06f4e0e1704df8f04946b83d4f297990acd87b7d53948c6967591c5d47",
+        "text_sha256": "931021a57de9bfdcfce108f3ca5868881cca5ba1326dd005ca0eb3852e7b7f38",
+        "text_start": 1764,
+        "text_end": 4875
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-03-20",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/293f787f23556403505f64ae.json",
+    "sha256": "065310511ac0a850ddfc25ab80a2cdd84740b7e13be348fe7e413ef9d29a1a29",
+    "bundled_path": "legacy_audit/293f787f23556403505f64ae.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "afa0324b7198b23027569d75ec837fdab0bc6e6b82ef9a9c478ee544af7d85ca",
+      "llm_inferred_at": "2026-11-18T10:26:31.514367+00:00",
+      "model_duration_seconds": 8.3661223,
+      "prompt_tokens": 3170,
+      "completion_tokens": 352,
+      "selection": [
+        {
+          "source_id": "293f787f23556403505f64ae",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+              "rationale": "The text refers to Brookfield Asset Management Inc. as the registrant and discusses its annual meeting of shareholders, financial statements, and corporate actions, indicating a company-specific event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:fd10a146e9625bfd",
+              "name": "Materials",
+              "basis": "inferred",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "inferred",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            },
+            {
+              "industry_key": "SEC-SIC:6189",
+              "name": "ASSET-BACKED SECURITIES",
+              "basis": "inferred",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "5526cb45ec8e3372e77a3080f3d8278f0de4013aab9e72ee4b69e103a9fd3001",
+      "llm_inferred_at": "2026-11-18T10:26:40.511309+00:00",
+      "model_duration_seconds": 8.9828323,
+      "prompt_tokens": 3214,
+      "completion_tokens": 474,
+      "selection": [
+        {
+          "source_id": "293f787f23556403505f64ae",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+              "rationale": "The text specifically mentions Brookfield Asset Management Inc. as the registrant, indicating a company-level event.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "DOCUMENTS FILED AS PART OF THIS FORM 6-K See the Exhibit Index to this Form 6-K.",
+              "rationale": "The document is related to the financial reporting and shareholder meetings, which are part of the financial services industry.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:fd10a146e9625bfd",
+              "name": "Materials",
+              "basis": "inferred",
+              "quote": "DOCUMENTS FILED AS PART OF THIS FORM 6-K See the Exhibit Index to this Form 6-K."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "inferred",
+              "quote": "DOCUMENTS FILED AS PART OF THIS FORM 6-K See the Exhibit Index to this Form 6-K."
+            },
+            {
+              "industry_key": "SEC-SIC:6799",
+              "name": "INVESTORS, NEC",
+              "basis": "inferred",
+              "quote": "DOCUMENTS FILED AS PART OF THIS FORM 6-K See the Exhibit Index to this Form 6-K."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:26:40.526359+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "10a3a0ece8fca193a7dbb538403f14a41bf1d07e11184ad61025e353a1e2d0cf",
+    "raw_sha256": "8ac640414f7905bdffd0e8b0cbcc241f715245f8e712658643bcbbd3f08668a4",
+    "date_quote": "SEC filing datePublished=2015-03-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312515099744/d897493d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary contains information about Brookfield Asset Management Inc.'s Annual Meeting of Shareholders and compliance with securities regulations.",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "293f787f23556403505f64ae",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_03_20_Corporate-Governance_Financial-Services_sec.json",
+        "sha256": "af00a6441b6b38dd65c8088d2ae3f34eaac4a745ec9baf2070162ff6e7e419a2",
+        "filename": "2015_03_20_Corporate-Governance_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "b759c9206db781e0669129210e969edc7b37978c6cd2e62e5ead8606eff4338a",
+    "input_hash": "2d675441b999ed7873588dff818bea88e683710f879e98aaa8f95391b4d75bb5",
+    "matching_audit_hash": "512c433834b48757914a6c67175e31638bb6188eaa7aa60f86b5c2e137a0bc7a",
+    "legacy_security_evidence": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "record_hash": "52d7e9d29ce64e1c7cc2ae4491279e5748bc5a05eb3795bfc71248f4e546bb8d",
+    "outputs": [
+      {
+        "path": "US\\2015_03_20_Corporate-Governance_Financial-Services_sec.json",
+        "sha256": "e765f35ad5f4d595f442c10991739dee374a648e500600f5ca96097cf0216627"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-03-20",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:00.826285+00:00",
+      "fetched_at": "2026-11-11T00:48:22.699676+00:00",
+      "feature_available_at": "2026-11-11T10:46:38.413172+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:26:40.511309+00:00",
+    "feature_available_at": "2026-11-18T10:26:40.526359+00:00",
+    "commit_verified_at": "2026-11-12T14:24:40.671446+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+        "rationale": "The text specifically mentions Brookfield Asset Management Inc. as the registrant, indicating a company-level event.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001193125-15-099744-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "52d7e9d29ce64e1c7cc2ae4491279e5748bc5a05eb3795bfc71248f4e546bb8d",
+    "content_hash": "89e196be00b0cf648109484e96136638f7c7b1c668202d90d5a446686eed69bf",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:26:40.512946+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/293f787f23556403505f64ae.json",
+      "sha256": "99869c32c7cfb36a17814ae410b9c4ddc684bc129765fd222c6a545a0933587e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 35.84299999999348
+}

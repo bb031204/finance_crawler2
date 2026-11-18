@@ -1,0 +1,93 @@
+{
+  "source_id": "4cc3d8e7ccef073d32253091",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_01_24_Financial-Results_Biotechnology-Equipment_sec.json",
+      "sha256": "ad73845d358577a2cd33d808f59eb30bba699d227abc9623690770d5cdb6db63",
+      "filename": "2017_01_24_Financial-Results_Biotechnology-Equipment_sec.json"
+    }
+  ],
+  "original_record_hash": "8d821caea8fe45eab471152c79b53af861ff714c1095cac2147f742c336a3f86",
+  "input_hash": "c7ccfdd3fe81171b3f930993c5a8cb5c748dbd6818776b82bba247b72b2c33c0",
+  "matching_audit_hash": "53ccb463547c34f99d7ed2dd65eee4390fb7a3d2de938004c4d26c95fb0f343f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9647025c29687ee9b51af8f58cae7ca24cd6a74e94a05b91eaa470c6593a58c1",
+    "raw_sha256": "ad08f46bc22c6d4349f0239b33632191c4b0b7b10bcf085173a8234e5eb22ea3",
+    "date_quote": "SEC filing datePublished=2017-01-24",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312517015826/d316512d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Waters Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Waters Corporation"
+    }
+  ],
+  "record_hash": "f4b453f38e37cdf73a805b16f2f2e96842746abfde578604bd33665acad6c6a2",
+  "outputs": [
+    {
+      "path": "US\\2017_01_24_Financial-Results_Biotechnology-Equipment_sec.json",
+      "sha256": "098e1591df1b2a5bda5a70aa380dbf046c331c589af27b99a909de12745dd95a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-01-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.446085+00:00",
+    "fetched_at": "2026-11-11T12:16:21.432761+00:00",
+    "feature_available_at": "2026-11-11T12:16:31.400898+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:38:55.789885+00:00",
+  "feature_available_at": "2026-11-12T14:38:55.834415+00:00",
+  "commit_verified_at": "2026-11-12T14:38:55.834415+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text contains financial results and filings related to Waters Corporation, indicating its financial performance and potential impact on its industry and市场.",
+    "securities": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Waters Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

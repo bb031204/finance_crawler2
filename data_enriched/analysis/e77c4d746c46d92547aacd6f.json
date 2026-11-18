@@ -1,0 +1,100 @@
+{
+  "source_id": "e77c4d746c46d92547aacd6f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_05_Politics-&-Policy_Politics_cnbc.json",
+      "sha256": "09d3554ea40b2a03d519b7e7d0b4d203cd9fde39a0cbda945a05e11c14e90bbf",
+      "filename": "2018_03_05_Politics-&-Policy_Politics_cnbc.json"
+    }
+  ],
+  "original_record_hash": "fd13bdedae573280e004e514f7fac11860f85fdee0554097764f7392fde453e5",
+  "input_hash": "a7d6fff134c008c634eb43b0d108c4e7b09c35a3e9af9b7909567fe3e5433875",
+  "matching_audit_hash": "12e06ae219e7a6ffa3832cba9a45ff132f44723f9826e724a750f91e42b6ed9b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "496799e7b534bce6adaa8b9f9b5846ac5b938858408d4ee466a43932d2429ffb",
+    "raw_sha256": "e0cfa44efdf89cc9cc5271f6dc6c630fa401f6989e291fd38b6b0c7b1fdf217e",
+    "date_quote": "article:published_time=2018-03-05T14:21:07+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3f8cafaac784c12c6f93cc1baea6912cbe4f30332eeeb415a280ddceb08105e9",
+  "outputs": [
+    {
+      "path": "US\\2018_03_05_Politics-&-Policy_Politics_cnbc.json",
+      "sha256": "c74232d711700fb1d3a1c8fb228b458eac18310fc08e68dee1a6a3f2beed278f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:28.583846+00:00",
+    "fetched_at": "2026-11-10T15:50:48.063211+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.156888+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:32.518472+00:00",
+  "feature_available_at": "2026-11-12T14:43:32.526987+00:00",
+  "commit_verified_at": "2026-11-12T14:43:32.526987+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses trade policy and its impact on the stock market, including mentions of tariffs, trade negotiations, and the potential renegotiation of NAFTA.",
+    "securities": [
+      {
+        "name": "U.S.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S."
+      },
+      {
+        "name": "Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Canada"
+      },
+      {
+        "name": "Mexico",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mexico"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S.": "company",
+      "Canada": "company",
+      "Mexico": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

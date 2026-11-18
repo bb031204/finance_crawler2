@@ -1,0 +1,92 @@
+{
+  "source_id": "dd2aefeafe76c547adc30dd3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_21_Compensation_Technology_sec.json",
+      "sha256": "840339105f39060b7f8c5197221096d8aa114375499a2e3342924acca2b4a1b2",
+      "filename": "2013_02_21_Compensation_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "08fb166368e510c6085655728d5451dce52e4e905a57beb4c6b5a3fa471a7596",
+  "input_hash": "0601cfc8ed22885cc9f3e4ca5b0ff1f6141f10a5ac8130d5c3a908383c718d69",
+  "matching_audit_hash": "a80e866d49cbd9fa2d20e474330989469bd36592eec030f38dcb8df57ebbf868",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f46e5795f526d46ef57d0f42793b2184602531f80b6e9a0227c02838241cd116",
+    "raw_sha256": "aebde27c26ff1d8a6608f68e044c58ccce750fcc206c4d91dfab0b690b27d1fa",
+    "date_quote": "SEC filing datePublished=2013-02-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018013000012/a8-kexeccomp.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation"
+    }
+  ],
+  "record_hash": "784918d1c027f14d8f52686c4919b3a074225e591aa9bec0dd57411bf03c2e0e",
+  "outputs": [
+    {
+      "path": "US\\2013_02_21_Compensation_Technology_sec.json",
+      "sha256": "b73aebbc871089feb4dcbad98a2fb0878211eda583fe642e6cbc17103daeb53a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.188895+00:00",
+    "fetched_at": "2026-11-10T23:10:45.231721+00:00",
+    "feature_available_at": "2026-11-11T09:47:21.044273+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:03:42.488120+00:00",
+  "feature_available_at": "2026-11-12T14:03:42.521910+00:00",
+  "commit_verified_at": "2026-11-12T14:03:42.521910+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Contains information about executive compensation adjustments for SanDisk Corporation's leadership team, including bonuses and base salaries.",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "SanDisk Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

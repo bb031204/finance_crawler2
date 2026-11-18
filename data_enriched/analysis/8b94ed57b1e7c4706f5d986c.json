@@ -1,0 +1,96 @@
+{
+  "source_id": "8b94ed57b1e7c4706f5d986c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_09_25_product-award_Automotive_prnewswire.json",
+      "sha256": "3c1fe39a5833f6ba04e65953d5e8c7a6b80a68bbce3da5b05d6cf82ee0a6dce0",
+      "filename": "2019_09_25_product-award_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "0056344ac40c6ca15afd031e589243a932077abbaf0e033abfa32d357c3b99ab",
+  "input_hash": "d1306dd3578c292f678d8fee0f688fb076d3f5f1de595e23f394af93abf68e2d",
+  "matching_audit_hash": "4c757f2ed9b302cfc3d764150ed04f52acee0629ae0992829472efa7d45b7c59",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0f652f5bd90f3eb798404ee946be34333c830a898d945b378168017cb9066f9c",
+    "raw_sha256": "276ac96e6901362974b8b1f60a5839b6b56dece8a89d15bbab05f3507c5c8ea5",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2019-09-25T18:02:00+01:00\ndate=2019-09-25T18:02:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Genesis G70",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Genesis G70"
+    }
+  ],
+  "record_hash": "77c487cd1441b7884253362567905fc5a9ca72fda4be77d480838c5b96315c1a",
+  "outputs": [
+    {
+      "path": "US\\2019_09_25_product-award_Automotive_prnewswire.json",
+      "sha256": "f27b4942eae6f48ee7cd7e669bdd006c1cbd494bfc97c2f9335f007d56d713f3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-09-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:15.583211+00:00",
+    "fetched_at": "2026-11-10T21:34:28.948865+00:00",
+    "feature_available_at": "2026-11-11T09:00:45.229529+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:29.975947+00:00",
+  "commit_verified_at": "2026-11-12T13:53:29.975947+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Genesis G70",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Genesis G70"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

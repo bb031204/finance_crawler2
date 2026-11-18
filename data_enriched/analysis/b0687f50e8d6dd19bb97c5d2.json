@@ -1,0 +1,138 @@
+{
+  "source_id": "b0687f50e8d6dd19bb97c5d2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_07_14_Corporate-Announcement_Pharmaceuticals_sec.json",
+      "sha256": "aee4774c1442253d940d40755519cc6b5bf55b5cbb549446e8b55124abbb3b07",
+      "filename": "2014_07_14_Corporate-Announcement_Pharmaceuticals_sec.json"
+    }
+  ],
+  "original_record_hash": "8ae5a57494d94a63336635d167a1a0b7e659e1523edd7e6868183762059e6e19",
+  "input_hash": "270cb1abe17948bad1203db9c01b16d24fdf2e7bd372118bb1e9eeed3e4d5256",
+  "matching_audit_hash": "265a813f7b469047a78709c50ac7ebd4d97b335e48e26da1a8d280c063dd0020",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9790e52c164ba088673bf5f5048b9a746078bc451200f5b60208376465b60b4a",
+    "raw_sha256": "1dc14e1d22cbabc6dee2ea51f2bd57790066e03f8f9061187db252dadebad273",
+    "date_quote": "On July 14, 2014, the following announcement was posted on the internal corporate website of Abbott Laboratories",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1800/000110465914051404/a14-17107_3425.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Abbott Laboratories",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Abbott Laboratories"
+    },
+    {
+      "name": "Mylan Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Mylan Inc."
+    },
+    {
+      "name": "Mylan",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Mylan"
+    },
+    {
+      "name": "CFR Pharmaceuticals",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CFR Pharmaceuticals"
+    }
+  ],
+  "record_hash": "c05eefcd55b56b19919a35e88afa2c37483e526ab74d0ff1568c10b7d6cbadfc",
+  "outputs": [
+    {
+      "path": "US\\2014_07_14_Corporate-Announcement_Pharmaceuticals_sec.json",
+      "sha256": "879a56470f42bf8b2fbc1aa0360ef0a3af6aeaa3abd957422b65cdd7cac7a953"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-07-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:30.633274+00:00",
+    "fetched_at": "2026-11-10T20:34:09.946283+00:00",
+    "feature_available_at": "2026-11-10T20:35:41.075047+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:52.376002+00:00",
+  "commit_verified_at": "2026-11-12T13:52:52.376002+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Abbott Laboratories",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Abbott Laboratories"
+      },
+      {
+        "name": "Mylan Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mylan Inc."
+      },
+      {
+        "name": "Mylan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mylan"
+      },
+      {
+        "name": "CFR Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CFR Pharmaceuticals"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceuticals",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Healthcare",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

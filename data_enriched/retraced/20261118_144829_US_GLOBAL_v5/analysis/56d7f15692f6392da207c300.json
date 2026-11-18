@@ -1,0 +1,285 @@
+{
+  "source_id": "56d7f15692f6392da207c300",
+  "status": "completed",
+  "source_record_hash": "52c5533fdc2bb861f91f2b0dbe535ae7b33dc5c0838bec9597037f085117eee1",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001171/0001140361-21-002341-index.html",
+    "attempted_at": "2026-11-18T15:16:02.638107+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "d882cc0762683a21fd28d3731a3e9b2c8702165de52b778a5c3dec3af8468734"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/56d7f15692f6392da207c300.json",
+    "sha256": "c8b76310af2d649fe223da4eeec6d23daf399918d3a1ba98fb58afe20b00cc7b",
+    "bundled_path": "legacy_audit/56d7f15692f6392da207c300.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "95ea097a73a80b5c510e258b220605afd40644992bf0ea460ed891c186cbb5c0",
+      "llm_inferred_at": "2026-11-18T15:16:57.922510+00:00",
+      "model_duration_seconds": 10.234346,
+      "prompt_tokens": 2009,
+      "completion_tokens": 515,
+      "selection": [
+        {
+          "source_id": "56d7f15692f6392da207c300",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company and CFBanc plan to file other relevant documents with the SEC.",
+              "rationale": "The filing involves a business combination between two financial institutions, indicating an impact on the financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to",
+              "rationale": "The company is directly involved in the business combination and the filing process, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The Company and CFBanc plan to file other relevant documents with the SEC."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "The filing will contain important information about the transaction, and investors are urged to read the documents carefully."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "ad2284be9587b1ad8f0ffa2d74755ccf1bf71a7b9748e852779935bd1c980b48",
+      "llm_inferred_at": "2026-11-18T15:17:07.765579+00:00",
+      "model_duration_seconds": 9.8376625,
+      "prompt_tokens": 2053,
+      "completion_tokens": 539,
+      "selection": [
+        {
+          "source_id": "56d7f15692f6392da207c300",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The filing will contain important information about the transaction, and investors are urged to read the documents carefully.",
+              "rationale": "The transaction involves two financial institutions, suggesting an impact on the financial services industry.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "company",
+              "quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to",
+              "rationale": "The company is directly involved in the business combination with CFBanc, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The filing will contain important information about the transaction, and investors are urged to read the documents carefully."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:17:07.786372+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d882cc0762683a21fd28d3731a3e9b2c8702165de52b778a5c3dec3af8468734",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2021-01-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000114036121002341/brhc10019384_8ka.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary discusses a proposed business combination between Broadway Financial Corp and CFBanc, including regulatory filings and investor information.",
+    "securities": [
+      {
+        "name": "BROADWAY FINANCIAL CORP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BROADWAY FINANCIAL CORP \\DE\\"
+      },
+      {
+        "name": "CFBanc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CFBanc"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "name": "Financials",
+        "basis": "inferred",
+        "quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "BROADWAY FINANCIAL CORP": "company",
+      "CFBanc": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "56d7f15692f6392da207c300",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2021_01_27_Mergers-&-Acquisitions_Financial-Services_sec.json",
+        "sha256": "859c025c96befbdcf67d6dfdb509ce039b4a6b82c4f961c5c220b12d8b9389b8",
+        "filename": "2021_01_27_Mergers-&-Acquisitions_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "c8643ad9588ec7779e3e022dd2ab55748eb763b8a6e6c0a5896756b4a46a4e59",
+    "input_hash": "5ce92b3d7b08d323b20c2b48fff83252958ea849bdf41dcacc3acde9f85b6db3",
+    "matching_audit_hash": "93cfb6d6b0786edeb50b786c5cdd005f75d052b9b6d9f75cbeddd88e622cdc3d",
+    "legacy_security_evidence": [
+      {
+        "name": "CFBanc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CFBanc"
+      }
+    ],
+    "record_hash": "52c5533fdc2bb861f91f2b0dbe535ae7b33dc5c0838bec9597037f085117eee1",
+    "outputs": [
+      {
+        "path": "US\\2021_01_27_Mergers-&-Acquisitions_Financial-Services_sec.json",
+        "sha256": "0f6bcff27e3c0792ec8b64423b263f9ae72ea36a0a855c1a635071bae2b2ff6d"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2021-01-27",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:28.585595+00:00",
+      "fetched_at": "2026-11-11T16:19:06.754439+00:00",
+      "feature_available_at": "2026-11-11T16:20:01.539790+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:17:07.765579+00:00",
+    "feature_available_at": "2026-11-18T15:17:07.786372+00:00",
+    "commit_verified_at": "2026-11-12T14:54:30.627242+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to",
+        "rationale": "The company is directly involved in the business combination with CFBanc, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "BROADWAY FINANCIAL CORP \\DE\\ announced its intention to file a registration statement on Form S-4 with the SEC, which will include a joint proxy statement and prospectus related to"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001171/0001140361-21-002341-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "52c5533fdc2bb861f91f2b0dbe535ae7b33dc5c0838bec9597037f085117eee1",
+    "content_hash": "d882cc0762683a21fd28d3731a3e9b2c8702165de52b778a5c3dec3af8468734",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:17:07.766925+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/56d7f15692f6392da207c300.json",
+      "sha256": "ce072c081d724850e0c120f95a8b934c010fb7ed09e024195772b286dc404a44",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 65.17199999999139
+}

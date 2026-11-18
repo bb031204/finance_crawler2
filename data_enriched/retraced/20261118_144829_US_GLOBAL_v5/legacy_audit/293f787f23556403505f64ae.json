@@ -1,0 +1,97 @@
+{
+  "source_id": "293f787f23556403505f64ae",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_20_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "af00a6441b6b38dd65c8088d2ae3f34eaac4a745ec9baf2070162ff6e7e419a2",
+      "filename": "2015_03_20_Corporate-Governance_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "b759c9206db781e0669129210e969edc7b37978c6cd2e62e5ead8606eff4338a",
+  "input_hash": "2d675441b999ed7873588dff818bea88e683710f879e98aaa8f95391b4d75bb5",
+  "matching_audit_hash": "512c433834b48757914a6c67175e31638bb6188eaa7aa60f86b5c2e137a0bc7a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2901b091b90d30a6bb6a8902271c76a9551b5e7c169383ebb5303d81ca05b7b8",
+    "raw_sha256": "f6dd2e9a27df9e6211b81c207eb8909741f63ed6cf810126e85f56ef69e91491",
+    "date_quote": "SEC filing datePublished=2015-03-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312515099744/d897493d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    }
+  ],
+  "record_hash": "52d7e9d29ce64e1c7cc2ae4491279e5748bc5a05eb3795bfc71248f4e546bb8d",
+  "outputs": [
+    {
+      "path": "US\\2015_03_20_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "e765f35ad5f4d595f442c10991739dee374a648e500600f5ca96097cf0216627"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.826285+00:00",
+    "fetched_at": "2026-11-11T00:48:22.699676+00:00",
+    "feature_available_at": "2026-11-11T10:46:38.413172+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:24:40.626821+00:00",
+  "feature_available_at": "2026-11-12T14:24:40.671446+00:00",
+  "commit_verified_at": "2026-11-12T14:24:40.671446+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about Brookfield Asset Management Inc.'s Annual Meeting of Shareholders and compliance with securities regulations.",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial services",
+        "basis": "explicit",
+        "quote": "financial services firm"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -98,7 +98,7 @@ class BroadTests(unittest.TestCase):
     def test_source_and_date_both_rotate(self):
         c=self.crawler(dirs=['银行业'],markets=['CN'],budget=1,empty=True)
         c.cfg.collection.start_date='2026-10-01';c.cfg.collection.end_date='2026-11-05'
-        reports=[c.collect() for _ in range(3)];jobs=[r['queries'][0] for r in reports]
+        reports=[c.collect() for _ in range(5)];jobs=[r['queries'][0] for r in reports]
         self.assertEqual(jobs[0]['phase'],'year')
         self.assertEqual(jobs[0]['domains'],['a.example.com','b.example.com'])
         self.assertNotEqual(jobs[1]['range'],jobs[2]['range'])
@@ -133,7 +133,7 @@ class BroadTests(unittest.TestCase):
     def test_eighty_query_budget_covers_thirty_six_directions(self):
         dirs=['行业'+str(n) for n in range(36)]
         c=self.crawler(dirs=dirs,budget=80,empty=True);r=c.collect()
-        self.assertEqual(r['searched'],74);self.assertEqual(len(r['discovery']['directions']),36)
+        self.assertEqual(r['searched'],76);self.assertEqual(len(r['discovery']['directions']),36)
         self.assertTrue(r['discovery']['complete'])
         self.assertEqual(r['model_calls'],18)
     def test_planning_budget_pause_does_not_drop_old_queue(self):

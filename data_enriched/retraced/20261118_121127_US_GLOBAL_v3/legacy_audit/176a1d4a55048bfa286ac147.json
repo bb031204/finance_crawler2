@@ -1,0 +1,85 @@
+{
+  "source_id": "176a1d4a55048bfa286ac147",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_03_14_Financial-Results_Biotechnology_sec.json",
+      "sha256": "65a02277e3373b85cc56e8563a219b07c4e212ca68b5d2845b6b12909700b99d",
+      "filename": "2014_03_14_Financial-Results_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "f5b8e24f769c122b62a9ef334c38eb70275189fa00e4a0ff48b1ce43860ff3b8",
+  "input_hash": "5ad37a4e385308dabea2f498f015ac55995a8330de17a53bb799abb689d9082f",
+  "matching_audit_hash": "0120eb43cb4afc5409c0be8180684671aa957fe186f58764dfc4c97499a74f9b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4e7eab4ab3c0813ab3cbb6aa50742f1e97bd51c93021a203cddfae1535e15ff9",
+    "raw_sha256": "8d0d68e8187e6b1b1f9343bd7b714324070e17da9603b588d0d163b1afd52112",
+    "date_quote": "SEC filing datePublished=2014-03-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000114420414015748/v371768_8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "429ab9ed784980c2892c8b18b64dd0d891417bd4605d24ade47c435d4040e35a",
+  "outputs": [
+    {
+      "path": "US\\2014_03_14_Financial-Results_Biotechnology_sec.json",
+      "sha256": "6020ebe4aea68925a3cbdaf86da79ba75377a86ca340853f0b252b9ab207c319"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-03-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+    "fetched_at": "2026-11-10T23:51:50.475487+00:00",
+    "feature_available_at": "2026-11-11T10:13:16.492072+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:13:22.728300+00:00",
+  "feature_available_at": "2026-11-12T14:13:22.762902+00:00",
+  "commit_verified_at": "2026-11-12T14:13:22.762902+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains financial results and details about Novavax, Inc.'s performance for the quarter ended December 31, 2013, including revenue, expenses, and净收",
+    "securities": [
+      {
+        "name": "Novavax, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Novavax, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Novavax, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

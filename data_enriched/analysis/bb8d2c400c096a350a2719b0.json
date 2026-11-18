@@ -1,0 +1,195 @@
+{
+  "source_id": "bb8d2c400c096a350a2719b0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_06_12_Financial-Regulation_Finance_treasury.json",
+      "sha256": "ec35b6ee0353a596f9dc863070105e5caccec96596ac57de843a7e49fb4964f3",
+      "filename": "2017_06_12_Financial-Regulation_Finance_treasury.json"
+    }
+  ],
+  "original_record_hash": "eef133f1d86d3720dc613fe88e6288a841f8edb9ed4abe587c0d9ba8d5acc58d",
+  "input_hash": "b2bee93a04322aa70c514098adbbc3befad379f937f514e40e5008df43a41117",
+  "matching_audit_hash": "11a4de08bc3687bd621e3dd428efb1525aff6e0083aa7e2f21a2e4fa0c1a7c07",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "140873f8d3c2c35fc4716a7c5809466c2e6e27a30c8f3050b066213195c29a86",
+    "raw_sha256": "16180aa3fc355045b6ee8ded6c08d31fc2834bbad6fedbc93fead2acaa5df36e",
+    "date_quote": "June 12, 2017 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "491bceb7fe2a9577290a2233597a870e5dfbb5999dca67591e80067afacd7ae7",
+  "outputs": [
+    {
+      "path": "US\\2017_06_12_Financial-Regulation_Finance_treasury.json",
+      "sha256": "66debddd06026591fbcb902d60d26506a7e86df35827391db747ca4b733629d4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-06-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:38.041476+00:00",
+    "fetched_at": "2026-11-10T10:37:32.897401+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.487399+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:07:05.527036+00:00",
+  "feature_available_at": "2026-11-12T15:16:41.262421+00:00",
+  "commit_verified_at": "2026-11-12T15:16:41.262421+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Report outlines regulatory reforms and their implications for financial markets.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Consumer Financial Protection Bureau",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Consumer Financial Protection Bureau"
+      },
+      {
+        "name": "Steven T. Mnuchin",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Secretary Steven T. Mnuchin"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial regulatory system"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "U.S. banks"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Consumer Financial Protection Bureau": "organization",
+      "Steven T. Mnuchin": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:41.287169+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:07:05.527036+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Report outlines regulatory reforms and their implications for financial markets.",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "Consumer Financial Protection Bureau",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Consumer Financial Protection Bureau"
+        },
+        {
+          "name": "Steven T. Mnuchin",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Treasury Secretary Steven T. Mnuchin"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "financial regulatory system"
+        },
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "U.S. banks"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "Consumer Financial Protection Bureau": "organization",
+        "Steven T. Mnuchin": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:07:05.552886+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:07:05.563909+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:07:05.543284+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses financial regulation reforms, including simplifying capital rules, reforming the Consumer Financial Protection Bureau, and improving监管效率, all",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:40:09.716198+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

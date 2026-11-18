@@ -1,0 +1,112 @@
+{
+  "source_id": "90567aacb7080d78c9724a4e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_26_Finance_Mining_yahoo.json",
+      "sha256": "8fc73a85d5e7e6fc0c33e3e25354c6af5af04cbf062eb8e9e9b174a314d1f087",
+      "filename": "2016_02_26_Finance_Mining_yahoo.json"
+    }
+  ],
+  "original_record_hash": "a98df585a254ab5427ab387c499e46cb3a0b530e5ce94bdae6759fca0931dfc7",
+  "input_hash": "455401042362b353789c6726f53138d8841d8a153ac53d322753fce14c210c7f",
+  "matching_audit_hash": "f4dd2dab3bb28175e8a9003d2b6ee66d11b399f07303e2247650f4d4787ffe2f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e313b68b210dca784dd527715c41559f76a9af3b11ad026661aca78ce9917a38",
+    "raw_sha256": "603fa9dfb293ed94777879d1241e342ab8fbed6888d42ed3421063c4fff07689",
+    "date_quote": "Marketwired - Feb 26, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1650b7c86c7c2b3e1c1527c53c0aa5f86b2a9d822873c143d3255c4982ab5551",
+  "outputs": [
+    {
+      "path": "US\\2016_02_26_Finance_Mining_yahoo.json",
+      "sha256": "24cdd1d2b1226f1fa4fe7d954d8952fe3184ac2598952d91be90503a0269c2e0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:27.241590+00:00",
+    "fetched_at": "2026-11-10T16:36:17.599405+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.270964+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:53.461431+00:00",
+  "feature_available_at": "2026-11-12T14:30:53.496561+00:00",
+  "commit_verified_at": "2026-11-12T14:30:53.496561+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about financing, equity private placement, loan terms, share purchase warrants, and company operations.",
+    "securities": [
+      {
+        "name": "Banro Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Banro Corporation"
+      },
+      {
+        "name": "RFWB",
+        "ticker": null,
+        "exchange": null,
+        "quote": "RFWB"
+      },
+      {
+        "name": "Baiyin Stream Partnership I, LP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Baiyin Stream Partnership I, LP"
+      },
+      {
+        "name": "Gramercy Funds Management LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gramercy Funds Management LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Gold mining",
+        "basis": "explicit",
+        "quote": "gold mining"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Banro Corporation": "company",
+      "RFWB": "company",
+      "Baiyin Stream Partnership I, LP": "company",
+      "Gramercy Funds Management LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -304,7 +304,7 @@ class SecPageTests(SecTestBase):
             <table class="tableFile"><tr><th>Seq</th></tr><tr><td>1</td><td>Main report</td><td><a href="{href}">report.htm</a></td><td>8-K</td></tr>
             <tr><td>2</td><td>Exhibit</td><td><a href="{prefix}exhibit.htm">exhibit.htm</a></td><td>EX-99.1</td></tr></table>{extra}</html>'''
         body = b'<html><title>Operating results</title><article>Example Company announced operating results and an acquisition. No exhibit content.</article></html>'
-        cfg = sec_config(); cfg.fetch.use_crawl4ai = False
+        cfg = sec_config(); cfg.fetch.use_crawl4ai = False; cfg.search.sec_edgar.include_exhibits = False
         sources = Sources(cfg, self.root)
         candidate = {'url': filing_identity('320193', row['accession']), 'origin_market': 'US', 'title': 'Example 8-K', 'sec_filing': row}
         return sources, candidate, html.encode(), body

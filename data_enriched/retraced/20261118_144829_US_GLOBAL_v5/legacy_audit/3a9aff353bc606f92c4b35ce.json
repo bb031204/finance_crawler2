@@ -1,0 +1,122 @@
+{
+  "source_id": "3a9aff353bc606f92c4b35ce",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_12_14_Regulatory_Financial-Services_treasury.json",
+      "sha256": "4e1a2a21087601f65cfd64a0ee1993e0cf3d9f82fff845a3c7df8a76d740beba",
+      "filename": "2016_12_14_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "09230d7f12375e36b90a612a589eef19786f886c2d95addbe07c7cd1fb06f679",
+  "input_hash": "2d9073cd349f6454bd9317ce4514e83188faad6aa5671964d7e22587a9371729",
+  "matching_audit_hash": "641f1a07c607c746ae75a22c49b691f941a01e843a7109c4c27b1bb48b2c3c30",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "66a3f428008ee847c0ab28c3a8e0338b3b9de49113426f9ef18b4b82813e7c7d",
+    "raw_sha256": "c561143e29352f3abaf0db5bba5ef9be6e0ed1261708b6c9bd756b02029e4f09",
+    "date_quote": "December 14, 2016 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1496a6a4de78f6223e4c1fd465e5471f3e2c426fdffd86b0b79e774f8c5eca0b",
+  "outputs": [
+    {
+      "path": "US\\2016_12_14_Regulatory_Financial-Services_treasury.json",
+      "sha256": "d048eea3756fa334a1dd9854f0d0614a2f54874425bec7601b37bc880b862c08"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-12-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:33.560082+00:00",
+    "fetched_at": "2026-11-10T22:20:12.706526+00:00",
+    "feature_available_at": "2026-11-11T09:23:26.739143+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:33:38.590621+00:00",
+  "feature_available_at": "2026-11-12T14:33:38.633792+00:00",
+  "commit_verified_at": "2026-11-12T14:33:38.633792+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses cybersecurity assurance engagements and their role in enhancing financial transmission mechanisms' security, emphasizing cybersecurity's role",
+    "securities": [
+      {
+        "name": "American Institute of Certified Public Accountants",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American Institute of Certified Public Accountants (AICPA)"
+      },
+      {
+        "name": "financial institutions",
+        "ticker": null,
+        "exchange": null,
+        "quote": "financial institutions"
+      },
+      {
+        "name": "governments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "governments"
+      },
+      {
+        "name": "small financial sector companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "small financial sector companies"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial system"
+      },
+      {
+        "name": "Cybersecurity",
+        "basis": "explicit",
+        "quote": "cybersecurity"
+      },
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": "cybersecurity risk management"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "American Institute of Certified Public Accountants": "organization",
+      "financial institutions": "organization",
+      "governments": "organization",
+      "small financial sector companies": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

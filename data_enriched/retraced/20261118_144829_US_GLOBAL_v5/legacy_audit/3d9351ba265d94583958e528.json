@@ -1,0 +1,97 @@
+{
+  "source_id": "3d9351ba265d94583958e528",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_01_13_Consulting_Financial-Advisory_yahoo.json",
+      "sha256": "ad178eca9f7cb76c5a2fc8f0b3345b9a7c57f8063e8d8e60f909383ac3cfaaed",
+      "filename": "2022_01_13_Consulting_Financial-Advisory_yahoo.json"
+    }
+  ],
+  "original_record_hash": "74333101369fd2469857aceba37b57a900ab7837b01d46a903883bd2edb3e5c4",
+  "input_hash": "c1f9ab2a64758ae1435944f6d51cc68a30c2d96f0b50b9db631e4f94b845ad12",
+  "matching_audit_hash": "8554f11e0797f113ac2c0d6c3ab76e3fd40cc75821ae1cbeef4aa6d3f6bfde53",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "40fe537f102193819f934b29894d966819d90e46049fa796f00e6b4106ed9d7d",
+    "raw_sha256": "d5828cca19913e81f2d4843e43b6f4db1d8bcc7b4911f74f7e85d00d0cd39f07",
+    "date_quote": "FTI Consulting, Inc. January 13, 2022",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3909e7fcb334e217247102b28d2a5a20410964a4bb2e563891dfc6e554754c67",
+  "outputs": [
+    {
+      "path": "US\\2022_01_13_Consulting_Financial-Advisory_yahoo.json",
+      "sha256": "7ce475fe3483d8c3d9f14dd36dd5a2bc2300674c16b5464d9683fb390de73a65"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-01-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:39.745489+00:00",
+    "fetched_at": "2026-11-10T14:31:30.036790+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.486599+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:56:23.589021+00:00",
+  "feature_available_at": "2026-11-12T14:56:23.599897+00:00",
+  "commit_verified_at": "2026-11-12T14:56:23.599897+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about FTI Consulting's recognition in the restructuring and insolvency field, including details about the professionals named, ",
+    "securities": [
+      {
+        "name": "FTI Consulting, Inc.",
+        "ticker": "FCN",
+        "exchange": "NYSE",
+        "quote": "FTI Consulting, Inc. (NYSE: FCN)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consulting",
+        "basis": "explicit",
+        "quote": "Consulting"
+      },
+      {
+        "name": "Restructuring & Insolvency",
+        "basis": "explicit",
+        "quote": "Restructuring & Insolvency"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "FTI Consulting, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

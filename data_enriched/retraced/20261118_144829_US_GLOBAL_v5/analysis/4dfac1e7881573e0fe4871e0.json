@@ -1,0 +1,350 @@
+{
+  "source_id": "4dfac1e7881573e0fe4871e0",
+  "status": "completed",
+  "source_record_hash": "6524630246739e47e53623a842e9092a666ba86c7e3566c36ee54a06d0eae183",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000232/0001000232-16-000011-index.html",
+    "attempted_at": "2026-11-18T14:09:11.091094+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000232/0001000232-16-000011-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023216000011/form8k154financials.txt",
+    "fetched_at": "2026-11-18T14:09:24.031536+00:00",
+    "source_body_hash": "3546530fb6103e7349c9b288c72f3de3dacb52a68bc57f8eddd63c49b0e611d0",
+    "raw_sha256": "357e611747ec04245c3c9eda72c6c4caf10b90225887fd5241b4a57f20ec5919",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023216000011/form8k154financials.txt",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "357e611747ec04245c3c9eda72c6c4caf10b90225887fd5241b4a57f20ec5919",
+        "text_sha256": "637b554016dc6e3c443afb629b069fd5577bdb53c8ea1f234526a1c9108d19a6",
+        "text_start": 0,
+        "text_end": 3491
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023216000011/form8k154ex99.txt",
+        "type": "EX-99",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "f7bda1dfddd41925317946f93060a562326b29b2cc23a630490872157180a0d6",
+        "text_sha256": "b88adfbed99acf198e29c285e10b40d8bb6aefd7f7210ca52351c920a02b3787",
+        "text_start": 3493,
+        "text_end": 8554
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2016-01-29",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4dfac1e7881573e0fe4871e0.json",
+    "sha256": "ca39f766d276dfd5b372b01753ae5285e949da5fa78c7bcfce71868637fab181",
+    "bundled_path": "legacy_audit/4dfac1e7881573e0fe4871e0.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "8a123536ac94fb088e1e3e3bccd865e2d38816d98202b4081267bd8aa822f693",
+      "llm_inferred_at": "2026-11-18T14:09:45.726398+00:00",
+      "model_duration_seconds": 21.6710589,
+      "prompt_tokens": 4672,
+      "completion_tokens": 991,
+      "selection": [
+        {
+          "source_id": "4dfac1e7881573e0fe4871e0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank.",
+              "rationale": "The acquisition of Madison Bank is a sector-wide event within the banking industry, affecting the financial performance of the industry as a whole.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 (",
+              "rationale": "The report is specifically about Kentucky Bancshares, Inc., a company in the banking industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 ("
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "name": "NATIONAL COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 ("
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "and increased exemptions associated with our captive insurance subsidiary. The global, national, and statewide economies remain uncertain and our industry continues to face",
+              "industry_name_original": "Banks",
+              "mechanism": "economic conditions in the markets we serve",
+              "confidence": 0.95,
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "and increased exemptions associated with our captive insurance subsidiary. The global, national, and statewide economies remain uncertain and our industry continues to face",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "economic conditions in the markets we serve",
+              "confidence": 0.95,
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "industry_scope_quote": "and increased exemptions associated with our captive insurance subsidiary. The global, national, and statewide economies remain uncertain and our industry continues to face",
+              "industry_name_original": "NATIONAL COMMERCIAL BANKS",
+              "mechanism": "economic conditions in the markets we serve",
+              "confidence": 0.95,
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "b14b1a98bcc307b5cf9d1e4347c1cece49286a89f4179ad727d5da540c8bccce",
+      "llm_inferred_at": "2026-11-18T14:10:04.639253+00:00",
+      "model_duration_seconds": 18.8914761,
+      "prompt_tokens": 4716,
+      "completion_tokens": 968,
+      "selection": [
+        {
+          "source_id": "4dfac1e7881573e0fe4871e0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank.",
+              "rationale": "The acquisition of Madison Bank is a sector-wide event within the banking industry, affecting the financial performance of the industry as a whole.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 (",
+              "rationale": "The report is specifically about Kentucky Bancshares, Inc., a company in the banking industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 ("
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "name": "NATIONAL COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 ("
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "and increased exemptions associated with our captive insurance subsidiary. The global, national, and statewide economies remain uncertain and our industry continues to face",
+              "industry_name_original": "Banks",
+              "mechanism": "economic conditions",
+              "confidence": 0.95,
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "and increased exemptions associated with our captive insurance subsidiary. The global, national, and statewide economies remain uncertain and our industry continues to face",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "economic conditions",
+              "confidence": 0.95,
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "industry_scope_quote": "and increased exemptions associated with our captive insurance subsidiary. The global, national, and statewide economies remain uncertain and our industry continues to face",
+              "industry_name_original": "NATIONAL COMMERCIAL BANKS",
+              "mechanism": "economic conditions",
+              "confidence": 0.95,
+              "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:10:04.657015+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3546530fb6103e7349c9b288c72f3de3dacb52a68bc57f8eddd63c49b0e611d0",
+    "raw_sha256": "357e611747ec04245c3c9eda72c6c4caf10b90225887fd5241b4a57f20ec5919",
+    "date_quote": "Date of Report (Date of earliest event reported): January 29, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023216000011/form8k154financials.txt",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": true,
+    "reason": "The summary contains information about the company's financial reporting schedule, potential factors affecting future results, and references to SEC filings.",
+    "securities": [
+      {
+        "name": "KENTUCKY BANCSHARES INC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KENTUCKY BANCSHARES INC"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "name": "Commercial Banks",
+        "basis": "inferred",
+        "quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The change in net earnings is largely due to the anticipated one-time expenses associated with the acquisition of Madison Bank.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "KENTUCKY BANCSHARES INC": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "4dfac1e7881573e0fe4871e0",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_01_29_Financial_Banking_sec.json",
+        "sha256": "1876db4794c1f2bd826519083f301ad5c8e7f270b6836bda24f848c3f39e8523",
+        "filename": "2016_01_29_Financial_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "60fbebf44d090b62721ad58bcee6ca24e417e7f77d0a7bb1e8e0f9d49dd33203",
+    "input_hash": "be4a4675b826a4af1b467ae3b38a2b339db2f2321b29314df203765dcc6cd335",
+    "matching_audit_hash": "fb56fa2c63e36623c8cc43dd2a0592f33e98cc41386995d62b6fdbaba9532254",
+    "legacy_security_evidence": [],
+    "record_hash": "6524630246739e47e53623a842e9092a666ba86c7e3566c36ee54a06d0eae183",
+    "outputs": [
+      {
+        "path": "US\\2016_01_29_Financial_Banking_sec.json",
+        "sha256": "f38ab6ae653d1e61907b71e5b786028385e75e75caca47d5969edac0e56207da"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2016-01-29",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:04.847853+00:00",
+      "fetched_at": "2026-11-11T01:01:25.984779+00:00",
+      "feature_available_at": "2026-11-11T01:01:49.146301+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:10:04.639253+00:00",
+    "feature_available_at": "2026-11-18T14:10:04.657015+00:00",
+    "commit_verified_at": "2026-11-12T14:30:16.848371+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 (",
+        "rationale": "The report is specifically about Kentucky Bancshares, Inc., a company in the banking industry.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Kentucky 000-52598 61-0993464 (State or other (Commission (IRS Employer jurisdiction of File Number) Identification No.) incorporation) P.O. Box 157, Paris, Kentucky 40362-0157 (",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000232/0001000232-16-000011-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "6524630246739e47e53623a842e9092a666ba86c7e3566c36ee54a06d0eae183",
+    "content_hash": "0bd010227fc82ff52458bc26a3b29b72b909a4863516a207d680c723a6119b08",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:10:04.644144+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4dfac1e7881573e0fe4871e0.json",
+      "sha256": "202d49558ec18c25838b68dc37da42db8ee7353b367a91d94909e6282f5a5b92",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 53.57799999997951
+}

@@ -1,0 +1,123 @@
+{
+  "source_id": "deb8ad81c16ff090a1d531bc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_04_03_Politics_E-commerce_cnbc.json",
+      "sha256": "54be088025f1655064fad24c606fc8ff81c28c9100f437a9fcd3bbba6494cf73",
+      "filename": "2018_04_03_Politics_E-commerce_cnbc.json"
+    }
+  ],
+  "original_record_hash": "19db8ad08b5d0512acafe011a066a43f64bf0f2d0c87dd229754da3f2f3c8e08",
+  "input_hash": "901dfddb9fefd97b5348b97f2c44fcb64bdfc6baa4aea0f98ea887f0d6eab30c",
+  "matching_audit_hash": "47e2f7bc9230fd5d1123dd5df5a20ad6eaa13054bdb5460d1ec2a6ca20c9f777",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "984e48aa84c1c387c7abacbab01c03dba24ab0ef974b10eb408b0c3267b071a1",
+    "raw_sha256": "ae04b91edb5bb97cc493b4ac02d2bbd99700fd1aa328e9b8ddf596ed60a9509f",
+    "date_quote": "article:published_time=2018-04-03T19:04:42+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a45f6592ee98060bc9b80133dcad4a1ace46f3b12502d9f71e234a8860c78fad",
+  "outputs": [
+    {
+      "path": "US\\2018_04_03_Politics_E-commerce_cnbc.json",
+      "sha256": "e510bd3c72fbf6452d99860c7d120d7b341dde302c11e846c82785d7b521e681"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-04-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:27.179894+00:00",
+    "fetched_at": "2026-11-10T14:24:02.150598+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.296030+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:44:08.533529+00:00",
+  "feature_available_at": "2026-11-12T14:44:08.543094+00:00",
+  "commit_verified_at": "2026-11-12T14:44:08.543094+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses potential regulatory actions against Amazon, including antitrust concerns and possible impacts from Trump's policies.",
+    "securities": [
+      {
+        "name": "Amazon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amazon"
+      },
+      {
+        "name": "FTC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FTC"
+      },
+      {
+        "name": "DOJ",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DOJ"
+      },
+      {
+        "name": "USPS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "USPS"
+      }
+    ],
+    "industries": [
+      {
+        "name": "E-commerce",
+        "basis": "inferred",
+        "quote": "Amazon"
+      },
+      {
+        "name": "Postal Services",
+        "basis": "inferred",
+        "quote": "USPS"
+      },
+      {
+        "name": "Cloud Computing",
+        "basis": "explicit",
+        "quote": "Department of Defense for cloud computing services"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Amazon": "company",
+      "FTC": "organization",
+      "DOJ": "organization",
+      "USPS": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

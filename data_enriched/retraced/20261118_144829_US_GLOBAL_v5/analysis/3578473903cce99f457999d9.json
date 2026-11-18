@@ -1,0 +1,478 @@
+{
+  "source_id": "3578473903cce99f457999d9",
+  "status": "completed",
+  "source_record_hash": "789d1e8eed0e011a411bcd57f9ab26d2ca6e7332714912be90a60429196f8479",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2022/01/14/bernie-sanders-elizabeth-warren-urge-blackrock-ceo-larry-fink-to-intervene-in-coal-strike.html",
+    "attempted_at": "2026-11-18T11:41:32.119176+00:00",
+    "status": "summary_only",
+    "reason": "refetched_source_identity_date_or_historical_body_unverified",
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2022/01/14/bernie-sanders-elizabeth-warren-urge-blackrock-ceo-larry-fink-to-intervene-in-coal-strike.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T11:41:46.503642+00:00",
+    "source_body_hash": "0f111b6aa18142595d51f44093758935b696abda71540adfd8d54fde380d3653",
+    "raw_sha256": "0dbfd0e77c8ffb09c810ffd03a3a60a9acc31309ff2b9b78ba2fb4c8f2eb3516",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Bernie Sanders, Elizabeth Warren urge BlackRock CEO Larry Fink to intervene in coal strike",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2022-01-14T10:30:01+0000",
+    "historical_body_basis": "unproven_current_webpage_version",
+    "summary_sha256": "1126f11b31a71f17a41bfc918913706be86bd827f8dd274a752d9071f752a2b7"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3578473903cce99f457999d9.json",
+    "sha256": "1a9c6db4eba55b5de28a752abdc18c4ecba54a579c71e8d31be4b7bf6e785268",
+    "bundled_path": "legacy_audit/3578473903cce99f457999d9.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "000c368c837d37801cafcbf01484915142c07738bf0be0dbffd33c20672f8562",
+      "llm_inferred_at": "2026-11-18T11:42:07.331645+00:00",
+      "model_duration_seconds": 20.7899765,
+      "prompt_tokens": 2197,
+      "completion_tokens": 1091,
+      "selection": [
+        {
+          "source_id": "3578473903cce99f457999d9",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "BlackRock, which manages over $9 trillion, is the largest money manager globally, giving Fink significant influence.",
+              "rationale": "The article discusses BlackRock's influence as a global money manager, which affects the broader financial industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy.",
+              "rationale": "This indicates an industry-wide impact on financial institutions and companies aiming to align with climate goals.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals.",
+              "rationale": "This reflects a broader industry impact on financial and corporate strategies related to climate change.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Bernie Sanders and Elizabeth Warren have urged BlackRock CEO Larry Fink to intervene in a coal strike, continuing a pattern of pressuring Wall Street leaders to support workers.",
+              "rationale": "The article discusses actions by senators targeting major investors, which relates to the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:c8c069916d145266",
+              "name": "Coal Mining",
+              "basis": "explicit",
+              "quote": "Senators Bernie Sanders, Elizabeth Warren, and Tammy Baldwin have urged BlackRock CEO Larry Fink to intervene in a coal miners' strike at Warrior Met Coal."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "BlackRock, which manages over $9 trillion, is the largest money manager globally, giving Fink significant influence."
+            },
+            {
+              "industry_key": "TRSR:d1f6321e37693929",
+              "name": "Major Banks",
+              "basis": "explicit",
+              "quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:c8c069916d145266",
+              "industry_scope_quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals.",
+              "industry_name_original": "Coal Mining",
+              "mechanism": "Climate policy and investment alignment affect the coal mining industry's operations and future prospects.",
+              "confidence": 0.85,
+              "quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy.",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "Climate change policies influence financial services by requiring investment adjustments and transparency.",
+              "confidence": 0.9,
+              "quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy."
+            },
+            {
+              "industry_key": "TRSR:d1f6321e37693929",
+              "industry_scope_quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals.",
+              "industry_name_original": "Major Banks",
+              "mechanism": "Climate change policies influence banking by requiring investment adjustments and transparency.",
+              "confidence": 0.85,
+              "quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "c4d499a7940cca7d0c854445ad6a3d3ccce935bb5fdf2760d6aa730b5e3e6c14",
+      "llm_inferred_at": "2026-11-18T11:42:26.536131+00:00",
+      "model_duration_seconds": 19.1950172,
+      "prompt_tokens": 2241,
+      "completion_tokens": 1073,
+      "selection": [
+        {
+          "source_id": "3578473903cce99f457999d9",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "BlackRock, which manages over $9 trillion, is the largest money manager globally, giving Fink significant influence.",
+              "rationale": "The article discusses BlackRock's influence as a global money manager, which is an industry-wide impact in the financial services sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy.",
+              "rationale": "This statement reflects an industry-wide impact on the financial services sector, as it pertains to investment strategies and corporate responsibility.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals.",
+              "rationale": "This indicates an industry-wide impact on financial services, as it involves investment processes and corporate alignment with climate goals.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Bernie Sanders and Elizabeth Warren have urged BlackRock CEO Larry Fink to intervene in a coal strike, continuing a pattern of pressuring Wall Street leaders to support workers.",
+              "rationale": "The mention of Wall Street leaders and the context of financial services indicate a broad impact on the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:c8c069916d145266",
+              "name": "Coal Mining",
+              "basis": "explicit",
+              "quote": "Senators Bernie Sanders, Elizabeth Warren, and Tammy Baldwin have urged BlackRock CEO Larry Fink to intervene in a coal miners' strike at Warrior Met Coal."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "BlackRock, which manages over $9 trillion, is the largest money manager globally, giving Fink significant influence."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:c8c069916d145266",
+              "industry_scope_quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals.",
+              "industry_name_original": "Coal Mining",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy.",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.9,
+              "quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals.",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "In 2021, he called for companies to disclose plans for compatibility with a net-zero economy and to adjust investment processes to align with climate goals."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:42:26.550081+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1126f11b31a71f17a41bfc918913706be86bd827f8dd274a752d9071f752a2b7",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2022-01-14T10:30:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Senators urge BlackRock to intervene in coal strike",
+    "securities": [
+      {
+        "name": "BlackRock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BlackRock CEO Larry Fink"
+      },
+      {
+        "name": "Warrior Met Coal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Warrior Met Coal"
+      },
+      {
+        "name": "Berkshire Hathaway",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Warren Buffett, CEO of Berkshire Hathaway"
+      },
+      {
+        "name": "Special Metals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "striking steelworkers at Special Metals"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:c8c069916d145266",
+        "name": "Coal Mining",
+        "basis": "inferred",
+        "quote": "Senators Bernie Sanders, Elizabeth Warren, and Tammy Baldwin have urged BlackRock CEO Larry Fink to intervene in a coal miners' strike at Warrior Met Coal.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "c8c069916d145266",
+        "industry_name_standard": "Coal Mining",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Senators Bernie Sanders, Elizabeth Warren, and Tammy Baldwin have urged BlackRock CEO Larry Fink to intervene in a coal miners' strike at Warrior Met Coal."
+      },
+      {
+        "industry_key": "TRSR:2c7efa2df04b9379",
+        "name": "Finance Companies",
+        "basis": "inferred",
+        "quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "2c7efa2df04b9379",
+        "industry_name_standard": "Finance Companies",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Fink has made climate change a central political cause, encouraging companies to reduce carbon emissions and align with a net-zero economy."
+      }
+    ],
+    "impact_scope": [],
+    "entity_types": {
+      "BlackRock": "organization",
+      "Warrior Met Coal": "company",
+      "Berkshire Hathaway": "company",
+      "Special Metals": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "3578473903cce99f457999d9",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2022_01_14_Corporate-Governance_Energy_cnbc.json",
+        "sha256": "7a6edbc90fba8ce5795db2a18145b664010e308a9ac9d8b5c5f5de36956e05e7",
+        "filename": "2022_01_14_Corporate-Governance_Energy_cnbc.json"
+      }
+    ],
+    "original_record_hash": "919f6d1e7b4ef4472265b46544a8303e94e637139eadc869fdeba141eb964640",
+    "input_hash": "364724ce79f2096bf471cd7fe17261faa332dd754d4e768fc434726440c8d0a7",
+    "matching_audit_hash": "bb05af189280f1a8a13417f17dce1f55aa6ed8a030a094f4464bd4fa36983014",
+    "legacy_security_evidence": [],
+    "record_hash": "789d1e8eed0e011a411bcd57f9ab26d2ca6e7332714912be90a60429196f8479",
+    "outputs": [
+      {
+        "path": "US\\2022_01_14_Corporate-Governance_Energy_cnbc.json",
+        "sha256": "4e0c7818b5ad520f51ab185faf9e69d2d1c69711548fd75ba7bf1e22b3c2a3fb"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2022-01-14",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T13:36:20.154025+00:00",
+      "fetched_at": "2026-11-10T15:11:19.568944+00:00",
+      "feature_available_at": "2026-11-10T17:53:25.533845+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T11:42:26.536131+00:00",
+    "feature_available_at": "2026-11-18T11:42:26.550081+00:00",
+    "commit_verified_at": "2026-11-12T15:16:48.940474+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:48.966620+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:14:51.764651+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Senators urge BlackRock to intervene in coal strike",
+        "securities": [
+          {
+            "name": "BlackRock",
+            "ticker": null,
+            "exchange": null,
+            "quote": "BlackRock CEO Larry Fink"
+          },
+          {
+            "name": "Warrior Met Coal",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Warrior Met Coal"
+          },
+          {
+            "name": "Berkshire Hathaway",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Warren Buffett, CEO of Berkshire Hathaway"
+          },
+          {
+            "name": "Special Metals",
+            "ticker": null,
+            "exchange": null,
+            "quote": "striking steelworkers at Special Metals"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Coal mining",
+            "basis": "inferred",
+            "quote": "coal miners' strike"
+          },
+          {
+            "name": "Finance",
+            "basis": "inferred",
+            "quote": "BlackRock, which manages over $9 trillion"
+          },
+          {
+            "name": "Investment management",
+            "basis": "inferred",
+            "quote": "BlackRock, which manages over $9 trillion"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry"
+        ],
+        "entity_types": {
+          "BlackRock": "organization",
+          "Warrior Met Coal": "company",
+          "Berkshire Hathaway": "company",
+          "Special Metals": "company"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:14:51.799218+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:14:51.808731+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:14:51.789770+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses BlackRock's financial stake in Warrior Met Coal and its potential influence over the company's negotiations with striking miners. It also del",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:56:24.789514+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2022/01/14/bernie-sanders-elizabeth-warren-urge-blackrock-ceo-larry-fink-to-intervene-in-coal-strike.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "789d1e8eed0e011a411bcd57f9ab26d2ca6e7332714912be90a60429196f8479",
+    "content_hash": "1126f11b31a71f17a41bfc918913706be86bd827f8dd274a752d9071f752a2b7",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:42:26.538103+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3578473903cce99f457999d9.json",
+      "sha256": "c39d3a48370084be28c242ecf567087a72f619ec2a376f2e03bdea0a36fcce68",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 54.437999999994645
+}

@@ -1,0 +1,112 @@
+{
+  "source_id": "8657c61cc1b9eeb59ccbfd47",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_12_15_IPO-Market_Finance_cnbc.json",
+      "sha256": "fad8189d1e4fb7eba247189bd89f48838427eadd164fd8e37f42b6ee2542bbb1",
+      "filename": "2016_12_15_IPO-Market_Finance_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2016_12_15_IPO-Market_Finance_cnbc.json",
+      "sha256": "fad8189d1e4fb7eba247189bd89f48838427eadd164fd8e37f42b6ee2542bbb1",
+      "filename": "2016_12_15_IPO-Market_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "4ed1a17632764a6da2ab4d43d92f16bf5d138bdcdbc303a0303fb4c822654d3d",
+  "input_hash": "fb572bc7ffb2701b8b16c85c5d5d839d7900894709c5633749ea148a98b7ac52",
+  "matching_audit_hash": "e11713881e86689e733795da6055557ae03d92cdf5427bd403141fe9b6551394",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "090752af8da42a708be140038e0c4f19e7bca82d68d6a0cfed9e88c2aff160c2",
+    "raw_sha256": "3b04b2768b4b6b5e864a7af7b79509595348d066cdefb3baaf7b35d2866a47f8",
+    "date_quote": "article:published_time=2016-12-15T14:40:56+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b7d58f56d5a934d121703bccceaf80f3364c003679d52e9b47d2b170bcb25e93",
+  "outputs": [
+    {
+      "path": "US\\2016_12_15_IPO-Market_Finance_cnbc.json",
+      "sha256": "f345eb4d65b835f063de9d9880a826486d4e40b341367b54fe66023d19df99d5"
+    },
+    {
+      "path": "GLOBAL\\2016_12_15_IPO-Market_Finance_cnbc.json",
+      "sha256": "f345eb4d65b835f063de9d9880a826486d4e40b341367b54fe66023d19df99d5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-12-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:21.561731+00:00",
+    "fetched_at": "2026-11-10T12:49:04.830933+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.333073+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:33:42.981040+00:00",
+  "feature_available_at": "2026-11-12T14:33:43.026260+00:00",
+  "commit_verified_at": "2026-11-12T14:33:43.026260+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the global IPO market trends, including the performance of 2016 and expectations for 2017, with specific mentions of sectors and regions.",
+    "securities": [
+      {
+        "name": "EY",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EY"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "explicit",
+        "quote": "Technology"
+      },
+      {
+        "name": "Industrial",
+        "basis": "explicit",
+        "quote": "Industrial"
+      },
+      {
+        "name": "Healthcare",
+        "basis": "explicit",
+        "quote": "Healthcare"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "EY": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

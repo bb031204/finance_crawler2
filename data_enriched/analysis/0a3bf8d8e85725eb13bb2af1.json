@@ -1,0 +1,108 @@
+{
+  "source_id": "0a3bf8d8e85725eb13bb2af1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_08_20_Mergers-&-Acquisitions_Semiconductor_cnbc.json",
+      "sha256": "32437a7a888a2189c9f12a94de155ab8c7b3c03177ca433ac28bb867286e39bd",
+      "filename": "2014_08_20_Mergers-&-Acquisitions_Semiconductor_cnbc.json"
+    }
+  ],
+  "original_record_hash": "7e8d1d54bd2a3ea36221b33a969251df7b93168e767f6170eaf4fa9060e15e89",
+  "input_hash": "81b259d54190aa86ead3ef6a4f3a047f4cb45fd312320cfa9988c887dfb62241",
+  "matching_audit_hash": "6e7ac4739e5b88504cf334b14b856b363f3017186ab4ee2b8e47b547cb2d5f6d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "62cfb8bb5b810582a21b1a0140e08c4422e6daf6351bb6657f41f52f1588bf0b",
+    "raw_sha256": "ccdfc8fbb8bfd14389b4f46d51c8463ce47ad32c0f952b1bf44c62ead5299576",
+    "date_quote": "article:published_time=2014-08-20T16:43:27+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Infineon Technologies",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Germany's Infineon Technologies announced on Wednesday that it will acquire U.S.-based semiconductor company International Rectifier for about $3 billion cash."
+    },
+    {
+      "name": "International Rectifier",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Germany's Infineon Technologies announced on Wednesday that it will acquire U.S.-based semiconductor company International Rectifier for about $3 billion cash."
+    }
+  ],
+  "record_hash": "b6a9d5e40d1145ec38e609aad4e506e8fb5cd72a04c879350f53c69b167f802d",
+  "outputs": [
+    {
+      "path": "US\\2014_08_20_Mergers-&-Acquisitions_Semiconductor_cnbc.json",
+      "sha256": "50744b126ba246ef261da4629e3abe52dcabcb814d750a71aaa4152a48a15901"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-08-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:29.815591+00:00",
+    "fetched_at": "2026-11-11T02:22:46.949101+00:00",
+    "feature_available_at": "2026-11-11T02:22:57.254272+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:52.744661+00:00",
+  "commit_verified_at": "2026-11-12T13:52:52.744661+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Infineon Technologies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Germany's Infineon Technologies announced on Wednesday that it will acquire U.S.-based semiconductor company International Rectifier for about $3 billion cash."
+      },
+      {
+        "name": "International Rectifier",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Germany's Infineon Technologies announced on Wednesday that it will acquire U.S.-based semiconductor company International Rectifier for about $3 billion cash."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

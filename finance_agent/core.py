@@ -1,6 +1,7 @@
 import hashlib
 import json
 import os
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -20,12 +21,22 @@ def bounded(path, root=ROOT):
         raise ValueError("路径越出项目根目录")
     return path
 
-def dump(path, value):
+def dump(path, value, *, compact=False):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + ".tmp")
-    tmp.write_text(json.dumps(value, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
-    tmp.replace(path)
+    options={'separators':(',',':')} if compact else {'indent':2}
+    payload = json.dumps(value, ensure_ascii=False, **options)+"\n"
+    # Windows杀毒/索引器可能短暂锁定目标文件；短重试避免把瞬时占用误判为候选失败。
+    for attempt in range(4):
+        try:
+            tmp.write_text(payload, encoding="utf-8")
+            tmp.replace(path)
+            return
+        except PermissionError:
+            if attempt == 3:
+                raise
+            time.sleep(0.05 * (attempt + 1))
 
 class Lock:
     def __init__(self, root=ROOT):

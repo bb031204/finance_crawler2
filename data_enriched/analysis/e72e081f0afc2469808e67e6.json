@@ -1,0 +1,95 @@
+{
+  "source_id": "e72e081f0afc2469808e67e6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_11_Corporate-Announcement_inferred_sec.json",
+      "sha256": "bf0b304b65804c04468c5e067ccf17ae4a188d3276bb6f3df0db263120cf0001",
+      "filename": "2016_01_11_Corporate-Announcement_inferred_sec.json"
+    }
+  ],
+  "original_record_hash": "6959d4e18a79645ee1b7422fc2a7f2f28c6f65d1768575ab72d10da358b7d43a",
+  "input_hash": "a218155226ca89cb820118c1a3b5ca92b7f950d22de3160a9c5493de1ba9a239",
+  "matching_audit_hash": "72e5a3bb1fa4d8ebb9369a2d066f5b2c00e8c062d92a5bc1936acb7113175a8c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2c8ac9d76ff2e96cc4a990e15f30f3651bf6f9816de2bd1b3182327d3ee6a391",
+    "raw_sha256": "f8a2a70ad93f81326cad4c1087d5d01381a13ebd23e5ad365dc846d120cf3ea9",
+    "date_quote": "Date of Report (Date of earliest event reported): January 11, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312516426047/d118723d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Geospace Technologies Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Geospace Technologies Corporation"
+    }
+  ],
+  "record_hash": "bbfd743404da25d9afe41e2e7122294c5ac7d6291950b6bea021f55fed0a1f48",
+  "outputs": [
+    {
+      "path": "US\\2016_01_11_Corporate-Announcement_inferred_sec.json",
+      "sha256": "97edcc8e3a911f32363d6fc10aa1f305be2a586ac11fad00e229f4a146cb5e00"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.849469+00:00",
+    "fetched_at": "2026-11-11T01:24:20.292439+00:00",
+    "feature_available_at": "2026-11-11T01:24:29.978533+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:02.384323+00:00",
+  "commit_verified_at": "2026-11-12T13:53:02.384323+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "source_id": "31733b8f35012cfec504c6d7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_29_SEC-Filing_Automotive-Components_sec.json",
+      "sha256": "02d7bc9d2823b3e73233fb5212b814debd9866ddf461642dcd864fa50d1e5a8c",
+      "filename": "2018_03_29_SEC-Filing_Automotive-Components_sec.json"
+    }
+  ],
+  "original_record_hash": "a22ece027a2ea6808a091472a85d7d3af9f14ebd6beb2125464fe929017c44ca",
+  "input_hash": "ea978eea09298f1f213367f5b7c87118c0d6014a3ed08bc680681b568839d611",
+  "matching_audit_hash": "cff0e1a16e1acb0ceb414aff9f32e9ad85feb95e12791b494e5d7a103625ad43",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ec749ccdbc02bbe7844f53d78b44f55807d1696af97fb48ae0f46e2d846b13e8",
+    "raw_sha256": "7fed762d8d10674d84fbd06d25199801e202125bf6f0e16473d3682aee4d3dd6",
+    "date_quote": "SEC filing datePublished=2018-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/749098/000119312518099856/d481059d40f.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Magna International Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Magna International Inc. (Exact name of Registrant as specified in its charter)"
+    },
+    {
+      "name": "Registrant",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Registrant"
+    },
+    {
+      "name": "The Registrant",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Registrant"
+    }
+  ],
+  "record_hash": "1912fbc7378d7066c234b8d0771b700cb768dbb964f12c26c2584b5f30d735da",
+  "outputs": [
+    {
+      "path": "US\\2018_03_29_SEC-Filing_Automotive-Components_sec.json",
+      "sha256": "4196935059f6149315d04475055130c5157e8d956dfa7dc52d38e0a8c22ab975"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:13.032994+00:00",
+    "fetched_at": "2026-11-10T21:29:25.880390+00:00",
+    "feature_available_at": "2026-11-10T21:31:18.519344+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:21.638376+00:00",
+  "commit_verified_at": "2026-11-12T13:53:21.638376+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Magna International Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Magna International Inc. (Exact name of Registrant as specified in its charter)"
+      },
+      {
+        "name": "Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Registrant"
+      },
+      {
+        "name": "The Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Registrant"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive Components",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

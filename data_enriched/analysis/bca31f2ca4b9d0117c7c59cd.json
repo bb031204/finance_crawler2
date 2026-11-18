@@ -1,0 +1,102 @@
+{
+  "source_id": "bca31f2ca4b9d0117c7c59cd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_01_25_Financial-Report_Semiconductor_sec.json",
+      "sha256": "73dba2d03a47abf0e3492e051a17703ffbb0ace5c0b06c0f1e7a988bef79cde6",
+      "filename": "2012_01_25_Financial-Report_Semiconductor_sec.json"
+    }
+  ],
+  "original_record_hash": "02434322569cbe2fa64092d04969d05dcc02a1202aad0a9da840b3be7c02b926",
+  "input_hash": "7ab5da419a84318b41bc6581d0ec2e09d3af49bb8908626a23bec6c7399ea347",
+  "matching_audit_hash": "d34b2f7535784287546ad85e075540366c8e25555474b9f68f0c6f279078b687",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "146eef54d016da3f1091cc2969bcfbdd7f80b6780f939b103fd992d6ed31eb82",
+    "raw_sha256": "218ee3ec98b397f9438f1d1948577f11d8f6870c56ef4238c00567ab204d263d",
+    "date_quote": "Date of Report (Date of earliest event reported): January 25, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018012000003/form8-kq411earningsrelease.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation (the “Registrant”) issued a press release to report its financial results for its fourth quarter and fiscal year ended January 1, 2012."
+    }
+  ],
+  "record_hash": "fec75780a229da14b84787e412e6a9e07c7f99a5d83b778e95cb6317b5b0f22f",
+  "outputs": [
+    {
+      "path": "US\\2012_01_25_Financial-Report_Semiconductor_sec.json",
+      "sha256": "f97a3a4f191c70bbc50202a861eddca5b7c271944645e9fdf9c0a3b4f0d8daae"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-01-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:29:45.662595+00:00",
+    "feature_available_at": "2026-11-10T22:30:11.403219+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:37.590185+00:00",
+  "commit_verified_at": "2026-11-12T13:52:37.590185+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation (the “Registrant”) issued a press release to report its financial results for its fourth quarter and fiscal year ended January 1, 2012."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

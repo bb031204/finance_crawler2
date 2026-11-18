@@ -1,0 +1,108 @@
+{
+  "source_id": "b1090541a3ac1bbed90d5e88",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_06_01_Technology_Automotive_cnbc.json",
+      "sha256": "dc293e517cf667b28a93e107598ed6ede4209f373a4da5d25b58884aaeedd6ea",
+      "filename": "2017_06_01_Technology_Automotive_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3db8260753887f14c81fd170482d336e8d9ea8f64fd0526ce47df8eded1c93fb",
+  "input_hash": "e92f10c2ca91b953c6bd0e249f36136afa5cfd5aecc17bb5363fbde8665ba2c9",
+  "matching_audit_hash": "d1e1299ba2e5cd8179c197674a517dda0e3d0adbea4d1d21c7b1ecc6fe070229",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "363d8bbc68a5ab6ddf1faa7368ecc719e0d7b706b96922e191d8cb7749c38e6a",
+    "raw_sha256": "e43120b6e0bec9e840b921a6b3d5c3ea69856272a7fc46ea7e5e65fc3802c40d",
+    "date_quote": "article:published_time=2017-06-01T17:00:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Intel",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Intel"
+    },
+    {
+      "name": "Strategy Analytics",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Strategy Analytics and Intel"
+    }
+  ],
+  "record_hash": "4000e4dd43b2c436517ff57ed8f5f9cf99ab3b2a1782d16c74c3f366781e31b5",
+  "outputs": [
+    {
+      "path": "US\\2017_06_01_Technology_Automotive_cnbc.json",
+      "sha256": "52c277b948010c3c8e5427ae9d6c52a4443168ad4e672142cdc8cee364bb4a57"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-06-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:09.891390+00:00",
+    "fetched_at": "2026-11-10T21:28:35.355643+00:00",
+    "feature_available_at": "2026-11-10T21:28:44.244844+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:15.460274+00:00",
+  "commit_verified_at": "2026-11-12T13:53:15.460274+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Intel",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Intel"
+      },
+      {
+        "name": "Strategy Analytics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Strategy Analytics and Intel"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

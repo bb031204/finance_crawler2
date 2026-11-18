@@ -1,0 +1,120 @@
+{
+  "source_id": "8e0b3894428044941603fa76",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_09_29_20_57_Biotechnology_Biotechnology_cnbc.json",
+      "sha256": "3dc45b65b0c24f67471a8638a40d550534ee35b924d24f09e54111a63db5374b",
+      "filename": "2021_09_29_20_57_Biotechnology_Biotechnology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "389c63b13f8db4eefdd417c70671143ca011d7a047b3973d8fa936e940084fa1",
+  "input_hash": "a12121ff20f141f9e1287a9ba1e460da73f9856250d5d86d5b08b9657aee8528",
+  "matching_audit_hash": "9562e48a536b7c9e8cb1b37d63a13a7ab7eb40f1b6d3bbf577441ce183800b45",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e86b95ea38f615085f4c113cb71a3996e1d270359b6e084ca777f13627c3e1a6",
+    "raw_sha256": "4172b68a5f80f04de645b023e720212b89d5a8ab9d4136d5a0360d29a556813d",
+    "date_quote": "article:published_time=2021-09-29T20:57:19+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "iShares Biotechnology ETF",
+      "ticker": null,
+      "exchange": null,
+      "quote": "iShares Biotechnology ETF"
+    },
+    {
+      "name": "Pfizer",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Pfizer"
+    },
+    {
+      "name": "Moderna",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Moderna"
+    }
+  ],
+  "record_hash": "18e4244c5938dc3f2c193a90191db0911232447b018b684e0d4dfefcfef6b6b8",
+  "outputs": [
+    {
+      "path": "US\\2021_09_29_20_57_Biotechnology_Biotechnology_cnbc.json",
+      "sha256": "490ef50a1bdf872ab8a1f4a54eb057b2484642db7f57f41ca267bdc837bbf242"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-09-29T20:57:19+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:37:58.996474+00:00",
+    "fetched_at": "2026-11-10T20:55:07.076377+00:00",
+    "feature_available_at": "2026-11-10T20:55:26.597973+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:38.595591+00:00",
+  "commit_verified_at": "2026-11-12T13:53:38.595591+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "iShares Biotechnology ETF",
+        "ticker": null,
+        "exchange": null,
+        "quote": "iShares Biotechnology ETF"
+      },
+      {
+        "name": "Pfizer",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pfizer"
+      },
+      {
+        "name": "Moderna",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Moderna"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

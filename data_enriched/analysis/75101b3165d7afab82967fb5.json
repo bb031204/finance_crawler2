@@ -1,0 +1,95 @@
+{
+  "source_id": "75101b3165d7afab82967fb5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_09_19_Retail_Consumer-Goods_cnbc.json",
+      "sha256": "75cbe84c3b470c526e5e1f66684c6ea328352451892cb6a8f882da04ebed9638",
+      "filename": "2017_09_19_Retail_Consumer-Goods_cnbc.json"
+    }
+  ],
+  "original_record_hash": "22a8054896cf7793f9983564a2c73b8602a0bc76ef33f0a0c89613e5e6ac36c6",
+  "input_hash": "1c667c3c18b1da6b52460b58e73d7cac9334876fed1f42a26a6fb8f982de427d",
+  "matching_audit_hash": "a2c04902d6a1a5b164b3371670ff7e372c1883f239d0e9d0c0392bb0ec82e73d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c24f866cf0f1cc5d369dbfdb54b52a1ae01407c7c6444378eada407c6390dba9",
+    "raw_sha256": "24916271024d586d884e4159e539f84bb3d61532f5bf7c04a804611a31a88de2",
+    "date_quote": "article:published_time=2017-09-19T16:34:34+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Hasbro",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Hasbro"
+    }
+  ],
+  "record_hash": "0a1b5d4a4f59ae4d1dfd82116567530b662b6d776b8cb975feb2a38b16066766",
+  "outputs": [
+    {
+      "path": "US\\2017_09_19_Retail_Consumer-Goods_cnbc.json",
+      "sha256": "40b8c1ad082c092b5c03dd9bb38dac73a9959db19fbad67fc58b94256e9ee7c0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-09-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:36:03.079997+00:00",
+    "fetched_at": "2026-11-10T15:08:47.310183+00:00",
+    "feature_available_at": "2026-11-10T18:30:20.920978+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:16.777710+00:00",
+  "commit_verified_at": "2026-11-12T13:53:16.777710+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Hasbro",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hasbro"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer-Goods",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

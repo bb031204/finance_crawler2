@@ -1,0 +1,211 @@
+{
+  "source_id": "f706749f996db4976b0f839d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_09_28_Government-Policy_Energy_treasury.json",
+      "sha256": "1cf297e2c805f3e0cbc2ccee57c4523e67bda1330e23e8d236fea861b5b8ba41",
+      "filename": "2012_09_28_Government-Policy_Energy_treasury.json"
+    }
+  ],
+  "original_record_hash": "52507603e496ab0443cfac7207d6908fd0dc4096003810c299ab057c769cbb44",
+  "input_hash": "47067a382c0b1f340d338a788474fd5f5ceaace80272b66be2885d270cb0a1e0",
+  "matching_audit_hash": "f48a64a20f6213129ec100e342efd085d7dbaf0974a9d11fcc8ee7cfaa249f6d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e27c6f4856f27bf4a90f52d47da6d711c0047bac62a8a459c5bfc718d712db3c",
+    "raw_sha256": "a2058358bf649cf0b5867f7fae863f2bf2f99754b8f3721f6bbfb4c6223aeb1e",
+    "date_quote": "September 28, 2012 (Archived Content) WASHINGTON –As chair of the Committee on Foreign Investment in the United States (CFIUS), the U.S. Department of the Treasury today issued the",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "cb8cf7b18b27af2d179aae42353ce868887aec7230b88f0d987d1338d0761dc8",
+  "outputs": [
+    {
+      "path": "US\\2012_09_28_Government-Policy_Energy_treasury.json",
+      "sha256": "a291d89e09ab075e743d0020919d75c5d231d077977facaaa84ace2ce473d438"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-09-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:59.652976+00:00",
+    "fetched_at": "2026-11-10T10:49:28.548489+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.982898+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:04.048696+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.107788+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.107788+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "National security and foreign investment policy impact",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Ralls Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ralls Corporation"
+      },
+      {
+        "name": "Naval Weapons Systems Training Facility Boardman",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Naval Weapons Systems Training Facility Boardman"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Wind energy",
+        "basis": "inferred",
+        "quote": "wind farm project companies"
+      },
+      {
+        "name": "Construction equipment",
+        "basis": "explicit",
+        "quote": "Chinese construction equipment company"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Ralls Corporation": "company",
+      "Naval Weapons Systems Training Facility Boardman": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "excluded_non_entity_mentions": [
+      "Defense Production Act of 1950",
+      "Foreign Investment and National Security Act of 2007"
+    ]
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.137882+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:04.048696+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "National security and foreign investment policy impact",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "Ralls Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Ralls Corporation"
+        },
+        {
+          "name": "Naval Weapons Systems Training Facility Boardman",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Naval Weapons Systems Training Facility Boardman"
+        },
+        {
+          "name": "Defense Production Act of 1950",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Defense Production Act of 1950"
+        },
+        {
+          "name": "Foreign Investment and National Security Act of 2007",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Foreign Investment and National Security Act of 2007"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Wind energy",
+          "basis": "inferred",
+          "quote": "wind farm project companies"
+        },
+        {
+          "name": "Construction equipment",
+          "basis": "explicit",
+          "quote": "Chinese construction equipment company"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "Ralls Corporation": "company",
+        "Naval Weapons Systems Training Facility Boardman": "organization",
+        "Defense Production Act of 1950": "organization",
+        "Foreign Investment and National Security Act of 2007": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:04.074964+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:04.084337+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:04.064823+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a government policy decision related to national security and foreign investment, specifically involving Ralls Corporation and its attempt",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:58:21.968161+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

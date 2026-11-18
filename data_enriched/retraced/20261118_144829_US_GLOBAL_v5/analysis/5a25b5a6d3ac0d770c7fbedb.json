@@ -1,0 +1,260 @@
+{
+  "source_id": "5a25b5a6d3ac0d770c7fbedb",
+  "status": "completed",
+  "source_record_hash": "729ed3f280dfd4be05475c6af99e679f22c065d395be07eb592cdf16b383af4c",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-16-606457-index.html",
+    "attempted_at": "2026-11-18T15:51:27.140245+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "0568d879239b5f5cd5006719d0bb5968dc23ae325d10bd4e9dd9f428b6fd0de0"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/5a25b5a6d3ac0d770c7fbedb.json",
+    "sha256": "379facfbce6d5dfd74674b859c9c6ae92807a662ecfdb0c2309514189e037bb5",
+    "bundled_path": "legacy_audit/5a25b5a6d3ac0d770c7fbedb.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "0ed97991b2fb31bf43b0a4dcec88635c399fcad653c37c9ab41e376136ccaad5",
+      "llm_inferred_at": "2026-11-18T15:52:18.667938+00:00",
+      "model_duration_seconds": 6.4758473,
+      "prompt_tokens": 1773,
+      "completion_tokens": 301,
+      "selection": [
+        {
+          "source_id": "5a25b5a6d3ac0d770c7fbedb",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On May 23, 2016, Marc Adelson tendered his resignation as Chief Credit Officer and Chief Operating Officer of Medallion Financial Corp (the Company) and President of the Company",
+              "rationale": "The article discusses a specific company, Medallion Financial Corp, and the resignation of a senior executive, which is a company-specific event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6159",
+              "name": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "basis": "explicit",
+              "quote": "On May 23, 2016, Marc Adelson tendered his resignation as Chief Credit Officer and Chief Operating Officer of Medallion Financial Corp (the Company) and President of the Company"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:52:18.679531+00:00",
+  "audit": {
+    "source_id": "5a25b5a6d3ac0d770c7fbedb",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-16-606457-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2016-05-27",
+    "date_quote": "SEC filing datePublished=2016-05-27",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "0568d879239b5f5cd5006719d0bb5968dc23ae325d10bd4e9dd9f428b6fd0de0",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T05:11:43.423609+00:00",
+    "fetched_at": "2026-11-12T19:13:42.507384+00:00",
+    "first_extracted_at": "2026-11-12T19:14:03.250779+00:00",
+    "extracted_at": "2026-11-18T15:52:18.669068+00:00",
+    "feature_available_at": "2026-11-18T15:52:18.679531+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp"
+      },
+      {
+        "name": "Medallion Business Credit",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the Companys asset based lending division, Medallion Business Credit"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6159",
+        "name": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+        "basis": "inferred",
+        "quote": "On May 23, 2016, Marc Adelson tendered his resignation as Chief Credit Officer and Chief Operating Officer of Medallion Financial Corp (the Company) and President of the Company",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6159",
+        "industry_name_standard": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On May 23, 2016, Marc Adelson tendered his resignation as Chief Credit Officer and Chief Operating Officer of Medallion Financial Corp (the Company) and President of the Company"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "729ed3f280dfd4be05475c6af99e679f22c065d395be07eb592cdf16b383af4c",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2016_05_27_corporate-action_Financial-Services_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\2bb8f2bffb42184d469be128af084e76b6ea9094f92ef76d25c1b231c0d9443c.json",
+      ".runtime\\simple\\model_cache\\66978de139122318c28f9b2307ef253d4d921730c8ed3e0d13f2818e3f2accfb.json",
+      ".runtime\\simple\\pages\\5a25b5a6d3ac0d770c7fbedb.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312516606457/d200449d8k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312516606457/d200449d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "b33deeab90061f94f4f6d5313bcf379c324d9f2b594404206b3f617ccc740ec2",
+        "text_sha256": "a0eb2bdc7785bd862976b2a7241e2fda57fa69e021419bad7cadeeabbe809ff1",
+        "text_start": 0,
+        "text_end": 2164
+      }
+    ],
+    "sec_document_version": 2,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "df1cd1a937e323bda27c723eb116a8db5c9ce835bc43347b40fd568bdbf06202",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-16-606457-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T15:52:18.667938+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "0568d879239b5f5cd5006719d0bb5968dc23ae325d10bd4e9dd9f428b6fd0de0",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Medallion Financial Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Medallion Business Credit",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the Companys asset based lending division, Medallion Business Credit",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": "resignation",
+        "object": "Chief Credit Officer and Chief Operating Officer",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Marc Adelson tendered his resignation as Chief Credit Officer and Chief Operating Officer of Medallion Financial Corp"
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": "responsibilities",
+        "key_period": null,
+        "key_values": "interim basis",
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Mr. Adelsons responsibilities will be assumed on an interim basis by Andrew M. Murstein, President of the Company"
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [],
+    "event_cluster_id": null,
+    "extraction_version": "d8ccd2281194f7c39ba9f0b44fd2e82a62d3ea97a8292fa72344f36732f5927c",
+    "commit_verified_at": "2026-11-12T19:14:03.325673+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T19:14:03.457255+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\5a25b5a6d3ac0d770c7fbedb.json",
+      ".runtime\\simple\\model_cache\\2bb8f2bffb42184d469be128af084e76b6ea9094f92ef76d25c1b231c0d9443c.json",
+      ".runtime\\simple\\model_cache\\66978de139122318c28f9b2307ef253d4d921730c8ed3e0d13f2818e3f2accfb.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "On May 23, 2016, Marc Adelson tendered his resignation as Chief Credit Officer and Chief Operating Officer of Medallion Financial Corp (the Company) and President of the Company",
+        "rationale": "The article discusses a specific company, Medallion Financial Corp, and the resignation of a senior executive, which is a company-specific event.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On May 23, 2016, Marc Adelson tendered his resignation as Chief Credit Officer and Chief Operating Officer of Medallion Financial Corp (the Company) and President of the Company"
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "729ed3f280dfd4be05475c6af99e679f22c065d395be07eb592cdf16b383af4c",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/5a25b5a6d3ac0d770c7fbedb.json",
+      "sha256": "44eec51fb81d010aed4bfb286099963f8bd1fd7050025db44d82cf935ed4e35f",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 51.562999999994645
+}

@@ -1,0 +1,165 @@
+{
+  "source_id": "9001d9cbacbb13ce708f33c4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_05_29_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "7c3868f6929d1ac7706f6b971b3a0ef5d1cf5b8192cabad7fa44fa589d7a0882",
+      "filename": "2012_05_29_Energy_Coal-Mining_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "248fa4691de65ab8dc0ae49792e716c9f21f1124c47a804afa6b0dad59c3a6c0",
+  "input_hash": "e89f6c469d97f0f55b8617a9efbab7f0cd6b99a1728019a3e570241747754258",
+  "matching_audit_hash": "10ffe110861df4d9be1d4b4fa741218fd041ec0f35b36116c4c7984ba8e963a4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "392a54cdd5c576ab499a0c3b36a517329085068c1ff71797e69bfab33e1fe151",
+    "raw_sha256": "866f6e2c03b9a2e2776804503b801b25bccd50ac93be85b4912ff6da9637a22b",
+    "date_quote": "By Simon Casey May 29, 2012 at 10:05 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7915b53f263a9c499368ae568965d4f0096c37dc986b44970a691657e8386c85",
+  "outputs": [
+    {
+      "path": "US\\2012_05_29_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "52c2faf89d28aea014004d385bb9562ceac854daedeef798dc9dcb22a3e8ab06"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-05-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:35:36.363236+00:00",
+    "fetched_at": "2026-11-10T14:57:41.523893+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.749263+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:59:21.711275+00:00",
+  "feature_available_at": "2026-11-12T15:16:33.566334+00:00",
+  "commit_verified_at": "2026-11-12T15:16:33.566334+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Leadership changes and company restructuring",
+    "securities": [
+      {
+        "name": "Patriot Coal Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Patriot Coal Corp., a U.S. coal mining company"
+      },
+      {
+        "name": "Peabody Energy Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "former CEO of Peabody Energy Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "coal mining",
+        "basis": "explicit",
+        "quote": "a U.S. coal mining company"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Patriot Coal Corp.": "company",
+      "Peabody Energy Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:33.585337+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:59:21.711275+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Leadership changes and company restructuring",
+      "securities": [
+        {
+          "name": "Patriot Coal Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Patriot Coal Corp., a U.S. coal mining company"
+        },
+        {
+          "name": "Peabody Energy Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "former CEO of Peabody Energy Corp."
+        }
+      ],
+      "industries": [
+        {
+          "name": "coal mining",
+          "basis": "explicit",
+          "quote": "a U.S. coal mining company"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Patriot Coal Corp.": "company",
+        "Peabody Energy Corp.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:59:21.735867+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:59:21.744567+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:21.728137+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary includes information about leadership changes at Patriot Coal Corp., including the departure of the CEO and the appointment of a new CEO and COO, as",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:57:57.445659+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

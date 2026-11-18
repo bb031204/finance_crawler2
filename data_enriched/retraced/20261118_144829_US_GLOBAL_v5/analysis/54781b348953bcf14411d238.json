@@ -1,0 +1,265 @@
+{
+  "source_id": "54781b348953bcf14411d238",
+  "status": "completed",
+  "source_record_hash": "81580657823476f8a656d1b9fc0dd94ecaea0a7de929b8334067a8543b0e1adb",
+  "source_trace": {
+    "requested_url": "https://www.bloomberg.com/news/articles/2021-08-06/crop-giant-cargill-reports-biggest-profit-in-156-year-history",
+    "attempted_at": "2026-11-18T14:47:30.817386+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "aa5b084cef664dd6ba9f0212a19377527883056bb9557f10d9879460f0604b4b"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/54781b348953bcf14411d238.json",
+    "sha256": "114e1514b3c7e4cb8e9404c06832427356b555ae8cab31907179ebc27b74a872",
+    "bundled_path": "legacy_audit/54781b348953bcf14411d238.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "7ab0cdedb16055ae8a09b9632feca3abb5e2287f31f6702aa34e69c00058265c",
+      "llm_inferred_at": "2026-11-18T14:48:24.733733+00:00",
+      "model_duration_seconds": 8.8399639,
+      "prompt_tokens": 1116,
+      "completion_tokens": 476,
+      "selection": [
+        {
+          "source_id": "54781b348953bcf14411d238",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The profit surge reflects the success of commodity merchants during the Covid-19 pandemic.",
+              "rationale": "The article indicates that the success of commodity merchants, which is part of the broader commodity trading industry, contributed to the profit surge, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The profit surge reflects the success of commodity merchants during the Covid-19 pandemic.",
+              "rationale": "The success of commodity merchants during the pandemic is tied to broader macroeconomic conditions and global financial market dynamics, which are indicative of a US equity market impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Cargill Inc., the largest private U.S. company, reported its biggest profit in 156-year history during its 2021 fiscal year through May, with nearly $5 billion in net income. The profit surge reflects the success of commodity merchants during the Covid-19 pandemic.",
+              "rationale": "The article discusses the performance of a major U.S. company in the context of the broader economic and market conditions during the pandemic, which is relevant to the U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6221",
+              "name": "COMMODITY CONTRACTS BROKERS & DEALERS",
+              "basis": "explicit",
+              "quote": "The profit surge reflects the success of commodity merchants during the Covid-19 pandemic."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "d884e3be082583b04e4f97c49786a19b909385bbbdcd9536e5962618658f6cf4",
+      "llm_inferred_at": "2026-11-18T14:48:29.492037+00:00",
+      "model_duration_seconds": 4.7353839,
+      "prompt_tokens": 1160,
+      "completion_tokens": 262,
+      "selection": [
+        {
+          "source_id": "54781b348953bcf14411d238",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Cargill Inc., the largest private U.S. company, reported its biggest profit in 156-year history during its 2021 fiscal year through May, with nearly $5 billion in net income. The",
+              "rationale": "The article specifically discusses Cargill Inc.'s financial performance, indicating a company-level impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "The profit surge reflects the success of commodity merchants during the Covid-19 pandemic."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:48:29.537093+00:00",
+  "audit": {
+    "source_id": "54781b348953bcf14411d238",
+    "url": "https://www.bloomberg.com/news/articles/2021-08-06/crop-giant-cargill-reports-biggest-profit-in-156-year-history",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2021-08-06T17:46:58.161000+00:00",
+    "date_quote": "article_time_datetime=2021-08-06T17:46:58.161Z | August 6, 2021 at 5:46 PM UTC",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "aa5b084cef664dd6ba9f0212a19377527883056bb9557f10d9879460f0604b4b",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-12T17:09:35.658567+00:00",
+    "fetched_at": "2026-11-13T21:28:30.146011+00:00",
+    "first_extracted_at": "2026-11-13T21:28:39.527907+00:00",
+    "extracted_at": "2026-11-18T14:48:29.492667+00:00",
+    "feature_available_at": "2026-11-18T14:48:29.537093+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Cargill Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Commodity powerhouse Cargill Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6200",
+        "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+        "basis": "inferred",
+        "quote": "The profit surge reflects the success of commodity merchants during the Covid-19 pandemic.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6200",
+        "industry_name_standard": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The profit surge reflects the success of commodity merchants during the Covid-19 pandemic."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "81580657823476f8a656d1b9fc0dd94ecaea0a7de929b8334067a8543b0e1adb",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2021_08_06_17_46_corporate-action_Agriculture_bloomberg.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\bf8ecc33ef6d8d88e3ff506d4d6edbf1acba63f75ef339b70a060791e7fdd7be.json",
+      ".runtime\\simple\\model_cache\\c9fb2a6987ab92a5f8a238326f74e7ce2af069b219e1732c5fece66e66a2bd54.json",
+      ".runtime\\simple\\pages\\54781b348953bcf14411d238.json"
+    ],
+    "cleanup_errors": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.bloomberg.com/news/articles/2021-08-06/crop-giant-cargill-reports-biggest-profit-in-156-year-history",
+    "title": "Crop Giant Cargill Reports Biggest Profit in 156-Year History",
+    "title_origin": "heading",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T14:48:29.492037+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "aa5b084cef664dd6ba9f0212a19377527883056bb9557f10d9879460f0604b4b",
+    "source_type": "web",
+    "entity_details": [
+      {
+        "name": "Cargill Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Commodity powerhouse Cargill Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "earnings",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "had almost $5 billion in net income during its 2021 fiscal year through the end of May"
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [],
+    "event_cluster_id": null,
+    "extraction_version": "805762dd87a8800c46735aca7529d5314e497fdbd2ba7af77dce360d413f5205",
+    "commit_verified_at": "2026-11-13T21:28:39.564641+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-13T21:28:39.632337+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\54781b348953bcf14411d238.json",
+      ".runtime\\simple\\model_cache\\c9fb2a6987ab92a5f8a238326f74e7ce2af069b219e1732c5fece66e66a2bd54.json",
+      ".runtime\\simple\\model_cache\\bf8ecc33ef6d8d88e3ff506d4d6edbf1acba63f75ef339b70a060791e7fdd7be.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Cargill Inc., the largest private U.S. company, reported its biggest profit in 156-year history during its 2021 fiscal year through May, with nearly $5 billion in net income. The",
+        "rationale": "The article specifically discusses Cargill Inc.'s financial performance, indicating a company-level impact.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Cargill Inc., the largest private U.S. company, reported its biggest profit in 156-year history during its 2021 fiscal year through May, with nearly $5 billion in net income. The"
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "81580657823476f8a656d1b9fc0dd94ecaea0a7de929b8334067a8543b0e1adb",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/54781b348953bcf14411d238.json",
+      "sha256": "cfa8751dc7accf3fa168352513ff03080762e51af3efd7f409a386d03f2701bc",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 58.73399999999674
+}

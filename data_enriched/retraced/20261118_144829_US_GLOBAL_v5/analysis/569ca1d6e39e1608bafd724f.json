@@ -1,0 +1,268 @@
+{
+  "source_id": "569ca1d6e39e1608bafd724f",
+  "status": "completed",
+  "source_record_hash": "6f7afe6e801200449753a91f8ccc2c230a75aff6f77d898209575c6cdf77fd35",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-22-000002-index.html",
+    "attempted_at": "2026-11-18T15:11:20.434578+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "2823ab0a6fdd96c1670a71179fd5af89103000f95bf38f78167261c36642c088"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/569ca1d6e39e1608bafd724f.json",
+    "sha256": "e80019c3867cee9cb272fec6f76bf1f77d2542e198f6897336f2575b133f485c",
+    "bundled_path": "legacy_audit/569ca1d6e39e1608bafd724f.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "ca0e7b6d631328972c7395909a72bebd990cc983f6be5e1b6a33526afd1bfcce",
+      "llm_inferred_at": "2026-11-18T15:12:14.891665+00:00",
+      "model_duration_seconds": 9.4135687,
+      "prompt_tokens": 2099,
+      "completion_tokens": 462,
+      "selection": [
+        {
+          "source_id": "569ca1d6e39e1608bafd724f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The filing includes details about the company's common stock, with a par value of $0.01 per share, and its registration on the New York Stock Exchange.",
+              "rationale": "The company's registration on the New York Stock Exchange indicates its involvement in the financial services industry, which is a key sector for stock market activities.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Insperity, Inc. filed a Form 8-K with the SEC on January 3, 2022, to report its latest filing under the Securities Exchange Act of 1934. The filing includes details about the",
+              "rationale": "The filing is specific to Insperity, Inc., indicating a company-level event related to regulatory compliance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8111",
+              "name": "SERVICES-LEGAL SERVICES",
+              "basis": "explicit",
+              "quote": "The filing includes details about the company's common stock, with a par value of $0.01 per share, and its registration on the New York Stock Exchange."
+            },
+            {
+              "industry_key": "SEC-SIC:6324",
+              "name": "HOSPITAL & MEDICAL SERVICE PLANS",
+              "basis": "explicit",
+              "quote": "On December 28, 2021, Insperity, Inc."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "414ef6cdd6a9d4822183a50462037b3e4ec20a0eed32728f9f1fd8a2d7e0d86c",
+      "llm_inferred_at": "2026-11-18T15:12:21.627563+00:00",
+      "model_duration_seconds": 6.7292754,
+      "prompt_tokens": 2143,
+      "completion_tokens": 354,
+      "selection": [
+        {
+          "source_id": "569ca1d6e39e1608bafd724f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The filing includes details about the company's common stock, with a par value of $0.01 per share, and its registration on the New York Stock Exchange.",
+              "rationale": "The company's registration on the New York Stock Exchange indicates its involvement in the financial services industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "On December 28, 2021, Insperity, Inc.",
+              "rationale": "The amendment to the arrangement with UnitedHealthcare is a specific event related to the company's operations.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6324",
+              "name": "HOSPITAL & MEDICAL SERVICE PLANS",
+              "basis": "explicit",
+              "quote": "The filing includes details about the company's common stock, with a par value of $0.01 per share, and its registration on the New York Stock Exchange."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:12:21.638607+00:00",
+  "audit": {
+    "source_id": "569ca1d6e39e1608bafd724f",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-22-000002-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2022-01-03",
+    "date_quote": "SEC filing datePublished=2022-01-03",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "2823ab0a6fdd96c1670a71179fd5af89103000f95bf38f78167261c36642c088",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T04:55:59.000366+00:00",
+    "fetched_at": "2026-11-12T07:04:38.429405+00:00",
+    "first_extracted_at": "2026-11-12T07:05:18.727556+00:00",
+    "extracted_at": "2026-11-18T15:12:21.628741+00:00",
+    "feature_available_at": "2026-11-18T15:12:21.638607+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc."
+      },
+      {
+        "name": "UnitedHealthcare",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UnitedHealthcare"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [
+      {
+        "code": "NSP",
+        "reason": "unsupported_company_code_label_removed"
+      },
+      {
+        "code": "INSP",
+        "reason": "unsupported_company_code_label_removed"
+      }
+    ],
+    "record_hash": "6f7afe6e801200449753a91f8ccc2c230a75aff6f77d898209575c6cdf77fd35",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2022_01_03_Financial_Healthcare_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\6cb888e87f71be157c889af3c9a9490cc8d0a7a6aee5b40557605d6216e35636.json",
+      ".runtime\\simple\\model_cache\\c82f40b64381a26762e583b5b62145df912f2abfbe391cad8c08d6fadfca4cfa.json",
+      ".runtime\\simple\\model_cache\\ece1dcbc75f3fee1c3ac034503c14441a55ab0f5ccfb069ec6b96d464ab4af19.json",
+      ".runtime\\simple\\pages\\569ca1d6e39e1608bafd724f.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075322000002/nsp-20220103.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-22-000002-index.html",
+    "title": "nsp-20220103",
+    "title_origin": "html_title",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T15:12:21.627563+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "2823ab0a6fdd96c1670a71179fd5af89103000f95bf38f78167261c36642c088",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "UnitedHealthcare",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UnitedHealthcare",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "f61485265bcaf1f116377d085fbd3bc40d4d13558715e391ae16e61250b87679",
+    "commit_verified_at": "2026-11-12T07:05:18.749557+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T07:05:18.825128+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\569ca1d6e39e1608bafd724f.json",
+      ".runtime\\simple\\model_cache\\ece1dcbc75f3fee1c3ac034503c14441a55ab0f5ccfb069ec6b96d464ab4af19.json",
+      ".runtime\\simple\\model_cache\\6cb888e87f71be157c889af3c9a9490cc8d0a7a6aee5b40557605d6216e35636.json",
+      ".runtime\\simple\\model_cache\\c82f40b64381a26762e583b5b62145df912f2abfbe391cad8c08d6fadfca4cfa.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "On December 28, 2021, Insperity, Inc.",
+        "rationale": "The amendment to the arrangement with UnitedHealthcare is a specific event related to the company's operations.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On December 28, 2021, Insperity, Inc."
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "6f7afe6e801200449753a91f8ccc2c230a75aff6f77d898209575c6cdf77fd35",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/569ca1d6e39e1608bafd724f.json",
+      "sha256": "04feb0c17b44c277243a638f9a056e589177a8fee090f2e86b1ed5d402d62b43",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 61.203000000008615
+}

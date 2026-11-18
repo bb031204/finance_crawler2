@@ -1,0 +1,305 @@
+{
+  "source_id": "c4bc1f982b5bdd190ea31bf9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_04_12_IPO_Financial-Services_cnbc.json",
+      "sha256": "0a55b1d8b37049e1ecdf6da2d3bcec29f5629b7f1c61aa51479ba575c658ec18",
+      "filename": "2012_04_12_IPO_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "800ff8ad2166bc7cfa5143292a9ac86feef487605ce7d79275ef1fd0bef4d827",
+  "input_hash": "ef66c242fe3e4a14637809e9195407641886e986c0b5df10314ef956dcc46e79",
+  "matching_audit_hash": "b576e135dbb1cf4126c62d92b7e6d5101fc677b196e141459621e9f8c7b870ee",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fd8dbe69d9a306ce6cd626283f1966c09e8ddf0dd8d98a479d5f6a96c8a9e7d5",
+    "raw_sha256": "a72184f94c316f3e3de75bac542a7efabfcc37a102be6ad98a7556034bb002bf",
+    "date_quote": "article:published_time=2012-04-12T18:10:42+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1dae0788ab7177caceaa1ee1c87c788bf24db0371e5d80034dfe7c34ebd403ea",
+  "outputs": [
+    {
+      "path": "US\\2012_04_12_IPO_Financial-Services_cnbc.json",
+      "sha256": "1e102afefde6b80ac3533de1c332ffbb828e4366bc9af868e6bde40f3273caaf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-04-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:02:34.314109+00:00",
+    "fetched_at": "2026-11-10T13:29:59.405644+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.599269+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:59:08.436185+00:00",
+  "feature_available_at": "2026-11-12T15:16:33.419551+00:00",
+  "commit_verified_at": "2026-11-12T15:16:33.419551+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "IPO performance and private-equity firm challenges",
+    "securities": [
+      {
+        "name": "Oaktree Capital Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Oaktree Capital Management's IPO"
+      },
+      {
+        "name": "New York Stock Exchange",
+        "ticker": null,
+        "exchange": null,
+        "quote": "listed shares on the New York Stock Exchange"
+      },
+      {
+        "name": "Blackstone Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blackstone Group"
+      },
+      {
+        "name": "KKR & Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KKR & Co."
+      },
+      {
+        "name": "Fortress Investment Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fortress Investment Group"
+      },
+      {
+        "name": "Morningstar",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Greggory Warren, a senior stock analyst with Morningstar"
+      },
+      {
+        "name": "Franklin Resources",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Franklin Resources"
+      },
+      {
+        "name": "Invesco",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Invesco"
+      },
+      {
+        "name": "Affiliated Managers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Affiliated Managers"
+      },
+      {
+        "name": "Blackrock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blackrock"
+      },
+      {
+        "name": "Credit Suisse",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Credit Suisse analyst Howard Chen"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Private-equity",
+        "basis": "explicit",
+        "quote": "private-equity firms"
+      },
+      {
+        "name": "Investment banking",
+        "basis": "inferred",
+        "quote": "investment bank involvement"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Oaktree Capital Management": "company",
+      "New York Stock Exchange": "organization",
+      "Blackstone Group": "company",
+      "KKR & Co.": "company",
+      "Fortress Investment Group": "company",
+      "Morningstar": "organization",
+      "Franklin Resources": "company",
+      "Invesco": "company",
+      "Affiliated Managers": "company",
+      "Blackrock": "company",
+      "Credit Suisse": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:33.447558+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:59:08.436185+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "IPO performance and private-equity firm challenges",
+      "securities": [
+        {
+          "name": "Oaktree Capital Management",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Oaktree Capital Management's IPO"
+        },
+        {
+          "name": "New York Stock Exchange",
+          "ticker": null,
+          "exchange": null,
+          "quote": "listed shares on the New York Stock Exchange"
+        },
+        {
+          "name": "Blackstone Group",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Blackstone Group"
+        },
+        {
+          "name": "KKR & Co.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "KKR & Co."
+        },
+        {
+          "name": "Fortress Investment Group",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Fortress Investment Group"
+        },
+        {
+          "name": "Morningstar",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Greggory Warren, a senior stock analyst with Morningstar"
+        },
+        {
+          "name": "Franklin Resources",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Franklin Resources"
+        },
+        {
+          "name": "Invesco",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Invesco"
+        },
+        {
+          "name": "Affiliated Managers",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Affiliated Managers"
+        },
+        {
+          "name": "Blackrock",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Blackrock"
+        },
+        {
+          "name": "Credit Suisse",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Credit Suisse analyst Howard Chen"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Private-equity",
+          "basis": "explicit",
+          "quote": "private-equity firms"
+        },
+        {
+          "name": "Investment banking",
+          "basis": "inferred",
+          "quote": "investment bank involvement"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Oaktree Capital Management": "company",
+        "New York Stock Exchange": "organization",
+        "Blackstone Group": "company",
+        "KKR & Co.": "company",
+        "Fortress Investment Group": "company",
+        "Morningstar": "organization",
+        "Franklin Resources": "company",
+        "Invesco": "company",
+        "Affiliated Managers": "company",
+        "Blackrock": "company",
+        "Credit Suisse": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:59:08.496931+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:59:08.524371+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:08.461282+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses the IPO of Oaktree Capital Management, its performance, and the broader context of private-equity firms going public, including market val",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:57:24.678253+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

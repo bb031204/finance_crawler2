@@ -1,0 +1,267 @@
+{
+  "source_id": "486a8a624ed725c6b91aea65",
+  "status": "completed",
+  "source_record_hash": "5a969b22a64eb9b13411893a9378f7585fe249da16952df7e97ba7c4869900d9",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-17-047422-index.html",
+    "attempted_at": "2026-11-18T13:35:28.915933+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "f6cb0d19536cda48f518b10a97c27cb9cdd43bd627d214d448c36836799e8796"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/486a8a624ed725c6b91aea65.json",
+    "sha256": "2e84643b9a6c682c0b3311fd57896f12c241d413bff55ecb61cfd02d5104ba9d",
+    "bundled_path": "legacy_audit/486a8a624ed725c6b91aea65.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "a9622f87f231ba5a17e93b82f604ccebd64e80305386f12c02f55dd6e15d99db",
+      "llm_inferred_at": "2026-11-18T13:35:47.207393+00:00",
+      "model_duration_seconds": 10.0611955,
+      "prompt_tokens": 2001,
+      "completion_tokens": 495,
+      "selection": [
+        {
+          "source_id": "486a8a624ed725c6b91aea65",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "This change may affect the Trust’s operational flexibility and its financial structure within the broader financial services industry.",
+              "rationale": "The amendment to the Trust's credit facility is described as having an impact on the broader financial services industry, indicating an industry-wide effect.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The amendment implemented technical changes to improve the Trust’s flexibility under the credit facility.",
+              "rationale": "The amendment directly affects the Trust's operational flexibility and financial structure, which are company-specific impacts.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "The Trust is a separate legal and corporate entity with its own creditors, and its assets are not available to pay obligations of its affiliates or any other party."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "name": "LOAN BROKERS",
+              "basis": "explicit",
+              "quote": "The Trust is a separate legal and corporate entity with its own creditors, and its assets are not available to pay obligations of its affiliates or any other party."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The amendment implemented technical changes to improve the Trust’s flexibility under the credit facility."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "ba0343da514e4c72c1ae324a307c21941bc1d2e47a19609441c3ac0ff49a09fc",
+      "llm_inferred_at": "2026-11-18T13:35:56.923203+00:00",
+      "model_duration_seconds": 9.709698,
+      "prompt_tokens": 2045,
+      "completion_tokens": 532,
+      "selection": [
+        {
+          "source_id": "486a8a624ed725c6b91aea65",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "This change may affect the Trust’s operational flexibility and its financial structure within the broader financial services industry.",
+              "rationale": "The amendment to the Trust's credit facility is described as having an impact on the Trust's operational flexibility and financial structure within the broader financial services industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The amendment is attached as Exhibit 10.1 and incorporated by reference into the filing.",
+              "rationale": "The amendment is directly related to the Trust, which is a subsidiary of Medallion Financial Corp., indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "The Trust is a separate legal and corporate entity with its own creditors, and its assets are not available to pay obligations of its affiliates or any other party."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "name": "LOAN BROKERS",
+              "basis": "explicit",
+              "quote": "The Trust is a separate legal and corporate entity with its own creditors, and its assets are not available to pay obligations of its affiliates or any other party."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The Trust is a separate legal and corporate entity with its own creditors, and its assets are not available to pay obligations of its affiliates or any other party."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:35:56.936277+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f6cb0d19536cda48f518b10a97c27cb9cdd43bd627d214d448c36836799e8796",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2017-02-17",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312517047422/d341235d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The amendment to the loan agreement may affect the Trust’s operational flexibility and financial structure within the broader financial services industry.",
+    "securities": [
+      {
+        "name": "Taxi Medallion Loan Trust III",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Taxi Medallion Loan Trust III"
+      },
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Taxi Medallion Loan Trust III": "company",
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "486a8a624ed725c6b91aea65",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_02_17_Material-Definitive-Agreement_Financial-Services_sec.json",
+        "sha256": "f4889282b30ee3abae350748b0ff17722d528c4265c7466795b7a561d08b55f6",
+        "filename": "2017_02_17_Material-Definitive-Agreement_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "59f51a65f09df6971c5a63f9df0ffc0f8eb654fac06edb71118c9f5d9408fecc",
+    "input_hash": "a33c5a8a3ecdf5b89af245dfbde9c7ede67dfa6abfce7d7aca1310fa48758df4",
+    "matching_audit_hash": "8dd3653ac64f44963a4fec4f9c4e7ccc0978b7987a30e97d4fb925823577e614",
+    "legacy_security_evidence": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "record_hash": "5a969b22a64eb9b13411893a9378f7585fe249da16952df7e97ba7c4869900d9",
+    "outputs": [
+      {
+        "path": "US\\2017_02_17_Material-Definitive-Agreement_Financial-Services_sec.json",
+        "sha256": "7fbd21710227e41ce7cb0eebb1bd474395612111566d2142589db16bd1b25db4"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2017-02-17",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+      "fetched_at": "2026-11-11T11:58:24.653216+00:00",
+      "feature_available_at": "2026-11-11T11:58:32.894059+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:35:56.923203+00:00",
+    "feature_available_at": "2026-11-18T13:35:56.936277+00:00",
+    "commit_verified_at": "2026-11-12T14:39:07.824231+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The amendment is attached as Exhibit 10.1 and incorporated by reference into the filing.",
+        "rationale": "The amendment is directly related to the Trust, which is a subsidiary of Medallion Financial Corp., indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The amendment is attached as Exhibit 10.1 and incorporated by reference into the filing."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-17-047422-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "5a969b22a64eb9b13411893a9378f7585fe249da16952df7e97ba7c4869900d9",
+    "content_hash": "f6cb0d19536cda48f518b10a97c27cb9cdd43bd627d214d448c36836799e8796",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:35:56.924633+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/486a8a624ed725c6b91aea65.json",
+      "sha256": "bb69021a3957a3f63b007bb99872ad13e26f4ecb315e4e03a12b8d8e480db61f",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 28.03200000000652
+}

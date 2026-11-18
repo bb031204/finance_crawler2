@@ -1,0 +1,96 @@
+{
+  "source_id": "b1d75652b888dbebe952fa10",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_01_correction_Financial-Services_sec.json",
+      "sha256": "fa3de22b70eca76363902c544b5a8583bf78c36353898f005dadf02ed466fccf",
+      "filename": "2016_02_01_correction_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "61a5d07a86f6d2f06324dac6224c1c5b8cbad65d076f2b96366483ded3dfcf3e",
+  "input_hash": "4708e08e82bd7e4408d48f3966615e25a146f13bf8377f0e38f31a159e6b5ced",
+  "matching_audit_hash": "0f58377f86071c537d6e5f63fc5f07ce72361936ecb8cd58000c7caae2f1bc52",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "88294244eab9b32fb32b1d0439bcdf0500198443f81546e7e15a3d72d6dda9cf",
+    "raw_sha256": "15f7ba33cb91ff0558830b453c092247e54bcc7604145e35742ad742efca079f",
+    "date_quote": "Date of Report (Date of earliest event reported) February 1, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000045/000119312516445158/d124314d8ka.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nicholas Financial, Inc.",
+      "ticker": "NICK",
+      "exchange": null,
+      "quote": "Nicholas Financial, Inc. (NASDAQ: NICK)"
+    }
+  ],
+  "record_hash": "1250e5becaba27b524aab9fccbec558949af43f121bb238f09721e6e0afb9aa7",
+  "outputs": [
+    {
+      "path": "US\\2016_02_01_correction_Financial-Services_sec.json",
+      "sha256": "39d76199cd4ae2fdf8711a2a478c48964fba0f12ac625cf5e97915f32d689b28"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.846742+00:00",
+    "fetched_at": "2026-11-11T00:49:39.441625+00:00",
+    "feature_available_at": "2026-11-11T00:50:07.023201+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:04.553297+00:00",
+  "commit_verified_at": "2026-11-12T13:53:04.553297+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nicholas Financial, Inc.",
+        "ticker": "NICK",
+        "exchange": null,
+        "quote": "Nicholas Financial, Inc. (NASDAQ: NICK)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

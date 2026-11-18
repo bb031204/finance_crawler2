@@ -1,0 +1,138 @@
+{
+  "source_id": "80363fc0e28372c87c834e15",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_08_06_Social_Education_cnbc.json",
+      "sha256": "6d0ad2c2678187ae82f3b98f3434651f1ccd33285beb6e4b764f7516fae6521d",
+      "filename": "2020_08_06_Social_Education_cnbc.json"
+    }
+  ],
+  "original_record_hash": "1a663c70364f86ce17aad4215cd1930fbec651f7591200db5ef3a2720e64b61b",
+  "input_hash": "8e19662d727e80eb21aab09d2d4cb7e8cba41f2fc2a4307670ee8c465ad13a8b",
+  "matching_audit_hash": "5722f90340898adb46cd48a09cda87bc09862852e497c94abe8c4b0d6b8e0c0f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8a2a4e835eefe17a00b5d194670c4491feb4e517370f2e22a77b2b094c7db55b",
+    "raw_sha256": "b11d23158f20621a356a68ccedf1a9099eec63de23aba530c9a4f4e86528244a",
+    "date_quote": "article:published_time=2020-08-06T13:01:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "cec544320c9c65db69eb33c2d1fc8fb4a0e7287ececea2499c676b0ed11ad94b",
+  "outputs": [
+    {
+      "path": "US\\2020_08_06_Social_Education_cnbc.json",
+      "sha256": "3407452c7c03d8f3d783beb23f78cdae525ee2e2e44c0ae022f39f85bab6a419"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-08-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:11.057561+00:00",
+    "fetched_at": "2026-11-10T19:26:43.459146+00:00",
+    "feature_available_at": "2026-11-10T19:27:35.384883+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:53:26.324113+00:00",
+  "feature_available_at": "2026-11-12T14:53:26.338607+00:00",
+  "commit_verified_at": "2026-11-12T14:53:26.338607+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the impact of child care and school options on working parents, including workforce participation, productivity, and policy responses.",
+    "securities": [
+      {
+        "name": "Care.com",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Care.com"
+      },
+      {
+        "name": "Smitten Kitchen",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Smitten Kitchen"
+      },
+      {
+        "name": "University of Oregon's RAPID-EC Research Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "University of Oregon's RAPID-EC Research Group"
+      },
+      {
+        "name": "Congress",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Congress"
+      },
+      {
+        "name": "House of Representatives",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House of Representatives"
+      },
+      {
+        "name": "Democrats",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Democrats"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Child care",
+        "basis": "explicit",
+        "quote": "child care"
+      },
+      {
+        "name": "Education",
+        "basis": "inferred",
+        "quote": "school options"
+      },
+      {
+        "name": "Employment",
+        "basis": "inferred",
+        "quote": "workforce"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Care.com": "company",
+      "Smitten Kitchen": "company",
+      "University of Oregon's RAPID-EC Research Group": "organization",
+      "Congress": "organization",
+      "House of Representatives": "organization",
+      "Democrats": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

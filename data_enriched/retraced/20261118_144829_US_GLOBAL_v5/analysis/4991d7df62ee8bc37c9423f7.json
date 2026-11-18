@@ -1,0 +1,280 @@
+{
+  "source_id": "4991d7df62ee8bc37c9423f7",
+  "status": "completed",
+  "source_record_hash": "2ca70f1ed28b041d00e5bdb341303581a6cbcad41978d532e4d07b664585d4a8",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001193125-14-124277-index.html",
+    "attempted_at": "2026-11-18T13:40:21.485082+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "ValueError",
+    "error_fingerprint": "5f84c36b49c35e957dcfab3ccb7511e1bac1fac73f54f41c97cfc7aabc926d5d",
+    "summary_sha256": "01e4057f5de5958773c382d7c2e402ac4d543d52985ad880750579b6c2f96885"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4991d7df62ee8bc37c9423f7.json",
+    "sha256": "f880f1f0162e96a28b15081b840b94f4f62a43881834af5413c0dcddcdb17e76",
+    "bundled_path": "legacy_audit/4991d7df62ee8bc37c9423f7.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "707e663cf46a066bb6d5a1c0ec1cd1ddb4a355ee358f21f6e1de1896993e32cc",
+      "llm_inferred_at": "2026-11-18T13:40:51.283013+00:00",
+      "model_duration_seconds": 9.1116209,
+      "prompt_tokens": 2491,
+      "completion_tokens": 386,
+      "selection": [
+        {
+          "source_id": "4991d7df62ee8bc37c9423f7",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc.",
+              "rationale": "The text specifically discusses the financial reporting and compliance practices of Brookfield Asset Management Inc., indicating a company-specific focus.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "inferred",
+              "quote": "The document outlines the corporate governance practices of Brookfield Asset Management Inc., a U.S.-based financial services company."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "The document outlines the corporate governance practices of Brookfield Asset Management Inc., a U.S.-based financial services company."
+            },
+            {
+              "industry_key": "SEC-SIC:6189",
+              "name": "ASSET-BACKED SECURITIES",
+              "basis": "inferred",
+              "quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "d8f7aa01535083fef3e05ddfe13714e2d5d9edf45f3715023272ecf2489d383b",
+      "llm_inferred_at": "2026-11-18T13:41:00.739096+00:00",
+      "model_duration_seconds": 9.4458578,
+      "prompt_tokens": 2535,
+      "completion_tokens": 512,
+      "selection": [
+        {
+          "source_id": "4991d7df62ee8bc37c9423f7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "It highlights the composition of the board of directors, emphasizing that 11 out of 16 directors are independent as defined by NYSE rules.",
+              "rationale": "The document discusses the corporate governance practices of Brookfield Asset Management Inc., which is described as a U.S.-based financial services company. This indicates the company operates within the financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc.",
+              "rationale": "The document is a filing by Brookfield Asset Management Inc. and discusses its internal controls, financial reporting, and compliance practices, which are specific to the company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "It highlights the composition of the board of directors, emphasizing that 11 out of 16 directors are independent as defined by NYSE rules."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "The company maintains an independent audit committee with members such as George S."
+            },
+            {
+              "industry_key": "SEC-SIC:6189",
+              "name": "ASSET-BACKED SECURITIES",
+              "basis": "explicit",
+              "quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:41:00.751841+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "01e4057f5de5958773c382d7c2e402ac4d543d52985ad880750579b6c2f96885",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2014-03-31",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312514124277/d692712d40f.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      },
+      {
+        "name": "Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Registrant"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6189",
+        "name": "ASSET-BACKED SECURITIES",
+        "basis": "inferred",
+        "quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6189",
+        "industry_name_standard": "ASSET-BACKED SECURITIES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "4991d7df62ee8bc37c9423f7",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_03_31_SEC-Filing_Financial-Services_sec.json",
+        "sha256": "9329d6e7f20bf821c65995614dd10f53c1d73b1c66c54e8f90ba3dc47c2138c5",
+        "filename": "2014_03_31_SEC-Filing_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "925c02bd92b106addc584e6ba638543d106190ccfb990acbfed0615b396e4c11",
+    "input_hash": "be2e215b9e28140f3f06cf77f47f723d547b2ba57d146e7cf7dbbbf2d3c7b65b",
+    "matching_audit_hash": "d1258f41e47bfb42107e3f013f181522b6ecff4e5b2296cbfbaebc1429000481",
+    "legacy_security_evidence": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      },
+      {
+        "name": "Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Registrant"
+      }
+    ],
+    "record_hash": "2ca70f1ed28b041d00e5bdb341303581a6cbcad41978d532e4d07b664585d4a8",
+    "outputs": [
+      {
+        "path": "US\\2014_03_31_SEC-Filing_Financial-Services_sec.json",
+        "sha256": "35ab5c576e42072cc3fe4269e0aea579dd4ca13fb4f3a2d131f1a6d447a3ed99"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2014-03-31",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+      "fetched_at": "2026-11-11T00:04:38.239254+00:00",
+      "feature_available_at": "2026-11-11T00:05:55.710293+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:41:00.739096+00:00",
+    "feature_available_at": "2026-11-18T13:41:00.751841+00:00",
+    "commit_verified_at": "2026-11-12T13:52:51.613855+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc.",
+        "rationale": "The document is a filing by Brookfield Asset Management Inc. and discusses its internal controls, financial reporting, and compliance practices, which are specific to the company.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The document outlines the financial reporting and compliance practices of Brookfield Asset Management Inc."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001193125-14-124277-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "2ca70f1ed28b041d00e5bdb341303581a6cbcad41978d532e4d07b664585d4a8",
+    "content_hash": "01e4057f5de5958773c382d7c2e402ac4d543d52985ad880750579b6c2f96885",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:41:00.741536+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4991d7df62ee8bc37c9423f7.json",
+      "sha256": "6df170f5b05cf65193a138e30af49e99d4c092b6367582d522041503b9c9eeab",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 39.28100000001723
+}

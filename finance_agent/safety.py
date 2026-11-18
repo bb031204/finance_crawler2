@@ -66,12 +66,19 @@ class PublicHTTP:
         self.robots={}
         self.last={}
         self.blocked=set()
+        self.restrictions={}
+        self.robots_evidence={}
     def close(self):self.client.close()
     def get(self,url,robots=True,allowed=None,excluded=None,headers=None):
         for hop in range(self.cfg.max_redirects+1):
+            if callable(getattr(self,'pause_check',None)):self.pause_check()
             url=public_url(url,allowed,excluded=excluded,allow_fake_ip=self.cfg.allow_fake_ip)
             origin=urlsplit(url).netloc.lower()
-            if origin in self.blocked:raise FetchError("blocked","本轮该主机已返回访问限制")
+            if origin in self.blocked:
+                entry=self.restrictions.get(origin)
+                if entry and time.time()>=entry['observed_at']+getattr(self.cfg,'access_cooldown_seconds',21600):
+                    self.blocked.discard(origin)
+                else:raise FetchError("blocked","本轮该主机已返回访问限制")
             if robots and self.cfg.respect_robots:
                 self.check_robots(url,allowed=allowed,excluded=excluded,headers=headers)
             time.sleep(max(0,1-(time.monotonic()-self.last.get(origin,0))))
@@ -81,6 +88,7 @@ class PublicHTTP:
                     info={"url":url,"status_code":r.status_code,"content_type":r.headers.get("content-type","")}
                     if r.status_code in {401,403}:
                         self.blocked.add(origin)
+                        self.restrictions[origin]={'reason':'http_'+str(r.status_code),'observed_at':time.time()}
                         raise FetchError("blocked",f"HTTP {r.status_code}",info=info)
                     if r.status_code==429:
                         raise FetchError("rate_limited","HTTP 429",info=dict(info,retry_after=r.headers.get("retry-after")))
@@ -102,6 +110,7 @@ class PublicHTTP:
                     raw=b"".join(parts)
                 if challenge(raw):
                     self.blocked.add(origin)
+                    self.restrictions[origin]={'reason':'login_or_challenge','observed_at':time.time()}
                     raise FetchError("blocked","HTTP内容为验证或登录页",raw,info)
                 if not raw:raise FetchError("empty_content","空响应",info=info)
                 return raw,info
@@ -110,15 +119,21 @@ class PublicHTTP:
         raise FetchError("download_invalid","重定向次数超限")
     def check_robots(self,url,allowed=None,excluded=None,headers=None):
         p=urlsplit(url);origin=p.scheme+"://"+p.netloc
+        agent = (headers or {}).get("User-Agent", "FinanceResearchAgent")
+        previous=self.robots_evidence.get(origin)
+        if previous and (previous['agent']!=agent or time.time()>=previous['observed_at']+getattr(self.cfg,'robots_cache_seconds',21600)):
+            self.robots.pop(origin,None)
         if origin not in self.robots:
             try:
                 raw,_=self.get(origin+"/robots.txt",robots=False,allowed=allowed,excluded=excluded,headers=headers)
                 parser=RobotFileParser();parser.parse(raw.decode("utf-8",errors="replace").splitlines())
                 self.robots[origin]=parser
+                self.robots_evidence[origin]={'text':raw.decode('utf-8',errors='replace'),'agent':agent,'observed_at':time.time()}
             except FetchError as exc:
-                if exc.status=="not_found":self.robots[origin]=None
+                if exc.status=="not_found":
+                    self.robots[origin]=None
+                    self.robots_evidence[origin]={'text':None,'agent':agent,'observed_at':time.time()}
                 else:raise
         parser=self.robots[origin]
-        agent = (headers or {}).get("User-Agent", "FinanceResearchAgent")
         if parser is not None and not parser.can_fetch(agent,url):
             raise FetchError("blocked","robots.txt不允许该抓取路径")

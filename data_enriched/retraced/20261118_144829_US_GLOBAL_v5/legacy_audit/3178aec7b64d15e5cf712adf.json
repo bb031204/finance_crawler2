@@ -1,0 +1,105 @@
+{
+  "source_id": "3178aec7b64d15e5cf712adf",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_09_15_14_00_Technology_Semiconductors_prnewswire.json",
+      "sha256": "8eb07cfca8d9d924d75a28b87cfff0148a57dc7ec2de3cef130379738685f0fe",
+      "filename": "2014_09_15_14_00_Technology_Semiconductors_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "6601df876e1c0a478d4935ba40fd8b9665decb0ca6d3b6dd5037aee36ed25bc7",
+  "input_hash": "475b5ec45dc6b0b1050417ccdca345506bdfe316eb7aea4445d83ce5ec91fa56",
+  "matching_audit_hash": "47e8502d5d0527a171ac62f0b40f4ebe90a81428569c54721d729f05bbafe42c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b5def7dd6dc93d8464c63edf17e273b5aad69a73420523384d70ba369b53e9ab",
+    "raw_sha256": "a063271f4fee1f6950d1afad214fba03367385cc5fe41433a8fbad484322aded",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2014-09-15T14:00:00+01:00\ndate=2014-09-15T14:00:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Toshiba America Electronic Components, Inc.",
+      "ticker": "TAEC",
+      "exchange": null,
+      "quote": "Toshiba America Electronic Components, Inc. (TAEC)"
+    }
+  ],
+  "record_hash": "631ff28c753b7b8e7275eef89affbb40cb57c1371a9111660658d69c24e9fdc8",
+  "outputs": [
+    {
+      "path": "US\\2014_09_15_14_00_Technology_Semiconductors_prnewswire.json",
+      "sha256": "6bd773f479a6fde42f5297bc17467abba829f5de9a74cc5b05e16a3bcc8d6eaa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-09-15T14:00:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-11T01:26:29.816693+00:00",
+    "fetched_at": "2026-11-11T02:23:01.615013+00:00",
+    "feature_available_at": "2026-11-11T17:15:12.522209+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:18:39.443032+00:00",
+  "feature_available_at": "2026-11-12T14:18:39.479397+00:00",
+  "commit_verified_at": "2026-11-12T14:18:39.479397+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides information about a new CMOS image sensor product, its specifications, and market forecasts, which are relevant for understanding the tech/",
+    "securities": [
+      {
+        "name": "Toshiba America Electronic Components, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Toshiba America Electronic Components, Inc."
+      },
+      {
+        "name": "Yole Developpement",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Yole Developpement"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor manufacturing",
+        "basis": "inferred",
+        "quote": "CMOS image sensor"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Toshiba America Electronic Components, Inc.": "company",
+      "Yole Developpement": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

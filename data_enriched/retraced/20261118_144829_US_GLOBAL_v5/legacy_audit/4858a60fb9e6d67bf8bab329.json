@@ -1,0 +1,102 @@
+{
+  "source_id": "4858a60fb9e6d67bf8bab329",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_21_Financial-Report_Semiconductor_sec.json",
+      "sha256": "a50abd8433be231f44237288cbf2f1814790d349a8a86b5f48dfa4830e7d2504",
+      "filename": "2015_01_21_Financial-Report_Semiconductor_sec.json"
+    }
+  ],
+  "original_record_hash": "27cdd7e9d56683d887680fb6c7e72baa8a0006e5734ee501e6b9a2efb27c5a79",
+  "input_hash": "93027394b686ad6e6c22544817ba8bb417de033ea8b445de0b767f8356a2f3aa",
+  "matching_audit_hash": "4ccea78c6079b9e4d36eb53e4eac62e5c7c46f3749512a0f98ab5adc303f9ea1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7e0784a23c4731a1466a26eff536978dc01eb611215e00d7197cf8835b25393e",
+    "raw_sha256": "5bd38162de0262baaf3f652bd2085cd6efd5e6bec92558bd09ada87e9574381e",
+    "date_quote": "Date of Report (Date of earliest event reported): January 21, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018015000006/form8-kxq414earningsrelease.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation"
+    }
+  ],
+  "record_hash": "ffdac4fbed060f62895c6ccae29ae3750d70b63a7324c5c2670e0e03791fea68",
+  "outputs": [
+    {
+      "path": "US\\2015_01_21_Financial-Report_Semiconductor_sec.json",
+      "sha256": "ed6085bc46567ee5f8e35d0b34d58ffcd03aa006307c3d0d7ff18c2a73b11bcc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:15:22.467618+00:00",
+    "feature_available_at": "2026-11-11T00:16:01.235654+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.129439+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.129439+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

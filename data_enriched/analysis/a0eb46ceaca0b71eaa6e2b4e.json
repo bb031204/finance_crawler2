@@ -1,0 +1,95 @@
+{
+  "source_id": "a0eb46ceaca0b71eaa6e2b4e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_24_Consumer-Goods_Consumer-Goods_sec.json",
+      "sha256": "6d0172b1ebde83edf9c2532d002168e2178f9d7bae2e3d06fa6f3e2ee8ea8114",
+      "filename": "2015_02_24_Consumer-Goods_Consumer-Goods_sec.json"
+    }
+  ],
+  "original_record_hash": "20042c2c8bf5f64678017e04287aab4c81ed12954353a86b62b5cebdf8b91c79",
+  "input_hash": "d9211155d4452d3751b424a2801a44e0e46c6d0a67f7f066abdba65edc297f00",
+  "matching_audit_hash": "0cb99e282ff77bfbac70fd4c06864c38f2f5f8f0864bddbea55ed7c16e8b374a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ae17515654b079271eb4b4db4d273ae5c9f5b78ab7525ec60571641860433283",
+    "raw_sha256": "f6590bfb5dd33706049d92884f19be66bf0fd7acfde1f6dd968caa9a65786d34",
+    "date_quote": "Date of Report (Date of earliest event reported): February 24, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000955/000147793215001351/sthc_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SouthCorp Capital, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SouthCorp Capital, Inc."
+    }
+  ],
+  "record_hash": "31c4195403a330899216e3dd2f81d8b1013563d65d089d6ba6c338a0221adf31",
+  "outputs": [
+    {
+      "path": "US\\2015_02_24_Consumer-Goods_Consumer-Goods_sec.json",
+      "sha256": "4c5b0a43c2fd9611147f7a6ee80a676a3d6dcadbf94d3f955ec9dd7bc2cfce82"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:29:19.703531+00:00",
+    "feature_available_at": "2026-11-11T00:29:29.849829+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:55.781370+00:00",
+  "commit_verified_at": "2026-11-12T13:52:55.781370+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SouthCorp Capital, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SouthCorp Capital, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer Goods",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

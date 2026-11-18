@@ -1,0 +1,159 @@
+{
+  "source_id": "ed062bfcaf29bb92ef6c5b10",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_04_11_Regulatory_Financial-Services_sec.json",
+      "sha256": "aecdc0d2b327d29332f0ea6f4c356dd3086bb442191cb657d19901f9fa780654",
+      "filename": "2013_04_11_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "aae63bdec0de4b82a1464210eff3b6e44f11609477ac60b4e7e39a6879f98a91",
+  "input_hash": "bfa784d889d4065036b017f925180565966a989d3390fedfd953a6a5b2b038f9",
+  "matching_audit_hash": "daf4f9a592ed78d38dbd7e6d578ca11d8a0e694d2c556250f5f9df1d8135bf4f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7c98f43766e2b21d0427bbb478cc755f8762a5f9537200aea17eed2df0e1e246",
+    "raw_sha256": "265310bd159453bd5df651e47f488791dd21fc761b9688e7d188bd875f8ed947",
+    "date_quote": "For Immediate Release 2013-58 Washington, D.C., April 11, 2013 —",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7d784ea18bb420557e0d676782456d039503e59367bb74bac20fbc632286ab4c",
+  "outputs": [
+    {
+      "path": "US\\2013_04_11_Regulatory_Financial-Services_sec.json",
+      "sha256": "8f63414bf7b373e08aedb697715d82a8d11bb528e769a8843e1f7bb730842be0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-04-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:48.344816+00:00",
+    "fetched_at": "2026-11-10T14:43:36.245265+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.023985+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:07:08.180690+00:00",
+  "feature_available_at": "2026-11-12T14:07:08.220590+00:00",
+  "commit_verified_at": "2026-11-12T14:07:08.220590+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about insider trading allegations involving individuals and companies, including specific entities and industries.",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "KPMG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KPMG"
+      },
+      {
+        "name": "Herbalife",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Herbalife"
+      },
+      {
+        "name": "Skechers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Skechers"
+      },
+      {
+        "name": "Deckers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Deckers"
+      },
+      {
+        "name": "RSC Holdings",
+        "ticker": null,
+        "exchange": null,
+        "quote": "RSC Holdings"
+      },
+      {
+        "name": "Pacific Capital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pacific Capital"
+      },
+      {
+        "name": "Federal Bureau of Investigation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Bureau of Investigation (FBI)"
+      },
+      {
+        "name": "Financial Industry Regulatory Authority",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Financial Industry Regulatory Authority (FINRA)"
+      },
+      {
+        "name": "Options Regulatory Surveillance Authority",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Options Regulatory Surveillance Authority (ORSA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Audit and Accounting",
+        "basis": "inferred",
+        "quote": "KPMG"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "KPMG": "company",
+      "Herbalife": "company",
+      "Skechers": "company",
+      "Deckers": "company",
+      "RSC Holdings": "company",
+      "Pacific Capital": "company",
+      "Federal Bureau of Investigation": "organization",
+      "Financial Industry Regulatory Authority": "organization",
+      "Options Regulatory Surveillance Authority": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

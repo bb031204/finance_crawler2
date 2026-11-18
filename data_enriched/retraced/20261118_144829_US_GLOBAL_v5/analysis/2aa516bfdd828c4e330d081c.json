@@ -1,0 +1,570 @@
+{
+  "source_id": "2aa516bfdd828c4e330d081c",
+  "status": "completed",
+  "source_record_hash": "347c9ebf85f5206f90d290dcd4b05f46860afd9c4a163f7b56053d777604ebf7",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-15-001866-index.html",
+    "attempted_at": "2026-11-18T10:36:31.785170+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-15-001866-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465915001866/a15-2221_18k.htm",
+    "fetched_at": "2026-11-18T10:36:42.201463+00:00",
+    "source_body_hash": "82f7dc7bd44335cd213069fb19c9f7007b5e47f9b4ab9afdf86f215186b0967c",
+    "raw_sha256": "f719cb29694f6c6a7ca2c616c7d46d7b2be92fbaff6fa551050f39e13935fd29",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465915001866/a15-2221_18k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "f719cb29694f6c6a7ca2c616c7d46d7b2be92fbaff6fa551050f39e13935fd29",
+        "text_sha256": "13141fbbd2680498189ebd6e9bf73b219bb908d366b8d73be16f4932e6c2d2fc",
+        "text_start": 0,
+        "text_end": 4330
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465915001866/a15-2221_1ex99d1.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "d7d1a331276466cf4f41da430355e2158e345916a1fd859b0a3435df23c5bd18",
+        "text_sha256": "982c98022af66b96b5f5e37bb0255c93acecdc61d255c1b808488b4ff0214419",
+        "text_start": 4332,
+        "text_end": 12637
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-01-12",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2aa516bfdd828c4e330d081c.json",
+    "sha256": "38d48cd59a5f4c0f24a3d3c525a1b9905727c039f1aa60dfe0222804cbcfe99b",
+    "bundled_path": "legacy_audit/2aa516bfdd828c4e330d081c.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "97827e16c758b7c6e5b29819538b9a8c082db510ed253f5d57b917209358d233",
+      "llm_inferred_at": "2026-11-18T10:37:02.005049+00:00",
+      "model_duration_seconds": 19.7795286,
+      "prompt_tokens": 3899,
+      "completion_tokens": 913,
+      "selection": [
+        {
+          "source_id": "2aa516bfdd828c4e330d081c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "In addition this acquisition is expected to unlock opportunities by expanding CashCall Mortgages geographic footprint from 11 licensed states up to 42 states.",
+              "rationale": "The acquisition is expected to expand the geographic footprint of CashCall Mortgage, which is part of the mortgage industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a",
+              "rationale": "The acquisition is directly related to Impac Mortgage Holdings, Inc. and its subsidiary, Impac Mortgage Corp., indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a"
+            },
+            {
+              "industry_key": "SEC-SIC:6189",
+              "name": "ASSET-BACKED SECURITIES",
+              "basis": "explicit",
+              "quote": "The transaction has been structured with a significant contingent component of the purchase price with the intent to minimize the financial risk for Impac Mortgage Holdings, Inc."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The acquisition of CashCall's mortgage operations by Impac Mortgage Corp. is expected to increase the scale of the mortgage origination platform, which could affect the mortgage industry's competitive landscape and loan-",
+              "confidence": 0.95,
+              "quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "The acquisition of CashCall's mortgage operations by Impac Mortgage Corp. is expected to increase the scale of the mortgage origination platform, which could affect the diversified financial services industry's",
+              "confidence": 0.95,
+              "quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a98a86bcbe75b6cba407dee9167ce7639eea9dce4e8132cfffa3d638cc8b92c0",
+      "llm_inferred_at": "2026-11-18T10:37:18.185599+00:00",
+      "model_duration_seconds": 16.1595158,
+      "prompt_tokens": 3943,
+      "completion_tokens": 825,
+      "selection": [
+        {
+          "source_id": "2aa516bfdd828c4e330d081c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "In addition this acquisition is expected to unlock opportunities by expanding CashCall Mortgages geographic footprint from 11 licensed states up to 42 states.",
+              "rationale": "The acquisition is expected to expand the geographic footprint of CashCall Mortgage, which is part of the mortgage industry, indicating an industry-wide impact due to the potential for increased market presence and operations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a",
+              "rationale": "The acquisition is directly related to Impac Mortgage Holdings, Inc. and its subsidiary, Impac Mortgage Corp., indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a"
+            },
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "In addition this acquisition is expected to unlock opportunities by expanding CashCall Mortgages geographic footprint from 11 licensed states up to 42 states."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The acquisition of CashCall Mortgage's operations is expected to enhance the scalability and efficiency of the mortgage origination process, which could impact the broader mortgage banking industry by setting new service",
+              "confidence": 0.95,
+              "quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a"
+            },
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The acquisition of CashCall Mortgage's operations is expected to enhance the scalability and efficiency of the mortgage origination process, which could impact the broader mortgage banking industry by setting new service",
+              "confidence": 0.95,
+              "quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a9b01ff85b45937858a9367c3b47fcf0054569b37b9c3b919569f1de9af8aee2",
+      "llm_inferred_at": "2026-11-18T10:37:37.510278+00:00",
+      "model_duration_seconds": 19.3042194,
+      "prompt_tokens": 2627,
+      "completion_tokens": 978,
+      "selection": [
+        {
+          "source_id": "2aa516bfdd828c4e330d081c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the Companys earnings that it expects; unexpected costs, liabilities, charges or expenses resulting from the transaction; successful development, marketing, sale and financing of",
+              "rationale": "The article discusses the mortgage industry's volatility and the impact of the transaction on the mortgage industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term",
+              "rationale": "The article specifically mentions Impac Mortgage Holdings, Inc. (IMH or Impac) and its operations, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "in the mortgage lending industry by larger or more efficient companies; issues and system risks related to our technology; more than expected increases in default rates or loss",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "increased competition in the mortgage lending industry by larger or more efficient companies",
+              "confidence": 0.95,
+              "quote": "in the mortgage lending industry by larger or more efficient companies; issues and system risks related to our technology; more than expected increases in default rates or loss"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "in the mortgage lending industry by larger or more efficient companies; issues and system risks related to our technology; more than expected increases in default rates or loss",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "increased competition in the mortgage lending industry by larger or more efficient companies",
+              "confidence": 0.95,
+              "quote": "in the mortgage lending industry by larger or more efficient companies; issues and system risks related to our technology; more than expected increases in default rates or loss"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "in the mortgage lending industry by larger or more efficient companies; issues and system risks related to our technology; more than expected increases in default rates or loss",
+              "industry_name_original": "Real Estate",
+              "mechanism": "increased competition in the mortgage lending industry by larger or more efficient companies",
+              "confidence": 0.95,
+              "quote": "in the mortgage lending industry by larger or more efficient companies; issues and system risks related to our technology; more than expected increases in default rates or loss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "18a16e679262947be224b0e31e31bd54710905e58e100dee9d60fdaf3bb89a58",
+      "llm_inferred_at": "2026-11-18T10:37:45.336014+00:00",
+      "model_duration_seconds": 7.8112633,
+      "prompt_tokens": 2671,
+      "completion_tokens": 423,
+      "selection": [
+        {
+          "source_id": "2aa516bfdd828c4e330d081c",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term",
+              "rationale": "The text directly describes the operations and services of Impac Mortgage Holdings, Inc., indicating the company's specific activities and business focus.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:37:45.354183+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "82f7dc7bd44335cd213069fb19c9f7007b5e47f9b4ab9afdf86f215186b0967c",
+    "raw_sha256": "f719cb29694f6c6a7ca2c616c7d46d7b2be92fbaff6fa551050f39e13935fd29",
+    "date_quote": "SEC filing datePublished=2015-01-12",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465915001866/a15-2221_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary details a merger and acquisition transaction involving specific companies and their financial terms.",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      },
+      {
+        "name": "Impac Mortgage Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Corp."
+      },
+      {
+        "name": "CashCall, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CashCall, Inc."
+      },
+      {
+        "name": "CashCall Mortgage",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CashCall Mortgage"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "In addition this acquisition is expected to unlock opportunities by expanding CashCall Mortgages geographic footprint from 11 licensed states up to 42 states.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "In addition this acquisition is expected to unlock opportunities by expanding CashCall Mortgages geographic footprint from 11 licensed states up to 42 states.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Impac Mortgage Holdings, Inc.": "company",
+      "Impac Mortgage Corp.": "company",
+      "CashCall, Inc.": "company",
+      "CashCall Mortgage": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "2aa516bfdd828c4e330d081c",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_01_12_Mergers-&-Acquisitions_Mortgage_sec.json",
+        "sha256": "57600787a6c7ef9b463a401ea45c41def66cef8dad599b3f535dea7e5e72ac09",
+        "filename": "2015_01_12_Mergers-&-Acquisitions_Mortgage_sec.json"
+      }
+    ],
+    "original_record_hash": "c48e08898f1c1c70c1f8a24ece5f3c48c690349e6e91f5300c9ebbec5cc43b70",
+    "input_hash": "c83b64eb23389ba0e0cfba12b55c6d40d9ad00ca138d9552add3fdf75b3158bf",
+    "matching_audit_hash": "f9ebf234836d706ff9a387f6a880e2874e91a966ab035c3a760e9834a6cfb715",
+    "legacy_security_evidence": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      },
+      {
+        "name": "Impac Mortgage Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Corp."
+      },
+      {
+        "name": "CashCall, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CashCall, Inc."
+      }
+    ],
+    "record_hash": "347c9ebf85f5206f90d290dcd4b05f46860afd9c4a163f7b56053d777604ebf7",
+    "outputs": [
+      {
+        "path": "US\\2015_01_12_Mergers-&-Acquisitions_Mortgage_sec.json",
+        "sha256": "eba964b5719a8a2c0fea2ed8754901050e22aaf6b5a8b435f2df4220cbc75aca"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-01-12",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+      "fetched_at": "2026-11-11T00:23:31.314543+00:00",
+      "feature_available_at": "2026-11-11T10:36:40.499564+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:37:45.336014+00:00",
+    "feature_available_at": "2026-11-18T10:37:45.354183+00:00",
+    "commit_verified_at": "2026-11-12T14:19:35.389291+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:6162",
+        "industry_scope_quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a",
+        "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The acquisition of CashCall Mortgage's operations is expected to enhance the scalability and efficiency of the mortgage origination process, which could impact the broader mortgage banking industry by setting new service",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "call center operations, combined with this technology, makes CashCall Mortgage a scalable retail origination platform that is able to close loans faster than competitors in a",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a",
+        "rationale": "The acquisition is directly related to Impac Mortgage Holdings, Inc. and its subsidiary, Impac Mortgage Corp., indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Impac Mortgage Corp. under the name CashCall Mortgage. The Company considers the acquisition to be a major strategic accomplishment for Impac Mortgage Holdings, Inc. as it adds a",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "In addition this acquisition is expected to unlock opportunities by expanding CashCall Mortgages geographic footprint from 11 licensed states up to 42 states.",
+        "rationale": "The acquisition is expected to expand the geographic footprint of CashCall Mortgage, which is part of the mortgage industry, indicating an industry-wide impact due to the potential for increased market presence and operations.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "In addition this acquisition is expected to unlock opportunities by expanding CashCall Mortgages geographic footprint from 11 licensed states up to 42 states.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term",
+        "rationale": "The text directly describes the operations and services of Impac Mortgage Holdings, Inc., indicating the company's specific activities and business focus.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Impacs operations include mortgage and warehouse lending, servicing, portfolio loss mitigation and real estate services as well as the management of the securitized long-term",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-15-001866-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "347c9ebf85f5206f90d290dcd4b05f46860afd9c4a163f7b56053d777604ebf7",
+    "content_hash": "da37cb279f6883fdd21720dc57b371d1e7e3ed0ed77e3fe026bc11c30c5a96dd",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:37:45.338753+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2aa516bfdd828c4e330d081c.json",
+      "sha256": "101ef36fd2f1d4c897f5994ee032ed160bcb27a05efd9c38fa223fd08a3ce71f",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 73.59299999999348
+}

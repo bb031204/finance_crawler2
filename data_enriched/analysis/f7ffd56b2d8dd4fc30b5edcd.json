@@ -1,0 +1,100 @@
+{
+  "source_id": "f7ffd56b2d8dd4fc30b5edcd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_24_Regulatory_Banking_federalreserve.json",
+      "sha256": "7718cd44e4f7f8fa2c9f8f27116a3ae35a3b4d803fb239d26bed97d7473102d3",
+      "filename": "2014_02_24_Regulatory_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "dbb6dbb600c58437047deb12a7f6c76863350d287fcba30e54887c5ba5e2864a",
+  "input_hash": "c7e6512a5706db9b1ad9750da6f03468e92f18f1645745af6d7283290778cb8d",
+  "matching_audit_hash": "0596742f080f74afd30cba6ff52898afeb8d2c733fb4264652a706a1c4396e17",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a9172d74c08bbc44a7e097711667bef64336b6df24741038a7622f238213815e",
+    "raw_sha256": "d88839b0c4ace496646d58ff11f953f1af8374971af9e6a1415085e45a46484d",
+    "date_quote": "The Fed - Supervisory Letter SR 14-2/CA 14-1 on Enhancing Transparency in the Federal Reserve's Applications Process -- February 24, 2014",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "df7ede4bd4f3a25b238d8db90746d5015657ba6b0edf474b97c5806b9e692bf6",
+  "outputs": [
+    {
+      "path": "US\\2014_02_24_Regulatory_Banking_federalreserve.json",
+      "sha256": "e73fd158096119d1054821d565abd445049b5bfb6443097a958b1f457af14c7a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:28.723228+00:00",
+    "fetched_at": "2026-11-10T10:15:02.777848+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.289796+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:12:28.987974+00:00",
+  "feature_available_at": "2026-11-12T14:12:29.027660+00:00",
+  "commit_verified_at": "2026-11-12T14:12:29.027660+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory changes and criteria for evaluating financial institution applications, including factors like capital adequacy, financial irres- ",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial institution proposals"
+      },
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "banking services"
+      },
+      {
+        "name": "Regulatory Compliance",
+        "basis": "inferred",
+        "quote": "Community Reinvestment Act (CRA)"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

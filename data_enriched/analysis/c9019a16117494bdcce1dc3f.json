@@ -1,0 +1,131 @@
+{
+  "source_id": "c9019a16117494bdcce1dc3f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_06_Corporate-Announcements_Tobacco-Industry_sec.json",
+      "sha256": "51875cf4294c8ea48ed12e989302f66fdedb8b0e799efe52206de7417613b474",
+      "filename": "2015_01_06_Corporate-Announcements_Tobacco-Industry_sec.json"
+    }
+  ],
+  "original_record_hash": "74052f0c1cfbf20da7983fd49d6c4223636d74dfd382ffb62681e855f116f942",
+  "input_hash": "67faea2d1f4228d379293814fe42a9a3d132e0af6d4c7ac09254dd1f75bff268",
+  "matching_audit_hash": "3b5a0d7c98c149bfce9ad65bbb9333eaa9e046615e3252a86383deafe0101304",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "64f6c6c2f6c8747e80aa52df10f93ba8de20c3cffeffb0ab99b8f778faff71c6",
+    "raw_sha256": "4101f346c5ee386f98c50ce8274b73a59b2ddfc9e7ccaba3e0d5e52d2cd7a5de",
+    "date_quote": "January 6, 2015 Date of Report (Date of earliest event reported)",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062315000008/sidraclose8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc. (\"SWM\")"
+    },
+    {
+      "name": "Smith & Nephew",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Smith & Nephew’s (SNN) Advanced Wound Management division"
+    },
+    {
+      "name": "Sidra Close",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sidra Close"
+    }
+  ],
+  "record_hash": "c439686ee8b6ff6fdea935ccdb522ab57d0469703c0cb43ad06ec7a63d71b935",
+  "outputs": [
+    {
+      "path": "US\\2015_01_06_Corporate-Announcements_Tobacco-Industry_sec.json",
+      "sha256": "8fb2ad18b891668acb93fafed5b9f153ccd70abc3ae25a268630830369ed35b8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:23:45.823134+00:00",
+    "feature_available_at": "2026-11-11T00:24:35.915212+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:53.576965+00:00",
+  "commit_verified_at": "2026-11-12T13:52:53.576965+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc. (\"SWM\")"
+      },
+      {
+        "name": "Smith & Nephew",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Smith & Nephew’s (SNN) Advanced Wound Management division"
+      },
+      {
+        "name": "Sidra Close",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sidra Close"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Tobacco & Specialty Papers",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Tobacco",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

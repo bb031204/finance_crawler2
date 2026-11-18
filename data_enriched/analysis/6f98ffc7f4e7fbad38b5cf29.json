@@ -1,0 +1,271 @@
+{
+  "source_id": "6f98ffc7f4e7fbad38b5cf29",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_06_Sanctions_Government_treasury.json",
+      "sha256": "6bd8c57a82a3ea00779324d7e049be69106c85bbc7c615c0b68efbfea22ffe0c",
+      "filename": "2013_02_06_Sanctions_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "7713bd77c285df39f4da6a6f6fea7754f03e880b41aba507e50906aaca377da1",
+  "input_hash": "5e9cd695955c3d0c267a41cd8259fe8c062a106a8743687d96865d85a54e7e38",
+  "matching_audit_hash": "c8578793708d67ee56629b9d9a8e02cbe3c3237670df8c4a65a8df5886fe3268",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "be9eeff5ab046af99d5eb34b75f72d004e7916c40570a049244ffdb57de37e6e",
+    "raw_sha256": "0e5f809f97e1e5864089f103ea82d43808aaaa92196479b268956a4ddb58eb7b",
+    "date_quote": "Press Releases Treasury Announces Sanctions Against Iran February 6, 2013 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ad01a3de98897e1fda8ee456b3f1c69ff98771d037051f2d3f7d9a1afe736eb8",
+  "outputs": [
+    {
+      "path": "US\\2013_02_06_Sanctions_Government_treasury.json",
+      "sha256": "31410250e0b092827ba58286df8e4efcedcdad54cc683ffd53b97376b2290869"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:13.874352+00:00",
+    "fetched_at": "2026-11-10T16:29:21.059859+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.793361+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:49.280780+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.849527+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.849527+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Sanctions target Iran's censorship and information control mechanisms",
+    "securities": [
+      {
+        "name": "U.S. Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Treasury announced sanctions against Iran"
+      },
+      {
+        "name": "Central Bank of Iran",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Central Bank of Iran"
+      },
+      {
+        "name": "Islamic Republic of Iran Broadcasting (IRIB)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "including the Islamic Republic of Iran Broadcasting (IRIB) and its director"
+      },
+      {
+        "name": "Ezzatollah Zarghami",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ezzatollah Zarghami"
+      },
+      {
+        "name": "Iran Electronics Industries (IEI)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Iran Electronics Industries (IEI), previously designated under Executive Order 13382, is involved in jamming and monitoring technologies"
+      },
+      {
+        "name": "Communications Regulatory Authority (CRA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Communications Regulatory Authority (CRA) has enforced internet filtering and lawful intercept requirements for telecommunications companies"
+      },
+      {
+        "name": "BBC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Iran has been actively jamming foreign broadcasts, particularly from the BBC and Voice of America (VOA)"
+      },
+      {
+        "name": "Voice of America (VOA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Iran has been actively jamming foreign broadcasts, particularly from the BBC and Voice of America (VOA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Broadcasting",
+        "basis": "inferred",
+        "quote": "jamming foreign broadcasts, particularly from the BBC and Voice of America (VOA)"
+      },
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": "Iranian Cyber Police, established in 2009, has been tasked with filtering websites, monitoring online behavior, and blocking content deemed objectionable by the government"
+      },
+      {
+        "name": "Telecommunications",
+        "basis": "inferred",
+        "quote": "Communications Regulatory Authority (CRA) has enforced internet filtering and lawful intercept requirements for telecommunications companies"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Treasury": "organization",
+      "Central Bank of Iran": "organization",
+      "Islamic Republic of Iran Broadcasting (IRIB)": "organization",
+      "Ezzatollah Zarghami": "organization",
+      "Iran Electronics Industries (IEI)": "organization",
+      "Communications Regulatory Authority (CRA)": "organization",
+      "BBC": "organization",
+      "Voice of America (VOA)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.868473+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:49.280780+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Sanctions target Iran's censorship and information control mechanisms",
+      "securities": [
+        {
+          "name": "U.S. Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The U.S. Treasury announced sanctions against Iran"
+        },
+        {
+          "name": "Central Bank of Iran",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Central Bank of Iran"
+        },
+        {
+          "name": "Islamic Republic of Iran Broadcasting (IRIB)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "including the Islamic Republic of Iran Broadcasting (IRIB) and its director"
+        },
+        {
+          "name": "Ezzatollah Zarghami",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Ezzatollah Zarghami"
+        },
+        {
+          "name": "Iran Electronics Industries (IEI)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Iran Electronics Industries (IEI), previously designated under Executive Order 13382, is involved in jamming and monitoring technologies"
+        },
+        {
+          "name": "Communications Regulatory Authority (CRA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Communications Regulatory Authority (CRA) has enforced internet filtering and lawful intercept requirements for telecommunications companies"
+        },
+        {
+          "name": "BBC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Iran has been actively jamming foreign broadcasts, particularly from the BBC and Voice of America (VOA)"
+        },
+        {
+          "name": "Voice of America (VOA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Iran has been actively jamming foreign broadcasts, particularly from the BBC and Voice of America (VOA)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Broadcasting",
+          "basis": "inferred",
+          "quote": "jamming foreign broadcasts, particularly from the BBC and Voice of America (VOA)"
+        },
+        {
+          "name": "Information Technology",
+          "basis": "inferred",
+          "quote": "Iranian Cyber Police, established in 2009, has been tasked with filtering websites, monitoring online behavior, and blocking content deemed objectionable by the government"
+        },
+        {
+          "name": "Telecommunications",
+          "basis": "inferred",
+          "quote": "Communications Regulatory Authority (CRA) has enforced internet filtering and lawful intercept requirements for telecommunications companies"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "U.S. Treasury": "organization",
+        "Central Bank of Iran": "organization",
+        "Islamic Republic of Iran Broadcasting (IRIB)": "organization",
+        "Ezzatollah Zarghami": "organization",
+        "Iran Electronics Industries (IEI)": "organization",
+        "Communications Regulatory Authority (CRA)": "organization",
+        "BBC": "organization",
+        "Voice of America (VOA)": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:49.308939+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:49.317940+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:49.297939+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about sanctions against Iran, targeting individuals and entities involved in censorship and human rights abuses. It also covers",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:02:56.336536+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

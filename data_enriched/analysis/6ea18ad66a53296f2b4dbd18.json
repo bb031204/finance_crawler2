@@ -1,0 +1,98 @@
+{
+  "source_id": "6ea18ad66a53296f2b4dbd18",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_02_05_Debt-Restructuring_Public-Finance_cnbc.json",
+      "sha256": "7aae9063a3f7071cb97894737d5a1f5367625e147f6409c2bb0a3da193111b43",
+      "filename": "2019_02_05_Debt-Restructuring_Public-Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "867bc30354b8f03063d393c927f1cb643cf5b244431d8b21628b78ea2c3e07a7",
+  "input_hash": "d2ba238a169a7474069873f85d10bf72889c21eb7d2708031c0fe53fdae307f7",
+  "matching_audit_hash": "79d37ad8a40606fa17fce3fcf6694d91bd1dd1a87e69a1ea154670a0ae6d9eeb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "93d583a4d7a9f1da6618ad01a29c867bb3a80cc11b3d87ddc99c12e4998b3310",
+    "raw_sha256": "6361cff11e6f9ba6129dc0a3cd6b5a42cffba65299439ae20b758f3da17a590d",
+    "date_quote": "datePublished  Published Tue, Feb 5 2019 12:29 AM EST",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "48ca65dea69a05db6befffd7c5c1ac15c0fbac17d5f970a52e394d1b14fbb55f",
+  "outputs": [
+    {
+      "path": "US\\2019_02_05_Debt-Restructuring_Public-Finance_cnbc.json",
+      "sha256": "e89ed0b698c54e3d3cd95b52952aba8ae61abfcd3a52f247f5965f4b7926b0bf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:18.531813+00:00",
+    "fetched_at": "2026-11-11T11:39:47.816931+00:00",
+    "feature_available_at": "2026-11-11T11:40:12.106160+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:47:44.333760+00:00",
+  "feature_available_at": "2026-11-12T14:47:44.341284+00:00",
+  "commit_verified_at": "2026-11-12T14:47:44.341284+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses debt restructuring, including specific figures and implications for Puerto Rico's financial obligations.",
+    "securities": [
+      {
+        "name": "Puerto Rico's Sales Tax Financing Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Puerto Rico's Sales Tax Financing Corporation"
+      },
+      {
+        "name": "U.S. commonwealth",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. commonwealth"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Public Administration",
+        "basis": "inferred",
+        "quote": "government debt"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Puerto Rico's Sales Tax Financing Corporation": "company",
+      "U.S. commonwealth": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

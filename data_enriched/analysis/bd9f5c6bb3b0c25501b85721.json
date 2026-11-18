@@ -1,0 +1,92 @@
+{
+  "source_id": "bd9f5c6bb3b0c25501b85721",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_25_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "e301239cb87fa9327cee84464d18e97c80671332f08b510848b0c4a6f00dc540",
+      "filename": "2016_02_25_Corporate-Governance_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "e2fb11fb290a432121808cdece382f2fdb2b618ba4b25988dacd5fb304a828ee",
+  "input_hash": "a73707d86a1a954f5bbdad0bd71c60ec87be8b0bc59fcc4b9ecdbd65effafb60",
+  "matching_audit_hash": "4f2c03cdae6197b4f52bf06fd6c93cd9b40918b7759b4fca9d6275139a6c97a5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4db74064aef5c71831e6a5b2e2a1d14f0d942087bd6a830b5c46f23073ac39ca",
+    "raw_sha256": "7aa1d2b95b6ba48bead7758ad46227c0ffe15cc6fc6ae6401a652682330adcc8",
+    "date_quote": "SEC filing datePublished=2016-02-25",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465916100064/a16-5228_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9b73ea3944aeba645eacc858b731f47074ec7016e8e7ac78b4d46b7db5f0a7e9",
+  "outputs": [
+    {
+      "path": "US\\2016_02_25_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "7dee645de0d28f203be10029ac440f963c63ce43bf7e70d792a9a26f18a6b595"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.850017+00:00",
+    "fetched_at": "2026-11-11T01:25:41.924675+00:00",
+    "feature_available_at": "2026-11-11T11:15:30.167905+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:48.299256+00:00",
+  "feature_available_at": "2026-11-12T14:30:48.332265+00:00",
+  "commit_verified_at": "2026-11-12T14:30:48.332265+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary mentions a company appointment and board changes, which are relevant for corporate governance.",
+    "securities": [
+      {
+        "name": "BROADWAY FINANCIAL CORP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BROADWAY FINANCIAL CORP"
+      },
+      {
+        "name": "Broadway Federal Bank, f.s.b.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Federal Bank, f.s.b."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "BROADWAY FINANCIAL CORP": "company",
+      "Broadway Federal Bank, f.s.b.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

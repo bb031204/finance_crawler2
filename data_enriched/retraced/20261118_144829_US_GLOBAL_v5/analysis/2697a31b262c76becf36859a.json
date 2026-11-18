@@ -1,0 +1,294 @@
+{
+  "source_id": "2697a31b262c76becf36859a",
+  "status": "completed",
+  "source_record_hash": "42d324d189adaf5ae5f2251279dc3f500f87b630c0bc4b6e34a6853f1413a66b",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-12-000018-index.html",
+    "attempted_at": "2026-11-18T10:18:40.337119+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-12-000018-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018012000018/a8-kexeccomp.htm",
+    "fetched_at": "2026-11-18T10:18:48.173596+00:00",
+    "source_body_hash": "7a2d8f65e0d60143e211dfc2fb9a5d319d9cf1b70242a265514682ba7bc0c29e",
+    "raw_sha256": "6325b45c0b2d865c81bb19039cc5cbf34a084a59a051f1a80222d2b4b195d96d",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018012000018/a8-kexeccomp.htm",
+        "type": "8-K",
+        "description": "FORM 8-K EXECUTIVE COMPENSATION",
+        "raw_sha256": "6325b45c0b2d865c81bb19039cc5cbf34a084a59a051f1a80222d2b4b195d96d",
+        "text_sha256": "7a2d8f65e0d60143e211dfc2fb9a5d319d9cf1b70242a265514682ba7bc0c29e",
+        "text_start": 0,
+        "text_end": 3581
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2012-02-23",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2697a31b262c76becf36859a.json",
+    "sha256": "92b416fed7372a2f2bd4342712d65b5e2fa5d69f2b18ad654cec4ef477fa5045",
+    "bundled_path": "legacy_audit/2697a31b262c76becf36859a.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "c0385d54a8e258aae5fee420398711db4b8c99bfff545a4f0fb08e379192391b",
+      "llm_inferred_at": "2026-11-18T10:18:55.175333+00:00",
+      "model_duration_seconds": 6.9727014,
+      "prompt_tokens": 2808,
+      "completion_tokens": 287,
+      "selection": [
+        {
+          "source_id": "2697a31b262c76becf36859a",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: February 23, 2012",
+              "rationale": "The report is specifically about SanDisk Corporation's executive compensation actions, indicating a company-specific event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "inferred",
+              "quote": "the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date: February 23, 2012"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "4bef2cda810e12ef1abcb5546b98978b5b3a111eaf10713de840ef772a65fe5a",
+      "llm_inferred_at": "2026-11-18T10:18:59.081129+00:00",
+      "model_duration_seconds": 3.8964462,
+      "prompt_tokens": 2852,
+      "completion_tokens": 194,
+      "selection": [
+        {
+          "source_id": "2697a31b262c76becf36859a",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "8-K 1 a8-kexeccomp.htm FORM 8-K EXECUTIVE COMPENSATION 8-K Exec Comp UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 8-K CURRENT REPORT PURSUANT TO"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:18:59.093354+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7a2d8f65e0d60143e211dfc2fb9a5d319d9cf1b70242a265514682ba7bc0c29e",
+    "raw_sha256": "6325b45c0b2d865c81bb19039cc5cbf34a084a59a051f1a80222d2b4b195d96d",
+    "date_quote": "SEC filing datePublished=2012-02-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018012000018/a8-kexeccomp.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Compensation details for executives at SanDisk Corporation",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6022",
+        "name": "STATE COMMERCIAL BANKS",
+        "basis": "inferred",
+        "quote": "8-K 1 a8-kexeccomp.htm FORM 8-K EXECUTIVE COMPENSATION 8-K Exec Comp UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 8-K CURRENT REPORT PURSUANT TO",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6022",
+        "industry_name_standard": "STATE COMMERCIAL BANKS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "8-K 1 a8-kexeccomp.htm FORM 8-K EXECUTIVE COMPENSATION 8-K Exec Comp UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 8-K CURRENT REPORT PURSUANT TO",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [],
+    "entity_types": {
+      "SanDisk Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "2697a31b262c76becf36859a",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_02_23_Compensation_Technology_sec.json",
+        "sha256": "d2eddd1de6f6e042dd39b0c82d01938d03c9c99c8554c76cd60a65ca246ad147",
+        "filename": "2012_02_23_Compensation_Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "dfe3804e4e4975e3d479405ef7a407123fb53eebe03178ad5883b0bba5b826ae",
+    "input_hash": "9d278aca6c489eb232a20eab363cac3f963a07c8cb94edc6d20d7fcfa14a7559",
+    "matching_audit_hash": "42c0ac5f43b028620efe80b2ef458ca250baa1479c3f170ef8f5bd27eb33ea1b",
+    "legacy_security_evidence": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "record_hash": "42d324d189adaf5ae5f2251279dc3f500f87b630c0bc4b6e34a6853f1413a66b",
+    "outputs": [
+      {
+        "path": "US\\2012_02_23_Compensation_Technology_sec.json",
+        "sha256": "d9b08ffa3231fb8e15fa15028237078ac3eb7c4a8abf12beb368cb374515ee18"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2012-02-23",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+      "fetched_at": "2026-11-10T22:30:15.009938+00:00",
+      "feature_available_at": "2026-11-11T09:31:06.918781+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:18:59.081129+00:00",
+    "feature_available_at": "2026-11-18T10:18:59.093354+00:00",
+    "commit_verified_at": "2026-11-12T15:16:33.085974+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:33.112973+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:58:43.188783+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Compensation details for executives at SanDisk Corporation",
+        "securities": [
+          {
+            "name": "SanDisk Corporation",
+            "ticker": null,
+            "exchange": null,
+            "quote": "SanDisk Corporation"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Technology",
+            "basis": "inferred",
+            "quote": "SanDisk Corporation"
+          }
+        ],
+        "impact_scope": [
+          "company"
+        ],
+        "entity_types": {
+          "SanDisk Corporation": "company"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:58:43.212088+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T14:58:43.221088+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T14:58:43.204088+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary contains information about compensation decisions made by SanDisk Corporation's Compensation Committee, including bonuses and base salaries for its ",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T13:56:10.342196+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-12-000018-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "42d324d189adaf5ae5f2251279dc3f500f87b630c0bc4b6e34a6853f1413a66b",
+    "content_hash": "7a2d8f65e0d60143e211dfc2fb9a5d319d9cf1b70242a265514682ba7bc0c29e",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:18:59.081918+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2697a31b262c76becf36859a.json",
+      "sha256": "7d0af3a9dcb3c8569ace7800e880a2d228c146437ba520dd37cf586afa7bf3cb",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 18.765999999974156
+}

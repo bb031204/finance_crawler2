@@ -1,0 +1,202 @@
+{
+  "source_id": "cd4c1b8015e0b899b1264d31",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_13_Financing_Entertainment_sec.json",
+      "sha256": "7eef3102c5ae57fa0faf860704deeea405ceb9ebcaef1735fa5cdd710717432b",
+      "filename": "2015_03_13_Financing_Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "5373f0862412db38572941a41e4d3ddaeffa1b2b9028c8d586f454fbdbabad8e",
+  "input_hash": "95d315ac1f7448f1ebacef4113dd1e0f95a2342e4d10449d716771d828de9b7e",
+  "matching_audit_hash": "c2753f10bfd77c8ee9651c2542e32718252b407ac3aec9f5763275e05e10bc9f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3c82cde2c3aba129fb5ef11ba35bb2312f1419584a1ab8cdb802dcc566269322",
+    "raw_sha256": "eab257e7af4766de2064b16f36a27779813ef0dff9622af77ffdddc99fe30714",
+    "date_quote": "SEC filing datePublished=2015-03-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103915000094/fy2015_q2x8kxannualmeeting.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "The Walt Disney Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Walt Disney Company"
+    }
+  ],
+  "record_hash": "5c41742abf59012296191f3e30d8cb378d3da8a51b21e43aa63016d4ca6a75b7",
+  "outputs": [
+    {
+      "path": "US\\2015_03_13_Financing_Entertainment_sec.json",
+      "sha256": "93f95279ce8a4d530e4e4de20e36953995e54cf90f7b5b567bee3307299569c9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:43:19.895005+00:00",
+    "feature_available_at": "2026-11-11T10:44:32.964790+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:22.619974+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.631449+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.631449+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Credit agreement details and financial operations relevant to Disney and the娱乐行业",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      },
+      {
+        "name": "Euro Disney",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Euro Disney"
+      },
+      {
+        "name": "Hong Kong Disneyland",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hong Kong Disneyland"
+      },
+      {
+        "name": "Shanghai Disney Resort",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shanghai Disney Resort"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Entertainment",
+        "basis": "explicit",
+        "quote": "entertainment"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "The Walt Disney Company": "company",
+      "Euro Disney": "company",
+      "Hong Kong Disneyland": "company",
+      "Shanghai Disney Resort": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.653450+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:22.619974+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Credit agreement details and financial operations relevant to Disney and the娱乐行业",
+      "securities": [
+        {
+          "name": "The Walt Disney Company",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Walt Disney Company"
+        },
+        {
+          "name": "Euro Disney",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Euro Disney"
+        },
+        {
+          "name": "Hong Kong Disneyland",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Hong Kong Disneyland"
+        },
+        {
+          "name": "Shanghai Disney Resort",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Shanghai Disney Resort"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Entertainment",
+          "basis": "explicit",
+          "quote": "entertainment"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "The Walt Disney Company": "company",
+        "Euro Disney": "company",
+        "Hong Kong Disneyland": "company",
+        "Shanghai Disney Resort": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:22.643515+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:22.653509+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:22.635508+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a financing agreement involving The Walt Disney Company, including details about the credit facility, its terms, and its relevance to the娛",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:23:52.390176+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,1123 @@
+{
+  "source_id": "1b1754c5dc65f2a982a5e4eb",
+  "status": "completed",
+  "source_record_hash": "1c6e657d27591d5e643d9b5dc93533c13bcbc0ebfac53e2b7e567585f8d96f68",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001250/0001104659-20-011697-index.html",
+    "attempted_at": "2026-11-18T09:18:49.849516+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001250/0001104659-20-011697-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465920011697/tm206175-1_8k.htm",
+    "fetched_at": "2026-11-18T09:19:05.150379+00:00",
+    "source_body_hash": "f11e066214562048b7f41f68f8047954706a3af76f854fc945acf4b31d896e0d",
+    "raw_sha256": "e05ee777b43b0d481c8e698c39960b5144a2ca75243e19d36d9732d7ca939b37",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465920011697/tm206175-1_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "e05ee777b43b0d481c8e698c39960b5144a2ca75243e19d36d9732d7ca939b37",
+        "text_sha256": "1f35e1057df197204e04894a36bf90c6f88d0bbe3040f3d9a0859bc60e54f22a",
+        "text_start": 0,
+        "text_end": 3418
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465920011697/tm206175d1_ex99-1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "537aeb78aacf20571aaf62fc22381eedcc08d3c3f6dd4d44ae74bfa81eee8287",
+        "text_sha256": "def26338eda1cc23fead23b839d148c3e90fbad07c195912e8f41dce6a3eaddb",
+        "text_start": 3420,
+        "text_end": 49695
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2020-02-06",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/1b1754c5dc65f2a982a5e4eb.json",
+    "sha256": "c2186e28e7eb2e77e9767a029aa7d9a854bff736dea46fe8b263a631bb64ccba",
+    "bundled_path": "legacy_audit/1b1754c5dc65f2a982a5e4eb.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "a257b0148822942f5a0e165d35f46b4bf33b3d6e4015e0f4158293ae0b8fc271",
+      "llm_inferred_at": "2026-11-18T09:19:27.882172+00:00",
+      "model_duration_seconds": 22.7026654,
+      "prompt_tokens": 4251,
+      "completion_tokens": 1087,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1.",
+              "rationale": "The acquisition of Dr. Jart+ by The Estée Lauder Companies Inc. is a company-specific event that directly impacts the financial results of the company.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Our emerging markets continued to be vibrant and we made progress towards the stabilization of our North American business despite continued softness in the makeup category.",
+              "rationale": "The statement refers to the makeup category, which is part of the broader consumer goods industry, indicating an industry-wide impact due to the softness in the makeup category.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ", consumers and everyone affected in China and around the world. Our hearts and support go out to the many people working hard to mitigate the health risks of the coronavirus. The global situation will also affect our financial results in the near term, so we are updating our fiscal year outlook. With our results to date and our agility in",
+              "rationale": "The global coronavirus outbreak is a macroeconomic event that affects the broader US equity market, particularly in the context of financial results and fiscal outlook.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "Our emerging markets continued to be vibrant and we made progress towards the stabilization of our North American business despite continued softness in the makeup category."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "The global situation will also affect our financial results in the near term, so we are updating our fiscal year outlook."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "Companies Inc. (NYSE: EL) today reported exceptional financial results for its second quarter ended December 31, 2019. Net sales of $4.62 billion increased 15% from $4.01 billion",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "The financial results and sales growth indicate a positive impact on the consumer staples industry due to increased sales and market performance.",
+              "confidence": 0.75,
+              "quote": "Net sales of $4.62 billion increased 15% from $4.01 billion in the prior-year period."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "Companies Inc. (NYSE: EL) today reported exceptional financial results for its second quarter ended December 31, 2019. Net sales of $4.62 billion increased 15% from $4.01 billion",
+              "industry_name_original": "Financials",
+              "mechanism": "The financial results and sales growth indicate a positive impact on the financials industry due to increased sales and market performance.",
+              "confidence": 0.75,
+              "quote": "Net sales of $4.62 billion increased 15% from $4.01 billion in the prior-year period."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5f250e13672e77cdfc7d6e67f295611b00815dc5f9f96856561d1dc01d503bb6",
+      "llm_inferred_at": "2026-11-18T09:19:57.957569+00:00",
+      "model_duration_seconds": 30.0547189,
+      "prompt_tokens": 4295,
+      "completion_tokens": 1576,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1.",
+              "rationale": "The acquisition of Dr. Jart+ by The Estée Lauder Companies Inc. is a company-specific event that directly impacts the financial results of the company.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1.",
+              "rationale": "The acquisition of Dr. Jart+ by The Estée Lauder Companies Inc. is a company-specific event that directly impacts the financial results of the company.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1.",
+              "rationale": "The acquisition of Dr. Jart+ by The Estée Lauder Companies Inc. is a company-specific event that directly impacts the financial results of the company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ", consumers and everyone affected in China and around the world. Our hearts and support go out to the many people working hard to mitigate the health risks of the coronavirus. The global situation will also affect our financial results in the near term, so we are updating our fiscal year outlook. With our results to date and our agility in",
+              "rationale": "The impact of the coronavirus outbreak on the financial results of The Estée Lauder Companies Inc. is a broad US equity market event, as it affects the company's financial performance and could have implications for the broader market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "THE ESTÉE LAUDER COMPANIES DELIVERS EXCEPTIONAL FISCAL 2020 SECOND QUARTER RESULTS Net Sales Grew 15%; Diluted EPS Declined 2% Including Charges and Adjustments Net Sales",
+              "industry_name_original": "Financials",
+              "mechanism": "The financial results of The Estée Lauder Companies Inc. are directly impacted by the acquisition of Dr. Jart+ and the subsequent financial performance of the company.",
+              "confidence": 0.95,
+              "quote": "THE ESTÉE LAUDER COMPANIES DELIVERS EXCEPTIONAL FISCAL 2020 SECOND QUARTER RESULTS Net Sales Grew 15%; Diluted EPS Declined 2% Including Charges and Adjustments Net Sales"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": "THE ESTÉE LAUDER COMPANIES DELIVERS EXCEPTIONAL FISCAL 2020 SECOND QUARTER RESULTS Net Sales Grew 15%; Diluted EPS Declined 2% Including Charges and Adjustments Net Sales",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "The financial results of The Estée Lauder Companies Inc. are directly impacted by the acquisition of Dr. Jart+ and the subsequent financial performance of the company.",
+              "confidence": 0.95,
+              "quote": "THE ESTÉE LAUDER COMPANIES DELIVERS EXCEPTIONAL FISCAL 2020 SECOND QUARTER RESULTS Net Sales Grew 15%; Diluted EPS Declined 2% Including Charges and Adjustments Net Sales"
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "industry_scope_quote": "THE ESTÉE LAUDER COMPANIES DELIVERS EXCEPTIONAL FISCAL 2020 SECOND QUARTER RESULTS Net Sales Grew 15%; Diluted EPS Declined 2% Including Charges and Adjustments Net Sales",
+              "industry_name_original": "Communication Services",
+              "mechanism": "The financial results of The Estée Lauder Companies Inc. are directly impacted by the acquisition of Dr. Jart+ and the subsequent financial performance of the company.",
+              "confidence": 0.95,
+              "quote": "THE ESTÉE LAUDER COMPANIES DELIVERS EXCEPTIONAL FISCAL 2020 SECOND QUARTER RESULTS Net Sales Grew 15%; Diluted EPS Declined 2% Including Charges and Adjustments Net Sales"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "68c249ac63bd40d41c139695ec07e9a88ec530e66376d5687e36d6eb8eb05dc9",
+      "llm_inferred_at": "2026-11-18T09:20:24.657000+00:00",
+      "model_duration_seconds": 26.6717121,
+      "prompt_tokens": 3768,
+      "completion_tokens": 1290,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Operating income excluding (i) goodwill and other intangible asset impairments related to Too Faced, BECCA and Smashbox of $777 million compared to $38 million related to Smashbox",
+              "rationale": "The article discusses the financial performance of multiple beauty brands, including Estée Lauder, La Mer, Origins, Clinique, Tom Ford Beauty, Bobbi Brown, and others, which are all part of the beauty and personal care industry. The impact on operating income is attributed to these brands, which are",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Skin Care · Skin care net sales grew across all regions, led by Estée Lauder and La Mer.",
+              "rationale": "The article highlights the growth in skin care sales across all regions, led by Estée Lauder and La Mer, which are part of the beauty and personal care industry. This indicates a sector-wide impact on the industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Fragrance · Net sales growth was driven primarily by increases from Jo Malone London and Tom Ford Beauty.",
+              "rationale": "The article discusses the growth in fragrance sales driven by Jo Malone London and Tom Ford Beauty, which are part of the beauty and personal care industry. This indicates a sector-wide impact on the industry.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "in The Americas region. This resulted in a change to the royalty structure of the travel retail business to reflect the value created in The Americas region. Accordingly, for the second quarter, the fiscal 2019 operating income of The Americas was increased by $210 million, with a corresponding decrease in Europe, the Middle East & Africa, to",
+              "rationale": "The article discusses the impact on the operating income of The Americas region, which is part of the US equity market. The change in royalty structure and the impact on operating income indicate a market-wide impact.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "Operating income excluding (i) goodwill and other intangible asset impairments related to Too Faced, BECCA and Smashbox of $777 million compared to $38 million related to Smashbox"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "Skin Care · Skin care net sales grew across all regions, led by Estée Lauder and La Mer."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "Fragrance · Net sales growth was driven primarily by increases from Jo Malone London and Tom Ford Beauty."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "industry continued to be challenged by soft color cosmetics sales, which impacted makeup category results at many of the Company’s brands. · Net sales in North America grew double",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "The Americas · In North America, skin care net sales continued to grow, driven by increases from Estée Lauder, Origins and La Mer.",
+              "impact_role": "demand_exposure"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": "industry continued to be challenged by soft color cosmetics sales, which impacted makeup category results at many of the Company’s brands. · Net sales in North America grew double",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "economic transmission",
+              "confidence": 0.8,
+              "quote": "The Americas · In North America, skin care net sales continued to grow, driven by increases from Estée Lauder, Origins and La Mer.",
+              "impact_role": "demand_exposure"
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "industry continued to be challenged by soft color cosmetics sales, which impacted makeup category results at many of the Company’s brands. · Net sales in North America grew double",
+              "industry_name_original": "Health Care",
+              "mechanism": "economic transmission",
+              "confidence": 0.75,
+              "quote": "The Americas · In North America, skin care net sales continued to grow, driven by increases from Estée Lauder, Origins and La Mer.",
+              "impact_role": "demand_exposure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "15f18eac278a9140052e260727006eb0bef74a794974c83856de4978ab47ccc4",
+      "llm_inferred_at": "2026-11-18T09:20:48.211978+00:00",
+      "model_duration_seconds": 23.5345467,
+      "prompt_tokens": 3812,
+      "completion_tokens": 1222,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Operating income excluding (i) goodwill and other intangible asset impairments related to Too Faced, BECCA and Smashbox of $777 million compared to $38 million related to Smashbox",
+              "rationale": "The article discusses the impact of goodwill and intangible asset impairments on operating income, which is a sector-wide issue affecting multiple brands within the beauty and personal care industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Skin Care · Skin care net sales grew across all regions, led by Estée Lauder and La Mer.",
+              "rationale": "The growth in skin care sales across all regions indicates a sector-wide trend within the beauty and personal care industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Fragrance · Net sales growth was driven primarily by increases from Jo Malone London and Tom Ford Beauty.",
+              "rationale": "The growth in fragrance sales is indicative of a broader trend within the fragrance and personal care industry.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "in The Americas region. This resulted in a change to the royalty structure of the travel retail business to reflect the value created in The Americas region. Accordingly, for the second quarter, the fiscal 2019 operating income of The Americas was increased by $210 million, with a corresponding decrease in Europe, the Middle East & Africa, to",
+              "rationale": "The article discusses changes in the royalty structure of the travel retail business, which is a significant factor affecting the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "Operating income excluding (i) goodwill and other intangible asset impairments related to Too Faced, BECCA and Smashbox of $777 million compared to $38 million related to Smashbox"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "Skin Care · Skin care net sales grew across all regions, led by Estée Lauder and La Mer."
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "name": "Advertising",
+              "basis": "explicit",
+              "quote": "Strategic investments to support initiatives at MAC also contributed to the decrease."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "industry continued to be challenged by soft color cosmetics sales, which impacted makeup category results at many of the Company’s brands. · Net sales in North America grew double",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "The article discusses the challenges faced by the North America beauty industry, which is a sector-wide issue affecting the Consumer Discretionary industry.",
+              "confidence": 0.85,
+              "quote": "The Americas · In North America, skin care net sales continued to grow, driven by increases from Estée Lauder, Origins and La Mer."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": "industry continued to be challenged by soft color cosmetics sales, which impacted makeup category results at many of the Company’s brands. · Net sales in North America grew double",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "The article discusses the challenges faced by the North America beauty industry, which is a sector-wide issue affecting the Consumer Staples industry.",
+              "confidence": 0.85,
+              "quote": "The Americas · In North America, skin care net sales continued to grow, driven by increases from Estée Lauder, Origins and La Mer."
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "industry_scope_quote": "industry continued to be challenged by soft color cosmetics sales, which impacted makeup category results at many of the Company’s brands. · Net sales in North America grew double",
+              "industry_name_original": "Advertising",
+              "mechanism": "The article discusses the challenges faced by the North America beauty industry, which is a sector-wide issue affecting the Advertising industry.",
+              "confidence": 0.85,
+              "quote": "The Americas · In North America, skin care net sales continued to grow, driven by increases from Estée Lauder, Origins and La Mer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "4f11636c88db101d71536f8ead2412e6c8e2e7dae1464bfc0575ed87665d5ccf",
+      "llm_inferred_at": "2026-11-18T09:21:10.301570+00:00",
+      "model_duration_seconds": 22.0628772,
+      "prompt_tokens": 3995,
+      "completion_tokens": 1053,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus.",
+              "rationale": "The statement indicates that the global prestige beauty industry is expected to be negatively affected by the coronavirus, which is a sector-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus.",
+              "rationale": "The statement indicates that the global prestige beauty industry is expected to be negatively affected by the coronavirus, which is a sector-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus.",
+              "rationale": "The statement indicates that the global prestige beauty industry is expected to be negatively affected by the coronavirus, which is a sector-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Using December 31, 2019 spot rates for the remaining quarters of fiscal 2020, the Page 8 of 19 negative currency impact equates to about $.05 of diluted earnings per common share.",
+              "rationale": "The statement refers to the impact of currency exchange rates on the company's earnings, which is a broad US equity market factor.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "inferred",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "inferred",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "TRSR:6c1ac3059fe0b03e",
+              "name": "Consumer Specialties",
+              "basis": "inferred",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "continues to see strong consumer demand for its high-quality products, and for the fiscal year expects to grow ahead of the industry and to continue building global share. The",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "economic transmission",
+              "confidence": 0.9,
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": "continues to see strong consumer demand for its high-quality products, and for the fiscal year expects to grow ahead of the industry and to continue building global share. The",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "economic transmission",
+              "confidence": 0.9,
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "TRSR:6c1ac3059fe0b03e",
+              "industry_scope_quote": "continues to see strong consumer demand for its high-quality products, and for the fiscal year expects to grow ahead of the industry and to continue building global share. The",
+              "industry_name_original": "Consumer Specialties",
+              "mechanism": "economic transmission",
+              "confidence": 0.9,
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "25297dcbdc3031d79740eb37bf6ceeef3dc069182aba4ffd7305fcb7fcf91dfa",
+      "llm_inferred_at": "2026-11-18T09:21:30.740006+00:00",
+      "model_duration_seconds": 20.4184088,
+      "prompt_tokens": 4039,
+      "completion_tokens": 1039,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus.",
+              "rationale": "The statement directly references the global prestige beauty industry being impacted by the coronavirus, indicating an industry-wide effect.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus.",
+              "rationale": "The statement indicates that the global prestige beauty industry is expected to be negatively affected by the coronavirus, which is an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus.",
+              "rationale": "The statement refers to the global prestige beauty industry being impacted by the coronavirus, which is an industry-wide effect.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Using December 31, 2019 spot rates for the remaining quarters of fiscal 2020, the Page 8 of 19 negative currency impact equates to about $.05 of diluted earnings per common share.",
+              "rationale": "The statement discusses the impact of currency exchange rates on earnings, which is a macroeconomic factor affecting the US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "TRSR:6ec58c23670f495f",
+              "name": "Building operators",
+              "basis": "explicit",
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "continues to see strong consumer demand for its high-quality products, and for the fiscal year expects to grow ahead of the industry and to continue building global share. The",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": "continues to see strong consumer demand for its high-quality products, and for the fiscal year expects to grow ahead of the industry and to continue building global share. The",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            },
+            {
+              "industry_key": "TRSR:6ec58c23670f495f",
+              "industry_scope_quote": "continues to see strong consumer demand for its high-quality products, and for the fiscal year expects to grow ahead of the industry and to continue building global share. The",
+              "industry_name_original": "Building operators",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "The Company expects global prestige beauty to be adversely impacted over the next few months by the coronavirus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "e9ace21322363c555860aace985cb20751c1e0a39588ab36901bf8a353cda41a",
+      "llm_inferred_at": "2026-11-18T09:21:56.605259+00:00",
+      "model_duration_seconds": 25.8405259,
+      "prompt_tokens": 4152,
+      "completion_tokens": 1241,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company assumes no responsibility to update forward-looking statements made herein or otherwise.",
+              "rationale": "The text discusses factors that could affect the company's performance, including changes in global conditions, credit and equity markets, and other macroeconomic factors that impact the broader industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Estée Lauder Companies Inc. $ 557 $ 573 (3 )% $ 1,152 $ 1,073 7 % Net earnings attributable to The Estée Lauder Companies Inc. per common share: Basic $ 1.55 $ 1.58 (2 )% $ 3.",
+              "rationale": "The text provides financial performance data for the company, which is part of the broader consumer staples industry, indicating the impact on the industry's financial health.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company assumes no responsibility to update forward-looking statements made herein or otherwise.",
+              "rationale": "The text discusses factors that could affect the company's performance, including changes in global conditions, credit and equity markets, and other macroeconomic factors that impact the broader industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the approvals of all major initiatives under Leading Beauty Forward related to the optimization of select corporate functions, supply chain activities, and corporate and regional market support structures, as well as the exit of underperforming businesses, and expect to substantially complete those initiatives through fiscal 2021.",
+              "rationale": "The text discusses the company's initiatives and financial performance, which are relevant to the broader US equity market, including macroeconomic factors and financial conditions.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "The Estée Lauder Companies Inc. $ 557 $ 573 (3 )% $ 1,152 $ 1,073 7 % Net earnings attributable to The Estée Lauder Companies Inc. per common share: Basic $ 1.55 $ 1.58 (2 )% $ 3."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The Company assumes no responsibility to update forward-looking statements made herein or otherwise."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "The Company assumes no responsibility to update forward-looking statements made herein or otherwise."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and",
+              "industry_name_original": "Financials",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and"
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and",
+              "industry_name_original": "Health Care",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "26195c001234db78a3bbfa1304758417186f7016515a06f4d40eb07600d00ea4",
+      "llm_inferred_at": "2026-11-18T09:22:22.451125+00:00",
+      "model_duration_seconds": 25.8266541,
+      "prompt_tokens": 4196,
+      "completion_tokens": 1310,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company assumes no responsibility to update forward-looking statements made herein or otherwise.",
+              "rationale": "The statement indicates that the company's forward-looking statements are subject to various factors that could affect the industry, including changes in the retail industry, global credit and equity markets, and other macroeconomic conditions.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company assumes no responsibility to update forward-looking statements made herein or otherwise.",
+              "rationale": "The statement indicates that the company's forward-looking statements are subject to various factors that could affect the industry, including changes in the retail industry, global credit and equity markets, and other macroeconomic conditions.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company assumes no responsibility to update forward-looking statements made herein or otherwise.",
+              "rationale": "The statement indicates that the company's forward-looking statements are subject to various factors that could affect the industry, including changes in the retail industry, global credit and equity markets, and other macroeconomic conditions.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the approvals of all major initiatives under Leading Beauty Forward related to the optimization of select corporate functions, supply chain activities, and corporate and regional market support structures, as well as the exit of underperforming businesses, and expect to substantially complete those initiatives through fiscal 2021.",
+              "rationale": "The statement refers to the company's initiatives and their impact on the broader market, including the global credit and equity markets, which are part of the US equity market.",
+              "confidence": 0.75
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "The Estée Lauder Companies Inc. $ 557 $ 573 (3 )% $ 1,152 $ 1,073 7 % Net earnings attributable to The Estée Lauder Companies Inc. per common share: Basic $ 1.55 $ 1.58 (2 )% $ 3."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "The Estée Lauder Companies Inc. $ 557 $ 573 (3 )% $ 1,152 $ 1,073 7 % Net earnings attributable to The Estée Lauder Companies Inc. per common share: Basic $ 1.55 $ 1.58 (2 )% $ 3."
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "name": "Advertising",
+              "basis": "explicit",
+              "quote": "The Estée Lauder Companies Inc. $ 557 $ 573 (3 )% $ 1,152 $ 1,073 7 % Net earnings attributable to The Estée Lauder Companies Inc. per common share: Basic $ 1.55 $ 1.58 (2 )% $ 3."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and"
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "industry_scope_quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and",
+              "industry_name_original": "Advertising",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "the Company’s results of operations and the value of its foreign assets, the relative prices at which the Company and its foreign competitors sell products in the same markets and"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "9568ff6085bad47dfa6767effbc9a806ce4a8cecde7b4a8e168ed4d1c30576c2",
+      "llm_inferred_at": "2026-11-18T09:22:35.349810+00:00",
+      "model_duration_seconds": 12.8710915,
+      "prompt_tokens": 4235,
+      "completion_tokens": 551,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment.",
+              "rationale": "The mention of foreign currency gains and the impact on the company's financials indicates an industry-wide impact, particularly in the context of international operations and financial reporting standards.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment.",
+              "rationale": "The specific mention of the company's financial activities and the direct impact on its earnings indicates a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "fa1aaa25427c5ae6caba568d342724e6cd90aca4ae44cbb7b62f8df8b22e031c",
+      "llm_inferred_at": "2026-11-18T09:22:45.763342+00:00",
+      "model_duration_seconds": 10.3948171,
+      "prompt_tokens": 4279,
+      "completion_tokens": 534,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment.",
+              "rationale": "The mention of foreign currency gains and the impact on the company's financials indicates an industry-wide impact on financial services or multinational corporations.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "company",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment.",
+              "rationale": "The specific mention of the company's financial activities and the impact on its earnings indicates a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "451249c89f49903ce3c646644a13430e5e3b68445ba532cbe37bba9e3a05ffe4",
+      "llm_inferred_at": "2026-11-18T09:22:55.975535+00:00",
+      "model_duration_seconds": 10.1923792,
+      "prompt_tokens": 4116,
+      "completion_tokens": 440,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The impact of the adoption of this standard on the Company’s consolidated statements of earnings and consolidated statement of cash flows was not material.",
+              "rationale": "The text discusses the impact of a new accounting standard on the company's financial statements, indicating a company-specific event.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "$ 1,255 $ 1,273 Other Investing and Financing Sources/(Uses): Capital expenditures $ (291 ) $ (292 ) Payments for acquired businesses, net of cash acquired (1,040 ) — Proceeds (purchase) of investments, net (5 ) 257 Payments to acquire treasury stock (813 ) (1,126 ) Dividends paid (330 ) (297 ) Proceeds (repayments) of current debt, net 8 (169 )",
+              "rationale": "The text includes financial data related to US equity markets, such as capital expenditures, investments, and dividends, which are relevant to US equity markets.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6199",
+              "name": "FINANCE SERVICES",
+              "basis": "inferred",
+              "quote": "The impact of the adoption of this standard on the Company’s consolidated statements of earnings and consolidated statement of cash flows was not material."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "8217dcc0a32e73edcd0302dee6b832cc652c3ba31afa27f7ba4ae5f03a87f9f3",
+      "llm_inferred_at": "2026-11-18T09:23:04.535028+00:00",
+      "model_duration_seconds": 8.5462229,
+      "prompt_tokens": 4160,
+      "completion_tokens": 433,
+      "selection": [
+        {
+          "source_id": "1b1754c5dc65f2a982a5e4eb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The impact of the adoption of this standard on the Company’s consolidated statements of earnings and consolidated statement of cash flows was not material.",
+              "rationale": "The text discusses the impact of a new accounting standard on the company's financial statements, indicating a company-specific event.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "$ 1,255 $ 1,273 Other Investing and Financing Sources/(Uses): Capital expenditures $ (291 ) $ (292 ) Payments for acquired businesses, net of cash acquired (1,040 ) — Proceeds (purchase) of investments, net (5 ) 257 Payments to acquire treasury stock (813 ) (1,126 ) Dividends paid (330 ) (297 ) Proceeds (repayments) of current debt, net 8 (169 )",
+              "rationale": "The text includes financial data related to capital expenditures, acquisitions, and dividends, which are relevant to US equity markets.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6199",
+              "name": "FINANCE SERVICES",
+              "basis": "inferred",
+              "quote": "The impact of the adoption of this standard on the Company’s consolidated statements of earnings and consolidated statement of cash flows was not material."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T09:23:04.557852+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f11e066214562048b7f41f68f8047954706a3af76f854fc945acf4b31d896e0d",
+    "raw_sha256": "e05ee777b43b0d481c8e698c39960b5144a2ca75243e19d36d9732d7ca939b37",
+    "date_quote": "SEC filing datePublished=2020-02-06",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465920011697/tm206175-1_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary contains financial results and dividend information related to Estée Lauder Companies Inc.",
+    "securities": [
+      {
+        "name": "Estée Lauder Companies Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Estée Lauder Companies Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Estée Lauder Companies Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "1b1754c5dc65f2a982a5e4eb",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_02_06_Financial-Results_Beauty_sec.json",
+        "sha256": "bf81ecec460182e7f7f508d87435650d1328bb0871a7bf8e09277fdbb0276a02",
+        "filename": "2020_02_06_Financial-Results_Beauty_sec.json"
+      }
+    ],
+    "original_record_hash": "5dd87d12ffcfca358a5bbc6670186921cab577ea503d52a516e2f2505bbb5a77",
+    "input_hash": "36a849f9dab602b53d01658233b782ef6351b23259e12104bec7b94690d2f5f9",
+    "matching_audit_hash": "a0b0e4db7679547483edfd4699d4ff54d699f6c5eadce2bc8cb644c110320cd3",
+    "legacy_security_evidence": [
+      {
+        "name": "Estée Lauder Companies Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Estée Lauder Companies Inc."
+      }
+    ],
+    "record_hash": "1c6e657d27591d5e643d9b5dc93533c13bcbc0ebfac53e2b7e567585f8d96f68",
+    "outputs": [
+      {
+        "path": "US\\2020_02_06_Financial-Results_Beauty_sec.json",
+        "sha256": "b281c811ca561839d438bc33e2165f0801a9877098ab600d89a05a676f9f9d70"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2020-02-06",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+      "fetched_at": "2026-11-11T15:26:00.120321+00:00",
+      "feature_available_at": "2026-11-11T15:26:40.580613+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T09:23:04.535028+00:00",
+    "feature_available_at": "2026-11-18T09:23:04.557852+00:00",
+    "commit_verified_at": "2026-11-12T14:51:40.603745+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1.",
+        "rationale": "The acquisition of Dr. Jart+ by The Estée Lauder Companies Inc. is a company-specific event that directly impacts the financial results of the company.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Company acquired the remaining stake in Have & Be Co. Ltd. (“Have & Be”), the owner of Dr. Jart+, on December 18, 2019, which resulted in Other income of $576 million, or $1.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment.",
+        "rationale": "The specific mention of the company's financial activities and the impact on its earnings indicates a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Company also recorded a $23 million foreign currency gain as a result of cash transferred to a foreign subsidiary for the purposes of making the closing payment.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The impact of the adoption of this standard on the Company’s consolidated statements of earnings and consolidated statement of cash flows was not material.",
+        "rationale": "The text discusses the impact of a new accounting standard on the company's financial statements, indicating a company-specific event.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The impact of the adoption of this standard on the Company’s consolidated statements of earnings and consolidated statement of cash flows was not material.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001250/0001104659-20-011697-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "1c6e657d27591d5e643d9b5dc93533c13bcbc0ebfac53e2b7e567585f8d96f68",
+    "content_hash": "c84850ffc5312bed3f873ad5d6af0d9dcc773d58bfc4ddd5cfa0ccb14ffedfa3",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T09:23:04.538798+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/1b1754c5dc65f2a982a5e4eb.json",
+      "sha256": "f2a7cde70c6ab7f65ac05c162137962903b7a6a2138683024c15482b9d0731f2",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 254.71900000001187
+}

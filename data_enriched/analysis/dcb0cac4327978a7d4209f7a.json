@@ -1,0 +1,102 @@
+{
+  "source_id": "dcb0cac4327978a7d4209f7a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_06_01_Politics_Finance_cnbc.json",
+      "sha256": "3000fe50ff58ab108e0a1efa888556d5cb9d5606844dfc1f512b7fa627ff807c",
+      "filename": "2020_06_01_Politics_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "cdd8e90c7a402140e52ab04a71236c78b2173361ce673e6fc52d435b684a535d",
+  "input_hash": "7a17e52a61b0d69baddb60d38c45cc7ee272ca264f91b9766e6c519129a54c60",
+  "matching_audit_hash": "46f7b22d113fd87792982faf544c644bd2eec6e3bb1872da4e96873ae5202e38",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "21422faf2addb3d4bdbd690e59990197e9b5ba3581a16b9677f59bb04639b6cb",
+    "raw_sha256": "936ac76df4bc21821c2ec72d4353edf2766e8a444dc3067f09d974ab7362a2bf",
+    "date_quote": "article:published_time=2020-06-01T18:52:53+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ef74f44b99b61813d752fb14ecd4726d5e02169d9d0047ca8cf9d4d30f1a6568",
+  "outputs": [
+    {
+      "path": "US\\2020_06_01_Politics_Finance_cnbc.json",
+      "sha256": "952f54aac25d7da4a2a56695800004d7b8451d586a41c39d9c15f60aa27d5c14"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-06-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:11.057561+00:00",
+    "fetched_at": "2026-11-10T19:27:40.112813+00:00",
+    "feature_available_at": "2026-11-10T19:28:08.186647+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:53:00.166652+00:00",
+  "feature_available_at": "2026-11-12T14:53:00.179714+00:00",
+  "commit_verified_at": "2026-11-12T14:53:00.179714+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the political and economic implications of stimulus checks, public opinion, and the impact of the pandemic on the economy.",
+    "securities": [
+      {
+        "name": "House Democrats",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House Democrats"
+      },
+      {
+        "name": "Roosevelt Institute",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Roosevelt Institute"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "explicit",
+        "quote": "finance professor"
+      },
+      {
+        "name": "Economy",
+        "basis": "inferred",
+        "quote": "economic fallout of the pandemic"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "House Democrats": "organization",
+      "Roosevelt Institute": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

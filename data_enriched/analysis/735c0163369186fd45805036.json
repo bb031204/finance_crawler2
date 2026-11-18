@@ -1,0 +1,102 @@
+{
+  "source_id": "735c0163369186fd45805036",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_04_28_Finance_Consumer-Goods_cnbc.json",
+      "sha256": "4773e81f1d8b107d2694c56364a42a171db2081a0b687d0cae6872abe4e62929",
+      "filename": "2020_04_28_Finance_Consumer-Goods_cnbc.json"
+    }
+  ],
+  "original_record_hash": "c3f412f11bd57a352f2cfadea847013846ba47f199cdbf4a233e8dde55420158",
+  "input_hash": "d7c5d478d5496da5c3408cd488e9cd309be5533396c3b71dc21249dd3675a885",
+  "matching_audit_hash": "74f3b83ebaa98fecf292a31b539d5f723b0b29866d3dcfc0fbfbf9dc9ff5df41",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "38bd13bae061c03f203fc6605bfdee34d3986e8f899708f90e6588e89809eeb8",
+    "raw_sha256": "d694a0d900f048101e080ef2f9eb89a34d4151c7ec8880eb81017f782e013f70",
+    "date_quote": "article:published_time=2020-04-28T19:38:12+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Starbucks",
+      "ticker": "SBUX",
+      "exchange": null,
+      "quote": "Starbucks (SBUX) Q2 2020 earnings: Same-store sales fall 10%"
+    }
+  ],
+  "record_hash": "a956db693442ee8f7cb1d45f03e096f5a765e445cdd8c716b21d184d824099c9",
+  "outputs": [
+    {
+      "path": "US\\2020_04_28_Finance_Consumer-Goods_cnbc.json",
+      "sha256": "58c0f119b280f628524267e658bedeff46f334428b3154f8fadae436c5098f32"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-04-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:12.457793+00:00",
+    "fetched_at": "2026-11-10T20:14:57.751548+00:00",
+    "feature_available_at": "2026-11-10T20:15:25.493175+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:33.344578+00:00",
+  "commit_verified_at": "2026-11-12T13:53:33.344578+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Starbucks",
+        "ticker": "SBUX",
+        "exchange": null,
+        "quote": "Starbucks (SBUX) Q2 2020 earnings: Same-store sales fall 10%"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Coffee & Beverage",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Consumer Goods",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

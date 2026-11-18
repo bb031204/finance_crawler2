@@ -1,0 +1,97 @@
+{
+  "source_id": "35859392008bf595532f8355",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_06_13_Finance_Semiconductor_cnbc.json",
+      "sha256": "19da2702ab382e55d9b06ac4ba132a53f0ba7d727096ebf5608957bfc27e6ba8",
+      "filename": "2019_06_13_Finance_Semiconductor_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d220b31687992bd771461c91a5e09e385c9283617b5fb00c3a95e9fddb5843cd",
+  "input_hash": "6247332b71447a02ef5a1bff71ee81d2e07506ea8ce83370359fd4d6869b3cf0",
+  "matching_audit_hash": "b39896a46d800a1c07205ee136a4623a25793e48169f0ac91f862140d383fc0d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "829a02ca6d7678e9bc993e9399572791fa5b4dc3bb4b487a3a18af28ab2510ad",
+    "raw_sha256": "3458db08218bc69bd18568a8dc9cca21113e7940f3adf3a627f6bf57d7a4025b",
+    "date_quote": "article:published_time=2019-06-13T20:27:05+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Broadcom",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Broadcom"
+    }
+  ],
+  "record_hash": "39e66fdbe8e0e4b61bdfc271daed4ee60cc019974f31891390ca7ef295a6475a",
+  "outputs": [
+    {
+      "path": "US\\2019_06_13_Finance_Semiconductor_cnbc.json",
+      "sha256": "d3a7c37904bb4bb370b48009858a75bd352e39643617da2a2fa4b451bf261b22"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-06-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:53.440052+00:00",
+    "fetched_at": "2026-11-11T02:35:35.080364+00:00",
+    "feature_available_at": "2026-11-11T02:36:02.384554+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:28.438336+00:00",
+  "commit_verified_at": "2026-11-12T13:53:28.438336+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Broadcom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadcom"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

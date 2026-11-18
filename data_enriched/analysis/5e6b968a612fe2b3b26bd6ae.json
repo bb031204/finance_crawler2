@@ -1,0 +1,108 @@
+{
+  "source_id": "5e6b968a612fe2b3b26bd6ae",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_12_29_Finance_Finance_bloomberg.json",
+      "sha256": "8c117407007c9d36326519aa095e2d8b10a924a5a6b63daa0670afe6ef6976b3",
+      "filename": "2017_12_29_Finance_Finance_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "45cc99ba5cf7b175a388be48dbe28aa78c066caaaa895072b29a43433f3cf820",
+  "input_hash": "7f2b80b9035c8ded0c30b2b0637956926f44ee967ab0c9111de752da875ec5b4",
+  "matching_audit_hash": "f4c2d03059594b59b0c05d62aa1d11649450797e736406e58bae48e866b4d848",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9bf651f0a772d858b1d0448527047e4f5d126cc8ee603117bd601b7e834ef900",
+    "raw_sha256": "e085424e166be1bc46b8a1ad78c09b8966fea961904e5fdfe8b8565bb437222f",
+    "date_quote": "By Elena Popina December 29, 2017 at 9:41 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Square Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Paced by firms like Square Inc. and Align Technology Inc."
+    },
+    {
+      "name": "Align Technology Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Paced by firms like Square Inc. and Align Technology Inc."
+    }
+  ],
+  "record_hash": "5ca51a590bf7ab409ca2acb6ab056caf9c5f4c8c625b6751679ca7c0dba5a1c3",
+  "outputs": [
+    {
+      "path": "US\\2017_12_29_Finance_Finance_bloomberg.json",
+      "sha256": "120ae84a5d21ffce28e4d9e2245da53925ced5652dc8377fcad997223fe762d1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-12-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:44.406567+00:00",
+    "fetched_at": "2026-11-11T02:32:41.946147+00:00",
+    "feature_available_at": "2026-11-11T02:33:07.868148+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:18.308510+00:00",
+  "commit_verified_at": "2026-11-12T13:53:18.308510+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Square Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Paced by firms like Square Inc. and Align Technology Inc."
+      },
+      {
+        "name": "Align Technology Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Paced by firms like Square Inc. and Align Technology Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

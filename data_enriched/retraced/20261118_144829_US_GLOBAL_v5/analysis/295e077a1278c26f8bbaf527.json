@@ -1,0 +1,682 @@
+{
+  "source_id": "295e077a1278c26f8bbaf527",
+  "status": "completed",
+  "source_record_hash": "bfe15440fcd73436051c00994647b38965828510698b9f1401380aec33ae403a",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-21-000007-index.html",
+    "attempted_at": "2026-11-18T10:26:40.566481+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-21-000007-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075321000007/nsp-20210211.htm",
+    "fetched_at": "2026-11-18T10:26:59.695390+00:00",
+    "source_body_hash": "5ba25c6c44e92f961fd04400993afd52743a3edc81a4fa1efa48bbfcaed01e1b",
+    "raw_sha256": "186283e9368891b31a098024aa02ab8803ef3a77f46254f38e28969996a0f842",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075321000007/nsp-20210211.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "186283e9368891b31a098024aa02ab8803ef3a77f46254f38e28969996a0f842",
+        "text_sha256": "ae4c662c63cb7637bb0581e49dc4cebd106674ed567147e6e0dd5f2b1444edc1",
+        "text_start": 0,
+        "text_end": 2868
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075321000007/a12312020-ex991earningsrel.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "dd73287140159058bd5c56729e1343f0956ef94f5f82bc98d4dd3a5e81cabaab",
+        "text_sha256": "94da269b81aaf95de267a2b12aaffd7984c053dd04de426c52a6f74154842a1d",
+        "text_start": 2870,
+        "text_end": 27615
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "nsp-20210211",
+    "title_origin": "html_title",
+    "publication_evidence": "SEC filing datePublished=2021-02-11",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/295e077a1278c26f8bbaf527.json",
+    "sha256": "d82f56aa66e98d3166527dabb2fb2d88d190c118b27e079b04a9adec47395a01",
+    "bundled_path": "legacy_audit/295e077a1278c26f8bbaf527.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4f2ea5054565a3f15ec50fb285f10aa7c4eb32a2096a06e49f53bcb3a47d66b4",
+      "llm_inferred_at": "2026-11-18T10:27:12.150870+00:00",
+      "model_duration_seconds": 12.4089399,
+      "prompt_tokens": 4155,
+      "completion_tokens": 532,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "a12312020-ex991earningsrel.htm EX-99.1 Document Exhibit 99.1 Insperity Announces Full Year and Fourth Quarter 2020 Results HOUSTON – Feb. 11, 2021 – Insperity, Inc. (NYSE: NSP), a",
+              "rationale": "The article discusses the financial results of Insperity, Inc., which is described as a leading provider of human resources and business performance solutions for America’s best businesses. This indicates that the company operates within the business services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "a12312020-ex991earningsrel.htm EX-99.1 Document Exhibit 99.1 Insperity Announces Full Year and Fourth Quarter 2020 Results HOUSTON – Feb. 11, 2021 – Insperity, Inc. (NYSE: NSP), a",
+              "rationale": "The article specifically discusses the financial results of Insperity, Inc., which is a company that provides human resources and business performance solutions.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "a12312020-ex991earningsrel.htm EX-99.1 Document Exhibit 99.1 Insperity Announces Full Year and Fourth Quarter 2020 Results HOUSTON – Feb. 11, 2021 – Insperity, Inc. (NYSE: NSP), a"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "7b2b315e18744b4ce8c4eff1f69bf718cc26d208138638144109f47bf1efe2b6",
+      "llm_inferred_at": "2026-11-18T10:27:20.897556+00:00",
+      "model_duration_seconds": 8.6670166,
+      "prompt_tokens": 4199,
+      "completion_tokens": 439,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On February 11, 2021, Insperity, Inc.",
+              "rationale": "The report is about the financial results of Insperity, Inc., a specific company.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "a12312020-ex991earningsrel.htm EX-99.1 Document Exhibit 99.1 Insperity Announces Full Year and Fourth Quarter 2020 Results HOUSTON – Feb. 11, 2021 – Insperity, Inc. (NYSE: NSP), a",
+              "rationale": "The report discusses the financial results of a company that provides human resources and business performance solutions, which is part of the business services industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "a12312020-ex991earningsrel.htm EX-99.1 Document Exhibit 99.1 Insperity Announces Full Year and Fourth Quarter 2020 Results HOUSTON – Feb. 11, 2021 – Insperity, Inc. (NYSE: NSP), a"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "2ad5625826b25c510a100cc2b558470c6fc7ddf8a66b94fe9bfe8fae29d3140c",
+      "llm_inferred_at": "2026-11-18T10:27:40.840814+00:00",
+      "model_duration_seconds": 19.9200002,
+      "prompt_tokens": 4082,
+      "completion_tokens": 957,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution.",
+              "rationale": "The text describes Insperity's offerings in the human resources and business solutions industry, which is a sector-wide impact as it outlines the company's role in providing services to businesses.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Insperity will be hosting a conference call today at 5 p.m.",
+              "rationale": "The text refers to a specific company, Insperity, and its planned conference call to discuss financial results, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "explicit",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims",
+              "industry_name_original": "Business Services",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims"
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "industry_scope_quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims",
+              "industry_name_original": "Property-Casualty Insurers",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "0df62146238da00ff51518513bd9438fceef1d36227176e5aa4057bed4ccf20b",
+      "llm_inferred_at": "2026-11-18T10:27:56.291607+00:00",
+      "model_duration_seconds": 15.4294976,
+      "prompt_tokens": 4126,
+      "completion_tokens": 791,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution.",
+              "rationale": "The company's services are directly related to the human resources and business solutions industry, which includes services like Workforce Optimization, which is a key part of the Business Services sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Insperity will be hosting a conference call today at 5 p.m.",
+              "rationale": "The company is directly involved in the financial reporting and earnings announcement, which is a company-specific event.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            },
+            {
+              "industry_key": "SEC-SIC:6159",
+              "name": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "basis": "explicit",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims",
+              "industry_name_original": "Business Services",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "and other developments in the human resources services industry, including the PEO industry, on our growth and/or profitability; •an adverse final judgment or settlement of claims"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "f18f056fd302c97554d41a8d1de0ee15aa63f217f48f38530b15a78b21d1873f",
+      "llm_inferred_at": "2026-11-18T10:28:12.738232+00:00",
+      "model_duration_seconds": 16.4245312,
+      "prompt_tokens": 5452,
+      "completion_tokens": 722,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP.",
+              "rationale": "The article discusses financial performance metrics and their implications across the financial services industry, indicating a sector-wide impact on financial reporting standards and practices.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Adjusted EBITDA is used by our lenders to assess our leverage and ability to make interest payments.",
+              "rationale": "This indicates that the financial metrics discussed have an impact on the broader financial services industry, particularly in terms of credit and leverage assessments.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs. Bonus payroll cost varies from period",
+              "rationale": "This highlights the use of non-GAAP measures within the financial services industry, indicating a sector-wide impact on financial reporting and cost analysis.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Non-GAAP Measure Definition Benefit of Non-GAAP Measure Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs.",
+              "rationale": "The article discusses financial measures that are relevant to the broader US equity market, particularly in the context of financial services and reporting standards.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance/Investors Services",
+              "basis": "inferred",
+              "quote": "Adjusted EBITDA is used by our lenders to assess our leverage and ability to make interest payments."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "inferred",
+              "quote": "Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs. Bonus payroll cost varies from period"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "c778221a464e037086fb9daaef4f6c22e189a12f1ba27911d0df56f40649a303",
+      "llm_inferred_at": "2026-11-18T10:28:25.435091+00:00",
+      "model_duration_seconds": 12.6788476,
+      "prompt_tokens": 5496,
+      "completion_tokens": 644,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP.",
+              "rationale": "The text discusses the use of non-GAAP financial measures, which are relevant to the financial industry as they provide insights into the financial performance of companies within the sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "market",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP.",
+              "rationale": "The text discusses the use of non-GAAP financial measures, which are relevant to the US equity market as they provide insights into the financial performance of companies within the sector.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Non-GAAP Measure Definition Benefit of Non-GAAP Measure Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs.",
+              "rationale": "The text discusses non-GAAP financial measures, which are relevant to the US equity market as they provide insights into the financial performance of companies within the sector.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "inferred",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "inferred",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "88d268246dad3737ed5d31bcb0567d733e886651012d8dd4104fdac24d563282",
+      "llm_inferred_at": "2026-11-18T10:28:40.742815+00:00",
+      "model_duration_seconds": 15.2941894,
+      "prompt_tokens": 1763,
+      "completion_tokens": 809,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP",
+              "rationale": "The article provides detailed financial metrics including net income, non-GAAP adjustments, and EPS, which are indicative of the financial performance of the company and its industry. The presence of non-GAAP adjustments and the reconciliation of GAAP to non-GAAP measures suggest the company's focus",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP",
+              "rationale": "The article provides detailed financial metrics including net income, non-GAAP adjustments, and EPS, which are indicative of the financial performance of the company and its industry. The presence of non-GAAP adjustments and the reconciliation of GAAP to non-GAAP measures suggest the company's focus",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f0373ff9a4b0f898c01b814e08a1571de23e485af13811e90e07f4652f6730bb",
+      "llm_inferred_at": "2026-11-18T10:28:54.447626+00:00",
+      "model_duration_seconds": 13.6973519,
+      "prompt_tokens": 1807,
+      "completion_tokens": 753,
+      "selection": [
+        {
+          "source_id": "295e077a1278c26f8bbaf527",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP",
+              "rationale": "The text provides financial data for a company, including net income and non-GAAP adjustments, which are company-specific metrics.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP",
+              "rationale": "The text includes financial metrics that are relevant to the financial services industry, such as non-GAAP adjustments and EPS, which are commonly used in the financial sector.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:28:54.469572+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5ba25c6c44e92f961fd04400993afd52743a3edc81a4fa1efa48bbfcaed01e1b",
+    "raw_sha256": "186283e9368891b31a098024aa02ab8803ef3a77f46254f38e28969996a0f842",
+    "date_quote": "SEC filing datePublished=2021-02-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075321000007/nsp-20210211.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock, $.01 par value per share",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock, $.01 par value per share"
+      },
+      {
+        "name": "Rights to Purchase Series A Junior Participating Preferred Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rights to Purchase Series A Junior Participating Preferred Stock"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:7d8172e8794ecf56",
+        "name": "Diversified Financial Services",
+        "basis": "inferred",
+        "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7d8172e8794ecf56",
+        "industry_name_standard": "Diversified Financial Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "295e077a1278c26f8bbaf527",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2021_02_11_Financial-Results_Business-Services_sec.json",
+        "sha256": "403c41879345c468819eda7918f00aa3d73ce5601518e9efad79f104bb8fc806",
+        "filename": "2021_02_11_Financial-Results_Business-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "a4556777e07eb8ece2e6d39085163281d69d03fde6a043fce34f85ca27d50c7e",
+    "input_hash": "f052fe909866695e55a570ae282b40cf07cb766dc8ce7ad61ef153709d800ad7",
+    "matching_audit_hash": "c6f36a3877c306a59a4fc1e8a53991795ed5a3ea38531c1354de8568ae3c7834",
+    "legacy_security_evidence": [
+      {
+        "name": "Common Stock, $.01 par value per share",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock, $.01 par value per share"
+      },
+      {
+        "name": "Rights to Purchase Series A Junior Participating Preferred Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rights to Purchase Series A Junior Participating Preferred Stock"
+      }
+    ],
+    "record_hash": "bfe15440fcd73436051c00994647b38965828510698b9f1401380aec33ae403a",
+    "outputs": [
+      {
+        "path": "US\\2021_02_11_Financial-Results_Business-Services_sec.json",
+        "sha256": "12ca47c583ff92e075be8ded13fc64079cf24f0876b46583c1eb228709234218"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2021-02-11",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:28.585595+00:00",
+      "fetched_at": "2026-11-11T16:07:47.109314+00:00",
+      "feature_available_at": "2026-11-11T16:08:28.752070+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:28:54.447626+00:00",
+    "feature_available_at": "2026-11-18T10:28:54.469572+00:00",
+    "commit_verified_at": "2026-11-12T13:53:36.320086+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "On February 11, 2021, Insperity, Inc.",
+        "rationale": "The report is about the financial results of Insperity, Inc., a specific company.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "On February 11, 2021, Insperity, Inc.",
+        "summary_evidence_quote": "On February 11, 2021, Insperity, Inc."
+      },
+      {
+        "scope": "company",
+        "quote": "Insperity will be hosting a conference call today at 5 p.m.",
+        "rationale": "The company is directly involved in the financial reporting and earnings announcement, which is a company-specific event.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Insperity will be hosting a conference call today at 5 p.m.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP",
+        "rationale": "The text provides financial data for a company, including net income and non-GAAP adjustments, which are company-specific metrics.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "31, (in thousands) 2020 2019 2020 2019 Net income $ 4,285 $ 20,395 $ 138,237 $ 151,099 Non-GAAP adjustments: Stock-based compensation 22,035 3,180 60,145 23,993 Total non-GAAP",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-21-000007-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "bfe15440fcd73436051c00994647b38965828510698b9f1401380aec33ae403a",
+    "content_hash": "a9658e04dfc3261e487c7733e4856f993393165e6bf1719bb94eb82a725ad598",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:28:54.450334+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/295e077a1278c26f8bbaf527.json",
+      "sha256": "b9804f5332e7913ede2743d9ad1a04e552f8aa20b7a53b61bb5f9305652935d1",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 133.92199999999139
+}

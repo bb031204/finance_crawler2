@@ -1,0 +1,163 @@
+{
+  "source_id": "6760acee61426e3e0388e0d7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_09_26_Healthcare_Insurance_cnbc.json",
+      "sha256": "3d9833680b508db93fb2f21ae84b7a30dc75bdcd52dae5b88bf155089516edfa",
+      "filename": "2019_09_26_Healthcare_Insurance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d11364bc814845a29a51caa7e38e857d59455a93858fced6314ff33ba1faa4d1",
+  "input_hash": "7484b8ea880563432966795de541d79847d83c64d847e3c28c23acfe46f6057f",
+  "matching_audit_hash": "2d42e38ef95eca90bf06f0cdf8597df05c9dfe1641c84e096e96b3f7bdeca974",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ca87d945afbd98432c67a8c1795646dae791b4682ff88eb0338ff36c85f6790e",
+    "raw_sha256": "bdd789822bd67ae38122a3bf0602c3a62461c0a7d82a01d81bf76ec0ade9cdb8",
+    "date_quote": "article:published_time=2019-09-26T13:00:41+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1a7091211231a02dbdd1f7aedd284ee6c2f84204bfb8585d47a56271cf11962f",
+  "outputs": [
+    {
+      "path": "US\\2019_09_26_Healthcare_Insurance_cnbc.json",
+      "sha256": "f3f99a2add06737bef50a91de5952539c2b320e81e07969aed85bc9017d69ddb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-09-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:09.964325+00:00",
+    "fetched_at": "2026-11-10T11:56:25.964799+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.105540+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:12:02.532008+00:00",
+  "feature_available_at": "2026-11-12T15:16:46.284513+00:00",
+  "commit_verified_at": "2026-11-12T15:16:46.284513+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses rising health insurance costs and industry challenges.",
+    "securities": [
+      {
+        "name": "CNBC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CNBC, which is noted as a trusted source for business news."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "Health insurance costs are set to rise in 2020"
+      },
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "the insurance industry"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "CNBC": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:46.312526+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:12:02.532008+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses rising health insurance costs and industry challenges.",
+      "securities": [
+        {
+          "name": "CNBC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "CNBC, which is noted as a trusted source for business news."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Healthcare",
+          "basis": "inferred",
+          "quote": "Health insurance costs are set to rise in 2020"
+        },
+        {
+          "name": "Insurance",
+          "basis": "explicit",
+          "quote": "the insurance industry"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "CNBC": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:12:02.556944+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:12:02.565936+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:02.548410+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses rising health insurance costs, employer contributions, out-of-pocket expenses, and industry trends like PPO plans and virtual care, whichp",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:50:30.683690+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

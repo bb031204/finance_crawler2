@@ -1,0 +1,131 @@
+{
+  "source_id": "2aa516bfdd828c4e330d081c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_12_Mergers-&-Acquisitions_Mortgage_sec.json",
+      "sha256": "57600787a6c7ef9b463a401ea45c41def66cef8dad599b3f535dea7e5e72ac09",
+      "filename": "2015_01_12_Mergers-&-Acquisitions_Mortgage_sec.json"
+    }
+  ],
+  "original_record_hash": "c48e08898f1c1c70c1f8a24ece5f3c48c690349e6e91f5300c9ebbec5cc43b70",
+  "input_hash": "c83b64eb23389ba0e0cfba12b55c6d40d9ad00ca138d9552add3fdf75b3158bf",
+  "matching_audit_hash": "f9ebf234836d706ff9a387f6a880e2874e91a966ab035c3a760e9834a6cfb715",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "13141fbbd2680498189ebd6e9bf73b219bb908d366b8d73be16f4932e6c2d2fc",
+    "raw_sha256": "2e5be4e83045a12d3b652ed5e3689b6057069b81bf71677b2058b27b6227bc84",
+    "date_quote": "SEC filing datePublished=2015-01-12",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465915001866/a15-2221_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Impac Mortgage Holdings, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Impac Mortgage Holdings, Inc."
+    },
+    {
+      "name": "Impac Mortgage Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Impac Mortgage Corp."
+    },
+    {
+      "name": "CashCall, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CashCall, Inc."
+    }
+  ],
+  "record_hash": "347c9ebf85f5206f90d290dcd4b05f46860afd9c4a163f7b56053d777604ebf7",
+  "outputs": [
+    {
+      "path": "US\\2015_01_12_Mergers-&-Acquisitions_Mortgage_sec.json",
+      "sha256": "eba964b5719a8a2c0fea2ed8754901050e22aaf6b5a8b435f2df4220cbc75aca"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:23:31.314543+00:00",
+    "feature_available_at": "2026-11-11T10:36:40.499564+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:19:35.380235+00:00",
+  "feature_available_at": "2026-11-12T14:19:35.389291+00:00",
+  "commit_verified_at": "2026-11-12T14:19:35.389291+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a merger and acquisition transaction involving specific companies and their financial terms.",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      },
+      {
+        "name": "Impac Mortgage Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Corp."
+      },
+      {
+        "name": "CashCall, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CashCall, Inc."
+      },
+      {
+        "name": "CashCall Mortgage",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CashCall Mortgage"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Residential Mortgage Operations",
+        "basis": "explicit",
+        "quote": "residential mortgage operations"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Impac Mortgage Holdings, Inc.": "company",
+      "Impac Mortgage Corp.": "company",
+      "CashCall, Inc.": "company",
+      "CashCall Mortgage": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

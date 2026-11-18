@@ -1,0 +1,244 @@
+{
+  "source_id": "057b8f63263df202add50408",
+  "status": "completed",
+  "source_record_hash": "c0435e0970dc03f8022878d8f47a368aafc613592800b47c25f0593a669457bb",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-12-000309-index.html",
+    "attempted_at": "2026-11-18T07:24:25.835759+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "4e1b7c45fcdde989f1fffc36877b45bd6586bbf65c981de1d760706eaa4983c7"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/057b8f63263df202add50408.json",
+    "sha256": "3934419de3f3d999d326227c0826cc64494bb18830303839299e037a89ac104a",
+    "bundled_path": "legacy_audit/057b8f63263df202add50408.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "d34640a24bc7206e3eb428c01a7c1ac1782e4ab096e8e749033070d8ce55b8fb",
+      "llm_inferred_at": "2026-11-18T07:24:38.158879+00:00",
+      "model_duration_seconds": 7.2676571,
+      "prompt_tokens": 1899,
+      "completion_tokens": 354,
+      "selection": [
+        {
+          "source_id": "057b8f63263df202add50408",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Brookfield Asset Management Inc. announced plans to issue C$425 million of medium term notes. The filing was made on April 4, 2012, as part of a Form 6-K submission to the SEC. The",
+              "rationale": "The announcement is specific to Brookfield Asset Management Inc., indicating a company-level financing activity.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The issuance is part of the company's financing activities and reflects its strategy to manage capital efficiently.",
+              "rationale": "The financing activity is part of the broader financial services industry, which includes asset management and capital management strategies.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8741",
+              "name": "SERVICES-MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The issuance is part of the company's financing activities and reflects its strategy to manage capital efficiently."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "15f0c4368dd75d52ba9a6c897a5c0bd887b6d794208658c2659a6364cc324ee5",
+      "llm_inferred_at": "2026-11-18T07:24:44.132204+00:00",
+      "model_duration_seconds": 5.9689643,
+      "prompt_tokens": 1943,
+      "completion_tokens": 318,
+      "selection": [
+        {
+          "source_id": "057b8f63263df202add50408",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Brookfield Asset Management Inc. announced plans to issue C$425 million of medium term notes. The filing was made on April 4, 2012, as part of a Form 6-K submission to the SEC. The",
+              "rationale": "The announcement is specific to Brookfield Asset Management Inc.'s financing activities and does not imply broader industry or market impacts.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8741",
+              "name": "SERVICES-MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "Brookfield Asset Management Inc. announced plans to issue C$425 million of medium term notes. The filing was made on April 4, 2012, as part of a Form 6-K submission to the SEC. The"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:24:44.148385+00:00",
+  "audit": {
+    "source_id": "057b8f63263df202add50408",
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-12-000309-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2012-04-04",
+    "date_quote": "SEC filing datePublished=2012-04-04",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "4e1b7c45fcdde989f1fffc36877b45bd6586bbf65c981de1d760706eaa4983c7",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T04:56:03.070830+00:00",
+    "fetched_at": "2026-11-12T09:25:11.301305+00:00",
+    "first_extracted_at": "2026-11-12T09:25:22.276242+00:00",
+    "extracted_at": "2026-11-18T07:24:44.132822+00:00",
+    "feature_available_at": "2026-11-18T07:24:44.148385+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:8741",
+        "name": "SERVICES-MANAGEMENT SERVICES",
+        "basis": "inferred",
+        "quote": "Brookfield Asset Management Inc. announced plans to issue C$425 million of medium term notes. The filing was made on April 4, 2012, as part of a Form 6-K submission to the SEC. The",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8741",
+        "industry_name_standard": "SERVICES-MANAGEMENT SERVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Brookfield Asset Management Inc. announced plans to issue C$425 million of medium term notes. The filing was made on April 4, 2012, as part of a Form 6-K submission to the SEC. The"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "c0435e0970dc03f8022878d8f47a368aafc613592800b47c25f0593a669457bb",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2012_04_04_corporate-action_Financial-Services_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\d01130d426c035d19f10447eb2b492ce05da0fe202aeb4f6d0a767e51e03ecea.json",
+      ".runtime\\simple\\model_cache\\f916de886c837ee80de8563ae1019b3b954f9f7a90a512c215104693bffa9829.json",
+      ".runtime\\simple\\pages\\057b8f63263df202add50408.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907312000309/d6k.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-12-000309-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T07:24:44.132204+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "4e1b7c45fcdde989f1fffc36877b45bd6586bbf65c981de1d760706eaa4983c7",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [],
+    "event_cluster_id": null,
+    "extraction_version": "fa3f5e31100cad4e319c258a50ed458193fe95f1669d532e712430e5f73b6c1f",
+    "commit_verified_at": "2026-11-12T09:25:22.357089+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T09:25:22.508416+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\057b8f63263df202add50408.json",
+      ".runtime\\simple\\model_cache\\f916de886c837ee80de8563ae1019b3b954f9f7a90a512c215104693bffa9829.json",
+      ".runtime\\simple\\model_cache\\d01130d426c035d19f10447eb2b492ce05da0fe202aeb4f6d0a767e51e03ecea.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Brookfield Asset Management Inc. announced plans to issue C$425 million of medium term notes. The filing was made on April 4, 2012, as part of a Form 6-K submission to the SEC. The",
+        "rationale": "The announcement is specific to Brookfield Asset Management Inc.'s financing activities and does not imply broader industry or market impacts.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Brookfield Asset Management Inc. announced plans to issue C$425 million of medium term notes. The filing was made on April 4, 2012, as part of a Form 6-K submission to the SEC. The"
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "c0435e0970dc03f8022878d8f47a368aafc613592800b47c25f0593a669457bb",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/057b8f63263df202add50408.json",
+      "sha256": "ef494f17ab4dc9eeee664f2c43db00e417a6962ec361c5de3653643299f2f25e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 18.312000000005355
+}

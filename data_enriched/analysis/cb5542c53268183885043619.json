@@ -1,0 +1,122 @@
+{
+  "source_id": "cb5542c53268183885043619",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_25_financial_Community-Development_treasury.json",
+      "sha256": "dd240e9e8a5551692b33808ba44f9053202d5534f37c74a768dd085153b7a68e",
+      "filename": "2021_02_25_financial_Community-Development_treasury.json"
+    }
+  ],
+  "original_record_hash": "6b1811a383f10b20a9d86fd2407f68e2cdd26b382d076fe9b55d21f9512c7f32",
+  "input_hash": "c05bbb864915c6f375460e89f771c3a9fc591942ba1656b0dae353e61d5f054f",
+  "matching_audit_hash": "fd5e2e02c4987647668f55fb655e149c7dadb56fc9968cf7c1ce285f4826ce7c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "03ed1de1310cf6f8343218d492654e774a3a0a92947682b086bfa0a2f4d9a226",
+    "raw_sha256": "c0631c576b763381eaa99e0fa096a4f5d4a75a69b9e36035bd658077b80bc3fa",
+    "date_quote": "February 25, 2021",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "acc8a7bf288e17ff1d1765a337edc79b8e4ca8d2c2f55088d58d6248d6e229bd",
+  "outputs": [
+    {
+      "path": "US\\2021_02_25_financial_Community-Development_treasury.json",
+      "sha256": "eb36f3ef090de4ded6e961fe9710afb8a82d741a59e8a64634eb7fee32b8a8bb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:14.502875+00:00",
+    "fetched_at": "2026-11-10T19:30:28.507438+00:00",
+    "feature_available_at": "2026-11-11T06:13:28.047494+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:54:47.764523+00:00",
+  "feature_available_at": "2026-11-12T14:54:47.775787+00:00",
+  "commit_verified_at": "2026-11-12T14:54:47.775787+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses funding allocations and programs related to CDFIs and community development, which are relevant to financial and economic sectors.",
+    "securities": [
+      {
+        "name": "U.S. Treasury’s CDFI Fund",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury’s CDFI Fund"
+      },
+      {
+        "name": "CDFI Rapid Response Program (CDFI RRP)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CDFI Rapid Response Program (CDFI RRP)"
+      },
+      {
+        "name": "CDFI Program",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CDFI Program"
+      },
+      {
+        "name": "Native American CDFI Assistance Program",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Native American CDFI Assistance Program"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Community development",
+        "basis": "inferred",
+        "quote": "CDFIs in addressing the economic impacts of the pandemic"
+      },
+      {
+        "name": "Financial services",
+        "basis": "inferred",
+        "quote": "emergency grants, rental assistance, and credit support"
+      },
+      {
+        "name": "Government programs",
+        "basis": "inferred",
+        "quote": "part of the American Rescue Plan"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Treasury’s CDFI Fund": "organization",
+      "CDFI Rapid Response Program (CDFI RRP)": "organization",
+      "CDFI Program": "organization",
+      "Native American CDFI Assistance Program": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "source_id": "564dc29dcbedd0dd1a2f5be2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_02_19_Retail_Retail_cnbc.json",
+      "sha256": "db74ca43f19f92b66854166d9cb3a70a283198e81eb0d7ad574e91ca4dd7b50c",
+      "filename": "2019_02_19_Retail_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "0b53a0feb526d0bd9163446e36f1d7f6cf3fccb8c8a7c834803bedeaa53f749a",
+  "input_hash": "89e6a10472b7ea5742f3c69356cea6fb18e56249f2ef7e61840358342923da33",
+  "matching_audit_hash": "6998730d8e290064fbdfbd956ee1561615a629ccbf9d9c873a044c7ed25e91fc",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "98a464103111e6b04e034b2edc832c9bbbc4f32d6d3386d60761245f9918d1a7",
+    "raw_sha256": "30c74e778414117003c7a3ff4c50c3c9a4903c38213ac90212f387723e2578c8",
+    "date_quote": "article:published_time=2019-02-19T11:17:41+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "TJX Companies",
+      "ticker": null,
+      "exchange": null,
+      "quote": "TJX Companies"
+    },
+    {
+      "name": "DSW",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DSW"
+    }
+  ],
+  "record_hash": "0d1e6717a5f47ed9542f78f66ad63cca85e112537b38ca96823733bf2e38405b",
+  "outputs": [
+    {
+      "path": "US\\2019_02_19_Retail_Retail_cnbc.json",
+      "sha256": "46343f8b1f2c01e5596de82a679bdfb79893ec74b6e74764c0087c99ea8298b6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-02-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:01:28.632702+00:00",
+    "fetched_at": "2026-11-10T13:11:54.583442+00:00",
+    "feature_available_at": "2026-11-10T18:30:21.082280+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:26.000790+00:00",
+  "commit_verified_at": "2026-11-12T13:53:26.000790+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "TJX Companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "TJX Companies"
+      },
+      {
+        "name": "DSW",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DSW"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

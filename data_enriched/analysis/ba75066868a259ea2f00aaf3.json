@@ -1,0 +1,118 @@
+{
+  "source_id": "ba75066868a259ea2f00aaf3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_05_20_Investing_Technology_cnbc.json",
+      "sha256": "ce56cb507b07e22b13562c7b1f0de71bfc45a946414c75260edc5fd9763164ba",
+      "filename": "2015_05_20_Investing_Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "ce86cb83d3a08c50bbe0c64880f0f5c52e01f237d5af56e643e306c89c754ca7",
+  "input_hash": "e02906d1c9a0f1c79b0de5f52c7147b1d137e87cb0b50337a1cff966b6d55ea1",
+  "matching_audit_hash": "00bb6a3cdc5d7132d8128120393c415024929a2afcefeba45101b07916983962",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9f0f638866c01f569a60aa298cf606732ac79feecdfcf61271565fa6842d09c9",
+    "raw_sha256": "5e250568a7da33b99f544292895810c951d478706aee8d0091a34a42937a71c9",
+    "date_quote": "article:published_time=2015-05-20T10:00:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Smithfield Foods",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Smithfield Foods, which was bought by a Chinese food company two years ago in a controversial acquisition."
+    },
+    {
+      "name": "Lenovo",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Lenovo"
+    }
+  ],
+  "record_hash": "0d59c0fe91405384fe58381b7005e903ebe5e882e67708c8d70f6975a12e98cf",
+  "outputs": [
+    {
+      "path": "US\\2015_05_20_Investing_Technology_cnbc.json",
+      "sha256": "9dc8e1bc61379e29be15d112975c85ab9c0cbeb0f2f4ca884fd6ea73418099f9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-05-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:04.758168+00:00",
+    "fetched_at": "2026-11-11T03:44:03.389455+00:00",
+    "feature_available_at": "2026-11-11T03:44:28.430242+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:58.461787+00:00",
+  "commit_verified_at": "2026-11-12T13:52:58.461787+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Smithfield Foods",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Smithfield Foods, which was bought by a Chinese food company two years ago in a controversial acquisition."
+      },
+      {
+        "name": "Lenovo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lenovo"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Manufacturing",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

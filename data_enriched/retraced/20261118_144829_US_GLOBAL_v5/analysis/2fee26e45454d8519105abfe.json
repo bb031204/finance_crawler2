@@ -1,0 +1,519 @@
+{
+  "source_id": "2fee26e45454d8519105abfe",
+  "status": "completed",
+  "source_record_hash": "b973a7dec350501dd565ccfda6ea6a3c5e6a2c2ed155b8c56e8b1a460b9322c7",
+  "source_trace": {
+    "requested_url": "https://www.bea.gov/news/2019/direct-investment-country-and-industry-2018",
+    "attempted_at": "2026-11-18T11:10:13.806646+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.bea.gov/news/2019/direct-investment-country-and-industry-2018",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T11:10:22.735979+00:00",
+    "source_body_hash": "12d86b967b118f66ba09559c4cf87bd5a1cdb03e30128f187b8fe8886f446df3",
+    "raw_sha256": "ec3cb2645c63d0bf306f7bc150cf81c06d50d8a30cae4854dbc12be790258996",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Direct Investment by Country and Industry, 2018 | U.S. Bureau of Economic Analysis (BEA)",
+    "title_origin": "heading",
+    "publication_evidence": "EMBARGOED UNTIL RELEASE AT 8:30 A.M. EDT, WEDNESDAY, JULY 24, 2019",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2fee26e45454d8519105abfe.json",
+    "sha256": "091d573c600e3b16c48e609408aeb7c8c7602ccae458b474300225af74a07b27",
+    "bundled_path": "legacy_audit/2fee26e45454d8519105abfe.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "8c6565661d2ccc2ce1abd0930fd4f995b26cab9edc3bc88d922db9d0fec0556e",
+      "llm_inferred_at": "2026-11-18T11:10:45.742467+00:00",
+      "model_duration_seconds": 22.9699135,
+      "prompt_tokens": 3838,
+      "completion_tokens": 1144,
+      "selection": [
+        {
+          "source_id": "2fee26e45454d8519105abfe",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "By industry, holding company affiliates owned by U.S. manufacturers accounted for most of the decrease. The foreign direct investment in the United States position increased $319.",
+              "rationale": "The text indicates that the decrease in U.S. direct investment abroad was primarily due to holding company affiliates owned by U.S. manufacturers, which is an industry-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+              "rationale": "The text states that the increase in foreign direct investment in the United States was mainly due to manufacturing, retail trade, and real estate, which are industry-specific impacts.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "By industry, U.S.",
+              "rationale": "The text indicates that the repatriation of earnings by U.S. multinationals in chemical manufacturing and computers and electronic products manufacturing was significant, indicating an industry-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "direct investment abroad and for foreign direct investment in the United States for 2016 and 2017 were delayed due to the impact of the partial federal government shutdown that started in late December 2018.",
+              "rationale": "The text discusses the impact of the partial federal government shutdown on the release of direct investment statistics, which affects the U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6532",
+              "name": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "basis": "inferred",
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "The decrease reflected a $75.8 billion decrease in the position in Latin America and Other Western Hemisphere, primarily in Bermuda."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "inferred",
+              "quote": "By industry, U.S."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6532",
+              "industry_scope_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+              "industry_name_original": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "mechanism": "The text indicates that the increase in foreign direct investment in the United States was mainly due to manufacturing, retail trade, and real estate, which are industry-specific impacts.",
+              "confidence": 0.95,
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "By industry, holding company affiliates owned by U.S. manufacturers accounted for most of the decrease. The foreign direct investment in the United States position increased $319.",
+              "industry_name_original": "Financials",
+              "mechanism": "The text indicates that the decrease in U.S. direct investment abroad was primarily due to holding company affiliates owned by U.S. manufacturers, which is an industry-specific impact.",
+              "confidence": 0.95,
+              "quote": "By industry, holding company affiliates owned by U.S. manufacturers accounted for most of the decrease. The foreign direct investment in the United States position increased $319."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "industry_scope_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+              "industry_name_original": "Information Technology",
+              "mechanism": "The text states that the increase in foreign direct investment in the United States was mainly due to manufacturing, retail trade, and real estate, which are industry-specific impacts.",
+              "confidence": 0.95,
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a804321161223a099fa1afcb8ca8c44098bde49939b546424906298d1d69cfac",
+      "llm_inferred_at": "2026-11-18T11:11:06.394718+00:00",
+      "model_duration_seconds": 20.6284445,
+      "prompt_tokens": 3882,
+      "completion_tokens": 1099,
+      "selection": [
+        {
+          "source_id": "2fee26e45454d8519105abfe",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "By industry, holding company affiliates owned by U.S. manufacturers accounted for most of the decrease. The foreign direct investment in the United States position increased $319.",
+              "rationale": "The text explicitly mentions that the decrease in U.S. direct investment abroad was primarily due to holding company affiliates owned by U.S. manufacturers, indicating an industry-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+              "rationale": "The text states that the increase in the foreign direct investment in the United States was mainly due to affiliates in manufacturing, retail trade, and real estate, indicating an industry-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "By industry, U.S.",
+              "rationale": "The text indicates that the repatriation of earnings by U.S. multinationals in chemical manufacturing and computers and electronic products manufacturing was significant, indicating an industry-level impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "direct investment abroad and for foreign direct investment in the United States for 2016 and 2017 were delayed due to the impact of the partial federal government shutdown that started in late December 2018.",
+              "rationale": "The text discusses the impact of the partial federal government shutdown on the delayed updates to direct investment statistics, which affects the U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases."
+            },
+            {
+              "industry_key": "SEC-SIC:2790",
+              "name": "SERVICE INDUSTRIES FOR THE PRINTING TRADE",
+              "basis": "explicit",
+              "quote": "By industry, holding company affiliates owned by U.S. manufacturers accounted for most of the decrease. The foreign direct investment in the United States position increased $319."
+            },
+            {
+              "industry_key": "SEC-SIC:3571",
+              "name": "ELECTRONIC COMPUTERS",
+              "basis": "explicit",
+              "quote": "By industry, U.S."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "The increase in foreign direct investment in the United States was mainly due to affiliates in real estate, indicating a sector-wide impact on the industry's investment position.",
+              "confidence": 0.95,
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases."
+            },
+            {
+              "industry_key": "SEC-SIC:2790",
+              "industry_scope_quote": "By industry, holding company affiliates owned by U.S. manufacturers accounted for most of the decrease. The foreign direct investment in the United States position increased $319.",
+              "industry_name_original": "SERVICE INDUSTRIES FOR THE PRINTING TRADE",
+              "mechanism": "The decrease in U.S. direct investment abroad was primarily due to holding company affiliates owned by U.S. manufacturers, indicating a sector-wide impact on the industry's investment position.",
+              "confidence": 0.95,
+              "quote": "By industry, holding company affiliates owned by U.S. manufacturers accounted for most of the decrease. The foreign direct investment in the United States position increased $319."
+            },
+            {
+              "industry_key": "SEC-SIC:3571",
+              "industry_scope_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+              "industry_name_original": "ELECTRONIC COMPUTERS",
+              "mechanism": "The increase in foreign direct investment in the United States was mainly due to affiliates in manufacturing, indicating a sector-wide impact on the industry's investment position.",
+              "confidence": 0.95,
+              "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "698aaef41c9042a1ed7342e39513122c4e19a01b881d1590e63a55dc8969f62f",
+      "llm_inferred_at": "2026-11-18T11:11:25.539753+00:00",
+      "model_duration_seconds": 19.1229497,
+      "prompt_tokens": 2464,
+      "completion_tokens": 996,
+      "selection": [
+        {
+          "source_id": "2fee26e45454d8519105abfe",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S.",
+              "rationale": "The article discusses direct investment and multinational enterprises (MNEs), which are industry-wide activities that affect the financial and economic sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The international investment position (IIP) accounts are released quarterly.",
+              "rationale": "The release of IIP accounts is a broad market activity that reflects the financial position of the U.S. with respect to foreign residents.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            },
+            {
+              "industry_key": "TRSR:96d696e17495a9bf",
+              "name": "Package Goods/Cosmetics",
+              "basis": "explicit",
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "explicit",
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "industry_scope_quote": "U.S. affiliates of foreign parents. Related Statistics Statistics on direct investment by country and industry are one part of a broader set of U.S. international economic",
+              "industry_name_original": "Investment Bankers/Brokers/Service",
+              "mechanism": "The direct investment statistics are part of the broader U.S. international economic accounts, which include the activities of U.S. MNEs and their affiliates, affecting the financial services industry.",
+              "confidence": 0.9,
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            },
+            {
+              "industry_key": "TRSR:96d696e17495a9bf",
+              "industry_scope_quote": "U.S. affiliates of foreign parents. Related Statistics Statistics on direct investment by country and industry are one part of a broader set of U.S. international economic",
+              "industry_name_original": "Package Goods/Cosmetics",
+              "mechanism": "The direct investment statistics are part of the broader U.S. international economic accounts, which include the activities of U.S. MNEs and their affiliates, affecting the consumer goods industry.",
+              "confidence": 0.85,
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "industry_scope_quote": "U.S. affiliates of foreign parents. Related Statistics Statistics on direct investment by country and industry are one part of a broader set of U.S. international economic",
+              "industry_name_original": "Computer Software: Programming, Data Processing",
+              "mechanism": "The direct investment statistics are part of the broader U.S. international economic accounts, which include the activities of U.S. MNEs and their affiliates, affecting the technology and software industry.",
+              "confidence": 0.8,
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "d460530a721e8a1674928d920651ab720682a739f7795f9e659a93a986cfc123",
+      "llm_inferred_at": "2026-11-18T11:11:31.287645+00:00",
+      "model_duration_seconds": 5.7346752,
+      "prompt_tokens": 2508,
+      "completion_tokens": 306,
+      "selection": [
+        {
+          "source_id": "2fee26e45454d8519105abfe",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6799",
+              "name": "INVESTORS, NEC",
+              "basis": "explicit",
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            },
+            {
+              "industry_key": "TRSR:9da7f76bc81d2f4e",
+              "name": "Books",
+              "basis": "explicit",
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Statistics on direct investment and multinational enterprises (MNEs) include annual statistics on the activities of U.S."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:11:31.304136+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "12d86b967b118f66ba09559c4cf87bd5a1cdb03e30128f187b8fe8886f446df3",
+    "raw_sha256": "ec3cb2645c63d0bf306f7bc150cf81c06d50d8a30cae4854dbc12be790258996",
+    "date_quote": "EMBARGOED UNTIL RELEASE AT 8:30 A.M. EDT, WEDNESDAY, JULY 24, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": true,
+    "reason": "The summary discusses changes in U.S. direct investment abroad and foreign direct investment in the U.S., including industry-specific impacts and the role of U.",
+    "securities": [
+      {
+        "name": "Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bureau of Economic Analysis (BEA)"
+      },
+      {
+        "name": "U.S. multinationals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. multinationals"
+      },
+      {
+        "name": "United Kingdom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Kingdom"
+      },
+      {
+        "name": "Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Canada"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6500",
+        "name": "REAL ESTATE",
+        "basis": "explicit",
+        "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6500",
+        "industry_name_standard": "REAL ESTATE",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+        "summary_evidence_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases."
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Bureau of Economic Analysis (BEA)": "organization",
+      "U.S. multinationals": "organization",
+      "United Kingdom": "organization",
+      "Canada": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "2fee26e45454d8519105abfe",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_07_24_Economic_Finance_bea.json",
+        "sha256": "9bb44bb2869ce78bb92d8ec0fb8972b2c0d03e2c5d087cdea01f0ef11afd463a",
+        "filename": "2019_07_24_Economic_Finance_bea.json"
+      }
+    ],
+    "original_record_hash": "29f6fc30ad705b12816c9629868f349a4094af3db2e38de0208c79abb40fcbda",
+    "input_hash": "01dcacba02ba0fb21fecfaebcd6694465b9b7a70864715f994cfc2b861205115",
+    "matching_audit_hash": "660c1ba9acd81b4fa4d3d945ac3a3fc377e38c416e9705454c3aefbfe8373217",
+    "legacy_security_evidence": [],
+    "record_hash": "b973a7dec350501dd565ccfda6ea6a3c5e6a2c2ed155b8c56e8b1a460b9322c7",
+    "outputs": [
+      {
+        "path": "US\\2019_07_24_Economic_Finance_bea.json",
+        "sha256": "035a2e532f0d888b3081311650b855188b5aee0bd1e7a2a563cc1b002f5a8480"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2019-07-24",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:28:22.408616+00:00",
+      "fetched_at": "2026-11-11T03:51:59.088912+00:00",
+      "feature_available_at": "2026-11-11T03:53:41.342977+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:11:31.287645+00:00",
+    "feature_available_at": "2026-11-18T11:11:31.304136+00:00",
+    "commit_verified_at": "2026-11-12T14:50:03.776027+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:6500",
+        "industry_scope_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+        "industry_name_original": "REAL ESTATE",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The increase in foreign direct investment in the United States was mainly due to affiliates in real estate, indicating a sector-wide impact on the industry's investment position.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6500",
+        "industry_name_standard": "REAL ESTATE",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": "By industry, affiliates in manufacturing, retail trade, and real estate accounted for the largest increases.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "industry",
+        "quote": "By industry, U.S.",
+        "rationale": "The text indicates that the repatriation of earnings by U.S. multinationals in chemical manufacturing and computers and electronic products manufacturing was significant, indicating an industry-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "By industry, U.S.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.bea.gov/news/2019/direct-investment-country-and-industry-2018",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "b973a7dec350501dd565ccfda6ea6a3c5e6a2c2ed155b8c56e8b1a460b9322c7",
+    "content_hash": "12d86b967b118f66ba09559c4cf87bd5a1cdb03e30128f187b8fe8886f446df3",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:11:31.289265+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2fee26e45454d8519105abfe.json",
+      "sha256": "90566ddee7b03ec90f0b5415487eba8bdf777758ea1f180ebf766ce0a739fe26",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 77.51600000000326
+}

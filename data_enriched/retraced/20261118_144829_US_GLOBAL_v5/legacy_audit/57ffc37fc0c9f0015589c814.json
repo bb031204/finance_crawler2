@@ -1,0 +1,110 @@
+{
+  "source_id": "57ffc37fc0c9f0015589c814",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_06_07_Economic-Dialogue_Finance_treasury.json",
+      "sha256": "573f5d2c712020bba32f396398efd6d3370976b11182394af08654dc88951c96",
+      "filename": "2016_06_07_Economic-Dialogue_Finance_treasury.json"
+    }
+  ],
+  "original_record_hash": "dae895fb7dc6c9e0516c8fd19e839f65689585d96680cc3e2fdcca40d58c9a41",
+  "input_hash": "c3707b94241f2219d603547416cb4a58c1ef3f06285ecab5c9bdba801882ba1e",
+  "matching_audit_hash": "9d1df548f55a12e562022e927b41a7529280811856d38fca2c6219a117739f8a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "70a1ad51d4f1d52c7e47bed4aa05b38c2e679fedf6dd9a5406f7f853c84d7f0e",
+    "raw_sha256": "6f5540e282792737378d6eab15aa8aedd6335e0fc2d1943ad60aed65a32b8906",
+    "date_quote": "June 7, 2016 (Archived Content) BEIJING – U.S. Treasury Secretary Jacob J. Lew and Chinese Vice Premier Wang Yang today concluded the economic discussions of the eighth U.S.-China",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "4b6cdb2473fc4874c27cfc576e444851f2da2013bf959b6aeaa74bc0da77828b",
+  "outputs": [
+    {
+      "path": "US\\2016_06_07_Economic-Dialogue_Finance_treasury.json",
+      "sha256": "717c054fda987de1e11cfec5daec6f905885c4515e216351d2604a2ee973ba95"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-06-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:15.033215+00:00",
+    "fetched_at": "2026-11-10T10:59:30.121564+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.749158+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:14.395768+00:00",
+  "feature_available_at": "2026-11-12T14:32:14.437459+00:00",
+  "commit_verified_at": "2026-11-12T14:32:14.437459+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses U.S.-China economic cooperation, reforms, and commitments related to trade, investment, and financial regulations.",
+    "securities": [
+      {
+        "name": "U.S. Administration",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Administration"
+      },
+      {
+        "name": "China",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China"
+      },
+      {
+        "name": "U.S.-China Strategic and Economic Dialogue (S&ED)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S.-China Strategic and Economic Dialogue (S&ED)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Economic Policy",
+        "basis": "inferred",
+        "quote": "economic cooperation and reforms"
+      },
+      {
+        "name": "Trade and Investment",
+        "basis": "explicit",
+        "quote": "trade and investment"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Administration": "organization",
+      "China": "organization",
+      "U.S.-China Strategic and Economic Dialogue (S&ED)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

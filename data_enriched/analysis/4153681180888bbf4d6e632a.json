@@ -1,0 +1,92 @@
+{
+  "source_id": "4153681180888bbf4d6e632a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_21_Financial-Results_Healthcare-Distribution_sec.json",
+      "sha256": "24e579a8f3dc13e89b8588c5111fb9995a766c060c9e1cd2daf24d30b8382229",
+      "filename": "2017_02_21_Financial-Results_Healthcare-Distribution_sec.json"
+    }
+  ],
+  "original_record_hash": "7a9ea8c77b87805849daa9c1bfab33aa9dc4189441ea34be7921890e9eb9328f",
+  "input_hash": "23a267cbd61bbd2e74a7ee4f7e18d714266b157d1ea77a3dfe106244822981b4",
+  "matching_audit_hash": "d9ddd27bd6188ae1d199142e40e8db082ecfbf3e6ba2fb3fffab0a112e48d6bf",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c39206f2831d01cbb87e193a724dfbf9003d1c0e94fa99e32997471f36816400",
+    "raw_sha256": "e7eb9b25751550d2ae6de4d378ca95110209df385a746a75f24deae0191586ab",
+    "date_quote": "SEC filing datePublished=2017-02-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000100022817000006/the8k_4q16.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "HENRY SCHEIN INC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "HENRY SCHEIN INC"
+    }
+  ],
+  "record_hash": "725924385f509c224ad5d2441ca63252b2d74266bec1d8e0bd216a6a6442ae82",
+  "outputs": [
+    {
+      "path": "US\\2017_02_21_Financial-Results_Healthcare-Distribution_sec.json",
+      "sha256": "1d08d077d51d79f074dbf50f6ba7324b4917deefad4111dc6c8133ef32d8b55b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+    "fetched_at": "2026-11-11T11:59:15.847499+00:00",
+    "feature_available_at": "2026-11-11T11:59:53.848668+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:10.760932+00:00",
+  "feature_available_at": "2026-11-12T14:39:10.813390+00:00",
+  "commit_verified_at": "2026-11-12T14:39:10.813390+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary mentions HENRY SCHEIN, INC. as a company and refers to financial results, which is relevant for the StockMixer news pipeline.",
+    "securities": [
+      {
+        "name": "HENRY SCHEIN, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "HENRY SCHEIN, INC."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "HENRY SCHEIN, INC.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

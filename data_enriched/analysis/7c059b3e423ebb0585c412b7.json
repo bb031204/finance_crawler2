@@ -1,0 +1,95 @@
+{
+  "source_id": "7c059b3e423ebb0585c412b7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_09_13_Finance_Retail_cnbc.json",
+      "sha256": "00433c15e7ac96934f79d09a99f38be5296bc26a43710b26942a6ee5f7762af5",
+      "filename": "2018_09_13_Finance_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b5825a7510f5b8cd654f08b37d23364af43ccc72f039bfe2c89e886b0e5a4a0c",
+  "input_hash": "8276215ef55ba55e44da129a34df3f17616d2a092f53ab81f34abee4476ead17",
+  "matching_audit_hash": "03a8812576d35a60fe9145a23ec82600120c195f1f021e9e984a51b5c07979bf",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4e4d32737a4adf997c469bab9bb9788420ec788aa9378c614af794ebce21b2d6",
+    "raw_sha256": "cf4e1be779bbdfcef87f5f0b557ae6e7a4e5924620f389210169359e857a122d",
+    "date_quote": "article:published_time=2018-09-13T20:41:31+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sears",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sears has watched its shares fall more than 80 percent from a year ago, trading around $1.21 and bringing the retailer's market cap to less than $150 million."
+    }
+  ],
+  "record_hash": "4f76946dadd02aaca3435af6f239beed9f68f55397122d808a5a8414110273a9",
+  "outputs": [
+    {
+      "path": "US\\2018_09_13_Finance_Retail_cnbc.json",
+      "sha256": "8135c43e80a675361089b2f1dcfeb397c8511e79b70d0f5e8edea5ef305452f0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-09-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:09.726180+00:00",
+    "fetched_at": "2026-11-10T17:29:38.832260+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.390435+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:23.540191+00:00",
+  "commit_verified_at": "2026-11-12T13:53:23.540191+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sears",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears has watched its shares fall more than 80 percent from a year ago, trading around $1.21 and bringing the retailer's market cap to less than $150 million."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

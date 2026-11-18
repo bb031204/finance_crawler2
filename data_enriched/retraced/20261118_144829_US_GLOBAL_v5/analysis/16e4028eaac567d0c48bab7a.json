@@ -1,0 +1,320 @@
+{
+  "source_id": "16e4028eaac567d0c48bab7a",
+  "status": "completed",
+  "source_record_hash": "2b6550751e8bc254d4f86fc4043d171414e8ff15711bdab325bb30bb215ea611",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-15-134770-index.html",
+    "attempted_at": "2026-11-18T08:55:46.755517+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-15-134770-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312515134770/d908545d8k.htm",
+    "fetched_at": "2026-11-18T08:55:51.168957+00:00",
+    "source_body_hash": "16f19f55443eee65a9d13997f82d0882c8432c7388748b679c0f9ce52a2a3a0d",
+    "raw_sha256": "65cca9c150f47c82e255731845f821fb40c99d880bdd612500e77a01c9c7064e",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312515134770/d908545d8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "65cca9c150f47c82e255731845f821fb40c99d880bdd612500e77a01c9c7064e",
+        "text_sha256": "16f19f55443eee65a9d13997f82d0882c8432c7388748b679c0f9ce52a2a3a0d",
+        "text_start": 0,
+        "text_end": 5998
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-04-17",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/16e4028eaac567d0c48bab7a.json",
+    "sha256": "efbede9674b6898119a648e13d77fcfc483ff63522c8490f434a8521bffe5043",
+    "bundled_path": "legacy_audit/16e4028eaac567d0c48bab7a.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "35fb27a2f2fef742350aa392c2105a3ef43f1a202c826321b7f1f724c5a9696c",
+      "llm_inferred_at": "2026-11-18T08:55:57.245586+00:00",
+      "model_duration_seconds": 6.0567065,
+      "prompt_tokens": 3394,
+      "completion_tokens": 232,
+      "selection": [
+        {
+          "source_id": "16e4028eaac567d0c48bab7a",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Geospace Technologies Corporation effective April 16, 2015",
+              "rationale": "The reincorporation and merger are specific to Geospace Technologies Corporation, indicating a company-level event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6189",
+              "name": "ASSET-BACKED SECURITIES",
+              "basis": "inferred",
+              "quote": "Geospace Technologies Corporation effective April 16, 2015"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "73e9841474c421f2ada8841debd0a34ca0fbb8cac54b9ba6d569b86de172edd4",
+      "llm_inferred_at": "2026-11-18T08:56:06.874624+00:00",
+      "model_duration_seconds": 9.6171076,
+      "prompt_tokens": 3438,
+      "completion_tokens": 504,
+      "selection": [
+        {
+          "source_id": "16e4028eaac567d0c48bab7a",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Geospace Technologies Corporation effective April 16, 2015",
+              "rationale": "The reincorporation and merger are specific to Geospace Technologies Corporation, indicating a company-level impact.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The reincorporation did not alter any shareholders percentage ownership interest or number of shares of common stock owned in the Company.",
+              "rationale": "The reincorporation and merger are part of corporate restructuring, which can have implications for the broader corporate governance and legal framework of the industry.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6189",
+              "name": "ASSET-BACKED SECURITIES",
+              "basis": "explicit",
+              "quote": "The reincorporation did not alter any shareholders percentage ownership interest or number of shares of common stock owned in the Company."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The reincorporation did not alter any shareholders percentage ownership interest or number of shares of common stock owned in the Company."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The reincorporation did not alter any shareholders percentage ownership interest or number of shares of common stock owned in the Company."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:56:06.891863+00:00",
+  "audit": {
+    "source_id": "16e4028eaac567d0c48bab7a",
+    "url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-15-134770-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2015-04-17",
+    "date_quote": "SEC filing datePublished=2015-04-17",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "16f19f55443eee65a9d13997f82d0882c8432c7388748b679c0f9ce52a2a3a0d",
+    "raw_sha256": "65cca9c150f47c82e255731845f821fb40c99d880bdd612500e77a01c9c7064e",
+    "first_seen_at": "2026-11-11T04:56:15.667499+00:00",
+    "fetched_at": "2026-11-12T17:43:26.542284+00:00",
+    "first_extracted_at": "2026-11-12T17:44:09.671744+00:00",
+    "extracted_at": "2026-11-18T08:56:06.877985+00:00",
+    "feature_available_at": "2026-11-18T08:56:06.891863+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "2b6550751e8bc254d4f86fc4043d171414e8ff15711bdab325bb30bb215ea611",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2015_04_17_Corporate-Action_Technology_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\13fcc8aafac682322a23b4b1019ff2ea952169dd5cd84906b7bfebd69125a0f3.json",
+      ".runtime\\simple\\model_cache\\3adeb752bf971dd9e85594b247dc88fe25a16fb9ea43565029f1a1213c072c9f.json",
+      ".runtime\\simple\\model_cache\\710fd061a4888bb4503704918d9362924f42223817236a53fc2d551a668b527b.json",
+      ".runtime\\simple\\model_cache\\7489b24a143e862ea21956bab2c9fa3931d26c90e6d5e86d770e173a76e7b819.json",
+      ".runtime\\simple\\model_cache\\92eee2682fab8e670ac6e3fe417d570e4d73be3919fd40ec672b938089055895.json",
+      ".runtime\\simple\\model_cache\\c1b0f4f621ed6180a16c1c8c55278ef99cad8965cef32f34e8919c7a8e5a7819.json",
+      ".runtime\\simple\\pages\\16e4028eaac567d0c48bab7a.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312515134770/d908545d8k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312515134770/d908545d8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "bf74414c2372983489c5d1a6c377ad9562ea534d2dc6dd06de5b51996bd73c67",
+        "text_sha256": "16f19f55443eee65a9d13997f82d0882c8432c7388748b679c0f9ce52a2a3a0d",
+        "text_start": 0,
+        "text_end": 5998
+      }
+    ],
+    "sec_document_version": 2,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "16fc51dbed70861aaba38518b0f1f997f4415ebcc0bc83a718cdb9fb19bdd2ad",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-15-134770-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T08:56:06.874624+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "16f19f55443eee65a9d13997f82d0882c8432c7388748b679c0f9ce52a2a3a0d",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "The reincorporation was effected by the merger of the Company with and into Texas Geospace Technologies Corporation, a newly formed, wholly owned Texas subsidiary (Texas Geospace"
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "The reincorporation and the terms of the merger were approved by the stockholders of the Company at the 2015 Annual Meeting of Stockholders held on February 12, 2015."
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "The Company changed its state of incorporation from Delaware to Texas, pursuant to the terms of the Merger Agreement."
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "9bcabffaa13859b0887cbdb0360cd9d41d10cbe96cef572993e52ae6ff8d84ca",
+    "commit_verified_at": "2026-11-12T17:44:09.733411+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T17:44:09.823056+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\16e4028eaac567d0c48bab7a.json",
+      ".runtime\\simple\\model_cache\\710fd061a4888bb4503704918d9362924f42223817236a53fc2d551a668b527b.json",
+      ".runtime\\simple\\model_cache\\92eee2682fab8e670ac6e3fe417d570e4d73be3919fd40ec672b938089055895.json",
+      ".runtime\\simple\\model_cache\\7489b24a143e862ea21956bab2c9fa3931d26c90e6d5e86d770e173a76e7b819.json",
+      ".runtime\\simple\\model_cache\\c1b0f4f621ed6180a16c1c8c55278ef99cad8965cef32f34e8919c7a8e5a7819.json",
+      ".runtime\\simple\\model_cache\\13fcc8aafac682322a23b4b1019ff2ea952169dd5cd84906b7bfebd69125a0f3.json",
+      ".runtime\\simple\\model_cache\\3adeb752bf971dd9e85594b247dc88fe25a16fb9ea43565029f1a1213c072c9f.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Geospace Technologies Corporation effective April 16, 2015",
+        "rationale": "The reincorporation and merger are specific to Geospace Technologies Corporation, indicating a company-level impact.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Geospace Technologies Corporation effective April 16, 2015",
+        "summary_evidence_quote": null
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "2b6550751e8bc254d4f86fc4043d171414e8ff15711bdab325bb30bb215ea611",
+    "source_verification": "original_body_or_publication_revalidated",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "retrace_original",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/16e4028eaac567d0c48bab7a.json",
+      "sha256": "b53de3601512a2e77f041567fcb89ac1349fcd4e05047e2d5f2bbfef723ff4ab",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 20.14100000000326
+}

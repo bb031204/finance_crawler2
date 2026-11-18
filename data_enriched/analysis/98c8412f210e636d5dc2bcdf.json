@@ -1,0 +1,97 @@
+{
+  "source_id": "98c8412f210e636d5dc2bcdf",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_12_05_Healthcare_Insurance_cnbc.json",
+      "sha256": "5fe8444308b3cea0a0e3545782d5a07d607b3684ebeb8b67c6b15162c1888234",
+      "filename": "2017_12_05_Healthcare_Insurance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e73a1372a2b84b4b48012075853bc3f5381254a43469fc3e362a9433a7cc999b",
+  "input_hash": "bf1baf1e15ec8e1b288ce835916d593386a2cc1f5eb42f40927fc792dc6b3b11",
+  "matching_audit_hash": "4488d163f9ec82ba231fbcb3875ff490f804eae4aab6f7124137fdfba504695b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "efe03099efa53fac78a1b7c1804ea573b8d7f8b203674e78e310a66b85ffbdd5",
+    "raw_sha256": "97d6c64be60f850a35239b067593dc1708df9164bb5d155a67bcfc73a73c3b05",
+    "date_quote": "article:published_time=2017-12-05T00:17:16+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "671ba2dc04ef4833118c09476a6409d25d4671aafb81f3384b4b4ceeaa9563d4",
+  "outputs": [
+    {
+      "path": "US\\2017_12_05_Healthcare_Insurance_cnbc.json",
+      "sha256": "ed2aff910558d8abcabc8a3d082b6ba2a93ac4b73a20feacb7fce97f8b933fbb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-12-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:03.317223+00:00",
+    "fetched_at": "2026-11-10T11:46:10.139740+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.452910+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:41:44.132537+00:00",
+  "feature_available_at": "2026-11-12T14:41:44.142987+00:00",
+  "commit_verified_at": "2026-11-12T14:41:44.142987+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses revenue trends of U.S. insurers related to Medicare and Medicaid, which are government-sponsored health programs. It provides data on revenue",
+    "securities": [
+      {
+        "name": "U.S. insurers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "top five U.S. insurers"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "Health Affairs"
+      },
+      {
+        "name": "Insurance",
+        "basis": "inferred",
+        "quote": "U.S. insurers"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S. insurers": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

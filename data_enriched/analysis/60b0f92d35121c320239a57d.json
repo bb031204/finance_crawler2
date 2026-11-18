@@ -1,0 +1,91 @@
+{
+  "source_id": "60b0f92d35121c320239a57d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_04_14_Politics_Healthcare_cnbc.json",
+      "sha256": "a71783c8249b93ed893b5a37b619333b931c797ca11aba5753bb42331583b61f",
+      "filename": "2020_04_14_Politics_Healthcare_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3ab522e3274d34119eaece271d2215cc19b916a59fa7c3adcc5deff891abd138",
+  "input_hash": "fa43d7017b32383b86b8bba1ab3a0e7526eaaf1cccbdd4bf75bffcf9625e6a0e",
+  "matching_audit_hash": "6139554f6ac50d59b36d93e361f0fe5e0275b316f29267527b2875c7d87b0b89",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c19e0e376897c10e57f237cd66c0d991ac835e7f854bda483547f6f99c95418f",
+    "raw_sha256": "c1fb7bca91395e72b113c33238e7144fa93598f41dbf9781c2d043b8a3cf5955",
+    "date_quote": "article:published_time=2020-04-14T22:24:42+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b8812000ec62897e3d57c44b3fe7a64119454b9885609ff8859b71709c73f665",
+  "outputs": [
+    {
+      "path": "US\\2020_04_14_Politics_Healthcare_cnbc.json",
+      "sha256": "b9afa580bd83619f0edf6db1ee015bf39e2ea3d1ca4f32d0e9e665142053a51e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-04-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:11.057561+00:00",
+    "fetched_at": "2026-11-10T19:29:04.066316+00:00",
+    "feature_available_at": "2026-11-10T19:29:27.753591+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:42.071640+00:00",
+  "feature_available_at": "2026-11-12T14:52:42.080661+00:00",
+  "commit_verified_at": "2026-11-12T14:52:42.080661+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the U.S. suspension of funding to the World Health Organization (WHO) due to its handling of the coronavirus pandemic, including criticism",
+    "securities": [
+      {
+        "name": "World Health Organization",
+        "ticker": null,
+        "exchange": null,
+        "quote": "World Health Organization (WHO)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "World Health Organization (WHO)"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "World Health Organization": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "source_id": "e1a53b1907b48a9d4d70ec84",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_01_13_Mergers-and-Acquisitions_Utilities_sec.json",
+      "sha256": "8848ccab80e015949c82ca4fd3e92098167f86989c8f3576422c4d4c5d0563ec",
+      "filename": "2014_01_13_Mergers-and-Acquisitions_Utilities_sec.json"
+    }
+  ],
+  "original_record_hash": "01de4e6f1234a4b75a15524c193b5b0b27c978a00cbb9ae9ecae62683e4d18f9",
+  "input_hash": "9824d0cd739d03936cac19e8844850a9ede2a541cb73bbde7365fdea907fc00f",
+  "matching_audit_hash": "2ab8ca368805de8dd92623e0e5d15202e10a5456ee1950ca5d14f7cdf6befd30",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b130d4ccab37bec58f7ea6110a254e17a726b91bdbd32dacc1448bb28f7c2dc4",
+    "raw_sha256": "2bdf96a78ff131690361521df21cf252e9bda6822001c96ae338f91c4add6c7a",
+    "date_quote": "SEC filing datePublished=2014-01-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/100122/000094113814000003/a8-k_mergerapplication.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Tucson Electric Power Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Tucson Electric Power Company"
+    }
+  ],
+  "record_hash": "ec328c576e9f57f5259250176dab5ab6378baa7655b6dc8c4e8c66ad06b426dd",
+  "outputs": [
+    {
+      "path": "US\\2014_01_13_Mergers-and-Acquisitions_Utilities_sec.json",
+      "sha256": "ca834f60994a6f3e63cc21cab0b41ab279bb4c78877ec56fc93568c40ba1f7e2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-01-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:08:39.451757+00:00",
+    "feature_available_at": "2026-11-11T10:19:10.927372+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:12:09.655635+00:00",
+  "feature_available_at": "2026-11-12T14:12:09.694655+00:00",
+  "commit_verified_at": "2026-11-12T14:12:09.694655+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a merger between UNSW Energy Corporation and FortisUS Inc., involving regulatory approvals and implications for the utility industry.",
+    "securities": [
+      {
+        "name": "UNSW Energy Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UNSW Energy Corporation"
+      },
+      {
+        "name": "FortisUS Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FortisUS Inc."
+      },
+      {
+        "name": "Arizona Corporation Commission (ACC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Arizona Corporation Commission (ACC)"
+      },
+      {
+        "name": "Federal Energy Regulatory Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Energy Regulatory Commission"
+      },
+      {
+        "name": "Tucson Electric Power Company (TEP)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tucson Electric Power Company (TEP)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Utility industry",
+        "basis": "explicit",
+        "quote": "utility industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "UNSW Energy Corporation": "company",
+      "FortisUS Inc.": "company",
+      "Arizona Corporation Commission (ACC)": "organization",
+      "Federal Energy Regulatory Commission": "organization",
+      "Tucson Electric Power Company (TEP)": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

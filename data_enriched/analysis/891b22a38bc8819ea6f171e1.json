@@ -1,0 +1,97 @@
+{
+  "source_id": "891b22a38bc8819ea6f171e1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_10_03_Corporate-Actions_Pest-Control-Services_prnewswire.json",
+      "sha256": "4a78d295531cbf392408134cefa5bc5b94d569b807b746fa47d78217cb56e0cb",
+      "filename": "2016_10_03_Corporate-Actions_Pest-Control-Services_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "1e7824b6908afd2c885e12c89bf41fc8538fb221fdccc57e415e06fbc92aef74",
+  "input_hash": "54f3e2444b189937ee01b6173c04cb661e4dc8407537b13a4f319f74779f0fb6",
+  "matching_audit_hash": "88aed4b0f2637ae0e51c2ff10a6584ef494913e1bd54f1047cef2039cc6ef3fb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4dc069c6f0fbb6c841b6a57f4d93b0d05bf6f2791d3e069178ab70e7a3008ae6",
+    "raw_sha256": "143aa272ea9b19de404aee974f67073c265fb9abdf9ec5a0e0c072c102664baa",
+    "date_quote": "page.datePublished=2016-10-03T09:30:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Rollins, Inc.",
+      "ticker": "ROL",
+      "exchange": null,
+      "quote": "Rollins, Inc. (NYSE: ROL)"
+    }
+  ],
+  "record_hash": "f03db7749836881ba92a174d3a8ba2352b9229942a3e7eeab97d6750e6a21727",
+  "outputs": [
+    {
+      "path": "US\\2016_10_03_Corporate-Actions_Pest-Control-Services_prnewswire.json",
+      "sha256": "845cb03cf665b8d086bd99b2e9a28ad996af17353b111596706854efcc2db597"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-10-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:39:13.124713+00:00",
+    "fetched_at": "2026-11-10T21:14:32.461918+00:00",
+    "feature_available_at": "2026-11-10T21:14:40.347237+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:50.091106+00:00",
+  "feature_available_at": "2026-11-12T14:32:50.123489+00:00",
+  "commit_verified_at": "2026-11-12T14:32:50.123489+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary includes information about Rollins, Inc.'s share repurchase activity, which is a corporate action with financial implications.",
+    "securities": [
+      {
+        "name": "Rollins, Inc.",
+        "ticker": "ROL",
+        "exchange": "NYSE",
+        "quote": "Rollins, Inc. (NYSE: ROL)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pest control services",
+        "basis": "explicit",
+        "quote": "provides pest control services"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Rollins, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

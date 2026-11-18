@@ -1,0 +1,103 @@
+{
+  "source_id": "a6874673a257d5d9b4a080c7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_11_Corporate_Consumer-Goods_bloomberg.json",
+      "sha256": "ab365936fe6ebf9678f43d2b0c6ff1b13f0389d2f21b10e0951369ffd4e78bfb",
+      "filename": "2016_01_11_Corporate_Consumer-Goods_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "fc008c49d79a4b0ba35482f719ac1acc327ee0c446f109bbda0692e9d0a527d4",
+  "input_hash": "b84784ea84419da586a4a796da72ff103594d57c80eadd69df08b9d7678eb94c",
+  "matching_audit_hash": "777efc536f1844693ebf9101c2235f898594606c1e94db493951d2302403df7c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9982034b0d47a8a32df70eae22087e736cd8c8f838cafde9cb259ceef6a52adc",
+    "raw_sha256": "853a09a08610a4aa473fd6108c7b106259b1b21ca725cba35abf2b0f75b8d7bf",
+    "date_quote": "January 11, 2016 at 7:12 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "aa2adfb300bfc3819505f135cce401a5d1d6c226bb47356953a7a51c96b8257b",
+  "outputs": [
+    {
+      "path": "US\\2016_01_11_Corporate_Consumer-Goods_bloomberg.json",
+      "sha256": "abf5765402f1cec2883eb771762fbb0ef5378729036896f751c61532fe77067f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:02.702921+00:00",
+    "fetched_at": "2026-11-10T17:25:32.912209+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.964162+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:29:48.013466+00:00",
+  "feature_available_at": "2026-11-12T14:29:48.044457+00:00",
+  "commit_verified_at": "2026-11-12T14:29:48.044457+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a CEO change at Electrolux due to a failed acquisition attempt, which is relevant for corporate and market analysis.",
+    "securities": [
+      {
+        "name": "Electrolux AB",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Electrolux AB"
+      },
+      {
+        "name": "General Electric Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Co."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Appliance manufacturing",
+        "basis": "inferred",
+        "quote": "maker of fridges, ovens, and dishwashers"
+      },
+      {
+        "name": "Consumer goods",
+        "basis": "inferred",
+        "quote": "household goods business"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Electrolux AB": "company",
+      "General Electric Co.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

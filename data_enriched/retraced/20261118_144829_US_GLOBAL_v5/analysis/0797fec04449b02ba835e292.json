@@ -1,0 +1,550 @@
+{
+  "source_id": "0797fec04449b02ba835e292",
+  "status": "completed",
+  "source_record_hash": "cb182a4053e2043a7663b41734ec41675121ace754326827c1075a993254b951",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2020/05/02/coronavirus-devastates-agriculture-dumped-milk-euthanized-livestock.html",
+    "attempted_at": "2026-11-18T07:37:03.570454+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2020/05/02/coronavirus-devastates-agriculture-dumped-milk-euthanized-livestock.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T07:38:13.256460+00:00",
+    "source_body_hash": "1d88c8109eb359525e1214f9de7d2fc783a62d13d1a27476c698c84271f15fb4",
+    "raw_sha256": "230bcafe083f7788b7bbf0db6ffd44cef9aadf5905c236608e3fa8917e0f1d5d",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Coronavirus devastates agriculture: Dumped milk, euthanized livestock",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2020-05-02T14:40:18+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0797fec04449b02ba835e292.json",
+    "sha256": "fc419e7bb45141081d20ff7b1098a94e8a77fb14b70cfb3b19c6bcff553f8b06",
+    "bundled_path": "legacy_audit/0797fec04449b02ba835e292.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "c860206dd50911e36496320679aebd1074e4129c932583e4537b074bce286071",
+      "llm_inferred_at": "2026-11-18T07:38:37.367254+00:00",
+      "model_duration_seconds": 24.0770827,
+      "prompt_tokens": 3791,
+      "completion_tokens": 1192,
+      "selection": [
+        {
+          "source_id": "0797fec04449b02ba835e292",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "As the coronavirus pandemic disrupts supply chains across the country, farmers are being forced to destroy their crops, dump milk and throw out perishable items that can't be",
+              "rationale": "The article discusses the widespread impact of the coronavirus on agricultural supply chains, affecting various sectors such as dairy, meat, and produce. This indicates an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+              "rationale": "The article specifically mentions Dairy Farmers of America, a company, and its role in the dairy industry, indicating a company-specific impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants.",
+              "rationale": "The article highlights the impact of the virus on chicken processors, indicating an industry-wide impact on the meat and poultry sector.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:0200",
+              "name": "AGRICULTURAL PROD-LIVESTOCK & ANIMAL SPECIALTIES",
+              "basis": "explicit",
+              "quote": "As the coronavirus pandemic disrupts supply chains across the country, farmers are being forced to destroy their crops, dump milk and throw out perishable items that can't be"
+            },
+            {
+              "industry_key": "SEC-SIC:2015",
+              "name": "POULTRY SLAUGHTERING AND PROCESSING",
+              "basis": "explicit",
+              "quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants."
+            },
+            {
+              "industry_key": "SEC-SIC:2020",
+              "name": "DAIRY PRODUCTS",
+              "basis": "explicit",
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:0200",
+              "industry_scope_quote": "Acker | Bloomberg | Getty Images Alfred Brandt milks his Holstein cows on the dairy farm, which has been in his family since 1840 and has been affected by the industry's supply",
+              "industry_name_original": "AGRICULTURAL PROD-LIVESTOCK & ANIMAL SPECIALTIES",
+              "mechanism": "Supply chain disruption due to the coronavirus pandemic has led to the destruction of crops, dumping of milk, and euthanization of livestock, affecting the entire agricultural production industry.",
+              "confidence": 0.95,
+              "quote": "As the coronavirus pandemic disrupts supply chains across the country, farmers are being forced to destroy their crops, dump milk and throw out perishable items that can't be"
+            },
+            {
+              "industry_key": "SEC-SIC:2015",
+              "industry_scope_quote": "Acker | Bloomberg | Getty Images Alfred Brandt milks his Holstein cows on the dairy farm, which has been in his family since 1840 and has been affected by the industry's supply",
+              "industry_name_original": "POULTRY SLAUGHTERING AND PROCESSING",
+              "mechanism": "Staffing problems related to the virus have led to reduced capacity in processing plants, forcing chicken processors to euthanize chickens, impacting the poultry slaughtering and processing industry.",
+              "confidence": 0.9,
+              "quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants."
+            },
+            {
+              "industry_key": "SEC-SIC:2020",
+              "industry_scope_quote": "Acker | Bloomberg | Getty Images Alfred Brandt milks his Holstein cows on the dairy farm, which has been in his family since 1840 and has been affected by the industry's supply",
+              "industry_name_original": "DAIRY PRODUCTS",
+              "mechanism": "Low prices and a sudden drop in demand from the lockdown have led to dairy farmers dumping milk, affecting the dairy products industry.",
+              "confidence": 0.95,
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5c6f943dccd5c647b88246fe13c39ea368c193d894d525cc8269aae58e947697",
+      "llm_inferred_at": "2026-11-18T07:38:59.779045+00:00",
+      "model_duration_seconds": 22.3863986,
+      "prompt_tokens": 3835,
+      "completion_tokens": 1195,
+      "selection": [
+        {
+          "source_id": "0797fec04449b02ba835e292",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+              "rationale": "The article discusses the impact of the coronavirus on the dairy industry, including the dumping of milk and the financial hardships faced by dairy farmers.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+              "rationale": "Dairy Farmers of America is explicitly mentioned as the largest dairy cooperative, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants.",
+              "rationale": "The article highlights the impact of the coronavirus on the poultry industry, specifically the processing plants and the decision to euthanize chickens.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:0200",
+              "name": "AGRICULTURAL PROD-LIVESTOCK & ANIMAL SPECIALTIES",
+              "basis": "explicit",
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |"
+            },
+            {
+              "industry_key": "SEC-SIC:2015",
+              "name": "POULTRY SLAUGHTERING AND PROCESSING",
+              "basis": "explicit",
+              "quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants."
+            },
+            {
+              "industry_key": "SEC-SIC:2020",
+              "name": "DAIRY PRODUCTS",
+              "basis": "explicit",
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:0200",
+              "industry_scope_quote": "Acker | Bloomberg | Getty Images Alfred Brandt milks his Holstein cows on the dairy farm, which has been in his family since 1840 and has been affected by the industry's supply",
+              "industry_name_original": "AGRICULTURAL PROD-LIVESTOCK & ANIMAL SPECIALTIES",
+              "mechanism": "Supply chain disruption due to the coronavirus pandemic has led to the destruction of agricultural products, including milk and livestock, affecting the dairy industry.",
+              "confidence": 0.95,
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |"
+            },
+            {
+              "industry_key": "SEC-SIC:2015",
+              "industry_scope_quote": "Acker | Bloomberg | Getty Images Alfred Brandt milks his Holstein cows on the dairy farm, which has been in his family since 1840 and has been affected by the industry's supply",
+              "industry_name_original": "POULTRY SLAUGHTERING AND PROCESSING",
+              "mechanism": "Staffing problems due to the virus have led to the euthanization of chickens, impacting the poultry processing industry.",
+              "confidence": 0.95,
+              "quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants."
+            },
+            {
+              "industry_key": "SEC-SIC:2020",
+              "industry_scope_quote": "Acker | Bloomberg | Getty Images Alfred Brandt milks his Holstein cows on the dairy farm, which has been in his family since 1840 and has been affected by the industry's supply",
+              "industry_name_original": "DAIRY PRODUCTS",
+              "mechanism": "The coronavirus pandemic has disrupted the demand for dairy products, leading to the dumping of milk and financial hardships for dairy farmers.",
+              "confidence": 0.95,
+              "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "637e619fde54a190a385643d4becf1899cd72d885c47cc9b0bf60061dc86e80f",
+      "llm_inferred_at": "2026-11-18T07:39:12.015498+00:00",
+      "model_duration_seconds": 12.2164138,
+      "prompt_tokens": 2314,
+      "completion_tokens": 621,
+      "selection": [
+        {
+          "source_id": "0797fec04449b02ba835e292",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Ben Hasty | Reading Eagle | Getty Images Sicher displays yellow oyster mushrooms at Primorida Mushroom farm.",
+              "rationale": "The article discusses the impact of the coronavirus on the mushroom farming industry, specifically mentioning the shift from selling to restaurants to retail, indicating an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+              "rationale": "The article specifically mentions Matt Sicher, a mushroom farmer, and his business adaptation due to the coronavirus, indicating a company-level impact.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "industry",
+              "quote": "Ben Hasty | Reading Eagle | Getty Images Sicher displays yellow oyster mushrooms at Primorida Mushroom farm.",
+              "rationale": "The article discusses the impact of the coronavirus on the mushroom farming industry, specifically mentioning the shift from selling to restaurants to retail, indicating an industry-wide impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "name": "Restaurants",
+              "basis": "explicit",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus."
+            },
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "name": "Water Supply",
+              "basis": "explicit",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "c5deffa2c70dcb021029c4bc959ace5e25f9b1a368a2b75e7fa5a5d7e3893819",
+      "llm_inferred_at": "2026-11-18T07:39:23.786315+00:00",
+      "model_duration_seconds": 11.7620907,
+      "prompt_tokens": 2358,
+      "completion_tokens": 639,
+      "selection": [
+        {
+          "source_id": "0797fec04449b02ba835e292",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Ben Hasty | Reading Eagle | Getty Images Sicher displays yellow oyster mushrooms at Primorida Mushroom farm.",
+              "rationale": "The article discusses the impact of the coronavirus on the mushroom farming industry, specifically mentioning the shift from selling to restaurants to retail. This indicates an industry-wide impact on the mushroom farming sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+              "rationale": "The article specifically mentions Matt Sicher, a mushroom farmer, and his business adaptation due to the coronavirus, indicating a company-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Ben Hasty | Reading Eagle | Getty Images Sicher displays yellow oyster mushrooms at Primorida Mushroom farm.",
+              "rationale": "The article discusses the impact of the coronavirus on the mushroom farming industry, specifically mentioning the shift from selling to restaurants to retail. This indicates an industry-wide impact on the mushroom farming sector.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "name": "Restaurants",
+              "basis": "explicit",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus."
+            },
+            {
+              "industry_key": "TRSR:6a94466d770b6186",
+              "name": "Specialty Foods",
+              "basis": "explicit",
+              "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:39:23.803948+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1d88c8109eb359525e1214f9de7d2fc783a62d13d1a27476c698c84271f15fb4",
+    "raw_sha256": "230bcafe083f7788b7bbf0db6ffd44cef9aadf5905c236608e3fa8917e0f1d5d",
+    "date_quote": "article:published_time=2020-05-02T14:40:18+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The summary discusses the impact of the coronavirus pandemic on the U.S. agriculture sector, including specific companies and industries affected.",
+    "securities": [
+      {
+        "name": "Long & Scott Farms",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Long & Scott Farms"
+      },
+      {
+        "name": "Tyson Foods",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tyson Foods"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:2020",
+        "name": "DAIRY PRODUCTS",
+        "basis": "inferred",
+        "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2020",
+        "industry_name_standard": "DAIRY PRODUCTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:0beeae358e6644c8",
+        "name": "Restaurants",
+        "basis": "inferred",
+        "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0beeae358e6644c8",
+        "industry_name_standard": "Restaurants",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:df01973c2ce9dd88",
+        "name": "Business Services",
+        "basis": "inferred",
+        "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "df01973c2ce9dd88",
+        "industry_name_standard": "Business Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Long & Scott Farms": "company",
+      "Tyson Foods": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "0797fec04449b02ba835e292",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_05_02_agriculture_agriculture_cnbc.json",
+        "sha256": "da396c804c4f9562df2acc7cf3157ba60c7994652b5c27dd7e9dff924246b9fe",
+        "filename": "2020_05_02_agriculture_agriculture_cnbc.json"
+      }
+    ],
+    "original_record_hash": "e8b52f3d1c2d5f65dd36f5506d372e90a09c3d880cc22c7992f6ac55b7d0ba03",
+    "input_hash": "a1cf80394e905816b3aaf35a3cfc5de3b8d5a6f375b5524146cdfba9e716d964",
+    "matching_audit_hash": "3618349f3e9a404d2eb7af6003c3e024ffb841eb1df3deb7c96d39eeab040344",
+    "legacy_security_evidence": [],
+    "record_hash": "cb182a4053e2043a7663b41734ec41675121ace754326827c1075a993254b951",
+    "outputs": [
+      {
+        "path": "US\\2020_05_02_agriculture_agriculture_cnbc.json",
+        "sha256": "a1bdd87cc96df39af45c368244bce0566e65d39fa3675c6eca266a9f3f6dc8b1"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2020-05-02",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T16:04:43.599339+00:00",
+      "fetched_at": "2026-11-10T16:40:39.617266+00:00",
+      "feature_available_at": "2026-11-10T17:53:24.152334+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T07:39:23.786315+00:00",
+    "feature_available_at": "2026-11-18T07:39:23.803948+00:00",
+    "commit_verified_at": "2026-11-12T14:52:47.563251+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:2020",
+        "industry_scope_quote": "Acker | Bloomberg | Getty Images Alfred Brandt milks his Holstein cows on the dairy farm, which has been in his family since 1840 and has been affected by the industry's supply",
+        "industry_name_original": "DAIRY PRODUCTS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The coronavirus pandemic has disrupted the demand for dairy products, leading to the dumping of milk and financial hardships for dairy farmers.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2020",
+        "industry_name_standard": "DAIRY PRODUCTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+        "rationale": "Dairy Farmers of America is explicitly mentioned as the largest dairy cooperative, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Dairy Farmers of America, the country's largest dairy cooperative. Dairy cows stand in a pen at a cattle farm in West Canaan, Ohio on Thursday, April 30, 2020. Dane Rhys |",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants.",
+        "rationale": "The article highlights the impact of the coronavirus on the poultry industry, specifically the processing plants and the decision to euthanize chickens.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Chicken processors dealing with staffing problems related to the virus have been forced to euthanize chickens because of the reduced capacity in plants.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+        "rationale": "The article specifically mentions Matt Sicher, a mushroom farmer, and his business adaptation due to the coronavirus, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Mushroom farm loses restaurant revenue In Lenhartsville, Pennsylvania, mushroom farmer Matt Sicher is adapting to changes in his business as a result of coronavirus.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mechanism_semantic_not_literal_driver",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2020/05/02/coronavirus-devastates-agriculture-dumped-milk-euthanized-livestock.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "cb182a4053e2043a7663b41734ec41675121ace754326827c1075a993254b951",
+    "content_hash": "1d88c8109eb359525e1214f9de7d2fc783a62d13d1a27476c698c84271f15fb4",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:39:23.788979+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0797fec04449b02ba835e292.json",
+      "sha256": "e0276179b8654b479cce4c79b7e3898192d107c938ecef7af4d265ec2d4fa0c6",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 140.25
+}

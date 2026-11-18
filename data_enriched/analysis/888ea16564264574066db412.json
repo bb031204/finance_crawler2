@@ -1,0 +1,95 @@
+{
+  "source_id": "888ea16564264574066db412",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_28_Financial-Report_Oil-and-Gas-Services_sec.json",
+      "sha256": "23477d5c3b1eabc68be2fad2de1e3fe28b8e36e31b6796649dff91e175055466",
+      "filename": "2015_01_28_Financial-Report_Oil-and-Gas-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "7e3b69e3c7012171e29fd777abe9aa230a79521d8b18cb40bbda670237bd7077",
+  "input_hash": "8f69c14a5184736dc1b81569234b4bb05f21282ec9656f57dfa9e2e22cb3ea9a",
+  "matching_audit_hash": "cd450a6dab7c0e91878ca36664a44cdc10f28f165fcc4a518b4756c521bb9d0f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c4ee0f709f44e86b3d7906649ebf7bf38da30031056f5329f0ade37043e36bf3",
+    "raw_sha256": "c07e6d485103f9ce5c4b6996d5e32b74073c9121e441d9822f50777df889c98d",
+    "date_quote": "Date of report (date of earliest event reported): January 28, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022915000026/clb-2014q4_earningsrelease.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V."
+    }
+  ],
+  "record_hash": "0fb917656c5a47bb710465fa28dded4b035ef542c93bd0fc4388cf2304fac737",
+  "outputs": [
+    {
+      "path": "US\\2015_01_28_Financial-Report_Oil-and-Gas-Services_sec.json",
+      "sha256": "88d6787e05f3407c0675428d5949b9846c485664fc0c09748b1dd43c6f338ce8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:19:45.257584+00:00",
+    "feature_available_at": "2026-11-11T00:19:54.624330+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.645046+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.645046+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Oil and Gas Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

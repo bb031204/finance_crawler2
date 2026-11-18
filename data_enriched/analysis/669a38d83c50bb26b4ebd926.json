@@ -1,0 +1,109 @@
+{
+  "source_id": "669a38d83c50bb26b4ebd926",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_06_07_Politics-&-Policy_Politics_cnbc.json",
+      "sha256": "b054b64119499f0c2436f3a7d373caa31859f04b01d9860f583d4475dfab6e5d",
+      "filename": "2018_06_07_Politics-&-Policy_Politics_cnbc.json"
+    }
+  ],
+  "original_record_hash": "8f455508961c2cc712e1e299c408d9e559c76d3d6e9e95bf6fbfba8e529310e4",
+  "input_hash": "924da6462cd7649d44f9785f27dee242b8f02af9f21e1d594088896f2bba7ea6",
+  "matching_audit_hash": "98c56b393b1432963417ec027cd17151c556d8ab5ad6d91e5a96159e7702abe7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7ec75075f6de52a11b53c21a4d18ec2fd8fb8e6595d007c58efcba28951e3800",
+    "raw_sha256": "415c69569d2ecb28dd18ba3d29de074428f161381cfd762cc8d4fcda6dab5eba",
+    "date_quote": "article:published_time=2018-06-07T22:34:09+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9210764e4b4e4cb8a2b87e6784ec6ff7ade7559010bbb93a73f92956dfa14db1",
+  "outputs": [
+    {
+      "path": "US\\2018_06_07_Politics-&-Policy_Politics_cnbc.json",
+      "sha256": "819af89d3a5be8ce3820437d953703b220ab6591c315eeac4c39166ce61ac87b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-06-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:28.583846+00:00",
+    "fetched_at": "2026-11-10T15:51:58.749683+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.577411+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:44:47.682961+00:00",
+  "feature_available_at": "2026-11-12T14:44:47.692504+00:00",
+  "commit_verified_at": "2026-11-12T14:44:47.692504+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses trade tensions between the U.S. and its allies, including Canada and France, and mentions the G-7 summit. It provides context on trade policy",
+    "securities": [
+      {
+        "name": "Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Canada"
+      },
+      {
+        "name": "France",
+        "ticker": null,
+        "exchange": null,
+        "quote": "France"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Trade",
+        "basis": "explicit",
+        "quote": "trade policies"
+      },
+      {
+        "name": "Agriculture",
+        "basis": "inferred",
+        "quote": "U.S. agriculture"
+      },
+      {
+        "name": "International Relations",
+        "basis": "inferred",
+        "quote": "G-7 summit"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Canada": "company",
+      "France": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

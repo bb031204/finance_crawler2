@@ -1,0 +1,109 @@
+{
+  "source_id": "ca6de37a753b0a10a272643a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_05_05_Politics_Healthcare_cnbc.json",
+      "sha256": "ce0102ebe36433ed310536b3830b2251723a817127be80888b5755bd4f55b48e",
+      "filename": "2017_05_05_Politics_Healthcare_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f37ba85da04d8daff813bac8c79ccbaf811af2b28ba3107cd688924324658edb",
+  "input_hash": "7c158879199f1275e8e205c631db45d10c35971c8185db47ec53697c4891b676",
+  "matching_audit_hash": "b530a81afcff5e56474a98e8939eaf6eb3fe7f0a9c4e39e120720297b278d9b2",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e6ddf3b00977ad34b4c673e05542677f7698511678f6c0e427211372cc56f72b",
+    "raw_sha256": "2c62e48f0b47b884d1f2cf03803dde8894ac569b74d9c522ffd7fe072b5ab46f",
+    "date_quote": "article:published_time=2017-05-05T22:10:51+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "United States",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Trump suggested Friday that Obamacare is so awful that it has left the United States with the absolute worst health-care system in the entire world."
+    },
+    {
+      "name": "Australia",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Australia"
+    }
+  ],
+  "record_hash": "30788f088b9f86529349045c60c92acb6e9d5cc89e6d881e463ed54f26c4733d",
+  "outputs": [
+    {
+      "path": "US\\2017_05_05_Politics_Healthcare_cnbc.json",
+      "sha256": "fa4d4f70b00211733c18f113689f88792915d7b70fb99b05632f2b0d73cc4fcc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-05-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:35:59.661160+00:00",
+    "fetched_at": "2026-11-10T19:19:36.923739+00:00",
+    "feature_available_at": "2026-11-10T19:20:04.767443+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:15.105212+00:00",
+  "commit_verified_at": "2026-11-12T13:53:15.105212+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "United States",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Trump suggested Friday that Obamacare is so awful that it has left the United States with the absolute worst health-care system in the entire world."
+      },
+      {
+        "name": "Australia",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Australia"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "source_id": "83cfc0e0a6fd4c8e10b4e6d5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_18_Accounting-Change_Telecommunications-Equipment_sec.json",
+      "sha256": "cfa5d3f42371a0fb165ce63c06d74c38f9b7691f06f743cc30752101f25f90db",
+      "filename": "2016_02_18_Accounting-Change_Telecommunications-Equipment_sec.json"
+    }
+  ],
+  "original_record_hash": "5c9d58770d39cd64903121e8fb3a7369deb8d6f691fdeb59b040d0d163dda3f8",
+  "input_hash": "dab0fecb3095fbadda174691f70d87f7a4b21d9dae78a571ee74a5e9ac440b66",
+  "matching_audit_hash": "89e7e91ef938a64557a2e06f7aed28bb42385913da880e7abfd1885203f35dcb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "40bf82cf960635f8f221b3af8b4976654581a4683483f3d3821423ead4e0ec0c",
+    "raw_sha256": "9913dfe07ed83cb9b6aa93cff8636e7c6ad2450f4aec335e139cdb70c92d9721",
+    "date_quote": "SEC filing datePublished=2016-02-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774916025657/occ20160218_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Optical Cable Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Optical Cable Corporation"
+    }
+  ],
+  "record_hash": "dc5e34d4addc2e95dbe61501defdf490a8af2311047f2d439b274d401fb9618d",
+  "outputs": [
+    {
+      "path": "US\\2016_02_18_Accounting-Change_Telecommunications-Equipment_sec.json",
+      "sha256": "14af389e51898d6cc53ff0828ba165fb7a270f3ebeee7ff2f9fa4d0eb425b3a8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.847853+00:00",
+    "fetched_at": "2026-11-11T01:00:56.844396+00:00",
+    "feature_available_at": "2026-11-11T11:01:02.225925+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:05.555637+00:00",
+  "commit_verified_at": "2026-11-12T13:53:05.555637+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Telecommunications Equipment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

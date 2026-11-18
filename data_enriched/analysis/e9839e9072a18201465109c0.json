@@ -1,0 +1,96 @@
+{
+  "source_id": "e9839e9072a18201465109c0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_19_Financial-Services_Banking_sec.json",
+      "sha256": "6299ed6821bb2b25317750de34ad39cab64c0aae8ea1a8a21bda7db9df083c28",
+      "filename": "2013_02_19_Financial-Services_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "0b7268add151d56fc9d6f19cc7067a36f183916bff4e03e7d2a1df0ef90870c3",
+  "input_hash": "4d1bdd39141204ac2b4ab58fe059c4d245cd149f9f2230037dba8942853bac79",
+  "matching_audit_hash": "e67562a7e20be64ba886715a94d1cd40732d422eb23cee6e0e9caf0d3077c348",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7913554164d645e676a9d73e82970974cad6c91715160534dc75c68b0a8082d7",
+    "raw_sha256": "be365aeb45cb94b74b8a0af088f26f9af9f08b5d76b97ae20601efa568f475de",
+    "date_quote": "Date of Report (Date of earliest event reported) February 19, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000045/000119312513064817/d489343d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nicholas Financial, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Nicholas Financial, Inc."
+    }
+  ],
+  "record_hash": "9fb38a17df692bee3ebf25cac5ce774057a39c52c31baf5e773b3a488031099f",
+  "outputs": [
+    {
+      "path": "US\\2013_02_19_Financial-Services_Banking_sec.json",
+      "sha256": "9625b500aaea826ff52290e486c55caddfe6e5cf22b1000e830ae3ab4f0f2c3d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.188895+00:00",
+    "fetched_at": "2026-11-10T23:07:19.803319+00:00",
+    "feature_available_at": "2026-11-10T23:07:34.707656+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:44.750747+00:00",
+  "commit_verified_at": "2026-11-12T13:52:44.750747+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nicholas Financial, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nicholas Financial, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

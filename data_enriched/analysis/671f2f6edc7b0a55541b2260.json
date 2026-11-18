@@ -1,0 +1,92 @@
+{
+  "source_id": "671f2f6edc7b0a55541b2260",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_16_Dividend_Oil-&-Gas-Services_sec.json",
+      "sha256": "5e14e0598575bfd6ecef01643dde6de9396977d6cb3037dd3c3840a4d7f04d08",
+      "filename": "2018_01_16_Dividend_Oil-&-Gas-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "0fbb0e30ca8e8d609f781d818286822d75a8650e1c1f75ec125f1a8c047ab4f5",
+  "input_hash": "4072d652895d6e6ea39da5bffff495c020800d0b078f178c764a1323ba9a5b18",
+  "matching_audit_hash": "5e7f90129e01f1534f2dd67f087870c51c57054f08e7d2ca071893cc4ee3a2ae",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "cd1125594a67e6384038e324386803d905ab4df0e8a5a037e6b942d3c718b1e4",
+    "raw_sha256": "d7e4c23f2f208143615538a5104ba7b6e296b4a379bc659d5167a36cf0c150e8",
+    "date_quote": "SEC filing datePublished=2018-01-16",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022918000018/clb-8k_dividend1q2018.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V."
+    }
+  ],
+  "record_hash": "7399ba4880b6f39b5a396684aa8bba102839af2fd432ef2f5abe6efe6be809f8",
+  "outputs": [
+    {
+      "path": "US\\2018_01_16_Dividend_Oil-&-Gas-Services_sec.json",
+      "sha256": "958eab08865f84bf6a009f00021bbc531a303ba175f5ebef85fdcb568f89579f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.045565+00:00",
+    "fetched_at": "2026-11-11T12:56:22.513813+00:00",
+    "feature_available_at": "2026-11-11T12:56:57.242436+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:17.583392+00:00",
+  "feature_available_at": "2026-11-12T14:42:17.592866+00:00",
+  "commit_verified_at": "2026-11-12T14:42:17.592866+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a dividend payment, which is relevant for financial analysis and stock market activity.",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Core Laboratories N.V.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "source_id": "168d8e634308ff48bcafbe07",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_11_Financial_Energy-Services_sec.json",
+      "sha256": "cb60515d178d27fc749170d015fbedbea2284645fc61a84be4128370691ca4c0",
+      "filename": "2013_01_11_Financial_Energy-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "89eca8dedf0d15a99766cd1f016477961ed4e0da5b564644635506a9a4e882d8",
+  "input_hash": "b3d893a2cbbb16b7995af21af765162c8bb4d88d1e458c52460502b59cd925fb",
+  "matching_audit_hash": "31c3f37b9d11db7c06fa491b0bbae9c685e024535416d1aedfa371b842bd9eb0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2e0dadde98c111565842d0a6460afd9d51142d810235cd10476744367096fb6b",
+    "raw_sha256": "b6c591b4b90052182c834ff1b9b10618d3dd31e1ce6155d695ad0551285bb382",
+    "date_quote": "Date of report (date of earliest event reported): January 11, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022913000004/clb-8k_dividend1q2013.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V. issued a press release announcing a quarterly cash dividend of $0.32 per share of common stock for shareholders of record on January 22, 2013 and payable February 22, 2013."
+    }
+  ],
+  "record_hash": "c9b1c1c2d29e2245abea9d00990dcc95a80aee8a6c720a208cb4e44a81962632",
+  "outputs": [
+    {
+      "path": "US\\2013_01_11_Financial_Energy-Services_sec.json",
+      "sha256": "9cfebbd10acb6f5f137533121a75b9d3a74c9c0041334c5c848086ac334a76ff"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+    "fetched_at": "2026-11-10T23:14:05.805013+00:00",
+    "feature_available_at": "2026-11-10T23:14:16.424518+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:43.309408+00:00",
+  "commit_verified_at": "2026-11-12T13:52:43.309408+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V. issued a press release announcing a quarterly cash dividend of $0.32 per share of common stock for shareholders of record on January 22, 2013 and payable February 22, 2013."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

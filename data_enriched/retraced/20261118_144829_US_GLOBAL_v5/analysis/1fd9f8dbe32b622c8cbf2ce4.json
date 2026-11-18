@@ -1,0 +1,554 @@
+{
+  "source_id": "1fd9f8dbe32b622c8cbf2ce4",
+  "status": "completed",
+  "source_record_hash": "35a6f7ea4b3bee91595ef393fc6da4abdf6df6aa297ff5f7748dbb3d65914659",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-20-040280-index.html",
+    "attempted_at": "2026-11-18T09:46:26.359192+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-20-040280-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465920040280/tm2014176-1_8k.htm",
+    "fetched_at": "2026-11-18T09:46:42.350534+00:00",
+    "source_body_hash": "f3be38020ef100534d3e347bbd23c9803949020e1e47539c1e5ec914a05bee8b",
+    "raw_sha256": "009d406536ab0db1df96038a7cdfd2273915a0b14d604137568c5d4b1eb5164a",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465920040280/tm2014176-1_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "009d406536ab0db1df96038a7cdfd2273915a0b14d604137568c5d4b1eb5164a",
+        "text_sha256": "2a1baa5eaac2d817073e06668d9da465d3c54f3518d45bccec7031693d64abd5",
+        "text_start": 0,
+        "text_end": 3178
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465920040280/tm2014176d1_ex99-1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "0bde73e018892bd4b584dc09f033eb3596572396f0a9ff0841036fe6293db26c",
+        "text_sha256": "d7895e0a1b667e6fd5c53bb6c2f8b698e06010dc0b502e640d59ff2c747e9633",
+        "text_start": 3180,
+        "text_end": 12425
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2020-03-30",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/1fd9f8dbe32b622c8cbf2ce4.json",
+    "sha256": "80906ba0455009cf9f1f1d663dd0324a48ddb1e4a6974b53cf57079523b16d76",
+    "bundled_path": "legacy_audit/1fd9f8dbe32b622c8cbf2ce4.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "de8287889b13b9cff6b8b8113e26a1f8db7efefd46019bc3331a80c86bf53084",
+      "llm_inferred_at": "2026-11-18T09:46:56.463609+00:00",
+      "model_duration_seconds": 14.0796993,
+      "prompt_tokens": 3917,
+      "completion_tokens": 637,
+      "selection": [
+        {
+          "source_id": "1fd9f8dbe32b622c8cbf2ce4",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets.",
+              "rationale": "The article discusses the impact of the mortgage market dislocation on the company's operations, indicating an industry-wide impact on the mortgage sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The two week interval should also provide time for the industry and the Company to determine how to manage the effects of the various initiatives promulgated by the U.S.",
+              "rationale": "The article refers to the U.S. Federal Government and Federal Reserve initiatives, which are broad market-level events affecting the financial system.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "dislocation associated with the interest rate and credit risk mortgage markets. Liquidity constraints are being experienced by, and de-risking mandates are being initiated by, some of the Company’s capital markets counterparties that have direct access to the Federal Reserve’s funding mechanisms, including certain of the Company’s warehouse lenders",
+              "rationale": "The article discusses the Federal Reserve's funding mechanisms and the impact on capital markets, which are part of the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets."
+            },
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "feec4c99cc4bcc7f74544d53a5fa1ce78e2285d4857cb5d5c8258d4544af0765",
+      "llm_inferred_at": "2026-11-18T09:47:08.893110+00:00",
+      "model_duration_seconds": 12.4110837,
+      "prompt_tokens": 3961,
+      "completion_tokens": 650,
+      "selection": [
+        {
+          "source_id": "1fd9f8dbe32b622c8cbf2ce4",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets.",
+              "rationale": "The article discusses the impact of the mortgage market dislocation on the company's operations, indicating an industry-wide effect on the mortgage sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The two week interval should also provide time for the industry and the Company to determine how to manage the effects of the various initiatives promulgated by the U.S.",
+              "rationale": "The article refers to the U.S. Federal Government and Federal Reserve initiatives, which are broad enough to indicate a market-wide impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "dislocation associated with the interest rate and credit risk mortgage markets. Liquidity constraints are being experienced by, and de-risking mandates are being initiated by, some of the Company’s capital markets counterparties that have direct access to the Federal Reserve’s funding mechanisms, including certain of the Company’s warehouse lenders",
+              "rationale": "The article discusses the Federal Reserve's funding mechanisms and the impact on capital markets, which are part of the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The Company is a micro-cap residential mortgage originator and servicer navigating the dislocation associated with the interest rate and credit risk mortgage markets."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "0c7d0d1bd4f11c10dba6157ed1837c757a4af080c87a08eba251deea0d8232d4",
+      "llm_inferred_at": "2026-11-18T09:47:28.302196+00:00",
+      "model_duration_seconds": 19.3928093,
+      "prompt_tokens": 2500,
+      "completion_tokens": 978,
+      "selection": [
+        {
+          "source_id": "1fd9f8dbe32b622c8cbf2ce4",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the",
+              "rationale": "The article discusses the impact of the coronavirus on the financial markets and the broader economy, which affects the mortgage industry. The industry-specific risks include the effects of government stimulus efforts and the performance of counterparties, which are relevant to the mortgage lending,",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the",
+              "rationale": "The article discusses the impact of the coronavirus on the financial markets and the broader economy, which affects the mortgage industry. The industry-specific risks include the effects of government stimulus efforts and the performance of counterparties, which are relevant to the mortgage lending,",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "About the Company Impac Mortgage Holdings, Inc."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "About the Company Impac Mortgage Holdings, Inc."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "About the Company Impac Mortgage Holdings, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "industry by larger or more efficient companies; issues and system risks related to our technology; ability to successfully create cost and product efficiencies through new",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the",
+              "impact_role": "supply_exposure"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "industry by larger or more efficient companies; issues and system risks related to our technology; ability to successfully create cost and product efficiencies through new",
+              "industry_name_original": "Financials",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the",
+              "impact_role": "supply_exposure"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "industry by larger or more efficient companies; issues and system risks related to our technology; ability to successfully create cost and product efficiencies through new",
+              "industry_name_original": "Real Estate",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the",
+              "impact_role": "supply_exposure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "9d06119a43aa8f280916f1e0d4de05e890b297a3be3c382ce780324e6cdfd69d",
+      "llm_inferred_at": "2026-11-18T09:47:45.055498+00:00",
+      "model_duration_seconds": 16.7439073,
+      "prompt_tokens": 2544,
+      "completion_tokens": 890,
+      "selection": [
+        {
+          "source_id": "1fd9f8dbe32b622c8cbf2ce4",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the",
+              "rationale": "The article discusses the impact of the coronavirus on the U.S. economy and financial markets, which affects the mortgage industry, including the company's operations and financial products.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the",
+              "rationale": "The article discusses the impact of the coronavirus on the U.S. economy and financial markets, which is a broad market-level event affecting the mortgage industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "About the Company Impac Mortgage Holdings, Inc."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "About the Company Impac Mortgage Holdings, Inc."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "About the Company Impac Mortgage Holdings, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "industry by larger or more efficient companies; issues and system risks related to our technology; ability to successfully create cost and product efficiencies through new",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "industry by larger or more efficient companies; issues and system risks related to our technology; ability to successfully create cost and product efficiencies through new",
+              "industry_name_original": "Financials",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "industry by larger or more efficient companies; issues and system risks related to our technology; ability to successfully create cost and product efficiencies through new",
+              "industry_name_original": "Real Estate",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the effects of the various stimulus efforts promulgated by the United States and state and local governments in response to the coronavirus; performance by counterparties to the"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T09:47:45.073035+00:00",
+  "audit": {
+    "source_id": "1fd9f8dbe32b622c8cbf2ce4",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-20-040280-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2020-03-30",
+    "date_quote": "SEC filing datePublished=2020-03-30",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "f3be38020ef100534d3e347bbd23c9803949020e1e47539c1e5ec914a05bee8b",
+    "raw_sha256": "009d406536ab0db1df96038a7cdfd2273915a0b14d604137568c5d4b1eb5164a",
+    "first_seen_at": "2026-11-11T01:32:24.200963+00:00",
+    "fetched_at": "2026-11-13T05:49:09.367162+00:00",
+    "first_extracted_at": "2026-11-13T05:52:01.486093+00:00",
+    "extracted_at": "2026-11-18T09:47:45.058674+00:00",
+    "feature_available_at": "2026-11-18T09:47:45.073035+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "About the Company Impac Mortgage Holdings, Inc.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "About the Company Impac Mortgage Holdings, Inc.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "35a6f7ea4b3bee91595ef393fc6da4abdf6df6aa297ff5f7748dbb3d65914659",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2020_03_30_Finance_Mortgage_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\03bc36eb199d2813e679df70fbf274d1a0f1592d3061b620d30ded85c6c191d6.json",
+      ".runtime\\simple\\model_cache\\13832e63c32646b2cfd0d03501a1e1c1dc8b745e28c188d65103a7a6082ca3fb.json",
+      ".runtime\\simple\\model_cache\\3417ff90fe6e91089d42f1d0e6cf5dae1c866c998239c460a82c27b5d22fa429.json",
+      ".runtime\\simple\\model_cache\\5063e080e285c88abeb3d48302c4b08cb5485f0ddf7f60f9455245c3bc265d4a.json",
+      ".runtime\\simple\\model_cache\\52e7b2c27b8192a91885425082a7afc51c72d904c8d08547df4e80351e2e1516.json",
+      ".runtime\\simple\\model_cache\\711d998dea3c488d7da91aaf48d8e9914fe9a9072fb0da7b86dcf44bddb11e86.json",
+      ".runtime\\simple\\model_cache\\a02a6d07abe1818be237b4080da3815f35eb1adfa5b9b89f753a321c3258b0b8.json",
+      ".runtime\\simple\\model_cache\\bd387377f8bd2f0ee892c67cb8404c62d8bcd0826cef2e6f551de898e5ea50f6.json",
+      ".runtime\\simple\\model_cache\\c2d439dc09965d0e2b0bcbe6977b3c238cc68f6d0102c940145dc5afebfe04aa.json",
+      ".runtime\\simple\\model_cache\\d3c851e30e432fc89e6677d1457a79381515457c266e0d3f7bde85e868179298.json",
+      ".runtime\\simple\\model_cache\\e51b57c01e2e20a5d5835ddbfe07c8030c1820866bc8957e520282a3c94b8600.json",
+      ".runtime\\simple\\model_cache\\f93a455d55227c2f37a7e46ad6b1eba000aa25816cb3416e62eae49b061f1775.json",
+      ".runtime\\simple\\model_cache\\fd4849d035eb724785ea83e2a650efb7db1aad9dd7680d5ef1913509f73d9ae8.json",
+      ".runtime\\simple\\pages\\1fd9f8dbe32b622c8cbf2ce4.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465920040280/tm2014176-1_8k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465920040280/tm2014176-1_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "5084d7c27d3b22eb974b50488fa79dd95b1c0ef4c2b0e15a08ce7977b864c9e7",
+        "text_sha256": "2a1baa5eaac2d817073e06668d9da465d3c54f3518d45bccec7031693d64abd5",
+        "text_start": 0,
+        "text_end": 3178
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465920040280/tm2014176d1_ex99-1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "b4734b6df7890784d2f75252d203b0d0e464c350b82237b3741d8baf30f16992",
+        "text_sha256": "d7895e0a1b667e6fd5c53bb6c2f8b698e06010dc0b502e640d59ff2c747e9633",
+        "text_start": 3180,
+        "text_end": 12425
+      }
+    ],
+    "sec_document_version": 2,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "64f5fa66ff7264d62a08e70d54b3a9a49fac6c0912327c36b669ebc5fcd18db4",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-20-040280-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T09:47:45.055498+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "ddd67879cf16262cbdec9947a61ea424e75555275bc2079640da838a9bfd5986",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "The Company has instituted a two week temporary suspension of all lending activity effective as of the opening of business today, March 30, 2020."
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": "cash position",
+        "object": "Company",
+        "key_period": null,
+        "key_values": null,
+        "conditions": "March 27, 2020",
+        "evidence_type": "explicit",
+        "quote": "The Company’s unrestricted cash position as of the close of business on March 27, 2020 was approximately $80 million."
+      },
+      {
+        "event_type": "risk_incident",
+        "subject": null,
+        "action": "increased competition",
+        "object": "mortgage lending industry",
+        "key_period": null,
+        "key_values": null,
+        "conditions": "larger or more efficient companies",
+        "evidence_type": "explicit",
+        "quote": "increased competition in the mortgage lending industry by larger or more efficient companies"
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only",
+      "market_scope_without_typed_scope"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "13b51bb47fc198f9164416ff6304f4de7faedd6f7e5cf282e6e24a7acc977426",
+    "commit_verified_at": "2026-11-13T05:52:01.576988+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-13T05:52:01.773488+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\1fd9f8dbe32b622c8cbf2ce4.json",
+      ".runtime\\simple\\model_cache\\711d998dea3c488d7da91aaf48d8e9914fe9a9072fb0da7b86dcf44bddb11e86.json",
+      ".runtime\\simple\\model_cache\\5063e080e285c88abeb3d48302c4b08cb5485f0ddf7f60f9455245c3bc265d4a.json",
+      ".runtime\\simple\\model_cache\\52e7b2c27b8192a91885425082a7afc51c72d904c8d08547df4e80351e2e1516.json",
+      ".runtime\\simple\\model_cache\\d3c851e30e432fc89e6677d1457a79381515457c266e0d3f7bde85e868179298.json",
+      ".runtime\\simple\\model_cache\\c2d439dc09965d0e2b0bcbe6977b3c238cc68f6d0102c940145dc5afebfe04aa.json",
+      ".runtime\\simple\\model_cache\\03bc36eb199d2813e679df70fbf274d1a0f1592d3061b620d30ded85c6c191d6.json",
+      ".runtime\\simple\\model_cache\\a02a6d07abe1818be237b4080da3815f35eb1adfa5b9b89f753a321c3258b0b8.json",
+      ".runtime\\simple\\model_cache\\bd387377f8bd2f0ee892c67cb8404c62d8bcd0826cef2e6f551de898e5ea50f6.json",
+      ".runtime\\simple\\model_cache\\e51b57c01e2e20a5d5835ddbfe07c8030c1820866bc8957e520282a3c94b8600.json",
+      ".runtime\\simple\\model_cache\\fd4849d035eb724785ea83e2a650efb7db1aad9dd7680d5ef1913509f73d9ae8.json",
+      ".runtime\\simple\\model_cache\\3417ff90fe6e91089d42f1d0e6cf5dae1c866c998239c460a82c27b5d22fa429.json",
+      ".runtime\\simple\\model_cache\\13832e63c32646b2cfd0d03501a1e1c1dc8b745e28c188d65103a7a6082ca3fb.json",
+      ".runtime\\simple\\model_cache\\f93a455d55227c2f37a7e46ad6b1eba000aa25816cb3416e62eae49b061f1775.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "35a6f7ea4b3bee91595ef393fc6da4abdf6df6aa297ff5f7748dbb3d65914659",
+    "source_verification": "original_body_or_publication_revalidated",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "retrace_original",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/1fd9f8dbe32b622c8cbf2ce4.json",
+      "sha256": "a69de275cf07452ee9fc90264c81877b9e17acaa7a131ba1cd09b2eb6e795b20",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 78.73400000002584
+}

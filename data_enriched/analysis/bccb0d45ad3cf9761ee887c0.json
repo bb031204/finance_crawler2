@@ -1,0 +1,106 @@
+{
+  "source_id": "bccb0d45ad3cf9761ee887c0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_08_Financial-Condition_Financial-Services_sec.json",
+      "sha256": "2990bf052d8a3d7fc7a880ca946c0de2ab60b5731ad5d109724ebb4e2c2297cd",
+      "filename": "2019_01_08_Financial-Condition_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "0720a130a136436aa6300f4b60ba78aff8febf7e79d358866082838077529f9a",
+  "input_hash": "4a50b6be8d6e19b73abbad9490481bf31123efaa4997bbda33d8a4b7460f03db",
+  "matching_audit_hash": "32798afd492c7fcdae4eb4833c4be1ce9a51412ad6775e97234c9655d2ef19c5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "807c9cd6e61d50f7de85a688c31fb63dd4ab3b051248217fb928bf26eb63241b",
+    "raw_sha256": "45efbd0a818e2e8fa79733f7120a1970a7840cda6d65f5d50230c30ef62c27fb",
+    "date_quote": "SEC filing datePublished=2019-01-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312519004285/d685338d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    },
+    {
+      "name": "Medallion Bank",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Bank"
+    }
+  ],
+  "record_hash": "c1f47a249640ca0cc7f9c3348b83293b8687d6fc662c64176182b0da450bbf05",
+  "outputs": [
+    {
+      "path": "US\\2019_01_08_Financial-Condition_Financial-Services_sec.json",
+      "sha256": "d8428eb7a043cd8a975022e2a2cb3194196be0c6184f717e568d531fd096a8f1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+    "fetched_at": "2026-11-11T13:34:40.971879+00:00",
+    "feature_available_at": "2026-11-11T13:35:00.582430+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:47:07.733480+00:00",
+  "feature_available_at": "2026-11-12T14:47:07.742165+00:00",
+  "commit_verified_at": "2026-11-12T14:47:07.742165+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a financial filing, including a preferred stock offering and preliminary financial data, which is relevant for the StockM",
+    "securities": [
+      {
+        "name": "Medallion Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Bank"
+      },
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Medallion Bank": "company",
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source_id": "00bc5984e4c2c3fa0beb1408",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_02_Financial-Results_Financial-Services_sec.json",
+      "sha256": "06f775e9cdba5611282e287b2525e456d518d1db1b8ad630a1f7219e9597de1a",
+      "filename": "2017_02_02_Financial-Results_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "27531b8601a9f4907938b44b07a5f384c888d4ed6c1840c9c309fd58ed943a0d",
+  "input_hash": "ffe7572e2923ca6e62eb320312198533ae0a0882091b65a3748a8b33dddb5792",
+  "matching_audit_hash": "89904a87352f1f87cc2623b82cafbd2195505dcd24d87a2577de8a57d2e42339",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3ff5977adaaab8b955616dfecbe6a77b9ada8b3f4878cc17d0e85fb1457e4b19",
+    "raw_sha256": "d09de9f305aff9c94b7b0ea6a2ccc3296f667665d74da12561e0d4066388eaef",
+    "date_quote": "SEC filing datePublished=2017-02-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000045/000119312517028419/d332913d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nicholas Financial, Inc.",
+      "ticker": "NICK",
+      "exchange": null,
+      "quote": "Nicholas Financial, Inc. (NASDAQ: NICK) announced that for the three months ended December 31, 2016, diluted earnings per share decreased 40% to $0.21 as compared to $0.35 for the three months ended December 31, 2015."
+    }
+  ],
+  "record_hash": "d639c2589f5fbd7a25b4271a6a99ad73a977cbb2946b4f1905e7ddbc302a7617",
+  "outputs": [
+    {
+      "path": "US\\2017_02_02_Financial-Results_Financial-Services_sec.json",
+      "sha256": "edd82b476e5d6dd46e9ea870fc5e8aa9bc734f1eb16097920026fe2f8f2acf64"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+    "fetched_at": "2026-11-11T11:55:57.548799+00:00",
+    "feature_available_at": "2026-11-11T11:56:08.324750+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:12.008540+00:00",
+  "commit_verified_at": "2026-11-12T13:53:12.008540+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nicholas Financial, Inc.",
+        "ticker": "NICK",
+        "exchange": null,
+        "quote": "Nicholas Financial, Inc. (NASDAQ: NICK) announced that for the three months ended December 31, 2016, diluted earnings per share decreased 40% to $0.21 as compared to $0.35 for the three months ended December 31, 2015."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

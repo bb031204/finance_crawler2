@@ -1,0 +1,484 @@
+{
+  "source_id": "48053180366b4be7766f05da",
+  "status": "completed",
+  "source_record_hash": "9222f8a71f2166714cf94aa938f763e93d67e7b68aef2743d30adcbe37d40b06",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2013/01/16/franchising-trends-for-2013.html",
+    "attempted_at": "2026-11-18T13:32:59.194896+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2013/01/16/franchising-trends-for-2013.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T13:33:10.428066+00:00",
+    "source_body_hash": "ad2b8282747a4a5327671e4496a990a05755cf2e2bd419264303520d4d9f27d5",
+    "raw_sha256": "7e9c5858962731cd0261efa6e64d134ef3860ec37c7a3c1344930784dbee32e6",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Franchising Trends for 2013",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2013-01-16T15:12:28+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/48053180366b4be7766f05da.json",
+    "sha256": "6dbde89df01b7830d25f059bed17dff257c2c020114c9cd55e59f0601ceac28d",
+    "bundled_path": "legacy_audit/48053180366b4be7766f05da.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "3b922e87b32faf345f0cd398ec632b5822850a572cf17e58462622425865a55d",
+      "llm_inferred_at": "2026-11-18T13:33:31.076691+00:00",
+      "model_duration_seconds": 20.6264799,
+      "prompt_tokens": 2909,
+      "completion_tokens": 1021,
+      "selection": [
+        {
+          "source_id": "48053180366b4be7766f05da",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The sector includes small-business owners.",
+              "rationale": "The article discusses the franchise industry, which includes small-business owners, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The IFA applauded the passage of the recent agreement to avert the fiscal cliff, but the rising rates for those earning over $400,000 could still hurt some franchisees.",
+              "rationale": "The article references the fiscal cliff agreement and its impact on the broader US market, indicating a market-wide impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "cited a lack of small-business lending as having a negative impact on their businesses. The PlayersDespite of these challenges, modest growth is still expected in 2013 in the areas of employment, output and gross domestic product for franchised businesses. And some sectors within the franchise industry are expected to perform better than others,",
+              "rationale": "The article discusses the impact of small-business lending on franchised businesses, which are part of the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "With the U.S."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "name": "Restaurants",
+              "basis": "explicit",
+              "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The areas of commercial and residential services will likely thrive as well, and demand for business services continues to grow as the economy slowly recovers."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector.",
+              "industry_name_original": "Real Estate",
+              "mechanism": "economic recovery",
+              "confidence": 0.95,
+              "quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "industry_scope_quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+              "industry_name_original": "Restaurants",
+              "mechanism": "consumer behavior",
+              "confidence": 0.9,
+              "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector.",
+              "industry_name_original": "Business Services",
+              "mechanism": "economic recovery",
+              "confidence": 0.9,
+              "quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5a2329076b4c2ecd89ce682f4351993bb4cbe4dddba7b0cc2a89a2d905b13cda",
+      "llm_inferred_at": "2026-11-18T13:33:52.795252+00:00",
+      "model_duration_seconds": 21.7024748,
+      "prompt_tokens": 2953,
+      "completion_tokens": 1173,
+      "selection": [
+        {
+          "source_id": "48053180366b4be7766f05da",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The sector includes small-business owners.",
+              "rationale": "The article discusses the franchise industry as a whole, including small-business owners, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The areas of commercial and residential services will likely thrive as well, and demand for business services continues to grow as the economy slowly recovers.",
+              "rationale": "This sentence indicates that the commercial and residential services sectors within the franchise industry are expected to thrive, showing an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+              "rationale": "This sentence highlights the growth of the quick-service restaurant sector within the franchise industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "cited a lack of small-business lending as having a negative impact on their businesses. The PlayersDespite of these challenges, modest growth is still expected in 2013 in the areas of employment, output and gross domestic product for franchised businesses. And some sectors within the franchise industry are expected to perform better than others,",
+              "rationale": "The article discusses the impact of small-business lending on franchised businesses, which are part of the broader US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "With the U.S."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "name": "Restaurants",
+              "basis": "explicit",
+              "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The areas of commercial and residential services will likely thrive as well, and demand for business services continues to grow as the economy slowly recovers."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector.",
+              "industry_name_original": "Real Estate",
+              "mechanism": "The article indicates that the real estate sector within franchising is expected to grow at a rate that outpaces the rest of the private sector, showing an industry-wide impact.",
+              "confidence": 0.95,
+              "quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "industry_scope_quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+              "industry_name_original": "Restaurants",
+              "mechanism": "The article highlights that the quick-service restaurant sector is expected to lead in growth, indicating an industry-wide impact.",
+              "confidence": 0.95,
+              "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector.",
+              "industry_name_original": "Business Services",
+              "mechanism": "The article indicates that the business services sector within franchising is expected to grow at a rate that outpaces the rest of the private sector, showing an industry-wide impact.",
+              "confidence": 0.9,
+              "quote": "And that growth is expected to continue in 2013 at about the same rate (1.4 percent) and even to outpace the rest of the private sector."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:33:52.813554+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ad2b8282747a4a5327671e4496a990a05755cf2e2bd419264303520d4d9f27d5",
+    "raw_sha256": "7e9c5858962731cd0261efa6e64d134ef3860ec37c7a3c1344930784dbee32e6",
+    "date_quote": "article:published_time=2013-01-16T15:12:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": true,
+    "reason": "Highlights industry growth, policy concerns, and economic trends",
+    "securities": [
+      {
+        "name": "International Franchise Association (IFA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The International Franchise Association (IFA) survey highlights that franchisors are more optimistic about the future than franchisees"
+      },
+      {
+        "name": "Aziz Hashim",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Aziz Hashim, a multiunit quick-service franchisee, who stated that franchisees are being hit from every angle and will expand at a slower rate in 2013"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:0beeae358e6644c8",
+        "name": "Restaurants",
+        "basis": "explicit",
+        "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0beeae358e6644c8",
+        "industry_name_standard": "Restaurants",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:df01973c2ce9dd88",
+        "name": "Business Services",
+        "basis": "explicit",
+        "quote": "The areas of commercial and residential services will likely thrive as well, and demand for business services continues to grow as the economy slowly recovers.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "df01973c2ce9dd88",
+        "industry_name_standard": "Business Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The areas of commercial and residential services will likely thrive as well, and demand for business services continues to grow as the economy slowly recovers.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "International Franchise Association (IFA)": "organization",
+      "Aziz Hashim": "brand"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "48053180366b4be7766f05da",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_01_16_Franchising_Franchise-Industry_cnbc.json",
+        "sha256": "a7dd2bba64f6b05d87e3f2f53464e99acce561afd30f17dff126497c095f1f5c",
+        "filename": "2013_01_16_Franchising_Franchise-Industry_cnbc.json"
+      }
+    ],
+    "original_record_hash": "013ff9d8d5b7e2f9652d35281ed684ae42b75abe6b8808110da76a98c8780c25",
+    "input_hash": "cf2f705ea7d9bb71bc2510e71ea712b8598755256dd88b6fa067e5f1a53a18a6",
+    "matching_audit_hash": "07884a366cc68ea2f0edf7a004894e7afaac56717e6bddd85de0ca69b8fdc45b",
+    "legacy_security_evidence": [],
+    "record_hash": "9222f8a71f2166714cf94aa938f763e93d67e7b68aef2743d30adcbe37d40b06",
+    "outputs": [
+      {
+        "path": "US\\2013_01_16_Franchising_Franchise-Industry_cnbc.json",
+        "sha256": "8cbfa6660984aa6a99f93d805ba36d0bc7667581dcc31884f3ea87cc51dcc1a5"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-01-16",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:27:18.026664+00:00",
+      "fetched_at": "2026-11-11T03:12:38.307311+00:00",
+      "feature_available_at": "2026-11-11T03:13:10.663871+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:33:52.795252+00:00",
+    "feature_available_at": "2026-11-18T13:33:52.813554+00:00",
+    "commit_verified_at": "2026-11-12T15:16:34.624533+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:34.644751+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:31.988735+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Highlights industry growth, policy concerns, and economic trends",
+        "securities": [
+          {
+            "name": "International Franchise Association (IFA)",
+            "ticker": null,
+            "exchange": null,
+            "quote": "The International Franchise Association (IFA) survey highlights that franchisors are more optimistic about the future than franchisees"
+          },
+          {
+            "name": "Aziz Hashim",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Aziz Hashim, a multiunit quick-service franchisee, who stated that franchisees are being hit from every angle and will expand at a slower rate in 2013"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Franchising",
+            "basis": "inferred",
+            "quote": "The franchise industry in 2013 is expected to show cautious optimism"
+          },
+          {
+            "name": "Real estate",
+            "basis": "inferred",
+            "quote": "Real estate franchises are expected to perform well due to the recovering housing market"
+          },
+          {
+            "name": "Quick-service restaurants",
+            "basis": "inferred",
+            "quote": "quick-service restaurants will continue to lead in growth"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry",
+          "market"
+        ],
+        "company_scope_basis": "literal_corporate_entity_mention",
+        "entity_types": {
+          "International Franchise Association (IFA)": "organization",
+          "Aziz Hashim": "brand"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:00:32.022698+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:00:32.030698+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:00:32.011437+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses the franchise industry's growth, challenges, and trends in 2013, including factors like public policy, economic recovery, and sector-specific",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:01:21.680017+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [
+      {
+        "industry_key": "TRSR:0beeae358e6644c8",
+        "industry_scope_quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+        "industry_name_original": "Restaurants",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article highlights that the quick-service restaurant sector is expected to lead in growth, indicating an industry-wide impact.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0beeae358e6644c8",
+        "industry_name_standard": "Restaurants",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "industry",
+        "quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+        "rationale": "This sentence highlights the growth of the quick-service restaurant sector within the franchise industry, indicating an industry-wide impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Quick-service restaurants, already the largest sector in franchising, will continue to lead the way in growth as consumers continue to seek out budget-friendly dining options.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.cnbc.com/2013/01/16/franchising-trends-for-2013.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "9222f8a71f2166714cf94aa938f763e93d67e7b68aef2743d30adcbe37d40b06",
+    "content_hash": "ad2b8282747a4a5327671e4496a990a05755cf2e2bd419264303520d4d9f27d5",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:33:52.800904+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/48053180366b4be7766f05da.json",
+      "sha256": "22f8610f032b1d9b64c932ddfcb7e243960add1bc4791a3fc6fee4ffe3503b2b",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 53.625
+}

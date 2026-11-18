@@ -1,0 +1,222 @@
+{
+  "source_id": "4a8a07fdea9c52421e4c1e86",
+  "status": "completed",
+  "source_record_hash": "49ab973453755c9485bbef22007714ed7c321a13f05a5da46666becf92e5d06a",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000229/0001000229-13-000002-index.html",
+    "attempted_at": "2026-11-18T13:46:13.315455+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000229/0001000229-13-000002-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022913000002/a2012directorresignation.htm",
+    "fetched_at": "2026-11-18T13:46:22.205552+00:00",
+    "source_body_hash": "0167e0ae465f6f1b54d67f09adda5bfdec5c4228a86bd18792a74bc55798b081",
+    "raw_sha256": "178c3ac3db6922e0494de3ce434bfd06e243eedeabb41b8deb5b0ae106d9e343",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022913000002/a2012directorresignation.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "178c3ac3db6922e0494de3ce434bfd06e243eedeabb41b8deb5b0ae106d9e343",
+        "text_sha256": "0167e0ae465f6f1b54d67f09adda5bfdec5c4228a86bd18792a74bc55798b081",
+        "text_start": 0,
+        "text_end": 3242
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2013-01-02",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4a8a07fdea9c52421e4c1e86.json",
+    "sha256": "c0bff61d0e9d9d32e1c0efb9cd8672798efcac49aac6a8d062d35b9e146df68f",
+    "bundled_path": "legacy_audit/4a8a07fdea9c52421e4c1e86.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b7c3858c446f18b9dbabadfaa2c0b293718b7ec82e0aaabdd88a93ee1388438c",
+      "llm_inferred_at": "2026-11-18T13:46:27.485302+00:00",
+      "model_duration_seconds": 5.2570585,
+      "prompt_tokens": 2726,
+      "completion_tokens": 208,
+      "selection": [
+        {
+          "source_id": "4a8a07fdea9c52421e4c1e86",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Core Laboratories N.V.",
+              "rationale": "The article discusses the resignation of a director from Core Laboratories N.V., which is a specific company event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8734",
+              "name": "SERVICES-TESTING LABORATORIES",
+              "basis": "explicit",
+              "quote": "Core Laboratories N.V."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:46:27.499287+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0167e0ae465f6f1b54d67f09adda5bfdec5c4228a86bd18792a74bc55798b081",
+    "raw_sha256": "178c3ac3db6922e0494de3ce434bfd06e243eedeabb41b8deb5b0ae106d9e343",
+    "date_quote": "SEC filing datePublished=2013-01-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022913000002/a2012directorresignation.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary discusses corporate governance changes, including a director's resignation and succession planning, which is relevant to the company's internal and,",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:8734",
+        "name": "SERVICES-TESTING LABORATORIES",
+        "basis": "inferred",
+        "quote": "Core Laboratories N.V.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8734",
+        "industry_name_standard": "SERVICES-TESTING LABORATORIES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Core Laboratories N.V.",
+        "summary_evidence_quote": "Core Laboratories N.V."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Core Laboratories N.V.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "4a8a07fdea9c52421e4c1e86",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_01_02_Corporate-Governance_Energy-Services_sec.json",
+        "sha256": "4e7bf2e5eee30ca9b86d815210f983ff1f2bf8e636f18f0aad776e6f2f63968d",
+        "filename": "2013_01_02_Corporate-Governance_Energy-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "08d4c9fca1a75962ea2626ddbd2564b1b141badebc59df6daa77bcd8508244dd",
+    "input_hash": "a03484f4af59d645e780fd4b53486ca5ff05c063d531f483ec7876f4c18d70a5",
+    "matching_audit_hash": "a662c4ae8d2b79336c4e0486aa8f7583148ffba1a33cc5fa34fdacf3195f357b",
+    "legacy_security_evidence": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "record_hash": "49ab973453755c9485bbef22007714ed7c321a13f05a5da46666becf92e5d06a",
+    "outputs": [
+      {
+        "path": "US\\2013_01_02_Corporate-Governance_Energy-Services_sec.json",
+        "sha256": "7f17563cf2a9accd13a50deed8f9e25652c3135eefcb644d51e92631e61f6e4b"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-01-02",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+      "fetched_at": "2026-11-10T23:14:01.164145+00:00",
+      "feature_available_at": "2026-11-11T09:49:17.438512+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:46:27.485302+00:00",
+    "feature_available_at": "2026-11-18T13:46:27.499287+00:00",
+    "commit_verified_at": "2026-11-12T14:00:26.697438+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Core Laboratories N.V.",
+        "rationale": "The article discusses the resignation of a director from Core Laboratories N.V., which is a specific company event.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Core Laboratories N.V.",
+        "summary_evidence_quote": "Core Laboratories N.V."
+      }
+    ],
+    "relation_quality_flags": [],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000229/0001000229-13-000002-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "49ab973453755c9485bbef22007714ed7c321a13f05a5da46666becf92e5d06a",
+    "content_hash": "0167e0ae465f6f1b54d67f09adda5bfdec5c4228a86bd18792a74bc55798b081",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:46:27.486607+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4a8a07fdea9c52421e4c1e86.json",
+      "sha256": "2d4a19346b2cc934808b0fa7a7b0c2d52d213b9c1b824006871aeacbb73b49f4",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 14.203000000008615
+}

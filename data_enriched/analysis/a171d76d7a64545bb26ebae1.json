@@ -1,0 +1,104 @@
+{
+  "source_id": "a171d76d7a64545bb26ebae1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_05_01_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "e52e7731bad1bc7054b9e99b4f937382fb92e772405eea236974018442f5eced",
+      "filename": "2019_05_01_Monetary-Policy_Central-Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "6f3df7c472cf5e3fa50a0cd9643e21950eb90c96afac3f6fefd00bc9d382a873",
+  "input_hash": "854117d5bbceb65c310f36d059c8ecaf40e39e513c2050a2a5e4887a91a9e7fa",
+  "matching_audit_hash": "7c4b82125b7a6e086040ce4601693168479e7d8fb973a985203a9ec6d3121428",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "66d1c015ba036ef7aae08e4e70ae4de68aa6178a130824c502ca3a6da4151249",
+    "raw_sha256": "d6c1850e936d1043c83b2bb76b8062a67df94b48b7e274689d6e46c08edece5b",
+    "date_quote": "Implementation Note issued May 1, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "92442bfc6b73b66fa5a482dd5829eedb264b47aeae287ba239eb61ba3f660f66",
+  "outputs": [
+    {
+      "path": "US\\2019_05_01_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "d9ea85232072a37c634f82ba3a65e561f107013a14e4e00cd7f1251fae3042f8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-05-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:26.928482+00:00",
+    "fetched_at": "2026-11-10T11:20:45.801540+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.429591+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:49:12.779221+00:00",
+  "feature_available_at": "2026-11-12T14:49:12.788537+00:00",
+  "commit_verified_at": "2026-11-12T14:49:12.788537+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses monetary policy decisions by the Federal Reserve Board, including interest rate adjustments and open market operations.",
+    "securities": [
+      {
+        "name": "Federal Reserve Board",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Board"
+      },
+      {
+        "name": "Federal Open Market Committee (FOMC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Open Market Committee (FOMC)"
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Monetary Policy",
+        "basis": "explicit",
+        "quote": "Monetary Policy"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve Board": "organization",
+      "Federal Open Market Committee (FOMC)": "organization",
+      "Federal Reserve Bank of New York": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

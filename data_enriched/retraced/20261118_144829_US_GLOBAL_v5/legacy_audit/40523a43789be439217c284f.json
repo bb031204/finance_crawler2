@@ -1,0 +1,97 @@
+{
+  "source_id": "40523a43789be439217c284f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_18_Finance_Financial-Services_cnbc.json",
+      "sha256": "a4d84c614a8948bcee9f09168525bdbd2ec7d65d7f58828f156a6488f749a2c1",
+      "filename": "2017_10_18_Finance_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "34ea3a62df07ed65076b8db650d2e06851cb0ebac748735af3abea4b751bcd63",
+  "input_hash": "b0b040efd6e51bd6074fa139d7fc4a51f29bc079bc4d1c07556fa04b5b40b55f",
+  "matching_audit_hash": "92d576328bc2fe8042f7a8cbf6ce5e4f8143cab956ba56c4980af42921e85f6d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c4cbf8b5e8a5f1b71617aed106171d3a5c069e925c1fc19175b632c405e24920",
+    "raw_sha256": "0282fe3e0a0efe4be4660768f32e0220a33b32f010ff5c5d9a8b4bd886f1f47b",
+    "date_quote": "article:published_time=2017-10-18T19:47:38+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "American Express",
+      "ticker": null,
+      "exchange": null,
+      "quote": "American Express"
+    }
+  ],
+  "record_hash": "1d75809319d4abc16e8fea3311728b45048954350cbb879a312e7d8e0072e3c5",
+  "outputs": [
+    {
+      "path": "US\\2017_10_18_Finance_Financial-Services_cnbc.json",
+      "sha256": "1b182c2ee150da1b4ad93f1d3b60e3cbb935051166f76f1ebd59dd65959e8fd9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:59.414568+00:00",
+    "fetched_at": "2026-11-10T19:57:14.696431+00:00",
+    "feature_available_at": "2026-11-10T19:57:37.125130+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:17.243559+00:00",
+  "commit_verified_at": "2026-11-12T13:53:17.243559+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "American Express",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American Express"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

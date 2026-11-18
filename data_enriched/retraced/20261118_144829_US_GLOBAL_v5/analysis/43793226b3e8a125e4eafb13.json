@@ -1,0 +1,243 @@
+{
+  "source_id": "43793226b3e8a125e4eafb13",
+  "status": "completed",
+  "source_record_hash": "98f459a3a3af6e8d89603935f1d4b7cb67b0e8308017cffa05344f3104aa26cb",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001171/0001104659-17-019358-index.html",
+    "attempted_at": "2026-11-18T13:03:40.174425+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001171/0001104659-17-019358-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465917019358/a17-9896_18k.htm",
+    "fetched_at": "2026-11-18T13:03:48.892261+00:00",
+    "source_body_hash": "7f8aef7b9b13fe7e2caff38a6615c012c172a3d854eb33bf103bf4eca71f48ca",
+    "raw_sha256": "726a4a0dfab1fc8a2a684a1f98dbe8cf9319ef24d7c322ecd90876db977ab9cf",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465917019358/a17-9896_18k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "726a4a0dfab1fc8a2a684a1f98dbe8cf9319ef24d7c322ecd90876db977ab9cf",
+        "text_sha256": "7f8aef7b9b13fe7e2caff38a6615c012c172a3d854eb33bf103bf4eca71f48ca",
+        "text_start": 0,
+        "text_end": 6536
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2017-03-27",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/43793226b3e8a125e4eafb13.json",
+    "sha256": "7a28d51719aba2dd442f53858087fec5c4bc28d71fa8c7eebd457e14a1738279",
+    "bundled_path": "legacy_audit/43793226b3e8a125e4eafb13.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "2113cc719e00e732d583a65096d94ef7a473f3d0b8e3cc6a3492868b203e3d0e",
+      "llm_inferred_at": "2026-11-18T13:03:55.960098+00:00",
+      "model_duration_seconds": 7.0488281,
+      "prompt_tokens": 3363,
+      "completion_tokens": 270,
+      "selection": [
+        {
+          "source_id": "43793226b3e8a125e4eafb13",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Effective March 22, 2017, Broadway Financial Corporation (the Company) and Wayne-Kent A.",
+              "rationale": "The event is specific to the company's employment agreement and does not affect the broader industry or market.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "BROADWAY FINANCIAL CORPORATION (Registrant) Date: March 27, 2017 By /s/ Brenda J."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "53c027c668591d2e44a936b7a79f697b914995151126b56db4e4b13c1651816a",
+      "llm_inferred_at": "2026-11-18T13:04:04.126172+00:00",
+      "model_duration_seconds": 8.154388,
+      "prompt_tokens": 3407,
+      "completion_tokens": 420,
+      "selection": [
+        {
+          "source_id": "43793226b3e8a125e4eafb13",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Effective March 22, 2017, Broadway Financial Corporation (the Company) and Wayne-Kent A.",
+              "rationale": "The employment agreement is specific to Broadway Financial Corporation and its executive, Wayne-Kent A. Bradshaw, indicating a company-level impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Payment upon termination of his employment by the Company without Cause (which includes failure of the Board to elect an annual one-year extension of the term of the employment agreement term as described under Term above), by the Executive for Good Reason, or due to Disability. The Severance Payment will be 36 months of the Base Salary and",
+              "rationale": "The severance payment and employment agreement terms are relevant to the company's financial structure and equity implications, which can affect the broader US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "BROADWAY FINANCIAL CORPORATION (Registrant) Date: March 27, 2017 By /s/ Brenda J."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:04:04.141366+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7f8aef7b9b13fe7e2caff38a6615c012c172a3d854eb33bf103bf4eca71f48ca",
+    "raw_sha256": "726a4a0dfab1fc8a2a684a1f98dbe8cf9319ef24d7c322ecd90876db977ab9cf",
+    "date_quote": "SEC filing datePublished=2017-03-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465917019358/a17-9896_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary contains details about an employment agreement involving a company and its executive, including compensation structure and equity incentives.",
+    "securities": [
+      {
+        "name": "Broadway Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Financial Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Broadway Financial Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "43793226b3e8a125e4eafb13",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_03_27_Compensation_Financial-Services_sec.json",
+        "sha256": "4801093eb688889143662cb27c58e941b7d39833386fd1ac30021aedcbc43bba",
+        "filename": "2017_03_27_Compensation_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "1b861bedd48c2b066da96e508da718c73d5c7be393ed6f9f5aad280f1b50034c",
+    "input_hash": "2fd63452326189bdf2edf8f1cd02faf12924dc94420b950db16f878e89bf940e",
+    "matching_audit_hash": "5f7dcc4c3835759983a0b349491e56443b693512122a3b0a8932e15430d6ca75",
+    "legacy_security_evidence": [],
+    "record_hash": "98f459a3a3af6e8d89603935f1d4b7cb67b0e8308017cffa05344f3104aa26cb",
+    "outputs": [
+      {
+        "path": "US\\2017_03_27_Compensation_Financial-Services_sec.json",
+        "sha256": "46969e35cc504e4812a9a5ec98d587e62007a354cc6230e64aef8d7458b71c00"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2017-03-27",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+      "fetched_at": "2026-11-11T12:33:44.221935+00:00",
+      "feature_available_at": "2026-11-11T12:34:00.316757+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:04:04.126172+00:00",
+    "feature_available_at": "2026-11-18T13:04:04.141366+00:00",
+    "commit_verified_at": "2026-11-12T14:39:39.132925+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Effective March 22, 2017, Broadway Financial Corporation (the Company) and Wayne-Kent A.",
+        "rationale": "The employment agreement is specific to Broadway Financial Corporation and its executive, Wayne-Kent A. Bradshaw, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Effective March 22, 2017, Broadway Financial Corporation (the Company) and Wayne-Kent A.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001171/0001104659-17-019358-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "98f459a3a3af6e8d89603935f1d4b7cb67b0e8308017cffa05344f3104aa26cb",
+    "content_hash": "7f8aef7b9b13fe7e2caff38a6615c012c172a3d854eb33bf103bf4eca71f48ca",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:04:04.128611+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/43793226b3e8a125e4eafb13.json",
+      "sha256": "020222bb88973194a0c10d2243954ccc4283d2e4422509a0b63d78f909c67539",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 23.985000000015134
+}

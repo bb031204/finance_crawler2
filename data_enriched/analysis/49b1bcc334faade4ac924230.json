@@ -1,0 +1,102 @@
+{
+  "source_id": "49b1bcc334faade4ac924230",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_06_30_Finance_Financial-Services_cnbc.json",
+      "sha256": "8fd65e4acceaa925d78ffb44f84c2a64c40ed92e5337b0f1eff19be6f4c25fe5",
+      "filename": "2014_06_30_Finance_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "047de86fa468d80f8d76a10fb1b34a8eeafec9cbdd003a896cd967707da3ab52",
+  "input_hash": "638042211cc6509be1cc178176563707be38feed9de752d121b121fb0351576b",
+  "matching_audit_hash": "4250a80d1d556513a38b2dccfe9e27904bbdd1397209b243317754e9435c3dfb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0ac2efe9a8586a20a9ce0dca2e11cdf13d8a904017d3c286d4784f8387b0f5c8",
+    "raw_sha256": "9e0c1981cde463fb930720955c6eeb83af95dbd4a0edfce2034f9e0eea5b6fd5",
+    "date_quote": "article:published_time=2014-06-30T12:30:02+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9a65d1b67d5502504515df07a0b547956679caf6a4dfb96f30755a8dd868defa",
+  "outputs": [
+    {
+      "path": "US\\2014_06_30_Finance_Financial-Services_cnbc.json",
+      "sha256": "566458b35f47a138fc161f7586980a353661f35b6335f62895c1e7dca1a716ac"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-06-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:13.832562+00:00",
+    "fetched_at": "2026-11-10T12:42:19.645126+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.553255+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:16:29.109681+00:00",
+  "feature_available_at": "2026-11-12T14:16:29.143678+00:00",
+  "commit_verified_at": "2026-11-12T14:16:29.143678+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses trends in stock trading, including digital stock avatars, share classes, crowdsourcing, and the impact of AI and electronic trading on Wall 1",
+    "securities": [
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC"
+      },
+      {
+        "name": "NASDAQ",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NASDAQ"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "artificial intelligence"
+      },
+      {
+        "name": "Investment",
+        "basis": "inferred",
+        "quote": "stock trading"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "SEC": "organization",
+      "NASDAQ": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source_id": "c4228a0a79e68b77a563e8b7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_18_Construction_Manufacturing_sec.json",
+      "sha256": "c1829920d425fa12fddd3e7892b51927e16f0e95823c2ed476aebd3e66e2dded",
+      "filename": "2015_02_18_Construction_Manufacturing_sec.json"
+    }
+  ],
+  "original_record_hash": "01b000e201e8fbe63af12fff1cdaf542cb6069f668709ac4b370716764e83772",
+  "input_hash": "a89d3bcc5ba05978ef9a28bf52f01aab0accebbb0a3043f8557c601f41c07e58",
+  "matching_audit_hash": "b7e6cfbe0e549833a01901a443f8cc026bf1f4be20a62516dc4a362d38660da7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "80fb0bfcf628223dc187d5399ef39dc651a3bad2bfae4a31a78eaf9bcb37f0b2",
+    "raw_sha256": "d8c1a11b133967020cf57f03b16379b98b7aeac3fcb309c786ddafea04f750e4",
+    "date_quote": "SEC filing datePublished=2015-02-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000955/000147793215001251/sthc_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SouthCorp Capital, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SouthCorp Capital, Inc."
+    }
+  ],
+  "record_hash": "31b65edaa7f5ec234a213b4b75c1db26289f36a8ab717f9228033cd648d9b1c7",
+  "outputs": [
+    {
+      "path": "US\\2015_02_18_Construction_Manufacturing_sec.json",
+      "sha256": "2e2cdb262a799cb76016d420c976da2ccb0f118b7ee0014fb0f8ec7bbfcec7f4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:29:07.688036+00:00",
+    "feature_available_at": "2026-11-11T10:43:18.033605+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:55.594770+00:00",
+  "commit_verified_at": "2026-11-12T13:52:55.594770+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SouthCorp Capital, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SouthCorp Capital, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Manufacturing",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

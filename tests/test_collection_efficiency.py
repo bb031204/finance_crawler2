@@ -72,7 +72,7 @@ class CollectionEfficiencyTests(unittest.TestCase):
         crawler=self.crawler(RejectBody());page,path=self.cached(crawler)
         report=crawler.collect(resume=True)
         self.assertEqual(report['saved'],0);self.assertEqual(report['summary']['rejected_reasons'],{'content_rejected':1})
-        self.assertTrue(path.is_file())
+        self.assertFalse(path.is_file())
 
     def test_new_unread_webpage_still_uses_qwen_title_screen(self):
         crawler=self.crawler(FakeQwen(useful=False));crawler.queue(candidate())

@@ -1,0 +1,101 @@
+{
+  "source_id": "9b72908a9461e880d7532df1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_09_17_Business_Staffing-Services_yahoo.json",
+      "sha256": "0223c7378e0df22c630ded7bcf011d2f9ffb9363a6a016e199d725f74052580c",
+      "filename": "2015_09_17_Business_Staffing-Services_yahoo.json"
+    }
+  ],
+  "original_record_hash": "2d25cec275a627d56b9510ac4995e0aac6de4d832676293555f639391ffe4e79",
+  "input_hash": "8269ecdcbff19dd95db983fc4ea6dc290729f6ddf36e3efa6f0fcb6c8ad1e56a",
+  "matching_audit_hash": "6b3d599cc24cb2cdec1fcd8ee627a58606fbf5f7c0b5a4975ae225ee356512ff",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9b9a59ab1e3bd9925d897359744ddac1d32426f535df04114e72bf6a082f669e",
+    "raw_sha256": "8ea0cd2b4855ef8d854a8da644820440532bdab09499aa0239f67e1e93ca599e",
+    "date_quote": "Marketwired September 17, 2015 HOUSTON, TX--(Marketwired - Sep 17, 2015) -",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "11b25d57b317dfe21347d638275084ab96ea3abe862b95c9993faf98fb9e499d",
+  "outputs": [
+    {
+      "path": "US\\2015_09_17_Business_Staffing-Services_yahoo.json",
+      "sha256": "86aead2498a88758a3dabbc79486bdd8a2ceec735ceb3f476a506d06aa173730"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-09-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:59.154188+00:00",
+    "fetched_at": "2026-11-10T17:16:51.072697+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.709212+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:29:10.869369+00:00",
+  "feature_available_at": "2026-11-12T14:29:10.899386+00:00",
+  "commit_verified_at": "2026-11-12T14:29:10.899386+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides information about Effex Management Solutions' recognition, growth, and industry focus.",
+    "securities": [
+      {
+        "name": "Effex Management Solutions",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Effex Management Solutions"
+      }
+    ],
+    "industries": [
+      {
+        "name": "staffing",
+        "basis": "explicit",
+        "quote": "staffing and contingent workforce management solutions"
+      },
+      {
+        "name": "manufacturing",
+        "basis": "explicit",
+        "quote": "manufacturing, warehousing, and distribution markets"
+      },
+      {
+        "name": "professional services",
+        "basis": "explicit",
+        "quote": "professional services"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Effex Management Solutions": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

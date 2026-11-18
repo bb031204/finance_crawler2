@@ -1,0 +1,109 @@
+{
+  "source_id": "e11335a70701c3895f1005ca",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_03_21_Company-Announcement_Maritime-Transportation_sec.json",
+      "sha256": "fb04ed56fc156e0269ee708d3bcf915cca904a4c7247372cb787debd870faef1",
+      "filename": "2013_03_21_Company-Announcement_Maritime-Transportation_sec.json"
+    }
+  ],
+  "original_record_hash": "a9967cdd89283746492ea9e99fd0cce31acefa86281fa3e2fe91f945f59fe9c7",
+  "input_hash": "47f94fd05e8e62c43fb8d70160b3e78bc836cd86bd4dab1bb2f9b070f3fc1a88",
+  "matching_audit_hash": "e62c0f67087cf8781ef66ac26aa18059540f7c66d4c84e57c803d8f78a71c7c6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "02ee62b9f72dd179f1ab68d4da9c8b6d4fb580c5ca4e4b7f8a3772179f1cfcea",
+    "raw_sha256": "9fd268eff4700148955bd999c71c3adacaa7e79f75e6ea26eb20b91b72845174",
+    "date_quote": "Published=2013-03-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000177/000091957413002481/d1368304_6-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nordic American Tankers Limited",
+      "ticker": "NAT",
+      "exchange": null,
+      "quote": "Nordic American Tankers Limited (NYSE:NAT)"
+    },
+    {
+      "name": "NAT",
+      "ticker": null,
+      "exchange": null,
+      "quote": "NAT is a company built on quality in all respects."
+    }
+  ],
+  "record_hash": "0cabeb8a12f68330b0424d8b5cf053980ecb2915aa7e9a037ce5dfd75e68c28d",
+  "outputs": [
+    {
+      "path": "US\\2013_03_21_Company-Announcement_Maritime-Transportation_sec.json",
+      "sha256": "12b595f4e69332d8689a4aef716340fa41d2a161f93b0fb4d9aaf4b4050f53ef"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-03-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.188895+00:00",
+    "fetched_at": "2026-11-10T23:09:30.195407+00:00",
+    "feature_available_at": "2026-11-10T23:10:10.101764+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:46.136309+00:00",
+  "commit_verified_at": "2026-11-12T13:52:46.136309+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nordic American Tankers Limited",
+        "ticker": "NAT",
+        "exchange": null,
+        "quote": "Nordic American Tankers Limited (NYSE:NAT)"
+      },
+      {
+        "name": "NAT",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NAT is a company built on quality in all respects."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Marine Transportation",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

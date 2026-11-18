@@ -1,0 +1,133 @@
+{
+  "source_id": "59e8e527ba52161eb229496d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_04_retail_retail_cnbc.json",
+      "sha256": "3891437167b4cbbd993d99bd8eb0f35a20dbac8dcf86fd39ed464d51ec2bd981",
+      "filename": "2017_10_04_retail_retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "4d2bb0567b656ef2af2fb066b74c8397c4a3c88f6d4d3f8e40b28af51fbff6f6",
+  "input_hash": "fd6e9c0a334a154cace86f1f45586eb67d14f3b4989abdab7782d4e5037b9a77",
+  "matching_audit_hash": "6eac01dd6568bcf65fcfc649680ba33e6d0055624654d80e5926cbc011f33300",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "254823e246cfd73ee634f2078c8410bc2fb4208c88b27fd66a531632d5c472d4",
+    "raw_sha256": "fa620ebe506f1ac7557f7da9c0d1921b71bf8a79580a88586654d626d3ce8f5d",
+    "date_quote": "article:published_time=2017-10-04T16:04:42+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Whole Foods Market Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Whole Foods Market Inc."
+    },
+    {
+      "name": "Kroger",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Kroger"
+    },
+    {
+      "name": "JPMorgan",
+      "ticker": null,
+      "exchange": null,
+      "quote": "JPMorgan"
+    },
+    {
+      "name": "Whole Foods",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Whole Foods CEO says Amazon helped it escape high-priced image"
+    }
+  ],
+  "record_hash": "63380f123b3f0c4f6c230cb57d937e7062a16ed4171f73ef6086d50b0809610b",
+  "outputs": [
+    {
+      "path": "US\\2017_10_04_retail_retail_cnbc.json",
+      "sha256": "2b5a167cd1fb330dbd89a59681fecba6444dc1302681f62797635aeb0f3d0a01"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:46.064972+00:00",
+    "fetched_at": "2026-11-10T21:49:41.029903+00:00",
+    "feature_available_at": "2026-11-10T21:50:06.069087+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:16.981698+00:00",
+  "commit_verified_at": "2026-11-12T13:53:16.981698+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Whole Foods Market Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Whole Foods Market Inc."
+      },
+      {
+        "name": "Kroger",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kroger"
+      },
+      {
+        "name": "JPMorgan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "JPMorgan"
+      },
+      {
+        "name": "Whole Foods",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Whole Foods CEO says Amazon helped it escape high-priced image"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

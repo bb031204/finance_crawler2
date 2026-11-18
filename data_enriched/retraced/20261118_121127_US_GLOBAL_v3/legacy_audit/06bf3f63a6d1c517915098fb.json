@@ -1,0 +1,91 @@
+{
+  "source_id": "06bf3f63a6d1c517915098fb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_29_Energy_Coal_bloomberg.json",
+      "sha256": "24f74f2ed611925d2ea3e5b3c216e5fc7422d7ffb3a7e9d9424b4d84bfb48e2e",
+      "filename": "2019_10_29_Energy_Coal_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "9e0f014001b3b4f5b6daaec194b3596faf49d896124eade63d1c28e1f4157407",
+  "input_hash": "ad834f728257c67aad8c402a5527804dc7586f61f015864dcbbbf31d20fdacc6",
+  "matching_audit_hash": "15f6116ba39f544f515710785a6858d668582b4dad8740080cb552c4154c6ee0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dcb2ca59149e7ded87a4b0a3bc81932ad997619a293acc7b58b7f14224b4d235",
+    "raw_sha256": "15c718f93fa39411be8e8fae94fbcfa096850e381b24cfc2b9898aa37d5d6eb6",
+    "date_quote": "October 29, 2019 at 9:08 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9778790f3b6376f660eeaf36326b81c67ea9b90775ec336c6174bc09af9e27ef",
+  "outputs": [
+    {
+      "path": "US\\2019_10_29_Energy_Coal_bloomberg.json",
+      "sha256": "9747f2a31c1ae96878e6a75b3c431eb33e824892bc9277f7d26613966b0e5b14"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:02:18.504579+00:00",
+    "fetched_at": "2026-11-10T13:24:57.464255+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.356039+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:09.101039+00:00",
+  "feature_available_at": "2026-11-12T14:51:09.111339+00:00",
+  "commit_verified_at": "2026-11-12T14:51:09.111339+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses financial challenges, bankruptcy, restructuring, and the end of an era for Murray Energy Corp, providing concrete operating results and M&",
+    "securities": [
+      {
+        "name": "Murray Energy Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Murray Energy Corp"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Coal industry",
+        "basis": "explicit",
+        "quote": "coal industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Murray Energy Corp": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

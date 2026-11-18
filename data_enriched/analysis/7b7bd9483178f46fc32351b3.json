@@ -1,0 +1,137 @@
+{
+  "source_id": "7b7bd9483178f46fc32351b3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_13_Technology_Wearable-Technology_cnbc.json",
+      "sha256": "23d6c205b838f2e9ea1a90570c42e08f865c7cd3f913c3c864fb44989363e394",
+      "filename": "2016_01_13_Technology_Wearable-Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "2ef896530661e6c551e43daab339b239fae74a58c3eac3a006c5d726025232a8",
+  "input_hash": "ed315dc4fc988b76d748104d1fcc5af70f4c8efce7a875ce4877d9b0c9415362",
+  "matching_audit_hash": "58ab3bc8c5848f67e290bc84f28fe42d09979254117d91ea8ec02689c55ef3cb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b189588fd8b1e1cd0a59f64cf61249febc8d5f6d8d49c0cefef6a2b1010fbff7",
+    "raw_sha256": "1dd92acbb78d9f847bf2c5c6a644c613337b4bbd0c425b81eaad31753db23a00",
+    "date_quote": "article:published_time=2016-01-13T12:40:27+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2ce5fb26ec088dc20661230921a3ef3c200a22625fe3ee3f28a043dd8ac3d00b",
+  "outputs": [
+    {
+      "path": "US\\2016_01_13_Technology_Wearable-Technology_cnbc.json",
+      "sha256": "9f2059221b0c6261d98c000374a4c9552185e8c012ece65b645a8588a37d44fc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:50.688868+00:00",
+    "fetched_at": "2026-11-10T17:51:22.270615+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.054890+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:05.706741+00:00",
+  "feature_available_at": "2026-11-12T14:30:05.744248+00:00",
+  "commit_verified_at": "2026-11-12T14:30:05.744248+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the development and market potential of smart clothing, including companies and technologies involved.",
+    "securities": [
+      {
+        "name": "Alphabet",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alphabet"
+      },
+      {
+        "name": "Samsung",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Samsung"
+      },
+      {
+        "name": "Intel",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Intel"
+      },
+      {
+        "name": "DuPont",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DuPont"
+      },
+      {
+        "name": "OMsignal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "OMsignal"
+      },
+      {
+        "name": "S&P Capital IQ",
+        "ticker": null,
+        "exchange": null,
+        "quote": "S&P Capital IQ"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Wearable technology",
+        "basis": "explicit",
+        "quote": "wearable technology market"
+      },
+      {
+        "name": "Smart clothing",
+        "basis": "inferred",
+        "quote": "smart clothes"
+      },
+      {
+        "name": "Textile manufacturing",
+        "basis": "inferred",
+        "quote": "embedding of hardware into fabric using standard industrial looms"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Alphabet": "company",
+      "Samsung": "company",
+      "Intel": "company",
+      "DuPont": "company",
+      "OMsignal": "company",
+      "S&P Capital IQ": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "source_id": "6734d3d0929d8cf370b70fb3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_09_13_regulatory_Semiconductor_treasury.json",
+      "sha256": "df09bd1de4e50e808af1bf373faf96db1333c08b4b5b751d8b78d3b4373daa14",
+      "filename": "2017_09_13_regulatory_Semiconductor_treasury.json"
+    }
+  ],
+  "original_record_hash": "b3cce9051eb5b9b1d88022b43ba2b6e0eb44707d36aeff94608d6624ed1e4f85",
+  "input_hash": "5cd0c99e2ccef29e484a5449af13af005761c50aa674da4895a047b0884b8aa6",
+  "matching_audit_hash": "7af4db64c2d1aaf87a31d64816eb6873f8fd791894a1cd12e0d6624dd260a656",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1cacaf50a0c4b39c0fe9525e62705b4c36eabb676e97b0b2099ba1987a6e6559",
+    "raw_sha256": "aa3a5b4fc10f5fe00ed41c0f6bf41ade61e94c23d74cdb13388c2c67a0e83a80",
+    "date_quote": "September 13, 2017 WASHINGTON – As chair of the Committee on Foreign Investment in the United States (CFIUS), Steven T. Mnuchin, Secretary of the Treasury today issued thefollowing",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Lattice Semiconductor Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Lattice Semiconductor Corporation (Lattice)"
+    },
+    {
+      "name": "Canyon Bridge Fund I, LP",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Canyon Bridge Fund I, LP (CBFI)"
+    },
+    {
+      "name": "Yitai Capital Limited",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Yitai Capital Limited (Yitai)"
+    },
+    {
+      "name": "China Venture Capital Fund Corporation Limited",
+      "ticker": null,
+      "exchange": null,
+      "quote": "China Venture Capital Fund Corporation Limited (CVCF)"
+    }
+  ],
+  "record_hash": "5d5522bd66a9d8726801a935bef8fe7928bc0fadae08a413743424406627baf6",
+  "outputs": [
+    {
+      "path": "US\\2017_09_13_regulatory_Semiconductor_treasury.json",
+      "sha256": "5cb0df828bc7821a08620c81a3fe34f0a068533db6cc1e3914673394f1e1105f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-09-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:44.406567+00:00",
+    "fetched_at": "2026-11-11T02:31:40.302413+00:00",
+    "feature_available_at": "2026-11-11T02:32:30.532662+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:16.709314+00:00",
+  "commit_verified_at": "2026-11-12T13:53:16.709314+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Lattice Semiconductor Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lattice Semiconductor Corporation (Lattice)"
+      },
+      {
+        "name": "Canyon Bridge Fund I, LP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Canyon Bridge Fund I, LP (CBFI)"
+      },
+      {
+        "name": "Yitai Capital Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Yitai Capital Limited (Yitai)"
+      },
+      {
+        "name": "China Venture Capital Fund Corporation Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China Venture Capital Fund Corporation Limited (CVCF)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

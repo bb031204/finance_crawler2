@@ -1,0 +1,95 @@
+{
+  "source_id": "ecf3cd07e2ef6e51f42cdfbd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_02_dividend_Financial-Services_sec.json",
+      "sha256": "077356ea0ba695417d84a4c20bd20d978400717771eac8b9e9a4efbd6cb2e1fa",
+      "filename": "2017_03_02_dividend_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "6c8ca678c307377eac2ad6e44906110bfa48b7389c5a54fa8d25301b3f82db7e",
+  "input_hash": "9b2db646fb241176ae21056d5a2cca6ec584507ca6f4ebe57e3206759c2a48d7",
+  "matching_audit_hash": "b009a48d50fc8d39c345940b6c25dfbe731aa3cf3a7a39dbabedfc14147c194b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "907fa18465a4968d77577d2257a9176a7f99e4733f59bab1c22da679869a6339",
+    "raw_sha256": "565f4b6904d462fc884268bbe2218f14b7eca173470852540ceb5dc524463303",
+    "date_quote": "SEC filing datePublished=2017-03-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000155837017001285/ktyb-20170302x8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "KENTUCKY BANCSHARES, INC.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "KENTUCKY BANCSHARES, INC."
+    }
+  ],
+  "record_hash": "6fd9d860c4bab258795163ec525ea95fca95ce9cd9c3f8591d68d307a0bd4721",
+  "outputs": [
+    {
+      "path": "US\\2017_03_02_dividend_Financial-Services_sec.json",
+      "sha256": "02f2dfc9c048c645d6640fc3448c3b4635028845f76a286c425aad047195b416"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+    "fetched_at": "2026-11-11T12:07:09.536634+00:00",
+    "feature_available_at": "2026-11-11T12:07:18.244744+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:13.176446+00:00",
+  "commit_verified_at": "2026-11-12T13:53:13.176446+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "KENTUCKY BANCSHARES, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KENTUCKY BANCSHARES, INC."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

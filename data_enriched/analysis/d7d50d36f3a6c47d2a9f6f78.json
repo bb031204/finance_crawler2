@@ -1,0 +1,232 @@
+{
+  "source_id": "d7d50d36f3a6c47d2a9f6f78",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_01_05_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "2f788537705da1110a56b0aaf4a89c6b0d0bf0d2fe8f1526d1da412cf01ac5d6",
+      "filename": "2021_01_05_Mergers-&-Acquisitions_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "3e3b50f9778aac7e5de5b0ff178e8a60804fe4fd08bea13d029373c1ff754c02",
+  "input_hash": "4ce6e34ff8f3b1a6f1bb6d1692d6be6140a89746fe12afce9bdf9bff1ec1ebaa",
+  "matching_audit_hash": "be5002d93bbe51483e354b70f192e0043d641c48a229c289c9b9c94c63cb1d73",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "286286c36d95825a5db21557f3bd61549aa53499542a20e1ab1d784b9c9ca0cb",
+    "raw_sha256": "d089c6d73f1ed7c4f854711ceb8a6780661a6e7f5a45e3ecca81c7e6e5a1c8f9",
+    "date_quote": "SEC filing datePublished=2021-01-05",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000114036121000110/brhc10018609_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "City First Bank of D.C., N.A.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "City First Bank of D.C., N.A."
+    },
+    {
+      "name": "CITY FIRST",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CITY FIRST"
+    }
+  ],
+  "record_hash": "e4e3dfb9f657790cab8bd1e331b45a17ca41949aa04505700c8c9e2b5f4bcc73",
+  "outputs": [
+    {
+      "path": "US\\2021_01_05_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "da4f5fdbfcb3cf68dce94aa612395420a086a31cb6d23fe14f21aa10b5672908"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-01-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.585595+00:00",
+    "fetched_at": "2026-11-11T16:20:09.189036+00:00",
+    "feature_available_at": "2026-11-11T16:21:41.006397+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:13:53.765227+00:00",
+  "feature_available_at": "2026-11-12T15:16:48.049226+00:00",
+  "commit_verified_at": "2026-11-12T15:16:48.049226+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Mergers and stock acquisitions in banking sector",
+    "securities": [
+      {
+        "name": "Broadway Financial Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Financial Corp"
+      },
+      {
+        "name": "CFBanc Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CFBanc Corporation"
+      },
+      {
+        "name": "City First Bank of D.C., N.A.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "City First Bank of D.C., N.A."
+      },
+      {
+        "name": "City First Enterprises, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "City First Enterprises, Inc."
+      },
+      {
+        "name": "Broadway Federal Bank, f.s.b.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Federal Bank, f.s.b."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "City First Bank of D.C., N.A."
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "merger of CFBanc into Broadway Financial Corp"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Broadway Financial Corp": "company",
+      "CFBanc Corporation": "company",
+      "City First Bank of D.C., N.A.": "company",
+      "City First Enterprises, Inc.": "company",
+      "Broadway Federal Bank, f.s.b.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:48.072248+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:13:53.765227+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Mergers and stock acquisitions in banking sector",
+      "securities": [
+        {
+          "name": "Broadway Financial Corp",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Broadway Financial Corp"
+        },
+        {
+          "name": "CFBanc Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "CFBanc Corporation"
+        },
+        {
+          "name": "City First Bank of D.C., N.A.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "City First Bank of D.C., N.A."
+        },
+        {
+          "name": "City First Enterprises, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "City First Enterprises, Inc."
+        },
+        {
+          "name": "Broadway Federal Bank, f.s.b.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Broadway Federal Bank, f.s.b."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "City First Bank of D.C., N.A."
+        },
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "merger of CFBanc into Broadway Financial Corp"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Broadway Financial Corp": "company",
+        "CFBanc Corporation": "company",
+        "City First Bank of D.C., N.A.": "company",
+        "City First Enterprises, Inc.": "company",
+        "Broadway Federal Bank, f.s.b.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:13:53.792258+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:13:53.801448+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:13:53.782096+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a merger between Broadway Financial Corp and CFBanc Corporation, including regulatory approvals, stock acquisitions, and the filing of a S",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:54:13.568553+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

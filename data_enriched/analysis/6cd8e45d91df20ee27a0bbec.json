@@ -1,0 +1,95 @@
+{
+  "source_id": "6cd8e45d91df20ee27a0bbec",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_05_Financial-Report_Textile-and-Apparel_sec.json",
+      "sha256": "1f9041476f4b6f5d7d0d9b098bbd88fd143652e5ccbff20652f16a107d9e436e",
+      "filename": "2014_02_05_Financial-Report_Textile-and-Apparel_sec.json"
+    }
+  ],
+  "original_record_hash": "685fcde48d9b1de168f7ebf9a965a3545ecf79803800d4b4c02852d57d3706de",
+  "input_hash": "ea1fa1c17a72ffbcf1fd800e3a171a463b9e3749d674e2bfc1160954e1ef07d8",
+  "matching_audit_hash": "7f0a41c5b3d1589d32d24e6ec7c77e3c8f326b4e376f567de678965c9a4cceaf",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "493ef3e043e0c004e33c9cb1f8fef0df2a88a1a3bad1a73dc90aaa9374f40a1f",
+    "raw_sha256": "9fd1d7fe4774e1b80ccd2f56e4ee5e1c90000a7722658c2d3572498d4dc9a968",
+    "date_quote": "February 5, 2014 Date of Report (Date of earliest event reported)",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062314000017/q4form8-kearnings.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    }
+  ],
+  "record_hash": "fb5c5f64e2286658d7b3176f7aa4f2cb9e70b9f4224416c7995b767fdfb5b847",
+  "outputs": [
+    {
+      "path": "US\\2014_02_05_Financial-Report_Textile-and-Apparel_sec.json",
+      "sha256": "52b9c834231e027254a71d63788d89b9153e28a9638283998d470b48d0830e95"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+    "fetched_at": "2026-11-10T23:51:04.915080+00:00",
+    "feature_available_at": "2026-11-10T23:51:13.276903+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:49.325507+00:00",
+  "commit_verified_at": "2026-11-12T13:52:49.325507+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Textile and Apparel",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

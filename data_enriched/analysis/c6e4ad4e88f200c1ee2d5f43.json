@@ -1,0 +1,92 @@
+{
+  "source_id": "c6e4ad4e88f200c1ee2d5f43",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_12_10_Banking_Financial-Services_treasury.json",
+      "sha256": "4ad6156ace433ead52ec63c1569d128597399582299bee0a5eb9f09f7ad387e0",
+      "filename": "2012_12_10_Banking_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "25b02fc6d74241851e7da4622d43c891ae8972597533d7ed5b2b6d5ad0aa8f70",
+  "input_hash": "491b582ad0d6950641599b6b00b5a36b17f5a78e2066ef56e2982897ece7a25d",
+  "matching_audit_hash": "cdcb0948b5fbc475ded608ba39e6d786fdf4436638bfd0e2394fd326a5b1e7cd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2c536338fd8353613b8c0a38cd0e7864beda6016dd84e6ec8a0856091d364faf",
+    "raw_sha256": "60da02fc5f6317b6cadbc4d07d5b18d2f98af758fb20626aa3e937e1ef84a16b",
+    "date_quote": "December 10, 2012 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b75a01a595f92eccc18005f3bb1ab929b435bcd88c2e6a19df06cbe53d474635",
+  "outputs": [
+    {
+      "path": "US\\2012_12_10_Banking_Financial-Services_treasury.json",
+      "sha256": "2b7e6b3c9341dfee729904a68226fc5af509b82f39cd0bf733bcca3bb50ea10b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-12-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:44.471087+00:00",
+    "fetched_at": "2026-11-10T14:33:44.885100+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.398361+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T13:59:30.420739+00:00",
+  "feature_available_at": "2026-11-12T13:59:30.430740+00:00",
+  "commit_verified_at": "2026-11-12T13:59:30.430740+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a settlement involving Standard Chartered Bank (SCB) for sanctions violations, including specific regulations and financial penalties.",
+    "securities": [
+      {
+        "name": "Standard Chartered Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Standard Chartered Bank (SCB)"
+      },
+      {
+        "name": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Standard Chartered Bank": "company",
+      "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

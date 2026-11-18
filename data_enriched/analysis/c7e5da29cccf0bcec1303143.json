@@ -1,0 +1,114 @@
+{
+  "source_id": "c7e5da29cccf0bcec1303143",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_12_22_Politics_Public-Policy_cnbc.json",
+      "sha256": "aa5c67a95227b0045e0664bb53e61c1467f667ea7304a3e105859bcee17fbbc0",
+      "filename": "2020_12_22_Politics_Public-Policy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "c9b16919fd13fb1bf202b612bd49335b1e3d08ad8ca56162a51a00fbbb160909",
+  "input_hash": "ca7ec1d5f4772be37b7aa874472a4dd41dd56c460733f38575c1581e6a41fec9",
+  "matching_audit_hash": "bfed3d72b857784b259f7f3f44a9a115c4247cc3db8a32b064b5cc642b9ca631",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e8c5acf6c7986c0668813b1d37f4fac81d2d0268bd6c65b806f17075b7ef677b",
+    "raw_sha256": "76b8a3f7ad74c42715c81b46bbcd1fe57537e8fb4e3df90ce960d82bbff6a7c6",
+    "date_quote": "article:published_time=2020-12-22T00:20:29+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d8aaeda45d18d28dab04b0cc0adffba227b214f86e9f140a14c65b478805e127",
+  "outputs": [
+    {
+      "path": "US\\2020_12_22_Politics_Public-Policy_cnbc.json",
+      "sha256": "293c6a2fb5990a9d6b9d7eeb2f7ce0d6ca75b6b36a0641bd88b1410ee5728f98"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-12-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:11.056924+00:00",
+    "fetched_at": "2026-11-10T19:25:29.226836+00:00",
+    "feature_available_at": "2026-11-10T19:26:14.064787+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:54:10.219924+00:00",
+  "feature_available_at": "2026-11-12T14:54:10.229102+00:00",
+  "commit_verified_at": "2026-11-12T14:54:10.229102+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses a significant legislative action by the U.S. Congress regarding coronavirus relief and government funding, which has implications for the U.S",
+    "securities": [
+      {
+        "name": "U.S. Congress",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Congress"
+      },
+      {
+        "name": "House",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House"
+      },
+      {
+        "name": "Senate",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Senate"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Government",
+        "basis": "explicit",
+        "quote": "government funding bill"
+      },
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "coronavirus relief"
+      },
+      {
+        "name": "Economy",
+        "basis": "inferred",
+        "quote": "economic and public health crisis"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Congress": "organization",
+      "House": "organization",
+      "Senate": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

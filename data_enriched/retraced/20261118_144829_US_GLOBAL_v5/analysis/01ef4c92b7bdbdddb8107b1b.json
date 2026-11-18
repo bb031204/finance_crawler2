@@ -1,0 +1,215 @@
+{
+  "source_id": "01ef4c92b7bdbdddb8107b1b",
+  "status": "completed",
+  "source_record_hash": "d96be7851590174394320d48839da8fa98380c01ce22375d59bffb18de0a889b",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-14-000007-index.html",
+    "attempted_at": "2026-11-18T07:14:45.080068+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "182d78f6168cbd145872c88ca87f6c59ae293a96d376963d70fad50f4d5790c4"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/01ef4c92b7bdbdddb8107b1b.json",
+    "sha256": "424a4a29c68156b7c776d1e7205c05fdce02d5140638769831054d94b18cf7cc",
+    "bundled_path": "legacy_audit/01ef4c92b7bdbdddb8107b1b.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "d6f12856e5c67ec2f54dee23d3b197a186787020bdcc98bd00a68ebd989d721f",
+      "llm_inferred_at": "2026-11-18T07:14:57.605145+00:00",
+      "model_duration_seconds": 7.4829069,
+      "prompt_tokens": 1888,
+      "completion_tokens": 361,
+      "selection": [
+        {
+          "source_id": "01ef4c92b7bdbdddb8107b1b",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SanDisk Corporation released its Q4'13 and FY13 earnings report on January 22, 2014.",
+              "rationale": "The report is specific to SanDisk Corporation and its financial performance, indicating a company-level impact.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "These non-GAAP measures are intended to provide a clearer view of the company's core operating performance and are consistent with financial models used by analysts.",
+              "rationale": "The use of non-GAAP measures is mentioned in the context of financial reporting practices, which can have an industry-wide impact on how financial data is interpreted and modeled.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:9995",
+              "name": "NON-OPERATING ESTABLISHMENTS",
+              "basis": "explicit",
+              "quote": "SanDisk Corporation released its Q4'13 and FY13 earnings report on January 22, 2014."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "71b0c2e1f46352d713b608981267be222b8e052cd9494c32baa6863115cf990b",
+      "llm_inferred_at": "2026-11-18T07:15:03.269087+00:00",
+      "model_duration_seconds": 5.658602,
+      "prompt_tokens": 1932,
+      "completion_tokens": 306,
+      "selection": [
+        {
+          "source_id": "01ef4c92b7bdbdddb8107b1b",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:9995",
+              "name": "NON-OPERATING ESTABLISHMENTS",
+              "basis": "explicit",
+              "quote": "SanDisk Corporation released its Q4'13 and FY13 earnings report on January 22, 2014."
+            },
+            {
+              "industry_key": "SEC-SIC:8741",
+              "name": "SERVICES-MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The report includes both GAAP and non-GAAP financial measures."
+            },
+            {
+              "industry_key": "SEC-SIC:8742",
+              "name": "SERVICES-MANAGEMENT CONSULTING SERVICES",
+              "basis": "explicit",
+              "quote": "These non-GAAP measures are intended to provide a clearer view of the company's core operating performance and are consistent with financial models used by analysts."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:15:03.280504+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "182d78f6168cbd145872c88ca87f6c59ae293a96d376963d70fad50f4d5790c4",
+    "raw_sha256": null,
+    "date_quote": "Date of Report (Date of earliest event reported): January 22, 2014",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018014000007/form8-kxq413earningsrelease.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "01ef4c92b7bdbdddb8107b1b",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_01_22_Earnings-Report_Semiconductor_sec.json",
+        "sha256": "1614897959429d0c0e71b1409bc1659d49e37b8f85287f853f9c14dee3e63c34",
+        "filename": "2014_01_22_Earnings-Report_Semiconductor_sec.json"
+      }
+    ],
+    "original_record_hash": "b990b090dd3558bf384b9e0ab13b5addde8bd8861a13d3f724d646a35ba26a83",
+    "input_hash": "e71b87761a049cd1a09e2315002e18b67227f1e31ce9864005028879bdee6bd4",
+    "matching_audit_hash": "f667700eec0184ee18221d656fe0fd95abf40b370d6111dc4ce75b10751e43f2",
+    "legacy_security_evidence": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "record_hash": "d96be7851590174394320d48839da8fa98380c01ce22375d59bffb18de0a889b",
+    "outputs": [
+      {
+        "path": "US\\2014_01_22_Earnings-Report_Semiconductor_sec.json",
+        "sha256": "e84de6a661c38ab6bf46c0acc4f3c946e6b733cc8192fc35810d3f4775bca8f9"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2014-01-22",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.918277+00:00",
+      "fetched_at": "2026-11-10T23:41:49.919496+00:00",
+      "feature_available_at": "2026-11-10T23:42:15.812438+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:15:03.269087+00:00",
+    "feature_available_at": "2026-11-18T07:15:03.280504+00:00",
+    "commit_verified_at": "2026-11-12T13:52:48.829526+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-14-000007-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "d96be7851590174394320d48839da8fa98380c01ce22375d59bffb18de0a889b",
+    "content_hash": "182d78f6168cbd145872c88ca87f6c59ae293a96d376963d70fad50f4d5790c4",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:15:03.270192+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/01ef4c92b7bdbdddb8107b1b.json",
+      "sha256": "17f27e394991718a9c04e911704f24d1c29fe529e1a57fd37c59285850d2b3b0",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 18.21799999999348
+}

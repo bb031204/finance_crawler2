@@ -67,17 +67,22 @@ class GroupedOptionalMarketTests(unittest.TestCase):
         self.assertTrue(set(ALL_DIRECTIONS)<=set(ENGLISH_DIRECTION_HINTS))
         self.assertTrue(all(ENGLISH_DIRECTION_HINTS[d].isascii() for d in ALL_DIRECTIONS))
 
-    def test_no_ticker_company_article_is_saved_with_empty_public_stock_field(self):
+    def test_no_ticker_company_article_retains_name_with_null_security_fields(self):
         class Model(FakeQwen):
             def summarize(self,*args):
                 return dict(super().summarize(*args),securities=[{'name':'Example Company','ticker':None,'exchange':None,'quote':'Example Company'}],
                     content='Example Company reported growing demand and discussed expansion plans.',keywords=['Example Company','demand'],
                     industries=[{'name':'Consumer services','basis':'inferred','quote':'Example Company'}],impact_scope=['company','industry'])
-        crawler=Crawler(config(),self.root,FakeSources(),Model());crawler.queue(candidate())
+        class EvidenceSources(FakeSources):
+            def fetch(self,item):
+                page=super().fetch(item)
+                page['text']+=' Example Company reported growing demand and discussed expansion plans.'
+                return page
+        crawler=Crawler(config(),self.root,EvidenceSources(),Model());crawler.queue(candidate())
         report=crawler.collect(resume=True)
         self.assertEqual(report['saved'],1)
         row=next(iter(crawler.dataset.rows.values()))[1]
-        self.assertEqual(row['股票实体'],[]);self.assertIn('Example Company',row['主要内容'])
+        self.assertEqual(row['股票实体'],[{'名称':'Example Company','股票代码':None,'交易所':None}]);self.assertIn('Example Company',row['主要内容'])
         self.assertEqual(row['涉及行业'][0]['名称'],'Consumer services');self.assertEqual(row['影响范围'],['company','industry'])
 
     def content_reply(self,content,securities=None):
@@ -96,7 +101,7 @@ class GroupedOptionalMarketTests(unittest.TestCase):
             'date_context':'datePublished=2022-05-17','text':'Home Depot reported quarterly revenue growth as home improvement spending remained strong.'},self.monitoring())
         self.assertEqual(model.calls,2);self.assertTrue(note['useful']);self.assertIn('DIY',note['content'])
         self.assertNotIn('(HD)',note['content']);self.assertNotIn('HD',note['keywords']);self.assertIn('DIY',note['keywords'])
-        self.assertEqual(public_analysis(note)['股票实体'],[]);self.assertTrue(note['security_cleanup'])
+        self.assertEqual(public_analysis(note)['股票实体'],[{'名称':'Home Depot','股票代码':None,'交易所':None}]);self.assertTrue(note['security_cleanup'])
 
     def test_institution_and_sector_acronyms_are_not_stock_gates(self):
         note={'securities':[],'content':'The IMF discussed growth and DIY retail demand.','keywords':['IMF','DIY','growth']}
@@ -123,7 +128,7 @@ class GroupedOptionalMarketTests(unittest.TestCase):
         model=self.model(reply)
         note=model.summarize({'url':'https://example.com/article','title':'Cosnova Beauty quarterly results','origin_market':'US',
             'date_context':'page.datePublished=2022-05-16T14:00:00+01:00\npage.dateModified=2022-05-16T14:01:56+01:00',
-            'text':dateline+' Cosnova Beauty reported strong operating results and online sales growth.'},self.monitoring())
+            'text':dateline+' Cosnova Beauty reported 15 percent sales growth and stronger online sales.'},self.monitoring())
         self.assertEqual(note['time'],'2022-05-16');self.assertEqual(model.calls,2)
 
     def test_modified_only_evidence_is_still_rejected(self):

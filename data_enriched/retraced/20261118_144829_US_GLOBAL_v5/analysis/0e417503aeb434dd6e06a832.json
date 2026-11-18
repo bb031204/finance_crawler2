@@ -1,0 +1,694 @@
+{
+  "source_id": "0e417503aeb434dd6e06a832",
+  "status": "completed",
+  "source_record_hash": "2d1ae2781e2070e8145c213593b3b56370929d2a7eff2f2bef7006ab92ca0d90",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2019/12/24/5-major-trump-climate-rollbacks-you-might-have-missed-in-2019.html",
+    "attempted_at": "2026-11-18T08:10:14.322538+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2019/12/24/5-major-trump-climate-rollbacks-you-might-have-missed-in-2019.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T08:10:20.702046+00:00",
+    "source_body_hash": "743178635ebf03a677ea1ed1e02dda15b54ded8e4ec7b680836ea6429746011c",
+    "raw_sha256": "50674138def980ba435b6701db26888d4211812d53ecbb96e5c3c99635686c63",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "5 major Trump climate rollbacks you might have missed in 2019",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2019-12-24T13:01:01+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0e417503aeb434dd6e06a832.json",
+    "sha256": "e744e9972a86213e5c38aa1ccf7c5deda53f4741b8c1c26bcedf3a777f9512ba",
+    "bundled_path": "legacy_audit/0e417503aeb434dd6e06a832.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "c1b4362e7dfb31f4ba1e17cde3b1128c2c8e4ec54c0324e2dcaf13c7039caa77",
+      "llm_inferred_at": "2026-11-18T08:10:43.397563+00:00",
+      "model_duration_seconds": 22.6593439,
+      "prompt_tokens": 3615,
+      "completion_tokens": 1113,
+      "selection": [
+        {
+          "source_id": "0e417503aeb434dd6e06a832",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The administration views many of the existing rules as onerous to fossil fuel companies and other major industries.",
+              "rationale": "The article discusses the Trump administration's rollbacks of environmental regulations, which are specifically targeted at industries such as fossil fuel companies and other major industries. This indicates an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The administration has targeted about 85 environmental rules, according to Harvard Law School's rollback tracker.",
+              "rationale": "The article mentions that the administration has targeted about 85 environmental rules, which are specific to companies in the fossil fuel industry and other major industries. This indicates a company-specific impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The administration views many of them as onerous to fossil fuel companies and other major industries.",
+              "rationale": "The article discusses the Trump administration's rollbacks of environmental regulations, which are specifically targeted at industries such as fossil fuel companies and other major industries. This indicates an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "name": "DRILLING OIL & GAS WELLS",
+              "basis": "explicit",
+              "quote": "The administration views many of the existing rules as onerous to fossil fuel companies and other major industries."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "name": "Power Generation",
+              "basis": "explicit",
+              "quote": "The administration has targeted about 85 environmental rules, according to Harvard Law School's rollback tracker."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "The administration views many of the existing rules as onerous to fossil fuel companies and other major industries."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "industry_scope_quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+              "industry_name_original": "DRILLING OIL & GAS WELLS",
+              "mechanism": "The rollbacks of environmental regulations on methane emissions would directly impact the oil and gas industry by reducing the need for monitoring and fixing methane leaks, which could lead to increased emissions and a $",
+              "confidence": 0.95,
+              "quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "industry_scope_quote": "the oil and gas industry $17 million to $19 million annually in compliance costs and remove \"unnecessary\" burdens. By the agency's calculations, the rollback would increase",
+              "industry_name_original": "Power Generation",
+              "mechanism": "The rollbacks of environmental regulations on methane emissions would directly impact the power generation industry by reducing the need for monitoring and fixing methane leaks, which could lead to increased emissions.",
+              "confidence": 0.95,
+              "quote": "the oil and gas industry $17 million to $19 million annually in compliance costs and remove \"unnecessary\" burdens. By the agency's calculations, the rollback would increase"
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "the oil and gas industry $17 million to $19 million annually in compliance costs and remove \"unnecessary\" burdens. By the agency's calculations, the rollback would increase",
+              "industry_name_original": "Energy",
+              "mechanism": "The rollbacks of environmental regulations on methane emissions would directly impact the energy industry by reducing the need for monitoring and fixing methane leaks, which could lead to increased emissions.",
+              "confidence": 0.95,
+              "quote": "the oil and gas industry $17 million to $19 million annually in compliance costs and remove \"unnecessary\" burdens. By the agency's calculations, the rollback would increase"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "506385f586ede12f836b592a5ef9fa9f20428c5d8541e98e156ab54a7a90fa68",
+      "llm_inferred_at": "2026-11-18T08:11:03.249477+00:00",
+      "model_duration_seconds": 19.8284112,
+      "prompt_tokens": 3659,
+      "completion_tokens": 1037,
+      "selection": [
+        {
+          "source_id": "0e417503aeb434dd6e06a832",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The administration views many of the existing rules as onerous to fossil fuel companies and other major industries.",
+              "rationale": "The article discusses the Trump administration's actions that affect the fossil fuel industry and other major industries by rolling back environmental regulations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The administration has targeted about 85 environmental rules, according to Harvard Law School's rollback tracker.",
+              "rationale": "The article mentions the administration's targeting of environmental rules, which affects companies in the fossil fuel industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The Obama-era rule had aimed to protect 60% of the country's water bodies from contamination and keep drinking water safe for about one-third of the country.",
+              "rationale": "The repeal of the clean water rule affects the water and sewer industry, as it impacts water bodies and drinking water safety.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "name": "DRILLING OIL & GAS WELLS",
+              "basis": "explicit",
+              "quote": "The administration views many of the existing rules as onerous to fossil fuel companies and other major industries."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "name": "Power Generation",
+              "basis": "explicit",
+              "quote": "The administration has targeted about 85 environmental rules, according to Harvard Law School's rollback tracker."
+            },
+            {
+              "industry_key": "SEC-SIC:1623",
+              "name": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+              "basis": "explicit",
+              "quote": "The Obama-era rule had aimed to protect 60% of the country's water bodies from contamination and keep drinking water safe for about one-third of the country."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "industry_scope_quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+              "industry_name_original": "DRILLING OIL & GAS WELLS",
+              "mechanism": "The rollback of methane emission regulations directly impacts the oil and gas drilling industry by reducing compliance requirements.",
+              "confidence": 0.95,
+              "quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "industry_scope_quote": "the oil and gas industry $17 million to $19 million annually in compliance costs and remove \"unnecessary\" burdens. By the agency's calculations, the rollback would increase",
+              "industry_name_original": "Power Generation",
+              "mechanism": "The rollback of methane emission regulations affects the power generation industry by reducing compliance costs for oil and gas companies.",
+              "confidence": 0.9,
+              "quote": "The administration has targeted about 85 environmental rules, according to Harvard Law School's rollback tracker."
+            },
+            {
+              "industry_key": "SEC-SIC:1623",
+              "industry_scope_quote": "the oil and gas industry $17 million to $19 million annually in compliance costs and remove \"unnecessary\" burdens. By the agency's calculations, the rollback would increase",
+              "industry_name_original": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+              "mechanism": "The repeal of the clean water rule impacts the water and sewer industry by allowing polluters to discharge toxic substances into waterways without a permit.",
+              "confidence": 0.85,
+              "quote": "The Obama-era rule had aimed to protect 60% of the country's water bodies from contamination and keep drinking water safe for about one-third of the country."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5ade47a33c7111c1dda8227a5832c57b54ab76bc52e04916ed76dbb0cf63ed50",
+      "llm_inferred_at": "2026-11-18T08:11:13.918994+00:00",
+      "model_duration_seconds": 10.6510217,
+      "prompt_tokens": 1999,
+      "completion_tokens": 550,
+      "selection": [
+        {
+          "source_id": "0e417503aeb434dd6e06a832",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "California and 13 other states promised to continue enforcing the stricter rule, a move that could split the country's auto market and set up a financial headache for automakers.",
+              "rationale": "The article discusses the impact of stricter emissions standards on the auto industry, specifically mentioning the push for zero-emissions vehicles and battery-electric and hydrogen-powered cars, which indicates an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars.",
+              "rationale": "The article refers to the state's actions affecting the industry, which includes automakers, indicating a company-level impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "California and 13 other states promised to continue enforcing the stricter rule, a move that could split the country's auto market and set up a financial headache for automakers."
+            },
+            {
+              "industry_key": "TRSR:b975926e17dded7e",
+              "name": "Motor Vehicles",
+              "basis": "explicit",
+              "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars."
+            },
+            {
+              "industry_key": "TRSR:580c48ccabbeef7a",
+              "name": "Electric Utilities: Central",
+              "basis": "explicit",
+              "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "0ba7bfb934de94328d496b71038f6840e9e7e7ab5cda4334d14bfe0f337d362a",
+      "llm_inferred_at": "2026-11-18T08:11:23.936618+00:00",
+      "model_duration_seconds": 10.0097764,
+      "prompt_tokens": 2043,
+      "completion_tokens": 547,
+      "selection": [
+        {
+          "source_id": "0e417503aeb434dd6e06a832",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "California and 13 other states promised to continue enforcing the stricter rule, a move that could split the country's auto market and set up a financial headache for automakers.",
+              "rationale": "The article discusses the impact of stricter emissions standards on the auto industry, indicating a sector-wide policy change that affects the industry as a whole.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars.",
+              "rationale": "The article refers to the industry as a collective entity, indicating that the policy change affects the entire industry, which includes multiple companies.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "California and 13 other states promised to continue enforcing the stricter rule, a move that could split the country's auto market and set up a financial headache for automakers."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars."
+            },
+            {
+              "industry_key": "TRSR:580c48ccabbeef7a",
+              "name": "Electric Utilities: Central",
+              "basis": "explicit",
+              "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:11:23.954025+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "743178635ebf03a677ea1ed1e02dda15b54ded8e4ec7b680836ea6429746011c",
+    "raw_sha256": "50674138def980ba435b6701db26888d4211812d53ecbb96e5c3c99635686c63",
+    "date_quote": "article:published_time=2019-12-24T13:01:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Rollbacks of environmental regulations impact industries and market trends.",
+    "securities": [
+      {
+        "name": "President Donald Trump",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President Donald Trump"
+      },
+      {
+        "name": "Trump administration",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Trump administration"
+      },
+      {
+        "name": "EPA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EPA"
+      },
+      {
+        "name": "California",
+        "ticker": null,
+        "exchange": null,
+        "quote": "California"
+      },
+      {
+        "name": "Obama-era",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Obama-era"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:1623",
+        "name": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+        "basis": "inferred",
+        "quote": "The Obama-era rule had aimed to protect 60% of the country's water bodies from contamination and keep drinking water safe for about one-third of the country.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "1623",
+        "industry_name_standard": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Obama-era rule had aimed to protect 60% of the country's water bodies from contamination and keep drinking water safe for about one-third of the country.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:1381",
+        "industry_scope_quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+        "industry_name_original": "DRILLING OIL & GAS WELLS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The rollback of methane emission regulations directly impacts the oil and gas drilling industry by reducing compliance requirements.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "1381",
+        "industry_name_standard": "DRILLING OIL & GAS WELLS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "DRILLING OIL & GAS WELLS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "TRSR:580c48ccabbeef7a",
+        "name": "Electric Utilities: Central",
+        "basis": "inferred",
+        "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "580c48ccabbeef7a",
+        "industry_name_standard": "Electric Utilities: Central",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "President Donald Trump": "issuer",
+      "Trump administration": "issuer",
+      "EPA": "organization",
+      "California": "issuer",
+      "Obama-era": "issuer"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "0e417503aeb434dd6e06a832",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_12_24_environment_energy_cnbc.json",
+        "sha256": "12cda446e39e27a7bfdaba587331f3c2237d242d9424194fda17ea104d47a55c",
+        "filename": "2019_12_24_environment_energy_cnbc.json"
+      }
+    ],
+    "original_record_hash": "5cae48418d02ac5924175c4d05153e472bbd520773620dce4fc38a515a872265",
+    "input_hash": "b0c7a08c17795ebeddec0bda0fe4ff7baf77a1d3654a4085aba0b74f66cd673f",
+    "matching_audit_hash": "a7d882e136a9c96e82c65e0da07c36e8117e4c6bd866a162776fa39e8c7d3ea8",
+    "legacy_security_evidence": [],
+    "record_hash": "2d1ae2781e2070e8145c213593b3b56370929d2a7eff2f2bef7006ab92ca0d90",
+    "outputs": [
+      {
+        "path": "US\\2019_12_24_environment_energy_cnbc.json",
+        "sha256": "b648856eaf9182240479b3bb5d36e56bf6730f06b77cbbb3d738f79b0d474074"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2019-12-24",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T13:35:09.107486+00:00",
+      "fetched_at": "2026-11-10T14:52:57.149979+00:00",
+      "feature_available_at": "2026-11-10T17:53:23.602745+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T08:11:23.936618+00:00",
+    "feature_available_at": "2026-11-18T08:11:23.954025+00:00",
+    "commit_verified_at": "2026-11-12T15:16:46.673372+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:46.701282+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:26.809060+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Rollbacks of environmental regulations impact industries and market trends.",
+        "securities": [
+          {
+            "name": "President Donald Trump",
+            "ticker": null,
+            "exchange": null,
+            "quote": "President Donald Trump"
+          },
+          {
+            "name": "Trump administration",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Trump administration"
+          },
+          {
+            "name": "EPA",
+            "ticker": null,
+            "exchange": null,
+            "quote": "EPA"
+          },
+          {
+            "name": "California",
+            "ticker": null,
+            "exchange": null,
+            "quote": "California"
+          },
+          {
+            "name": "Obama-era",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Obama-era"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Environmental regulation",
+            "basis": "explicit",
+            "quote": "environmental regulations"
+          },
+          {
+            "name": "Fossil fuel industry",
+            "basis": "inferred",
+            "quote": "fossil fuel companies"
+          },
+          {
+            "name": "Automotive industry",
+            "basis": "explicit",
+            "quote": "automotive industry"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry",
+          "market"
+        ],
+        "entity_types": {
+          "President Donald Trump": "issuer",
+          "Trump administration": "issuer",
+          "EPA": "organization",
+          "California": "issuer",
+          "Obama-era": "issuer"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:12:26.836472+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:12:26.847835+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:12:26.825943+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses significant environmental rollbacks by the Trump administration, impacting industries such as fossil fuels, automotive, and agriculture, with",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:51:19.755636+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:1381",
+        "industry_scope_quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+        "industry_name_original": "DRILLING OIL & GAS WELLS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The rollback of methane emission regulations directly impacts the oil and gas drilling industry by reducing compliance requirements.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "1381",
+        "industry_name_standard": "DRILLING OIL & GAS WELLS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "If adopted, the government would no longer have to require oil and gas companies to implement technology to monitor and fix methane leaks from facilities and pipelines.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SEC-SIC:1623",
+        "industry_scope_quote": "the oil and gas industry $17 million to $19 million annually in compliance costs and remove \"unnecessary\" burdens. By the agency's calculations, the rollback would increase",
+        "industry_name_original": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The repeal of the clean water rule impacts the water and sewer industry by allowing polluters to discharge toxic substances into waterways without a permit.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "The Obama-era rule had aimed to protect 60% of the country's water bodies from contamination and keep drinking water safe for about one-third of the country.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "1623",
+        "industry_name_standard": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The Obama-era rule had aimed to protect 60% of the country's water bodies from contamination and keep drinking water safe for about one-third of the country.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The administration has targeted about 85 environmental rules, according to Harvard Law School's rollback tracker.",
+        "rationale": "The article mentions the administration's targeting of environmental rules, which affects companies in the fossil fuel industry.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The administration has targeted about 85 environmental rules, according to Harvard Law School's rollback tracker.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "The administration views many of the existing rules as onerous to fossil fuel companies and other major industries.",
+        "rationale": "The article discusses the Trump administration's actions that affect the fossil fuel industry and other major industries by rolling back environmental regulations.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The administration views many of the existing rules as onerous to fossil fuel companies and other major industries.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars.",
+        "rationale": "The article refers to the industry as a collective entity, indicating that the policy change affects the entire industry, which includes multiple companies.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The state has set tougher emissions standards that essentially directed the industry to begin unveiling zero-emissions vehicles and battery-electric and hydrogen-powered cars.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2019/12/24/5-major-trump-climate-rollbacks-you-might-have-missed-in-2019.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "2d1ae2781e2070e8145c213593b3b56370929d2a7eff2f2bef7006ab92ca0d90",
+    "content_hash": "743178635ebf03a677ea1ed1e02dda15b54ded8e4ec7b680836ea6429746011c",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T08:11:23.938162+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0e417503aeb434dd6e06a832.json",
+      "sha256": "6708ad24a2988377fb570b984a07dc20d45414949ff1fff0e198c0c7e7c603c9",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 69.64000000001397
+}

@@ -1,0 +1,96 @@
+{
+  "source_id": "c88410515c4b3e5f6be70174",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_03_16_Monetary-Policy_Financial-Services_federalreserve.json",
+      "sha256": "959e2a903782fc68bbe0adc9569a4a21db9219297f73a22488179aa36f3e1386",
+      "filename": "2016_03_16_Monetary-Policy_Financial-Services_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "f0f4b3f41cc2f2056e994d67a8c2e56721399d9d02b8c1c2744c17836f849889",
+  "input_hash": "3a70c33327d4acc5a1a93fb3e403d399356f4c398bd24128b868edb61d801d80",
+  "matching_audit_hash": "64a72921530cd269b85bfeacf9924e2df6a522d17a93b644028a3f8c5fbb9dc9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e3371cf576e7c70189c7cb7847a4151ddd177b71d8cab3d1d05faeffb89fcfbb",
+    "raw_sha256": "d37af8d9a1ed8e392c2f95fa904ce77f523cf6b0c63df467493a97f30259269d",
+    "date_quote": "Implementation Note issued March 16, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Federal Reserve Bank of New York",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Federal Reserve Bank of New York"
+    }
+  ],
+  "record_hash": "a4b808d3b704d740aa59e0e45042a1e9883f4d453b3e9f36dae466b06c4947b8",
+  "outputs": [
+    {
+      "path": "US\\2016_03_16_Monetary-Policy_Financial-Services_federalreserve.json",
+      "sha256": "ba8dafa8e1eacf7e1c1a171e22ffeefdc8684a092d13e83d0bedf301de2b36e4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-03-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:04.923930+00:00",
+    "fetched_at": "2026-11-11T04:37:56.092761+00:00",
+    "feature_available_at": "2026-11-11T04:38:23.266154+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:07.372206+00:00",
+  "commit_verified_at": "2026-11-12T13:53:07.372206+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

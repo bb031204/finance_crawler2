@@ -1,0 +1,300 @@
+{
+  "source_id": "578c559c09d39dfec4195972",
+  "status": "completed",
+  "source_record_hash": "1601a41e3e381241a60f24a6de84055b3414ad060b205b4305963cdf0fd0a602",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001181431-13-011717-index.html",
+    "attempted_at": "2026-11-18T15:19:21.803468+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "97aca85e4ca7312bb29d525667eac5bf54386bee7405ab5809aff7c9373c5dbc"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/578c559c09d39dfec4195972.json",
+    "sha256": "0c2205c5114b961b7ba66d5cebf5d96db9799cc23207517a031f2a5041316fbd",
+    "bundled_path": "legacy_audit/578c559c09d39dfec4195972.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "f448f94be58db3beb99322cc23d302f835e04d230d09443bd07c3912b8069972",
+      "llm_inferred_at": "2026-11-18T15:20:15.759315+00:00",
+      "model_duration_seconds": 8.9345966,
+      "prompt_tokens": 1031,
+      "completion_tokens": 467,
+      "selection": [
+        {
+          "source_id": "578c559c09d39dfec4195972",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "At the Annual Meeting of Stockholders of Geospace Technologies Corporation (GEOSPACE) held on February 21, 2013, stockholders voted on three proposals.",
+              "rationale": "The article discusses specific actions taken by Geospace Technologies Corporation, including director elections, auditor ratification, and executive compensation votes, which are company-specific events.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The filing was signed by Thomas T.",
+              "rationale": "The article is about a financial services company, and the industry is related to financial services, which is a broader sector.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "The filing was signed by Thomas T."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The filing was signed by Thomas T."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The filing was signed by Thomas T."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "e09ff3f895ad02ddddced8d574ed89c73df45f297801ebf5ca8084ddf3cc3571",
+      "llm_inferred_at": "2026-11-18T15:20:21.569523+00:00",
+      "model_duration_seconds": 5.8004884,
+      "prompt_tokens": 1075,
+      "completion_tokens": 324,
+      "selection": [
+        {
+          "source_id": "578c559c09d39dfec4195972",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "At the Annual Meeting of Stockholders of Geospace Technologies Corporation (GEOSPACE) held on February 21, 2013, stockholders voted on three proposals."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Proposal 2 was the ratification of the appointment of UHY, LLP as auditors for the year ending September 30, 2013."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Proposal 3 was an advisory vote on executive compensation."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:20:21.608038+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "97aca85e4ca7312bb29d525667eac5bf54386bee7405ab5809aff7c9373c5dbc",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2013-02-22",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000118143113011717/rrd371403.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Corporate governance actions and shareholder approvals",
+    "securities": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      },
+      {
+        "name": "UHY, LLP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UHY, LLP as auditors"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [],
+    "entity_types": {
+      "Geospace Technologies Corporation": "company",
+      "UHY, LLP": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "578c559c09d39dfec4195972",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_02_22_Corporate-Governance_Technology_sec.json",
+        "sha256": "8fc06fb9269d5c86e47cf68d55cdf66f9f88798d8c52251c2c3c17e43f54f442",
+        "filename": "2013_02_22_Corporate-Governance_Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "e3199d2f6e84f00bf018dc1b49b9b8f2673c34f2de2446ce4da57f7d6316d277",
+    "input_hash": "b4f7cacff54f43a289905f6dfd783d5e9cc3727fc59088d1e12666296044366f",
+    "matching_audit_hash": "99752b16ea43ab387470c45a1757c0ce19a36c6df629f62fd89ccfb8acf29c2e",
+    "legacy_security_evidence": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      }
+    ],
+    "record_hash": "1601a41e3e381241a60f24a6de84055b3414ad060b205b4305963cdf0fd0a602",
+    "outputs": [
+      {
+        "path": "US\\2013_02_22_Corporate-Governance_Technology_sec.json",
+        "sha256": "30cea5d20a70341b900e52d531f4fadd666093adf51d496a1d11712513369924"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2013-02-22",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+      "fetched_at": "2026-11-10T23:38:12.637648+00:00",
+      "feature_available_at": "2026-11-11T09:59:02.482943+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:20:21.569523+00:00",
+    "feature_available_at": "2026-11-18T15:20:21.608038+00:00",
+    "commit_verified_at": "2026-11-12T15:16:34.923650+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:34.940572+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:52.899082+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Corporate governance actions and shareholder approvals",
+        "securities": [
+          {
+            "name": "Geospace Technologies Corporation",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Geospace Technologies Corporation"
+          },
+          {
+            "name": "UHY, LLP",
+            "ticker": null,
+            "exchange": null,
+            "quote": "UHY, LLP as auditors"
+          }
+        ],
+        "industries": [],
+        "impact_scope": [
+          "company"
+        ],
+        "entity_types": {
+          "Geospace Technologies Corporation": "company",
+          "UHY, LLP": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:00:52.926172+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:00:52.936176+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:00:52.918170+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary contains information about corporate governance actions, including director elections, auditor ratification, and executive compensation votes, which",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:04:04.764365+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001115/0001181431-13-011717-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "1601a41e3e381241a60f24a6de84055b3414ad060b205b4305963cdf0fd0a602",
+    "content_hash": "97aca85e4ca7312bb29d525667eac5bf54386bee7405ab5809aff7c9373c5dbc",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:20:21.571022+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/578c559c09d39dfec4195972.json",
+      "sha256": "4e7174de7b9c40b703aea06ace56cf778e87b23a3d15a00ac28f12c3ab7007c4",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 59.812000000005355
+}

@@ -1,0 +1,288 @@
+{
+  "source_id": "0b84a6b964334f3df932d1df",
+  "status": "completed",
+  "source_record_hash": "cc49f2b4a1b15dd0224fa05c15aed08e8e768c68ff81be0db7986d9488491ee5",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-17-079913-index.html",
+    "attempted_at": "2026-11-18T07:56:12.103488+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "7600d2a14efa2730a716a1bed7b64103fa54e917b933f9a8ed35816c8bd0caea"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0b84a6b964334f3df932d1df.json",
+    "sha256": "30e502e2d79f1f7b2654e4dfeb02cd1f2fed222fc8fa8be4af8eef74f476dfb1",
+    "bundled_path": "legacy_audit/0b84a6b964334f3df932d1df.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b16c9d2ce446c294ab97c36b6aa4f123dd883e73b0eb0654be821e825f519fd1",
+      "llm_inferred_at": "2026-11-18T07:56:25.974192+00:00",
+      "model_duration_seconds": 8.8330165,
+      "prompt_tokens": 1814,
+      "completion_tokens": 447,
+      "selection": [
+        {
+          "source_id": "0b84a6b964334f3df932d1df",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On March 7, 2017, Joshua Bekenstein, a director of Waters Corporation, notified the company of his decision to resign as a director, effective immediately.",
+              "rationale": "The resignation of a director is a corporate governance event that directly affects the company's board of directors.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4400",
+              "name": "WATER TRANSPORTATION",
+              "basis": "explicit",
+              "quote": "On March 7, 2017, Joshua Bekenstein, a director of Waters Corporation, notified the company of his decision to resign as a director, effective immediately."
+            },
+            {
+              "industry_key": "SEC-SIC:2086",
+              "name": "BOTTLED & CANNED SOFT DRINKS & CARBONATED WATERS",
+              "basis": "explicit",
+              "quote": "On March 7, 2017, Joshua Bekenstein, a director of Waters Corporation, notified the company of his decision to resign as a director, effective immediately."
+            },
+            {
+              "industry_key": "SEC-SIC:2092",
+              "name": "PREPARED FRESH OR FROZEN FISH & SEAFOODS",
+              "basis": "explicit",
+              "quote": "On March 7, 2017, Joshua Bekenstein, a director of Waters Corporation, notified the company of his decision to resign as a director, effective immediately."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f6fe420085c11c100ccf210a75ef75261ca58ae6a04e3188ed76c2c2cfc9f741",
+      "llm_inferred_at": "2026-11-18T07:56:29.206664+00:00",
+      "model_duration_seconds": 3.225574,
+      "prompt_tokens": 1858,
+      "completion_tokens": 170,
+      "selection": [
+        {
+          "source_id": "0b84a6b964334f3df932d1df",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4400",
+              "name": "WATER TRANSPORTATION",
+              "basis": "explicit",
+              "quote": "On March 7, 2017, Joshua Bekenstein, a director of Waters Corporation, notified the company of his decision to resign as a director, effective immediately."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:56:29.218931+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7600d2a14efa2730a716a1bed7b64103fa54e917b933f9a8ed35816c8bd0caea",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2017-03-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312517079913/d357088d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Director resignation impacts board structure",
+    "securities": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:4400",
+        "name": "WATER TRANSPORTATION",
+        "basis": "inferred",
+        "quote": "On March 7, 2017, Joshua Bekenstein, a director of Waters Corporation, notified the company of his decision to resign as a director, effective immediately.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "4400",
+        "industry_name_standard": "WATER TRANSPORTATION",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On March 7, 2017, Joshua Bekenstein, a director of Waters Corporation, notified the company of his decision to resign as a director, effective immediately."
+      }
+    ],
+    "impact_scope": [],
+    "entity_types": {
+      "Waters Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "0b84a6b964334f3df932d1df",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_03_13_Corporate-Governance_Chemicals_sec.json",
+        "sha256": "99ab017a423d0d6031136198749756d0c800bd6d500e9502db0e31c74bfed894",
+        "filename": "2017_03_13_Corporate-Governance_Chemicals_sec.json"
+      }
+    ],
+    "original_record_hash": "47fd48b3a630cbbd8d33d6bf0ae83f05a795ae5477f041498125d14c28c54144",
+    "input_hash": "45ef11858cd3fb4638a830031e5ca005065451b403632b69b61367c1a4a55852",
+    "matching_audit_hash": "2f322d08f1d4a308464af625e5c0a0688a6845907c0fb217b71540b615abf6b6",
+    "legacy_security_evidence": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "record_hash": "cc49f2b4a1b15dd0224fa05c15aed08e8e768c68ff81be0db7986d9488491ee5",
+    "outputs": [
+      {
+        "path": "US\\2017_03_13_Corporate-Governance_Chemicals_sec.json",
+        "sha256": "068488082c25b0a28e28da3f32c0ddb62ca9641c5abf2057d9c22f4e6733ed59"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2017-03-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.446085+00:00",
+      "fetched_at": "2026-11-11T12:16:34.058441+00:00",
+      "feature_available_at": "2026-11-11T12:16:40.450841+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:56:29.206664+00:00",
+    "feature_available_at": "2026-11-18T07:56:29.218931+00:00",
+    "commit_verified_at": "2026-11-12T15:16:40.946822+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:40.968967+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:39.868784+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Director resignation impacts board structure",
+        "securities": [
+          {
+            "name": "Waters Corporation",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Waters Corporation"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Corporate Governance",
+            "basis": "explicit",
+            "quote": "Corporate Governance"
+          }
+        ],
+        "impact_scope": [
+          "company"
+        ],
+        "entity_types": {
+          "Waters Corporation": "company"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:06:39.892875+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:06:39.903355+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:06:39.884784+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary reports a corporate governance event involving the resignation of a director from Waters Corporation, which is a significant event for the company's",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:39:35.707129+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-17-079913-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "cc49f2b4a1b15dd0224fa05c15aed08e8e768c68ff81be0db7986d9488491ee5",
+    "content_hash": "7600d2a14efa2730a716a1bed7b64103fa54e917b933f9a8ed35816c8bd0caea",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:56:29.206664+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0b84a6b964334f3df932d1df.json",
+      "sha256": "e065f815aa17cc57009181eed3b93f7018c171b2ed75df88ea2c71a3b4cea58a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 17.125
+}

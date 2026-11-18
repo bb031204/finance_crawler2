@@ -1,0 +1,1015 @@
+{
+  "source_id": "3e05e1aed42588b3bc231793",
+  "status": "completed",
+  "source_record_hash": "4b610623f749e821559338d49b3e6e8c54973efabe17e8cd5b4ea56eeca91086",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-16-436203-index.html",
+    "attempted_at": "2026-11-18T12:34:21.008524+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-16-436203-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312516436203/d123101d6k.htm",
+    "fetched_at": "2026-11-18T12:34:38.598798+00:00",
+    "source_body_hash": "bdfcd9416e8dfda412552cb385bd19c52e0d1c6ad235392aa04eb7157f0799c6",
+    "raw_sha256": "6760ac3c07adcbabc50a2f8179f8ba68c34d2922b899c1c3db99437f8bbdda35",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312516436203/d123101d6k.htm",
+        "type": "6-K",
+        "description": "FORM 6-K",
+        "raw_sha256": "6760ac3c07adcbabc50a2f8179f8ba68c34d2922b899c1c3db99437f8bbdda35",
+        "text_sha256": "1b73a563c5cf940a848c67cc977cd800bb0c11de33339d866bce233e7c9047c1",
+        "text_start": 0,
+        "text_end": 3667
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312516436203/d123101dex991.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "b256f8b6e458b4a2a41e6784ecc79e45eb86c28393278aa1a31a047b216b5d2f",
+        "text_sha256": "f58b4874217db8376d76c574cc0249a85784ba7f1dac643c718a995b96289199",
+        "text_start": 3669,
+        "text_end": 49111
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2016-01-25",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3e05e1aed42588b3bc231793.json",
+    "sha256": "54f309bbca8b675a0b4db0f542001b8529b0df88786f7123fa1e99d9b17fde7e",
+    "bundled_path": "legacy_audit/3e05e1aed42588b3bc231793.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "1c00bfe4f222dbf0c2ab4903024d741866a396565a33e8ba9a1b36f8ff791c0a",
+      "llm_inferred_at": "2026-11-18T12:34:57.308809+00:00",
+      "model_duration_seconds": 18.6858936,
+      "prompt_tokens": 4141,
+      "completion_tokens": 840,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "The article discusses SAP's financial results and highlights its performance in the cloud and software sectors, which are part of the Information Technology industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "The article is specifically about SAP's financial results and business highlights, which are directly related to the company's performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "explicit",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "industry_scope_quote": "all regions and industries at the end of 2015, more than doubling quarter over quarter. S/4HANA is also catalyzing broad customer adoption of our entire innovation portfolio. For",
+              "industry_name_original": "Computer Software: Programming, Data Processing",
+              "mechanism": "SAP's cloud and software revenue growth indicates a positive impact on the computer software industry, as the company's performance is directly tied to this sector.",
+              "confidence": 0.95,
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "all regions and industries at the end of 2015, more than doubling quarter over quarter. S/4HANA is also catalyzing broad customer adoption of our entire innovation portfolio. For",
+              "industry_name_original": "Financials",
+              "mechanism": "SAP's financial results and growth in cloud and software revenue indicate a positive impact on the financials industry, as the company's performance is directly tied to this sector.",
+              "confidence": 0.95,
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "6433707a49f78d1185d4e6d98d098ca33788ca818213f9e4831de85fbf4a0e1b",
+      "llm_inferred_at": "2026-11-18T12:35:16.365471+00:00",
+      "model_duration_seconds": 19.0365613,
+      "prompt_tokens": 4185,
+      "completion_tokens": 986,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "The article discusses SAP's financial results and highlights its performance in the cloud and software sectors, which are part of the Information Technology industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "The article is specifically about SAP's financial results and business highlights, which are directly related to the company's performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "explicit",
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "all regions and industries at the end of 2015, more than doubling quarter over quarter. S/4HANA is also catalyzing broad customer adoption of our entire innovation portfolio. For",
+              "industry_name_original": "Financials",
+              "mechanism": "SAP's cloud and software revenue growth indicates a positive impact on the Financials industry due to its cloud solutions and services.",
+              "confidence": 0.95,
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "industry_scope_quote": "all regions and industries at the end of 2015, more than doubling quarter over quarter. S/4HANA is also catalyzing broad customer adoption of our entire innovation portfolio. For",
+              "industry_name_original": "Computer Software: Programming, Data Processing",
+              "mechanism": "SAP's cloud and software revenue growth indicates a positive impact on the Computer Software industry due to its cloud solutions and services.",
+              "confidence": 0.95,
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "industry_scope_quote": "all regions and industries at the end of 2015, more than doubling quarter over quarter. S/4HANA is also catalyzing broad customer adoption of our entire innovation portfolio. For",
+              "industry_name_original": "Real Estate",
+              "mechanism": "SAP's cloud and software revenue growth indicates a positive impact on the Real Estate industry due to its cloud solutions and services.",
+              "confidence": 0.95,
+              "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "4fe87f22558df1b43758a76e8f8961c6594bec9ee5ef94b7e01d54ecb26ebff7",
+      "llm_inferred_at": "2026-11-18T12:35:37.996892+00:00",
+      "model_duration_seconds": 21.603864,
+      "prompt_tokens": 4916,
+      "completion_tokens": 1013,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+              "rationale": "The article discusses SAP's unique capabilities in enabling businesses to connect front and back office operations, which is a significant industry impact in the business services sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+              "rationale": "The article discusses SAP's unique capabilities in enabling businesses to connect front and back office operations, which is a significant company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business",
+              "industry_name_original": "Business Services",
+              "mechanism": "SAP's business network provides a rich open platform and a large ecosystem of customers, suppliers, partners and developers, delivering ever expanding content and innovation.",
+              "confidence": 0.95,
+              "quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business"
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "industry_scope_quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business",
+              "industry_name_original": "Finance: Consumer Services",
+              "mechanism": "SAP's business network provides a rich open platform and a large ecosystem of customers, suppliers, partners and developers, delivering ever expanding content and innovation.",
+              "confidence": 0.95,
+              "quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business",
+              "industry_name_original": "Real Estate",
+              "mechanism": "SAP's business network provides a rich open platform and a large ecosystem of customers, suppliers, partners and developers, delivering ever expanding content and innovation.",
+              "confidence": 0.95,
+              "quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "058cbc7084b8be72d9d70025cee235bbb32fedd7cf6e27a837ce4f546321fdc0",
+      "llm_inferred_at": "2026-11-18T12:35:56.889610+00:00",
+      "model_duration_seconds": 18.8660805,
+      "prompt_tokens": 4960,
+      "completion_tokens": 975,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+              "rationale": "The text discusses SAP's unique capabilities in enabling businesses to connect front and back office operations, which is a business services industry activity.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+              "rationale": "The text directly refers to SAP's unique capabilities, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business",
+              "industry_name_original": "Business Services",
+              "mechanism": "SAP's business network provides a rich open platform and ecosystem, which can influence the business services industry through innovation and content expansion.",
+              "confidence": 0.95,
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "industry_scope_quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business",
+              "industry_name_original": "Finance: Consumer Services",
+              "mechanism": "SAP's business network provides a rich open platform and ecosystem, which can influence the finance and consumer services industry through innovation and content expansion.",
+              "confidence": 0.95,
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business",
+              "industry_name_original": "Real Estate",
+              "mechanism": "SAP's business network provides a rich open platform and ecosystem, which can influence the real estate industry through innovation and content expansion.",
+              "confidence": 0.95,
+              "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "f2fe70ef9dc4ecc8f2ea4738992b1064ac5f516e3af3e1108dd3a2f52d1da259",
+      "llm_inferred_at": "2026-11-18T12:36:06.056927+00:00",
+      "model_duration_seconds": 9.1409445,
+      "prompt_tokens": 4004,
+      "completion_tokens": 387,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SAP continues to anticipate that the fast-growing cloud business along with growth in support revenue will drive a higher share of more predictable revenue.",
+              "rationale": "The article discusses SAP's cloud business and its growth, which is part of the Information Technology industry. The company's focus on cloud subscriptions and support revenue indicates an industry-wide impact on the Information Technology sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP Announces Preliminary Fourth Quarter and Full Year 2015 Results Page 8 Note to editors: To preview and download broadcast-standard stock footage and press photos digitally,",
+              "rationale": "The article is about SAP's financial results and business outlook, which is specific to the company itself.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "SAP continues to anticipate that the fast-growing cloud business along with growth in support revenue will drive a higher share of more predictable revenue."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "51b17a5f4ed5c69eab2d03dfb7dc4f56c5ef2e7aa8f72512b8557c3a98160ac9",
+      "llm_inferred_at": "2026-11-18T12:36:14.966012+00:00",
+      "model_duration_seconds": 8.8891921,
+      "prompt_tokens": 4048,
+      "completion_tokens": 459,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SAP Announces Preliminary Fourth Quarter and Full Year 2015 Results Page 8 Note to editors: To preview and download broadcast-standard stock footage and press photos digitally,",
+              "rationale": "The article discusses SAP's financial results and outlook, which is specific to the company and does not indicate broader industry or market impacts.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Assuming a stable exchange rate environment going forward SAP now expects non-IFRS cloud subscriptions and support revenue in a range of 3.8  4.0 billion in 2017."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "explicit",
+              "quote": "SAP continues to anticipate that the fast-growing cloud business along with growth in support revenue will drive a higher share of more predictable revenue."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "SAP applications and services enable approximately 300,000 customers to operate profitably, adapt continuously, and grow sustainably."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "c1abab9b5842daa073aecc84c0a7d06661c387fe5f22f3f342a717ebb2bd25a5",
+      "llm_inferred_at": "2026-11-18T12:36:29.852844+00:00",
+      "model_duration_seconds": 14.8676815,
+      "prompt_tokens": 4936,
+      "completion_tokens": 650,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-",
+              "rationale": "The article provides detailed financial information for SAP Group, which is a major player in the Information Technology sector, particularly in software and cloud services. The financial data includes revenue, cost of revenue, gross profit, and other operating expenses, which are indicative of the ",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-",
+              "rationale": "The article provides detailed financial information for SAP Group, which is a major player in the Information Technology sector, particularly in software and cloud services. The financial data includes revenue, cost of revenue, gross profit, and other operating expenses, which are indicative of the ",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-"
+            },
+            {
+              "industry_key": "TRSR:c92336aad3ca3697",
+              "name": "Computer Software: Prepackaged Software",
+              "basis": "explicit",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-"
+            },
+            {
+              "industry_key": "TRSR:862ffc59fbd93ff0",
+              "name": "Retail: Computer Software & Peripheral Equipment",
+              "basis": "explicit",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f90bc6cf5057ff562b8ea7180f5adba248959974c6e64ad0ebcd8576815a788a",
+      "llm_inferred_at": "2026-11-18T12:36:43.056036+00:00",
+      "model_duration_seconds": 13.1867472,
+      "prompt_tokens": 4980,
+      "completion_tokens": 644,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Total non-current assets 31,640 29,566 Total assets 41,391 38,565 as at December 31, 2015 and December 31, 2014  millions 2015 2014 Trade and other payables 1,111 1,032 Tax",
+              "rationale": "The financial statements include detailed information about the company's assets, liabilities, and equity, which are indicative of the industry's financial structure and operations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-",
+              "rationale": "The text refers to the financial statements of SAP Group, indicating that the information is specific to the company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:862ffc59fbd93ff0",
+              "name": "Retail: Computer Software & Peripheral Equipment",
+              "basis": "explicit",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-"
+            },
+            {
+              "industry_key": "TRSR:c92336aad3ca3697",
+              "name": "Computer Software: Prepackaged Software",
+              "basis": "explicit",
+              "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "7a63eed3ef8ad15fc23d1e46f4bc53ba766788719c74caf787e6114d920cfccf",
+      "llm_inferred_at": "2026-11-18T12:37:00.931399+00:00",
+      "model_duration_seconds": 17.8546958,
+      "prompt_tokens": 5626,
+      "completion_tokens": 782,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Cost of cloud subscriptions and support 305 70 235 161 30 131 89 80 Cost of software licenses and support 660 76 583 569 72 497 16 17 Cost of cloud and software 964 146 ",
+              "rationale": "The article discusses the cost of cloud subscriptions and software licenses, which are part of the broader computer software industry. These costs are indicative of the industry's operational expenses and financial performance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Operating margin (in %) 20.4 30.5 30.6 24.7 32.1 4.2pp 1.6pp 1.5pp Effective tax rate (in %) 23.3 26.0 24.7 26.1 1.4pp 0.2pp Earnings per share, basic (in ) 2.56 3.77 2.75 3",
+              "rationale": "The article provides specific financial metrics for the company, including operating margin, effective tax rate, and earnings per share, which are directly related to the company's performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "explicit",
+              "quote": "Cost of cloud subscriptions and support 305 70 235 161 30 131 89 80 Cost of software licenses and support 660 76 583 569 72 497 16 17 Cost of cloud and software 964 146 "
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Operating margin (in %) 20.4 30.5 30.6 24.7 32.1 4.2pp 1.6pp 1.5pp Effective tax rate (in %) 23.3 26.0 24.7 26.1 1.4pp 0.2pp Earnings per share, basic (in ) 2.56 3.77 2.75 3"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "1f29723b1a39c47ce0ddf30ee3bbea68dcce3ce9771af3b7acb6438993502035",
+      "llm_inferred_at": "2026-11-18T12:37:16.735097+00:00",
+      "model_duration_seconds": 15.7875857,
+      "prompt_tokens": 5670,
+      "completion_tokens": 786,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Cost of cloud subscriptions and support 305 70 235 161 30 131 89 80 Cost of software licenses and support 660 76 583 569 72 497 16 17 Cost of cloud and software 964 146 ",
+              "rationale": "The article discusses the cost of cloud subscriptions, software licenses, and support, which are core components of the software industry. These costs are directly tied to the operations and financial performance of companies within the software sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Operating margin (in %) 20.4 30.5 30.6 24.7 32.1 4.2pp 1.6pp 1.5pp Effective tax rate (in %) 23.3 26.0 24.7 26.1 1.4pp 0.2pp Earnings per share, basic (in ) 2.56 3.77 2.75 3",
+              "rationale": "The article provides specific financial metrics for the company, including operating margin, effective tax rate, and earnings per share. These metrics are directly related to the company's performance and are not generalized to the industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "explicit",
+              "quote": "Cost of cloud subscriptions and support 305 70 235 161 30 131 89 80 Cost of software licenses and support 660 76 583 569 72 497 16 17 Cost of cloud and software 964 146 "
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Operating margin (in %) 20.4 30.5 30.6 24.7 32.1 4.2pp 1.6pp 1.5pp Effective tax rate (in %) 23.3 26.0 24.7 26.1 1.4pp 0.2pp Earnings per share, basic (in ) 2.56 3.77 2.75 3"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "6e2987d4dd0c6e7685edfd7446cb296d5fbf9d8f67bb3dca1b8c95edc2793f12",
+      "llm_inferred_at": "2026-11-18T12:37:33.151760+00:00",
+      "model_duration_seconds": 16.3965672,
+      "prompt_tokens": 6028,
+      "completion_tokens": 688,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Software licenses and support (non-IFRS) 2,722 3,117 3,185 4,210 13,233 3,150 3,510 3,524 4,749 14,933 Cloud and software (IFRS) 2,939 3,357 3,461 4,558 14,315 3,653 4,062 4,122 5",
+              "rationale": "The article discusses the revenue and performance of SAP's cloud and software segments, which are part of the broader software industry. The data provided includes detailed breakdowns of revenue by region and product lines, indicating the company's significant presence and performance in the cloud, ",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months.",
+              "rationale": "The article provides specific financial metrics and operational data for SAP, indicating the company's internal financial practices and performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:cffd82c6b809c327",
+              "name": "Natural Gas Distribution",
+              "basis": "explicit",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "explicit",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "919a712782a974b040007c6ecd0a73b1520ac96ccecc654bbe9f8283fb2c5d20",
+      "llm_inferred_at": "2026-11-18T12:37:47.113073+00:00",
+      "model_duration_seconds": 13.9472303,
+      "prompt_tokens": 6072,
+      "completion_tokens": 689,
+      "selection": [
+        {
+          "source_id": "3e05e1aed42588b3bc231793",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Software licenses and support (non-IFRS) 2,722 3,117 3,185 4,210 13,233 3,150 3,510 3,524 4,749 14,933 Cloud and software (IFRS) 2,939 3,357 3,461 4,558 14,315 3,653 4,062 4,122 5",
+              "rationale": "The article discusses the revenue and performance of SAP's cloud and software segments, which are part of the broader software industry. The data provided includes detailed breakdowns of revenue by region and product lines, indicating the company's significant presence in the software industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months.",
+              "rationale": "The article provides specific details about SAP's operations, including its financial metrics and performance, which are directly related to the company itself.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:cffd82c6b809c327",
+              "name": "Natural Gas Distribution",
+              "basis": "explicit",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "explicit",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:37:47.170035+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "bdfcd9416e8dfda412552cb385bd19c52e0d1c6ad235392aa04eb7157f0799c6",
+    "raw_sha256": "6760ac3c07adcbabc50a2f8179f8ba68c34d2922b899c1c3db99437f8bbdda35",
+    "date_quote": "January 25, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312516436203/d123101d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAP SE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP SE"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:5226954feafeae18",
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5226954feafeae18",
+        "industry_name_standard": "Real Estate",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "222a36f3f602dee0",
+        "industry_name_standard": "Information Technology",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:7555736bd02b64df",
+        "name": "Computer Software: Programming, Data Processing",
+        "basis": "inferred",
+        "quote": "Cost of cloud subscriptions and support 305 70 235 161 30 131 89 80 Cost of software licenses and support 660 76 583 569 72 497 16 17 Cost of cloud and software 964 146 ",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7555736bd02b64df",
+        "industry_name_standard": "Computer Software: Programming, Data Processing",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Cost of cloud subscriptions and support 305 70 235 161 30 131 89 80 Cost of software licenses and support 660 76 583 569 72 497 16 17 Cost of cloud and software 964 146 ",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3e05e1aed42588b3bc231793",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_01_25_Financial-Report_Information-Technology_sec.json",
+        "sha256": "bb40812a648c5824961311cbbf1250386bf13927695043ca3053c72f815e5905",
+        "filename": "2016_01_25_Financial-Report_Information-Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "91f897874677ffa5354b291116796084511d563559c6fd7555bb6a4408eeb25f",
+    "input_hash": "a2cfef6231fe02476c0d560d4c7ac382e0b76632d560b699afe72a2847628ab5",
+    "matching_audit_hash": "4aee062a20c629da077278ac9f13e7bf4c440a3d63d16e601535c5dfa653c4eb",
+    "legacy_security_evidence": [
+      {
+        "name": "SAP SE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP SE"
+      }
+    ],
+    "record_hash": "4b610623f749e821559338d49b3e6e8c54973efabe17e8cd5b4ea56eeca91086",
+    "outputs": [
+      {
+        "path": "US\\2016_01_25_Financial-Report_Information-Technology_sec.json",
+        "sha256": "26ee8313b65f66802122b8e15cac57413f86fffec4b74d2a2736e41ec9ea970b"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2016-01-25",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:04.847323+00:00",
+      "fetched_at": "2026-11-11T00:57:56.111840+00:00",
+      "feature_available_at": "2026-11-11T00:58:18.859943+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:37:47.113073+00:00",
+    "feature_available_at": "2026-11-18T12:37:47.170035+00:00",
+    "commit_verified_at": "2026-11-12T13:53:03.669144+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "TRSR:5226954feafeae18",
+        "industry_scope_quote": "a rich open platform and a large ecosystem of customers, suppliers, partners and developers delivering ever expanding content and innovation. New cloud bookings for the business",
+        "industry_name_original": "Real Estate",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "SAP's business network provides a rich open platform and ecosystem, which can influence the real estate industry through innovation and content expansion.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5226954feafeae18",
+        "industry_name_standard": "Real Estate",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+        "rationale": "The article is specifically about SAP's financial results and business highlights, which are directly related to the company's performance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SAP SE (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "rationale": "The text directly refers to SAP's unique capabilities, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "rationale": "The text discusses SAP's unique capabilities in enabling businesses to connect front and back office operations, which is a business services industry activity.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SAP is unique because it also enables businesses to connect the front and back office in real-time and fulfill ecommerce in one end-to-end value chain.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "SAP Announces Preliminary Fourth Quarter and Full Year 2015 Results Page 8 Note to editors: To preview and download broadcast-standard stock footage and press photos digitally,",
+        "rationale": "The article discusses SAP's financial results and outlook, which is specific to the company and does not indicate broader industry or market impacts.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SAP Announces Preliminary Fourth Quarter and Full Year 2015 Results Page 8 Note to editors: To preview and download broadcast-standard stock footage and press photos digitally,",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-",
+        "rationale": "The text refers to the financial statements of SAP Group, indicating that the information is specific to the company.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Statements F1-F2 Consolidated Statements of Financial Position F3 Consolidated Statements of Cash Flows F4 Supplementary Financial Information (Unaudited) Reconciliation from Non-",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Operating margin (in %) 20.4 30.5 30.6 24.7 32.1 4.2pp 1.6pp 1.5pp Effective tax rate (in %) 23.3 26.0 24.7 26.1 1.4pp 0.2pp Earnings per share, basic (in ) 2.56 3.77 2.75 3",
+        "rationale": "The article provides specific financial metrics for the company, including operating margin, effective tax rate, and earnings per share. These metrics are directly related to the company's performance and are not generalized to the industry.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Operating margin (in %) 20.4 30.5 30.6 24.7 32.1 4.2pp 1.6pp 1.5pp Effective tax rate (in %) 23.3 26.0 24.7 26.1 1.4pp 0.2pp Earnings per share, basic (in ) 2.56 3.77 2.75 3",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months.",
+        "rationale": "The article provides specific details about SAP's operations, including its financial metrics and performance, which are directly related to the company itself.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SAP calculates DSO by dividing the average invoiced accounts receivables balance of the last 12 months by the average monthly sales of the last 12 months.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-16-436203-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "4b610623f749e821559338d49b3e6e8c54973efabe17e8cd5b4ea56eeca91086",
+    "content_hash": "d23037e3083d265cd4928770c050171f910505721623f35853abe62dd260f32a",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:37:47.117961+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3e05e1aed42588b3bc231793.json",
+      "sha256": "80d594b99258aeafc94f770f3e0426aa0a4d7e7e6d1861ec577485b919f3af53",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 206.17199999999139
+}

@@ -1,0 +1,107 @@
+{
+  "source_id": "f55c632038451062432c4a2d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_01_11_Financial_Banking_sec.json",
+      "sha256": "fd1e0a296d4e4688de305709be2a303615d323e97842e0a18b56804f4e7bd6cd",
+      "filename": "2012_01_11_Financial_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "62321f41f0048ab6c819e5d237dd7e4bfa6598c3a54e3952a26caff1b35a3501",
+  "input_hash": "92fa527e6c14a8bafa94dd047ac609c2935b46651d6ac124b07f3e1193bf8d60",
+  "matching_audit_hash": "d41455d21badb3898fdddd6132ffd11000f6430e05385b80fac1e2e89bd39848",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f826e42c222b57b963f59820333f18c4bb4760e6fc923c0b0e02e0bee09d3eb9",
+    "raw_sha256": "a17990308bb61d794043217b4d53f22c8f346322395932c07b5fe3f2228e4a3d",
+    "date_quote": "Published=2012-01-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000121465912000126/s1101206k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Royal Bank of Canada",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Royal Bank of Canada"
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Apple Inc."
+    }
+  ],
+  "record_hash": "c6d90fb342cd23dfb3803b314d7b65b9cb4c7223256b622897a54c3582e44d8c",
+  "outputs": [
+    {
+      "path": "US\\2012_01_11_Financial_Banking_sec.json",
+      "sha256": "dfc83990bee8e57e992b3cff18307edcb90f44f2069d42d330ec3815e20d689c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.194878+00:00",
+    "fetched_at": "2026-11-10T22:39:47.817106+00:00",
+    "feature_available_at": "2026-11-10T22:39:56.265887+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:36.874315+00:00",
+  "commit_verified_at": "2026-11-12T13:52:36.874315+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      },
+      {
+        "name": "Apple Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Apple Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "source_id": "b8cd058966717def9c2d0b57",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_10_14_Energy_Oil-&-Gas_yahoo.json",
+      "sha256": "cd7f92de32aeb26d83a982061937f762a04db14561cc66a17404518625fce39c",
+      "filename": "2014_10_14_Energy_Oil-&-Gas_yahoo.json"
+    }
+  ],
+  "original_record_hash": "75f930a23f424f6345d1321a6994fea8edee9d08473d8e42fc0f64c5902656d8",
+  "input_hash": "21a8039248d5238eeaa140939630c2da49259087d8bed1a9cb0c513c7cf11b30",
+  "matching_audit_hash": "6625781e0781c6408fefa0fa9adfd1b7c23215fb6449e99b2f0badccf1ebe922",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3ff75ba1951374491f9be8282827e1511c5fa5fb174af029e72a9c1f0b7f645b",
+    "raw_sha256": "bca1ec9355a10787362f2a51001694ca2ce81d3e6dbeca7f3b31f16a5822a433",
+    "date_quote": "page.datePublished=2014-10-14T19:33:30Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Exxon Mobil",
+      "ticker": "XOM",
+      "exchange": null,
+      "quote": "Exxon Mobil (XOM)"
+    },
+    {
+      "name": "ConocoPhillips",
+      "ticker": "COP",
+      "exchange": null,
+      "quote": "ConocoPhillips (COP)"
+    },
+    {
+      "name": "Chevron Corporation",
+      "ticker": "CVX",
+      "exchange": null,
+      "quote": "Chevron Corporation (CVX)"
+    },
+    {
+      "name": "Total SA",
+      "ticker": "TOT",
+      "exchange": null,
+      "quote": "Total SA (TOT)"
+    },
+    {
+      "name": "Energy Select Sector SPDR ETF",
+      "ticker": "XLE",
+      "exchange": null,
+      "quote": "Energy Select Sector SPDR ETF (XLE)"
+    }
+  ],
+  "record_hash": "6441395bda0aa9b75df1cb7d26bf351853ab15ac35b903e718709e8857141719",
+  "outputs": [
+    {
+      "path": "US\\2014_10_14_Energy_Oil-&-Gas_yahoo.json",
+      "sha256": "4800824383488441fdc4c9417495e2448052bcde695f34ef677b298a44a8f5f0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-10-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:36:30.838005+00:00",
+    "fetched_at": "2026-11-10T15:14:41.824495+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.870128+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:53.177872+00:00",
+  "commit_verified_at": "2026-11-12T13:52:53.177872+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Exxon Mobil",
+        "ticker": "XOM",
+        "exchange": null,
+        "quote": "Exxon Mobil (XOM)"
+      },
+      {
+        "name": "ConocoPhillips",
+        "ticker": "COP",
+        "exchange": null,
+        "quote": "ConocoPhillips (COP)"
+      },
+      {
+        "name": "Chevron Corporation",
+        "ticker": "CVX",
+        "exchange": null,
+        "quote": "Chevron Corporation (CVX)"
+      },
+      {
+        "name": "Total SA",
+        "ticker": "TOT",
+        "exchange": null,
+        "quote": "Total SA (TOT)"
+      },
+      {
+        "name": "Energy Select Sector SPDR ETF",
+        "ticker": "XLE",
+        "exchange": null,
+        "quote": "Energy Select Sector SPDR ETF (XLE)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Oil-&-Gas",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

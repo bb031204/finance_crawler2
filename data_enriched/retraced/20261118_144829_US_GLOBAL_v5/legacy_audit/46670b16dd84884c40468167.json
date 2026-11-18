@@ -1,0 +1,96 @@
+{
+  "source_id": "46670b16dd84884c40468167",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_01_23_Politics_Public-Administration_bloomberg.json",
+      "sha256": "832b726158fb4ed2347ca47fc9ed479964335bad219b01859442f95fb54219e6",
+      "filename": "2017_01_23_Politics_Public-Administration_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "0d3d5fea9997f94d290b965c07c0dbb61e2ab0de3b0eeb2d65154c8842d1d6f1",
+  "input_hash": "7dd46b4a0181a9d3f5369c640319cbed44dfc26364afc1f634b0ef5cdd9a0506",
+  "matching_audit_hash": "31c4dfbb1f63f9e8e8031807c9b161d0fd3bc1d9aa4346d769dda1a6cee797bc",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "96d226e2212a253c20de5b0b0e4dfc35923cb1f68f4cdc055694ac4472c875f5",
+    "raw_sha256": "e0e9eee62adaedacc0df06949ff7074c1ae530126cc64b67fcba4a27cdf5d33a",
+    "date_quote": "January 23, 2017 at 6:53 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "482c8b15fe1badaeaacffe3c5d2f2d4e52a0ffef42f2c38db9d0e47f0af3dd4f",
+  "outputs": [
+    {
+      "path": "US\\2017_01_23_Politics_Public-Administration_bloomberg.json",
+      "sha256": "c9df2ddb96864b4d527fa1367e3c4aeeb082145c9ab2c146bd3cb5713787f9aa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-01-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:35:59.661160+00:00",
+    "fetched_at": "2026-11-10T19:19:23.432180+00:00",
+    "feature_available_at": "2026-11-10T19:19:30.552255+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:38:51.809932+00:00",
+  "feature_available_at": "2026-11-12T14:38:51.852205+00:00",
+  "commit_verified_at": "2026-11-12T14:38:51.852205+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses budget proposals and their potential impact on urban policy and public administration, which are relevant to industry and policy analysis.",
+    "securities": [
+      {
+        "name": "Heritage Foundation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Heritage Foundation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Public administration",
+        "basis": "explicit",
+        "quote": "public administration"
+      },
+      {
+        "name": "Urban policy",
+        "basis": "explicit",
+        "quote": "urban policy"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Heritage Foundation": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

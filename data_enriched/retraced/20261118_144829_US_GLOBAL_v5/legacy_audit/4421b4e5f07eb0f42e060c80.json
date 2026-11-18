@@ -1,0 +1,114 @@
+{
+  "source_id": "4421b4e5f07eb0f42e060c80",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_31_SEC-Filing_Financial-Services_sec.json",
+      "sha256": "57c1a0739906713cf4701d3e54f353bced46e8e7bdbeefd23c1fcfe798c3b95d",
+      "filename": "2015_03_31_SEC-Filing_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "dd293ad44a192f253e998e2b9075b50a29bb3f3e9d3a8f2f71f905bab012265b",
+  "input_hash": "5b69e9ca1f0a7f84f3b0d355265df1323831d97ef90cdb29d325bd37cf0d3d8c",
+  "matching_audit_hash": "8eca07d12e6a6583e045157af23d2bb17af5b4872e667ff6140c3710c9862577",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "79b62c49d4f0c44929d121b826d4dc58acae67fa65df8b2b52e659d22e6d97c9",
+    "raw_sha256": "54e15bce26ac4d237e3ea62d0dc76cac447b3a92d64db23fa12d74680ce42c7f",
+    "date_quote": "SEC filing datePublished=2015-03-31",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312515114183/d895015d40f.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    },
+    {
+      "name": "Deloitte LLP",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Consent of Deloitte LLP"
+    }
+  ],
+  "record_hash": "a933ec7da2d50a57733c90f8a895367debcadbd71ea1a228335ad65b4e5d678e",
+  "outputs": [
+    {
+      "path": "US\\2015_03_31_SEC-Filing_Financial-Services_sec.json",
+      "sha256": "a63799d37d2ba194cdf1081f8abb55f33583eac05db88db2dd397db391e42b6a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:45:20.480237+00:00",
+    "feature_available_at": "2026-11-11T00:46:54.538715+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:57.865841+00:00",
+  "commit_verified_at": "2026-11-12T13:52:57.865841+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      },
+      {
+        "name": "Deloitte LLP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Consent of Deloitte LLP"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Real Estate & Asset Management",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

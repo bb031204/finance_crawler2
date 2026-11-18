@@ -1,0 +1,92 @@
+{
+  "source_id": "5d8c59ccef44d0153e447354",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_05_dividend_financial-services_sec.json",
+      "sha256": "df0c004568411d314f6f6ad72e864065dfec3e1d00bfc35798ffdcc2a1e52fa2",
+      "filename": "2018_02_05_dividend_financial-services_sec.json"
+    }
+  ],
+  "original_record_hash": "3528c296dfbc870de24dc630ff7678d40ae7508871aea6fb4b4899534af3223d",
+  "input_hash": "d401a7f205f55a50854988f6884abd8439ff87f8b10dae45a561b57dc4e39b58",
+  "matching_audit_hash": "8798feb9390ad5fcc12585651fc99157b43e72610182726472f39572d3f660f7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6313b527abae6db28e76a1b2047ce8ed8984c3728c976fd5958663eee71d55f6",
+    "raw_sha256": "6c658fef482cf0654c207877ad2e3ee6a94d036c16963df15552acd99bd4e20a",
+    "date_quote": "SEC filing datePublished=2018-02-05",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918001713/asta20180205_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Asta Funding, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Asta Funding, Inc."
+    }
+  ],
+  "record_hash": "cc79017e56ee18dd004a177d476542fdeb6c3bfae4607f220218c206ca4bd394",
+  "outputs": [
+    {
+      "path": "US\\2018_02_05_dividend_financial-services_sec.json",
+      "sha256": "e39778347e68e0f68ba6210b142aaf2ee4da51b66687d97c6c3743607b6b6bca"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.048576+00:00",
+    "fetched_at": "2026-11-11T13:27:22.270045+00:00",
+    "feature_available_at": "2026-11-11T13:27:53.161980+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:56.110971+00:00",
+  "feature_available_at": "2026-11-12T14:42:56.120503+00:00",
+  "commit_verified_at": "2026-11-12T14:42:56.120503+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a special cash dividend declared by Asta Funding, Inc., including the amount, payment date, and record date.",
+    "securities": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asta Funding, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Asta Funding, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

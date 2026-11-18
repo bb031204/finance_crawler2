@@ -1,0 +1,269 @@
+{
+  "source_id": "121a11fb4e651e9a25dde8b1",
+  "status": "completed",
+  "source_record_hash": "90425e8f18bf35c148eed8a81c9fe56c363667e63850457cac35492a6e040248",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000694/0001104659-20-092855-index.html",
+    "attempted_at": "2026-11-18T08:31:50.623765+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "c76a689cbd4e9a591f76de0f6499bbc7ae904a40aff36f9dc61c638696723a1d"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/121a11fb4e651e9a25dde8b1.json",
+    "sha256": "631105f97544e0063c9adea8e591f38a354cc9add551ffb664a7b63cbdfb0379",
+    "bundled_path": "legacy_audit/121a11fb4e651e9a25dde8b1.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "e99550df01604381fb203b8f53296475b3427c089f6ac78437fdb6067cc88f95",
+      "llm_inferred_at": "2026-11-18T08:32:06.819300+00:00",
+      "model_duration_seconds": 11.1572342,
+      "prompt_tokens": 2146,
+      "completion_tokens": 559,
+      "selection": [
+        {
+          "source_id": "121a11fb4e651e9a25dde8b1",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on",
+              "rationale": "The event is specific to NOVAVAX INC and its filing with the SEC, which is a company-level action.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "438,885 shares of the Company’s Series A Convertible Preferred Stock, $0.01 par value, and 32,916 shares of Common Stock, which were acquired by the Selling Stockholders in",
+              "rationale": "The mention of convertible preferred stock and private placement financing suggests involvement in the biotechnology or financial services industry, which is aligned with the TRSR:1a6cc151cbaf00f5 industry code.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:1a6cc151cbaf00f5",
+              "name": "Biotechnology: Biological Products (No Diagnostic Substances)",
+              "basis": "explicit",
+              "quote": "438,885 shares of the Company’s Series A Convertible Preferred Stock, $0.01 par value, and 32,916 shares of Common Stock, which were acquired by the Selling Stockholders in"
+            },
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "e822c24bdd4a0c8e8770e5fd5a097eafa2513fa37a45ade6134ca7385b9fd529",
+      "llm_inferred_at": "2026-11-18T08:32:15.033214+00:00",
+      "model_duration_seconds": 8.2078115,
+      "prompt_tokens": 2190,
+      "completion_tokens": 437,
+      "selection": [
+        {
+          "source_id": "121a11fb4e651e9a25dde8b1",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on",
+              "rationale": "The event is specific to NOVAVAX INC and its filing with the SEC, which is a company-level action.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "438,885 shares of the Company’s Series A Convertible Preferred Stock, $0.01 par value, and 32,916 shares of Common Stock, which were acquired by the Selling Stockholders in",
+              "rationale": "The mention of convertible preferred stock and private placement financing relates to the broader financial and securities industry, which is associated with the SEC-SIC:6200 category.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:32:15.045900+00:00",
+  "audit": {
+    "source_id": "121a11fb4e651e9a25dde8b1",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000694/0001104659-20-092855-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2020-08-10",
+    "date_quote": "SEC filing datePublished=2020-08-10",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "c76a689cbd4e9a591f76de0f6499bbc7ae904a40aff36f9dc61c638696723a1d",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-12T02:43:15.794554+00:00",
+    "fetched_at": "2026-11-14T13:53:56.414536+00:00",
+    "first_extracted_at": "2026-11-14T13:54:25.635598+00:00",
+    "extracted_at": "2026-11-18T08:32:15.033788+00:00",
+    "feature_available_at": "2026-11-18T08:32:15.045900+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6200",
+        "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+        "basis": "inferred",
+        "quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6200",
+        "industry_name_standard": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "90425e8f18bf35c148eed8a81c9fe56c363667e63850457cac35492a6e040248",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2020_08_10_corporate-action_Biotechnology_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\3552d3c8194e8f21fbd3941eb7d7d793292f27fa17f7ba0ccca3c3674e1adf0f.json",
+      ".runtime\\simple\\model_cache\\4427ee511ae6c6c21a0ddb1c67d2577ebc09e1cc113774dfffaa2a447f3454e1.json",
+      ".runtime\\simple\\model_cache\\8f3d43e8aba966473608794263a9ec9e316679e9d9a852fcdf6a9b20dc6f67bf.json",
+      ".runtime\\simple\\model_cache\\a77c74309577e1ef1b781fbbae4223ea1ddbd3df678ac33f09bdd98a866178e3.json",
+      ".runtime\\simple\\pages\\121a11fb4e651e9a25dde8b1.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000110465920092855/tm2026626d2_8k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000694/000110465920092855/tm2026626d2_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "81306b8d802874c7332e05400ba45fdb9936f841aa4e9c4ddc2c845217a7c971",
+        "text_sha256": "fff0e1ca90c30768ec5c5c38970c23510012aaccc318fde309fa0db9fe03069d",
+        "text_start": 0,
+        "text_end": 3720
+      }
+    ],
+    "sec_document_version": 3,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "c56fce31c2deecd9a814b49dca0f32e792f13c4616b34ec382ee80cfb682f9fd",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000694/0001104659-20-092855-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "source_cleaning": {
+      "removed_nonvisible_inline_xbrl_headers": 1
+    },
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T08:32:15.033214+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "c76a689cbd4e9a591f76de0f6499bbc7ae904a40aff36f9dc61c638696723a1d",
+    "source_type": "sec",
+    "entity_details": [],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "9c05ad237f31595a776fd81e6d7c318090981b63667ea9e28a664f82a7d2af56",
+    "commit_verified_at": "2026-11-14T13:54:25.695690+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-14T13:54:25.768044+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\121a11fb4e651e9a25dde8b1.json",
+      ".runtime\\simple\\model_cache\\a77c74309577e1ef1b781fbbae4223ea1ddbd3df678ac33f09bdd98a866178e3.json",
+      ".runtime\\simple\\model_cache\\4427ee511ae6c6c21a0ddb1c67d2577ebc09e1cc113774dfffaa2a447f3454e1.json",
+      ".runtime\\simple\\model_cache\\8f3d43e8aba966473608794263a9ec9e316679e9d9a852fcdf6a9b20dc6f67bf.json",
+      ".runtime\\simple\\model_cache\\3552d3c8194e8f21fbd3941eb7d7d793292f27fa17f7ba0ccca3c3674e1adf0f.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on",
+        "rationale": "The event is specific to NOVAVAX INC and its filing with the SEC, which is a company-level action.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "NOVAVAX INC filed a prospectus supplement to its effective shelf registration statement on Form S-3ASR (File No. 333-237094) filed with the Securities and Exchange Commission on"
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "90425e8f18bf35c148eed8a81c9fe56c363667e63850457cac35492a6e040248",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/121a11fb4e651e9a25dde8b1.json",
+      "sha256": "e07158f325d1c8717c39ec998b60ffa2a6c039ce03bc16f8e03afd4200a93c92",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 24.421999999991385
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "7035c27fee984ec539039ff8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_03_01_Finance_Retail_cnbc.json",
+      "sha256": "8a53d90985450c4e07387b877784b9683fe997ef1b7c7bdbd0f90a194d89faff",
+      "filename": "2022_03_01_Finance_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "6442831d7d74ddb4ad711f53023ec5d0d7a3104736fcd3befe9575819cd7c991",
+  "input_hash": "e1f4be18c527a9f1fcaf80d6d878c3a0fcdf01430c5d0aadafb7f9b56588ed2b",
+  "matching_audit_hash": "cef49a983bdb6691cbca064c3868f54372e9c5bfb127a58fbd8f5049bb7736a7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a228848c0049f1abf71a5d2a8cf3b1687fde09242761055ed027936266e4d8fc",
+    "raw_sha256": "1decc1181b801049710a0a490bc2baa37d4d2a45d32e8a203239a0c0562fe769",
+    "date_quote": "article:published_time=2022-03-01T21:07:41+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nordstrom",
+      "ticker": "JWN",
+      "exchange": null,
+      "quote": "Nordstrom (JWN) reports Q4 2021 earnings beat"
+    }
+  ],
+  "record_hash": "945f11a46b2318637e5968aecf0be9048bbd680be8fbc13c3f41a0de88e69008",
+  "outputs": [
+    {
+      "path": "US\\2022_03_01_Finance_Retail_cnbc.json",
+      "sha256": "c4f389c53e48f655ccef56edc409c423a2dddf0af80f105647abee5831c7616d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-03-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:19.442325+00:00",
+    "fetched_at": "2026-11-10T20:23:35.195753+00:00",
+    "feature_available_at": "2026-11-10T20:24:14.466534+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:40.103338+00:00",
+  "commit_verified_at": "2026-11-12T13:53:40.103338+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nordstrom",
+        "ticker": "JWN",
+        "exchange": null,
+        "quote": "Nordstrom (JWN) reports Q4 2021 earnings beat"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "source_id": "55310f997d59bfe5c166a574",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_18_Regulatory_Biotechnology_cnbc.json",
+      "sha256": "121d12c5f0b142982ac1650126c52ac3d7ad721c82dda3ba7b2c3779f186f46b",
+      "filename": "2019_03_18_Regulatory_Biotechnology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "855bd6f1c8d9864779e80c3f1552d81faa7ca039c347f3fb2335920fda4e466d",
+  "input_hash": "2487b1dcada52cfc7b037b1d7f26f387f42e97ac45b02bd75c4eca4fbf06f8f2",
+  "matching_audit_hash": "0d05fe306dd98ce350a80758b1e6e0f40f33efa1fb101f39b447065089070baf",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "285652c84770383636522b9f76206386627a4b84487fe8b61d7d7a3188b77ab1",
+    "raw_sha256": "dffd2cafae22de4869e48a077a263811a5f1247a80b28b7e7b6613a9f970629d",
+    "date_quote": "article:published_time=2019-03-18T18:16:37+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "PolarityTE",
+      "ticker": null,
+      "exchange": null,
+      "quote": "PolarityTE rings the closing bell at the Nasdaq on Aug. 14th, 2017."
+    },
+    {
+      "name": "Polarity",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Polarity said it believes its securities have been the target of \"short and distort\" trader attacks"
+    },
+    {
+      "name": "Riot Blockchain",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Riot Blockchain has had an ongoing SEC subpoena"
+    }
+  ],
+  "record_hash": "77f5ffa74aad3f039d5a2772f685d48f9dde7edf2c1f6c7dc9aa8148a12a56ab",
+  "outputs": [
+    {
+      "path": "US\\2019_03_18_Regulatory_Biotechnology_cnbc.json",
+      "sha256": "ab28cdddacb80c36f8c2a3c45e8eef2c6aca06b0035792bd6f938764b81ecef9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:51.353665+00:00",
+    "fetched_at": "2026-11-10T20:51:47.329532+00:00",
+    "feature_available_at": "2026-11-10T20:52:15.630597+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:21.540262+00:00",
+  "feature_available_at": "2026-11-12T14:48:21.552275+00:00",
+  "commit_verified_at": "2026-11-12T14:48:21.552275+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about regulatory actions, investigations, and market reactions related to companies and their securities.",
+    "securities": [
+      {
+        "name": "PolarityTE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PolarityTE"
+      },
+      {
+        "name": "Securities and Exchange Commission (SEC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Riot Blockchain",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Riot Blockchain"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotech",
+        "basis": "explicit",
+        "quote": "Biotech"
+      },
+      {
+        "name": "Cryptocurrency",
+        "basis": "explicit",
+        "quote": "cryptocurrency company"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "PolarityTE": "company",
+      "Securities and Exchange Commission (SEC)": "organization",
+      "Riot Blockchain": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

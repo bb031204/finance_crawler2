@@ -1,0 +1,458 @@
+{
+  "source_id": "019de6aaae6f4392191eb537",
+  "status": "completed",
+  "source_record_hash": "5b2f913782fd8ae9a8f61e1627c45c34727bf217ac65db3d2d02dad6a7c0a8ea",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2013/02/26/us-bank-industry-earnings-highest-since-2006-fdic.html",
+    "attempted_at": "2026-11-18T07:07:11.870352+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "016a19708b5d6932771539ab82268026794fac04c8684691e58bc5edfba8f761",
+    "summary_sha256": "669b74928ac576f52866a56a99c947d93e48f500f4dc7ea1b4696fa31c005f68"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/019de6aaae6f4392191eb537.json",
+    "sha256": "201c949ff214f0582dcbd7034f7bd6424132b0275856f9623a2d8256f78deb2c",
+    "bundled_path": "legacy_audit/019de6aaae6f4392191eb537.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "f6deadbd3a2c3a91aed2220c37d19d5dda09f24401aebc073a4d74ed577c35bc",
+      "llm_inferred_at": "2026-11-18T07:08:53.142140+00:00",
+      "model_duration_seconds": 18.7422545,
+      "prompt_tokens": 1980,
+      "completion_tokens": 1008,
+      "selection": [
+        {
+          "source_id": "019de6aaae6f4392191eb537",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings",
+              "rationale": "The article explicitly mentions the U.S. banking industry and its earnings, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "rationale": "The article mentions that some larger banks cut jobs, indicating a company-level impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6029",
+              "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "industry_name_original": "COMMERCIAL BANKS, NEC",
+              "mechanism": "The article indicates that the banking industry experienced a recovery in earnings, but some banks faced challenges like declining trading volumes, which could affect the industry as a whole.",
+              "confidence": 0.85,
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "industry_name_original": "Banks",
+              "mechanism": "The article indicates that the banking industry experienced a recovery in earnings, but some banks faced challenges like declining trading volumes, which could affect the industry as a whole.",
+              "confidence": 0.85,
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "industry_name_original": "Financials",
+              "mechanism": "The article indicates that the banking industry experienced a recovery in earnings, but some banks faced challenges like declining trading volumes, which could affect the industry as a whole.",
+              "confidence": 0.85,
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "9a687eab862ef5d67d25ae4060366a16e4df7924d2e6922a7a85573a2af9a3a3",
+      "llm_inferred_at": "2026-11-18T07:09:10.879452+00:00",
+      "model_duration_seconds": 17.7170201,
+      "prompt_tokens": 2024,
+      "completion_tokens": 993,
+      "selection": [
+        {
+          "source_id": "019de6aaae6f4392191eb537",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings",
+              "rationale": "The article explicitly mentions the U.S. banking industry and its earnings, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "rationale": "The article mentions that some larger banks cut jobs, indicating a company-level impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6029",
+              "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "industry_name_original": "COMMERCIAL BANKS, NEC",
+              "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+              "confidence": 0.85,
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "industry_name_original": "Banks",
+              "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+              "confidence": 0.85,
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+              "industry_name_original": "Financials",
+              "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+              "confidence": 0.85,
+              "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:09:10.891663+00:00",
+  "audit": {
+    "source_id": "019de6aaae6f4392191eb537",
+    "url": "https://www.cnbc.com/2013/02/26/us-bank-industry-earnings-highest-since-2006-fdic.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2013-02-26",
+    "date_quote": "datePublished  Published Tue, Feb 26 2013 11:11 AM EST",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "669b74928ac576f52866a56a99c947d93e48f500f4dc7ea1b4696fa31c005f68",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-12T02:41:38.394167+00:00",
+    "fetched_at": "2026-11-13T23:07:00.033243+00:00",
+    "first_extracted_at": "2026-11-13T23:07:27.841257+00:00",
+    "extracted_at": "2026-11-18T07:09:10.881641+00:00",
+    "feature_available_at": "2026-11-18T07:09:10.891663+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "name": "Financials",
+        "basis": "inferred",
+        "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+      },
+      {
+        "industry_key": "SEC-SIC:6029",
+        "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_name_original": "COMMERCIAL BANKS, NEC",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6029",
+        "industry_name_standard": "COMMERCIAL BANKS, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "COMMERCIAL BANKS, NEC",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_name_original": "Banks",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Banks",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "5b2f913782fd8ae9a8f61e1627c45c34727bf217ac65db3d2d02dad6a7c0a8ea",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2013_02_26_Finance_Banking_cnbc.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\1a9b54e6e139b9eafa75c9ebfa80ddbeb1bac3fea6e126ebcf5d2856632157f2.json",
+      ".runtime\\simple\\model_cache\\c82975e57e235ecc662a83d4614ca573b6b14d5e441d40f9f3dab3f44b9dba10.json",
+      ".runtime\\simple\\model_cache\\cf364f2f1ebfa6c34146cee0eec57ddee1b1e318220bfd3213aa6c0038145e28.json",
+      ".runtime\\simple\\model_cache\\e5c3266b1aa0888be566577064db1fce20d4979f91beae682932980aa3635d8b.json",
+      ".runtime\\simple\\pages\\019de6aaae6f4392191eb537.json"
+    ],
+    "cleanup_errors": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.cnbc.com/2013/02/26/us-bank-industry-earnings-highest-since-2006-fdic.html",
+    "title": "US Bank Industry Earnings Highest Since 2006: FDIC",
+    "title_origin": "heading",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T07:09:10.879452+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "669b74928ac576f52866a56a99c947d93e48f500f4dc7ea1b4696fa31c005f68",
+    "source_type": "web",
+    "entity_details": [],
+    "events": [],
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:6029",
+        "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_name_original": "COMMERCIAL BANKS, NEC",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6029",
+        "industry_name_standard": "COMMERCIAL BANKS, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_name_original": "Banks",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "industry_scope_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_name_original": "Financials",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article indicates that the banking industry experienced a recovery in earnings but also faced challenges like declining trading volumes, which are industry-wide issues.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "a1eea349aaf96471810957f504debb5aa7754e71356fda1139bde174b1cb92a3",
+    "commit_verified_at": "2026-11-13T23:07:27.903772+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-13T23:07:27.984296+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\019de6aaae6f4392191eb537.json",
+      ".runtime\\simple\\model_cache\\1a9b54e6e139b9eafa75c9ebfa80ddbeb1bac3fea6e126ebcf5d2856632157f2.json",
+      ".runtime\\simple\\model_cache\\e5c3266b1aa0888be566577064db1fce20d4979f91beae682932980aa3635d8b.json",
+      ".runtime\\simple\\model_cache\\cf364f2f1ebfa6c34146cee0eec57ddee1b1e318220bfd3213aa6c0038145e28.json",
+      ".runtime\\simple\\model_cache\\c82975e57e235ecc662a83d4614ca573b6b14d5e441d40f9f3dab3f44b9dba10.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes.",
+        "rationale": "The article mentions that some larger banks cut jobs, indicating a company-level impact.",
+        "confidence": 0.85,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "While the report signals recovery from the financial crisis, some larger banks cut jobs to address persistent challenges like declining trading volumes."
+      },
+      {
+        "scope": "industry",
+        "quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings",
+        "rationale": "The article explicitly mentions the U.S. banking industry and its earnings, indicating an industry-wide impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The U.S. banking industry recorded its highest earnings since before the 2007-2009 financial crisis in 2012, according to the Federal Deposit Insurance Corp. Full-year earnings"
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "5b2f913782fd8ae9a8f61e1627c45c34727bf217ac65db3d2d02dad6a7c0a8ea",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/019de6aaae6f4392191eb537.json",
+      "sha256": "7848e9c253eefd106f44e17590ec500a0cdb9a0b8bb172e8e0b512e306a2a304",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 119.03200000000652
+}

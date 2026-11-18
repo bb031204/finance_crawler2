@@ -1,0 +1,164 @@
+{
+  "source_id": "b0a80449638b93a6c550fd5f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_08_01_15_00_Economic_Manufacturing_prnewswire.json",
+      "sha256": "738a8b084788ee1835364f7228c9964f78d3502ef21eddc46139d3c9cd81591c",
+      "filename": "2016_08_01_15_00_Economic_Manufacturing_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "78def0ae538824b316877b957252cdf5430831355c666699106cdb87fb49c6dc",
+  "input_hash": "8dc5c7f40b353e43c4a105b463e9c93b17eff7a77bd95a4c15d8283f63e4f3d1",
+  "matching_audit_hash": "056737972f65676b245508314e78dd6d5cbc6cb813358e5c20dd57329c135e00",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dcf099d9fa2ad257c94975ddd47d90a3ffb1852a69ae18ee0d3de7f79f6e6fd1",
+    "raw_sha256": "8c275b73d7e3a352fb70370194efa2f07926d95cc4415fe369bd20eca73b80cd",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2016-08-01T15:00:00+01:00\ndate=2016-08-01T15:00:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ee484ec022a3f0f8ffd7c8f3117afeb930e87572e63967915748b2aa53b93077",
+  "outputs": [
+    {
+      "path": "US\\2016_08_01_15_00_Economic_Manufacturing_prnewswire.json",
+      "sha256": "a0b0c80f3330cc3e459a698e7bdd1b9dd21b2d274dc035229c9d0f5618a67565"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-08-01T15:00:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T10:01:17.147896+00:00",
+    "fetched_at": "2026-11-10T13:07:52.299501+00:00",
+    "feature_available_at": "2026-11-11T16:37:17.001190+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:05:34.288425+00:00",
+  "feature_available_at": "2026-11-12T15:16:39.700151+00:00",
+  "commit_verified_at": "2026-11-12T15:16:39.700151+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "no_verified_company_entity",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Reports on manufacturing PMI and sector-specific performance.",
+    "securities": [],
+    "industries": [
+      {
+        "name": "Manufacturing",
+        "basis": "explicit",
+        "quote": "manufacturing sector"
+      },
+      {
+        "name": "Furniture & Related Products",
+        "basis": "explicit",
+        "quote": "Furniture & Related Products"
+      },
+      {
+        "name": "Chemical Products",
+        "basis": "explicit",
+        "quote": "Chemical Products"
+      },
+      {
+        "name": "Apparel, Leather & Allied Products",
+        "basis": "explicit",
+        "quote": "Apparel, Leather & Allied Products"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {},
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:39.725192+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:05:34.288425+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Reports on manufacturing PMI and sector-specific performance.",
+      "securities": [],
+      "industries": [
+        {
+          "name": "Manufacturing",
+          "basis": "explicit",
+          "quote": "manufacturing sector"
+        },
+        {
+          "name": "Furniture & Related Products",
+          "basis": "explicit",
+          "quote": "Furniture & Related Products"
+        },
+        {
+          "name": "Chemical Products",
+          "basis": "explicit",
+          "quote": "Chemical Products"
+        },
+        {
+          "name": "Apparel, Leather & Allied Products",
+          "basis": "explicit",
+          "quote": "Apparel, Leather & Allied Products"
+        }
+      ],
+      "impact_scope": [
+        "industry"
+      ],
+      "entity_types": {},
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:05:34.312450+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:05:34.321773+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:05:34.304444+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary provides data on the manufacturing PMI, indicating growth in the sector with specific industry trends and changes in key indicators like new orders,",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:32:21.546324+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

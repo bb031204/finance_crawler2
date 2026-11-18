@@ -1,0 +1,219 @@
+{
+  "source_id": "6d52d2d6cff2d9caac45d4fe",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_05_18_Sanctions_Government_treasury.json",
+      "sha256": "51f2d505a02ee1e4c177e58eb7f72f9d2ef4ce19a54b0449c53e5423fb5f17ca",
+      "filename": "2017_05_18_Sanctions_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "98b7df5a04b3db146e08287d01914d1ff0e1d8fe8fd5427d7e1b34f379f7a6a9",
+  "input_hash": "bdba57fc2984bf104075e16c62dcc3acce4920a9cfa86ece7db48f475ea77e12",
+  "matching_audit_hash": "c4e500bc582e69cf59455fca8dc53594adf2241e924384a5332343088b2be3f9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9c543532ace93aaee157d8a799e6f8dfb714dadb9f3ea72d9de12c9c5a0b064e",
+    "raw_sha256": "5724059367ae37afff4753eb31a173e7c9aea5b82a96535eea3824ac46dfc8ce",
+    "date_quote": "May 18, 2017 (Archived Content) Washington– Today",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5ca5cdb394fa982f180cc869fd024cd6c2b686c0669c4a747380cdcaacbb6a6f",
+  "outputs": [
+    {
+      "path": "US\\2017_05_18_Sanctions_Government_treasury.json",
+      "sha256": "4a1bbd8eeb3b0d7deca64e945cae2cd6b5d0af866e40f046dde9dea854a30684"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-05-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:23.556601+00:00",
+    "fetched_at": "2026-11-10T14:17:52.523953+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.445501+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:06:51.440876+00:00",
+  "feature_available_at": "2026-11-12T15:16:41.114822+00:00",
+  "commit_verified_at": "2026-11-12T15:16:41.114822+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Sanctions against Venezuelan officials for undermining democratic governance",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)"
+      },
+      {
+        "name": "Venezuela’s Supreme Court of Justice (TSJ)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Venezuela’s Supreme Court of Justice (TSJ)"
+      },
+      {
+        "name": "Maikel Jose Moreno Perez",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Maikel Jose Moreno Perez"
+      },
+      {
+        "name": "National Assembly",
+        "ticker": null,
+        "exchange": null,
+        "quote": "National Assembly"
+      },
+      {
+        "name": "State Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "State Department"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Government",
+        "basis": "inferred",
+        "quote": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)"
+      },
+      {
+        "name": "Legal",
+        "basis": "inferred",
+        "quote": "Supreme Court of Justice (TSJ)"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)": "organization",
+      "Venezuela’s Supreme Court of Justice (TSJ)": "organization",
+      "Maikel Jose Moreno Perez": "organization",
+      "National Assembly": "organization",
+      "State Department": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:41.144007+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:06:51.440876+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Sanctions against Venezuelan officials for undermining democratic governance",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)"
+        },
+        {
+          "name": "Venezuela’s Supreme Court of Justice (TSJ)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Venezuela’s Supreme Court of Justice (TSJ)"
+        },
+        {
+          "name": "Maikel Jose Moreno Perez",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Maikel Jose Moreno Perez"
+        },
+        {
+          "name": "National Assembly",
+          "ticker": null,
+          "exchange": null,
+          "quote": "National Assembly"
+        },
+        {
+          "name": "State Department",
+          "ticker": null,
+          "exchange": null,
+          "quote": "State Department"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Government",
+          "basis": "inferred",
+          "quote": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)"
+        },
+        {
+          "name": "Legal",
+          "basis": "inferred",
+          "quote": "Supreme Court of Justice (TSJ)"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)": "organization",
+        "Venezuela’s Supreme Court of Justice (TSJ)": "organization",
+        "Maikel Jose Moreno Perez": "organization",
+        "National Assembly": "organization",
+        "State Department": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:06:51.476880+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:06:51.486877+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:51.467763+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses U.S. sanctions against members of Venezuela’s Supreme Court of Justice (TSJ) under Executive Order 13692, highlighting their role in hindr",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:40:00.305785+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

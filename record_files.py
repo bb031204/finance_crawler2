@@ -62,6 +62,8 @@ class Dataset:
     def __init__(self, root, directory):
         self.root = root.resolve()
         self.directory = bounded(self.root / directory, self.root)
+        if (self.root/'.runtime/replica_repair/outbox.json').exists():
+            raise ValueError('副本修复事务尚未完成，请先运行 python repair_replicas.py --apply；未启动采集')
         self.outbox = self.root / ".runtime/simple/record_outbox.json"
         self.recovery_count=0
         self.rows, self.paths, self.industries, self.replicas = {}, {}, {}, {}
@@ -78,7 +80,8 @@ class Dataset:
                 if identity in self.rows:
                     old_market, old = self.rows[identity]
                     if old != row or market in self.replicas[identity]:
-                        raise ValueError("同source_id的副本内容不一致或同目录重复：" + str(path))
+                        raise ValueError("同source_id的副本内容不一致或同目录重复：" + str(path)
+                            +" | source_id="+identity+"；请先运行 python repair_replicas.py --preview 核对证据，不能直接忽略冲突")
                     if old_market != "GLOBAL" and {old_market, market} != {"CN", "US"}:
                         raise ValueError("记录的市场副本不合法：" + str(path))
                     self.rows[identity] = ("GLOBAL", old)
@@ -173,6 +176,18 @@ class Dataset:
             dump(audit_path, audit_update)
             if json.loads(audit_path.read_text(encoding="utf-8")) != audit_update:
                 raise ValueError("迁移审计写入校验失败，保留事务供恢复")
+            if audit_update.get('schema_version')=='1.1' and not operation.get('commit_finalized'):
+                from finance_agent.core import now
+                from structured_export import timestamp
+                stamp=max(timestamp(now()),*[timestamp(x) for x in [audit_update.get('llm_inferred_at'),audit_update.get('extracted_at'),row['时间信息'].get('first_seen_at'),row['时间信息'].get('fetched_at')] if x]).isoformat()
+                row['时间信息']['feature_available_at']=stamp
+                audit_update.update(commit_verified_at=stamp,feature_available_at=stamp,record_hash=digest(row),
+                    extraction_version=digest([audit_update.get('extraction_version'),stamp]))
+                operation['commit_finalized']=True
+                dump(self.outbox,operation)
+                return self._complete(operation)
+            if audit_update.get('schema_version')=='1.1':
+                dump(self.root/'.runtime/simple/parquet_retry.json',dict(status='pending',source_id=row['source_id'],at=audit_update.get('commit_verified_at'),rebuild_from='formal_json_and_matching_sidecars'))
         for path in previous:
             if path not in targets.values():path.unlink(missing_ok=True)
         self.outbox.unlink(missing_ok=True)

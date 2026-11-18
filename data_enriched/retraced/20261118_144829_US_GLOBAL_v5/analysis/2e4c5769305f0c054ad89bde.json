@@ -1,0 +1,284 @@
+{
+  "source_id": "2e4c5769305f0c054ad89bde",
+  "status": "completed",
+  "source_record_hash": "1abcd19d7d12e4a70f365542341842651c71678c8cfffe72ab02e3f4b299fa00",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000683/0001307942-17-000005-index.html",
+    "attempted_at": "2026-11-18T11:01:29.942188+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000683/0001307942-17-000005-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794217000005/blonder8k033117.htm",
+    "fetched_at": "2026-11-18T11:01:47.147313+00:00",
+    "source_body_hash": "bdaaa39727b45553f8feface00c124be16bb8d9a27cae7102ecadbd66ba70136",
+    "raw_sha256": "a36816f1b89a88ec1cf1018628054283b6fb4c8e244c22f6a4c3e33f9ea6dc61",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794217000005/blonder8k033117.htm",
+        "type": "8-K",
+        "description": "",
+        "raw_sha256": "a36816f1b89a88ec1cf1018628054283b6fb4c8e244c22f6a4c3e33f9ea6dc61",
+        "text_sha256": "8c02b4cd4439bc4e0fe7ffa9086c9ea639d47ceba5eb428371dca4f81bc41783",
+        "text_start": 0,
+        "text_end": 2459
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794217000005/blonderex99to8k033117.htm",
+        "type": "EX-99.1",
+        "description": "EARNINGS RELEASE",
+        "raw_sha256": "c47e5e11ead184569109592f23f48b8ef42690ac5fc28f50c7389ded9eb7de62",
+        "text_sha256": "0321c430ebf2532fc7fc960a227d73ef28d4b04119d6737859247d3fd26818f5",
+        "text_start": 2461,
+        "text_end": 8632
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2017-03-31",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2e4c5769305f0c054ad89bde.json",
+    "sha256": "f8d77418d0af0d1ab462e3ab265bfc3291668fcc10505f7123fee4469b070478",
+    "bundled_path": "legacy_audit/2e4c5769305f0c054ad89bde.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "27411ac52b8a114d13949c291e890961b93956125b1cc30d43cf3331940dddc8",
+      "llm_inferred_at": "2026-11-18T11:02:02.406226+00:00",
+      "model_duration_seconds": 15.2222866,
+      "prompt_tokens": 4382,
+      "completion_tokens": 571,
+      "selection": [
+        {
+          "source_id": "2e4c5769305f0c054ad89bde",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The following exhibit is filed herewith: Exhibit No.",
+              "rationale": "The article discusses the financial results of Blonder Tongue Laboratories, Inc., which is a company in the cable television communications industry. The company provides solutions for the provision of content contribution, distribution, and video delivery to homes and businesses, indicating an area",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements.",
+              "rationale": "The article discusses the financial results of Blonder Tongue Laboratories, Inc., which is a company in the cable television communications industry. The company provides solutions for the provision of content contribution, distribution, and video delivery to homes and businesses, indicating an area",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4841",
+              "name": "CABLE & OTHER PAY TELEVISION SERVICES",
+              "basis": "explicit",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements."
+            },
+            {
+              "industry_key": "TRSR:f85acd7b436ac9c5",
+              "name": "Radio And Television Broadcasting And Communications Equipment",
+              "basis": "explicit",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "481b82569c34b6be11ab1a404a0236a31b8bbf06e8f71a8c68fe7e7cef1b5d4f",
+      "llm_inferred_at": "2026-11-18T11:02:13.135429+00:00",
+      "model_duration_seconds": 10.7112443,
+      "prompt_tokens": 4426,
+      "completion_tokens": 546,
+      "selection": [
+        {
+          "source_id": "2e4c5769305f0c054ad89bde",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The following exhibit is filed herewith: Exhibit No.",
+              "rationale": "The article discusses the financial results of Blonder Tongue Laboratories, Inc., which is a company in the cable television communications industry. The industry is described as providing solutions for the provision of content contribution, distribution, and video delivery to homes and businesses.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements.",
+              "rationale": "The article discusses the financial results of Blonder Tongue Laboratories, Inc., which is a specific company. The results are reported for the company and its subsidiaries.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4841",
+              "name": "CABLE & OTHER PAY TELEVISION SERVICES",
+              "basis": "explicit",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements."
+            },
+            {
+              "industry_key": "TRSR:f85acd7b436ac9c5",
+              "name": "Radio And Television Broadcasting And Communications Equipment",
+              "basis": "explicit",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements."
+            },
+            {
+              "industry_key": "TRSR:6a41bf6143c2f87e",
+              "name": "Computer Communications Equipment",
+              "basis": "explicit",
+              "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:02:13.150764+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "bdaaa39727b45553f8feface00c124be16bb8d9a27cae7102ecadbd66ba70136",
+    "raw_sha256": "a36816f1b89a88ec1cf1018628054283b6fb4c8e244c22f6a4c3e33f9ea6dc61",
+    "date_quote": "SEC filing datePublished=2017-03-31",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794217000005/blonder8k033117.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "2e4c5769305f0c054ad89bde",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_03_31_Financial-Results_Technology_sec.json",
+        "sha256": "91d23bf7cf52661997e7fbf6fbc656548a8d86e226cccbd73605f69ff7594d6c",
+        "filename": "2017_03_31_Financial-Results_Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "691a736593bb66e414443afc072a3358bbaa50d00ac9a1e03f6542dc194e4731",
+    "input_hash": "17097a2ee59077bb33c1b4aecd0f46ad630f86a64796749be14894eb84d54bd4",
+    "matching_audit_hash": "fe82f3694ff7e64b829c6e8879fa8ece94d6ee3dd5798b58bf44b48b063b42f9",
+    "legacy_security_evidence": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "record_hash": "1abcd19d7d12e4a70f365542341842651c71678c8cfffe72ab02e3f4b299fa00",
+    "outputs": [
+      {
+        "path": "US\\2017_03_31_Financial-Results_Technology_sec.json",
+        "sha256": "3b52413f6187c8ffde0e3fff4749707ed9545b1a75fea2abb3d0f7f49c6a30b8"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2017-03-31",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.446085+00:00",
+      "fetched_at": "2026-11-11T12:14:56.462816+00:00",
+      "feature_available_at": "2026-11-11T12:15:31.294518+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:02:13.135429+00:00",
+    "feature_available_at": "2026-11-18T11:02:13.150764+00:00",
+    "commit_verified_at": "2026-11-12T13:53:14.333863+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements.",
+        "rationale": "The article discusses the financial results of Blonder Tongue Laboratories, Inc., which is a specific company. The results are reported for the company and its subsidiaries.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Blonder Tongue's actual results may differ from the anticipated results or other expectations expressed in Blonder Tongue's \"forward-looking\" statements.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000683/0001307942-17-000005-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "1abcd19d7d12e4a70f365542341842651c71678c8cfffe72ab02e3f4b299fa00",
+    "content_hash": "131f80920ca8a83e2416a4035ca0d42da412af845a366c073eceabaaa80e0071",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:02:13.138330+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2e4c5769305f0c054ad89bde.json",
+      "sha256": "8ed46b9d724035b319a2e9b9cdbbcf0a5b0594eac52b37810b1a9e31feba8fd4",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 43.21799999999348
+}

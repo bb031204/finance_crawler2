@@ -1,0 +1,95 @@
+{
+  "source_id": "3579b414d189e449f52917e9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_18_Financial_Finance_sec.json",
+      "sha256": "33d49492deb6617e8cb514016320c69bba4e8ed4737b11175abd95b13ac9b70a",
+      "filename": "2016_02_18_Financial_Finance_sec.json"
+    }
+  ],
+  "original_record_hash": "27c1dd1605158cb7675ee16fb0308f6ce58455f05a2281ae2dd68eef4c2ef775",
+  "input_hash": "7cf6368d1da461a261bb44431101be421bc6ba693c43dbc6419e60ae4630dcd9",
+  "matching_audit_hash": "f34492f24191867b7a45b4e7d84c9c4c764dc7013cdfcd00d7ff75cbe92b1077",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "668da5b7eb4056ff013adf6b12142a6a17a70aa95eb62270de4a40deb23ce682",
+    "raw_sha256": "8cd6b174e93f580f4ff5305a5e11faf8bf34a99f0e155beacb13a9f10d7a4ac4",
+    "date_quote": "February 18, 2016 Date of Report (Date of earliest event reported): __________________________________________",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062316000122/feb16investorpres8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    }
+  ],
+  "record_hash": "00a31f96b7c9997db963b8ddb6988b1c332be43416a33c5d76083c8262810d19",
+  "outputs": [
+    {
+      "path": "US\\2016_02_18_Financial_Finance_sec.json",
+      "sha256": "fc2e4e903e478ebbdf02eadcd10eb30c3471728418ee4ce02e41700ee48c51a1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.848379+00:00",
+    "fetched_at": "2026-11-11T01:05:23.405441+00:00",
+    "feature_available_at": "2026-11-11T01:05:35.487621+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:05.617408+00:00",
+  "commit_verified_at": "2026-11-12T13:53:05.617408+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

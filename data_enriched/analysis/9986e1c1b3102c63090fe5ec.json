@@ -1,0 +1,97 @@
+{
+  "source_id": "9986e1c1b3102c63090fe5ec",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_01_13_Dividend-Announcement_Oil-and-Gas-Services_sec.json",
+      "sha256": "524d428071b726153acc3c15b37031d56f2383c1b57aaa9bfe7d8354c37e2fdd",
+      "filename": "2012_01_13_Dividend-Announcement_Oil-and-Gas-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "cba3255846282f6c2a267747709352e5a62ee6109acbe5d4fc18ab1e2d7701d9",
+  "input_hash": "2db318d37fc5d9744c4122f09b4591c30489c02b7be13e6dbdabc5cfa36d1803",
+  "matching_audit_hash": "b3ef7c0134f7943cd3a8e0ce42aa6ae6f12a5da729ce326e0db4136524c2dad7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f8d55c8df6dd199e7e1d35d2fb5d90f64ccb87dffd03c270d1c1b061117328b8",
+    "raw_sha256": "26e1d57f5fa16895250ed30d0eda4d02b5a51d5c7b7a1c0a7175749985aaf78b",
+    "date_quote": "Date of report (date of earliest event reported): January 13, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022912000002/clb-8k_dividend12012.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V. issued a press release announcing a quarterly cash dividend of $0.28 per share of common stock for shareholders of record on January 24, 2012 and payable February 24, 2012."
+    }
+  ],
+  "record_hash": "035d7e345013beefe34b13bb626b92f202daf60dcec25569dc07c8f8c0719945",
+  "outputs": [
+    {
+      "path": "US\\2012_01_13_Dividend-Announcement_Oil-and-Gas-Services_sec.json",
+      "sha256": "8e5393db3e5f0c0a4d8d6d9319fed4a13e2b8d95513154a86dd247d95d6a2831"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-01-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:33:53.919387+00:00",
+    "feature_available_at": "2026-11-10T22:34:04.557213+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:53:52.102221+00:00",
+  "feature_available_at": "2026-11-12T13:53:52.135726+00:00",
+  "commit_verified_at": "2026-11-12T13:53:52.135726+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains a dividend announcement with details about the dividend amount, payment schedule, and the company's industry.",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "industries": [
+      {
+        "name": "oil and gas services industry",
+        "basis": "explicit",
+        "quote": "oil and gas services industry"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Core Laboratories N.V.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

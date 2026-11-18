@@ -1,0 +1,169 @@
+{
+  "source_id": "189c0ad0314fa4d5902ffda7",
+  "status": "completed",
+  "source_record_hash": "43cfe4f332b2ce5f0758b000a2048c877bc3e062ce9bb61bae4c79fcff1c3781",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-19-007413-index.html",
+    "attempted_at": "2026-11-18T05:14:27.474379+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "75e3c605c5a2cec6d43ee890c87f97bac2f11cd9aa3740cd0524fc78cb4f1bc6"
+  },
+  "fingerprint": "cf1b5b879ca85dfa48c4f3cde3621d463e4cbb0d75a065b1f5359e9d98ff4f83",
+  "old_audit": {
+    "path": "data_enriched/analysis/189c0ad0314fa4d5902ffda7.json",
+    "sha256": "11e35d0dcb301259e3e2bace6964f77c528ce376ad878d86e6ca8b8f2c9118b8",
+    "bundled_path": "legacy_audit/189c0ad0314fa4d5902ffda7.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "831a64e295035ec5bf0d0d3d6492dc3ce01b6ee619daf10a286f164a3b0ef8a8",
+  "code_version": "902c3a61190d45fda77ed6d7da70a5aa9b28b309340dfff5240465422a3fb7a1",
+  "responses": [
+    {
+      "response_sha256": "40a7cd8d6821432240dae57d8ef7cb9cd63fd1cbe0e9b0258b2d07c86c4b63ee",
+      "llm_inferred_at": "2026-11-18T05:14:39.475126+00:00",
+      "model_duration_seconds": 6.9360945,
+      "prompt_tokens": 993,
+      "completion_tokens": 367
+    },
+    {
+      "response_sha256": "dc1be02346154cffc8316e7d71663d697b29474c938ca48d8ba39afdc95c5302",
+      "llm_inferred_at": "2026-11-18T05:14:45.989361+00:00",
+      "model_duration_seconds": 6.4969379,
+      "prompt_tokens": 1037,
+      "completion_tokens": 366
+    }
+  ],
+  "feature_available_at": "2026-11-18T05:14:46.027312+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "75e3c605c5a2cec6d43ee890c87f97bac2f11cd9aa3740cd0524fc78cb4f1bc6",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2019-01-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312519007413/d682501d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The text discusses a financial amendment affecting Medallion Financial Corp. and the broader financial services industry, indicating changes in financial terms.",
+    "securities": [
+      {
+        "name": "Taxi Medallion Loan Trust III",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Taxi Medallion Loan Trust III"
+      },
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Taxi Medallion Loan Trust III": "company",
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "189c0ad0314fa4d5902ffda7",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_01_11_Financial-Agreement_Financial-Services_sec.json",
+        "sha256": "96ca95049332ce16a8e2d447dedd15b30d9ee26ba9501aed328838d858fb43ea",
+        "filename": "2019_01_11_Financial-Agreement_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "6efc8f178fa8b8d13bc10dab1d5189812d3370085bd23d5222b6ce602670820c",
+    "input_hash": "d4bb7e4ad549d8ee4551690d4e8129202c5874c05a8c6266313a000d00bc38b8",
+    "matching_audit_hash": "65b0f4d1b41a4c5625f7e893df8dc62274239eb6095ca4d5c4faf7e7f94784fb",
+    "legacy_security_evidence": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      },
+      {
+        "name": "Taxi Medallion Loan Trust III",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Taxi Medallion Loan Trust III"
+      }
+    ],
+    "record_hash": "43cfe4f332b2ce5f0758b000a2048c877bc3e062ce9bb61bae4c79fcff1c3781",
+    "outputs": [
+      {
+        "path": "US\\2019_01_11_Financial-Agreement_Financial-Services_sec.json",
+        "sha256": "1a826e2075eae96c3f4bed2fc910444a0a7e31e243bc128b6599191e2d9642ae"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2019-01-11",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+      "fetched_at": "2026-11-11T13:35:03.784016+00:00",
+      "feature_available_at": "2026-11-11T13:35:18.670376+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T05:14:45.989361+00:00",
+    "feature_available_at": "2026-11-18T05:14:46.027312+00:00",
+    "commit_verified_at": "2026-11-12T14:47:11.272295+00:00",
+    "prompt_version": "831a64e295035ec5bf0d0d3d6492dc3ce01b6ee619daf10a286f164a3b0ef8a8",
+    "code_version": "902c3a61190d45fda77ed6d7da70a5aa9b28b309340dfff5240465422a3fb7a1",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_impact_key_not_offered",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-19-007413-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "43cfe4f332b2ce5f0758b000a2048c877bc3e062ce9bb61bae4c79fcff1c3781",
+    "content_hash": "75e3c605c5a2cec6d43ee890c87f97bac2f11cd9aa3740cd0524fc78cb4f1bc6",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-market-industry-1",
+    "extracted_at": "2026-11-18T05:14:45.991308+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/189c0ad0314fa4d5902ffda7.json",
+      "sha256": "2f170b019d7239197d628154c6226459df95541ec35931a8195608e93fffa14d",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 18.562000000005355
+}

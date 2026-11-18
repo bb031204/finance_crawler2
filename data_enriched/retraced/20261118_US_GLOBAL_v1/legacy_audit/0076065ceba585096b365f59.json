@@ -1,0 +1,109 @@
+{
+  "source_id": "0076065ceba585096b365f59",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_04_26_Automotive_Automotive_cnbc.json",
+      "sha256": "97d61592a6b5e77573ac34a950c57190448caf4735418e6090f88c5b45ba4b0d",
+      "filename": "2018_04_26_Automotive_Automotive_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3d68bbbafe8689ce93b9170e066e4431cd8d767741e6c6a91fc3551a11dc3344",
+  "input_hash": "5d20905af6a041881d66387e84193e6c417a7d53efa2aef2c6d5bf33c70eccef",
+  "matching_audit_hash": "e24f4c81849049849ab80abc057718e9caf182b9a2aedc26d9a6da94b7087c66",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "85de248741e84be72d20b01fd315a90a554baa7cc8ed51ee6ba29bc590e29caf",
+    "raw_sha256": "2cf1513751beb49e218bf8aed382a7dd2f183253ae971e69f6793a277d5c8bc7",
+    "date_quote": "article:published_time=2018-04-26T17:20:22+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Ford",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Ford said Wednesday it will only offer two new cars in North America over the coming years — its iconic Mustang and the Focus Active, a rugged-looking hatchback that has already debuted in Europe, and somewhat resembles the Subaru Crosstrek or the Buick Regal TourX."
+    },
+    {
+      "name": "Chrysler",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Chrysler"
+    }
+  ],
+  "record_hash": "0910447b978446f8d62e2fc2356a37f0b4f5d2ec1f39e95aa7c26e4e2368c6fc",
+  "outputs": [
+    {
+      "path": "US\\2018_04_26_Automotive_Automotive_cnbc.json",
+      "sha256": "1f76b60b87937990d2b07b647dc305dad69c29464e118bd90272347107eead90"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-04-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:13.032994+00:00",
+    "fetched_at": "2026-11-10T21:28:48.872785+00:00",
+    "feature_available_at": "2026-11-10T21:29:19.066964+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:22.086032+00:00",
+  "commit_verified_at": "2026-11-12T13:53:22.086032+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Ford",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ford said Wednesday it will only offer two new cars in North America over the coming years — its iconic Mustang and the Focus Active, a rugged-looking hatchback that has already debuted in Europe, and somewhat resembles the Subaru Crosstrek or the Buick Regal TourX."
+      },
+      {
+        "name": "Chrysler",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chrysler"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

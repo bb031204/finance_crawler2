@@ -1,0 +1,121 @@
+{
+  "source_id": "dbd4671be2c92e61d2272297",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_09_22_08_15_Mergers-&-Acquisitions_Banking_prnewswire.json",
+      "sha256": "fdee999251c381ac4de2ee34956873f0aff40e5e4ee4b3c22054171a5ac23f69",
+      "filename": "2016_09_22_08_15_Mergers-&-Acquisitions_Banking_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "aa18b10d802fd7c56b25d9ea0f6add57097a259454d277810adc3299e98a7b58",
+  "input_hash": "1a747d2eaa0a794e14a0b38dddee8834273ccabb6b301262104f82784be5b17f",
+  "matching_audit_hash": "090d0cac3879c537d2c73a13cd2084774811a133e6e64b7f42dffb8047a60a01",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b46d764af64b21f26160c3900b858aebd830871e653f154e6c327295291da100",
+    "raw_sha256": "fddd56aa1aaa2acad71eda1e6253e1c7ca116961426dfc6644e325d7e2d0be8c",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2016-09-22T08:15:00+01:00\ndate=2016-09-22T08:15:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "KeyCorp",
+      "ticker": "KEY",
+      "exchange": null,
+      "quote": "KeyCorp (NYSE: KEY)"
+    },
+    {
+      "name": "First Niagara Bank",
+      "ticker": null,
+      "exchange": null,
+      "quote": "First Niagara Bank"
+    },
+    {
+      "name": "KeyBank",
+      "ticker": null,
+      "exchange": null,
+      "quote": "KeyBank"
+    }
+  ],
+  "record_hash": "30bb4e522213e4e32fbfa45258581cc229487f456d9da333bf1d39fefbf3713a",
+  "outputs": [
+    {
+      "path": "US\\2016_09_22_08_15_Mergers-&-Acquisitions_Banking_prnewswire.json",
+      "sha256": "de9ec62b9a494f628dd439c5789aad3ad756b98b7500d5e6d9076caab6cc7c2e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-09-22T08:15:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:39:13.125732+00:00",
+    "fetched_at": "2026-11-10T21:15:25.059367+00:00",
+    "feature_available_at": "2026-11-10T21:15:52.963381+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:09.566892+00:00",
+  "commit_verified_at": "2026-11-12T13:53:09.566892+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "KeyCorp",
+        "ticker": "KEY",
+        "exchange": null,
+        "quote": "KeyCorp (NYSE: KEY)"
+      },
+      {
+        "name": "First Niagara Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "First Niagara Bank"
+      },
+      {
+        "name": "KeyBank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KeyBank"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

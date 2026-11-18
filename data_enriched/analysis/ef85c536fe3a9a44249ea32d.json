@@ -1,0 +1,129 @@
+{
+  "source_id": "ef85c536fe3a9a44249ea32d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_12_17_Regulatory_Financial-Services_federalreserve.json",
+      "sha256": "ffbead39f1c9d9563a2ae3689cd037009055cde045e8d6a62ade1ea5a08dc476",
+      "filename": "2012_12_17_Regulatory_Financial-Services_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "2f93523ddbf74be2536788090513a597dc7de916757a5fe805a8439a2a0d8b91",
+  "input_hash": "8857de16beb5d35c7738a2606360147e08cfdc35598b6f6750bc2a084b641ac3",
+  "matching_audit_hash": "aa342e8b0c6d8b16728e35227a7b84de8ae6ae2891ac684663f9c47d33f77e39",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "35acda4ca343cdf7e73954e541f891d457f2bafce30aa6c84bc58c2a6fdf2e71",
+    "raw_sha256": "9ba47beccc62c20d606ce7e3594a4f0d9731d9d9ccc7e43734620652f9baf3bf",
+    "date_quote": "The Fed - Supervisory Letter SR 12-17 / CA 12-14 on Consolidated Supervision Framework for Large Financial Institutions -- December 17, 2012 -- Revised October 1, 2025",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "971bf534546c5688bc29f730cd45058a8bdcca2cfff31910be0a22a6652491b2",
+  "outputs": [
+    {
+      "path": "US\\2012_12_17_Regulatory_Financial-Services_federalreserve.json",
+      "sha256": "3727662fbf0aab6dc2d83690154c1431160a464b5faeef661cbf81f670048098"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-12-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:22.014270+00:00",
+    "fetched_at": "2026-11-10T10:05:35.805146+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.549236+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:00:05.575700+00:00",
+  "feature_available_at": "2026-11-12T14:00:05.587325+00:00",
+  "commit_verified_at": "2026-11-12T14:00:05.587325+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory changes and supervisory frameworks for financial institutions, including systemic risk, capital requirements, and regulatory focus",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      },
+      {
+        "name": "FSOC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FSOC"
+      },
+      {
+        "name": "LISCC firms",
+        "ticker": null,
+        "exchange": null,
+        "quote": "LISCC firms"
+      },
+      {
+        "name": "Large Banking Organizations (LBOs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Large Banking Organizations (LBOs)"
+      },
+      {
+        "name": "Large Foreign Banking Organizations (Large FBOs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Large Foreign Banking Organizations (Large FBOs)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial institutions"
+      },
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "banking organizations"
+      },
+      {
+        "name": "Regulatory Compliance",
+        "basis": "inferred",
+        "quote": "Supervisory Letter SR 12-17 / CA 12-14"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization",
+      "FSOC": "organization",
+      "LISCC firms": "organization",
+      "Large Banking Organizations (LBOs)": "organization",
+      "Large Foreign Banking Organizations (Large FBOs)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

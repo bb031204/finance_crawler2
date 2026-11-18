@@ -1,0 +1,217 @@
+{
+  "source_id": "cef34e70c4fb0d4c1f5ad8f0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_01_19_government_public-services_cnbc.json",
+      "sha256": "5e5aa1edd2a05a8007dd845f71bf996ed1f6963a0c85e4514e50a2865191b75d",
+      "filename": "2022_01_19_government_public-services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f38ab4a325b6fba989c2fce2f49e94ddb6cc06a58efb01962eedfe255c37363d",
+  "input_hash": "9cd9c3116d6431c029efa5cf1ab68d7e9d840e9cab65db7447f539675e97f803",
+  "matching_audit_hash": "3566fc8b92ec1a2686c689353e8567e110e8ae596127c960e2e57170b96f522c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8bba94da858d8a07cc951ba198efdb2d1c09e16a43f68bd2328e5aba446e69e0",
+    "raw_sha256": "903f6c2c3351fa81455749f650ce74723c6cfefc58cd587048571ef16f49f9c6",
+    "date_quote": "article:published_time=2022-01-19T16:08:53+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "cce199fd24601f343ce82cb5ff059e5f4bc637592402f4cbe18578435e1372ce",
+  "outputs": [
+    {
+      "path": "US\\2022_01_19_government_public-services_cnbc.json",
+      "sha256": "69ef93ee79c57d6a64cc1dc860536eee01ef0fbc41957d3cf766bf899add2ad2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-01-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+    "fetched_at": "2026-11-10T19:39:09.730575+00:00",
+    "feature_available_at": "2026-11-10T19:39:38.307419+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:14:57.862636+00:00",
+  "feature_available_at": "2026-11-12T15:16:49.018164+00:00",
+  "commit_verified_at": "2026-11-12T15:16:49.018164+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "States provide financial aid for funeral costs",
+    "securities": [
+      {
+        "name": "New Jersey",
+        "ticker": null,
+        "exchange": null,
+        "quote": "New Jersey, funeral homes and cemeteries can apply for government aid"
+      },
+      {
+        "name": "Delaware",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Delaware, the state covers the full burial cost for residents without financial means"
+      },
+      {
+        "name": "Massachusetts",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Massachusetts, individuals receiving government aid can also qualify for up to $1,100 in burial assistance"
+      },
+      {
+        "name": "New York City",
+        "ticker": null,
+        "exchange": null,
+        "quote": "New York City has a program where low-income residents can apply for as much as $1,700 for funeral expenses"
+      },
+      {
+        "name": "Federal Emergency Management Agency",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Emergency Management Agency is offering financial reimbursement for memorial costs"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Government",
+        "basis": "explicit",
+        "quote": "government aid"
+      },
+      {
+        "name": "Funeral Services",
+        "basis": "inferred",
+        "quote": "funeral homes and cemeteries"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "New Jersey": "organization",
+      "Delaware": "organization",
+      "Massachusetts": "organization",
+      "New York City": "organization",
+      "Federal Emergency Management Agency": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:49.042240+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:14:57.862636+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "States provide financial aid for funeral costs",
+      "securities": [
+        {
+          "name": "New Jersey",
+          "ticker": null,
+          "exchange": null,
+          "quote": "New Jersey, funeral homes and cemeteries can apply for government aid"
+        },
+        {
+          "name": "Delaware",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Delaware, the state covers the full burial cost for residents without financial means"
+        },
+        {
+          "name": "Massachusetts",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Massachusetts, individuals receiving government aid can also qualify for up to $1,100 in burial assistance"
+        },
+        {
+          "name": "New York City",
+          "ticker": null,
+          "exchange": null,
+          "quote": "New York City has a program where low-income residents can apply for as much as $1,700 for funeral expenses"
+        },
+        {
+          "name": "Federal Emergency Management Agency",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Emergency Management Agency is offering financial reimbursement for memorial costs"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Government",
+          "basis": "explicit",
+          "quote": "government aid"
+        },
+        {
+          "name": "Funeral Services",
+          "basis": "inferred",
+          "quote": "funeral homes and cemeteries"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "New Jersey": "organization",
+        "Delaware": "organization",
+        "Massachusetts": "organization",
+        "New York City": "organization",
+        "Federal Emergency Management Agency": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:14:57.888391+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:14:57.897407+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:14:57.878390+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses financial assistance programs for funeral and burial costs in various U.S. states and the Federal Emergency Management Agency (FEMA), which涉及",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:56:25.999986+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

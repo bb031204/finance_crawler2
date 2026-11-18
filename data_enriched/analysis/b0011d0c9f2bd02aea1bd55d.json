@@ -1,0 +1,137 @@
+{
+  "source_id": "b0011d0c9f2bd02aea1bd55d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_05_16_Financial-Performance_Beauty_prnewswire.json",
+      "sha256": "12df4917318f2c4fedba8a7fc677d88144c3bb5fd6611ab978c8911e07097d0b",
+      "filename": "2022_05_16_Financial-Performance_Beauty_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "503e0046cd7c3fa60148b4016b77c4927710b4f403bc49eded922057e252b5c4",
+  "input_hash": "24fb50334ff8312c62e001db67f9001b344c425bda64687876ef870d91589951",
+  "matching_audit_hash": "412aeef090e9ca27f679eb196f7ad623b50b9ac7ec33c279c889ce5f4dc86958",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2509505c9b80c086dfd4b4763b5d04d2a8752a1afed2027268e6414bf034be1e",
+    "raw_sha256": "48fd8fa614c39fd9420e56a0e6f88e43f4ecbef12a5a103d106683768935e146",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2022-05-16T14:00:00+01:00\ndate=2022-05-16T14:00:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "cosnova Beauty",
+      "ticker": null,
+      "exchange": null,
+      "quote": "cosnova Beauty"
+    }
+  ],
+  "record_hash": "6b9292ef7a71274da6948745ab7b544e4f3ead66432e489a457f16f69bec532c",
+  "outputs": [
+    {
+      "path": "US\\2022_05_16_Financial-Performance_Beauty_prnewswire.json",
+      "sha256": "19fa62ef5aeed8809a6e79a587c4aaaa576b06853b4e43f5a463281ffa95bedf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-05-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T07:10:14.451582+00:00",
+    "fetched_at": "2026-11-10T18:42:28.483277+00:00",
+    "feature_available_at": "2026-11-11T05:40:44.605964+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:57:50.889685+00:00",
+  "feature_available_at": "2026-11-12T14:57:50.897688+00:00",
+  "commit_verified_at": "2026-11-12T14:57:50.897688+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides specific financial performance data, growth metrics, market performance, and strategic initiatives for cosnova Beauty, including its brands",
+    "securities": [
+      {
+        "name": "cosnova Beauty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "cosnova Beauty"
+      },
+      {
+        "name": "essence Makeup",
+        "ticker": null,
+        "exchange": null,
+        "quote": "essence Makeup"
+      },
+      {
+        "name": "CATRICE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CATRICE"
+      },
+      {
+        "name": "Ulta",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ulta"
+      },
+      {
+        "name": "Amazon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amazon"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty",
+        "basis": "explicit",
+        "quote": "beauty conglomerate"
+      },
+      {
+        "name": "E-commerce",
+        "basis": "inferred",
+        "quote": "online sales"
+      },
+      {
+        "name": "Sustainability",
+        "basis": "explicit",
+        "quote": "sustainability goals"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "cosnova Beauty": "company",
+      "essence Makeup": "brand",
+      "CATRICE": "brand",
+      "Ulta": "company",
+      "Amazon": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

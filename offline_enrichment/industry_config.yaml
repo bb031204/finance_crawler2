@@ -1,0 +1,16 @@
+# 独立旧库补处理配置；不修改采集器队列或原始新闻。修改语义参数后须使用新 output 版本。
+input_root: D:/finance/model/StockMixer+llm/data_llm
+output: D:/financial_data_project2/data_enriched/industry_batches/20261117_162900_US_GLOBAL_SEC_SIC_v1
+dictionary_directory: industry_data
+active_standards: [SEC-SIC]
+candidate_limit: 12
+ollama_url: http://127.0.0.1:11434
+model: qwen3:8b
+num_ctx: 8192
+num_predict: 1000
+keep_alive: 10m
+timeout_seconds: 180
+maximum_summary_characters: 12000
+min_confidence: 0.85
+checkpoint_every: 25
+max_consecutive_failures: 3

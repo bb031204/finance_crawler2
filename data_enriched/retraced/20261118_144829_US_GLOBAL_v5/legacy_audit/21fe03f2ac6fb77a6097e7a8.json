@@ -1,0 +1,110 @@
+{
+  "source_id": "21fe03f2ac6fb77a6097e7a8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_11_19_Banking_Financial-Services_cnbc.json",
+      "sha256": "18e30b7ab5680b64ea70d550cd64b9c0b5e86f9a000c6ce2c3cc3fda6c34839d",
+      "filename": "2018_11_19_Banking_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "4c9f20c6f8af6bd96ed5f8c4fc875b270f404aff5c18a1aa0c544a7bc94bc85e",
+  "input_hash": "933ad4ca8c9d73e0bf39f155a38822d9941f4f2e6aa5f2a78d527b27f7e4efb7",
+  "matching_audit_hash": "2e9c03d79bd0329c1c874866093a6923c42d970c29dbeb89b8e33df1e2bb60ea",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c070a45e357d1fbef2634ac6d9d985e113a470f310f68e74fbf4b95764510ef2",
+    "raw_sha256": "caeaded75fefcb8b0efba94dc51ae8284aa95e5b61386a1a8f1a8587a214198e",
+    "date_quote": "article:published_time=2018-11-19T18:07:07+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "f1b002478ba8e39598cb045f7e3892de679c5b48bd71f34a46c69b03d606206b",
+  "outputs": [
+    {
+      "path": "US\\2018_11_19_Banking_Financial-Services_cnbc.json",
+      "sha256": "74f3beb5c8d820f07f1ef73326f0d79a7c19b686e3879a92fa84040ea7e3f33b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-11-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:27.179894+00:00",
+    "fetched_at": "2026-11-10T14:19:38.131781+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.637764+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:46:44.640812+00:00",
+  "feature_available_at": "2026-11-12T14:46:44.650825+00:00",
+  "commit_verified_at": "2026-11-12T14:46:44.650825+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a significant financial penalty and legal settlement involving Societe Generale, including details about the nature of违规,",
+    "securities": [
+      {
+        "name": "Societe Generale",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Societe Generale"
+      },
+      {
+        "name": "U.S. federal and state authorities",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. federal and state authorities"
+      },
+      {
+        "name": "BNP Paribas",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BNP Paribas"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "Banking"
+      },
+      {
+        "name": "Legal and regulatory compliance",
+        "basis": "inferred",
+        "quote": "legal disputes"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Societe Generale": "company",
+      "U.S. federal and state authorities": "organization",
+      "BNP Paribas": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

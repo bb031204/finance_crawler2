@@ -1,0 +1,322 @@
+{
+  "source_id": "5a08e105e53fc9a8739ab1f5",
+  "status": "completed",
+  "source_record_hash": "142f5568100499c613fdbe275a9a5230f9d2b5ae968e1dfcc87b16b81dd1059b",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-16-000058-index.html",
+    "attempted_at": "2026-11-18T15:49:00.245318+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "456d878fdd51ebe4a92a110495adb05b584d8f61e946d817fb5b619a5cdbd951"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/5a08e105e53fc9a8739ab1f5.json",
+    "sha256": "639281731497fcf6c7dabc32d69316a95038e1ee0ad0f057dc24a8e3aea504ea",
+    "bundled_path": "legacy_audit/5a08e105e53fc9a8739ab1f5.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "f220e092ff6d9300bebdd0b0779a4b66f23d4678b010defdd71126bb5c65b1da",
+      "llm_inferred_at": "2026-11-18T15:49:53.136086+00:00",
+      "model_duration_seconds": 7.7431619,
+      "prompt_tokens": 2396,
+      "completion_tokens": 360,
+      "selection": [
+        {
+          "source_id": "5a08e105e53fc9a8739ab1f5",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The text discusses the financial reporting practices of Information Technology, Inc., including the use of non-GAAP financial measures.",
+              "rationale": "The article explicitly references the Information Technology industry and its financial reporting practices, indicating an industry-wide impact on how financial measures are reported within this sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SanDisk Corporation released its financial results for the fourth quarter and fiscal year ended January 3, 2016.",
+              "rationale": "The article directly mentions SanDisk Corporation's financial results, indicating a company-specific impact related to its financial reporting and merger activities.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "The text discusses the financial reporting practices of Information Technology, Inc., including the use of non-GAAP financial measures."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "6185bff96feab7ea1f7fbb7c9b2fe07e270b6673a08868232a4ae3a85f8a9a89",
+      "llm_inferred_at": "2026-11-18T15:49:59.652962+00:00",
+      "model_duration_seconds": 6.4731107,
+      "prompt_tokens": 2440,
+      "completion_tokens": 343,
+      "selection": [
+        {
+          "source_id": "5a08e105e53fc9a8739ab1f5",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The text discusses the financial reporting practices of Information Technology, Inc., including the use of non-GAAP financial measures.",
+              "rationale": "The article explicitly mentions the financial reporting practices of the Information Technology industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SanDisk Corporation released its financial results for the fourth quarter and fiscal year ended January 3, 2016.",
+              "rationale": "The article directly references SanDisk Corporation's financial results, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "The text discusses the financial reporting practices of Information Technology, Inc., including the use of non-GAAP financial measures."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:49:59.698967+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "456d878fdd51ebe4a92a110495adb05b584d8f61e946d817fb5b619a5cdbd951",
+    "raw_sha256": null,
+    "date_quote": "Date of Report (Date of earliest event reported): January 27, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018016000058/form8-kxq415earningsrelease.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation (the “Registrant” or “SanDisk”) issued a press release to report its financial results for its fourth quarter and fiscal year ended January 3, 2016."
+      },
+      {
+        "name": "Information Technology, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Information Technology, Inc."
+      },
+      {
+        "name": "SMART Storage Systems",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SMART Storage Systems"
+      },
+      {
+        "name": "Fusion-io, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fusion-io, Inc."
+      },
+      {
+        "name": "Western Digital Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Digital Corporation"
+      },
+      {
+        "name": "SanDisk",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk’s current expectations, estimates and projections about its business and industry"
+      },
+      {
+        "name": "Western Digital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "management’s beliefs, and certain assumptions made by SanDisk and Western Digital"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+        "name": "Information Technology",
+        "basis": "explicit",
+        "quote": "The text discusses the financial reporting practices of Information Technology, Inc., including the use of non-GAAP financial measures.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "222a36f3f602dee0",
+        "industry_name_standard": "Information Technology",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The text discusses the financial reporting practices of Information Technology, Inc., including the use of non-GAAP financial measures."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "5a08e105e53fc9a8739ab1f5",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_01_27_Financial-Report_Information-Technology_sec.json",
+        "sha256": "b1e09dae0528f3540e458d9c78f75bbec400f7124b18ebcad52b14bedb245804",
+        "filename": "2016_01_27_Financial-Report_Information-Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "ddc57cfc38b9fe8fb59e32bc3ab461f4f3e22969228315e2fef759d418f1b225",
+    "input_hash": "5700b66750c4467098800fb83fdd20c49354b7377bb0d5777a8055ef0bfeec87",
+    "matching_audit_hash": "f670a8b2d3b10d01abef52977bf7fb788b43dd9a38b76c3e1bc75a9bfbfe15ed",
+    "legacy_security_evidence": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation (the “Registrant” or “SanDisk”) issued a press release to report its financial results for its fourth quarter and fiscal year ended January 3, 2016."
+      },
+      {
+        "name": "Information Technology, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Information Technology, Inc."
+      },
+      {
+        "name": "SMART Storage Systems",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SMART Storage Systems"
+      },
+      {
+        "name": "Fusion-io, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fusion-io, Inc."
+      },
+      {
+        "name": "Western Digital Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Digital Corporation"
+      },
+      {
+        "name": "SanDisk",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk’s current expectations, estimates and projections about its business and industry"
+      },
+      {
+        "name": "Western Digital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "management’s beliefs, and certain assumptions made by SanDisk and Western Digital"
+      }
+    ],
+    "record_hash": "142f5568100499c613fdbe275a9a5230f9d2b5ae968e1dfcc87b16b81dd1059b",
+    "outputs": [
+      {
+        "path": "US\\2016_01_27_Financial-Report_Information-Technology_sec.json",
+        "sha256": "28678ed72a3bc3b1db55dfcf9929cc89a1f2bd1d0680a22f9f1fcd4905400e1c"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2016-01-27",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:04.846742+00:00",
+      "fetched_at": "2026-11-11T00:52:06.027019+00:00",
+      "feature_available_at": "2026-11-11T00:53:36.827540+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:49:59.652962+00:00",
+    "feature_available_at": "2026-11-18T15:49:59.698967+00:00",
+    "commit_verified_at": "2026-11-12T13:53:04.141251+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "SanDisk Corporation released its financial results for the fourth quarter and fiscal year ended January 3, 2016.",
+        "rationale": "The article directly references SanDisk Corporation's financial results, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "SanDisk Corporation released its financial results for the fourth quarter and fiscal year ended January 3, 2016."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-16-000058-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "142f5568100499c613fdbe275a9a5230f9d2b5ae968e1dfcc87b16b81dd1059b",
+    "content_hash": "456d878fdd51ebe4a92a110495adb05b584d8f61e946d817fb5b619a5cdbd951",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:49:59.662968+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/5a08e105e53fc9a8739ab1f5.json",
+      "sha256": "1d177d9d90fb11a06fa78d0dcee2e8fec1b88fbcb73c63d033da63b72596d83c",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 59.51500000001397
+}

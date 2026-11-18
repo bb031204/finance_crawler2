@@ -1,0 +1,248 @@
+{
+  "source_id": "4486db9f840458fb655962d2",
+  "status": "completed",
+  "source_record_hash": "4fb5a6483266fae728b28f567dc6afd07eefa754aa8abd0bed8c18339464b79c",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001102624-17-000167-index.html",
+    "attempted_at": "2026-11-18T13:10:15.133667+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001102624-17-000167-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262417000167/brookfieldasset6k.htm",
+    "fetched_at": "2026-11-18T13:10:28.159824+00:00",
+    "source_body_hash": "69776a150c22c81fefef82cfa393d4bd9ffd96093a5cfbff37d12b593d01d79a",
+    "raw_sha256": "ae236c375026f7f270279e2bed56870f76d32406a720088652f979e8e9dc4ad9",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262417000167/brookfieldasset6k.htm",
+        "type": "6-K",
+        "description": "BROOKFIELD ASSET MANAGEMENT INC. 6-K",
+        "raw_sha256": "ae236c375026f7f270279e2bed56870f76d32406a720088652f979e8e9dc4ad9",
+        "text_sha256": "6f48d89155cf769b63bb2bc8da7f0784584ddb7953e8d5e6b6f34c7388448c58",
+        "text_start": 0,
+        "text_end": 1943
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262417000167/exh99_1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "77813e14af0596783563d6c57172d2d2b50645819362d68293dff549aa3b5a8c",
+        "text_sha256": "412c51a4331b887d114222c3804f5e7b0e98eb22ba24239751644af6b4b1129c",
+        "text_start": 1945,
+        "text_end": 3333
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2017-03-31",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4486db9f840458fb655962d2.json",
+    "sha256": "d90ea21ab562946c87604080ad44b1c001a5b82af43ef5ef1f2163ac38910de3",
+    "bundled_path": "legacy_audit/4486db9f840458fb655962d2.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "67ffd894f353e7f0af31658dbf8a5796727bc411d5083b6dacdb1b766a98991d",
+      "llm_inferred_at": "2026-11-18T13:10:36.849607+00:00",
+      "model_duration_seconds": 8.6474584,
+      "prompt_tokens": 2794,
+      "completion_tokens": 370,
+      "selection": [
+        {
+          "source_id": "4486db9f840458fb655962d2",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+              "rationale": "The company is described as a global alternative asset manager, which aligns with the industry of investment management.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+              "rationale": "The company is the subject of the report and is explicitly named as Brookfield Asset Management Inc.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "7d9766637470c4aab5170b9c1f65e89bfbc1ec665f087a36f82ef5f3baea8932",
+      "llm_inferred_at": "2026-11-18T13:10:42.401601+00:00",
+      "model_duration_seconds": 5.5421758,
+      "prompt_tokens": 2838,
+      "completion_tokens": 288,
+      "selection": [
+        {
+          "source_id": "4486db9f840458fb655962d2",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:10:42.414469+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "69776a150c22c81fefef82cfa393d4bd9ffd96093a5cfbff37d12b593d01d79a",
+    "raw_sha256": "ae236c375026f7f270279e2bed56870f76d32406a720088652f979e8e9dc4ad9",
+    "date_quote": "SEC filing datePublished=2017-03-31",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262417000167/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "4486db9f840458fb655962d2",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_03_31_Regulatory-Filing_Financial-Services_sec.json",
+        "sha256": "89d5574ca3b037117fcc6dffbb3d36dc08936ea8a22d79f55469fc593d1319b9",
+        "filename": "2017_03_31_Regulatory-Filing_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "14db3bd73d396e8336a16d4a4a348b21c82f04423ef069ab8a495d3a102e8e6e",
+    "input_hash": "ec5c4b96e4455e04995513024745f883cace37dcd5c0e0737b260ce130e01382",
+    "matching_audit_hash": "2e4bd831257c7000917eea7a7899afd40732b81d4e450c7223005eb874bd6706",
+    "legacy_security_evidence": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "record_hash": "4fb5a6483266fae728b28f567dc6afd07eefa754aa8abd0bed8c18339464b79c",
+    "outputs": [
+      {
+        "path": "US\\2017_03_31_Regulatory-Filing_Financial-Services_sec.json",
+        "sha256": "c0efc9f5aadb2e6bf51a2e206653a429a5bf5c41f78aa46206fbb3893aec53a2"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2017-03-31",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+      "fetched_at": "2026-11-11T12:30:03.116676+00:00",
+      "feature_available_at": "2026-11-11T12:30:36.047865+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:10:42.401601+00:00",
+    "feature_available_at": "2026-11-18T13:10:42.414469+00:00",
+    "commit_verified_at": "2026-11-12T13:53:14.424777+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001102624-17-000167-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "4fb5a6483266fae728b28f567dc6afd07eefa754aa8abd0bed8c18339464b79c",
+    "content_hash": "0949f6c80c52c38b2d9b5a6a7e517e10d00e47876c19da1958207f850b425890",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:10:42.402594+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4486db9f840458fb655962d2.json",
+      "sha256": "6ba7d1c01f1c5952a4163317ae267c0ce61801ffa88986038d2b071a10619301",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 27.296999999991385
+}

@@ -1,0 +1,410 @@
+{
+  "source_id": "411c53243a7c22326f449890",
+  "status": "completed",
+  "source_record_hash": "5698439f16fba015ca349835c58b5e8d167d485882a881d71893e52bc16fad2a",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-15-000002-index.html",
+    "attempted_at": "2026-11-18T12:51:41.718662+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-15-000002-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018015000002/a2014-q48xkprexearningsrel.htm",
+    "fetched_at": "2026-11-18T12:51:56.054675+00:00",
+    "source_body_hash": "fa8e90acd5ce7ccd82245092e12d3dd77b3e3d729452f2b44bd888c0c042089c",
+    "raw_sha256": "a6a7ceb21196ba2f4e7ddfc5524cf883653e49601747ad2e0a3661cf8fd9ce97",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018015000002/a2014-q48xkprexearningsrel.htm",
+        "type": "8-K",
+        "description": "FORM 8-K Q4'14 BUSINESS UPDATE PRESS RELEASE",
+        "raw_sha256": "a6a7ceb21196ba2f4e7ddfc5524cf883653e49601747ad2e0a3661cf8fd9ce97",
+        "text_sha256": "e5088c9712952332b56c5bda25e57faae7c45c6842b539cd4167a99a50edc74c",
+        "text_start": 0,
+        "text_end": 5657
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018015000002/a2014-q4prexearningsex991.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1 BUSINESS UPDATE PRESS RELEASE",
+        "raw_sha256": "a5c97c8f367dcd5f0660ae79292c8cc7609425d41452ad036fcc89fd233c900e",
+        "text_sha256": "909d7a070424eaa759a50ddd6517df55b94959579fdfd8f1b4f76b8a246315ce",
+        "text_start": 5659,
+        "text_end": 10567
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-01-12",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/411c53243a7c22326f449890.json",
+    "sha256": "25de7c21f9dc3782d8e09d6f1259e5e628c0848af6a1c7ff93347c920fbd5b85",
+    "bundled_path": "legacy_audit/411c53243a7c22326f449890.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b74fc995b20e98fa720f60bfb3836ac9240ba3fc1c6164783519e291ca323e11",
+      "llm_inferred_at": "2026-11-18T12:52:10.120756+00:00",
+      "model_duration_seconds": 14.0205778,
+      "prompt_tokens": 3950,
+      "completion_tokens": 630,
+      "selection": [
+        {
+          "source_id": "411c53243a7c22326f449890",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On January 12, 2015, SanDisk Corporation (the “Registrant”) issued a press release to report certain preliminary financial results for its fourth quarter ended December 28, 2014.",
+              "rationale": "The press release is issued by SanDisk Corporation, indicating a company-specific financial update.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The company estimates total revenue to be approximately $1.73 billion, lower than the previously forecasted revenue range of $1.80 billion to $1.85 billion.",
+              "rationale": "This statement reflects the company's revenue estimate, which is a direct financial result of the company's operations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Non-GAAP gross margin for the fourth fiscal quarter is expected to be approximately 45% compared to the previously guided range of 47% to 49%.",
+              "rationale": "This is a financial metric specific to the company, indicating its performance in terms of gross margin.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "fiscal quarter is expected to be approximately 45% compared to the previously guided range of 47% to 49%. On Wednesday, January 21, 2015, SanDisk will publish its fourth quarter fiscal 2014 financial results press release via business wire after the close of market, and will hold its earnings conference call at 2 p.m., Pacific time. To listen to",
+              "rationale": "The press release and conference call are related to the company's financial results, which are relevant to US equity markets.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "a substitute for, or superior to, GAAP results. This non-GAAP financial measure may be different than the non-GAAP measures used by other companies. A reconciliation of this non-"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "2ab76e12fe72b3e0685961fafbef81d67f1da0c8cdb1ac2b6973e97a82e81475",
+      "llm_inferred_at": "2026-11-18T12:52:22.213065+00:00",
+      "model_duration_seconds": 12.0726427,
+      "prompt_tokens": 3994,
+      "completion_tokens": 622,
+      "selection": [
+        {
+          "source_id": "411c53243a7c22326f449890",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On January 12, 2015, SanDisk Corporation (the “Registrant”) issued a press release to report certain preliminary financial results for its fourth quarter ended December 28, 2014.",
+              "rationale": "The press release is issued by SanDisk Corporation, indicating a company-specific event.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The company estimates total revenue to be approximately $1.73 billion, lower than the previously forecasted revenue range of $1.80 billion to $1.85 billion.",
+              "rationale": "This statement reflects the company's financial performance and expectations, which are specific to SanDisk Corporation.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Non-GAAP gross margin for the fourth fiscal quarter is expected to be approximately 45% compared to the previously guided range of 47% to 49%.",
+              "rationale": "This is a company-specific financial metric, indicating the company's performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "fiscal quarter is expected to be approximately 45% compared to the previously guided range of 47% to 49%. On Wednesday, January 21, 2015, SanDisk will publish its fourth quarter fiscal 2014 financial results press release via business wire after the close of market, and will hold its earnings conference call at 2 p.m., Pacific time. To listen to",
+              "rationale": "The press release and conference call are related to the company's financial results, which are relevant to US equity markets.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "a substitute for, or superior to, GAAP results. This non-GAAP financial measure may be different than the non-GAAP measures used by other companies. A reconciliation of this non-"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "d62d85059d1888b32ff26e2e3d19a2929e661e753c21ac10bf212a0d5d952ff9",
+      "llm_inferred_at": "2026-11-18T12:52:30.567151+00:00",
+      "model_duration_seconds": 8.336039,
+      "prompt_tokens": 2274,
+      "completion_tokens": 402,
+      "selection": [
+        {
+          "source_id": "411c53243a7c22326f449890",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SanDisk’s consumer products are available at hundreds of thousands of retail stores worldwide.",
+              "rationale": "The article mentions SanDisk's consumer products being available in retail stores, which indicates an impact on the retail and consumer electronics industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "SanDisk is a trademark of SanDisk Corporation, registered in the United States and other countries.",
+              "rationale": "The article directly references SanDisk Corporation as a company and its trademark, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:f1a1ddf93d57fd06",
+              "name": "Consumer Electronics/Appliances",
+              "basis": "explicit",
+              "quote": "SanDisk’s consumer products are available at hundreds of thousands of retail stores worldwide."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "SanDisk is a trademark of SanDisk Corporation, registered in the United States and other countries."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "5dea6a09d2e04884e929a62f661e586c71abc60e65c54d0bb33af39b719415ae",
+      "llm_inferred_at": "2026-11-18T12:52:38.010389+00:00",
+      "model_duration_seconds": 7.4348876,
+      "prompt_tokens": 2318,
+      "completion_tokens": 398,
+      "selection": [
+        {
+          "source_id": "411c53243a7c22326f449890",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SanDisk’s consumer products are available at hundreds of thousands of retail stores worldwide.",
+              "rationale": "The article mentions SanDisk's consumer products being available in retail stores, which indicates an impact on the retail and consumer electronics industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "SanDisk is a trademark of SanDisk Corporation, registered in the United States and other countries.",
+              "rationale": "The article directly references SanDisk Corporation as a company and its trademark, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:f1a1ddf93d57fd06",
+              "name": "Consumer Electronics/Appliances",
+              "basis": "explicit",
+              "quote": "SanDisk’s consumer products are available at hundreds of thousands of retail stores worldwide."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "SanDisk is a trademark of SanDisk Corporation, registered in the United States and other countries."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:52:38.025580+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fa8e90acd5ce7ccd82245092e12d3dd77b3e3d729452f2b44bd888c0c042089c",
+    "raw_sha256": "a6a7ceb21196ba2f4e7ddfc5524cf883653e49601747ad2e0a3661cf8fd9ce97",
+    "date_quote": "Date of Report (Date of earliest event reported): January 12, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018015000002/a2014-q48xkprexearningsrel.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation (the “Registrant”) issued a press release to report certain preliminary financial results for its fourth quarter ended December 28, 2014."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:f1a1ddf93d57fd06",
+        "name": "Consumer Electronics/Appliances",
+        "basis": "inferred",
+        "quote": "SanDisk’s consumer products are available at hundreds of thousands of retail stores worldwide.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "f1a1ddf93d57fd06",
+        "industry_name_standard": "Consumer Electronics/Appliances",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SanDisk’s consumer products are available at hundreds of thousands of retail stores worldwide.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "411c53243a7c22326f449890",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_01_12_Financial-Report_Technology_sec.json",
+        "sha256": "f260dfb5ef64e76f100d075737b56f8ac99ccf4dd426708fa52a0d32c6ed7138",
+        "filename": "2015_01_12_Financial-Report_Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "e257ca8227df68eb3d820043b0a3968d3ffbf0b6b60d91a9b6f1d4abf34e3743",
+    "input_hash": "3dd8b70c3ccb2f162ae55fc85be7d75b7ef16fef4e38a544cd5c821882216389",
+    "matching_audit_hash": "f7570e420414e528e8351c6bc5cc6b1506cab4b2d10e30cf83c53f385d93885c",
+    "legacy_security_evidence": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation (the “Registrant”) issued a press release to report certain preliminary financial results for its fourth quarter ended December 28, 2014."
+      }
+    ],
+    "record_hash": "5698439f16fba015ca349835c58b5e8d167d485882a881d71893e52bc16fad2a",
+    "outputs": [
+      {
+        "path": "US\\2015_01_12_Financial-Report_Technology_sec.json",
+        "sha256": "2c230fd76e98d6b787d320ae2c110d7193e3ec6da00266f89dda0d5c44ff696f"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-01-12",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+      "fetched_at": "2026-11-11T00:14:53.775941+00:00",
+      "feature_available_at": "2026-11-11T00:15:18.996424+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:52:38.010389+00:00",
+    "feature_available_at": "2026-11-18T12:52:38.025580+00:00",
+    "commit_verified_at": "2026-11-12T13:52:53.727250+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Non-GAAP gross margin for the fourth fiscal quarter is expected to be approximately 45% compared to the previously guided range of 47% to 49%.",
+        "rationale": "This is a company-specific financial metric, indicating the company's performance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Non-GAAP gross margin for the fourth fiscal quarter is expected to be approximately 45% compared to the previously guided range of 47% to 49%.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "SanDisk is a trademark of SanDisk Corporation, registered in the United States and other countries.",
+        "rationale": "The article directly references SanDisk Corporation as a company and its trademark, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SanDisk is a trademark of SanDisk Corporation, registered in the United States and other countries.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000180/0001000180-15-000002-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "5698439f16fba015ca349835c58b5e8d167d485882a881d71893e52bc16fad2a",
+    "content_hash": "482e54241530a4f3d12ca027e53f79f5e6dee79085ecb4c2815bfd66c0a9b470",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:52:38.012150+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/411c53243a7c22326f449890.json",
+      "sha256": "68b79c9d8b9f9e9dba2dce8743785a058df5815d5512870ccdc2f89aedd57f1d",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 56.32799999997951
+}

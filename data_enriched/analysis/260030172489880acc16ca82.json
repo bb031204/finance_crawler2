@@ -1,0 +1,119 @@
+{
+  "source_id": "260030172489880acc16ca82",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_08_Currency_Finance_cnbc.json",
+      "sha256": "412d379448a62de202cdc997c47e88961468cd3b37bce6f58384a52a382eef70",
+      "filename": "2018_03_08_Currency_Finance_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2018_03_08_Currency_Finance_cnbc.json",
+      "sha256": "412d379448a62de202cdc997c47e88961468cd3b37bce6f58384a52a382eef70",
+      "filename": "2018_03_08_Currency_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "215946bb639daa300523cb0a10d962574e6322856751431521115c2c1dc83072",
+  "input_hash": "eb95accbd99bf2823863f821e8513e813a5ec6bdcbf963513b6da22f3f59182a",
+  "matching_audit_hash": "6ab96bd7b56de5732bff8a6f527a9c5a822dc445d38cbb3c67aeea8fc2248c2a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1c179ee0ed3e980f0a5acb2ae7f7e696df04e036a2ba9d4bad8a712e1514a1a7",
+    "raw_sha256": "53140b365d49772c9f0829b38bd1f90edd6e6c269beb6a8ca3efce423db8c946",
+    "date_quote": "article:published_time=2018-03-08T05:10:45+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e53494b500ff69eb52f31f4c8d81dca32b817f475ecad8bdf6998ae9772735b8",
+  "outputs": [
+    {
+      "path": "US\\2018_03_08_Currency_Finance_cnbc.json",
+      "sha256": "9cdabc0180d7784e3d07301b1b0d41326ace5d48dd47b517946bcf64562a6e5b"
+    },
+    {
+      "path": "GLOBAL\\2018_03_08_Currency_Finance_cnbc.json",
+      "sha256": "9cdabc0180d7784e3d07301b1b0d41326ace5d48dd47b517946bcf64562a6e5b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:28.583846+00:00",
+    "fetched_at": "2026-11-10T15:52:16.814767+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.570331+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:40.607751+00:00",
+  "feature_available_at": "2026-11-12T14:43:40.619758+00:00",
+  "commit_verified_at": "2026-11-12T14:43:40.619758+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the impact of central bank policies and trade tensions on currency markets, including the euro and dollar, with specific mention of the ECB,蕭",
+    "securities": [
+      {
+        "name": "European Central Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "European Central Bank"
+      },
+      {
+        "name": "Bank of Japan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bank of Japan"
+      },
+      {
+        "name": "U.S. government",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. government"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Central banking",
+        "basis": "inferred",
+        "quote": "central bank"
+      },
+      {
+        "name": "Trade policy",
+        "basis": "inferred",
+        "quote": "trade war"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "European Central Bank": "organization",
+      "Bank of Japan": "organization",
+      "U.S. government": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

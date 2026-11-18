@@ -1,0 +1,175 @@
+{
+  "source_id": "74f4020f2feba9a5d2386f2b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_12_22_16_43_Policy_Finance_cnbc.json",
+      "sha256": "23518b8fe5d1cbed497fc053e699d8e56068e012d9eb2cde166dcc181c7d0200",
+      "filename": "2017_12_22_16_43_Policy_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "7cf0cfc46377a82a391c4c234e303d53087c4dd0a1d059501ca025cd8dd30279",
+  "input_hash": "746979f854ab974f6d69e4bcee33f3fd876ad80c9a132412c602f20ee4c2704f",
+  "matching_audit_hash": "92fc49d4b014414addbc68db8ddbd94b1f0fcbaf2bc101aa7c654266643abc38",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "379d78d05d5f6c279e3d3849a83ec58a7539e59c15b352d37434d7e4de8b2d0b",
+    "raw_sha256": "47def72e16b9fad337cd575e9159a41f971b4e20131bf15154ae007f700cec33",
+    "date_quote": "article:published_time=2017-12-22T16:43:06+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "75cb3704a5b39362e212f6884590cae92a89e5d3ec077a677e7a0f741134cda8",
+  "outputs": [
+    {
+      "path": "US\\2017_12_22_16_43_Policy_Finance_cnbc.json",
+      "sha256": "aa6ac6974be078903a009be6d28fc1daafe3ab26b780b76eee6b2f8e0895fdbc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-12-22T16:43:06+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:35:59.661160+00:00",
+    "fetched_at": "2026-11-10T19:18:50.712542+00:00",
+    "feature_available_at": "2026-11-11T05:58:10.935808+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:07:51.094746+00:00",
+  "feature_available_at": "2026-11-12T15:16:42.064062+00:00",
+  "commit_verified_at": "2026-11-12T15:16:42.064062+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Tax bill impacts corporate taxes and government funding",
+    "securities": [
+      {
+        "name": "GOP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GOP tax bill"
+      },
+      {
+        "name": "Republican-controlled Congress",
+        "ticker": null,
+        "exchange": null,
+        "quote": "pass the legislation through the Republican-controlled Congress"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "tax bill"
+      },
+      {
+        "name": "Government",
+        "basis": "explicit",
+        "quote": "federal government"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "GOP": "organization",
+      "Republican-controlled Congress": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:42.084243+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:07:51.094746+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Tax bill impacts corporate taxes and government funding",
+      "securities": [
+        {
+          "name": "GOP",
+          "ticker": null,
+          "exchange": null,
+          "quote": "GOP tax bill"
+        },
+        {
+          "name": "Republican-controlled Congress",
+          "ticker": null,
+          "exchange": null,
+          "quote": "pass the legislation through the Republican-controlled Congress"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Finance",
+          "basis": "inferred",
+          "quote": "tax bill"
+        },
+        {
+          "name": "Government",
+          "basis": "explicit",
+          "quote": "federal government"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "GOP": "organization",
+        "Republican-controlled Congress": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:07:51.134548+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:07:51.144004+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:07:51.121638+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the enactment of a tax bill and its implications, including corporate tax cuts and government funding, which are relevant to policy and macro",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:41:50.792295+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

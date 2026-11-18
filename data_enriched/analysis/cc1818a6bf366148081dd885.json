@@ -1,0 +1,126 @@
+{
+  "source_id": "cc1818a6bf366148081dd885",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_04_17_15_59_event_Automotive_prnewswire.json",
+      "sha256": "9391eaaca41a16ef4e3e661f096b066ff015a538b463a85f8ddc1ce31c21d925",
+      "filename": "2019_04_17_15_59_event_Automotive_prnewswire.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2019_04_17_15_59_event_Automotive_prnewswire.json",
+      "sha256": "9391eaaca41a16ef4e3e661f096b066ff015a538b463a85f8ddc1ce31c21d925",
+      "filename": "2019_04_17_15_59_event_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "fb505a232c32b72df941b74c71c92cd064b2f84a8fe246f5cbb95892a4183cbd",
+  "input_hash": "5837abd625b5dede86917da36f047bfcaa99a1d84c75d69c443526dfc88b28c7",
+  "matching_audit_hash": "ecfa9a50a7be42b7cbef55dda2ab8c741aed4c794d7c0c16f28186f09fc2ad74",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e3797eab5bfb98b209c0a568cefbe2d1fce5c02d4bb21da4719bc5e5039acd37",
+    "raw_sha256": "4a644179d505879ac1c8ca1db760f2907a12a40ecceb1c49cd751cca3ce8782f",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2019-04-17T15:59:00+01:00\ndate=2019-04-17T15:59:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "76d37ce10d202613937dcdaf9024f41d3599dbbbb5bb5cbd97a0a767b7083a5e",
+  "outputs": [
+    {
+      "path": "US\\2019_04_17_15_59_event_Automotive_prnewswire.json",
+      "sha256": "9ce22875b65e95e50592f6bfa532b77413e19609ccf4339ed673992f6879ac88"
+    },
+    {
+      "path": "GLOBAL\\2019_04_17_15_59_event_Automotive_prnewswire.json",
+      "sha256": "9ce22875b65e95e50592f6bfa532b77413e19609ccf4339ed673992f6879ac88"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-04-17T15:59:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:40:15.582563+00:00",
+    "fetched_at": "2026-11-10T21:33:05.965454+00:00",
+    "feature_available_at": "2026-11-11T08:58:26.178717+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:55.086447+00:00",
+  "feature_available_at": "2026-11-12T14:48:55.098961+00:00",
+  "commit_verified_at": "2026-11-12T14:48:55.098961+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about automotive industry awards, companies involved in the awards process, and industry trends.",
+    "securities": [
+      {
+        "name": "KPMG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KPMG"
+      },
+      {
+        "name": "Prime Research",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Prime Research"
+      },
+      {
+        "name": "Autoneum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Autoneum"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "explicit",
+        "quote": "automotive"
+      },
+      {
+        "name": "Consumer Electronics",
+        "basis": "inferred",
+        "quote": "Consumer Electronics Show (CES)"
+      },
+      {
+        "name": "Research and Analysis",
+        "basis": "inferred",
+        "quote": "Global Trends Report"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "KPMG": "company",
+      "Prime Research": "company",
+      "Autoneum": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "source_id": "122fac79ec719e560343ad81",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_10_Financing_Telecommunications_sec.json",
+      "sha256": "2b09e2e5fd9d9fc2fa3045ffe76a00057422ee50040897b9d447e10958c14753",
+      "filename": "2017_03_10_Financing_Telecommunications_sec.json"
+    }
+  ],
+  "original_record_hash": "f0c1a900116a92f944366e83f74f292ac07ccbcc491e32e56c256fb3ae1fbab3",
+  "input_hash": "b37172aead4485da61e48393ea19218cfabf19abbd97eb7ed764ecd09933eb3f",
+  "matching_audit_hash": "2f1b2c7dab720426e41f2ea856a36538451451fab7b571049e3b8c0023e0d354",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e805cce685df99c5be4073d2fdd08c56e6a3dc0cadf03400ea171640848a93ae",
+    "raw_sha256": "4138ccda3c455d87905d07c1a651d03256b2927cc9a3b91e9912cedabe2d14b6",
+    "date_quote": "SEC filing datePublished=2017-03-10",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465917015614/a17-8131_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "25a3a57e56b51c9d89e2d1cc367bf6ce6018cd400c8d41e70b86aeb4fccde80e",
+  "outputs": [
+    {
+      "path": "US\\2017_03_10_Financing_Telecommunications_sec.json",
+      "sha256": "f7396a2020b2fd5586aea6b24e153621ae0662c8efc55cfe6407196de35458c8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:24:28.158675+00:00",
+    "feature_available_at": "2026-11-11T12:24:37.456707+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:06:36.498079+00:00",
+  "feature_available_at": "2026-11-12T15:16:40.891193+00:00",
+  "commit_verified_at": "2026-11-12T15:16:40.891193+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Announces convertible note issuance for strategic transactions and corporate use",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Wireless Communications",
+        "basis": "inferred",
+        "quote": "wireless and spectrum-related transactions"
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "convertible notes"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "DISH Network Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:40.906204+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:06:36.498079+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Announces convertible note issuance for strategic transactions and corporate use",
+      "securities": [
+        {
+          "name": "DISH Network Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "DISH Network Corporation"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Wireless Communications",
+          "basis": "inferred",
+          "quote": "wireless and spectrum-related transactions"
+        },
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "convertible notes"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "DISH Network Corporation": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:06:36.522789+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:06:36.531789+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:36.514149+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about DISH Network Corporation's financing activities, including the issuance of convertible notes and the intended use of the净",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:39:34.556472+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "source_id": "3c353bdea0bb770f2d912f33",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_15_Material-Definitive-Agreement_Financial-Services_sec.json",
+      "sha256": "dc98311365f8dbcf5a602ed149acb38f814035768cf232704890532318050cae",
+      "filename": "2019_03_15_Material-Definitive-Agreement_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "aed8e35e22ad68d12d8cf3faffff9312e973d44eedad37fd86c400329eb36f86",
+  "input_hash": "06ffa8029cb0c5bdd3d18e0599f9b2d7c92d655c17869cd875304814bdf84375",
+  "matching_audit_hash": "b2ad25d1875a01239132ff2a5b21245b64e7c137e7e091ca4d2520c65d942347",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "390f8be12a457627d8cba21cab9b5ea0f4c8fade8cf1a347706f16664c8d6f1e",
+    "raw_sha256": "f6f863eccc63c93e4169bc9a0f209efdb3935cc015ba40f42efbff6d0077ec5f",
+    "date_quote": "SEC filing datePublished=2019-03-15",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312519075814/d722796d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    },
+    {
+      "name": "Freshstart Venture Capital Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Freshstart Venture Capital Corp."
+    }
+  ],
+  "record_hash": "71292e98556664873a0f3534c2ce78abc25b9a111bf7a19a2b0664b92b01f1fa",
+  "outputs": [
+    {
+      "path": "US\\2019_03_15_Material-Definitive-Agreement_Financial-Services_sec.json",
+      "sha256": "34fa4c69e04dc3a877d5cadee36e7709946eb256c7b61e587fabffd2a62d1cc1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+    "fetched_at": "2026-11-11T13:36:30.362513+00:00",
+    "feature_available_at": "2026-11-11T13:36:45.621405+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:11:08.223372+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.313372+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.313372+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Loan amendments and regulatory context",
+    "securities": [
+      {
+        "name": "Freshstart Venture Capital Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Freshstart Venture Capital Corp."
+      },
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "a wholly-owned subsidiary of Medallion Financial Corp."
+      },
+      {
+        "name": "U.S. Small Business Administration",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the U.S. Small Business Administration"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Loan Agreement and Note"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Freshstart Venture Capital Corp.": "company",
+      "Medallion Financial Corp.": "company",
+      "U.S. Small Business Administration": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:45.335818+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:11:08.223372+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Loan amendments and regulatory context",
+      "securities": [
+        {
+          "name": "Freshstart Venture Capital Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Freshstart Venture Capital Corp."
+        },
+        {
+          "name": "Medallion Financial Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "a wholly-owned subsidiary of Medallion Financial Corp."
+        },
+        {
+          "name": "U.S. Small Business Administration",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the U.S. Small Business Administration"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Loan Agreement and Note"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Freshstart Venture Capital Corp.": "company",
+        "Medallion Financial Corp.": "company",
+        "U.S. Small Business Administration": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:11:08.249446+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:11:08.259342+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:11:08.241424+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses amendments to a loan agreement and note between Freshstart Venture Capital Corp. and the U.S. Small Business Administration, indicating a貸",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:48:15.182152+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

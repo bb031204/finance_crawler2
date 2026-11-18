@@ -1,0 +1,276 @@
+{
+  "source_id": "6759938221d2991694b0b620",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_09_08_Legal_Legal_treasury.json",
+      "sha256": "aba8511aba591beb41d16dacc5ed4d030c862869ef857e36d743368886455d7d",
+      "filename": "2016_09_08_Legal_Legal_treasury.json"
+    }
+  ],
+  "original_record_hash": "b6f91e4411b58336faf2b7bc08f3d429e88525a06aee1335c3b229f279a7d081",
+  "input_hash": "1dcee13d38844ac8e291f4bd401d7fc4e815296b25759248ade103d0af4b50dd",
+  "matching_audit_hash": "28aa5458de609e65445bb4a22174fa0429c5a02267a1ea3b9035440764eec832",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f1f57143d2d198a807cc2067e16fb4480591883ba75ac55ff8ab47949ebe5069",
+    "raw_sha256": "97aa7d5321e995d4ddd5c5ad9aaed33a0ea3dc0b146716382773806b4d2b7c06",
+    "date_quote": "September 8, 2016 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "bbcaa63685bab39737bfd947c73b4b1e28e6ca8071d03ff6694cdc47e6ed02cb",
+  "outputs": [
+    {
+      "path": "US\\2016_09_08_Legal_Legal_treasury.json",
+      "sha256": "9bcb15d6b48ee57c72a4882bf3ca557c75322a0802bd836888cfbefce5403d14"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-09-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:33.560082+00:00",
+    "fetched_at": "2026-11-10T22:19:41.745911+00:00",
+    "feature_available_at": "2026-11-10T22:20:08.953274+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:05:44.805542+00:00",
+  "feature_available_at": "2026-11-12T15:16:39.909683+00:00",
+  "commit_verified_at": "2026-11-12T15:16:39.909683+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses U.S. Treasury payments to Iran under sanctions",
+    "securities": [
+      {
+        "name": "Treasury Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Department"
+      },
+      {
+        "name": "House Committee on Financial Services Subcommittee on Oversight and Investigations",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House Committee on Financial Services Subcommittee on Oversight and Investigations"
+      },
+      {
+        "name": "Central Bank of Iran",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Central Bank of Iran"
+      },
+      {
+        "name": "European Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "European Bank"
+      },
+      {
+        "name": "Iran-United States Claims Tribunal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Iran-United States Claims Tribunal in The Hague"
+      },
+      {
+        "name": "Department of Justice",
+        "ticker": null,
+        "exchange": null,
+        "quote": "receiving appropriate approvals from the Department of Justice"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "explicit",
+        "quote": "House Committee on Financial Services Subcommittee on Oversight and Investigations"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "European Bank"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Treasury Department": "organization",
+      "House Committee on Financial Services Subcommittee on Oversight and Investigations": "organization",
+      "Central Bank of Iran": "organization",
+      "European Bank": "organization",
+      "Iran-United States Claims Tribunal": "organization",
+      "Department of Justice": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:39.933675+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:05:44.805542+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses U.S. Treasury payments to Iran under sanctions",
+      "securities": [
+        {
+          "name": "Treasury Department",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Treasury Department"
+        },
+        {
+          "name": "House Committee on Financial Services Subcommittee on Oversight and Investigations",
+          "ticker": null,
+          "exchange": null,
+          "quote": "House Committee on Financial Services Subcommittee on Oversight and Investigations"
+        },
+        {
+          "name": "Central Bank of Iran",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Central Bank of Iran"
+        },
+        {
+          "name": "European Bank",
+          "ticker": null,
+          "exchange": null,
+          "quote": "European Bank"
+        },
+        {
+          "name": "Iran-United States Claims Tribunal",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Iran-United States Claims Tribunal in The Hague"
+        },
+        {
+          "name": "Department of Justice",
+          "ticker": null,
+          "exchange": null,
+          "quote": "receiving appropriate approvals from the Department of Justice"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "explicit",
+          "quote": "House Committee on Financial Services Subcommittee on Oversight and Investigations"
+        },
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "European Bank"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Treasury Department": "organization",
+        "House Committee on Financial Services Subcommittee on Oversight and Investigations": "organization",
+        "Central Bank of Iran": "organization",
+        "European Bank": "organization",
+        "Iran-United States Claims Tribunal": "organization",
+        "Department of Justice": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:05:44.832501+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:05:44.840501+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:05:44.823495+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses a financial settlement involving the United States and Iran, including the disbursement of funds through a European bank and compliance withU",
+        "securities": [
+          {
+            "name": "Treasury Department",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Treasury Department"
+          },
+          {
+            "name": "House Committee on Financial Services Subcommittee on Oversight and Investigations",
+            "ticker": null,
+            "exchange": null,
+            "quote": "House Committee on Financial Services Subcommittee on Oversight and Investigations"
+          },
+          {
+            "name": "Central Bank of Iran",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Central Bank of Iran"
+          },
+          {
+            "name": "European Bank",
+            "ticker": null,
+            "exchange": null,
+            "quote": "European Bank"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Financial Services",
+            "basis": "explicit",
+            "quote": "House Committee on Financial Services Subcommittee on Oversight and Investigations"
+          },
+          {
+            "name": "Banking",
+            "basis": "inferred",
+            "quote": "European Bank"
+          }
+        ],
+        "impact_scope": [],
+        "entity_types": {
+          "Treasury Department": "organization",
+          "House Committee on Financial Services Subcommittee on Oversight and Investigations": "organization",
+          "Central Bank of Iran": "organization",
+          "European Bank": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:32:31.305155+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "source_id": "56ad2628a1705a52e518c152",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_01_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "1472d25908b11c4f50642d6b48d30b25a9142ef3590b04d07e2f2bfd03517d83",
+      "filename": "2021_02_01_Mergers-&-Acquisitions_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "633ab77b907d3bee23f014e195286b53cae014da0cc7f2403485564c22f9c801",
+  "input_hash": "2dfd52bcd2e1301f3e794535681c93f4b123d5a2fae4fba8d1df2dfd0aa73255",
+  "matching_audit_hash": "4503ff8bf9c353797bb4ebb1ea133ceee5328350a573753495c0ade2cc7a8a7b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7f384752a12cbee719c46873f5bf48f03925f02baeb9debece8692de3e642b2c",
+    "raw_sha256": "c36f08cc650793b1ef5e54a15eddb659701baab33ddc0a6ef62576215c9a7001",
+    "date_quote": "SEC filing datePublished=2021-02-01",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000155837021000599/ktyb-20210201x8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Kentucky Bancshares, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Kentucky Bancshares, Inc."
+    },
+    {
+      "name": "Stock Yards Bancorp, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Stock Yards Bancorp, Inc."
+    },
+    {
+      "name": "STOCK YARDS",
+      "ticker": null,
+      "exchange": null,
+      "quote": "STOCK YARDS"
+    }
+  ],
+  "record_hash": "2c0c20df61ec99ac5d2b72a57e4121493d21bf9782fe5528c864751ffd2aa126",
+  "outputs": [
+    {
+      "path": "US\\2021_02_01_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "fc668eb66803e6774d72c01228f661d348d8685d77c68e3a0ae2775e47a86d9b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.584595+00:00",
+    "fetched_at": "2026-11-11T15:48:55.064180+00:00",
+    "feature_available_at": "2026-11-11T15:50:04.422225+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.056683+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.056683+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Kentucky Bancshares, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kentucky Bancshares, Inc."
+      },
+      {
+        "name": "Stock Yards Bancorp, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Stock Yards Bancorp, Inc."
+      },
+      {
+        "name": "STOCK YARDS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "STOCK YARDS"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

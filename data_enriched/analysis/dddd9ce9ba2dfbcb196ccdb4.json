@@ -1,0 +1,107 @@
+{
+  "source_id": "dddd9ce9ba2dfbcb196ccdb4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_04_Finance_Bonds_cnbc.json",
+      "sha256": "4785e602a2b20487c1e89d716408b26c28a5a7c62a3744683c09d9a3565b558d",
+      "filename": "2017_10_04_Finance_Bonds_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f1f0b0a8da599fd0b3f5c7b337b84aec3e7cc093a072a3000a72cb306a7856c6",
+  "input_hash": "5175b5248d172aae73684efa0e0dacb45f6a7eaa92e61fa5f6f5e9c6690adb37",
+  "matching_audit_hash": "cec9db16cdbc49497c9210ad35df3ebfa61cee7482d25c26a984b6db8bbc46be",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "52b060030bcde5ea890929a1b82e010a4d9cf58ecb5b7fa30577841233c2a0cc",
+    "raw_sha256": "404d57604efa6c780d663cd740478cb6994861b38ef4edaabc8572d3e20ce36c",
+    "date_quote": "article:published_time=2017-10-04T16:52:38+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "49f8fa4b9fc249a2d9e0bd96e191b580f9bc2503d7c3ed855877a8ea2f612bb3",
+  "outputs": [
+    {
+      "path": "US\\2017_10_04_Finance_Bonds_cnbc.json",
+      "sha256": "ec84737ab00a28d977b285fb53af3029db6b533747eba43007e7984d347506ae"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:36.417235+00:00",
+    "fetched_at": "2026-11-10T13:46:53.748377+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.061894+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:40:57.722158+00:00",
+  "feature_available_at": "2026-11-12T14:40:57.777673+00:00",
+  "commit_verified_at": "2026-11-12T14:40:57.777673+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Puerto Rico's debt restructuring, bond market reactions, and the political implications of Trump's comments on the island's debt.",
+    "securities": [
+      {
+        "name": "Puerto Rico",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Puerto Rico"
+      },
+      {
+        "name": "Congress",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Congress"
+      },
+      {
+        "name": "MBIA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MBIA"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Insurance",
+        "basis": "inferred",
+        "quote": "Insurance"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Puerto Rico": "company",
+      "Congress": "organization",
+      "MBIA": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

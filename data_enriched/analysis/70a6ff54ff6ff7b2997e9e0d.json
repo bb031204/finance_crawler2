@@ -1,0 +1,96 @@
+{
+  "source_id": "70a6ff54ff6ff7b2997e9e0d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_15_Technology_Automotive_prnewswire.json",
+      "sha256": "7fadbd12cb8a99fa364327c651a0105b56313703cfd8cba92a050904682c6197",
+      "filename": "2015_01_15_Technology_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "2614a59b081091b582eea6d5f84adf603b7fe8dac2ea269f448df09f01320cbe",
+  "input_hash": "ffa683ca94c45cd0e50b5b8f5c5815c3a93b6972cb59783c11211db6b6b9af64",
+  "matching_audit_hash": "66935bdf099f0ed70dbf3d6c4e2984c37fc36bb571f4e6f7c952848d8d39a110",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "79af3791939fc4b151d9d4b487d640791b758fa4b229e5b9bb56e9fd6f93854c",
+    "raw_sha256": "567a16ed926cf93b512fdcaa57c5657e353eb4d8c4d2a674168944d3472cdd13",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2015-01-15T10:24:00Z\ndate=2015-01-15T10:24:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "TowerSec",
+      "ticker": null,
+      "exchange": null,
+      "quote": "TowerSec"
+    }
+  ],
+  "record_hash": "7a0bcba7dfccfd1a4b6da1d6040285b6d42c3a7f64c19a72188f7b104ec394ce",
+  "outputs": [
+    {
+      "path": "US\\2015_01_15_Technology_Automotive_prnewswire.json",
+      "sha256": "4de5106786140d7a23cad00f08190f0bc8a65c5a1c87970538e3ea929c52e085"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:02.572514+00:00",
+    "fetched_at": "2026-11-10T21:26:40.849826+00:00",
+    "feature_available_at": "2026-11-11T08:53:03.700343+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.022499+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.022499+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "TowerSec",
+        "ticker": null,
+        "exchange": null,
+        "quote": "TowerSec"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

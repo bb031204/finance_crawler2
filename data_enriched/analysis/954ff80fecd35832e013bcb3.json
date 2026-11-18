@@ -1,0 +1,150 @@
+{
+  "source_id": "954ff80fecd35832e013bcb3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_29_Economic-Conditions_Finance_cnbc.json",
+      "sha256": "a4939416b010ff257b499b04050d49b06a3fc8300e98f20ebc94a91805d50833",
+      "filename": "2016_01_29_Economic-Conditions_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f793b32a2314bb086b3a3c044a2e258f614a68b8483129067864cedf1af68838",
+  "input_hash": "ce958faff418c4b2e92dd3d1050e32931cfe1e94209f48655a6de899bd047cbe",
+  "matching_audit_hash": "8a973839482911e34018e853525fd4ec4aff5f5d7840c09089fadd6726bdee20",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5d703d64f635dc8e179039cd59f4b554fce8376f19793f2107da80ec078ad26e",
+    "raw_sha256": "aff4782b78900f092c0103429c612a52118d813c8ae1eae89dd83908f926645e",
+    "date_quote": "article:published_time=2016-01-29T19:20:52+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Goldman Sachs",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Goldman Sachs reported Thursday evening that its analyst index of economic indicators is at its lowest level since mid-2012."
+    },
+    {
+      "name": "Deutsche Bank",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Deutsche Bank to conclude that even its modest 1.8 percent GDP growth rate for 2016 may be too ambitious."
+    },
+    {
+      "name": "Fundstrat",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Fundstrat"
+    },
+    {
+      "name": "JPMorgan",
+      "ticker": null,
+      "exchange": null,
+      "quote": "JPMorgan"
+    },
+    {
+      "name": "BofAML",
+      "ticker": null,
+      "exchange": null,
+      "quote": "BofAML said the risk is about 20 percent — both figures fairly close to their historical norm for any year."
+    }
+  ],
+  "record_hash": "e83d16982006908862c961833922000fe9af61798b0e7be8475e16ef81d8e41a",
+  "outputs": [
+    {
+      "path": "US\\2016_01_29_Economic-Conditions_Finance_cnbc.json",
+      "sha256": "534afd43759b62dd4293f8bbaa4f0e0795acd03cfc9034e3016ae7d061d93adc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:09.930017+00:00",
+    "fetched_at": "2026-11-11T03:47:14.520545+00:00",
+    "feature_available_at": "2026-11-11T03:48:00.516563+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:04.397880+00:00",
+  "commit_verified_at": "2026-11-12T13:53:04.397880+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Goldman Sachs",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Goldman Sachs reported Thursday evening that its analyst index of economic indicators is at its lowest level since mid-2012."
+      },
+      {
+        "name": "Deutsche Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Deutsche Bank to conclude that even its modest 1.8 percent GDP growth rate for 2016 may be too ambitious."
+      },
+      {
+        "name": "Fundstrat",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fundstrat"
+      },
+      {
+        "name": "JPMorgan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "JPMorgan"
+      },
+      {
+        "name": "BofAML",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BofAML said the risk is about 20 percent — both figures fairly close to their historical norm for any year."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Economy",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

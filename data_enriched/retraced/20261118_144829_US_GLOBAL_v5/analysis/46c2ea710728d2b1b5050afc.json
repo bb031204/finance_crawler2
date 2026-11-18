@@ -1,0 +1,1258 @@
+{
+  "source_id": "46c2ea710728d2b1b5050afc",
+  "status": "completed",
+  "source_record_hash": "aff091823ce2210e1fc8a0feddf92b89263d515a2298e270517302a7f65da72c",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1512673/0001193125-20-286821-index.html",
+    "attempted_at": "2026-11-18T13:21:25.878957+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1512673/0001193125-20-286821-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1512673/000119312520286821/d201688d8k.htm",
+    "fetched_at": "2026-11-18T13:21:47.232369+00:00",
+    "source_body_hash": "f4784b8f890b00a8afcbfd90bd52975184d7c731b41c2b4f7f77848cd120928d",
+    "raw_sha256": "0ceaecc86cf8d29f7628035b046f6826361eee543ba0ae5c4322ec24d06f0f8a",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1512673/000119312520286821/d201688d8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "0ceaecc86cf8d29f7628035b046f6826361eee543ba0ae5c4322ec24d06f0f8a",
+        "text_sha256": "d7f5252681756bce67033c642cd26bff3ff3b2b719976cb4bd4c92e34326a078",
+        "text_start": 0,
+        "text_end": 3762
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1512673/000119312520286821/d201688dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "1d0830b08981bbbc0862a4826d96944a570c252111fa2028dc1d05f1f72ddbf4",
+        "text_sha256": "e85371a96347148d96e973b8ebd80ece86016bd7c919db5fd6ea7e9a867b18d6",
+        "text_start": 3764,
+        "text_end": 67326
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "8-K",
+    "title_origin": "html_title",
+    "publication_evidence": "SEC filing datePublished=2020-11-05",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/46c2ea710728d2b1b5050afc.json",
+    "sha256": "cdd99ed48e386fe8d9fda3b409c5d8103f71a6c55b24a9ecb79a4e784823acef",
+    "bundled_path": "legacy_audit/46c2ea710728d2b1b5050afc.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "8af88a21080b6ccd94f021a49358812ae0f2ca408a36b4006a1e20ebcceeb921",
+      "llm_inferred_at": "2026-11-18T13:22:01.787324+00:00",
+      "model_duration_seconds": 14.5304299,
+      "prompt_tokens": 4106,
+      "completion_tokens": 629,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the",
+              "rationale": "The article discusses the impact of the macroeconomic environment, particularly the effects of the anticipated impact of COVID-19, on transaction and loan losses, which is a sector-wide issue affecting financial services and payment processing.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the",
+              "rationale": "The article specifically mentions Square, Inc.'s financial results and the impact of transaction and loan losses, which are directly related to the company's operations.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "a06cf2ba9cdc3335bbaca50e15d4974d91bbc6fb9d0e2455e384924ee1413740",
+      "llm_inferred_at": "2026-11-18T13:22:13.905462+00:00",
+      "model_duration_seconds": 12.0986797,
+      "prompt_tokens": 4150,
+      "completion_tokens": 611,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the",
+              "rationale": "The text discusses the impact of transaction and loan losses on financial metrics, which is a sector-wide issue affecting financial services and payment processing industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the",
+              "rationale": "The text specifically refers to Square, Inc.'s financial results and the impact of transaction and loan losses on its financial metrics.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "daf43405670a3cf3d4eeece1ba9cd6a9d8e87e3d4a6e1a6346a3708c9a9a1fcd",
+      "llm_inferred_at": "2026-11-18T13:22:28.173453+00:00",
+      "model_duration_seconds": 14.236214,
+      "prompt_tokens": 3708,
+      "completion_tokens": 648,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Billions of dollars traded refers to the amount bought and sold on the Cash App platform since launch.",
+              "rationale": "The text discusses the growth and adoption of stock brokerage services on Cash App, which is part of the financial services industry. This indicates an industry-wide impact due to the expansion of financial services offerings.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "We expect nearly one-third of total marketing spend in 2020 to be awareness marketing.",
+              "rationale": "The text discusses marketing strategies and their impact on the U.S. market, indicating a broad market scope due to the scale of marketing efforts and their effect on the U.S. financial market.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Instant Payments allows merchants using Square Payroll to pay employees using the funds in their account balance on the next business day with direct deposit or instantly when their employees use Cash App.",
+              "rationale": "The text discusses the impact of financial services and payment solutions on the U.S. equity market, indicating a broad market scope due to the scale of financial transactions and services.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "inferred",
+              "quote": "In the third quarter, we sold more than 70% of our NFC hardware in international markets to sellers new to Square."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "inferred",
+              "quote": "NFC (near-field communication) hardware in markets outside the U.S. includes Square Terminal and contactless and chip readers. SELLER ECOSYSTEM In markets outside the U.S., Seller"
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "inferred",
+              "quote": "Billions of dollars traded refers to the amount bought and sold on the Cash App platform since launch."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "2cab1b6cb0af4f16a4404f1463599132a9b7b2a1a319a92d59ee1c3ebfa805d1",
+      "llm_inferred_at": "2026-11-18T13:22:39.760992+00:00",
+      "model_duration_seconds": 11.5648917,
+      "prompt_tokens": 3752,
+      "completion_tokens": 592,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Billions of dollars traded refers to the amount bought and sold on the Cash App platform since launch.",
+              "rationale": "The text discusses the trading volume on the Cash App platform, which is part of the financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "We expect nearly one-third of total marketing spend in 2020 to be awareness marketing.",
+              "rationale": "The text discusses marketing spend in the U.S. market, which is a broad market scope.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Instant Payments allows merchants using Square Payroll to pay employees using the funds in their account balance on the next business day with direct deposit or instantly when their employees use Cash App.",
+              "rationale": "The text discusses financial transactions and services that are relevant to the U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "inferred",
+              "quote": "Square Payroll allows employers to provide flexible and immediate wages for their employees."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "Square Card, our business debit card, provides sellers with a way to immediately access and spend their earned funds."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "inferred",
+              "quote": "NFC (near-field communication) hardware in markets outside the U.S. includes Square Terminal and contactless and chip readers. SELLER ECOSYSTEM In markets outside the U.S., Seller"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "a4183855aae6a771ad5216d6e410a5bce666cc2b98987ac0164a0363a94add64",
+      "llm_inferred_at": "2026-11-18T13:22:51.336397+00:00",
+      "model_duration_seconds": 11.54911,
+      "prompt_tokens": 3855,
+      "completion_tokens": 525,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We provide relevant news to our customers based on stocks they follow.",
+              "rationale": "The article discusses the provision of relevant news to customers based on stocks they follow, which indicates an industry-wide impact on the financial sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SQUARE Q3 2020 6 A reconciliation of non-GAAP metrics used in this letter to their nearest GAAP equivalents is provided at the end of this letter.",
+              "rationale": "The article is specifically about Square's financial performance and operations, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "We processed $31.7 billion in GPV in the third quarter of 2020, up 12% year over year."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "We processed $31.7 billion in GPV in the third quarter of 2020, up 12% year over year."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "We provide relevant news to our customers based on stocks they follow."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "b3fc22f86f62195a1546be5aabd79c03be48184ab6cc9ee2891f3882c6fef338",
+      "llm_inferred_at": "2026-11-18T13:23:01.088071+00:00",
+      "model_duration_seconds": 9.7318926,
+      "prompt_tokens": 3899,
+      "completion_tokens": 509,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We provide relevant news to our customers based on stocks they follow.",
+              "rationale": "The article discusses the provision of relevant news to customers based on stocks they follow, which indicates an industry-wide impact on the financial sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "SQUARE Q3 2020 6 A reconciliation of non-GAAP metrics used in this letter to their nearest GAAP equivalents is provided at the end of this letter.",
+              "rationale": "The article is specifically about Square's financial performance and operations, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "We processed $31.7 billion in GPV in the third quarter of 2020, up 12% year over year."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "We processed $31.7 billion in GPV in the third quarter of 2020, up 12% year over year."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "We provide relevant news to our customers based on stocks they follow."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "71515cf339ff5bdd1e6f1476fb4b26ba3716bda750580361c1bda411cc2f3ee7",
+      "llm_inferred_at": "2026-11-18T13:23:17.835623+00:00",
+      "model_duration_seconds": 16.7227694,
+      "prompt_tokens": 3815,
+      "completion_tokens": 806,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Cash App generated $354 million of subscription and services-based revenue during the third quarter of 2020, up 154% year over year.",
+              "rationale": "The article discusses the growth of Cash App's subscription and services-based revenue, which is part of the financial services industry. This growth is attributed to transaction fees from Instant Deposit and Cash Card, indicating an industry-wide impact on financial services.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Cash App generated $81 million of transaction-based revenue during the third quarter of 2020, up 320% year over year.",
+              "rationale": "The article highlights the significant increase in transaction-based revenue for Cash App, which is part of the financial services industry. This growth is driven by an increase in Cash for Business transactions, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Cash App generated $354 million of subscription and services-based revenue during the third quarter of 2020, up 154% year over year.",
+              "rationale": "The article discusses the growth of Cash App's subscription and services-based revenue, which is part of the financial services industry. This growth is attributed to transaction fees from Instant Deposit and Cash Card, indicating an industry-wide impact on financial services.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "We believe this was partly a result of the end of government stimulus programs and unemployment benefits at the end of July, as stored funds in Cash App have decreased since July.",
+              "rationale": "The article discusses the impact of government stimulus programs and unemployment benefits on Cash App's performance, which is a factor affecting the broader US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "Cash App generated $354 million of subscription and services-based revenue during the third quarter of 2020, up 154% year over year."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "inferred",
+              "quote": "Cash App generated $354 million of subscription and services-based revenue during the third quarter of 2020, up 154% year over year."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "inferred",
+              "quote": "Cash App generated $354 million of subscription and services-based revenue during the third quarter of 2020, up 154% year over year."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "cc7b7d28eb77b6dacdf6b3ec5588141c620c79c13b0486d123fa74f1e3867367",
+      "llm_inferred_at": "2026-11-18T13:23:30.412880+00:00",
+      "model_duration_seconds": 12.5586957,
+      "prompt_tokens": 3859,
+      "completion_tokens": 661,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Cash App generated $354 million of subscription and services-based revenue during the third quarter of 2020, up 154% year over year.",
+              "rationale": "The revenue growth of Cash App is indicative of the broader financial services industry's performance, particularly in digital financial services and consumer financial products.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "industry",
+              "quote": "Bitcoin revenue and gross profit benefited from an increase in bitcoin actives and volume per customer.",
+              "rationale": "The growth in bitcoin-related revenue reflects the impact on the financial services industry, particularly in digital currencies and investment services.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "industry",
+              "quote": "We expect to hold this investment for the long term.",
+              "rationale": "The long-term investment in bitcoin indicates a trend in the financial services industry towards digital assets and alternative investments.",
+              "confidence": 0.75
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "We believe this was partly a result of the end of government stimulus programs and unemployment benefits at the end of July, as stored funds in Cash App have decreased since July.",
+              "rationale": "The end of government stimulus programs and unemployment benefits is a macroeconomic event that affects the broader US equity market, particularly in financial services and consumer spending.",
+              "confidence": 0.7
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Cash App generated $354 million of subscription and services-based revenue during the third quarter of 2020, up 154% year over year."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "Bitcoin revenue and gross profit benefited from an increase in bitcoin actives and volume per customer."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "We expect to hold this investment for the long term."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "8f5d377693da299711012478b81151ae389530d2682b77437b28303c42d63b2f",
+      "llm_inferred_at": "2026-11-18T13:23:49.976141+00:00",
+      "model_duration_seconds": 19.5371002,
+      "prompt_tokens": 3492,
+      "completion_tokens": 953,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We see a compelling opportunity to invest in acquiring new customers, driven by peer-to-peer payments as well as creative marketing strategies.",
+              "rationale": "The text discusses Square's focus on expanding its Cash App and Seller ecosystems, which are part of the financial services industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns.",
+              "rationale": "The text specifically mentions Square's internal strategies and investments, which are company-specific.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "We see a compelling opportunity to invest in acquiring new customers, driven by peer-to-peer payments as well as creative marketing strategies."
+            },
+            {
+              "industry_key": "TRSR:4f682965b70cdf45",
+              "name": "Consumer: Greeting Cards",
+              "basis": "explicit",
+              "quote": "We developed our online store through Square which tied together our credit card processing and item library."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "We intend to continue identifying opportunities to launch new products and expand the ways that Cash App can help customers manage their money."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "results and general business outlook for future periods; expected impact of the COVID-19 pandemic and related responses of governments and private industry, including government",
+              "industry_name_original": "Business Services",
+              "mechanism": "The text discusses the impact of the pandemic on business operations and the need for adaptation, which affects the business services industry.",
+              "confidence": 0.95,
+              "quote": "We see a compelling opportunity to invest in acquiring new customers, driven by peer-to-peer payments as well as creative marketing strategies."
+            },
+            {
+              "industry_key": "TRSR:4f682965b70cdf45",
+              "industry_scope_quote": "results and general business outlook for future periods; expected impact of the COVID-19 pandemic and related responses of governments and private industry, including government",
+              "industry_name_original": "Consumer: Greeting Cards",
+              "mechanism": "The text discusses the impact of the pandemic on business operations and the need for adaptation, which affects the consumer goods industry.",
+              "confidence": 0.95,
+              "quote": "We developed our online store through Square which tied together our credit card processing and item library."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "industry_scope_quote": "results and general business outlook for future periods; expected impact of the COVID-19 pandemic and related responses of governments and private industry, including government",
+              "industry_name_original": "Investment Bankers/Brokers/Service",
+              "mechanism": "The text discusses the impact of the pandemic on business operations and the need for adaptation, which affects the investment banking industry.",
+              "confidence": 0.95,
+              "quote": "We intend to continue identifying opportunities to launch new products and expand the ways that Cash App can help customers manage their money."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "9d3c21cd083a19eb33376d3f9e95dfc0cd28d908b48a998ecaf752f1dd70074c",
+      "llm_inferred_at": "2026-11-18T13:24:08.369283+00:00",
+      "model_duration_seconds": 18.3734697,
+      "prompt_tokens": 3536,
+      "completion_tokens": 964,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns.",
+              "rationale": "The text discusses Square's strategic focus on its Cash App and Seller ecosystems, which are part of the financial services industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns.",
+              "rationale": "The text specifically refers to Square's internal strategies and investments, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns."
+            },
+            {
+              "industry_key": "TRSR:4f682965b70cdf45",
+              "name": "Consumer: Greeting Cards",
+              "basis": "explicit",
+              "quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "results and general business outlook for future periods; expected impact of the COVID-19 pandemic and related responses of governments and private industry, including government",
+              "industry_name_original": "Business Services",
+              "mechanism": "The text discusses the impact of the pandemic on business services, including government responses and private industry actions, which affects the industry-wide operations and strategies.",
+              "confidence": 0.95,
+              "quote": "We see a compelling opportunity to invest in acquiring new customers, driven by peer-to-peer payments as well as creative marketing strategies."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "results and general business outlook for future periods; expected impact of the COVID-19 pandemic and related responses of governments and private industry, including government",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "The text discusses the impact of the pandemic on financial services, including government responses and private industry actions, which affects the industry-wide operations and strategies.",
+              "confidence": 0.95,
+              "quote": "We see a compelling opportunity to invest in acquiring new customers, driven by peer-to-peer payments as well as creative marketing strategies."
+            },
+            {
+              "industry_key": "TRSR:4f682965b70cdf45",
+              "industry_scope_quote": "results and general business outlook for future periods; expected impact of the COVID-19 pandemic and related responses of governments and private industry, including government",
+              "industry_name_original": "Consumer: Greeting Cards",
+              "mechanism": "The text discusses the impact of the pandemic on consumer services, including government responses and private industry actions, which affects the industry-wide operations and strategies.",
+              "confidence": 0.95,
+              "quote": "We see a compelling opportunity to invest in acquiring new customers, driven by peer-to-peer payments as well as creative marketing strategies."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "ecefd04bb7be90a29e4928d658171199e04c3c843d8611734e4c9053e142b488",
+      "llm_inferred_at": "2026-11-18T13:24:27.244043+00:00",
+      "model_duration_seconds": 18.8506121,
+      "prompt_tokens": 3487,
+      "completion_tokens": 929,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide",
+              "rationale": "The text discusses the company's financial metrics and their relevance to understanding the company's performance, which is tied to its industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide",
+              "rationale": "The text is specifically about Square's financial metrics and their use in evaluating the company's performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the",
+              "industry_name_original": "Financials",
+              "mechanism": "economic competition and product development",
+              "confidence": 0.85,
+              "quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "industry_scope_quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the",
+              "industry_name_original": "Information Technology",
+              "mechanism": "economic competition and product development",
+              "confidence": 0.85,
+              "quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the",
+              "industry_name_original": "Business Services",
+              "mechanism": "economic competition and product development",
+              "confidence": 0.85,
+              "quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "4efcc013bf1b4507ffa3a0c39d26afd03294d56edf1e89eae24e4dd206f195eb",
+      "llm_inferred_at": "2026-11-18T13:24:41.577774+00:00",
+      "model_duration_seconds": 14.3101984,
+      "prompt_tokens": 3531,
+      "completion_tokens": 749,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide",
+              "rationale": "The text discusses the metrics used by Square, which is a company in the financial services industry, to evaluate its operating performance. These metrics are relevant to the broader financial services industry as they reflect the company's operational and financial health, which can influence the行业",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide",
+              "rationale": "The text is directly related to Square's financial metrics and their use in evaluating the company's performance. These metrics are specific to Square and its operations, indicating a company-level impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the",
+              "industry_name_original": "Financials",
+              "mechanism": "economic competition and product development",
+              "confidence": 0.85,
+              "quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "economic competition and product development",
+              "confidence": 0.85,
+              "quote": "the world; the Companys ability to deal with the substantial and increasingly intense competition in its industry and to develop and deliver products and services to address the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "4de333bd28c3c17402229b789736604edeef771af955c738f7f03f0325c4ed78",
+      "llm_inferred_at": "2026-11-18T13:24:58.770458+00:00",
+      "model_duration_seconds": 17.1707587,
+      "prompt_tokens": 6122,
+      "completion_tokens": 734,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020",
+              "rationale": "The financial report of SQUARE includes detailed revenue and cost breakdowns across various segments, indicating its operations span multiple industries, including financial services, software, and hardware.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020",
+              "rationale": "The report is specifically for SQUARE, a company, and includes its financial performance across different segments.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "inferred",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020"
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "inferred",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020"
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "inferred",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "03964d76db15e7b30539f7d0de37b0b2cb69a615f0a5e8ebe42c804b837e4043",
+      "llm_inferred_at": "2026-11-18T13:25:08.593307+00:00",
+      "model_duration_seconds": 9.8053624,
+      "prompt_tokens": 6166,
+      "completion_tokens": 479,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020",
+              "rationale": "The text contains financial statements for SQUARE (a company) for Q3 2020, indicating company-specific financial performance.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "inferred",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020"
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "inferred",
+              "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "8a3c96c99a3f0bf1fb164a3ec6eb883ecf5fe23b6e9f8831e0e084d7eb4063d5",
+      "llm_inferred_at": "2026-11-18T13:25:29.474280+00:00",
+      "model_duration_seconds": 20.863447,
+      "prompt_tokens": 5147,
+      "completion_tokens": 952,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net",
+              "rationale": "The article discusses financial metrics and performance of the company, which is Square, a financial technology company. The financial data includes metrics like Gross Payment Volume (GPV) and Adjusted EBITDA, which are relevant to the financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net",
+              "rationale": "The article provides detailed financial data for Square, including metrics like Gross Payment Volume (GPV) and Adjusted EBITDA, which are specific to the company's operations and performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net"
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "7116b9d109c36dec7143e723d24c33372c728ce0007f758b79e25e7a810bca4b",
+      "llm_inferred_at": "2026-11-18T13:25:47.551857+00:00",
+      "model_duration_seconds": 18.0639719,
+      "prompt_tokens": 5191,
+      "completion_tokens": 907,
+      "selection": [
+        {
+          "source_id": "46c2ea710728d2b1b5050afc",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net",
+              "rationale": "The financial metrics provided are related to the company's operations and are indicative of its performance in the financial services or technology industry.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "company",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net",
+              "rationale": "The financial metrics provided are specific to the company's operations and are indicative of its performance.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net"
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:25:47.619052+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f4784b8f890b00a8afcbfd90bd52975184d7c731b41c2b4f7f77848cd120928d",
+    "raw_sha256": "0ceaecc86cf8d29f7628035b046f6826361eee543ba0ae5c4322ec24d06f0f8a",
+    "date_quote": "SEC filing datePublished=2020-11-05",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1512673/000119312520286821/d201688d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SQUARE, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SQUARE, INC."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:0b4f79fb182865ac",
+        "name": "Tools/Hardware",
+        "basis": "inferred",
+        "quote": "NFC (near-field communication) hardware in markets outside the U.S. includes Square Terminal and contactless and chip readers. SELLER ECOSYSTEM In markets outside the U.S., Seller",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0b4f79fb182865ac",
+        "industry_name_standard": "Tools/Hardware",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "NFC (near-field communication) hardware in markets outside the U.S. includes Square Terminal and contactless and chip readers. SELLER ECOSYSTEM In markets outside the U.S., Seller",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:7555736bd02b64df",
+        "name": "Computer Software: Programming, Data Processing",
+        "basis": "inferred",
+        "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7555736bd02b64df",
+        "industry_name_standard": "Computer Software: Programming, Data Processing",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "46c2ea710728d2b1b5050afc",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_11_05_Legal_Financial-Services_sec.json",
+        "sha256": "f9264a4148609e6ab6b5caf00ee6c8170c35b7456ab9dfa6570a3fc72c5ed9aa",
+        "filename": "2020_11_05_Legal_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "eaac821f1617cdf3fa7a231c3092a2c943c47993a2fff1f2c871d9f7db54102a",
+    "input_hash": "a3c0914d1c9cf27009e316053de43a01e2729113f5d5eea3cda4f119389e4dec",
+    "matching_audit_hash": "2295c0af5f0748a1d688da37ea84a7af2259623135e2096730d0e548c2c69a10",
+    "legacy_security_evidence": [
+      {
+        "name": "SQUARE, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SQUARE, INC."
+      }
+    ],
+    "record_hash": "aff091823ce2210e1fc8a0feddf92b89263d515a2298e270517302a7f65da72c",
+    "outputs": [
+      {
+        "path": "US\\2020_11_05_Legal_Financial-Services_sec.json",
+        "sha256": "7b69633dea7faaaa0727738ceffa7a138577142d2acd27b5aec3fa2268412f9b"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2020-11-05",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:37:12.457793+00:00",
+      "fetched_at": "2026-11-10T20:12:18.960673+00:00",
+      "feature_available_at": "2026-11-11T06:44:05.133535+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:25:47.551857+00:00",
+    "feature_available_at": "2026-11-18T13:25:47.619052+00:00",
+    "commit_verified_at": "2026-11-12T13:53:35.250308+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [
+      "US_EQUITY"
+    ],
+    "scope_evidence": [
+      {
+        "scope": "US_EQUITY",
+        "evidence_quote": "Instant Payments allows merchants using Square Payroll to pay employees using the funds in their account balance on the next business day with direct deposit or instantly when their employees use Cash App.",
+        "rationale": "The text discusses financial transactions and services that are relevant to the U.S. equity market.",
+        "confidence": 0.85,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Instant Payments allows merchants using Square Payroll to pay employees using the funds in their account balance on the next business day with direct deposit or instantly when their employees use Cash App.",
+        "summary_evidence_quote": null,
+        "scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "confidence_interpretation": "uncalibrated_model_self_assessment"
+      }
+    ],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the",
+        "rationale": "The text specifically refers to Square, Inc.'s financial results and the impact of transaction and loan losses on its financial metrics.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "In the first quarter of 2020, net income (loss) and Adjusted EBITDA were significantly affected by an increase in provisions for transaction and loan losses as a result of the",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "market",
+        "quote": "We expect nearly one-third of total marketing spend in 2020 to be awareness marketing.",
+        "rationale": "The text discusses marketing spend in the U.S. market, which is a broad market scope.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We expect nearly one-third of total marketing spend in 2020 to be awareness marketing.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "SQUARE Q3 2020 6 A reconciliation of non-GAAP metrics used in this letter to their nearest GAAP equivalents is provided at the end of this letter.",
+        "rationale": "The article is specifically about Square's financial performance and operations, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SQUARE Q3 2020 6 A reconciliation of non-GAAP metrics used in this letter to their nearest GAAP equivalents is provided at the end of this letter.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns.",
+        "rationale": "The text specifically refers to Square's internal strategies and investments, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We intend to prioritize investments in our Cash App and Seller ecosystems that we believe will help drive attractive long-term returns.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide",
+        "rationale": "The text is directly related to Square's financial metrics and their use in evaluating the company's performance. These metrics are specific to Square and its operations, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the aforementioned metrics provide useful information about our operating results, enhance the overall understanding of our past performance and future prospects, and provide",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020",
+        "rationale": "The text contains financial statements for SQUARE (a company) for Q3 2020, indicating company-specific financial performance.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SQUARE Q3 2020 19 Consolidated Statements of Operations UNAUDITED In thousands, except per share data THREE MONTHS ENDED NINE MONTHS ENDED Sept 30, 2020 Sept 30, 2019 Sept 30, 2020",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net",
+        "rationale": "The financial metrics provided are specific to the company's operations and are indicative of its performance.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Sept 30, 2019 Gross Payment Volume (GPV) (in millions) $ 31,729 $ 28,228 $ 80,272 $ 77,599 Adjusted EBITDA (in thousands) $ 181,320 $ 131,323 $ 288,582 $ 298,324 Adjusted Net",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "market_scope_evidence_unverified",
+      "industry_dictionary_code_quote_conflict"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1512673/0001193125-20-286821-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "aff091823ce2210e1fc8a0feddf92b89263d515a2298e270517302a7f65da72c",
+    "content_hash": "8c9238746a791756667130ccbb05a13cfddd43a16d306d64fbd765291988c8be",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:25:47.557569+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/46c2ea710728d2b1b5050afc.json",
+      "sha256": "e0b0dda5de02f24167a8699953d018ec7c612ca80a45844623902ccd082beab1",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 261.76600000000326
+}

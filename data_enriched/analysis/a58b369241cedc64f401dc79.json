@@ -1,0 +1,96 @@
+{
+  "source_id": "a58b369241cedc64f401dc79",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_08_29_Environment_Water-Management_bloomberg.json",
+      "sha256": "063f060d2ae4eb94670da7d952949f5121473d544485feace86dafbc6cf9f732",
+      "filename": "2018_08_29_Environment_Water-Management_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "e4a5c8ae630862e54d61a94ff4f36f3c7fcd1460337017c4fb505c6f5fc4cd8d",
+  "input_hash": "014c38ef85a16f7be5966d5296a90a2e69ef831172fb5e30509c6d868cb0d8f1",
+  "matching_audit_hash": "f06424080eb70fb734227fbd2b9594d969c662a1b23b088a01fe3a60d637e614",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "95fceb935153e1659ea9542dd375faeaad56ee83c4b9b15daaf86a8ac1c15a1f",
+    "raw_sha256": "1a91aee64fba314a84865826ba1539b0f5e55b81ea51cec87b8322759ebdce55",
+    "date_quote": "August 29, 2018 at 9:00 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "acdda2f3440cbfea22de5f6805bc7cb06bc4b2769a264cc4a1123dc34bc55a8d",
+  "outputs": [
+    {
+      "path": "US\\2018_08_29_Environment_Water-Management_bloomberg.json",
+      "sha256": "60f2162b182528d988415e3bdd6bf6368d753444d39e6318af2ae962b8d0a52f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-08-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:37:43.519016+00:00",
+    "fetched_at": "2026-11-10T15:42:19.509817+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.197302+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:54.473397+00:00",
+  "feature_available_at": "2026-11-12T14:45:54.481403+00:00",
+  "commit_verified_at": "2026-11-12T14:45:54.481403+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Miami-Dade County's water infrastructure and challenges related to climate change, highlighting the importance of sustainable water practices",
+    "securities": [
+      {
+        "name": "Miami-Dade County",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Miami-Dade County's water and sewer department"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Water and Sewer Services",
+        "basis": "inferred",
+        "quote": "water and sewer department"
+      },
+      {
+        "name": "Environmental Management",
+        "basis": "inferred",
+        "quote": "climate change impacts"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Miami-Dade County": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "source_id": "65a4a64744c8abcfb00dc730",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_06_11_Technology_Technology_cnbc.json",
+      "sha256": "e5f21487988c02187cb902f86229cd508d00eb4aeeab2fcb65fd0394cbf77c05",
+      "filename": "2019_06_11_Technology_Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "094f7ae6edda28a21ac8a6409bdd860aaecd4cf51976374c3bea486e2d601960",
+  "input_hash": "0dd471d155b7d9c92cc2e4077e7442d5a7551656b0f0a549f93141c7cebab137",
+  "matching_audit_hash": "db9458a6742bd8f4020635c55cb19245bc3d75eaa0ba96bb16b7fda2d36e6932",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "270ace33f9e334d1e9c613e2f5a2ac2458232ded67f5797be80edb4e66954592",
+    "raw_sha256": "29c1feb8ab6445de1b43bc1a07e30f3c590db3eaf39696a8725e9c77090d5e1d",
+    "date_quote": "article:published_time=2019-06-11T17:54:27+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Bond Capital",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Bond Capital"
+    },
+    {
+      "name": "Plaid",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Meeker joined the board of fintech start-up Plaid in December."
+    }
+  ],
+  "record_hash": "b2b4893a5396debf74c19f202af03b1f59479a1cd3eb9970d2f5f6f59bb9de41",
+  "outputs": [
+    {
+      "path": "US\\2019_06_11_Technology_Technology_cnbc.json",
+      "sha256": "f11a2fbc96befd5cfa21fe25820c492001e02bfd899ddc9e98788a9f2e6bc870"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-06-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:20.006262+00:00",
+    "fetched_at": "2026-11-11T04:50:02.509524+00:00",
+    "feature_available_at": "2026-11-11T04:50:15.274604+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:11:42.833216+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.899959+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.899959+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Highlights tech trends and investment activity",
+    "securities": [
+      {
+        "name": "Kleiner Perkins",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Meeker, who previously worked with Kleiner Perkins"
+      },
+      {
+        "name": "Bond Capital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bond Capital"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "tech investors"
+      },
+      {
+        "name": "Digital Media",
+        "basis": "inferred",
+        "quote": "growth of digital media"
+      },
+      {
+        "name": "Wearable Technology",
+        "basis": "inferred",
+        "quote": "wearable technology"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Kleiner Perkins": "organization",
+      "Bond Capital": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:45.928058+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:11:42.833216+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Highlights tech trends and investment activity",
+      "securities": [
+        {
+          "name": "Kleiner Perkins",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Meeker, who previously worked with Kleiner Perkins"
+        },
+        {
+          "name": "Bond Capital",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Bond Capital"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Technology",
+          "basis": "inferred",
+          "quote": "tech investors"
+        },
+        {
+          "name": "Digital Media",
+          "basis": "inferred",
+          "quote": "growth of digital media"
+        },
+        {
+          "name": "Wearable Technology",
+          "basis": "inferred",
+          "quote": "wearable technology"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Kleiner Perkins": "organization",
+        "Bond Capital": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:11:42.859107+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:11:42.868109+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:11:42.850109+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses key trends in the technology industry, including digital media, wearable technology, and digital payments, and highlights the growth of tech,",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:49:33.306558+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

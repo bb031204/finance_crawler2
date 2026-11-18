@@ -1,0 +1,109 @@
+{
+  "source_id": "182a74b79198ff7a94fb67d7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_11_01_Financial-Report_Semiconductor_cnbc.json",
+      "sha256": "48c13f877f553793c959b13923241a8a38d121fc5d636c57a405918aa49af469",
+      "filename": "2012_11_01_Financial-Report_Semiconductor_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b3746bfeb920f6da086f61fece5b480a2a673b9f0bb88a8772871d9965f124d5",
+  "input_hash": "9481bb68ae4f015168427ac442a5e4a59d857c5f97b158956df9e73782de3345",
+  "matching_audit_hash": "5be3c416d83d42d76e62d8a25fda11d997ef708a1f3ebe4165bfa90cf62b14c6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "406cce52b3074f0401dc2b362dd3a42b24af5bcde1548c4087beef5c3b19c751",
+    "raw_sha256": "504e4f365038d5f3a8fc43e591a976bc3d867e911f27a46ce994bc123cba69e9",
+    "date_quote": "article:published_time=2012-11-01T20:25:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "ON Semiconductor Corporation",
+      "ticker": "ONNN",
+      "exchange": null,
+      "quote": "ON Semiconductor Corporation (Nasdaq: ONNN)"
+    },
+    {
+      "name": "ON Semiconductor",
+      "ticker": "ONNN",
+      "exchange": null,
+      "quote": "ON Semiconductor (Nasdaq: ONNN)"
+    }
+  ],
+  "record_hash": "d45add4403bb230e46a2458c16e0f7eed100576b98aa47dea5a53729c9b6e4f1",
+  "outputs": [
+    {
+      "path": "US\\2012_11_01_Financial-Report_Semiconductor_cnbc.json",
+      "sha256": "00fb6f45b0541c170c2d989cb651b6412884f465274115e1e9f198a073f99775"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-11-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:23.543575+00:00",
+    "fetched_at": "2026-11-11T02:16:33.884080+00:00",
+    "feature_available_at": "2026-11-11T02:20:04.823382+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:41.924424+00:00",
+  "commit_verified_at": "2026-11-12T13:52:41.924424+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "ON Semiconductor Corporation",
+        "ticker": "ONNN",
+        "exchange": null,
+        "quote": "ON Semiconductor Corporation (Nasdaq: ONNN)"
+      },
+      {
+        "name": "ON Semiconductor",
+        "ticker": "ONNN",
+        "exchange": null,
+        "quote": "ON Semiconductor (Nasdaq: ONNN)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

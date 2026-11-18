@@ -1,0 +1,292 @@
+{
+  "source_id": "55310f997d59bfe5c166a574",
+  "status": "completed",
+  "source_record_hash": "77f5ffa74aad3f039d5a2772f685d48f9dde7edf2c1f6c7dc9aa8148a12a56ab",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2019/03/18/biotechs-shares-tumble-after-it-says-sec-is-looking-into-possible-manipulation.html",
+    "attempted_at": "2026-11-18T14:52:49.678348+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "899a6802f5eff13ac3c31a5e1617b9b60311f7c67098c097588ab3589c253e0e"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/55310f997d59bfe5c166a574.json",
+    "sha256": "cbf13d3deac9b650a2e9f57d41c69c88f239cb5ffce95e6f855a9b00af72b731",
+    "bundled_path": "legacy_audit/55310f997d59bfe5c166a574.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "eaf934b03f656cfcfb03d766a8470c1314ac7885372b764cb54e976cccb667cf",
+      "llm_inferred_at": "2026-11-18T14:53:46.129888+00:00",
+      "model_duration_seconds": 11.3800512,
+      "prompt_tokens": 2236,
+      "completion_tokens": 572,
+      "selection": [
+        {
+          "source_id": "55310f997d59bfe5c166a574",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Biotech shares experienced a significant decline following reports that the SEC is investigating potential manipulation.",
+              "rationale": "The article mentions that biotech shares declined due to SEC investigations, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "PolarityTE, a biotech company based in Salt Lake City, disclosed on Monday that it is under investigation by the Securities and Exchange Commission (SEC) for possible violations of",
+              "rationale": "The company is directly involved in the investigation and its shares have been impacted.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "company",
+              "quote": "Polarity, a biotech company, stated that its securities have been targeted by \"short and distort\" trader attacks, including the dissemination of false information on internet",
+              "rationale": "The company is directly affected by the \"short and distort\" attacks and the related allegations.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6799",
+              "name": "INVESTORS, NEC",
+              "basis": "inferred",
+              "quote": "Biotech shares experienced a significant decline following reports that the SEC is investigating potential manipulation."
+            },
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "inferred",
+              "quote": "The SEC issued a subpoena earlier this month, requesting additional documents related to its lead product, SkinTE, and communications with former executives and investors."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "inferred",
+              "quote": "PolarityTE, a biotech company based in Salt Lake City, disclosed on Monday that it is under investigation by the Securities and Exchange Commission (SEC) for possible violations of"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "94836124cbeeb61ca2624c5719961930bbd51d3fa7a1f77fde8eb9044857446d",
+      "llm_inferred_at": "2026-11-18T14:53:55.767855+00:00",
+      "model_duration_seconds": 9.6049857,
+      "prompt_tokens": 2280,
+      "completion_tokens": 527,
+      "selection": [
+        {
+          "source_id": "55310f997d59bfe5c166a574",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "PolarityTE, a biotech company based in Salt Lake City, disclosed on Monday that it is under investigation by the Securities and Exchange Commission (SEC) for possible violations of",
+              "rationale": "The company is directly under investigation by the SEC, which is a regulatory body, and the company's shares fell over 15% following the disclosure.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Biotech shares experienced a significant decline following reports that the SEC is investigating potential manipulation.",
+              "rationale": "The decline in biotech shares indicates an industry-wide impact due to the SEC investigation, which affects the sector's perception and market value.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6799",
+              "name": "INVESTORS, NEC",
+              "basis": "inferred",
+              "quote": "PolarityTE, a biotech company based in Salt Lake City, disclosed on Monday that it is under investigation by the Securities and Exchange Commission (SEC) for possible violations of"
+            },
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "inferred",
+              "quote": "The SEC issued a subpoena earlier this month, requesting additional documents related to its lead product, SkinTE, and communications with former executives and investors."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "inferred",
+              "quote": "The SEC issued a subpoena earlier this month, requesting additional documents related to its lead product, SkinTE, and communications with former executives and investors."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:53:55.801078+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "899a6802f5eff13ac3c31a5e1617b9b60311f7c67098c097588ab3589c253e0e",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2019-03-18T18:16:37+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": true,
+    "reason": "The summary contains information about regulatory actions, investigations, and market reactions related to companies and their securities.",
+    "securities": [
+      {
+        "name": "PolarityTE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PolarityTE"
+      },
+      {
+        "name": "Securities and Exchange Commission (SEC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Riot Blockchain",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Riot Blockchain"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "PolarityTE": "company",
+      "Securities and Exchange Commission (SEC)": "organization",
+      "Riot Blockchain": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "55310f997d59bfe5c166a574",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_03_18_Regulatory_Biotechnology_cnbc.json",
+        "sha256": "121d12c5f0b142982ac1650126c52ac3d7ad721c82dda3ba7b2c3779f186f46b",
+        "filename": "2019_03_18_Regulatory_Biotechnology_cnbc.json"
+      }
+    ],
+    "original_record_hash": "855bd6f1c8d9864779e80c3f1552d81faa7ca039c347f3fb2335920fda4e466d",
+    "input_hash": "2487b1dcada52cfc7b037b1d7f26f387f42e97ac45b02bd75c4eca4fbf06f8f2",
+    "matching_audit_hash": "0d05fe306dd98ce350a80758b1e6e0f40f33efa1fb101f39b447065089070baf",
+    "legacy_security_evidence": [
+      {
+        "name": "PolarityTE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PolarityTE rings the closing bell at the Nasdaq on Aug. 14th, 2017."
+      },
+      {
+        "name": "Polarity",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Polarity said it believes its securities have been the target of \"short and distort\" trader attacks"
+      },
+      {
+        "name": "Riot Blockchain",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Riot Blockchain has had an ongoing SEC subpoena"
+      }
+    ],
+    "record_hash": "77f5ffa74aad3f039d5a2772f685d48f9dde7edf2c1f6c7dc9aa8148a12a56ab",
+    "outputs": [
+      {
+        "path": "US\\2019_03_18_Regulatory_Biotechnology_cnbc.json",
+        "sha256": "ab28cdddacb80c36f8c2a3c45e8eef2c6aca06b0035792bd6f938764b81ecef9"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2019-03-18",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:37:51.353665+00:00",
+      "fetched_at": "2026-11-10T20:51:47.329532+00:00",
+      "feature_available_at": "2026-11-10T20:52:15.630597+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:53:55.767855+00:00",
+    "feature_available_at": "2026-11-18T14:53:55.801078+00:00",
+    "commit_verified_at": "2026-11-12T14:48:21.552275+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "PolarityTE, a biotech company based in Salt Lake City, disclosed on Monday that it is under investigation by the Securities and Exchange Commission (SEC) for possible violations of",
+        "rationale": "The company is directly under investigation by the SEC, which is a regulatory body, and the company's shares fell over 15% following the disclosure.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "PolarityTE, a biotech company based in Salt Lake City, disclosed on Monday that it is under investigation by the Securities and Exchange Commission (SEC) for possible violations of"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2019/03/18/biotechs-shares-tumble-after-it-says-sec-is-looking-into-possible-manipulation.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "77f5ffa74aad3f039d5a2772f685d48f9dde7edf2c1f6c7dc9aa8148a12a56ab",
+    "content_hash": "899a6802f5eff13ac3c31a5e1617b9b60311f7c67098c097588ab3589c253e0e",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:53:55.771172+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/55310f997d59bfe5c166a574.json",
+      "sha256": "04a67f26ad0692a129692500ed745e89723ede3bd0c5cd9a37dfab2db2201eff",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 66.17199999999139
+}

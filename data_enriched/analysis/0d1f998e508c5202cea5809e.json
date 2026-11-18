@@ -1,0 +1,263 @@
+{
+  "source_id": "0d1f998e508c5202cea5809e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_09_30_Politics_Government-Operations_cnbc.json",
+      "sha256": "12dbec9e9e9d66f4425f8a853ea24b1680aec4f0ba9dd3c096d640352e3369ab",
+      "filename": "2020_09_30_Politics_Government-Operations_cnbc.json"
+    }
+  ],
+  "original_record_hash": "0412aca379855db40bffd5265b2eb91d86bd77f52b248953ab5df997053e3a5c",
+  "input_hash": "ea30d235492ad1672ac71baff117981ca4e40a7957e482e998199bca5ace03f2",
+  "matching_audit_hash": "feac8e4ead463ac66567302510b46c83519b3dec4500c833a1e21bbca405f4fa",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "32f7ecf66ccf75254321747d657d3f079e36c96d9cb20c06762cd943e7f6764f",
+    "raw_sha256": "9b16d9251f6a0e180123bf6fa5263d8b1da59f8777c4fee05a0b0be73466ebf9",
+    "date_quote": "article:published_time=2020-09-30T22:02:44+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a6d61807f4a062174248aa08917eae81bd7df9e4037af0a163c1720a3b7c7f85",
+  "outputs": [
+    {
+      "path": "US\\2020_09_30_Politics_Government-Operations_cnbc.json",
+      "sha256": "61cfbe78f6001e20d996f4f9c25178b2f8e7e94853df59b0796d7aab04807f44"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-09-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:11.057561+00:00",
+    "fetched_at": "2026-11-10T19:26:18.268107+00:00",
+    "feature_available_at": "2026-11-10T19:26:37.682849+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:13:32.231130+00:00",
+  "feature_available_at": "2026-11-12T15:16:47.719863+00:00",
+  "commit_verified_at": "2026-11-12T15:16:47.719863+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Government funding and pandemic aid details",
+    "securities": [
+      {
+        "name": "President Donald Trump",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President Donald Trump"
+      },
+      {
+        "name": "Senate",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Senate"
+      },
+      {
+        "name": "House",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House"
+      },
+      {
+        "name": "Office of Management and Budget",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Office of Management and Budget"
+      },
+      {
+        "name": "Treasury Secretary Steven Mnuchin",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Secretary Steven Mnuchin"
+      },
+      {
+        "name": "House Speaker Nancy Pelosi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House Speaker Nancy Pelosi"
+      },
+      {
+        "name": "Supreme Court",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Supreme Court"
+      },
+      {
+        "name": "Judge Amy Coney Barrett",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Judge Amy Coney Barrett"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Government",
+        "basis": "explicit",
+        "quote": "federal government"
+      },
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "nutrition assistance"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "President Donald Trump": "issuer",
+      "Senate": "organization",
+      "House": "organization",
+      "Office of Management and Budget": "organization",
+      "Treasury Secretary Steven Mnuchin": "issuer",
+      "House Speaker Nancy Pelosi": "issuer",
+      "Supreme Court": "organization",
+      "Judge Amy Coney Barrett": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:47.745410+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:13:32.231130+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Government funding and pandemic aid details",
+      "securities": [
+        {
+          "name": "President Donald Trump",
+          "ticker": null,
+          "exchange": null,
+          "quote": "President Donald Trump"
+        },
+        {
+          "name": "Senate",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Senate"
+        },
+        {
+          "name": "House",
+          "ticker": null,
+          "exchange": null,
+          "quote": "House"
+        },
+        {
+          "name": "Office of Management and Budget",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Office of Management and Budget"
+        },
+        {
+          "name": "Treasury Secretary Steven Mnuchin",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Treasury Secretary Steven Mnuchin"
+        },
+        {
+          "name": "House Speaker Nancy Pelosi",
+          "ticker": null,
+          "exchange": null,
+          "quote": "House Speaker Nancy Pelosi"
+        },
+        {
+          "name": "Supreme Court",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Supreme Court"
+        },
+        {
+          "name": "Judge Amy Coney Barrett",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Judge Amy Coney Barrett"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Government",
+          "basis": "explicit",
+          "quote": "federal government"
+        },
+        {
+          "name": "Healthcare",
+          "basis": "inferred",
+          "quote": "nutrition assistance"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "President Donald Trump": "issuer",
+        "Senate": "organization",
+        "House": "organization",
+        "Office of Management and Budget": "organization",
+        "Treasury Secretary Steven Mnuchin": "issuer",
+        "House Speaker Nancy Pelosi": "issuer",
+        "Supreme Court": "organization",
+        "Judge Amy Coney Barrett": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:13:32.259784+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:13:32.268698+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:13:32.250647+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses government funding, legislative actions, and policy implications related to the federal government's operations during the pandemic and the 2",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:53:40.445346+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

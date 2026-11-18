@@ -1,0 +1,92 @@
+{
+  "source_id": "9d8df987739904a697918bd6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_26_executive-changes_Technology_sec.json",
+      "sha256": "8d816afa9a8e8ba6830565395e3934abad15461638dbee7fa690db65c5423fe9",
+      "filename": "2015_03_26_executive-changes_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "383757ee27daa9428e9b3390d4debc4db0ae45beedcd0e8602a324f25cffa5b1",
+  "input_hash": "03310abe8d791fc7ef38a74aaef350bab2ef3ff86e4fb49dd398292687ae6421",
+  "matching_audit_hash": "9cecc0f337f7b6f25ca637144d65900206bf1042864274f97b534575d8b8e021",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "baa97e8c39951e6d1d3942d27f60b787d68a5e286c9d7483ef797001afc2acd9",
+    "raw_sha256": "079e41d36557e61d01776f0f84a78b0c74fadad52490608d187a9116d6976234",
+    "date_quote": "SEC filing datePublished=2015-03-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000113743915000049/blonder8k032415.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    }
+  ],
+  "record_hash": "46d2d5915639220744c642f71f97a5ff20d512dddb795d7bc546d355c4d91a42",
+  "outputs": [
+    {
+      "path": "US\\2015_03_26_executive-changes_Technology_sec.json",
+      "sha256": "35aa0e5955275a228499e1529d31439e809bcdc4ee87546d36c71a8f32d4d7cd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:26:10.106611+00:00",
+    "feature_available_at": "2026-11-11T10:38:21.464230+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:25:36.680567+00:00",
+  "feature_available_at": "2026-11-12T14:25:36.708732+00:00",
+  "commit_verified_at": "2026-11-12T14:25:36.708732+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Contains information about executive changes, including retirement, separation terms, and stock option vesting.",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Blonder Tongue Laboratories, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

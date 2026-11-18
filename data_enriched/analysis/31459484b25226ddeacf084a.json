@@ -1,0 +1,106 @@
+{
+  "source_id": "31459484b25226ddeacf084a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_04_15_Customs-Brokerage_Customs-Brokerage_businesswire.json",
+      "sha256": "17013af6c52d569ba4de873ecc5b9336e9e5562ce7f3bd5dee884071165aedd3",
+      "filename": "2022_04_15_Customs-Brokerage_Customs-Brokerage_businesswire.json"
+    }
+  ],
+  "original_record_hash": "b9095c83a1d024c7589faec9e79bde811591daa30bb089b44ce9f09320538bab",
+  "input_hash": "7bc342faad44e8fdcfa4482d05acefc250f14cc87e630af3c924dcdc478838b9",
+  "matching_audit_hash": "4953a70051318d2752794358beab7780944d1f27119036290ce439d6d7a96cf8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7423d54b5e16b3aae410a80e0b29f0102b13ef558f12c518c6aab3e649a82571",
+    "raw_sha256": "08815792db4b688c741f3798a86566df88d85f4f568992a37d05c472f2171063",
+    "date_quote": "page.datePublished=2022-04-15T10:40:00+00:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5653e0fc4c936a3b7fc5b51881ea67d53aca2a024f4364e672ded38b7b840eed",
+  "outputs": [
+    {
+      "path": "US\\2022_04_15_Customs-Brokerage_Customs-Brokerage_businesswire.json",
+      "sha256": "913695edf8eff4d665ed747b66c5dda6df4a494661424a0eccabcab067d06050"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-04-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:05.011496+00:00",
+    "fetched_at": "2026-11-10T22:07:42.015696+00:00",
+    "feature_available_at": "2026-11-10T22:07:56.987776+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:57:34.933811+00:00",
+  "feature_available_at": "2026-11-12T14:57:34.942821+00:00",
+  "commit_verified_at": "2026-11-12T14:57:34.942821+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the U.S. customs brokerage market, including key players and market dynamics, which provides relevant industry information.",
+    "securities": [
+      {
+        "name": "United Parcel Service",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Parcel Service"
+      },
+      {
+        "name": "FedEx Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FedEx Corporation"
+      },
+      {
+        "name": "ResearchAndMarkets.com",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ResearchAndMarkets.com"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Customs Brokerage",
+        "basis": "explicit",
+        "quote": "Customs Brokerage"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "United Parcel Service": "company",
+      "FedEx Corporation": "company",
+      "ResearchAndMarkets.com": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "source_id": "b06dc929af8a430c28730bfc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_03_08_Results-of-Operations-and-Fina_Financial-Services_sec.json",
+      "sha256": "8bcc548eb8ac38afcc2f2f8cfe82fcc3c6178e8e4ff8739d86bc631b37d03382",
+      "filename": "2012_03_08_Results-of-Operations-and-Fina_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "54f26516c7e5a1131f39c9b4603a9862a469929933fbc9b76796044e74b389bd",
+  "input_hash": "ebe0b3f2c192ce29aa7c5fea760cceea890e6b988c540b1cf5b61fcb9a5ce611",
+  "matching_audit_hash": "087ae983eb8e085dbc48561194941046f2cc9d4b15aabe9e8738cd31f085db70",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "eeec17470ef0b563622ca60d0ad733b645b34266ef16f86645ff0cead422e843",
+    "raw_sha256": "b06c586852fcd836e5388df2e848cfdabcebdad06d3661e011a3cdfc717c49cd",
+    "date_quote": "SEC filing datePublished=2012-03-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312512102623/d312489d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    }
+  ],
+  "record_hash": "775af23e679df5358abc02b6623996a50a2089b4d7179bffd4a2ddc3299f663c",
+  "outputs": [
+    {
+      "path": "US\\2012_03_08_Results-of-Operations-and-Fina_Financial-Services_sec.json",
+      "sha256": "8052a5679eab62f673148c09ec13780751b760ae099214131a6b0f4d13f1243d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-03-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:33:02.305175+00:00",
+    "feature_available_at": "2026-11-11T09:32:02.185781+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:58:51.506703+00:00",
+  "feature_available_at": "2026-11-12T15:16:33.233344+00:00",
+  "commit_verified_at": "2026-11-12T15:16:33.233344+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Company announces financial results and press release details.",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "results for the quarter ended December 31, 2011"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:33.257240+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:58:51.506703+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Company announces financial results and press release details.",
+      "securities": [
+        {
+          "name": "Medallion Financial Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Medallion Financial Corp."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "results for the quarter ended December 31, 2011"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Medallion Financial Corp.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:58:51.531316+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:58:51.540523+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:58:51.522313+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about Medallion Financial Corp.'s financial results for specific periods and mentions a press release, which is relevant for a ",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:56:49.820531+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

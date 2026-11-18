@@ -1,0 +1,107 @@
+{
+  "source_id": "60f049e2cb92c4c424ca7fa1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_04_02_Energy_Oil-&-Gas_cnbc.json",
+      "sha256": "5002182999fcc798d17e4bca3be35793aa5014a0ca7b01b3e806a9dd053bee44",
+      "filename": "2020_04_02_Energy_Oil-&-Gas_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e5a4ee8367bb67266f78884b0b53fc66d45e4ee8b3e9e0da0b4abb242826754e",
+  "input_hash": "f42c5a190c06520a467b0996485a1e59a80daa404021cae29d6c22608ac718f3",
+  "matching_audit_hash": "12b54924718c1d79fd12fb51e6c2122ed18804f6a1539f660f24f36c313e95e4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a13fd1718fb2185f780099a3690b1a22c6da7e0dbdf29edff12828f93847de91",
+    "raw_sha256": "231f37a8c6a9503f3be9124b25733b67b558e112cfd7f84d900caa34f57a482c",
+    "date_quote": "article:published_time=2020-04-02T13:45:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "411d3ee5beb1399a53f45f3555bd6653736ccf70e4fd3f81846d56dbef46aab0",
+  "outputs": [
+    {
+      "path": "US\\2020_04_02_Energy_Oil-&-Gas_cnbc.json",
+      "sha256": "4d248e88d391d8aaf135daaceadfd000a575bebb957df1e1008636cbecd2f3f7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-04-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:46.082687+00:00",
+    "fetched_at": "2026-11-10T13:57:45.133141+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.060638+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:32.150819+00:00",
+  "feature_available_at": "2026-11-12T14:52:32.160856+00:00",
+  "commit_verified_at": "2026-11-12T14:52:32.160856+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the U.S. shale industry's crisis due to oil price drops, bankruptcy filings, and impacts from the pandemic and geopolitical tensions.",
+    "securities": [
+      {
+        "name": "U.S. shale industry",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. shale industry"
+      },
+      {
+        "name": "Whiting Petroleum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Whiting Petroleum"
+      },
+      {
+        "name": "Chevron",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chevron"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Oil and Gas",
+        "basis": "inferred",
+        "quote": "oil prices"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S. shale industry": "company",
+      "Whiting Petroleum": "company",
+      "Chevron": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

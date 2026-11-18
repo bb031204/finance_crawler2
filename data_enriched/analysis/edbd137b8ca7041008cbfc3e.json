@@ -1,0 +1,191 @@
+{
+  "source_id": "edbd137b8ca7041008cbfc3e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_04_15_Legal_Financial-Services_sec.json",
+      "sha256": "bba21a8d22a13d56035363593048b9a25b70e284456921e5bac8ee274ab1d8e5",
+      "filename": "2014_04_15_Legal_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "f438bfbd4ff217d4696359df911ade6c7381b1d9404a306a4df8ce89987c6b4c",
+  "input_hash": "7249300f8e16ee5317bf17ea62c19697448f6821bb40cd778b8e1c99dae86ad8",
+  "matching_audit_hash": "607bf375aea8137a497765710af0cc7605607185a49d844ce70f6bee63f2e13b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "82738341476f489d0dc4989f7517a363326dcd2a550787e80855bef872200d92",
+    "raw_sha256": "2dbee7bf6754a80d429149348b8f32ade94098acc8aeb065325860262308d9f2",
+    "date_quote": "Washington D.C., April 15, 2014 — The Securities and Exchange Commission today announced the appointment of David J. Gottesman as deputy chief litigation counsel in the Division of",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a5b44b741769145f5d7a67b6ab35b69f9320548b98e688c985a4781352d0a4c6",
+  "outputs": [
+    {
+      "path": "US\\2014_04_15_Legal_Financial-Services_sec.json",
+      "sha256": "eaa69b94a0edb8fadbf15cd6f8b4b34451c2e1e15b37d6cf5605c81a3550097f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-04-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:50.830032+00:00",
+    "fetched_at": "2026-11-10T14:44:06.471005+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.368543+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:02:24.667990+00:00",
+  "feature_available_at": "2026-11-12T15:16:36.520802+00:00",
+  "commit_verified_at": "2026-11-12T15:16:36.520802+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "SEC leadership change and enforcement actions in financial fraud",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Hayes-Lemmerz",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hayes-Lemmerz executives"
+      },
+      {
+        "name": "Charles Schwab & Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Charles Schwab & Co."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial and accounting fraud, insider trading, market manipulation"
+      },
+      {
+        "name": "Legal Services",
+        "basis": "inferred",
+        "quote": "legal expertise and leadership"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "Hayes-Lemmerz": "organization",
+      "Charles Schwab & Co.": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:36.548815+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:02:24.667990+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "SEC leadership change and enforcement actions in financial fraud",
+      "securities": [
+        {
+          "name": "U.S. Securities and Exchange Commission",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The U.S. Securities and Exchange Commission (SEC)"
+        },
+        {
+          "name": "Hayes-Lemmerz",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Hayes-Lemmerz executives"
+        },
+        {
+          "name": "Charles Schwab & Co.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Charles Schwab & Co."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "financial and accounting fraud, insider trading, market manipulation"
+        },
+        {
+          "name": "Legal Services",
+          "basis": "inferred",
+          "quote": "legal expertise and leadership"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "U.S. Securities and Exchange Commission": "organization",
+        "Hayes-Lemmerz": "organization",
+        "Charles Schwab & Co.": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:02:24.692286+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:02:24.703059+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:24.684084+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the appointment of David J. Gottesman to a senior role at the SEC, highlighting his legal expertise and past cases involving financial fraud,",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:14:29.119618+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

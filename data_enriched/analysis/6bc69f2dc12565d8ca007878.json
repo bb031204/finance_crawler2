@@ -1,0 +1,92 @@
+{
+  "source_id": "6bc69f2dc12565d8ca007878",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_12_Dividend-Announcement_Oil-and-Gas-Services_sec.json",
+      "sha256": "979638b1c31649973c70d24cdea82f544b4f63d8f6128dac64818fdb96a86862",
+      "filename": "2015_01_12_Dividend-Announcement_Oil-and-Gas-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "f4b055cc27c5e29262bfc5652191320ce32d273887c43c42f781a3cdbccb8fef",
+  "input_hash": "542814a168145026f64a77558c73727ae1b1467b52e406b01f346b6c367ea000",
+  "matching_audit_hash": "d0b0c4bc938ab8b4814041252b658c80ead591cdb5ed22c0846f4fbcf40da561",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "bc7285da2161ec244146f3f4260d0cc28f87a09760a1e87aceb1a8ea9ffcb63b",
+    "raw_sha256": "c0557ec2d97336f57d1ade75991b069561dbe863e14aa5768b4bb9a53178f361",
+    "date_quote": "Date of report (date of earliest event reported): January 12, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022915000022/clb-8k_dividend1q2015.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V. issued a press release announcing a quarterly cash dividend of $0.55 per share of common stock for shareholders of record on January 23, 2015 and payable February 20, 2015."
+    }
+  ],
+  "record_hash": "fecaa0afdeda7a62098979e90b891faa103211bc3360d6fa0bd8231be3a21e0e",
+  "outputs": [
+    {
+      "path": "US\\2015_01_12_Dividend-Announcement_Oil-and-Gas-Services_sec.json",
+      "sha256": "8e79f5802d251db8e9298eb66b085d6a3d37db8987f47424af16560d71f1becb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:19:30.936790+00:00",
+    "feature_available_at": "2026-11-11T00:19:41.857105+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:19:23.245712+00:00",
+  "feature_available_at": "2026-11-12T14:19:23.255751+00:00",
+  "commit_verified_at": "2026-11-12T14:19:23.255751+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a dividend announcement, which is relevant for financial analysis and stock market activity.",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Core Laboratories N.V.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "source_id": "38575b03eb5c2c82606129b2",
+  "status": "completed",
+  "source_record_hash": "69583d9d6f0be5511d10b6abf0d69246faf8c003fcc980d0ac06da7491b232e6",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-20-051764-index.html",
+    "attempted_at": "2026-11-18T11:55:41.761083+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-20-051764-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312520051764/d883675d6k.htm",
+    "fetched_at": "2026-11-18T11:55:49.999560+00:00",
+    "source_body_hash": "93658bfbab23d62551f2ce558cfd70bbb09f5ce1b286818804975791e822bce8",
+    "raw_sha256": "589f8ff67be59025554e5243e1914f28879ecd80fe7c8d22757f65ba58db5fe0",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312520051764/d883675d6k.htm",
+        "type": "6-K",
+        "description": "6-K",
+        "raw_sha256": "589f8ff67be59025554e5243e1914f28879ecd80fe7c8d22757f65ba58db5fe0",
+        "text_sha256": "e8666b25d5a80bf5c9d544716bd5853128b9a59b8b9bcdbed95ea84c92be6f80",
+        "text_start": 0,
+        "text_end": 1513
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312520051764/d883675dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "0c24c222d0ec5f3d29eb155164c5712e8cc40fd71af4553fb78538ea5a4b2461",
+        "text_sha256": "cc9ab6a7a7620594573a13d7145f56b3963fc8ae3e4b033bcb6e212f7c195b7b",
+        "text_start": 1515,
+        "text_end": 7541
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2020-02-27",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/38575b03eb5c2c82606129b2.json",
+    "sha256": "29cb6ba3d45b3b2d8036e2364365da59c2bd222fd292cfeaeec1fbbd86a33127",
+    "bundled_path": "legacy_audit/38575b03eb5c2c82606129b2.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "c290ecbd640801cff0015113aa7e559ba17cc56b5ac4288b76374f3c008d2ccb",
+      "llm_inferred_at": "2026-11-18T11:56:06.242954+00:00",
+      "model_duration_seconds": 16.2032182,
+      "prompt_tokens": 3665,
+      "completion_tokens": 778,
+      "selection": [
+        {
+          "source_id": "38575b03eb5c2c82606129b2",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+              "rationale": "The repurchase of shares by Royal Bank of Canada is an action that affects the financial sector, specifically banks, as it relates to capital management and shareholder value.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The normal course issuer bid will give us the flexibility to manage the Banks capital position while generating shareholder value.",
+              "rationale": "The repurchase of shares by Royal Bank of Canada is an action that affects the broader US equity market, as it involves capital management and shareholder value generation.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "uncertainty, Canadian housing and household indebtedness, regulatory changes, digital disruption and innovation, climate change, the business and economic conditions in the geographic regions in which we operate, the effects of changes in government fiscal, monetary and other policies, tax risk and transparency, and environmental and social risk.",
+              "rationale": "The press release discusses the effects of changes in government fiscal, monetary and other policies, which are relevant to the broader US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20"
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 20,000,000 shares commenced on March 1, 2019 and expires on February 29, 2020."
+            },
+            {
+              "industry_key": "TRSR:d1f6321e37693929",
+              "name": "Major Banks",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 20,000,000 shares commenced on March 1, 2019 and expires on February 29, 2020."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "113814ad9cdedf5b11ac39a20967ee5f0cd4fdc530c7fd7ebdde8354c27ec527",
+      "llm_inferred_at": "2026-11-18T11:56:21.645753+00:00",
+      "model_duration_seconds": 15.3847107,
+      "prompt_tokens": 3709,
+      "completion_tokens": 817,
+      "selection": [
+        {
+          "source_id": "38575b03eb5c2c82606129b2",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+              "rationale": "The repurchase of shares by Royal Bank of Canada is an action that affects the financial sector, specifically banks, as it involves capital management and shareholder value.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The normal course issuer bid will give us the flexibility to manage the Banks capital position while generating shareholder value.",
+              "rationale": "The repurchase of shares by Royal Bank of Canada is an action that affects the broader US equity market, as it involves capital management and shareholder value.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "uncertainty, Canadian housing and household indebtedness, regulatory changes, digital disruption and innovation, climate change, the business and economic conditions in the geographic regions in which we operate, the effects of changes in government fiscal, monetary and other policies, tax risk and transparency, and environmental and social risk.",
+              "rationale": "The press release discusses the effects of changes in government fiscal, monetary and other policies, which are broad US equity/financial market facts.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20"
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20"
+            },
+            {
+              "industry_key": "TRSR:d1f6321e37693929",
+              "name": "Major Banks",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:56:21.662739+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "93658bfbab23d62551f2ce558cfd70bbb09f5ce1b286818804975791e822bce8",
+    "raw_sha256": "589f8ff67be59025554e5243e1914f28879ecd80fe7c8d22757f65ba58db5fe0",
+    "date_quote": "SEC filing datePublished=2020-02-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312520051764/d883675d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "name": "Banks",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "name": "Commercial Banks",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:d1f6321e37693929",
+        "name": "Major Banks",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "d1f6321e37693929",
+        "industry_name_standard": "Major Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Royal Bank of Canada to repurchase up to 20 million of its common shares\n\nEX-99.1 2 d883675dex991.htm EX-99.1 EX-99.1 Exhibit 99.1 Royal Bank of Canada to repurchase up to 20",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "38575b03eb5c2c82606129b2",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_02_27_Share-Repurchase_Banking_sec.json",
+        "sha256": "9674601d7ee836902132355a1ce7792848ba2ae0dee141aa60b0948afeedfff2",
+        "filename": "2020_02_27_Share-Repurchase_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "39814cde3e85c6cfdf4a7cbf684717235d2464d2ee0ce5ad92433598c4361af8",
+    "input_hash": "dfd3a416b2a01469d0369c865ee8144578454138347352cf22aa9be78aa1554d",
+    "matching_audit_hash": "681be15e6cef71fa372311d97bdbe994a8e9c961c2051c1ab4664ee1a95f697a",
+    "legacy_security_evidence": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "record_hash": "69583d9d6f0be5511d10b6abf0d69246faf8c003fcc980d0ac06da7491b232e6",
+    "outputs": [
+      {
+        "path": "US\\2020_02_27_Share-Repurchase_Banking_sec.json",
+        "sha256": "40bfcbf782c9deaf881f73833b629dbce556c1ebcf7273588e8d3b54dc6aa4ab"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2020-02-27",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:24.199957+00:00",
+      "fetched_at": "2026-11-11T14:36:29.164039+00:00",
+      "feature_available_at": "2026-11-11T14:36:36.656064+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:56:21.645753+00:00",
+    "feature_available_at": "2026-11-18T11:56:21.662739+00:00",
+    "commit_verified_at": "2026-11-12T13:53:32.623464+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-20-051764-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "69583d9d6f0be5511d10b6abf0d69246faf8c003fcc980d0ac06da7491b232e6",
+    "content_hash": "a3bde4678f67814ae5106e4be2a7f6e30e7670089dcc0ed2a2b331e1df663a6e",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:56:21.649912+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/38575b03eb5c2c82606129b2.json",
+      "sha256": "6e872729481eaa9afcbfcaa229b2f2881f80675c56942fd4ae809f343c467f5a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 39.921999999991385
+}

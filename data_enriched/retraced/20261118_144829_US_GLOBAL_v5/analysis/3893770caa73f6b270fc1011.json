@@ -1,0 +1,377 @@
+{
+  "source_id": "3893770caa73f6b270fc1011",
+  "status": "completed",
+  "source_record_hash": "c7790d2a2409b574b720377c3ec472ff63b8e7c2fe8c42fc39d2f7b2030c910e",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2015/04/09/look-here-for-next-energy-sector-merger-analyst.html",
+    "attempted_at": "2026-11-18T11:58:07.180802+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2015/04/09/look-here-for-next-energy-sector-merger-analyst.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T11:58:19.115985+00:00",
+    "source_body_hash": "4af26ecfefe9d64c9fc7760636a65192d7321632a771dd1839f04b1fd6246fe6",
+    "raw_sha256": "01c3216298a5c19c6bad2d45ba03025222e0462eeddd57b76e5a2bc8d72f7f70",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Look here for next energy sector merger: Analyst",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2015-04-09T16:51:48+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3893770caa73f6b270fc1011.json",
+    "sha256": "1eab94ee327f06c3937cdca04addd98087fd577369b9065fc324882ab2c5a700",
+    "bundled_path": "legacy_audit/3893770caa73f6b270fc1011.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "71ee1b507fcbdab5be094d762087a81fdb64bd28405ba2dfdad06edc23d25ada",
+      "llm_inferred_at": "2026-11-18T11:58:41.596739+00:00",
+      "model_duration_seconds": 22.4392759,
+      "prompt_tokens": 2451,
+      "completion_tokens": 1062,
+      "selection": [
+        {
+          "source_id": "3893770caa73f6b270fc1011",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Royal Dutch Shell's planned $70 billion takeover of BG Group has sparked speculation of a buyout boom in the energy patch.",
+              "rationale": "The article discusses a significant merger in the energy sector, which is indicative of potential industry-wide consolidation and M&A activity.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle.",
+              "rationale": "The article refers to specific companies like Apache Corp and Anadarko Petroleum as potential targets for acquisitions, indicating company-specific considerations.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "industry",
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle.",
+              "rationale": "The article discusses the broader implications of commodity price uncertainty on the energy sector, which affects the entire industry.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1311",
+              "name": "CRUDE PETROLEUM & NATURAL GAS",
+              "basis": "explicit",
+              "quote": "Royal Dutch Shell's planned $70 billion takeover of BG Group has sparked speculation of a buyout boom in the energy patch."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "Royal Dutch Shell's planned $70 billion takeover of BG Group has sparked speculation of a buyout boom in the energy patch."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1311",
+              "industry_scope_quote": "in the Gulf of Mexico and problematic assets in an increasingly isolated Russia. Majors would also struggle to find targets in the North American exploration and production sector",
+              "industry_name_original": "CRUDE PETROLEUM & NATURAL GAS",
+              "mechanism": "The article discusses the challenges faced by oil majors like BP due to financial issues and the difficulty in finding targets for consolidation in the North American exploration and production sector, which affects the ",
+              "confidence": 0.85,
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "in the Gulf of Mexico and problematic assets in an increasingly isolated Russia. Majors would also struggle to find targets in the North American exploration and production sector",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "The article discusses the challenges faced by oil majors like BP due to financial issues and the difficulty in finding targets for consolidation in the North American exploration and production sector, which affects the ",
+              "confidence": 0.85,
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "in the Gulf of Mexico and problematic assets in an increasingly isolated Russia. Majors would also struggle to find targets in the North American exploration and production sector",
+              "industry_name_original": "Energy",
+              "mechanism": "The article discusses the challenges faced by oil majors like BP due to financial issues and the difficulty in finding targets for consolidation in the North American exploration and production sector, which affects the ",
+              "confidence": 0.85,
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a5f31d607984f3d0ecef3ef72f924088f5190fd44dfa22c9ffd019dad82d10a5",
+      "llm_inferred_at": "2026-11-18T11:58:58.763741+00:00",
+      "model_duration_seconds": 17.1561965,
+      "prompt_tokens": 2495,
+      "completion_tokens": 936,
+      "selection": [
+        {
+          "source_id": "3893770caa73f6b270fc1011",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Royal Dutch Shell's planned $70 billion takeover of BG Group has sparked speculation of a buyout boom in the energy patch.",
+              "rationale": "The article discusses a significant merger in the energy sector, indicating potential industry-wide consolidation and M&A activity.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "He pointed to Apache Corp.",
+              "rationale": "Apache Corp. is specifically mentioned as a company to watch for potential acquisitions, indicating a company-specific impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle.",
+              "rationale": "The article suggests that oilfield services firms may not be willing to sell their assets, indicating an industry-wide impact on the supply of assets.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1311",
+              "name": "CRUDE PETROLEUM & NATURAL GAS",
+              "basis": "explicit",
+              "quote": "Royal Dutch Shell's planned $70 billion takeover of BG Group has sparked speculation of a buyout boom in the energy patch."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            },
+            {
+              "industry_key": "TRSR:aee9de65a9dce656",
+              "name": "Oilfield Services/Equipment",
+              "basis": "explicit",
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1311",
+              "industry_scope_quote": "in the Gulf of Mexico and problematic assets in an increasingly isolated Russia. Majors would also struggle to find targets in the North American exploration and production sector",
+              "industry_name_original": "CRUDE PETROLEUM & NATURAL GAS",
+              "mechanism": "supply/demand",
+              "confidence": 0.85,
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "in the Gulf of Mexico and problematic assets in an increasingly isolated Russia. Majors would also struggle to find targets in the North American exploration and production sector",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "supply/demand",
+              "confidence": 0.85,
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            },
+            {
+              "industry_key": "TRSR:aee9de65a9dce656",
+              "industry_scope_quote": "in the Gulf of Mexico and problematic assets in an increasingly isolated Russia. Majors would also struggle to find targets in the North American exploration and production sector",
+              "industry_name_original": "Oilfield Services/Equipment",
+              "mechanism": "supply/demand",
+              "confidence": 0.85,
+              "quote": "These organizations might not be willing to sell their assets during what they see as the lows of the current commodity cycle."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:58:58.777690+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4af26ecfefe9d64c9fc7760636a65192d7321632a771dd1839f04b1fd6246fe6",
+    "raw_sha256": "01c3216298a5c19c6bad2d45ba03025222e0462eeddd57b76e5a2bc8d72f7f70",
+    "date_quote": "article:published_time=2015-04-09T16:51:48+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Apache Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "He pointed to Apache Corp. and Anadarko Petroleum as two names to watch."
+      },
+      {
+        "name": "Anadarko Petroleum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "He pointed to Apache Corp. and Anadarko Petroleum as two names to watch."
+      },
+      {
+        "name": "Royal Dutch Shell",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Dutch Shell"
+      },
+      {
+        "name": "ExxonMobil",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ExxonMobil"
+      },
+      {
+        "name": "BP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BP"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3893770caa73f6b270fc1011",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_04_09_Energy_Energy_cnbc.json",
+        "sha256": "77b9b66495f41f27f373a737f224d8990a0f6f11f0800c3c22489a30e77db097",
+        "filename": "2015_04_09_Energy_Energy_cnbc.json"
+      }
+    ],
+    "original_record_hash": "5af9040d60286ad1118786434e10f0c4bc5fc352a90af2781af5991852c05360",
+    "input_hash": "c42322b0aed8373762213e8471ae4aca59e8f76675911b86c95047e1eb1d1f1c",
+    "matching_audit_hash": "50154a71cfdc6e6e0f0d32b142127f1f2f859ee8eaa3e6ba80e82b9f1467fa8f",
+    "legacy_security_evidence": [
+      {
+        "name": "Apache Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "He pointed to Apache Corp. and Anadarko Petroleum as two names to watch."
+      },
+      {
+        "name": "Anadarko Petroleum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "He pointed to Apache Corp. and Anadarko Petroleum as two names to watch."
+      },
+      {
+        "name": "Royal Dutch Shell",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Dutch Shell"
+      },
+      {
+        "name": "ExxonMobil",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ExxonMobil"
+      },
+      {
+        "name": "BP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BP"
+      }
+    ],
+    "record_hash": "c7790d2a2409b574b720377c3ec472ff63b8e7c2fe8c42fc39d2f7b2030c910e",
+    "outputs": [
+      {
+        "path": "US\\2015_04_09_Energy_Energy_cnbc.json",
+        "sha256": "0a253ca63358834f7036c9dfa07a3be9693d29144dfa6a1dbe3808fe3af77143"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-04-09",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:40:38.410072+00:00",
+      "fetched_at": "2026-11-10T21:48:32.895501+00:00",
+      "feature_available_at": "2026-11-10T21:48:45.264651+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:58:58.763741+00:00",
+    "feature_available_at": "2026-11-18T11:58:58.777690+00:00",
+    "commit_verified_at": "2026-11-12T13:52:58.067830+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "He pointed to Apache Corp.",
+        "rationale": "Apache Corp. is specifically mentioned as a company to watch for potential acquisitions, indicating a company-specific impact.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "He pointed to Apache Corp.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2015/04/09/look-here-for-next-energy-sector-merger-analyst.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "c7790d2a2409b574b720377c3ec472ff63b8e7c2fe8c42fc39d2f7b2030c910e",
+    "content_hash": "4af26ecfefe9d64c9fc7760636a65192d7321632a771dd1839f04b1fd6246fe6",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:58:58.765793+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3893770caa73f6b270fc1011.json",
+      "sha256": "605a70160a6f744d56d97d815d94f9604fede43c065f1fe7c5e00c13722714f8",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 51.60899999999674
+}

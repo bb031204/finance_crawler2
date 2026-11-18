@@ -1,0 +1,134 @@
+{
+  "source_id": "dfaa8727e59676a8814a0d80",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_12_28_Retail_Retail_bloomberg.json",
+      "sha256": "9abe31f8d8b8392946f3b9287da4e1cda3d5293d1e05855e1c6d91a1e4b2c419",
+      "filename": "2018_12_28_Retail_Retail_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "922654f55d256105bcdeb2516c3b32ea767d222bcda830be2365548a487762b8",
+  "input_hash": "4560294a757e97d9fd739a32538cbf0dfcc668272db3f3efe77a645cba788b4a",
+  "matching_audit_hash": "6b3593686e81ef88b6c68666c2cc5eb4847f3e1b5e1b738ef944d51b3c38eb06",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6c0c51d165905a8240abf7590eed9130fb2c358fbc5b57380254772514cb7813",
+    "raw_sha256": "c09e2aac76b58317fa4c34904fa2f00bde040c529097b9aae23d5219ee58b498",
+    "date_quote": "December 28, 2018 at 5:08 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7f3477698f9171280db930bb0bf4215d3703d2d95b793fb23ff69d549a69c2d3",
+  "outputs": [
+    {
+      "path": "US\\2018_12_28_Retail_Retail_bloomberg.json",
+      "sha256": "1277d218ece7e03fc40b17c5182c697bb293ada186c2d057dee8b36dcda2eba3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-12-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:09.726180+00:00",
+    "fetched_at": "2026-11-10T17:30:59.032231+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.798764+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:46:59.631999+00:00",
+  "feature_available_at": "2026-11-12T14:46:59.641430+00:00",
+  "commit_verified_at": "2026-11-12T14:46:59.641430+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the ongoing challenges faced by the retail sector, including store closures and the impact of online shopping on physical retail spaces.",
+    "securities": [
+      {
+        "name": "J.C. Penney",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J.C. Penney"
+      },
+      {
+        "name": "Macy’s",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Macy’s"
+      },
+      {
+        "name": "Sears",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears"
+      },
+      {
+        "name": "Toys “R” Us",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Toys “R” Us"
+      },
+      {
+        "name": "Mattress Firm",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mattress Firm"
+      },
+      {
+        "name": "Bon-Ton",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bon-Ton"
+      },
+      {
+        "name": "Abercrombie & Fitch",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Abercrombie & Fitch"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "explicit",
+        "quote": "Retail sector"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "J.C. Penney": "company",
+      "Macy’s": "company",
+      "Sears": "company",
+      "Toys “R” Us": "company",
+      "Mattress Firm": "company",
+      "Bon-Ton": "company",
+      "Abercrombie & Fitch": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

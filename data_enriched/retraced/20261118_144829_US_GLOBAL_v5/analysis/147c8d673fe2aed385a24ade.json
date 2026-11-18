@@ -1,0 +1,604 @@
+{
+  "source_id": "147c8d673fe2aed385a24ade",
+  "status": "completed",
+  "source_record_hash": "ef3e22c9269a77dadfce6d6da9b578f62c7bba65ed306d86da01f48a7b963055",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-15-000058-index.html",
+    "attempted_at": "2026-11-18T08:39:44.794878+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-15-000058-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103915000058/fy2015_q1x8kxcover.htm",
+    "fetched_at": "2026-11-18T08:39:59.888649+00:00",
+    "source_body_hash": "31d99b8958276f68cc235bfe38fcb598756123bfbdc28c05e7a672a877c0541b",
+    "raw_sha256": "ffd13265ac9167021e615f72ac6fcd6a7a8be4458ecb110b5827fb31a90e6884",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103915000058/fy2015_q1x8kxcover.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "ffd13265ac9167021e615f72ac6fcd6a7a8be4458ecb110b5827fb31a90e6884",
+        "text_sha256": "0641ddb9fc0f62d66f3bfb1ec258988dfb0d8db53b00bcfcb8cd4b92fe7183a6",
+        "text_start": 0,
+        "text_end": 2150
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103915000058/fy2015_q1xprxex991.htm",
+        "type": "EX-99.1",
+        "description": "PRESS RELEASE",
+        "raw_sha256": "788c396a9e530fc62ea7230ad582ede8ef924682289507fdaea5f8e6c6c08e1d",
+        "text_sha256": "3ae35b30ff5dba4a2b7856739e8f065eeb9aa7ab3677cf6555985a33297fa927",
+        "text_start": 2152,
+        "text_end": 24872
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-02-03",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/147c8d673fe2aed385a24ade.json",
+    "sha256": "fe92233c1a56eb981f4d021dcb1a8bb976958008a876ee1d8695fff8aa66ba41",
+    "bundled_path": "legacy_audit/147c8d673fe2aed385a24ade.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "d4e23eab56b564152d932582d10af749d44e08d40375bb8623d35ea531f142a5",
+      "llm_inferred_at": "2026-11-18T08:40:17.585036+00:00",
+      "model_duration_seconds": 17.6554224,
+      "prompt_tokens": 4119,
+      "completion_tokens": 817,
+      "selection": [
+        {
+          "source_id": "147c8d673fe2aed385a24ade",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold.",
+              "rationale": "The statement refers to ABC Family, which is part of the broader broadcasting and television industry, indicating an industry-wide impact due to changes in affiliate fees and advertising revenue.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Broadcasting Operating income at Broadcasting increased 35% to $240 million for the quarter due to an increase in affiliate fees and higher program sales.",
+              "rationale": "The increase in broadcasting operating income is attributed to affiliate fees and program sales, which are industry-wide factors affecting the broadcasting and television sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold.",
+              "rationale": "The statement refers to ABC Family, which is part of the broader broadcasting and television industry, indicating an industry-wide impact due to changes in affiliate fees and advertising revenue.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "long-term value across all of our businesses.” The following table summarizes the first quarter results for fiscal 2015 and 2014 (in millions, except per share amounts): Quarter Ended December 27, 2014 December 28, 2013 Change Revenues $ 13,391 $ 12,309 9 % Segment operating income (1) $ 3,545 $ 3,020 17 % Net income (2) $ 2,182 $ 1,840 19 %",
+              "rationale": "The report discusses the financial results of The Walt Disney Company, which is a major player in the US equity market, indicating a broad impact on the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:89d2cd94c313f463",
+              "name": "Beverages (Production/Distribution)",
+              "basis": "explicit",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold."
+            },
+            {
+              "industry_key": "TRSR:5953c985dd2d6545",
+              "name": "Hotels/Resorts",
+              "basis": "explicit",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold."
+            },
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "name": "Other Consumer Services",
+              "basis": "explicit",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "424b27560fd1863012e711a8d28cabb51b856506e106003ad9c2375542acca90",
+      "llm_inferred_at": "2026-11-18T08:40:33.265111+00:00",
+      "model_duration_seconds": 15.6614335,
+      "prompt_tokens": 4163,
+      "completion_tokens": 809,
+      "selection": [
+        {
+          "source_id": "147c8d673fe2aed385a24ade",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold.",
+              "rationale": "The statement refers to ABC Family, which is part of the broadcasting industry, and discusses changes in affiliate revenue and advertising revenue, indicating an industry-wide impact on broadcasting.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Broadcasting Operating income at Broadcasting increased 35% to $240 million for the quarter due to an increase in affiliate fees and higher program sales.",
+              "rationale": "This statement directly references the broadcasting industry and discusses an increase in operating income due to affiliate fees and program sales, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold.",
+              "rationale": "This statement refers to ABC Family, which is part of the broadcasting industry, and discusses changes in affiliate revenue and advertising revenue, indicating an industry-wide impact on broadcasting.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "long-term value across all of our businesses.” The following table summarizes the first quarter results for fiscal 2015 and 2014 (in millions, except per share amounts): Quarter Ended December 27, 2014 December 28, 2013 Change Revenues $ 13,391 $ 12,309 9 % Segment operating income (1) $ 3,545 $ 3,020 17 % Net income (2) $ 2,182 $ 1,840 19 %",
+              "rationale": "The statement discusses the financial results of The Walt Disney Company, which is a major player in the US equity market, indicating a market-wide impact.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:5953c985dd2d6545",
+              "name": "Hotels/Resorts",
+              "basis": "explicit",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold."
+            },
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "name": "Other Consumer Services",
+              "basis": "explicit",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold."
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "name": "Advertising",
+              "basis": "explicit",
+              "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "df0e666e029a989e213d04d694543507608c3b7203a6a53129d9b8da3436e152",
+      "llm_inferred_at": "2026-11-18T08:40:49.053241+00:00",
+      "model_duration_seconds": 15.7646198,
+      "prompt_tokens": 3783,
+      "completion_tokens": 755,
+      "selection": [
+        {
+          "source_id": "147c8d673fe2aed385a24ade",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The increase in home entertainment results was driven by higher unit sales and lower per unit costs.",
+              "rationale": "The article discusses the performance of home entertainment, which is part of the broader entertainment industry, indicating an industry-wide impact due to factors like unit sales and cost changes.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Consumer Products Consumer Products revenues for the quarter increased 22% to $1.4 billion and segment operating income increased 46% to $626 million.",
+              "rationale": "This indicates a significant performance in the consumer products industry, which is part of the broader consumer discretionary sector, showing an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Interactive Interactive revenues for the quarter decreased by $19 million to $384 million and segment operating income increased by $20 million to $75 million.",
+              "rationale": "The performance of the Interactive segment, which includes mobile games and console games, reflects an industry-wide impact within the entertainment and technology sectors.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ") Free cash flow is not a financial measure defined by GAAP. See the discussion of non-GAAP financial measures that follows. Cash provided by operations for the first quarter of fiscal 2015 increased 53% or $643 million to $1.9 billion compared to fiscal 2014 due to higher segment operating results and lower television spending driven by changes to",
+              "rationale": "The article discusses financial performance and cash flow, which are relevant to the US equity market, indicating a market-wide impact.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:5ddd903ad32e4a9a",
+              "name": "Movies/Entertainment",
+              "basis": "explicit",
+              "quote": "The increase in home entertainment results was driven by higher unit sales and lower per unit costs."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "Consumer Products Consumer Products revenues for the quarter increased 22% to $1.4 billion and segment operating income increased 46% to $626 million."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Interactive Interactive revenues for the quarter decreased by $19 million to $384 million and segment operating income increased by $20 million to $75 million."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "b75423e96554cd7d88702517b3fee4c69698a0b032c860ad20eae3e50d12f789",
+      "llm_inferred_at": "2026-11-18T08:41:03.286915+00:00",
+      "model_duration_seconds": 14.2157218,
+      "prompt_tokens": 3827,
+      "completion_tokens": 753,
+      "selection": [
+        {
+          "source_id": "147c8d673fe2aed385a24ade",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The increase in home entertainment results was driven by higher unit sales and lower per unit costs.",
+              "rationale": "The article discusses the performance of home entertainment, which is part of the broader entertainment industry, indicating an industry-wide impact due to factors like unit sales and costs.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Consumer Products Consumer Products revenues for the quarter increased 22% to $1.4 billion and segment operating income increased 46% to $626 million.",
+              "rationale": "This indicates a significant performance in the consumer products industry, which is part of the broader consumer discretionary sector, showing an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Interactive Interactive revenues for the quarter decreased by $19 million to $384 million and segment operating income increased by $20 million to $75 million.",
+              "rationale": "The performance of the Interactive segment, which includes mobile games and console games, reflects an industry-wide impact within the entertainment and technology sectors.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ") Free cash flow is not a financial measure defined by GAAP. See the discussion of non-GAAP financial measures that follows. Cash provided by operations for the first quarter of fiscal 2015 increased 53% or $643 million to $1.9 billion compared to fiscal 2014 due to higher segment operating results and lower television spending driven by changes to",
+              "rationale": "The article discusses financial performance and cash flow, which are relevant to the US equity market, indicating a market-wide impact.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:5ddd903ad32e4a9a",
+              "name": "Movies/Entertainment",
+              "basis": "explicit",
+              "quote": "The increase in home entertainment results was driven by higher unit sales and lower per unit costs."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "Consumer Products Consumer Products revenues for the quarter increased 22% to $1.4 billion and segment operating income increased 46% to $626 million."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Interactive Interactive revenues for the quarter decreased by $19 million to $384 million and segment operating income increased by $20 million to $75 million."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "6d6012677b58a8769d4f1aab5ab1fbfef0558c42c055a196570b767d90372848",
+      "llm_inferred_at": "2026-11-18T08:41:15.276048+00:00",
+      "model_duration_seconds": 11.9679929,
+      "prompt_tokens": 4131,
+      "completion_tokens": 533,
+      "selection": [
+        {
+          "source_id": "147c8d673fe2aed385a24ade",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the",
+              "rationale": "The text discusses the impact of various developments on the Company's business, which includes the broader industry of entertainment and media, particularly in the context of travel and leisure businesses.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The discussion will be available via replay through February 17, 2015 at 7:00 PM EST/4:00 PM PST.",
+              "rationale": "The text refers to The Walt Disney Company's conference call and earnings release, indicating a company-specific event.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "inferred",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the"
+            },
+            {
+              "industry_key": "TRSR:1a8909cbb55f0af8",
+              "name": "Television Services",
+              "basis": "inferred",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the"
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "name": "Advertising",
+              "basis": "inferred",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "daa88da976af41acb21b2769c099cff459ac0123d92042ef5032d95795e75e3e",
+      "llm_inferred_at": "2026-11-18T08:41:25.531664+00:00",
+      "model_duration_seconds": 10.2388804,
+      "prompt_tokens": 4175,
+      "completion_tokens": 529,
+      "selection": [
+        {
+          "source_id": "147c8d673fe2aed385a24ade",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the",
+              "rationale": "The text discusses the impact of various developments on the Company's performance, which includes the advertising market for broadcast and cable television programming, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The discussion will be available via replay through February 17, 2015 at 7:00 PM EST/4:00 PM PST.",
+              "rationale": "The text refers to The Walt Disney Company's conference call and earnings release, indicating a company-specific event.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "name": "Advertising",
+              "basis": "explicit",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the"
+            },
+            {
+              "industry_key": "TRSR:f85acd7b436ac9c5",
+              "name": "Radio And Television Broadcasting And Communications Equipment",
+              "basis": "explicit",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "the Company, including restructuring or strategic initiatives (including capital investments or asset acquisitions or dispositions), as well as from developments beyond the"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:41:25.554878+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "31d99b8958276f68cc235bfe38fcb598756123bfbdc28c05e7a672a877c0541b",
+    "raw_sha256": "ffd13265ac9167021e615f72ac6fcd6a7a8be4458ecb110b5827fb31a90e6884",
+    "date_quote": "Date of Report (Date of Earliest Event Reported): February 3, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103915000058/fy2015_q1x8kxcover.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:7c50f8a38a76f3e1",
+        "name": "Advertising",
+        "basis": "explicit",
+        "quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7c50f8a38a76f3e1",
+        "industry_name_standard": "Advertising",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The increase at ABC Family was due to higher affiliate revenue due to higher rates and increased advertising revenue reflecting higher units sold.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:5ddd903ad32e4a9a",
+        "name": "Movies/Entertainment",
+        "basis": "inferred",
+        "quote": "The increase in home entertainment results was driven by higher unit sales and lower per unit costs.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5ddd903ad32e4a9a",
+        "industry_name_standard": "Movies/Entertainment",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The increase in home entertainment results was driven by higher unit sales and lower per unit costs.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+        "name": "Consumer Discretionary",
+        "basis": "inferred",
+        "quote": "Consumer Products Consumer Products revenues for the quarter increased 22% to $1.4 billion and segment operating income increased 46% to $626 million.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "c2ef8c5fb4379b89",
+        "industry_name_standard": "Consumer Discretionary",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Consumer Products Consumer Products revenues for the quarter increased 22% to $1.4 billion and segment operating income increased 46% to $626 million.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "147c8d673fe2aed385a24ade",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_02_03_Financial-Report_Entertainment_sec.json",
+        "sha256": "1e796152ccee5c34cf79125bdfa7113de7c9a170307b47f35e83047bb046e26f",
+        "filename": "2015_02_03_Financial-Report_Entertainment_sec.json"
+      }
+    ],
+    "original_record_hash": "33e377bd873727396ef151c616bd3d60db8f7d3b0145659f182fbc0722db6455",
+    "input_hash": "28def3c3cbb79c9e36c9a7c9277a3c22b474186e964d544046195ca7743ebf53",
+    "matching_audit_hash": "ef5be995a02e83102829275cc6356ccda08bb71c1056a528d62babf69e434f2f",
+    "legacy_security_evidence": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "record_hash": "ef3e22c9269a77dadfce6d6da9b578f62c7bba65ed306d86da01f48a7b963055",
+    "outputs": [
+      {
+        "path": "US\\2015_02_03_Financial-Report_Entertainment_sec.json",
+        "sha256": "3bb6926ca2057fe3906b881cc5b99e5d44c73125fcdb3c488e64ddfcf30bc44f"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-02-03",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+      "fetched_at": "2026-11-11T00:42:00.136559+00:00",
+      "feature_available_at": "2026-11-11T00:42:07.728516+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T08:41:25.531664+00:00",
+    "feature_available_at": "2026-11-18T08:41:25.554878+00:00",
+    "commit_verified_at": "2026-11-12T13:52:54.746899+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The discussion will be available via replay through February 17, 2015 at 7:00 PM EST/4:00 PM PST.",
+        "rationale": "The text refers to The Walt Disney Company's conference call and earnings release, indicating a company-specific event.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The discussion will be available via replay through February 17, 2015 at 7:00 PM EST/4:00 PM PST.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-15-000058-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "ef3e22c9269a77dadfce6d6da9b578f62c7bba65ed306d86da01f48a7b963055",
+    "content_hash": "a7410481527890d32dc3da01d9bb412288e1ce3fd4925ae0db332c65a6211574",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T08:41:25.536464+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/147c8d673fe2aed385a24ade.json",
+      "sha256": "7481a1d1ae4dbdef7906c5bbcc4b3ed1933a0250bc108c1248a40f2aaedc5a90",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 100.78200000000652
+}

@@ -1,0 +1,95 @@
+{
+  "source_id": "0f57e34a234f1fa87436dcaf",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_26_Financial_Financial-Services_sec.json",
+      "sha256": "5eb75be22d0a52f1e4d500a2438d69a41f0d955cc60b5e6a4337637a50db327a",
+      "filename": "2015_02_26_Financial_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "6b5e8e19e3d956b1b33e50d4d44a839129c8a4aaa443e6a55c4b1b91fe87b9aa",
+  "input_hash": "b11728a2ebcf5cabcc2f8f7db4ac11657b821831ded9af5517ea2afaed6be4e3",
+  "matching_audit_hash": "4464971d7a31ceb478c94977b767ae7d02a584c962005ea13052be478285b43b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "15f7be773bb7a7abc28820c1fa43b1cac3d27238594f68fa02279b46cd16b372",
+    "raw_sha256": "bae93fe1c44f4075daa59b0caba2bcf6de3f7116e1e70ac85f436ccdee42e8ab",
+    "date_quote": "Date of Report (Date of earliest event reported): February 26, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000955/000147793215001388/sthc_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SouthCorp Capital, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SouthCorp Capital, Inc."
+    }
+  ],
+  "record_hash": "9885657bb92505638dbe0eae07f7c32b65db96f94d70a4233b92dca594abc2c0",
+  "outputs": [
+    {
+      "path": "US\\2015_02_26_Financial_Financial-Services_sec.json",
+      "sha256": "d0cf19e5a6aadd492ed8b4784952d9ea174877c1857af401354bdc80b2bf7c35"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:29:39.344739+00:00",
+    "feature_available_at": "2026-11-11T00:29:47.225032+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:56.003130+00:00",
+  "commit_verified_at": "2026-11-12T13:52:56.003130+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SouthCorp Capital, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SouthCorp Capital, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "source_id": "2ebae9c1070c8ab85e54a952",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_10_07_Global-Economic-Policy_Finance_treasury.json",
+      "sha256": "c910a5a101b46c9766d60ae1bff4d8cc6d7e23240c15b7909e765f6e7a854231",
+      "filename": "2016_10_07_Global-Economic-Policy_Finance_treasury.json"
+    }
+  ],
+  "original_record_hash": "fd020c9c89f4b04848b614f6b97101a3a3987ce081805985f9cbdd0378346803",
+  "input_hash": "41df2b294c6843eae9321697bc91eec0443894cc4afb30db8e6b4e29f7177021",
+  "matching_audit_hash": "2b486425b31cf52a30ff6998983a63ac5f0e0413da8b44046f4d9b93c27d3434",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8313956776e8c44a007035bf49e7baedbb7ce68d9af664bd24c6f311690a2cb4",
+    "raw_sha256": "9e1cb877cc96d4da2e8bb3f19fd18e9905b977e7d55a22fcd54b7bc82a533681",
+    "date_quote": "October 7, 2016 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9aa5442cf6e91282a903a6c1ba0eacf10ad65282206307e9b8e6d9ede5590df0",
+  "outputs": [
+    {
+      "path": "US\\2016_10_07_Global-Economic-Policy_Finance_treasury.json",
+      "sha256": "62414700a002791fffa297c5aa370a24ae11a394cf297e8d125dae1694aa6c5e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-10-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:09:28.303200+00:00",
+    "fetched_at": "2026-11-10T19:02:26.686403+00:00",
+    "feature_available_at": "2026-11-10T19:02:53.606545+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:58.374087+00:00",
+  "feature_available_at": "2026-11-12T14:32:58.383186+00:00",
+  "commit_verified_at": "2026-11-12T14:32:58.383186+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses global economic policy, fiscal and monetary policies, and international cooperation, which are relevant to the StockMixer news pipeline.",
+    "securities": [
+      {
+        "name": "IMF",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IMF and World Bank"
+      },
+      {
+        "name": "World Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IMF and World Bank"
+      },
+      {
+        "name": "Japan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Japan"
+      },
+      {
+        "name": "China",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China"
+      },
+      {
+        "name": "Korea",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Korea"
+      },
+      {
+        "name": "EU",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EU"
+      },
+      {
+        "name": "UK",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UK"
+      },
+      {
+        "name": "Greece",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Greece"
+      },
+      {
+        "name": "G-20",
+        "ticker": null,
+        "exchange": null,
+        "quote": "G-20"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Systems",
+        "basis": "inferred",
+        "quote": "financial systems"
+      },
+      {
+        "name": "Steel Industry",
+        "basis": "explicit",
+        "quote": "steel industry"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "IMF": "organization",
+      "World Bank": "organization",
+      "Japan": "organization",
+      "China": "organization",
+      "Korea": "organization",
+      "EU": "organization",
+      "UK": "organization",
+      "Greece": "organization",
+      "G-20": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

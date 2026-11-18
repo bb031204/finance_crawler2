@@ -1,0 +1,194 @@
+{
+  "source_id": "58577192424017f8574a37f5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_07_acquisition_real-estate_sec.json",
+      "sha256": "b5a9074a2dcf33cc524e9badc711ef1f1b183af8d8feee17fe6b0fb6500df31c",
+      "filename": "2017_03_07_acquisition_real-estate_sec.json"
+    }
+  ],
+  "original_record_hash": "35b40edfe1f92f413f56c07b8bbe3b5d805e0089e062270881bce811864e539b",
+  "input_hash": "d863a8462148a4dc84776fcd451f7d13d8079ff7c0b1050c778b66c1f71d4f2c",
+  "matching_audit_hash": "dbfbb6bb177f18f21e2011c0fd944a070f65fc3826429c65b9a8ea6af73adc2b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d5df29205e976986620d8cc8994e403548f2e974a8fefc2ea4b11c6fc90fe416",
+    "raw_sha256": "84fa47ebeed14e33566edc86d02aafbfce17900d7b7fe78a06adc6fac5df1f4d",
+    "date_quote": "SEC filing datePublished=2017-03-07",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907317000175/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    }
+  ],
+  "record_hash": "59c3f6514360e26feb221b1ec655fe5b428838d1beb8c8845b486c89e5daf7a8",
+  "outputs": [
+    {
+      "path": "US\\2017_03_07_acquisition_real-estate_sec.json",
+      "sha256": "be37973d91ea1edc0ce1fce092d1cb7cb54b2f905a4faf350740107c037ee2fa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:28:49.922966+00:00",
+    "feature_available_at": "2026-11-11T12:29:21.879314+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:06:31.290794+00:00",
+  "feature_available_at": "2026-11-12T15:16:40.765849+00:00",
+  "commit_verified_at": "2026-11-12T15:16:40.765849+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Acquisition highlights strategic shift to renewable energy and solar sector.",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+      },
+      {
+        "name": "TerraForm Power",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+      }
+    ],
+    "industries": [
+      {
+        "name": "renewable energy",
+        "basis": "explicit",
+        "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets."
+      },
+      {
+        "name": "solar energy",
+        "basis": "explicit",
+        "quote": "solar energy"
+      },
+      {
+        "name": "clean energy",
+        "basis": "explicit",
+        "quote": "This acquisition reflects Brookfield's commitment to diversifying its investment portfolio and strengthening its presence in the clean energy market."
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "organization",
+      "TerraForm Power": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:40.782903+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:06:31.290794+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Acquisition highlights strategic shift to renewable energy and solar sector.",
+      "securities": [
+        {
+          "name": "Brookfield Asset Management Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+        },
+        {
+          "name": "TerraForm Power",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+        }
+      ],
+      "industries": [
+        {
+          "name": "renewable energy",
+          "basis": "explicit",
+          "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets."
+        },
+        {
+          "name": "solar energy",
+          "basis": "explicit",
+          "quote": "solar energy"
+        },
+        {
+          "name": "clean energy",
+          "basis": "explicit",
+          "quote": "This acquisition reflects Brookfield's commitment to diversifying its investment portfolio and strengthening its presence in the clean energy market."
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Brookfield Asset Management Inc.": "organization",
+        "TerraForm Power": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:06:31.314871+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:06:31.323582+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:31.305872+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses an acquisition by Brookfield Asset Management Inc. of TerraForm Power, indicating a strategic shift towards renewable energy and solar. It",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:39:32.154392+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

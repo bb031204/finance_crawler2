@@ -1,0 +1,112 @@
+{
+  "source_id": "cb9bce5cd337156bacb3d197",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_04_17_Consumer-Goods_Bottled-Water_bloomberg.json",
+      "sha256": "d0b31fed5f09490db46fdb1decc663f902e2a247dc2fa59ca74db9d2f1607df1",
+      "filename": "2019_04_17_Consumer-Goods_Bottled-Water_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "34b30ffe64cccf229a71c97a0c2c7b1d0a7515c0022494e9c7c50dd1f6013d9a",
+  "input_hash": "8e620df2229a8cf004f6e42fffbaccfe8a44a955c971da9eb2fd899addca03e9",
+  "matching_audit_hash": "58a59c766bcaeb4e0265dabdf05bcd5a92bba1928d3a74ce854c06e8f9d54848",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a8f1e282820440b8d5b9ef7e713d9f9c2372ba4be316cf25276bef798952cd1d",
+    "raw_sha256": "09e5aef183c6ac10f69645514292d292e5bad3b95e54a6af1f48b7fa06959cb8",
+    "date_quote": "April 17, 2019 at 5:34 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3975be9bf4f119573c5eb36d919c40370dac5ae7c8dd982804f83075a6d024bc",
+  "outputs": [
+    {
+      "path": "US\\2019_04_17_Consumer-Goods_Bottled-Water_bloomberg.json",
+      "sha256": "8d676b56525048a57d44f34407853ab09a3847d837dfcab3fa26ed6e69d6b3f6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-04-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:31.819111+00:00",
+    "fetched_at": "2026-11-10T16:57:02.977855+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.310019+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:59.897615+00:00",
+  "feature_available_at": "2026-11-12T14:48:59.905831+00:00",
+  "commit_verified_at": "2026-11-12T14:48:59.905831+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Danone's strategic moves in the U.S. bottled water market, including sales growth, brand performance, and a distribution partnership.",
+    "securities": [
+      {
+        "name": "Danone",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Danone"
+      },
+      {
+        "name": "Coca-Cola",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Coca-Cola"
+      },
+      {
+        "name": "Evian",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Evian"
+      },
+      {
+        "name": "Keurig Dr Pepper Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Keurig Dr Pepper Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Bottled Water",
+        "basis": "explicit",
+        "quote": "bottled water market"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Danone": "company",
+      "Coca-Cola": "company",
+      "Evian": "brand",
+      "Keurig Dr Pepper Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

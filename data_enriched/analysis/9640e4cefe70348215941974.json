@@ -1,0 +1,84 @@
+{
+  "source_id": "9640e4cefe70348215941974",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_01_27_Financial_Banking_sec.json",
+      "sha256": "2f094af891b1da7d072640ec4b24ca11df6c540f782fee0ca726c46ca45fb6f0",
+      "filename": "2012_01_27_Financial_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "0e27c4f8c479766ca4fae6f69f3db20ea9e15b2a8420d7f376518cc7ca76ade0",
+  "input_hash": "e5177634c45a29a39670dfcac38e7146dae86a1718adcdc90f44fe5a571b803e",
+  "matching_audit_hash": "9b4b0c42fd0edd8c18c4f0d132a07414f3e7b1d4bb6bf4252801cb3950a0c359",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "84a097ccf58b9d74ec2b1e52834c8d2c6531ba7d2dcedfab4c42331251586a98",
+    "raw_sha256": "6463be026b85d14f07dc147471d057a263c036f7ea452acf5a0c2b7771211d4f",
+    "date_quote": "Date of Report (Date of earliest event reported): January 27, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023212000001/form8k114press.txt",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "98b89bc469b8f668d62fb6e863b52ea16d199a66e00ab5c06a7aee7ef40eed7a",
+  "outputs": [
+    {
+      "path": "US\\2012_01_27_Financial_Banking_sec.json",
+      "sha256": "7e7fb1778a93522d51ddf1a4ab5b9bb45eaf359e1cd9c9698734ed7370085685"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-01-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:37:56.612983+00:00",
+    "feature_available_at": "2026-11-10T22:38:04.866005+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:54:37.654922+00:00",
+  "feature_available_at": "2026-11-12T13:54:37.684041+00:00",
+  "commit_verified_at": "2026-11-12T13:54:37.684041+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a company's financial performance and a filing signed by its CFO, indicating substantive financial reporting.",
+    "securities": [
+      {
+        "name": "KENTUCKY BANCSHARES, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KENTUCKY BANCSHARES, INC."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "KENTUCKY BANCSHARES, INC.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

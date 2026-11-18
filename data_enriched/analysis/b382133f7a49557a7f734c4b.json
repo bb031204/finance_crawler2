@@ -1,0 +1,95 @@
+{
+  "source_id": "b382133f7a49557a7f734c4b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_01_30_Financial-Report_Semiconductor_sec.json",
+      "sha256": "f125a66dcabf575081becf17889b4e321ac50c4c6ca06417333d1b79054fc034",
+      "filename": "2020_01_30_Financial-Report_Semiconductor_sec.json"
+    }
+  ],
+  "original_record_hash": "5d3df5206bc55ec1461a1ee266aac638071edfd15986aff16e5aefea65e2d7b8",
+  "input_hash": "29c1ea24a8c5c532bfed22f99c7b1f4300a7eab02d298e28a820e8f57756e6f2",
+  "matching_audit_hash": "b0d59f478a3bfc6e82b2c06448f8b8c2203f858e6293b9b1f40a00bee6f66c49",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "70a910254379c99be61c4aaedd7053b576f40d89ceca6c46d4c31391d5b6af94",
+    "raw_sha256": "bafacec88c081fa3487a65d37fdf5af6c6594da7b021849c5e09e61e28af9657",
+    "date_quote": "January 30, 2020 Date of Report (Date of earliest event reported)",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/791915/000079191520000002/q419pressrelease8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Cypress Semiconductor Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Cypress Semiconductor Corporation"
+    }
+  ],
+  "record_hash": "1bc3e933e5b2de0e70e7a1a334760d13c7dee5c591648e972127b6bdb9957d07",
+  "outputs": [
+    {
+      "path": "US\\2020_01_30_Financial-Report_Semiconductor_sec.json",
+      "sha256": "ba4fcbd4ea42ee5a244408dfadee7a28650d4c18377f319e50f8d461040ee183"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-01-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:57.862672+00:00",
+    "fetched_at": "2026-11-11T02:44:30.573211+00:00",
+    "feature_available_at": "2026-11-11T04:55:45.351740+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:31.593352+00:00",
+  "commit_verified_at": "2026-11-12T13:53:31.593352+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Cypress Semiconductor Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Cypress Semiconductor Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

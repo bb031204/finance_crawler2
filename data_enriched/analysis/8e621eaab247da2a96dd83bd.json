@@ -1,0 +1,96 @@
+{
+  "source_id": "8e621eaab247da2a96dd83bd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_05_06_Finance_Government_treasury.json",
+      "sha256": "23bbeb074d813ecf0e94a040c741a351b78f70125c8db19a73ee14366b8feec2",
+      "filename": "2015_05_06_Finance_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "eae5856af8189737211cc454f8077683f787c089e1658f54b30f74e006a91405",
+  "input_hash": "afa0a5befdaf4c55fc3433f2aa3076f4ea26dd22a522a998bc7903b63e9e6959",
+  "matching_audit_hash": "527cf3d575c8c0ba094245aec1b377b1b2636d3185d353dcc3a9e8aad66cc4ee",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "24ad9d080dfc59e43777482897c3e144121690e2bdb1ee8e7b09df6ef7d03931",
+    "raw_sha256": "0329ebe6768a167f571ff5aa90f9bc0bdadfeb748aed38495a804f3cfce89de1",
+    "date_quote": "May 6, 2015 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "25bd4d98907fcb9b83b7a8f0983543498ad5a65704d8a3dd7b0b03b1ed8eef25",
+  "outputs": [
+    {
+      "path": "US\\2015_05_06_Finance_Government_treasury.json",
+      "sha256": "eadaadb7e6f0298532edd4b7739b541a0a778249b3800c171fc10d865607adb8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-05-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:12.001365+00:00",
+    "fetched_at": "2026-11-10T10:58:53.845719+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.248578+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:26:31.277473+00:00",
+  "feature_available_at": "2026-11-12T14:26:31.307990+00:00",
+  "commit_verified_at": "2026-11-12T14:26:31.307990+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses U.S. Treasury operations, debt management, and the debt limit, which are relevant to financial markets and government operations.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Government",
+        "basis": "inferred",
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Finance",
+        "basis": "explicit",
+        "quote": "finance"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "source_id": "611e99150cd60844e9ebb1c6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_08_02_Sanctions_Regulatory_treasury.json",
+      "sha256": "6d5a296973b3d40ca478456fcf46ab3503301017ba42323d1218804dc4065df4",
+      "filename": "2017_08_02_Sanctions_Regulatory_treasury.json"
+    }
+  ],
+  "original_record_hash": "a9409103253f325cf4b1544e6f1d928ba86cfa35bc04e22ec2c890349e846346",
+  "input_hash": "fd6e817c85e345c44bb4ec77fedc0b7baabd731bc678cf9ad31ab0369a9b65cc",
+  "matching_audit_hash": "af59e472fcbee25df3db0486ea5e717fc8ce8ebb24bbd5fc61d3f0770a94c911",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5319014e66be8640843b95ea1f057c99db53093a283bf2c2c53449c39eedc867",
+    "raw_sha256": "6b30acf4b91727b6b630bde6037a1ae3c145ce07339fa1edbdfca68c62d3f502",
+    "date_quote": "On August 2, 2017, the President signed into law the \"Countering America’s Adversaries Through Sanctions Act\" (Public Law 115-44) (CAATSA)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "fcff7f89e66dfaf9a7c0e60a3dc39be4904f2b72dfd004998c9a0efe565d7ab0",
+  "outputs": [
+    {
+      "path": "US\\2017_08_02_Sanctions_Regulatory_treasury.json",
+      "sha256": "8724581256c23bb56ed5383b4d102b381766fb363500a21164a8c856b15b99fd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-08-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:23.556601+00:00",
+    "fetched_at": "2026-11-10T14:17:37.464467+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.848641+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:40:34.209138+00:00",
+  "feature_available_at": "2026-11-12T14:40:34.250884+00:00",
+  "commit_verified_at": "2026-11-12T14:40:34.250884+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the implementation of CAATSA, which involves sanctions on Iran, Russia, and North Korea, and mentions the Treasury Department and Department.",
+    "securities": [
+      {
+        "name": "Countering America's Adversaries Through Sanctions Act (CAATSA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Countering America's Adversaries Through Sanctions Act (CAATSA)"
+      },
+      {
+        "name": "Treasury Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Department"
+      },
+      {
+        "name": "Department of State",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Department of State"
+      },
+      {
+        "name": "OFAC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "OFAC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Sanctions and Regulatory Compliance",
+        "basis": "inferred",
+        "quote": "Sanctions"
+      },
+      {
+        "name": "Government and Policy",
+        "basis": "inferred",
+        "quote": "executive orders and public laws"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Countering America's Adversaries Through Sanctions Act (CAATSA)": "organization",
+      "Treasury Department": "organization",
+      "Department of State": "organization",
+      "OFAC": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

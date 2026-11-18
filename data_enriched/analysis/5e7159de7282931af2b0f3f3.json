@@ -1,0 +1,96 @@
+{
+  "source_id": "5e7159de7282931af2b0f3f3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_30_Financial-Report_Information-Technology_sec.json",
+      "sha256": "00e54c0e2480b2b7b72241e5a6d896fb6e049d0aeeb13bc769d26e71494db7e8",
+      "filename": "2019_01_30_Financial-Report_Information-Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "60fda98015aac8029852cd956b1e6d61f3414e49e530ec7b9edd860b31317505",
+  "input_hash": "62df2f996bd28a063679fcc2967e662aa10b75ca5dabb66d5c7caa114eab684d",
+  "matching_audit_hash": "54d0ba3ba780d0bdd5e5437c4612a4c425c5ca3eb47c47aca5fa62a84f40ddc3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0268d1b3634a0fba22b853df5f6e6c3357fe23164e1e495de626d8f0815e685f",
+    "raw_sha256": "904d6693184e8e34d1830be9b21dcc4a46b9ecb8d958e52aa9d27ae96076c08d",
+    "date_quote": "SEC filing datePublished=2019-01-30",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000110465919004280/a19-3658_16k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SAP SE",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SAP SE"
+    }
+  ],
+  "record_hash": "08c6e7b004c4fea22b04fb0b619e51d5449bf46a3fc5392c73e2907acf08f73f",
+  "outputs": [
+    {
+      "path": "US\\2019_01_30_Financial-Report_Information-Technology_sec.json",
+      "sha256": "5d1280c337151fd277e495386a4065e55d0d44831b8990894c8648f4e662601c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+    "fetched_at": "2026-11-11T13:33:25.803975+00:00",
+    "feature_available_at": "2026-11-11T13:34:00.959453+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:25.384286+00:00",
+  "commit_verified_at": "2026-11-12T13:53:25.384286+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAP SE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP SE"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "source_id": "33027746d8a47ead0a7e41fc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_08_05_Financial-System-Vulnerability_Finance_federalreserve.json",
+      "sha256": "73a320df8d100ffab10e9c713c002407283af7439d4b75ace80ed25b1abfc423",
+      "filename": "2015_08_05_Financial-System-Vulnerability_Finance_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "45a708c4b720a130670e710629af7963fea0d4aea00fb2ae4765aebcaf42192c",
+  "input_hash": "19143ca4fcdc3e11316bf2e21661958871551e5741d1a9fcb30ba48122af2b12",
+  "matching_audit_hash": "905b8b980b20302d244a19b2a7d621fa1f7b2039ea3efa3898d72025bd8f06a6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "441c5ec202bde858da78b624b219bf990a4ca429e3f2c1aa6db5b8ffa6807cf2",
+    "raw_sha256": "8228e826fafb2de7fafdb1763cd93be79a89acbb403aefd9366a5eca8b31ad4a",
+    "date_quote": "Print August 5, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ee0bdf2d9cc01cf800f0a8985fa22da5ce715ddcfb2bb797fb6701dc87111e04",
+  "outputs": [
+    {
+      "path": "US\\2015_08_05_Financial-System-Vulnerability_Finance_federalreserve.json",
+      "sha256": "b4928a2bf6bc14f3ec163e1d17517edccaf1b3265c3a5647e22db6b127e02279"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-08-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:33.668823+00:00",
+    "fetched_at": "2026-11-10T12:18:09.997169+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.621526+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:28:46.717694+00:00",
+  "feature_available_at": "2026-11-12T14:28:46.750694+00:00",
+  "commit_verified_at": "2026-11-12T14:28:46.750694+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses vulnerabilities in the U.S. financial system, including maturity transformation, leverage, interconnectedness, valuation pressures, and risk.",
+    "securities": [
+      {
+        "name": "Federal Reserve Board",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Board"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial System",
+        "basis": "explicit",
+        "quote": "U.S. financial system"
+      },
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "elevated real estate prices"
+      },
+      {
+        "name": "Mortgage Lending",
+        "basis": "explicit",
+        "quote": "risky mortgage lending"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Federal Reserve Board": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

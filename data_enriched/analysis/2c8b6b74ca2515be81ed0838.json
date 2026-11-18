@@ -1,0 +1,263 @@
+{
+  "source_id": "2c8b6b74ca2515be81ed0838",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_08_15_Water-&-Utilities_Water-Utilities_cnbc.json",
+      "sha256": "b931c18be5359eb5dfa2a25a210935a87cc14cde2b61aa19e74895bd5ecd2e80",
+      "filename": "2012_08_15_Water-&-Utilities_Water-Utilities_cnbc.json"
+    }
+  ],
+  "original_record_hash": "2cda694bfdc93eafc8e75fab25b70f47a7f20aaaad885d414df6765978cb887d",
+  "input_hash": "e429cdf764e4e60a5488c2f0d63e5aa65e1cddf95d7488d5e0e1b2f62cedcaab",
+  "matching_audit_hash": "68a257ba0c8777bdaa577c70853c763f17003f757980d752dcca3a5fa6bc8294",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a234579624c5b90b4bd2c81da22458696e55c45cad93e97b8e6e7067849bac3d",
+    "raw_sha256": "731f13760fdfe85ac7bdd244a1276dd30a7138029cc64ee4b3b96da5210c6f26",
+    "date_quote": "article:published_time=2012-08-15T17:29:48+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d19c01ce798003d3f7838150982e746951c31f8d615a272afe2421c1a10d6b01",
+  "outputs": [
+    {
+      "path": "US\\2012_08_15_Water-&-Utilities_Water-Utilities_cnbc.json",
+      "sha256": "15d404d0fb67c0e18e825550eea5309aed192c5020e01331441f1af8736fa5d9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-08-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:08.159079+00:00",
+    "fetched_at": "2026-11-10T16:28:13.555206+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.836547+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:59:33.234682+00:00",
+  "feature_available_at": "2026-11-12T15:16:33.727600+00:00",
+  "commit_verified_at": "2026-11-12T15:16:33.727600+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Drought impacts water utilities and agriculture, affecting companies and markets",
+    "securities": [
+      {
+        "name": "American Water Works",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American Water Works"
+      },
+      {
+        "name": "Aqua America",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Aqua America"
+      },
+      {
+        "name": "GAMCO Investors",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GAMCO Investors"
+      },
+      {
+        "name": "Pall Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pall Corp"
+      },
+      {
+        "name": "Northwest Pipe",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Northwest Pipe"
+      },
+      {
+        "name": "Flowserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Flowserve"
+      },
+      {
+        "name": "Lindsay Manufacturing",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lindsay Manufacturing"
+      },
+      {
+        "name": "Piper Jaffray",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Piper Jaffray"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Agriculture",
+        "basis": "inferred",
+        "quote": "agriculture"
+      },
+      {
+        "name": "Manufacturing",
+        "basis": "inferred",
+        "quote": "manufacturer of agricultural irrigation equipment"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "American Water Works": "company",
+      "Aqua America": "company",
+      "GAMCO Investors": "issuer",
+      "Pall Corp": "company",
+      "Northwest Pipe": "company",
+      "Flowserve": "company",
+      "Lindsay Manufacturing": "company",
+      "Piper Jaffray": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:33.756964+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:59:33.234682+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Drought impacts water utilities and agriculture, affecting companies and markets",
+      "securities": [
+        {
+          "name": "American Water Works",
+          "ticker": null,
+          "exchange": null,
+          "quote": "American Water Works"
+        },
+        {
+          "name": "Aqua America",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Aqua America"
+        },
+        {
+          "name": "GAMCO Investors",
+          "ticker": null,
+          "exchange": null,
+          "quote": "GAMCO Investors"
+        },
+        {
+          "name": "Pall Corp",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Pall Corp"
+        },
+        {
+          "name": "Northwest Pipe",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Northwest Pipe"
+        },
+        {
+          "name": "Flowserve",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Flowserve"
+        },
+        {
+          "name": "Lindsay Manufacturing",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Lindsay Manufacturing"
+        },
+        {
+          "name": "Piper Jaffray",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Piper Jaffray"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Agriculture",
+          "basis": "inferred",
+          "quote": "agriculture"
+        },
+        {
+          "name": "Manufacturing",
+          "basis": "inferred",
+          "quote": "manufacturer of agricultural irrigation equipment"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "American Water Works": "company",
+        "Aqua America": "company",
+        "GAMCO Investors": "issuer",
+        "Pall Corp": "company",
+        "Northwest Pipe": "company",
+        "Flowserve": "company",
+        "Lindsay Manufacturing": "company",
+        "Piper Jaffray": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:59:33.260629+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:59:33.268711+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:33.250756+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the impact of the U.S. drought on water utility companies and agricultural irrigation, including specific companies and their financial and战略",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:58:15.868249+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

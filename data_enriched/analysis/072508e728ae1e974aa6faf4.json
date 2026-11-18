@@ -1,0 +1,114 @@
+{
+  "source_id": "072508e728ae1e974aa6faf4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_06_25_Politics_Public-Safety_cnbc.json",
+      "sha256": "2e3273dd65f3b39a2f8750756d565cc86e9720b0d96f4684e7bc8de5637bbd13",
+      "filename": "2020_06_25_Politics_Public-Safety_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a0d814f65e55fd3abfa33224a7fff0e6a6d7ca41adfdb842aa4a555af72acdee",
+  "input_hash": "6bc18b064cd68d7945aabd108f2cde458ab17bb7912c73c6c287da8dc1d8d2c1",
+  "matching_audit_hash": "b547e79622a9917f59e28dded563e96879dedcc475600f03b4a0aaf8481dd9cc",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d2c06e3e17c2b8c2215aea0ce652c9ffa50b1a83a1e9fa2fe8953fef04eda674",
+    "raw_sha256": "501990d20f42b2e4924c675fcef7c8f4a66b55defc69b4948d613556b77276d6",
+    "date_quote": "article:published_time=2020-06-25T15:16:04+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Department of Justice",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Department of Justice"
+    },
+    {
+      "name": "Byrne Justice Assistance Grants",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Byrne Justice Assistance Grants, known as Byrne JAG, were started as a part of the Anti-Drug Abuse Act of 1988 and consolidated in 2005 with a program that honored an officer who died in the line of duty."
+    }
+  ],
+  "record_hash": "d87d95152bb30ebd8fb00e75f18d9dec33b0e787afbd7f07f9ead5ad44189f0f",
+  "outputs": [
+    {
+      "path": "US\\2020_06_25_Politics_Public-Safety_cnbc.json",
+      "sha256": "2ab465cf4e2eccb18d3af6ff4795f62d942170e17c67239234515e5556cca280"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-06-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:11.057561+00:00",
+    "fetched_at": "2026-11-10T19:29:34.721780+00:00",
+    "feature_available_at": "2026-11-10T19:30:08.701491+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:34.064727+00:00",
+  "commit_verified_at": "2026-11-12T13:53:34.064727+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Department of Justice",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Department of Justice"
+      },
+      {
+        "name": "Byrne Justice Assistance Grants",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Byrne Justice Assistance Grants, known as Byrne JAG, were started as a part of the Anti-Drug Abuse Act of 1988 and consolidated in 2005 with a program that honored an officer who died in the line of duty."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Public Safety",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Law Enforcement",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "source_id": "8d8b60fedb317c976d853a31",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_20_management-change_financial-services_sec.json",
+      "sha256": "19553c26230bdcc06086fa5b52d4c78e0fb581ed9382e578f1be4ca34436d1a0",
+      "filename": "2018_02_20_management-change_financial-services_sec.json"
+    }
+  ],
+  "original_record_hash": "d4258e81be6bb77684b4a45110562822d09b7835c46ee555c201e1a8d91e0bcd",
+  "input_hash": "f44f86070760a42fcc9783f773b5fac5f14d9a9bd1e91e22b762252b1ffcfce8",
+  "matching_audit_hash": "3e743022c1834ef48b9a50bdfc1edc2b9d8b014427f5310b632e5f90ed40a874",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fcdb9252efef5d0b965b59f4b4273c9c2dd7d312c708c7efe08ec49c3008c4eb",
+    "raw_sha256": "c666fa10624ab28696d944fff90641a6aae573a413e99c90d056af16ee5f015c",
+    "date_quote": "SEC filing datePublished=2018-02-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000045/000119312518049706/d541010d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nicholas Financial, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Nicholas Financial, Inc."
+    }
+  ],
+  "record_hash": "4a5d4f044336dab11147dfb66f4b943dadb7fc8fbec12035e13cabcb882e3f28",
+  "outputs": [
+    {
+      "path": "US\\2018_02_20_management-change_financial-services_sec.json",
+      "sha256": "b14d46d2f363223b18026e8124e71ee7d23c0df9bb847ef9310e53e7d7e1d22f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.045565+00:00",
+    "fetched_at": "2026-11-11T12:48:47.733742+00:00",
+    "feature_available_at": "2026-11-11T12:49:05.622085+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:08:33.050479+00:00",
+  "feature_available_at": "2026-11-12T15:16:42.781741+00:00",
+  "commit_verified_at": "2026-11-12T15:16:42.781741+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Management change and financial leadership transition",
+    "securities": [
+      {
+        "name": "Nicholas Financial, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nicholas Financial, Inc. (the \"Company\")"
+      },
+      {
+        "name": "Platinum Auto Finance",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vice President of Finance at Platinum Auto Finance"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Vice President and Interim Chief Financial Officer"
+      },
+      {
+        "name": "Auto Finance",
+        "basis": "inferred",
+        "quote": "local auto finance company"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Nicholas Financial, Inc.": "company",
+      "Platinum Auto Finance": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:42.806717+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:08:33.050479+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Management change and financial leadership transition",
+      "securities": [
+        {
+          "name": "Nicholas Financial, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Nicholas Financial, Inc. (the \"Company\")"
+        },
+        {
+          "name": "Platinum Auto Finance",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Vice President of Finance at Platinum Auto Finance"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Vice President and Interim Chief Financial Officer"
+        },
+        {
+          "name": "Auto Finance",
+          "basis": "inferred",
+          "quote": "local auto finance company"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Nicholas Financial, Inc.": "company",
+        "Platinum Auto Finance": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:08:33.076255+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:08:33.087255+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:08:33.066252+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary details a management change involving the appointment of a new interim CFO, including his background and previous roles, which is relevant for stock",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:43:05.910411+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

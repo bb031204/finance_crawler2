@@ -1,0 +1,175 @@
+{
+  "source_id": "7a1298555d40a04588c52073",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_25_Regulation_Financial-Services_sec.json",
+      "sha256": "ab6c4bcfe8e0f91d01508d3d72bf215807796f3aa5d3dc317355cc0de30868dc",
+      "filename": "2015_03_25_Regulation_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "085e147f008b0692aabf9dee6e6c3756ededf9602471dce8e648e3629067ef6b",
+  "input_hash": "4f697eb686f12325ae5087f01f8e9da81addc1a3e6fda03676a7a0d6ad0ad396",
+  "matching_audit_hash": "4c54f50318913dfb1f51cb561b70379f9e095654ddcda5193bd251cdf321cb16",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a4013d16ce8d90f21c585a00d868a631a2b0fb02c3d6be26f7feb2a99b89c2e7",
+    "raw_sha256": "46f224f603c4f71ed3b78a191903d401e37696a33adc42e18cc424f500bfb75f",
+    "date_quote": "Washington D.C., March 25, 2015 —",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "74a8db9106bc19aa6ac28133b7c5456ddcb1d5620b6a3ca7b30b0a3662448039",
+  "outputs": [
+    {
+      "path": "US\\2015_03_25_Regulation_Financial-Services_sec.json",
+      "sha256": "aa6eb690b14842a9eb144c393691c9db992244ff6ac058a7d1aa6b06eb275429"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:12.000833+00:00",
+    "fetched_at": "2026-11-10T10:56:02.629017+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.121008+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:29.713744+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.788234+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.788234+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Regulation A+ updates for smaller companies' capital access",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Jumpstart Our Business Startups (JOBS) Act",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Jumpstart Our Business Startups (JOBS) Act"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Securities and Exchange Commission"
+      },
+      {
+        "name": "Capital Markets",
+        "basis": "inferred",
+        "quote": "access to capital"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "Jumpstart Our Business Startups (JOBS) Act": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.823459+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:29.713744+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Regulation A+ updates for smaller companies' capital access",
+      "securities": [
+        {
+          "name": "U.S. Securities and Exchange Commission",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Securities and Exchange Commission (SEC)"
+        },
+        {
+          "name": "Jumpstart Our Business Startups (JOBS) Act",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Jumpstart Our Business Startups (JOBS) Act"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Securities and Exchange Commission"
+        },
+        {
+          "name": "Capital Markets",
+          "basis": "inferred",
+          "quote": "access to capital"
+        }
+      ],
+      "impact_scope": [
+        "industry"
+      ],
+      "entity_types": {
+        "U.S. Securities and Exchange Commission": "organization",
+        "Jumpstart Our Business Startups (JOBS) Act": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:29.746459+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:29.756458+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:29.729197+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the SEC's Regulation A+ rules, which impact smaller companies' access to capital, offering tiers, and exemptions from registration. It also提及",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:25:08.494713+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

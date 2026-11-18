@@ -1,0 +1,229 @@
+{
+  "source_id": "cbdcd9d6952f0bf42f843f66",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_05_26_Financial-Crisis_Banking_federalreserve.json",
+      "sha256": "0d9abd71c09e54ed783fb86275d2535c29edd4dc2c9c8549d1b2fa52649a8ee3",
+      "filename": "2015_05_26_Financial-Crisis_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "8822d252da229c4c83c9cca2c3c195dfdd3a260265d53eb3c7e9aab86f4257f7",
+  "input_hash": "02b47b97177284a74622ecf483bcc04888bb618d36239ba3949ff968788448fb",
+  "matching_audit_hash": "d81ceb93ceb3d9aa81663e4833d4b5fdc2b3196eda68b0af92f92892eb6453d4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "054e51306da8254b18452f306199d675910fd6379441d47717da8087c3418750",
+    "raw_sha256": "49cdb86ba19c71540840deda6812787bb7e177036485973580cbb66e0504d648",
+    "date_quote": "May 26, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "f99c513b7f3b76cb3bf8c33545aa7afe5cba458873068ca6d4888188f63d695b",
+  "outputs": [
+    {
+      "path": "US\\2015_05_26_Financial-Crisis_Banking_federalreserve.json",
+      "sha256": "fc542d83f08519eaa483e0abd587b71c832670460e86ad2528eea9e33c260c60"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-05-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:31.088734+00:00",
+    "fetched_at": "2026-11-10T10:19:07.281419+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.312329+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:43.150984+00:00",
+  "feature_available_at": "2026-11-12T15:16:38.040300+00:00",
+  "commit_verified_at": "2026-11-12T15:16:38.040300+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Analyzes CRA's role in financial crisis and lending practices",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Federal Reserve's FEDS Notes"
+      },
+      {
+        "name": "Community Reinvestment Act (CRA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the Community Reinvestment Act (CRA)"
+      },
+      {
+        "name": "National Community Reinvestment Coalition",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The National Community Reinvestment Coalition"
+      },
+      {
+        "name": "Citigroup",
+        "ticker": null,
+        "exchange": null,
+        "quote": "a Citigroup managing director"
+      },
+      {
+        "name": "JPMorgan Chase",
+        "ticker": null,
+        "exchange": null,
+        "quote": "JPMorgan Chase"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "subprime mortgage boom"
+      },
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "federal banking regulators"
+      },
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": "subprime mortgage lending"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization",
+      "Community Reinvestment Act (CRA)": "organization",
+      "National Community Reinvestment Coalition": "organization",
+      "Citigroup": "organization",
+      "JPMorgan Chase": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:38.062928+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:43.150984+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Analyzes CRA's role in financial crisis and lending practices",
+      "securities": [
+        {
+          "name": "Federal Reserve",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Federal Reserve's FEDS Notes"
+        },
+        {
+          "name": "Community Reinvestment Act (CRA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the Community Reinvestment Act (CRA)"
+        },
+        {
+          "name": "National Community Reinvestment Coalition",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The National Community Reinvestment Coalition"
+        },
+        {
+          "name": "Citigroup",
+          "ticker": null,
+          "exchange": null,
+          "quote": "a Citigroup managing director"
+        },
+        {
+          "name": "JPMorgan Chase",
+          "ticker": null,
+          "exchange": null,
+          "quote": "JPMorgan Chase"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "subprime mortgage boom"
+        },
+        {
+          "name": "Banking",
+          "basis": "explicit",
+          "quote": "federal banking regulators"
+        },
+        {
+          "name": "Real Estate",
+          "basis": "inferred",
+          "quote": "subprime mortgage lending"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Federal Reserve": "organization",
+        "Community Reinvestment Act (CRA)": "organization",
+        "National Community Reinvestment Coalition": "organization",
+        "Citigroup": "organization",
+        "JPMorgan Chase": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:43.176076+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:43.185082+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:43.168078+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the Community Reinvestment Act (CRA) and its potential role in the financial crisis, including its impact on subprime mortgage lending and银行的",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:26:41.402702+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "source_id": "e43a285ceddc3af93a920dfd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_03_Consumer-Goods_Food-&-Beverage_cnbc.json",
+      "sha256": "db0abe062f6ecfc30a0035fa48b54dafa5922fd4ba3e75977104b57cd04a48fc",
+      "filename": "2019_10_03_Consumer-Goods_Food-&-Beverage_cnbc.json"
+    }
+  ],
+  "original_record_hash": "dde40cf929712ff23e353b515aed4c935d2f33bd767acc4f586717333cbb4aaf",
+  "input_hash": "0a2154398aa0ab92b3e4405653a6a6969f1d188d4d3ad70170ede9bc3ad875b5",
+  "matching_audit_hash": "be83f84334dd42f3bac9e3a08100c9718f6fd0d29a692bca0d2192b846e726e6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0223a217c0718b91c8e41b72e9ed1112fbf0c1c8c00a0412dd1609900910a917",
+    "raw_sha256": "ed4ac21742ab6762dd70f803e1b32ad29ca5e89cafce220539fcdf97f1a95cdc",
+    "date_quote": "article:published_time=2019-10-03T10:10:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "09bd146347c74690f73eaf78a3a64ae91d2f342158c8bf0668c14e9eb9712e6a",
+  "outputs": [
+    {
+      "path": "US\\2019_10_03_Consumer-Goods_Food-&-Beverage_cnbc.json",
+      "sha256": "fe8274e84859b49d1e2093f448b0205c25275096805b0a1bcef201a782b74041"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:31.819111+00:00",
+    "fetched_at": "2026-11-10T16:55:02.774657+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.198396+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:50:39.493621+00:00",
+  "feature_available_at": "2026-11-12T14:50:39.510301+00:00",
+  "commit_verified_at": "2026-11-12T14:50:39.510301+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains financial results, strategic initiatives, and business performance details relevant to PepsiCo's operations and market position.",
+    "securities": [
+      {
+        "name": "PepsiCo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PepsiCo"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "PepsiCo": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

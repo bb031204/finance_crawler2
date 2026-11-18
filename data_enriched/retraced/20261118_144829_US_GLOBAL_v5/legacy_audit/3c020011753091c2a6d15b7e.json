@@ -1,0 +1,91 @@
+{
+  "source_id": "3c020011753091c2a6d15b7e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_07_15_15_28_Brand-Loyalty_Automotive_prnewswire.json",
+      "sha256": "efa0aeddb6710b0b11127b5f4fc2245e42d23904a92779705dec5acb097e8855",
+      "filename": "2021_07_15_15_28_Brand-Loyalty_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "3ccc695d1ea6743a58b587b980938d49f13b061e25b12989e309add2a02193cf",
+  "input_hash": "8dff6ac2c3b1e346965cfd73087ea7431e9e32739a459542e81fcac00f37602f",
+  "matching_audit_hash": "41e98478909c831e6f30443f6f63edb737f4396255ac7938d08ee8b24ebe826a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "07649b0ddf9c05794dd140352b239534e12561328a2319bc71325081098863c8",
+    "raw_sha256": "1e78e8da06044be9453b9700677939816a9caa969ba682d1f507fc8fb134488d",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2021-07-15T15:28:00+01:00\ndate=2021-07-15T15:28:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a355c51684345f5caa0ce2d17cec7a120169bba2f3a0dba61511e256a5d06adc",
+  "outputs": [
+    {
+      "path": "US\\2021_07_15_15_28_Brand-Loyalty_Automotive_prnewswire.json",
+      "sha256": "23465c9a4ec2de037904f887ec0fd604f9391d25ef072c5e872fb8202442c7e9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-07-15T15:28:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:40:21.579719+00:00",
+    "fetched_at": "2026-11-10T21:36:47.311464+00:00",
+    "feature_available_at": "2026-11-11T09:06:18.265052+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:47.434661+00:00",
+  "feature_available_at": "2026-11-12T14:55:47.443439+00:00",
+  "commit_verified_at": "2026-11-12T14:55:47.443439+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Subaru of America, Inc.'s brand loyalty award, highlighting its position in the automotive industry and customer retention strategies.",
+    "securities": [
+      {
+        "name": "Subaru of America, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of America, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive industry",
+        "basis": "explicit",
+        "quote": "automotive industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Subaru of America, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

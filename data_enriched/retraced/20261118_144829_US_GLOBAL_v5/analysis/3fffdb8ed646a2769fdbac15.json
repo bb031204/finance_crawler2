@@ -1,0 +1,396 @@
+{
+  "source_id": "3fffdb8ed646a2769fdbac15",
+  "status": "completed",
+  "source_record_hash": "9222e3d02cc31438388095f2e35f42976c700a44536961e7f4a6dc71aa574ed9",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000232/0001000232-15-000002-index.html",
+    "attempted_at": "2026-11-18T12:46:17.361481+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000232/0001000232-15-000002-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023215000002/form8k144financials.txt",
+    "fetched_at": "2026-11-18T12:46:32.177621+00:00",
+    "source_body_hash": "f4fb7a45f36cfacf8478e72d3b346adbd34e527d53a31b29da401d2f30f0f814",
+    "raw_sha256": "75b60ee8c9fc6b853e7719d191a101e67b4891ff9e691892c715bb68f0de2c89",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023215000002/form8k144financials.txt",
+        "type": "8-K",
+        "description": "FORM 8K",
+        "raw_sha256": "75b60ee8c9fc6b853e7719d191a101e67b4891ff9e691892c715bb68f0de2c89",
+        "text_sha256": "d9f3bce016f0b731726fc693922f3fc903d0cf2aab10cbe6b7694b1e0e56ab95",
+        "text_start": 0,
+        "text_end": 3489
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023215000002/form8k144ex99.txt",
+        "type": "EX-99",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "8dc026bce7fde9755c8acb60635ff9b19cd93442a6b1e9ff6169a9934a2d6e2e",
+        "text_sha256": "e2b03d0d9673dfb616027d68dae2ad750cf1d2776e540e9fb70df644d0ab0ce3",
+        "text_start": 3491,
+        "text_end": 10663
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-01-30",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3fffdb8ed646a2769fdbac15.json",
+    "sha256": "0ccf07a770bb18551fc5504b9f9478f1c4bdedd417c5cec406fd47968eb6536c",
+    "bundled_path": "legacy_audit/3fffdb8ed646a2769fdbac15.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "51722574e79ba9c1cb5ef247e41f3a597e7aad8736b1758950daf8175abfe61d",
+      "llm_inferred_at": "2026-11-18T12:46:44.516650+00:00",
+      "model_duration_seconds": 12.2897219,
+      "prompt_tokens": 3768,
+      "completion_tokens": 543,
+      "selection": [
+        {
+          "source_id": "3fffdb8ed646a2769fdbac15",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We will continue to do everything possible to accomplish what is in the long term best interest of our shareholders, customers, and employees.",
+              "rationale": "The statement reflects the company's strategic focus on long-term growth and profitability, which is a sector-wide concern for financial institutions.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "The overall increase in total assets was driven by a 14.9% increase in total loans, which was funded by a 6.1% increase in deposits and a 55.2% increase in other borrowed funds.",
+              "rationale": "This quote directly references the company's financial performance and strategic actions, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "We will continue to do everything possible to accomplish what is in the long term best interest of our shareholders, customers, and employees."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The overall increase in total assets was driven by a 14.9% increase in total loans, which was funded by a 6.1% increase in deposits and a 55.2% increase in other borrowed funds."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "We will continue to do everything possible to accomplish what is in the long term best interest of our shareholders, customers, and employees."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "5c192f18f4ba633067ad00994ec0c9434887f9863fe087766d4e2228e326fcc6",
+      "llm_inferred_at": "2026-11-18T12:46:55.033380+00:00",
+      "model_duration_seconds": 10.4999251,
+      "prompt_tokens": 3812,
+      "completion_tokens": 537,
+      "selection": [
+        {
+          "source_id": "3fffdb8ed646a2769fdbac15",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We will continue to do everything possible to accomplish what is in the long term best interest of our shareholders, customers, and employees.",
+              "rationale": "The statement reflects the company's strategic focus on long-term growth and profitability, which is a sector-wide concern for the financial services industry.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "The overall increase in total assets was driven by a 14.9% increase in total loans, which was funded by a 6.1% increase in deposits and a 55.2% increase in other borrowed funds.",
+              "rationale": "This statement directly references the company's financial performance and strategic decisions, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "We will continue to do everything possible to accomplish what is in the long term best interest of our shareholders, customers, and employees."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The overall increase in total assets was driven by a 14.9% increase in total loans, which was funded by a 6.1% increase in deposits and a 55.2% increase in other borrowed funds."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "We will continue to do everything possible to accomplish what is in the long term best interest of our shareholders, customers, and employees."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "10e553ce6c5878d52bb89497d58359c488cc77c6ddc03e73a18c5e26881de271",
+      "llm_inferred_at": "2026-11-18T12:47:13.898791+00:00",
+      "model_duration_seconds": 18.8506481,
+      "prompt_tokens": 3086,
+      "completion_tokens": 963,
+      "selection": [
+        {
+          "source_id": "3fffdb8ed646a2769fdbac15",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Assets 5,370,177 - n/a Loans Held for Sale 776,109 223,250 247.6 Loans 538,305,272 468,654,972 14.9 Reserve for Loan Losses 6,012,175 5,440,720 10.5 Net Loans 532,293,097 463,214,",
+              "rationale": "The article provides detailed financial data on loans, loan losses, and net loans, which are core components of the banking industry. These metrics indicate the financial health and performance of the institution within the banking sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "UNAUDITED CONSOLIDATED BALANCE SHEET Percentage 12/31/2014 12/31/2013 Change Assets Cash & Due From Banks $ 16,770,880 $ 22,650,487 -26.0% Securities 248,140,871 230,396,296 7.7",
+              "rationale": "The article presents the consolidated balance sheet and income statement of a specific financial institution, indicating that the data is related to a single company's financial performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Assets 5,370,177 - n/a Loans Held for Sale 776,109 223,250 247.6 Loans 538,305,272 468,654,972 14.9 Reserve for Loan Losses 6,012,175 5,440,720 10.5 Net Loans 532,293,097 463,214,"
+            },
+            {
+              "industry_key": "TRSR:0780938707f106d7",
+              "name": "Savings Institutions",
+              "basis": "explicit",
+              "quote": "Assets 5,370,177 - n/a Loans Held for Sale 776,109 223,250 247.6 Loans 538,305,272 468,654,972 14.9 Reserve for Loan Losses 6,012,175 5,440,720 10.5 Net Loans 532,293,097 463,214,"
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "name": "NATIONAL COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "UNAUDITED CONSOLIDATED BALANCE SHEET Percentage 12/31/2014 12/31/2013 Change Assets Cash & Due From Banks $ 16,770,880 $ 22,650,487 -26.0% Securities 248,140,871 230,396,296 7.7"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "893f199b57629eb51f4ee8ec72bdd84502bffd9cab057bf63fda03bbdc0e466b",
+      "llm_inferred_at": "2026-11-18T12:47:32.204926+00:00",
+      "model_duration_seconds": 18.2987868,
+      "prompt_tokens": 3130,
+      "completion_tokens": 991,
+      "selection": [
+        {
+          "source_id": "3fffdb8ed646a2769fdbac15",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Assets 5,370,177 - n/a Loans Held for Sale 776,109 223,250 247.6 Loans 538,305,272 468,654,972 14.9 Reserve for Loan Losses 6,012,175 5,440,720 10.5 Net Loans 532,293,097 463,214,",
+              "rationale": "The article discusses the financial performance of a financial institution, including loan portfolios, reserves, and net loans, which are indicative of the banking industry. The detailed breakdown of loan-related figures suggests the institution operates within the banking sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "UNAUDITED CONSOLIDATED BALANCE SHEET Percentage 12/31/2014 12/31/2013 Change Assets Cash & Due From Banks $ 16,770,880 $ 22,650,487 -26.0% Securities 248,140,871 230,396,296 7.7",
+              "rationale": "The article presents the consolidated balance sheet and income statement of a specific financial institution, indicating that the data is related to a single company's financial performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Assets 5,370,177 - n/a Loans Held for Sale 776,109 223,250 247.6 Loans 538,305,272 468,654,972 14.9 Reserve for Loan Losses 6,012,175 5,440,720 10.5 Net Loans 532,293,097 463,214,"
+            },
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "Assets 5,370,177 - n/a Loans Held for Sale 776,109 223,250 247.6 Loans 538,305,272 468,654,972 14.9 Reserve for Loan Losses 6,012,175 5,440,720 10.5 Net Loans 532,293,097 463,214,"
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "name": "NATIONAL COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "Assets 5,370,177 - n/a Loans Held for Sale 776,109 223,250 247.6 Loans 538,305,272 468,654,972 14.9 Reserve for Loan Losses 6,012,175 5,440,720 10.5 Net Loans 532,293,097 463,214,"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:47:32.221360+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f4fb7a45f36cfacf8478e72d3b346adbd34e527d53a31b29da401d2f30f0f814",
+    "raw_sha256": "75b60ee8c9fc6b853e7719d191a101e67b4891ff9e691892c715bb68f0de2c89",
+    "date_quote": "Date of Report (Date of earliest event reported): January 30, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023215000002/form8k144financials.txt",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": true,
+    "reason": "The summary contains information about a company's financial reporting, forward-looking statements, and factors affecting results.",
+    "securities": [
+      {
+        "name": "KENTUCKY BANCSHARES INC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KENTUCKY BANCSHARES INC"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "KENTUCKY BANCSHARES INC": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "3fffdb8ed646a2769fdbac15",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_01_30_Financial_Banking_sec.json",
+        "sha256": "9359080d3d3e28fd2e3e7a9a5d8823a595b48dea0bd1613e8507f7e1dc06b8bd",
+        "filename": "2015_01_30_Financial_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "50666086bfb6392d55b2f9385f869e34f2c8009c19de6badb3a47b3a430dc771",
+    "input_hash": "34837204f07aed9f959f728ebcb5e0179c85f22096370f529a605cf2799581a5",
+    "matching_audit_hash": "5b7a85bac1d5478938d9f9ecb915acd2a2b9b05d1e368a3ab9f14be57e1f58a3",
+    "legacy_security_evidence": [],
+    "record_hash": "9222e3d02cc31438388095f2e35f42976c700a44536961e7f4a6dc71aa574ed9",
+    "outputs": [
+      {
+        "path": "US\\2015_01_30_Financial_Banking_sec.json",
+        "sha256": "048a4ecf7f5407d20669d99a24bfe18047caf4d7060d981d26283c7725530fc5"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-01-30",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+      "fetched_at": "2026-11-11T00:21:15.243011+00:00",
+      "feature_available_at": "2026-11-11T00:21:38.991453+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:47:32.204926+00:00",
+    "feature_available_at": "2026-11-18T12:47:32.221360+00:00",
+    "commit_verified_at": "2026-11-12T14:20:15.057368+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The overall increase in total assets was driven by a 14.9% increase in total loans, which was funded by a 6.1% increase in deposits and a 55.2% increase in other borrowed funds.",
+        "rationale": "This statement directly references the company's financial performance and strategic decisions, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The overall increase in total assets was driven by a 14.9% increase in total loans, which was funded by a 6.1% increase in deposits and a 55.2% increase in other borrowed funds.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "UNAUDITED CONSOLIDATED BALANCE SHEET Percentage 12/31/2014 12/31/2013 Change Assets Cash & Due From Banks $ 16,770,880 $ 22,650,487 -26.0% Securities 248,140,871 230,396,296 7.7",
+        "rationale": "The article presents the consolidated balance sheet and income statement of a specific financial institution, indicating that the data is related to a single company's financial performance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "UNAUDITED CONSOLIDATED BALANCE SHEET Percentage 12/31/2014 12/31/2013 Change Assets Cash & Due From Banks $ 16,770,880 $ 22,650,487 -26.0% Securities 248,140,871 230,396,296 7.7",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000232/0001000232-15-000002-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "9222e3d02cc31438388095f2e35f42976c700a44536961e7f4a6dc71aa574ed9",
+    "content_hash": "54fff2c4b53257a7a532431de31e27c2563d804a0b4f19db18e3219a3bc8c339",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:47:32.206783+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3fffdb8ed646a2769fdbac15.json",
+      "sha256": "5525484085aa02b6f4649d70fb5577b7deca355d59d9a1f23c059e23378f7c79",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 74.875
+}

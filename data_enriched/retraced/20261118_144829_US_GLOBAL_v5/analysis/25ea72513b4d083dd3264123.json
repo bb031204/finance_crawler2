@@ -1,0 +1,737 @@
+{
+  "source_id": "25ea72513b4d083dd3264123",
+  "status": "completed",
+  "source_record_hash": "30b2cd09ef8ac83bb762df0b1eacb40a82d3f3055e6554765ffeb7b577e3b9b5",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-13-015370-index.html",
+    "attempted_at": "2026-11-18T10:14:11.997610+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-13-015370-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465913015370/a13-6254_18k.htm",
+    "fetched_at": "2026-11-18T10:14:21.134814+00:00",
+    "source_body_hash": "a49f832e51e885613b539831bac7d21b01b4df1db1a275870631b78badfed898",
+    "raw_sha256": "9586b2acbcb0a025e5ba39529f3e7fe3e86ad722f7e7361b6efefe23c1b51284",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465913015370/a13-6254_18k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "9586b2acbcb0a025e5ba39529f3e7fe3e86ad722f7e7361b6efefe23c1b51284",
+        "text_sha256": "dbd2c67802e52b805fc76da612a2dd4df213f924a8b0e913d7298df9529a48d9",
+        "text_start": 0,
+        "text_end": 2791
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465913015370/a13-6254_1ex99d1.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "4c764d82a3b307b73d4d4c63ad7dd7eb3b2529dda2d27c62923134738c52b5f3",
+        "text_sha256": "4cde3e79b356b14fd16566742e73b9d80d9de0b3143ee3f5c53a246609b7f1b0",
+        "text_start": 2793,
+        "text_end": 18445
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2013-02-28",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/25ea72513b4d083dd3264123.json",
+    "sha256": "dd32548d70391ade893081cdf7a22c727d0a7fbb60bd1ba257c6db01ca9af55a",
+    "bundled_path": "legacy_audit/25ea72513b4d083dd3264123.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "790dc76a10c4110409448ef63de5e24aec8962f42f311c9f6e9be3990fb92647",
+      "llm_inferred_at": "2026-11-18T10:14:45.827817+00:00",
+      "model_duration_seconds": 24.6604224,
+      "prompt_tokens": 4343,
+      "completion_tokens": 1163,
+      "selection": [
+        {
+          "source_id": "25ea72513b4d083dd3264123",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline.",
+              "rationale": "The article discusses the impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rate lock derivatives, which are industry-wide factors affecting the mortgage banking sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September.",
+              "rationale": "This indicates a macroeconomic policy impact on the mortgage industry, which is a sector-wide event affecting the mortgage banking and real estate services industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline.",
+              "rationale": "This is an industry-specific mechanism affecting the mortgage banking sector, showing the impact of macroeconomic factors on the industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "than anticipated decline in the mortgage origination pipeline in the quarter primarily caused by an anticipated seasonal decline combined with the impact from the Federal Reserves QE3 program initiated in September. The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September. This resulted in an",
+              "rationale": "The Federal Reserve's QE3 program is a macroeconomic policy that affects the US equity market, particularly the financial and real estate sectors.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "In 2012, the mortgage lending channels that experienced the largest percentage of growth were our retail and correspondent channels."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "origination pipeline. With a significant decrease in the pipeline in the fourth quarter combined with fourth quarter margin compressions in the mortgage industry, the estimated",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rate lock derivatives is an industry-wide event affecting the mortgage banking sector.",
+              "confidence": 0.95,
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "origination pipeline. With a significant decrease in the pipeline in the fourth quarter combined with fourth quarter margin compressions in the mortgage industry, the estimated",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "The impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rate lock derivatives is an industry-wide event affecting the real estate sector.",
+              "confidence": 0.95,
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "origination pipeline. With a significant decrease in the pipeline in the fourth quarter combined with fourth quarter margin compressions in the mortgage industry, the estimated",
+              "industry_name_original": "Financials",
+              "mechanism": "The impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rate lock derivatives is an industry-wide event affecting the financials sector.",
+              "confidence": 0.95,
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "89f67b28b3aedf427de369edf96413a3f2ccae7e1366767c5351b1c370db22c3",
+      "llm_inferred_at": "2026-11-18T10:15:08.538593+00:00",
+      "model_duration_seconds": 22.6902341,
+      "prompt_tokens": 4387,
+      "completion_tokens": 1139,
+      "selection": [
+        {
+          "source_id": "25ea72513b4d083dd3264123",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline.",
+              "rationale": "The article discusses the impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rates, which affects the mortgage banking industry broadly.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September.",
+              "rationale": "The QE3 program's impact on interest rates is a macroeconomic factor that affects the mortgage banking industry as a whole.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline.",
+              "rationale": "The article discusses the impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rates, which affects the mortgage banking industry broadly.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "than anticipated decline in the mortgage origination pipeline in the quarter primarily caused by an anticipated seasonal decline combined with the impact from the Federal Reserves QE3 program initiated in September. The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September. This resulted in an",
+              "rationale": "The Federal Reserve's QE3 program is a macroeconomic policy that affects the US equity market, particularly the mortgage banking industry.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "In 2012, the mortgage lending channels that experienced the largest percentage of growth were our retail and correspondent channels."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline."
+            },
+            {
+              "industry_key": "SEC-SIC:6510",
+              "name": "REAL ESTATE OPERATORS (NO DEVELOPERS) & LESSORS",
+              "basis": "explicit",
+              "quote": "The Company records an interest rate lock derivative each period representing the estimated fair value of our mortgage origination pipeline."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "origination pipeline. With a significant decrease in the pipeline in the fourth quarter combined with fourth quarter margin compressions in the mortgage industry, the estimated",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rates affects the mortgage banking industry broadly.",
+              "confidence": 0.95,
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "origination pipeline. With a significant decrease in the pipeline in the fourth quarter combined with fourth quarter margin compressions in the mortgage industry, the estimated",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "The impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rates affects the mortgage banking industry broadly.",
+              "confidence": 0.95,
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September."
+            },
+            {
+              "industry_key": "SEC-SIC:6510",
+              "industry_scope_quote": "origination pipeline. With a significant decrease in the pipeline in the fourth quarter combined with fourth quarter margin compressions in the mortgage industry, the estimated",
+              "industry_name_original": "REAL ESTATE OPERATORS (NO DEVELOPERS) & LESSORS",
+              "mechanism": "The impact of the Federal Reserve's QE3 program on mortgage origination pipelines and interest rates affects the mortgage banking industry broadly.",
+              "confidence": 0.95,
+              "quote": "The initial effect on interest rates from the QE3 program was a rise in interest rates at the end of September."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "edebd70c77ea446903616f4fb2ba5a958e5d6156d8775adc242c55d8f9eaecb6",
+      "llm_inferred_at": "2026-11-18T10:15:28.800333+00:00",
+      "model_duration_seconds": 20.2329354,
+      "prompt_tokens": 3751,
+      "completion_tokens": 971,
+      "selection": [
+        {
+          "source_id": "25ea72513b4d083dd3264123",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011.",
+              "rationale": "The article discusses the expansion of mortgage lending volumes and the impact on the mortgage servicing portfolio, which is a key activity within the mortgage banking industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We believe that the continued driver of growth in net earnings from continuing operations for 2013 will be mortgage lending.",
+              "rationale": "The article discusses the company's strategic focus on mortgage lending and its expectations for growth in net earnings, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "The remaining $114 million balance of the portfolio consist of loans originated by AmeriHome, primarily prior to 2009 and was acquired in the 2010 purchase of AmeriHome."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "The remaining $114 million balance of the portfolio consist of loans originated by AmeriHome, primarily prior to 2009 and was acquired in the 2010 purchase of AmeriHome."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "warehouse lending capacity expansion",
+              "confidence": 0.95,
+              "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "warehouse lending capacity expansion",
+              "confidence": 0.95,
+              "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations"
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+              "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "mechanism": "warehouse lending capacity expansion",
+              "confidence": 0.95,
+              "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "17469c0770238943ab5feba862812e26cae62cb52d3e93b01d87afcb1413da96",
+      "llm_inferred_at": "2026-11-18T10:15:49.978673+00:00",
+      "model_duration_seconds": 21.0875212,
+      "prompt_tokens": 3795,
+      "completion_tokens": 1095,
+      "selection": [
+        {
+          "source_id": "25ea72513b4d083dd3264123",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011.",
+              "rationale": "The article discusses the expansion of mortgage lending volumes and the impact on the mortgage servicing portfolio, which is a key activity in the mortgage banking industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We believe that the continued driver of growth in net earnings from continuing operations for 2013 will be mortgage lending.",
+              "rationale": "The article discusses the company's strategic focus on mortgage lending and its expectations for growth in 2013, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The decrease was primarily due to a continued and expected decline in the long term mortgage portfolio resulting from collections and liquidation of defaulted loans.",
+              "rationale": "The article discusses the decline in the long-term mortgage portfolio, which is a sector-wide issue affecting the mortgage banking industry.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "The remaining $114 million balance of the portfolio consist of loans originated by AmeriHome, primarily prior to 2009 and was acquired in the 2010 purchase of AmeriHome."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "The remaining $114 million balance of the portfolio consist of loans originated by AmeriHome, primarily prior to 2009 and was acquired in the 2010 purchase of AmeriHome."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The expansion of warehouse lending capacity indicates an industry-wide impact on mortgage banking and loan correspondents.",
+              "confidence": 0.85,
+              "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "The expansion of warehouse lending capacity indicates an industry-wide impact on real estate and mortgage services.",
+              "confidence": 0.85,
+              "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations"
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+              "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "mechanism": "The expansion of warehouse lending capacity indicates an industry-wide impact on short-term business credit institutions.",
+              "confidence": 0.85,
+              "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "677e3351cdcfd30ab5ba74bf8cc7b4134276e2de6fe6ac3c5e75ee9d52ccb1cc",
+      "llm_inferred_at": "2026-11-18T10:16:01.512166+00:00",
+      "model_duration_seconds": 11.5147326,
+      "prompt_tokens": 2020,
+      "completion_tokens": 585,
+      "selection": [
+        {
+          "source_id": "25ea72513b4d083dd3264123",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any",
+              "rationale": "The text discusses Impac Mortgage Holdings, Inc. (IMH or Impac) and its operations, which are primarily in the mortgage and real estate sectors. The industry is identified as Real Estate, which is a key sector for the company's operations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "For additional information, questions or comments, please call Justin Moisio in Investor Relations at (949) 475-3988 or email jmoisio@impacmail.com.",
+              "rationale": "The text provides contact information for Investor Relations, which is specific to the company, indicating that the information is company-specific.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any"
+            },
+            {
+              "industry_key": "SEC-SIC:6510",
+              "name": "REAL ESTATE OPERATORS (NO DEVELOPERS) & LESSORS",
+              "basis": "explicit",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "63075e4b39a5d9263c9cb1dce2257c701b3759d76bbb45c50f2fb106779b8ede",
+      "llm_inferred_at": "2026-11-18T10:16:11.710310+00:00",
+      "model_duration_seconds": 10.1924017,
+      "prompt_tokens": 2064,
+      "completion_tokens": 549,
+      "selection": [
+        {
+          "source_id": "25ea72513b4d083dd3264123",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any",
+              "rationale": "The text discusses the company's operations and industry, which is the real estate sector, including mortgage lending and real estate services.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "For additional information, questions or comments, please call Justin Moisio in Investor Relations at (949) 475-3988 or email jmoisio@impacmail.com.",
+              "rationale": "The text provides contact information for the company's Investor Relations, indicating a company-specific focus.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any"
+            },
+            {
+              "industry_key": "SEC-SIC:6510",
+              "name": "REAL ESTATE OPERATORS (NO DEVELOPERS) & LESSORS",
+              "basis": "explicit",
+              "quote": "This document speaks only as of its date and we do not undertake, and specifically disclaim any obligation, to release publicly the results of any revisions that may be made to any"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:16:11.732454+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a49f832e51e885613b539831bac7d21b01b4df1db1a275870631b78badfed898",
+    "raw_sha256": "9586b2acbcb0a025e5ba39529f3e7fe3e86ad722f7e7361b6efefe23c1b51284",
+    "date_quote": "SEC filing datePublished=2013-02-28",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465913015370/a13-6254_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The text contains financial results disclosure and references to a press release and regulatory filings, indicating substantive information about the company's ",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "In 2012, the mortgage lending channels that experienced the largest percentage of growth were our retail and correspondent channels.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "In 2012, the mortgage lending channels that experienced the largest percentage of growth were our retail and correspondent channels.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:6153",
+        "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+        "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The expansion of warehouse lending capacity indicates an industry-wide impact on short-term business credit institutions.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6153",
+        "industry_name_standard": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Impac Mortgage Holdings, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "25ea72513b4d083dd3264123",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_02_28_Financial-Results_Mortgage_sec.json",
+        "sha256": "d36b79e20ececce9fd73ad15b6f2999d7eddbd48bf5429a0983e9bbda895c065",
+        "filename": "2013_02_28_Financial-Results_Mortgage_sec.json"
+      }
+    ],
+    "original_record_hash": "1156efc8c6c9d25ad76d2be7cc5115e69096d7fe891d6310147b3797a564ffee",
+    "input_hash": "b61b51a909b0c348e6ce7c00a07a20fe4c3de1fcccb57ef3f0e09cd315b77322",
+    "matching_audit_hash": "9187807749920bfec4a5583c02594f61ec852ec902bfa409e46e799477cf0373",
+    "legacy_security_evidence": [],
+    "record_hash": "30b2cd09ef8ac83bb762df0b1eacb40a82d3f3055e6554765ffeb7b577e3b9b5",
+    "outputs": [
+      {
+        "path": "US\\2013_02_28_Financial-Results_Mortgage_sec.json",
+        "sha256": "a12579b791edec12eae2e6a4ed53b5910f7fbcd404afa581616294c2ddd8d629"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-02-28",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+      "fetched_at": "2026-11-10T23:19:33.048187+00:00",
+      "feature_available_at": "2026-11-11T09:53:48.961883+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:16:11.710310+00:00",
+    "feature_available_at": "2026-11-18T10:16:11.732454+00:00",
+    "commit_verified_at": "2026-11-12T14:04:15.041987+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:6153",
+        "industry_scope_quote": "well-known national warehouse lending bank for a new warehouse facility and increases to our existing warehouse lenders for an additional $100 million in total warehouse capacity,",
+        "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The expansion of warehouse lending capacity indicates an industry-wide impact on short-term business credit institutions.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6153",
+        "industry_name_standard": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "we will continue to further enhance the brand of the Impac name with increased consumer direct and business to business awareness through our social media, public relations",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "We believe that the continued driver of growth in net earnings from continuing operations for 2013 will be mortgage lending.",
+        "rationale": "The article discusses the company's strategic focus on mortgage lending and its expectations for growth in 2013, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We believe that the continued driver of growth in net earnings from continuing operations for 2013 will be mortgage lending.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011.",
+        "rationale": "The article discusses the expansion of mortgage lending volumes and the impact on the mortgage servicing portfolio, which is a key activity in the mortgage banking industry.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our mortgage servicing portfolio increased to $2.2 billion at the end of 2012, from $605 million at the end of 2011.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "For additional information, questions or comments, please call Justin Moisio in Investor Relations at (949) 475-3988 or email jmoisio@impacmail.com.",
+        "rationale": "The text provides contact information for the company's Investor Relations, indicating a company-specific focus.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "For additional information, questions or comments, please call Justin Moisio in Investor Relations at (949) 475-3988 or email jmoisio@impacmail.com.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-13-015370-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "30b2cd09ef8ac83bb762df0b1eacb40a82d3f3055e6554765ffeb7b577e3b9b5",
+    "content_hash": "071c881ab5313a43a2f64641ff4ea1721e7addb8c966bb6ba3412258d207613e",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:16:11.713380+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/25ea72513b4d083dd3264123.json",
+      "sha256": "355b37da634235d896e7a99e72e60a467f9caa49395100ae49fba62e7ac20edb",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 119.75
+}

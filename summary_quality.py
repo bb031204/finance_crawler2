@@ -31,10 +31,11 @@ def trim_routine_sentences(text):
 
 
 def validate_summary_quality(text,language):
+    visible=len(re.sub(r'\s+','',text))
     if language=='zh':
-        too_long=len(re.findall(r'[\u4e00-\u9fff]',text))>380
+        too_long=len(re.findall(r'[\u4e00-\u9fff]',text))>380 or visible>900
     else:
-        too_long=len(re.findall(r"\b[\w]+(?:[-'][\w]+)*\b",text))>200
+        too_long=len(re.findall(r"\b[\w]+(?:[-'][\w]+)*\b",text))>200 or visible>1800
     match=EMPTY_EVALUATION.search(text)
     issues=[]
     if match:issues.append('含营销或空泛评价“'+match[0]+'”')

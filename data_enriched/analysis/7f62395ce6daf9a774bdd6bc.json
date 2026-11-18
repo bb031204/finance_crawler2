@@ -1,0 +1,90 @@
+{
+  "source_id": "7f62395ce6daf9a774bdd6bc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_02_29_Economic-Data_Finance_treasury.json",
+      "sha256": "f495c7015a4780493349fbd3bec1810fc8497a48c2df0d08930793b177f4f2b4",
+      "filename": "2012_02_29_Economic-Data_Finance_treasury.json"
+    }
+  ],
+  "original_record_hash": "bdf584492e787cd7ba6e13c2eba4f14f38c871251abf250667c45b6cf4bf0d6b",
+  "input_hash": "078d6593d71641327fcc30af76f812d8c4f7c9f4dbc6dbf2e718c7be67ab9588",
+  "matching_audit_hash": "69d2d2f7681cfda9401cc6df8ea30800cc4e82426f60b4bc7e628dc04800f311",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d7ad831cf713e127db30395a1f8aa6e1cb90f408a28c4ee5ab19d3bac6ee83d7",
+    "raw_sha256": "3ebe7fecff97d596d0bff5b33908641dd079d58dc7b0448ce146bf2e377059c8",
+    "date_quote": "Effective with the February 29, 2012 release",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "f072298bc4b296fa77e3b08917d0671020c6eb31f666b37164ac752dea4afcf6",
+  "outputs": [
+    {
+      "path": "US\\2012_02_29_Economic-Data_Finance_treasury.json",
+      "sha256": "2d3982837d1f50226da9b2d09975b557f462fd88c7a5d9a1cc49d079feec854e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-02-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:59.652464+00:00",
+    "fetched_at": "2026-11-10T10:46:04.744774+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.320401+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T13:56:31.745344+00:00",
+  "feature_available_at": "2026-11-12T13:56:31.755608+00:00",
+  "commit_verified_at": "2026-11-12T13:56:31.755608+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses changes in methodology for estimating Treasury securities holdings, including data collection processes and adjustments for transaction bias.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "U.S. Department of the Treasury"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "9c88278324fecfbef9c4ffb7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_03_stock_Beauty_cnbc.json",
+      "sha256": "2eef94eeae9e4bfbe71fe5291058555eb2dd3c239d5e1ca5ec58f750780054fc",
+      "filename": "2019_10_03_stock_Beauty_cnbc.json"
+    }
+  ],
+  "original_record_hash": "0e71073e050cd3165a97069cf58d64f463acab713a4078a87a84622eba958bfd",
+  "input_hash": "4aa38586cac14e1972a4b5b8fab455e6a36dcae5b8469d573480438428f9f4c5",
+  "matching_audit_hash": "1d4499ca9249789164783a045f7ec66a1669d998f02422ddbe7077ceb2f17625",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dd415f1e3f265c32dc69a804ae3cd6d303746abbb6eaeb69a531fdb335cbb771",
+    "raw_sha256": "f40171fdee5468a85f4b2e964745278fa00afa0e05d5d46823b57280c8b6ceb3",
+    "date_quote": "article:published_time=2019-10-03T22:32:51+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Ulta Beauty",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Ulta Beauty fell out of favor with investors in August, but it's time to buy the cosmetic retailer's stock again, Jim Cramer says."
+    }
+  ],
+  "record_hash": "52f3915be713cd44b125c6edca0f1d95c3153884c79b8e1f10228e8bfae0fa50",
+  "outputs": [
+    {
+      "path": "US\\2019_10_03_stock_Beauty_cnbc.json",
+      "sha256": "935b2841e6d16a289a547881407f3021d7a85bc07444627d2d56fd79e64c4217"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:08.297631+00:00",
+    "fetched_at": "2026-11-10T20:06:57.649123+00:00",
+    "feature_available_at": "2026-11-10T20:07:25.585535+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:30.168341+00:00",
+  "commit_verified_at": "2026-11-12T13:53:30.168341+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Ulta Beauty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ulta Beauty fell out of favor with investors in August, but it's time to buy the cosmetic retailer's stock again, Jim Cramer says."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

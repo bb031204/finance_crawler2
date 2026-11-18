@@ -1,0 +1,109 @@
+{
+  "source_id": "09330ac7dca454e1bce23743",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_12_05_Mining_Mining_bloomberg.json",
+      "sha256": "0da271e71acef8e245c38b0c78fdf2de3b31f48b02f48903b8d07a639f7af754",
+      "filename": "2012_12_05_Mining_Mining_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "6c4606c75af0e7bee36cd6266ecec9ad835be23e5b57ac2a3b937584a5c952f1",
+  "input_hash": "e1a8b6ea1b2817a0158cf479c8c0c0c58bb6a9b8a298092a88f074f0e7f5de1e",
+  "matching_audit_hash": "5edae4833a760ed0a870c991841f99722b477a608d5ad4f67609d55ac0745ba7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a5893eaf0714e35268d0d2da07808b6a322f86272c27c01151da69486c960e36",
+    "raw_sha256": "ccc7f008b10165a1e080f16828d47639d1c43df1bc649d4f1e8d99b3b2648c16",
+    "date_quote": "iso-8601-publish-date=2012-12-05T22:00:07.000Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Katanga Mining Ltd.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Katanga Mining Ltd."
+    }
+  ],
+  "record_hash": "63367f6e5443dd05898598112945583ad04bf4d701d470423ce3135542956a8f",
+  "outputs": [
+    {
+      "path": "US\\2012_12_05_Mining_Mining_bloomberg.json",
+      "sha256": "28e739f8fb5d2762fa4969d60c7d5f4300cdae24e1344998717f34a38f291fd0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-12-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:59.994881+00:00",
+    "fetched_at": "2026-11-10T16:03:13.482254+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.331176+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T13:59:22.286727+00:00",
+  "feature_available_at": "2026-11-12T13:59:22.296041+00:00",
+  "commit_verified_at": "2026-11-12T13:59:22.296041+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "legacy_security_attribute_unverified",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Dan Gertler's investments in mining and other sectors in the Democratic Republic of Congo, including specific minerals like copper and cobalt",
+    "securities": [
+      {
+        "name": "Katanga Mining Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Katanga Mining Ltd."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Mining",
+        "basis": "explicit",
+        "quote": "mining"
+      },
+      {
+        "name": "Agriculture",
+        "basis": "inferred",
+        "quote": "agriculture"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "banking"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Katanga Mining Ltd.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

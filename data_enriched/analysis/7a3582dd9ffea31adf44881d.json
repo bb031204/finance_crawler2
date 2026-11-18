@@ -1,0 +1,123 @@
+{
+  "source_id": "7a3582dd9ffea31adf44881d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_08_15_Finance_Retail_cnbc.json",
+      "sha256": "b6182e4eda0c26173fc307daf3e057252e9dfa64e37052ba9e49e1a5f0469b15",
+      "filename": "2017_08_15_Finance_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b5734b98e145648e4ced81c24124cc756ca61e990b2036e77c733d531ece2390",
+  "input_hash": "c98aade46907848e4239a62db405b3bae52cc44ca200619c0850eb73120fe680",
+  "matching_audit_hash": "b98d3e0783294ea22cdc4d0b4b252d3ed14f0d2a15a481577350b53b9e53d119",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b7cc9f0d263411a45ea858e3734d7ddc172098c80ac99e3d9acf32f566da62fc",
+    "raw_sha256": "47637410960ccbe5c9256f46eca0b95655335e4a1e1d12baea3edb9527a68290",
+    "date_quote": "article:published_time=2017-08-15T09:26:13+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "26fc40c71eff13d1d319f3958c29c615b142b9635b9f2b266ccedc61e234c9f1",
+  "outputs": [
+    {
+      "path": "US\\2017_08_15_Finance_Retail_cnbc.json",
+      "sha256": "93078c2efe66cca5b55cf2a7963825c8659a5476f9472290ead554072afb42f8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-08-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:06.516610+00:00",
+    "fetched_at": "2026-11-10T17:26:07.176592+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.887637+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:40:41.035945+00:00",
+  "feature_available_at": "2026-11-12T14:40:41.084027+00:00",
+  "commit_verified_at": "2026-11-12T14:40:41.084027+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains financial results, earnings guidance, and market reactions, which are relevant for the StockMixer pipeline.",
+    "securities": [
+      {
+        "name": "Home Depot",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Home Depot"
+      },
+      {
+        "name": "Sears",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears"
+      },
+      {
+        "name": "Kenmore",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kenmore"
+      },
+      {
+        "name": "Amazon.com",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amazon.com"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Home Improvement",
+        "basis": "explicit",
+        "quote": "home improvement"
+      },
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": "home improvement"
+      },
+      {
+        "name": "Appliances",
+        "basis": "explicit",
+        "quote": "appliances"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Home Depot": "company",
+      "Sears": "company",
+      "Kenmore": "brand",
+      "Amazon.com": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

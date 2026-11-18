@@ -1,0 +1,92 @@
+{
+  "source_id": "20d9b7e85263c6fe207a903f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_23_Corporate-Governance_Technology_sec.json",
+      "sha256": "aba0e34a3ea716745f9798f7199dd4f4b407b5748c155aab5f38a58a3370276b",
+      "filename": "2018_03_23_Corporate-Governance_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "86742e4b92aab22a9b0d4b975010210a0da754ab2a520dbcffec910f0f44eff8",
+  "input_hash": "fe48fde6fa9e0bc418b86d8362bf7af9aa073e04c9269ede7e2fecedd9e1ad53",
+  "matching_audit_hash": "ca997e739e276acda3f683574ae71296b56363e23d7054d41f9bf91dfdd742ba",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f1e15ec7b521b1d68a2ded8962e0c6055d2dbd1db6ac5e1f651e339cf4392cdc",
+    "raw_sha256": "baa8924ba24c1ef7e8ea2f599de2dfae31224726457d26817aaba3f6923c4fb2",
+    "date_quote": "SEC filing datePublished=2018-03-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794218000009/blonder8k032318.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    }
+  ],
+  "record_hash": "c36710ef7e9de18ee1a7db475b6ebbe493570028fc888dd0c91363596e1c5b05",
+  "outputs": [
+    {
+      "path": "US\\2018_03_23_Corporate-Governance_Technology_sec.json",
+      "sha256": "22f9bd0e1f5f73fa465898fb4fd508048f2b8fbee9660089dc05c282505d1abb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+    "fetched_at": "2026-11-11T13:10:28.491879+00:00",
+    "feature_available_at": "2026-11-11T13:10:38.465519+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:56.775546+00:00",
+  "feature_available_at": "2026-11-12T14:43:56.785437+00:00",
+  "commit_verified_at": "2026-11-12T14:43:56.785437+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a change in corporate governance structure, specifically an amendment to the bylaws of Blonder Tongue Laboratories, Inc. This change is a ",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Blonder Tongue Laboratories, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

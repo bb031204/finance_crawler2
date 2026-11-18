@@ -1,0 +1,102 @@
+{
+  "source_id": "3c47cd41be19e0a76bbda04f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_12_Finance_Beauty_cnbc.json",
+      "sha256": "1e3fb448bd91213b899bfc215d81ca170b286481ec88797eaef03e103fcf8c8b",
+      "filename": "2021_02_12_Finance_Beauty_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d8556cf486911f2e73930abdf447a28bdd436e7cd5da12c6ba715076230745e2",
+  "input_hash": "87cfcb1084b26e8ab7fdffe70ecb782f4322c7ac1bdedb979630ffdc0517e339",
+  "matching_audit_hash": "313ca969205f17b8a8c96113ac53b9e67ffdfc39353b903da112241487f15ac8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ca947599b444d151989a175f124415da5ff5627baf5c9a6a0548827a570f4321",
+    "raw_sha256": "936140cc955ea7d98406e634cdde39874d59e5dff0902d2b2c8686d2acb06aaa",
+    "date_quote": "article:published_time=2021-02-12T07:17:04+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "L'Oreal",
+      "ticker": null,
+      "exchange": null,
+      "quote": "France's L'Oreal, which is behind the Maybelline and Lancome brands"
+    }
+  ],
+  "record_hash": "3ce40cc918d72e58b5438a213b4e4b8d669bff2f86baf83d6dda19305c00b90c",
+  "outputs": [
+    {
+      "path": "US\\2021_02_12_Finance_Beauty_cnbc.json",
+      "sha256": "167a47926f02c8a05eff880ce7973fc7a4bb9c801eed8618c3da09a77ee40e97"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:16.149953+00:00",
+    "fetched_at": "2026-11-10T20:18:39.107033+00:00",
+    "feature_available_at": "2026-11-10T20:19:04.331179+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.416226+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.416226+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "L'Oreal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "France's L'Oreal, which is behind the Maybelline and Lancome brands"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty & Personal Care",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Beauty",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

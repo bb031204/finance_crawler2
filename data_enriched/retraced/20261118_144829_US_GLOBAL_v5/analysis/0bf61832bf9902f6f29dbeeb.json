@@ -1,0 +1,348 @@
+{
+  "source_id": "0bf61832bf9902f6f29dbeeb",
+  "status": "completed",
+  "source_record_hash": "effe050f216c5ce770f92fb5c56052ead1a94578dd47e27f833a29e9d10d1106",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2022/04/01/where-the-jobs-are-march-2022-chart.html",
+    "attempted_at": "2026-11-18T07:56:29.248346+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "80350882207e5c185fbe07aeedef14820b552ed73286286ebbe94d4b45b37623"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0bf61832bf9902f6f29dbeeb.json",
+    "sha256": "40b95cfb3444c31b3bc183dd01147e6e8abab2a9b287450cc48b97caa6a59d34",
+    "bundled_path": "legacy_audit/0bf61832bf9902f6f29dbeeb.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "2a32cf867924fe89917f8e8a1e5d442be446827998ba77143d559d49ca2d1b74",
+      "llm_inferred_at": "2026-11-18T07:56:55.931568+00:00",
+      "model_duration_seconds": 21.6174964,
+      "prompt_tokens": 2272,
+      "completion_tokens": 1146,
+      "selection": [
+        {
+          "source_id": "0bf61832bf9902f6f29dbeeb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail.",
+              "rationale": "The article discusses job growth across multiple sectors, indicating an industry-wide impact due to the broad nature of the sectors mentioned.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The report underscores the recovery of the U.S.",
+              "rationale": "The article highlights the recovery of the U.S. economy, which is a broad industry impact across multiple sectors.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The report underscores the recovery of the U.S.",
+              "rationale": "The article highlights the recovery of the U.S. economy, which is a broad industry impact across multiple sectors.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the subsector's best one-month gain since September 2020. Meanwhile, the truck transportation industry shed nearly 5,000 workers. These trends highlight the dynamic nature of employment in the U.S. during this period.",
+              "rationale": "The article discusses employment trends in the U.S., which can be interpreted as affecting the broader U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8742",
+              "name": "SERVICES-MANAGEMENT CONSULTING SERVICES",
+              "basis": "inferred",
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "name": "Restaurants",
+              "basis": "inferred",
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "inferred",
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:8742",
+              "industry_scope_quote": "1.5 million, or 8.7%, since February 2020. The professional and business services sector also saw a robust increase, with a net addition of 102,000 positions, driven by growth in",
+              "industry_name_original": "SERVICES-MANAGEMENT CONSULTING SERVICES",
+              "mechanism": "economic recovery and job growth",
+              "confidence": 0.85,
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "industry_scope_quote": "1.5 million, or 8.7%, since February 2020. The professional and business services sector also saw a robust increase, with a net addition of 102,000 positions, driven by growth in",
+              "industry_name_original": "Restaurants",
+              "mechanism": "economic recovery and job growth",
+              "confidence": 0.85,
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "1.5 million, or 8.7%, since February 2020. The professional and business services sector also saw a robust increase, with a net addition of 102,000 positions, driven by growth in",
+              "industry_name_original": "Health Care",
+              "mechanism": "economic recovery and job growth",
+              "confidence": 0.85,
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "4851478fb1677ca07ca746832ecb05a2457b659a1c4bea1091ca0800e2678735",
+      "llm_inferred_at": "2026-11-18T07:57:14.759414+00:00",
+      "model_duration_seconds": 18.8179697,
+      "prompt_tokens": 2316,
+      "completion_tokens": 1032,
+      "selection": [
+        {
+          "source_id": "0bf61832bf9902f6f29dbeeb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The March 2022 jobs report highlighted strong job growth across several sectors, particularly in leisure and hospitality, professional and business services, and retail.",
+              "rationale": "The article discusses job growth across multiple sectors, indicating an industry-wide impact due to the broad nature of the sectors mentioned.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The report underscores the recovery of the U.S.",
+              "rationale": "The article highlights the recovery of the U.S. economy, which is a broad industry impact as it refers to the overall economic recovery across various sectors.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "industry",
+              "quote": "The report underscores the recovery of the U.S.",
+              "rationale": "The article highlights the recovery of the U.S. economy, which is a broad industry impact as it refers to the overall economic recovery across various sectors.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the subsector's best one-month gain since September 2020. Meanwhile, the truck transportation industry shed nearly 5,000 workers. These trends highlight the dynamic nature of employment in the U.S. during this period.",
+              "rationale": "The article discusses employment trends in the U.S., which can be interpreted as a broad impact on the U.S. equity market.",
+              "confidence": 0.75
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8742",
+              "name": "SERVICES-MANAGEMENT CONSULTING SERVICES",
+              "basis": "inferred",
+              "quote": "The report underscores the recovery of the U.S."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "name": "Restaurants",
+              "basis": "inferred",
+              "quote": "The report underscores the recovery of the U.S."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "inferred",
+              "quote": "The report underscores the recovery of the U.S."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:8742",
+              "industry_scope_quote": "1.5 million, or 8.7%, since February 2020. The professional and business services sector also saw a robust increase, with a net addition of 102,000 positions, driven by growth in",
+              "industry_name_original": "SERVICES-MANAGEMENT CONSULTING SERVICES",
+              "mechanism": "economic recovery",
+              "confidence": 0.85,
+              "quote": "The report underscores the recovery of the U.S."
+            },
+            {
+              "industry_key": "TRSR:0beeae358e6644c8",
+              "industry_scope_quote": "1.5 million, or 8.7%, since February 2020. The professional and business services sector also saw a robust increase, with a net addition of 102,000 positions, driven by growth in",
+              "industry_name_original": "Restaurants",
+              "mechanism": "economic recovery",
+              "confidence": 0.85,
+              "quote": "The report underscores the recovery of the U.S."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "1.5 million, or 8.7%, since February 2020. The professional and business services sector also saw a robust increase, with a net addition of 102,000 positions, driven by growth in",
+              "industry_name_original": "Health Care",
+              "mechanism": "economic recovery",
+              "confidence": 0.85,
+              "quote": "The report underscores the recovery of the U.S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:57:14.771152+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "80350882207e5c185fbe07aeedef14820b552ed73286286ebbe94d4b45b37623",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2022-04-01T17:21:08+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Leisure and Hospitality",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The leisure and hospitality industry, which includes hotels, restaurants and amusement parks, added a net 112,000 jobs."
+      },
+      {
+        "name": "Professional and Business Services",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The wide-ranging professional and business services sector also posted a robust March with a net addition of 102,000 positions."
+      },
+      {
+        "name": "Retail",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Retail had a decent month with a gain of 49,000, thanks to healthy hiring at grocery stores (+17,800) and warehouse clubs and supercenters (+21,400)."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "0bf61832bf9902f6f29dbeeb",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2022_04_01_Economic-Report_Leisure-and-Hospitality;-Professional-an_cnbc.json",
+        "sha256": "7664012ba741ceff15bbde70a4a5f5e51c7f32b20cc90ca36ccf0a1cf625461a",
+        "filename": "2022_04_01_Economic-Report_Leisure-and-Hospitality;-Professional-an_cnbc.json"
+      }
+    ],
+    "original_record_hash": "e3a3ae50cf7891148f828f7a698d662d41325cefcc67237c92bc91393b063078",
+    "input_hash": "92c9efc6f150f760873147e93964ecb9afbb5bfc29f28665d864c0b352643764",
+    "matching_audit_hash": "f931a1278f72be0fad3ab6cb069a52214176f2c14fe672df0e5de65196a6525c",
+    "legacy_security_evidence": [
+      {
+        "name": "Leisure and Hospitality",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The leisure and hospitality industry, which includes hotels, restaurants and amusement parks, added a net 112,000 jobs."
+      },
+      {
+        "name": "Professional and Business Services",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The wide-ranging professional and business services sector also posted a robust March with a net addition of 102,000 positions."
+      },
+      {
+        "name": "Retail",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Retail had a decent month with a gain of 49,000, thanks to healthy hiring at grocery stores (+17,800) and warehouse clubs and supercenters (+21,400)."
+      }
+    ],
+    "record_hash": "effe050f216c5ce770f92fb5c56052ead1a94578dd47e27f833a29e9d10d1106",
+    "outputs": [
+      {
+        "path": "US\\2022_04_01_Economic-Report_Leisure-and-Hospitality;-Professional-an_cnbc.json",
+        "sha256": "55e647f2a651a247e476976403d60bfe6523b05e4e7a924c4df38788f731b18a"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2022-04-01",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+      "fetched_at": "2026-11-10T19:37:07.540632+00:00",
+      "feature_available_at": "2026-11-10T19:37:46.830696+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:57:14.759414+00:00",
+    "feature_available_at": "2026-11-18T07:57:14.771152+00:00",
+    "commit_verified_at": "2026-11-12T13:53:40.528732+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2022/04/01/where-the-jobs-are-march-2022-chart.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "effe050f216c5ce770f92fb5c56052ead1a94578dd47e27f833a29e9d10d1106",
+    "content_hash": "80350882207e5c185fbe07aeedef14820b552ed73286286ebbe94d4b45b37623",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:57:14.760624+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0bf61832bf9902f6f29dbeeb.json",
+      "sha256": "2a38c464771ea62f6a231cf8183927715128bd449f5304d0621b7709be75aa5e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 45.546999999991385
+}

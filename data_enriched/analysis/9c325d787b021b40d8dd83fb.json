@@ -1,0 +1,99 @@
+{
+  "source_id": "9c325d787b021b40d8dd83fb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_05_27_14_00_Product-Recognition_Automotive_prnewswire.json",
+      "sha256": "206ac742cea38d7bce58c7017e3b3c84a187468eeac5336cd14f3c252769d51a",
+      "filename": "2015_05_27_14_00_Product-Recognition_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "54efc55c7600a129073da2a6468a9da1e0ba655a93886dcf8e6affc5b0e7e9c5",
+  "input_hash": "d5936305dd622553143fb0835b4e44983c42eb32a45d7343258ff42b7249066f",
+  "matching_audit_hash": "8d298d7e5bea78afc44857073f0615330ae41ac16958e6aeb4e3257b7e21034f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "04c1436869ad447a55de07d31cf0fb2d339196987258914945abec2a402bffa5",
+    "raw_sha256": "14f3ee8654869d128b51818cb692991272227b7e1d4ad72720b5284cbd6a8ad2",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2015-05-27T14:00:00+01:00\ndate=2015-05-27T14:00:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Honda CR-V",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Honda CR-V"
+    }
+  ],
+  "record_hash": "c01b094216897a914ade94c16db58b69825e05766f83cce759e258ee32d2e3bc",
+  "outputs": [
+    {
+      "path": "US\\2015_05_27_14_00_Product-Recognition_Automotive_prnewswire.json",
+      "sha256": "c0a2f6ef0f5932d5a92a415cf4b20eb3c9c39bb30f73898baa7b5f957d33d4f7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-05-27T14:00:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:40:02.572514+00:00",
+    "fetched_at": "2026-11-10T21:26:04.967453+00:00",
+    "feature_available_at": "2026-11-11T08:51:19.896415+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:26:52.825383+00:00",
+  "feature_available_at": "2026-11-12T14:26:52.854466+00:00",
+  "commit_verified_at": "2026-11-12T14:26:52.854466+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the Honda CR-V's performance in a compact SUV competition, highlighting its features and market position.",
+    "securities": [
+      {
+        "name": "Honda",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Honda"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": "Compact SUV"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Honda": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

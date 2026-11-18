@@ -1,0 +1,96 @@
+{
+  "source_id": "7b509d9fcf60d558c6f21cbb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_15_bankruptcy_retail_cnbc.json",
+      "sha256": "c8b140bc82f07a5bc9352f4f26d6d1a639ee1453f4e0ae07009a6b17d664e398",
+      "filename": "2018_03_15_bankruptcy_retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "304641649d7997c209b00f95262d8ff0cd6c5d3f21fec8b2dfe86fed7e336bb8",
+  "input_hash": "de22e5dc3985c6402f2168bf20b665caf6a208b01fd751d2d1f76f30881a4871",
+  "matching_audit_hash": "966ad9a867f9ccea439dbd6870cf861c49b3499dfc406ffcc43e0568e7325fb5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1eea10c1da928ca0282312176667d06b5bd174da5fdf12fc2516774a0fa2a329",
+    "raw_sha256": "2af6ebdaea340b9db72c0c283b39faeef0683d80af3800a6ce566d24c2e69583",
+    "date_quote": "datePublished  Published Thu, Mar 15 2018 1:28 AM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Toys R Us",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Toys R Us"
+    }
+  ],
+  "record_hash": "bdb122aa8ea561833ee3f2626a272dbd7972c32bef7174ca27798015b73192ed",
+  "outputs": [
+    {
+      "path": "US\\2018_03_15_bankruptcy_retail_cnbc.json",
+      "sha256": "3a3a38ba2de0e9d46c43790b363435b8e64df33c842fe37f3a039e4ab916b505"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:13.818535+00:00",
+    "fetched_at": "2026-11-11T11:34:00.529364+00:00",
+    "feature_available_at": "2026-11-11T11:34:57.634618+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:21.130705+00:00",
+  "commit_verified_at": "2026-11-12T13:53:21.130705+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Toys R Us",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Toys R Us"
+      }
+    ],
+    "industries": [
+      {
+        "name": "retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

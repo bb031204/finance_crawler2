@@ -1,0 +1,108 @@
+{
+  "source_id": "a3b4e1739f59021b7b589487",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_12_07_Insurance_Insurance_cnbc.json",
+      "sha256": "3ea3ad910c372824d30741e7f81a01b75478a73a2e56770a502e022bc3713d29",
+      "filename": "2017_12_07_Insurance_Insurance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "514836cb65596ad2ac75ab579ec5a318cbdcaff3d83fd9a3fe1a480de65f336c",
+  "input_hash": "47e4baf46a9c284dbca5c6fe6013212c2e0053b31c0c994b53ac6c4a1d540662",
+  "matching_audit_hash": "fd6704c9a61ac9f02d7083d5d518e32b96aa46d9da3404042ba8b20df7395f8b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "097518a6d6b8ac9ea5497c75f9bbf03774d352d0774f86fd39da7735e2690075",
+    "raw_sha256": "30e5e5ed581442a24ae1f8a267eff6dedd81c881e0be1192bb7500104990bcb7",
+    "date_quote": "article:published_time=2017-12-07T23:10:49+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "4bb5d1b6c4248947b43829fb5b51c9265c8c8bfddc119cef57a665e087b027ac",
+  "outputs": [
+    {
+      "path": "US\\2017_12_07_Insurance_Insurance_cnbc.json",
+      "sha256": "473ee02840f29c03fb6517a226441c2e26d2c41d32480fb8269abf82df14a4df"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-12-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:03.317223+00:00",
+    "fetched_at": "2026-11-10T11:42:41.941998+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.483921+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:41:49.618743+00:00",
+  "feature_available_at": "2026-11-12T14:41:49.627744+00:00",
+  "commit_verified_at": "2026-11-12T14:41:49.627744+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses insurance rate hikes in California due to 2017 wildfires, mentions Proposition 103 as a regulatory measure, and references insurance claims,灾",
+    "securities": [
+      {
+        "name": "California",
+        "ticker": null,
+        "exchange": null,
+        "quote": "California"
+      },
+      {
+        "name": "Proposition 103",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Proposition 103"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "insurance"
+      },
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": "damage to over 21,000 homes and 2,800 businesses"
+      },
+      {
+        "name": "Reinsurance",
+        "basis": "inferred",
+        "quote": "reinsurers"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "California": "organization",
+      "Proposition 103": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

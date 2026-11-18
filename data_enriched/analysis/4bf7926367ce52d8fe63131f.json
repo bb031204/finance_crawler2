@@ -1,0 +1,97 @@
+{
+  "source_id": "4bf7926367ce52d8fe63131f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_04_22_Regulatory_Financial-Services_sec.json",
+      "sha256": "9071a7429b71506d68cba18b5d931b45bd8a9f71f41c7341ca61ccc522631ae4",
+      "filename": "2019_04_22_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "e0d5bbcf8faed00c901f6d626075913d386529ec14236225b6b39cc20e9f3cca",
+  "input_hash": "aa37d4867f502844cf934a257c3c288e972867cdded3d70cb1a6445884d7aaea",
+  "matching_audit_hash": "0a348c3bc73b435d337d88c4cd4172bf5e46fbc0d4cad5955c41461e1d2822f6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1ca78e9f5ed41b79c361b69b71e4965145f577848ddd1387b09de9f57f42701e",
+    "raw_sha256": "34b3cc24865f2f11bb7979add364192783e5e9887c957a645ea4f490656ff0fc",
+    "date_quote": "April 22, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "599a3413446e02284fac97895577ffc5557377852b13bcc9c3c4d271b05579e5",
+  "outputs": [
+    {
+      "path": "US\\2019_04_22_Regulatory_Financial-Services_sec.json",
+      "sha256": "6d8173f0ff9dc0ce47f31b4aadef865c60e9a21a75dcbb8a54ba3ed9ad472212"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-04-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:45.964112+00:00",
+    "fetched_at": "2026-11-10T10:40:32.698374+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.363868+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:49:08.876655+00:00",
+  "feature_available_at": "2026-11-12T14:49:08.887198+00:00",
+  "commit_verified_at": "2026-11-12T14:49:08.887198+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory changes under the FAST Act affecting financial disclosures and compliance requirements, particularly relevant for companies in the",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "FAST Act",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FAST Act"
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services",
+        "basis": "explicit",
+        "quote": "financial services sector"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "FAST Act": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

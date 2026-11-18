@@ -1,0 +1,109 @@
+{
+  "source_id": "87cdcd010732c0919100e400",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_12_10_agriculture_agriculture_cnbc.json",
+      "sha256": "c540b18e8004e74947b7d213137cb5eb8bf547832a74e067c984575835486277",
+      "filename": "2014_12_10_agriculture_agriculture_cnbc.json"
+    }
+  ],
+  "original_record_hash": "75dba0305037b26b91ad784f17f9441406af0e43afdd662986824c47f69cbaad",
+  "input_hash": "778795698556c2482bd6980b633ee126d20345f2d086273c4f230aa4f9fa4355",
+  "matching_audit_hash": "868e09baf319784464eba42e0b1a9c22d6eac0e6f6b9219cf4b2b938ed7b9eb2",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "64c5d36325092d512c3ab8cf70b773e8961e2a57d5f8b36115286bcfa7d6b5b8",
+    "raw_sha256": "801a979a8f566424f19eccd686c5b81c53b9ae7bb871d4ee2b8680911445ff52",
+    "date_quote": "article:published_time=2014-12-10T00:01:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9bd0282864776d0ebf19ad8f579e12637ee3de8580b478d5aeb82e1d9bdbbd1c",
+  "outputs": [
+    {
+      "path": "US\\2014_12_10_agriculture_agriculture_cnbc.json",
+      "sha256": "2c7fd2804e79f0bfbd52e519dbebc419b2f9fe46ff5e3fa1f20f8ca267af9d54"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-12-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:18.470815+00:00",
+    "fetched_at": "2026-11-10T16:33:01.282204+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.901191+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:18:55.305751+00:00",
+  "feature_available_at": "2026-11-12T14:18:55.348399+00:00",
+  "commit_verified_at": "2026-11-12T14:18:55.348399+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the drought resistance of organic farming compared to conventional methods, including studies, industry reports, and expert opinions.",
+    "securities": [
+      {
+        "name": "University of California, Berkeley",
+        "ticker": null,
+        "exchange": null,
+        "quote": "University of California, Berkeley"
+      },
+      {
+        "name": "Proceedings of the Royal Society of London",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Proceedings of the Royal Society of London"
+      },
+      {
+        "name": "Rodale Institute",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rodale Institute"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Agriculture",
+        "basis": "explicit",
+        "quote": "agriculture"
+      },
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": "genetically engineered crops"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "University of California, Berkeley": "organization",
+      "Proceedings of the Royal Society of London": "organization",
+      "Rodale Institute": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

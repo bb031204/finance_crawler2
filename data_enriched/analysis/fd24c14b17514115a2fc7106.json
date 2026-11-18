@@ -1,0 +1,116 @@
+{
+  "source_id": "fd24c14b17514115a2fc7106",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_06_18_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "da7b4fbe6e214330023b80a2a73b2e5c25c3fe1d52b7edeaa69da6e5a37b57ac",
+      "filename": "2020_06_18_Real-Estate_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "95fcfe328bc28d946dc3b87648aee1a15efc5c3831ccd619bc59433954d864a1",
+  "input_hash": "42b765bdd77fa21a990d2721b68abcd2796b1b8dd8bba58889dc6f798db81278",
+  "matching_audit_hash": "459287a245f4e099b0154668477b93138f10ec35cbb10feca7ad7799645db512",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1ef86f9a2f92fb45a69f61c00df281b77432aec87371d299f70ad777b108abed",
+    "raw_sha256": "bb79366ee92f2a94ea2f50027803db7506ec503a697650b41bcb7cce2bf75293",
+    "date_quote": "article:published_time=2020-06-18T17:16:10+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "75ae30fa42b35b5da13a640656cbf6f4f6d666d7e666e7f5dc97fa9645654818",
+  "outputs": [
+    {
+      "path": "US\\2020_06_18_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "c05ce1d57ba0d9571338b5b20a927a353813f04780211ff56dcc52307d1371d9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-06-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:51.169982+00:00",
+    "fetched_at": "2026-11-10T12:58:07.030451+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.302746+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:53:12.396510+00:00",
+  "feature_available_at": "2026-11-12T14:53:12.406379+00:00",
+  "commit_verified_at": "2026-11-12T14:53:12.406379+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses trends in the real estate market, including suburban home searches, migration patterns, and the impact of the coronavirus on buyer behavior.",
+    "securities": [
+      {
+        "name": "realtor.com",
+        "ticker": null,
+        "exchange": null,
+        "quote": "realtor.com"
+      },
+      {
+        "name": "Miller Samuel",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Miller Samuel"
+      },
+      {
+        "name": "Lennar",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lennar"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "real estate market"
+      },
+      {
+        "name": "Real Estate Appraisal",
+        "basis": "explicit",
+        "quote": "real estate appraisal firm"
+      },
+      {
+        "name": "Homebuilding",
+        "basis": "inferred",
+        "quote": "homebuilders"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "realtor.com": "company",
+      "Miller Samuel": "company",
+      "Lennar": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

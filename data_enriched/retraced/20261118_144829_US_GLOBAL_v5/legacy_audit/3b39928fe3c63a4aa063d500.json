@@ -1,0 +1,163 @@
+{
+  "source_id": "3b39928fe3c63a4aa063d500",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_01_14_Healthcare_Health-Insurance_cnbc.json",
+      "sha256": "d4c4d762903341dd9514082388c2d9c3c69f9755a3c5953de1a87e9d3275290e",
+      "filename": "2020_01_14_Healthcare_Health-Insurance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "669835edf2f0007d0841f057d5813c466b8aa05a8550710d0a87418111121c9a",
+  "input_hash": "6ff4eb9a0fda9b85eabc046d49407d12f9b3daf3224333c49470b7e7a9781afc",
+  "matching_audit_hash": "77143d88f2ab5a9e32a8443819856cfce0983cc9700a67e9b056e65967567b76",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d6e2d485d3ae09b5e63dddd398b18aae50fab0a2d13188848137e3d5f978ba9a",
+    "raw_sha256": "88f5d83a14331e1ed441c3c24812da3d6de79e02b110b50506d58d535ad6ca15",
+    "date_quote": "article:published_time=2020-01-14T15:25:34+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1c74654183cc5b5fa4c809e1a1c1c81be6e02d3643ca48013091494d0ac71e31",
+  "outputs": [
+    {
+      "path": "US\\2020_01_14_Healthcare_Health-Insurance_cnbc.json",
+      "sha256": "53f13dac242aa9853e293e106759bbb0164c668ff5de7b8db59cb7144f5a8119"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-01-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:13.347520+00:00",
+    "fetched_at": "2026-11-10T12:08:41.996830+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.686235+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:12:42.954902+00:00",
+  "feature_available_at": "2026-11-12T15:16:46.936263+00:00",
+  "commit_verified_at": "2026-11-12T15:16:46.936263+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses Medicare rules, costs, and insurance options for working individuals",
+    "securities": [
+      {
+        "name": "Boomer Benefits",
+        "ticker": null,
+        "exchange": null,
+        "quote": "co-founder of Boomer Benefits"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "group health insurance"
+      },
+      {
+        "name": "Insurance",
+        "basis": "inferred",
+        "quote": "Medicare enrollment season brings fierce competition among insurers"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Boomer Benefits": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:46.967199+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:12:42.954902+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses Medicare rules, costs, and insurance options for working individuals",
+      "securities": [
+        {
+          "name": "Boomer Benefits",
+          "ticker": null,
+          "exchange": null,
+          "quote": "co-founder of Boomer Benefits"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Healthcare",
+          "basis": "inferred",
+          "quote": "group health insurance"
+        },
+        {
+          "name": "Insurance",
+          "basis": "inferred",
+          "quote": "Medicare enrollment season brings fierce competition among insurers"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Boomer Benefits": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:12:42.979138+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:12:42.989036+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:42.970718+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses Medicare rules, costs, and options for individuals aged 65 who are still working, including details about Part A, Part B, Part D, Advantage,和",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:51:30.661540+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

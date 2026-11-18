@@ -1,0 +1,114 @@
+{
+  "source_id": "53c643e901f1040cb693ecaa",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_05_10_financial_Pharmaceuticals_prnewswire.json",
+      "sha256": "358c1caae9ed90ba6b59db872a63147051e062d51c1194bef8fca91f224497b4",
+      "filename": "2021_05_10_financial_Pharmaceuticals_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "8b298b1775fc26b129e7be8730b9c152121a840ec0d600f4e04f89f3fefb79a5",
+  "input_hash": "b009eb0d593f7ae36d5cda0a2da99fa04303b3d74e2386f5c073db807d9e2838",
+  "matching_audit_hash": "c4602ef770a817b93aeb1476cdc288c2a2810094e4290e6e7536e8b98eb73fc0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4e13d965aa06626e152dbbb1064d5bd72e72bfde6aff77ad3c4f8aca3561c383",
+    "raw_sha256": "0516522fc31cb346ed56110be78ce1343a1dd36b0ace034f684558aeab9348e5",
+    "date_quote": "page.datePublished=2021-05-10T21:08:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Biohaven Pharmaceutical Holding Company Ltd.",
+      "ticker": "BHVN",
+      "exchange": "NYSE",
+      "quote": "Biohaven Pharmaceutical Holding Company Ltd. (NYSE: BHVN; the \"Company\")"
+    },
+    {
+      "name": "Biohaven",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Biohaven"
+    }
+  ],
+  "record_hash": "3ba1d2ef11364347b3ba7e0e32d4c1a9075a9c88a7fcda55bba06fbec9fc5d2e",
+  "outputs": [
+    {
+      "path": "US\\2021_05_10_financial_Pharmaceuticals_prnewswire.json",
+      "sha256": "eade722f793883b2494b31bd352314f7af057d350877eafa32ba70e740b72aac"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-05-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:39:37.810470+00:00",
+    "fetched_at": "2026-11-10T21:20:06.933421+00:00",
+    "feature_available_at": "2026-11-11T08:40:31.674177+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:37.787834+00:00",
+  "commit_verified_at": "2026-11-12T13:53:37.787834+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Biohaven Pharmaceutical Holding Company Ltd.",
+        "ticker": "BHVN",
+        "exchange": "NYSE",
+        "quote": "Biohaven Pharmaceutical Holding Company Ltd. (NYSE: BHVN; the \"Company\")"
+      },
+      {
+        "name": "Biohaven",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Biohaven"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biopharmaceuticals",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Pharmaceuticals",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

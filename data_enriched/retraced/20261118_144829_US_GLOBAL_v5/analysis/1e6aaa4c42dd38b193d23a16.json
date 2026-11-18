@@ -1,0 +1,257 @@
+{
+  "source_id": "1e6aaa4c42dd38b193d23a16",
+  "status": "completed",
+  "source_record_hash": "4e63254a05d4a39fb54619f0263eaf3d19dd05150dde4fd78cc9b6806015d60f",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000177/0001000177-13-000002-index.html",
+    "attempted_at": "2026-11-18T09:39:50.936361+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "810b907ca3c8e4ca269bf132c21f5a080976dbc8fac38470035f7c5b8c49ea8a"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/1e6aaa4c42dd38b193d23a16.json",
+    "sha256": "9f20bf51e74479199e73b90f10dde7db601f3eb2045d105e0959adb1414b9b32",
+    "bundled_path": "legacy_audit/1e6aaa4c42dd38b193d23a16.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "2078494ea6ec73429a7d08a3de857eaef949887ab80cb392102548cc083ca9d9",
+      "llm_inferred_at": "2026-11-18T09:40:03.155699+00:00",
+      "model_duration_seconds": 7.1713656,
+      "prompt_tokens": 1727,
+      "completion_tokens": 349,
+      "selection": [
+        {
+          "source_id": "1e6aaa4c42dd38b193d23a16",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Nordic American Tankers Limited completed the acquisition of Scandic American Shipping Ltd.",
+              "rationale": "The acquisition is a company-specific event involving the merger of two entities, which directly affects the operations and ownership structure of Nordic American Tankers Limited.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "Key factors affecting the company include global economic conditions, market fluctuations, changes in demand, operating expenses, regulatory changes, and potential litigation.",
+              "rationale": "The text mentions factors that affect the broader industry, such as global economic conditions and regulatory changes, which are industry-wide concerns for companies in the shipping sector.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6532",
+              "name": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "basis": "inferred",
+              "quote": "Nordic American Tankers Limited completed the acquisition of Scandic American Shipping Ltd."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "6c9cac925ba5db80c8b5ba341da82e104e241edd553cea75b64c6a04b3fbb7c6",
+      "llm_inferred_at": "2026-11-18T09:40:09.393002+00:00",
+      "model_duration_seconds": 6.231992,
+      "prompt_tokens": 1771,
+      "completion_tokens": 340,
+      "selection": [
+        {
+          "source_id": "1e6aaa4c42dd38b193d23a16",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Nordic American Tankers Limited completed the acquisition of Scandic American Shipping Ltd.",
+              "rationale": "The acquisition is a company-specific event involving the merger of two entities, which directly affects the operations and ownership structure of Nordic American Tankers Limited.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "Key factors affecting the company include global economic conditions, market fluctuations, changes in demand, operating expenses, regulatory changes, and potential litigation.",
+              "rationale": "The text mentions factors that affect the broader industry, such as global economic conditions and regulatory changes, which are industry-wide concerns.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:9995",
+              "name": "NON-OPERATING ESTABLISHMENTS",
+              "basis": "explicit",
+              "quote": "Nordic American Tankers Limited completed the acquisition of Scandic American Shipping Ltd."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T09:40:09.404542+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "810b907ca3c8e4ca269bf132c21f5a080976dbc8fac38470035f7c5b8c49ea8a",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2013-01-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000177/000100017713000002/form6k_20130111.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nordic American Tankers Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nordic American Tankers Limited"
+      },
+      {
+        "name": "Scandic American Shipping Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Scandic American Shipping Ltd."
+      },
+      {
+        "name": null,
+        "ticker": "NAT",
+        "exchange": "NYSE",
+        "quote": "NYSE:NAT"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "1e6aaa4c42dd38b193d23a16",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_01_11_Corporate-Action_Marine-Transportation_sec.json",
+        "sha256": "5978677a99fe676f39479e6d7575a06d96e724a7ef179cdbf7dba707390ba8d8",
+        "filename": "2013_01_11_Corporate-Action_Marine-Transportation_sec.json"
+      }
+    ],
+    "original_record_hash": "b4b98cb0bded4000358d47c06c6f14bfa3aff7728a42c9fe588ce00b7fbd30b3",
+    "input_hash": "fd3dccfecabdd5ae62fd1d1bb437537afef5f105ae86afd544258cbc252ab426",
+    "matching_audit_hash": "baead0c99571da94bb9d58502a1499a2ea09fbe399f91123436661f970ac1cbc",
+    "legacy_security_evidence": [
+      {
+        "name": "Nordic American Tankers Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nordic American Tankers Limited"
+      },
+      {
+        "name": "Scandic American Shipping Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Scandic American Shipping Ltd."
+      },
+      {
+        "name": null,
+        "ticker": "NAT",
+        "exchange": "NYSE",
+        "quote": "NYSE:NAT"
+      }
+    ],
+    "record_hash": "4e63254a05d4a39fb54619f0263eaf3d19dd05150dde4fd78cc9b6806015d60f",
+    "outputs": [
+      {
+        "path": "US\\2013_01_11_Corporate-Action_Marine-Transportation_sec.json",
+        "sha256": "0855b6765271e1800c08f9191cf42a0d61682967e52fe35fa32412d2f97d78a4"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2013-01-11",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.188895+00:00",
+      "fetched_at": "2026-11-10T23:08:31.957039+00:00",
+      "feature_available_at": "2026-11-11T09:46:10.024908+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T09:40:09.393002+00:00",
+    "feature_available_at": "2026-11-18T09:40:09.404542+00:00",
+    "commit_verified_at": "2026-11-12T13:52:43.135233+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Nordic American Tankers Limited completed the acquisition of Scandic American Shipping Ltd.",
+        "rationale": "The acquisition is a company-specific event involving the merger of two entities, which directly affects the operations and ownership structure of Nordic American Tankers Limited.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Nordic American Tankers Limited completed the acquisition of Scandic American Shipping Ltd."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000177/0001000177-13-000002-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "4e63254a05d4a39fb54619f0263eaf3d19dd05150dde4fd78cc9b6806015d60f",
+    "content_hash": "810b907ca3c8e4ca269bf132c21f5a080976dbc8fac38470035f7c5b8c49ea8a",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T09:40:09.393548+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/1e6aaa4c42dd38b193d23a16.json",
+      "sha256": "e2a65ef76113563126ce470293a261b397aabfcad00791ce32714f6c09829a78",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 18.48399999999674
+}

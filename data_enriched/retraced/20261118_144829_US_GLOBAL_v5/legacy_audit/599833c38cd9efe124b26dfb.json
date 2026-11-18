@@ -1,0 +1,154 @@
+{
+  "source_id": "599833c38cd9efe124b26dfb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_02_Economics_Consumer-Price-Index_bls.json",
+      "sha256": "a1398a50df4708d33c88139bea1f7be0a419189c8bdb5fd496efb3d9e1f5da3e",
+      "filename": "2015_03_02_Economics_Consumer-Price-Index_bls.json"
+    }
+  ],
+  "original_record_hash": "a237c2cfd2f0229f667bd08f326e06619a15e3c04a512a5404c9d9e095205dd2",
+  "input_hash": "be6c73c592b7d37bce52347fdd56bd3b9d8c79db852a51fda6c7222edacfa333",
+  "matching_audit_hash": "c938017e71858431491ce79d8d9d3efa1cec78ebd26f8145caa7307dcddefc88",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "cbd667798497fdbb3801e41f813e550ca8f0caa82574d738c45a10f5fc14598f",
+    "raw_sha256": "a79e47de323a3fed18a06ef08a428dab4841de11e4fa7b04897725c4b27c65dd",
+    "date_quote": "March 02, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ed021ad5996d2feec331bd68cbba80302857e3401aa9f0a3f1b32f6976d1024c",
+  "outputs": [
+    {
+      "path": "US\\2015_03_02_Economics_Consumer-Price-Index_bls.json",
+      "sha256": "a1e1f330492015ace350df4bb90594d46a74c3900cec18040e332c608d0ee177"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:56.454118+00:00",
+    "fetched_at": "2026-11-10T11:30:11.195996+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.044928+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:12.267376+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.472247+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.472247+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "no_verified_company_entity",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Provides insights into inflation trends and price changes across key sectors.",
+    "securities": [],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "energy prices"
+      },
+      {
+        "name": "Food and Beverage",
+        "basis": "inferred",
+        "quote": "food index"
+      },
+      {
+        "name": "Housing",
+        "basis": "inferred",
+        "quote": "shelter index"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {},
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.501573+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:12.267376+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Provides insights into inflation trends and price changes across key sectors.",
+      "securities": [],
+      "industries": [
+        {
+          "name": "Energy",
+          "basis": "explicit",
+          "quote": "energy prices"
+        },
+        {
+          "name": "Food and Beverage",
+          "basis": "inferred",
+          "quote": "food index"
+        },
+        {
+          "name": "Housing",
+          "basis": "inferred",
+          "quote": "shelter index"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {},
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:12.291448+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:12.299387+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:12.282427+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary provides macroeconomic data on the Consumer Price Index (CPI) and its components, including energy, food, and shelter, which are relevant for market",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:23:08.153430+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

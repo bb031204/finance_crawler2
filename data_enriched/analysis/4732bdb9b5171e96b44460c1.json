@@ -1,0 +1,105 @@
+{
+  "source_id": "4732bdb9b5171e96b44460c1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_21_Financial-Results_Telecommunications_sec.json",
+      "sha256": "11508c861411af6f815513d34dd8be4b0cf320076198e62f7867035bccfd1ae5",
+      "filename": "2014_02_21_Financial-Results_Telecommunications_sec.json"
+    }
+  ],
+  "original_record_hash": "372b5c5c487474168f5028f70435a9fd63a13dd44b73a1847e5af72625141c49",
+  "input_hash": "7796dbda32ae3827725d76e50872a332b9ec96bbcebbb385a2d618ff2ae6f58d",
+  "matching_audit_hash": "90137fb975681a4499141990f25ccdc26eeff1903143f28898face63724efec5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fdfa7ccfa2b2e1c4c5179c5c9be9cc3820bf245aa64dd15eefc5e710760d951c",
+    "raw_sha256": "aa201673a78e87fe5455dc35279f5d7fc3e4f5d0ef1a38bbc54f13785694580f",
+    "date_quote": "SEC filing datePublished=2014-02-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465914012032/a14-6476_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "DISH Network Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH Network Corporation"
+    },
+    {
+      "name": "DISH DBS Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH DBS Corporation"
+    }
+  ],
+  "record_hash": "b02d842059255d40b2c20bb235a507bea702970ed5cd5c00de8e0790f5ed8dac",
+  "outputs": [
+    {
+      "path": "US\\2014_02_21_Financial-Results_Telecommunications_sec.json",
+      "sha256": "eb300f3c7b4f528158986eca1fc143c85317d5ec527ca83b738c9adedb19526f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+    "fetched_at": "2026-11-11T00:03:27.900123+00:00",
+    "feature_available_at": "2026-11-11T10:14:52.123630+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:12:25.011920+00:00",
+  "feature_available_at": "2026-11-12T14:12:25.044148+00:00",
+  "commit_verified_at": "2026-11-12T14:12:25.044148+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text contains financial results and filings related to DISH Network Corporation, indicating substantive information about the company's financial reporting.",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      },
+      {
+        "name": "DISH DBS Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH DBS Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "DISH Network Corporation": "company",
+      "DISH DBS Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

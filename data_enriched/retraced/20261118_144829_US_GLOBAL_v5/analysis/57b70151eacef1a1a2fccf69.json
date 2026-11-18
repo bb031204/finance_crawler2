@@ -1,0 +1,260 @@
+{
+  "source_id": "57b70151eacef1a1a2fccf69",
+  "status": "completed",
+  "source_record_hash": "a4acd3867f6a85a7cc91a4ac78c8fb5b3859785347d6f83935ed4859c1c2fc93",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-12-288003-index.html",
+    "attempted_at": "2026-11-18T15:20:21.687935+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "66afeb464fde15ba2bd36dec44977c152eb46f57897e7cb8bf468aca938e3ed3"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/57b70151eacef1a1a2fccf69.json",
+    "sha256": "98ccc4c0f3297c6950f205e47a61ea66fb695def8cd2f87c38d1c2912262c670",
+    "bundled_path": "legacy_audit/57b70151eacef1a1a2fccf69.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "f62796b96bc5b2381cd4b6828761127d36c3db21df06b69d9ccb9367a3f75aef",
+      "llm_inferred_at": "2026-11-18T15:21:17.829094+00:00",
+      "model_duration_seconds": 11.0961261,
+      "prompt_tokens": 1220,
+      "completion_tokens": 491,
+      "selection": [
+        {
+          "source_id": "57b70151eacef1a1a2fccf69",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference.",
+              "rationale": "The acquisition of taxi medallion loans by Medallion Bank is a financial activity that falls under the broader financial services industry, specifically within the banking sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "On June 25, 2012, Medallion Financial Corp issued a press release announcing a portfolio acquisition of taxi medallion loans by its wholly-owned subsidiary Medallion Bank.",
+              "rationale": "The event is directly related to Medallion Financial Corp and its subsidiary Medallion Bank, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference."
+            },
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "92ebf45fa9d3cbc80da988d3fe22040c39e0b51961cbbc8d9b14a21051ab9373",
+      "llm_inferred_at": "2026-11-18T15:21:28.471636+00:00",
+      "model_duration_seconds": 10.6367781,
+      "prompt_tokens": 1264,
+      "completion_tokens": 480,
+      "selection": [
+        {
+          "source_id": "57b70151eacef1a1a2fccf69",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On June 25, 2012, Medallion Financial Corp issued a press release announcing a portfolio acquisition of taxi medallion loans by its wholly-owned subsidiary Medallion Bank.",
+              "rationale": "The event is specific to Medallion Financial Corp and its subsidiary Medallion Bank, indicating a company-level impact.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference.",
+              "rationale": "The acquisition of taxi medallion loans by a bank is an industry-level event within the financial services sector.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference."
+            },
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "The press release is attached as Exhibit 99.1 and incorporated by reference."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:21:28.485078+00:00",
+  "audit": {
+    "source_id": "57b70151eacef1a1a2fccf69",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-12-288003-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2012-06-28",
+    "date_quote": "SEC filing datePublished=2012-06-28",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "66afeb464fde15ba2bd36dec44977c152eb46f57897e7cb8bf468aca938e3ed3",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T04:56:03.068820+00:00",
+    "fetched_at": "2026-11-12T07:46:09.731852+00:00",
+    "first_extracted_at": "2026-11-12T07:46:21.871147+00:00",
+    "extracted_at": "2026-11-18T15:21:28.472270+00:00",
+    "feature_available_at": "2026-11-18T15:21:28.485078+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "a4acd3867f6a85a7cc91a4ac78c8fb5b3859785347d6f83935ed4859c1c2fc93",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2012_06_28_corporate-action_Financial-Services_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\7fbd01bb42e4a9abafac241b9ed8c32b331abcb6c945758ee92c76b76aa19d65.json",
+      ".runtime\\simple\\model_cache\\b21ced53414e2979ad1ddea9c063f8a248725e2c202e4f4cc0e500ac0c4951e5.json",
+      ".runtime\\simple\\pages\\57b70151eacef1a1a2fccf69.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312512288003/d373880d8k.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-12-288003-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T15:21:28.471636+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "66afeb464fde15ba2bd36dec44977c152eb46f57897e7cb8bf468aca938e3ed3",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Medallion Financial Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "a0664a4909e47a012eeda96734d4354d053a3d76571176c533695386b711fda2",
+    "commit_verified_at": "2026-11-12T07:46:21.964535+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T07:46:22.132905+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\57b70151eacef1a1a2fccf69.json",
+      ".runtime\\simple\\model_cache\\7fbd01bb42e4a9abafac241b9ed8c32b331abcb6c945758ee92c76b76aa19d65.json",
+      ".runtime\\simple\\model_cache\\b21ced53414e2979ad1ddea9c063f8a248725e2c202e4f4cc0e500ac0c4951e5.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "On June 25, 2012, Medallion Financial Corp issued a press release announcing a portfolio acquisition of taxi medallion loans by its wholly-owned subsidiary Medallion Bank.",
+        "rationale": "The event is specific to Medallion Financial Corp and its subsidiary Medallion Bank, indicating a company-level impact.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On June 25, 2012, Medallion Financial Corp issued a press release announcing a portfolio acquisition of taxi medallion loans by its wholly-owned subsidiary Medallion Bank."
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "a4acd3867f6a85a7cc91a4ac78c8fb5b3859785347d6f83935ed4859c1c2fc93",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/57b70151eacef1a1a2fccf69.json",
+      "sha256": "6283072eeb475390f91b6b82b85f59313c0fcc84f648b7f224aebcb410ad7d74",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 66.81200000000536
+}

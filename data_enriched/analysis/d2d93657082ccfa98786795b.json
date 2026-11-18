@@ -1,0 +1,105 @@
+{
+  "source_id": "d2d93657082ccfa98786795b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_05_04_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "ff4d608e86f1ead1d24ccec3ba4ab35e690a7ed1a68ab54634869b14572caa1d",
+      "filename": "2022_05_04_Monetary-Policy_Central-Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "1703beb3aeed0010732bb6617dca3a7137d6d58c4e87b0ff299c5b9428e1455e",
+  "input_hash": "fad1d5ddb6a212111475cedfac4d493d84a08e70d4cac1e49cc17b166b82f5b9",
+  "matching_audit_hash": "fa2e24ea256f89f4cf490a09db77c3256fad0ae0fed8901c364dcc6b4551c53f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f22440206091547d2fdb99a37756937d30bb354e11d8133497fc99e7df80d467",
+    "raw_sha256": "5a3790fb4df6292ae2fe6767b6911c472636d1b5d1997139e0aead858afae181",
+    "date_quote": "Federal Reserve Board - Implementation Note issued May 4, 2022",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Treasury securities",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Roll over at auction the amount of principal payments from the Federal Reserve's holdings of Treasury securities maturing in the calendar month of June that exceeds a monthly cap of $30 billion."
+    },
+    {
+      "name": "Agency mortgage-backed securities (MBS)",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Reinvest into agency mortgage-backed securities (MBS) the amount of principal payments from the Federal Reserve's holdings of agency debt and agency MBS received in the calendar month of June that exceeds a monthly cap of $17.5 billion."
+    }
+  ],
+  "record_hash": "478d0cf6fea270761aa2bedcd8fba1458dfc17668ec3673c9a6f46f67e7bf65c",
+  "outputs": [
+    {
+      "path": "US\\2022_05_04_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "53c99f2c9b28a7a853bc0a82003f1e05f273fb14eea95b69a825bf39e1d9ac38"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-05-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T07:07:12.652350+00:00",
+    "fetched_at": "2026-11-11T17:45:48.892753+00:00",
+    "feature_available_at": "2026-11-11T17:46:18.945510+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:41.233282+00:00",
+  "commit_verified_at": "2026-11-12T13:53:41.233282+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Treasury securities",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Roll over at auction the amount of principal payments from the Federal Reserve's holdings of Treasury securities maturing in the calendar month of June that exceeds a monthly cap of $30 billion."
+      },
+      {
+        "name": "Agency mortgage-backed securities (MBS)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Reinvest into agency mortgage-backed securities (MBS) the amount of principal payments from the Federal Reserve's holdings of agency debt and agency MBS received in the calendar month of June that exceeds a monthly cap of $17.5 billion."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

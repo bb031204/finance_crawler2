@@ -1,0 +1,108 @@
+{
+  "source_id": "dc57fcf59719126e57df05e5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_03_09_Regulatory_Financial-Services_sec.json",
+      "sha256": "c46bf41f8ee68b75a665dfed2d9b33c4ce5fa28fdad0766fe4685b63a62c55ca",
+      "filename": "2022_03_09_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "46877b22096826235a80d8a530951f69fff9302bd069e2329c5e65443915190b",
+  "input_hash": "60c9a3850df4d63dba6033b9fa9e8ac8e64ec6fd66ed1a530883b0956fae6544",
+  "matching_audit_hash": "98bc5b6abb6525b83fa0c50509dceddcb29ff1dca27709fbb30317550b4d0893",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c383997e0c9ebbd23b38fd629b0a4851c1d5affc2f341820285c47b0069ca4e8",
+    "raw_sha256": "62eb66c82e2dbc6a695a7f7a9947e1df6fc2fd7157a4b83502385c802656c491",
+    "date_quote": "Paul Munter, Acting Chief Accountant Washington D.C. March 9, 2022",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "6c4e8953042b33be1d1928721d99a4462a8371b3e727d8437ebf4f0431e816e7",
+  "outputs": [
+    {
+      "path": "US\\2022_03_09_Regulatory_Financial-Services_sec.json",
+      "sha256": "3af52b6f5325222b4a99bbad7ccca2612c2c96fcaaa79fa0fc83f3a08184f3d3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-03-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:29:42.575639+00:00",
+    "fetched_at": "2026-11-11T04:30:37.876807+00:00",
+    "feature_available_at": "2026-11-11T11:20:28.569065+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:57:08.525337+00:00",
+  "feature_available_at": "2026-11-12T14:57:08.534340+00:00",
+  "commit_verified_at": "2026-11-12T14:57:08.534340+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the SEC's emphasis on materiality in financial reporting, including definitions, examples of errors, and implications for investors and audt",
+    "securities": [
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC"
+      },
+      {
+        "name": "OCA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "OCA"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "SEC"
+      },
+      {
+        "name": "Accounting",
+        "basis": "explicit",
+        "quote": "accounting"
+      },
+      {
+        "name": "Regulatory Compliance",
+        "basis": "inferred",
+        "quote": "SEC"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "SEC": "organization",
+      "OCA": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

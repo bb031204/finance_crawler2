@@ -1,0 +1,495 @@
+{
+  "source_id": "3b6952de9045e4275b1ca8e8",
+  "status": "completed",
+  "source_record_hash": "97463283995b9a7e0c30e6b683290be0172a382e9776852f930d50371531b02f",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-12-002973-index.html",
+    "attempted_at": "2026-11-18T12:12:18.632447+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-12-002973-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312512002973/d277716d8k.htm",
+    "fetched_at": "2026-11-18T12:12:35.096843+00:00",
+    "source_body_hash": "a5024c95a1b711c80578f6dca30478667853685d2b9b5d479406f7940eedcada",
+    "raw_sha256": "1f684c77c3277db2673befee4780ea6c2b2f753b4dcb192b1ca65ea7f00ea896",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312512002973/d277716d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "1f684c77c3277db2673befee4780ea6c2b2f753b4dcb192b1ca65ea7f00ea896",
+        "text_sha256": "02293d4c0e735e2e40bee2378a0ed4d228f9abd1306acdc537b0a3e31e10e8e5",
+        "text_start": 0,
+        "text_end": 2013
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312512002973/d277716dex991.htm",
+        "type": "EX-99.1",
+        "description": "PRESS RELEASE",
+        "raw_sha256": "35b75d46b43d16dc93de0e2e5a77bff1a651a5ebff78479e746390795e70fee6",
+        "text_sha256": "bcb98955be77e90bf4607bebc1eb0ed4aad0493a3c865e66fa7c5e9e45e2a635",
+        "text_start": 2015,
+        "text_end": 10888
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2012-01-05",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3b6952de9045e4275b1ca8e8.json",
+    "sha256": "5e0753a1f61c8f8dd12a298acc465390851cf6455cd8c5455b50f71d62024d53",
+    "bundled_path": "legacy_audit/3b6952de9045e4275b1ca8e8.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "7ecdacc75aed1d359f2a0b439b76ed41a7aabf2d23f0f9660c2fbf8af3dbca21",
+      "llm_inferred_at": "2026-11-18T12:12:56.094678+00:00",
+      "model_duration_seconds": 20.9445722,
+      "prompt_tokens": 3887,
+      "completion_tokens": 984,
+      "selection": [
+        {
+          "source_id": "3b6952de9045e4275b1ca8e8",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Henry Schein now owns 71.5% of Butler Schein Animal Health and expects this transaction to be accretive to 2012 diluted EPS by $0.02 to $0.03.",
+              "rationale": "The acquisition of Butler Schein Animal Health by Henry Schein is a significant event within the animal health industry, indicating a strategic move to strengthen its position in the sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S",
+              "rationale": "The company is directly involved in the acquisition, which is a significant event for Henry Schein, Inc.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S"
+            },
+            {
+              "industry_key": "TRSR:1ada63b91b21bc49",
+              "name": "Wholesale Distributors",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "and we are delighted to be increasing our ownership interest in this industry leader. In addition to helping build the company into an outstanding organization prior to our merger",
+              "industry_name_original": "Health Care",
+              "mechanism": "strategic acquisition",
+              "confidence": 0.95,
+              "quote": "Henry Schein now owns 71.5% of Butler Schein Animal Health and expects this transaction to be accretive to 2012 diluted EPS by $0.02 to $0.03."
+            },
+            {
+              "industry_key": "TRSR:1ada63b91b21bc49",
+              "industry_scope_quote": "and we are delighted to be increasing our ownership interest in this industry leader. In addition to helping build the company into an outstanding organization prior to our merger",
+              "industry_name_original": "Wholesale Distributors",
+              "mechanism": "strategic acquisition",
+              "confidence": 0.95,
+              "quote": "Henry Schein now owns 71.5% of Butler Schein Animal Health and expects this transaction to be accretive to 2012 diluted EPS by $0.02 to $0.03."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a869b717f2a876c09297c51fa1bd9dbc2a437a0e08481597c9ed6b36a6be404d",
+      "llm_inferred_at": "2026-11-18T12:13:17.971970+00:00",
+      "model_duration_seconds": 21.857323,
+      "prompt_tokens": 3931,
+      "completion_tokens": 1144,
+      "selection": [
+        {
+          "source_id": "3b6952de9045e4275b1ca8e8",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Henry Schein now owns 71.5% of Butler Schein Animal Health and expects this transaction to be accretive to 2012 diluted EPS by $0.02 to $0.03.",
+              "rationale": "The acquisition of Butler Schein Animal Health by Henry Schein is an industry-wide impact as it involves the animal health sector, which is a significant part of Henry Schein's business operations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S",
+              "rationale": "The company-specific event is the acquisition of Butler Schein Animal Health by Henry Schein, which is a direct action taken by the company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S"
+            },
+            {
+              "industry_key": "TRSR:1ada63b91b21bc49",
+              "name": "Wholesale Distributors",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "and we are delighted to be increasing our ownership interest in this industry leader. In addition to helping build the company into an outstanding organization prior to our merger",
+              "industry_name_original": "Health Care",
+              "mechanism": "strategic partnership",
+              "confidence": 0.95,
+              "quote": "Henry Schein now owns 71.5% of Butler Schein Animal Health and expects this transaction to be accretive to 2012 diluted EPS by $0.02 to $0.03."
+            },
+            {
+              "industry_key": "TRSR:1ada63b91b21bc49",
+              "industry_scope_quote": "and we are delighted to be increasing our ownership interest in this industry leader. In addition to helping build the company into an outstanding organization prior to our merger",
+              "industry_name_original": "Wholesale Distributors",
+              "mechanism": "strategic partnership",
+              "confidence": 0.95,
+              "quote": "Henry Schein now owns 71.5% of Butler Schein Animal Health and expects this transaction to be accretive to 2012 diluted EPS by $0.02 to $0.03."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "and we are delighted to be increasing our ownership interest in this industry leader. In addition to helping build the company into an outstanding organization prior to our merger",
+              "industry_name_original": "Business Services",
+              "mechanism": "strategic partnership",
+              "confidence": 0.95,
+              "quote": "Henry Schein now owns 71.5% of Butler Schein Animal Health and expects this transaction to be accretive to 2012 diluted EPS by $0.02 to $0.03."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "7411ff4362aa54a5fe943e3273ae977efdc00933d216a375d7adac45d303e89f",
+      "llm_inferred_at": "2026-11-18T12:13:36.055524+00:00",
+      "model_duration_seconds": 18.0680724,
+      "prompt_tokens": 2249,
+      "completion_tokens": 943,
+      "selection": [
+        {
+          "source_id": "3b6952de9045e4275b1ca8e8",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;",
+              "rationale": "The text discusses risks related to the healthcare industry, including regulatory changes, customer purchasing power, and international operations, which are indicative of industry-wide impacts.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;",
+              "rationale": "The text mentions general economic conditions and disruptions in financial markets, which are indicative of broader market impacts.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:8744",
+              "industry_scope_quote": "and historical results include, but are not limited to: recently enacted healthcare legislation; effects of a highly competitive market; changes in the healthcare industry;",
+              "industry_name_original": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "mechanism": "regulatory changes and market competition in the healthcare industry",
+              "confidence": 0.9,
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "and historical results include, but are not limited to: recently enacted healthcare legislation; effects of a highly competitive market; changes in the healthcare industry;",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "regulatory changes and market competition in the healthcare industry",
+              "confidence": 0.85,
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "and historical results include, but are not limited to: recently enacted healthcare legislation; effects of a highly competitive market; changes in the healthcare industry;",
+              "industry_name_original": "Financials",
+              "mechanism": "regulatory changes and market competition in the healthcare industry",
+              "confidence": 0.8,
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "7ecdf14bae03e4228df6b5bdd11bae778e4cd93a3535e37b188e15f1d2f4e8b2",
+      "llm_inferred_at": "2026-11-18T12:13:53.723208+00:00",
+      "model_duration_seconds": 17.65722,
+      "prompt_tokens": 2293,
+      "completion_tokens": 959,
+      "selection": [
+        {
+          "source_id": "3b6952de9045e4275b1ca8e8",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;",
+              "rationale": "The text discusses risks related to the healthcare industry, regulatory changes, and international operations, which are indicative of industry-wide impacts.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We caution that these factors may not be exhaustive and that many of these factors are beyond our ability to control or predict.",
+              "rationale": "The statement is made by the company, indicating that the risks and uncertainties are specific to the company's operations and environment.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "changes in regulatory requirements; risks from expansion of customer purchasing power and multi-tiered costing structures; risks associated with our international operations;"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:8744",
+              "industry_scope_quote": "and historical results include, but are not limited to: recently enacted healthcare legislation; effects of a highly competitive market; changes in the healthcare industry;",
+              "industry_name_original": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "mechanism": "regulatory changes and market competition affect the industry-wide operations and outcomes.",
+              "confidence": 0.9,
+              "quote": "Risk factors and uncertainties that could cause actual results to differ materially from current and historical results include, but are not limited to: recently enacted healthcare"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "and historical results include, but are not limited to: recently enacted healthcare legislation; effects of a highly competitive market; changes in the healthcare industry;",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "regulatory changes and market competition affect the industry-wide operations and outcomes.",
+              "confidence": 0.9,
+              "quote": "Risk factors and uncertainties that could cause actual results to differ materially from current and historical results include, but are not limited to: recently enacted healthcare"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "and historical results include, but are not limited to: recently enacted healthcare legislation; effects of a highly competitive market; changes in the healthcare industry;",
+              "industry_name_original": "Financials",
+              "mechanism": "regulatory changes and market competition affect the industry-wide operations and outcomes.",
+              "confidence": 0.9,
+              "quote": "Risk factors and uncertainties that could cause actual results to differ materially from current and historical results include, but are not limited to: recently enacted healthcare"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:13:53.741605+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a5024c95a1b711c80578f6dca30478667853685d2b9b5d479406f7940eedcada",
+    "raw_sha256": "1f684c77c3277db2673befee4780ea6c2b2f753b4dcb192b1ca65ea7f00ea896",
+    "date_quote": "Date of Report (Date of earliest event reported): January 5, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312512002973/d277716d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3b6952de9045e4275b1ca8e8",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_01_05_Corporate-Acquisitions_Healthcare_sec.json",
+        "sha256": "44414dfc8eec3352547f0e9b3be66cde52825cd6eb280e5c0ed2411ef74904d8",
+        "filename": "2012_01_05_Corporate-Acquisitions_Healthcare_sec.json"
+      }
+    ],
+    "original_record_hash": "3c63fa6650ab256a90ffe7b67d350b5c4d62950dc585244c36731fd071ecfccb",
+    "input_hash": "491c5bbeeb19c2b3a624745c2049a5e6ce0def553eba8417e9a2b8d11ce99e10",
+    "matching_audit_hash": "662204d9f0a5e1d21dd553d06e77224e9616510f347aae7ae5db4df4dd23d69c",
+    "legacy_security_evidence": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "record_hash": "97463283995b9a7e0c30e6b683290be0172a382e9776852f930d50371531b02f",
+    "outputs": [
+      {
+        "path": "US\\2012_01_05_Corporate-Acquisitions_Healthcare_sec.json",
+        "sha256": "c8db7f9886e675513a94cce66f2cec1b3f289295b519451cf6a6b97718e8a1a5"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2012-01-05",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+      "fetched_at": "2026-11-10T22:33:10.861493+00:00",
+      "feature_available_at": "2026-11-10T22:33:18.163699+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:13:53.723208+00:00",
+    "feature_available_at": "2026-11-18T12:13:53.741605+00:00",
+    "commit_verified_at": "2026-11-12T13:52:36.773993+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S",
+        "rationale": "The company-specific event is the acquisition of Butler Schein Animal Health by Henry Schein, which is a direct action taken by the company.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Henry Schein, Inc. (Exact name of registrant as specified in its charter) Delaware 0-27078 11-3136595 (State or other jurisdictionof incorporation) (Commission File Number) (I.R.S",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "We caution that these factors may not be exhaustive and that many of these factors are beyond our ability to control or predict.",
+        "rationale": "The statement is made by the company, indicating that the risks and uncertainties are specific to the company's operations and environment.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We caution that these factors may not be exhaustive and that many of these factors are beyond our ability to control or predict.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact",
+      "industry_dictionary_code_quote_conflict"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-12-002973-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "97463283995b9a7e0c30e6b683290be0172a382e9776852f930d50371531b02f",
+    "content_hash": "279cc9c0298ba66c0e21920310fd89f61386534e768d6b08e918a948dcd30c7d",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:13:53.726427+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3b6952de9045e4275b1ca8e8.json",
+      "sha256": "abfb7e22f55c6cd346bed150189ecfea773a1224dd7308ac8377938799f8637f",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 95.125
+}

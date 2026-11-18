@@ -1,0 +1,97 @@
+{
+  "source_id": "58a3a35678ac5ff9c65839b7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_11_stock_Beauty_cnbc.json",
+      "sha256": "77179f606b34e1861bffe9ad9056441264866ee9214bc7b2da961a884ba09474",
+      "filename": "2021_03_11_stock_Beauty_cnbc.json"
+    }
+  ],
+  "original_record_hash": "95a3b17f1da46c77010158ce01ebda728c87d02b1ff03e968ea931f757a66405",
+  "input_hash": "38570fb7af696db0c006d412d7c12217764597da21d2947892429d809631423a",
+  "matching_audit_hash": "8a53fe92557b59c226b1d3f51981c136cbfaa87561099ed556fd7874f6070695",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a1cd3df58ff52700bc7ba1f112aa841608f03ff686b1989907ecdb68ba592d98",
+    "raw_sha256": "d2b8ea0d75cdb02d64d4f12acd60705c0153b59f6c415deba43df9ece32459c1",
+    "date_quote": "article:published_time=2021-03-11T21:28:26+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Ulta Beauty",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Ulta Beauty"
+    }
+  ],
+  "record_hash": "c8bf812294b4db38265177ba3ac97646d54a780e1a6eddbe7a87747756095e7a",
+  "outputs": [
+    {
+      "path": "US\\2021_03_11_stock_Beauty_cnbc.json",
+      "sha256": "b48a69ebef0cd1f63b0bc2ccb514a559b372ca639d4bbf7d0b727b090c730eb4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:16.149953+00:00",
+    "fetched_at": "2026-11-10T20:19:25.151461+00:00",
+    "feature_available_at": "2026-11-10T20:19:58.334407+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:37.052590+00:00",
+  "commit_verified_at": "2026-11-12T13:53:37.052590+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Ulta Beauty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ulta Beauty"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

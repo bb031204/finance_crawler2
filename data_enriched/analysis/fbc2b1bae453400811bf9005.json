@@ -1,0 +1,91 @@
+{
+  "source_id": "fbc2b1bae453400811bf9005",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_05_27_Finance_Retail_cnbc.json",
+      "sha256": "b434a0389638f6cba0ad1e1abfc19bc20a8e23306aa7a2a4640b070a6b14c7b2",
+      "filename": "2021_05_27_Finance_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "91442ef548508ea89bf6dfa0e88361e251c900b1abc2f06b0ddab012e18bad6c",
+  "input_hash": "c039d344bc4a41f528ef38ae96624d7710ec780de6e87da9762c72ba71ddb1f4",
+  "matching_audit_hash": "08fc1dc176e9406be1e85b981e2df035f75ea19dc837a05b67284be82b653109",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b8e2020d8f4adf239b3dd5ec175fd21c792baa02bedaa4f27098faaa232a6e04",
+    "raw_sha256": "e5a9e6d7a121ebda5155dab179c00c43aea6587bf3f817cbf4024ab9a49864f2",
+    "date_quote": "article:published_time=2021-05-27T11:10:41+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "8fbf69b29e10d407a55154928c3a992c8ab987f1ddc92bb5111b8692542b4fa1",
+  "outputs": [
+    {
+      "path": "US\\2021_05_27_Finance_Retail_cnbc.json",
+      "sha256": "254d31d370781c35d359a4498c8dddc792d74ad1b3b4abce06d9c0954f355064"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-05-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:19.911030+00:00",
+    "fetched_at": "2026-11-10T17:39:36.739319+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.127200+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:35.211334+00:00",
+  "feature_available_at": "2026-11-12T14:55:35.220336+00:00",
+  "commit_verified_at": "2026-11-12T14:55:35.220336+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains financial results, sales growth, CEO commentary, and market performance data for Best Buy.",
+    "securities": [
+      {
+        "name": "Best Buy",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Best Buy"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer electronics",
+        "basis": "explicit",
+        "quote": "consumer electronics demand"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Best Buy": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

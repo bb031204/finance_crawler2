@@ -1,0 +1,97 @@
+{
+  "source_id": "a403e94071f951690e1e5eee",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_05_10_Economy_Employment_cnbc.json",
+      "sha256": "a9dfdca3997f46e8d434eae69aeaa41b29abbf1ea42838a8541a26b786c024a4",
+      "filename": "2022_05_10_Economy_Employment_cnbc.json"
+    }
+  ],
+  "original_record_hash": "bf157307ec857351b5570e777bb9b096b826093bb83ab0b393d7332bbe88728c",
+  "input_hash": "6f88eabac8c2a63b7a6dacc5aa97f5a6c7a974f479390b1e8fa02df78d89f672",
+  "matching_audit_hash": "119a289793852d9a9960d043b912f5a6eac5e25b1a13655b61815cc8dc597893",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e9f473cb7c7bf22ecb494fe1cffd6ea2091a3838030622dcf15095f07b577c33",
+    "raw_sha256": "a7d430478e22bbe7b2c8550a72d975a8695ae0bf829e63dc13dc35ffe3c7e664",
+    "date_quote": "article:published_time=2022-05-10T14:20:26+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Texas A&M University",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Texas A&M University"
+    }
+  ],
+  "record_hash": "60ec1eadc0fe26977b7e1e404653890a878948b749779dbf1a42342251ed9299",
+  "outputs": [
+    {
+      "path": "US\\2022_05_10_Economy_Employment_cnbc.json",
+      "sha256": "0d0f5d4086248393d3a7c43d51aff9659aac25a875e61546603683c0ab37eb00"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-05-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+    "fetched_at": "2026-11-10T19:40:52.333432+00:00",
+    "feature_available_at": "2026-11-10T19:41:16.647486+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:41.320198+00:00",
+  "commit_verified_at": "2026-11-12T13:53:41.320198+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Texas A&M University",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Texas A&M University"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Labor Market",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

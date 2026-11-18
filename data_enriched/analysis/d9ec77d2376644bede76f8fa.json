@@ -1,0 +1,92 @@
+{
+  "source_id": "d9ec77d2376644bede76f8fa",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_27_Financial-Results_Mortgage_sec.json",
+      "sha256": "954d6fcb8c8c82484ed0a2a7e4c941df7f469fd14c4a62ff1b7eb9a7aba6ba13",
+      "filename": "2015_03_27_Financial-Results_Mortgage_sec.json"
+    }
+  ],
+  "original_record_hash": "ec68ff694eefbbe6d56f599b15943d471e994916119bee27b990561702d21e4c",
+  "input_hash": "c18e512cacd81bb138ba75e46ea79e379712c1a8520dc6ef33c9fae5bc6c533c",
+  "matching_audit_hash": "df30d3e8fde7a5ff0fd3ca5eda04e5a6cd0ae5ad777ef867ab8bb44fa0b58ed6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "095e73c7fadd86c6f2e874f44790e31da5fe62a87cabdc1d5e8a0ba87b1c3742",
+    "raw_sha256": "33683d8e2328939f2557e8188b8aec45077de84ea5085dace65cc629a8da1292",
+    "date_quote": "SEC filing datePublished=2015-03-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465915023179/a15-7760_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Impac Mortgage Holdings, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Impac Mortgage Holdings, Inc."
+    }
+  ],
+  "record_hash": "73c4af747859eb52cce4d86708ea61bf733ce8ad8105c4bbd34b6be537283f07",
+  "outputs": [
+    {
+      "path": "US\\2015_03_27_Financial-Results_Mortgage_sec.json",
+      "sha256": "d3720810a97b42400dfb0b27f42be16710f8f126fb405d041db9a152ae94d017"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:23:36.192292+00:00",
+    "feature_available_at": "2026-11-11T10:37:13.776220+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:26:02.740145+00:00",
+  "feature_available_at": "2026-11-12T14:26:02.769320+00:00",
+  "commit_verified_at": "2026-11-12T14:26:02.769320+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses financial results and operational activities of Impac Mortgage Holdings, Inc., providing insights into its financial performance and business",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Impac Mortgage Holdings, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

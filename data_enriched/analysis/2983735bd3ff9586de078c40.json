@@ -1,0 +1,193 @@
+{
+  "source_id": "2983735bd3ff9586de078c40",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_12_19_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "2b9a8806b3c950f26c470728b2d621ed0d42a5730ea7833fe2e1a8bf8f5bd1c8",
+      "filename": "2018_12_19_Monetary-Policy_Central-Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "70b998c2d47dc5d1490736a139f070984d3260ea5ae72e35c3e6e7285f183b17",
+  "input_hash": "aa6bad71401fdbacbf1bf3cfc619df723ed42deafaca912bed6661cf5fc11eb5",
+  "matching_audit_hash": "e5eb3637078c7d97f3a3b8e87e1edccd69b83fde5c88f47c11875eefbe7aa795",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e84bab6011be5cd8905be930fc422aafd595c7e4505e099bdb62057d752c2592",
+    "raw_sha256": "b9a28b7935d4ff9533b129c998b6f80ce82fae7eabf6fd843d0187e820320996",
+    "date_quote": "Implementation Note issued December 19, 2018",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "f3701a8c51822d9f6583db205442e5f6fa7def542901fc5943102b7daac710ca",
+  "outputs": [
+    {
+      "path": "US\\2018_12_19_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "4e7517066df9dd6979a277b4287941574f2a4a746547e69fd921c1ca709b0f74"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-12-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:22.095696+00:00",
+    "fetched_at": "2026-11-10T11:12:20.561218+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.751769+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:10:17.275633+00:00",
+  "feature_available_at": "2026-11-12T15:16:44.471369+00:00",
+  "commit_verified_at": "2026-11-12T15:16:44.471369+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Monetary policy adjustments and interest rate changes",
+    "securities": [
+      {
+        "name": "Federal Reserve Board",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Board"
+      },
+      {
+        "name": "Federal Open Market Committee (FOMC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Open Market Committee (FOMC)"
+      },
+      {
+        "name": "Board of Governors",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Board of Governors"
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Monetary Policy",
+        "basis": "explicit",
+        "quote": "Monetary Policy"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve Board": "organization",
+      "Federal Open Market Committee (FOMC)": "organization",
+      "Board of Governors": "organization",
+      "Federal Reserve Bank of New York": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:44.481377+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:10:17.275633+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Monetary policy adjustments and interest rate changes",
+      "securities": [
+        {
+          "name": "Federal Reserve Board",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Board"
+        },
+        {
+          "name": "Federal Open Market Committee (FOMC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Open Market Committee (FOMC)"
+        },
+        {
+          "name": "Board of Governors",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Board of Governors"
+        },
+        {
+          "name": "Federal Reserve Bank of New York",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Bank of New York"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Monetary Policy",
+          "basis": "explicit",
+          "quote": "Monetary Policy"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "Federal Reserve Board": "organization",
+        "Federal Open Market Committee (FOMC)": "organization",
+        "Board of Governors": "organization",
+        "Federal Reserve Bank of New York": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:10:17.301171+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:10:17.310175+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:10:17.292362+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses monetary policy actions by the Federal Reserve Board, including interest rate changes and open market operations, which are relevant to macro",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:46:53.689341+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "ae82a249232814be310f55bc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_20_Earnings_Technology_sec.json",
+      "sha256": "b1c5e360f6bdd83ec7731da9a17a2e1875e9e6e2663affaa2036d461f944fa9c",
+      "filename": "2020_02_20_Earnings_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "4b2f040c2e24d3e4aaa7df4a17bb710edd6234c1b35b6d39c2559f0f3cab99ff",
+  "input_hash": "a1de5c90dd7ea3e8158fb84ccd250b2585743c17c47281334f6ceccf9ec5a01e",
+  "matching_audit_hash": "b1d8cb1b6cdd1c5e6d4a74655af58289d1be23d1e07d9f6567aaf25c30f1cf5f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "871babeaef132fe7a81dfcb239442c109e94d1b191e64026289dee5d9b2366f2",
+    "raw_sha256": "3c1c6a074378421036b768116d871fd8f7e7f255a98181a629322c4a0b1fce24",
+    "date_quote": "SEC filing datePublished=2020-02-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062320000024/q42019form8-kearnings.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "62a951f8e488d171f29e24af676db446e1008c42125367a974ed505fd3f5baed",
+  "outputs": [
+    {
+      "path": "US\\2020_02_20_Earnings_Technology_sec.json",
+      "sha256": "23af1cd0df91bc243eb111dd6ae0edf93614087eb2a49ea0118655756cd9bcea"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.200963+00:00",
+    "fetched_at": "2026-11-11T15:02:17.574712+00:00",
+    "feature_available_at": "2026-11-11T15:02:35.270962+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:55.571072+00:00",
+  "feature_available_at": "2026-11-12T14:51:55.582072+00:00",
+  "commit_verified_at": "2026-11-12T14:51:55.582072+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text contains financial results and disclosure information related to a company's quarterly earnings report, which is part of its regular SEC filing process",
+    "securities": [
+      {
+        "name": "company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "company"
+      },
+      {
+        "name": "Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Securities and Exchange Commission (SEC)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Securities and Exchange Commission (SEC)"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "company": "organization",
+      "Securities and Exchange Commission": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

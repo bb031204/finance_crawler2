@@ -1,0 +1,96 @@
+{
+  "source_id": "e35fe21ef14f87a1257951b1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_12_22_Financial-Regulation_Financial-Services_treasury.json",
+      "sha256": "4386190139350457d75f1a48a9d04a8e0a613c9e9918ed9fbc7dd16b8fe8a7f2",
+      "filename": "2020_12_22_Financial-Regulation_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "004281c8af90a0962184e71d7a76d9dfb630b1d222bbcf76c26e7b0f69b3110e",
+  "input_hash": "24bc6d0309a68fe51f5cee8b92bd2b80aa65d12d3ee29831b5a266927bb848a5",
+  "matching_audit_hash": "2f60cd872ff579aa7537e12d5fb7cab80b060c69ff943ab2d2dc3fbbc45a5701",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1b97acf915219ea316d3acb9592338e5020c07690b49d1ecb5302432d3fc7830",
+    "raw_sha256": "f6947514ae03f038fd5b9eb028cd50c29a394606a29afa8d28677af22f2c7433",
+    "date_quote": "December 22, 2020",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "President’s Working Group on Financial Markets",
+      "ticker": null,
+      "exchange": null,
+      "quote": "President’s Working Group on Financial Markets"
+    }
+  ],
+  "record_hash": "97aac63eea3955bea6f047c1ab3654a4176c68a3467a3a5d5ecb3d8b196dea35",
+  "outputs": [
+    {
+      "path": "US\\2020_12_22_Financial-Regulation_Financial-Services_treasury.json",
+      "sha256": "b99616a845de5c01f52c37618feb0ab88d1132066215b7fcd030ed78fac771d2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-12-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:09.143950+00:00",
+    "fetched_at": "2026-11-11T02:12:22.637064+00:00",
+    "feature_available_at": "2026-11-11T02:12:31.265643+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:35.299027+00:00",
+  "commit_verified_at": "2026-11-12T13:53:35.299027+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "President’s Working Group on Financial Markets",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President’s Working Group on Financial Markets"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

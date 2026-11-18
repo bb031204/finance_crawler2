@@ -1,0 +1,109 @@
+{
+  "source_id": "7b2f5fae7836fde29301ca59",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_03_17_Finance_Biotechnology_cnbc.json",
+      "sha256": "21775a8f4174a90509a5b99efe2ec2dbd371dec1b7f21d9b1d2806531da31823",
+      "filename": "2022_03_17_Finance_Biotechnology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "c75aa0bc1c476cb7663445b061a40f4f869bc6a7722f3c0790895b9a8c1d7131",
+  "input_hash": "a714ea39f249b4b307e882ccdbe1381bd2910202824c5be39cdfedbfc9639809",
+  "matching_audit_hash": "744b7810fd68bb584a48b67ec936dae5ed2d6cd2627dfc76a3aded06dd43813b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7734fb5bb92703ea9d6767ef94987eec8985ad1aba1441ee137906bdee124bfd",
+    "raw_sha256": "2d48b3750f3cd539d6837ce81e673e1f87aa3927e07fdf40afe2293d275cbe81",
+    "date_quote": "article:published_time=2022-03-17T12:35:24+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Moderna",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Moderna"
+    },
+    {
+      "name": "Boston Biotech Ventures",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Boston Biotech Ventures is a limited liability company that provides angel investing to start-ups in the Boston area and files patents to launch new companies"
+    }
+  ],
+  "record_hash": "7a38be874db67f3fc1e3f1e42a53869819f702991b51200db079f6966b2cb501",
+  "outputs": [
+    {
+      "path": "US\\2022_03_17_Finance_Biotechnology_cnbc.json",
+      "sha256": "92a2c983f76281d3904b8db6f1ad3e7306ca965edc8762b437b1ac4bf49cff11"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-03-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:38:01.991764+00:00",
+    "fetched_at": "2026-11-10T20:57:22.958288+00:00",
+    "feature_available_at": "2026-11-10T20:58:08.631575+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:40.433044+00:00",
+  "commit_verified_at": "2026-11-12T13:53:40.433044+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Moderna",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Moderna"
+      },
+      {
+        "name": "Boston Biotech Ventures",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Boston Biotech Ventures is a limited liability company that provides angel investing to start-ups in the Boston area and files patents to launch new companies"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceuticals",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

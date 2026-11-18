@@ -1,0 +1,92 @@
+{
+  "source_id": "d0e34e3413c696258a007a8c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_02_Financial-Agreement_Telecommunications-Equipment_sec.json",
+      "sha256": "71145030f0dbc534788eee98dee604834b6e1f01472308e2e47eb50cc63719e1",
+      "filename": "2017_03_02_Financial-Agreement_Telecommunications-Equipment_sec.json"
+    }
+  ],
+  "original_record_hash": "b56c2f61d4978cdc3f50bfdaca3e706d89df6f8d75224968e9ed3e269ff81e0c",
+  "input_hash": "7db02145905dcfe8a99ec23daad1854520242ed1ef9a6fb835bec41764bb0aca",
+  "matching_audit_hash": "af10cec3bdf6cb56a5b8e420d843a5fdbadc8b57b0415020429f5b4d8e231ce6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "60c23da3826f35d511807bf73681d45d863f47192b64194b5aadafb30137fc37",
+    "raw_sha256": "2f7ee0e6783c9d5afc877abdff5b68b1f876fd1b63a3d38f97663fec7f2825f3",
+    "date_quote": "SEC filing datePublished=2017-03-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774917003633/occ20170302_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Optical Cable Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Optical Cable Corporation"
+    }
+  ],
+  "record_hash": "d6fe7b9405c6a18f3111aa91f374358c92aaad23b859858d1bf3183eb930bf8a",
+  "outputs": [
+    {
+      "path": "US\\2017_03_02_Financial-Agreement_Telecommunications-Equipment_sec.json",
+      "sha256": "c56856f2e0482b873d135c332182a404acb5196e796c218b99070145b5c332d4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+    "fetched_at": "2026-11-11T12:02:25.357406+00:00",
+    "feature_available_at": "2026-11-11T12:02:40.534529+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:26.938692+00:00",
+  "feature_available_at": "2026-11-12T14:39:26.966788+00:00",
+  "commit_verified_at": "2026-11-12T14:39:26.966788+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a financial agreement involving Optical Cable Corporation, including a loan modification, interest rate, and outstanding balance.",
+    "securities": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Optical Cable Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

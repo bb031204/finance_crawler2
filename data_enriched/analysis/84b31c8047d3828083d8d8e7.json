@@ -1,0 +1,106 @@
+{
+  "source_id": "84b31c8047d3828083d8d8e7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_27_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "1d9753684e862889657b2ec89eb56fd2ec392ed4440c66202645da9e97ecbac9",
+      "filename": "2015_01_27_Mergers-&-Acquisitions_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "5b04bb26e978f76861b3536fe340869afd5cec2bf1fd893ce5af575ddbaa53d2",
+  "input_hash": "d9361bab1926e1ea0a2314337d915a9d75bf14081e516331dd17343dd71baabd",
+  "matching_audit_hash": "de652be3493c7be9a1b299f8703b07146aeae4765acf8b732c82cbedc0cd82a1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "09c27f70b417ac68a100702e8c553bb7fce56839285872941bbaf132f7dde569",
+    "raw_sha256": "e43d2f34f100c98e64482c6a3fbbee24be80272cbb2d722304c22368eb05c343",
+    "date_quote": "SEC filing datePublished=2015-01-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000110465915004602/a15-3043_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3f3868c8d002717fec5d1faab4ad4000326034d6caabb8b86a2eb8273df47b02",
+  "outputs": [
+    {
+      "path": "US\\2015_01_27_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "62ddb4d9c5b5193d71c629d44ce5886ef3dcbcae51304b76cc6d344a8e35ce67"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:21:10.284514+00:00",
+    "feature_available_at": "2026-11-11T10:35:57.088541+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:19:59.463401+00:00",
+  "feature_available_at": "2026-11-12T14:19:59.473448+00:00",
+  "commit_verified_at": "2026-11-12T14:19:59.473448+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a merger and acquisition, including the companies involved, the terms of the exchange, risks, and regulatory approvals.",
+    "securities": [
+      {
+        "name": "Kentucky Bancshares Inc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kentucky Bancshares Inc"
+      },
+      {
+        "name": "Madison Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Madison Financial Corporation"
+      },
+      {
+        "name": "Madison Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Madison Bank"
+      },
+      {
+        "name": "Kentucky Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kentucky Bank"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Kentucky Bancshares Inc": "company",
+      "Madison Financial Corporation": "company",
+      "Madison Bank": "company",
+      "Kentucky Bank": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

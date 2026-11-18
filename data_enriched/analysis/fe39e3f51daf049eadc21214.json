@@ -1,0 +1,237 @@
+{
+  "source_id": "fe39e3f51daf049eadc21214",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_04_25_Technology_Venture-Capital_cnbc.json",
+      "sha256": "c664ac1818ed9a0a52cb2e713e6b5f286ba67b06900a303ce2bba1132d71a69f",
+      "filename": "2012_04_25_Technology_Venture-Capital_cnbc.json"
+    }
+  ],
+  "original_record_hash": "6b3e71263f33bae77575477f7bd13fc0ce1cad1de8e12a14260001f82290b3ad",
+  "input_hash": "8c7dd79f4ecd20abe667bd8dea7213e2878c51dd37f52c0c188b71d7c81346b1",
+  "matching_audit_hash": "108c5c8ac2280f14e44272e016d840e9274f2537f22577da623e3d5c629fe094",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c75905f1fe57d86a457889b05c84be31bbdbe9f44bada50bfb1cdc85507801b8",
+    "raw_sha256": "edc073eba5fd9459e9c19e357906ac1b9c0dbd33b885efe4b3ae8d2ba81268d1",
+    "date_quote": "article:published_time=2012-04-25T21:20:49+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1e420ba8391cb2ec828371aca3ae9fca9256b18661edce27b4cdf76f0b54a969",
+  "outputs": [
+    {
+      "path": "US\\2012_04_25_Technology_Venture-Capital_cnbc.json",
+      "sha256": "99b69c5df58abc6202eae661b62d6f8219689e50f58ce7551198172a5912aa47"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-04-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:06.652619+00:00",
+    "fetched_at": "2026-11-10T15:44:55.459257+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.682515+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:59:16.810927+00:00",
+  "feature_available_at": "2026-11-12T15:16:33.488710+00:00",
+  "commit_verified_at": "2026-11-12T15:16:33.488710+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "VC firm's philanthropy and investment portfolio",
+    "securities": [
+      {
+        "name": "Andreessen Horowitz",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Andreessen Horowitz, a prominent venture capital firm based in Menlo Park"
+      },
+      {
+        "name": "Facebook",
+        "ticker": null,
+        "exchange": null,
+        "quote": "backed over 100 companies, including Facebook"
+      },
+      {
+        "name": "Groupon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Groupon"
+      },
+      {
+        "name": "Twitter",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Twitter"
+      },
+      {
+        "name": "Zynga",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Zynga"
+      },
+      {
+        "name": "Foursquare",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Foursquare"
+      },
+      {
+        "name": "Instagram",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Instagram"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Venture Capital",
+        "basis": "explicit",
+        "quote": "venture capital firm"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Andreessen Horowitz": "organization",
+      "Facebook": "company",
+      "Groupon": "company",
+      "Twitter": "company",
+      "Zynga": "company",
+      "Foursquare": "company",
+      "Instagram": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:33.510011+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:59:16.810927+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "VC firm's philanthropy and investment portfolio",
+      "securities": [
+        {
+          "name": "Andreessen Horowitz",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Andreessen Horowitz, a prominent venture capital firm based in Menlo Park"
+        },
+        {
+          "name": "Facebook",
+          "ticker": null,
+          "exchange": null,
+          "quote": "backed over 100 companies, including Facebook"
+        },
+        {
+          "name": "Groupon",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Groupon"
+        },
+        {
+          "name": "Twitter",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Twitter"
+        },
+        {
+          "name": "Zynga",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Zynga"
+        },
+        {
+          "name": "Foursquare",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Foursquare"
+        },
+        {
+          "name": "Instagram",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Instagram"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Venture Capital",
+          "basis": "explicit",
+          "quote": "venture capital firm"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Andreessen Horowitz": "organization",
+        "Facebook": "company",
+        "Groupon": "company",
+        "Twitter": "company",
+        "Zynga": "company",
+        "Foursquare": "company",
+        "Instagram": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:59:16.836025+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:59:16.845029+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:16.827025+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses Andreessen Horowitz's philanthropic pledge, which includes significant financial commitments and mentions their investment in notable tech/VC",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:57:32.773798+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

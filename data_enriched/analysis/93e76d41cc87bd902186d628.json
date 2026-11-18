@@ -1,0 +1,96 @@
+{
+  "source_id": "93e76d41cc87bd902186d628",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_03_04_Legal-Dispute-Resolution_Utilities_sec.json",
+      "sha256": "cfc165e54c391c6cdbae500f91ed554adcca12c99997333dc92587b2cacbbdb0",
+      "filename": "2016_03_04_Legal-Dispute-Resolution_Utilities_sec.json"
+    }
+  ],
+  "original_record_hash": "6187e9fce97c486675c4194b6df5cf43583007ffe2dad80e9f212dcc75e85d8d",
+  "input_hash": "670151bf54df3f9258de3c31babd7b542965239b6b287306afeafda0bd0c474e",
+  "matching_audit_hash": "294ef615cdbf24e206d03c50b0bd2377650c1dcedc217e36f5e37ad0e81a47b2",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ddc4254a3e04e455fc6efa9eb7e6bfb1284adfbb68c9ec431d4b30c63550dc43",
+    "raw_sha256": "cedf15ef7bbabade7c3cdd75a429607ffb4808f1470c66c5b3f36b76a55e4e1f",
+    "date_quote": "SEC filing datePublished=2016-03-04",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/100122/000010012216000038/a8-k_tepagreementforsettle.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Tucson Electric Power Company",
+      "ticker": "TEP",
+      "exchange": null,
+      "quote": "Tucson Electric Power Company (TEP)"
+    }
+  ],
+  "record_hash": "c3569a01618c01b3600771206da57547614d0e848cb3c54aa3394a3bde67a2b7",
+  "outputs": [
+    {
+      "path": "US\\2016_03_04_Legal-Dispute-Resolution_Utilities_sec.json",
+      "sha256": "68c940e015f8b0b244574e615049d1a3c7ab2db75d751d0e2e85f79b4a54cdc3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-03-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.850017+00:00",
+    "fetched_at": "2026-11-11T01:25:50.463654+00:00",
+    "feature_available_at": "2026-11-11T11:15:53.104812+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:06.870028+00:00",
+  "commit_verified_at": "2026-11-12T13:53:06.870028+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Tucson Electric Power Company",
+        "ticker": "TEP",
+        "exchange": null,
+        "quote": "Tucson Electric Power Company (TEP)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Utilities",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

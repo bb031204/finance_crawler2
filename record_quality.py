@@ -57,11 +57,24 @@ def prepare_record_audit(root, row, note, page, candidate, model, market, paths=
         "summary_cleanup":note.get('summary_cleanup',[]),
         "record_paths":[str(p.relative_to(root)) for p in paths],"raw_deleted":[],"cleanup_errors":[]}
     if page.get("document_url"): audit["source_document_url"] = page["document_url"]
+    if page.get('sec_documents'):
+        audit['source_documents']=page['sec_documents']
+        audit['sec_document_version']=page['sec_document_version']
+        audit['sec_document_policy']=page['sec_document_policy']
+        audit['sec_index_sha256']=page.get('sec_index_sha256')
+        audit['sec_unread_exhibits']=page.get('sec_unread_exhibits',[])
+    audit['numeric_evidence_version']=note.get('numeric_evidence_version')
     audit['request_url']=canonical(candidate.get('url',page['url']))
     if 'title' in row:
         audit['title']=row['title']
         audit['title_origin']=page.get('title_origin','legacy_page_title')
     if page.get('article_binding_version'):audit['article_binding_version']=page['article_binding_version']
+    if page.get('removed_inline_xbrl_headers'):
+        audit['source_cleaning']={'removed_nonvisible_inline_xbrl_headers':page['removed_inline_xbrl_headers']}
+    from market_relations import relation_audit
+    audit.update(relation_audit(note,page,row,model))
+    from market_scope import evidence_pack
+    evidence_pack(row,audit,page['text'])  # reject broken quotes before the formal JSON transaction
     return audit
 
 
@@ -83,23 +96,18 @@ def finalize_record(root, dataset, row, note, page, candidate, model, page_path,
         audit=prepare_record_audit(root,row,note,page,candidate,model,dataset.rows[identity][0],paths.values())
         dump(audit_path,audit)
     if json.loads(audit_path.read_text(encoding="utf-8"))["record_hash"]!=digest(row):raise ValueError("审计写入失败，保留原文")
-    if delete_raw:
-        candidates=[]
-        page_path=bounded(page_path,root)
-        if page_path.parent==root/".runtime/simple/pages" and page_path.suffix==".json" and page_path.exists():
-            cached=json.loads(page_path.read_text(encoding="utf-8"))
-            if canonical(cached.get("url",""))==canonical(page["url"]) and digest(cached.get("text","").encode("utf-8"))==audit["source_body_hash"]:
-                candidates.append(page_path)
-        # Old validation originals are removable only when their exact raw hash is known.
-        if page.get("raw_sha256"):
-            for key in {identity,source_id(candidate["url"])}:
-                for extension in [".html",".htm",".pdf"]:
-                    path=bounded(root/".runtime/validation"/(key+extension),root)
-                    if path.is_file() and digest(path.read_bytes())==page["raw_sha256"]:candidates.append(path)
-        for path in candidates:
-            try:path.unlink();audit["raw_deleted"].append(str(path.relative_to(root)))
-            except OSError as error:audit["cleanup_errors"].append({"path":str(path.relative_to(root)),"reason":str(error)[:160]})
-        dump(audit_path,audit)
+    if not delete_raw:raise ValueError('提炼成功后不允许长期保留原文')
+    from market_scope import evidence_pack,validate_pack
+    proof_path=bounded(root/'.runtime/simple/evidence'/(identity+'.json'),root)
+    proof=evidence_pack(row,audit,page['text'])
+    dump(proof_path,proof)
+    loaded=json.loads(proof_path.read_text(encoding='utf-8'))
+    validate_pack(loaded,row,audit)
+    audit['evidence_pack']={'path':str(proof_path.relative_to(root)),'sha256':digest(proof_path.read_bytes()),'schema_version':loaded['schema_version']}
+    dump(audit_path,audit)
+    if json.loads(audit_path.read_text(encoding='utf-8')).get('evidence_pack')!=audit['evidence_pack']:raise ValueError('evidence_pack_readback_failed')
+    from raw_cleanup import cleanup_page
+    cleanup_page(root,page_path,page,identity,'success',audit)
     return audit
 
 

@@ -1,0 +1,121 @@
+{
+  "source_id": "f3185e89d706d93b4cc5fa0c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_21_Financial-Amendment_Financial-Services_sec.json",
+      "sha256": "8374f2e50f5b1eaf180fafe72406a198235dc2ef162940082809ebc1ef344942",
+      "filename": "2015_01_21_Financial-Amendment_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "77becd6d95bba15bb182d368de7db96e349fa8ec21c8e0ab376bb337ed54487d",
+  "input_hash": "8f7b0625247fcc5aecab473093609ca2c2fcce5437d1e0979e7b696a158bec30",
+  "matching_audit_hash": "c0e985db5854435704de2afc51e4a64efb7e23e22a47a51b8ec550c9b8fc24d8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "771a5cb522d90493b0ccfc031935aef273eaa2355967123bf4a2bcce9ef4eb74",
+    "raw_sha256": "abb55f961de6ce088e04181caa9b6f9cdf418304db86311e03ff972cffabbe4c",
+    "date_quote": "Date of Report (Date of earliest event reported): January 21, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794215000002/blonder8k012115.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    },
+    {
+      "name": "R. L. Drake Holdings, LLC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "R. L. Drake Holdings, LLC"
+    },
+    {
+      "name": "Santander Bank, N.A.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Santander Bank, N.A."
+    }
+  ],
+  "record_hash": "a8b5a3fa75872ed246e2b0560ae3408043151a1b5d8556044a06948c5a1cde27",
+  "outputs": [
+    {
+      "path": "US\\2015_01_21_Financial-Amendment_Financial-Services_sec.json",
+      "sha256": "7690e5a385c3d4bd1b2bc71c6f961d032b16daa808fe2a14c94cdc9d8df9d402"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:25:17.047906+00:00",
+    "feature_available_at": "2026-11-11T00:25:47.716746+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.076132+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.076132+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      },
+      {
+        "name": "R. L. Drake Holdings, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "R. L. Drake Holdings, LLC"
+      },
+      {
+        "name": "Santander Bank, N.A.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Santander Bank, N.A."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

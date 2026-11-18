@@ -1,0 +1,275 @@
+{
+  "source_id": "026988bda15b65af12ffc92f",
+  "status": "completed",
+  "source_record_hash": "0c549b633c673a7d8e6f60f1529115eb099373a36840733b3c010dd4b648243a",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001214659-12-001067-index.html",
+    "attempted_at": "2026-11-18T07:15:29.801248+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "884a02bbd6642c06ce76107198946313dfe6255f75bf2b6e01d40e7de8ec1920"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/026988bda15b65af12ffc92f.json",
+    "sha256": "48883d43263088472fba104ccd34397476c20d047c405217ad7949590d61f366",
+    "bundled_path": "legacy_audit/026988bda15b65af12ffc92f.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4107c13e0f9af6eedae666b15c617094ae04c3d73413d3f8f6e3e82b5ea02f0b",
+      "llm_inferred_at": "2026-11-18T07:15:44.733164+00:00",
+      "model_duration_seconds": 9.8778422,
+      "prompt_tokens": 2041,
+      "completion_tokens": 506,
+      "selection": [
+        {
+          "source_id": "026988bda15b65af12ffc92f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes.",
+              "rationale": "The report is related to the financial institution's issuance of notes, which is an industry activity within the financial services sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The filing includes information about the reverse convertible notes linked to Cliffs Natural Resources Inc.",
+              "rationale": "The report specifically mentions the company's actions related to the issuance of notes, indicating a company-specific impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "The filing includes information about the reverse convertible notes linked to Cliffs Natural Resources Inc."
+            },
+            {
+              "industry_key": "TRSR:0780938707f106d7",
+              "name": "Savings Institutions",
+              "basis": "explicit",
+              "quote": "The report also includes legal opinions from Norton Rose Canada LLP and Morrison & Foerster LLP regarding the validity of the notes under Canadian and New York law."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "0f5df895c456a2914244f71979811292cfe35cb4da79dfc7cf88d2a69903dd6f",
+      "llm_inferred_at": "2026-11-18T07:15:53.725806+00:00",
+      "model_duration_seconds": 8.9871454,
+      "prompt_tokens": 2085,
+      "completion_tokens": 488,
+      "selection": [
+        {
+          "source_id": "026988bda15b65af12ffc92f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The filing includes information about the reverse convertible notes linked to Cliffs Natural Resources Inc.",
+              "rationale": "The article discusses financial instruments linked to a specific company, indicating an industry-level impact on financial services.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "company",
+              "quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes.",
+              "rationale": "The report is directly related to Royal Bank of Canada, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "The filing includes information about the reverse convertible notes linked to Cliffs Natural Resources Inc."
+            },
+            {
+              "industry_key": "TRSR:0780938707f106d7",
+              "name": "Savings Institutions",
+              "basis": "explicit",
+              "quote": "The filing is part of the Bank’s shelf registration statement on Form F-3 (File No."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:15:53.736708+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "884a02bbd6642c06ce76107198946313dfe6255f75bf2b6e01d40e7de8ec1920",
+    "raw_sha256": null,
+    "date_quote": "Published=2012-03-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000121465912001067/a381206k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "name": "Commercial Banks",
+        "basis": "inferred",
+        "quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "026988bda15b65af12ffc92f",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_03_08_Financial_Banking_sec.json",
+        "sha256": "03b96e93b99a8d4761043764308f280fc4324b1e0c60f5c8f4d2f1d4fbdc77f2",
+        "filename": "2012_03_08_Financial_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "bbe60c65a0769c7858b9b250995d070f8f937d6244830f23207dfc9b06993acf",
+    "input_hash": "9a682025f2530e8ce7b56a8bbefc14f2207750be28ec34205d31d9374d374dc1",
+    "matching_audit_hash": "6820d4c4441acda63b08aecb1b862f808bfe443479a2bf60b1d57ccf571ce536",
+    "legacy_security_evidence": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "record_hash": "0c549b633c673a7d8e6f60f1529115eb099373a36840733b3c010dd4b648243a",
+    "outputs": [
+      {
+        "path": "US\\2012_03_08_Financial_Banking_sec.json",
+        "sha256": "2223103ca328bffdd528a7f5cdd2d7d1f1d7a6d986af4fd9861197f16e8d2d34"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2012-03-08",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.195879+00:00",
+      "fetched_at": "2026-11-10T22:46:20.896556+00:00",
+      "feature_available_at": "2026-11-10T22:46:29.196216+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:15:53.725806+00:00",
+    "feature_available_at": "2026-11-18T07:15:53.736708+00:00",
+    "commit_verified_at": "2026-11-12T13:52:39.788569+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes.",
+        "rationale": "The report is directly related to Royal Bank of Canada, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "This report is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, detailing the issuance of various senior global medium-term notes."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/0001214659-12-001067-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "0c549b633c673a7d8e6f60f1529115eb099373a36840733b3c010dd4b648243a",
+    "content_hash": "884a02bbd6642c06ce76107198946313dfe6255f75bf2b6e01d40e7de8ec1920",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:15:53.726902+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/026988bda15b65af12ffc92f.json",
+      "sha256": "3929a201816dac1d7448abdbd5dbcc32393be8017a6cb304de60279b62839332",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 23.953000000008615
+}

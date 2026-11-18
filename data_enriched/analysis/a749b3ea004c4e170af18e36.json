@@ -1,0 +1,97 @@
+{
+  "source_id": "a749b3ea004c4e170af18e36",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_07_26_Finance_Automotive_cnbc.json",
+      "sha256": "544946d21d2f03fdaa4858e0b768e24f43a5e3dd13ac52853c55739670ff5267",
+      "filename": "2017_07_26_Finance_Automotive_cnbc.json"
+    }
+  ],
+  "original_record_hash": "08e7fd19cfe07a7adba7ca9a53ad30ad59cfde10dbe8e9010e3675f0de493ffe",
+  "input_hash": "6d83e286bbe8bad134d52e2542607fcf2e7030de00ed4eb2dbae6d59ea0a4fed",
+  "matching_audit_hash": "cfcc0fd299b0d0dc65090edeb1f65330c3082102c9a620c0b2704f0bfb9f7121",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5d1ed2baeeb850c1b4f221dca0273f96a0551763cf1d12c3e16e2265770a629e",
+    "raw_sha256": "88ca597aa2c0935f9f6fecc0e238ffce0c772b4aec5ba5d0e2b93b3a29563b6d",
+    "date_quote": "article:published_time=2017-07-26T16:20:05+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Ford",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Ford's second-quarter earnings topped analysts' expectations on Wednesday, helped by strong performance at its financing arm, higher sales of its F-Series and other trucks and a lower-than-expected tax rate."
+    }
+  ],
+  "record_hash": "4c8c376ab29c25f483bf171b6c657c078a015b7f35250260a6eb62d25af65cce",
+  "outputs": [
+    {
+      "path": "US\\2017_07_26_Finance_Automotive_cnbc.json",
+      "sha256": "adad8c2d4797e9b555eb00a9ba3c718ab3809de9107a9a52435a7e3b10276d1d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-07-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:59.414568+00:00",
+    "fetched_at": "2026-11-10T19:58:13.135086+00:00",
+    "feature_available_at": "2026-11-10T19:58:46.423976+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:15.823111+00:00",
+  "commit_verified_at": "2026-11-12T13:53:15.823111+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Ford",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ford's second-quarter earnings topped analysts' expectations on Wednesday, helped by strong performance at its financing arm, higher sales of its F-Series and other trucks and a lower-than-expected tax rate."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

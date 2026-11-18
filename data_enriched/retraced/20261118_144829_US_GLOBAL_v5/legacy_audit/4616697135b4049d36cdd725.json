@@ -1,0 +1,117 @@
+{
+  "source_id": "4616697135b4049d36cdd725",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_04_11_Financial_Banking_cnbc.json",
+      "sha256": "0d88bac38ed330616a32a35dfe9b91c17e2f81491d699c961f5ba81bd072f935",
+      "filename": "2019_04_11_Financial_Banking_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f0322f023802dabc196f63f86ec18639e4703f28c8842afb3d135ffc9f346f61",
+  "input_hash": "7d16574b439ea5b6e136de2d03b5af88618cad6d61ac016ba74d27779e056568",
+  "matching_audit_hash": "107a8a1941acbbcb1d59086be25b8e211c6d6f76abd97d9f2949f47bb81b6d8c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a017ad9c891c0cc8bbceaaf57f483b92f9de5298097f693b1cc9cb30a0685993",
+    "raw_sha256": "bef2833e7c9f1959ef20d0b34b9403a97573ecbf0cdb6a7cae7aacd05cf94867",
+    "date_quote": "article:published_time=2019-04-11T17:18:06+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b79c3728f5e1fee9e9a853a573e0984b52e8500a80a8698798d14711ed435d59",
+  "outputs": [
+    {
+      "path": "US\\2019_04_11_Financial_Banking_cnbc.json",
+      "sha256": "78b27bd39acd5af2a4a69e2dac844c497956dd67f44ecf1b8d6b651458947977"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-04-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:45.964112+00:00",
+    "fetched_at": "2026-11-10T10:42:11.237847+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.250013+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:48.188935+00:00",
+  "feature_available_at": "2026-11-12T14:48:48.210633+00:00",
+  "commit_verified_at": "2026-11-12T14:48:48.210633+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the growth and risks of shadow banking, including its role in the 2008 crisis, regulatory oversight, and potential impacts on financial稳定性.",
+    "securities": [
+      {
+        "name": "Shadow banking",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shadow banking"
+      },
+      {
+        "name": "DBRS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DBRS, a bond ratings agency"
+      },
+      {
+        "name": "J.P. Morgan Chase",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J.P. Morgan Chase"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial services",
+        "basis": "inferred",
+        "quote": "shadow banking"
+      },
+      {
+        "name": "Bond ratings",
+        "basis": "explicit",
+        "quote": "bond ratings agency"
+      },
+      {
+        "name": "Investment management",
+        "basis": "inferred",
+        "quote": "collective investment vehicles"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Shadow banking": "company",
+      "DBRS": "company",
+      "J.P. Morgan Chase": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "source_id": "2719d2804e77937ff9d21591",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_01_05_17_30_Energy_Energy_fool.json",
+      "sha256": "cef9cfb1719c0d05869096403d69ce071e2dfde2c302813707e64c779f9df0f6",
+      "filename": "2017_01_05_17_30_Energy_Energy_fool.json"
+    }
+  ],
+  "original_record_hash": "26120274c8461264dab25fa35682ab804a21a1fb898e656f030995a116959653",
+  "input_hash": "c214027642a626fa52b327d8622d168571a5c66d36ffc41dd8fbb1cfd0c113bf",
+  "matching_audit_hash": "32c4bb25d7dbd3bcdcc8d68f9145b53cfa83619aa743654408541ca576709ce7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "651ac95b0af91a43212b62af259faa91d7d126ec47ff6985674f5c2af96d270f",
+    "raw_sha256": "3d6d8930ed4d6185f79e73c7db0eb7514dca02168d11b8c65a69fb7b73beab65",
+    "date_quote": "article:published_time=2017-01-05T17:30:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "04fcb2447aae62467694ac56e4277500ba6e33e41056ad1794313227d3ce3089",
+  "outputs": [
+    {
+      "path": "US\\2017_01_05_17_30_Energy_Energy_fool.json",
+      "sha256": "fdcf21fdaf8f94d6eea29ad46c5e2db07263fa2a5716d0e709a2d8b9cada2131"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-01-05T17:30:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T13:38:23.124511+00:00",
+    "fetched_at": "2026-11-10T15:46:48.778804+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.256999+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:06:12.963829+00:00",
+  "feature_available_at": "2026-11-12T15:16:40.399707+00:00",
+  "commit_verified_at": "2026-11-12T15:16:40.399707+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses company performance, mergers, and financial challenges.",
+    "securities": [
+      {
+        "name": "Energy Transfer Equity",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Energy Transfer Equity (ETE)"
+      },
+      {
+        "name": "Williams Companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Williams Companies (WMB)"
+      },
+      {
+        "name": "Energy Transfer Partners",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Energy Transfer Partners (ETP)"
+      },
+      {
+        "name": "Sunoco Logistics Partners",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sunoco Logistics Partners (SXL)"
+      },
+      {
+        "name": "Sunoco LP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sunoco LP (SUN)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "Energy"
+      },
+      {
+        "name": "Pipeline",
+        "basis": "inferred",
+        "quote": "Dakota Access Pipeline"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "credit facility"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Energy Transfer Equity": "company",
+      "Williams Companies": "company",
+      "Energy Transfer Partners": "company",
+      "Sunoco Logistics Partners": "company",
+      "Sunoco LP": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:40.427712+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:06:12.963829+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses company performance, mergers, and financial challenges.",
+      "securities": [
+        {
+          "name": "Energy Transfer Equity",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Energy Transfer Equity (ETE)"
+        },
+        {
+          "name": "Williams Companies",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Williams Companies (WMB)"
+        },
+        {
+          "name": "Energy Transfer Partners",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Energy Transfer Partners (ETP)"
+        },
+        {
+          "name": "Sunoco Logistics Partners",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Sunoco Logistics Partners (SXL)"
+        },
+        {
+          "name": "Sunoco LP",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Sunoco LP (SUN)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Energy",
+          "basis": "explicit",
+          "quote": "Energy"
+        },
+        {
+          "name": "Pipeline",
+          "basis": "inferred",
+          "quote": "Dakota Access Pipeline"
+        },
+        {
+          "name": "Finance",
+          "basis": "inferred",
+          "quote": "credit facility"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Energy Transfer Equity": "company",
+        "Williams Companies": "company",
+        "Energy Transfer Partners": "company",
+        "Sunoco Logistics Partners": "company",
+        "Sunoco LP": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:06:12.993432+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:06:13.002424+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:12.983435+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses financial performance, M&A activities, and operational projects related to Energy Transfer Equity and its subsidiaries, providing relevant",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:38:42.638611+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

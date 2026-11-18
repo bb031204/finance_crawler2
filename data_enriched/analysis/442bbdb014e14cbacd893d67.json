@@ -1,0 +1,126 @@
+{
+  "source_id": "442bbdb014e14cbacd893d67",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_04_10_financial_Financial-Services_sec.json",
+      "sha256": "fe3771964c40af30a6a973ad54531c2d1df5ad62d038abd5f3202d4fee9f1dec",
+      "filename": "2015_04_10_financial_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "b068230a6ddd8c98ff4188faf50d3dd4df9b9fef6fcebb47fedc147f1ff3c875",
+  "input_hash": "f418d1b6be49cd28cdae9a659242ac6b7175e725d4928d0e09612e9e42f57848",
+  "matching_audit_hash": "1db7172269666422fa4f30efeb6d764d2738c1c08898732b4cc06df6957e3595",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a6f0d304b5d6ea9e93f3f9cf7ccaacb064c47a62a61b0b00a6d07399c7415870",
+    "raw_sha256": "49f45096e37c30808e64af8cfb0455b557506fe3bdf8e786ac02705eca5f79ee",
+    "date_quote": "SEC filing datePublished=2015-04-10",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054515000036/ge8kpkh0415.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "General Electric Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "General Electric Company"
+    },
+    {
+      "name": "General Electric Capital Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "General Electric Capital Corporation"
+    },
+    {
+      "name": "Synchrony Financial",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Synchrony Financial"
+    }
+  ],
+  "record_hash": "6e643481e0e78eabfec2b6c2468123e0c24652570ce6add39035bbe6f45de1d4",
+  "outputs": [
+    {
+      "path": "US\\2015_04_10_financial_Financial-Services_sec.json",
+      "sha256": "a8b37bfde4c757d431be515a3c4c5db0e6d599348054e94dfddc18d841ddf7df"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-04-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:01.055111+00:00",
+    "fetched_at": "2026-11-11T11:29:43.827385+00:00",
+    "feature_available_at": "2026-11-11T11:30:42.866054+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:58.151492+00:00",
+  "commit_verified_at": "2026-11-12T13:52:58.151492+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "General Electric Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Company"
+      },
+      {
+        "name": "General Electric Capital Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Capital Corporation"
+      },
+      {
+        "name": "Synchrony Financial",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Synchrony Financial"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Industrial Businesses",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

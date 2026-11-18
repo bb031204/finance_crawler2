@@ -1,0 +1,95 @@
+{
+  "source_id": "18bb9317a70d3f6c786eb45a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_10_03_Defense_Defense_cnbc.json",
+      "sha256": "adfecd5c15814bac6fbd2b5210d1adbc73b4fd24907a5e850979d03d2753cca9",
+      "filename": "2012_10_03_Defense_Defense_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a14e200a794c447114c59dee1448c48a1d03b09b589fd86263666b4b4782bc62",
+  "input_hash": "fa5da6882beec0986a28a80d6c8ea33a6a36487d5d153f05f34f234a0f6457e4",
+  "matching_audit_hash": "669739a1c618251199bba0ae20449fc6c611c3c9ee8ac7ac6ca521393fdf9154",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d2e3ee1cd44c1e8f96e52f7334c8419c853318ede27893b64c54a6cddca12021",
+    "raw_sha256": "930a2b6b41b7a5c9fc0e950ed20f8f8aa247da55283bce3a7d6b0a9cde6142bd",
+    "date_quote": "article:published_time=2012-10-03T18:12:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Lockheed Martin Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Lockheed Martin Corporation"
+    }
+  ],
+  "record_hash": "98bc2f77049617adbee7c76a7362fadaa9f0b67ac584bcd6f2809b32719d867f",
+  "outputs": [
+    {
+      "path": "US\\2012_10_03_Defense_Defense_cnbc.json",
+      "sha256": "dfbd905742f45e3ac3b1d9ef7ab0dd9d87e615f54b1d1917d1934a4bea819648"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-10-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:15.523360+00:00",
+    "fetched_at": "2026-11-10T22:09:10.745181+00:00",
+    "feature_available_at": "2026-11-10T22:09:29.134287+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:41.575119+00:00",
+  "commit_verified_at": "2026-11-12T13:52:41.575119+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Lockheed Martin Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lockheed Martin Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Defense",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

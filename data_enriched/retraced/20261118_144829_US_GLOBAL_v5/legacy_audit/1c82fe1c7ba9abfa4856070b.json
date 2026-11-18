@@ -1,0 +1,96 @@
+{
+  "source_id": "1c82fe1c7ba9abfa4856070b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_07_01_Government_Logistics_treasury.json",
+      "sha256": "dd2d71880c189cf294f1c6a2cb6ce745ab62bafd363631f1c0784fb9493394ac",
+      "filename": "2020_07_01_Government_Logistics_treasury.json"
+    }
+  ],
+  "original_record_hash": "6b07323e9a616bf159b6cde979e4371af7789c311c2044f03fce15505865d8a8",
+  "input_hash": "00198a472ac850995b39fb49909165e73211c2681206f77ffa584f5ccd74abe4",
+  "matching_audit_hash": "c67674565630fc582af46db9cd501b7aee7ea24b2a849caeebc1af548a7db79d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5840abfde5eec1d6008f945c3c58ee24b76c17ca06eee1585d4628ad0b36a15b",
+    "raw_sha256": "ef99378c8f5af52e40bfe49443dfdcc4ac0fcf7f7300d2f6ef95f86ccfbfb8fd",
+    "date_quote": "July 1, 2020 WASHINGTON – Today the U.S. Department of the Treasury announced that it intends to make a $700 million loan to YRC Worldwide Inc.",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "YRC Worldwide Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "YRC Worldwide Inc."
+    }
+  ],
+  "record_hash": "7e4d6346aa91863f5ea242eb73a34e0bbe681e11a0de9b70c4b9db952e536d1c",
+  "outputs": [
+    {
+      "path": "US\\2020_07_01_Government_Logistics_treasury.json",
+      "sha256": "ef9c2c37b0c0638b56aedf8d3594fd36196486106868f519a64b096bf5346c96"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-07-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:09.143950+00:00",
+    "fetched_at": "2026-11-11T02:09:48.958030+00:00",
+    "feature_available_at": "2026-11-11T02:09:59.522914+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:34.151620+00:00",
+  "commit_verified_at": "2026-11-12T13:53:34.151620+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "YRC Worldwide Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "YRC Worldwide Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Logistics",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

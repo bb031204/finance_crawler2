@@ -1,0 +1,133 @@
+{
+  "source_id": "1aa7121f8c1dfaff3bf138b2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_05_12_12_11_M&A-&-Capital-Markets_Building-Products_prnewswire.json",
+      "sha256": "bc54b7e34c3d7d246177ce631e491b0fda4db32249a1e304b7d33c078ec146a9",
+      "filename": "2016_05_12_12_11_M&A-&-Capital-Markets_Building-Products_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "0e0ece34b59c2076f9075a8e87b51813bd1e158c9b872def3d0b8742e3ee571f",
+  "input_hash": "c5fa39bee90b39ef0048f3e24406aaa6c2adc4cc86edf3aefd6525096c55a3bb",
+  "matching_audit_hash": "35b96c01fd49a7e2d1f4ff30b55c5fb0046b5ccc9c86a181d2d025f922195f39",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8432a3f9ef28334424eb9c9825108f54cdbc6b25f89fb1ea013e60be84fba5f8",
+    "raw_sha256": "440b9017031fc070abe7a6ec463d2ffe6640bba90fb8b08574b3c8eaa931df90",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2016-05-12T12:11:00+01:00\ndate=2016-05-12T12:11:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brown Gibbons Lang & Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brown Gibbons Lang & Company"
+    },
+    {
+      "name": "Koninklijke Philips N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Koninklijke Philips N.V."
+    },
+    {
+      "name": "Acuity Brands",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Acuity Brands"
+    }
+  ],
+  "record_hash": "b95d37cbd419cfeaee179dcc5b2e49e8cdc2ce5e12b213ca6b4e10a1a063010f",
+  "outputs": [
+    {
+      "path": "US\\2016_05_12_12_11_M&A-&-Capital-Markets_Building-Products_prnewswire.json",
+      "sha256": "203d4b3d437869b2c2657ae5a32dacd0aa3bd1281c1a3d4f86b17e8cee92eefa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-05-12T12:11:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:39:13.124713+00:00",
+    "fetched_at": "2026-11-10T21:15:11.347086+00:00",
+    "feature_available_at": "2026-11-11T08:25:08.426835+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:07.469929+00:00",
+  "feature_available_at": "2026-11-12T14:32:07.500580+00:00",
+  "commit_verified_at": "2026-11-12T14:32:07.500580+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses M&A activity, market penetration, and industry trends related to LED lighting technology.",
+    "securities": [
+      {
+        "name": "Brown Gibbons Lang & Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brown Gibbons Lang & Company (BGL)"
+      },
+      {
+        "name": "Philips",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Philips"
+      },
+      {
+        "name": "Acuity Brands",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Acuity Brands"
+      },
+      {
+        "name": "Juno Lighting",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Juno Lighting"
+      }
+    ],
+    "industries": [
+      {
+        "name": "LED lighting",
+        "basis": "explicit",
+        "quote": "LED lighting"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Brown Gibbons Lang & Company": "company",
+      "Philips": "company",
+      "Acuity Brands": "company",
+      "Juno Lighting": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

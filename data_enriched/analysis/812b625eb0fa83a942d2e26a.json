@@ -1,0 +1,145 @@
+{
+  "source_id": "812b625eb0fa83a942d2e26a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_01_04_Industry_Automotive_bloomberg.json",
+      "sha256": "31a05237d7f9659e8b1527e95c583916fe6df4534ed688900e291aa52e3df7c4",
+      "filename": "2017_01_04_Industry_Automotive_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "fe2d852aa4c3c91bd3c9861ff54ed7b5ab737f89b7ecf92025494bd0c0dbe918",
+  "input_hash": "935779b94b33a103fe4c51e3b390cba6cacd6f2060041d48c44d6a8559f8fb20",
+  "matching_audit_hash": "8bca7b9e7164e874de5495392fa6f1259cd909749fcc9f796bc9fd3821108046",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2925b5effe33723e1c6619a3e42f46a8cd5fcfc8e881a7679d495e4c0cf51de8",
+    "raw_sha256": "871367f3938414af84d064dcefb41771ef9d675b859cd1abac8b3e06fe2269b7",
+    "date_quote": "parsely-pub-date=2017-01-04T05:00:00-05:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "General Motors",
+      "ticker": null,
+      "exchange": null,
+      "quote": "General Motors for building the Chevrolet Cruze hatchback in Mexico."
+    },
+    {
+      "name": "Ford",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Ford"
+    },
+    {
+      "name": "Fiat Chrysler",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Fiat Chrysler"
+    },
+    {
+      "name": "Chevrolet",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Chevrolet"
+    },
+    {
+      "name": "Audi",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Audi opened a brand new plant in Mexico to build its Q5 luxury SUV in September, with executives talking up the country’s free trade deals when it announced the start of production."
+    }
+  ],
+  "record_hash": "2ec6dcae863ac3dc492029c06da8ca9d0293ed84cce5c291312dac7b1d646518",
+  "outputs": [
+    {
+      "path": "US\\2017_01_04_Industry_Automotive_bloomberg.json",
+      "sha256": "00bc95050be7c62cea639b033906c5514f7128179a076ff2cdd2f44b5b21c287"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-01-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:09.891390+00:00",
+    "fetched_at": "2026-11-10T21:27:47.878204+00:00",
+    "feature_available_at": "2026-11-10T21:28:31.075410+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:11.170042+00:00",
+  "commit_verified_at": "2026-11-12T13:53:11.170042+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "General Motors",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Motors for building the Chevrolet Cruze hatchback in Mexico."
+      },
+      {
+        "name": "Ford",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ford"
+      },
+      {
+        "name": "Fiat Chrysler",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fiat Chrysler"
+      },
+      {
+        "name": "Chevrolet",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chevrolet"
+      },
+      {
+        "name": "Audi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Audi opened a brand new plant in Mexico to build its Q5 luxury SUV in September, with executives talking up the country’s free trade deals when it announced the start of production."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

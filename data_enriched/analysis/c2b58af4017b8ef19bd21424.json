@@ -1,0 +1,187 @@
+{
+  "source_id": "c2b58af4017b8ef19bd21424",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_06_13_Politics_Agriculture_cnbc.json",
+      "sha256": "bdd7d62e3afc45bd02b5444701740a8c9c034fc4fafe31182f7fc2b1374dfa47",
+      "filename": "2018_06_13_Politics_Agriculture_cnbc.json"
+    }
+  ],
+  "original_record_hash": "648cd045e8ef19eafee7beadd781fd0a2271c6efa63caf581ff6e5c88f5c457b",
+  "input_hash": "94e8198401ca7e93f6e8fe4268da9bec104d11d288266040b4aa47bc39db0c11",
+  "matching_audit_hash": "67bae358ca132a84f9a61ab82a19dd90708d11f7e3223b789a8f6b92d3ec42df",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fb05b6b0019c824543637bfad32e9215ca29ea00a81986858230616a43ffe34d",
+    "raw_sha256": "f524d7c07f96a51c7117e21500e147a384f5d9da1d7e0ab18eaa065125671778",
+    "date_quote": "article:published_time=2018-06-13T18:58:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5d529c177193b683706b2b23da13fb411e81767957c738b017d16369782fc931",
+  "outputs": [
+    {
+      "path": "US\\2018_06_13_Politics_Agriculture_cnbc.json",
+      "sha256": "7d9ded8a5e38378a854f785e67b5102a368f20f0de01a9334df0d903cc1f9dbd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-06-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:37:43.519016+00:00",
+    "fetched_at": "2026-11-10T15:38:27.994528+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.665622+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:09:14.518874+00:00",
+  "feature_available_at": "2026-11-12T15:16:43.525482+00:00",
+  "commit_verified_at": "2026-11-12T15:16:43.525482+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Includes policy changes, agricultural sectors, and economic impacts.",
+    "securities": [
+      {
+        "name": "Senate Agriculture Committee",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Senate Agriculture Committee"
+      },
+      {
+        "name": "SNAP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SNAP benefits"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Agriculture",
+        "basis": "inferred",
+        "quote": "U.S. agricultural policy"
+      },
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "combat the opioid epidemic"
+      },
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": "expand high-speed Internet"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Senate Agriculture Committee": "organization",
+      "SNAP": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:43.566209+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:09:14.518874+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Includes policy changes, agricultural sectors, and economic impacts.",
+      "securities": [
+        {
+          "name": "Senate Agriculture Committee",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Senate Agriculture Committee"
+        },
+        {
+          "name": "SNAP",
+          "ticker": null,
+          "exchange": null,
+          "quote": "SNAP benefits"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Agriculture",
+          "basis": "inferred",
+          "quote": "U.S. agricultural policy"
+        },
+        {
+          "name": "Healthcare",
+          "basis": "inferred",
+          "quote": "combat the opioid epidemic"
+        },
+        {
+          "name": "Information Technology",
+          "basis": "inferred",
+          "quote": "expand high-speed Internet"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Senate Agriculture Committee": "organization",
+        "SNAP": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:09:14.544004+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:09:14.553611+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:09:14.535125+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses the 2018 Farm Bill, its provisions for hemp legalization, and its impact on agricultural policy, including specific mentions of Kentucky's",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:44:53.219171+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

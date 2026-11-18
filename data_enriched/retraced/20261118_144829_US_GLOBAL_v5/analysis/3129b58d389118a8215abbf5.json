@@ -1,0 +1,384 @@
+{
+  "source_id": "3129b58d389118a8215abbf5",
+  "status": "completed",
+  "source_record_hash": "015076ce39a4596654cfec77082eadacf0f4e57774d133449e0ab253dd1a70e1",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-13-018219-index.html",
+    "attempted_at": "2026-11-18T11:15:25.837208+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-13-018219-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312513018219/d470544d8k.htm",
+    "fetched_at": "2026-11-18T11:15:37.269628+00:00",
+    "source_body_hash": "c4d1525105aa3d1e204fec97ca59702dce9a0d2245716d71f6569618622e0767",
+    "raw_sha256": "676b42a784de175d070268dea570d2d9466c3dba935921cde4f7bbe92d1b719a",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312513018219/d470544d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "676b42a784de175d070268dea570d2d9466c3dba935921cde4f7bbe92d1b719a",
+        "text_sha256": "8fc80a777c68e5bc6c28652ba880d92ea9a9dd943e0ee211d5273d1c1a194e48",
+        "text_start": 0,
+        "text_end": 2191
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312513018219/d470544dex991.htm",
+        "type": "EX-99.1",
+        "description": "PRESS RELEASE",
+        "raw_sha256": "7654e22ed2f93ab173cb85447cf0de47eaad9e0568ac29717b5430a0168fe131",
+        "text_sha256": "32732cfc690daf368adc81479fb6ee852b2a16850b8b4db5b693c6fede9359cb",
+        "text_start": 2193,
+        "text_end": 13997
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2013-01-22",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3129b58d389118a8215abbf5.json",
+    "sha256": "9a83f2e72899869ce921719cbee14a9371c4ae531a77ff13ee99442ad6e65ffa",
+    "bundled_path": "legacy_audit/3129b58d389118a8215abbf5.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "5a51f45c6095f2e8045b3d40adf5ea183cbe8ff239bfe5133e7b43c10ce880b7",
+      "llm_inferred_at": "2026-11-18T11:15:49.902118+00:00",
+      "model_duration_seconds": 12.5854899,
+      "prompt_tokens": 3625,
+      "completion_tokens": 546,
+      "selection": [
+        {
+          "source_id": "3129b58d389118a8215abbf5",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Waters Corporation (Exact Name of Registrant as Specified in Its Charter) Delaware (State or Other Jurisdiction of Incorporation) 01-14010 13-3668640 (Commission File Number) (IRS",
+              "rationale": "The article is about Waters Corporation's financial results, which is a specific company.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "the Companys estimates or views as of the date of this release report and should not be relied upon as representing the Companys estimates or views as of any date subsequent to",
+              "rationale": "The article discusses factors that affect the company's performance, which are related to the industry it operates in.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "the Companys estimates or views as of the date of this release report and should not be relied upon as representing the Companys estimates or views as of any date subsequent to"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "industry_scope_quote": "of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and competitive obstacles to new",
+              "industry_name_original": "Major Pharmaceuticals",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.75,
+              "quote": "the Companys estimates or views as of the date of this release report and should not be relied upon as representing the Companys estimates or views as of any date subsequent to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "d56f9f70fc3a7b4c22bc5915342626ead8d14757ba805f4551d81b81c3e34b14",
+      "llm_inferred_at": "2026-11-18T11:16:00.815194+00:00",
+      "model_duration_seconds": 10.8960279,
+      "prompt_tokens": 3669,
+      "completion_tokens": 547,
+      "selection": [
+        {
+          "source_id": "3129b58d389118a8215abbf5",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Waters Corporation (Exact Name of Registrant as Specified in Its Charter) Delaware (State or Other Jurisdiction of Incorporation) 01-14010 13-3668640 (Commission File Number) (IRS",
+              "rationale": "The article is about Waters Corporation's financial results, which is a specific company.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "the Companys estimates or views as of the date of this release report and should not be relied upon as representing the Companys estimates or views as of any date subsequent to",
+              "rationale": "The article discusses factors that may affect the company's performance, which are related to the industry it operates in.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "the Companys estimates or views as of the date of this release report and should not be relied upon as representing the Companys estimates or views as of any date subsequent to"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "industry_scope_quote": "of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and competitive obstacles to new",
+              "industry_name_original": "Major Pharmaceuticals",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.75,
+              "quote": "the Companys estimates or views as of the date of this release report and should not be relied upon as representing the Companys estimates or views as of any date subsequent to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "62a6d5ef75e6faaee6577dc92f160d2a282612017d5655617ea265840a6638dc",
+      "llm_inferred_at": "2026-11-18T11:16:10.951489+00:00",
+      "model_duration_seconds": 10.1172038,
+      "prompt_tokens": 4585,
+      "completion_tokens": 430,
+      "selection": [
+        {
+          "source_id": "3129b58d389118a8215abbf5",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Waters Corporation and Subsidiaries Condensed Consolidated Balance Sheets (In thousands and unaudited) December 31, 2012 December 31, 2011 Cash, cash equivalents and short-term",
+              "rationale": "The article provides detailed financial data for Waters Corporation, which is a company in the water supply industry. The financial metrics and operations described are specific to the water supply industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Waters Corporation and Subsidiaries Condensed Consolidated Balance Sheets (In thousands and unaudited) December 31, 2012 December 31, 2011 Cash, cash equivalents and short-term",
+              "rationale": "The article is focused on the financial statements of Waters Corporation, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4941",
+              "name": "WATER SUPPLY",
+              "basis": "explicit",
+              "quote": "Waters Corporation and Subsidiaries Condensed Consolidated Balance Sheets (In thousands and unaudited) December 31, 2012 December 31, 2011 Cash, cash equivalents and short-term"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "284c1b58025ac8af4825a5fc52a0f66a5d6720febc77e62209130afd2944d88a",
+      "llm_inferred_at": "2026-11-18T11:16:25.948800+00:00",
+      "model_duration_seconds": 14.9828007,
+      "prompt_tokens": 4629,
+      "completion_tokens": 766,
+      "selection": [
+        {
+          "source_id": "3129b58d389118a8215abbf5",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Waters Corporation and Subsidiaries Condensed Consolidated Balance Sheets (In thousands and unaudited) December 31, 2012 December 31, 2011 Cash, cash equivalents and short-term",
+              "rationale": "The financial statements are specific to Waters Corporation, indicating a company-level impact.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "Provisions 2,771  4,646  Non-Income Tax Audit Settlement Provisions  1,291 302 1,291 Net Operating Loss Tax Benefit (36,250 )  (36,250 )  One-Time Income Tax Benefits (6,035",
+              "rationale": "The article discusses financial provisions and tax benefits, which are relevant to the broader financial services industry.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "explicit",
+              "quote": "Provisions 2,771  4,646  Non-Income Tax Audit Settlement Provisions  1,291 302 1,291 Net Operating Loss Tax Benefit (36,250 )  (36,250 )  One-Time Income Tax Benefits (6,035"
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Provisions 2,771  4,646  Non-Income Tax Audit Settlement Provisions  1,291 302 1,291 Net Operating Loss Tax Benefit (36,250 )  (36,250 )  One-Time Income Tax Benefits (6,035"
+            },
+            {
+              "industry_key": "TRSR:4ac441610083c210",
+              "name": "Hospital/Nursing Management",
+              "basis": "explicit",
+              "quote": "Provisions 2,771  4,646  Non-Income Tax Audit Settlement Provisions  1,291 302 1,291 Net Operating Loss Tax Benefit (36,250 )  (36,250 )  One-Time Income Tax Benefits (6,035"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:16:25.965611+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c4d1525105aa3d1e204fec97ca59702dce9a0d2245716d71f6569618622e0767",
+    "raw_sha256": "676b42a784de175d070268dea570d2d9466c3dba935921cde4f7bbe92d1b719a",
+    "date_quote": "Date of report (Date of earliest event reported) January 22, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312513018219/d470544d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3129b58d389118a8215abbf5",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_01_22_Financial-Report_Chemicals_sec.json",
+        "sha256": "27dd501e7854c2d540c264f06be44d49c957a314b7114af858ae0c9aff33dfdf",
+        "filename": "2013_01_22_Financial-Report_Chemicals_sec.json"
+      }
+    ],
+    "original_record_hash": "50b7924932f540f5ed0b65237677b2925591a2a4f2bc26658cbd37f587dd4861",
+    "input_hash": "e0532dad6e8cfa3a1f71ec88e9f4669625b21359ea59682d13c1f99d1cd239bd",
+    "matching_audit_hash": "2bbbd4defb5fd515e465e188a5e79ebefbc66387d728e015fba6e984e07f6db7",
+    "legacy_security_evidence": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "record_hash": "015076ce39a4596654cfec77082eadacf0f4e57774d133449e0ab253dd1a70e1",
+    "outputs": [
+      {
+        "path": "US\\2013_01_22_Financial-Report_Chemicals_sec.json",
+        "sha256": "cdeccbaefe3e81bfeb8113b7b0f37afe8c09c2daafe83727d52af3cfad955c39"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-01-22",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+      "fetched_at": "2026-11-10T23:20:49.239835+00:00",
+      "feature_available_at": "2026-11-10T23:20:56.718328+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:16:25.948800+00:00",
+    "feature_available_at": "2026-11-18T11:16:25.965611+00:00",
+    "commit_verified_at": "2026-11-12T13:52:43.526349+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Waters Corporation (Exact Name of Registrant as Specified in Its Charter) Delaware (State or Other Jurisdiction of Incorporation) 01-14010 13-3668640 (Commission File Number) (IRS",
+        "rationale": "The article is about Waters Corporation's financial results, which is a specific company.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Waters Corporation (Exact Name of Registrant as Specified in Its Charter) Delaware (State or Other Jurisdiction of Incorporation) 01-14010 13-3668640 (Commission File Number) (IRS",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Waters Corporation and Subsidiaries Condensed Consolidated Balance Sheets (In thousands and unaudited) December 31, 2012 December 31, 2011 Cash, cash equivalents and short-term",
+        "rationale": "The financial statements are specific to Waters Corporation, indicating a company-level impact.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Waters Corporation and Subsidiaries Condensed Consolidated Balance Sheets (In thousands and unaudited) December 31, 2012 December 31, 2011 Cash, cash equivalents and short-term",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-13-018219-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "015076ce39a4596654cfec77082eadacf0f4e57774d133449e0ab253dd1a70e1",
+    "content_hash": "324bf4b07c68555848179511a6cce16e18cf49d5d53cc36b5f49df874c66d8a5",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:16:25.951907+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3129b58d389118a8215abbf5.json",
+      "sha256": "ef5c7248c954b8ab1f50e4f3f5ef2f520ce30aa01abcdce3785d047fda21fdd3",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 60.140999999974156
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "8425e36f5915783250177c2a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_10_21_Finance_Semiconductor_cnbc.json",
+      "sha256": "5a0ee864a491d7a0e92b1537c45fb8b3b76213d27c414cb97a6bda890daf7734",
+      "filename": "2021_10_21_Finance_Semiconductor_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e3b52c02513cdf506ec6754ac0ac6dad5806b01ef858f0724e10027703f38671",
+  "input_hash": "04327d3b1ccc24c827a6a951893d0a3bc4a75c12516eadd46e0038d9429d836f",
+  "matching_audit_hash": "122520977bfa058b9067312b4229bf80695ae628c4507b4e5c979037b2d4d864",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "14f3326f5d26d378b8874ec45321dd927893d29cf8ff12e76735954731fb8843",
+    "raw_sha256": "6ad5c0fb9307b7939122ff69268f719e07bb1b4105e5935291a5ecacb435e0e4",
+    "date_quote": "article:published_time=2021-10-21T20:17:59+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Intel",
+      "ticker": "INTC",
+      "exchange": null,
+      "quote": "Intel (INTC) earnings Q3 2021"
+    }
+  ],
+  "record_hash": "4704532202248479d3b51e44105ade342a569e38b80e4f54bf329fc8bb951a91",
+  "outputs": [
+    {
+      "path": "US\\2021_10_21_Finance_Semiconductor_cnbc.json",
+      "sha256": "3f6d3d49c687cc5bd10f9fd4f9e552e7e1779e10187d26c78337e8ec8d2493ae"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-10-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:01.040542+00:00",
+    "fetched_at": "2026-11-11T02:47:47.447063+00:00",
+    "feature_available_at": "2026-11-11T02:48:24.765506+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:38.834663+00:00",
+  "commit_verified_at": "2026-11-12T13:53:38.834663+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Intel",
+        "ticker": "INTC",
+        "exchange": null,
+        "quote": "Intel (INTC) earnings Q3 2021"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

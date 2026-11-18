@@ -1,0 +1,279 @@
+{
+  "source_id": "4bf5e71be7ab8421058a2468",
+  "status": "completed",
+  "source_record_hash": "e3de224209ddb12ffd3563e09c8db45cd066bb8318ee467d6ed0c0ea4557840e",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/937966/0000937966-17-000005-index.html",
+    "attempted_at": "2026-11-18T13:54:29.312049+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "2ecc40d96aba95ef426d74742e123742a316a237d025f404951ec5a32412c3bc"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4bf5e71be7ab8421058a2468.json",
+    "sha256": "3d0d08fb73130acc2d1dfee65aa902b3ecc2a9be98edddb5128558c6f5abfcc9",
+    "bundled_path": "legacy_audit/4bf5e71be7ab8421058a2468.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "9005eca0582e2825c3fd9e63747dbadc0879d3b3cb2d28b45eae9e79fc5d5d22",
+      "llm_inferred_at": "2026-11-18T13:54:43.778067+00:00",
+      "model_duration_seconds": 9.4224299,
+      "prompt_tokens": 2018,
+      "completion_tokens": 464,
+      "selection": [
+        {
+          "source_id": "4bf5e71be7ab8421058a2468",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders.",
+              "rationale": "The article explicitly identifies ASML Holding N.V. as a leading manufacturer of semiconductor equipment, which directly ties to the semiconductor industry. This indicates an industry-wide impact as the company's activities are central to the semiconductor sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "ASML Holding N.V. filed a Form 6-K with the SEC on February 8, 2017, as part of its compliance with U.S. securities regulations. The filing includes the Statutory Annual Report",
+              "rationale": "The article specifically mentions ASML Holding N.V. and its actions related to financial disclosures, which are company-specific events. This indicates a company-only impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3674",
+              "name": "SEMICONDUCTORS & RELATED DEVICES",
+              "basis": "inferred",
+              "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders."
+            },
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "name": "Semiconductors",
+              "basis": "inferred",
+              "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "40ac6a359d97443c440f734dc7a7847367171f1e0d262004ed4ec6baa997e88a",
+      "llm_inferred_at": "2026-11-18T13:54:51.793649+00:00",
+      "model_duration_seconds": 8.0106441,
+      "prompt_tokens": 2062,
+      "completion_tokens": 439,
+      "selection": [
+        {
+          "source_id": "4bf5e71be7ab8421058a2468",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "ASML Holding N.V. filed a Form 6-K with the SEC on February 8, 2017, as part of its compliance with U.S. securities regulations. The filing includes the Statutory Annual Report",
+              "rationale": "The filing is a routine disclosure requirement for foreign issuers under the Securities Exchange Act of 1934, indicating a company-specific action.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders.",
+              "rationale": "The company's operations are in the semiconductor equipment industry, and its financial disclosures are relevant to the industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3674",
+              "name": "SEMICONDUCTORS & RELATED DEVICES",
+              "basis": "inferred",
+              "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders."
+            },
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "name": "Semiconductors",
+              "basis": "inferred",
+              "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:54:51.801045+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2ecc40d96aba95ef426d74742e123742a316a237d025f404951ec5a32412c3bc",
+    "raw_sha256": null,
+    "date_quote": "For February 8, 2017",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/937966/000093796617000005/form6-kannualreports2016.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "ASML Holding N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ASML Holding N.V."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:3674",
+        "name": "SEMICONDUCTORS & RELATED DEVICES",
+        "basis": "inferred",
+        "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3674",
+        "industry_name_standard": "SEMICONDUCTORS & RELATED DEVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders."
+      },
+      {
+        "industry_key": "TRSR:903e395633396020",
+        "name": "Semiconductors",
+        "basis": "inferred",
+        "quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "903e395633396020",
+        "industry_name_standard": "Semiconductors",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The company is a leading manufacturer of semiconductor equipment, and its financial disclosures are relevant to investors and stakeholders."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "4bf5e71be7ab8421058a2468",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_02_08_Corporate-Filings_Semiconductor-Equipment_sec.json",
+        "sha256": "1921d946125e714fbfc1810d3dcc934a631ddace05a2189a22792b6496103178",
+        "filename": "2017_02_08_Corporate-Filings_Semiconductor-Equipment_sec.json"
+      }
+    ],
+    "original_record_hash": "bfe41419ff0f986638348c1b820bda185a36299b4a0ede9a7c8979ce8aaa7731",
+    "input_hash": "4c02821102ae016fec94e25f28ceb4da27b11791802d72a65f4e568337174020",
+    "matching_audit_hash": "dc08341a074aae6044b4949249822857894d4d559afa8aa2680a13ba81ab9cda",
+    "legacy_security_evidence": [
+      {
+        "name": "ASML Holding N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ASML Holding N.V."
+      }
+    ],
+    "record_hash": "e3de224209ddb12ffd3563e09c8db45cd066bb8318ee467d6ed0c0ea4557840e",
+    "outputs": [
+      {
+        "path": "US\\2017_02_08_Corporate-Filings_Semiconductor-Equipment_sec.json",
+        "sha256": "acedab90cadaa8070e2d45932d52f51dfde5a6215ac5ebca547cbefbefaa1a17"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2017-02-08",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:26:39.735825+00:00",
+      "fetched_at": "2026-11-11T02:27:24.476668+00:00",
+      "feature_available_at": "2026-11-11T02:27:32.898320+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:54:51.793649+00:00",
+    "feature_available_at": "2026-11-18T13:54:51.801045+00:00",
+    "commit_verified_at": "2026-11-12T13:53:12.090397+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "ASML Holding N.V. filed a Form 6-K with the SEC on February 8, 2017, as part of its compliance with U.S. securities regulations. The filing includes the Statutory Annual Report",
+        "rationale": "The filing is a routine disclosure requirement for foreign issuers under the Securities Exchange Act of 1934, indicating a company-specific action.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "ASML Holding N.V. filed a Form 6-K with the SEC on February 8, 2017, as part of its compliance with U.S. securities regulations. The filing includes the Statutory Annual Report"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/937966/0000937966-17-000005-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "e3de224209ddb12ffd3563e09c8db45cd066bb8318ee467d6ed0c0ea4557840e",
+    "content_hash": "2ecc40d96aba95ef426d74742e123742a316a237d025f404951ec5a32412c3bc",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:54:51.794285+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4bf5e71be7ab8421058a2468.json",
+      "sha256": "693b63a5e85a672e59d535ca2e3d0ce75aacd4e3f5b0d6f8b3d2e11b5c78ab16",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 22.5
+}

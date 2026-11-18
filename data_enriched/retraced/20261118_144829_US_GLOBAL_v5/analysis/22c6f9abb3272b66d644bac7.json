@@ -1,0 +1,1241 @@
+{
+  "source_id": "22c6f9abb3272b66d644bac7",
+  "status": "completed",
+  "source_record_hash": "df9a9bb74bcbbd0270fde2906e1b3988faa7e863d0e50d546e4d1df675c5f08c",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001102624-14-000234-index.html",
+    "attempted_at": "2026-11-18T10:01:13.325564+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001102624-14-000234-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262414000234/brookfieldasset6k.htm",
+    "fetched_at": "2026-11-18T10:01:30.681291+00:00",
+    "source_body_hash": "848e39312a0c51071109a4ccbf23f50a124a0b898a8539e22b74c95453a71852",
+    "raw_sha256": "0b7476b1c90d53c3dde920502d4d719a344a6a45cd14ff3695746676eabfe80c",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262414000234/brookfieldasset6k.htm",
+        "type": "6-K",
+        "description": "BROOKFIELD ASSET MANAGEMENT 6-K",
+        "raw_sha256": "0b7476b1c90d53c3dde920502d4d719a344a6a45cd14ff3695746676eabfe80c",
+        "text_sha256": "3fdba843012ef06811918d190a56ff4d82b6816bfd90bb8040c01d2d2e7828d3",
+        "text_start": 0,
+        "text_end": 2057
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262414000234/exh99_1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "faa3412f55a25bb99d850ba7571ecd2ca6fa85955db56fc12602d4968c8f0236",
+        "text_sha256": "9f622e0671738c91e4b548daae538e607f488a2a89690262d4eca10b20722037",
+        "text_start": 2059,
+        "text_end": 24156
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262414000234/exh99_2.htm",
+        "type": "EX-99.2",
+        "description": "EXHIBIT 99.2",
+        "raw_sha256": "13504727772e11bc40342406256bcd652fc0e94417fc6a8dbe9446d27a689428",
+        "text_sha256": "4a681a3c30a1ac41ee08aca74079541589b37257897fe96f94daffc2eec61017",
+        "text_start": 24158,
+        "text_end": 54249
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2014-02-14",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/22c6f9abb3272b66d644bac7.json",
+    "sha256": "a375e1d945a7d3cf5726ec5ec9074725e7bd4ce05b7201d40ba0212959d8db8f",
+    "bundled_path": "legacy_audit/22c6f9abb3272b66d644bac7.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "60d5592ac5199be8245eea25d4efd377a980e1c56c76823e880a10161c133641",
+      "llm_inferred_at": "2026-11-18T10:01:41.735252+00:00",
+      "model_duration_seconds": 11.0208454,
+      "prompt_tokens": 4028,
+      "completion_tokens": 474,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Fee related earnings increased due to the growth in fee bearing capital.",
+              "rationale": "The statement indicates that the growth in fee bearing capital is impacting the earnings, which is a sector-wide impact in the financial services industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+              "rationale": "The company's financial results and operations are directly mentioned, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "We launched the merger of our office property business with our flagship listed property entity."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "We broke ground on commercial developments in New York, London, Toronto, Calgary and Perth after substantially pre-leasing each project."
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "name": "Auto Parts:O.E.M.",
+              "basis": "explicit",
+              "quote": "We also closed the purchase of a $1.1 billion portfolio of office buildings in downtown Los Angeles."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "60d5592ac5199be8245eea25d4efd377a980e1c56c76823e880a10161c133641",
+      "llm_inferred_at": "2026-11-18T10:01:51.349073+00:00",
+      "model_duration_seconds": 9.5943469,
+      "prompt_tokens": 4072,
+      "completion_tokens": 474,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Fee related earnings increased due to the growth in fee bearing capital.",
+              "rationale": "The statement indicates that the growth in fee bearing capital is impacting the earnings, which is a sector-wide impact in the financial services industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+              "rationale": "The company's financial results and operations are directly mentioned, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "We launched the merger of our office property business with our flagship listed property entity."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "We broke ground on commercial developments in New York, London, Toronto, Calgary and Perth after substantially pre-leasing each project."
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "name": "Auto Parts:O.E.M.",
+              "basis": "explicit",
+              "quote": "We also closed the purchase of a $1.1 billion portfolio of office buildings in downtown Los Angeles."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f7ddfb5de5d0ea479cc241eb274397c7ac0fc8c87b3589fc5650dc37d8e0d022",
+      "llm_inferred_at": "2026-11-18T10:02:03.785061+00:00",
+      "model_duration_seconds": 12.4110648,
+      "prompt_tokens": 3601,
+      "completion_tokens": 565,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses.",
+              "rationale": "The investment in energy, mining, and logistics businesses indicates a sector-wide impact on these industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We increased cash flow and created value with operational improvements in all of our major businesses.",
+              "rationale": "The statement refers to the company's operational improvements across its major businesses, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Our retail property business invested $285 million in shopping mall redevelopments and expansions and signed new leases at rates 12.3% higher than expiring rents.",
+              "rationale": "The investment in shopping mall redevelopments and expansions indicates a sector-wide impact on the retail property industry.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "name": "Power Generation",
+              "basis": "explicit",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses."
+            },
+            {
+              "industry_key": "TRSR:864b7d5c027445da",
+              "name": "Containers/Packaging",
+              "basis": "explicit",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "d78c6784816fe2c8394b7d55678426488c132dddea4813d42515bf27ef06690e",
+      "llm_inferred_at": "2026-11-18T10:02:14.660812+00:00",
+      "model_duration_seconds": 10.8553701,
+      "prompt_tokens": 3645,
+      "completion_tokens": 557,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses.",
+              "rationale": "The investment in energy, mining, and logistics businesses indicates a sector-wide impact on these industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We increased cash flow and created value with operational improvements in all of our major businesses.",
+              "rationale": "The statement refers to the company's operational improvements across its major businesses, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Our retail property business invested $285 million in shopping mall redevelopments and expansions and signed new leases at rates 12.3% higher than expiring rents.",
+              "rationale": "The investment in shopping mall redevelopments and expansions indicates a sector-wide impact on the retail property industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "name": "Power Generation",
+              "basis": "explicit",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses."
+            },
+            {
+              "industry_key": "TRSR:864b7d5c027445da",
+              "name": "Containers/Packaging",
+              "basis": "explicit",
+              "quote": "Our private equity group invested $1.2 billion in a variety of energy, mining and logistics businesses."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "6ad9be5d451048949459002b260aa9eee80804eca6f768210ce0cccddac31362",
+      "llm_inferred_at": "2026-11-18T10:02:27.578789+00:00",
+      "model_duration_seconds": 12.8981048,
+      "prompt_tokens": 4135,
+      "completion_tokens": 572,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "market",
+              "quote": "Factors that could cause actual results to differ materially from those contemplated or implied by forward-looking statements include, but are not limited to: the impact or",
+              "rationale": "The statement discusses factors that affect the company's results, including general economic, political, and market factors, which are broad enough to imply a market-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "business, financial condition, expected financial results, performance, prospects, opportunities, priorities, targets, goals, ongoing objectives, strategies and outlook of the company and its subsidiaries, as well as the outlook for North American and international economies for the current fiscal year and subsequent periods, and include words such",
+              "rationale": "The statement refers to the outlook for North American and international economies, which is a broad reference to the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Forward-looking statements include statements that are predictive in nature, depend upon or refer to future events or conditions, include statements regarding the operations,"
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Forward-looking statements include statements that are predictive in nature, depend upon or refer to future events or conditions, include statements regarding the operations,"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Forward-looking statements include statements that are predictive in nature, depend upon or refer to future events or conditions, include statements regarding the operations,"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "ef6824f1bf200c8b943a8ca72269b8e221288c12c3542e3d71e17c80f5904190",
+      "llm_inferred_at": "2026-11-18T10:02:41.799960+00:00",
+      "model_duration_seconds": 14.2070101,
+      "prompt_tokens": 4179,
+      "completion_tokens": 721,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "market",
+              "quote": "Factors that could cause actual results to differ materially from those contemplated or implied by forward-looking statements include, but are not limited to: the impact or",
+              "rationale": "The statement discusses factors that affect the company's results, including general economic, political, and market factors, which are broad enough to imply a market-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "and the ability to attain expected benefits; changes in accounting policies and methods used to report financial condition (including uncertainties associated with critical",
+              "rationale": "The statement includes factors like changes in accounting policies and financial market conditions, which are relevant to the broader market.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "market",
+              "quote": "and the ability to attain expected benefits; changes in accounting policies and methods used to report financial condition (including uncertainties associated with critical",
+              "rationale": "The statement includes factors like changes in accounting policies and financial market conditions, which are relevant to the broader market.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "business, financial condition, expected financial results, performance, prospects, opportunities, priorities, targets, goals, ongoing objectives, strategies and outlook of the company and its subsidiaries, as well as the outlook for North American and international economies for the current fiscal year and subsequent periods, and include words such",
+              "rationale": "The statement discusses the outlook for North American and international economies, which is relevant to the US equity market.",
+              "confidence": 0.95
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Forward-looking statements include statements that are predictive in nature, depend upon or refer to future events or conditions, include statements regarding the operations,"
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Forward-looking statements include statements that are predictive in nature, depend upon or refer to future events or conditions, include statements regarding the operations,"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Forward-looking statements include statements that are predictive in nature, depend upon or refer to future events or conditions, include statements regarding the operations,"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "a1ab63e2047a608919da14c3586fb24523f227b073929e0a5008bdf61a2c4f9e",
+      "llm_inferred_at": "2026-11-18T10:02:53.483104+00:00",
+      "model_duration_seconds": 11.6581403,
+      "prompt_tokens": 3658,
+      "completion_tokens": 533,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+              "rationale": "The article discusses the increasing popularity of Real Assets and the expected increase in portfolio allocation to this sector, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Our assets under management increased to $187 billion despite significant returns of capital to clients on realizations.",
+              "rationale": "The article provides specific financial results for Brookfield Asset Management, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Real assets performed exceptionally well this year, as the global economy continued to improve.",
+              "rationale": "The article states that real assets performed well globally, indicating an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "21988f1ed875b579dc96c02e94bbd4bc4d463c7a2630ee473244469777975094",
+      "llm_inferred_at": "2026-11-18T10:03:03.842924+00:00",
+      "model_duration_seconds": 10.3345654,
+      "prompt_tokens": 3702,
+      "completion_tokens": 536,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+              "rationale": "The article discusses the increasing popularity of Real Assets and the expected increase in portfolio allocation to this sector, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Our assets under management increased to $187 billion despite significant returns of capital to clients on realizations.",
+              "rationale": "The article provides specific information about Brookfield Asset Management's assets under management, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Real assets performed exceptionally well this year, as the global economy continued to improve.",
+              "rationale": "The article states that real assets performed exceptionally well, indicating an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "4b59d5939ab103dbeb69996c458c2b5c879bf76ae4c9cb956db12cb591a47d30",
+      "llm_inferred_at": "2026-11-18T10:03:24.556725+00:00",
+      "model_duration_seconds": 20.6866674,
+      "prompt_tokens": 3633,
+      "completion_tokens": 1003,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States.",
+              "rationale": "The article discusses the company's investment strategy, highlighting the shift in focus to other markets, which indicates an industry-level impact on the real estate and financial sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The bottom line is, absolutely not.",
+              "rationale": "The statement indicates a positive outlook on the U.S. market, suggesting a market-wide impact due to the company's investment decisions and the broader economic conditions.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "This is an incredible advantage which the United States possesses and provides tremendous strength and flexibility while they solve their fiscal issues.",
+              "rationale": "The statement refers to the U.S. financial markets and fiscal conditions, which are broad enough to justify a market-wide scope.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Our investments in the United States span every business we have and encompass over 50% of our operations, with approximately $100 billion of our assets."
+            },
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "industry_scope_quote": "This brings jobs, makes the country less reliant on oil from foreign suppliers, and helps reduce the trade deficit.",
+              "industry_name_original": "Real Estate",
+              "mechanism": "Technological advancements and reinvention in the U.S. have led to increased productivity and economic growth, which affects the real estate sector.",
+              "confidence": 0.85,
+              "quote": "The most commented on economic item is the impact of a Chinese slowdown on China, and the global economy."
+            },
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "industry_scope_quote": "This brings jobs, makes the country less reliant on oil from foreign suppliers, and helps reduce the trade deficit.",
+              "industry_name_original": "Investment Managers",
+              "mechanism": "The U.S. has a strong financial market and deep capital availability, which supports investment management activities.",
+              "confidence": 0.85,
+              "quote": "The most commented on economic item is the impact of a Chinese slowdown on China, and the global economy."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "This brings jobs, makes the country less reliant on oil from foreign suppliers, and helps reduce the trade deficit.",
+              "industry_name_original": "Business Services",
+              "mechanism": "The U.S. has a strong financial market and deep capital availability, which supports business services.",
+              "confidence": 0.85,
+              "quote": "The most commented on economic item is the impact of a Chinese slowdown on China, and the global economy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a12ac0ce566f622f44c14063c3925112c9e758b3b4fe7e2e50615404f28116d9",
+      "llm_inferred_at": "2026-11-18T10:03:44.655517+00:00",
+      "model_duration_seconds": 20.0756927,
+      "prompt_tokens": 3677,
+      "completion_tokens": 1044,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States.",
+              "rationale": "The text discusses the company's investment strategy, which includes a shift in focus to other markets, indicating an industry-level impact on the real estate and investment management sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The bottom line is, absolutely not.",
+              "rationale": "The statement indicates a positive outlook on the U.S. market, which is a broad market scope as it refers to the overall U.S. financial and equity markets.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "This is an incredible advantage which the United States possesses and provides tremendous strength and flexibility while they solve their fiscal issues.",
+              "rationale": "The statement refers to the U.S. financial markets and fiscal conditions, which are broad market-level factors.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States."
+            },
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Our investments in the United States span every business we have and encompass over 50% of our operations, with approximately $100 billion of our assets."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "industry_scope_quote": "This brings jobs, makes the country less reliant on oil from foreign suppliers, and helps reduce the trade deficit.",
+              "industry_name_original": "Investment Managers",
+              "mechanism": "The U.S. energy sector's growth and self-sufficiency due to shale oil and gas technology has a direct impact on the investment management industry.",
+              "confidence": 0.85,
+              "quote": "The second example comes from Ireland, where we have been named as the preferred bidder to acquire part of the government owned utility Bord Gáis."
+            },
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "industry_scope_quote": "This brings jobs, makes the country less reliant on oil from foreign suppliers, and helps reduce the trade deficit.",
+              "industry_name_original": "Real Estate",
+              "mechanism": "The U.S. energy sector's growth and self-sufficiency due to shale oil and gas technology has a direct impact on the real estate industry.",
+              "confidence": 0.85,
+              "quote": "Our investments in the United States span every business we have and encompass over 50% of our operations, with approximately $100 billion of our assets."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "This brings jobs, makes the country less reliant on oil from foreign suppliers, and helps reduce the trade deficit.",
+              "industry_name_original": "Business Services",
+              "mechanism": "The U.S. energy sector's growth and self-sufficiency due to shale oil and gas technology has a direct impact on the business services industry.",
+              "confidence": 0.85,
+              "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "8931d83f9e37bce25ae7739d3afe663649436f9fcb06447a0fff4f9aa95bcd08",
+      "llm_inferred_at": "2026-11-18T10:04:06.519161+00:00",
+      "model_duration_seconds": 21.8328382,
+      "prompt_tokens": 3573,
+      "completion_tokens": 1055,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The merger of our UK utility business with its largest competitor was also completed early in the year, and after refinancing this asset, we increased FFO by more than 70%.",
+              "rationale": "The merger and refinancing of the UK utility business indicates a sector-wide impact on the utility industry, as it reflects a significant operational and financial development within the sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Brookfield Property Group Our property group recorded solid performance, with FFO increasing 3% year over year to nearly $560 million.",
+              "rationale": "The performance of Brookfield Property Group is a direct result of its internal operations and strategies, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "We increased our stake in our U.S.",
+              "rationale": "The expansion of the U.S. shopping mall business and the acquisition of shares from institutional clients indicate a broader impact on the real estate industry.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Brookfield Property Group Our property group recorded solid performance, with FFO increasing 3% year over year to nearly $560 million."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "Brookfield Private Equity Group We often spend many years improving investee businesses and investing capital before reaping the rewards of our efforts."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "We increased our stake in our U.S."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "industry_scope_quote": "assist commodity companies which have lost access to public market financing, we made a $170 million loan to a palladium mining company that needed capital to complete an",
+              "industry_name_original": "Real Estate",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "assets and higher prices on sales of uncontracted electricity, with FFO rising 43% in 2013 to $447 million. In addition, we continued to find opportunities to expand our portfolio"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "assist commodity companies which have lost access to public market financing, we made a $170 million loan to a palladium mining company that needed capital to complete an",
+              "industry_name_original": "Real Estate",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "assets and higher prices on sales of uncontracted electricity, with FFO rising 43% in 2013 to $447 million. In addition, we continued to find opportunities to expand our portfolio"
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "assist commodity companies which have lost access to public market financing, we made a $170 million loan to a palladium mining company that needed capital to complete an",
+              "industry_name_original": "Energy",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "assets and higher prices on sales of uncontracted electricity, with FFO rising 43% in 2013 to $447 million. In addition, we continued to find opportunities to expand our portfolio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "c09682f55483bfb6ff22ce98ed3bc2f3b1e2661b306beada8b500ed2cc780abd",
+      "llm_inferred_at": "2026-11-18T10:04:26.278536+00:00",
+      "model_duration_seconds": 19.7368821,
+      "prompt_tokens": 3617,
+      "completion_tokens": 999,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Performance across our funds was strong due to operational improvements and monetizations at attractive valuations.",
+              "rationale": "The statement indicates that the performance of the funds is due to operational improvements and monetizations, which are industry-wide factors affecting the real estate and infrastructure sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Brookfield Property Group Our property group recorded solid performance, with FFO increasing 3% year over year to nearly $560 million.",
+              "rationale": "This statement is specific to Brookfield Property Group, indicating a company-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "In addition, we continued to find opportunities to expand our portfolio in Europe and North and South America through acquisitions and organic growth.",
+              "rationale": "This indicates that the expansion of the renewable energy business is an industry-wide impact affecting the energy sector.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Brookfield Property Group Our property group recorded solid performance, with FFO increasing 3% year over year to nearly $560 million."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "Brookfield Property Group Our property group recorded solid performance, with FFO increasing 3% year over year to nearly $560 million."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "In addition, we continued to find opportunities to expand our portfolio in Europe and North and South America through acquisitions and organic growth."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "industry_scope_quote": "assist commodity companies which have lost access to public market financing, we made a $170 million loan to a palladium mining company that needed capital to complete an",
+              "industry_name_original": "Real Estate",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "a number of acquisitions to increase the scope of our property operations, including the previously mentioned investment in Shanghai based China Xintiandi. We took over management"
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "assist commodity companies which have lost access to public market financing, we made a $170 million loan to a palladium mining company that needed capital to complete an",
+              "industry_name_original": "Energy",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "a number of acquisitions to increase the scope of our property operations, including the previously mentioned investment in Shanghai based China Xintiandi. We took over management"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "assist commodity companies which have lost access to public market financing, we made a $170 million loan to a palladium mining company that needed capital to complete an",
+              "industry_name_original": "Real Estate",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "a number of acquisitions to increase the scope of our property operations, including the previously mentioned investment in Shanghai based China Xintiandi. We took over management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "540e532c491bc2c19a6c00271696d47b541f0a94795b64cb1d269a19d0aa10d1",
+      "llm_inferred_at": "2026-11-18T10:04:37.276080+00:00",
+      "model_duration_seconds": 10.978916,
+      "prompt_tokens": 2509,
+      "completion_tokens": 530,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis.",
+              "rationale": "The company's strategy is focused on real assets such as property, renewable energy, infrastructure, and private equity investments, which are part of the real estate and investment management industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis.",
+              "rationale": "The company's strategy and goals are directly tied to its own operations and financial performance, which are outlined in the letter to shareholders.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis."
+            },
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "e44decba8986cbdac8019099055603d659a1cd2a04d16974b5e5d52f1d113f84",
+      "llm_inferred_at": "2026-11-18T10:04:45.396608+00:00",
+      "model_duration_seconds": 8.1105857,
+      "prompt_tokens": 2553,
+      "completion_tokens": 429,
+      "selection": [
+        {
+          "source_id": "22c6f9abb3272b66d644bac7",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis.",
+              "rationale": "The company's strategy is focused on real assets such as property, renewable energy, infrastructure, and private equity investments, which are part of the real estate and investment management industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis.",
+              "rationale": "The statement is directly related to the company's strategic objective and financial performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis."
+            },
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:04:45.461021+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "848e39312a0c51071109a4ccbf23f50a124a0b898a8539e22b74c95453a71852",
+    "raw_sha256": "0b7476b1c90d53c3dde920502d4d719a344a6a45cd14ff3695746676eabfe80c",
+    "date_quote": "SEC filing datePublished=2014-02-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262414000234/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:5226954feafeae18",
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5226954feafeae18",
+        "industry_name_standard": "Real Estate",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:5226954feafeae18",
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5226954feafeae18",
+        "industry_name_standard": "Real Estate",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:6500",
+        "name": "REAL ESTATE",
+        "basis": "inferred",
+        "quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6500",
+        "industry_name_standard": "REAL ESTATE",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "As these investments gain in popularity, we believe that investors will substantially increase their portfolio allocation to Real Assets.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:dbe543231540c046",
+        "name": "Investment Managers",
+        "basis": "inferred",
+        "quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "dbe543231540c046",
+        "industry_name_standard": "Investment Managers",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our View on the United States More recently, we have been investing a greater portion of our investment dollars outside of the United States.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "22c6f9abb3272b66d644bac7",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_02_14_Financial-Report_Real-Estate-&-Asset-Management_sec_22c6f9abb3272b66d644bac7.json",
+        "sha256": "f333a113d653d6258acf3f3486ade7914c2c3f62a7b4c0f82895a1827f928c1b",
+        "filename": "2014_02_14_Financial-Report_Real-Estate-&-Asset-Management_sec_22c6f9abb3272b66d644bac7.json"
+      }
+    ],
+    "original_record_hash": "67cf887dc5eb142594530dcebb97b85fb61461e7143992cbce7cc65b3c6e6584",
+    "input_hash": "e55ce1348b27540ae2f0a83b891898656d535144133c65d103faa4e6de824cf4",
+    "matching_audit_hash": "cc407afdce30bf865f7c31a999dec9098ddbc09aebef9bf422eb2fa6ec1efb79",
+    "legacy_security_evidence": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "record_hash": "df9a9bb74bcbbd0270fde2906e1b3988faa7e863d0e50d546e4d1df675c5f08c",
+    "outputs": [
+      {
+        "path": "US\\2014_02_14_Financial-Report_Real-Estate-&-Asset-Management_sec_22c6f9abb3272b66d644bac7.json",
+        "sha256": "ab4a61a869c9db69608a95bacbab8b6c0ee8a20298025bd3024ba9f8ec54231e"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2014-02-14",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+      "fetched_at": "2026-11-11T00:06:28.362029+00:00",
+      "feature_available_at": "2026-11-11T00:06:35.745055+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:04:45.396608+00:00",
+    "feature_available_at": "2026-11-18T10:04:45.461021+00:00",
+    "commit_verified_at": "2026-11-12T13:52:49.666822+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [
+      "US_EQUITY"
+    ],
+    "scope_evidence": [
+      {
+        "scope": "US_EQUITY",
+        "evidence_quote": "business, financial condition, expected financial results, performance, prospects, opportunities, priorities, targets, goals, ongoing objectives, strategies and outlook of the company and its subsidiaries, as well as the outlook for North American and international economies for the current fiscal year and subsequent periods, and include words such",
+        "rationale": "The statement discusses the outlook for North American and international economies, which is relevant to the US equity market.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "business, financial condition, expected financial results, performance, prospects, opportunities, priorities, targets, goals, ongoing objectives, strategies and outlook of the company and its subsidiaries, as well as the outlook for North American and international economies for the current fiscal year and subsequent periods, and include words such",
+        "summary_evidence_quote": null,
+        "scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "confidence_interpretation": "uncalibrated_model_self_assessment"
+      }
+    ],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+        "rationale": "The company's financial results and operations are directly mentioned, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "BROOKFIELD ASSET MANAGEMENT INC.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "We increased cash flow and created value with operational improvements in all of our major businesses.",
+        "rationale": "The statement refers to the company's operational improvements across its major businesses, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We increased cash flow and created value with operational improvements in all of our major businesses.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "market",
+        "quote": "Factors that could cause actual results to differ materially from those contemplated or implied by forward-looking statements include, but are not limited to: the impact or",
+        "rationale": "The statement discusses factors that affect the company's results, including general economic, political, and market factors, which are broad enough to imply a market-wide impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Factors that could cause actual results to differ materially from those contemplated or implied by forward-looking statements include, but are not limited to: the impact or",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Our assets under management increased to $187 billion despite significant returns of capital to clients on realizations.",
+        "rationale": "The article provides specific information about Brookfield Asset Management's assets under management, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our assets under management increased to $187 billion despite significant returns of capital to clients on realizations.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "market",
+        "quote": "The bottom line is, absolutely not.",
+        "rationale": "The statement indicates a positive outlook on the U.S. market, which is a broad market scope as it refers to the overall U.S. financial and equity markets.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The bottom line is, absolutely not.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Brookfield Property Group Our property group recorded solid performance, with FFO increasing 3% year over year to nearly $560 million.",
+        "rationale": "This statement is specific to Brookfield Property Group, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Brookfield Property Group Our property group recorded solid performance, with FFO increasing 3% year over year to nearly $560 million.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis.",
+        "rationale": "The statement is directly related to the company's strategic objective and financial performance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our primary long-term goal is to achieve 12% to 15% compound annual returns measured on a per share basis.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_dictionary_code_quote_conflict",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001102624-14-000234-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "df9a9bb74bcbbd0270fde2906e1b3988faa7e863d0e50d546e4d1df675c5f08c",
+    "content_hash": "0c5057153db1582fe160371981a49b15281d7e4c2fe867a46f765c279eeaa790",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:04:45.400619+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/22c6f9abb3272b66d644bac7.json",
+      "sha256": "4c88adb8913bf059a7e006b128b11a22eace17833108818efef6a58667a7e92c",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 212.15599999998813
+}

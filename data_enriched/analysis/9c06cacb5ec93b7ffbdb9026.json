@@ -1,0 +1,107 @@
+{
+  "source_id": "9c06cacb5ec93b7ffbdb9026",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_07_31_Financial-Regulation_Financial-Services_treasury.json",
+      "sha256": "946a80463c5d49d4fd88af7781549bb3cef8af93b4ed333dac7ab41c392522e5",
+      "filename": "2018_07_31_Financial-Regulation_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "00bdb1e4f8adb23496eab6beaf155753e840ec71c24a1164a513f96cc3945dcd",
+  "input_hash": "5e378413846a99d239a63bb85eae7b1947614cdbc31b90097c46d2e870787184",
+  "matching_audit_hash": "86b81c8a4aba2f9f2c4a26d724c1cc997088808822956831f7f583a0adf3a186",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c6e4b4b340643e96524ba8b062507fb40e5c0dcf369516b41238d75ad39da524",
+    "raw_sha256": "66bb749d13e9fa497b761f0ca17cfcb423a6e20b1396f15f1fddd61bf536cc94",
+    "date_quote": "July 31, 2018",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "f18555ed3d1f9e7216f118e626acbfbceeca64e5ef7bf5423e50dae38d642003",
+  "outputs": [
+    {
+      "path": "US\\2018_07_31_Financial-Regulation_Financial-Services_treasury.json",
+      "sha256": "b4a3a303d90cb87e9d5259807a5099044dd994ee9e66b8287d5cfaf31cbbee0d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-07-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:22.095696+00:00",
+    "fetched_at": "2026-11-10T11:14:43.984618+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.928953+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:23.176156+00:00",
+  "feature_available_at": "2026-11-12T14:45:23.185320+00:00",
+  "commit_verified_at": "2026-11-12T14:45:23.185320+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory recommendations and their impact on the financial industry, including nonbank financial institutions, financial technology, and创新.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Executive Order 13772",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Executive Order 13772"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Regulation",
+        "basis": "explicit",
+        "quote": "Financial Regulation"
+      },
+      {
+        "name": "Financial Technology",
+        "basis": "inferred",
+        "quote": "financial technology"
+      },
+      {
+        "name": "Capital Markets",
+        "basis": "explicit",
+        "quote": "Capital Markets"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Executive Order 13772": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

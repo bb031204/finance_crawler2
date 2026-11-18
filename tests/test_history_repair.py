@@ -42,7 +42,7 @@ class HistoryRepairTests(unittest.TestCase):
     def test_monthly_refinement_rotates_all_sources_and_directions(self):
         c=self.crawler();c.cfg.monitoring.directions='all';c.cfg.collection.start_date='2012-01-01';c.cfg.collection.end_date='2022-05-25'
         jobs=[j for j in historical_jobs(c.cfg,*c.window()) if j['phase']=='window']
-        self.assertEqual(len(jobs),125)
+        self.assertEqual(len(jobs),250)
         self.assertEqual({j['source_turn']%34 for j in jobs},set(range(34)))
         self.assertEqual(len({j['direction'] for j in jobs}),52)
     def test_checkpoint_restart_does_not_replay_finished_requests(self):
@@ -147,8 +147,13 @@ class HistoryRepairTests(unittest.TestCase):
             if request.url.path=='/api/tags':return httpx.Response(200,json={'models':[{'name':'qwen3:8b','digest':'offline'}]})
             body=json.loads(request.content);fields=body['format']['properties'];seen.append(fields)
             if 'date_kind' in fields:value={'time':'April 13, 2016','date_quote':'Published April 13, 2016','date_kind':'published'}
-            else:value={'useful':True,'market':'US','category':'Policy','industry':'Finance','securities':[],'industries':[],'impact_scope':[],
-                'keywords':['offline fixture'],'content':'The current article discusses a historical document dated October 21, 2015. This is an offline fixture only.','reason':'offline'}
+            else:
+                payload=json.loads(body['messages'][-1]['content'].split('\n修正：')[0])
+                text=payload.get('text','')
+                content='The current article discusses historical monetary policy and its financial context. This is an offline fixture only.'
+                if 'October 21, 2015' in text:content='The current article cites a historical document dated October 21, 2015. This is an offline fixture only.'
+                value={'useful':True,'market':'US','category':'Policy','industry':'Finance','securities':[],'industries':[],'impact_scope':[],
+                    'keywords':['offline fixture'],'content':content,'reason':'offline'}
             return httpx.Response(200,json={'message':{'content':json.dumps(value)}})
         q=Qwen(cfg.ollama,self.root,httpx.Client(base_url='http://localhost',transport=httpx.MockTransport(handler)))
         try:

@@ -1,0 +1,110 @@
+{
+  "source_id": "0a9d4f520d7cf2cdc2160f10",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_09_17_Energy_Coal-Mining_yahoo.json",
+      "sha256": "9b92096edc3ff007c7ca142bfdee8418af5e05c67af47ba860f3d16ceca9a8e7",
+      "filename": "2020_09_17_Energy_Coal-Mining_yahoo.json"
+    }
+  ],
+  "original_record_hash": "46a55f2f1ff201b04a6cbf05ad51d9e7087bdf2aa1911ff3551f73d5d5859c80",
+  "input_hash": "7eeeebc0e2a98fa6b45d51c41fe9975936e79343005a3457e939463d27b128b7",
+  "matching_audit_hash": "d6cb71207f4a957dae61175111ccee4f8e2d85e4bbebac4747108dd9db1c6346",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d6bbaa8bbac828bc3437f96fc5f162a26eb188bb9bf5c90ded73a5af7abcf571",
+    "raw_sha256": "a4e396fa278a27a4a6631ced4cbd66646bec3bdcaf8f648e0d138d5f004cc74f",
+    "date_quote": "page.datePublished=2020-09-17T05:06:08Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0a6ab02673a7fd0dcc9160e831f6186f3bde7015bd4b156b19f2bd78621380c2",
+  "outputs": [
+    {
+      "path": "US\\2020_09_17_Energy_Coal-Mining_yahoo.json",
+      "sha256": "75341ab9e56f28ec312ff9c7e46155090c2992766b4c2c50875490cb298a56b9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-09-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:36:12.817683+00:00",
+    "fetched_at": "2026-11-10T15:10:01.472375+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.599231+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:53:39.361152+00:00",
+  "feature_available_at": "2026-11-12T14:53:39.373928+00:00",
+  "commit_verified_at": "2026-11-12T14:53:39.373928+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a company restructuring, debt elimination, new ownership, and industry implications.",
+    "securities": [
+      {
+        "name": "Murray Energy",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Murray Energy"
+      },
+      {
+        "name": "American Consolidated Natural Resources Inc. (ACNR)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American Consolidated Natural Resources Inc. (ACNR)"
+      },
+      {
+        "name": "United Mine Workers union",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Mine Workers union"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Coal mining",
+        "basis": "explicit",
+        "quote": "coal mining company"
+      },
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "Energy"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Murray Energy": "company",
+      "American Consolidated Natural Resources Inc. (ACNR)": "company",
+      "United Mine Workers union": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

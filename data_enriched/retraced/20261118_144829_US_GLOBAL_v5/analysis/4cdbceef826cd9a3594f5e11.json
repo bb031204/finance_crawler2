@@ -1,0 +1,995 @@
+{
+  "source_id": "4cdbceef826cd9a3594f5e11",
+  "status": "completed",
+  "source_record_hash": "30573a4290b24d1515db5ed3d0f9448ea823ed18ef07baf1b975570816f27fb8",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-14-021161-index.html",
+    "attempted_at": "2026-11-18T14:00:37.927068+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-14-021161-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465914021161/a14-8442_18k.htm",
+    "fetched_at": "2026-11-18T14:00:52.860005+00:00",
+    "source_body_hash": "7dec7b594adfada90faba4688883d4fbc0e23f08348cde0d3e9cd11432fb12d2",
+    "raw_sha256": "1fd722b950330cfe335ee94baef4685496aa8ee551f3191ef4f3c82f7c823e5e",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465914021161/a14-8442_18k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "1fd722b950330cfe335ee94baef4685496aa8ee551f3191ef4f3c82f7c823e5e",
+        "text_sha256": "222602f606c6f97120d26d44b0e801ad729b54c725762518941893ee45fdf9c9",
+        "text_start": 0,
+        "text_end": 2778
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465914021161/a14-8442_1ex99d1.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "fab97452fe467cbf0d3f5e695c55d11d2f8b00d5338a3a20986bc37fa856a49b",
+        "text_sha256": "21724159f36470917e577eb76b7ac42a8eda34365e8977b50b103a89d925a4f9",
+        "text_start": 2780,
+        "text_end": 21051
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2014-03-20",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4cdbceef826cd9a3594f5e11.json",
+    "sha256": "f14ad0e6421c9709129a0319aaa60840d2a010c55d79f2286ebabafa84af3dda",
+    "bundled_path": "legacy_audit/4cdbceef826cd9a3594f5e11.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "ae137fa37cf01bed3d263bee0b2c70c018324f9aad33690dae9b7003009850fa",
+      "llm_inferred_at": "2026-11-18T14:01:19.611026+00:00",
+      "model_duration_seconds": 26.7033509,
+      "prompt_tokens": 4302,
+      "completion_tokens": 1273,
+      "selection": [
+        {
+          "source_id": "4cdbceef826cd9a3594f5e11",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012.",
+              "rationale": "The article discusses the impact of margin compression, interest rates, and compliance efforts on the mortgage lending segment, which is part of the broader mortgage banking industry. This indicates an industry-wide impact due to the sector-specific challenges faced.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The resulting historically low interest rate environment drove significant refinance volumes in 2012 and in the first four months of 2013.",
+              "rationale": "The article highlights the effect of interest rates on refinance volumes, which is a key factor affecting the mortgage banking industry. This indicates an industry-wide impact due to macroeconomic conditions.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Our lending margins, including gain on sale and fees, declined to 2.17% in 2013 as compared to 3.01% in 2012, resulting in a decline in margin revenue of $17.4 million.",
+              "rationale": "The article discusses the decline in lending margins, which is a sector-specific issue affecting the mortgage banking industry. This indicates an industry-wide impact due to the sector-specific financial performance.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "With the economic conditions experienced in the last few years, the Federal Reserve has attempted to keep interest rates low to spur economic growth.",
+              "rationale": "The article discusses the impact of Federal Reserve monetary policy on interest rates, which affects the broader US equity and financial markets. This indicates a market-wide impact due to macroeconomic conditions.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "The information under Item 2.02, above, is incorporated herein by reference."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "name": "LOAN BROKERS",
+              "basis": "explicit",
+              "quote": "The information under Item 2.02, above, is incorporated herein by reference."
+            },
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "The information under Item 2.02, above, is incorporated herein by reference."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "mortgage brokers and approximately 150 approved correspondent relationships with banks, credit unions and mortgage companies. Through our wholesale and correspondent channels, we",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The article discusses the impact of margin compression, interest rates, and compliance efforts on the mortgage lending segment, which is part of the broader mortgage banking industry. This indicates an industry-wide due",
+              "confidence": 0.95,
+              "quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "industry_scope_quote": "mortgage brokers and approximately 150 approved correspondent relationships with banks, credit unions and mortgage companies. Through our wholesale and correspondent channels, we",
+              "industry_name_original": "LOAN BROKERS",
+              "mechanism": "The article discusses the impact of margin compression, interest rates, and compliance efforts on the mortgage lending segment, which is part of the broader mortgage banking industry. This indicates an industry-wide due",
+              "confidence": 0.95,
+              "quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012."
+            },
+            {
+              "industry_key": "SEC-SIC:6022",
+              "industry_scope_quote": "mortgage brokers and approximately 150 approved correspondent relationships with banks, credit unions and mortgage companies. Through our wholesale and correspondent channels, we",
+              "industry_name_original": "STATE COMMERCIAL BANKS",
+              "mechanism": "The article discusses the impact of margin compression, interest rates, and compliance efforts on the mortgage lending segment, which is part of the broader mortgage banking industry. This indicates an industry-wide due",
+              "confidence": 0.95,
+              "quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "b5ae87692be715c2d26ea9b24dc0e37b27a9fc0d8c93db851dc4135c74c4cd89",
+      "llm_inferred_at": "2026-11-18T14:01:43.259353+00:00",
+      "model_duration_seconds": 23.6259587,
+      "prompt_tokens": 4346,
+      "completion_tokens": 1231,
+      "selection": [
+        {
+          "source_id": "4cdbceef826cd9a3594f5e11",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012.",
+              "rationale": "The article discusses the decline in mortgage lending earnings, which is a key part of the mortgage banking industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The resulting historically low interest rate environment drove significant refinance volumes in 2012 and in the first four months of 2013.",
+              "rationale": "The article describes the impact of low interest rates on refinance volumes, which is a sector-wide phenomenon affecting the mortgage banking industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Our lending margins, including gain on sale and fees, declined to 2.17% in 2013 as compared to 3.01% in 2012, resulting in a decline in margin revenue of $17.4 million.",
+              "rationale": "The decline in lending margins is a sector-wide issue affecting the mortgage banking industry, indicating an industry-wide impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "With the economic conditions experienced in the last few years, the Federal Reserve has attempted to keep interest rates low to spur economic growth.",
+              "rationale": "The article discusses the impact of Federal Reserve monetary policy on interest rates, which is a broad US equity/financial market fact.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "name": "LOAN BROKERS",
+              "basis": "explicit",
+              "quote": "Our lending margins, including gain on sale and fees, declined to 2.17% in 2013 as compared to 3.01% in 2012, resulting in a decline in margin revenue of $17.4 million."
+            },
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "The resulting historically low interest rate environment drove significant refinance volumes in 2012 and in the first four months of 2013."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "mortgage brokers and approximately 150 approved correspondent relationships with banks, credit unions and mortgage companies. Through our wholesale and correspondent channels, we",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The article discusses the impact of interest rate changes on mortgage lending, which is a sector-wide phenomenon affecting the mortgage banking industry.",
+              "confidence": 0.85,
+              "quote": "The resulting historically low interest rate environment drove significant refinance volumes in 2012 and in the first four months of 2013."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "industry_scope_quote": "mortgage brokers and approximately 150 approved correspondent relationships with banks, credit unions and mortgage companies. Through our wholesale and correspondent channels, we",
+              "industry_name_original": "LOAN BROKERS",
+              "mechanism": "The article discusses the impact of interest rate changes on mortgage lending, which is a sector-wide phenomenon affecting the mortgage banking industry.",
+              "confidence": 0.85,
+              "quote": "The resulting historically low interest rate environment drove significant refinance volumes in 2012 and in the first four months of 2013."
+            },
+            {
+              "industry_key": "SEC-SIC:6022",
+              "industry_scope_quote": "mortgage brokers and approximately 150 approved correspondent relationships with banks, credit unions and mortgage companies. Through our wholesale and correspondent channels, we",
+              "industry_name_original": "STATE COMMERCIAL BANKS",
+              "mechanism": "The article discusses the impact of interest rate changes on mortgage lending, which is a sector-wide phenomenon affecting the mortgage banking industry.",
+              "confidence": 0.85,
+              "quote": "The resulting historically low interest rate environment drove significant refinance volumes in 2012 and in the first four months of 2013."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "c69e93a809b7473c721564377d734f863e27ee4866382c674e315ebcd95c365a",
+      "llm_inferred_at": "2026-11-18T14:02:04.517752+00:00",
+      "model_duration_seconds": 21.2268001,
+      "prompt_tokens": 3726,
+      "completion_tokens": 1038,
+      "selection": [
+        {
+          "source_id": "4cdbceef826cd9a3594f5e11",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our warehouse lending group offers funding facilities to approved lenders.",
+              "rationale": "The article discusses the company's expansion into warehouse lending, which is a sector-specific activity within the mortgage and financial services industry. This indicates an industry-wide impact as it relates to the broader mortgage banking and loan correspondents sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "In March 2014, we completed the sale of AmeriHome, which was a duplicative operational mortgage platform, for $10.2 million in cash, recording a gain of approximately $3.0 million.",
+              "rationale": "The article specifically mentions the company's actions, including the sale of AmeriHome, which is a direct event affecting the company's financials and operations.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Our warehouse lending group offers funding facilities to approved lenders."
+            },
+            {
+              "industry_key": "SEC-SIC:6798",
+              "name": "REAL ESTATE INVESTMENT TRUSTS",
+              "basis": "explicit",
+              "quote": "The real estate services segments continues to earn consistent profits and posted net earnings of $13.3 million for the year ended December 31, 2013, as compared to $12.6 million"
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "Our warehouse lending group offers funding facilities to approved lenders."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact as it relates to the broader抵押贷款",
+              "confidence": 0.95,
+              "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us."
+            },
+            {
+              "industry_key": "SEC-SIC:6798",
+              "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+              "industry_name_original": "REAL ESTATE INVESTMENT TRUSTS",
+              "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact as it relates to the broader抵押贷款",
+              "confidence": 0.95,
+              "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+              "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact as it relates to the broader抵押贷款",
+              "confidence": 0.95,
+              "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "66df1bb785568069a5ae3a9ea24a76ebc3b77fb1ed26329ec8a1ef8274fc3bcb",
+      "llm_inferred_at": "2026-11-18T14:02:22.649212+00:00",
+      "model_duration_seconds": 18.0978553,
+      "prompt_tokens": 3770,
+      "completion_tokens": 952,
+      "selection": [
+        {
+          "source_id": "4cdbceef826cd9a3594f5e11",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our warehouse lending group offers funding facilities to approved lenders.",
+              "rationale": "The company's warehouse lending activities are part of the broader mortgage banking industry, which includes services like funding facilities for lenders.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "In March 2014, we completed the sale of AmeriHome, which was a duplicative operational mortgage platform, for $10.2 million in cash, recording a gain of approximately $3.0 million.",
+              "rationale": "The sale of AmeriHome is a specific event related to the company's operations and financial performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Our warehouse lending group offers funding facilities to approved lenders."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "Our warehouse lending group offers funding facilities to approved lenders."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "name": "LOAN BROKERS",
+              "basis": "explicit",
+              "quote": "Our warehouse lending group offers funding facilities to approved lenders."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the mortgage banking sector.",
+              "confidence": 0.95,
+              "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+              "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the short-term business loan,",
+              "confidence": 0.95,
+              "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us."
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+              "industry_name_original": "LOAN BROKERS",
+              "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the loan brokering sector.",
+              "confidence": 0.95,
+              "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "46e709aeda526dc8d5d342f54f66d0ef2bfc51728122915003842b7f2238edf5",
+      "llm_inferred_at": "2026-11-18T14:02:42.013611+00:00",
+      "model_duration_seconds": 19.3439743,
+      "prompt_tokens": 2495,
+      "completion_tokens": 999,
+      "selection": [
+        {
+          "source_id": "4cdbceef826cd9a3594f5e11",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+              "rationale": "The article discusses factors affecting the mortgage lending industry, including competition and compliance, which are industry-wide impacts.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Forward looking statements, some of which are based on various assumptions and events that are beyond our control, may be identified by reference to a future period or periods or",
+              "rationale": "The article is from Impac Mortgage Holdings, Inc., which is a specific company, and the statements are related to its operations and risks.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Moisio, VP Investor Relations at (949) 475-3988 or email Justin.Moisio@ImpacMail.com. Web site: http://ir.impaccompanies.com or www.impaccompanies.com 5"
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "name": "LOAN BROKERS",
+              "basis": "explicit",
+              "quote": "Moisio, VP Investor Relations at (949) 475-3988 or email Justin.Moisio@ImpacMail.com. Web site: http://ir.impaccompanies.com or www.impaccompanies.com 5"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "Moisio, VP Investor Relations at (949) 475-3988 or email Justin.Moisio@ImpacMail.com. Web site: http://ir.impaccompanies.com or www.impaccompanies.com 5"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations and margin compression",
+              "confidence": 0.95,
+              "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system"
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+              "industry_name_original": "LOAN BROKERS",
+              "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations and margin compression",
+              "confidence": 0.95,
+              "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations and margin compression",
+              "confidence": 0.95,
+              "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "ad18876cd7cb4393f16a6b73bbfde974c49de957af76c5990303dff1fba6dacf",
+      "llm_inferred_at": "2026-11-18T14:03:01.855578+00:00",
+      "model_duration_seconds": 19.8291471,
+      "prompt_tokens": 2539,
+      "completion_tokens": 1073,
+      "selection": [
+        {
+          "source_id": "4cdbceef826cd9a3594f5e11",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the use of forward looking terminology, such as may, will, intends, believe, expect, likely, appear, should, could, seem to, anticipate, expectations, ",
+              "rationale": "The article discusses various risks and uncertainties that could affect the mortgage industry, including volatility in the mortgage industry and unexpected interest rate fluctuations, which are industry-wide factors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Forward looking statements, some of which are based on various assumptions and events that are beyond our control, may be identified by reference to a future period or periods or",
+              "rationale": "The article is from Impac Mortgage Holdings, Inc. (IMH or Impac), which is a specific company in the mortgage industry, and the statements are based on the company's expectations.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Moisio, VP Investor Relations at (949) 475-3988 or email Justin.Moisio@ImpacMail.com. Web site: http://ir.impaccompanies.com or www.impaccompanies.com 5"
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "name": "LOAN BROKERS",
+              "basis": "explicit",
+              "quote": "Moisio, VP Investor Relations at (949) 475-3988 or email Justin.Moisio@ImpacMail.com. Web site: http://ir.impaccompanies.com or www.impaccompanies.com 5"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "Moisio, VP Investor Relations at (949) 475-3988 or email Justin.Moisio@ImpacMail.com. Web site: http://ir.impaccompanies.com or www.impaccompanies.com 5"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+              "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations",
+              "confidence": 0.95,
+              "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system"
+            },
+            {
+              "industry_key": "SEC-SIC:6163",
+              "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+              "industry_name_original": "LOAN BROKERS",
+              "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations",
+              "confidence": 0.95,
+              "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations",
+              "confidence": 0.95,
+              "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:03:01.897189+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7dec7b594adfada90faba4688883d4fbc0e23f08348cde0d3e9cd11432fb12d2",
+    "raw_sha256": "1fd722b950330cfe335ee94baef4685496aa8ee551f3191ef4f3c82f7c823e5e",
+    "date_quote": "SEC filing datePublished=2014-03-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465914021161/a14-8442_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The text discusses financial results and disclosures related to Impac Mortgage Holdings, Inc., including financial performance, key metrics, and regulatory Fil ",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "In 2013, mortgage lending net earnings decreased by $18.8 million, to a loss of $(1.2) million, as compared to 2012.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:6162",
+        "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the mortgage banking sector.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "SEC-SIC:6153",
+        "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the short-term business loan,",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6153",
+        "industry_name_standard": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "SEC-SIC:6163",
+        "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_name_original": "LOAN BROKERS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the loan brokering sector.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6163",
+        "industry_name_standard": "LOAN BROKERS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "LOAN BROKERS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "SEC-SIC:6162",
+        "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "SEC-SIC:6163",
+        "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_name_original": "LOAN BROKERS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6163",
+        "industry_name_standard": "LOAN BROKERS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "LOAN BROKERS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Impac Mortgage Holdings, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "4cdbceef826cd9a3594f5e11",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_03_20_Financial-Results_Mortgage_sec.json",
+        "sha256": "d7a72a81c3d5cc27e1af2afa1675328e470ae92d027c5c106662695f46b94de3",
+        "filename": "2014_03_20_Financial-Results_Mortgage_sec.json"
+      }
+    ],
+    "original_record_hash": "31b860263fe22ddd3b1902dc48f467cfb0d9ac4941c46cad9ebb8a432537150b",
+    "input_hash": "492c65f6df85939a524bce0aa621b4359565a46934b6a3feed234e149eb93cdb",
+    "matching_audit_hash": "fe754404b014e7a749018c53a3d4349a3bfb64bbd4e67df268f9493136cc60fa",
+    "legacy_security_evidence": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      }
+    ],
+    "record_hash": "30573a4290b24d1515db5ed3d0f9448ea823ed18ef07baf1b975570816f27fb8",
+    "outputs": [
+      {
+        "path": "US\\2014_03_20_Financial-Results_Mortgage_sec.json",
+        "sha256": "96288d6d803d6294e717dbdf586797eefd807f93c7a3802e43c058d9a1e1217e"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2014-03-20",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.918984+00:00",
+      "fetched_at": "2026-11-10T23:50:35.091362+00:00",
+      "feature_available_at": "2026-11-11T10:11:30.170754+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:03:01.855578+00:00",
+    "feature_available_at": "2026-11-18T14:03:01.897189+00:00",
+    "commit_verified_at": "2026-11-12T14:13:37.958507+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:6162",
+        "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the mortgage banking sector.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SEC-SIC:6153",
+        "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the short-term business loan,",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6153",
+        "industry_name_standard": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SEC-SIC:6163",
+        "industry_scope_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_name_original": "LOAN BROKERS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the origination of home equity lines of credit (HELOC) loans, which is a new product opportunity for lenders like the company. This indicates an industry-wide impact on the loan brokering sector.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6163",
+        "industry_name_standard": "LOAN BROKERS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "In addition, the origination for home equity lines of credit (HELOC) loans is increasingly creating another new product opportunity for lenders like us.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SEC-SIC:6162",
+        "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_name_original": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SEC-SIC:6163",
+        "industry_scope_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_name_original": "LOAN BROKERS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "volatility in the mortgage industry and unexpected interest rate fluctuations",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6163",
+        "industry_name_standard": "LOAN BROKERS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "mortgage compliance programs and market and sell our loan products; increased competition in the mortgage lending industry by larger or more efficient companies; issues and system",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "In March 2014, we completed the sale of AmeriHome, which was a duplicative operational mortgage platform, for $10.2 million in cash, recording a gain of approximately $3.0 million.",
+        "rationale": "The sale of AmeriHome is a specific event related to the company's operations and financial performance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "In March 2014, we completed the sale of AmeriHome, which was a duplicative operational mortgage platform, for $10.2 million in cash, recording a gain of approximately $3.0 million.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "Our warehouse lending group offers funding facilities to approved lenders.",
+        "rationale": "The company's warehouse lending activities are part of the broader mortgage banking industry, which includes services like funding facilities for lenders.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our warehouse lending group offers funding facilities to approved lenders.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Forward looking statements, some of which are based on various assumptions and events that are beyond our control, may be identified by reference to a future period or periods or",
+        "rationale": "The article is from Impac Mortgage Holdings, Inc. (IMH or Impac), which is a specific company in the mortgage industry, and the statements are based on the company's expectations.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Forward looking statements, some of which are based on various assumptions and events that are beyond our control, may be identified by reference to a future period or periods or",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "the use of forward looking terminology, such as may, will, intends, believe, expect, likely, appear, should, could, seem to, anticipate, expectations, ",
+        "rationale": "The article discusses various risks and uncertainties that could affect the mortgage industry, including volatility in the mortgage industry and unexpected interest rate fluctuations, which are industry-wide factors.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the use of forward looking terminology, such as may, will, intends, believe, expect, likely, appear, should, could, seem to, anticipate, expectations, ",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_mechanism_semantic_not_literal_driver"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000298/0001104659-14-021161-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "30573a4290b24d1515db5ed3d0f9448ea823ed18ef07baf1b975570816f27fb8",
+    "content_hash": "e187b433936db54838796a5e2591d551aac203960c5de248e1e486a4b43bd546",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:03:01.860617+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4cdbceef826cd9a3594f5e11.json",
+      "sha256": "d0d24d1c6e4b1e69383221f4e03cdbcce0c8f8924e792af61bdd5849622e7941",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 144.0
+}

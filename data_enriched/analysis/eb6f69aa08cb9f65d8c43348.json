@@ -1,0 +1,95 @@
+{
+  "source_id": "eb6f69aa08cb9f65d8c43348",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_05_11_Finance_Beauty-and-Personal-Care_sec.json",
+      "sha256": "32d898089c81b21601da8e78302a3c1df615d957af80336f0cb8d2aaecc36222",
+      "filename": "2020_05_11_Finance_Beauty-and-Personal-Care_sec.json"
+    }
+  ],
+  "original_record_hash": "335625691efe1fe986e9953fc4980b53e21cad4305db80320bb35ca7d73cc2a8",
+  "input_hash": "0d14fe7ef60072217d380f12da0c45e55f54569c1dc411e9adcf85f29f74ebb8",
+  "matching_audit_hash": "0439056788967920c44e4f8bf75eae394061ea2ef6cd1189abae57d55843274c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4811e91a307645841b9a37737a546a32b6cd4ba9d7aba3b1cee0797c8093dc73",
+    "raw_sha256": "0fdc0da864c4df4234903d1461b2d1527fdce77bedb1d6c8f45b6a840fc1e618",
+    "date_quote": "Date of Report (Date of earliest event reported): May 11, 2020",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1024305/000102430520000048/coty-20200511.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Coty Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Coty Inc. (Registrant)"
+    }
+  ],
+  "record_hash": "9e70b474c4a8fe8dfb5b01f127f40b1377f97115e7b8195c61f6be62d8fcf0ce",
+  "outputs": [
+    {
+      "path": "US\\2020_05_11_Finance_Beauty-and-Personal-Care_sec.json",
+      "sha256": "9aebe814ce5ec2b0ea22a04600fa66229c93a5d821dc043f198ee056f76b1d7f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-05-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:12.457175+00:00",
+    "fetched_at": "2026-11-10T20:08:45.147146+00:00",
+    "feature_available_at": "2026-11-10T20:08:59.966975+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:33.576254+00:00",
+  "commit_verified_at": "2026-11-12T13:53:33.576254+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Coty Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Coty Inc. (Registrant)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty and Personal Care",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

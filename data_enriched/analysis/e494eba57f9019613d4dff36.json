@@ -1,0 +1,126 @@
+{
+  "source_id": "e494eba57f9019613d4dff36",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_01_Trade-Policy_Steel,-Aluminum_cnbc.json",
+      "sha256": "e4ae70ca73378d78326f98708b45af6923d784f46cee735992888ed49b71caa8",
+      "filename": "2018_03_01_Trade-Policy_Steel,-Aluminum_cnbc.json"
+    }
+  ],
+  "original_record_hash": "8e49b01383139357e197f4d4b70044b591ba27876f0829ec1a29b616a8f7962b",
+  "input_hash": "a1f527d9d8e737c2c291f5532935477d2872b3256ec87c38a31c9bc656495849",
+  "matching_audit_hash": "1c54a871e7751d26b16947c98bb8d5be3220217d4e5eea1ce137605b5d59ef21",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dff297c6586717d9546b91071ac7d17975d14740ddd0b6b4a8fdbf9d75ee523e",
+    "raw_sha256": "bb9c9d95a1ee68fd66f6a49b687f6b3ba831c6c367ac0d1b112d10ebb881bc05",
+    "date_quote": "article:published_time=2018-03-01T13:47:42+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b182ff9bf7cf927fe1164b3eaccaa8faf694b53c491f288030870cd437d064d2",
+  "outputs": [
+    {
+      "path": "US\\2018_03_01_Trade-Policy_Steel,-Aluminum_cnbc.json",
+      "sha256": "b7d0d88bba70e8b4b7ee5bfb0d29a15ee16851d79525a55d089d52fb4018a84d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:28.583846+00:00",
+    "fetched_at": "2026-11-10T15:48:23.790091+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.031543+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:20.477447+00:00",
+  "feature_available_at": "2026-11-12T14:43:20.532959+00:00",
+  "commit_verified_at": "2026-11-12T14:43:20.532959+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the impact of new tariffs on steel and aluminum imports, affecting industries and market reactions.",
+    "securities": [
+      {
+        "name": "U.S. Steel",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Steel"
+      },
+      {
+        "name": "Nucor",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nucor"
+      },
+      {
+        "name": "ArcelorMittal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ArcelorMittal"
+      },
+      {
+        "name": "Evraz",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Evraz"
+      },
+      {
+        "name": "JW Aluminum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "JW Aluminum"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Steel industry",
+        "basis": "inferred",
+        "quote": "steel and aluminum industries"
+      },
+      {
+        "name": "Global trade",
+        "basis": "inferred",
+        "quote": "global competition"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S. Steel": "company",
+      "Nucor": "company",
+      "ArcelorMittal": "company",
+      "Evraz": "company",
+      "JW Aluminum": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "691f9618e7abbd3d57904465",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_03_04_government_real-estate_cnbc.json",
+      "sha256": "ee2b47327568dcd39cdfa91c9faaf7a54a45223fed7136ec5d160a05369fc65f",
+      "filename": "2022_03_04_government_real-estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "5313fa9ed72900954b2a6a2cb09105fc3f576709495d0cc7674123edbe59299a",
+  "input_hash": "ba7b24d67be7c618da131352766e979f344350e0b3b98eac7d314ad4df72e27e",
+  "matching_audit_hash": "bada34fbd2da63c72eb2f208c1f19296e8f0bad8713f1a78ba9cc7b0dfa9b8f5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "577c25c311993ce0b4a4ac316ba90a2b5dbbc445858189218b39f508ff060da2",
+    "raw_sha256": "0a421282a56df61568af663aede0f36a6fb6265dcc181e1831bcef78b03e6db5",
+    "date_quote": "article:published_time=2022-03-04T13:52:32+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "U.S. Department of the Treasury",
+      "ticker": null,
+      "exchange": null,
+      "quote": "U.S. Department of the Treasury"
+    }
+  ],
+  "record_hash": "b8c157517a8100cf1a01be30764dad5c3ef61b4b65b35d579a7ea33166488e5b",
+  "outputs": [
+    {
+      "path": "US\\2022_03_04_government_real-estate_cnbc.json",
+      "sha256": "77021708fc2cf2355334f6372ae6129118eb4c43012688b9bf6e17b0e4b40c4c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-03-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+    "fetched_at": "2026-11-10T19:37:55.498184+00:00",
+    "feature_available_at": "2026-11-10T19:38:22.348853+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:40.157129+00:00",
+  "commit_verified_at": "2026-11-12T13:53:40.157129+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

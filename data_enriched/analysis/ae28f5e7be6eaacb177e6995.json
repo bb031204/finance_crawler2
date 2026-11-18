@@ -1,0 +1,108 @@
+{
+  "source_id": "ae28f5e7be6eaacb177e6995",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_08_Mergers-and-Acquisitions_Textiles-and-Apparel_sec.json",
+      "sha256": "2bf6203f2c43947cba97780b335ce2c4c72c8c1527ad9a734d9fe4b23ff21370",
+      "filename": "2021_03_08_Mergers-and-Acquisitions_Textiles-and-Apparel_sec.json"
+    }
+  ],
+  "original_record_hash": "0ef1913962cd60ba3c5c4075aaa3280cb136ea9994c513fffd7846e31e3097e5",
+  "input_hash": "b7c5990143c97595136cb5603e49ce902f958e4f9ea7fb958dffcb74d8bd21f6",
+  "matching_audit_hash": "e3decb3b81db21fa0ce7fdf37aba6c65248bd6aad4ab89dadd2237f7c13554b4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d1236a8f0dbed8603e8ae7143142ad9d5426e314e0ed61506a37a588343466ef",
+    "raw_sha256": "c37332ad4b5c9f555b4920b09acbc5e12271662129d43bb3fc3f9f39598b879a",
+    "date_quote": "SEC filing datePublished=2021-03-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000110465921032921/tm218968d1_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+    },
+    {
+      "name": "Scapa Group plc",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Scapa Group plc"
+    }
+  ],
+  "record_hash": "ea133eabfef8e8c46da1a07537f4a005725a61a3a94e14ae887fd05efeaa9b47",
+  "outputs": [
+    {
+      "path": "US\\2021_03_08_Mergers-and-Acquisitions_Textiles-and-Apparel_sec.json",
+      "sha256": "84fdb3eb2dafbb907443a06274afb8ae9691bfaf103e00b01cd6909d31e366d1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.584595+00:00",
+    "fetched_at": "2026-11-11T15:57:57.969156+00:00",
+    "feature_available_at": "2026-11-11T15:58:19.104864+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.842499+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.842499+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+      },
+      {
+        "name": "Scapa Group plc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Scapa Group plc"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Textiles and Apparel",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

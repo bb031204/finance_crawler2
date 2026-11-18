@@ -1,0 +1,90 @@
+{
+  "source_id": "ca024a90996dcccc53455207",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_04_Transaction-Extension_Technology_sec.json",
+      "sha256": "ad94f3b314121ea211c2d8096b9be0b05e3c1ca83429b9c366a97ad64be342f8",
+      "filename": "2019_01_04_Transaction-Extension_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "a3a377b58cd1e61eb05a4fc290cb6778c2da45ad4a68ae6cec551c54ea11024c",
+  "input_hash": "5003bb3bef500ed5c579e2d423d46d37faf75276f05f23f052ebcfa3081bd7b2",
+  "matching_audit_hash": "5697d2eef4fbc30ea01d9050f299d00389aae036876bf025d8570e55058cb6b1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6e13a1685dd19d47c470806cf223bf03c18bc4ba42151985e393ae30c3b02cff",
+    "raw_sha256": "d0d944b2e24d531376a90c2a6e7769e86837f66243656c6f77c697cb9d5f3664",
+    "date_quote": "SEC filing datePublished=2019-01-04",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390019000210/f8k010219_blondertongue.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "4dfb6503c1bf03845ecdb1733b3a306f6e299e40ada0bbb14fb98664021ad30d",
+  "outputs": [
+    {
+      "path": "US\\2019_01_04_Transaction-Extension_Technology_sec.json",
+      "sha256": "3f42c2f5ba1f97ab1e983f31a0c3a57c9925882ec2d8a8c0d6db28341af13dc3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.617623+00:00",
+    "fetched_at": "2026-11-11T13:51:31.480872+00:00",
+    "feature_available_at": "2026-11-11T13:51:46.499515+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:47:03.206963+00:00",
+  "feature_available_at": "2026-11-12T14:47:03.216447+00:00",
+  "commit_verified_at": "2026-11-12T14:47:03.216447+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a transaction extension, including the payment of an extension deposit and the new closing date, which are substantive financial actions.",
+    "securities": [
+      {
+        "name": "BLONDER TONGUE LABORATORIES INC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BLONDER TONGUE LABORATORIES INC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "BLONDER TONGUE LABORATORIES INC"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "BLONDER TONGUE LABORATORIES INC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

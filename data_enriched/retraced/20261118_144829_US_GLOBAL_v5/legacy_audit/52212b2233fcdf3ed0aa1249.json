@@ -1,0 +1,104 @@
+{
+  "source_id": "52212b2233fcdf3ed0aa1249",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_28_Consumer-Goods_Restaurants_cnbc.json",
+      "sha256": "0450a2ba1d37263c7d77d057561ee54eff6c037031569e54462115f0a82dce36",
+      "filename": "2019_10_28_Consumer-Goods_Restaurants_cnbc.json"
+    }
+  ],
+  "original_record_hash": "99d27a9169aec417f399373332c5b3d22e06ef46f04b793027bbc4ac753e83b7",
+  "input_hash": "92a97ca608a45a3258f4961245bc0e7221e84c12c686dec31e5af53141871737",
+  "matching_audit_hash": "29bbf77fec9ceac95f6f11e2de595b359400c744c54f3e580fa8a18ddf7a6606",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c2b13aeb26dd8656ba59be8727e275a971a15f42565d12bf79dc33e8e73b5af3",
+    "raw_sha256": "d23e72e08e8c821205398a917d32822b17c8f0616ae6d1f0d2c6b8e8cf194ca9",
+    "date_quote": "article:published_time=2019-10-28T15:55:56+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "61e63a847b3c405e2e15492dab7fb90397068a721d611f1b9df10ad6067dbc5d",
+  "outputs": [
+    {
+      "path": "US\\2019_10_28_Consumer-Goods_Restaurants_cnbc.json",
+      "sha256": "fd88d33e18d8f3b936541401c51030e232252c2fff4bd29d36761657515ba607"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:31.819111+00:00",
+    "fetched_at": "2026-11-10T16:56:29.518259+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.306684+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:00.579166+00:00",
+  "feature_available_at": "2026-11-12T14:51:00.589181+00:00",
+  "commit_verified_at": "2026-11-12T14:51:00.589181+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Tim Hortons' performance, strategies, and expansion plans, which are relevant for financial analysis.",
+    "securities": [
+      {
+        "name": "Tim Hortons",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tim Hortons, the Canadian coffee chain"
+      },
+      {
+        "name": "Restaurant Brands",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Restaurant Brands, the parent company of Tim Hortons"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Food and Beverage",
+        "basis": "inferred",
+        "quote": "food and beverage options"
+      },
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": "store renovations"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Tim Hortons": "company",
+      "Restaurant Brands": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

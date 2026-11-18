@@ -1,0 +1,116 @@
+{
+  "source_id": "c7305b91e95a893e946172ef",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_04_19_Economic-Report_Wholesale-Trade,-Mining,-Information-Ser_bea.json",
+      "sha256": "b82b0b9519b515a7e8449c30273b0da106a881e0c1852da11777c1e6ed021f91",
+      "filename": "2019_04_19_Economic-Report_Wholesale-Trade,-Mining,-Information-Ser_bea.json"
+    }
+  ],
+  "original_record_hash": "775d5920b3f4420727d1c0cff495c2d48c031738ba41d50957e9cdcdf8760c3f",
+  "input_hash": "6fdf20df24e8f466a8a2ac3cd442e276dae447a79c0f05109a3ba38f0163771b",
+  "matching_audit_hash": "a3643a21946769138fe3b424b822e6993e980362563acdd5971a9338fcfc22f9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8ee56343c94ce1abe30a08c51142fc6c8ea424e1ae8d9d48ddd08e181c8aab70",
+    "raw_sha256": "c7e6038eaf9349adeaeec8603b7a0dc3cd278b965584f7f3b51258caa568480a",
+    "date_quote": "EMBARGOED UNTIL RELEASE AT 8:30 A.M. EDT, FRIDAY, April 19, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ef4f090774b8ac9461d2a398afccfcf7f0ecf66e86222d5b648a567d8db42b00",
+  "outputs": [
+    {
+      "path": "US\\2019_04_19_Economic-Report_Wholesale-Trade,-Mining,-Information-Ser_bea.json",
+      "sha256": "3f2722f9f282e8d259da71269a6bb8420ccc40817ec46ef0460a88ba7c9b95f6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-04-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:22.410213+00:00",
+    "fetched_at": "2026-11-11T03:58:46.557998+00:00",
+    "feature_available_at": "2026-11-11T04:00:09.704387+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:49:05.343330+00:00",
+  "feature_available_at": "2026-11-12T14:49:05.353930+00:00",
+  "commit_verified_at": "2026-11-12T14:49:05.353930+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text provides detailed industry-specific GDP growth data, including contributions from various sectors and highlights key performance areas.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Economic Analysis (BEA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "wholesale trade",
+        "basis": "explicit",
+        "quote": "wholesale trade"
+      },
+      {
+        "name": "mining",
+        "basis": "explicit",
+        "quote": "mining"
+      },
+      {
+        "name": "information services",
+        "basis": "explicit",
+        "quote": "information services"
+      },
+      {
+        "name": "finance and insurance",
+        "basis": "explicit",
+        "quote": "finance and insurance"
+      },
+      {
+        "name": "retail trade",
+        "basis": "explicit",
+        "quote": "retail trade"
+      },
+      {
+        "name": "construction",
+        "basis": "explicit",
+        "quote": "construction"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Economic Analysis (BEA)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

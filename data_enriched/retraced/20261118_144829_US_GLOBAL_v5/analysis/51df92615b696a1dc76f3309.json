@@ -1,0 +1,337 @@
+{
+  "source_id": "51df92615b696a1dc76f3309",
+  "status": "completed",
+  "source_record_hash": "f71bf589b60b9b9afe66dcf0824b0e625b80d3a3e53266f799cf7a6cc7d2abf8",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-14-005082-index.html",
+    "attempted_at": "2026-11-18T14:30:40.511412+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-14-005082-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774914005082/occ20140325_8k.htm",
+    "fetched_at": "2026-11-18T14:30:53.561673+00:00",
+    "source_body_hash": "6cc49f550a484ac1436f8c0119690d916addcb85b88c730cd2aa0066d7ab2d45",
+    "raw_sha256": "b5ca701774b1defcf53a6ad35ef47f8ddea4b26a74cfc9a62cb3f2622a629715",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774914005082/occ20140325_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "b5ca701774b1defcf53a6ad35ef47f8ddea4b26a74cfc9a62cb3f2622a629715",
+        "text_sha256": "e133762ae8a2533eb706fac45c5c258eafd3410cbff8c9a9e282a17a57081163",
+        "text_start": 0,
+        "text_end": 5382
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774914005082/ex99-1.htm",
+        "type": "EX-99",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "6a910e9dd56513aaf10f9fb4ca59067ff4dc66d8d077000bde87d32416591265",
+        "text_sha256": "e52c4e9e446aebe95d9aefd3fe1da367203f8144554a07e49957a95c6ad0f378",
+        "text_start": 5384,
+        "text_end": 5428
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2014-03-26",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/51df92615b696a1dc76f3309.json",
+    "sha256": "9db84ce835c1ed524c52d4b22ecaf64a4110ca664e996af45431c62681fe4561",
+    "bundled_path": "legacy_audit/51df92615b696a1dc76f3309.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "ff80a5fa9b7262372f66dd19bf19182c5ed07f97521affe6cb0af621cb8d11e8",
+      "llm_inferred_at": "2026-11-18T14:31:01.528228+00:00",
+      "model_duration_seconds": 7.9328022,
+      "prompt_tokens": 3449,
+      "completion_tokens": 274,
+      "selection": [
+        {
+          "source_id": "51df92615b696a1dc76f3309",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G.",
+              "rationale": "The article discusses the annual meeting of Optical Cable Corporation, including the election of directors, ratification of the independent registered public accounting firm, and approval of executive compensation. These are company-specific events.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "4a6979d2baaa51dfa5ebb5eeb54764d9ac789587d3ad73cca536520404f67def",
+      "llm_inferred_at": "2026-11-18T14:31:10.085161+00:00",
+      "model_duration_seconds": 8.5418579,
+      "prompt_tokens": 3493,
+      "completion_tokens": 427,
+      "selection": [
+        {
+          "source_id": "51df92615b696a1dc76f3309",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G.",
+              "rationale": "The company's name is directly mentioned in the text, indicating the focus of the report is on the company itself.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G.",
+              "rationale": "The company is part of the industry related to telecommunications or communications services, as indicated by the SEC-SIC code 4813 and SP500-SECTOR code 1c05eb170427b940.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4813",
+              "name": "TELEPHONE COMMUNICATIONS (NO RADIOTELEPHONE)",
+              "basis": "explicit",
+              "quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:31:10.101474+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6cc49f550a484ac1436f8c0119690d916addcb85b88c730cd2aa0066d7ab2d45",
+    "raw_sha256": "b5ca701774b1defcf53a6ad35ef47f8ddea4b26a74cfc9a62cb3f2622a629715",
+    "date_quote": "SEC filing datePublished=2014-03-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774914005082/occ20140325_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Shareholder meeting outcomes and corporate governance actions",
+    "securities": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      },
+      {
+        "name": "KPMG LLP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KPMG LLP"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Optical Cable Corporation": "company",
+      "KPMG LLP": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "51df92615b696a1dc76f3309",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_03_26_Corporate-Governance_Telecommunications-Equipment_sec.json",
+        "sha256": "9f643c0c05fcf2b0340ef158e25ce9f073820df531c61b973e9944559c738649",
+        "filename": "2014_03_26_Corporate-Governance_Telecommunications-Equipment_sec.json"
+      }
+    ],
+    "original_record_hash": "9ecd2a01e3cecd76dd76747ef8274e05286270222b747fadcc9b1a9c5c4ce18d",
+    "input_hash": "9b9a282dc1441f00690a5358239abccf4316e1e389a8c636546b30d6577393c0",
+    "matching_audit_hash": "7e06c6b79fd9a092f739b7edc1426b2424431a8af9ba50caa85f4b385b508fc6",
+    "legacy_security_evidence": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "record_hash": "f71bf589b60b9b9afe66dcf0824b0e625b80d3a3e53266f799cf7a6cc7d2abf8",
+    "outputs": [
+      {
+        "path": "US\\2014_03_26_Corporate-Governance_Telecommunications-Equipment_sec.json",
+        "sha256": "0ce4aa0b470b83141e7b6b505175e841040eb06deeebfdfc93497c344b6fc67c"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2014-03-26",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.918984+00:00",
+      "fetched_at": "2026-11-10T23:46:17.331760+00:00",
+      "feature_available_at": "2026-11-11T10:08:18.105291+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:31:10.085161+00:00",
+    "feature_available_at": "2026-11-18T14:31:10.101474+00:00",
+    "commit_verified_at": "2026-11-12T15:16:36.431158+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:36.463678+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:18.067895+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Shareholder meeting outcomes and corporate governance actions",
+        "securities": [
+          {
+            "name": "Optical Cable Corporation",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Optical Cable Corporation"
+          },
+          {
+            "name": "KPMG LLP",
+            "ticker": null,
+            "exchange": null,
+            "quote": "KPMG LLP"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Financial Services",
+            "basis": "inferred",
+            "quote": "independent registered public accounting firm"
+          }
+        ],
+        "impact_scope": [
+          "company"
+        ],
+        "entity_types": {
+          "Optical Cable Corporation": "company",
+          "KPMG LLP": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:02:18.093284+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:02:18.102278+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:02:18.084292+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary contains information about corporate governance actions, including director elections, auditor ratification, and executive compensation approval, as",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:14:08.514308+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G.",
+        "rationale": "The company's name is directly mentioned in the text, indicating the focus of the report is on the company itself.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "OPTICAL CABLE CORPORATION By: /s/ TRACY G.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-14-005082-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "f71bf589b60b9b9afe66dcf0824b0e625b80d3a3e53266f799cf7a6cc7d2abf8",
+    "content_hash": "95f3baa04c74ceb4ac715854e779a0a1d758ea3a58cf16d0243de58699082839",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:31:10.087685+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/51df92615b696a1dc76f3309.json",
+      "sha256": "81c4074dbdbe45aa5ffab0fb4fd34c96120e13eb0f7fe315bed356e9eeea8719",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 29.60899999999674
+}

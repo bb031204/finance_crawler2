@@ -1,0 +1,145 @@
+{
+  "source_id": "dab722fd6c2bdf3891ae47d4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_05_09_Policy_Renewable-Energy_cnbc.json",
+      "sha256": "6e042b59ed5ea7530fac789a125bf4bcfcf70a6e25797027a29a0423466833a5",
+      "filename": "2018_05_09_Policy_Renewable-Energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b24c7c30ee00358c10091e74cb359eb96bf952c3ad749d5763142c0bf1ec4169",
+  "input_hash": "29954741f53de37e139db0e6f091e62a9d14a4a8f74c93eab7569edf56982d35",
+  "matching_audit_hash": "e587fb5311dacf2d522c0d106b677435f258e301350286a121be2105ecc0778d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e6701cd7ed336c856c0117a0b8df088ccd4eb096630791acbf15f2ff4c97a7ae",
+    "raw_sha256": "8adcc826b5794d02b990a5c484b5e8f22ea225358c526ca369c6fec727dee7fc",
+    "date_quote": "datePublished  Published Wed, May 9 2018 3:08 PM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SunPower",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SunPower"
+    },
+    {
+      "name": "Sunrun",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sunrun"
+    },
+    {
+      "name": "First Solar",
+      "ticker": null,
+      "exchange": null,
+      "quote": "First Solar"
+    },
+    {
+      "name": "Tesla",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Tesla"
+    },
+    {
+      "name": "California",
+      "ticker": null,
+      "exchange": null,
+      "quote": "California"
+    }
+  ],
+  "record_hash": "84201adc50566febbf872e993f726a0ad21d1c92c53b8b69b3c34c3ff65ab47b",
+  "outputs": [
+    {
+      "path": "US\\2018_05_09_Policy_Renewable-Energy_cnbc.json",
+      "sha256": "a0f42328614a0b52e99790582b1501aa00d98fc91da1e0b889f0442d94443a11"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-05-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:52.734922+00:00",
+    "fetched_at": "2026-11-11T11:47:20.324394+00:00",
+    "feature_available_at": "2026-11-11T11:48:21.713983+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:22.301774+00:00",
+  "commit_verified_at": "2026-11-12T13:53:22.301774+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SunPower",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SunPower"
+      },
+      {
+        "name": "Sunrun",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sunrun"
+      },
+      {
+        "name": "First Solar",
+        "ticker": null,
+        "exchange": null,
+        "quote": "First Solar"
+      },
+      {
+        "name": "Tesla",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tesla"
+      },
+      {
+        "name": "California",
+        "ticker": null,
+        "exchange": null,
+        "quote": "California"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Renewable Energy",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "source_id": "a1299a1e2408a37add8b6aa8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_18_Corporate-Governance_Business-Services_sec.json",
+      "sha256": "b3256e75f32d90020c78b6e560be933f7deb7d501ce88af7b11c043eda818b28",
+      "filename": "2014_02_18_Corporate-Governance_Business-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "ca7af8894facb476f9b0cd6cc6d39836b09526ff35508200fd5bc48ade22202d",
+  "input_hash": "d79100431e54702571f26020d624a9b7190524c0caed9e50e497a319f0a6e5a9",
+  "matching_audit_hash": "66c29b774cb39976de4f1355fc0d2f733b2c1a3a9e7c14a01bd7778a79e7fc60",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b7a8b414c8d126a689bd6f25da695fee062f0d9d9ff213790d2e91f12e23494c",
+    "raw_sha256": "bb02129ccf95cf2d37bd2c60cf3801a5390b81a07f1e43c64715ffb71d412d75",
+    "date_quote": "SEC filing datePublished=2014-02-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075314000011/a8-kamendedrestatedbylaws2.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Insperity, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Insperity, Inc."
+    }
+  ],
+  "record_hash": "c0a665716eb661386fdcc0aa99c2664614fbee12fc051171283f15e4b0a8eb31",
+  "outputs": [
+    {
+      "path": "US\\2014_02_18_Corporate-Governance_Business-Services_sec.json",
+      "sha256": "4379138fda16d66a7317eeb89aed14755a9ca7fc71c6727e132553b2dedea2c9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+    "fetched_at": "2026-11-10T23:52:28.444080+00:00",
+    "feature_available_at": "2026-11-11T10:13:35.872190+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:01:58.360821+00:00",
+  "feature_available_at": "2026-11-12T15:16:36.000118+00:00",
+  "commit_verified_at": "2026-11-12T15:16:36.000118+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Amendment to bylaws affects governance and director responsibilities.",
+    "securities": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the Board of Directors of Insperity, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Insperity, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:36.025206+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:01:58.360821+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Amendment to bylaws affects governance and director responsibilities.",
+      "securities": [
+        {
+          "name": "Insperity, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the Board of Directors of Insperity, Inc."
+        }
+      ],
+      "industries": [],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Insperity, Inc.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:01:58.384602+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:01:58.392602+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:01:58.375917+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a change in corporate governance policy regarding director compensation and third-party arrangements, which is relevant to the company's治理",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:12:14.078426+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

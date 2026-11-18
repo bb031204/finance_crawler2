@@ -1,0 +1,96 @@
+{
+  "source_id": "b4a3d0839e9c85cc34573a5a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_05_02_Politics-&-Policy_Security-Services_cnbc.json",
+      "sha256": "d1d04e0c7ed8583935ff5d00d11ef3332b8072418558ed647f5c52aff70e3b6b",
+      "filename": "2017_05_02_Politics-&-Policy_Security-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "aa0d5e21f8a6521fce9f2d4c93e59679f17f69c115b4e99b25b573433ac7c7b2",
+  "input_hash": "6fb36761a82b022df00d00e44e6d74d7c4bd53ff233ca228f59dc088f976c742",
+  "matching_audit_hash": "0920707c5d46dbe33229fc0182eb1a0d8a98965fa6ef2e8c566c7cd51c7939c0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8f6b7f6dc4068b750e6241bd7738911e7a686206ccdfd6d83cb9781d62f97d76",
+    "raw_sha256": "3ce9c9eb8df36153d112973ffd30598a182cf76c933f8b75891c1933c186f7ae",
+    "date_quote": "article:published_time=2017-05-02T13:25:03+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Secret Service",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Secret Service protects Trump's adult children during their travels."
+    }
+  ],
+  "record_hash": "accde9f13b1cdff4349b6cf007d52885ea15310fdb2625581fd510a1b8e266e2",
+  "outputs": [
+    {
+      "path": "US\\2017_05_02_Politics-&-Policy_Security-Services_cnbc.json",
+      "sha256": "5dce16cfb5af33f58d8090e0fc76fadbeac58e69d8ff711828a8dc309ef62dbf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-05-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:35:59.661160+00:00",
+    "fetched_at": "2026-11-10T19:20:08.612278+00:00",
+    "feature_available_at": "2026-11-10T19:20:17.259393+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:14.957593+00:00",
+  "commit_verified_at": "2026-11-12T13:53:14.957593+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Secret Service",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Secret Service protects Trump's adult children during their travels."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Security Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "source_id": "61ad7d1ae1de1487b418fc86",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_12_17_Economics_Consumer-Price-Index_bls.json",
+      "sha256": "845a174f486edffc2a694b0400289c546eb3c8aef9c617bf6ac3cc86d6f21bed",
+      "filename": "2012_12_17_Economics_Consumer-Price-Index_bls.json"
+    }
+  ],
+  "original_record_hash": "dff457a56246f2726f1614b32f19dd13c4a743360a0145a42664178c323fb6d4",
+  "input_hash": "30e86e58d34e65d3db18cb65ad82f429026f808a8a95495232ea37971c6d4e1a",
+  "matching_audit_hash": "e5ad87f3ce3a839c94ce630d7075379fad984070851fbf3e5c04e566c0526e40",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c61fc03fed89d3c114a695867f5779a38f1ea87f1d73d5337a1ee4f4243f7bbf",
+    "raw_sha256": "1ba824ea931c70688793133148072c692be6cf0efef28fd4737ad9c574f4fe7d",
+    "date_quote": "December 17, 2012",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ea15a35cab69cd76f3c57094df171c3e43cf804b665b404c61c721fe966c730e",
+  "outputs": [
+    {
+      "path": "US\\2012_12_17_Economics_Consumer-Price-Index_bls.json",
+      "sha256": "5b7c9efd16c093e07ee93b543df9462f6b710a2a9b8d0b955cec101a6b86a5ab"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-12-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:47.037011+00:00",
+    "fetched_at": "2026-11-10T11:26:18.116760+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.478628+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T13:59:40.123047+00:00",
+  "feature_available_at": "2026-11-12T13:59:40.132061+00:00",
+  "commit_verified_at": "2026-11-12T13:59:40.132061+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides inflationary trends across various sectors, including specific industry data such as medical care, shelter, transportation, food, and能源.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Labor Statistics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Labor Statistics (BLS)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Medical care",
+        "basis": "explicit",
+        "quote": "medical care index"
+      },
+      {
+        "name": "Shelter",
+        "basis": "explicit",
+        "quote": "shelter and transportation services"
+      },
+      {
+        "name": "Transportation services",
+        "basis": "explicit",
+        "quote": "shelter and transportation services"
+      },
+      {
+        "name": "Food",
+        "basis": "explicit",
+        "quote": "food index"
+      },
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "energy index"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Labor Statistics": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

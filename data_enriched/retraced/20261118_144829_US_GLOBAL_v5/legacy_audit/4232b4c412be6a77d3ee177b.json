@@ -1,0 +1,97 @@
+{
+  "source_id": "4232b4c412be6a77d3ee177b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_10_Corporate-Finance_Textiles-and-Apparel_sec.json",
+      "sha256": "dd1646429332bbb19f58b4099dd1234a364a45519d75504deb6718b533f5637f",
+      "filename": "2021_02_10_Corporate-Finance_Textiles-and-Apparel_sec.json"
+    }
+  ],
+  "original_record_hash": "49ea4ff3483e0dbd9d149fc2cc8d64bed0b388a74ee5bb3e1a3ccb99095d84f9",
+  "input_hash": "c2fc2c17c958f90bc9f911be6cf77da6f8d44b7f8a4f1198141013204e2c1e8c",
+  "matching_audit_hash": "c3b01fb731289665c145a2ebdbaf011fb9260c389a15fcb000e29d28bff6e5e3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "04276b66411c2822625302d80378260b6bf5e0a6824dadbb26bca58e6052b6ae",
+    "raw_sha256": "ad64abe853a7f1849909a9a6ac813549ceca7571eb951967516fd1b41b2487c7",
+    "date_quote": "SEC filing datePublished=2021-02-10",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000110465921016819/tm215842d1_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+    }
+  ],
+  "record_hash": "bab50ade3eb63265868e85c2ac99591f9064a311d08489cd6532189d7a3c3a97",
+  "outputs": [
+    {
+      "path": "US\\2021_02_10_Corporate-Finance_Textiles-and-Apparel_sec.json",
+      "sha256": "9eb6526c1e2030a61af99de04ea29f25e3c1e3aaef2ec26a6a2636eccdc70542"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.584595+00:00",
+    "fetched_at": "2026-11-11T15:55:38.935318+00:00",
+    "feature_available_at": "2026-11-11T15:56:48.605799+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.215112+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.215112+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Paper and Forest Products",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "source_id": "0ab21a84827002de60478938",
+  "status": "completed",
+  "source_record_hash": "743fbb9d4bad35bf9ceef174805eb864dadb6752c26f9b75acf012d31428b0f0",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001214659-12-000578-index.html",
+    "attempted_at": "2026-11-18T07:52:59.392320+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "98e5ea80af04da5b4e290d4441e39a6fab128a79d871617655879445673b713e"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0ab21a84827002de60478938.json",
+    "sha256": "8bd397ef9b65faafc41d78651507c52d0260b20b48a88a2a5eec52b155d10d88",
+    "bundled_path": "legacy_audit/0ab21a84827002de60478938.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "5da3e0840812b6a2bf41d5c827201e3f8f13f0228bc4e081fcc416709df8a900",
+      "llm_inferred_at": "2026-11-18T07:53:15.798090+00:00",
+      "model_duration_seconds": 11.3758708,
+      "prompt_tokens": 2092,
+      "completion_tokens": 576,
+      "selection": [
+        {
+          "source_id": "0ab21a84827002de60478938",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The filing is part of the Bank’s ongoing disclosure obligations under U.S.",
+              "rationale": "The document references the Bank’s ongoing disclosure obligations under U.S. securities laws, indicating a broader industry impact on financial institutions.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The",
+              "rationale": "The filing is specifically by Royal Bank of Canada, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "1e87a79d73f6b4c1ab1d381d71d4c2ec0a483eecbf3450c405843180668ff12b",
+      "llm_inferred_at": "2026-11-18T07:53:26.349615+00:00",
+      "model_duration_seconds": 10.5443447,
+      "prompt_tokens": 2136,
+      "completion_tokens": 573,
+      "selection": [
+        {
+          "source_id": "0ab21a84827002de60478938",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The filing is part of the Bank’s ongoing disclosure obligations under U.S.",
+              "rationale": "The document references the Bank’s ongoing disclosure obligations under U.S. securities laws, indicating a broader industry impact on financial institutions.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The",
+              "rationale": "The document is specifically about Royal Bank of Canada, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+            },
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:53:26.360930+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "98e5ea80af04da5b4e290d4441e39a6fab128a79d871617655879445673b713e",
+    "raw_sha256": null,
+    "date_quote": "Published=2012-02-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000121465912000578/m2131216k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6153",
+        "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "basis": "inferred",
+        "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6153",
+        "industry_name_standard": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+      },
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "name": "Commercial Banks",
+        "basis": "inferred",
+        "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+      },
+      {
+        "industry_key": "SEC-SIC:6029",
+        "name": "COMMERCIAL BANKS, NEC",
+        "basis": "inferred",
+        "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6029",
+        "industry_name_standard": "COMMERCIAL BANKS, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "0ab21a84827002de60478938",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_02_13_Financial_Banking_sec.json",
+        "sha256": "fa0512bab0bcc41a81f0c7e5eebef27395cc8f4ebf92eeeeaf7622fa40d8a72b",
+        "filename": "2012_02_13_Financial_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "94f7eee1b88ef80d152717004764caa08075fb01022c553ae446c5e6faeb4c6f",
+    "input_hash": "814a48314391e0a3db6a7b775bf651e302f3644df0956e6f075d7cf434493e89",
+    "matching_audit_hash": "4ab4cb097bcde68fff2b4b2c65ff5c4ad451d3c744ca2ed4fdbad122ddb210fa",
+    "legacy_security_evidence": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "record_hash": "743fbb9d4bad35bf9ceef174805eb864dadb6752c26f9b75acf012d31428b0f0",
+    "outputs": [
+      {
+        "path": "US\\2012_02_13_Financial_Banking_sec.json",
+        "sha256": "8a6b1570d6d9cf25415ef73a0a9c5276b1b9142facf5feda4a0cca52fa37bd1a"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2012-02-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.194878+00:00",
+      "fetched_at": "2026-11-10T22:43:27.547192+00:00",
+      "feature_available_at": "2026-11-10T22:43:41.579746+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:53:26.349615+00:00",
+    "feature_available_at": "2026-11-18T07:53:26.360930+00:00",
+    "commit_verified_at": "2026-11-12T13:52:38.555325+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The",
+        "rationale": "The document is specifically about Royal Bank of Canada, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The document titled 'm2131216k.htm' is a Form 6-K filing by Royal Bank of Canada, a Canadian financial institution, with the U.S. Securities and Exchange Commission (SEC). The"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/0001214659-12-000578-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "743fbb9d4bad35bf9ceef174805eb864dadb6752c26f9b75acf012d31428b0f0",
+    "content_hash": "98e5ea80af04da5b4e290d4441e39a6fab128a79d871617655879445673b713e",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:53:26.350738+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0ab21a84827002de60478938.json",
+      "sha256": "5bfe73c1bd9745a7ab804893347312769ff47298809ad1903fff6192a6c9e77e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 26.98399999999674
+}

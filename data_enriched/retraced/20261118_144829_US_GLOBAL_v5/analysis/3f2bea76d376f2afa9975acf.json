@@ -1,0 +1,291 @@
+{
+  "source_id": "3f2bea76d376f2afa9975acf",
+  "status": "completed",
+  "source_record_hash": "b5cb353f3928b56eee34fd2adbbd1c711f853f50924b51ea171b33c069ba8f30",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-12-133531-index.html",
+    "attempted_at": "2026-11-18T12:43:42.931876+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "d2d0b684c988b099353d471f6da3de82cb8d8ecfa16586502c5e36c485cb88c4"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3f2bea76d376f2afa9975acf.json",
+    "sha256": "919584651e43c3b146fb14cad31af429141c4f19636f39264e1d615558efee93",
+    "bundled_path": "legacy_audit/3f2bea76d376f2afa9975acf.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "0ad6e08e99a592ce86218ae711383f32b1d3976b22e64acab350e16b57591689",
+      "llm_inferred_at": "2026-11-18T12:43:57.893981+00:00",
+      "model_duration_seconds": 9.9423932,
+      "prompt_tokens": 2149,
+      "completion_tokens": 484,
+      "selection": [
+        {
+          "source_id": "3f2bea76d376f2afa9975acf",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SAP undertakes no obligation to update these statements.",
+              "rationale": "The statement is specific to SAP's forward-looking statements and does not imply broader market implications.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The document contains forward-looking statements, which are subject to risks and uncertainties.",
+              "rationale": "The statement refers to the nature of forward-looking statements, which are common in financial and regulatory filings, indicating an industry-wide practice.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "The document titled 'Form 6-K' is dated March 27, 2012, and includes information about Dr."
+            },
+            {
+              "industry_key": "SEC-SIC:3578",
+              "name": "CALCULATING & ACCOUNTING MACHINES (NO ELECTRONIC COMPUTERS)",
+              "basis": "explicit",
+              "quote": "The filing contains an exhibit index with three exhibits, including a press release and two webmessages dated March 23, 2012."
+            },
+            {
+              "industry_key": "SEC-SIC:4899",
+              "name": "COMMUNICATIONS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "The document titled 'Form 6-K' is dated March 27, 2012, and includes information about Dr."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "b77cb3ebee4057d562933d5ccccc784469766742e73a8dd6c9aa8ecfd0dccc60",
+      "llm_inferred_at": "2026-11-18T12:44:07.159335+00:00",
+      "model_duration_seconds": 9.2564154,
+      "prompt_tokens": 2193,
+      "completion_tokens": 505,
+      "selection": [
+        {
+          "source_id": "3f2bea76d376f2afa9975acf",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SAP undertakes no obligation to update these statements.",
+              "rationale": "The statement is specific to SAP's forward-looking statements and does not imply a broader industry or market impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SAP undertakes no obligation to update these statements.",
+              "rationale": "This statement is directly related to SAP's financial reporting and does not extend to other companies or industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The document titled 'Form 6-K' is dated March 27, 2012, and includes information about Dr.",
+              "rationale": "This is a specific reference to SAP's internal documentation and does not imply a broader impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4899",
+              "name": "COMMUNICATIONS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "SAP undertakes no obligation to update these statements."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "SAP undertakes no obligation to update these statements."
+            },
+            {
+              "industry_key": "SEC-SIC:3578",
+              "name": "CALCULATING & ACCOUNTING MACHINES (NO ELECTRONIC COMPUTERS)",
+              "basis": "explicit",
+              "quote": "SAP undertakes no obligation to update these statements."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:44:07.170029+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d2d0b684c988b099353d471f6da3de82cb8d8ecfa16586502c5e36c485cb88c4",
+    "raw_sha256": null,
+    "date_quote": "March 27, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312512133531/d323675d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAP AG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP AG"
+      },
+      {
+        "name": "Christoph Huetten",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Christoph Huetten"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:3578",
+        "name": "CALCULATING & ACCOUNTING MACHINES (NO ELECTRONIC COMPUTERS)",
+        "basis": "inferred",
+        "quote": "SAP undertakes no obligation to update these statements.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3578",
+        "industry_name_standard": "CALCULATING & ACCOUNTING MACHINES (NO ELECTRONIC COMPUTERS)",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "SAP undertakes no obligation to update these statements."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3f2bea76d376f2afa9975acf",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_03_27_Regulatory-Filings_Information-Technology_sec.json",
+        "sha256": "9ddc769fe1188b9fb89ad196376ffbb95bcd33149e0b5536bd908de45cb9e9ab",
+        "filename": "2012_03_27_Regulatory-Filings_Information-Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "188dcc43978932315d53d1661340b3702c21a488bd4380040b12d79c4422b97f",
+    "input_hash": "f1cc863fb7cf1e58b3f80647e0adfe4e54bbae8527db8285a85ba9f10b772acc",
+    "matching_audit_hash": "89df748864a2ac401770a1eae224f5d1a4d62cb3ff71f812b7abc53e8ffc8b7a",
+    "legacy_security_evidence": [
+      {
+        "name": "SAP AG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP AG"
+      },
+      {
+        "name": "Christoph Huetten",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Christoph Huetten"
+      }
+    ],
+    "record_hash": "b5cb353f3928b56eee34fd2adbbd1c711f853f50924b51ea171b33c069ba8f30",
+    "outputs": [
+      {
+        "path": "US\\2012_03_27_Regulatory-Filings_Information-Technology_sec.json",
+        "sha256": "1800f379fa47f24663edfd0db04342190a4ca6ccd520a47a066f2f9f30185f33"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2012-03-27",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+      "fetched_at": "2026-11-10T22:32:19.545403+00:00",
+      "feature_available_at": "2026-11-10T22:32:43.182287+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:44:07.159335+00:00",
+    "feature_available_at": "2026-11-18T12:44:07.170029+00:00",
+    "commit_verified_at": "2026-11-12T13:52:40.172651+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "SAP undertakes no obligation to update these statements.",
+        "rationale": "The statement is specific to SAP's forward-looking statements and does not imply a broader industry or market impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "SAP undertakes no obligation to update these statements."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-12-133531-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "b5cb353f3928b56eee34fd2adbbd1c711f853f50924b51ea171b33c069ba8f30",
+    "content_hash": "d2d0b684c988b099353d471f6da3de82cb8d8ecfa16586502c5e36c485cb88c4",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:44:07.159895+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3f2bea76d376f2afa9975acf.json",
+      "sha256": "00e74df3c78175cee96c4474bd8248218679ea01f6a0ea3447c9447d218963d3",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 24.25
+}

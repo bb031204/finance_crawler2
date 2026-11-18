@@ -1,0 +1,95 @@
+{
+  "source_id": "9c4124ff7b3146e5c9df7e8d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_07_19_Labor-Statistics_Employment_bls.json",
+      "sha256": "3900b5388a096f931be2ffa227ed2bd03bacec2796d771ec5c1947b78353c280",
+      "filename": "2013_07_19_Labor-Statistics_Employment_bls.json"
+    }
+  ],
+  "original_record_hash": "d6f8e9622be620c979ebc3d2647008bf21832cd060f909978bc1681b95f27c51",
+  "input_hash": "5e03045a991762f61602cc35509ac3cda2c14e0296e0515052177d1be26c4c4b",
+  "matching_audit_hash": "b690b3d3f075f5631c91c292431134ab1d5fa1655cc7309807d5f18c9f354e7d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d8ed80ffd44fe71ef933df466041c225fb2b9dfb1832ac848516dc0e55745292",
+    "raw_sha256": "27477b536bdfda963dccc01d3fea3aea2bc522d191f1c8e822eb1843234dccb2",
+    "date_quote": "July 19, 2013",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b535604abc4b1178888b6cb023dc37bbb010d77fd2a83e90b0b7b85d02af1115",
+  "outputs": [
+    {
+      "path": "US\\2013_07_19_Labor-Statistics_Employment_bls.json",
+      "sha256": "6a9cc6faa595a3804f0f7bed100ca24ec37f4beadc38d3f080375bec35f2db66"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-07-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:50.264973+00:00",
+    "fetched_at": "2026-11-10T11:26:37.274941+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.514262+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:09:23.322293+00:00",
+  "feature_available_at": "2026-11-12T14:09:23.353783+00:00",
+  "commit_verified_at": "2026-11-12T14:09:23.353783+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides data on employee benefits access across different sectors and establishment sizes, which is relevant for understanding labor market trends.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Labor Statistics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Labor Statistics"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Private industry",
+        "basis": "explicit",
+        "quote": "private industry"
+      },
+      {
+        "name": "State and local government",
+        "basis": "explicit",
+        "quote": "state and local government"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Labor Statistics": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

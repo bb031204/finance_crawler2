@@ -1,0 +1,126 @@
+{
+  "source_id": "2f3095e9f52ab8a4a935eafe",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_02_01_Legal_Textiles_sec.json",
+      "sha256": "7d34d53eaa66db8be46efb155d938f042eb5cdc8d26686b7d5438a96ded51700",
+      "filename": "2012_02_01_Legal_Textiles_sec.json"
+    }
+  ],
+  "original_record_hash": "14c6428fd4d80cd1e906a9bec4dafca280f7eee5d39a78379d4cc1140037dfc9",
+  "input_hash": "aa66ccf610c390e7924354ff03f827f1653d1d58513ac9c708b86df9b65edd82",
+  "matching_audit_hash": "1627d8724d4aad167dfddf741b28309cbfa7e712d684c49551a1b1ca7bd99d46",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "de2a19b626c29e4846aee3f0a16c1766a86fc489eb2dc0791b3b9b1950110291",
+    "raw_sha256": "b4e2e19ce0e53c2265cc78b2b834bc4f6f817ca1346f2a5c22b74557f133fbc2",
+    "date_quote": "SEC filing datePublished=2012-02-01",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062312000020/form8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    }
+  ],
+  "record_hash": "879a09fcad1b7c1e588cc927e19b1b04fe811587958743da7695efb92e04f603",
+  "outputs": [
+    {
+      "path": "US\\2012_02_01_Legal_Textiles_sec.json",
+      "sha256": "25a16396b95b7a4f10a672a29f6dcc49cbe3c1aac9f3a6fc3ce4dc950f21b385"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-02-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.195879+00:00",
+    "fetched_at": "2026-11-10T22:47:35.072729+00:00",
+    "feature_available_at": "2026-11-11T09:41:22.267872+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:55:18.444034+00:00",
+  "feature_available_at": "2026-11-12T13:55:18.472043+00:00",
+  "commit_verified_at": "2026-11-12T13:55:18.472043+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a legal case involving Schweitzer-Mauduit International, Inc. and the International Trade Commission, with implications for patent claims.",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      },
+      {
+        "name": "International Trade Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "International Trade Commission"
+      },
+      {
+        "name": "Julius Glatz",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Julius Glatz"
+      },
+      {
+        "name": "LIPtec",
+        "ticker": null,
+        "exchange": null,
+        "quote": "LIPtec"
+      },
+      {
+        "name": "KneX Worldwide",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KneX Worldwide"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Patent law",
+        "basis": "inferred",
+        "quote": "patent claims"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Schweitzer-Mauduit International, Inc.": "company",
+      "International Trade Commission": "organization",
+      "Julius Glatz": "company",
+      "LIPtec": "company",
+      "KneX Worldwide": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

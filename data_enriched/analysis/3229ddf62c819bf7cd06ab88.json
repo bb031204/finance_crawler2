@@ -1,0 +1,96 @@
+{
+  "source_id": "3229ddf62c819bf7cd06ab88",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_08_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "7439e55abf4169cedd152d33b8cb0f6cd6cefa9f4c7af28d1ab68f24853b9bc5",
+      "filename": "2018_01_08_Corporate-Governance_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "3a02ba2d6bd12bfceac1fc0ebc4bbcadb821a29bfdfa48fb5ed75c65b73a5b2c",
+  "input_hash": "2be657dcf6efad38bc84958771c0e995e946492047040e0950ec3ffe7bdf2d40",
+  "matching_audit_hash": "ab2ef9ee00856df39041f2af388b781a1ae6c4a22228fcd3e07a64f0b984cd77",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "23cb334f8e7f2ca9346b47773f6910eeeb8a6cf39ff93f8f516e9bbea19ad0cd",
+    "raw_sha256": "0ed4aac311dbd417b12c3f032ec8682c30131998af036fd121b600506af6e4cf",
+    "date_quote": "SEC filing datePublished=2018-01-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000114420418001248/tv482885_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Novavax, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Novavax, Inc."
+    }
+  ],
+  "record_hash": "568b80715a8f7539459a00369f24f30142826ae4816512b3bfd09d17cf6b2f69",
+  "outputs": [
+    {
+      "path": "US\\2018_01_08_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "31ccd9f0519f1131590cf9ef1f774c2ccf8749664a7912a63d3ed7cdd40f0183"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+    "fetched_at": "2026-11-11T13:10:43.802211+00:00",
+    "feature_available_at": "2026-11-11T13:11:26.191883+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:18.668988+00:00",
+  "commit_verified_at": "2026-11-12T13:53:18.668988+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Novavax, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Novavax, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

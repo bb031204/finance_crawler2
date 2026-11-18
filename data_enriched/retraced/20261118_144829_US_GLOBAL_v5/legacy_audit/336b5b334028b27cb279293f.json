@@ -1,0 +1,111 @@
+{
+  "source_id": "336b5b334028b27cb279293f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_22_Debt-Settlement_Healthcare-Distribution_sec.json",
+      "sha256": "d8e4a96c89254ac1a69d8adb5d6a34889362beaa390cd3502d3b8d62d113ffb6",
+      "filename": "2013_02_22_Debt-Settlement_Healthcare-Distribution_sec.json"
+    }
+  ],
+  "original_record_hash": "9d74c12404675298bd4bc8de3345f7ced52c1b69f7d451606d0d4f6304d2b787",
+  "input_hash": "bc6e6436028181d36d773908c359a33ce846606cbfc683e65cededf553fd09cd",
+  "matching_audit_hash": "6554aa0b735e79c86b770d723cce90d65c4037f403031ada89b80e455dc8b7c6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2d4ff7024adaecc2aa659787be279db880437b4ed894af93879ea4d56b2df3de",
+    "raw_sha256": "dc3da627e51ed5a8e826f9b76e5d36849713382d7278052d3db2fec73e3c59fe",
+    "date_quote": "SEC filing datePublished=2013-02-22",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312513071191/d490173d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Henry Schein, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Henry Schein, Inc."
+    },
+    {
+      "name": "Butler Animal Health Supply, LLC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Butler Animal Health Supply, LLC"
+    }
+  ],
+  "record_hash": "1f2ce8b29955a1913b2618404fd3b8d8a4204bcb9ca4c4963fa9125d6bf27b87",
+  "outputs": [
+    {
+      "path": "US\\2013_02_22_Debt-Settlement_Healthcare-Distribution_sec.json",
+      "sha256": "db5d798618409b29a31caab896039234b56bf2b519699998110cb58d6c03dcdd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+    "fetched_at": "2026-11-10T23:13:52.406049+00:00",
+    "feature_available_at": "2026-11-11T09:49:01.372642+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:04:08.316054+00:00",
+  "feature_available_at": "2026-11-12T14:04:08.351232+00:00",
+  "commit_verified_at": "2026-11-12T14:04:08.351232+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses financial management, debt restructuring, and the termination of a credit agreement, which are relevant to the company's financial status.",
+    "securities": [
+      {
+        "name": "Butler Animal Health Supply, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Butler Animal Health Supply, LLC"
+      },
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "healthcare distribution",
+        "basis": "explicit",
+        "quote": "healthcare distribution"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Butler Animal Health Supply, LLC": "company",
+      "Henry Schein, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "source_id": "f46f1d7834f3556c3aeee156",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_01_11_15_10_stock_Semiconductor-Equipment_fool.json",
+      "sha256": "3071ba668647e613982f5e555424eb18d7edddbe32fea84943f750e491684e5f",
+      "filename": "2020_01_11_15_10_stock_Semiconductor-Equipment_fool.json"
+    }
+  ],
+  "original_record_hash": "b22cc3004efd9dc59f48e700b6047e1c1b3d471eaa84d57872c14fbc9a1c7e38",
+  "input_hash": "9a85c746c2b0fa5979fc3153366125c12b579e323f2f891c33424af3fb91bec2",
+  "matching_audit_hash": "6fd85cf8f5c7a0bbe72dd6362ccf85e0db8a1ff656297d102cbb3019483349fc",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a2632a35a17f72e704c4d4e42c8de3615683077d6fb9c2c956150acf511229f0",
+    "raw_sha256": "ade9d8a538f8d5d9e96dde41179e188d02d7c87d8936b8e60e172e5e8d9c76f9",
+    "date_quote": "article:published_time=2020-01-11T15:10:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "ASML Holding",
+      "ticker": "ASML",
+      "exchange": null,
+      "quote": "ASML Holding (ASML -0.36%)"
+    },
+    {
+      "name": "Taiwan Semiconductor Manufacturing",
+      "ticker": "TSM",
+      "exchange": null,
+      "quote": "Taiwan Semiconductor Manufacturing (TSM +2.02%)"
+    }
+  ],
+  "record_hash": "b91ce3914f970bcd14dc6199f31ec8ac42c68daf1b89f6b546bb76ecaeb89f11",
+  "outputs": [
+    {
+      "path": "US\\2020_01_11_15_10_stock_Semiconductor-Equipment_fool.json",
+      "sha256": "630de2a9f71dbec65dbb7bf13746ce270da45f11168840147c535b03dd5b2ee7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-01-11T15:10:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-11T01:27:44.083557+00:00",
+    "fetched_at": "2026-11-11T03:29:13.238631+00:00",
+    "feature_available_at": "2026-11-11T03:29:51.138088+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:31.268021+00:00",
+  "commit_verified_at": "2026-11-12T13:53:31.268021+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "ASML Holding",
+        "ticker": "ASML",
+        "exchange": null,
+        "quote": "ASML Holding (ASML -0.36%)"
+      },
+      {
+        "name": "Taiwan Semiconductor Manufacturing",
+        "ticker": "TSM",
+        "exchange": null,
+        "quote": "Taiwan Semiconductor Manufacturing (TSM +2.02%)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor Equipment",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Semiconductors",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

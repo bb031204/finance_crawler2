@@ -1,0 +1,201 @@
+{
+  "source_id": "718a994d4a649eb9122efd01",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_12_03_Market-Structure_Financial-Services_treasury.json",
+      "sha256": "44411eb175b6b32c127508506eb05db560675287402bffb28e9268cdb3a2a93c",
+      "filename": "2018_12_03_Market-Structure_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "841a1a567a7e91c0ec376dddc21aa71b4ff959121a7d169f19fcda819858e214",
+  "input_hash": "5e4da32a7ce5052ae9c2cbb7838ef4e623c5f4aa239e026a5095bb030c04f4ac",
+  "matching_audit_hash": "0c87c8a160cfc975e4e35af1fe7e8cbc3b529d69bde1a45fcfbe481e5da12fea",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "cf11f61957da6030df45fb2ac25688436f33133d264e37e58efedba20db2bb7f",
+    "raw_sha256": "29c5c993baa790d55db17ee8caa92f54bd678dcf229e41a0790599ff35320a30",
+    "date_quote": "December 3, 2018",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "09d553e34e7114b4dfabeb1aba9bac52f88b65eb0adc3f62116d3b6688053e69",
+  "outputs": [
+    {
+      "path": "US\\2018_12_03_Market-Structure_Financial-Services_treasury.json",
+      "sha256": "81804205b14873a41cacf36c1772910e665b3be293b00148e1cb84f3ab7a046f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-12-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:22.095696+00:00",
+    "fetched_at": "2026-11-10T11:12:50.542476+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.714765+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:10:13.256899+00:00",
+  "feature_available_at": "2026-11-12T15:16:44.407136+00:00",
+  "commit_verified_at": "2026-11-12T15:16:44.407136+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses Treasury market structure, data collection, and implications for debt.",
+    "securities": [
+      {
+        "name": "Financial Industry Regulatory Authority (FINRA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Financial Industry Regulatory Authority (FINRA)"
+      },
+      {
+        "name": "Interagency Working Group (IAWG)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Interagency Working Group (IAWG)"
+      },
+      {
+        "name": "U.S. Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Financial Industry Regulatory Authority (FINRA)"
+      },
+      {
+        "name": "Securities Trading",
+        "basis": "inferred",
+        "quote": "Treasury securities transaction data"
+      },
+      {
+        "name": "Market Regulation",
+        "basis": "inferred",
+        "quote": "regulatory community"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Financial Industry Regulatory Authority (FINRA)": "organization",
+      "Interagency Working Group (IAWG)": "organization",
+      "U.S. Treasury": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:44.428723+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:10:13.256899+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses Treasury market structure, data collection, and implications for debt.",
+      "securities": [
+        {
+          "name": "Financial Industry Regulatory Authority (FINRA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Financial Industry Regulatory Authority (FINRA)"
+        },
+        {
+          "name": "Interagency Working Group (IAWG)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Interagency Working Group (IAWG)"
+        },
+        {
+          "name": "U.S. Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Treasury"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Financial Industry Regulatory Authority (FINRA)"
+        },
+        {
+          "name": "Securities Trading",
+          "basis": "inferred",
+          "quote": "Treasury securities transaction data"
+        },
+        {
+          "name": "Market Regulation",
+          "basis": "inferred",
+          "quote": "regulatory community"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Financial Industry Regulatory Authority (FINRA)": "organization",
+        "Interagency Working Group (IAWG)": "organization",
+        "U.S. Treasury": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:10:13.285615+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:10:13.294303+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:10:13.274610+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the U.S. Treasury market structure, data collection by FINRA, and the importance of liquidity and benchmark rates. It also mentions the Inter",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:46:52.462753+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

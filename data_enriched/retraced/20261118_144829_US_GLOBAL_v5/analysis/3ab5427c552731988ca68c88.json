@@ -1,0 +1,448 @@
+{
+  "source_id": "3ab5427c552731988ca68c88",
+  "status": "completed",
+  "source_record_hash": "542416f3c15169f5da35aa2ef4cf0230d03c6c410dbdfe001e75239f3c2e1e6d",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2018/10/10/sears-arranges-financing-for-a-potential-bankruptcy.html",
+    "attempted_at": "2026-11-18T12:08:33.010848+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2018/10/10/sears-arranges-financing-for-a-potential-bankruptcy.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T12:08:47.060424+00:00",
+    "source_body_hash": "690f5494c3a7a430e0922d96de84b94695980724152dbba566e5e1d8e87c8672",
+    "raw_sha256": "493299cb64194542da1d474ca046ae375b2459cd5602887bfba1acba9efea7b3",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Sears arranges emergency financing for a potential bankruptcy",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2018-10-10T10:33:28+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3ab5427c552731988ca68c88.json",
+    "sha256": "22d7fa049160fd5ed679ce739cccb8383412332828a07f24eca894e9f80e7700",
+    "bundled_path": "legacy_audit/3ab5427c552731988ca68c88.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "a4db50a11ed75d482f7c1d9894938ffb1a9e14dbb6c6c38969574d53076d758d",
+      "llm_inferred_at": "2026-11-18T12:09:07.585671+00:00",
+      "model_duration_seconds": 20.4909793,
+      "prompt_tokens": 3295,
+      "completion_tokens": 1011,
+      "selection": [
+        {
+          "source_id": "3ab5427c552731988ca68c88",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Sears has been in survival mode for more than a decade.",
+              "rationale": "The article discusses the broader challenges faced by Sears, which are indicative of the retail industry's struggles, particularly with the rise of online shopping and competition.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Sears has a $134 million debt payment due Monday that it previously said it may not be able to cover.",
+              "rationale": "This directly refers to Sears' financial situation and its specific debt obligations, indicating a company-level impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The Wall Street Journal reported Tuesday that Sears hired M-III Partners to prepare for a bankruptcy filing that could come as soon as this week.",
+              "rationale": "This indicates that the situation involves broader US equity market implications, as it relates to a major company's potential bankruptcy and restructuring.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:5940",
+              "name": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+              "basis": "inferred",
+              "quote": "Sears has been in survival mode for more than a decade."
+            },
+            {
+              "industry_key": "SEC-SIC:5960",
+              "name": "RETAIL-NONSTORE RETAILERS",
+              "basis": "inferred",
+              "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete."
+            },
+            {
+              "industry_key": "SEC-SIC:5531",
+              "name": "RETAIL-AUTO & HOME SUPPLY STORES",
+              "basis": "inferred",
+              "quote": "Sears' 140,000-square-foot stores were monstrous as foot traffic declined."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:5940",
+              "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+              "industry_name_original": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+              "mechanism": "The article discusses the broader challenges faced by Sears, which are indicative of the retail industry's struggles, particularly with the rise of online shopping and competition.",
+              "confidence": 0.95,
+              "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete."
+            },
+            {
+              "industry_key": "SEC-SIC:5960",
+              "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+              "industry_name_original": "RETAIL-NONSTORE RETAILERS",
+              "mechanism": "The article discusses the broader challenges faced by Sears, which are indicative of the retail industry's struggles, particularly with the rise of online shopping and competition.",
+              "confidence": 0.95,
+              "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete."
+            },
+            {
+              "industry_key": "SEC-SIC:5531",
+              "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+              "industry_name_original": "RETAIL-AUTO & HOME SUPPLY STORES",
+              "mechanism": "The article discusses the broader challenges faced by Sears, which are indicative of the retail industry's struggles, particularly with the rise of online shopping and competition.",
+              "confidence": 0.95,
+              "quote": "Sears' 140,000-square-foot stores were monstrous as foot traffic declined."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "7452c1f6b6151411b43b40d8caf093e8f057a60b1b698bf0850b78c8c8faae6f",
+      "llm_inferred_at": "2026-11-18T12:09:26.277593+00:00",
+      "model_duration_seconds": 18.6709907,
+      "prompt_tokens": 3339,
+      "completion_tokens": 999,
+      "selection": [
+        {
+          "source_id": "3ab5427c552731988ca68c88",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Sears has a $134 million debt payment due Monday that it previously said it may not be able to cover.",
+              "rationale": "The article discusses Sears' specific financial situation, including its debt payment and potential bankruptcy filing, which are company-specific events.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete.",
+              "rationale": "The article mentions the impact of online shopping on the retail industry, specifically affecting Sears as a department store, indicating an industry-wide challenge.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The Wall Street Journal reported Tuesday that Sears hired M-III Partners to prepare for a bankruptcy filing that could come as soon as this week.",
+              "rationale": "The article references the Wall Street Journal and mentions Sears' potential bankruptcy filing, which is a significant event in the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:5940",
+              "name": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+              "basis": "explicit",
+              "quote": "Sears has been in survival mode for more than a decade."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "explicit",
+              "quote": "Sears has been in survival mode for more than a decade."
+            },
+            {
+              "industry_key": "SEC-SIC:5960",
+              "name": "RETAIL-NONSTORE RETAILERS",
+              "basis": "explicit",
+              "quote": "Sears has been in survival mode for more than a decade."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:5940",
+              "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+              "industry_name_original": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+              "mechanism": "The article discusses the challenges faced by Sears, a department store, due to the rise of online shopping, which is a broader industry trend affecting the retail sector.",
+              "confidence": 0.75,
+              "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+              "industry_name_original": "Tools/Hardware",
+              "mechanism": "The article mentions Sears' struggles with key vendors demanding tighter payment terms, which could affect its ability to operate in the tools and hardware retail sector.",
+              "confidence": 0.7,
+              "quote": "Efforts to keep the company alive by selling its best assets to pay down debt have left it with little money to reinvest in its stores."
+            },
+            {
+              "industry_key": "SEC-SIC:5960",
+              "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+              "industry_name_original": "RETAIL-NONSTORE RETAILERS",
+              "mechanism": "The article discusses Sears' financial struggles and its potential bankruptcy, which could have broader implications for the retail sector, including nonstore retailers.",
+              "confidence": 0.7,
+              "quote": "Sears has been in survival mode for more than a decade."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:09:26.296456+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "690f5494c3a7a430e0922d96de84b94695980724152dbba566e5e1d8e87c8672",
+    "raw_sha256": "493299cb64194542da1d474ca046ae375b2459cd5602887bfba1acba9efea7b3",
+    "date_quote": "article:published_time=2018-10-10T10:33:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sears Holdings",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears Holdings"
+      },
+      {
+        "name": "Sears",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears"
+      },
+      {
+        "name": "Kmart",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kmart"
+      },
+      {
+        "name": "Seritage",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Seritage"
+      },
+      {
+        "name": "ESL",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ESL"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:5940",
+        "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+        "industry_name_original": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the challenges faced by Sears, a department store, due to the rise of online shopping, which is a broader industry trend affecting the retail sector.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.75,
+        "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "5940",
+        "industry_name_standard": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The rise of the online shopping brought it a new giant with which it struggled to compete.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3ab5427c552731988ca68c88",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_10_10_10_33_stock_Retail_cnbc.json",
+        "sha256": "a96575991799bfff309bd89763dd537d1792c4f970d79379b4f74afd7cfe07b7",
+        "filename": "2018_10_10_10_33_stock_Retail_cnbc.json"
+      }
+    ],
+    "original_record_hash": "943418b2f240f362e7fa4cebddf285ff4bf32949b4411393f530da0964120dcd",
+    "input_hash": "564bfd6816a5e0e0e90a8d29f51f5ea990df7a2c41fd05b7cf4b226203b0b829",
+    "matching_audit_hash": "3da8cc0423c5c2eb0566a1a324f55b879d666a0809543e754ac36ae2e53c8fdb",
+    "legacy_security_evidence": [
+      {
+        "name": "Sears Holdings",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears Holdings"
+      },
+      {
+        "name": "Sears",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears"
+      },
+      {
+        "name": "Kmart",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kmart"
+      },
+      {
+        "name": "Seritage",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Seritage"
+      },
+      {
+        "name": "ESL",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ESL"
+      }
+    ],
+    "record_hash": "542416f3c15169f5da35aa2ef4cf0230d03c6c410dbdfe001e75239f3c2e1e6d",
+    "outputs": [
+      {
+        "path": "US\\2018_10_10_10_33_stock_Retail_cnbc.json",
+        "sha256": "104d56519dfba7341450610017762401dc4165124c509790bd3a7766f06b7474"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2018-10-10T10:33:28+00:00",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": "+00:00",
+    "original_time_information": {
+      "publication_precision": "second",
+      "first_seen_at": "2026-11-10T13:33:39.669939+00:00",
+      "fetched_at": "2026-11-10T13:52:58.113440+00:00",
+      "feature_available_at": "2026-11-11T16:42:39.410304+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:09:26.277593+00:00",
+    "feature_available_at": "2026-11-18T12:09:26.296456+00:00",
+    "commit_verified_at": "2026-11-12T13:53:23.726492+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:5940",
+        "industry_scope_quote": "Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Key Points Sears Holdings has contacted banks in recent days to arrange the financing necessary",
+        "industry_name_original": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the challenges faced by Sears, a department store, due to the rise of online shopping, which is a broader industry trend affecting the retail sector.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.75,
+        "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "5940",
+        "industry_name_standard": "RETAIL-MISCELLANEOUS SHOPPING GOODS STORES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The rise of the online shopping brought it a new giant with which it struggled to compete.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Sears has a $134 million debt payment due Monday that it previously said it may not be able to cover.",
+        "rationale": "The article discusses Sears' specific financial situation, including its debt payment and potential bankruptcy filing, which are company-specific events.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Sears has a $134 million debt payment due Monday that it previously said it may not be able to cover.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "The rise of the online shopping brought it a new giant with which it struggled to compete.",
+        "rationale": "The article mentions the impact of online shopping on the retail industry, specifically affecting Sears as a department store, indicating an industry-wide challenge.",
+        "confidence": 0.85,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The rise of the online shopping brought it a new giant with which it struggled to compete.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mechanism_semantic_not_literal_driver",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.cnbc.com/2018/10/10/sears-arranges-financing-for-a-potential-bankruptcy.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "542416f3c15169f5da35aa2ef4cf0230d03c6c410dbdfe001e75239f3c2e1e6d",
+    "content_hash": "690f5494c3a7a430e0922d96de84b94695980724152dbba566e5e1d8e87c8672",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:09:26.284193+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3ab5427c552731988ca68c88.json",
+      "sha256": "25da0524bd8b247ff1b86188e2f924278b1e067bc5658b3bae8782415f4c804e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 53.296999999991385
+}

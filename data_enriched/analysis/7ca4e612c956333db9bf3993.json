@@ -1,0 +1,201 @@
+{
+  "source_id": "7ca4e612c956333db9bf3993",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_12_09_12_09_Legal_Retail_cnbc.json",
+      "sha256": "57608568daaee95d4e60716584bd6d1c77d1959e6b660953a3ee98acefda380a",
+      "filename": "2013_12_09_12_09_Legal_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "6bdd531b8bfbf23300d1dcba1f3c46e8d5a4ed13c20167c1fbb1006f37b1283b",
+  "input_hash": "625ff2b162bf2219d5e73f538ec862670d6e465abaf36169031ec4882ecd85f7",
+  "matching_audit_hash": "440e6b683e6c3a8510dbadbe1897a361f401c5d9813dcc84f7e1cc61c5575f78",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f7e45a495a395c3c8663ca531475eecd53d9cde1ea28463d5b45d8212dd3d171",
+    "raw_sha256": "43b3224ce0b8530be80edf93621dc4aa8e268e9d19aa63ad6a10bd2390bae42f",
+    "date_quote": "article:published_time=2013-12-09T12:09:35+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5f7a401c0e79583ab710111b0eb2a0b03ab35ebce5fe7156a990fbebe86ba922",
+  "outputs": [
+    {
+      "path": "US\\2013_12_09_12_09_Legal_Retail_cnbc.json",
+      "sha256": "03fe5f9f0647cb49546ab192b8b596db499b6ec7470a83581a434767e42c83cf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-12-09T12:09:35+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T13:34:05.724591+00:00",
+    "fetched_at": "2026-11-10T14:00:58.519949+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.177324+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:01:40.329717+00:00",
+  "feature_available_at": "2026-11-12T15:16:35.656082+00:00",
+  "commit_verified_at": "2026-11-12T15:16:35.656082+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Settlement details and product safety implications",
+    "securities": [
+      {
+        "name": "Wal-Mart",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Wal-Mart has agreed to contribute $25 million to settle lawsuits related to gas can explosions."
+      },
+      {
+        "name": "Blitz USA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blitz USA, the former largest manufacturer of plastic gas cans."
+      },
+      {
+        "name": "Consumer Product Safety Commission (CPSC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Consumer Product Safety Commission (CPSC) reported at least 11 deaths and 1,200 emergency room visits linked to gas can explosions during gasoline pouring since 1998."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": "Wal-Mart, the largest seller of these cans"
+      },
+      {
+        "name": "Manufacturing",
+        "basis": "inferred",
+        "quote": "Blitz USA, the former largest manufacturer of plastic gas cans"
+      },
+      {
+        "name": "Consumer Goods",
+        "basis": "inferred",
+        "quote": "gas can explosions"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Wal-Mart": "company",
+      "Blitz USA": "company",
+      "Consumer Product Safety Commission (CPSC)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:35.674385+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:01:40.329717+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Settlement details and product safety implications",
+      "securities": [
+        {
+          "name": "Wal-Mart",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Wal-Mart has agreed to contribute $25 million to settle lawsuits related to gas can explosions."
+        },
+        {
+          "name": "Blitz USA",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Blitz USA, the former largest manufacturer of plastic gas cans."
+        },
+        {
+          "name": "Consumer Product Safety Commission (CPSC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Consumer Product Safety Commission (CPSC) reported at least 11 deaths and 1,200 emergency room visits linked to gas can explosions during gasoline pouring since 1998."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Retail",
+          "basis": "inferred",
+          "quote": "Wal-Mart, the largest seller of these cans"
+        },
+        {
+          "name": "Manufacturing",
+          "basis": "inferred",
+          "quote": "Blitz USA, the former largest manufacturer of plastic gas cans"
+        },
+        {
+          "name": "Consumer Goods",
+          "basis": "inferred",
+          "quote": "gas can explosions"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Wal-Mart": "company",
+        "Blitz USA": "company",
+        "Consumer Product Safety Commission (CPSC)": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:01:40.354657+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:01:40.363364+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:01:40.345421+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a legal settlement involving Walmart and product safety issues related to gas cans, including the role of manufacturers and the Consumer产品",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:11:41.258336+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

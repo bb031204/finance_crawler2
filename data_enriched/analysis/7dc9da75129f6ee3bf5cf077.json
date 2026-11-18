@@ -1,0 +1,102 @@
+{
+  "source_id": "7dc9da75129f6ee3bf5cf077",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_04_19_Finance_Technology_cnbc.json",
+      "sha256": "794cbe22aa63acbfefe26323bdea9c1c7fc81dc99bf234f456509a23b315c6f0",
+      "filename": "2017_04_19_Finance_Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b09d3a0c20df0354df066356854444e8de94e2cb54a25e504332c5680616ba80",
+  "input_hash": "c989bac3b392339a8db030dfc9a941f654e2687c493fa5102407ab70a4941d43",
+  "matching_audit_hash": "80bb0a6d1bac90ed5e600368a8c6463d6a297683fde56f727cdfca38b1186965",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d54015e8b1711b0de9e1bfcc43d2549fecb0c5581ffa91409f4135d90dbd2ca9",
+    "raw_sha256": "a5bac9e45935fac8af6b91360192f0f58f34b361efadd9da2dba1ee665a29b62",
+    "date_quote": "article:published_time=2017-04-19T20:17:50+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Qualcomm",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Qualcomm reports better-than-expected earnings"
+    }
+  ],
+  "record_hash": "69525dc9049e82807f22ff646adb119cbada0a30654b4df3913ae43fbcb9ea27",
+  "outputs": [
+    {
+      "path": "US\\2017_04_19_Finance_Technology_cnbc.json",
+      "sha256": "085a38885aa3e097b66531176b38cf90acd45d45049b89f81b728dcdd98b3678"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-04-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:37.378196+00:00",
+    "fetched_at": "2026-11-10T22:22:20.074561+00:00",
+    "feature_available_at": "2026-11-10T22:22:49.853636+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:14.827392+00:00",
+  "commit_verified_at": "2026-11-12T13:53:14.827392+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Qualcomm",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Qualcomm reports better-than-expected earnings"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Semiconductors",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

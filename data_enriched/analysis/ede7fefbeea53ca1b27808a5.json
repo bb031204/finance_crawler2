@@ -1,0 +1,92 @@
+{
+  "source_id": "ede7fefbeea53ca1b27808a5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_03_14_Financing_Entertainment_sec.json",
+      "sha256": "390ae7a6b6b1ffb1d11c8738dc42235de521c64360d5eb6f0c75a584ed2148b4",
+      "filename": "2016_03_14_Financing_Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "8ce3ca38fb3816c2d937d54d42960b0ba752a7997de02f0b512316c186e64983",
+  "input_hash": "95ae65873e271cd0f20af8d5bee7a376ae1b2e555dfbeacc5f2f56381e3205b6",
+  "matching_audit_hash": "b30fe7e70731b8fcce8af9a1c4d9239a27d4b0f8b5cd581479940159afb80090",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7c65eb867b6d7cd482938b341f208e7037367ae7dcabc27f11da1d5ab1463ac9",
+    "raw_sha256": "0d81ec257c62558b32bc7511dfa55dd34022b29350c30755a0f070450aec6854",
+    "date_quote": "SEC filing datePublished=2016-03-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103916000378/fy2016_q2x8kxcreditagreeme.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "The Walt Disney Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Walt Disney Company"
+    }
+  ],
+  "record_hash": "5825142b76d7f0b2e94ae4f32e98a646e243fd3f8ffe35e27be68a833bf52c3f",
+  "outputs": [
+    {
+      "path": "US\\2016_03_14_Financing_Entertainment_sec.json",
+      "sha256": "243b03ab7bb3f8c22b9d85de210afb3f07f7b9b8557793245515ce7cd4db502c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-03-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.849469+00:00",
+    "fetched_at": "2026-11-11T01:20:50.182433+00:00",
+    "feature_available_at": "2026-11-11T11:11:50.746708+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:31:13.691147+00:00",
+  "feature_available_at": "2026-11-12T14:31:13.719977+00:00",
+  "commit_verified_at": "2026-11-12T14:31:13.719977+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a company's financing activities, including credit agreement replacements and debt management strategies.",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "The Walt Disney Company": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

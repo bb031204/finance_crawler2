@@ -1,0 +1,92 @@
+{
+  "source_id": "10e0d495abac66939152f354",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_02_23_Compensation_Financial-Services_sec.json",
+      "sha256": "70aef7514f03be2062306af29d6342432caff8259f8e816a66445a4359718f49",
+      "filename": "2012_02_23_Compensation_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "ee64232771cf518a1af7d9f3b9249603710bc9f0e8218bf2ca9992a0690f3baa",
+  "input_hash": "8fdc1b81f62b5aba56d39281a4d48c8b4d19870e9a35e290483c58da669afda9",
+  "matching_audit_hash": "93d5ebdc7ef7fa0b4f0e50a110d003c968352c8afe74f0124849a1b6169bc1a8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7ed4b5c29a98e1e7c84c3627047f228d6211a8fcc56ad9f0b40e85c39f7bbcdd",
+    "raw_sha256": "2c992d5129bf605fc9e25e36cbeb9c089083186fca4613d04e236dc33481811f",
+    "date_quote": "SEC filing datePublished=2012-02-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312512075488/d305626d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    }
+  ],
+  "record_hash": "0d19022119d12a53f8a7ac859e635682ff2b758a224feca587c84d013d1a4ee6",
+  "outputs": [
+    {
+      "path": "US\\2012_02_23_Compensation_Financial-Services_sec.json",
+      "sha256": "4db4833a8cbe785111383f19d9e13700fc9dde01d0658bc2260df925c1a21cbd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-02-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:32:57.522516+00:00",
+    "feature_available_at": "2026-11-11T09:31:28.520150+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:56:02.611966+00:00",
+  "feature_available_at": "2026-11-12T13:56:02.621850+00:00",
+  "commit_verified_at": "2026-11-12T13:56:02.621850+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about executive compensation, including bonuses and stock grants, which is relevant for understanding the company's financials.",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

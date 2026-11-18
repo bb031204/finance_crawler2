@@ -1,0 +1,400 @@
+{
+  "source_id": "3b39928fe3c63a4aa063d500",
+  "status": "completed",
+  "source_record_hash": "1c74654183cc5b5fa4c809e1a1c1c81be6e02d3643ca48013091494d0ac71e31",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2020/01/14/medicare-rules-and-costs-for-people-age-65-who-are-still-working.html",
+    "attempted_at": "2026-11-18T12:10:34.638127+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2020/01/14/medicare-rules-and-costs-for-people-age-65-who-are-still-working.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T12:10:52.765894+00:00",
+    "source_body_hash": "d6e2d485d3ae09b5e63dddd398b18aae50fab0a2d13188848137e3d5f978ba9a",
+    "raw_sha256": "1db990de0fb7e591693b663bbf8ac7a302fa4072f45a80dfe81785c46d0dcdae",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Medicare rules and costs for people age 65 who are still working",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2020-01-14T15:25:34+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3b39928fe3c63a4aa063d500.json",
+    "sha256": "bdffd3376810abdbac37083f9af67c3b646af598de1ee403a30d5e2266bdd674",
+    "bundled_path": "legacy_audit/3b39928fe3c63a4aa063d500.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "97387576194d59ed87ea5d88694a7138de1d77047db32bf1d5a33e4dc2382a28",
+      "llm_inferred_at": "2026-11-18T12:11:17.944712+00:00",
+      "model_duration_seconds": 25.1341548,
+      "prompt_tokens": 3684,
+      "completion_tokens": 1221,
+      "selection": [
+        {
+          "source_id": "3b39928fe3c63a4aa063d500",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The basics Original, or basic, Medicare consists of Part A (hospital coverage) and Part B (outpatient and medicare equipment coverage).",
+              "rationale": "The article discusses Medicare, which is a government-run health insurance program for people aged 65 and older. This is a specific industry within the health care sector, and the article provides details about the structure and costs of Medicare, which are industry-specific.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The average premium for single coverage through employer-sponsored health insurance is $7,188, according to Kaiser Family Foundation.",
+              "rationale": "The article discusses the average premium for employer-sponsored health insurance, which is a broad market-level fact. This information is relevant to the US equity market as it reflects the cost of health insurance for a significant portion of the population.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "That's because it's free as long as you have at least a 10-year work history of contributing to the program through payroll taxes.",
+              "rationale": "The article discusses the cost of Medicare and employer-sponsored health insurance, which are relevant to the US equity market as they affect the financial health of individuals and the broader economy.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "inferred",
+              "quote": "The basics Original, or basic, Medicare consists of Part A (hospital coverage) and Part B (outpatient and medicare equipment coverage)."
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "inferred",
+              "quote": "If you work at a company with more than 20 employees, you generally have the choice of sticking with your group health insurance or dropping the company option to go with Medicare."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "inferred",
+              "quote": "The average premium for single coverage through employer-sponsored health insurance is $7,188, according to Kaiser Family Foundation."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for",
+              "industry_name_original": "Health Care",
+              "mechanism": "The article discusses the cost of Medicare and employer-sponsored health insurance, which are relevant to the health care industry as they affect the financial health of individuals and the broader economy.",
+              "confidence": 0.85,
+              "quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "The article discusses the cost of Medicare and employer-sponsored health insurance, which are relevant to the health care industry as they affect the financial health of individuals and the broader economy.",
+              "confidence": 0.85,
+              "quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for"
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "industry_scope_quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for",
+              "industry_name_original": "Property-Casualty Insurers",
+              "mechanism": "The article discusses the cost of Medicare and employer-sponsored health insurance, which are relevant to the health care industry as they affect the financial health of individuals and the broader economy.",
+              "confidence": 0.85,
+              "quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5bc6d7dd4d0d483937d808ac4e923eca2d681f876d0e559f9f68c980372cf03f",
+      "llm_inferred_at": "2026-11-18T12:11:40.863033+00:00",
+      "model_duration_seconds": 22.8981915,
+      "prompt_tokens": 3728,
+      "completion_tokens": 1228,
+      "selection": [
+        {
+          "source_id": "3b39928fe3c63a4aa063d500",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The basics Original, or basic, Medicare consists of Part A (hospital coverage) and Part B (outpatient and medicare equipment coverage).",
+              "rationale": "The article discusses Medicare, which is a government-run health insurance program for people aged 65 and older. This is a specific industry within the health care sector, and the article provides details about the structure and costs of Medicare, which are industry-specific.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The average premium for single coverage through employer-sponsored health insurance is $7,188, according to Kaiser Family Foundation.",
+              "rationale": "The article discusses the average premium for employer-sponsored health insurance, which is a broad market-level fact. This information is relevant to the US equity market as it reflects the cost of health insurance for a significant portion of the population.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "That's because it's free as long as you have at least a 10-year work history of contributing to the program through payroll taxes.",
+              "rationale": "The article discusses the financial implications of Medicare and health insurance, which are relevant to the US equity market as they affect the cost of living and financial planning for a significant portion of the population.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "inferred",
+              "quote": "The basics Original, or basic, Medicare consists of Part A (hospital coverage) and Part B (outpatient and medicare equipment coverage)."
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "inferred",
+              "quote": "If you work at a company with more than 20 employees, you generally have the choice of sticking with your group health insurance or dropping the company option to go with Medicare."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "inferred",
+              "quote": "The average premium for single coverage through employer-sponsored health insurance is $7,188, according to Kaiser Family Foundation."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for",
+              "industry_name_original": "Health Care",
+              "mechanism": "The article discusses the financial implications of Medicare and health insurance, which are relevant to the health care industry as they affect the cost of living and financial planning for a significant portion of the",
+              "confidence": 0.85,
+              "quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "The article discusses the financial implications of Medicare and health insurance, which are relevant to the health care industry as they affect the cost of living and financial planning for a significant portion of the",
+              "confidence": 0.85,
+              "quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for"
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "industry_scope_quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for",
+              "industry_name_original": "Property-Casualty Insurers",
+              "mechanism": "The article discusses the financial implications of Medicare and health insurance, which are relevant to the health care industry as they affect the cost of living and financial planning for a significant portion of the",
+              "confidence": 0.85,
+              "quote": "the cost of your prescription drugs. If you work at a large company The general rule for workers at companies with at least 20 employees is that you can delay signing up for"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:11:40.880537+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d6e2d485d3ae09b5e63dddd398b18aae50fab0a2d13188848137e3d5f978ba9a",
+    "raw_sha256": "1db990de0fb7e591693b663bbf8ac7a302fa4072f45a80dfe81785c46d0dcdae",
+    "date_quote": "article:published_time=2020-01-14T15:25:34+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Discusses Medicare rules, costs, and insurance options for working individuals",
+    "securities": [
+      {
+        "name": "Boomer Benefits",
+        "ticker": null,
+        "exchange": null,
+        "quote": "co-founder of Boomer Benefits"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:0a83766bd3c3abfe",
+        "name": "Accident &Health Insurance",
+        "basis": "inferred",
+        "quote": "If you work at a company with more than 20 employees, you generally have the choice of sticking with your group health insurance or dropping the company option to go with Medicare.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0a83766bd3c3abfe",
+        "industry_name_standard": "Accident &Health Insurance",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "If you work at a company with more than 20 employees, you generally have the choice of sticking with your group health insurance or dropping the company option to go with Medicare.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [],
+    "entity_types": {
+      "Boomer Benefits": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "3b39928fe3c63a4aa063d500",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_01_14_Healthcare_Health-Insurance_cnbc.json",
+        "sha256": "d4c4d762903341dd9514082388c2d9c3c69f9755a3c5953de1a87e9d3275290e",
+        "filename": "2020_01_14_Healthcare_Health-Insurance_cnbc.json"
+      }
+    ],
+    "original_record_hash": "669835edf2f0007d0841f057d5813c466b8aa05a8550710d0a87418111121c9a",
+    "input_hash": "6ff4eb9a0fda9b85eabc046d49407d12f9b3daf3224333c49470b7e7a9781afc",
+    "matching_audit_hash": "77143d88f2ab5a9e32a8443819856cfce0983cc9700a67e9b056e65967567b76",
+    "legacy_security_evidence": [],
+    "record_hash": "1c74654183cc5b5fa4c809e1a1c1c81be6e02d3643ca48013091494d0ac71e31",
+    "outputs": [
+      {
+        "path": "US\\2020_01_14_Healthcare_Health-Insurance_cnbc.json",
+        "sha256": "53f13dac242aa9853e293e106759bbb0164c668ff5de7b8db59cb7144f5a8119"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2020-01-14",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T09:59:13.347520+00:00",
+      "fetched_at": "2026-11-10T12:08:41.996830+00:00",
+      "feature_available_at": "2026-11-10T17:53:23.686235+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T12:11:40.863033+00:00",
+    "feature_available_at": "2026-11-18T12:11:40.880537+00:00",
+    "commit_verified_at": "2026-11-12T15:16:46.936263+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:46.967199+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:42.954902+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Discusses Medicare rules, costs, and insurance options for working individuals",
+        "securities": [
+          {
+            "name": "Boomer Benefits",
+            "ticker": null,
+            "exchange": null,
+            "quote": "co-founder of Boomer Benefits"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Healthcare",
+            "basis": "inferred",
+            "quote": "group health insurance"
+          },
+          {
+            "name": "Insurance",
+            "basis": "inferred",
+            "quote": "Medicare enrollment season brings fierce competition among insurers"
+          }
+        ],
+        "impact_scope": [
+          "industry",
+          "market"
+        ],
+        "entity_types": {
+          "Boomer Benefits": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:12:42.979138+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:12:42.989036+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:12:42.970718+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses Medicare rules, costs, and options for individuals aged 65 who are still working, including details about Part A, Part B, Part D, Advantage,和",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:51:30.661540+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2020/01/14/medicare-rules-and-costs-for-people-age-65-who-are-still-working.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "1c74654183cc5b5fa4c809e1a1c1c81be6e02d3643ca48013091494d0ac71e31",
+    "content_hash": "d6e2d485d3ae09b5e63dddd398b18aae50fab0a2d13188848137e3d5f978ba9a",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:11:40.869220+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3b39928fe3c63a4aa063d500.json",
+      "sha256": "5531234cd4a1c8f4d59f46420b6c02cd8bfc10aa897e7ad5ecddfc2f1e96a8df",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 66.26600000000326
+}

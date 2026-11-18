@@ -1,0 +1,121 @@
+{
+  "source_id": "c0438b6f0bb7b3f03a3991ac",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_15_00_41_stock_fragrance,-beauty,-personal-care_fool.json",
+      "sha256": "7d210030ab73722dbaba30f863f2713b7ed78d2435eedae2df106cfd721ab7da",
+      "filename": "2019_01_15_00_41_stock_fragrance,-beauty,-personal-care_fool.json"
+    }
+  ],
+  "original_record_hash": "642af51734089aa3d6f36f0c8f7ccc9755aa4280c696acf2e46ec3f3671a4b83",
+  "input_hash": "2529649d27e082e7c7cc2905a00b7905849a98bcab49bf723c95fb6f5f4e24de",
+  "matching_audit_hash": "2a6c69efee51b672f4eaa2ad3cb25af184b8cf34e0ed5fc89487b6f13a731fba",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e43484e23e1521c3d3d3ff765f6387805ff687ec07e8e4c973591d79a4e38e3a",
+    "raw_sha256": "23bd0d739a1abe6792d81509b2701e9b6a52fcf99b4e845920c985e12de64e13",
+    "date_quote": "article:published_time=2019-01-15T00:41:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Coty",
+      "ticker": "COTY",
+      "exchange": null,
+      "quote": "Coty NYSE: COTY $4.36 (+3.20%)+$0.14"
+    },
+    {
+      "name": "Procter & Gamble",
+      "ticker": "PG",
+      "exchange": null,
+      "quote": "Procter & Gamble NYSE: PG $169.21 (+0.53%)+$0.89"
+    },
+    {
+      "name": "e.l.f. Beauty",
+      "ticker": "ELF",
+      "exchange": null,
+      "quote": "e.l.f. Beauty NYSE: ELF $119.61 (+0.21%)+$0.26"
+    }
+  ],
+  "record_hash": "13562b71bb4b2c33bac0efc94f90797623cd753303c4d5c36ad279ce69fa6eb9",
+  "outputs": [
+    {
+      "path": "US\\2019_01_15_00_41_stock_fragrance,-beauty,-personal-care_fool.json",
+      "sha256": "e52e03fc79352e1d3182d7d288cd2153211c332d3d84f9a50df4bb7a5ec404b5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-15T00:41:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:37:08.297631+00:00",
+    "fetched_at": "2026-11-10T20:06:01.414610+00:00",
+    "feature_available_at": "2026-11-10T20:06:33.891642+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:24.783588+00:00",
+  "commit_verified_at": "2026-11-12T13:53:24.783588+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Coty",
+        "ticker": "COTY",
+        "exchange": null,
+        "quote": "Coty NYSE: COTY $4.36 (+3.20%)+$0.14"
+      },
+      {
+        "name": "Procter & Gamble",
+        "ticker": "PG",
+        "exchange": null,
+        "quote": "Procter & Gamble NYSE: PG $169.21 (+0.53%)+$0.89"
+      },
+      {
+        "name": "e.l.f. Beauty",
+        "ticker": "ELF",
+        "exchange": null,
+        "quote": "e.l.f. Beauty NYSE: ELF $119.61 (+0.21%)+$0.26"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty and Personal Care",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "source_id": "a3822e63e901621a7adce436",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_06_04_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "0f1fdf35fc1390fc28a45f3b11cfb0fc1d2d268bd81343b8db84e3a30f7423cb",
+      "filename": "2019_06_04_Real-Estate_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "490d02fb4cbbb89529649764cda6acffad81242869f8dded3a733c055c52fab6",
+  "input_hash": "933eca1f69c0be14bacd686c74f63ea538d02b0333ae5514b7e2e367f4cd42a8",
+  "matching_audit_hash": "afabee4ad2b3a26b623f90ca58d1ffe51fa8a5ff2e8ea7fc4d3eb86abcc5c5af",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "01f813929f8eead2350f95d4d0a3e5b5133b4267f44b4bd4f4f19d2ab7f4bc5f",
+    "raw_sha256": "e5d660aa3759c71a71a86fb734ca0263b5bb0f7330d89272eabb36ba128dd2ae",
+    "date_quote": "article:published_time=2019-06-04T15:24:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e6152f037525b7ba4dce17b142f3909f4b3f908bdba09d794b9eb59fb30aee07",
+  "outputs": [
+    {
+      "path": "US\\2019_06_04_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "77391c3814c2cd81f0cc8bc79664a3d58af7b7619809aaed20d14c1de88b76c1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-06-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:47.521157+00:00",
+    "fetched_at": "2026-11-10T12:56:07.554989+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.521876+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:11:33.296429+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.748793+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.748793+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Growth in food delivery drives demand for cold storage infrastructure.",
+    "securities": [
+      {
+        "name": null,
+        "ticker": "COLD",
+        "exchange": "NYSE",
+        "quote": "NYSE: COLD"
+      },
+      {
+        "name": "Peapod by Giant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Peapod by Giant"
+      },
+      {
+        "name": "Amazon Fresh",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amazon Fresh"
+      },
+      {
+        "name": "Blue Apron",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blue Apron"
+      },
+      {
+        "name": "CBRE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CBRE"
+      },
+      {
+        "name": "Food Marketing Institute",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Food Marketing Institute"
+      },
+      {
+        "name": "Nielsen",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nielsen"
+      },
+      {
+        "name": "Americold",
+        "ticker": "COLD",
+        "exchange": "NYSE",
+        "quote": "Americold (NYSE: COLD)"
+      },
+      {
+        "name": "NYSE: COLD",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NYSE: COLD"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Food Delivery Services",
+        "basis": "inferred",
+        "quote": "food delivery services"
+      },
+      {
+        "name": "Grocery Retail",
+        "basis": "inferred",
+        "quote": "groceries"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Peapod by Giant": "brand",
+      "Amazon Fresh": "brand",
+      "Blue Apron": "brand",
+      "CBRE": "organization",
+      "Food Marketing Institute": "organization",
+      "Nielsen": "organization",
+      "Americold": "organization",
+      "NYSE: COLD": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:45.778468+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:11:33.296429+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Growth in food delivery drives demand for cold storage infrastructure.",
+      "securities": [
+        {
+          "name": null,
+          "ticker": "COLD",
+          "exchange": "NYSE",
+          "quote": "NYSE: COLD"
+        },
+        {
+          "name": "Peapod by Giant",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Peapod by Giant"
+        },
+        {
+          "name": "Amazon Fresh",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Amazon Fresh"
+        },
+        {
+          "name": "Blue Apron",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Blue Apron"
+        },
+        {
+          "name": "CBRE",
+          "ticker": null,
+          "exchange": null,
+          "quote": "CBRE"
+        },
+        {
+          "name": "Food Marketing Institute",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Food Marketing Institute"
+        },
+        {
+          "name": "Nielsen",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Nielsen"
+        },
+        {
+          "name": "Americold",
+          "ticker": "COLD",
+          "exchange": "NYSE",
+          "quote": "Americold (NYSE: COLD)"
+        },
+        {
+          "name": "NYSE: COLD",
+          "ticker": null,
+          "exchange": null,
+          "quote": "NYSE: COLD"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Food Delivery Services",
+          "basis": "inferred",
+          "quote": "food delivery services"
+        },
+        {
+          "name": "Grocery Retail",
+          "basis": "inferred",
+          "quote": "groceries"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "Peapod by Giant": "brand",
+        "Amazon Fresh": "brand",
+        "Blue Apron": "brand",
+        "CBRE": "organization",
+        "Food Marketing Institute": "organization",
+        "Nielsen": "organization",
+        "Americold": "organization",
+        "NYSE: COLD": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:11:33.363356+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:11:33.402229+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:11:33.312950+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the growth of cold storage warehouses and distribution centers due to the rise of food delivery services, mentioning specific companies and a",
+        "securities": [
+          {
+            "name": null,
+            "ticker": "COLD",
+            "exchange": "NYSE",
+            "quote": "NYSE: COLD"
+          }
+        ],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:49:25.794321+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "source_id": "2c8b6b74ca2515be81ed0838",
+  "status": "completed",
+  "source_record_hash": "d19c01ce798003d3f7838150982e746951c31f8d615a272afe2421c1a10d6b01",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2012/08/15/whos-benefiting-from-the-drought.html",
+    "attempted_at": "2026-11-18T10:48:23.548564+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "46761ab949340f5fcd58fb48728d2aaf0b4fec5175a3e3bb27b44bb8c753b61c"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2c8b6b74ca2515be81ed0838.json",
+    "sha256": "8fd96278c5656f5f8caf050f80d22978f84fd21da3fb7b37ebaad102046fa3c7",
+    "bundled_path": "legacy_audit/2c8b6b74ca2515be81ed0838.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "79389733592a77be060313e1cd37ae4b5b4ef5e8eb692968ba47ff6c2b536dd7",
+      "llm_inferred_at": "2026-11-18T10:48:48.156952+00:00",
+      "model_duration_seconds": 19.5630513,
+      "prompt_tokens": 2244,
+      "completion_tokens": 1025,
+      "selection": [
+        {
+          "source_id": "2c8b6b74ca2515be81ed0838",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "rationale": "The drought is creating opportunities for water utility companies, indicating an industry-wide impact on the water supply sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "American Water Works and Aqua America are among the companies benefiting from increased sales of sprinkler systems and pool filling services in drought-affected areas.",
+              "rationale": "American Water Works and Aqua America are explicitly mentioned as companies benefiting from the drought, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The article discusses the impact of the drought on agriculture and highlights the companies that are benefiting from the situation.",
+              "rationale": "The drought is affecting agriculture, which is an industry-wide impact, as it is mentioned as a sector being impacted.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "name": "Water Supply",
+              "basis": "explicit",
+              "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies"
+            },
+            {
+              "industry_key": "SEC-SIC:0700",
+              "name": "AGRICULTURAL SERVICES",
+              "basis": "explicit",
+              "quote": "The article discusses the impact of the drought on agriculture and highlights the companies that are benefiting from the situation."
+            },
+            {
+              "industry_key": "SEC-SIC:0100",
+              "name": "AGRICULTURAL PRODUCTION-CROPS",
+              "basis": "explicit",
+              "quote": "The article explains that farmers with irrigation systems are faring much better than those without, with examples showing significant differences in corn yields."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "industry_name_original": "Water Supply",
+              "mechanism": "Increased demand for water solutions due to drought is creating opportunities for water utility companies.",
+              "confidence": 0.95,
+              "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies"
+            },
+            {
+              "industry_key": "SEC-SIC:0700",
+              "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "industry_name_original": "AGRICULTURAL SERVICES",
+              "mechanism": "The drought is affecting agricultural production, leading to increased demand for irrigation systems and services.",
+              "confidence": 0.9,
+              "quote": "The article discusses the impact of the drought on agriculture and highlights the companies that are benefiting from the situation."
+            },
+            {
+              "industry_key": "SEC-SIC:0100",
+              "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "industry_name_original": "AGRICULTURAL PRODUCTION-CROPS",
+              "mechanism": "The drought is affecting agricultural production, leading to increased demand for irrigation systems and services.",
+              "confidence": 0.9,
+              "quote": "The article explains that farmers with irrigation systems are faring much better than those without, with examples showing significant differences in corn yields."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "c7445445daea24f36b45579e76ebb82567d5a766a88232f6413f16545cdcd376",
+      "llm_inferred_at": "2026-11-18T10:49:06.452425+00:00",
+      "model_duration_seconds": 18.2858938,
+      "prompt_tokens": 2288,
+      "completion_tokens": 1015,
+      "selection": [
+        {
+          "source_id": "2c8b6b74ca2515be81ed0838",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "rationale": "The drought is creating opportunities for water utility companies, indicating an industry-wide impact on the water supply sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "American Water Works and Aqua America are among the companies benefiting from increased sales of sprinkler systems and pool filling services in drought-affected areas.",
+              "rationale": "American Water Works and Aqua America are explicitly mentioned as companies benefiting from the drought, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The article discusses the impact of the drought on agriculture and highlights the companies that are benefiting from the situation.",
+              "rationale": "The drought is affecting agriculture, which is an industry-wide impact, as it is mentioned as a sector being impacted.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "name": "Water Supply",
+              "basis": "explicit",
+              "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies"
+            },
+            {
+              "industry_key": "SEC-SIC:0700",
+              "name": "AGRICULTURAL SERVICES",
+              "basis": "explicit",
+              "quote": "The article discusses the impact of the drought on agriculture and highlights the companies that are benefiting from the situation."
+            },
+            {
+              "industry_key": "TRSR:2510232a8915045a",
+              "name": "Fluid Controls",
+              "basis": "explicit",
+              "quote": "Flow control equipment and desalination devices are also being discussed, though their revenue impact remains minimal."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "industry_name_original": "Water Supply",
+              "mechanism": "Increased demand for water solutions due to drought is creating opportunities for water utility companies.",
+              "confidence": 0.95,
+              "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies"
+            },
+            {
+              "industry_key": "SEC-SIC:0700",
+              "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "industry_name_original": "AGRICULTURAL SERVICES",
+              "mechanism": "The drought is affecting agriculture, leading to increased demand for irrigation systems and services.",
+              "confidence": 0.9,
+              "quote": "The article discusses the impact of the drought on agriculture and highlights the companies that are benefiting from the situation."
+            },
+            {
+              "industry_key": "TRSR:2510232a8915045a",
+              "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+              "industry_name_original": "Fluid Controls",
+              "mechanism": "Flow control equipment and desalination devices are being discussed as potential solutions, indicating an industry impact.",
+              "confidence": 0.85,
+              "quote": "Flow control equipment and desalination devices are also being discussed, though their revenue impact remains minimal."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:49:06.467315+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "46761ab949340f5fcd58fb48728d2aaf0b4fec5175a3e3bb27b44bb8c753b61c",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2012-08-15T17:29:48+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Drought impacts water utilities and agriculture, affecting companies and markets",
+    "securities": [
+      {
+        "name": "American Water Works",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American Water Works"
+      },
+      {
+        "name": "Aqua America",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Aqua America"
+      },
+      {
+        "name": "GAMCO Investors",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GAMCO Investors"
+      },
+      {
+        "name": "Pall Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pall Corp"
+      },
+      {
+        "name": "Northwest Pipe",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Northwest Pipe"
+      },
+      {
+        "name": "Flowserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Flowserve"
+      },
+      {
+        "name": "Lindsay Manufacturing",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lindsay Manufacturing"
+      },
+      {
+        "name": "Piper Jaffray",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Piper Jaffray"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:5a1ca96aff27fa15",
+        "name": "Water Supply",
+        "basis": "inferred",
+        "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5a1ca96aff27fa15",
+        "industry_name_standard": "Water Supply",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies"
+      },
+      {
+        "industry_key": "TRSR:2510232a8915045a",
+        "name": "Fluid Controls",
+        "basis": "inferred",
+        "quote": "Flow control equipment and desalination devices are also being discussed, though their revenue impact remains minimal.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "2510232a8915045a",
+        "industry_name_standard": "Fluid Controls",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Flow control equipment and desalination devices are also being discussed, though their revenue impact remains minimal."
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "American Water Works": "company",
+      "Aqua America": "company",
+      "GAMCO Investors": "issuer",
+      "Pall Corp": "company",
+      "Northwest Pipe": "company",
+      "Flowserve": "company",
+      "Lindsay Manufacturing": "company",
+      "Piper Jaffray": "issuer"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "2c8b6b74ca2515be81ed0838",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_08_15_Water-&-Utilities_Water-Utilities_cnbc.json",
+        "sha256": "b931c18be5359eb5dfa2a25a210935a87cc14cde2b61aa19e74895bd5ecd2e80",
+        "filename": "2012_08_15_Water-&-Utilities_Water-Utilities_cnbc.json"
+      }
+    ],
+    "original_record_hash": "2cda694bfdc93eafc8e75fab25b70f47a7f20aaaad885d414df6765978cb887d",
+    "input_hash": "e429cdf764e4e60a5488c2f0d63e5aa65e1cddf95d7488d5e0e1b2f62cedcaab",
+    "matching_audit_hash": "68a257ba0c8777bdaa577c70853c763f17003f757980d752dcca3a5fa6bc8294",
+    "legacy_security_evidence": [],
+    "record_hash": "d19c01ce798003d3f7838150982e746951c31f8d615a272afe2421c1a10d6b01",
+    "outputs": [
+      {
+        "path": "US\\2012_08_15_Water-&-Utilities_Water-Utilities_cnbc.json",
+        "sha256": "15d404d0fb67c0e18e825550eea5309aed192c5020e01331441f1af8736fa5d9"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2012-08-15",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T16:04:08.159079+00:00",
+      "fetched_at": "2026-11-10T16:28:13.555206+00:00",
+      "feature_available_at": "2026-11-10T17:53:12.836547+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T10:49:06.452425+00:00",
+    "feature_available_at": "2026-11-18T10:49:06.467315+00:00",
+    "commit_verified_at": "2026-11-12T15:16:33.727600+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:33.756964+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:33.234682+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Drought impacts water utilities and agriculture, affecting companies and markets",
+        "securities": [
+          {
+            "name": "American Water Works",
+            "ticker": null,
+            "exchange": null,
+            "quote": "American Water Works"
+          },
+          {
+            "name": "Aqua America",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Aqua America"
+          },
+          {
+            "name": "GAMCO Investors",
+            "ticker": null,
+            "exchange": null,
+            "quote": "GAMCO Investors"
+          },
+          {
+            "name": "Pall Corp",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Pall Corp"
+          },
+          {
+            "name": "Northwest Pipe",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Northwest Pipe"
+          },
+          {
+            "name": "Flowserve",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Flowserve"
+          },
+          {
+            "name": "Lindsay Manufacturing",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Lindsay Manufacturing"
+          },
+          {
+            "name": "Piper Jaffray",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Piper Jaffray"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Agriculture",
+            "basis": "inferred",
+            "quote": "agriculture"
+          },
+          {
+            "name": "Manufacturing",
+            "basis": "inferred",
+            "quote": "manufacturer of agricultural irrigation equipment"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry",
+          "market"
+        ],
+        "entity_types": {
+          "American Water Works": "company",
+          "Aqua America": "company",
+          "GAMCO Investors": "issuer",
+          "Pall Corp": "company",
+          "Northwest Pipe": "company",
+          "Flowserve": "company",
+          "Lindsay Manufacturing": "company",
+          "Piper Jaffray": "issuer"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:59:33.260629+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T14:59:33.268711+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T14:59:33.250756+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses the impact of the U.S. drought on water utility companies and agricultural irrigation, including specific companies and their financial and战略",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T13:58:15.868249+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [
+      {
+        "industry_key": "TRSR:5a1ca96aff27fa15",
+        "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+        "industry_name_original": "Water Supply",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Increased demand for water solutions due to drought is creating opportunities for water utility companies.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5a1ca96aff27fa15",
+        "industry_name_standard": "Water Supply",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "TRSR:2510232a8915045a",
+        "industry_scope_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+        "industry_name_original": "Fluid Controls",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Flow control equipment and desalination devices are being discussed as potential solutions, indicating an industry impact.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "Flow control equipment and desalination devices are also being discussed, though their revenue impact remains minimal.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "2510232a8915045a",
+        "industry_name_standard": "Fluid Controls",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Flow control equipment and desalination devices are also being discussed, though their revenue impact remains minimal.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "American Water Works and Aqua America are among the companies benefiting from increased sales of sprinkler systems and pool filling services in drought-affected areas.",
+        "rationale": "American Water Works and Aqua America are explicitly mentioned as companies benefiting from the drought, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "American Water Works and Aqua America are among the companies benefiting from increased sales of sprinkler systems and pool filling services in drought-affected areas."
+      },
+      {
+        "scope": "industry",
+        "quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies",
+        "rationale": "The drought is creating opportunities for water utility companies, indicating an industry-wide impact on the water supply sector.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The U.S. drought of 2012 is creating opportunities for water utility companies, as demand for water solutions rises. American Water Works and Aqua America are among the companies"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.cnbc.com/2012/08/15/whos-benefiting-from-the-drought.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "d19c01ce798003d3f7838150982e746951c31f8d615a272afe2421c1a10d6b01",
+    "content_hash": "46761ab949340f5fcd58fb48728d2aaf0b4fec5175a3e3bb27b44bb8c753b61c",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:49:06.456328+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2c8b6b74ca2515be81ed0838.json",
+      "sha256": "543aeaafac09b32db97c8ef8443160290a6aee643b3906ad3fa0c11beb718ebf",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 42.937999999994645
+}

@@ -1,0 +1,92 @@
+{
+  "source_id": "9fc1c658e6d835cefd7bd8f9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_22_Compensation-and-Governance_Business-Services_sec.json",
+      "sha256": "011e0eadeeb21bf4f5541616e94679b62c8879081fb9900356730f42a33d4e5e",
+      "filename": "2013_02_22_Compensation-and-Governance_Business-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "1ba39f6302f3b42a12556b82494dab4860f1800ef2a3c4b809ffa60040fc8561",
+  "input_hash": "067939620e51d81e6e2d618be7f268d3ac3d6ac9169962eeb773dfdb298e318e",
+  "matching_audit_hash": "38794e222d0a58f56f73574e4caec3cf0ec5ee50dc43f482ac4aaae7ed1f40f5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b41ff97c01646c840434b07650ea09d0cd19c096d6aafdfdacdff384ddef298b",
+    "raw_sha256": "5adad30057818d51b4ab1add7916d700070737f9ae6c8773f86092c34d2a278c",
+    "date_quote": "SEC filing datePublished=2013-02-22",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000114036113008940/form8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Insperity, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Insperity, Inc."
+    }
+  ],
+  "record_hash": "0e311b9ff1e1579d24cd0064ec1a757100390b31d91c00e131c4ea48c55b546e",
+  "outputs": [
+    {
+      "path": "US\\2013_02_22_Compensation-and-Governance_Business-Services_sec.json",
+      "sha256": "4e987eaf71775b5ab7b585211aefd1bff5d5d06e7f7c5e1e6af6c925a1826d2b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+    "fetched_at": "2026-11-11T09:54:30.426960+00:00",
+    "feature_available_at": "2026-11-11T09:54:47.152278+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:04:03.597751+00:00",
+  "feature_available_at": "2026-11-12T14:04:03.630838+00:00",
+  "commit_verified_at": "2026-11-12T14:04:03.630838+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses changes to compensation plans and vesting conditions for executives and directors of Insperity, Inc., which are relevant to corporate治理and",
+    "securities": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Insperity, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

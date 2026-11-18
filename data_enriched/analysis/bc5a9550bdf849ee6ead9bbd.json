@@ -1,0 +1,95 @@
+{
+  "source_id": "bc5a9550bdf849ee6ead9bbd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_13_Financial_Banking_sec.json",
+      "sha256": "9e458ab99646839cef5b840d94e6f130cb68cea21c613e0a52779fd733db0f5f",
+      "filename": "2015_01_13_Financial_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "0e898c82f59793a21e9063b00a9a6f9ccd8b4ead4e9c1d92a33af8b5e57134f6",
+  "input_hash": "039065695b5d2314980c6b16c1682d6638ad43bd0faceda22073acc099bf8a77",
+  "matching_audit_hash": "43f5977b795e05e0ad0ea503c4ef0b9d5f1bd99c6cdcd6b66ed5c33398374804",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "31cf66e81c549b30f3deb11da9cc93be43d2bb5ac45bddbaa7a9fbf4f439978f",
+    "raw_sha256": "1e41d9567aa9e1755403ba34c929131d29c25ea00f61bc6e278f489a9cae3c38",
+    "date_quote": "Published=2015-01-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312515009411/d851186d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Royal Bank of Canada",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Royal Bank of Canada"
+    }
+  ],
+  "record_hash": "eb742f6bf8674180ff318ea8ff3de4598af42c08b99bba1197c4520395c4d637",
+  "outputs": [
+    {
+      "path": "US\\2015_01_13_Financial_Banking_sec.json",
+      "sha256": "bc230d5b503516d502c8795b7a0794fbe194cccd3240e0fb03c3a7af52ff208d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:22:01.073234+00:00",
+    "feature_available_at": "2026-11-11T00:22:07.820844+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:53.925117+00:00",
+  "commit_verified_at": "2026-11-12T13:52:53.925117+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

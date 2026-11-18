@@ -1,0 +1,118 @@
+{
+  "source_id": "fc446d7d8d533c02280b418d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_10_energy_utilities_cnbc.json",
+      "sha256": "a4e693e727945ecb17a2583eec041588800520840367ac0514512540013ba7d2",
+      "filename": "2019_10_10_energy_utilities_cnbc.json"
+    }
+  ],
+  "original_record_hash": "018126d185ea44f82714be85329043f0e8b3c761d17786c7d3bb37919ad55b5c",
+  "input_hash": "63fe3cc48c92c901599f4bbc2ac6328cd8ae70c1281443f5071387acfa8c904f",
+  "matching_audit_hash": "2ff7912ab26a9aef2ea2e440bb0d0fd1c2b1ee1afd57ecb3dcd5bfa4a0b567d3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "594dc9d72fd78b2ded77ec84f74ab4d7f89d4619fcdc9c469e4e78a24d875d49",
+    "raw_sha256": "e74210c16e7c9e7640d43d9cd7bd72685aa6fded6a1aae88e9588f1c68553825",
+    "date_quote": "datePublished  Published Thu, Oct 10 2019 12:56 PM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "PG&E",
+      "ticker": null,
+      "exchange": null,
+      "quote": "PG&E"
+    }
+  ],
+  "record_hash": "ae115a2bb49acbc4203a0016a945dd559215550459770759ee7c4b68f36ad284",
+  "outputs": [
+    {
+      "path": "US\\2019_10_10_energy_utilities_cnbc.json",
+      "sha256": "82d839b82dc716b0bf37405cc82e0a83b658d254a3511b45eaa4174578773394"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:18.531813+00:00",
+    "fetched_at": "2026-11-11T11:37:33.794516+00:00",
+    "feature_available_at": "2026-11-11T11:38:28.387989+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:50:52.045918+00:00",
+  "feature_available_at": "2026-11-12T14:50:52.063296+00:00",
+  "commit_verified_at": "2026-11-12T14:50:52.063296+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about PG&E's actions, financial liabilities, and potential economic impacts, which are relevant for the StockMixer newspipeline",
+    "securities": [
+      {
+        "name": "PG&E",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PG&E"
+      },
+      {
+        "name": "California",
+        "ticker": null,
+        "exchange": null,
+        "quote": "California"
+      },
+      {
+        "name": "Stanford",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Stanford"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "energy"
+      },
+      {
+        "name": "Renewable energy",
+        "basis": "inferred",
+        "quote": "alternative energy solutions, such as solar battery storage"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "PG&E": "company",
+      "California": "organization",
+      "Stanford": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

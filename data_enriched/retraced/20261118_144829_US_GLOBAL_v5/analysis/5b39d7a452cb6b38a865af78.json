@@ -1,0 +1,203 @@
+{
+  "source_id": "5b39d7a452cb6b38a865af78",
+  "status": "completed",
+  "source_record_hash": "1944543320e0191f4bb7d4fb398c81a9aabd113ba3113eccb3cf8df909d5f75f",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-14-006699-index.html",
+    "attempted_at": "2026-11-18T15:56:49.962390+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "73e25749381e5590ef25dd54974e08b5a06c444b481f0af3c825cc54b0bc2b4f"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/5b39d7a452cb6b38a865af78.json",
+    "sha256": "a9cd575305c565fa772fed09a131e8c5ce5d20de506b807227344758d209f7b8",
+    "bundled_path": "legacy_audit/5b39d7a452cb6b38a865af78.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4b6724a8588d1d9e3055db5645c16292764b71e10a1b873482b736b251e8286d",
+      "llm_inferred_at": "2026-11-18T15:57:41.145101+00:00",
+      "model_duration_seconds": 6.1046304,
+      "prompt_tokens": 1598,
+      "completion_tokens": 290,
+      "selection": [
+        {
+          "source_id": "5b39d7a452cb6b38a865af78",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On April 16, 2014, Optical Cable Corporation (the “Company” or “OCC®”) issued a press release announcing that the Board of Directors declared a cash dividend of $0.02 per share on",
+              "rationale": "The article discusses a specific company's dividend declaration, which is a company-level event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3827",
+              "name": "OPTICAL INSTRUMENTS & LENSES",
+              "basis": "explicit",
+              "quote": "On April 16, 2014, Optical Cable Corporation (the “Company” or “OCC®”) issued a press release announcing that the Board of Directors declared a cash dividend of $0.02 per share on"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:57:41.184269+00:00",
+  "audit": {
+    "source_id": "5b39d7a452cb6b38a865af78",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-14-006699-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2014-04-16",
+    "date_quote": "SEC filing datePublished=2014-04-16",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "73e25749381e5590ef25dd54974e08b5a06c444b481f0af3c825cc54b0bc2b4f",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T04:56:11.457107+00:00",
+    "fetched_at": "2026-11-12T13:23:14.425596+00:00",
+    "first_extracted_at": "2026-11-12T13:23:29.592007+00:00",
+    "extracted_at": "2026-11-18T15:57:41.146604+00:00",
+    "feature_available_at": "2026-11-18T15:57:41.184269+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:3827",
+        "name": "OPTICAL INSTRUMENTS & LENSES",
+        "basis": "inferred",
+        "quote": "On April 16, 2014, Optical Cable Corporation (the “Company” or “OCC®”) issued a press release announcing that the Board of Directors declared a cash dividend of $0.02 per share on",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3827",
+        "industry_name_standard": "OPTICAL INSTRUMENTS & LENSES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On April 16, 2014, Optical Cable Corporation (the “Company” or “OCC®”) issued a press release announcing that the Board of Directors declared a cash dividend of $0.02 per share on"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "1944543320e0191f4bb7d4fb398c81a9aabd113ba3113eccb3cf8df909d5f75f",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2014_04_16_corporate-action_Telecom-Equipment_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\c4ad645ee1b01f9889f4210d9625cf6338bb30ff8cff9ae3876e5cdbc785ef50.json",
+      ".runtime\\simple\\model_cache\\dfe5e364a40d9a37714672b88a9ddc9b8b255bc55885d7d58e8bf4f1b533f686.json",
+      ".runtime\\simple\\pages\\5b39d7a452cb6b38a865af78.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774914006699/occ20140414_8k.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-14-006699-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T15:57:41.145101+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "73e25749381e5590ef25dd54974e08b5a06c444b481f0af3c825cc54b0bc2b4f",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [],
+    "event_cluster_id": null,
+    "extraction_version": "5af3acfec0c4ba49f775b5a43aaf3127b52b8685f90f076c54a74eb4de615678",
+    "commit_verified_at": "2026-11-12T13:23:29.614008+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T13:23:29.656185+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\5b39d7a452cb6b38a865af78.json",
+      ".runtime\\simple\\model_cache\\c4ad645ee1b01f9889f4210d9625cf6338bb30ff8cff9ae3876e5cdbc785ef50.json",
+      ".runtime\\simple\\model_cache\\dfe5e364a40d9a37714672b88a9ddc9b8b255bc55885d7d58e8bf4f1b533f686.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "On April 16, 2014, Optical Cable Corporation (the “Company” or “OCC®”) issued a press release announcing that the Board of Directors declared a cash dividend of $0.02 per share on",
+        "rationale": "The article discusses a specific company's dividend declaration, which is a company-level event.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On April 16, 2014, Optical Cable Corporation (the “Company” or “OCC®”) issued a press release announcing that the Board of Directors declared a cash dividend of $0.02 per share on"
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "1944543320e0191f4bb7d4fb398c81a9aabd113ba3113eccb3cf8df909d5f75f",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/5b39d7a452cb6b38a865af78.json",
+      "sha256": "88a70cefdc202362611f9af57854798bcd84f5168e23c21a2832e6ad0c097b3a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 51.25
+}

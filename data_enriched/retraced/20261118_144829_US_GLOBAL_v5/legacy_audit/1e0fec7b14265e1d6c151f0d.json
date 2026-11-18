@@ -1,0 +1,100 @@
+{
+  "source_id": "1e0fec7b14265e1d6c151f0d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_27_Financial-Agreement_Technology_sec.json",
+      "sha256": "37bd9d088e4dd3fc25cd2a08438a227e893c56a85795931ae9520a862f92a91e",
+      "filename": "2013_02_27_Financial-Agreement_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "b3cef4b3114ff77a997479a1189c76d6409f207e216a9b9a887572bbee6b4b63",
+  "input_hash": "998e5495d139598bbb0a4df6b51c9f31af89c474b7120664ae2c259398bbe281",
+  "matching_audit_hash": "05fb307fc7e79dfdec1992d70e2ce611343fefb87c4765a7ae9cc4fb4dda7467",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5cbe00f5b111f062aca2acb60884e1f003b197b19495aea7c95100450441d8ec",
+    "raw_sha256": "342281456496e1b67c0342e3be6a73d300a4276396b41705afb79df02bd63e5d",
+    "date_quote": "SEC filing datePublished=2013-02-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000118143113013030/rrd371527.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Geospace Technologies Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Geospace Technologies Corporation"
+    }
+  ],
+  "record_hash": "339525c57328bcec6651625fa02486ca4b84123bab1cee454b45b67624c1d621",
+  "outputs": [
+    {
+      "path": "US\\2013_02_27_Financial-Agreement_Technology_sec.json",
+      "sha256": "b7344dc3799bfbb90e1de099f4c28ecf649006edbb7be8d1346ffc810817784f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+    "fetched_at": "2026-11-10T23:38:17.358499+00:00",
+    "feature_available_at": "2026-11-11T09:59:41.733661+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:04:12.061713+00:00",
+  "feature_available_at": "2026-11-12T14:04:12.076611+00:00",
+  "commit_verified_at": "2026-11-12T14:04:12.076611+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses amendments to loan agreements and definitions of indebtedness, which are relevant to financial operations and legal structures.",
+    "securities": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation (GEOSPACE)"
+      },
+      {
+        "name": "Subsidiary guarantors",
+        "ticker": null,
+        "exchange": null,
+        "quote": "subsidiary guarantors"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Geospace Technologies Corporation": "company",
+      "Subsidiary guarantors": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

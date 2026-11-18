@@ -1,0 +1,691 @@
+{
+  "source_id": "3d62b309ecde1ada7ea3404e",
+  "status": "completed",
+  "source_record_hash": "a1ff6f5fe049dba6fa5a27e0b3623b5d7756cc10257ead38bfd77c502e915932",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-20-000011-index.html",
+    "attempted_at": "2026-11-18T12:28:56.215606+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-20-000011-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075320000011/a12312019-8xkearningsr.htm",
+    "fetched_at": "2026-11-18T12:29:10.016064+00:00",
+    "source_body_hash": "7725f1a063683e423817ce1b91e518141ccce4f4f8f9c859a7162ec33ea4f6a8",
+    "raw_sha256": "45c94b719307f19df924a9d56716faa15e7f98167a153b579da24f00867e5d6e",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075320000011/a12312019-8xkearningsr.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "45c94b719307f19df924a9d56716faa15e7f98167a153b579da24f00867e5d6e",
+        "text_sha256": "4c9756e686628c408adb8651dd71f8aab7db346c272ffa278603b9b62a685832",
+        "text_start": 0,
+        "text_end": 2772
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075320000011/a12312019-ex991earning.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "3dc8105401d57b114389b2cd586cf29023553ed73ddaad8877dd89e3fe453512",
+        "text_sha256": "13145b641e6f0f3974e541d39ba8fca78a618a092ec26af15ac938d315d118f2",
+        "text_start": 2774,
+        "text_end": 28187
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "Document",
+    "title_origin": "html_title",
+    "publication_evidence": "SEC filing datePublished=2020-02-11",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3d62b309ecde1ada7ea3404e.json",
+    "sha256": "8ba73c4f7b4fd126cb994cd4f309468bc832533efeee9a2f1cabde288c08978f",
+    "bundled_path": "legacy_audit/3d62b309ecde1ada7ea3404e.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "775221d427233edc1ee5469c23b9c893d72999bcf579dfde44a1643416e35d66",
+      "llm_inferred_at": "2026-11-18T12:29:22.177944+00:00",
+      "model_duration_seconds": 12.1142848,
+      "prompt_tokens": 4370,
+      "completion_tokens": 487,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "after a significant increase in the second quarter of 2019; however, the frequency of large claims and related costs remained elevated when compared to levels in prior years.",
+              "rationale": "The text discusses the impact of large healthcare claims on the company's financial performance, which is part of the health insurance industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "the company’s financial and operating results for the quarter and year ended December 31, 2019. A copy of the press release is furnished as Exhibit 99.1 hereto and incorporated by",
+              "rationale": "The text directly mentions the company's financial results and operations, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "after a significant increase in the second quarter of 2019; however, the frequency of large claims and related costs remained elevated when compared to levels in prior years."
+            },
+            {
+              "industry_key": "SEC-SIC:6321",
+              "name": "ACCIDENT & HEALTH INSURANCE",
+              "basis": "explicit",
+              "quote": "the company’s financial and operating results for the quarter and year ended December 31, 2019. A copy of the press release is furnished as Exhibit 99.1 hereto and incorporated by"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f3c361cbf25f9b1d85ecfc74261759c511d6e003504d9c3fb9561e3a6bcf5c8b",
+      "llm_inferred_at": "2026-11-18T12:29:34.030658+00:00",
+      "model_duration_seconds": 11.8321006,
+      "prompt_tokens": 4414,
+      "completion_tokens": 589,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "after a significant increase in the second quarter of 2019; however, the frequency of large claims and related costs remained elevated when compared to levels in prior years.",
+              "rationale": "The text discusses the frequency of large healthcare claims and their impact on the company's financials, which is a sector-wide issue in the health insurance industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "the company’s financial and operating results for the quarter and year ended December 31, 2019. A copy of the press release is furnished as Exhibit 99.1 hereto and incorporated by",
+              "rationale": "The text directly mentions the company's financial and operating results, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "the company’s financial and operating results for the quarter and year ended December 31, 2019. A copy of the press release is furnished as Exhibit 99.1 hereto and incorporated by"
+            },
+            {
+              "industry_key": "SEC-SIC:6321",
+              "name": "ACCIDENT & HEALTH INSURANCE",
+              "basis": "explicit",
+              "quote": "the company’s financial and operating results for the quarter and year ended December 31, 2019. A copy of the press release is furnished as Exhibit 99.1 hereto and incorporated by"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "after a significant increase in the second quarter of 2019; however, the frequency of large claims and related costs remained elevated when compared to levels in prior years."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "a033fe6db9e68dcddfaa9a986431c44c218890576645174f5fafa95cf824c410",
+      "llm_inferred_at": "2026-11-18T12:29:56.720623+00:00",
+      "model_duration_seconds": 22.6657225,
+      "prompt_tokens": 3878,
+      "completion_tokens": 1109,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The conference call script will be available at the same website later today.",
+              "rationale": "The article discusses Insperity's financial results and forward-looking statements, which are relevant to the financial services industry, including the impact of economic conditions, regulatory developments, and competitive environment.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The conference call script will be available at the same website later today.",
+              "rationale": "The article discusses financial results and forward-looking statements, which are relevant to the US equity market, including macroeconomic conditions and regulatory developments.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "statements could differ materially from those stated in such forward-looking statements. Among the factors that could cause actual results to differ materially are: • adverse economic conditions; • our liability for WSEE payroll, payroll taxes and benefits costs; • increases in health insurance costs and workers’ compensation rates and underlying",
+              "rationale": "The article discusses factors that could affect the financial results of Insperity, which is a publicly traded company, and these factors are relevant to the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "inferred",
+              "quote": "Insperity, a trusted advisor to America’s best businesses for more than 33 years, provides an array of human resources and business solutions designed to help improve business"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "inferred",
+              "quote": "our forward-looking statements to reflect events or circumstances after the date they are made or to reflect the occurrence of unanticipated events. SUMMARY FINANCIAL INFORMATION"
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "inferred",
+              "quote": "our forward-looking statements to reflect events or circumstances after the date they are made or to reflect the occurrence of unanticipated events. SUMMARY FINANCIAL INFORMATION"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "industry_name_original": "Business Services",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "impact_role": "supply_exposure"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "impact_role": "supply_exposure"
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "industry_scope_quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "industry_name_original": "Property-Casualty Insurers",
+              "mechanism": "conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "impact_role": "supply_exposure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "f1bdbb90889149412d1039e2c7e0603abccde324e21d80c2145eb60137095e3f",
+      "llm_inferred_at": "2026-11-18T12:30:18.893358+00:00",
+      "model_duration_seconds": 22.1558574,
+      "prompt_tokens": 3922,
+      "completion_tokens": 1152,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The conference call script will be available at the same website later today.",
+              "rationale": "The article discusses Insperity's financial results and its operations in the human resources and business solutions industry, which is a broader industry impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Insperity, Inc. CONSOLIDATED BALANCE SHEETS Dec. 31, Dec. 31, (in thousands) 2019 2018 Assets Cash and cash equivalents $ 367,342 $ 326,773 Restricted cash 49,295 42,227",
+              "rationale": "The article provides consolidated financial information for Insperity, Inc., which is a U.S. company, indicating a broad U.S. equity market impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "statements could differ materially from those stated in such forward-looking statements. Among the factors that could cause actual results to differ materially are: • adverse economic conditions; • our liability for WSEE payroll, payroll taxes and benefits costs; • increases in health insurance costs and workers’ compensation rates and underlying",
+              "rationale": "The article discusses factors that could affect the results of operations, which are relevant to the U.S. equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "inferred",
+              "quote": "Insperity, a trusted advisor to America’s best businesses for more than 33 years, provides an array of human resources and business solutions designed to help improve business"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "inferred",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "inferred",
+              "quote": "Insperity business performance solutions support more than 100,000 businesses with over 2 million employees."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "industry_name_original": "Business Services",
+              "mechanism": "competitive environment",
+              "confidence": 0.85,
+              "quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "impact_role": "regulatory_exposure"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "competitive environment",
+              "confidence": 0.85,
+              "quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "impact_role": "regulatory_exposure"
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "industry_scope_quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "industry_name_original": "Property-Casualty Insurers",
+              "mechanism": "competitive environment",
+              "confidence": 0.85,
+              "quote": "the PEO industry, on our service and technology offerings, growth and/or profitability; • disruptions of our information technology systems; • the impact of data theft,",
+              "impact_role": "regulatory_exposure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "902a21494a56e145c3518184563143e00da0f3d37981684b1bce48dc5b16936a",
+      "llm_inferred_at": "2026-11-18T12:30:34.608542+00:00",
+      "model_duration_seconds": 15.6921048,
+      "prompt_tokens": 4909,
+      "completion_tokens": 712,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP.",
+              "rationale": "The article discusses financial measures and their implications for the industry, indicating a sector-wide impact on financial reporting standards and practices.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Adjusted EBITDA is used by our lenders to assess our leverage and ability to make interest payments.",
+              "rationale": "This indicates the use of non-GAAP measures in the financial services industry, affecting how financial performance is evaluated across the sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs. Bonus payroll cost varies from period",
+              "rationale": "This highlights the use of non-GAAP measures in the financial services industry, affecting how financial performance is evaluated across the sector.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Non-GAAP Measure Definition Benefit of Non-GAAP Measure Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs.",
+              "rationale": "The article discusses financial measures and their implications for the US equity market, indicating a sector-wide impact on financial reporting standards and practices.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "inferred",
+              "quote": "Adjusted EBITDA is used by our lenders to assess our leverage and ability to make interest payments."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs. Bonus payroll cost varies from period"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "e68bb5ce0020d3263a22e7e8d8df9b538797288c3a954659d642449df27914e2",
+      "llm_inferred_at": "2026-11-18T12:30:46.423431+00:00",
+      "model_duration_seconds": 11.7972089,
+      "prompt_tokens": 4953,
+      "completion_tokens": 605,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP.",
+              "rationale": "The text discusses non-GAAP financial measures, which are industry-specific and relevant to financial reporting standards, indicating an industry-wide impact on financial practices.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Adjusted EBITDA is used by our lenders to assess our leverage and ability to make interest payments.",
+              "rationale": "The text mentions the use of Adjusted EBITDA by lenders, which is a market-wide financial metric used by financial institutions, indicating a market impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Non-GAAP Measure Definition Benefit of Non-GAAP Measure Non-bonus payroll cost Non-bonus payroll cost is a non-GAAP financial measure that excludes the impact of bonus payrolls paid to our WSEEs.",
+              "rationale": "The text discusses non-GAAP financial measures, which are relevant to US equity markets and financial reporting standards, indicating a market-wide impact.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "inferred",
+              "quote": "Non-GAAP financial measures should not be considered as a substitute for, or superior to, measures of financial performance prepared in accordance with GAAP."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "Adjusted EBITDA is used by our lenders to assess our leverage and ability to make interest payments."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "inferred",
+              "quote": "Adjusted EBITDA is used by our lenders to assess our leverage and ability to make interest payments."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "ae8cf1d2f7a2ac52f4395ca1f5e216622f6899d2e1180260d6a15c2b83e62cb9",
+      "llm_inferred_at": "2026-11-18T12:31:01.556761+00:00",
+      "model_duration_seconds": 15.1180867,
+      "prompt_tokens": 2650,
+      "completion_tokens": 761,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "2020 Full Year 2020 (in millions, except per share amounts) Guidance Guidance Net income $60 - $63 $128 - $145 Income tax expense 22 - 24 49 - 56 Interest expense 3 11",
+              "rationale": "The article provides financial guidance for the company, including net income, income tax expense, and interest expense, which are company-specific metrics.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "December 31, 2019 2018 2017 2016 2015 $ WSEE $ WSEE $ WSEE $ WSEE $ WSEE Net income $ 151,099 $ 53 $ 135,413 $ 54 $ 84,402 $ 38 $ 65,991 $ 33 $ 39,390 $ 23 Income tax expense 38,",
+              "rationale": "The article includes financial data for multiple years, which may indicate industry trends or performance across different periods, suggesting an industry-wide impact.",
+              "confidence": 0.75
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "December 31, 2019 2018 2017 2016 2015 $ WSEE $ WSEE $ WSEE $ WSEE $ WSEE Net income $ 151,099 $ 53 $ 135,413 $ 54 $ 84,402 $ 38 $ 65,991 $ 33 $ 39,390 $ 23 Income tax expense 38,"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "December 31, 2019 2018 2017 2016 2015 $ WSEE $ WSEE $ WSEE $ WSEE $ WSEE Net income $ 151,099 $ 53 $ 135,413 $ 54 $ 84,402 $ 38 $ 65,991 $ 33 $ 39,390 $ 23 Income tax expense 38,"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "6dd2c050ad4a53141cdc7a8634f4a87e1a67103700073999991a4d02b3e891c0",
+      "llm_inferred_at": "2026-11-18T12:31:09.733383+00:00",
+      "model_duration_seconds": 8.1670863,
+      "prompt_tokens": 2694,
+      "completion_tokens": 439,
+      "selection": [
+        {
+          "source_id": "3d62b309ecde1ada7ea3404e",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "December 31, 2019 2018 2017 2016 2015 $ WSEE $ WSEE $ WSEE $ WSEE $ WSEE Net income $ 151,099 $ 53 $ 135,413 $ 54 $ 84,402 $ 38 $ 65,991 $ 33 $ 39,390 $ 23 Income tax expense 38,"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "December 31, 2019 2018 2017 2016 2015 $ WSEE $ WSEE $ WSEE $ WSEE $ WSEE Net income $ 151,099 $ 53 $ 135,413 $ 54 $ 84,402 $ 38 $ 65,991 $ 33 $ 39,390 $ 23 Income tax expense 38,"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:31:09.752228+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7725f1a063683e423817ce1b91e518141ccce4f4f8f9c859a7162ec33ea4f6a8",
+    "raw_sha256": "45c94b719307f19df924a9d56716faa15e7f98167a153b579da24f00867e5d6e",
+    "date_quote": "SEC filing datePublished=2020-02-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075320000011/a12312019-8xkearningsr.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The text contains financial results and operational details of Insperity, Inc., which is relevant to its financial condition and operations.",
+    "securities": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc."
+      },
+      {
+        "name": null,
+        "ticker": "NSP",
+        "exchange": null,
+        "quote": "ticker symbol NSP"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:df01973c2ce9dd88",
+        "name": "Business Services",
+        "basis": "inferred",
+        "quote": "Insperity, a trusted advisor to America’s best businesses for more than 33 years, provides an array of human resources and business solutions designed to help improve business",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "df01973c2ce9dd88",
+        "industry_name_standard": "Business Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Insperity, a trusted advisor to America’s best businesses for more than 33 years, provides an array of human resources and business solutions designed to help improve business",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Insperity, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "3d62b309ecde1ada7ea3404e",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_02_11_Financial-Results_Business-Services_sec.json",
+        "sha256": "997fb21e56257ad29afad5ae98abff15c819de82bc53160928e56e9f2e352cbc",
+        "filename": "2020_02_11_Financial-Results_Business-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "9fddca2bb949ee619437d1a4138fda4408f63b58b76529a9dede3ecee188d9e8",
+    "input_hash": "ddb5a28ebe11b876fc3ff12b9a372cd68a2aeb72c8897193b8e7e7ca35579ec3",
+    "matching_audit_hash": "b02467f2421c24f6af0ca9bcaab041f1ff7d56c61ffcb6f6808fc47a4109b88f",
+    "legacy_security_evidence": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc."
+      }
+    ],
+    "record_hash": "a1ff6f5fe049dba6fa5a27e0b3623b5d7756cc10257ead38bfd77c502e915932",
+    "outputs": [
+      {
+        "path": "US\\2020_02_11_Financial-Results_Business-Services_sec.json",
+        "sha256": "269e137ae909a1946f726aaeca8b3d5d5c3d04f0355787a369f0c0b8713e51e2"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2020-02-11",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:24.200963+00:00",
+      "fetched_at": "2026-11-11T15:10:27.807895+00:00",
+      "feature_available_at": "2026-11-11T15:11:03.718312+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:31:09.733383+00:00",
+    "feature_available_at": "2026-11-18T12:31:09.752228+00:00",
+    "commit_verified_at": "2026-11-12T14:51:43.240524+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "the company’s financial and operating results for the quarter and year ended December 31, 2019. A copy of the press release is furnished as Exhibit 99.1 hereto and incorporated by",
+        "rationale": "The text directly mentions the company's financial and operating results, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the company’s financial and operating results for the quarter and year ended December 31, 2019. A copy of the press release is furnished as Exhibit 99.1 hereto and incorporated by",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-20-000011-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "a1ff6f5fe049dba6fa5a27e0b3623b5d7756cc10257ead38bfd77c502e915932",
+    "content_hash": "9ede3259b69e89030374185066c95b12a47a9d695e3a9b37bec61c9c75300d34",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:31:09.735380+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3d62b309ecde1ada7ea3404e.json",
+      "sha256": "15a5c0b8464d7fcecc15c7a499f4250fb4d006cf66d886b87e9189091452b599",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 133.54699999999139
+}

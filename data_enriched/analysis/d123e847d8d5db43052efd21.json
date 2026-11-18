@@ -1,0 +1,105 @@
+{
+  "source_id": "d123e847d8d5db43052efd21",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_11_13_Economic_Retail-Trade,-Durable-Goods-Manufacturin_bea.json",
+      "sha256": "ddf00d3381f4838945ad439e661465fd453060ad06171c2037eff6bc2f19267b",
+      "filename": "2012_11_13_Economic_Retail-Trade,-Durable-Goods-Manufacturin_bea.json"
+    }
+  ],
+  "original_record_hash": "ab8dcd2c56a33ed81a57901475dadfb5bf971138e986d588237f7cbc29ed0eda",
+  "input_hash": "3d497a2dd91b73949578a41e49aef009e02e489a4c8a83533b78d22096286cd4",
+  "matching_audit_hash": "85fc3a90289963dba297352db680c83f39af143f0bb021a632ee5a52e1a1a662",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "562543c43ab267ccbfd8f00ecc7ad690b5b41818784b1f93b77c206e634f1eee",
+    "raw_sha256": "3edcb2cc86ca1136883b0d2c20ff0889cd01361fa41d5daea3e43452e16be7f7",
+    "date_quote": "EMBARGOED UNTIL RELEASE AT 8:30 A.M. EST, TUESDAY, NOVEMBER 13, 2012",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "990d539ec97262ada0e6af7ab04c17ffaa5c7e6cf8ab543f1fa4b27535b7ada8",
+  "outputs": [
+    {
+      "path": "US\\2012_11_13_Economic_Retail-Trade,-Durable-Goods-Manufacturin_bea.json",
+      "sha256": "cbd470f9b4da22da5ecd39665448f0b7d16bed36ec2c7aa4bd5d0af7e6037204"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-11-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:08:13.432448+00:00",
+    "fetched_at": "2026-11-10T19:00:23.594240+00:00",
+    "feature_available_at": "2026-11-10T19:01:11.793700+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:58:40.031662+00:00",
+  "feature_available_at": "2026-11-12T13:58:40.041348+00:00",
+  "commit_verified_at": "2026-11-12T13:58:40.041348+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text provides detailed information on the U.S. economic growth, including contributions from various industry groups and changes in GDP statistics.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Economic Analysis (BEA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "retail trade",
+        "basis": "explicit",
+        "quote": "retail trade"
+      },
+      {
+        "name": "durable goods manufacturing",
+        "basis": "explicit",
+        "quote": "durable goods manufacturing"
+      },
+      {
+        "name": "nondurable goods manufacturing",
+        "basis": "explicit",
+        "quote": "nondurable goods manufacturing"
+      },
+      {
+        "name": "professional, scientific, and technical services",
+        "basis": "explicit",
+        "quote": "professional, scientific, and technical services"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Economic Analysis (BEA)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

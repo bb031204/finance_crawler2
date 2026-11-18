@@ -1,0 +1,92 @@
+{
+  "source_id": "1668397072c48be9173afc25",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_02_14_Compensation_Technology_sec.json",
+      "sha256": "ae919d159ea285cfdc29758821b671bb895a16e75ab3c33eabe07e454fa5973f",
+      "filename": "2019_02_14_Compensation_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "519ba8bc4c2ee7e308f95582484e5178dba5bb68229db31b17893f03aec7d2ca",
+  "input_hash": "e15a8d020484de677a858c0f38987f939b4901a2782bff6db1ba94d9453fee5f",
+  "matching_audit_hash": "1af6be48e4c46eb13bfbb1fdefc3e33956b06627288df1c1c09e99e0df3690d9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9e3b567ac7d9f93973e2a504c255797e22ac8d0cdc5bac987aed44359c43f0c5",
+    "raw_sha256": "51c11b2640c45a87df9817868ff488ee9ee22e04fa2f49ab59b1a94a1fa25a1f",
+    "date_quote": "SEC filing datePublished=2019-02-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390019002590/f8k021419_blondertongue.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    }
+  ],
+  "record_hash": "65eb13d5e36cca8ab8dd4af5a961fdde0fb3b1f1e92f3ac4b255dfe3be1e28ca",
+  "outputs": [
+    {
+      "path": "US\\2019_02_14_Compensation_Technology_sec.json",
+      "sha256": "ff5d1fdcc879388e56cb8b61f6ba533e4cd79971efeb119a76e485688a52d3fa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-02-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.617623+00:00",
+    "fetched_at": "2026-11-11T13:54:44.361396+00:00",
+    "feature_available_at": "2026-11-11T13:54:51.748227+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:47:59.784651+00:00",
+  "feature_available_at": "2026-11-12T14:47:59.793687+00:00",
+  "commit_verified_at": "2026-11-12T14:47:59.793687+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about compensation adjustments for a company's executive, including base salary and a corrected bonus amount, which is relevant",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Blonder Tongue Laboratories, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

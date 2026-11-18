@@ -1,0 +1,108 @@
+{
+  "source_id": "367f41d02ca01dd31dbcd512",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_30_Mergers-&-Acquisitions_Information-Technology_sec.json",
+      "sha256": "5c412214e16f1073acfbefd1af480baab688f8c837e3d75c3aafbcf7c6398bd3",
+      "filename": "2018_01_30_Mergers-&-Acquisitions_Information-Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "d785dcb8a5c799ac8090b0546f1535b790375cc4cdf924193e7da00d385a5c27",
+  "input_hash": "0b4d7251822ba3a94e3265a5517628726ff6f54d5d84a00d83c553018b70d4c4",
+  "matching_audit_hash": "09a42f3ea131bfcac5dd68bfc6c4e223a81546c4f458821b55e7451847a16cf7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c076ed816b23f669b86aee0ac09b58826b66e08813c4d32e374ada48fbef39d2",
+    "raw_sha256": "074d06745a6e4a0129f5795b388ce93e54c79166869fcf4ed2e6d54092c366f7",
+    "date_quote": "SEC filing datePublished=2018-01-30",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000110465918005109/a18-4007_16k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SAP SE",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SAP SE"
+    },
+    {
+      "name": "Callidus Software Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Callidus Software Inc."
+    }
+  ],
+  "record_hash": "0f267615f6ceb2f1f58f1e5684ccb41ca6e457427d2a9319f76da5ef5b010ae4",
+  "outputs": [
+    {
+      "path": "US\\2018_01_30_Mergers-&-Acquisitions_Information-Technology_sec.json",
+      "sha256": "0921b8a85680a2f460c98610c20e28853ecdde57ca9918c94e6b668c8c9f9432"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.045565+00:00",
+    "fetched_at": "2026-11-11T12:50:54.036610+00:00",
+    "feature_available_at": "2026-11-11T12:51:14.085953+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:19.580865+00:00",
+  "commit_verified_at": "2026-11-12T13:53:19.580865+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAP SE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP SE"
+      },
+      {
+        "name": "Callidus Software Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Callidus Software Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

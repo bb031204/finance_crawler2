@@ -1,0 +1,105 @@
+{
+  "source_id": "bd00a3e5915e5070fdd37563",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_10_22_Mergers-and-Acquisitions_Industrial-Gases_bloomberg.json",
+      "sha256": "4749096c3b4becaa4c8c5e6d410ae01cb3c01a8b52bf5114e8e11610d21bcd87",
+      "filename": "2018_10_22_Mergers-and-Acquisitions_Industrial-Gases_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "7db6f0671b31f6ed53bf46bbe6fda8aa78192dc87e43217a0e85da234db8ee9a",
+  "input_hash": "7bbf092efcdb4391ccee88a1e952ac6a61ce82d993c10aeb5dbd4b450a3e9cbb",
+  "matching_audit_hash": "c8302add4bdd2d638a51c2b619685449b49e271712e2f9da4dfb543c01a88d2f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a825006fc539daf1d5318625da267b10fd9daf54f84e64bee58e4eb003c104de",
+    "raw_sha256": "b6c7c163ff406d0627ed34e509a96975b45c6fae1fa32f2e18552099decb516f",
+    "date_quote": "October 22, 2018 at 1:21 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "913397b6d97e291dbf0f36b19a42559540f7c48c1b6474fcc988b49c9ceb4674",
+  "outputs": [
+    {
+      "path": "US\\2018_10_22_Mergers-and-Acquisitions_Industrial-Gases_bloomberg.json",
+      "sha256": "de8d126e9ad066865d4dc433d8623e221f1ef66f70ee7fe842612c39633ac32a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-10-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:37:43.519016+00:00",
+    "fetched_at": "2026-11-10T15:37:23.071986+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.564517+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:46:34.964532+00:00",
+  "feature_available_at": "2026-11-12T14:46:34.974263+00:00",
+  "commit_verified_at": "2026-11-12T14:46:34.974263+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a merger between Linde AG and Praxair Inc., including regulatory approval and market implications.",
+    "securities": [
+      {
+        "name": "Linde AG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Linde AG"
+      },
+      {
+        "name": "Praxair Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Praxair Inc."
+      },
+      {
+        "name": "Federal Trade Commission (FTC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Trade Commission (FTC)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Industrial gases",
+        "basis": "explicit",
+        "quote": "industrial gases"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Linde AG": "company",
+      "Praxair Inc.": "company",
+      "Federal Trade Commission (FTC)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

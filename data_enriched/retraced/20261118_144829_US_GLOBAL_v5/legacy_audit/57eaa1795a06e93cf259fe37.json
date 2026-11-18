@@ -1,0 +1,95 @@
+{
+  "source_id": "57eaa1795a06e93cf259fe37",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_05_06_Real-Estate_Real-Estate-Investment-Trusts_morningstar.json",
+      "sha256": "dde94a2931b021e01e52c88d358716e5b91d8fdc3d7cacf24f4df231c7b7997b",
+      "filename": "2013_05_06_Real-Estate_Real-Estate-Investment-Trusts_morningstar.json"
+    }
+  ],
+  "original_record_hash": "617a7304bf720c15bba675320d49c7284b0cc8a13e0f70bc9a679136b284e51c",
+  "input_hash": "8721233ae02545a18f730220fe31be99d0072d8cc188b4aaec939803ec7cf2d7",
+  "matching_audit_hash": "a6b3be370d56c73f462184cf8b5e49221e570f5edbdb4baaa017e75f667ddd1c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "70fbccaf24f42b8af80254fa5d10098853c7a049fbc053a7a39d9630ae33d0f2",
+    "raw_sha256": "bfc5d621b342cf4d9c90e62c2c7ca6a3d651176742449aecaa1ee2b2676dccf5",
+    "date_quote": "article:published_time=2013-05-06T20:19:25.000Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Granite Real Estate Investment Trust",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Granite Real Estate Investment Trust (Granite)"
+    }
+  ],
+  "record_hash": "0827ce6a57dd16664623c08321e240ae95a20f463e634eb3d1060261a107271d",
+  "outputs": [
+    {
+      "path": "US\\2013_05_06_Real-Estate_Real-Estate-Investment-Trusts_morningstar.json",
+      "sha256": "92495a4080809d7a06a6355d2f55bd18dc29aeafd46fa68dd34041d8e022f640"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-05-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:18.026664+00:00",
+    "fetched_at": "2026-11-11T03:13:17.914488+00:00",
+    "feature_available_at": "2026-11-11T03:13:27.782204+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:46.724960+00:00",
+  "commit_verified_at": "2026-11-12T13:52:46.724960+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Granite Real Estate Investment Trust",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Granite Real Estate Investment Trust (Granite)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate Investment Trusts",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

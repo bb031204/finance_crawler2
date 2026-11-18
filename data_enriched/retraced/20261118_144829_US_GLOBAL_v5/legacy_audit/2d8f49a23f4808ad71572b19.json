@@ -1,0 +1,95 @@
+{
+  "source_id": "2d8f49a23f4808ad71572b19",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_14_Financial-Report_Real-Estate-&-Asset-Management_sec.json",
+      "sha256": "302ebd6fc9e0a40befd72da00a43057710a4c36c49ee21ed84ae0c1d558d533d",
+      "filename": "2014_02_14_Financial-Report_Real-Estate-&-Asset-Management_sec.json"
+    }
+  ],
+  "original_record_hash": "f1a71eb50632843177490c3253441b3efa6953602059bb8c4c58d1eb3db5a0c0",
+  "input_hash": "18a3d1a5ea9b7df18facac23cfa28063cf90371be491b5d911454fbdaa0e2de9",
+  "matching_audit_hash": "d0b99d6e740ac9ccfac1366c72c9d984f5dd98fdff07a9e27a2f63c64db9489c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "767faab956a80911feb54a66569259202d82def7abab5b1fa04a295cd71d06f5",
+    "raw_sha256": "2704960b7df7d1faa77c90dee05372de1d6655ba21d185413cb35f7980e5e04a",
+    "date_quote": "SEC filing datePublished=2014-02-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262414000228/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    }
+  ],
+  "record_hash": "2041bdd8700281b8b6cf220e719d4506deb89cbbb6f5422e1ec90f16875364d9",
+  "outputs": [
+    {
+      "path": "US\\2014_02_14_Financial-Report_Real-Estate-&-Asset-Management_sec.json",
+      "sha256": "16865254147deff347335bc5c5e6efbe0d03e49238d6690e93ed48940e6d322a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:06:14.422680+00:00",
+    "feature_available_at": "2026-11-11T00:06:24.840525+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:49.620482+00:00",
+  "commit_verified_at": "2026-11-12T13:52:49.620482+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate & Asset Management",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

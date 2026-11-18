@@ -1,0 +1,186 @@
+{
+  "source_id": "8161fe509a868f269f92bba9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_08_Beauty-&-Cosmetics_Beauty-&-Cosmetics_cnbc.json",
+      "sha256": "6417e190682d8b4131745675301af6867b90af9e2c76975fe787c2db99759978",
+      "filename": "2019_10_08_Beauty-&-Cosmetics_Beauty-&-Cosmetics_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2019_10_08_Beauty-&-Cosmetics_Beauty-&-Cosmetics_cnbc.json",
+      "sha256": "6417e190682d8b4131745675301af6867b90af9e2c76975fe787c2db99759978",
+      "filename": "2019_10_08_Beauty-&-Cosmetics_Beauty-&-Cosmetics_cnbc.json"
+    }
+  ],
+  "original_record_hash": "330ce4aed220060c9c17acf7ec9f1ba6dbb5129ff93c31360763e235337babc7",
+  "input_hash": "4431f63ec953547903fc537d6c95bab1e67c0105a6e6fa03b654786a8ecba4d4",
+  "matching_audit_hash": "9227430d33f9594a4e25d632cf874012bcd93bc4bec69437ce863ed24b62ef01",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5e5376ff9ffa1727a334fd1b0f51fbf5899c9347790eb9251f7b50f45c489b9e",
+    "raw_sha256": "89431e3f438bbbeaf2d0b8abafe68df625a0b6f6e1ea59796fc71cc2c11e30f0",
+    "date_quote": "article:published_time=2019-10-08T12:30:55+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "L'Oreal",
+      "ticker": null,
+      "exchange": null,
+      "quote": "L'Oreal, Estee Lauder and Shiseido are three prestige companies benefiting from growth in China."
+    },
+    {
+      "name": "Estee Lauder",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Estee Lauder"
+    },
+    {
+      "name": "Shiseido",
+      "ticker": null,
+      "exchange": null,
+      "quote": "L'Oreal, Estee Lauder and Shiseido are three prestige companies benefiting from growth in China."
+    },
+    {
+      "name": "Ulta Beauty",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Ulta Beauty"
+    }
+  ],
+  "record_hash": "8a4f42559571002aacc0ff9d3340b1a50a80f9907eafd428aa96126e818d4d71",
+  "outputs": [
+    {
+      "path": "US\\2019_10_08_Beauty-&-Cosmetics_Beauty-&-Cosmetics_cnbc.json",
+      "sha256": "28634dc477ce476ebb5aca38b41a8e054c9d5cb5d6153a8f92143c91e7941977"
+    },
+    {
+      "path": "GLOBAL\\2019_10_08_Beauty-&-Cosmetics_Beauty-&-Cosmetics_cnbc.json",
+      "sha256": "28634dc477ce476ebb5aca38b41a8e054c9d5cb5d6153a8f92143c91e7941977"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:08.297631+00:00",
+    "fetched_at": "2026-11-10T20:06:38.934397+00:00",
+    "feature_available_at": "2026-11-10T20:06:51.702116+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:50:46.610513+00:00",
+  "feature_available_at": "2026-11-12T14:50:46.622139+00:00",
+  "commit_verified_at": "2026-11-12T14:50:46.622139+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses growth in the global beauty and cosmetics industry, specifically highlighting China's role and market trends.",
+    "securities": [
+      {
+        "name": "China",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China"
+      },
+      {
+        "name": "United States",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United States"
+      },
+      {
+        "name": "L'Oreal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "L'Oreal"
+      },
+      {
+        "name": "Estee Lauder",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Estee Lauder"
+      },
+      {
+        "name": "Shiseido",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shiseido"
+      },
+      {
+        "name": "Alibaba",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alibaba"
+      },
+      {
+        "name": "J.P. Morgan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J.P. Morgan"
+      },
+      {
+        "name": "Ulta Beauty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ulta Beauty"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty & Cosmetics",
+        "basis": "inferred",
+        "quote": "beauty and cosmetics industry"
+      },
+      {
+        "name": "E-commerce",
+        "basis": "inferred",
+        "quote": "e-commerce platforms"
+      },
+      {
+        "name": "Skincare",
+        "basis": "inferred",
+        "quote": "skincare product sales"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "China": "company",
+      "United States": "company",
+      "L'Oreal": "company",
+      "Estee Lauder": "company",
+      "Shiseido": "company",
+      "Alibaba": "company",
+      "J.P. Morgan": "company",
+      "Ulta Beauty": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

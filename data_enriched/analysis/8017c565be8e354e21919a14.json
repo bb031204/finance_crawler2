@@ -1,0 +1,157 @@
+{
+  "source_id": "8017c565be8e354e21919a14",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_12_24_stock_Technology_cnbc.json",
+      "sha256": "0f77b70f0b62f1c118c3474f46083fd14679d13d56147141c97b0f3d055d939c",
+      "filename": "2021_12_24_stock_Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b28e21a1e75e47249764bd64f75cdb33c59d14266e92df95dd1fb2922922e5da",
+  "input_hash": "3beda544d6969bde8bcf0fc486803977406d3df6d1c25c1858ce5fbb91654aae",
+  "matching_audit_hash": "42b27e8fe6f70f44327e4befd646c6bae777e7f04af80c5cef990a478d4787c5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4cdba068992e3ab089920dd78236b7e5ed62bb256a1228bf0f89986dc3e0dbc4",
+    "raw_sha256": "66f31e9892aca8270954c8b2806ed6c9aa208801376e7cdbbe99be64154cdcec",
+    "date_quote": "article:published_time=2021-12-24T14:00:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Upstart",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Upstart"
+    },
+    {
+      "name": "Synaptics",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Synaptics CEO Michael Hurlston full interview on 'Mad Money with Jim Cramer'"
+    },
+    {
+      "name": "Asana",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Asana CEO Dustin Moskovitz"
+    },
+    {
+      "name": "Fortinet Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Fortinet Inc. headquarters in Sunnyvale, California."
+    },
+    {
+      "name": "Fortinet",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Fortinet"
+    },
+    {
+      "name": "Nvidia",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Nvidia"
+    }
+  ],
+  "record_hash": "3fb9cc41b3ce73197e14ffce64bbcb9b8b694c1da920c7c8176bb96a8f07153f",
+  "outputs": [
+    {
+      "path": "US\\2021_12_24_stock_Technology_cnbc.json",
+      "sha256": "e853b516bd90103423f31aaae654a03efe78e5cb226cf147b99a7093e536e017"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-12-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:01.040542+00:00",
+    "fetched_at": "2026-11-11T02:48:43.910191+00:00",
+    "feature_available_at": "2026-11-11T02:50:13.108547+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:39.192872+00:00",
+  "commit_verified_at": "2026-11-12T13:53:39.192872+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Upstart",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Upstart"
+      },
+      {
+        "name": "Synaptics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Synaptics CEO Michael Hurlston full interview on 'Mad Money with Jim Cramer'"
+      },
+      {
+        "name": "Asana",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asana CEO Dustin Moskovitz"
+      },
+      {
+        "name": "Fortinet Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fortinet Inc. headquarters in Sunnyvale, California."
+      },
+      {
+        "name": "Fortinet",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fortinet"
+      },
+      {
+        "name": "Nvidia",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nvidia"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

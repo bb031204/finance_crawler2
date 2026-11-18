@@ -1,0 +1,102 @@
+{
+  "source_id": "02a91371189f801ea66c61f3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_31_Finance_Technology_cnbc.json",
+      "sha256": "bba3d71a47944e10d67bde66986a5a36dcb53f0b590a7b07306e4a082cfa7e41",
+      "filename": "2017_10_31_Finance_Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "915d9b0663b17ff4a34fd6750a055c920dae274b5756fb730fcd5078cd18e58a",
+  "input_hash": "5884c0d609a1e28db7d96d93f5e6d19301884a62f7c08f3a41b9dfa6d89a5cfd",
+  "matching_audit_hash": "814a676aaaa13a5231ac0b964a3e47ce002dea72e5674117dcfeb9f7cf584027",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8d876cbaa298cee826269941951d3faf28ef63bf2e90862758356b4d97ebb802",
+    "raw_sha256": "5f17feee6e40b732677b69792e65a7eb22b3dc7aca6f07683e9e3ec696011491",
+    "date_quote": "article:published_time=2017-10-31T07:34:04+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sony",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sony reported fiscal second-quarter earnings and revenue that beat forecasts"
+    }
+  ],
+  "record_hash": "203bb1f2de1602deee9fafc27a5612d03173f39e086b2f22fe446c62e9b9635c",
+  "outputs": [
+    {
+      "path": "US\\2017_10_31_Finance_Technology_cnbc.json",
+      "sha256": "255c2cf099c4a6ad3eab94ad222f77b11d4348dd13d16cac1c241e1096390fa4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:44.406567+00:00",
+    "fetched_at": "2026-11-11T02:30:30.750612+00:00",
+    "feature_available_at": "2026-11-11T02:30:57.261703+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:17.437493+00:00",
+  "commit_verified_at": "2026-11-12T13:53:17.437493+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sony",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sony reported fiscal second-quarter earnings and revenue that beat forecasts"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Gaming",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

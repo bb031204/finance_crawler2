@@ -1,0 +1,97 @@
+{
+  "source_id": "8d855f08d8d966826f444f4a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_03_01_12_16_Finance_Retail_cnbc.json",
+      "sha256": "c43409c208a7c24e922a04056bb4338654372e5d54bdbeef4f93198cc1dfdae5",
+      "filename": "2022_03_01_12_16_Finance_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a0354c28787c595e6a440d137367a55d98b646bfef2908587aaa1afcff5c05c5",
+  "input_hash": "12ee3cdc4ee48c22c45fc8f22ff58db20a87a72c879702590ed583b7bd678090",
+  "matching_audit_hash": "7ecd34162707b3458814419f128cc7ee498331d10a8a63a3a6926a430442fae0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3c80b9dbe9bde53df491676a2a25a95ce74e187998702f9b36179eba9bc04e81",
+    "raw_sha256": "062e92fbd1a62fe2e3df28fd6e5f7db055bdf3d30e19f993d108b7fb75706d95",
+    "date_quote": "article:published_time=2022-03-01T12:16:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Kohl's",
+      "ticker": "KSS",
+      "exchange": null,
+      "quote": "Kohl's (KSS) reports Q4 2021 earnings"
+    }
+  ],
+  "record_hash": "2668d339898da1f74367a6de18a3b507153c20134178d6df6058581912384fb1",
+  "outputs": [
+    {
+      "path": "US\\2022_03_01_12_16_Finance_Retail_cnbc.json",
+      "sha256": "0e4acec8f03037da706dc0cb33d7fb31871bc282e2321287a6b5013cdba81208"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-03-01T12:16:28+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:37:19.441771+00:00",
+    "fetched_at": "2026-11-10T20:21:48.160927+00:00",
+    "feature_available_at": "2026-11-11T06:57:08.772775+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:39.999969+00:00",
+  "commit_verified_at": "2026-11-12T13:53:39.999969+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Kohl's",
+        "ticker": "KSS",
+        "exchange": null,
+        "quote": "Kohl's (KSS) reports Q4 2021 earnings"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

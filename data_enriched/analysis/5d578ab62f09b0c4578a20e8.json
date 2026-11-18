@@ -1,0 +1,231 @@
+{
+  "source_id": "5d578ab62f09b0c4578a20e8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_02_29_Economic_Finance_treasury.json",
+      "sha256": "55c619c15cc8da56bcbd9e08e120759409ec9a5d569c1f0749e97ef95d87baa9",
+      "filename": "2012_02_29_Economic_Finance_treasury.json"
+    }
+  ],
+  "original_record_hash": "c864c5508a557927f9c40860d197e00531620c9558d8e23d5539fdfd85bff383",
+  "input_hash": "982ff824f750dea3d97886881a03e1ddca0eea1eae186e63beacf42f0176f0ca",
+  "matching_audit_hash": "e9fd51a00bf69b04350484c9a3461ff6005c46b1545df2485049d04f4e774159",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "895a88485ada47547178909d70a410bec03adf22bd2d1274d225c5bfaa4a0d03",
+    "raw_sha256": "ff57db37f8f5b4f7e28cbd7f54523f5f805affd1e3a2da9d606c23829c148306",
+    "date_quote": "February 29, 2012 (Archived Content) WASHINGTON - Preliminary data from a survey of foreign portfolio holdings of U.S. securities at the end of June 2011 were released today on the",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "94a398d677aa5b9d4f08b0fc571df8a20a2250f3f25790fc98b948abdefbb70c",
+  "outputs": [
+    {
+      "path": "US\\2012_02_29_Economic_Finance_treasury.json",
+      "sha256": "e06322e5263d584bb5c806cedbccaeb3324a0b69996d5ba5f68d9d4cfd74792d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-02-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:59.652976+00:00",
+    "fetched_at": "2026-11-10T10:46:58.087969+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.400546+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:58:48.938437+00:00",
+  "feature_available_at": "2026-11-12T15:16:33.162570+00:00",
+  "commit_verified_at": "2026-11-12T15:16:33.162570+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Provides insights into foreign holdings of U.S. securities.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      },
+      {
+        "name": "Board of Governors of the Federal Reserve System",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Board of Governors of the Federal Reserve System"
+      },
+      {
+        "name": "China (Mainland)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China (Mainland)"
+      },
+      {
+        "name": "Japan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Japan"
+      },
+      {
+        "name": "United Kingdom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Kingdom"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Economic Data Collection",
+        "basis": "inferred",
+        "quote": "annual survey"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Federal Reserve Bank of New York": "organization",
+      "Board of Governors of the Federal Reserve System": "organization",
+      "China (Mainland)": "organization",
+      "Japan": "organization",
+      "United Kingdom": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:33.179098+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:58:48.938437+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Provides insights into foreign holdings of U.S. securities.",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "Federal Reserve Bank of New York",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Bank of New York"
+        },
+        {
+          "name": "Board of Governors of the Federal Reserve System",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Board of Governors of the Federal Reserve System"
+        },
+        {
+          "name": "China (Mainland)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "China (Mainland)"
+        },
+        {
+          "name": "Japan",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Japan"
+        },
+        {
+          "name": "United Kingdom",
+          "ticker": null,
+          "exchange": null,
+          "quote": "United Kingdom"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "Economic Data Collection",
+          "basis": "inferred",
+          "quote": "annual survey"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "Federal Reserve Bank of New York": "organization",
+        "Board of Governors of the Federal Reserve System": "organization",
+        "China (Mainland)": "organization",
+        "Japan": "organization",
+        "United Kingdom": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:58:48.965006+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:58:48.973549+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:58:48.954618+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary provides data on foreign holdings of U.S. securities, including breakdowns by country and security types, which is relevant for understanding macroe",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:56:39.889981+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

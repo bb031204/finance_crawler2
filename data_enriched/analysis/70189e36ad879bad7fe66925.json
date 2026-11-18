@@ -1,0 +1,111 @@
+{
+  "source_id": "70189e36ad879bad7fe66925",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_04_Finance_Consumer-Goods_cnbc.json",
+      "sha256": "7166a0de58fc4214b8abbb1db7e2b5676da8baa8177e9743e7ea285b928b7ed6",
+      "filename": "2017_10_04_Finance_Consumer-Goods_cnbc.json"
+    }
+  ],
+  "original_record_hash": "0a9f7787c56bf20057a0a3ffea6c3d5bb5ba7b3617c9cc9d32518c56cb4351e7",
+  "input_hash": "a34b0b203cc9847d06b6e68711a7e43652aca7884e37048b1c46acc69b635fe9",
+  "matching_audit_hash": "b9070787b414925fb281e3489140f7071645f15afaaf07b51e43bbed3dfcc0c4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0a7f4ebbff503833b658c8a3d8d3bbbad6c07aa1290da3983f9a409959f904f3",
+    "raw_sha256": "ba656d854b51239f0e2172921b7a26df95a4434c903597473af0afa803bd12e9",
+    "date_quote": "article:published_time=2017-10-04T10:12:43+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "45c8c4d2014c4949664240d53feb4f9bdf0a554a0f5392c9233204057ae426e4",
+  "outputs": [
+    {
+      "path": "US\\2017_10_04_Finance_Consumer-Goods_cnbc.json",
+      "sha256": "0a90c406a0bc4963958871bd129c87d7ca5d9cac7a2826674d65132864f0a533"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:24.935819+00:00",
+    "fetched_at": "2026-11-10T16:49:48.427981+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.112405+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:41:03.963256+00:00",
+  "feature_available_at": "2026-11-12T14:41:04.010950+00:00",
+  "commit_verified_at": "2026-11-12T14:41:04.010950+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains financial results, earnings reports, revenue figures, and strategic plans related to PepsiCo's performance and future goals.",
+    "securities": [
+      {
+        "name": "PepsiCo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PepsiCo"
+      },
+      {
+        "name": "Frito-Lay",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Frito-Lay"
+      },
+      {
+        "name": "Quaker Foods",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Quaker Foods"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beverage",
+        "basis": "explicit",
+        "quote": "beverage"
+      },
+      {
+        "name": "Snack Food",
+        "basis": "inferred",
+        "quote": "snack business, including Frito-Lay and Quaker Foods"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "PepsiCo": "company",
+      "Frito-Lay": "company",
+      "Quaker Foods": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

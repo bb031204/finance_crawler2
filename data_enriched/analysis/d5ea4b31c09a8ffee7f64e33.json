@@ -1,0 +1,202 @@
+{
+  "source_id": "d5ea4b31c09a8ffee7f64e33",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_01_04_Finance_Electronics_sec.json",
+      "sha256": "aa2d76343bce68bab1000bca407923a64be7e3f9115ad009f8c5f22fbee1b90c",
+      "filename": "2017_01_04_Finance_Electronics_sec.json"
+    }
+  ],
+  "original_record_hash": "2b9fe9ea37220de1342a26dde02171a5ecb893955d750ba7338f38bcf793a8b0",
+  "input_hash": "fc970d2e76e95094e5ca38f9111423cd0a80a3953e40f07307e9d9927d63860a",
+  "matching_audit_hash": "1abec2b9c053dad33e75e2259b8a7b7d2b87f6435778c6948977a685f8b9fb6d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "aa6dac72e6044d46d9ab6876056f04403047fe0e83b9e638994f3bf5673c5aaa",
+    "raw_sha256": "2d2a28cb36d55047f4c6ae11df8c060d404b5b5ed192383c4b6a6cc3f091167b",
+    "date_quote": "SEC filing datePublished=2017-01-04",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794217000002/blonder8k010317.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    }
+  ],
+  "record_hash": "a404e495cf6ac49d847762e7e0d85ecef5aef3bff362fda70ed59f12980b6342",
+  "outputs": [
+    {
+      "path": "US\\2017_01_04_Finance_Electronics_sec.json",
+      "sha256": "5997e41e64d9c1d8e1cec7604946107a6e3ad439618cdd47d9e311acb056b036"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-01-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.446085+00:00",
+    "fetched_at": "2026-11-11T12:12:52.330547+00:00",
+    "feature_available_at": "2026-11-11T12:13:46.438224+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:06:08.071801+00:00",
+  "feature_available_at": "2026-11-12T15:16:40.321538+00:00",
+  "commit_verified_at": "2026-11-12T15:16:40.321538+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Loan agreement details and industry impact",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      },
+      {
+        "name": "Sterling National Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sterling National Bank"
+      },
+      {
+        "name": "Blonder Tongue Far East",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Far East"
+      },
+      {
+        "name": "Santander Agreement",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Santander Agreement"
+      }
+    ],
+    "industries": [
+      {
+        "name": "electronics industry",
+        "basis": "explicit",
+        "quote": "electronics industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Blonder Tongue Laboratories, Inc.": "company",
+      "Sterling National Bank": "issuer",
+      "Blonder Tongue Far East": "company",
+      "Santander Agreement": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:40.348018+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:06:08.071801+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Loan agreement details and industry impact",
+      "securities": [
+        {
+          "name": "Blonder Tongue Laboratories, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Blonder Tongue Laboratories, Inc."
+        },
+        {
+          "name": "Sterling National Bank",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Sterling National Bank"
+        },
+        {
+          "name": "Blonder Tongue Far East",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Blonder Tongue Far East"
+        },
+        {
+          "name": "Santander Agreement",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Santander Agreement"
+        }
+      ],
+      "industries": [
+        {
+          "name": "electronics industry",
+          "basis": "explicit",
+          "quote": "electronics industry"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Blonder Tongue Laboratories, Inc.": "company",
+        "Sterling National Bank": "issuer",
+        "Blonder Tongue Far East": "company",
+        "Santander Agreement": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:06:08.095759+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:06:08.104760+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:08.087321+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary details a loan agreement with financial terms and conditions, including credit facility amounts, interest rates, covenants, and potential impacts on",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:33:54.907653+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

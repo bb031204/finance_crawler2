@@ -1,0 +1,227 @@
+{
+  "source_id": "0169f4fb50c3acf20e8edd52",
+  "status": "completed",
+  "source_record_hash": "ef14997ddbc0be18aad606e5866f1beea9d76477dd4447a3e7b4fb17666e8b8a",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-22-023950-index.html",
+    "attempted_at": "2026-11-18T07:07:00.521109+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "5b0a1bf620e622e6dc641493df71b21594b1a9ec771ba6cd5e23e71303708984"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/0169f4fb50c3acf20e8edd52.json",
+    "sha256": "c7e58ef68cb1c2467c02bb6a13ca6b3a69514761ebffb6725ca18197a2073a5d",
+    "bundled_path": "legacy_audit/0169f4fb50c3acf20e8edd52.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "7904ca535e1117d786c7673684d9291550e35aea9a2171fad78d398b66330e1c",
+      "llm_inferred_at": "2026-11-18T07:07:11.838519+00:00",
+      "model_duration_seconds": 6.2839559,
+      "prompt_tokens": 1060,
+      "completion_tokens": 319,
+      "selection": [
+        {
+          "source_id": "0169f4fb50c3acf20e8edd52",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4941",
+              "name": "WATER SUPPLY",
+              "basis": "explicit",
+              "quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021."
+            },
+            {
+              "industry_key": "SEC-SIC:2086",
+              "name": "BOTTLED & CANNED SOFT DRINKS & CARBONATED WATERS",
+              "basis": "explicit",
+              "quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021."
+            },
+            {
+              "industry_key": "SEC-SIC:1623",
+              "name": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+              "basis": "explicit",
+              "quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:07:11.848417+00:00",
+  "audit": {
+    "source_id": "0169f4fb50c3acf20e8edd52",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-22-023950-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2022-02-01",
+    "date_quote": "SEC filing datePublished=2022-02-01",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "5b0a1bf620e622e6dc641493df71b21594b1a9ec771ba6cd5e23e71303708984",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T04:55:59.000366+00:00",
+    "fetched_at": "2026-11-12T07:04:22.440229+00:00",
+    "first_extracted_at": "2026-11-12T07:04:32.732395+00:00",
+    "extracted_at": "2026-11-18T07:07:11.839146+00:00",
+    "feature_available_at": "2026-11-18T07:07:11.848417+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:4941",
+        "name": "WATER SUPPLY",
+        "basis": "inferred",
+        "quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "4941",
+        "industry_name_standard": "WATER SUPPLY",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021."
+      },
+      {
+        "industry_key": "SEC-SIC:2086",
+        "name": "BOTTLED & CANNED SOFT DRINKS & CARBONATED WATERS",
+        "basis": "inferred",
+        "quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2086",
+        "industry_name_standard": "BOTTLED & CANNED SOFT DRINKS & CARBONATED WATERS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021."
+      },
+      {
+        "industry_key": "SEC-SIC:1623",
+        "name": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+        "basis": "inferred",
+        "quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "1623",
+        "industry_name_standard": "WATER, SEWER, PIPELINE, COMM & POWER LINE CONSTRUCTION",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Waters Corporation announced its results of operations for the quarter and year ended December 31, 2021."
+      }
+    ],
+    "impact_scope": [],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "ef14997ddbc0be18aad606e5866f1beea9d76477dd4447a3e7b4fb17666e8b8a",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2022_02_01_regulation-policy_Chemicals_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\93587f60334dba6391854da4e54a1005d16a06145fa612c55a5d5f2e7afd4f75.json",
+      ".runtime\\simple\\model_cache\\f9f17494390b644f7884cb93dfcae1d5b3a7b29c68625715ce216886c8229cdf.json",
+      ".runtime\\simple\\pages\\0169f4fb50c3acf20e8edd52.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312522023950/d302881d8k.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-22-023950-index.html",
+    "title": "8-K",
+    "title_origin": "html_title",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T07:07:11.838519+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "5b0a1bf620e622e6dc641493df71b21594b1a9ec771ba6cd5e23e71303708984",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [],
+    "event_cluster_id": null,
+    "extraction_version": "e89ac04bf4eb5b0eaecc71a1f05316faaa546f93b7212e0ddfeffa9d99cab37f",
+    "commit_verified_at": "2026-11-12T07:04:32.753774+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T07:04:32.782541+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\0169f4fb50c3acf20e8edd52.json",
+      ".runtime\\simple\\model_cache\\93587f60334dba6391854da4e54a1005d16a06145fa612c55a5d5f2e7afd4f75.json",
+      ".runtime\\simple\\model_cache\\f9f17494390b644f7884cb93dfcae1d5b3a7b29c68625715ce216886c8229cdf.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "ef14997ddbc0be18aad606e5866f1beea9d76477dd4447a3e7b4fb17666e8b8a",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/0169f4fb50c3acf20e8edd52.json",
+      "sha256": "68d2f47a4986948db9ba50d8225575f54883916284042e105817d1975ffdc925",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 11.327999999979511
+}

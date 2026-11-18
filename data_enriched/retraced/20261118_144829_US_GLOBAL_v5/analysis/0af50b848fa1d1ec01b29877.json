@@ -1,0 +1,237 @@
+{
+  "source_id": "0af50b848fa1d1ec01b29877",
+  "status": "completed",
+  "source_record_hash": "1fc8b0b2a7f401bfb9fab5a477384eb13bb79b68842670a47ec656afcaf345c5",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2016/07/18/netflix-reports-second-quarter-2016-earnings.html",
+    "attempted_at": "2026-11-18T07:54:56.462492+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "b076cfecacca4b6311f3058c30422ff6597d35b36450a1ad39fbd153fbe8e811"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0af50b848fa1d1ec01b29877.json",
+    "sha256": "c73ebf9fbba798af431cf5155d263afaff53b75891375c93a4c1d96eeb88c05c",
+    "bundled_path": "legacy_audit/0af50b848fa1d1ec01b29877.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "7476c3a79443496d15da1760022d7f41b3f91eef4f8a0d89a6b2c4d3f5270720",
+      "llm_inferred_at": "2026-11-18T07:55:08.650679+00:00",
+      "model_duration_seconds": 7.1544877,
+      "prompt_tokens": 1508,
+      "completion_tokens": 359,
+      "selection": [
+        {
+          "source_id": "0af50b848fa1d1ec01b29877",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Netflix reported second-quarter 2016 earnings, which beat analysts' expectations but fell short of its own guidance.",
+              "rationale": "The article discusses Netflix's specific financial results and performance, which are directly related to the company's operations and stock performance.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The company posted earnings per share of 9 cents on $2.11 billion in revenue, which exceeded analysts' expectations of 2 cents per share.",
+              "rationale": "The article discusses the performance of a company that operates within the entertainment and media industry, which can have broader implications for the industry as a whole.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "Netflix reported second-quarter 2016 earnings, which beat analysts' expectations but fell short of its own guidance."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "b97eb1b361f3a7ab84ca3fe581001b52b4e88275245bb97def66691b046a0798",
+      "llm_inferred_at": "2026-11-18T07:55:16.149493+00:00",
+      "model_duration_seconds": 7.4922281,
+      "prompt_tokens": 1552,
+      "completion_tokens": 424,
+      "selection": [
+        {
+          "source_id": "0af50b848fa1d1ec01b29877",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Netflix reported second-quarter 2016 earnings, which beat analysts' expectations but fell short of its own guidance.",
+              "rationale": "The article discusses Netflix's specific financial results and performance, which are directly related to the company's operations and stock performance.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "company",
+              "quote": "Despite the subscriber growth, the stock dropped as much as 15% in after-hours trading due to the company's subscriber numbers missing its own guidance.",
+              "rationale": "The stock price movement is directly tied to Netflix's performance and its own guidance, indicating a company-specific impact.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "company",
+              "quote": "The company posted earnings per share of 9 cents on $2.11 billion in revenue, which exceeded analysts' expectations of 2 cents per share.",
+              "rationale": "This is a direct financial result for Netflix, indicating a company-specific impact on its earnings and stock.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2430",
+              "name": "MILLWOOD, VENEER, PLYWOOD, & STRUCTURAL WOOD MEMBERS",
+              "basis": "explicit",
+              "quote": "Netflix reported second-quarter 2016 earnings, which beat analysts' expectations but fell short of its own guidance."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:55:16.160503+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b076cfecacca4b6311f3058c30422ff6597d35b36450a1ad39fbd153fbe8e811",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2016-07-18T22:04:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Netflix",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Netflix"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "0af50b848fa1d1ec01b29877",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_07_18_Finance_Entertainment_cnbc.json",
+        "sha256": "8fe817d4786b412cec6c735d05fb053c8a311d2f0eb3c8d4ad50c4c2238b31ea",
+        "filename": "2016_07_18_Finance_Entertainment_cnbc.json"
+      }
+    ],
+    "original_record_hash": "ae36b3831d05618fddbc7cdab97dbb06f50cf41da5d1629edf4b48ffc861ff01",
+    "input_hash": "3b4605aa4bc277f59446950da4b825783dad6c2844a215baf8c334240acf0d83",
+    "matching_audit_hash": "93ab1abc2dec3dff8c0bb7806ecd9e416cd3b88f590d125fdcf2b760a12e8d42",
+    "legacy_security_evidence": [
+      {
+        "name": "Netflix",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Netflix"
+      }
+    ],
+    "record_hash": "1fc8b0b2a7f401bfb9fab5a477384eb13bb79b68842670a47ec656afcaf345c5",
+    "outputs": [
+      {
+        "path": "US\\2016_07_18_Finance_Entertainment_cnbc.json",
+        "sha256": "4fe49753508b0fb1fd12bebcaf765e5178cbb105055b10e60491b0eb6def7e96"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2016-07-18",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:30:04.923930+00:00",
+      "fetched_at": "2026-11-11T04:36:55.802634+00:00",
+      "feature_available_at": "2026-11-11T04:37:28.213596+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:55:16.149493+00:00",
+    "feature_available_at": "2026-11-18T07:55:16.160503+00:00",
+    "commit_verified_at": "2026-11-12T13:53:08.850916+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Despite the subscriber growth, the stock dropped as much as 15% in after-hours trading due to the company's subscriber numbers missing its own guidance.",
+        "rationale": "The stock price movement is directly tied to Netflix's performance and its own guidance, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Despite the subscriber growth, the stock dropped as much as 15% in after-hours trading due to the company's subscriber numbers missing its own guidance."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.cnbc.com/2016/07/18/netflix-reports-second-quarter-2016-earnings.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "1fc8b0b2a7f401bfb9fab5a477384eb13bb79b68842670a47ec656afcaf345c5",
+    "content_hash": "b076cfecacca4b6311f3058c30422ff6597d35b36450a1ad39fbd153fbe8e811",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:55:16.150279+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0af50b848fa1d1ec01b29877.json",
+      "sha256": "d71d054eb14ac0487637decb068d4e71bc2b4d7deeaf0b180a630d007450bf5b",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 19.70299999997951
+}

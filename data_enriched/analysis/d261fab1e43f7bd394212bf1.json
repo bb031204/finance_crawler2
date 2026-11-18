@@ -1,0 +1,96 @@
+{
+  "source_id": "d261fab1e43f7bd394212bf1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_21_Regulatory_Utilities_sec.json",
+      "sha256": "4919c35f7d2ab908a21a8f74e78dda11d4004f455b7799782e212b3d73ccb27a",
+      "filename": "2020_02_21_Regulatory_Utilities_sec.json"
+    }
+  ],
+  "original_record_hash": "82373697364960b2ec102d2b37aec38209fe03c2b7978b628238ab582fca37e1",
+  "input_hash": "fd71625d86a6e193f251a0bac16aa09ce2fbab4933cdd47b567bf020ef1ba8d8",
+  "matching_audit_hash": "d4a8749ef7c4c5fdb4514fdfb4282525a30e4524e38da76027aa5f2948f56209",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e716ad76eb48588e8d26e4e6245db857bc933b7dbcca03366b0413eec7770622",
+    "raw_sha256": "12295960541c0d228da6099542d6f879d2c15d7a3a59d0bdb30e8c5b493755aa",
+    "date_quote": "SEC filing datePublished=2020-02-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/100122/000010012220000008/tep8-kgeneralratecaseh.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Tucson Electric Power Company",
+      "ticker": "TEP",
+      "exchange": null,
+      "quote": "Tucson Electric Power Company (TEP)"
+    }
+  ],
+  "record_hash": "70b58688b3932eb443aef58303d5ea8199e63606902b613702d073d98a323da5",
+  "outputs": [
+    {
+      "path": "US\\2020_02_21_Regulatory_Utilities_sec.json",
+      "sha256": "ee3d6215867a16d78eedbd31e71c6a5d9ff32fa30565b1abca9cf18de3975cf1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:23:50.660430+00:00",
+    "feature_available_at": "2026-11-11T15:24:02.733690+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:32.457595+00:00",
+  "commit_verified_at": "2026-11-12T13:53:32.457595+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Tucson Electric Power Company",
+        "ticker": "TEP",
+        "exchange": null,
+        "quote": "Tucson Electric Power Company (TEP)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Utilities",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

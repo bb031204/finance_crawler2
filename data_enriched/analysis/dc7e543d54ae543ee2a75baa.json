@@ -1,0 +1,212 @@
+{
+  "source_id": "dc7e543d54ae543ee2a75baa",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_07_Corporate-Governance_Banking_sec.json",
+      "sha256": "1c666a6ea66f1884cb1f94ee6898e17fbb48a6f0f5ef3c34c0656180847a3b67",
+      "filename": "2019_03_07_Corporate-Governance_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "1c3ed77bdfb32053fa107fede6c3b80239e6eae0e95295cad880699178e697a0",
+  "input_hash": "a582c447f45e3c2979a8cd7875241ad4ad0e7b27a5c9a2fbf5d402a192be3e72",
+  "matching_audit_hash": "c4efc5e8fedad45c82bc72201add8c369dd585fc525cf1d0ddd0fed648a2ec48",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "28e3d7ee69e1f725f8f9ea6b9b21a931c1e5a2b47b76610a2ea47c65f417818f",
+    "raw_sha256": "aeffec59ca60ff0c4d6a9b855675a082ea71e49a10d96e2482a949943b40ef69",
+    "date_quote": "SEC filing datePublished=2019-03-07",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312519066649/d672198d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Royal Bank of Canada",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Royal Bank of Canada"
+    }
+  ],
+  "record_hash": "37b3f313b9114b4606ee22c20c76e311a5055c65bd4930ac827c6c53431bff03",
+  "outputs": [
+    {
+      "path": "US\\2019_03_07_Corporate-Governance_Banking_sec.json",
+      "sha256": "a5a7d927b14be8c3a9a56e17d81c70a8b7e19a6f7e3bb52022aef25724e699f7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.617623+00:00",
+    "fetched_at": "2026-11-11T13:48:16.327245+00:00",
+    "feature_available_at": "2026-11-11T13:48:50.502987+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:10:52.136596+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.083013+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.083013+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Corporate governance disclosures and regulatory filings",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      },
+      {
+        "name": "Regulation S-T",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Regulation S-T"
+      },
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC"
+      },
+      {
+        "name": "Rule 13a-16 or 15d-16",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rule 13a-16 or 15d-16"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "entity_types": {
+      "Royal Bank of Canada": "company",
+      "Regulation S-T": "organization",
+      "SEC": "organization",
+      "Rule 13a-16 or 15d-16": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "excluded_non_entity_mentions": [
+      "Securities Exchange Act of 1934"
+    ]
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:45.102459+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:10:52.136596+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Corporate governance disclosures and regulatory filings",
+      "securities": [
+        {
+          "name": "Royal Bank of Canada",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Royal Bank of Canada"
+        },
+        {
+          "name": "Securities Exchange Act of 1934",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Securities Exchange Act of 1934"
+        },
+        {
+          "name": "Regulation S-T",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Regulation S-T"
+        },
+        {
+          "name": "SEC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "SEC"
+        },
+        {
+          "name": "Rule 13a-16 or 15d-16",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Rule 13a-16 or 15d-16"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Royal Bank of Canada"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "market"
+      ],
+      "entity_types": {
+        "Royal Bank of Canada": "company",
+        "Securities Exchange Act of 1934": "organization",
+        "Regulation S-T": "organization",
+        "SEC": "organization",
+        "Rule 13a-16 or 15d-16": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:10:52.164166+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:10:52.172167+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:10:52.155169+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text contains corporate governance disclosures related to Royal Bank of Canada, including information about annual meetings, proxy voting processes, and SEC",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:48:11.420882+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "source_id": "3d9351ba265d94583958e528",
+  "status": "completed",
+  "source_record_hash": "3909e7fcb334e217247102b28d2a5a20410964a4bb2e563891dfc6e554754c67",
+  "source_trace": {
+    "requested_url": "https://finance.yahoo.com/news/fti-consulting-leads-legal-restructuring-123000574.html",
+    "attempted_at": "2026-11-18T12:31:09.793789+00:00",
+    "status": "summary_only",
+    "reason": "refetched_source_identity_date_or_historical_body_unverified",
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://finance.yahoo.com/news/fti-consulting-leads-legal-restructuring-123000574.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T12:31:32.664910+00:00",
+    "source_body_hash": "ff8f798f11f7e888b48e4f4a0f364b06f24e7915b0a3dbfc113fd461cfafa7da",
+    "raw_sha256": "793cf70d4bb494d140309a7a0c2fa2f22d92b1ed1627f782fee61cd585e05fec",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "FTI Consulting Leads Who’s Who Legal Restructuring & Insolvency 2022 List",
+    "title_origin": "heading",
+    "publication_evidence": "FTI Consulting, Inc. January 13, 2022",
+    "historical_body_basis": "unproven_current_webpage_version",
+    "summary_sha256": "9a4dbf691abdee71d8379314c1bf5f0a944815d3185c4f77486e80e461a5973a"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3d9351ba265d94583958e528.json",
+    "sha256": "57aeb03dccf03338602379c7c969599b3550ae295830ce8aaaa963e203ee8171",
+    "bundled_path": "legacy_audit/3d9351ba265d94583958e528.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "d7c8493567773f9757d8cc85736ba0d819c5b31f686823a50e7004615368795d",
+      "llm_inferred_at": "2026-11-18T12:31:40.868195+00:00",
+      "model_duration_seconds": 8.1716385,
+      "prompt_tokens": 1963,
+      "completion_tokens": 393,
+      "selection": [
+        {
+          "source_id": "3d9351ba265d94583958e528",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "FTI Consulting, Inc. (NYSE: FCN) announced on January 13, 2022, that 26 professionals from its Corporate Finance & Restructuring segment were named to the Who’s Who Legal:",
+              "rationale": "The article specifically mentions FTI Consulting, Inc. and its recognition of professionals in the Corporate Finance & Restructuring segment, indicating a company-specific event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8111",
+              "name": "SERVICES-LEGAL SERVICES",
+              "basis": "explicit",
+              "quote": "FTI Consulting, Inc. (NYSE: FCN) announced on January 13, 2022, that 26 professionals from its Corporate Finance & Restructuring segment were named to the Who’s Who Legal:"
+            },
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "FTI Consulting is a global business advisory firm with over 6,600 employees in 29 countries, generating $2.46 billion in revenues during fiscal year 2020."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:31:40.881280+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9a4dbf691abdee71d8379314c1bf5f0a944815d3185c4f77486e80e461a5973a",
+    "raw_sha256": null,
+    "date_quote": "FTI Consulting, Inc. January 13, 2022",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The summary contains information about FTI Consulting's recognition in the restructuring and insolvency field, including details about the professionals named, ",
+    "securities": [
+      {
+        "name": "FTI Consulting, Inc.",
+        "ticker": "FCN",
+        "exchange": "NYSE",
+        "quote": "FTI Consulting, Inc. (NYSE: FCN)"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:8111",
+        "name": "SERVICES-LEGAL SERVICES",
+        "basis": "inferred",
+        "quote": "FTI Consulting, Inc. (NYSE: FCN) announced on January 13, 2022, that 26 professionals from its Corporate Finance & Restructuring segment were named to the Who’s Who Legal:",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8111",
+        "industry_name_standard": "SERVICES-LEGAL SERVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "FTI Consulting, Inc. (NYSE: FCN) announced on January 13, 2022, that 26 professionals from its Corporate Finance & Restructuring segment were named to the Who’s Who Legal:"
+      },
+      {
+        "industry_key": "SEC-SIC:7389",
+        "name": "SERVICES-BUSINESS SERVICES, NEC",
+        "basis": "inferred",
+        "quote": "FTI Consulting is a global business advisory firm with over 6,600 employees in 29 countries, generating $2.46 billion in revenues during fiscal year 2020.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "7389",
+        "industry_name_standard": "SERVICES-BUSINESS SERVICES, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "FTI Consulting is a global business advisory firm with over 6,600 employees in 29 countries, generating $2.46 billion in revenues during fiscal year 2020."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "FTI Consulting, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "3d9351ba265d94583958e528",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2022_01_13_Consulting_Financial-Advisory_yahoo.json",
+        "sha256": "ad178eca9f7cb76c5a2fc8f0b3345b9a7c57f8063e8d8e60f909383ac3cfaaed",
+        "filename": "2022_01_13_Consulting_Financial-Advisory_yahoo.json"
+      }
+    ],
+    "original_record_hash": "74333101369fd2469857aceba37b57a900ab7837b01d46a903883bd2edb3e5c4",
+    "input_hash": "c1f9ab2a64758ae1435944f6d51cc68a30c2d96f0b50b9db631e4f94b845ad12",
+    "matching_audit_hash": "8554f11e0797f113ac2c0d6c3ab76e3fd40cc75821ae1cbeef4aa6d3f6bfde53",
+    "legacy_security_evidence": [],
+    "record_hash": "3909e7fcb334e217247102b28d2a5a20410964a4bb2e563891dfc6e554754c67",
+    "outputs": [
+      {
+        "path": "US\\2022_01_13_Consulting_Financial-Advisory_yahoo.json",
+        "sha256": "7ce475fe3483d8c3d9f14dd36dd5a2bc2300674c16b5464d9683fb390de73a65"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2022-01-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T13:34:39.745489+00:00",
+      "fetched_at": "2026-11-10T14:31:30.036790+00:00",
+      "feature_available_at": "2026-11-10T17:53:25.486599+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T12:31:40.868195+00:00",
+    "feature_available_at": "2026-11-18T12:31:40.881280+00:00",
+    "commit_verified_at": "2026-11-12T14:56:23.599897+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "FTI Consulting, Inc. (NYSE: FCN) announced on January 13, 2022, that 26 professionals from its Corporate Finance & Restructuring segment were named to the Who’s Who Legal:",
+        "rationale": "The article specifically mentions FTI Consulting, Inc. and its recognition of professionals in the Corporate Finance & Restructuring segment, indicating a company-specific event.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "FTI Consulting, Inc. (NYSE: FCN) announced on January 13, 2022, that 26 professionals from its Corporate Finance & Restructuring segment were named to the Who’s Who Legal:"
+      }
+    ],
+    "relation_quality_flags": [],
+    "url": "https://finance.yahoo.com/news/fti-consulting-leads-legal-restructuring-123000574.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "3909e7fcb334e217247102b28d2a5a20410964a4bb2e563891dfc6e554754c67",
+    "content_hash": "9a4dbf691abdee71d8379314c1bf5f0a944815d3185c4f77486e80e461a5973a",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:31:40.869283+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3d9351ba265d94583958e528.json",
+      "sha256": "9ead37b27d316861fb2ba922a22ea1c80282b534df433fcffe7ae7b199c824d6",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 31.110000000015134
+}

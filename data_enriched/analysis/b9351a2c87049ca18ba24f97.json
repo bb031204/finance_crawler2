@@ -1,0 +1,196 @@
+{
+  "source_id": "b9351a2c87049ca18ba24f97",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_10_26_17_00_Utilities_Energy_prnewswire.json",
+      "sha256": "61d3f7761033ce2c905172d53b50a3264ccde4dd9fd0c7d9205a9c5744eeb4a9",
+      "filename": "2020_10_26_17_00_Utilities_Energy_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "883c92e9fc0c62c766583305200e3942fbc92b54ca5efde43b8a1c03c87aab72",
+  "input_hash": "0927ee036699c6e418364e975f105cff140941a3d18cd4e449e7d8f10526e7d5",
+  "matching_audit_hash": "1ef6eb58bafe9bf03dc425341d0c2e24096df6284f60c4338ee1c1a142bc669a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "752db3770d0d00914e23867c6d49c789ae85a93695d3ab1b71dbbe035864bce8",
+    "raw_sha256": "47eb2ecf83fb9546e5accccfbeb234c0f55e95165c977a168c0015bab82a241c",
+    "date_quote": "page.datePublished=2020-10-26T17:00:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2d04dc4c41182cf39466590cdfce1ba55bd8f1c024f93b5ddedcf724c960fb39",
+  "outputs": [
+    {
+      "path": "US\\2020_10_26_17_00_Utilities_Energy_prnewswire.json",
+      "sha256": "08b0edc79dfae1a14958ed7aefd68aaf20c3be2451eac4db7fdb3c9b36fe14bb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-10-26T17:00:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T13:34:33.446073+00:00",
+    "fetched_at": "2026-11-10T14:27:01.106186+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.791783+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:13:36.684954+00:00",
+  "feature_available_at": "2026-11-12T15:16:47.797596+00:00",
+  "commit_verified_at": "2026-11-12T15:16:47.797596+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Disclosures and rankings highlight transparency practices in utilities sector.",
+    "securities": [
+      {
+        "name": null,
+        "ticker": "SO",
+        "exchange": "NYSE",
+        "quote": "NYSE: SO"
+      },
+      {
+        "name": "Southern Company",
+        "ticker": "SO",
+        "exchange": "NYSE",
+        "quote": "Southern Company (NYSE: SO)"
+      },
+      {
+        "name": "Labrador",
+        "ticker": null,
+        "exchange": null,
+        "quote": "sponsored by Labrador, a global communications firm specializing in regulated disclosure documents."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "energy"
+      },
+      {
+        "name": "Telecommunications",
+        "basis": "inferred",
+        "quote": "telecommunications services."
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Southern Company": "company",
+      "Labrador": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:47.821772+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:13:36.684954+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Disclosures and rankings highlight transparency practices in utilities sector.",
+      "securities": [
+        {
+          "name": null,
+          "ticker": "SO",
+          "exchange": "NYSE",
+          "quote": "NYSE: SO"
+        },
+        {
+          "name": "Southern Company",
+          "ticker": "SO",
+          "exchange": "NYSE",
+          "quote": "Southern Company (NYSE: SO)"
+        },
+        {
+          "name": "Labrador",
+          "ticker": null,
+          "exchange": null,
+          "quote": "sponsored by Labrador, a global communications firm specializing in regulated disclosure documents."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Energy",
+          "basis": "explicit",
+          "quote": "energy"
+        },
+        {
+          "name": "Telecommunications",
+          "basis": "inferred",
+          "quote": "telecommunications services."
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Southern Company": "company",
+        "Labrador": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:13:36.709684+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:13:36.720489+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:13:36.700686+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary provides information about Southern Company's recognition in transparency awards, which relates to corporate disclosure and investor relations. It's",
+        "securities": [
+          {
+            "name": null,
+            "ticker": "SO",
+            "exchange": "NYSE",
+            "quote": "NYSE: SO"
+          }
+        ],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:53:58.815732+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

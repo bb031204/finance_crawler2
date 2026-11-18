@@ -1,0 +1,179 @@
+{
+  "source_id": "3efbc04764c8a9a24a2e7845",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_05_02_firm-expansion_Legal-Services_prnewswire.json",
+      "sha256": "56d121d009c5931df4356ae744271c5592943b582a0493eed94337588f058137",
+      "filename": "2022_05_02_firm-expansion_Legal-Services_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "c0893eb691977139d4cd2988ffd958baeafc15a76faa74e4b601ab3146135c98",
+  "input_hash": "a14eefc8fdb851eb94b62941f571b45d0a5068d764596feeb09cdecc946b0c2f",
+  "matching_audit_hash": "3934cbd078c6514a76f6c57ee0f6e30dd473a2d894896174a0b3a49bf1656341",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3c7df228447710f674ad5e8191610fabab079f367a537c8834f7d888507c9ae9",
+    "raw_sha256": "690ee92685f1908efa2bd1a4f71dbc45b5ca976f07d9c86b231265da66d08676",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2022-05-02T18:59:00+01:00\ndate=2022-05-02T18:59:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "08076f7f78e2bb8985f9cfae520e460669f6a93f9c82ce29d24c97945d331309",
+  "outputs": [
+    {
+      "path": "US\\2022_05_02_firm-expansion_Legal-Services_prnewswire.json",
+      "sha256": "5b4f70150e8b90d6589511b5de1a1af5a2e0171853504e856eabaa41e91a975e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-05-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:38:50.528326+00:00",
+    "fetched_at": "2026-11-10T21:10:27.847548+00:00",
+    "feature_available_at": "2026-11-11T08:01:32.202627+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:15:39.564339+00:00",
+  "feature_available_at": "2026-11-12T15:16:49.679746+00:00",
+  "commit_verified_at": "2026-11-12T15:16:49.679746+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Firm expands M&A team with new partner and legal expertise.",
+    "securities": [
+      {
+        "name": "Katten",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Katten is a full-service law firm with 700 attorneys across the U.S., London, and Shanghai, offering services in corporate, financial markets, real estate, and other areas."
+      },
+      {
+        "name": "Goodwin Procter",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Prior to joining Katten, Isaacs was an attorney at Goodwin Procter"
+      },
+      {
+        "name": "JPMorgan Chase & Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "JPMorgan Chase & Co."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Markets",
+        "basis": "explicit",
+        "quote": "financial markets"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Katten": "organization",
+      "Goodwin Procter": "organization",
+      "JPMorgan Chase & Co.": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:49.698292+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:15:39.564339+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Firm expands M&A team with new partner and legal expertise.",
+      "securities": [
+        {
+          "name": "Katten",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Katten is a full-service law firm with 700 attorneys across the U.S., London, and Shanghai, offering services in corporate, financial markets, real estate, and other areas."
+        },
+        {
+          "name": "Goodwin Procter",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Prior to joining Katten, Isaacs was an attorney at Goodwin Procter"
+        },
+        {
+          "name": "JPMorgan Chase & Co.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "JPMorgan Chase & Co."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Markets",
+          "basis": "explicit",
+          "quote": "financial markets"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Katten": "organization",
+        "Goodwin Procter": "organization",
+        "JPMorgan Chase & Co.": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:15:39.589069+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:15:39.598077+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:15:39.579549+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses Katten's expansion of its Mergers and Acquisitions/Private Equity team, including the addition of Christopher Isaacs as a partner and thefirm",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:57:42.714848+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

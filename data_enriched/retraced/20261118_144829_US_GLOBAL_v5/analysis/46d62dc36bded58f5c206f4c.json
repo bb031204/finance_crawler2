@@ -1,0 +1,373 @@
+{
+  "source_id": "46d62dc36bded58f5c206f4c",
+  "status": "completed",
+  "source_record_hash": "c66743e4e056c61255c36a95e28203fb6c087015c9176408a15bfe4c4dc4eb16",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001233/0001193125-21-008664-index.html",
+    "attempted_at": "2026-11-18T13:25:47.675125+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001233/0001193125-21-008664-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312521008664/d848448d8k.htm",
+    "fetched_at": "2026-11-18T13:25:58.173947+00:00",
+    "source_body_hash": "b0c73454c6360c05e02ce2954ef22a51ab722376960461598696e0c34815e8c3",
+    "raw_sha256": "28a9fb27f831f9af71deb42731322454e3407c458e300773d351058029936264",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312521008664/d848448d8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "28a9fb27f831f9af71deb42731322454e3407c458e300773d351058029936264",
+        "text_sha256": "4b376ef28753f2e22fac0aee61a30b01acae08b842c9de98e4d2d30c3311c0ed",
+        "text_start": 0,
+        "text_end": 3099
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312521008664/d848448dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "6ba9c0f3d7396754079c46e7381170e7ff86ac922d63d81e297914a496c93d27",
+        "text_sha256": "415d0ee29fb60f63baf229d29deff0affbd8224bf53825e3903cdd44ba0e9740",
+        "text_start": 3101,
+        "text_end": 12967
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "8-K",
+    "title_origin": "html_title",
+    "publication_evidence": "SEC filing datePublished=2021-01-14",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/46d62dc36bded58f5c206f4c.json",
+    "sha256": "1680c05adb627b27beaf5a3e0cdc566564f6a39e3b0ee55a7f950436b0da21f1",
+    "bundled_path": "legacy_audit/46d62dc36bded58f5c206f4c.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "3894dd76d6544115ea32ed0da6a0ea1d8e6866fc6db6927cc26ab2ec0b5e195f",
+      "llm_inferred_at": "2026-11-18T13:26:09.754387+00:00",
+      "model_duration_seconds": 11.5304987,
+      "prompt_tokens": 4459,
+      "completion_tokens": 459,
+      "selection": [
+        {
+          "source_id": "46d62dc36bded58f5c206f4c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Global Select Market Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§ 230.405 of this chapter)",
+              "rationale": "The article mentions the company's listing on the Nasdaq Global Select Market, which is a market-wide event.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Sangamo Therapeutics, Inc.",
+              "rationale": "The article is about Sangamo Therapeutics, Inc., which is a specific company.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:1a6cc151cbaf00f5",
+              "name": "Biotechnology: Biological Products (No Diagnostic Substances)",
+              "basis": "explicit",
+              "quote": "Global Select Market Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§ 230.405 of this chapter)"
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "Sangamo Therapeutics, Inc."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "c0cdf63a12876b1e7e88fdf7ea14ae7b67ed1ee6bfe6615130468603c70c5ab6",
+      "llm_inferred_at": "2026-11-18T13:26:20.515480+00:00",
+      "model_duration_seconds": 10.7442123,
+      "prompt_tokens": 4503,
+      "completion_tokens": 538,
+      "selection": [
+        {
+          "source_id": "46d62dc36bded58f5c206f4c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Global Select Market Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§ 230.405 of this chapter)",
+              "rationale": "The article mentions the company is listed on the Nasdaq Global Select Market, which is a market-wide listing. This indicates the company's presence in the broader financial market.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Sangamo Therapeutics, Inc.",
+              "rationale": "The article is about Sangamo Therapeutics, Inc., which is a specific company involved in gene therapy for hemophilia A. The company's activities and events are the focus of the report.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:1a6cc151cbaf00f5",
+              "name": "Biotechnology: Biological Products (No Diagnostic Substances)",
+              "basis": "explicit",
+              "quote": "Global Select Market Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§ 230.405 of this chapter)"
+            },
+            {
+              "industry_key": "TRSR:2510232a8915045a",
+              "name": "Fluid Controls",
+              "basis": "explicit",
+              "quote": "Global Select Market Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§ 230.405 of this chapter)"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "b89be8f74373b6f63f03407ad34ba6a113d8ac8838b1e4a30a20822d84f9f6b1",
+      "llm_inferred_at": "2026-11-18T13:26:29.343598+00:00",
+      "model_duration_seconds": 8.8039823,
+      "prompt_tokens": 3200,
+      "completion_tokens": 398,
+      "selection": [
+        {
+          "source_id": "46d62dc36bded58f5c206f4c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Efficacy – Cohort 4 (3e13 vg/kg) Latest available FVIII values from August 2020 data cut.",
+              "rationale": "The article discusses the efficacy and safety of giroctocogene fitelparvovec, which is a gene therapy product for hemophilia. This falls under the biotechnology industry, specifically the development and application of biological products.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The investigators acknowledge and thank all study participants.",
+              "rationale": "The article is related to a clinical study conducted by a specific company, which is likely involved in biotechnology or pharmaceuticals. The study participants and the acknowledgment of the study teams suggest a company-specific event.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:1a6cc151cbaf00f5",
+              "name": "Biotechnology: Biological Products (No Diagnostic Substances)",
+              "basis": "explicit",
+              "quote": "Efficacy – Cohort 4 (3e13 vg/kg) Latest available FVIII values from August 2020 data cut."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "a2ed56a9b0761e32eee8a9d44cf9a5eca99ac0d0798492962e2a05a5c094f453",
+      "llm_inferred_at": "2026-11-18T13:26:36.793366+00:00",
+      "model_duration_seconds": 7.4342901,
+      "prompt_tokens": 3244,
+      "completion_tokens": 369,
+      "selection": [
+        {
+          "source_id": "46d62dc36bded58f5c206f4c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Efficacy – Cohort 4 (3e13 vg/kg) Latest available FVIII values from August 2020 data cut.",
+              "rationale": "The article discusses the efficacy and safety of giroctocogene fitelparvovec, which is a biological product, indicating an impact on the biotechnology industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The investigators acknowledge and thank all study participants.",
+              "rationale": "The article mentions the study participants and acknowledges the contributions of the study teams, indicating a direct impact on the company conducting the study.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:1a6cc151cbaf00f5",
+              "name": "Biotechnology: Biological Products (No Diagnostic Substances)",
+              "basis": "explicit",
+              "quote": "Efficacy – Cohort 4 (3e13 vg/kg) Latest available FVIII values from August 2020 data cut."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:26:36.862471+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b0c73454c6360c05e02ce2954ef22a51ab722376960461598696e0c34815e8c3",
+    "raw_sha256": "28a9fb27f831f9af71deb42731322454e3407c458e300773d351058029936264",
+    "date_quote": "SEC filing datePublished=2021-01-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312521008664/d848448d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary contains information about a company's filing, a clinical study, and a conference presentation, which are relevant for the StockMixer pipeline.",
+    "securities": [
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      },
+      {
+        "name": null,
+        "ticker": "SGMO",
+        "exchange": null,
+        "quote": "ticker symbol SGMO"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Sangamo Therapeutics, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "46d62dc36bded58f5c206f4c",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2021_01_14_Other-Events_Biotechnology_sec.json",
+        "sha256": "f0bb53867124b302c78aee73f2829f39b9f44d235a45b41f9669341018443b7b",
+        "filename": "2021_01_14_Other-Events_Biotechnology_sec.json"
+      }
+    ],
+    "original_record_hash": "f0112a28e96f6cb4a89a068622b4ba10f4f3d74a775f8e72f8fb6c433e620018",
+    "input_hash": "3f4f884a2cddbbf60cc8b77eee4b1c501e65fa47567ea2a785b41717ab485a1a",
+    "matching_audit_hash": "63bc29a63358490b5b2237586b53152d59a1faf4dde6b7f7c78d1621c87359ab",
+    "legacy_security_evidence": [
+      {
+        "name": "Common Stock, $0.01 par value per share",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock, $0.01 par value per share"
+      }
+    ],
+    "record_hash": "c66743e4e056c61255c36a95e28203fb6c087015c9176408a15bfe4c4dc4eb16",
+    "outputs": [
+      {
+        "path": "US\\2021_01_14_Other-Events_Biotechnology_sec.json",
+        "sha256": "5771fcba84d8a086196d5d225c80f823c5773338c0b69f7e74237627f1a5c1d8"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2021-01-14",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:28.586595+00:00",
+      "fetched_at": "2026-11-11T16:27:33.602703+00:00",
+      "feature_available_at": "2026-11-11T16:28:10.137645+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:26:36.793366+00:00",
+    "feature_available_at": "2026-11-18T13:26:36.862471+00:00",
+    "commit_verified_at": "2026-11-12T14:54:27.338216+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Sangamo Therapeutics, Inc.",
+        "rationale": "The article is about Sangamo Therapeutics, Inc., which is a specific company involved in gene therapy for hemophilia A. The company's activities and events are the focus of the report.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Sangamo Therapeutics, Inc.",
+        "summary_evidence_quote": "Sangamo Therapeutics, Inc."
+      },
+      {
+        "scope": "company",
+        "quote": "The investigators acknowledge and thank all study participants.",
+        "rationale": "The article mentions the study participants and acknowledges the contributions of the study teams, indicating a direct impact on the company conducting the study.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The investigators acknowledge and thank all study participants.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001233/0001193125-21-008664-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "c66743e4e056c61255c36a95e28203fb6c087015c9176408a15bfe4c4dc4eb16",
+    "content_hash": "41b64819b36d2dd553a75f13c9c2af7e7d4edc615c23d1599ec623d84a0cfad0",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:26:36.805281+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/46d62dc36bded58f5c206f4c.json",
+      "sha256": "e90ebe30c47ada3272a3d8b2221b604b082884424043900e49deb7f96b4a8ae5",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 49.203000000008615
+}

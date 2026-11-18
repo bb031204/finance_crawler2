@@ -1,0 +1,237 @@
+{
+  "source_id": "29e651fb799ad004e13de126",
+  "status": "completed",
+  "source_record_hash": "cb70fa66d97b84bfcbf13cbe8b156d3270bfd17445bfb32202aa75ed7484e4ce",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-13-000031-index.html",
+    "attempted_at": "2026-11-18T10:33:31.609051+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-13-000031-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103913000031/fy2013_q2x8kxannualshareho.htm",
+    "fetched_at": "2026-11-18T10:33:40.915417+00:00",
+    "source_body_hash": "0f23504c509d8dcfad6c2141909496a203c66f92f90437a9e026ff7b47fc1d25",
+    "raw_sha256": "40d32956eb4dc410b6427eb1c66657fd177a5f6279b5f59407aa0aec598d2f82",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103913000031/fy2013_q2x8kxannualshareho.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "40d32956eb4dc410b6427eb1c66657fd177a5f6279b5f59407aa0aec598d2f82",
+        "text_sha256": "0f23504c509d8dcfad6c2141909496a203c66f92f90437a9e026ff7b47fc1d25",
+        "text_start": 0,
+        "text_end": 5576
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2013-03-08",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/29e651fb799ad004e13de126.json",
+    "sha256": "c2c13ceb369719f900186587c8e95b3f2a8c531f09900ea8625225b93fa4f53d",
+    "bundled_path": "legacy_audit/29e651fb799ad004e13de126.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b748e9aace0bcc8f38127134f512abe119956f5883cd4a9c428a50a80eb74e87",
+      "llm_inferred_at": "2026-11-18T10:33:49.509306+00:00",
+      "model_duration_seconds": 8.5482385,
+      "prompt_tokens": 3801,
+      "completion_tokens": 345,
+      "selection": [
+        {
+          "source_id": "29e651fb799ad004e13de126",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The Walt Disney Company By: /s/ Roger J.",
+              "rationale": "The article discusses the actions and decisions of The Walt Disney Company, including shareholder approvals and executive compensation plans, which are specific to the company.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Walt Disney Company By: /s/ Roger J.",
+              "rationale": "The article discusses the actions and decisions of The Walt Disney Company, which is part of the entertainment and media industry, and the changes in executive compensation plans can have implications for the broader industry.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "inferred",
+              "quote": "The Walt Disney Company By: /s/ Roger J."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "a2d2e58402ae4c1315a75ce3365762a9033088ccb336423c06f59a94c36f549b",
+      "llm_inferred_at": "2026-11-18T10:33:55.544437+00:00",
+      "model_duration_seconds": 6.0233728,
+      "prompt_tokens": 3845,
+      "completion_tokens": 299,
+      "selection": [
+        {
+          "source_id": "29e651fb799ad004e13de126",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "The Walt Disney Company By: /s/ Roger J."
+            },
+            {
+              "industry_key": "SEC-SIC:6211",
+              "name": "SECURITY BROKERS, DEALERS & FLOTATION COMPANIES",
+              "basis": "explicit",
+              "quote": "The Walt Disney Company By: /s/ Roger J."
+            },
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "The Walt Disney Company By: /s/ Roger J."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:33:55.558655+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0f23504c509d8dcfad6c2141909496a203c66f92f90437a9e026ff7b47fc1d25",
+    "raw_sha256": "40d32956eb4dc410b6427eb1c66657fd177a5f6279b5f59407aa0aec598d2f82",
+    "date_quote": "SEC filing datePublished=2013-03-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103913000031/fy2013_q2x8kxannualshareho.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary discusses changes to executive compensation at The Walt Disney Company, including specific bonus limits for executives, which is relevant for stock/",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [],
+    "entity_types": {
+      "The Walt Disney Company": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "29e651fb799ad004e13de126",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_03_08_Compensation_Entertainment_sec.json",
+        "sha256": "da3a83ce33cda2fd410af56312f1ad363491d36ddae0b9001f850f31a93561cf",
+        "filename": "2013_03_08_Compensation_Entertainment_sec.json"
+      }
+    ],
+    "original_record_hash": "a12d2644ac6db6b3e3d1b954682f902526db3fd5bd58523c2e6d97e60fcf4397",
+    "input_hash": "f8c4fb269848784b3f4c81515a1fbabfba1ee723eb62885070e00cb9d97e47b1",
+    "matching_audit_hash": "600980114e53dae7d968614b13ce9aacb78f4adea662e12bc6a89ed4bc3e9746",
+    "legacy_security_evidence": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "record_hash": "cb70fa66d97b84bfcbf13cbe8b156d3270bfd17445bfb32202aa75ed7484e4ce",
+    "outputs": [
+      {
+        "path": "US\\2013_03_08_Compensation_Entertainment_sec.json",
+        "sha256": "7fd3917b9725ea1dfc75d1642f4dbcc5724b9754e152f51bd6c0b0f74dcb2a05"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-03-08",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+      "fetched_at": "2026-11-10T23:32:29.407975+00:00",
+      "feature_available_at": "2026-11-11T09:55:23.852203+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:33:55.544437+00:00",
+    "feature_available_at": "2026-11-18T10:33:55.558655+00:00",
+    "commit_verified_at": "2026-11-12T14:05:04.265971+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-13-000031-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "cb70fa66d97b84bfcbf13cbe8b156d3270bfd17445bfb32202aa75ed7484e4ce",
+    "content_hash": "0f23504c509d8dcfad6c2141909496a203c66f92f90437a9e026ff7b47fc1d25",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:33:55.545528+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/29e651fb799ad004e13de126.json",
+      "sha256": "939fc870dd02bd5f410957a77341b475cbc90adcdb6a2eec93dfb0bd75cd9b3a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 23.969000000011874
+}

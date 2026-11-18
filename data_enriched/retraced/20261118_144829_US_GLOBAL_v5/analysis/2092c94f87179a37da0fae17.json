@@ -1,0 +1,516 @@
+{
+  "source_id": "2092c94f87179a37da0fae17",
+  "status": "completed",
+  "source_record_hash": "c965447456a2e43e8864c707505781aa47b63edb04b38132186650ef54288500",
+  "source_trace": {
+    "requested_url": "https://www.federalreserve.gov/econresdata/notes/feds-notes/2014/enhanced-financial-accounts-20140801.html",
+    "attempted_at": "2026-11-18T09:51:07.085371+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.federalreserve.gov/econresdata/notes/feds-notes/2014/enhanced-financial-accounts-20140801.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T09:51:17.921579+00:00",
+    "source_body_hash": "8aa59aa109affa16eefbcfd9a6fb2ea271ec3b26d02fdbb1b0f4c9d16056cd39",
+    "raw_sha256": "cb0a3549925ea6f391a4320e8fe94aa848eaf7cc94902719420ad0a13559fbc5",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "FRB: FEDS Notes",
+    "title_origin": "html_title",
+    "publication_evidence": "August 1, 2014",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2092c94f87179a37da0fae17.json",
+    "sha256": "9f5308a90ce5bea722ffea28742543252845ec451477529b3c00e9ab9ec60813",
+    "bundled_path": "legacy_audit/2092c94f87179a37da0fae17.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "958f47ee1030d518cd98f1057d2053d0b9b27af314c5e6beeda5299941fcf925",
+      "llm_inferred_at": "2026-11-18T09:51:40.805650+00:00",
+      "model_duration_seconds": 22.8345589,
+      "prompt_tokens": 3470,
+      "completion_tokens": 1141,
+      "selection": [
+        {
+          "source_id": "2092c94f87179a37da0fae17",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible.",
+              "rationale": "The article discusses the enhancement of financial accounts, which includes detailed information on financial instruments, particularly in the context of financial institutions and sectors such as banks, mutual funds, insurance companies, and pension funds. This indicates an industry-wide impact on ",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "We also hope to include at least basic information on risk exposures through financial derivatives.",
+              "rationale": "The article highlights the inclusion of information on financial derivatives and risk exposures, which is relevant to the financial sector, indicating an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible.",
+              "rationale": "The article discusses the enhancement of financial accounts, which includes detailed information on financial instruments, particularly in the context of financial institutions and sectors such as banks, mutual funds, insurance companies, and pension funds. This indicates an industry-wide impact on ",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Accounts of the United States (formerly called the Flow of Funds Accounts) are U.S. national accounts published quarterly by the Federal Reserve Board. The Financial Accounts provide information on macro-financial flows and aggregate balance sheets for major sectors of the economy, including households, financial institutions, nonfinancial",
+              "rationale": "The article discusses the Financial Accounts of the United States, which are U.S. national accounts published quarterly by the Federal Reserve Board. This indicates a broad impact on the U.S. equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "inferred",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "inferred",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "industry_scope_quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income",
+              "industry_name_original": "Financials",
+              "mechanism": "enhanced financial data collection and reporting",
+              "confidence": 0.95,
+              "quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income"
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income",
+              "industry_name_original": "Banks",
+              "mechanism": "enhanced financial data collection and reporting",
+              "confidence": 0.95,
+              "quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income"
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "industry_scope_quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income",
+              "industry_name_original": "Tools/Hardware",
+              "mechanism": "enhanced financial data collection and reporting",
+              "confidence": 0.95,
+              "quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "6963a56ee53b995da03496488a9a863b223c248aac46032264435a2bfe163152",
+      "llm_inferred_at": "2026-11-18T09:52:01.285283+00:00",
+      "model_duration_seconds": 20.3511102,
+      "prompt_tokens": 3514,
+      "completion_tokens": 1071,
+      "selection": [
+        {
+          "source_id": "2092c94f87179a37da0fae17",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible.",
+              "rationale": "The article discusses the enhancement of financial accounts, which includes detailed information on financial instruments, which is relevant to the financial sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "We also hope to include at least basic information on risk exposures through financial derivatives.",
+              "rationale": "The article mentions the inclusion of information on financial derivatives, which is relevant to the financial sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible.",
+              "rationale": "The article discusses the enhancement of financial accounts, which includes detailed information on financial instruments, which is relevant to the financial sector.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Accounts of the United States (formerly called the Flow of Funds Accounts) are U.S. national accounts published quarterly by the Federal Reserve Board. The Financial Accounts provide information on macro-financial flows and aggregate balance sheets for major sectors of the economy, including households, financial institutions, nonfinancial",
+              "rationale": "The article discusses the Financial Accounts of the United States, which are U.S. national accounts published quarterly by the Federal Reserve Board. This is relevant to the U.S. equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "inferred",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "inferred",
+              "quote": "The first is to provide additional detail on financial instruments wherever possible."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "industry_scope_quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income",
+              "industry_name_original": "Financials",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income"
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income",
+              "industry_name_original": "Banks",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income"
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "industry_scope_quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income",
+              "industry_name_original": "Tools/Hardware",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "including banks, mutual funds, insurance companies, and state and local pension funds, we could also provide detail on the maturities and credit-risk ratings of fixed-income"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "22ec8ed8a010f972a6b27311617f9c0f9d0a2593a62907bdbcd72c2069305734",
+      "llm_inferred_at": "2026-11-18T09:52:13.195709+00:00",
+      "model_duration_seconds": 11.8873711,
+      "prompt_tokens": 3299,
+      "completion_tokens": 551,
+      "selection": [
+        {
+          "source_id": "2092c94f87179a37da0fae17",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Indeed, the concepts, data, and procedures to implement these aspects of Enhanced Financial Accounts have not yet been developed.",
+              "rationale": "The article discusses the development of Enhanced Financial Accounts, which involves new sectors like hedge funds and new instruments like derivatives. This indicates an industry-wide impact on financial data collection and reporting.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Financial Accounts publication, which includes the Integrated Macroeconomic Accounts, can be found at http://www.federalreserve.gov/releases/z1/Current/.",
+              "rationale": "The article references the Financial Accounts publication, which is a company (Federal Reserve) initiative, indicating a company-specific impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "The Financial Accounts publication, which includes the Integrated Macroeconomic Accounts, can be found at http://www.federalreserve.gov/releases/z1/Current/."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "explicit",
+              "quote": "The Financial Accounts publication, which includes the Integrated Macroeconomic Accounts, can be found at http://www.federalreserve.gov/releases/z1/Current/."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The Financial Accounts publication, which includes the Integrated Macroeconomic Accounts, can be found at http://www.federalreserve.gov/releases/z1/Current/."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "eaf9a73130efe9e130065f943ddb0277ffc28b30f1d7037832bc53af724b81b9",
+      "llm_inferred_at": "2026-11-18T09:52:22.596183+00:00",
+      "model_duration_seconds": 9.3839884,
+      "prompt_tokens": 3343,
+      "completion_tokens": 486,
+      "selection": [
+        {
+          "source_id": "2092c94f87179a37da0fae17",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Indeed, the concepts, data, and procedures to implement these aspects of Enhanced Financial Accounts have not yet been developed.",
+              "rationale": "The article discusses the development of Enhanced Financial Accounts, which involves new sectors like hedge funds and new instruments like derivatives. This indicates an industry-wide impact on financial data collection and reporting.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Wealth and Financial Intermediation and Their Links to the Real Economy, Charles Hulten and Marshall Reinsdorf, editors, University of Chicago Press. Gorton, Gary, and Metrick,",
+              "rationale": "The article references the broader implications of financial data collection and reporting on the U.S. financial system, indicating a market-wide impact on financial stability and macroeconomic conditions.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "Return to text 2."
+            },
+            {
+              "industry_key": "TRSR:0b4f79fb182865ac",
+              "name": "Tools/Hardware",
+              "basis": "explicit",
+              "quote": "Return to text 2."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Return to text 2."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T09:52:22.612194+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8aa59aa109affa16eefbcfd9a6fb2ea271ec3b26d02fdbb1b0f4c9d16056cd39",
+    "raw_sha256": "cb0a3549925ea6f391a4320e8fe94aa848eaf7cc94902719420ad0a13559fbc5",
+    "date_quote": "August 1, 2014",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Enhanced Financial Accounts project improves data detail and financial system洞察",
+    "securities": [
+      {
+        "name": "Federal Reserve Board",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Board (FRB)"
+      },
+      {
+        "name": "Enhanced Financial Accounts (EFA) Project",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Enhanced Financial Accounts (EFA) Project"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [],
+    "entity_types": {
+      "Federal Reserve Board": "organization",
+      "Enhanced Financial Accounts (EFA) Project": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "2092c94f87179a37da0fae17",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_08_01_Financial-Accounts_Financial-Services_federalreserve.json",
+        "sha256": "41ff0c13e3ab1b09f323fef3c88cd0fa86ac7f707433edf13db73acc65d4bebb",
+        "filename": "2014_08_01_Financial-Accounts_Financial-Services_federalreserve.json"
+      }
+    ],
+    "original_record_hash": "f4556b67262a82b3029492890f91a5a75a05b4a7ca6b00a4a1fb844d3faadead",
+    "input_hash": "6e7b4db2acb9332d8099e0c0640c38de022f7868dd973e4f4412eab99f769db0",
+    "matching_audit_hash": "df315d1809d11b66237008122e7b11aa90b03f1c3154f173ba4eedeb4e67142a",
+    "legacy_security_evidence": [],
+    "record_hash": "c965447456a2e43e8864c707505781aa47b63edb04b38132186650ef54288500",
+    "outputs": [
+      {
+        "path": "US\\2014_08_01_Financial-Accounts_Financial-Services_federalreserve.json",
+        "sha256": "366d301d99efa5559198b69b134b1aa63cc67ca9dec40351a605e233948b4aa7"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2014-08-01",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T09:58:07.672469+00:00",
+      "fetched_at": "2026-11-10T10:54:38.174152+00:00",
+      "feature_available_at": "2026-11-10T17:53:15.718147+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T09:52:22.596183+00:00",
+    "feature_available_at": "2026-11-18T09:52:22.612194+00:00",
+    "commit_verified_at": "2026-11-12T15:16:36.888305+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:36.916060+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:45.701741+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Enhanced Financial Accounts project improves data detail and financial system洞察",
+        "securities": [
+          {
+            "name": "Federal Reserve Board",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Federal Reserve Board (FRB)"
+          },
+          {
+            "name": "Enhanced Financial Accounts (EFA) Project",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Enhanced Financial Accounts (EFA) Project"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Financial Services",
+            "basis": "inferred",
+            "quote": "financial intermediation"
+          },
+          {
+            "name": "Economic Analysis",
+            "basis": "inferred",
+            "quote": "economic relationships"
+          }
+        ],
+        "impact_scope": [
+          "industry",
+          "market"
+        ],
+        "entity_types": {
+          "Federal Reserve Board": "organization",
+          "Enhanced Financial Accounts (EFA) Project": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:02:45.729733+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:02:45.738700+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:02:45.720530+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses the Enhanced Financial Accounts (EFAs) project by the Federal Reserve Board (FRB), detailing improvements to financial data reporting and the",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:18:00.842923+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact",
+      "market_scope_without_typed_scope"
+    ],
+    "url": "https://www.federalreserve.gov/econresdata/notes/feds-notes/2014/enhanced-financial-accounts-20140801.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "c965447456a2e43e8864c707505781aa47b63edb04b38132186650ef54288500",
+    "content_hash": "8aa59aa109affa16eefbcfd9a6fb2ea271ec3b26d02fdbb1b0f4c9d16056cd39",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T09:52:22.600197+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2092c94f87179a37da0fae17.json",
+      "sha256": "e22ba2dfcf52bcf3ab5de65af3bbb94cc7bce471e41df62f37e8e8f88847b313",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 75.53099999998813
+}

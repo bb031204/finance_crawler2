@@ -1,0 +1,98 @@
+{
+  "source_id": "30c412a700613f242150bc80",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_03_10_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "2390fc4146497ed1a40ca4a8770d08d29930aec053d39f3b55828be06c8dac2d",
+      "filename": "2020_03_10_Energy_Coal-Mining_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "12e8739d8beafeae0114e8a3bdcc2ac7368e3a2efa48c43f144bc02cf6f9f71f",
+  "input_hash": "179d1a800bef44b439c93370a43ee60a6e5af570a5a72b87479d67750b21854a",
+  "matching_audit_hash": "d7d8d830a752e272bbbafe2efb414d9a71bc02ac14713bc4fa55fdf4668baa27",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c8fc30b72524a243480ba357571fbe5f1ae9dd87a445a8d3292f145bc0e54578",
+    "raw_sha256": "db9aad315cf2256abe02ad5f5ef5367a92439c82637217079d98b70d96f41344",
+    "date_quote": "March 10, 2020 at 6:48 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3a800b11dcafee6dda37c3ff2e5937714a61161dd427c38d9d53bae1d20035f9",
+  "outputs": [
+    {
+      "path": "US\\2020_03_10_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "f315447dfa6b7c1c2e2405c43f9274fc79ed3f9a36702d78c14c606d886943b2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-03-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:46.083336+00:00",
+    "fetched_at": "2026-11-10T13:58:16.572020+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.965677+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:22.466105+00:00",
+  "feature_available_at": "2026-11-12T14:52:22.482390+00:00",
+  "commit_verified_at": "2026-11-12T14:52:22.482390+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the bankruptcy of Foresight Energy LP and mentions Murray Energy Corp., both coal companies, and their relevance to the coal industry's困境.",
+    "securities": [
+      {
+        "name": "Foresight Energy LP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Foresight Energy LP"
+      },
+      {
+        "name": "Murray Energy Corp",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Murray Energy Corp"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Coal",
+        "basis": "explicit",
+        "quote": "coal company"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Foresight Energy LP": "company",
+      "Murray Energy Corp": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

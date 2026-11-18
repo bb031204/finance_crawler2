@@ -1,0 +1,1225 @@
+{
+  "source_id": "0ea64dd264d5275f649d548d",
+  "status": "completed",
+  "source_record_hash": "ea7329f729843baac62ae21d8d40ec76e31631206687c3a2bf1d6c62c28f15c7",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-16-024429-index.html",
+    "attempted_at": "2026-11-18T08:11:23.992934+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-16-024429-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774916024429/occ20160129_8k.htm",
+    "fetched_at": "2026-11-18T08:11:37.274324+00:00",
+    "source_body_hash": "b99a4cf12fef77093186f120629ac5ea312e59320790b3e45f464354a2029199",
+    "raw_sha256": "a064dde5a98fe9c80d85b3d0110bea3f150f24ad6c1b108b8842cf361a8815a1",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774916024429/occ20160129_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "a064dde5a98fe9c80d85b3d0110bea3f150f24ad6c1b108b8842cf361a8815a1",
+        "text_sha256": "74b7f47a5c5a88aff6774f9820e6b4f0b57c2e1f085b00a5abbfc5e3c4ef82ab",
+        "text_start": 0,
+        "text_end": 2444
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774916024429/ex99-1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "bf190e200668e4f7efab058f79be03e01b34f63b4508528ed27201259c4fd065",
+        "text_sha256": "44c09849eaa3e8a2065e8015c3aecea1dd2f5d627dff2eb1658f04677c7595bc",
+        "text_start": 2446,
+        "text_end": 15504
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774916024429/ex99-2.htm",
+        "type": "EX-99.2",
+        "description": "EXHIBIT 99.2",
+        "raw_sha256": "a8a25258f68f1f336c6d39053229bb87b20604bf633d035ec199e55659be2284",
+        "text_sha256": "d1a3009f578db48dd31448bd4d69e3f7913e967283c268e79a298807f8e7bb9e",
+        "text_start": 15506,
+        "text_end": 38643
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2016-02-01",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0ea64dd264d5275f649d548d.json",
+    "sha256": "4b2647b6ccb37521174de35f595b9b28d455137d4e6c2995760a3bee836bc8cb",
+    "bundled_path": "legacy_audit/0ea64dd264d5275f649d548d.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "76708e02103514cdc833278c024b8ccf1ba679f02fe4a40db2be5ac35ca9b871",
+      "llm_inferred_at": "2026-11-18T08:12:03.004616+00:00",
+      "model_duration_seconds": 25.6830045,
+      "prompt_tokens": 4316,
+      "completion_tokens": 1237,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The strong U.S.",
+              "rationale": "The article discusses the impact of the strong U.S. dollar on sales outside of the U.S., indicating a broader industry-level impact on international sales.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also",
+              "rationale": "The article mentions specific industry markets such as the military, oil & gas, mining specialty markets, and the wireless carrier market, indicating a sector-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Gross profit for the year was impacted by lower net sales in certain specialty markets and the wireless carrier market.",
+              "rationale": "The article highlights the impact on specialty markets and the wireless carrier market, which are specific industry segments.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "dollar was also a factor impacting sales outside of the U.S. during fiscal year 2015. Gross profit was $21.8 million in fiscal year 2015, compared to $28.5 million in fiscal year 2014. Gross profit margin was 29.6% in fiscal year 2015, compared to 34.3% in fiscal year 2014. Gross profit for the year was impacted by lower net sales in certain",
+              "rationale": "The article discusses the impact of the strong U.S. dollar on sales outside of the U.S., which is a broad economic factor affecting the U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also"
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "industry_scope_quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also",
+              "industry_name_original": "Military/Government/Technical",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also"
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "381d231da49c8d2e9c05246b44b50ec0e8364af02b995590e639ffb4931774e6",
+      "llm_inferred_at": "2026-11-18T08:12:31.355916+00:00",
+      "model_duration_seconds": 28.3286072,
+      "prompt_tokens": 4360,
+      "completion_tokens": 1465,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the",
+              "rationale": "The article discusses the impact of decreased demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. This indicates an industry-wide impact on these sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the",
+              "rationale": "The article discusses the impact of decreased demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. This indicates an industry-wide impact on these sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the",
+              "rationale": "The article discusses the impact of decreased demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. This indicates an industry-wide impact on these sectors.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "dollar was also a factor impacting sales outside of the U.S. during fiscal year 2015. Gross profit was $21.8 million in fiscal year 2015, compared to $28.5 million in fiscal year 2014. Gross profit margin was 29.6% in fiscal year 2015, compared to 34.3% in fiscal year 2014. Gross profit for the year was impacted by lower net sales in certain",
+              "rationale": "The article discusses the impact of the strong U.S. dollar on sales outside of the U.S., which is a broad US equity/financial market fact. This indicates a market-wide impact.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the"
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "industry_scope_quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also",
+              "industry_name_original": "Military/Government/Technical",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the"
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "demand in certain industry markets, including the military, oil & gas and mining specialty markets, and in particular, the wireless carrier market. The strong U.S. dollar was also",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.95,
+              "quote": "the fourth quarter of fiscal year 2015 were $16.8 million, compared to record quarterly net sales of $25.2 million for the fourth quarter of fiscal year 2014. Net sales for the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5a9ad77c6ee75a30b9dd52a9943c989ab941b8be1e5d26f14f0047a7cf0d5ed0",
+      "llm_inferred_at": "2026-11-18T08:12:43.598559+00:00",
+      "model_duration_seconds": 12.2187799,
+      "prompt_tokens": 3665,
+      "completion_tokens": 557,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified.",
+              "rationale": "The text indicates that OCC is involved in manufacturing fiber optic and copper cabling and connectivity solutions for various markets, including harsh environments and specialty markets, which aligns with the industry of manufacturing and technology.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Optical Cable Corp.",
+              "rationale": "The text is about Optical Cable Corporation (OCC), which is a specific company involved in manufacturing fiber optic and copper cabling and connectivity solutions.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7373",
+              "name": "SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN",
+              "basis": "inferred",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            },
+            {
+              "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+              "name": "Industrials",
+              "basis": "inferred",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "inferred",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f6547e3d569d4706667be75280180ae4b6a11537dca7c2bf88190e90ace8e3bc",
+      "llm_inferred_at": "2026-11-18T08:12:56.289198+00:00",
+      "model_duration_seconds": 12.6770263,
+      "prompt_tokens": 3709,
+      "completion_tokens": 661,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified.",
+              "rationale": "The text discusses the certification of OCC’s facilities, which is relevant to the manufacturing and quality standards of the industry, indicating an industry-wide impact.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "industry",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified.",
+              "rationale": "The text discusses the certification of OCC’s facilities, which is relevant to the manufacturing and quality standards of the industry, indicating an industry-wide impact.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "industry",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified.",
+              "rationale": "The text discusses the certification of OCC’s facilities, which is relevant to the manufacturing and quality standards of the industry, indicating an industry-wide impact.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7373",
+              "name": "SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN",
+              "basis": "explicit",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            },
+            {
+              "industry_key": "TRSR:b616381533adab8e",
+              "name": "Ordnance And Accessories",
+              "basis": "explicit",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            },
+            {
+              "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+              "name": "Industrials",
+              "basis": "explicit",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "d93c456ef0d6599831ec9f583f26a5197f6b4b066bc8b6ee0ee4a895ea902eaf",
+      "llm_inferred_at": "2026-11-18T08:13:22.831281+00:00",
+      "model_duration_seconds": 26.5168957,
+      "prompt_tokens": 3780,
+      "completion_tokens": 1279,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+              "rationale": "The mention of the enterprise market and the specific increase in sales within that market indicates an industry-wide impact, as it refers to a sector of the economy that is affected by the company's performance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+              "rationale": "The enterprise market is a specific industry segment, and the company's performance in this market indicates an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+              "rationale": "The enterprise market is a specific industry segment, and the company's performance in this market indicates an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "While this weakness in the US will impact OCC's sales in our first quarter of fiscal 2016, we're optimistic about the remainder of the year.",
+              "rationale": "The mention of the US market and its impact on the company's sales indicates a broader impact on the US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "name": "DRILLING OIL & GAS WELLS",
+              "basis": "explicit",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+              "industry_name_original": "DRILLING OIL & GAS WELLS",
+              "mechanism": "The global macroeconomic conditions, including the slowing Chinese economy and low crude oil prices, have a direct impact on the oil and gas industry, which includes drilling activities.",
+              "confidence": 0.85,
+              "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+              "industry_name_original": "Military/Government/Technical",
+              "mechanism": "The global macroeconomic conditions, including the slowing Chinese economy and low crude oil prices, have a direct impact on the military and government sectors, which are often affected by economic downturns.",
+              "confidence": 0.85,
+              "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "The global macroeconomic conditions, including the slowing Chinese economy and low crude oil prices, have a direct impact on the oil and gas production industry, which is sensitive to global economic trends.",
+              "confidence": 0.85,
+              "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "eead777e12ec8ce26be59369c4ea2b6ad49b311ac3439ca47a47c6db040b61d9",
+      "llm_inferred_at": "2026-11-18T08:13:46.521027+00:00",
+      "model_duration_seconds": 23.665634,
+      "prompt_tokens": 3824,
+      "completion_tokens": 1203,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+              "rationale": "The text refers to the enterprise market, which is a specific industry segment, and discusses the impact of sales and initiatives on this market, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+              "rationale": "The text refers to the enterprise market, which is a specific industry segment, and discusses the impact of sales and initiatives on this market, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+              "rationale": "The text refers to the enterprise market, which is a specific industry segment, and discusses the impact of sales and initiatives on this market, indicating an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "While this weakness in the US will impact OCC's sales in our first quarter of fiscal 2016, we're optimistic about the remainder of the year.",
+              "rationale": "The text discusses the impact of US market conditions on OCC's sales and mentions the global macroeconomic environment, which is relevant to US equity markets.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "name": "DRILLING OIL & GAS WELLS",
+              "basis": "explicit",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1381",
+              "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+              "industry_name_original": "DRILLING OIL & GAS WELLS",
+              "mechanism": "Macroeconomic conditions affecting the industry",
+              "confidence": 0.85,
+              "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+              "industry_name_original": "Military/Government/Technical",
+              "mechanism": "Macroeconomic conditions affecting the industry",
+              "confidence": 0.85,
+              "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "Macroeconomic conditions affecting the industry",
+              "confidence": 0.85,
+              "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "0abc0724f89032feed4c50b6bf5318eef13c3c1d40836de9a8b3c9ded0cc0a79",
+      "llm_inferred_at": "2026-11-18T08:14:10.120153+00:00",
+      "model_duration_seconds": 23.572295,
+      "prompt_tokens": 3836,
+      "completion_tokens": 1154,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets.",
+              "rationale": "The article discusses the impact of market conditions on Optical Cable Corporation's sales, specifically mentioning specialty markets and wireless carrier markets, which are industry-wide factors affecting the company's performance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Gross profit was impacted by lower net sales in certain specialty industry markets which tend to have higher gross profit margins.",
+              "rationale": "This statement indicates that the performance of specialty industry markets directly affects the company's gross profit, which is an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The decrease in net sales when comparing fiscal years 2015 and 2014 is due to the decrease in net sales of our fiber optic cable products in various specialty markets and our harsh",
+              "rationale": "The article highlights the impact of specialty markets on the company's net sales, which is an industry-wide factor affecting the company's financial performance.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The majority of the net sales decrease in fiscal year 2015 was attributable to large orders from one customer decreasing $6 million when compared to orders from this customer in fiscal year 2014.",
+              "rationale": "This statement indicates that the company's financial performance is influenced by broader market conditions, which can affect the overall US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "inferred",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets."
+            },
+            {
+              "industry_key": "SEC-SIC:6532",
+              "name": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "basis": "inferred",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "name": "NATIONAL COMMERCIAL BANKS",
+              "basis": "inferred",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "The company's financial performance is influenced by the real estate market, as it is related to the credit facilities and financial covenants that the company must comply with.",
+              "confidence": 0.85,
+              "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+              "industry_name_original": "NATIONAL COMMERCIAL BANKS",
+              "mechanism": "The company's financial performance is influenced by the banking industry, as it is related to the credit facilities and financial covenants that the company must comply with.",
+              "confidence": 0.85,
+              "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio."
+            },
+            {
+              "industry_key": "SEC-SIC:6532",
+              "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+              "industry_name_original": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "mechanism": "The company's financial performance is influenced by the real estate dealers market, as it is related to the credit facilities and financial covenants that the company must comply with.",
+              "confidence": 0.85,
+              "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "bc428f852d9c11946dbcfc5d264e5f065aedc034bac2e848f2bd801d03ac6776",
+      "llm_inferred_at": "2026-11-18T08:14:32.068261+00:00",
+      "model_duration_seconds": 21.9274634,
+      "prompt_tokens": 3880,
+      "completion_tokens": 1150,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets.",
+              "rationale": "The article discusses the impact of market conditions on Optical Cable Corporation's sales, specifically mentioning specialty markets and wireless carrier markets, which are industry-wide factors affecting the company's performance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Gross profit was impacted by lower net sales in certain specialty industry markets which tend to have higher gross profit margins.",
+              "rationale": "This statement indicates that the performance of specialty industry markets directly affects the company's gross profit, which is an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The decrease in net sales when comparing fiscal years 2015 and 2014 is due to the decrease in net sales of our fiber optic cable products in various specialty markets and our harsh",
+              "rationale": "The article highlights the impact of specialty markets on the company's net sales, which is an industry-wide factor affecting the company's financial performance.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The majority of the net sales decrease in fiscal year 2015 was attributable to large orders from one customer decreasing $6 million when compared to orders from this customer in fiscal year 2014.",
+              "rationale": "This statement indicates that the company's financial performance is influenced by broader market conditions, which are relevant to the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "inferred",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets."
+            },
+            {
+              "industry_key": "SEC-SIC:6532",
+              "name": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "basis": "inferred",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "name": "NATIONAL COMMERCIAL BANKS",
+              "basis": "inferred",
+              "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "The company's financial performance is influenced by the real estate market, as it is related to the credit facilities and financial covenants that the company must comply with.",
+              "confidence": 0.85,
+              "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio."
+            },
+            {
+              "industry_key": "SEC-SIC:6021",
+              "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+              "industry_name_original": "NATIONAL COMMERCIAL BANKS",
+              "mechanism": "The company's financial performance is influenced by the banking industry, as it is related to the credit facilities and financial covenants that the company must comply with.",
+              "confidence": 0.85,
+              "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio."
+            },
+            {
+              "industry_key": "SEC-SIC:6532",
+              "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+              "industry_name_original": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "mechanism": "The company's financial performance is influenced by the real estate dealers market, as it is related to the credit facilities and financial covenants that the company must comply with.",
+              "confidence": 0.85,
+              "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a51d071acc3a74e346fccb690fb164465fb1e8ea5768a6f737e95f55af28d8b2",
+      "llm_inferred_at": "2026-11-18T08:14:49.693553+00:00",
+      "model_duration_seconds": 17.600171,
+      "prompt_tokens": 2992,
+      "completion_tokens": 872,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth.",
+              "rationale": "The article mentions that the sales decline in the fourth quarter is attributed to multiple industries, including military, industrial, mining, and petrochemical, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth.",
+              "rationale": "The article discusses the sales decline in the fourth quarter for Optical Cable Corporation, which is a specific company, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:7532f2cc28cf21c5",
+              "name": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+              "basis": "explicit",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:f565f1b44ab32849",
+              "name": "Miscellaneous manufacturing industries",
+              "basis": "explicit",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "industry_scope_quote": "some color as to what industries contributed to that decline? The release says military, industrial, mining, petrochemical and so forth. But perhaps you could provide some color",
+              "industry_name_original": "Military/Government/Technical",
+              "mechanism": "sales decline",
+              "confidence": 0.95,
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:7532f2cc28cf21c5",
+              "industry_scope_quote": "some color as to what industries contributed to that decline? The release says military, industrial, mining, petrochemical and so forth. But perhaps you could provide some color",
+              "industry_name_original": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+              "mechanism": "sales decline",
+              "confidence": 0.95,
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:f565f1b44ab32849",
+              "industry_scope_quote": "some color as to what industries contributed to that decline? The release says military, industrial, mining, petrochemical and so forth. But perhaps you could provide some color",
+              "industry_name_original": "Miscellaneous manufacturing industries",
+              "mechanism": "sales decline",
+              "confidence": 0.95,
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "088d540b3a0b0ead182e385823c3e5346beab46ebaeef0a28cdc6436f1643f28",
+      "llm_inferred_at": "2026-11-18T08:15:06.517054+00:00",
+      "model_duration_seconds": 16.8106735,
+      "prompt_tokens": 3036,
+      "completion_tokens": 882,
+      "selection": [
+        {
+          "source_id": "0ea64dd264d5275f649d548d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth.",
+              "rationale": "The article mentions that the sales decline in the fourth quarter is attributed to multiple industries, including military, industrial, mining, and petrochemical, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Neil Wilkin - Optical Cable Corporation - Chairman of the Board, President and Chief Executive Officer Yes, the bulk of the decline was in the wireless carrier market.",
+              "rationale": "The article discusses the sales decline specifically for Optical Cable Corporation, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:7532f2cc28cf21c5",
+              "name": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+              "basis": "explicit",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:f565f1b44ab32849",
+              "name": "Miscellaneous manufacturing industries",
+              "basis": "explicit",
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "industry_scope_quote": "some color as to what industries contributed to that decline? The release says military, industrial, mining, petrochemical and so forth. But perhaps you could provide some color",
+              "industry_name_original": "Military/Government/Technical",
+              "mechanism": "sector-wide policy",
+              "confidence": 0.95,
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:7532f2cc28cf21c5",
+              "industry_scope_quote": "some color as to what industries contributed to that decline? The release says military, industrial, mining, petrochemical and so forth. But perhaps you could provide some color",
+              "industry_name_original": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+              "mechanism": "sector-wide policy",
+              "confidence": 0.95,
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            },
+            {
+              "industry_key": "TRSR:f565f1b44ab32849",
+              "industry_scope_quote": "some color as to what industries contributed to that decline? The release says military, industrial, mining, petrochemical and so forth. But perhaps you could provide some color",
+              "industry_name_original": "Miscellaneous manufacturing industries",
+              "mechanism": "sector-wide policy",
+              "confidence": 0.95,
+              "quote": "The release says military, industrial, mining, petrochemical and so forth."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:15:06.565384+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b99a4cf12fef77093186f120629ac5ea312e59320790b3e45f464354a2029199",
+    "raw_sha256": "a064dde5a98fe9c80d85b3d0110bea3f150f24ad6c1b108b8842cf361a8815a1",
+    "date_quote": "SEC filing datePublished=2016-02-01",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774916024429/occ20160129_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:1381",
+        "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_name_original": "DRILLING OIL & GAS WELLS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Macroeconomic conditions affecting the industry",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "1381",
+        "industry_name_standard": "DRILLING OIL & GAS WELLS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "DRILLING OIL & GAS WELLS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "TRSR:19801e128f3455fa",
+        "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_name_original": "Oil & Gas Production",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Macroeconomic conditions affecting the industry",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "19801e128f3455fa",
+        "industry_name_standard": "Oil & Gas Production",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Oil & Gas Production",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "SEC-SIC:6021",
+        "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+        "industry_name_original": "NATIONAL COMMERCIAL BANKS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The company's financial performance is influenced by the banking industry, as it is related to the credit facilities and financial covenants that the company must comply with.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6021",
+        "industry_name_standard": "NATIONAL COMMERCIAL BANKS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "NATIONAL COMMERCIAL BANKS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "TRSR:8fb987d55323ad3b",
+        "name": "Military/Government/Technical",
+        "basis": "inferred",
+        "quote": "The release says military, industrial, mining, petrochemical and so forth.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "8fb987d55323ad3b",
+        "industry_name_standard": "Military/Government/Technical",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The release says military, industrial, mining, petrochemical and so forth.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:7532f2cc28cf21c5",
+        "name": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+        "basis": "inferred",
+        "quote": "The release says military, industrial, mining, petrochemical and so forth.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7532f2cc28cf21c5",
+        "industry_name_standard": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The release says military, industrial, mining, petrochemical and so forth.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "0ea64dd264d5275f649d548d",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_02_01_Financial-Results_Telecommunications-Equipment_sec.json",
+        "sha256": "ec4158a4cf054d009a4780a383b2a9a27bf703206e3b838e83107dc6509b1548",
+        "filename": "2016_02_01_Financial-Results_Telecommunications-Equipment_sec.json"
+      }
+    ],
+    "original_record_hash": "3bba5d4bd902b934d666d8a5fb3eff564c1d133374f80f1b44b443be883fc122",
+    "input_hash": "fb8662a54b56b8825a94f18562a5dcc18e513aa807412423d0a8ff92f25da991",
+    "matching_audit_hash": "fd56dddec44dee3e887968419ce1c5685ae5e4caf14e8a1de0927200e0f2ca45",
+    "legacy_security_evidence": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "record_hash": "ea7329f729843baac62ae21d8d40ec76e31631206687c3a2bf1d6c62c28f15c7",
+    "outputs": [
+      {
+        "path": "US\\2016_02_01_Financial-Results_Telecommunications-Equipment_sec.json",
+        "sha256": "95fd8742167bdd99dfdfdc2accdfbfa9c45fdcee0af595ad55a3016331850899"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2016-02-01",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:04.847323+00:00",
+      "fetched_at": "2026-11-11T01:00:51.220034+00:00",
+      "feature_available_at": "2026-11-11T11:00:53.203444+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T08:15:06.517054+00:00",
+    "feature_available_at": "2026-11-18T08:15:06.565384+00:00",
+    "commit_verified_at": "2026-11-12T13:53:04.627409+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:1381",
+        "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_name_original": "DRILLING OIL & GAS WELLS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Macroeconomic conditions affecting the industry",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "1381",
+        "industry_name_standard": "DRILLING OIL & GAS WELLS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "TRSR:19801e128f3455fa",
+        "industry_scope_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_name_original": "Oil & Gas Production",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Macroeconomic conditions affecting the industry",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "19801e128f3455fa",
+        "industry_name_standard": "Oil & Gas Production",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The slowing Chinese economy, crude oil prices at 12-year lows, weakness in the stock markets, and downsizing at a number of leading manufacturing companies are headline news.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SEC-SIC:6021",
+        "industry_scope_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+        "industry_name_original": "NATIONAL COMMERCIAL BANKS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The company's financial performance is influenced by the banking industry, as it is related to the credit facilities and financial covenants that the company must comply with.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6021",
+        "industry_name_standard": "NATIONAL COMMERCIAL BANKS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "The terms of our credit facilities with our banks requires us to comply, on a quarterly basis, with specific financial covenants including a debt service coverage ratio.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "industry",
+        "quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+        "rationale": "The text refers to the enterprise market, which is a specific industry segment, and discusses the impact of sales and initiatives on this market, indicating an industry-wide impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our consolidated net sales in this market increased by more than 9% to $38 million as we continued to execute on key initiatives that we believe will support future growth.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets.",
+        "rationale": "The article discusses the impact of market conditions on Optical Cable Corporation's sales, specifically mentioning specialty markets and wireless carrier markets, which are industry-wide factors affecting the company's performance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The decrease was due to weakness in various specialty markets and volatility in the wireless carrier markets.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Neil Wilkin - Optical Cable Corporation - Chairman of the Board, President and Chief Executive Officer Yes, the bulk of the decline was in the wireless carrier market.",
+        "rationale": "The article discusses the sales decline specifically for Optical Cable Corporation, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Neil Wilkin - Optical Cable Corporation - Chairman of the Board, President and Chief Executive Officer Yes, the bulk of the decline was in the wireless carrier market.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact",
+      "industry_dictionary_code_quote_conflict"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-16-024429-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "ea7329f729843baac62ae21d8d40ec76e31631206687c3a2bf1d6c62c28f15c7",
+    "content_hash": "25bac007f90e6f539173679f0f77526f2393a7763908123e20b5894b91e5b3d6",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T08:15:06.523065+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0ea64dd264d5275f649d548d.json",
+      "sha256": "e4b4e916806becb27d8fd930359495bb6993a10d5557727dca04479a828b7a62",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 222.5789999999979
+}

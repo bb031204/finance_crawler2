@@ -1,0 +1,95 @@
+{
+  "source_id": "8708604c879d71cd9cdf3164",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_12_19_Finance_Automotive_treasury.json",
+      "sha256": "c90841de636551639398d70809fc6e9336cb394eb3fe09c083503c7e5d3d0e89",
+      "filename": "2012_12_19_Finance_Automotive_treasury.json"
+    }
+  ],
+  "original_record_hash": "6ddb253f59eb79b70f208c2262890e31d2de54d6adc9a2f3520ba19e39e9aca3",
+  "input_hash": "fbde5d85b5acb23050f189f9cbf586b1b11005f8509d082ad192c67bde10752c",
+  "matching_audit_hash": "54ef56ac3e73d7cdb241acf52ba42abcafeb1fb11b0b62feaad540e4a8fe17e6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1cf172ece419e24cf008fe58e0f373bf55fec5b5ebc52f4cfcd669417e8742a5",
+    "raw_sha256": "59609046b55bd5a29ece1907937a99c82e5ab9255cb680fe96a5c4a89d55d4ac",
+    "date_quote": "December 19, 2012 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "General Motors",
+      "ticker": "GM",
+      "exchange": null,
+      "quote": "General Motors (GM)"
+    }
+  ],
+  "record_hash": "bc2aafda5ecd4112fb786b4c0db3c37c40fed744c5c62384c18d988524d6a99e",
+  "outputs": [
+    {
+      "path": "US\\2012_12_19_Finance_Automotive_treasury.json",
+      "sha256": "afe3c3b3ebc4392251a7da8f137f252750fe21b23c90698efe673efa033b3529"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-12-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:59.652976+00:00",
+    "fetched_at": "2026-11-10T10:50:16.211546+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.638926+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:42.730981+00:00",
+  "commit_verified_at": "2026-11-12T13:52:42.730981+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "General Motors",
+        "ticker": "GM",
+        "exchange": null,
+        "quote": "General Motors (GM)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

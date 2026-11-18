@@ -1,0 +1,109 @@
+{
+  "source_id": "7ca1fee040af23077f82cd9d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_04_27_Technology_Video-Game-Industry_cnbc.json",
+      "sha256": "bf7c925f34d65b6e0caf19dc7c02ecdec2b7a7513cbbeb360569d898e49fc465",
+      "filename": "2018_04_27_Technology_Video-Game-Industry_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f61d21794ecf0192271ef1a933e17392022df2cd068f9a456eb1d1c3b5bf5fa7",
+  "input_hash": "815b42012ecd5d32183095757593a660c7e28ed3cc22559b104cc99c239c9263",
+  "matching_audit_hash": "24b247ee255012c7719474a15dfcb89f847d5a98ff145b86fa5004303384f64d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "20ee233a7db9cf822569459b0fe0be219c74c57eb4d2d5e85e2569d1ff9b0f44",
+    "raw_sha256": "de7f92cc711adb8a43d9d8602e0b42e566cf98c5dac99c7bc882e6b17434aa5d",
+    "date_quote": "article:publisher=https://www.facebook.com/cnbc\narticle:published_time=2018-04-27T05:36:32+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sony",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sony charges users in the U.S. $19.99 for a one-month subscription on Playstation Now"
+    },
+    {
+      "name": "Blade",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Shadow from French start-up Blade"
+    }
+  ],
+  "record_hash": "cfadbb3a9e0899500467785a8c80e5f3a2459a8d15159a060b66ecccab1f06ea",
+  "outputs": [
+    {
+      "path": "US\\2018_04_27_Technology_Video-Game-Industry_cnbc.json",
+      "sha256": "b0722e667e532f513238589d19c47e755fb7921212832b157880f9cca4a4426c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-04-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:49.553218+00:00",
+    "fetched_at": "2026-11-10T21:56:04.373334+00:00",
+    "feature_available_at": "2026-11-10T21:56:52.048902+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:22.139848+00:00",
+  "commit_verified_at": "2026-11-12T13:53:22.139848+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sony",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sony charges users in the U.S. $19.99 for a one-month subscription on Playstation Now"
+      },
+      {
+        "name": "Blade",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shadow from French start-up Blade"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Gaming",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

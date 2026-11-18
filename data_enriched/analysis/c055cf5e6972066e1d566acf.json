@@ -1,0 +1,98 @@
+{
+  "source_id": "c055cf5e6972066e1d566acf",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_25_executive-changes_financial-services_sec.json",
+      "sha256": "438db1b3b30f1af1efbd7dbf664230b6b826836926bd73d0f4920ab334349490",
+      "filename": "2015_02_25_executive-changes_financial-services_sec.json"
+    }
+  ],
+  "original_record_hash": "d26ac3ab281baa4c43b74563fad2acdc6a71d4c9a8eaf3db47dc58a220ac9e52",
+  "input_hash": "43fee69c85b58c46f93e70efa3100ef7be46598295bad1e4ff99ce6391e54777",
+  "matching_audit_hash": "99b3c422edcbaa4fbb3c155daadcf31d7192313cd164259e802542b198197332",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c9f8fdfadad5187e61ef9c2a8e1ce1d1db0d943379242ca9820d3e3fa4041695",
+    "raw_sha256": "6ede721aec152c8052b3ec86f17beb1478b86adf3cb7823557972a1608055a0e",
+    "date_quote": "SEC filing datePublished=2015-02-25",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312515062615/d880813d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    }
+  ],
+  "record_hash": "4bf2acef17a75a84fd0282cadf9993d90622fad47dc37283b2eccf9c1f0da389",
+  "outputs": [
+    {
+      "path": "US\\2015_02_25_executive-changes_financial-services_sec.json",
+      "sha256": "ad585075423c2639fa3aaa5dcc14949bd437af0e46c2a4c239636e22c6de550a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:18:55.873509+00:00",
+    "feature_available_at": "2026-11-11T10:30:46.044814+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:22:18.324859+00:00",
+  "feature_available_at": "2026-11-12T14:22:18.359400+00:00",
+  "commit_verified_at": "2026-11-12T14:22:18.359400+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the resignation of a senior executive and its potential impact on the company's operational strategies and leadership structure within the",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services industry",
+        "basis": "explicit",
+        "quote": "financial services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "b6f2eb528f647b8d1bd1b617",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_02_02_stock_Technology_cnbc.json",
+      "sha256": "c3b6021583d98f9891f65b848d67f8e9912b0c3bebc5f72bd1c2582dced11f12",
+      "filename": "2022_02_02_stock_Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "65c3798d188953a13cd9f16cbf9da39eb20aaed1086e6c121a8a874f45e22d03",
+  "input_hash": "bd73f05373f9d9f9740bc37c7fe3a090d5fe9a4c333d0fbd2a32a634567da467",
+  "matching_audit_hash": "44f49d1bc3d3e589009c12f1e7a22eef4201e377960acba8e8f63bec38fe17b8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7bde758077c4566ab70d681d21218afee4c9b52ff6e646536c35a81f2e88acdc",
+    "raw_sha256": "f51cdbe2a44a061e318c1e19a67bf956999bd62ec80fc8a4bb53bd0f8a59c86d",
+    "date_quote": "article:published_time=2022-02-02T15:18:17+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Apple",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Apple"
+    }
+  ],
+  "record_hash": "fe6d69fc6aff6fb6fff6fa8d65d3a11302035fb8933f352924c69fd0d2f72cd4",
+  "outputs": [
+    {
+      "path": "US\\2022_02_02_stock_Technology_cnbc.json",
+      "sha256": "977314862a62468fbf40440ebafad59e69a21ad8031dd0ff8844f9984de823e8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-02-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:19.442325+00:00",
+    "fetched_at": "2026-11-10T20:24:57.602465+00:00",
+    "feature_available_at": "2026-11-10T20:25:44.273553+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:39.688046+00:00",
+  "commit_verified_at": "2026-11-12T13:53:39.688046+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Apple",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Apple"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

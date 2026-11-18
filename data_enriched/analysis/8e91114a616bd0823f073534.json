@@ -1,0 +1,98 @@
+{
+  "source_id": "8e91114a616bd0823f073534",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_17_Financial-Results_Healthcare-Distribution_sec.json",
+      "sha256": "8c2a9a8cc0bd3b09d100d716f3d3f783a8346882d7a59f1b6d325e9a5608074c",
+      "filename": "2021_02_17_Financial-Results_Healthcare-Distribution_sec.json"
+    }
+  ],
+  "original_record_hash": "4ff6c9b7a1c103c7ef1dcc6969f38b52ad960cbbf8a700078c5a36cd57993b9e",
+  "input_hash": "a61fd11baeb05ebecf2151074588da0bd420f4c368688d634f6fb36a71529f65",
+  "matching_audit_hash": "61a08724390fa41b54c6c1d5708e62bac70fb91e5f35fa0accdc0efa06d49aa0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ad5743087612212efded2a5485771657c9d10599a36371028ead25b2bfd88513",
+    "raw_sha256": "aab90a762a8e2f34ed87b03f00c0529390f0b9ddeded53dac80d9cbb1f0ae1e0",
+    "date_quote": "SEC filing datePublished=2021-02-17",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000100022821000016/hsicform8k20210216.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock"
+    }
+  ],
+  "record_hash": "af2d8268ca17b9eab831ffc2115f1b21133466dcd20a5793848cf18609f4e0ff",
+  "outputs": [
+    {
+      "path": "US\\2021_02_17_Financial-Results_Healthcare-Distribution_sec.json",
+      "sha256": "364fd482c4c75ebb7157ff187738403f17353ff21767fbda09a701f427173522"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.583594+00:00",
+    "fetched_at": "2026-11-11T15:37:41.120631+00:00",
+    "feature_available_at": "2026-11-11T15:38:16.250978+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:54:39.053801+00:00",
+  "feature_available_at": "2026-11-12T14:54:39.064131+00:00",
+  "commit_verified_at": "2026-11-12T14:54:39.064131+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Henry Schein, Inc.'s financial results and their impact on the healthcare distribution business and industry peers.",
+    "securities": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "healthcare distribution",
+        "basis": "explicit",
+        "quote": "healthcare distribution business"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Henry Schein, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

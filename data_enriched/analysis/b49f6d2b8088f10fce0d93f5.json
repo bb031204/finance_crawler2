@@ -1,0 +1,95 @@
+{
+  "source_id": "b49f6d2b8088f10fce0d93f5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_31_Financial-Report_Electronics_sec.json",
+      "sha256": "6be1ddc38e722404d853bbdf26241249bae148811704a4a919b7e96aa3eedacd",
+      "filename": "2015_03_31_Financial-Report_Electronics_sec.json"
+    }
+  ],
+  "original_record_hash": "4f9fc3c4e44ac56f1aa599751963f8fbbfc66d271c1101adea91f779def50eb6",
+  "input_hash": "f9e8157409fa2ecdbced52e2cf6d8cd06b206a82508f9305875719bbec51d7cc",
+  "matching_audit_hash": "41da034c3ae6018feb7a5db1dc9179cedff430e57852dab7be22bab20b1f9db8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "547185ebfe736a4e8f88bf4dea99b7ccf817f9462a2dcb9db1ddab2f33774ea8",
+    "raw_sha256": "26e95d43fa20a30afc5fe6dcc99b72281a02faa48c92f76f727a29c04deedebf",
+    "date_quote": "Date of Report (Date of earliest event reported): March 31, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794215000012/blonder8k033115.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    }
+  ],
+  "record_hash": "4b93abb9d1e85295ff966c5af557bc14c2a0e7d094130cc7d3b4c4cb03e02ffe",
+  "outputs": [
+    {
+      "path": "US\\2015_03_31_Financial-Report_Electronics_sec.json",
+      "sha256": "ee9479502aad22c3cd0964835df03e0903aaf48abce1a224f273f9f1520905c6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:26:15.104021+00:00",
+    "feature_available_at": "2026-11-11T04:55:45.247354+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:57.703450+00:00",
+  "commit_verified_at": "2026-11-12T13:52:57.703450+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Electronics",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

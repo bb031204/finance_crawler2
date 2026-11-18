@@ -1,0 +1,103 @@
+{
+  "source_id": "a98b98a521a9133439f1df50",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_10_25_Legal_Energy_cnbc.json",
+      "sha256": "2f861e3971dc4696d827eb894caca10b621afae481d4920b99f36d6672925186",
+      "filename": "2013_10_25_Legal_Energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "bbd370fff09f7e257882f26d646de430d84549ea0fd7689a88ba23a0ca5eaa8d",
+  "input_hash": "a2cc2c5aeda0e3bf017c44943f33718247960fb0128c60dd2b27edb6100c6645",
+  "matching_audit_hash": "acde045e103c55c46b9255e38b96c923089ed41675693aa42b4935095ac22306",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5972223e49d19e734fa33d628adad041c5838045b0287845a141c6b62745a877",
+    "raw_sha256": "9abeecc6219d697deec8f445ccb6a3c17507d8733b1ea4e461b52bf5abd3fbe6",
+    "date_quote": "article:published_time=2013-10-25T16:05:17+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5314df3c9eec58637c1725c86dee31328c5e8d2af4638385a71db25de9f3d3e0",
+  "outputs": [
+    {
+      "path": "US\\2013_10_25_Legal_Energy_cnbc.json",
+      "sha256": "7af6900d33559c0830f6014301684403d1cf642c8f1ba9fbd1e01c59a81cb326"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-10-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:05.724591+00:00",
+    "fetched_at": "2026-11-10T14:01:22.625939+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.082360+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:10:45.041815+00:00",
+  "feature_available_at": "2026-11-12T14:10:45.099273+00:00",
+  "commit_verified_at": "2026-11-12T14:10:45.099273+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses legal disputes over property rights and compensation related to the Keystone XL pipeline, involving companies, landowners, and legal cases",
+    "securities": [
+      {
+        "name": "TransCanada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "TransCanada, a Canadian energy company"
+      },
+      {
+        "name": null,
+        "ticker": "TC",
+        "exchange": null,
+        "quote": "stock code TC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "Canadian energy company"
+      },
+      {
+        "name": "Legal",
+        "basis": "inferred",
+        "quote": "challenging the constitutionality of a state eminent domain statute"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "TransCanada": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

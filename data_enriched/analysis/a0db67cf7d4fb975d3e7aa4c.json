@@ -1,0 +1,107 @@
+{
+  "source_id": "a0db67cf7d4fb975d3e7aa4c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_07_29_Financial_Packaging_sec.json",
+      "sha256": "526c5f1ee41c0c638a6c690848e19543e47095234954deba0559a9227c519131",
+      "filename": "2015_07_29_Financial_Packaging_sec.json"
+    }
+  ],
+  "original_record_hash": "719a6aea8faca19419dd146ce05ed206a0e2456909a9aeb2a7f09b4c94a940a3",
+  "input_hash": "556fc5d9930fb6edf39563bd31168cd39c1de8ffa21b80a23e65ca2f3f39a280",
+  "matching_audit_hash": "692f2cdc6ab066d924b501c7ac596a398381ddfdb7be085df9d88daeb1b41187",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0bf729f81d53c7faa47663506d31ca8e5b6d529a29427988fe616d515c4f9127",
+    "raw_sha256": "1600cc039faf65c9303a1654c4b782c35a79a3929eaa3bf4bb7f9441390229ee",
+    "date_quote": "NORCROSS, Ga., July 29, 2015 (GLOBE NEWSWIRE) --",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Rock-Tenn Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Rock-Tenn Company"
+    },
+    {
+      "name": "MeadWestvaco Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "MeadWestvaco Corporation"
+    }
+  ],
+  "record_hash": "1eb5a7f386a658c477c0f11514b51c94b259f6b838f8d236a13cca296fcc76ae",
+  "outputs": [
+    {
+      "path": "US\\2015_07_29_Financial_Packaging_sec.json",
+      "sha256": "48749b6c109cedc55a4498853283fdf2adb8fba2d2942c6915f928e70d2a1018"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-07-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:29.086798+00:00",
+    "fetched_at": "2026-11-10T13:39:51.783650+00:00",
+    "feature_available_at": "2026-11-10T18:30:20.811067+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:59.784043+00:00",
+  "commit_verified_at": "2026-11-12T13:52:59.784043+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Rock-Tenn Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rock-Tenn Company"
+      },
+      {
+        "name": "MeadWestvaco Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MeadWestvaco Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Packaging",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

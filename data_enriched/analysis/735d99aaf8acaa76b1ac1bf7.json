@@ -1,0 +1,137 @@
+{
+  "source_id": "735d99aaf8acaa76b1ac1bf7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_04_29_Economic-Policy_Finance_treasury.json",
+      "sha256": "c6a0419f01ee347c8ce65e539a8166b71c8532617359d0d4491b0dad9fa6979e",
+      "filename": "2016_04_29_Economic-Policy_Finance_treasury.json"
+    }
+  ],
+  "original_record_hash": "cc289241dfd7c8ef1d90c42ce361823f40ce67eab789a68d9daafacd3a3de823",
+  "input_hash": "bfee201f5078f29b5ccbae3a2b4e72d2cae6f70f1e941e4e28e2c326abfd2e6d",
+  "matching_audit_hash": "fb27feeb4fa7099b1f3258b6d16d61b8423b5a21f591cc3b104353bc7ea7e721",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dc55753d886ebf6a82806757c4ed0f4d14c39fbb7dbfeca425d0e1e6107f1812",
+    "raw_sha256": "3c10fc41605559623963d561361d4548ad425e89a2813ecae204fc2503a69cf6",
+    "date_quote": "April 29, 2016 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5ed2561297efb058878bea16550dfde8c3a7245b5b7f64080cd6539da4293847",
+  "outputs": [
+    {
+      "path": "US\\2016_04_29_Economic-Policy_Finance_treasury.json",
+      "sha256": "8b853d7a6bbe1f033e278f740fe72fab27d642eef41f31b07983b5efc8979d92"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-04-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:15.033215+00:00",
+    "fetched_at": "2026-11-10T11:05:39.417205+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.612664+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:31:54.123810+00:00",
+  "feature_available_at": "2026-11-12T14:31:54.162496+00:00",
+  "commit_verified_at": "2026-11-12T14:31:54.162496+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses U.S. Treasury's report on foreign exchange policies of major trading partners, including analysis of trade surpluses, current account surplu,",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "United States",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United States"
+      },
+      {
+        "name": "China",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China"
+      },
+      {
+        "name": "Japan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Japan"
+      },
+      {
+        "name": "Korea",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Korea"
+      },
+      {
+        "name": "Taiwan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Taiwan"
+      },
+      {
+        "name": "Germany",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Germany"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Foreign Exchange",
+        "basis": "explicit",
+        "quote": "foreign exchange policies"
+      },
+      {
+        "name": "Trade",
+        "basis": "explicit",
+        "quote": "Trade"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "United States": "organization",
+      "China": "organization",
+      "Japan": "organization",
+      "Korea": "organization",
+      "Taiwan": "organization",
+      "Germany": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

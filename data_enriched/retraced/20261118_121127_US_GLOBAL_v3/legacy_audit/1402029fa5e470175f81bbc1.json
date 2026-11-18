@@ -1,0 +1,97 @@
+{
+  "source_id": "1402029fa5e470175f81bbc1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_07_09_Finance_Investment-Management_cnbc.json",
+      "sha256": "a95887dad2345b167d41e7d2c7de9c05eef034f6e1db465c336d464a36ddc821",
+      "filename": "2019_07_09_Finance_Investment-Management_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3c0eef89dcc0fc717f86186ba56bd9642454c74c3b578989adc0a7dc97b77ffe",
+  "input_hash": "510e723a734c7ac6377cb4a1705a8785cff1b01cecde897511370a97ab038d69",
+  "matching_audit_hash": "c821e0eee97d190436104a1364e7ec2472ad6cd99d4470f94a9a34f8de5a93ed",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9ff9e125e05a0247ae1c8ab8b6d024238c934021544ad0d2d5eaff55bb2c3cb4",
+    "raw_sha256": "133fd44721565d30d7d8ab1429f5c11fde26117c6d714912c66473e555d627b3",
+    "date_quote": "article:published_time=2019-07-09T07:01:15+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Temasek Holdings",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Singaporean state investment firm Temasek Holdings reports a plunge in returns over a one-year period."
+    }
+  ],
+  "record_hash": "3127e9d8ab46c23a7fbe853ccc58cb38618ff0a647ccac0e1211f0c0279a4f0e",
+  "outputs": [
+    {
+      "path": "US\\2019_07_09_Finance_Investment-Management_cnbc.json",
+      "sha256": "ce5804f049aba8adfb181a7a1fe522e2bfb4c5702f7b9f7beb643cb9b7001db1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-07-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:20.006262+00:00",
+    "fetched_at": "2026-11-11T04:51:05.044598+00:00",
+    "feature_available_at": "2026-11-11T04:51:39.285284+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:28.805866+00:00",
+  "commit_verified_at": "2026-11-12T13:53:28.805866+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Temasek Holdings",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Singaporean state investment firm Temasek Holdings reports a plunge in returns over a one-year period."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

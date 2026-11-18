@@ -1,0 +1,95 @@
+{
+  "source_id": "d379cd23237e99477095c384",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_03_07_Healthcare_Healthcare_sec.json",
+      "sha256": "ddda9840d293cfe3064c402523a625e73d0e36afdba419491e3d5a0d96073344",
+      "filename": "2012_03_07_Healthcare_Healthcare_sec.json"
+    }
+  ],
+  "original_record_hash": "02dc182923b6d8318247e43bc09ba56c6c8d067626acd89b2ddb449f45962327",
+  "input_hash": "91ff5615cc0dde34d81230f82112065062db517ac1bad90c0e079631244b5d49",
+  "matching_audit_hash": "21d32cf368b6ca21039380fb6d99da4746f2c26d98ef14fbec41004fd148a02e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a78df5c7dbc605d064b2d9c2988b820379af2e1a2f239a84264b4034df8458c7",
+    "raw_sha256": "a7f8fa4be7031fc2ef5897531d5cb016dd2c8a06f3eda5ba8f9ca3ba20a37877",
+    "date_quote": "Date of report (Date of earliest event reported): March 7, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000278/000114420412013426/v304992_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "PacificHealth Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "PacificHealth Laboratories, Inc."
+    }
+  ],
+  "record_hash": "90de2883fdeb3d7ba61e0cfa176509c96760ec566f512817123215a64e09c895",
+  "outputs": [
+    {
+      "path": "US\\2012_03_07_Healthcare_Healthcare_sec.json",
+      "sha256": "45b6b589dff3f922127830eba11a0d33ca0cc2ff1d38e8f8d35319f5da22d8dc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-03-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.195879+00:00",
+    "fetched_at": "2026-11-10T22:47:11.233991+00:00",
+    "feature_available_at": "2026-11-10T22:47:19.162478+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:39.739555+00:00",
+  "commit_verified_at": "2026-11-12T13:52:39.739555+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "PacificHealth Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PacificHealth Laboratories, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

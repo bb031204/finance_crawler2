@@ -1,0 +1,100 @@
+{
+  "source_id": "1ca93c9e8f6d3797c41c2267",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_07_23_Fashion_Apparel_bloomberg.json",
+      "sha256": "7ed30bb614075bea85a486a51e877ccb0ce6934f14ca2fad93775fb934f76d5c",
+      "filename": "2015_07_23_Fashion_Apparel_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "af3904e3577c2c31a6e144e01487b4e29489e0a12073b2db26c2bf143a0bd710",
+  "input_hash": "dc6636ef3e0df16dd9901f68205a1f16ee9cf4547ef7e22b762a1887c4fcbaf6",
+  "matching_audit_hash": "61807c758319d89d5529e4636d0c656f9e390d91a05c136453f9edadc17ff357",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3cdd1fc40d9e63e0734edadb8a11d2d700643f80e6463318b2f6250d6dbba91c",
+    "raw_sha256": "2a022e285ad7be9f8cbc189c2a02cbc02b3f32c8e92e14479727d4eaaf0b74db",
+    "date_quote": "By Tim Higgins | July 23, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Lululemon",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Lululemon"
+    }
+  ],
+  "record_hash": "91ca982c1bb0e052671e2c1ae8592b70630464f89fe4c28681f4c6a47a9104a6",
+  "outputs": [
+    {
+      "path": "US\\2015_07_23_Fashion_Apparel_bloomberg.json",
+      "sha256": "9ac1d670f0a2f3b65dbc10a6becfb3d7a4d62de6cc700e23e1746e36c937fa27"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-07-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:47.669994+00:00",
+    "fetched_at": "2026-11-10T17:48:56.064618+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.480498+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:28:01.973228+00:00",
+  "feature_available_at": "2026-11-12T14:28:02.010177+00:00",
+  "commit_verified_at": "2026-11-12T14:28:02.010177+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "legacy_security_attribute_unverified",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Levi Strauss's adaptation to the rise of yoga pants, including market trends, sales data, and strategic responses.",
+    "securities": [
+      {
+        "name": "Levi Strauss",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Levi Strauss"
+      },
+      {
+        "name": "NPD Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NPD Group"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Levi Strauss": "company",
+      "NPD Group": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

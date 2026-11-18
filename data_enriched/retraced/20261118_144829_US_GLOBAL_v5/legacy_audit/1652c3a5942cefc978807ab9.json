@@ -1,0 +1,160 @@
+{
+  "source_id": "1652c3a5942cefc978807ab9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_25_executive-changes_banking_sec.json",
+      "sha256": "2b0af6dc49391e0e58e7907e1a74b0904e8b5ebd43f418b6ea4b18bce71ef5af",
+      "filename": "2014_02_25_executive-changes_banking_sec.json"
+    }
+  ],
+  "original_record_hash": "f50a99422b3fa65548f768c36f8973aeaf3baa1ee3c1d76aa9cb1a298dc262d4",
+  "input_hash": "d755a1958ee2cadda1ba4295a6b242ef4f579bb1bf9304f898ab4ada173e40b0",
+  "matching_audit_hash": "647926e4af0dfc5620409f593d5967043a50817906e147494bea411f4d055632",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "70b563e293146746d38211bf58f141d02f207671181c0d8326845ebffb58398f",
+    "raw_sha256": "d077b30bdabc1b1fffee3037487e69e757472834db2496331afeddea73759a03",
+    "date_quote": "SEC filing datePublished=2014-02-25",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312514067143/d683168d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Royal Bank of Canada",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Royal Bank of Canada"
+    }
+  ],
+  "record_hash": "19a0694a457d369e8da70f77523acc39811ad87cf0f80a4506383b20fecb8266",
+  "outputs": [
+    {
+      "path": "US\\2014_02_25_executive-changes_banking_sec.json",
+      "sha256": "7155278ed0e6df3d2176fa67c589ff3bc86ed85b1d5a6deb51d42b3221158c62"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.918984+00:00",
+    "fetched_at": "2026-11-10T23:49:26.176260+00:00",
+    "feature_available_at": "2026-11-11T10:10:15.196828+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:02:01.212424+00:00",
+  "feature_available_at": "2026-11-12T15:16:36.080146+00:00",
+  "commit_verified_at": "2026-11-12T15:16:36.080146+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Leadership change in banking sector with strategic focus",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "name": "banking sector",
+        "basis": "explicit",
+        "quote": "banking sector"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Royal Bank of Canada": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:36.103570+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:02:01.212424+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Leadership change in banking sector with strategic focus",
+      "securities": [
+        {
+          "name": "Royal Bank of Canada",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Royal Bank of Canada"
+        }
+      ],
+      "industries": [
+        {
+          "name": "banking sector",
+          "basis": "explicit",
+          "quote": "banking sector"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Royal Bank of Canada": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:02:01.236899+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:02:01.245529+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:01.228307+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses internal restructuring and leadership changes within the banking sector, which is relevant to the bank's internal management structure and",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:12:30.200276+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

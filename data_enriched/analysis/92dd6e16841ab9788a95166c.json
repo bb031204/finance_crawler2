@@ -1,0 +1,97 @@
+{
+  "source_id": "92dd6e16841ab9788a95166c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_25_Corporate-Governance_Chemicals_sec.json",
+      "sha256": "90de8e1a84ca041264331a39c2fdccd0bcbd63d7ce7cb5f5361e97dfd96c4e11",
+      "filename": "2016_01_25_Corporate-Governance_Chemicals_sec.json"
+    }
+  ],
+  "original_record_hash": "f0baf5e477ae6b0ffd971b3daa17661bc32ff4fb846b0fa0ed3ee77d0c655897",
+  "input_hash": "7439e2f9a17de091311e8c8f6fb14542af94076b5720c5904c8e3e4ed4c297b4",
+  "matching_audit_hash": "0f0ceb9eb4709c235318a23c2997d6fff314702b6abfecaf8b871cb63c852d4a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "def9506dc66e9198dce5b2cd5b627e5c42b94e4cc6fc226c648081a636cb4c34",
+    "raw_sha256": "fdc28fe3fab5038441547ae4929f26036cfdc8f23d75e242f80d2aed2063552f",
+    "date_quote": "SEC filing datePublished=2016-01-25",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312516436654/d124985d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Waters Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Waters Corporation"
+    }
+  ],
+  "record_hash": "3db0dfc76d8ee07af398c5bea4b39f64d55b3f0449ecad81144eccbe51eb176f",
+  "outputs": [
+    {
+      "path": "US\\2016_01_25_Corporate-Governance_Chemicals_sec.json",
+      "sha256": "e4ac84a2edb5a263eb8e124e87a84d52ed3fa386236bf2532ed8e0e94adaefb4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.848931+00:00",
+    "fetched_at": "2026-11-11T01:08:05.389884+00:00",
+    "feature_available_at": "2026-11-11T11:10:24.888500+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:13.672709+00:00",
+  "feature_available_at": "2026-11-12T14:30:13.707763+00:00",
+  "commit_verified_at": "2026-11-12T14:30:13.707763+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a corporate governance event involving a resignation from a senior executive at Waters Corporation, which is relevant to the company's内部结构",
+    "securities": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Corporate Governance",
+        "basis": "explicit",
+        "quote": "corporate governance structure"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Waters Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

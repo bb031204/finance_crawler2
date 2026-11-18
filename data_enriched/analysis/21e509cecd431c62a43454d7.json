@@ -1,0 +1,119 @@
+{
+  "source_id": "21e509cecd431c62a43454d7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_03_01_Corporate-Action_Technology_sec.json",
+      "sha256": "804c428f9c043a845a0832095c2e5c13c9c9ad68ce7e698b32a33ac230d374fe",
+      "filename": "2016_03_01_Corporate-Action_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "da38ba5c58068cfaed83032581e2e71a295aa737fcf4e949c4b9cfc7612b4578",
+  "input_hash": "7e8f288d907db88156d525918e70cb24706af6709fab52a89f79f19b8b45c247",
+  "matching_audit_hash": "a4cdcdc8eeac67ec473ef27433d202ec48640ded207233e96e912c62c0328dec",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6801cd4b45b04464a34d49c84ebb0fb9b5b920263783fcb463377546efc91c54",
+    "raw_sha256": "5057195d6b0364ca8660aac81010ecb29d8cb190ed660c0575229b147a29a63f",
+    "date_quote": "Date of Report (Date of earliest event reported): March 1, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000110465916101470/a16-5596_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation (SanDisk)"
+    },
+    {
+      "name": "Western Digital",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Western Digital"
+    }
+  ],
+  "record_hash": "88472a4ec82c1dab730270b10fc77146900f5fdd385c7b47dd53ec9322b0e760",
+  "outputs": [
+    {
+      "path": "US\\2016_03_01_Corporate-Action_Technology_sec.json",
+      "sha256": "f14d6b1c72c1670864b7c32285cf5f034a608a3f793c86a149c51531011536c6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-03-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.847323+00:00",
+    "fetched_at": "2026-11-11T00:54:54.037437+00:00",
+    "feature_available_at": "2026-11-11T00:55:59.525805+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:06.414882+00:00",
+  "commit_verified_at": "2026-11-12T13:53:06.414882+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation (SanDisk)"
+      },
+      {
+        "name": "Western Digital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Digital"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Memory Storage",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Semiconductor & Storage",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

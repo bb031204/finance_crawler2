@@ -1,0 +1,234 @@
+{
+  "source_id": "56277d40879b95825c6d3962",
+  "status": "completed",
+  "source_record_hash": "97d974154951559fb2775d375cb20522eb79aefb9159fbc7f756d8e6d697309d",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-12-018752-index.html",
+    "attempted_at": "2026-11-18T15:04:42.763042+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "29d29c3b69c635641d05ce99cd127e8afb4ee0770be2418e375c1fd9bb6719c8"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/56277d40879b95825c6d3962.json",
+    "sha256": "c252d1667dc2e0e1ca0c084cf29d19158f953c8e19213b981d680878f34d93cd",
+    "bundled_path": "legacy_audit/56277d40879b95825c6d3962.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "3cc2fcd197f1fb8d359f0a3ef0725babba282ad7f158d4248012212723ede422",
+      "llm_inferred_at": "2026-11-18T15:05:35.878150+00:00",
+      "model_duration_seconds": 8.0370668,
+      "prompt_tokens": 2164,
+      "completion_tokens": 394,
+      "selection": [
+        {
+          "source_id": "56277d40879b95825c6d3962",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The amendments apply to executive officers including James Breslawski, Stanley Komaroff, Mark Mlotek, and Steven Paladino.",
+              "rationale": "The changes are specific to the company's executive officers and their compensation structure.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The changes affect the company's compensation structure and tax implications for executive officers in the healthcare distribution industry.",
+              "rationale": "The amendments are explicitly tied to the healthcare distribution industry, indicating an industry-wide impact on compensation and tax implications.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8000",
+              "name": "SERVICES-HEALTH SERVICES",
+              "basis": "explicit",
+              "quote": "The changes affect the company's compensation structure and tax implications for executive officers in the healthcare distribution industry."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "The changes affect the company's compensation structure and tax implications for executive officers in the healthcare distribution industry."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "712911a73dbe6078765d9dd3cbe424595cfbaf93b296638a24d153d50e68a4be",
+      "llm_inferred_at": "2026-11-18T15:05:40.469131+00:00",
+      "model_duration_seconds": 4.5559805,
+      "prompt_tokens": 2208,
+      "completion_tokens": 240,
+      "selection": [
+        {
+          "source_id": "56277d40879b95825c6d3962",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The amendments apply to executive officers including James Breslawski, Stanley Komaroff, Mark Mlotek, and Steven Paladino.",
+              "rationale": "The changes specifically affect the company's compensation structure and tax implications for executive officers.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8000",
+              "name": "SERVICES-HEALTH SERVICES",
+              "basis": "explicit",
+              "quote": "The changes affect the company's compensation structure and tax implications for executive officers in the healthcare distribution industry."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:05:40.522338+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "29d29c3b69c635641d05ce99cd127e8afb4ee0770be2418e375c1fd9bb6719c8",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2012-01-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312512018752/d285204d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary discusses amendments to compensation agreements affecting executive officers in the healthcare distribution industry, including changes to incentive",
+    "securities": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Henry Schein, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "56277d40879b95825c6d3962",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_01_20_Compensation-and-Agreements_Healthcare-Distribution_sec.json",
+        "sha256": "d9b45079a02e474558dcfa0ebadb9f98a1fa152a1e38f026acaedc35dc344440",
+        "filename": "2012_01_20_Compensation-and-Agreements_Healthcare-Distribution_sec.json"
+      }
+    ],
+    "original_record_hash": "f52ff52c183b985bcad592ae3ba49fc579c24150da6ea1b7ece1f4e210f0dc33",
+    "input_hash": "f75aa57367da40d2f6357a863338bfff3681a1886cf2afe31cfed99b723688a4",
+    "matching_audit_hash": "d9f683cd82055d02f62ba13f5f52e51a6a74ee9cb2c0334449378590ea7283fe",
+    "legacy_security_evidence": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "record_hash": "97d974154951559fb2775d375cb20522eb79aefb9159fbc7f756d8e6d697309d",
+    "outputs": [
+      {
+        "path": "US\\2012_01_20_Compensation-and-Agreements_Healthcare-Distribution_sec.json",
+        "sha256": "91d201845831618c2efc0cff45a2a2edc10af81ba6b692bb96dd8282a22a7663"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2012-01-20",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+      "fetched_at": "2026-11-10T22:33:21.605138+00:00",
+      "feature_available_at": "2026-11-11T09:32:24.980839+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:05:40.469131+00:00",
+    "feature_available_at": "2026-11-18T15:05:40.522338+00:00",
+    "commit_verified_at": "2026-11-12T13:54:03.099771+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The amendments apply to executive officers including James Breslawski, Stanley Komaroff, Mark Mlotek, and Steven Paladino.",
+        "rationale": "The changes specifically affect the company's compensation structure and tax implications for executive officers.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The amendments apply to executive officers including James Breslawski, Stanley Komaroff, Mark Mlotek, and Steven Paladino."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-12-018752-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "97d974154951559fb2775d375cb20522eb79aefb9159fbc7f756d8e6d697309d",
+    "content_hash": "29d29c3b69c635641d05ce99cd127e8afb4ee0770be2418e375c1fd9bb6719c8",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:05:40.471667+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/56277d40879b95825c6d3962.json",
+      "sha256": "c97afa056cf2ea2aa8274557aeec29f9026d798b29d766e4aad72f0848509c73",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 57.82799999997951
+}

@@ -1,0 +1,109 @@
+{
+  "source_id": "a8fdff625cf68c881ee01e84",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_03_01_Real-Estate_Real-Estate-Index_cnbc.json",
+      "sha256": "526d5e627f59185c910f4934a6496eb14963dde1320c625d8d8c695198572a23",
+      "filename": "2013_03_01_Real-Estate_Real-Estate-Index_cnbc.json"
+    }
+  ],
+  "original_record_hash": "2d71900317d4be214fd3a2124b795725b7ca227b3259bd2f4aaad2f101ac6392",
+  "input_hash": "aec85a821c10adeee55ffd967e6daff5b42360d7b07b028efb53e3a3f190f850",
+  "matching_audit_hash": "4151dfae9ab9fb89654633c089c9b782d4e33d586a4f221695600527188ef71d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1dc76bedfb304922e3b8a442e0682ba2343cdbfef7789a6ec634275ea1c55230",
+    "raw_sha256": "60751f46ec3b51ea4c0b91d8a7a3e00b73039882a1f5a7642689b8e6689c88b2",
+    "date_quote": "article:published_time=2013-03-01T14:36:40+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "dfd72fdc299a5fee7eacbff57f24da2e616e780b06c8c793d1aa8f4d2ea42445",
+  "outputs": [
+    {
+      "path": "US\\2013_03_01_Real-Estate_Real-Estate-Index_cnbc.json",
+      "sha256": "18fb00b9776b51283f93b47bb8191a5273e1b2fd6d4fb9a8e8c608e1737ab072"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-03-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:09.696394+00:00",
+    "fetched_at": "2026-11-10T12:35:27.337117+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.870774+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:04:36.995946+00:00",
+  "feature_available_at": "2026-11-12T14:04:37.028951+00:00",
+  "commit_verified_at": "2026-11-12T14:04:37.028951+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the S&P/Case-Shiller Home Price Index, which is a measure of the U.S. housing market. It provides details about the index's components, its发布",
+    "securities": [
+      {
+        "name": "Standard & Poor's",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Standard & Poor's"
+      },
+      {
+        "name": "Chicago Mercantile Exchange",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chicago Mercantile Exchange"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "Real Estate"
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Options and futures based on the Case-Shiller Index are traded"
+      },
+      {
+        "name": "Economics",
+        "basis": "inferred",
+        "quote": "repeat-sales method to analyze home price trends"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Standard & Poor's": "company",
+      "Chicago Mercantile Exchange": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

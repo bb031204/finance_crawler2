@@ -1,0 +1,96 @@
+{
+  "source_id": "47ccd53cc74dd4c80145f2db",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_04_19_Technology_Semiconductor-Equipment_cnbc.json",
+      "sha256": "7189b6959e7e46277dc0561137378653400d218f71a61e86c3713685e0267406",
+      "filename": "2017_04_19_Technology_Semiconductor-Equipment_cnbc.json"
+    }
+  ],
+  "original_record_hash": "77a8b2ea2925855b0695e0e33064adfe12ceb1014582c7eedc5f521a7f55eaab",
+  "input_hash": "001276cdb68eaa76daf046e8ecd75ccdd246b401857605df9df7730cdb04f98b",
+  "matching_audit_hash": "ee8da6e6874aee1c1a5f5ca6d07ddb7cff44012af51853ba4f87fb9a73e6b847",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8943bd987acac92811dd48b887625c343196ebddda3509f4c8f52a5543255816",
+    "raw_sha256": "11bf62e7aaa6aaf35ced50a890a757aa2d0a5c6dd2b050657e925367a6343f7c",
+    "date_quote": "article:published_time=2017-04-19T20:12:33+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Lam Research",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Lam Research"
+    }
+  ],
+  "record_hash": "78da7857dbb183de7fb253e910403c1e2d839f6cf021f53cddc2c817ec32eba1",
+  "outputs": [
+    {
+      "path": "US\\2017_04_19_Technology_Semiconductor-Equipment_cnbc.json",
+      "sha256": "c722c11c32c884ea39ab80ab40d97191dc8aad551fc558b762363aabd3745062"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-04-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:44.405965+00:00",
+    "fetched_at": "2026-11-11T02:28:51.228910+00:00",
+    "feature_available_at": "2026-11-11T02:29:00.593700+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:14.892018+00:00",
+  "commit_verified_at": "2026-11-12T13:53:14.892018+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Lam Research",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lam Research"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor Equipment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

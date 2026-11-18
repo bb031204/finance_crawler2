@@ -1,0 +1,161 @@
+{
+  "source_id": "a09031759dbabaf7bbaacf76",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_09_19_Regulation_Financial-Services_sec.json",
+      "sha256": "4dbfb1dfdb432dac850256264703e9645d88b7e402a1d7b427bc165f4022976d",
+      "filename": "2013_09_19_Regulation_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "b9b0011d8eafb258ec4810fc741b0d8155cfb246dd9dc7821b5f4ba6f76e2ac3",
+  "input_hash": "19cb12becd418a8a2bd7d687b97a8be746cf16c7c870d92df2fdda1b5b6ac624",
+  "matching_audit_hash": "752ec5a3de712804d26b9ba83a4a444cd3146db257d6d055661dad499bc48d61",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5b48c0de06602073dfe067f00498f70bf3507b2ac3ca9385b80f2c6052336578",
+    "raw_sha256": "3e24bc5da5b5fb9a5890ddc0ca5907b799bfdbbe3a35ed8d2940afa814ee1648",
+    "date_quote": "September 19, 2013",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a0ca64027d13c8a586f0917fc1d6f0a1a5d39e579e1a903f41eb11c086956d28",
+  "outputs": [
+    {
+      "path": "US\\2013_09_19_Regulation_Financial-Services_sec.json",
+      "sha256": "1f37f59ba9860be1cef408a0c1d8778da7d85bf5ada9545266824318982d39c7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-09-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:05.724591+00:00",
+    "fetched_at": "2026-11-10T14:03:14.214576+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.758666+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:01:25.341869+00:00",
+  "feature_available_at": "2026-11-12T15:16:35.489460+00:00",
+  "commit_verified_at": "2026-11-12T15:16:35.489460+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Regulatory changes affecting securities offerings and investor protection",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Securities Act of 1933"
+      },
+      {
+        "name": "Regulatory Compliance",
+        "basis": "inferred",
+        "quote": "Regulation D"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:35.501964+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:01:25.341869+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Regulatory changes affecting securities offerings and investor protection",
+      "securities": [
+        {
+          "name": "U.S. Securities and Exchange Commission",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Securities and Exchange Commission"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Securities Act of 1933"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "basis": "inferred",
+          "quote": "Regulation D"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Securities and Exchange Commission": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:01:25.366637+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:01:25.375913+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:01:25.357772+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses regulatory changes by the SEC regarding disqualification of 'bad actors' in Rule 506 offerings, including disclosure requirements and disqual",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:10:11.364307+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

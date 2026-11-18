@@ -1,0 +1,185 @@
+{
+  "source_id": "7a4b76102cce44dcb2b2357f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_11_22_Monetary-Policy_Finance_federalreserve.json",
+      "sha256": "88ee5346eabc4bc2d42ab0f8e2f69bdb3c14accbade83eb1ee7098837d9bc15c",
+      "filename": "2016_11_22_Monetary-Policy_Finance_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "818159043436a343b4a3601e2e58e4ffecc79dfdf871e2ebec513ea924fffdbf",
+  "input_hash": "d40a6fba97e429982963cf4b87822d946373b332fa829ae4023991f6b1724d3a",
+  "matching_audit_hash": "e3c23b07e2a41553020e4712c534583f7cbc5e0c36fa5bb5c85f6a91594544a0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "aa62a2e7e2067e816f61773b8747b5d44fdec111e7da96af28b28b833e9878c8",
+    "raw_sha256": "0cfa9675a6fe2f32d6ac9757e51c22939c1b965b96759edb631bcc15d4f3b428",
+    "date_quote": "November 22, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "64cc727e3adf421138c72bd19cc7d783562cc0ceada45ddd3e8b49e7c1f4d5de",
+  "outputs": [
+    {
+      "path": "US\\2016_11_22_Monetary-Policy_Finance_federalreserve.json",
+      "sha256": "9439053a2cadd07091c671c59d52bf04b8b170b40f3384f5ccda341837d95b2d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-11-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:36.766357+00:00",
+    "fetched_at": "2026-11-10T12:21:48.236406+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.945915+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:05:54.671086+00:00",
+  "feature_available_at": "2026-11-12T15:16:40.120967+00:00",
+  "commit_verified_at": "2026-11-12T15:16:40.120967+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Historical monetary policy tools and their impact on financial markets",
+    "securities": [
+      {
+        "name": "Federal Reserve Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank (FRB)"
+      },
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Monetary Policy",
+        "basis": "explicit",
+        "quote": "Monetary Policy"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "banks"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "money market"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Federal Reserve Bank": "organization",
+      "Federal Reserve": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:40.142497+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:05:54.671086+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Historical monetary policy tools and their impact on financial markets",
+      "securities": [
+        {
+          "name": "Federal Reserve Bank",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Bank (FRB)"
+        },
+        {
+          "name": "Federal Reserve",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Monetary Policy",
+          "basis": "explicit",
+          "quote": "Monetary Policy"
+        },
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "banks"
+        },
+        {
+          "name": "Finance",
+          "basis": "inferred",
+          "quote": "money market"
+        }
+      ],
+      "impact_scope": [
+        "industry"
+      ],
+      "entity_types": {
+        "Federal Reserve Bank": "organization",
+        "Federal Reserve": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:05:54.697193+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:05:54.706387+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:05:54.687185+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the Federal Reserve's monetary policy tools in the 1920s, including discount window operations, purchases of bankers' acceptances, and open市场",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:33:19.228908+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

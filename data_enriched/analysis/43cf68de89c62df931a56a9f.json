@@ -1,0 +1,106 @@
+{
+  "source_id": "43cf68de89c62df931a56a9f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_10_10_bankruptcy_retail_cnbc.json",
+      "sha256": "87c0195a821c05c00c29376551cb2147ebc5ea45ca7602d7730bec003051dba8",
+      "filename": "2018_10_10_bankruptcy_retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "1da5169fa711e0c9ac975ea5af3b05cf1399030d488723092406aecba9b395ac",
+  "input_hash": "1b3ea10b77ca70154cc3c9bcece987b72cba08e10bd7a2f7560a238dce4a7c3f",
+  "matching_audit_hash": "58c6681ce5f77b16f38d557e39a95122eec0fbeafbc5567c55e5c697f29d8eec",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4b8e8fcc352695ece3104269993fcdffe2460261ee351bf5eb6a0101aef1ce36",
+    "raw_sha256": "ef764f9110ff8ec0880cfbb1d9a852e70aa6eaa27d9314050734f28982a14839",
+    "date_quote": "article:published_time=2018-10-10T03:00:13+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "dfea698d4986d40bcb66ed49a6bd7512cf6ea275bfe061d97acc2ee8aea17ce2",
+  "outputs": [
+    {
+      "path": "US\\2018_10_10_bankruptcy_retail_cnbc.json",
+      "sha256": "7fd870db50c8b66d864205f8b0e9dc7de7420355c8d8601acc6cd31e9d219952"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-10-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:39.669939+00:00",
+    "fetched_at": "2026-11-10T13:53:35.679469+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.481508+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:46:22.864692+00:00",
+  "feature_available_at": "2026-11-12T14:46:22.873704+00:00",
+  "commit_verified_at": "2026-11-12T14:46:22.873704+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Sears' potential bankruptcy filing, its financial struggles, and the impact of its declining sales and failed restructuring efforts.",
+    "securities": [
+      {
+        "name": "Sears",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sears"
+      },
+      {
+        "name": "ESL Investments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ESL Investments"
+      },
+      {
+        "name": "M-III Partners",
+        "ticker": null,
+        "exchange": null,
+        "quote": "M-III Partners"
+      },
+      {
+        "name": "Lazard",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lazard"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Sears": "company",
+      "ESL Investments": "company",
+      "M-III Partners": "company",
+      "Lazard": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

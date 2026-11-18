@@ -1,0 +1,292 @@
+{
+  "source_id": "115654fff0a5c150e6c76ae4",
+  "status": "completed",
+  "source_record_hash": "74838d94519ad0dbe11fdaf1b8420c0071981c069b08762334cb844fec656ea5",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-18-231173-index.html",
+    "attempted_at": "2026-11-18T08:26:52.692538+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-18-231173-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312518231173/d566460d8k.htm",
+    "fetched_at": "2026-11-18T08:27:00.064887+00:00",
+    "source_body_hash": "20ead4f042082b91ba5b735873fc42d811623e413c23a86b546ea3eb1a1577e8",
+    "raw_sha256": "bb1748ff28b4e9b9a95f856d071f85e560c90ce7eb6cbf66cd17dfb77b174bd8",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312518231173/d566460d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "bb1748ff28b4e9b9a95f856d071f85e560c90ce7eb6cbf66cd17dfb77b174bd8",
+        "text_sha256": "20ead4f042082b91ba5b735873fc42d811623e413c23a86b546ea3eb1a1577e8",
+        "text_start": 0,
+        "text_end": 2990
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2018-07-30",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/115654fff0a5c150e6c76ae4.json",
+    "sha256": "09982717b486fba3a89e81622063cf704c2c42e5a9748b6b2d14549849bd314d",
+    "bundled_path": "legacy_audit/115654fff0a5c150e6c76ae4.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "604f90f287d549b0c6a49760bee0910e5ffa87fc4c9172bba65153cb3aac8a08",
+      "llm_inferred_at": "2026-11-18T08:27:07.874596+00:00",
+      "model_duration_seconds": 7.7801603,
+      "prompt_tokens": 2686,
+      "completion_tokens": 331,
+      "selection": [
+        {
+          "source_id": "115654fff0a5c150e6c76ae4",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "GEOSPACE TECHNOLOGIES CORPORATION (Exact name of registrant as specified in its charter) Commission File Number: 001-13601 Texas 76-0447780 (State or other jurisdiction of",
+              "rationale": "The article discusses a specific company, Geospace Technologies Corporation, and its acquisition of Quantum Technology Sciences, Inc. This is a company-specific event and does not indicate an industry or market-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "inferred",
+              "quote": "GEOSPACE TECHNOLOGIES CORPORATION (Exact name of registrant as specified in its charter) Commission File Number: 001-13601 Texas 76-0447780 (State or other jurisdiction of"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "2cf2a68d126600bfc222e2c5a282a229fab98bd8b89ac41078e88b62125c6e44",
+      "llm_inferred_at": "2026-11-18T08:27:17.433436+00:00",
+      "model_duration_seconds": 9.5510455,
+      "prompt_tokens": 2730,
+      "completion_tokens": 491,
+      "selection": [
+        {
+          "source_id": "115654fff0a5c150e6c76ae4",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Quantums operations will remain in Florida, operating as a wholly-owned subsidiary of the Company.",
+              "rationale": "The acquisition of Quantum Technology Sciences, Inc., a tactical security and surveillance systems solutions provider, indicates an industry-specific expansion within the security and surveillance sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "GEOSPACE TECHNOLOGIES CORPORATION (Exact name of registrant as specified in its charter) Commission File Number: 001-13601 Texas 76-0447780 (State or other jurisdiction of",
+              "rationale": "The company, Geospace Technologies Corporation, is directly involved in the acquisition of Quantum Technology Sciences, Inc., indicating a company-specific event.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:6a41bf6143c2f87e",
+              "name": "Computer Communications Equipment",
+              "basis": "explicit",
+              "quote": "Quantums operations will remain in Florida, operating as a wholly-owned subsidiary of the Company."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "GEOSPACE TECHNOLOGIES CORPORATION (Exact name of registrant as specified in its charter) Commission File Number: 001-13601 Texas 76-0447780 (State or other jurisdiction of"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:27:17.446289+00:00",
+  "audit": {
+    "source_id": "115654fff0a5c150e6c76ae4",
+    "url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-18-231173-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2018-07-30",
+    "date_quote": "SEC filing datePublished=2018-07-30",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "20ead4f042082b91ba5b735873fc42d811623e413c23a86b546ea3eb1a1577e8",
+    "raw_sha256": "bb1748ff28b4e9b9a95f856d071f85e560c90ce7eb6cbf66cd17dfb77b174bd8",
+    "first_seen_at": "2026-11-11T19:20:08.110391+00:00",
+    "fetched_at": "2026-11-17T04:03:34.489250+00:00",
+    "first_extracted_at": "2026-11-17T04:03:53.186399+00:00",
+    "extracted_at": "2026-11-18T08:27:17.435177+00:00",
+    "feature_available_at": "2026-11-18T08:27:17.446289+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      },
+      {
+        "name": "Quantum Technology Sciences, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Quantum Technology Sciences, Inc., a Florida-based tactical security and surveillance systems solutions provider"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "74838d94519ad0dbe11fdaf1b8420c0071981c069b08762334cb844fec656ea5",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2018_07_30_corporate-action_defense_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\6f95e269f51ba5342b71674583e1f55f1ad7e8553366c6282fdcba63f14110ab.json",
+      ".runtime\\simple\\model_cache\\77fdf69ba4aa7e3bbec471ab2b65299dfd1b23da8cfbfc958d023b59add4e1e9.json",
+      ".runtime\\simple\\model_cache\\ac682dac587cc41db9337557d59d8a6f034286af87856bcf55ecb09e37904b85.json",
+      ".runtime\\simple\\model_cache\\db999527c421594c7ca4f6a34cb0e669a93565ab4cbd8e8136bde85a9db58209.json",
+      ".runtime\\simple\\pages\\115654fff0a5c150e6c76ae4.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312518231173/d566460d8k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312518231173/d566460d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "143e5cd2e064c0597c53fddb226a0e9f4cd99fb01726d7c82b78f7446279b2e8",
+        "text_sha256": "20ead4f042082b91ba5b735873fc42d811623e413c23a86b546ea3eb1a1577e8",
+        "text_start": 0,
+        "text_end": 2990
+      }
+    ],
+    "sec_document_version": 3,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "21d7514db8942948a1de0a42725b28bc48a12c9db839dd299fa081086951d2a0",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-18-231173-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T08:27:17.433436+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "20ead4f042082b91ba5b735873fc42d811623e413c23a86b546ea3eb1a1577e8",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Quantum Technology Sciences, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Quantum Technology Sciences, Inc., a Florida-based tactical security and surveillance systems solutions provider",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "91203ec0a08a4d1ec7f59bbb736d0bdf0927c4e9bf472f7749e632e71b939fc2",
+    "commit_verified_at": "2026-11-17T04:03:53.266987+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-17T04:03:53.417565+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\115654fff0a5c150e6c76ae4.json",
+      ".runtime\\simple\\model_cache\\ac682dac587cc41db9337557d59d8a6f034286af87856bcf55ecb09e37904b85.json",
+      ".runtime\\simple\\model_cache\\db999527c421594c7ca4f6a34cb0e669a93565ab4cbd8e8136bde85a9db58209.json",
+      ".runtime\\simple\\model_cache\\77fdf69ba4aa7e3bbec471ab2b65299dfd1b23da8cfbfc958d023b59add4e1e9.json",
+      ".runtime\\simple\\model_cache\\6f95e269f51ba5342b71674583e1f55f1ad7e8553366c6282fdcba63f14110ab.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "GEOSPACE TECHNOLOGIES CORPORATION (Exact name of registrant as specified in its charter) Commission File Number: 001-13601 Texas 76-0447780 (State or other jurisdiction of",
+        "rationale": "The company, Geospace Technologies Corporation, is directly involved in the acquisition of Quantum Technology Sciences, Inc., indicating a company-specific event.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "GEOSPACE TECHNOLOGIES CORPORATION (Exact name of registrant as specified in its charter) Commission File Number: 001-13601 Texas 76-0447780 (State or other jurisdiction of",
+        "summary_evidence_quote": null
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "74838d94519ad0dbe11fdaf1b8420c0071981c069b08762334cb844fec656ea5",
+    "source_verification": "original_body_or_publication_revalidated",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "retrace_original",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/115654fff0a5c150e6c76ae4.json",
+      "sha256": "2fe7141551d8b3ac779414b09678dea1005a95baf8b19dbfad7f40335d14d67a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 24.76500000001397
+}

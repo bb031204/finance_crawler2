@@ -1,0 +1,102 @@
+{
+  "source_id": "fcc49725efa29ef0adbfa1f8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_27_Politics_Public-Policy_cnbc.json",
+      "sha256": "bff9c8f94ee489f408940c505fb994f1117f4cc50e83abd2eb603989aeb92e21",
+      "filename": "2021_02_27_Politics_Public-Policy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "68b81cd52895e95171b6684cbad1bcf4aa4d21390ad56f1f2c388860fe2b84ae",
+  "input_hash": "8f674b1d59d0a213413bcde1498ba3dad4475dd3d672802087d043085e14f69b",
+  "matching_audit_hash": "57c033cf48c74c983b1d40a3de9f6403afaa31aab000a897152c5f64e0a4979f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0019f7e886b7abd56e0245277c475784ca92feb41d904df433cf658628e826d3",
+    "raw_sha256": "463f5d9e1fbbf1d0449276a9d21db6286c5816c1e1c9b3d9f7e99113099c8e66",
+    "date_quote": "article:published_time=2021-02-27T13:22:48+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "4d7a5825b5487ff1bf8f9fb90c46119b8bc0e31613ce0517a63b207016ac61f1",
+  "outputs": [
+    {
+      "path": "US\\2021_02_27_Politics_Public-Policy_cnbc.json",
+      "sha256": "3e81a92c2356a58ff49ef15de82320a2786e5d04a085241d33dd48df384761f4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:14.502875+00:00",
+    "fetched_at": "2026-11-10T19:31:08.241876+00:00",
+    "feature_available_at": "2026-11-10T19:31:35.373402+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:54:52.866987+00:00",
+  "feature_available_at": "2026-11-12T14:54:52.876622+00:00",
+  "commit_verified_at": "2026-11-12T14:54:52.876622+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the American Rescue Plan, a significant financial relief package with provisions affecting various sectors and populations.",
+    "securities": [
+      {
+        "name": "House",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The House passed the $1.9 trillion American Rescue Plan"
+      },
+      {
+        "name": "Senate",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Senate will likely pass a different version of the bill"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "vaccine production and distribution"
+      },
+      {
+        "name": "Education",
+        "basis": "inferred",
+        "quote": "funding for schools"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "House": "organization",
+      "Senate": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

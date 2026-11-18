@@ -1,0 +1,290 @@
+{
+  "source_id": "3cd05b40d6d7dca0abb5e8e5",
+  "status": "completed",
+  "source_record_hash": "4e72d4b97eba2af8c54e00c326c8cbe221d01d1690b1fcb045ca51c193a45dac",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000623/0001000623-14-000023-index.html",
+    "attempted_at": "2026-11-18T12:21:54.872958+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "d1b0e8527d390c8dd52f8f9d41c0de5eb64b891bb1c9bfe8b959b05c4028847b"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3cd05b40d6d7dca0abb5e8e5.json",
+    "sha256": "d6e12b63f7161c899425c1cf509908c4976880dee49a791bf0d33180d1110389",
+    "bundled_path": "legacy_audit/3cd05b40d6d7dca0abb5e8e5.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "1f3f45aad73d84f18be8436b886f6c05638de5d64240c935d20a26d26953e7cf",
+      "llm_inferred_at": "2026-11-18T12:22:09.064651+00:00",
+      "model_duration_seconds": 9.145172,
+      "prompt_tokens": 1616,
+      "completion_tokens": 454,
+      "selection": [
+        {
+          "source_id": "3cd05b40d6d7dca0abb5e8e5",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this",
+              "rationale": "The article discusses a specific company, Schweitzer-Mauduit International, Inc., and its acquisition of DelStar, Inc., which is a company-specific event.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The audited consolidated financial statements of DelStar, Inc.",
+              "rationale": "The article discusses financial statements and filings, which are relevant to the financial services industry.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The audited consolidated financial statements of DelStar, Inc."
+            },
+            {
+              "industry_key": "SEC-SIC:9721",
+              "name": "INTERNATIONAL AFFAIRS",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "7a82b37abe5e8c1539bd56a6b4b5e729259545b9660d3b63d359570816ec8ede",
+      "llm_inferred_at": "2026-11-18T12:22:18.021417+00:00",
+      "model_duration_seconds": 8.95037,
+      "prompt_tokens": 1660,
+      "completion_tokens": 502,
+      "selection": [
+        {
+          "source_id": "3cd05b40d6d7dca0abb5e8e5",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this",
+              "rationale": "The article discusses a specific company, Schweitzer-Mauduit International, Inc., and its acquisition of DelStar, Inc., which is a company-specific event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:9721",
+              "name": "INTERNATIONAL AFFAIRS",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this"
+            },
+            {
+              "industry_key": "SEC-SIC:2761",
+              "name": "MANIFOLD BUSINESS FORMS",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this"
+            },
+            {
+              "industry_key": "SEC-SIC:3081",
+              "name": "UNSUPPORTED PLASTICS FILM & SHEET",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:22:18.032747+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d1b0e8527d390c8dd52f8f9d41c0de5eb64b891bb1c9bfe8b959b05c4028847b",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2014-02-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062314000023/form8-kdelstarproforma.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      },
+      {
+        "name": "DelStar, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DelStar, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:9721",
+        "name": "INTERNATIONAL AFFAIRS",
+        "basis": "inferred",
+        "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "9721",
+        "industry_name_standard": "INTERNATIONAL AFFAIRS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this"
+      },
+      {
+        "industry_key": "SEC-SIC:2761",
+        "name": "MANIFOLD BUSINESS FORMS",
+        "basis": "inferred",
+        "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2761",
+        "industry_name_standard": "MANIFOLD BUSINESS FORMS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3cd05b40d6d7dca0abb5e8e5",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_02_26_Financial-Statement-Amendment_Textiles-and-Apparel_sec.json",
+        "sha256": "738a7d4afbefbf9aebbe09dec6971c5a2b3114499dd9107286cda8195d7fae52",
+        "filename": "2014_02_26_Financial-Statement-Amendment_Textiles-and-Apparel_sec.json"
+      }
+    ],
+    "original_record_hash": "58538bf42104e4af15c9b31e48f6a324f3ef677b9b233d6efc6faa9a8af941bc",
+    "input_hash": "e993508cebd7c4c2e99812887fe53003eb9c9deca0eb2a6050438fbb4190ea5b",
+    "matching_audit_hash": "f1eac99296f0cd06fc4054308893ba6dbb01f95cb59d3ab99f1d3f8deebedcfd",
+    "legacy_security_evidence": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      },
+      {
+        "name": "DelStar, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DelStar, Inc."
+      }
+    ],
+    "record_hash": "4e72d4b97eba2af8c54e00c326c8cbe221d01d1690b1fcb045ca51c193a45dac",
+    "outputs": [
+      {
+        "path": "US\\2014_02_26_Financial-Statement-Amendment_Textiles-and-Apparel_sec.json",
+        "sha256": "92797b8b8c2c83f723b4d622d2adbd31e820d59c112eea646a59a6c2a0913ecc"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2014-02-26",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+      "fetched_at": "2026-11-10T23:50:44.121655+00:00",
+      "feature_available_at": "2026-11-11T10:12:17.072405+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:22:18.021417+00:00",
+    "feature_available_at": "2026-11-18T12:22:18.032747+00:00",
+    "commit_verified_at": "2026-11-12T13:52:50.105139+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this",
+        "rationale": "The article discusses a specific company, Schweitzer-Mauduit International, Inc., and its acquisition of DelStar, Inc., which is a company-specific event.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Schweitzer-Mauduit International, Inc. (the \"Company\" or \"SWM\") filed a Current Report on Form 8-K to report its acquisition of DelStar, Inc. (or \"DelStar\"). The purpose of this"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000623/0001000623-14-000023-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "4e72d4b97eba2af8c54e00c326c8cbe221d01d1690b1fcb045ca51c193a45dac",
+    "content_hash": "d1b0e8527d390c8dd52f8f9d41c0de5eb64b891bb1c9bfe8b959b05c4028847b",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:22:18.022777+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3cd05b40d6d7dca0abb5e8e5.json",
+      "sha256": "6e071c8c6c34f09f2aa9bba3a186a7ccaf46710f43823fc0510b58042ced7ef9",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 23.171999999991385
+}

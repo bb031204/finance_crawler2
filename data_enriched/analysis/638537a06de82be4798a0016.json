@@ -1,0 +1,92 @@
+{
+  "source_id": "638537a06de82be4798a0016",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_11_04_Health-Insurance_Healthcare_cnbc.json",
+      "sha256": "6db0a97861144296a0d200f2a4d07f407b04342cc4b67b0a8a50cdc706e14fc8",
+      "filename": "2016_11_04_Health-Insurance_Healthcare_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f99f93ec8ce5eda59803fa1bd66a0e4a496b3dbeedc111023d5f871d139211b6",
+  "input_hash": "f44e7cda517ee6ffa40341c80cb154d344fd9e7c8a0ad371067fee206abe2c62",
+  "matching_audit_hash": "22d579740018dc838593a5291543ce649e84efb65ad62842e5584d6689c15bd4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f0fc82850540c753dca34a90421628bd2a553b62413cf3533ad07e287d0bb9f4",
+    "raw_sha256": "f3894b0d9a52d0d5cc617b03170c46f294a1027ac374fa48e0ff3a1d61a19600",
+    "date_quote": "article:published_time=2016-11-04T20:40:32+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "8c89036108f9e7036e76eb9c4ad372cafa01b15343fd37359421603d61d8092b",
+  "outputs": [
+    {
+      "path": "US\\2016_11_04_Health-Insurance_Healthcare_cnbc.json",
+      "sha256": "79782daa5f5f9aa51fbea63d765d003aeca6155cb74ad87245da0a7d04b8af66"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-11-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:59.809239+00:00",
+    "fetched_at": "2026-11-10T11:39:22.891429+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.917543+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:33:08.146075+00:00",
+  "feature_available_at": "2026-11-12T14:33:08.155081+00:00",
+  "commit_verified_at": "2026-11-12T14:33:08.155081+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses consumer understanding of health insurance terms, which relates to industry knowledge gaps and market impact.",
+    "securities": [
+      {
+        "name": "PolicyGenius",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PolicyGenius"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Health Insurance",
+        "basis": "explicit",
+        "quote": "Health Insurance"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "PolicyGenius": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

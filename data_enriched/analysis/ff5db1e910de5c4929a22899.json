@@ -1,0 +1,129 @@
+{
+  "source_id": "ff5db1e910de5c4929a22899",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_07_18_Regulatory_Financial-Services_treasury.json",
+      "sha256": "8c83fd291724c4313de5f75c0132a489a9a2f10ed9da54694e3965e56304a176",
+      "filename": "2012_07_18_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "0a1df1dbd0f8075af0a94f375fa56135499319daed6966339710e26f0b8a8cbe",
+  "input_hash": "cb91c3f8d7eb5f4a65dc23efcc768134028d013531102e347bfd0d66d052ce42",
+  "matching_audit_hash": "6b51edad6be632f037d654010a5dcca5da9d2ac7a8091a2a009127457fc7333e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a81bf744f135a174e549afe980967806f57db8526cc3703c33b695d103c333c3",
+    "raw_sha256": "3371bd8c688b03fdf7554e9e4346df5c37b10a0288f002879202913615d3f392",
+    "date_quote": "July 18, 2012 (Archived Content) Action Names Eight Financial Market Utilities as Systemically Important, Subjects Firms to Heightened Risk Management Standards Council Submits",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9c486a419d6ddd0b26e9749e65e2c96dc194dc133a0d84419dcab4b3453f3b7e",
+  "outputs": [
+    {
+      "path": "US\\2012_07_18_Regulatory_Financial-Services_treasury.json",
+      "sha256": "d30d481969d7c09dc4900562b457ce48d6ec574f19d807870b564c47cf363bb3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-07-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:15.523963+00:00",
+    "fetched_at": "2026-11-10T22:11:09.662673+00:00",
+    "feature_available_at": "2026-11-11T09:21:00.097207+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:58:13.463615+00:00",
+  "feature_available_at": "2026-11-12T13:58:13.472810+00:00",
+  "commit_verified_at": "2026-11-12T13:58:13.472810+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the designation of financial market utilities as systemically important under Dodd-Frank, including entities like The Clearing House, CLS,",
+    "securities": [
+      {
+        "name": "Financial Stability Oversight Council",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Financial Stability Oversight Council"
+      },
+      {
+        "name": "The Clearing House Payments Company, L.L.C.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Clearing House Payments Company, L.L.C."
+      },
+      {
+        "name": "CLS Bank International",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CLS Bank International"
+      },
+      {
+        "name": "Chicago Mercantile Exchange, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chicago Mercantile Exchange, Inc."
+      },
+      {
+        "name": "The Depository Trust Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Depository Trust Company"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial market utilities",
+        "basis": "explicit",
+        "quote": "financial market utilities"
+      },
+      {
+        "name": "Financial services",
+        "basis": "inferred",
+        "quote": "systemically important"
+      },
+      {
+        "name": "Regulatory compliance",
+        "basis": "inferred",
+        "quote": "Dodd-Frank Wall Street Reform"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Financial Stability Oversight Council": "organization",
+      "The Clearing House Payments Company, L.L.C.": "company",
+      "CLS Bank International": "company",
+      "Chicago Mercantile Exchange, Inc.": "company",
+      "The Depository Trust Company": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

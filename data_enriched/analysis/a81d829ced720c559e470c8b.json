@@ -1,0 +1,205 @@
+{
+  "source_id": "a81d829ced720c559e470c8b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_02_06_Politics_Government_treasury.json",
+      "sha256": "22237b0773bf7dd867e7b54a7c31a834800d11da407d238f7950a17b00426750",
+      "filename": "2012_02_06_Politics_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "ffe004416e379ef4d0c5f31ec8885ccb6e66491be80d7649144bbf6ec28d3e3f",
+  "input_hash": "56d23d7118584148b8ed0ea4a603a3fb4e1a2cd2b09bb030e26a3ed1700eb382",
+  "matching_audit_hash": "67270493a45876ae81cad252e63fdb2cf47e9cf8aa68f9557212b981a7001855",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8e4869f266d1968e4187c1e50fecccc4aaac0ef21a80351d0872296483da1289",
+    "raw_sha256": "e80ffea98693440741ac197edac93228ebe65068b54f940dff98ddd139ec0d8b",
+    "date_quote": "February 6, 2012 (Archived Content) WASHINGTON –Yesterday, President Obama signed Executive Order (E.O.) 13599",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a381547905ce8bf44405bcf5152971b5da695f08cf807f5bb0f7bfac1c617fbc",
+  "outputs": [
+    {
+      "path": "US\\2012_02_06_Politics_Government_treasury.json",
+      "sha256": "12b75a96875b5f0e933de0fa00e8ca67d800001b9d808e44e20b8910a9fadbc8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-02-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:15.523963+00:00",
+    "fetched_at": "2026-11-10T22:14:28.615828+00:00",
+    "feature_available_at": "2026-11-10T22:14:56.867007+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:58:27.121433+00:00",
+  "feature_available_at": "2026-11-12T15:16:32.892429+00:00",
+  "commit_verified_at": "2026-11-12T15:16:32.892429+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Sanctions impact financial institutions and international trade.",
+    "securities": [
+      {
+        "name": "Central Bank of Iran",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Central Bank of Iran"
+      },
+      {
+        "name": "Government of Iran",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Government of Iran"
+      },
+      {
+        "name": "Office of Foreign Assets Control",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Office of Foreign Assets Control’s (OFAC)"
+      },
+      {
+        "name": "Treasury Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Department’s Office of Foreign Assets Control’s (OFAC)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial institutions"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "Central Bank of Iran"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Central Bank of Iran": "organization",
+      "Government of Iran": "organization",
+      "Office of Foreign Assets Control": "organization",
+      "Treasury Department": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:32.909342+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:58:27.121433+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Sanctions impact financial institutions and international trade.",
+      "securities": [
+        {
+          "name": "Central Bank of Iran",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Central Bank of Iran"
+        },
+        {
+          "name": "Government of Iran",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Government of Iran"
+        },
+        {
+          "name": "Office of Foreign Assets Control",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Office of Foreign Assets Control’s (OFAC)"
+        },
+        {
+          "name": "Treasury Department",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Treasury Department’s Office of Foreign Assets Control’s (OFAC)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "financial institutions"
+        },
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "Central Bank of Iran"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Central Bank of Iran": "organization",
+        "Government of Iran": "organization",
+        "Office of Foreign Assets Control": "organization",
+        "Treasury Department": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:58:27.146257+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:58:27.155510+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:58:27.137251+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses U.S. sanctions against Iran, including the Central Bank of Iran and other Iranian financial institutions, under Executive Order 13599. It is ",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:55:32.320672+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

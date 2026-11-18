@@ -1,0 +1,119 @@
+{
+  "source_id": "115feb1743ccca6bf03c59b1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_03_17_stock_Materials_sec.json",
+      "sha256": "022a652735c1f59a9c8bc71d97554961f88219c6a6721efb67d000f1582723de",
+      "filename": "2020_03_17_stock_Materials_sec.json"
+    }
+  ],
+  "original_record_hash": "1c818ef0649c490e8a0c4ae3808d326c4ceb77a64a50d149143643d79af6033e",
+  "input_hash": "6b57912c92ba635c96842c79af03231a2347d5a02be865e1629631704e29a5c9",
+  "matching_audit_hash": "fa002fb62ae2bdef18564e55f206a17deb9525a9043404042cea1397de2fdc2b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "966b201bb12b2850a46e5fb2ab506b52b3302a563380a2391359c6d1acaeef31",
+    "raw_sha256": "3253facce6aab98faae30b74510c3423902ddcf9514f17cce74f2e2f57a86484",
+    "date_quote": "SEC filing datePublished=2020-03-17",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062320000055/tekratetrientclose8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    },
+    {
+      "name": "AMS",
+      "ticker": null,
+      "exchange": null,
+      "quote": "AMS"
+    }
+  ],
+  "record_hash": "0968be5be631ed76fe4e1501b4a1b77458dbac442454bc12847fd1c51fa25be8",
+  "outputs": [
+    {
+      "path": "US\\2020_03_17_stock_Materials_sec.json",
+      "sha256": "36c0b3946e625440da87dbf40cd496f65a3a09627c0c3dcbf94f6efdbc9b2b35"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-03-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.200963+00:00",
+    "fetched_at": "2026-11-11T15:02:51.216340+00:00",
+    "feature_available_at": "2026-11-11T15:04:28.438445+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:32.937740+00:00",
+  "commit_verified_at": "2026-11-12T13:53:32.937740+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      },
+      {
+        "name": "AMS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "AMS"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Materials",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Paper and Forest Products",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Tobacco",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

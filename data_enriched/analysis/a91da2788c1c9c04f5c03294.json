@@ -1,0 +1,97 @@
+{
+  "source_id": "a91da2788c1c9c04f5c03294",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_11_13_Finance_Home-Improvement_cnbc.json",
+      "sha256": "96abc0e6326b6cd0ad15183225e67c2855c1474ae407be9d20ebcb69e35bff29",
+      "filename": "2018_11_13_Finance_Home-Improvement_cnbc.json"
+    }
+  ],
+  "original_record_hash": "31086de2c97ad1998141ce3c6d44cbbc2e6c38178b9d965ca5b4c5b717cdfb5f",
+  "input_hash": "a80db06931efcbe13154bc87c2c99db9d19cb769052884847f83a5353fa9a7f4",
+  "matching_audit_hash": "facb0bf45c888b7c7c5837ec44ab1f7bfb1d96a877f49b955474d67501744f44",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "042d71998c28db4610a3460341d617d0864810c25ec4299ef6d5139ecbae7317",
+    "raw_sha256": "4b444533fe838d80cfa217f8d893e2f19b3cc81b7abd612f41aa48d79dcdb0b3",
+    "date_quote": "article:published_time=2018-11-13T10:28:25+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Home Depot",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Home Depot"
+    }
+  ],
+  "record_hash": "6593eba67e5e9c2eb691f817979ae8f3f419cec84bda74eda51340c1763bd583",
+  "outputs": [
+    {
+      "path": "US\\2018_11_13_Finance_Home-Improvement_cnbc.json",
+      "sha256": "367a674f7cde6c00e6c6a9378150d45d1cc835ba2eb6867db9f06b225c011fd7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-11-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:03.622322+00:00",
+    "fetched_at": "2026-11-10T20:02:32.619366+00:00",
+    "feature_available_at": "2026-11-10T20:02:58.000139+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:24.116917+00:00",
+  "commit_verified_at": "2026-11-12T13:53:24.116917+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Home Depot",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Home Depot"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Construction & Home Improvement",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

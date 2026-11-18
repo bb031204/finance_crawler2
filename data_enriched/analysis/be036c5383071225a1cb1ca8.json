@@ -1,0 +1,150 @@
+{
+  "source_id": "be036c5383071225a1cb1ca8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_05_18_Policy_Agriculture_treasury.json",
+      "sha256": "b079d974008b52ce0854ded39a9151c22ec9df6a12ec62168d3104460b321f24",
+      "filename": "2022_05_18_Policy_Agriculture_treasury.json"
+    }
+  ],
+  "original_record_hash": "3248a19333c687e0d1e3eac9fb50418b7e759d2fa51b64a97f89b1141086a884",
+  "input_hash": "a44d91e42a478f5fc98b2dcb9330ad0f9856ce6fc63db176651986c75a9fc310",
+  "matching_audit_hash": "711b1cbda6dc6f98a770506d06e3e2d387c76881898e4b7e39020ea97a196123",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "597135eef9d8f12889e6c8903b71f430b5b1416338c4d47ffda5f54339a35f5e",
+    "raw_sha256": "61b9f816043a230e3c62dd92eed49cb2a1e7b74e9a402dc9f7510d93097b876b",
+    "date_quote": "May 18, 2022",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "22c38542e91a751a821aa311cecc661a36b172606092dd7e1f405906f60b68b7",
+  "outputs": [
+    {
+      "path": "US\\2022_05_18_Policy_Agriculture_treasury.json",
+      "sha256": "7ff9d3d4f37c0ed5468afc2680c10556718a39fcc7a029b58a0decbcd512fb34"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-05-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:50.621616+00:00",
+    "fetched_at": "2026-11-10T16:44:08.398193+00:00",
+    "feature_available_at": "2026-11-10T17:53:26.046807+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:57:59.815247+00:00",
+  "feature_available_at": "2026-11-12T14:57:59.844332+00:00",
+  "commit_verified_at": "2026-11-12T14:57:59.844332+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the IFI Action Plan to address food insecurity, including the roles of various international financial institutions (IFIs) and their efforts.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Asian Development Bank (ADB)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asian Development Bank (ADB)"
+      },
+      {
+        "name": "African Development Bank (AfDB)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "African Development Bank (AfDB)"
+      },
+      {
+        "name": "European Bank for Reconstruction and Development (EBRD)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "European Bank for Reconstruction and Development (EBRD)"
+      },
+      {
+        "name": "International Fund for Agricultural Development (IFAD)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "International Fund for Agricultural Development (IFAD)"
+      },
+      {
+        "name": "Inter-American Development Bank (IDB)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Inter-American Development Bank (IDB)"
+      },
+      {
+        "name": "International Monetary Fund (IMF)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "International Monetary Fund (IMF)"
+      },
+      {
+        "name": "World Bank Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "World Bank Group"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Agriculture",
+        "basis": "explicit",
+        "quote": "food security and agriculture"
+      },
+      {
+        "name": "International Development",
+        "basis": "inferred",
+        "quote": "IFI Action Plan to Address Food Insecurity"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "financing, policy engagement, technical assistance, and knowledge work"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Asian Development Bank (ADB)": "organization",
+      "African Development Bank (AfDB)": "organization",
+      "European Bank for Reconstruction and Development (EBRD)": "organization",
+      "International Fund for Agricultural Development (IFAD)": "organization",
+      "Inter-American Development Bank (IDB)": "organization",
+      "International Monetary Fund (IMF)": "organization",
+      "World Bank Group": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "5e388c5d39129c12e47df1f1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_12_09_Collectible-Cars_Automotive_cnbc.json",
+      "sha256": "a25c7e36a4cf9d6d3b3626f2c475cba368baabc85659925816581914bd5b2134",
+      "filename": "2013_12_09_Collectible-Cars_Automotive_cnbc.json"
+    }
+  ],
+  "original_record_hash": "1c8ed728ba34bade91c478db9c810b4f12a22966767257d673910142d4401b6a",
+  "input_hash": "caafb075cd9d3cf09a20ed38229ace31292bc3506c74a0ac1314b9882c488d35",
+  "matching_audit_hash": "53f4698c40327c092af6db5f4729b685446f0ed811332397616431bd6156a7f5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "61f5cc9d2cc0965b96505de8d0f923d1fc7231d63561ef22f3958217cb17d1fc",
+    "raw_sha256": "bccf56d5e3312d001be2cf3213b4888b95a7e2310fb2e151ac84b27a33c020b2",
+    "date_quote": "article:published_time=2013-12-09T16:46:55+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Hagerty Insurance",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Hagerty Insurance, the largest insurer of collectible cars."
+    }
+  ],
+  "record_hash": "2654b18abc0e931fde383911f7c055668e11138b64fbe6f1b2b7fe1a06d8c4d1",
+  "outputs": [
+    {
+      "path": "US\\2013_12_09_Collectible-Cars_Automotive_cnbc.json",
+      "sha256": "0309eaabbb6a7717906a7c94706e08ecea145eb4947e02e2cd2a78c91f0bfbc9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-12-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:39:56.646594+00:00",
+    "fetched_at": "2026-11-10T21:21:22.864791+00:00",
+    "feature_available_at": "2026-11-10T21:21:57.545448+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:48.033314+00:00",
+  "commit_verified_at": "2026-11-12T13:52:48.033314+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Hagerty Insurance",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hagerty Insurance, the largest insurer of collectible cars."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

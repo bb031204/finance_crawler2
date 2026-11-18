@@ -1,0 +1,95 @@
+{
+  "source_id": "ecea2d477f5ac3041caa3c37",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_05_11_Mergers-&-Acquisitions_Semiconductor-Equipment_yahoo.json",
+      "sha256": "c9f7b42d5282064e54026dc103676981c57cce01a44b1a40e7cff446c6a7c153",
+      "filename": "2016_05_11_Mergers-&-Acquisitions_Semiconductor-Equipment_yahoo.json"
+    }
+  ],
+  "original_record_hash": "3ceb0a9022355f5d44d3fbd5d9573e1123bf50a1e052169c9ca1463e197ae0e9",
+  "input_hash": "f44bb4ee46d98a11d7ed0dd6570fab13a3da9456d4a73ae31e05ed7702c2e912",
+  "matching_audit_hash": "61d81ba1be6c25fefdb4931009929626bf0f1ec85d32bde670777dd8f23559e5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2cae9de054fc599ddaf28db1fc562b3eb0f7909f74b793d8ad64d08559ad12a8",
+    "raw_sha256": "67ad6516712f2efb8f89df64f0a4ecd3144d5e652caa5409a80b775fc894ea48",
+    "date_quote": "Marketwired - May 11, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Mattson Technology, Inc.",
+      "ticker": "MTSN",
+      "exchange": null,
+      "quote": "Mattson Technology, Inc. (MTSN), a global semiconductor wafer processing equipment provider"
+    }
+  ],
+  "record_hash": "846756548797bc8f3b94a8d0f7b47937ee9cc587298ac3c02345f9c0714cd083",
+  "outputs": [
+    {
+      "path": "US\\2016_05_11_Mergers-&-Acquisitions_Semiconductor-Equipment_yahoo.json",
+      "sha256": "26929f1f3cbe008eb22a0d327697a43309afae73a2cf593c47eb37be11d5240c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-05-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:29.874867+00:00",
+    "fetched_at": "2026-11-11T03:19:51.363517+00:00",
+    "feature_available_at": "2026-11-11T03:19:59.420226+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:08.573950+00:00",
+  "commit_verified_at": "2026-11-12T13:53:08.573950+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Mattson Technology, Inc.",
+        "ticker": "MTSN",
+        "exchange": null,
+        "quote": "Mattson Technology, Inc. (MTSN), a global semiconductor wafer processing equipment provider"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor Equipment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

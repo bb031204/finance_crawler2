@@ -1,0 +1,109 @@
+{
+  "source_id": "640a295d3cebad3baaa29539",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_05_22_Finance_Retail_cnbc.json",
+      "sha256": "2898c4d7ce4fc6828100552056d63ce19fda5c47d7230084a941a2942424883a",
+      "filename": "2019_05_22_Finance_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f1fda513de585828ecd5f1c7538069b256bccf789cb6204e241fab9a9d2eadcd",
+  "input_hash": "4341a599360ec3e47cda4906b6c7775c70ae238b37c6ac771d8337f9b4cf73bc",
+  "matching_audit_hash": "692c8718adc04c26a04747b9904e4f8d007b757aecb86ed057b0a01fd413b50e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dd8593838f6d55c225e3497eabc57c9b7f83803bbf4e24d1f40ac69fe4a2ef5c",
+    "raw_sha256": "4d4f06f1f0125eaef518a11c5a2e1ccdb60f35cbc2938ce5962ae40854eb8e89",
+    "date_quote": "article:published_time=2019-05-22T09:36:20+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Target",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Target"
+    },
+    {
+      "name": "Walmart",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Walmart shares are up about 8.5% so far this year"
+    }
+  ],
+  "record_hash": "8e4577465f56522e22bb4e71cbf8fef043acd44d0d4863a54c9184c45cfb511a",
+  "outputs": [
+    {
+      "path": "US\\2019_05_22_Finance_Retail_cnbc.json",
+      "sha256": "2eb04e28e58dd6907de7d072c6f8ded092b3a6c5974d6010ca7555d130057647"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-05-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:08:58.633370+00:00",
+    "fetched_at": "2026-11-11T02:06:36.137035+00:00",
+    "feature_available_at": "2026-11-11T02:07:07.674581+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:27.953797+00:00",
+  "commit_verified_at": "2026-11-12T13:53:27.953797+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Target",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Target"
+      },
+      {
+        "name": "Walmart",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Walmart shares are up about 8.5% so far this year"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

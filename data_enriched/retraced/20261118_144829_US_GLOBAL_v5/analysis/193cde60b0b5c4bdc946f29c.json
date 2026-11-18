@@ -1,0 +1,602 @@
+{
+  "source_id": "193cde60b0b5c4bdc946f29c",
+  "status": "completed",
+  "source_record_hash": "3e22b87c21dc782ac1b54f7c08e12ce007eb4f40003c51dade4e3962bb9db646",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2012/10/30/gigoptix-reports-record-third-quarter-fiscal-2012-financial-results.html",
+    "attempted_at": "2026-11-18T09:08:52.859777+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2012/10/30/gigoptix-reports-record-third-quarter-fiscal-2012-financial-results.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T09:09:04.903494+00:00",
+    "source_body_hash": "1abe6589f12476ccdcd674c50cd3025e8ef802c2b352fa546dbc91f45f048bcf",
+    "raw_sha256": "0f68aed7e7bbd1a65d0c841f55636b0eaea94a29e43824c010731bf1a75b8e7d",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "GigOptix Reports Record Third Quarter Fiscal 2012 Financial Results",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2012-10-30T20:05:00+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/193cde60b0b5c4bdc946f29c.json",
+    "sha256": "01f6944bd4e9191c2697460e6de04334929efa5a67ede02f742ebce8aa5d82ad",
+    "bundled_path": "legacy_audit/193cde60b0b5c4bdc946f29c.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4bec917372e7c348a4e14d5ae52a1c1a836938df3be813e696e133bb2fd72bfc",
+      "llm_inferred_at": "2026-11-18T09:09:30.525949+00:00",
+      "model_duration_seconds": 25.5962398,
+      "prompt_tokens": 3845,
+      "completion_tokens": 1264,
+      "selection": [
+        {
+          "source_id": "193cde60b0b5c4bdc946f29c",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We",
+              "rationale": "The financial results and growth in specific product lines are directly tied to the company's performance and operations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "GigOptix is continuing to move the case towards a trial on its claims against the defendants.",
+              "rationale": "The litigation against M/A-Com Technology Solutions, Inc. (Optomai, Inc.) and the parent of Optomai, M/A-COM Technology Solutions, Inc. indicates a broader industry issue related to trade secrets and intellectual property.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "market",
+              "quote": "The conference call replay will be available beginning two hours after the call until midnight Eastern Time on November 6, 2012.",
+              "rationale": "The financial results and outlook are relevant to the broader US equity market, as they are reported to investors and affect market perceptions.",
+              "confidence": 0.75
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "This compares with Adjusted EBITDA of $289,000 in the third quarter of fiscal 2011, and Adjusted EBITDA of $1.2 million in the second quarter of fiscal 2012.",
+              "rationale": "The financial results and Adjusted EBITDA figures are relevant to the broader US equity market, as they are reported to investors and affect market perceptions.",
+              "confidence": 0.75
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:1ee47860ab70eb6f",
+              "name": "Electronic Components",
+              "basis": "explicit",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            },
+            {
+              "industry_key": "TRSR:7664f68f90787500",
+              "name": "Telecommunications Equipment",
+              "basis": "explicit",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:1ee47860ab70eb6f",
+              "industry_scope_quote": "streaming over the network and address emerging high-growth opportunities in the communications, industrial, defense and avionics industries. GigOptix offers a unique broad",
+              "industry_name_original": "Electronic Components",
+              "mechanism": "GigOptix's products are used in various industries, including communications, industrial, defense, and avionics, which are part of the broader electronic components industry.",
+              "confidence": 0.85,
+              "quote": "GigOptix is continuing to move the case towards a trial on its claims against the defendants."
+            },
+            {
+              "industry_key": "TRSR:7664f68f90787500",
+              "industry_scope_quote": "streaming over the network and address emerging high-growth opportunities in the communications, industrial, defense and avionics industries. GigOptix offers a unique broad",
+              "industry_name_original": "Telecommunications Equipment",
+              "mechanism": "GigOptix's products are used in telecommunications equipment, which is a key sector for high-speed data transmission.",
+              "confidence": 0.85,
+              "quote": "GigOptix is continuing to move the case towards a trial on its claims against the defendants."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "streaming over the network and address emerging high-growth opportunities in the communications, industrial, defense and avionics industries. GigOptix offers a unique broad",
+              "industry_name_original": "Business Services",
+              "mechanism": "GigOptix's products are used in various business services, including communications, industrial, defense, and avionics, which are part of the broader business services industry.",
+              "confidence": 0.85,
+              "quote": "GigOptix is continuing to move the case towards a trial on its claims against the defendants."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "c1686bec1a9a6e8fd121fcf126df09e5f58de0b32b2b8a2be5f11694fb4a85d2",
+      "llm_inferred_at": "2026-11-18T09:09:55.252502+00:00",
+      "model_duration_seconds": 24.7031244,
+      "prompt_tokens": 3889,
+      "completion_tokens": 1296,
+      "selection": [
+        {
+          "source_id": "193cde60b0b5c4bdc946f29c",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We",
+              "rationale": "The financial results and growth in specific product lines are directly tied to GigOptix's operations and performance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "GigOptix is continuing to move the case towards a trial on its claims against the defendants.",
+              "rationale": "The litigation against M/A-Com Technology Solutions, Inc. (Optomai, Inc.) is part of the broader semiconductor industry, as it involves trade secrets and intellectual property.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "market",
+              "quote": "The conference call replay will be available beginning two hours after the call until midnight Eastern Time on November 6, 2012.",
+              "rationale": "The financial results and outlook are relevant to the broader US equity market, as they are reported to investors and affect market perceptions.",
+              "confidence": 0.75
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "This compares with Adjusted EBITDA of $289,000 in the third quarter of fiscal 2011, and Adjusted EBITDA of $1.2 million in the second quarter of fiscal 2012.",
+              "rationale": "The financial results and Adjusted EBITDA figures are relevant to the broader US equity market, as they are reported to investors and affect market perceptions.",
+              "confidence": 0.75
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:1ee47860ab70eb6f",
+              "name": "Electronic Components",
+              "basis": "explicit",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            },
+            {
+              "industry_key": "TRSR:7664f68f90787500",
+              "name": "Telecommunications Equipment",
+              "basis": "explicit",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "name": "Auto Parts:O.E.M.",
+              "basis": "explicit",
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:1ee47860ab70eb6f",
+              "industry_scope_quote": "streaming over the network and address emerging high-growth opportunities in the communications, industrial, defense and avionics industries. GigOptix offers a unique broad",
+              "industry_name_original": "Electronic Components",
+              "mechanism": "GigOptix's products are used in high-speed information streaming, which is a key application for electronic components.",
+              "confidence": 0.85,
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            },
+            {
+              "industry_key": "TRSR:7664f68f90787500",
+              "industry_scope_quote": "streaming over the network and address emerging high-growth opportunities in the communications, industrial, defense and avionics industries. GigOptix offers a unique broad",
+              "industry_name_original": "Telecommunications Equipment",
+              "mechanism": "GigOptix's products are used in high-speed information streaming, which is a key application for telecommunications equipment.",
+              "confidence": 0.85,
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "industry_scope_quote": "streaming over the network and address emerging high-growth opportunities in the communications, industrial, defense and avionics industries. GigOptix offers a unique broad",
+              "industry_name_original": "Auto Parts:O.E.M.",
+              "mechanism": "GigOptix's products are used in high-speed information streaming, which is a key application for auto parts.",
+              "confidence": 0.85,
+              "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a777cd2c56fcf084266cb080758acd60f00a46ce16c5520550d12e77692dce10",
+      "llm_inferred_at": "2026-11-18T09:10:07.688293+00:00",
+      "model_duration_seconds": 12.4137411,
+      "prompt_tokens": 4871,
+      "completion_tokens": 524,
+      "selection": [
+        {
+          "source_id": "193cde60b0b5c4bdc946f29c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand",
+              "rationale": "The text discusses industry-wide trends and fluctuations, which are indicative of an industry impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "These risks include, but are not limited to: the ability to extend product offerings into new areas or products, the ability to commercialize licensed technology, unexpected",
+              "rationale": "The text is discussing the company's specific risks and capabilities, which are company-specific.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "inferred",
+              "quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "industry_scope_quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand",
+              "industry_name_original": "Information Technology",
+              "mechanism": "Industry-wide trends and fluctuations are mentioned, which can affect the entire sector.",
+              "confidence": 0.95,
+              "quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "ab80cc169437f5b49918ea22d8448cae0fe42d395b828c2063fb0bda3ac1b6fb",
+      "llm_inferred_at": "2026-11-18T09:10:18.403552+00:00",
+      "model_duration_seconds": 10.7023574,
+      "prompt_tokens": 4915,
+      "completion_tokens": 528,
+      "selection": [
+        {
+          "source_id": "193cde60b0b5c4bdc946f29c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand",
+              "rationale": "The text discusses industry-wide trends and fluctuations, which are indicative of an industry impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "These risks include, but are not limited to: the ability to extend product offerings into new areas or products, the ability to commercialize licensed technology, unexpected",
+              "rationale": "The text is discussing the company's specific risks and capabilities, which are company-specific.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "inferred",
+              "quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "industry_scope_quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand",
+              "industry_name_original": "Information Technology",
+              "mechanism": "Industry-wide trends and fluctuations are mentioned, which can affect the entire sector.",
+              "confidence": 0.95,
+              "quote": "that deter the full documentation and \"bring to market\" plan for products that were developed this year and last year, trends and fluctuations in the industry, changes in demand"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "45f69a0555f8e67f189301d351bb401fe43be63dd33efc669727dc6949729733",
+      "llm_inferred_at": "2026-11-18T09:10:32.854128+00:00",
+      "model_duration_seconds": 14.4286328,
+      "prompt_tokens": 3028,
+      "completion_tokens": 706,
+      "selection": [
+        {
+          "source_id": "193cde60b0b5c4bdc946f29c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+              "rationale": "The article provides detailed financial information for GigOptix, Inc., which is a company in the communications and technology sector. The financial data includes cost of revenue, gross profit, operating expenses, and net loss, which are typical for companies in the technology and communications服务业",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+              "rationale": "The article is specifically about GigOptix, Inc., a company that provides communication services and equipment. The financial data is directly related to the company's operations and performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4812",
+              "name": "RADIOTELEPHONE COMMUNICATIONS",
+              "basis": "explicit",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012"
+            },
+            {
+              "industry_key": "SEC-SIC:3669",
+              "name": "COMMUNICATIONS EQUIPMENT, NEC",
+              "basis": "explicit",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "67381d380509bee355f5281be857de0b6bc2afb7ddc6c2232014848360c0ce6a",
+      "llm_inferred_at": "2026-11-18T09:10:45.672423+00:00",
+      "model_duration_seconds": 12.8090205,
+      "prompt_tokens": 3072,
+      "completion_tokens": 685,
+      "selection": [
+        {
+          "source_id": "193cde60b0b5c4bdc946f29c",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+              "rationale": "The financial information provided is related to GigOptix, Inc., which is a company in the communications and technology sector. The reconciliation of GAAP to non-GAAP financial information indicates the company's financial performance and operations, which are relevant to its industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+              "rationale": "The financial information provided is directly related to GigOptix, Inc., indicating the company's financial performance and operations.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4812",
+              "name": "RADIOTELEPHONE COMMUNICATIONS",
+              "basis": "explicit",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012"
+            },
+            {
+              "industry_key": "SEC-SIC:3669",
+              "name": "COMMUNICATIONS EQUIPMENT, NEC",
+              "basis": "explicit",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T09:10:45.690431+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1abe6589f12476ccdcd674c50cd3025e8ef802c2b352fa546dbc91f45f048bcf",
+    "raw_sha256": "0f68aed7e7bbd1a65d0c841f55636b0eaea94a29e43824c010731bf1a75b8e7d",
+    "date_quote": "article:published_time=2012-10-30T20:05:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "GigOptix, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GigOptix, Inc."
+      },
+      {
+        "name": "GigOptix",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GigOptix"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "222a36f3f602dee0",
+        "industry_name_standard": "Information Technology",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "193cde60b0b5c4bdc946f29c",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_10_30_Financial_Technology_cnbc.json",
+        "sha256": "b366b0de6e735a45c3d6a0fcccde765c53450e607a14a7ae5a057b8c1e362555",
+        "filename": "2012_10_30_Financial_Technology_cnbc.json"
+      }
+    ],
+    "original_record_hash": "d2d0061de1acc91926a6c93e9958ca1c15ec64d9a0448a88c7015ccb3f4253c1",
+    "input_hash": "f348d551580ed3b994b50ce2055ffba15067c89d48b9d6724c2461f61b2e0dbe",
+    "matching_audit_hash": "396d1d21d03a90861692c73dd044b1b684a552a23697683841e84982b5a7f9a3",
+    "legacy_security_evidence": [
+      {
+        "name": "GigOptix, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GigOptix, Inc."
+      },
+      {
+        "name": "GigOptix",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GigOptix"
+      }
+    ],
+    "record_hash": "3e22b87c21dc782ac1b54f7c08e12ce007eb4f40003c51dade4e3962bb9db646",
+    "outputs": [
+      {
+        "path": "US\\2012_10_30_Financial_Technology_cnbc.json",
+        "sha256": "4ffdaf0d4e8f34126866b5e781a374ead0b89072ccb562596c8e6abce2b67e10"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2012-10-30",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:26:23.543575+00:00",
+      "fetched_at": "2026-11-11T02:20:11.136774+00:00",
+      "feature_available_at": "2026-11-11T02:21:56.414878+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T09:10:45.672423+00:00",
+    "feature_available_at": "2026-11-18T09:10:45.690431+00:00",
+    "commit_verified_at": "2026-11-12T13:52:41.768575+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We",
+        "rationale": "The financial results and growth in specific product lines are directly tied to GigOptix's operations and performance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "GigOptix, Inc. “Leading the sequential gains was the ongoing growth in our optics product line, particularly with our high speed 100Gbps and optical interconnect offerings. We",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "These risks include, but are not limited to: the ability to extend product offerings into new areas or products, the ability to commercialize licensed technology, unexpected",
+        "rationale": "The text is discussing the company's specific risks and capabilities, which are company-specific.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "These risks include, but are not limited to: the ability to extend product offerings into new areas or products, the ability to commercialize licensed technology, unexpected",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+        "rationale": "The financial information provided is directly related to GigOptix, Inc., indicating the company's financial performance and operations.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL INFORMATION (In thousands) (Unaudited) Three months ended, Nine months ended, September 30, October 2, September 30, October 2, 2012",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2012/10/30/gigoptix-reports-record-third-quarter-fiscal-2012-financial-results.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "3e22b87c21dc782ac1b54f7c08e12ce007eb4f40003c51dade4e3962bb9db646",
+    "content_hash": "1abe6589f12476ccdcd674c50cd3025e8ef802c2b352fa546dbc91f45f048bcf",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T09:10:45.674427+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/193cde60b0b5c4bdc946f29c.json",
+      "sha256": "99b3f12405a79e51af6b3e89630c2d3278800d948e2ae8fac6c0c0ddc6f51a87",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 112.84400000001187
+}

@@ -1,0 +1,124 @@
+{
+  "source_id": "e0dd59582b37aefabd883a4b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_02_23_Market-Report_Construction_yahoo.json",
+      "sha256": "eab46272502fc617370ec16d9d1969f05d16db2e675bc7c13e6bdc06c8e036bc",
+      "filename": "2022_02_23_Market-Report_Construction_yahoo.json"
+    }
+  ],
+  "original_record_hash": "962712e21cd5fa383ad7d579745bb6f79f46525817fc04a2059bf7aa9743ef64",
+  "input_hash": "801280b76953be49e904c2ab29f3251a3d468b2be1752d12af5183a8c433d195",
+  "matching_audit_hash": "2ffd5a87ca9f89373fdc9a0803cd86a1bae6732b1345878ca5605d9364342701",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "891ebc40a729186ecd7a741670aff65535b68b530e6c1ca7cebe63ee50f9251c",
+    "raw_sha256": "b59fa6f4fc0e544d0f0e87bc098bc3a73bad180080083ec4bb2f717ce08ac49b",
+    "date_quote": "Fire Protection Materials For Construction Global Market Report 2022 ReportLinker February 23, 2022 4 min read",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ab811729851dcb624a4efd7fbe7cf228361ac3fa3e28e7ff15a8b953a02857df",
+  "outputs": [
+    {
+      "path": "US\\2022_02_23_Market-Report_Construction_yahoo.json",
+      "sha256": "37ccefb1ccf98d4c8c75a240e08227b459260efefdfb8af6d455525c084e747a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-02-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:01:40.953477+00:00",
+    "fetched_at": "2026-11-10T13:16:41.852079+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.724005+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:56:58.999718+00:00",
+  "feature_available_at": "2026-11-12T14:56:59.012908+00:00",
+  "commit_verified_at": "2026-11-12T14:56:59.012908+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides market growth projections, industry trends, and specific companies involved in the fire protection materials for construction market.",
+    "securities": [
+      {
+        "name": "CIN",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CIN, a Portugal-based company"
+      },
+      {
+        "name": "API Group Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "API Group Inc., a US-based provider of specialty, safety, and industrial services"
+      },
+      {
+        "name": "SK FireSafety Group B.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SK FireSafety Group B.V., a Netherlands-based company"
+      },
+      {
+        "name": "Home Office",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Home Office"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Fire protection materials for construction",
+        "basis": "explicit",
+        "quote": "fire protection materials for construction market"
+      },
+      {
+        "name": "Safety services",
+        "basis": "inferred",
+        "quote": "specialty, safety, and industrial services"
+      },
+      {
+        "name": "Fire protection products",
+        "basis": "explicit",
+        "quote": "fire protection products for businesses"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "CIN": "company",
+      "API Group Inc.": "company",
+      "SK FireSafety Group B.V.": "company",
+      "Home Office": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

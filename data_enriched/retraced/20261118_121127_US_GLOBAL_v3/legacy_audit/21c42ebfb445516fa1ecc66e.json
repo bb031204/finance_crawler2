@@ -1,0 +1,97 @@
+{
+  "source_id": "21c42ebfb445516fa1ecc66e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_11_30_retail_retail_cnbc.json",
+      "sha256": "dace95118b1979162002f411578dfc7624d05062bee3f100f4a1ab28f917f345",
+      "filename": "2019_11_30_retail_retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b0334940fd74fffd5bc0644dd5838cef5e9fcc7bde3e884acace48779c15ce12",
+  "input_hash": "8e098326fdc39f21e28e0c421cc0d810da072bc6946f54777bec77b485b1362f",
+  "matching_audit_hash": "87c262a9d0187df53c8ee9c2eeac250e10486c0cfbf2f587f13fe6d7693db6f0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "36f3766d0cf30246ae80bfc7f96f559c2a37d1cae9b16fef79781ac3e2a881d5",
+    "raw_sha256": "6591c988c7339c1da751c8346084a65f7389c1cc6ffcf47d904805335837962d",
+    "date_quote": "article:published_time=2019-11-30T17:28:45+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Samsung",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Some of the most popular purchased items include Disney's \"Frozen 2\" toys, video games such as FIFA 20 and Madden 20, and electronics such as Apple Airpods and Samsung TVs."
+    }
+  ],
+  "record_hash": "143e8421c58ee65653b76ec8c77ac59b3fe99e9edb9831dd208ca59663098d37",
+  "outputs": [
+    {
+      "path": "US\\2019_11_30_retail_retail_cnbc.json",
+      "sha256": "64ba617e372967bb945276774d61e78f636e9189776ac33f28de00b9c2fc1ceb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-11-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:53.424714+00:00",
+    "fetched_at": "2026-11-10T22:05:28.574633+00:00",
+    "feature_available_at": "2026-11-10T22:05:59.515568+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:30.778966+00:00",
+  "commit_verified_at": "2026-11-12T13:53:30.778966+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Samsung",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Some of the most popular purchased items include Disney's \"Frozen 2\" toys, video games such as FIFA 20 and Madden 20, and electronics such as Apple Airpods and Samsung TVs."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "source_id": "20ff9ec2ab9099e992c2c47e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_11_02_Energy-and-Natural-Resources_Energy-and-Natural-Resources_cnbc.json",
+      "sha256": "c57bd73b5930ed8f909e8e6884ac62ac5a662094bfa8a5e96dfbe3a09fc4ecf0",
+      "filename": "2012_11_02_Energy-and-Natural-Resources_Energy-and-Natural-Resources_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2012_11_02_Energy-and-Natural-Resources_Energy-and-Natural-Resources_cnbc.json",
+      "sha256": "c57bd73b5930ed8f909e8e6884ac62ac5a662094bfa8a5e96dfbe3a09fc4ecf0",
+      "filename": "2012_11_02_Energy-and-Natural-Resources_Energy-and-Natural-Resources_cnbc.json"
+    }
+  ],
+  "original_record_hash": "987d9141ec7249fd86df247a46c8c7075808bd7ad5348cf901c1088885243a42",
+  "input_hash": "3521c1385454139955af1dc9a45ef4761e4946e54d5075135b1f177ff098c48a",
+  "matching_audit_hash": "f44fd5e7560512f3a4388453c3610e54731b5883e2e276f5481190919fc63530",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ac35b797daabfc2e102c78b98d16f0eaa05ebac20151d09574ca3253fc5f835d",
+    "raw_sha256": "95dfd6c92468807c7fad0c42431c30e978a090d4085ea2ecf91435a95e99ca78",
+    "date_quote": "article:published_time=2012-11-02T10:42:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "c4128c0fdc1525ffa4d8561556c9fb20902c89f5491b2d582485e7f3a773817f",
+  "outputs": [
+    {
+      "path": "US\\2012_11_02_Energy-and-Natural-Resources_Energy-and-Natural-Resources_cnbc.json",
+      "sha256": "bfdcdf358dfdfd5c198c4ce02ae3c336f4d286edc208053fafc59ae242aa0a3f"
+    },
+    {
+      "path": "GLOBAL\\2012_11_02_Energy-and-Natural-Resources_Energy-and-Natural-Resources_cnbc.json",
+      "sha256": "bfdcdf358dfdfd5c198c4ce02ae3c336f4d286edc208053fafc59ae242aa0a3f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-11-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:38:14.611205+00:00",
+    "fetched_at": "2026-11-10T21:00:30.674907+00:00",
+    "feature_available_at": "2026-11-10T21:00:38.805043+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:58:27.857297+00:00",
+  "feature_available_at": "2026-11-12T13:58:27.867858+00:00",
+  "commit_verified_at": "2026-11-12T13:58:27.867858+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses M&A and investment trends in the oil and gas industry, including deal counts and values, and mentions key financial advisory firms.",
+    "securities": [
+      {
+        "name": "Research and Markets",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Research and Markets"
+      },
+      {
+        "name": "GlobalData",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GlobalData"
+      },
+      {
+        "name": "Morgan Stanley",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Morgan Stanley"
+      },
+      {
+        "name": "Credit Suisse",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Credit Suisse"
+      },
+      {
+        "name": "Goldman Sachs",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Goldman Sachs"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Oil & Gas",
+        "basis": "explicit",
+        "quote": "Oil & Gas"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Research and Markets": "company",
+      "GlobalData": "company",
+      "Morgan Stanley": "company",
+      "Credit Suisse": "company",
+      "Goldman Sachs": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

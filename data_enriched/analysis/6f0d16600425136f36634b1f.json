@@ -1,0 +1,100 @@
+{
+  "source_id": "6f0d16600425136f36634b1f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_09_04_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "2d7a7bfaa06923f57f7c7fea73bc134a1124cc5e503e46acf3830a095fe14e8a",
+      "filename": "2018_09_04_Real-Estate_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a4fb60b5af1d080e1f66ea36d5f23479340c5d0973ac2812ebdb0d1519b84189",
+  "input_hash": "f634c6372ae2c2772edffa908c7ea1ffe4b113f2edb3256d960f62af8cdcdd65",
+  "matching_audit_hash": "62f4f3f95990c07a0734efe53a40281f3695bb13c3279e118974cbf22bafcf8f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "491acc8ad9b82779ac37c9ed38618b606074faa7ce9e63a1d4e227dcc12bf708",
+    "raw_sha256": "7751eba6697c62497176422272ae224cc13bc367adb390ac669d12e17007089b",
+    "date_quote": "article:published_time=2018-09-04T18:31:40+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7a4ad1d4f6d889f74939dc721b9ec27dad202398bd09fbc04142eaecf73ed9b6",
+  "outputs": [
+    {
+      "path": "US\\2018_09_04_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "667b5467c739bdfd457bccbaf4785b3cf3df350518adf383241357cc19e689c2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-09-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:43.789064+00:00",
+    "fetched_at": "2026-11-10T12:54:43.726277+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.282636+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:59.514678+00:00",
+  "feature_available_at": "2026-11-12T14:45:59.525989+00:00",
+  "commit_verified_at": "2026-11-12T14:45:59.525989+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the impact of Starbucks openings on housing prices and gentrification, using real-time data from Yelp. It provides insights into real estate,",
+    "securities": [
+      {
+        "name": "Harvard Business School",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Harvard Business School"
+      },
+      {
+        "name": "Starbucks",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Starbucks"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer Services",
+        "basis": "inferred",
+        "quote": "Starbucks"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Harvard Business School": "organization",
+      "Starbucks": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

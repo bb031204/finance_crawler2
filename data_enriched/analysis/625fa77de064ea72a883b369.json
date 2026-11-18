@@ -1,0 +1,103 @@
+{
+  "source_id": "625fa77de064ea72a883b369",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_07_24_08_32_Real-Estate_Co-living_cnbc.json",
+      "sha256": "0d7e32957b3ec4c3f789e6b5ffd62e004722c27a9a95898d351de0628a04d289",
+      "filename": "2019_07_24_08_32_Real-Estate_Co-living_cnbc.json"
+    }
+  ],
+  "original_record_hash": "58189b2c6c66fcaa0a78ad6b92a9b442ad2f9f707207a07cac25b0a5f65586eb",
+  "input_hash": "1094c6bcac78980d543ee2dec64cd3a377c80586c2f050370f7938b012620167",
+  "matching_audit_hash": "a46e71e30270728a2ecbb83b964619034c3959342d8e27b346e2b526df7955ad",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0460055d446256036b6eb9848d35335f79037e92871e047c1c162fb202f81e92",
+    "raw_sha256": "75370fd272c7e23879ca2cd7af0da6525d6c4b44e7c11a1505ecdf3edaf5f73b",
+    "date_quote": "article:published_time=2019-07-24T08:32:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "506058be6230a0169fc086183e8d1973db27604a7dcf3165c8a6535a5055df9c",
+  "outputs": [
+    {
+      "path": "US\\2019_07_24_08_32_Real-Estate_Co-living_cnbc.json",
+      "sha256": "6a9b94cbc108b9f4d1b3222be234b43bc6c9acf134569164f71f27860000b1d1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-07-24T08:32:28+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T10:00:47.521157+00:00",
+    "fetched_at": "2026-11-10T12:56:53.668751+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.824776+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:49:57.451428+00:00",
+  "feature_available_at": "2026-11-12T14:49:57.468696+00:00",
+  "commit_verified_at": "2026-11-12T14:49:57.468696+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Hmlet's co-living model, market expansion, and industry positioning in real estate, including specific locations and financial details.",
+    "securities": [
+      {
+        "name": "Hmlet",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hmlet"
+      },
+      {
+        "name": "Burda Principal Investments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Burda Principal Investments"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "Real Estate"
+      },
+      {
+        "name": "Co-living",
+        "basis": "inferred",
+        "quote": "co-living"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Hmlet": "company",
+      "Burda Principal Investments": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

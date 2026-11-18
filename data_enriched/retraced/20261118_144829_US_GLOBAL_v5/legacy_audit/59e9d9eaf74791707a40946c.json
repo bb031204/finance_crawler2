@@ -1,0 +1,99 @@
+{
+  "source_id": "59e9d9eaf74791707a40946c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_31_Consumer-Goods_Food-&-Beverage_cnbc.json",
+      "sha256": "d8c775ca8c593281538a43b6d2322e218f982b7c58712ed28de65099a2387fe6",
+      "filename": "2017_10_31_Consumer-Goods_Food-&-Beverage_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a1b35c107f6203b226186db1c3771a7253a1bba674fe07a3e6837580a3675486",
+  "input_hash": "7b6da70d2007ae1a2e3a60f07e7942ca4ef4ac9a2d44197b0b5026f194914f66",
+  "matching_audit_hash": "5c5fe282effac8556011787a1e4b9698a219a13a5823177a7d2277d9b651bbd8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "db0b928fde0819976306f2897b5646f3faa86b016f6d92bf7d621671f85b6d8d",
+    "raw_sha256": "0df7456a27113c423aade8175d1d68daa6b82b5608eb6a3105b4c5b14712b53e",
+    "date_quote": "article:published_time=2017-10-31T16:14:53+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "72d9088814ec3fb0b3001e8e5c91c01bf7e5c71f104db88beafa5a51eaa3af95",
+  "outputs": [
+    {
+      "path": "US\\2017_10_31_Consumer-Goods_Food-&-Beverage_cnbc.json",
+      "sha256": "a8b24f12c59970b1edd05551e750bb8f2a72406967016562cf14dbac52ad2bb7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:24.936362+00:00",
+    "fetched_at": "2026-11-10T16:51:19.894114+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.248723+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:41:21.806950+00:00",
+  "feature_available_at": "2026-11-12T14:41:21.845120+00:00",
+  "commit_verified_at": "2026-11-12T14:41:21.845120+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses changes in the food industry, Mondelez's performance, and strategic direction under CEO Irene Rosenfeld.",
+    "securities": [
+      {
+        "name": "Mondelez",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mondelez"
+      },
+      {
+        "name": "Kraft",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kraft"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Food industry",
+        "basis": "explicit",
+        "quote": "food industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Mondelez": "company",
+      "Kraft": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

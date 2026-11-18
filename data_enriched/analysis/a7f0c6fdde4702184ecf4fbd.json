@@ -1,0 +1,107 @@
+{
+  "source_id": "a7f0c6fdde4702184ecf4fbd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_10_10_22_14_Earnings-Report_Energy-Services_cnbc.json",
+      "sha256": "51958a9df87bcba64d68698558842311b51ad50148c208c6dbcf0e277a52a1bb",
+      "filename": "2012_10_10_22_14_Earnings-Report_Energy-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3c94f64d84c1c52224abcd28ad92556a7b458cf70a02147e6cb03ffa9019d853",
+  "input_hash": "32770ca46ab0b1e0d218078f1ccb4733d82c7192a80498e6df6356b2d8026209",
+  "matching_audit_hash": "59144073874fe587ed3df1c320d70ad3e427a84234cb6515d8408ae5ebdedf33",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "45942f8440f2f2d7b0f4bc668d183ccc8e918e5187bf5821b687b1f72963a4c2",
+    "raw_sha256": "ab5ab68681b031714bac5d4ef9e2fd5887254f7639159f375225cc9c80d0fc1a",
+    "date_quote": "article:publisher=https://www.facebook.com/cnbc\narticle:published_time=2012-10-10T22:14:00+0000\npage.datePublished=2012-10-10T22:14:00+0000\ndateCreated=2012-10-10T22:14:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Key Energy Services",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Key Energy Services"
+    },
+    {
+      "name": null,
+      "ticker": "KEG",
+      "exchange": "NYSE",
+      "quote": "NYSE: KEG"
+    }
+  ],
+  "record_hash": "252f92fb2ddf1d0ed6f5b611fb118c2d2cd0dfacd428346ac41df509764306a4",
+  "outputs": [
+    {
+      "path": "US\\2012_10_10_22_14_Earnings-Report_Energy-Services_cnbc.json",
+      "sha256": "79aee12725b9bc26a92566594afa2517603af39cf81d852c9edb73f205433e53"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-10-10T22:14:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:41:15.523963+00:00",
+    "fetched_at": "2026-11-10T22:10:30.788525+00:00",
+    "feature_available_at": "2026-11-11T09:20:21.783796+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:41.663414+00:00",
+  "commit_verified_at": "2026-11-12T13:52:41.663414+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Key Energy Services",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Key Energy Services"
+      },
+      {
+        "name": null,
+        "ticker": "KEG",
+        "exchange": "NYSE",
+        "quote": "NYSE: KEG"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy Services",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

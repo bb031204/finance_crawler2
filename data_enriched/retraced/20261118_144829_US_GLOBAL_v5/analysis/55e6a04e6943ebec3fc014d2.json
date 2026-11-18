@@ -1,0 +1,282 @@
+{
+  "source_id": "55e6a04e6943ebec3fc014d2",
+  "status": "completed",
+  "source_record_hash": "8a8fd869185ba8adabde5556b55012caff1c4e9d877239c87c649243f38cdc12",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-13-296504-index.html",
+    "attempted_at": "2026-11-18T14:58:59.883369+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "14e44eb59af0e8c01cbb012735daf6fa15ee51ceebc9b1b414a9d3512fb7a6cd"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/55e6a04e6943ebec3fc014d2.json",
+    "sha256": "537c6dbb1d52c1e807cac3dc074ca7f1da4afba1b6255dfad2fee66847592c06",
+    "bundled_path": "legacy_audit/55e6a04e6943ebec3fc014d2.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "32b0e5db5a98a7e158008609c318b52f788b94fe2972f69d064d277bc2cff363",
+      "llm_inferred_at": "2026-11-18T14:59:51.325369+00:00",
+      "model_duration_seconds": 6.3815489,
+      "prompt_tokens": 2016,
+      "completion_tokens": 286,
+      "selection": [
+        {
+          "source_id": "55e6a04e6943ebec3fc014d2",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SAP AG (NYSE: SAP) announced that the SAP Supervisory Board has agreed to propose that Co-CEO Jim Hagemann Snabe be elected to the SAP Supervisory Board at the Annual General",
+              "rationale": "The article discusses a leadership transition within SAP AG, a specific company, and does not mention any broader industry or market impacts.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7200",
+              "name": "SERVICES-PERSONAL SERVICES",
+              "basis": "explicit",
+              "quote": "SAP AG (NYSE: SAP) announced that the SAP Supervisory Board has agreed to propose that Co-CEO Jim Hagemann Snabe be elected to the SAP Supervisory Board at the Annual General"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "5a27bb5c7846457646f043403e0b015f9b24fea701847e486f6b553bd3ac973c",
+      "llm_inferred_at": "2026-11-18T14:59:54.605412+00:00",
+      "model_duration_seconds": 3.2611156,
+      "prompt_tokens": 2060,
+      "completion_tokens": 166,
+      "selection": [
+        {
+          "source_id": "55e6a04e6943ebec3fc014d2",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7200",
+              "name": "SERVICES-PERSONAL SERVICES",
+              "basis": "explicit",
+              "quote": "The statement highlights the leadership transition and the company's progress under co-CEOs Jim Hagemann Snabe and Bill McDermott."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:59:54.650956+00:00",
+  "audit": {
+    "source_id": "55e6a04e6943ebec3fc014d2",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-13-296504-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2013-07-22",
+    "date_quote": "SEC filing datePublished=2013-07-22",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "14e44eb59af0e8c01cbb012735daf6fa15ee51ceebc9b1b414a9d3512fb7a6cd",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T17:44:58.153005+00:00",
+    "fetched_at": "2026-11-14T02:06:45.749756+00:00",
+    "first_extracted_at": "2026-11-14T02:14:58.466476+00:00",
+    "extracted_at": "2026-11-18T14:59:54.607485+00:00",
+    "feature_available_at": "2026-11-18T14:59:54.650956+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "SAP AG",
+        "ticker": "SAP",
+        "exchange": null,
+        "quote": "SAP AG (NYSE: SAP) today announced that the SAP Supervisory Board has agreed to propose that Co-CEO Jim Hagemann Snabe be elected to the SAP Supervisory Board at the SAP Annual General Meeting of Shareholders in May 2014."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "8a8fd869185ba8adabde5556b55012caff1c4e9d877239c87c649243f38cdc12",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2013_07_22_Corporate-Governance_Information-Technology_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\01c2fce845f7f3ced6aafd51b75d764debc21cbe218dda803e9bda5c3b1f4413.json",
+      ".runtime\\simple\\model_cache\\18665be83417516237273196215f3015138b004d467a48f458bc70646ebc90cc.json",
+      ".runtime\\simple\\model_cache\\313120cf7d1728ee644c63a60e835838b2587c9767524e68f0d48bc62fb45e52.json",
+      ".runtime\\simple\\model_cache\\33e204f2f829b7501d0311fb49b183d2f1ff46a64f1f223a3e1e1f069029cc58.json",
+      ".runtime\\simple\\model_cache\\75773b0bacb4521fed3ad7ef552a0046d4d16fc32e159d07d1cab8ddb80548cd.json",
+      ".runtime\\simple\\model_cache\\7cd4da0f1e6c0ef9173899be4db16def55f1f79bf2fe830e7bc6e23819dc6f7f.json",
+      ".runtime\\simple\\model_cache\\a89795987798628892d123f3f9653862fbc130bf7483220e556201a21032b87e.json",
+      ".runtime\\simple\\model_cache\\bb902b055e62fe88215ea2ee93bd4fb8fa2955b957d58bd23094ebcaeff2ce79.json",
+      ".runtime\\simple\\model_cache\\d2f4efe0b8db4782ed29a5c907b4bb37e18129014fe3dd4247a4bfe3bf5ec15e.json",
+      ".runtime\\simple\\model_cache\\d70d1644e9371ac6e18c0c978380df59c9816559bf3bb2c61e59a356d3afb7f7.json",
+      ".runtime\\simple\\model_cache\\eade29cc40bc41a968c04037a38136cdb9eab1501c1aa5fc8e566803a4dad26b.json",
+      ".runtime\\simple\\model_cache\\f77d48697794680692eb510d3517b36d2404879c2a8171fcd4aec478bfb82fb2.json",
+      ".runtime\\simple\\pages\\55e6a04e6943ebec3fc014d2.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312513296504/d571739d6k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312513296504/d571739d6k.htm",
+        "type": "6-K",
+        "description": "FORM 6-K",
+        "raw_sha256": "9670c41d8660a32bc3306cbf6da88cbcf24f46a6f28d3e600884fd3b0a4032ea",
+        "text_sha256": "99825673ccb774f0efa10b396256c0d763503fe4e3be689e442c70f224c6b522",
+        "text_start": 0,
+        "text_end": 3238
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312513296504/d571739dex991.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "3c506421e6694b1fe918d5250bb191ab390c02103c08624f231318b9ba8d43eb",
+        "text_sha256": "da00a655048771fae9d26ae7fa79472b403d3144e543f199a8925cab90157558",
+        "text_start": 3240,
+        "text_end": 10380
+      }
+    ],
+    "sec_document_version": 3,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "e4bb8165e7c004be771eb3abc13ed44c6d43a71b59fb53ed787b78589a108257",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-13-296504-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T14:59:54.605412+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "14e44eb59af0e8c01cbb012735daf6fa15ee51ceebc9b1b414a9d3512fb7a6cd",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "SAP AG",
+        "ticker": "SAP",
+        "exchange": null,
+        "quote": "SAP AG (NYSE: SAP) today announced that the SAP Supervisory Board has agreed to propose that Co-CEO Jim Hagemann Snabe be elected to the SAP Supervisory Board at the SAP Annual General Meeting of Shareholders in May 2014.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": "transition",
+        "object": "Jim Hagemann Snabe",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Jim Hagemann Snabe will transition from his current role as co-CEO and member of the SAP Executive Board upon the conclusion of the Annual General Meeting of Shareholders in May 20"
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "After more than 20 years with SAP, I have decided that it is time for me to begin the next phase of my career, closer to my family"
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "I would be honored to continue my commitment to SAP in serving as a member of the Supervisory Board"
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "a3842770a85c33a5142d1f354a5ca3c5b1575d694d99659e21439c1b5d469c9f",
+    "commit_verified_at": "2026-11-14T02:14:58.514919+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-14T02:14:58.612813+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\55e6a04e6943ebec3fc014d2.json",
+      ".runtime\\simple\\model_cache\\18665be83417516237273196215f3015138b004d467a48f458bc70646ebc90cc.json",
+      ".runtime\\simple\\model_cache\\7cd4da0f1e6c0ef9173899be4db16def55f1f79bf2fe830e7bc6e23819dc6f7f.json",
+      ".runtime\\simple\\model_cache\\313120cf7d1728ee644c63a60e835838b2587c9767524e68f0d48bc62fb45e52.json",
+      ".runtime\\simple\\model_cache\\d2f4efe0b8db4782ed29a5c907b4bb37e18129014fe3dd4247a4bfe3bf5ec15e.json",
+      ".runtime\\simple\\model_cache\\bb902b055e62fe88215ea2ee93bd4fb8fa2955b957d58bd23094ebcaeff2ce79.json",
+      ".runtime\\simple\\model_cache\\01c2fce845f7f3ced6aafd51b75d764debc21cbe218dda803e9bda5c3b1f4413.json",
+      ".runtime\\simple\\model_cache\\d70d1644e9371ac6e18c0c978380df59c9816559bf3bb2c61e59a356d3afb7f7.json",
+      ".runtime\\simple\\model_cache\\33e204f2f829b7501d0311fb49b183d2f1ff46a64f1f223a3e1e1f069029cc58.json",
+      ".runtime\\simple\\model_cache\\f77d48697794680692eb510d3517b36d2404879c2a8171fcd4aec478bfb82fb2.json",
+      ".runtime\\simple\\model_cache\\75773b0bacb4521fed3ad7ef552a0046d4d16fc32e159d07d1cab8ddb80548cd.json",
+      ".runtime\\simple\\model_cache\\eade29cc40bc41a968c04037a38136cdb9eab1501c1aa5fc8e566803a4dad26b.json",
+      ".runtime\\simple\\model_cache\\a89795987798628892d123f3f9653862fbc130bf7483220e556201a21032b87e.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "8a8fd869185ba8adabde5556b55012caff1c4e9d877239c87c649243f38cdc12",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/55e6a04e6943ebec3fc014d2.json",
+      "sha256": "88b3b9e7a2d50c88fdcd3406a6a20948ddc2e2a24c485742b34029b2c06ae5c5",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 54.812000000005355
+}

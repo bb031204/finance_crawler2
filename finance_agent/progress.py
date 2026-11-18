@@ -13,7 +13,7 @@ def severity(component, message):
     if component in {"新增JSON", "更新JSON", "保存"}:
         return "success"
     if (component in {"剔除", "跳过", "筛选剔除", "重复跳过", "待处理", "待复核", "日期隔离", "日期", "预算", "停止", "运行中断", "数据缺口", "规划回退", "原文保留"}
-            or "暂停" in component or "未完成" in component
+            or "暂停" in component or "暂缓" in component or "未完成" in component
             or component == "筛选" and str(message).startswith("跳过")):
         return "warning"
     return None

@@ -1,0 +1,102 @@
+{
+  "source_id": "ad5658369a2ebdbad47a79bb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_03_06_Corporate-Governance_Paper-&-Packaging_sec.json",
+      "sha256": "571d747d862de24dc69b4186f7852561bf6b69dc06ccb040ae3f100934e6604d",
+      "filename": "2013_03_06_Corporate-Governance_Paper-&-Packaging_sec.json"
+    }
+  ],
+  "original_record_hash": "08b420598aba01dd65678c6ab0483f04c8fc219bf5481af0f3cd356ff34c02cb",
+  "input_hash": "46f1776b8745885ed9f89ac60faf5a6fa4ae37aa99152e7668b5c0b822eb96f1",
+  "matching_audit_hash": "5ea310c291f80a6d74e474f37ea76783b01b68a0c2c4faf1b2c49b91cc6bc106",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "76d6260f6a37ca0879cce51e71adef2a92e237b2f87cb281e927c69ccbe1e4f6",
+    "raw_sha256": "78b49768d664f84c6315dbc9af431727d645d2306fec60927f2d949a9a13be96",
+    "date_quote": "March 6, 2013 Date of Report (Date of earliest event reported)",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062313000047/dunmeadform8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+    }
+  ],
+  "record_hash": "0d1da5459048d92074c799958c96921b402c22ae0241986199005c0d85f507b7",
+  "outputs": [
+    {
+      "path": "US\\2013_03_06_Corporate-Governance_Paper-&-Packaging_sec.json",
+      "sha256": "581b845da0c5653a1b5489412378d7d38d8bc3cb7427a6aab944e290c000a2a2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-03-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+    "fetched_at": "2026-11-10T23:20:02.850994+00:00",
+    "feature_available_at": "2026-11-10T23:20:27.602926+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:45.450682+00:00",
+  "commit_verified_at": "2026-11-12T13:52:45.450682+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Paper and Pulp",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Textiles",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

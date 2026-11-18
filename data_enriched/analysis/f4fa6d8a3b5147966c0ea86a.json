@@ -1,0 +1,249 @@
+{
+  "source_id": "f4fa6d8a3b5147966c0ea86a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_08_14_Politics_Government_cnbc.json",
+      "sha256": "3b059d886cf1d30c227808dfaf6c96817be7bb2c8b1e7ce104479b8ec359c0b8",
+      "filename": "2015_08_14_Politics_Government_cnbc.json"
+    }
+  ],
+  "original_record_hash": "def805fa238023d5e3e450859b7df8f1220f36707c6eff34f3486f63bf38027d",
+  "input_hash": "3e440691126aa65cf68666c5b1e710e9ee86759d3c5a33b8eca8e2930600f3c1",
+  "matching_audit_hash": "fd82e6e97c3a68a4d0f9285b0cb9fc3f74c30b5979049b2003d2f98ce71e1efd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "62e8cb8b2ac1adea9eb98ff87d8baabb5a32f6bbbf88275d94f031eddefaefd0",
+    "raw_sha256": "fcfff67aae80951553826ea888213af0854b9d408d113c7b8f4559f17cc49dfb",
+    "date_quote": "article:published_time=2015-08-14T18:44:57+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3b26115db5885aee4f04b4fab755846ce6a1db5e107f3eb17f3ae82ba66812ba",
+  "outputs": [
+    {
+      "path": "US\\2015_08_14_Politics_Government_cnbc.json",
+      "sha256": "410d871291706153a6512d91d87da0fa12659112788753293dd93ced27599790"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-08-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:29.086798+00:00",
+    "fetched_at": "2026-11-10T13:44:35.596483+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.661210+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:58.203400+00:00",
+  "feature_available_at": "2026-11-12T15:16:38.240226+00:00",
+  "commit_verified_at": "2026-11-12T15:16:38.240226+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses financial decisions and their economic impacts on Cuba.",
+    "securities": [
+      {
+        "name": "International Monetary Fund (IMF)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "International Monetary Fund (IMF)"
+      },
+      {
+        "name": "World Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "World Bank"
+      },
+      {
+        "name": "Inter-American Development Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Inter-American Development Bank"
+      },
+      {
+        "name": "Citigroup",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Citigroup"
+      },
+      {
+        "name": "Bank of America",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bank of America"
+      },
+      {
+        "name": "JPMorgan Chase",
+        "ticker": null,
+        "exchange": null,
+        "quote": "JPMorgan Chase"
+      },
+      {
+        "name": "United States",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United States"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "American banks in Cuba, including branches of Citigroup, Bank of America, and JPMorgan Chase"
+      },
+      {
+        "name": "Politics",
+        "basis": "inferred",
+        "quote": "U.S. trade embargo"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "International Monetary Fund (IMF)": "organization",
+      "World Bank": "organization",
+      "Inter-American Development Bank": "organization",
+      "Citigroup": "organization",
+      "Bank of America": "organization",
+      "JPMorgan Chase": "organization",
+      "United States": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:38.257630+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:58.203400+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses financial decisions and their economic impacts on Cuba.",
+      "securities": [
+        {
+          "name": "International Monetary Fund (IMF)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "International Monetary Fund (IMF)"
+        },
+        {
+          "name": "World Bank",
+          "ticker": null,
+          "exchange": null,
+          "quote": "World Bank"
+        },
+        {
+          "name": "Inter-American Development Bank",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Inter-American Development Bank"
+        },
+        {
+          "name": "Citigroup",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Citigroup"
+        },
+        {
+          "name": "Bank of America",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Bank of America"
+        },
+        {
+          "name": "JPMorgan Chase",
+          "ticker": null,
+          "exchange": null,
+          "quote": "JPMorgan Chase"
+        },
+        {
+          "name": "United States",
+          "ticker": null,
+          "exchange": null,
+          "quote": "United States"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "American banks in Cuba, including branches of Citigroup, Bank of America, and JPMorgan Chase"
+        },
+        {
+          "name": "Politics",
+          "basis": "inferred",
+          "quote": "U.S. trade embargo"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "International Monetary Fund (IMF)": "organization",
+        "World Bank": "organization",
+        "Inter-American Development Bank": "organization",
+        "Citigroup": "organization",
+        "Bank of America": "organization",
+        "JPMorgan Chase": "organization",
+        "United States": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:58.229697+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:58.239136+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:58.219649+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses Fidel Castro's financial regrets and their impact on Cuba's economy, including the nationalization of assets, U.S. trade embargo, and debt to",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:28:57.455403+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "source_id": "faa00ec6b84eb10583d4890f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_09_13_Mergers-and-Acquisitions_Semiconductor_sec.json",
+      "sha256": "f4b2c1bfe95b356653a62b7d4c11c025d2bc9e490c520a5ec0b4c7600d87441e",
+      "filename": "2016_09_13_Mergers-and-Acquisitions_Semiconductor_sec.json"
+    }
+  ],
+  "original_record_hash": "4b641fee2590ab572d52bf45b82de17d7db243f2c6015d4369b565165bdbf4b2",
+  "input_hash": "a7e42f10f815f4e012bf0d33bb85b4817c0cda5ed3293e74f13deded6831ce2a",
+  "matching_audit_hash": "7eed7da62081e5e5ccef97dc62d0c064f66237f23f0735fee6a172301ed85805",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "994da48c3d4351eafc50d3220fb37a03cca378dd2fa7af58cc3bcb93d09f54e0",
+    "raw_sha256": "2d132e7c92b59402d092c4733f2a33c4f7a07995d7fa2ecfbfbac51da790e521",
+    "date_quote": "SEC filing datePublished=2016-09-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1096325/000119312516707887/d255657d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Intersil Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Intersil Corporation"
+    },
+    {
+      "name": "Renesas Electronics Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Renesas Electronics Corporation"
+    },
+    {
+      "name": "Intersil",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Intersil"
+    },
+    {
+      "name": "Renesas",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Renesas"
+    }
+  ],
+  "record_hash": "93f48fb4ef1742ac2c3dd7c529d57870158985010c8fce7255cb4c80e8b45910",
+  "outputs": [
+    {
+      "path": "US\\2016_09_13_Mergers-and-Acquisitions_Semiconductor_sec.json",
+      "sha256": "e2761a4da88a675f82e343a42b8d57edb463186bcd8534399bcd77e0d08b21bb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-09-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:39.735825+00:00",
+    "fetched_at": "2026-11-11T02:26:51.292695+00:00",
+    "feature_available_at": "2026-11-11T18:32:20.855833+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:09.490193+00:00",
+  "commit_verified_at": "2026-11-12T13:53:09.490193+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Intersil Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Intersil Corporation"
+      },
+      {
+        "name": "Renesas Electronics Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Renesas Electronics Corporation"
+      },
+      {
+        "name": "Intersil",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Intersil"
+      },
+      {
+        "name": "Renesas",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Renesas"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductors",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

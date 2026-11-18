@@ -1,0 +1,289 @@
+{
+  "source_id": "9ee4c5c191d1d47bd1835e67",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_09_12_Legal_Finance_bloomberg.json",
+      "sha256": "dd186b99b024b612d7a798cb5eea083a22ea610dc96441cb20a5db47c04e4a4f",
+      "filename": "2017_09_12_Legal_Finance_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "b3fe21f63545c9668495684bf285f49b8d012b153cf7cf0a1cc431867020abff",
+  "input_hash": "9fd268f0522be02d76327062e7ef73985157e378d8952478b698ba4d9945558a",
+  "matching_audit_hash": "d25ad8e5f4acc49be818827c22d0cc522726a51b518890b9c9c0e16eb24461df",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "536f1cf4a4295f12b62a8e6f7bd98d6df82cd20494cb485bbceeb214d02f9fc4",
+    "raw_sha256": "5cc3c8eaae67d7413555751d03ed9dad4a00893e74f71011094e42b1c2d50e1f",
+    "date_quote": "parsely-pub-date=2017-09-12T05:00:00-04:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "63bad2bca25f21ac6f06f721a85da974af84b479fc51cc18a248e580dcaac2c4",
+  "outputs": [
+    {
+      "path": "US\\2017_09_12_Legal_Finance_bloomberg.json",
+      "sha256": "087a7a71657ce8f6de1446429328c0cb926a74b816dbfaedc7ec9f17f53da148"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-09-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:35:00.586278+00:00",
+    "fetched_at": "2026-11-10T14:50:33.181858+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.969148+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:07:38.565475+00:00",
+  "feature_available_at": "2026-11-12T15:16:41.808225+00:00",
+  "commit_verified_at": "2026-11-12T15:16:41.808225+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses legal influence on judicial decisions and investor actions",
+    "securities": [
+      {
+        "name": "Friends of the Court",
+        "ticker": null,
+        "exchange": null,
+        "quote": "'Friends of the Court'"
+      },
+      {
+        "name": "Bruce Berkowitz",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bruce Berkowitz"
+      },
+      {
+        "name": "Fairholme Funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fairholme Funds"
+      },
+      {
+        "name": "Fannie Mae",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fannie Mae"
+      },
+      {
+        "name": "Freddie Mac",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Freddie Mac"
+      },
+      {
+        "name": "Cooper & Kirk PLLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Cooper & Kirk PLLC"
+      },
+      {
+        "name": "Chuck Cooper",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chuck Cooper"
+      },
+      {
+        "name": "U.S. Supreme Court",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Supreme Court"
+      },
+      {
+        "name": "U.S. Court of Federal Claims",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Court of Federal Claims"
+      },
+      {
+        "name": "Anthony 'Buddy' Piszel",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Anthony 'Buddy' Piszel"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Legal",
+        "basis": "explicit",
+        "quote": "Legal"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "Fannie Mae and Freddie Mac"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Friends of the Court": "organization",
+      "Bruce Berkowitz": "issuer",
+      "Fairholme Funds": "issuer",
+      "Fannie Mae": "issuer",
+      "Freddie Mac": "issuer",
+      "Cooper & Kirk PLLC": "organization",
+      "Chuck Cooper": "organization",
+      "U.S. Supreme Court": "organization",
+      "U.S. Court of Federal Claims": "organization",
+      "Anthony 'Buddy' Piszel": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:41.829223+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:07:38.565475+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses legal influence on judicial decisions and investor actions",
+      "securities": [
+        {
+          "name": "Friends of the Court",
+          "ticker": null,
+          "exchange": null,
+          "quote": "'Friends of the Court'"
+        },
+        {
+          "name": "Bruce Berkowitz",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Bruce Berkowitz"
+        },
+        {
+          "name": "Fairholme Funds",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Fairholme Funds"
+        },
+        {
+          "name": "Fannie Mae",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Fannie Mae"
+        },
+        {
+          "name": "Freddie Mac",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Freddie Mac"
+        },
+        {
+          "name": "Cooper & Kirk PLLC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Cooper & Kirk PLLC"
+        },
+        {
+          "name": "Chuck Cooper",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Chuck Cooper"
+        },
+        {
+          "name": "U.S. Supreme Court",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Supreme Court"
+        },
+        {
+          "name": "U.S. Court of Federal Claims",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Court of Federal Claims"
+        },
+        {
+          "name": "Anthony 'Buddy' Piszel",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Anthony 'Buddy' Piszel"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Legal",
+          "basis": "explicit",
+          "quote": "Legal"
+        },
+        {
+          "name": "Finance",
+          "basis": "inferred",
+          "quote": "Fannie Mae and Freddie Mac"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Friends of the Court": "organization",
+        "Bruce Berkowitz": "issuer",
+        "Fairholme Funds": "issuer",
+        "Fannie Mae": "issuer",
+        "Freddie Mac": "issuer",
+        "Cooper & Kirk PLLC": "organization",
+        "Chuck Cooper": "organization",
+        "U.S. Supreme Court": "organization",
+        "U.S. Court of Federal Claims": "organization",
+        "Anthony 'Buddy' Piszel": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:07:38.591307+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:07:38.599301+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:07:38.580299+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses legal entities and their influence on judicial decisions, including the involvement of investors and law firms in legal cases related to FANN",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:40:52.436028+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "source_id": "385b904d3cded00c1a9d608d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_11_29_13_33_stock_agricultural-equipment_fool.json",
+      "sha256": "0c0a6786585f8eef695e94110164ba6eafe2a768507fea66036b88e0086805f6",
+      "filename": "2014_11_29_13_33_stock_agricultural-equipment_fool.json"
+    }
+  ],
+  "original_record_hash": "9289305fdd44cc37f99b9098f7a0bc5528a86544ec834b2588be59bd278beff1",
+  "input_hash": "6ceac1412b2cf0d8e9e040e412e3096790455289e01ddb194fbd90eb1086b5ec",
+  "matching_audit_hash": "3b8211f28989a2fbd48767f1cbf3f8d5b0cb2eb407161c02f69be90c9d29f004",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "903e18367ea68e1991addbd4ed86471dcb4cd5f6bd2bdb539f3bdb9eaad1147d",
+    "raw_sha256": "0024ca2b22c869eb4152287cbdd51058af1fb25325595250f06dc295353348e4",
+    "date_quote": "article:published_time=2014-11-29T13:33:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Deere and Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Deere and Company"
+    },
+    {
+      "name": "Deere & Company",
+      "ticker": "DE",
+      "exchange": "NYSE",
+      "quote": "Deere & Company NYSE: DE"
+    },
+    {
+      "name": "Agco",
+      "ticker": "AGCO",
+      "exchange": "NYSE",
+      "quote": "Agco NYSE: AGCO"
+    },
+    {
+      "name": "ACGO Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ACGO Corporation"
+    }
+  ],
+  "record_hash": "0caa10189cf58e0ed7a056b013edbb78661d3b66add4bab27ea7c110c3d304f3",
+  "outputs": [
+    {
+      "path": "US\\2014_11_29_13_33_stock_agricultural-equipment_fool.json",
+      "sha256": "c9c36927a4273b40596ecec794fff092e96b16584cb067fa53d16c9b5900070d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-11-29T13:33:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:36:45.964790+00:00",
+    "fetched_at": "2026-11-10T19:48:07.803975+00:00",
+    "feature_available_at": "2026-11-11T06:27:13.105492+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:18:48.022699+00:00",
+  "feature_available_at": "2026-11-12T14:18:48.064798+00:00",
+  "commit_verified_at": "2026-11-12T14:18:48.064798+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains financial results, guidance, and industry-related forecasts for Deere & Company and ACGO Corporation, indicating market and industry trends",
+    "securities": [
+      {
+        "name": "Deere and Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Deere and Company"
+      },
+      {
+        "name": "ACGO Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ACGO Corporation (AGCO)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Agriculture Equipment",
+        "basis": "inferred",
+        "quote": "agriculture and turf segment"
+      },
+      {
+        "name": "Construction Equipment",
+        "basis": "inferred",
+        "quote": "construction and forestry sales"
+      },
+      {
+        "name": "Farm Machinery",
+        "basis": "explicit",
+        "quote": "large farm machinery sales"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Deere and Company": "company",
+      "ACGO Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

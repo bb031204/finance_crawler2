@@ -1,0 +1,885 @@
+{
+  "source_id": "0d8d5bc6495879c35dcfc934",
+  "status": "completed",
+  "source_record_hash": "169523e6692333aa2f5f2da9afa1c68d55bde117ae173c06648ad02cb3b40587",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001000228-13-000008-index.html",
+    "attempted_at": "2026-11-18T08:06:55.200272+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001000228-13-000008-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000100022813000008/the8k_4q12.htm",
+    "fetched_at": "2026-11-18T08:07:04.732117+00:00",
+    "source_body_hash": "ec543969d2367c03d18d88012a131921e804de10c437093b65d04619eadf6f07",
+    "raw_sha256": "7883f1fe6261de01c87a7da2e834f5f118ce89e316f4bfdde0a24dd491f57f86",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000228/000100022813000008/the8k_4q12.htm",
+        "type": "8-K",
+        "description": "HENRY SCHEIN, INC. 4Q12 QUARTERLY 8-K",
+        "raw_sha256": "7883f1fe6261de01c87a7da2e834f5f118ce89e316f4bfdde0a24dd491f57f86",
+        "text_sha256": "a20cd2dd90e4f897b3e569b71c312de047977aa43ab28e399493bd540346b678",
+        "text_start": 0,
+        "text_end": 2548
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000228/000100022813000008/exhibit991_4q12.htm",
+        "type": "EX-99.1",
+        "description": "PRESS RELEASE DATED FEBRUARY 13, 2013",
+        "raw_sha256": "51c042c40617c51f93697eef3c8c6232290710c7a79b6aa4f252a812a309e022",
+        "text_sha256": "f30226254b7c29072187fadd7c3582c02bfd21b2551ce6f19053ece15bd7347f",
+        "text_start": 2550,
+        "text_end": 28523
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2013-02-13",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0d8d5bc6495879c35dcfc934.json",
+    "sha256": "080fc714c13b2a69b250e6f7d3109bdbe4bad1f5a2d95db2116146b83d835a25",
+    "bundled_path": "legacy_audit/0d8d5bc6495879c35dcfc934.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4e7d300004fea02c86c6583fead9aec23e3b4fc7aba22862ece3d5d42bbaf334",
+      "llm_inferred_at": "2026-11-18T08:07:19.554988+00:00",
+      "model_duration_seconds": 14.7707807,
+      "prompt_tokens": 4187,
+      "completion_tokens": 644,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+              "rationale": "The article discusses the performance of Henry Schein's Global Technology and Value-Added Services, which is part of the broader Information Technology industry. The mention of recurring revenue streams and the impact of macroeconomic factors on the European technology business indicates an industry",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+              "rationale": "The article discusses the performance of Henry Schein's Global Technology and Value-Added Services, which is part of the broader Information Technology industry. The mention of recurring revenue streams and the impact of macroeconomic factors on the European technology business indicates an industry",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology"
+            },
+            {
+              "industry_key": "SEC-SIC:5047",
+              "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "799ff1b3982a918acdd78cf80f9797c7b8619fc065565539c0f6e1d4bcbcd527",
+      "llm_inferred_at": "2026-11-18T08:07:32.687933+00:00",
+      "model_duration_seconds": 13.10706,
+      "prompt_tokens": 4231,
+      "completion_tokens": 645,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+              "rationale": "The text discusses the performance of Henry Schein's Technology and Value-Added Services, which are part of the broader Information Technology industry. The mention of recurring revenue streams and the impact of macroeconomic factors on the European technology business indicates an industry-wide or,",
+              "confidence": 0.8
+            },
+            {
+              "scope": "company",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+              "rationale": "The text discusses the performance of Henry Schein's Technology and Value-Added Services, which are part of the broader Information Technology industry. The mention of recurring revenue streams and the impact of macroeconomic factors on the European technology business indicates an industry-wide or,",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology"
+            },
+            {
+              "industry_key": "SEC-SIC:5047",
+              "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "3b345d61dea23d7fd0520a355a195c7e283d2cf8a4f56b92d68365b9328f7f4f",
+      "llm_inferred_at": "2026-11-18T08:07:56.475537+00:00",
+      "model_duration_seconds": 23.7638184,
+      "prompt_tokens": 4057,
+      "completion_tokens": 1179,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+              "rationale": "The refinancing of debt related to the Butler Schein Animal Health transaction is a specific action taken by the company, which directly impacts its financials and operations.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+              "rationale": "The refinancing is expected to reduce interest expense and be accretive to EPS by $0.02 to $0.03 on an annualized basis, which is a direct financial impact on the company.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+              "rationale": "The company also expects to incur a one-time, non-cash charge of approximately $0.04 to $0.05 per diluted share, which is a direct financial impact on the company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the cost of shipping our products or other service issues with our third-party shippers; general global macro-economic conditions; disruptions in financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with regulatory requirements and",
+              "rationale": "The text discusses general global macro-economic conditions, disruptions in financial markets, and possible volatility of the market price of the company's common stock, which are broad US equity market factors.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "inferred",
+              "quote": "Henry Schein, Inc."
+            },
+            {
+              "industry_key": "TRSR:90f2dfe71cd4510c",
+              "name": "Medical/Dental Instruments",
+              "basis": "inferred",
+              "quote": "Henry Schein, Inc."
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "name": "Auto Parts:O.E.M.",
+              "basis": "inferred",
+              "quote": "Henry Schein, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+              "industry_name_original": "Health Care",
+              "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory requirements.",
+              "confidence": 0.85,
+              "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with"
+            },
+            {
+              "industry_key": "TRSR:90f2dfe71cd4510c",
+              "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+              "industry_name_original": "Medical/Dental Instruments",
+              "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory requirements.",
+              "confidence": 0.85,
+              "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with"
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+              "industry_name_original": "Auto Parts:O.E.M.",
+              "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory requirements.",
+              "confidence": 0.85,
+              "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "ed5f94f7ee3ce110c12741878395ae120a51f0b38e8b0b3aba332f99abc551cf",
+      "llm_inferred_at": "2026-11-18T08:08:17.909068+00:00",
+      "model_duration_seconds": 21.4115911,
+      "prompt_tokens": 4101,
+      "completion_tokens": 1130,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+              "rationale": "The refinancing of debt is a company-specific financial action that affects the company's financial statements and earnings.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+              "rationale": "The refinancing is expected to reduce interest expense and be accretive to EPS by $0.02 to $0.03 on an annualized basis.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+              "rationale": "The Company expects to incur a one-time, non-cash charge of approximately $0.04 to $0.05 per diluted share.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the cost of shipping our products or other service issues with our third-party shippers; general global macro-economic conditions; disruptions in financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with regulatory requirements and",
+              "rationale": "The text discusses general global macro-economic conditions and disruptions in financial markets, which are broad US equity market factors.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc."
+            },
+            {
+              "industry_key": "TRSR:90f2dfe71cd4510c",
+              "name": "Medical/Dental Instruments",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc."
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "name": "Auto Parts:O.E.M.",
+              "basis": "explicit",
+              "quote": "Henry Schein, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+              "industry_name_original": "Health Care",
+              "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory compliance.",
+              "confidence": 0.85,
+              "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with"
+            },
+            {
+              "industry_key": "TRSR:90f2dfe71cd4510c",
+              "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+              "industry_name_original": "Medical/Dental Instruments",
+              "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory compliance.",
+              "confidence": 0.85,
+              "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with"
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+              "industry_name_original": "Auto Parts:O.E.M.",
+              "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory compliance.",
+              "confidence": 0.85,
+              "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "e1735687b5fada05cbaa1f2d3c8d57ec4f43841e2ffeef0a2a2de7eba9297847",
+      "llm_inferred_at": "2026-11-18T08:08:38.573599+00:00",
+      "model_duration_seconds": 20.640941,
+      "prompt_tokens": 5902,
+      "completion_tokens": 909,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+              "rationale": "The article discusses the sales growth of various sectors, including Health Care Distribution, Medical, and Technology and value-added services, indicating industry-wide performance and trends.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Net cash provided by operating activities 199,661 277,826 408,099 554,625 Cash flows from investing activities: Purchases of fixed assets (18,303 ) (12,629 ) (51,237 ) (45,176 )",
+              "rationale": "The article provides detailed financial data for Henry Schein, Inc., indicating company-specific financial performance and activities.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:5047",
+              "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13"
+            },
+            {
+              "industry_key": "TRSR:8ac751df05daf05e",
+              "name": "Electronics Distribution",
+              "basis": "explicit",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13"
+            },
+            {
+              "industry_key": "TRSR:7763c6a9e1ef1a4b",
+              "name": "Medical Specialities",
+              "basis": "explicit",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "88513de8a83cb5ea9200491d5162a00a06b8038c743eb85715dc6452e73291a8",
+      "llm_inferred_at": "2026-11-18T08:08:56.918633+00:00",
+      "model_duration_seconds": 18.33042,
+      "prompt_tokens": 5946,
+      "completion_tokens": 909,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+              "rationale": "The article discusses the sales growth of various sectors, including Health Care Distribution, Medical, and Technology and value-added services, indicating an industry-wide impact on these sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Net cash provided by operating activities 199,661 277,826 408,099 554,625 Cash flows from investing activities: Purchases of fixed assets (18,303 ) (12,629 ) (51,237 ) (45,176 )",
+              "rationale": "The article provides detailed financial information for Henry Schein, Inc., indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:5047",
+              "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13"
+            },
+            {
+              "industry_key": "TRSR:8ac751df05daf05e",
+              "name": "Electronics Distribution",
+              "basis": "explicit",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13"
+            },
+            {
+              "industry_key": "TRSR:7763c6a9e1ef1a4b",
+              "name": "Medical Specialities",
+              "basis": "explicit",
+              "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "e6ac5dff9a1899744c2c5ec75e14049c977b937d13c91695231765b2013800f3",
+      "llm_inferred_at": "2026-11-18T08:09:10.669896+00:00",
+      "model_duration_seconds": 13.7356929,
+      "prompt_tokens": 2979,
+      "completion_tokens": 671,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+              "rationale": "The article discusses sales growth rates across various industry segments such as Dental, Animal Health, and Medical Technology/VAS, indicating an industry-wide impact on these sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "From Net Income Attributable to Henry Schein, Inc. Net Income attributable to Henry Schein, Inc. $ 112,467 $ 104,730 7.4 % $ 398,613 $ 367,661 8.4 % Diluted EPS from Net Income",
+              "rationale": "The article provides financial results for Henry Schein, Inc., indicating a company-specific impact on its earnings and EPS.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:5047",
+              "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal"
+            },
+            {
+              "industry_key": "SEC-SIC:3843",
+              "name": "DENTAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal"
+            },
+            {
+              "industry_key": "SEC-SIC:6321",
+              "name": "ACCIDENT & HEALTH INSURANCE",
+              "basis": "explicit",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "acd1824f46e5b2fce47251fe72d88b18c72a6cd19f940b8f2fa53500bf57299d",
+      "llm_inferred_at": "2026-11-18T08:09:23.114558+00:00",
+      "model_duration_seconds": 12.4358855,
+      "prompt_tokens": 3023,
+      "completion_tokens": 667,
+      "selection": [
+        {
+          "source_id": "0d8d5bc6495879c35dcfc934",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+              "rationale": "The article discusses sales growth rates across various industry segments such as Dental, Animal Health, Medical Technology/VAS, which are all part of the health care industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "From Net Income Attributable to Henry Schein, Inc. Net Income attributable to Henry Schein, Inc. $ 112,467 $ 104,730 7.4 % $ 398,613 $ 367,661 8.4 % Diluted EPS from Net Income",
+              "rationale": "The article provides financial results for Henry Schein, Inc., indicating the company's performance and earnings growth.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:5047",
+              "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal"
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal"
+            },
+            {
+              "industry_key": "SEC-SIC:3843",
+              "name": "DENTAL EQUIPMENT & SUPPLIES",
+              "basis": "explicit",
+              "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:09:23.159948+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ec543969d2367c03d18d88012a131921e804de10c437093b65d04619eadf6f07",
+    "raw_sha256": "7883f1fe6261de01c87a7da2e834f5f118ce89e316f4bfdde0a24dd491f57f86",
+    "date_quote": "Date of Report (Date of earliest event reported) February 13, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000100022813000008/the8k_4q12.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "HENRY SCHEIN, INC."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "222a36f3f602dee0",
+        "industry_name_standard": "Information Technology",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:04b0a88a87070712",
+        "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+        "industry_name_original": "Health Care",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory compliance.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "04b0a88a87070712",
+        "industry_name_standard": "Health Care",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Health Care",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "SEC-SIC:5047",
+        "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+        "basis": "inferred",
+        "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "5047",
+        "industry_name_standard": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:8ac751df05daf05e",
+        "name": "Electronics Distribution",
+        "basis": "inferred",
+        "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "8ac751df05daf05e",
+        "industry_name_standard": "Electronics Distribution",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:7763c6a9e1ef1a4b",
+        "name": "Medical Specialities",
+        "basis": "inferred",
+        "quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7763c6a9e1ef1a4b",
+        "industry_name_standard": "Medical Specialities",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Health 2,321,151 2,010,270 15.5 % Medical 1,560,921 1,504,454 3.8 % Total Health Care Distribution 8,656,554 8,279,622 4.6 % Technology and value-added services 283,413 250,620 13",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:5047",
+        "name": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+        "basis": "inferred",
+        "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "5047",
+        "industry_name_standard": "WHOLESALE-MEDICAL, DENTAL & HOSPITAL EQUIPMENT & SUPPLIES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:04b0a88a87070712",
+        "name": "Health Care",
+        "basis": "inferred",
+        "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "04b0a88a87070712",
+        "industry_name_standard": "Health Care",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:3843",
+        "name": "DENTAL EQUIPMENT & SUPPLIES",
+        "basis": "inferred",
+        "quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3843",
+        "industry_name_standard": "DENTAL EQUIPMENT & SUPPLIES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "2012 Fourth Quarter Year to Date Sales Growth Rate Summary (unaudited) Q4 2012 YTD over Q4 2011 YTD Global Consolidated Dental Animal Health Medical Technology/VAS Local Internal",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "0d8d5bc6495879c35dcfc934",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_02_13_Financial-Report_Healthcare-Distribution_sec.json",
+        "sha256": "f902b8b051e30147fe0c9010508ac8c9881ca3f50e477c8454e131f0152d2e4b",
+        "filename": "2013_02_13_Financial-Report_Healthcare-Distribution_sec.json"
+      }
+    ],
+    "original_record_hash": "657d9dbecabd97c3b9345b5d7b4a0c32fc1d95395ae521085446b96287a97ae7",
+    "input_hash": "5bab2d03baf0ff6479d964788b3c344114b6228c117500f30969556816aec10c",
+    "matching_audit_hash": "c66974976952ffc276a1ac3765562403ce4bb69f7b683c3414abf3d1a1b52f75",
+    "legacy_security_evidence": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "HENRY SCHEIN, INC."
+      }
+    ],
+    "record_hash": "169523e6692333aa2f5f2da9afa1c68d55bde117ae173c06648ad02cb3b40587",
+    "outputs": [
+      {
+        "path": "US\\2013_02_13_Financial-Report_Healthcare-Distribution_sec.json",
+        "sha256": "e50d191ebf52541042cbe1ef84d8c1204510e4fb9e9f0b24174a8815e20efe6c"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-02-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+      "fetched_at": "2026-11-10T23:13:40.415512+00:00",
+      "feature_available_at": "2026-11-10T23:13:48.960844+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T08:09:23.114558+00:00",
+    "feature_available_at": "2026-11-18T08:09:23.159948+00:00",
+    "commit_verified_at": "2026-11-12T13:52:44.616405+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SP500-SECTOR:04b0a88a87070712",
+        "industry_scope_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+        "industry_name_original": "Health Care",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The company's operations are affected by changes in the health care industry, including the implementation of health care laws and regulatory compliance.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "04b0a88a87070712",
+        "industry_name_standard": "Health Care",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "financial markets; possible volatility of the market price of our common stock; changes in the health care industry; implementation of health care laws; failure to comply with",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "not_approved",
+        "propagation_approved": false
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+        "rationale": "The text discusses the performance of Henry Schein's Technology and Value-Added Services, which are part of the broader Information Technology industry. The mention of recurring revenue streams and the impact of macroeconomic factors on the European technology business indicates an industry-wide or,",
+        "confidence": 0.8,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the quarter in North America, which represented nearly 90% of the group’s revenues, and included particular strength in -2- Next recurring revenue streams on both the technology",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+        "rationale": "The refinancing of debt is a company-specific financial action that affects the company's financial statements and earnings.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Company expects the refinancing to occur at the end of the first quarter of 2013.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Net cash provided by operating activities 199,661 277,826 408,099 554,625 Cash flows from investing activities: Purchases of fixed assets (18,303 ) (12,629 ) (51,237 ) (45,176 )",
+        "rationale": "The article provides detailed financial information for Henry Schein, Inc., indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Net cash provided by operating activities 199,661 277,826 408,099 554,625 Cash flows from investing activities: Purchases of fixed assets (18,303 ) (12,629 ) (51,237 ) (45,176 )",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "From Net Income Attributable to Henry Schein, Inc. Net Income attributable to Henry Schein, Inc. $ 112,467 $ 104,730 7.4 % $ 398,613 $ 367,661 8.4 % Diluted EPS from Net Income",
+        "rationale": "The article provides financial results for Henry Schein, Inc., indicating the company's performance and earnings growth.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "From Net Income Attributable to Henry Schein, Inc. Net Income attributable to Henry Schein, Inc. $ 112,467 $ 104,730 7.4 % $ 398,613 $ 367,661 8.4 % Diluted EPS from Net Income",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_dictionary_code_quote_conflict"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000228/0001000228-13-000008-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "169523e6692333aa2f5f2da9afa1c68d55bde117ae173c06648ad02cb3b40587",
+    "content_hash": "c34bcc0e6f6599bbb9754b81013b575ad4d34c67f9527d6f30cfbb989b8f93d7",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T08:09:23.118210+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0d8d5bc6495879c35dcfc934.json",
+      "sha256": "3505993113cce94f8f2445c32319c6d5edaa9821f1bcba42a61ffa4608168448",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 147.96799999999348
+}

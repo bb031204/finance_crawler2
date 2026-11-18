@@ -1,0 +1,95 @@
+{
+  "source_id": "2d250b87605416f48ef47b97",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_11_Compensation_Technology_sec.json",
+      "sha256": "c490725f65567f425b36e592c21083fecb07dbf25b23600ece07e231cb983518",
+      "filename": "2021_03_11_Compensation_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "d2d360af047c315caf329f16f5f89eae37e118b7600bb6e574af1fc6540ec430",
+  "input_hash": "c2b5dfc28cceab91bc2b5caab1b4ae9623d4b7b7ad8a9256b5cff424290c89c5",
+  "matching_audit_hash": "ce2fef93a9df3e701b8bfef1c1f98b982cad7254e01e52565eb0da6d33302270",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6d32f072a8b9cc4235ce41cd04815bfa9847df060809329039fc7e0e57dfa355",
+    "raw_sha256": "cc311721de94eae51cbe43ed25b2e4288945fe1c1755ae17a1e17576a9684501",
+    "date_quote": "SEC filing datePublished=2021-03-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390021014866/ea137484-8k_blondertongue.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock"
+    }
+  ],
+  "record_hash": "37b2e70bb0401279018ebc6f402ffebdf984a8bd4e3f03d6009c31020f9cc346",
+  "outputs": [
+    {
+      "path": "US\\2021_03_11_Compensation_Technology_sec.json",
+      "sha256": "f8c4e92d27b03b1382de8e109f14240e3f909457ce4322da36c43ac8ec754d48"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.584595+00:00",
+    "fetched_at": "2026-11-11T16:00:35.357166+00:00",
+    "feature_available_at": "2026-11-11T16:00:53.942179+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.947540+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.947540+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

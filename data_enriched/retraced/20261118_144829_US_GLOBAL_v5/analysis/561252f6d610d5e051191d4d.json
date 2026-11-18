@@ -1,0 +1,299 @@
+{
+  "source_id": "561252f6d610d5e051191d4d",
+  "status": "completed",
+  "source_record_hash": "aab8df0b4e2c05e52d1903e0c8e042f4a4aa2c1bf1faffed289e10af423d117e",
+  "source_trace": {
+    "requested_url": "https://www.bls.gov/ppi/notices/2015/ppi-updates-commodity-weight-allocations-for-the-final-demand-intermediate-demand-aggregation-structure.htm",
+    "attempted_at": "2026-11-18T15:02:11.114780+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "0f9b770def070547d4246bff82f6883817b7a75baab8acc63f750380dd1a5af3"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/561252f6d610d5e051191d4d.json",
+    "sha256": "21ce1bd21ea5d4ae72f71ac57e6934b11aa90aa58b3baea93babffc37bc14267",
+    "bundled_path": "legacy_audit/561252f6d610d5e051191d4d.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "483383a08715d8336a97aef5aaca9a76c424c973f21a3e40b747a822773f7970",
+      "llm_inferred_at": "2026-11-18T15:03:14.298084+00:00",
+      "model_duration_seconds": 18.0616667,
+      "prompt_tokens": 2442,
+      "completion_tokens": 953,
+      "selection": [
+        {
+          "source_id": "561252f6d610d5e051191d4d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The FD-ID categorization includes concepts such as type of buyer and type of commodity.",
+              "rationale": "The update to the FD-ID system affects the relative importance of component series across different industries, particularly those involved in intermediate and final demand categories.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The BLS aimed to maximize net forward flow by assigning industries to stages in a four-stage system.",
+              "rationale": "The update to the FD-ID system involves broad changes in how industries are classified and how data is used to study price transmission relationships, which can have implications for the broader market structure and economic indicators.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:6eb1c8f1ea586d37",
+              "name": "Engineering & Construction",
+              "basis": "explicit",
+              "quote": "Commodity types include unprocessed goods, processed goods, services, and construction."
+            },
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "name": "Other Consumer Services",
+              "basis": "explicit",
+              "quote": "Final Demand–Intermediate Demand (FD–ID) producer price indexes (PPI) effective with the release of January 2015 data on February 18, 2015. This update reflects recent sales"
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "The FD-ID categorization includes concepts such as type of buyer and type of commodity."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:6eb1c8f1ea586d37",
+              "industry_scope_quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages.",
+              "industry_name_original": "Engineering & Construction",
+              "mechanism": "The update reorganizes intermediate demand commodities into four stages of production, allowing data users to study price transmission relationships between intermediate stages and final demand.",
+              "confidence": 0.9,
+              "quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages."
+            },
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "industry_scope_quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages.",
+              "industry_name_original": "Other Consumer Services",
+              "mechanism": "The update reorganizes intermediate demand commodities into four stages of production, allowing data users to study price transmission relationships between intermediate stages and final demand.",
+              "confidence": 0.85,
+              "quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "industry_scope_quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages.",
+              "industry_name_original": "Finance: Consumer Services",
+              "mechanism": "The update reorganizes intermediate demand commodities into four stages of production, allowing data users to study price transmission relationships between intermediate stages and final demand.",
+              "confidence": 0.8,
+              "quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "ef235952a53943bb7f937811f486de990fabe1a4f80155c8a9ddcd5a7c25d532",
+      "llm_inferred_at": "2026-11-18T15:03:27.738124+00:00",
+      "model_duration_seconds": 13.4056817,
+      "prompt_tokens": 2486,
+      "completion_tokens": 737,
+      "selection": [
+        {
+          "source_id": "561252f6d610d5e051191d4d",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "name": "Other Consumer Services",
+              "basis": "explicit",
+              "quote": "The FD-ID categorization includes concepts such as type of buyer and type of commodity."
+            },
+            {
+              "industry_key": "TRSR:6eb1c8f1ea586d37",
+              "name": "Engineering & Construction",
+              "basis": "explicit",
+              "quote": "Commodity types include unprocessed goods, processed goods, services, and construction."
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "The FD-ID categorization includes concepts such as type of buyer and type of commodity."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "industry_scope_quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages.",
+              "industry_name_original": "Other Consumer Services",
+              "mechanism": "The update reorganizes intermediate demand commodities into four stages of production, allowing data users to study price transmission relationships between intermediate stages and final demand.",
+              "confidence": 0.85,
+              "quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages."
+            },
+            {
+              "industry_key": "TRSR:6eb1c8f1ea586d37",
+              "industry_scope_quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages.",
+              "industry_name_original": "Engineering & Construction",
+              "mechanism": "The update reorganizes intermediate demand commodities into four stages of production, allowing data users to study price transmission relationships between intermediate stages and final demand.",
+              "confidence": 0.85,
+              "quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages."
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "industry_scope_quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages.",
+              "industry_name_original": "Major Pharmaceuticals",
+              "mechanism": "The update reorganizes intermediate demand commodities into four stages of production, allowing data users to study price transmission relationships between intermediate stages and final demand.",
+              "confidence": 0.85,
+              "quote": "Industries are classified into stages based on the percentage of their production sold to final demand and other stages."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:03:27.767171+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0f9b770def070547d4246bff82f6883817b7a75baab8acc63f750380dd1a5af3",
+    "raw_sha256": null,
+    "date_quote": "Notice Effective with the release of January 2015 data on February 18, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The text discusses updates to the PPI FD-ID system, which involves changes in commodity weight allocations and industry stage assignments based on 2007 I-O data",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Labor Statistics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Labor Statistics (BLS)"
+      },
+      {
+        "name": "Bureau of Economic Analysis",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bureau of Economic Analysis (BEA)"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:6eb1c8f1ea586d37",
+        "name": "Engineering & Construction",
+        "basis": "inferred",
+        "quote": "Commodity types include unprocessed goods, processed goods, services, and construction.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "6eb1c8f1ea586d37",
+        "industry_name_standard": "Engineering & Construction",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Commodity types include unprocessed goods, processed goods, services, and construction."
+      }
+    ],
+    "impact_scope": [],
+    "entity_types": {
+      "U.S. Bureau of Labor Statistics": "organization",
+      "Bureau of Economic Analysis": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "561252f6d610d5e051191d4d",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_02_18_Economic-Data_Statistics_bls.json",
+        "sha256": "15ec6112dd88cdf63ac56bcba8d2e523970624c6af874bec5df6a011e7f0b9e7",
+        "filename": "2015_02_18_Economic-Data_Statistics_bls.json"
+      }
+    ],
+    "original_record_hash": "ec15a53666f21c0d1405e573a218d953c4c1c64e0dc037553506612b333e00b1",
+    "input_hash": "1569cb5a261e7fd6e85a9c8a07e5df239d4784d2d5888d04f57c2a897426e43d",
+    "matching_audit_hash": "17eeb9c2d78b23111894d12b5df33fb4223d00c2e86cbc72bcb2f20ccc14d246",
+    "legacy_security_evidence": [],
+    "record_hash": "aab8df0b4e2c05e52d1903e0c8e042f4a4aa2c1bf1faffed289e10af423d117e",
+    "outputs": [
+      {
+        "path": "US\\2015_02_18_Economic-Data_Statistics_bls.json",
+        "sha256": "6c431503b2f5b7786189deacc9a0347edcc6b033e5edd6a1eb2d3822fe4ca356"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2015-02-18",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T16:03:36.538123+00:00",
+      "fetched_at": "2026-11-10T16:10:02.998588+00:00",
+      "feature_available_at": "2026-11-10T17:53:16.003635+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T15:03:27.738124+00:00",
+    "feature_available_at": "2026-11-18T15:03:27.767171+00:00",
+    "commit_verified_at": "2026-11-12T14:21:16.876139+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.bls.gov/ppi/notices/2015/ppi-updates-commodity-weight-allocations-for-the-final-demand-intermediate-demand-aggregation-structure.htm",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "aab8df0b4e2c05e52d1903e0c8e042f4a4aa2c1bf1faffed289e10af423d117e",
+    "content_hash": "0f9b770def070547d4246bff82f6883817b7a75baab8acc63f750380dd1a5af3",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:03:27.744021+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/561252f6d610d5e051191d4d.json",
+      "sha256": "c3ebf41694d73c445258d1422565ccf0abca9569a713a46c70df5b042f984c67",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 76.70300000000861
+}

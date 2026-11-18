@@ -1,0 +1,398 @@
+{
+  "source_id": "5a7852b4412d45df4baef807",
+  "status": "completed",
+  "source_record_hash": "bbaea5e00ed89f8e4cd3474ff0943f0520a42f4299e76183f6ee0aed10fed542",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-16-641508-index.html",
+    "attempted_at": "2026-11-18T15:54:25.150069+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "e481d4c8265ae268a77e03297e7a8c542239a1baaf10eb87f6b592711ad054a1"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/5a7852b4412d45df4baef807.json",
+    "sha256": "2654354930436a0fc5ecb8a89be6d9ae5d55d9817b9d7184224a0685aa6d9ab9",
+    "bundled_path": "legacy_audit/5a7852b4412d45df4baef807.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "95b8e1f499de30034c4730dbd2426ea31c3f60a4cdb3545154f1356616340939",
+      "llm_inferred_at": "2026-11-18T15:55:20.610275+00:00",
+      "model_duration_seconds": 10.3912121,
+      "prompt_tokens": 1958,
+      "completion_tokens": 520,
+      "selection": [
+        {
+          "source_id": "5a7852b4412d45df4baef807",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "RBC also signed a 15-year strategic agreement with Aviva Canada Inc., enabling it to market and sell property and casualty insurance products.",
+              "rationale": "The strategic agreement enables RBC to market and sell property and casualty insurance products, which is an industry-wide impact within the insurance sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities.",
+              "rationale": "The sale of RBC General Insurance Company is a specific company event involving Royal Bank of Canada.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6331",
+              "name": "FIRE, MARINE & CASUALTY INSURANCE",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "explicit",
+              "quote": "RBC also signed a 15-year strategic agreement with Aviva Canada Inc., enabling it to market and sell property and casualty insurance products."
+            },
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "b492ec2c090ba2264c960c2ce98099767be8d77f0b075d38fc584a963654cb1d",
+      "llm_inferred_at": "2026-11-18T15:55:28.676244+00:00",
+      "model_duration_seconds": 8.0462057,
+      "prompt_tokens": 2002,
+      "completion_tokens": 440,
+      "selection": [
+        {
+          "source_id": "5a7852b4412d45df4baef807",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "RBC also signed a 15-year strategic agreement with Aviva Canada Inc., enabling it to market and sell property and casualty insurance products.",
+              "rationale": "The agreement enables RBC to market and sell property and casualty insurance products, which is an industry-wide activity within the insurance sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities.",
+              "rationale": "The sale of RBC General Insurance Company is a specific action taken by Royal Bank of Canada, indicating a company-level impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6331",
+              "name": "FIRE, MARINE & CASUALTY INSURANCE",
+              "basis": "explicit",
+              "quote": "RBC also signed a 15-year strategic agreement with Aviva Canada Inc., enabling it to market and sell property and casualty insurance products."
+            },
+            {
+              "industry_key": "SEC-SIC:6029",
+              "name": "COMMERCIAL BANKS, NEC",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:55:28.718209+00:00",
+  "audit": {
+    "source_id": "5a7852b4412d45df4baef807",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-16-641508-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2016-07-05",
+    "date_quote": "SEC filing datePublished=2016-07-05",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "e481d4c8265ae268a77e03297e7a8c542239a1baaf10eb87f6b592711ad054a1",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T19:20:01.341942+00:00",
+    "fetched_at": "2026-11-14T10:23:48.871060+00:00",
+    "first_extracted_at": "2026-11-14T10:24:53.530601+00:00",
+    "extracted_at": "2026-11-18T15:55:28.680485+00:00",
+    "feature_available_at": "2026-11-18T15:55:28.718209+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      },
+      {
+        "name": "Aviva Canada Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "to Aviva Canada Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6331",
+        "name": "FIRE, MARINE & CASUALTY INSURANCE",
+        "basis": "inferred",
+        "quote": "RBC also signed a 15-year strategic agreement with Aviva Canada Inc., enabling it to market and sell property and casualty insurance products.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6331",
+        "industry_name_standard": "FIRE, MARINE & CASUALTY INSURANCE",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "RBC also signed a 15-year strategic agreement with Aviva Canada Inc., enabling it to market and sell property and casualty insurance products."
+      },
+      {
+        "industry_key": "SEC-SIC:6029",
+        "name": "COMMERCIAL BANKS, NEC",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6029",
+        "industry_name_standard": "COMMERCIAL BANKS, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [
+      {
+        "code": "RY",
+        "reason": "unsupported_company_code_label_removed"
+      }
+    ],
+    "record_hash": "bbaea5e00ed89f8e4cd3474ff0943f0520a42f4299e76183f6ee0aed10fed542",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2016_07_05_Financial_Insurance_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\0808d6cbb3132888d90fd777a57e46f940867387060072bec38e48ab95255b5f.json",
+      ".runtime\\simple\\model_cache\\099ae7866087fe91e011a7bd37ffabb75153bd5a1f12d3cab31b735f9208f2e1.json",
+      ".runtime\\simple\\model_cache\\0e67afb9c553a9ebce69338cd4ea5163caf4b239c758c1c7b3ccdd5060be16b2.json",
+      ".runtime\\simple\\model_cache\\25f0c23c6d2a689f1c7dafd628615ba58cb8a324d41d57e5a7886bc40ce4ebf8.json",
+      ".runtime\\simple\\model_cache\\5a1dc4107b9ab3480b44a023726ca4bc95af52b91d9a370d0acc4d4964ba8a87.json",
+      ".runtime\\simple\\model_cache\\6efa4c35ba4d4b69e8ec0054499cd411683be4f9ae52cbe40339fd27003dc1ae.json",
+      ".runtime\\simple\\model_cache\\708861e493eda08d962d77ad5d3cd3ee6e65261ff38d1d7d65567d2327f567f8.json",
+      ".runtime\\simple\\model_cache\\7fbfae41611e02ff35d085d19d8a9bcc1ad5be7b2fa29e63daeaa5425883e026.json",
+      ".runtime\\simple\\model_cache\\899a38fa0a7e2fe36326f3d99be62c29775a5eb64fd660d577f2e5ac6ea2e3f0.json",
+      ".runtime\\simple\\model_cache\\cdc61c392136697be1e94baee9c00d16766432f8af6042d363dadc8a146a3754.json",
+      ".runtime\\simple\\pages\\5a7852b4412d45df4baef807.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312516641508/d85710d6k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312516641508/d85710d6k.htm",
+        "type": "6-K",
+        "description": "6-K",
+        "raw_sha256": "0418714119efbd8e6f79cf439a50f82bffeffb589d39d4efbb1df4e31fd77cd7",
+        "text_sha256": "4ffe990b39511cf4bb40e8d63b20d0161eb4e1ea8b40d90ff1f4c78fd9d27e92",
+        "text_start": 0,
+        "text_end": 1931
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312516641508/d85710dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "76436cb837a342fe545effcf2bf7229c8d43d71ede1043a96a5eea35749675e8",
+        "text_sha256": "5fdc1319081a90c16048b00ef9aebaf4208cb3cc96c381889e688cba6b771b7e",
+        "text_start": 1933,
+        "text_end": 8345
+      }
+    ],
+    "sec_document_version": 3,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "e8f5227498c1acbd2ba9475d6fe2fb42089a44530f0d6229b6625591dc9abbca",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-16-641508-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T15:55:28.676244+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "e481d4c8265ae268a77e03297e7a8c542239a1baaf10eb87f6b592711ad054a1",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Aviva Canada Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "to Aviva Canada Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": "sale",
+        "object": "RBC General Insurance Company",
+        "key_period": null,
+        "key_values": "completed",
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Royal Bank of Canada (RY on TSX and NYSE) today announced that it has completed the previously announced sale of RBC General Insurance Company"
+      },
+      {
+        "event_type": "earnings",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "RBC will record a net gain on the sale of its operations of approximately C$230 million after tax."
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "RBC will release its third quarter 2016 results and host an earnings conference call on August 24, 2016."
+      },
+      {
+        "event_type": "product_business",
+        "subject": null,
+        "action": "sale",
+        "object": "RBC General Insurance Company",
+        "key_period": null,
+        "key_values": null,
+        "conditions": "closing of the sale",
+        "evidence_type": "explicit",
+        "quote": "statements about the activities of RBC Insurance following the closing of the sale of RBC General Insurance Company to Aviva Canada Inc."
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "9593bbf49cde22784fb143e4fea25bf707866b351a4e6bac85d0f075464c9f55",
+    "commit_verified_at": "2026-11-14T10:24:53.598844+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-14T10:24:53.694898+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\5a7852b4412d45df4baef807.json",
+      ".runtime\\simple\\model_cache\\5a1dc4107b9ab3480b44a023726ca4bc95af52b91d9a370d0acc4d4964ba8a87.json",
+      ".runtime\\simple\\model_cache\\cdc61c392136697be1e94baee9c00d16766432f8af6042d363dadc8a146a3754.json",
+      ".runtime\\simple\\model_cache\\7fbfae41611e02ff35d085d19d8a9bcc1ad5be7b2fa29e63daeaa5425883e026.json",
+      ".runtime\\simple\\model_cache\\099ae7866087fe91e011a7bd37ffabb75153bd5a1f12d3cab31b735f9208f2e1.json",
+      ".runtime\\simple\\model_cache\\25f0c23c6d2a689f1c7dafd628615ba58cb8a324d41d57e5a7886bc40ce4ebf8.json",
+      ".runtime\\simple\\model_cache\\708861e493eda08d962d77ad5d3cd3ee6e65261ff38d1d7d65567d2327f567f8.json",
+      ".runtime\\simple\\model_cache\\6efa4c35ba4d4b69e8ec0054499cd411683be4f9ae52cbe40339fd27003dc1ae.json",
+      ".runtime\\simple\\model_cache\\899a38fa0a7e2fe36326f3d99be62c29775a5eb64fd660d577f2e5ac6ea2e3f0.json",
+      ".runtime\\simple\\model_cache\\0808d6cbb3132888d90fd777a57e46f940867387060072bec38e48ab95255b5f.json",
+      ".runtime\\simple\\model_cache\\0e67afb9c553a9ebce69338cd4ea5163caf4b239c758c1c7b3ccdd5060be16b2.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities.",
+        "rationale": "The sale of RBC General Insurance Company is a specific action taken by Royal Bank of Canada, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Royal Bank of Canada completed the sale of RBC General Insurance Company to Aviva Canada Inc., including home and auto insurance manufacturing capabilities."
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "bbaea5e00ed89f8e4cd3474ff0943f0520a42f4299e76183f6ee0aed10fed542",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/5a7852b4412d45df4baef807.json",
+      "sha256": "b5ff42a39053937c8478073296d64a5052b1c301bfa169dd221459ccee2747ad",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 63.59399999998277
+}

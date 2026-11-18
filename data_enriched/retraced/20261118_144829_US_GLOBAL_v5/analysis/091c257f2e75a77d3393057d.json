@@ -1,0 +1,410 @@
+{
+  "source_id": "091c257f2e75a77d3393057d",
+  "status": "completed",
+  "source_record_hash": "803fd2aac1d8049da6ceee9e199a876a92bcdc6e8a4aeaa1d0d7dbf43c193306",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2014/03/20/will-the-american-dream-still-include-owning-a-home.html",
+    "attempted_at": "2026-11-18T07:43:08.897954+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "fe8417998f582cfd02ba17b79de21840df499e23afb93d43d258d8041e4fe1fb"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/091c257f2e75a77d3393057d.json",
+    "sha256": "738cc13452cf43f94ef0c434539971f5e831da9e5392293774472e425e792f06",
+    "bundled_path": "legacy_audit/091c257f2e75a77d3393057d.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "e5b9434c95f3cec72af28c31d94974ba726178456db2d30f949c372f568a3781",
+      "llm_inferred_at": "2026-11-18T07:43:25.601094+00:00",
+      "model_duration_seconds": 11.6567546,
+      "prompt_tokens": 2176,
+      "completion_tokens": 600,
+      "selection": [
+        {
+          "source_id": "091c257f2e75a77d3393057d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The article also discusses a proposed bill to dismantle Fannie Mae and Freddie Mac, shifting mortgage finance to private investors.",
+              "rationale": "The proposed bill targets the mortgage finance industry, indicating a sector-wide policy change that could impact the industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving, indicating the aspiration remains unchanged.",
+              "rationale": "Fannie Mae is directly mentioned as a company involved in mortgage finance, and its survey is a company-specific event.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "industry",
+              "quote": "The article also highlights the growing single-family rental market, which has expanded from 10 million to 15 million homes, supported by institutional investors.",
+              "rationale": "The single-family rental market is an industry-wide trend, supported by institutional investors, indicating a sector-wide impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving, indicating the aspiration remains unchanged."
+            },
+            {
+              "industry_key": "TRSR:91ee83505b4e73e6",
+              "name": "Rental/Leasing Companies",
+              "basis": "explicit",
+              "quote": "The article also highlights the growing single-family rental market, which has expanded from 10 million to 15 million homes, supported by institutional investors."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "The article also discusses a proposed bill to dismantle Fannie Mae and Freddie Mac, shifting mortgage finance to private investors."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "7fa359a0a74bfae8868ae1262350505926d2e8760f5c78b0e94c7fa040296576",
+      "llm_inferred_at": "2026-11-18T07:43:36.322817+00:00",
+      "model_duration_seconds": 10.7091687,
+      "prompt_tokens": 2220,
+      "completion_tokens": 596,
+      "selection": [
+        {
+          "source_id": "091c257f2e75a77d3393057d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The article also discusses a proposed bill to dismantle Fannie Mae and Freddie Mac, shifting mortgage finance to private investors.",
+              "rationale": "The proposed bill directly impacts the mortgage finance industry, which includes Fannie Mae and Freddie Mac, and shifts the industry's structure to private investors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving, indicating the aspiration remains unchanged.",
+              "rationale": "Fannie Mae is directly mentioned as conducting a survey, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The article also highlights the growing single-family rental market, which has expanded from 10 million to 15 million homes, supported by institutional investors.",
+              "rationale": "The single-family rental market is an industry-wide phenomenon, supported by institutional investors, indicating an industry-level impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving, indicating the aspiration remains unchanged."
+            },
+            {
+              "industry_key": "TRSR:91ee83505b4e73e6",
+              "name": "Rental/Leasing Companies",
+              "basis": "explicit",
+              "quote": "The article also highlights the growing single-family rental market, which has expanded from 10 million to 15 million homes, supported by institutional investors."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "The article also discusses a proposed bill to dismantle Fannie Mae and Freddie Mac, shifting mortgage finance to private investors."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:43:36.333713+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fe8417998f582cfd02ba17b79de21840df499e23afb93d43d258d8041e4fe1fb",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2014-03-20T18:26:21+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Discusses home ownership trends, policy changes, and market shifts",
+    "securities": [
+      {
+        "name": "Fannie Mae",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving"
+      },
+      {
+        "name": "HUD",
+        "ticker": null,
+        "exchange": null,
+        "quote": "HUD Secretary Shaun Donovan"
+      },
+      {
+        "name": "American Residential Properties",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Laurie Hawkes, president of American Residential Properties"
+      },
+      {
+        "name": "MIT",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MIT researchers"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:91ee83505b4e73e6",
+        "name": "Rental/Leasing Companies",
+        "basis": "inferred",
+        "quote": "The article also highlights the growing single-family rental market, which has expanded from 10 million to 15 million homes, supported by institutional investors.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "91ee83505b4e73e6",
+        "industry_name_standard": "Rental/Leasing Companies",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The article also highlights the growing single-family rental market, which has expanded from 10 million to 15 million homes, supported by institutional investors."
+      },
+      {
+        "industry_key": "TRSR:b77d150d2b7cc6d3",
+        "name": "Finance/Investors Services",
+        "basis": "inferred",
+        "quote": "The article also discusses a proposed bill to dismantle Fannie Mae and Freddie Mac, shifting mortgage finance to private investors.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "b77d150d2b7cc6d3",
+        "industry_name_standard": "Finance/Investors Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The article also discusses a proposed bill to dismantle Fannie Mae and Freddie Mac, shifting mortgage finance to private investors."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Fannie Mae": "organization",
+      "HUD": "organization",
+      "American Residential Properties": "organization",
+      "MIT": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "091c257f2e75a77d3393057d",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_03_20_Real-Estate_Real-Estate_cnbc.json",
+        "sha256": "52526cb7179134feff33b9cb3374c47ec265196fcb7213e95d4c819a2631e39c",
+        "filename": "2014_03_20_Real-Estate_Real-Estate_cnbc.json"
+      }
+    ],
+    "original_record_hash": "1049347c3f3ac110c91c7e7f0a0a08e450eba5a1efb3d8b42c6a0904cb06b6a8",
+    "input_hash": "8ef1b1ee69e59835296395ecbdaad5ff9aafab78cdc278eb31ab90e766603e2e",
+    "matching_audit_hash": "4d108bd585a39d30ae5e54ad54b703ae5935af41fd89a5b126247adf3b11cf61",
+    "legacy_security_evidence": [],
+    "record_hash": "803fd2aac1d8049da6ceee9e199a876a92bcdc6e8a4aeaa1d0d7dbf43c193306",
+    "outputs": [
+      {
+        "path": "US\\2014_03_20_Real-Estate_Real-Estate_cnbc.json",
+        "sha256": "8f8659d0ea55eca0ced452e9777db3344e02ab024fcd508385047794801c151f"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2014-03-20",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T10:00:13.832562+00:00",
+      "fetched_at": "2026-11-10T12:40:02.898503+00:00",
+      "feature_available_at": "2026-11-10T17:53:15.329706+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T07:43:36.322817+00:00",
+    "feature_available_at": "2026-11-18T07:43:36.333713+00:00",
+    "commit_verified_at": "2026-11-12T15:16:36.341316+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:36.372432+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:15.068897+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Discusses home ownership trends, policy changes, and market shifts",
+        "securities": [
+          {
+            "name": "Fannie Mae",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving"
+          },
+          {
+            "name": "HUD",
+            "ticker": null,
+            "exchange": null,
+            "quote": "HUD Secretary Shaun Donovan"
+          },
+          {
+            "name": "American Residential Properties",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Laurie Hawkes, president of American Residential Properties"
+          },
+          {
+            "name": "MIT",
+            "ticker": null,
+            "exchange": null,
+            "quote": "MIT researchers"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Mortgage Finance",
+            "basis": "inferred",
+            "quote": "proposed bill to dismantle Fannie Mae and Freddie Mac"
+          },
+          {
+            "name": "Investment",
+            "basis": "inferred",
+            "quote": "institutional investors"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry",
+          "market"
+        ],
+        "entity_types": {
+          "Fannie Mae": "organization",
+          "HUD": "organization",
+          "American Residential Properties": "organization",
+          "MIT": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:02:15.093674+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:02:15.103685+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:02:15.084676+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses home ownership trends, policy changes, and market shifts related to real estate, including Fannie Mae, Freddie Mac, and institutional rental.",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:13:41.924221+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving, indicating the aspiration remains unchanged.",
+        "rationale": "Fannie Mae is directly mentioned as conducting a survey, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Fannie Mae's survey shows 70% of respondents would buy a home if they were moving, indicating the aspiration remains unchanged."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2014/03/20/will-the-american-dream-still-include-owning-a-home.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "803fd2aac1d8049da6ceee9e199a876a92bcdc6e8a4aeaa1d0d7dbf43c193306",
+    "content_hash": "fe8417998f582cfd02ba17b79de21840df499e23afb93d43d258d8041e4fe1fb",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:43:36.324773+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/091c257f2e75a77d3393057d.json",
+      "sha256": "5b33207cd7cc60050093dbaad57103058078c78ff90ab1007fbfe35ee9928194",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 27.45299999997951
+}

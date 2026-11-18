@@ -1,0 +1,219 @@
+{
+  "source_id": "4b6a7d3a3ac14803b620c95a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_05_04_Legal_Mining_cnbc.json",
+      "sha256": "c36bf50c51801e627c09cd9aec26a4fdc9defd5664e669abe2f26198c982ab73",
+      "filename": "2016_05_04_Legal_Mining_cnbc.json"
+    }
+  ],
+  "original_record_hash": "9eee897a81adf9c691b4e0df4a2aa591d193f954720af3a9b706ff13b3d3af6d",
+  "input_hash": "531eed1273f8fa70aef4ce24c4134e14566d90cedcd6069b66e8ab663b13b1f3",
+  "matching_audit_hash": "6fcaa2e8a10c0c038b56dfa1c6f1429d7730ed735ec843898135e1a003efefe0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0cc01e0bb591cce6f3ff807db5118933c9809260b328c241ae075edc2c87fe05",
+    "raw_sha256": "cdd61f588d1f99f6e65f4a0ca0ffa99aad80ada2a3df62e3122d01986b15c6ba",
+    "date_quote": "article:published_time=2016-05-04T03:38:09+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ef4b1d73ac6acf656a7b68ddc088b26f47cf4c18c6f89627e21a3505a3e59cda",
+  "outputs": [
+    {
+      "path": "US\\2016_05_04_Legal_Mining_cnbc.json",
+      "sha256": "6a8700530cf07c6c972c0c9050a06ff59cd27c80a124ec52fbf87f9714140eff"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-05-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:56.866577+00:00",
+    "fetched_at": "2026-11-10T14:46:13.248340+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.662624+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:05:27.258021+00:00",
+  "feature_available_at": "2026-11-12T15:16:39.537772+00:00",
+  "commit_verified_at": "2026-11-12T15:16:39.537772+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Legal claim highlights mining industry safety and environmental responsibility",
+    "securities": [
+      {
+        "name": "BHP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+      },
+      {
+        "name": "Vale",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+      },
+      {
+        "name": "Samarco",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+      },
+      {
+        "name": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state"
+      },
+      {
+        "name": "Brazilian government",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brazilian government"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Mining",
+        "basis": "explicit",
+        "quote": "mining"
+      },
+      {
+        "name": "Legal",
+        "basis": "explicit",
+        "quote": "legal"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "BHP": "company",
+      "Vale": "company",
+      "Samarco": "company",
+      "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state": "organization",
+      "Brazilian government": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:39.563948+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:05:27.258021+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Legal claim highlights mining industry safety and environmental responsibility",
+      "securities": [
+        {
+          "name": "BHP",
+          "ticker": null,
+          "exchange": null,
+          "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+        },
+        {
+          "name": "Vale",
+          "ticker": null,
+          "exchange": null,
+          "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+        },
+        {
+          "name": "Samarco",
+          "ticker": null,
+          "exchange": null,
+          "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+        },
+        {
+          "name": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state"
+        },
+        {
+          "name": "Brazilian government",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Brazilian government"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Mining",
+          "basis": "explicit",
+          "quote": "mining"
+        },
+        {
+          "name": "Legal",
+          "basis": "explicit",
+          "quote": "legal"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "BHP": "company",
+        "Vale": "company",
+        "Samarco": "company",
+        "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state": "organization",
+        "Brazilian government": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:05:27.282760+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:05:27.291368+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:05:27.272726+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses a legal claim against BHP and Vale related to a dam disaster, which involves significant financial implications and highlights issues in the矿",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:31:55.563653+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

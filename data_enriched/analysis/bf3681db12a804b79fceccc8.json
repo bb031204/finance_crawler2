@@ -1,0 +1,131 @@
+{
+  "source_id": "bf3681db12a804b79fceccc8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_24_Politics-&-Policy_Energy_cnbc.json",
+      "sha256": "efeee85098e2de68387f25ad843ce8ff544b4c923266ba31558f68b3c12b4802",
+      "filename": "2021_03_24_Politics-&-Policy_Energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "8d403ff7abb605e30b2292cd2f7409c71b522655ae7bcc6c67da6b78c4781bb9",
+  "input_hash": "a47904e0cff7d63268136aabe859ccaecf4cdd6bdba3042ae6b880a4159902fa",
+  "matching_audit_hash": "ee520e4f8e1944d767c0c9bc432c4f5322f1d360749691a67b21d75f4c7896b4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "729ab21be8153f536c0273733dc04bd2308ed7e039f3340dbaa6ac72f62d0f47",
+    "raw_sha256": "2b589846d3c1282542509d82044f11cd88a9a28b101b33687f0d729a99e6a5d0",
+    "date_quote": "article:published_time=2021-03-24T17:56:57+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "baac246924f991c0b64c56a7d23c5f8efc831bf0510daa69d2a25657b9b7d8bc",
+  "outputs": [
+    {
+      "path": "US\\2021_03_24_Politics-&-Policy_Energy_cnbc.json",
+      "sha256": "ae8af5d07d1413aff65e3ba7af112028d4d923aa563bff41ed718a36e7f7215b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:35.773824+00:00",
+    "fetched_at": "2026-11-10T14:30:12.458457+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.989152+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:11.342113+00:00",
+  "feature_available_at": "2026-11-12T14:55:11.351032+00:00",
+  "commit_verified_at": "2026-11-12T14:55:11.351032+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a legal action against the Biden administration's moratorium on oil and natural gas leases, impacting the energy sector and related policy",
+    "securities": [
+      {
+        "name": "Biden administration",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Biden administration"
+      },
+      {
+        "name": "Louisiana",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Louisiana"
+      },
+      {
+        "name": "Wyoming",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Wyoming"
+      },
+      {
+        "name": "Bureau of Land Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bureau of Land Management"
+      },
+      {
+        "name": "Interior Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Interior Department"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": "oil and natural gas"
+      },
+      {
+        "name": "Legal",
+        "basis": "inferred",
+        "quote": "lawsuits"
+      },
+      {
+        "name": "Policy",
+        "basis": "inferred",
+        "quote": "executive actions"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Biden administration": "organization",
+      "Louisiana": "company",
+      "Wyoming": "company",
+      "Bureau of Land Management": "organization",
+      "Interior Department": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

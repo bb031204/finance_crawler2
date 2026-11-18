@@ -1,0 +1,106 @@
+{
+  "source_id": "90ee54e29421054b72a53eb1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_01_06_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "13c2a0e38aff2f950dce7dbb064ccaf687b1c6adf6ffdac568aa466cdafe886d",
+      "filename": "2017_01_06_Corporate-Governance_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "5ead9d938d3f137f41da5d40c29d0104b7318d00649eab123eced40ec2415e61",
+  "input_hash": "43412bb9c450e5367b5affe4af9ed37dcb04fda28fc54bc7cc6fb48637cca6aa",
+  "matching_audit_hash": "e2f40b15734c0cfca69b03552284b01912885781d5580c8ffe88109fc00ce15c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e7d178b0c9755db8145bfc42bdd30336bb7da2892c399f6c63904896bbe3d2f6",
+    "raw_sha256": "6ed401c6e0f8a8d25b5ca2230521bbbb5b88bfc6e0faf6618cd3e17d2b671be5",
+    "date_quote": "SEC filing datePublished=2017-01-06",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312517003781/d304900d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sangamo Therapeutics, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo Therapeutics, Inc."
+    }
+  ],
+  "record_hash": "e7e57a015bf6f18232daea31093e84b1b387ea926fc9ca22739a103f71c745da",
+  "outputs": [
+    {
+      "path": "US\\2017_01_06_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "2cbc583c6870e039c71eae4341b146dd7ade0df3f7be12fe63747e3c40484132"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-01-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:34:05.545697+00:00",
+    "feature_available_at": "2026-11-11T12:34:28.309617+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:38:47.444158+00:00",
+  "feature_available_at": "2026-11-12T14:38:47.489918+00:00",
+  "commit_verified_at": "2026-11-12T14:38:47.489918+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides information about a corporate name change, which is relevant to corporate governance and company identity.",
+    "securities": [
+      {
+        "name": "Sangamo BioSciences, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo BioSciences, Inc."
+      },
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      },
+      {
+        "name": "The NASDAQ Global Market",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The NASDAQ Global Market"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Sangamo BioSciences, Inc.": "company",
+      "Sangamo Therapeutics, Inc.": "company",
+      "The NASDAQ Global Market": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

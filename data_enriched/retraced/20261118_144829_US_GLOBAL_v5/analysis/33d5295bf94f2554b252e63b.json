@@ -1,0 +1,478 @@
+{
+  "source_id": "33d5295bf94f2554b252e63b",
+  "status": "completed",
+  "source_record_hash": "b38b09e3b4218c3e5196c1030d4bd226be63ff0c5529c4fab32eb9c57792928b",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2018/08/13/samsung-shares-39-billion-wiped-off-this-year.html",
+    "attempted_at": "2026-11-18T11:36:03.820329+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2018/08/13/samsung-shares-39-billion-wiped-off-this-year.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T11:36:36.670822+00:00",
+    "source_body_hash": "d559f876976a2414530d444b130a95bba093dc05402d021cbf1072a708d0a410",
+    "raw_sha256": "53f59e89cfd075e7788f4a2c48ce2c7fb0de75475682f42989cf975612e17528",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Samsung is one of the worst-performing major tech stocks this year",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2018-08-13T11:03:32+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/33d5295bf94f2554b252e63b.json",
+    "sha256": "4f18f393b84f6e5816df99fc6f81b40b11a11995b6b6634d4219d6ff3bf0b14d",
+    "bundled_path": "legacy_audit/33d5295bf94f2554b252e63b.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "60e57a9b20a4821e0018fe163148ce91294e73677c7ebfa2a841409c8626c0cf",
+      "llm_inferred_at": "2026-11-18T11:36:58.274630+00:00",
+      "model_duration_seconds": 21.5558185,
+      "prompt_tokens": 3314,
+      "completion_tokens": 1065,
+      "selection": [
+        {
+          "source_id": "33d5295bf94f2554b252e63b",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream",
+              "rationale": "The article discusses Samsung's performance as a major tech stock, indicating broader industry trends affecting technology stocks, including the semiconductor and smartphone markets.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018.",
+              "rationale": "The article directly references Samsung's performance as a company, highlighting its decline in the tech sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018.",
+              "rationale": "The article discusses Samsung's performance in the context of the broader technology industry, including comparisons with other tech stocks like Apple and Amazon.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "name": "Semiconductors",
+              "basis": "explicit",
+              "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream"
+            },
+            {
+              "industry_key": "TRSR:4fb8be5e521154e9",
+              "name": "Consumer Electronics/Video Chains",
+              "basis": "explicit",
+              "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "industry_scope_quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices.",
+              "industry_name_original": "Semiconductors",
+              "mechanism": "Semiconductor slowdown fears",
+              "confidence": 0.95,
+              "quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices."
+            },
+            {
+              "industry_key": "TRSR:4fb8be5e521154e9",
+              "industry_scope_quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices.",
+              "industry_name_original": "Consumer Electronics/Video Chains",
+              "mechanism": "Rising smartphone competition",
+              "confidence": 0.95,
+              "quote": "Global smartphone shipments declined 1.8 percent year-on-year in the second quarter, according to data from IDC."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "industry_scope_quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices.",
+              "industry_name_original": "Information Technology",
+              "mechanism": "Market dynamics affecting tech stocks",
+              "confidence": 0.95,
+              "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "0df8f1db72220d9e214e36fcaedcff0f072ed47cb322218643b7e3baca3fc6ff",
+      "llm_inferred_at": "2026-11-18T11:37:15.848923+00:00",
+      "model_duration_seconds": 17.5567349,
+      "prompt_tokens": 3358,
+      "completion_tokens": 936,
+      "selection": [
+        {
+          "source_id": "33d5295bf94f2554b252e63b",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream",
+              "rationale": "The article discusses Samsung's performance as a major tech stock, indicating its impact on the broader technology industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018.",
+              "rationale": "The article directly mentions Samsung's performance as a company, indicating its specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream"
+            },
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "name": "Semiconductors",
+              "basis": "explicit",
+              "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018."
+            },
+            {
+              "industry_key": "TRSR:4fb8be5e521154e9",
+              "name": "Consumer Electronics/Video Chains",
+              "basis": "explicit",
+              "quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "industry_scope_quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices.",
+              "industry_name_original": "Semiconductors",
+              "mechanism": "Semiconductor slowdown fears",
+              "confidence": 0.95,
+              "quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices."
+            },
+            {
+              "industry_key": "TRSR:4fb8be5e521154e9",
+              "industry_scope_quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices.",
+              "industry_name_original": "Consumer Electronics/Video Chains",
+              "mechanism": "Rising smartphone competition",
+              "confidence": 0.95,
+              "quote": "Global smartphone shipments declined 1.8 percent year-on-year in the second quarter, according to data from IDC."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "industry_scope_quote": "In a recent note, Morgan Stanley warned of rising inventory in the semiconductor industry, which could make it harder to charge higher prices.",
+              "industry_name_original": "Information Technology",
+              "mechanism": "Tech Weak display demand",
+              "confidence": 0.95,
+              "quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:37:15.865428+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d559f876976a2414530d444b130a95bba093dc05402d021cbf1072a708d0a410",
+    "raw_sha256": "53f59e89cfd075e7788f4a2c48ce2c7fb0de75475682f42989cf975612e17528",
+    "date_quote": "article:published_time=2018-08-13T11:03:32+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": true,
+    "reason": "The summary discusses Samsung Electronics Co.'s performance, challenges in the smartphone and semiconductor markets, and comparisons with other tech companies.",
+    "securities": [
+      {
+        "name": "Samsung Electronics Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Samsung Electronics Co."
+      },
+      {
+        "name": "Apple Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Apple Inc."
+      },
+      {
+        "name": "Huawei",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Huawei"
+      },
+      {
+        "name": "Xiaomi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Xiaomi"
+      },
+      {
+        "name": "Oppo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Oppo"
+      },
+      {
+        "name": "Vivo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vivo"
+      },
+      {
+        "name": "Counterpoint Research",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Counterpoint Research"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:4fb8be5e521154e9",
+        "name": "Consumer Electronics/Video Chains",
+        "basis": "inferred",
+        "quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4fb8be5e521154e9",
+        "industry_name_standard": "Consumer Electronics/Video Chains",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Samsung is one of the worst-performing major tech stocks this year Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Samsung Electronics Co.": "company",
+      "Apple Inc.": "company",
+      "Huawei": "company",
+      "Xiaomi": "company",
+      "Oppo": "company",
+      "Vivo": "company",
+      "Counterpoint Research": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "33d5295bf94f2554b252e63b",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_08_13_stock_Technology_cnbc.json",
+        "sha256": "b846bdb2c3d4856d920ac14f3811d3b6779971521828d047663831cf1bff008e",
+        "filename": "2018_08_13_stock_Technology_cnbc.json"
+      }
+    ],
+    "original_record_hash": "b21bb1bfb6524446216400fc74d1658ebe4179149d77c1802a1f4e1b4e400809",
+    "input_hash": "bb4a525df22eec247dc456d46679ab18c16e60ca8099734498501ca1845af49c",
+    "matching_audit_hash": "a0e1843fae81a7b2ab4676c30281b31f7c9ce8c4a780ff7bdd83baa07589fc5d",
+    "legacy_security_evidence": [
+      {
+        "name": "Samsung Electronics Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Samsung Electronics Co."
+      },
+      {
+        "name": "Apple Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Apple Inc."
+      },
+      {
+        "name": "Samsung",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Samsung"
+      },
+      {
+        "name": "Huawei",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Huawei became the second-largest smartphone player by shipments, surpassing Apple and closing in on Samsung's crown."
+      },
+      {
+        "name": "Apple",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Huawei became the second-largest smartphone player by shipments, surpassing Apple and closing in on Samsung's crown."
+      },
+      {
+        "name": "Xiaomi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Huawei is the biggest player in China, followed by Oppo, Vivo and Xiaomi, all of which are domestic companies."
+      },
+      {
+        "name": "Oppo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Huawei is the biggest player in China, followed by Oppo, Vivo and Xiaomi, all of which are domestic companies."
+      },
+      {
+        "name": "Vivo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Huawei is the biggest player in China, followed by Oppo, Vivo and Xiaomi, all of which are domestic companies."
+      },
+      {
+        "name": "Counterpoint Research",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Neil Shah, research director at Counterpoint Research, said Samsung has lost share in the major markets of China, Europe and the U.S."
+      },
+      {
+        "name": "Canalys",
+        "ticker": null,
+        "exchange": null,
+        "quote": "In India, Samsung, which was again very dominant in the past, is facing increased competition from Xiaomi, which is now equal to its South Korean rival in terms of shipments, according to research firm Canalys."
+      },
+      {
+        "name": "Amazon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "For example, Amazon is up over 61 percent, while Apple is over 22 percent higher year-to-date."
+      },
+      {
+        "name": "Facebook",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Even Facebook is in positive territory this year, despite poor second-quarter earnings that led to a big plunge on the share price."
+      },
+      {
+        "name": "Tencent",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The big Chinese names, however, have suffered. Tencent is down nearly 9 percent for the year while U.S.-listed Baidu has fallen 6 percent."
+      },
+      {
+        "name": "Baidu",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The big Chinese names, however, have suffered. Tencent is down nearly 9 percent for the year while U.S.-listed Baidu has fallen 6 percent."
+      },
+      {
+        "name": "Alibaba",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Only Alibaba is positive year-to-date, up 4 percent."
+      },
+      {
+        "name": "Samsung Electronics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Samsung Electronics"
+      }
+    ],
+    "record_hash": "b38b09e3b4218c3e5196c1030d4bd226be63ff0c5529c4fab32eb9c57792928b",
+    "outputs": [
+      {
+        "path": "US\\2018_08_13_stock_Technology_cnbc.json",
+        "sha256": "b0d846dbde5a6a55acfd8faff35761393e14fcb78c683ecdd4ea8859c5a6be91"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2018-08-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:26:48.908442+00:00",
+      "fetched_at": "2026-11-11T02:34:04.739959+00:00",
+      "feature_available_at": "2026-11-11T02:35:12.054410+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:37:15.848923+00:00",
+    "feature_available_at": "2026-11-18T11:37:15.865428+00:00",
+    "commit_verified_at": "2026-11-12T14:45:39.279675+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018.",
+        "rationale": "The article directly mentions Samsung's performance as a company, indicating its specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Samsung has fared worse than these names with its more than 11 percent decline this year, making it one of the worst-performing major technology stocks in 2018.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_impact_unverified",
+      "industry_mechanism_semantic_not_literal_driver",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2018/08/13/samsung-shares-39-billion-wiped-off-this-year.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "b38b09e3b4218c3e5196c1030d4bd226be63ff0c5529c4fab32eb9c57792928b",
+    "content_hash": "d559f876976a2414530d444b130a95bba093dc05402d021cbf1072a708d0a410",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:37:15.854524+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/33d5295bf94f2554b252e63b.json",
+      "sha256": "e737cd1e1ba7c31ee34abfdade10db0ad228254df0d9d5f457d0ede1f94b3cad",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 72.06200000000536
+}

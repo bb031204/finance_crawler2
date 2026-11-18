@@ -11,6 +11,7 @@ REASONS = {
     "date_out_of_range": "来源日期超出范围", "publication_unconfirmed": "来源发布日期未确认",
     "call_budget": "Qwen调用预算耗尽", "context_budget": "Qwen上下文不足",
     "access_blocked": "访问限制/安全检查拦截", "network_error": "下载或网络失败",
+    "source_cooldown": "来源访问冷却/robots路径暂缓",
     "pdf_error": "PDF正文不可读取", "body_error": "正文解析失败/过长",
     "model_error": "Qwen输出或语义证据校验失败", "model_service_error": "Ollama服务或连接失败",
     "storage_error": "文件写入/审计校验失败", "validation_error": "其他校验失败",
@@ -70,6 +71,8 @@ def build_summary(batches, baseline_ids, dataset, active_pending, inactive_pendi
     candidate_totals = {key: sum(batch.get(key, 0) for batch in batches) for key in ["candidates_new", "already_saved", "already_pending"]}
     direct_totals = {key: sum(batch.get("direct_discovery", {}).get(key, 0) for batch in batches)
                      for key in ["requests", "pages", "rows", "candidates_new", "already_saved", "already_pending", "already_rejected"]}
+    paused_ids={i for batch in batches for i in batch.get('source_paused_ids',[]) if i in active_pending}
+    retry_ids={i for batch in batches for i in batch.get('retry_paused_ids',[]) if i in active_pending}
     return {
         "counting_basis": "本次调用；按source_id去重；仅正式文件及审计校验成功计入保存；GLOBAL副本不重复计数",
         "records_before": len(baseline_ids), "records_after": len(dataset.rows),
@@ -80,7 +83,11 @@ def build_summary(batches, baseline_ids, dataset, active_pending, inactive_pendi
         "rejected_records": sum(rejected.values()), "rejected_reasons": dict(rejected),
         "skipped_records": sum(skipped.values()), "skipped_reasons": dict(skipped),
         "deferred_records": len(deferred_ids), "deferred_reasons": dict(deferred),
-        "active_pending": len(active_pending), "unattempted_records": len(set(active_pending) - set(final)),
+        "active_pending": len(active_pending), "unattempted_records": len(set(active_pending) - set(final) - paused_ids - retry_ids),
+        "source_paused_records": len(paused_ids),
+        "retry_waiting_records":len(retry_ids),
+        "model_usage":{key:round(sum(b.get('model_usage',{}).get(key,0) for b in batches),3)
+                       for key in ['requests','prompt_tokens','completion_tokens','seconds']},
         "inactive_pending": inactive_pending,
         "by_market": by_market, "by_category": by_category, "by_source": by_source,
         "maintenance": {key: sum(batch.get("maintenance", {}).get(key, 0) for batch in batches)
@@ -89,7 +96,7 @@ def build_summary(batches, baseline_ids, dataset, active_pending, inactive_pendi
                        **{key: value - direct_totals[key] for key, value in candidate_totals.items()}),
         "candidates": candidate_totals,
         "components": {key: sum(batch.get(key, 0) for batch in batches)
-                       for key in ["considered", "downloaded", "page_cache_hits", "raw_deleted", "model_calls", "model_cache_hits",'screen_calls_avoided','transaction_recovered','preflight_checked','preflight_passed','preflight_rejected','preflight_deferred']},
+                       for key in ["considered", "downloaded", "page_cache_hits", "raw_deleted", "model_calls", "model_cache_hits",'screen_calls_avoided','transaction_recovered','preflight_checked','preflight_passed','preflight_rejected','preflight_deferred','source_policy_probes']},
         "error_attempts_by_phase": dict(Counter(error.get("phase", "unknown") for batch in batches for error in batch["errors"])),
         "cleanup_error_attempts": sum(batch.get("cleanup_errors", 0) for batch in batches),
         "direct_discovery": direct_totals,
@@ -100,9 +107,16 @@ def log_summary(summary, log):
     s = summary
     log("数据结果", f"本次新增{s['new_records']}条，更新{s['updated_records']}条（均已校验，不含GLOBAL重复副本）")
     log("数据累计", f"运行前{s['records_before']}条 → 运行后{s['records_after']}条，净变化{s['net_change']:+d}条；迁移/隔离单独统计")
+    if s.get('source_paused_records'):
+        log('来源暂缓汇总',f"{s['source_paused_records']}条保留候选，首次访问确认{s['components'].get('source_policy_probes',0)}次，其余直接暂缓；不累计文章失败，冷却到期后下次运行重新核验访问条件")
     if s['components'].get('preflight_checked'):
         c=s['components']
         log('前置检查汇总',f"检查{c['preflight_checked']}篇，通过{c['preflight_passed']}篇，提前跳过{c['preflight_rejected']}篇，待复核{c['preflight_deferred']}篇；未通过者不执行正文提炼")
+    if s.get('retry_waiting_records'):
+        log('条件等待汇总',f"{s['retry_waiting_records']}条证据/配置/处理版本未变，暂缓相同失败；条件变化后恢复，可用--force --resume明确重试")
+    usage=s.get('model_usage',{})
+    if usage.get('requests'):
+        log('模型用量',f"已返回推理{usage['requests']}次 | 输入{usage['prompt_tokens']} token | 输出{usage['completion_tokens']} token | 返回请求耗时{usage['seconds']:.1f}秒（服务未提供的token不计）")
     if s['components'].get('screen_calls_avoided') or s['components'].get('transaction_recovered'):
         log('效率汇总',f"省略重复标题初筛{s['components'].get('screen_calls_avoided',0)}次；恢复未完成保存事务{s['components'].get('transaction_recovered',0)}次；正文用途/日期校验继续执行")
     if s['unverified_new_records']:
@@ -112,7 +126,7 @@ def log_summary(summary, log):
                                   ("待复核", s['deferred_records'], s['deferred_reasons'])]:
         detail = "，".join(f"{REASONS.get(key, key)}{value}条" for key, value in sorted(reasons.items()))
         log(label, f"{count}条" + (" | " + detail if detail else ""))
-    log("剩余队列", f"当前范围{s['active_pending']}条，其中未尝试{s['unattempted_records']}条、待复核{s['deferred_records']}条；范围外隔离保留{s['inactive_pending']}条")
+    log("剩余队列", f"当前范围{s['active_pending']}条，其中未尝试{s['unattempted_records']}条、待复核{s['deferred_records']}条、来源暂缓{s.get('source_paused_records',0)}条；范围外隔离保留{s['inactive_pending']}条")
     search = s['search']
     log("搜索总计", f"请求{search['searched']}次，返回{search['found']}条（返回含重复）")
     candidates = s['candidates']

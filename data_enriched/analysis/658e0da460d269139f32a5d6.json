@@ -1,0 +1,90 @@
+{
+  "source_id": "658e0da460d269139f32a5d6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_02_Financial-Results_Consumer-Goods_sec.json",
+      "sha256": "42a5d91596461dfc998c73ae48d6b56e41f44eea1f135839a9cdfa52fd23d52a",
+      "filename": "2018_02_02_Financial-Results_Consumer-Goods_sec.json"
+    }
+  ],
+  "original_record_hash": "5ce64282fb0bed5c32709b660b42f8593c5617ddd35f0c225103c194a5a7bc2f",
+  "input_hash": "a4c6d3eae28c19d53bb030316a91144ebcdeba6dbe6af009001ac6f2e9e553ac",
+  "matching_audit_hash": "cc9583b546b10d8047f7c40696a398189d82d5c7508af54b9196e82872d6743d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9a5f0238764a1002c967e972786863c8f82ac60a5b4cd13f9f6c379233d932e4",
+    "raw_sha256": "955826e29c7c4b346cfe84e5247dcbc9e16d63c8817480df8322ae3292defa9c",
+    "date_quote": "SEC filing datePublished=2018-02-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465918006034/a18-5089_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "131e7813c049222a5596ee10cdc878857dd3d7324d834052ebdc4891df9784a1",
+  "outputs": [
+    {
+      "path": "US\\2018_02_02_Financial-Results_Consumer-Goods_sec.json",
+      "sha256": "6b417c7450552d11cd12fdf0052d6df2d0d9ee17637d03cff0674d2e071dc9e8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.048576+00:00",
+    "fetched_at": "2026-11-11T13:24:43.156751+00:00",
+    "feature_available_at": "2026-11-11T13:25:16.598653+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:47.162424+00:00",
+  "feature_available_at": "2026-11-12T14:42:47.174013+00:00",
+  "commit_verified_at": "2026-11-12T14:42:47.174013+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains financial results and dividend information related to The Estée Lauder Companies Inc.",
+    "securities": [
+      {
+        "name": "The Estée Lauder Companies Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Estée Lauder Companies Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Cosmetics and Personal Care",
+        "basis": "inferred",
+        "quote": "The Estée Lauder Companies Inc."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "The Estée Lauder Companies Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

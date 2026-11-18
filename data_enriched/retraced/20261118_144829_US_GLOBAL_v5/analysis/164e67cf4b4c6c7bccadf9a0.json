@@ -1,0 +1,668 @@
+{
+  "source_id": "164e67cf4b4c6c7bccadf9a0",
+  "status": "completed",
+  "source_record_hash": "368aaf79f7d1dcaaff3631afccaac49731e44c333d2d74b8c98ea6b6f028c4cd",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000623/0001000623-14-000067-index.html",
+    "attempted_at": "2026-11-18T08:50:00.166530+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000623/0001000623-14-000067-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062314000067/q1_14form8-kearnings.htm",
+    "fetched_at": "2026-11-18T08:50:12.220559+00:00",
+    "source_body_hash": "84ea04000616c9b62ace9b67f989cdb5202cff9fb1fb32630782b8a80112b4c7",
+    "raw_sha256": "d41443412703d1ff884dbb0c76c7f249ede8ce67aebfd2174d3ccee99272f6f6",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062314000067/q1_14form8-kearnings.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "d41443412703d1ff884dbb0c76c7f249ede8ce67aebfd2174d3ccee99272f6f6",
+        "text_sha256": "5c78b464dd6b9f0686d7d3500e005b5e2c5b15e8f52f6f25f3271b96c553e88b",
+        "text_start": 0,
+        "text_end": 2852
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062314000067/q1_2014earningsrelease.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT",
+        "raw_sha256": "3ec171c7bceefd2b92bbc491ffdba2202db365c518eae368267b4a154d59994c",
+        "text_sha256": "4e98b7b6628ca4f8a5ef546e89488bfbf83458765adf87ef3dfcfe1ecf6fabe2",
+        "text_start": 2854,
+        "text_end": 25404
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2014-05-07",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/164e67cf4b4c6c7bccadf9a0.json",
+    "sha256": "c59dc14e59e205bfff63329e058974d7b4d00ab57e29c5bc8aaaa80346ca5efb",
+    "bundled_path": "legacy_audit/164e67cf4b4c6c7bccadf9a0.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "f2e82cb368ab6662f7981d756f287a077bcd10a5e368d6b6a7cb0b2d1552b111",
+      "llm_inferred_at": "2026-11-18T08:50:30.894351+00:00",
+      "model_duration_seconds": 18.6421435,
+      "prompt_tokens": 3936,
+      "completion_tokens": 849,
+      "selection": [
+        {
+          "source_id": "164e67cf4b4c6c7bccadf9a0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The earnings release is attached hereto as Exhibit 99.1.",
+              "rationale": "The earnings release is part of the financial reporting process for Schweitzer-Mauduit International, Inc., which is a company in the paper and tobacco industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Schweitzer-Mauduit International, Inc.",
+              "rationale": "The company is directly mentioned as the subject of the earnings report and financial statements.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2111",
+              "name": "CIGARETTES",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc."
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc."
+            },
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "industry_scope_quote": "relationships with key cigarette manufacturers supplying South Korea. We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette",
+              "industry_name_original": "Paper",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette consumption in South Korea of approximately 85 billion sticks."
+            },
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "relationships with key cigarette manufacturers supplying South Korea. We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette consumption in South Korea of approximately 85 billion sticks."
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "industry_scope_quote": "relationships with key cigarette manufacturers supplying South Korea. We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette",
+              "industry_name_original": "Paper",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette consumption in South Korea of approximately 85 billion sticks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "56a9270ca87accc9fc419d5201a4aa405d1642062c34829e8bf3be8c65b46cc1",
+      "llm_inferred_at": "2026-11-18T08:50:47.325127+00:00",
+      "model_duration_seconds": 16.4087083,
+      "prompt_tokens": 3980,
+      "completion_tokens": 841,
+      "selection": [
+        {
+          "source_id": "164e67cf4b4c6c7bccadf9a0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The earnings release is attached hereto as Exhibit 99.1.",
+              "rationale": "The earnings release is part of the financial reporting process for Schweitzer-Mauduit International, Inc., which is a company in the Paper industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Schweitzer-Mauduit International, Inc.",
+              "rationale": "The company is directly mentioned in the text, and the report is about its financial results.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc."
+            },
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc."
+            },
+            {
+              "industry_key": "SEC-SIC:2111",
+              "name": "CIGARETTES",
+              "basis": "explicit",
+              "quote": "Schweitzer-Mauduit International, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "industry_scope_quote": "relationships with key cigarette manufacturers supplying South Korea. We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette",
+              "industry_name_original": "Paper",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette consumption in South Korea of approximately 85 billion sticks."
+            },
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "relationships with key cigarette manufacturers supplying South Korea. We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette consumption in South Korea of approximately 85 billion sticks."
+            },
+            {
+              "industry_key": "SEC-SIC:2111",
+              "industry_scope_quote": "relationships with key cigarette manufacturers supplying South Korea. We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette",
+              "industry_name_original": "CIGARETTES",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We estimate LIP regulations could lead to a 10% increase in global LIP paper demand based on annual cigarette consumption in South Korea of approximately 85 billion sticks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "2eaf12abb97ecd58a4bd38de5a1c63cca14a11bf7494ce6cb121f1b93a436109",
+      "llm_inferred_at": "2026-11-18T08:51:05.641336+00:00",
+      "model_duration_seconds": 18.2910921,
+      "prompt_tokens": 3748,
+      "completion_tokens": 874,
+      "selection": [
+        {
+          "source_id": "164e67cf4b4c6c7bccadf9a0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SWM will use a presentation in conjunction with its conference call.",
+              "rationale": "The company's operations span multiple industries, including tobacco and specialty papers, indicating industry-wide impacts.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "company",
+              "quote": "The effective income tax rate for continuing operations for the first quarter of 2014 was 30.2%, up from 29.3% in the first quarter of 2013.",
+              "rationale": "This indicates a company-specific impact on tax rates and financial performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "SWM will use a presentation in conjunction with its conference call."
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "The Company also announced that a quarterly cash dividend of $0.36 per share will be payable on June 26, 2014 to stockholders of record on May 22, 2014."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "SWM will use a presentation in conjunction with its conference call."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "initiatives, including diversification, and the Company’s understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "The company's operations in the tobacco industry are impacted by regulatory changes and competition.",
+              "confidence": 0.75,
+              "quote": "The Company believes it is premature to adjust guidance at this time."
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "industry_scope_quote": "initiatives, including diversification, and the Company’s understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition",
+              "industry_name_original": "Paper",
+              "mechanism": "The paper industry is impacted by changes in competition and the company's diversification efforts.",
+              "confidence": 0.75,
+              "quote": "The Company believes it is premature to adjust guidance at this time."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "initiatives, including diversification, and the Company’s understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition",
+              "industry_name_original": "Business Services",
+              "mechanism": "The business services industry is impacted by changes in competition and the company's diversification efforts.",
+              "confidence": 0.75,
+              "quote": "The Company believes it is premature to adjust guidance at this time."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "84ac42c8ea85bd748e7f12744b02e4936845a5af82455f2c0bd70751170c94ab",
+      "llm_inferred_at": "2026-11-18T08:51:18.382287+00:00",
+      "model_duration_seconds": 12.7188009,
+      "prompt_tokens": 3792,
+      "completion_tokens": 656,
+      "selection": [
+        {
+          "source_id": "164e67cf4b4c6c7bccadf9a0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "SWM will use a presentation in conjunction with its conference call.",
+              "rationale": "The company's operations are described as serving the tobacco industry and manufacturing specialty papers for other applications, indicating an industry-wide impact.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "Net Income from Continuing Operations was $23.2 million for the quarter ended March 31, 2014, versus $30.7 million in the prior-year quarter.",
+              "rationale": "This directly reflects the financial performance of the company, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "SWM will use a presentation in conjunction with its conference call."
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "SWM will use a presentation in conjunction with its conference call."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "initiatives, including diversification, and the Company’s understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "The company's operations are described as serving the tobacco industry and manufacturing specialty papers for other applications, indicating an industry-wide impact.",
+              "confidence": 0.85,
+              "quote": "SWM will use a presentation in conjunction with its conference call."
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "industry_scope_quote": "initiatives, including diversification, and the Company’s understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition",
+              "industry_name_original": "Paper",
+              "mechanism": "The company's operations are described as serving the tobacco industry and manufacturing specialty papers for other applications, indicating an industry-wide impact.",
+              "confidence": 0.85,
+              "quote": "SWM will use a presentation in conjunction with its conference call."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a56a4f6324b796c6ce7be0549531841ddb98b377c986aedc456be19c92652fc3",
+      "llm_inferred_at": "2026-11-18T08:51:37.678561+00:00",
+      "model_duration_seconds": 19.2723232,
+      "prompt_tokens": 3856,
+      "completion_tokens": 911,
+      "selection": [
+        {
+          "source_id": "164e67cf4b4c6c7bccadf9a0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The first quarter 2014 financial results reported in this release are unaudited.",
+              "rationale": "The article discusses financial results and risks related to the company's operations, including the tobacco industry and other sectors, indicating industry-wide impacts.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC.",
+              "rationale": "The article is directly related to the company's financial results and risks, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "regulations; • Risks associated with our 50%-owned, non-U.S. joint ventures relating to control and decision-making, compliance, transparency and customer relations, among others;"
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "Paper $ 22.5 $ 25.3 17.5 % 18.2 % Reconstituted Tobacco 16.2 21.4 36.7 38.5 Filtration 0.4 — 1.3 N.A. Unallocated (6.0 ) (5.0 ) Total Consolidated $ 33.1 $ 41.7 16.2 % 21.4 %"
+            },
+            {
+              "industry_key": "SEC-SIC:2761",
+              "name": "MANIFOLD BUSINESS FORMS",
+              "basis": "explicit",
+              "quote": "The first quarter 2014 financial results reported in this release are unaudited."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "thereof, including regulation relating to the tobacco industry, taxation and the environment; • The success of, and costs associated with, current or future restructuring",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "regulatory and environmental factors affecting the tobacco industry",
+              "confidence": 0.85,
+              "quote": "regulations; • Risks associated with our 50%-owned, non-U.S. joint ventures relating to control and decision-making, compliance, transparency and customer relations, among others;"
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "industry_scope_quote": "thereof, including regulation relating to the tobacco industry, taxation and the environment; • The success of, and costs associated with, current or future restructuring",
+              "industry_name_original": "Paper",
+              "mechanism": "regulatory and environmental factors affecting the paper industry",
+              "confidence": 0.85,
+              "quote": "Paper $ 22.5 $ 25.3 17.5 % 18.2 % Reconstituted Tobacco 16.2 21.4 36.7 38.5 Filtration 0.4 — 1.3 N.A. Unallocated (6.0 ) (5.0 ) Total Consolidated $ 33.1 $ 41.7 16.2 % 21.4 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a4c6d0478d7f75d66d3a417119f072177747983ea549ea1785bcbab9e2bee77d",
+      "llm_inferred_at": "2026-11-18T08:51:58.423199+00:00",
+      "model_duration_seconds": 20.7250341,
+      "prompt_tokens": 3900,
+      "completion_tokens": 1080,
+      "selection": [
+        {
+          "source_id": "164e67cf4b4c6c7bccadf9a0",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "regulations; • Risks associated with our 50%-owned, non-U.S. joint ventures relating to control and decision-making, compliance, transparency and customer relations, among others;",
+              "rationale": "The article discusses risks related to the tobacco industry, including regulation, taxation, and environmental factors, which are industry-wide impacts.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The first quarter 2014 financial results reported in this release are unaudited.",
+              "rationale": "The article refers to the financial results of the company, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "regulations; • Risks associated with our 50%-owned, non-U.S. joint ventures relating to control and decision-making, compliance, transparency and customer relations, among others;"
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "Paper $ 22.5 $ 25.3 17.5 % 18.2 % Reconstituted Tobacco 16.2 21.4 36.7 38.5 Filtration 0.4 — 1.3 N.A. Unallocated (6.0 ) (5.0 ) Total Consolidated $ 33.1 $ 41.7 16.2 % 21.4 %"
+            },
+            {
+              "industry_key": "SEC-SIC:2761",
+              "name": "MANIFOLD BUSINESS FORMS",
+              "basis": "explicit",
+              "quote": "Paper $ 22.5 $ 25.3 17.5 % 18.2 % Reconstituted Tobacco 16.2 21.4 36.7 38.5 Filtration 0.4 — 1.3 N.A. Unallocated (6.0 ) (5.0 ) Total Consolidated $ 33.1 $ 41.7 16.2 % 21.4 %"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "thereof, including regulation relating to the tobacco industry, taxation and the environment; • The success of, and costs associated with, current or future restructuring",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "regulatory and environmental factors affecting the industry",
+              "confidence": 0.95,
+              "quote": "regulations; • Risks associated with our 50%-owned, non-U.S. joint ventures relating to control and decision-making, compliance, transparency and customer relations, among others;"
+            },
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "industry_scope_quote": "thereof, including regulation relating to the tobacco industry, taxation and the environment; • The success of, and costs associated with, current or future restructuring",
+              "industry_name_original": "Paper",
+              "mechanism": "regulatory and environmental factors affecting the industry",
+              "confidence": 0.95,
+              "quote": "regulations; • Risks associated with our 50%-owned, non-U.S. joint ventures relating to control and decision-making, compliance, transparency and customer relations, among others;"
+            },
+            {
+              "industry_key": "SEC-SIC:2761",
+              "industry_scope_quote": "thereof, including regulation relating to the tobacco industry, taxation and the environment; • The success of, and costs associated with, current or future restructuring",
+              "industry_name_original": "MANIFOLD BUSINESS FORMS",
+              "mechanism": "regulatory and environmental factors affecting the industry",
+              "confidence": 0.95,
+              "quote": "regulations; • Risks associated with our 50%-owned, non-U.S. joint ventures relating to control and decision-making, compliance, transparency and customer relations, among others;"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:51:58.449033+00:00",
+  "audit": {
+    "source_id": "164e67cf4b4c6c7bccadf9a0",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000623/0001000623-14-000067-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2014-05-07",
+    "date_quote": "SEC filing datePublished=2014-05-07",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "84ea04000616c9b62ace9b67f989cdb5202cff9fb1fb32630782b8a80112b4c7",
+    "raw_sha256": "d41443412703d1ff884dbb0c76c7f249ede8ce67aebfd2174d3ccee99272f6f6",
+    "first_seen_at": "2026-11-11T04:56:11.457107+00:00",
+    "fetched_at": "2026-11-12T13:59:10.079679+00:00",
+    "first_extracted_at": "2026-11-12T13:59:26.224666+00:00",
+    "extracted_at": "2026-11-18T08:51:58.431243+00:00",
+    "feature_available_at": "2026-11-18T08:51:58.449033+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:35045eff549e30b5",
+        "name": "Paper",
+        "basis": "explicit",
+        "quote": "Paper $ 22.5 $ 25.3 17.5 % 18.2 % Reconstituted Tobacco 16.2 21.4 36.7 38.5 Filtration 0.4 — 1.3 N.A. Unallocated (6.0 ) (5.0 ) Total Consolidated $ 33.1 $ 41.7 16.2 % 21.4 %",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "35045eff549e30b5",
+        "industry_name_standard": "Paper",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Paper $ 22.5 $ 25.3 17.5 % 18.2 % Reconstituted Tobacco 16.2 21.4 36.7 38.5 Filtration 0.4 — 1.3 N.A. Unallocated (6.0 ) (5.0 ) Total Consolidated $ 33.1 $ 41.7 16.2 % 21.4 %",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "368aaf79f7d1dcaaff3631afccaac49731e44c333d2d74b8c98ea6b6f028c4cd",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2014_05_07_earnings_Textiles-and-Apparel_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\09de6b80595b2fa1eb9f13c58eb7bc41dad7adb7eb75905c3ded710904eae84e.json",
+      ".runtime\\simple\\model_cache\\615e25d1e4882e4f2d00b6b40af1df28e1acfcffdf074ae737b1df625749cf99.json",
+      ".runtime\\simple\\pages\\164e67cf4b4c6c7bccadf9a0.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062314000067/q1_14form8-kearnings.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000623/0001000623-14-000067-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T08:51:58.423199+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "be41af9af46ea781871f3466788eefd4dd250e39323480282dce2415a90a2e43",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact",
+      "industry_dictionary_code_quote_conflict"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "7ab9ce1c9e2f45babd2f55e184c86f2db6792c17f6327b9c482be249a92eb6d3",
+    "commit_verified_at": "2026-11-12T13:59:26.245036+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T13:59:26.277409+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\164e67cf4b4c6c7bccadf9a0.json",
+      ".runtime\\simple\\model_cache\\09de6b80595b2fa1eb9f13c58eb7bc41dad7adb7eb75905c3ded710904eae84e.json",
+      ".runtime\\simple\\model_cache\\615e25d1e4882e4f2d00b6b40af1df28e1acfcffdf074ae737b1df625749cf99.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Schweitzer-Mauduit International, Inc.",
+        "rationale": "The company is directly mentioned in the text, and the report is about its financial results.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Schweitzer-Mauduit International, Inc.",
+        "summary_evidence_quote": "Schweitzer-Mauduit International, Inc."
+      },
+      {
+        "scope": "company",
+        "quote": "Net Income from Continuing Operations was $23.2 million for the quarter ended March 31, 2014, versus $30.7 million in the prior-year quarter.",
+        "rationale": "This directly reflects the financial performance of the company, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Net Income from Continuing Operations was $23.2 million for the quarter ended March 31, 2014, versus $30.7 million in the prior-year quarter.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The first quarter 2014 financial results reported in this release are unaudited.",
+        "rationale": "The article refers to the financial results of the company, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The first quarter 2014 financial results reported in this release are unaudited.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "368aaf79f7d1dcaaff3631afccaac49731e44c333d2d74b8c98ea6b6f028c4cd",
+    "source_verification": "original_body_or_publication_revalidated",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "retrace_original",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/164e67cf4b4c6c7bccadf9a0.json",
+      "sha256": "83d311a58138f314df62ae0116b3ba4880fb691dcf58c15138f8240fc25f0bd9",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 118.29700000002049
+}

@@ -1,0 +1,114 @@
+{
+  "source_id": "15b2657e1795e696f5a932a2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_22_Regulatory_Utilities_sec.json",
+      "sha256": "279e4f324f7fcb281142bb70b3dab9bc44a41f1a6f3bb8ae0f7c2cc449492c83",
+      "filename": "2013_01_22_Regulatory_Utilities_sec.json"
+    }
+  ],
+  "original_record_hash": "458dc8b82375e40241d841378b7d62cca709a53ceadde243ef57c7ff63e26643",
+  "input_hash": "cacc679573f337a359b1186e0a8234bbcdfeaecfc0c19460e0c58a214c7cf4f5",
+  "matching_audit_hash": "98187e6badfae7da3cfca514fce789ec341176328ea71d808265c80038f11e8c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fb44f3a9ae88a0e3cac4362bfdd3d64d85797e7d8d2e9eb1cb03ff90454b83a2",
+    "raw_sha256": "e2b856008d4a1a0864bf24bbf4914869bc48a332c5131ee28a4544d316216e4e",
+    "date_quote": "DATE OF REPORT (DATE OF EARLIEST EVENT REPORTED): January 22, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/100122/000119312513018896/d471081d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Tucson Electric Power Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Tucson Electric Power Company"
+    },
+    {
+      "name": "Uns Energy Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Uns Energy Corporation"
+    }
+  ],
+  "record_hash": "61aec02771f9eaa002c16aaffc48f50c1af5a833c6340b590c627da778ef9bfd",
+  "outputs": [
+    {
+      "path": "US\\2013_01_22_Regulatory_Utilities_sec.json",
+      "sha256": "3bfbc45028bf424dcd39e367929b77a706210a98a1ac10d7c6938de491e79100"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.191892+00:00",
+    "fetched_at": "2026-11-10T23:38:42.569930+00:00",
+    "feature_available_at": "2026-11-10T23:39:15.716041+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:43.582676+00:00",
+  "commit_verified_at": "2026-11-12T13:52:43.582676+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Tucson Electric Power Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tucson Electric Power Company"
+      },
+      {
+        "name": "Uns Energy Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Uns Energy Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Electric Power",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

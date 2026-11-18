@@ -1,0 +1,113 @@
+{
+  "source_id": "513e0390aea95009fcd538e3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_06_16_Mergers-&-Acquisitions_Retail_cnbc.json",
+      "sha256": "ba1d7bd4430563cdee4bd6714ed05166b5d4ba62eaa0b39cc433cd584bfad421",
+      "filename": "2017_06_16_Mergers-&-Acquisitions_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "17fb0852f0bd22b73e74cd02260b120be1f45c04ad075f184be8c1227cf7ef7f",
+  "input_hash": "8d9fdaa1eca40816e5c6823d300f92614638b55dc5313fff59efde1e3e9af769",
+  "matching_audit_hash": "2c5027f7698c981ab07dbb4d97feeaf3a3c1b051fb3d2e4fd6a698cde62a47e9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "bd1cee5cb54fe89a2f072c0d41702d0af007c88f82d5971a908984af7d10ebbf",
+    "raw_sha256": "4e48dbe11ce930f2ab3f674c3c4dc3dc1d5fca91cc1f402977a21082ac7a1342",
+    "date_quote": "article:published_time=2017-06-16T17:00:10+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "040297e60595e5275325c97f8c1ef14bd5b5ae1fb3573eeca931a9704b4fc36c",
+  "outputs": [
+    {
+      "path": "US\\2017_06_16_Mergers-&-Acquisitions_Retail_cnbc.json",
+      "sha256": "256e0c6bc620444e5a9f8b507944e1f526eab040bb2edc7194b457bb3a3a3c35"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-06-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:24.936362+00:00",
+    "fetched_at": "2026-11-10T16:52:28.115304+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.588784+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:40:16.402953+00:00",
+  "feature_available_at": "2026-11-12T14:40:16.451218+00:00",
+  "commit_verified_at": "2026-11-12T14:40:16.451218+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a merger and acquisition, including the companies involved, the deal value, and market reactions.",
+    "securities": [
+      {
+        "name": "Amazon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amazon"
+      },
+      {
+        "name": "Whole Foods",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Whole Foods"
+      },
+      {
+        "name": "Jana Partners",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Jana Partners"
+      },
+      {
+        "name": "Walmart",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Walmart"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Grocery",
+        "basis": "explicit",
+        "quote": "Grocery"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Amazon": "company",
+      "Whole Foods": "company",
+      "Jana Partners": "company",
+      "Walmart": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

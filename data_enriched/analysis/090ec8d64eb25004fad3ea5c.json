@@ -1,0 +1,114 @@
+{
+  "source_id": "090ec8d64eb25004fad3ea5c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_03_15_Cybersecurity_Renewable-Energy_bloomberg.json",
+      "sha256": "57213319c3f48b408e46ee74624ca41325ff61465f1fb9f803a3046c0ce3bfc1",
+      "filename": "2012_03_15_Cybersecurity_Renewable-Energy_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2012_03_15_Cybersecurity_Renewable-Energy_bloomberg.json",
+      "sha256": "57213319c3f48b408e46ee74624ca41325ff61465f1fb9f803a3046c0ce3bfc1",
+      "filename": "2012_03_15_Cybersecurity_Renewable-Energy_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "bbf3af30d3450350e1f54cb02d5c07415afdf0a3ab3e20f73e619527a2634f05",
+  "input_hash": "9ae29bc5a5c3070bb61f951672eafbd90203920f2543b3e669558c5ce2c16193",
+  "matching_audit_hash": "4c94c0b41c9d4c82b8c8417c25f9bf2d9338a5e88f95190911f7cab989936a51",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5a92dff0e0a5e652f00afeb5683c643978d2ced4b793ba8fdce7e1c7859b54f1",
+    "raw_sha256": "602cccd37c55d21c66aaf727449118f0aecad827e7f7d4b7c35d71394ce4bf80",
+    "date_quote": "March 15, 2012 at 11:03 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ad465df1886c4d8fe2f4f2b7140e28ffa1791b35fa2a2c143e64540702f2d9f6",
+  "outputs": [
+    {
+      "path": "US\\2012_03_15_Cybersecurity_Renewable-Energy_bloomberg.json",
+      "sha256": "eeb45b23284008ede09aab9fe5b930ee4fe032e0ca96a7de674cce996242f1c2"
+    },
+    {
+      "path": "GLOBAL\\2012_03_15_Cybersecurity_Renewable-Energy_bloomberg.json",
+      "sha256": "eeb45b23284008ede09aab9fe5b930ee4fe032e0ca96a7de674cce996242f1c2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-03-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:06.652619+00:00",
+    "fetched_at": "2026-11-10T15:44:17.688504+00:00",
+    "feature_available_at": "2026-11-10T17:53:08.970840+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T13:57:02.535560+00:00",
+  "feature_available_at": "2026-11-12T13:57:02.547768+00:00",
+  "commit_verified_at": "2026-11-12T13:57:02.547768+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses corporate espionage in the context of renewable energy and includes specific companies involved in the incident.",
+    "securities": [
+      {
+        "name": "American Superconductor Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American Superconductor Corp."
+      },
+      {
+        "name": "Sinovel Wind Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sinovel Wind Group"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Renewable Energy",
+        "basis": "explicit",
+        "quote": "renewable energy sector"
+      },
+      {
+        "name": "Cybersecurity",
+        "basis": "inferred",
+        "quote": "corporate espionage"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "American Superconductor Corp.": "company",
+      "Sinovel Wind Group": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

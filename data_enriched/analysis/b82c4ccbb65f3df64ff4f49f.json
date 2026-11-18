@@ -1,0 +1,98 @@
+{
+  "source_id": "b82c4ccbb65f3df64ff4f49f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_11_02_Sales_Automotive_prnewswire.json",
+      "sha256": "5a488a8899d9495e13e2f9add6e91d8baddaf64c6c67e236b00f4b1517b150e9",
+      "filename": "2021_11_02_Sales_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "c2295f1c725f886dde5d0a1dbe835e2b2bd4c340fcf74a20d97d09491d49f1cb",
+  "input_hash": "3955551b86b16d1150dbaa332123fc12b781b392eaaaa11b7ae2b4af7f7fc9aa",
+  "matching_audit_hash": "016fd0868515898a36a4e95cad87bfc02d83878e85aa9e0790dc07bae6e0debe",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c4d06cbb770825d6e93449b6af270873f2c56c69d28cebbfb92de974a36d4260",
+    "raw_sha256": "e9a470d61e8aad887d31a26ca52974e1a02bee68337b3e0a5d30721cfe3c8a5e",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2021-11-02T07:13:00Z\ndate=2021-11-02T07:13:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Kia America",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Kia America"
+    }
+  ],
+  "record_hash": "e45d4e248da7fb7ebf7ad2ec5181729eed4bd997096d52c93a63a676fe4549f3",
+  "outputs": [
+    {
+      "path": "US\\2021_11_02_Sales_Automotive_prnewswire.json",
+      "sha256": "f908798b5585902a853a68ede7955d8d15b2d5f0874485b773b830e7b5cf8c02"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-11-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:21.580283+00:00",
+    "fetched_at": "2026-11-10T21:37:13.580489+00:00",
+    "feature_available_at": "2026-11-11T09:07:21.914361+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:56:15.088204+00:00",
+  "feature_available_at": "2026-11-12T14:56:15.096861+00:00",
+  "commit_verified_at": "2026-11-12T14:56:15.096861+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Contains sales data, product updates, and brand recognition information.",
+    "securities": [
+      {
+        "name": "Kia America",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kia America"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "explicit",
+        "quote": "Automotive"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Kia America": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

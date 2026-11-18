@@ -1,0 +1,185 @@
+{
+  "source_id": "d5437179cad8d60b46038ed2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_11_13_Regulatory_Financial-Services_treasury.json",
+      "sha256": "7b79552cf90d68c4ee738ead9f6bf679d0fbab506d847f4462854a719217de5b",
+      "filename": "2012_11_13_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "e8f4f98606734af7164ed7689f1069d0f6cba8375019c2b30f716ec9899e7777",
+  "input_hash": "c9481925f120f76ec84c071c71749e31f6895d8098ec4d2698fc82e08bdd936a",
+  "matching_audit_hash": "955cb0fc33d9589165ca14fd59244a15acb2e132a2fd187c248a7c51b357d9f0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9461dceb92b593d48a39809ebe18acc4a38dc2195ecd20e3d8b1b36214d353e2",
+    "raw_sha256": "f26341a288f91972883c719ffea21f435117c556e05cb017a7f1477254d3074d",
+    "date_quote": "November 13, 2012 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2554eb6505d920d7e2041ca535386d745413d5bdbe80d6a4173e3a52c763aa85",
+  "outputs": [
+    {
+      "path": "US\\2012_11_13_Regulatory_Financial-Services_treasury.json",
+      "sha256": "4d2816f09286e0d3cf45ea9c96dc22ce6852052a907f76ccca1b2184514cbedf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-11-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:59.652976+00:00",
+    "fetched_at": "2026-11-10T10:49:43.558458+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.163438+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:13.155907+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.272750+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.272750+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Proposed reforms to money market funds and regulatory implications",
+    "securities": [
+      {
+        "name": "Financial Stability Oversight Council (FSOC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the Financial Stability Oversight Council (FSOC)"
+      },
+      {
+        "name": "Treasury Secretary Tim Geithner",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Secretary Tim Geithner"
+      },
+      {
+        "name": "Federal Reserve Chairman Ben Bernanke",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Chairman Ben Bernanke"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "money market mutual funds (MMFs)"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Financial Stability Oversight Council (FSOC)": "organization",
+      "Treasury Secretary Tim Geithner": "issuer",
+      "Federal Reserve Chairman Ben Bernanke": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.305536+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:13.155907+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Proposed reforms to money market funds and regulatory implications",
+      "securities": [
+        {
+          "name": "Financial Stability Oversight Council (FSOC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the Financial Stability Oversight Council (FSOC)"
+        },
+        {
+          "name": "Treasury Secretary Tim Geithner",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Treasury Secretary Tim Geithner"
+        },
+        {
+          "name": "Federal Reserve Chairman Ben Bernanke",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Chairman Ben Bernanke"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "money market mutual funds (MMFs)"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "Financial Stability Oversight Council (FSOC)": "organization",
+        "Treasury Secretary Tim Geithner": "issuer",
+        "Federal Reserve Chairman Ben Bernanke": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:13.184075+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:13.192549+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:13.173915+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses regulatory reforms proposed by the Financial Stability Oversight Council (FSOC) under the Dodd-Frank Act, focusing on structural changes to钱市",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:58:47.423592+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

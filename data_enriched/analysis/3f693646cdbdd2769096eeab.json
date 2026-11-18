@@ -1,0 +1,104 @@
+{
+  "source_id": "3f693646cdbdd2769096eeab",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_01_26_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "3d2e50c33de493e21bfeee4f8d7ecfc0e70b70fc38cd6723be7d9225325ccfa3",
+      "filename": "2022_01_26_Monetary-Policy_Central-Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "ee9257740dd1f988203b8ff26ecaf960e1c31ffa10a69d88fb7506c929f4f0f4",
+  "input_hash": "2c5912495569a5510311643d0f041ca39d778cc27969de45c975bfea302388c4",
+  "matching_audit_hash": "c4e941a6891768d93f421287a85d2626aa8a6be6801a042540d531c973576916",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7e98e720e01d494848e44eabff5905c7549aab021930c58f244a632f6d33c01d",
+    "raw_sha256": "f8b305113114316262687d1fe466f1d164a726949b4211a2882ca317ecc6098c",
+    "date_quote": "Implementation Note issued January 26, 2022",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7e441c31c91e7094e550745fc791705daa14fc9bd65e6ad5bd26cfb0f3439faf",
+  "outputs": [
+    {
+      "path": "US\\2022_01_26_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "2e1602834ed0ccac51319ac499134ed7d3a721734cd9146c061d05730872b761"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-01-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:55.425866+00:00",
+    "fetched_at": "2026-11-10T10:45:20.155498+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.585431+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:56:35.632888+00:00",
+  "feature_available_at": "2026-11-12T14:56:35.642655+00:00",
+  "commit_verified_at": "2026-11-12T14:56:35.642655+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses monetary policy decisions by the Federal Reserve Board, including interest rates and asset purchases, which are relevant to financial markets",
+    "securities": [
+      {
+        "name": "Federal Reserve Board",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Board"
+      },
+      {
+        "name": "Federal Open Market Committee (FOMC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Open Market Committee (FOMC)"
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Monetary Policy",
+        "basis": "explicit",
+        "quote": "Monetary Policy"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve Board": "organization",
+      "Federal Open Market Committee (FOMC)": "organization",
+      "Federal Reserve Bank of New York": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

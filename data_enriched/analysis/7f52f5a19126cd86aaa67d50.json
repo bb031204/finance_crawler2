@@ -1,0 +1,109 @@
+{
+  "source_id": "7f52f5a19126cd86aaa67d50",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_01_09_stock_Biotechnology_sec.json",
+      "sha256": "a3c576d69708a312bdc84daa2a81a0ec5a19fb5549027ddf97ac27c6f2a6a55e",
+      "filename": "2014_01_09_stock_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "c760c012b8645cca1ec123e5f2fe367fd30659b4605355767b352452f6ae66a2",
+  "input_hash": "ea4ff73d2c6638964f54340e015e7a916120da45706280e66f9c287269ba91ff",
+  "matching_audit_hash": "bb6c8138fa284dc7793149b1347b8722cb6f0bfe83bc419e7d6edbafc6e36e8a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "807f526b769cbc483ba398bd8eb570c3059c864f4f29e54c1c14516b1a80b1cb",
+    "raw_sha256": "c1201ab1347d23aeb9d4c8b12afd1188cde5ecc0dc7b6ce7851c8efedb497979",
+    "date_quote": "SEC filing datePublished=2014-01-09",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000114420414001317/v364979_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sangamo BioSciences, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo BioSciences, Inc."
+    },
+    {
+      "name": "Biogen Idec MA Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Biogen Idec MA Inc."
+    }
+  ],
+  "record_hash": "14b1c5a5401e3aa8af00b1d5e2a8607f8b2d88d582f159fcfd20b1ced0cb7eb1",
+  "outputs": [
+    {
+      "path": "US\\2014_01_09_stock_Biotechnology_sec.json",
+      "sha256": "bf72ba3dc8f1f48e42663b3a409cbea93409724ba6e035ac2b21708dc9cc0418"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-01-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:09:53.669304+00:00",
+    "feature_available_at": "2026-11-11T10:20:37.976723+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:48.417967+00:00",
+  "commit_verified_at": "2026-11-12T13:52:48.417967+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sangamo BioSciences, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo BioSciences, Inc."
+      },
+      {
+        "name": "Biogen Idec MA Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Biogen Idec MA Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

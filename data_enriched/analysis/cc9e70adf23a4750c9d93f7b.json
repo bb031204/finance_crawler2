@@ -1,0 +1,91 @@
+{
+  "source_id": "cc9e70adf23a4750c9d93f7b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_12_11_Finance_Peer-to-Peer-Lending_bloomberg.json",
+      "sha256": "d613c652c2ee593c423cf465c222f45b50f37cd4eb7489020c5ae6926e7a0823",
+      "filename": "2014_12_11_Finance_Peer-to-Peer-Lending_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "0eeb16910003cafa7934f108b3363c211c6280f78775a1f7291c17d2f969d6d2",
+  "input_hash": "54bf4b142fc376ed38d937607750870d79795fb415c232a8203aae4c0f9f0612",
+  "matching_audit_hash": "184aebc3d5803b72679a017464aeb21aeb86a2ffbb13633c83bcf2ba6fb0aaf3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b199591e3b5d69d1c4238f94e8ece2ac550c8d29a3bbd5c689cf4c97f8d5dca2",
+    "raw_sha256": "62db0de0234270c1eef3be2f6d698cb5bb77beaf85a762e6737b0d37c9ccc9a4",
+    "date_quote": "December 11, 2014 at 3:43 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "52158075b5f1ed62d6daa4a6e83710a9823e7be30962405232c38c1dbc60b653",
+  "outputs": [
+    {
+      "path": "US\\2014_12_11_Finance_Peer-to-Peer-Lending_bloomberg.json",
+      "sha256": "ebdd2464e39ec831cc41ab93760970d22e19f91904559cda42bbc90406fca55d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-12-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:30.480606+00:00",
+    "fetched_at": "2026-11-10T12:14:20.684559+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.937727+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:19:12.835849+00:00",
+  "feature_available_at": "2026-11-12T14:19:12.867521+00:00",
+  "commit_verified_at": "2026-11-12T14:19:12.867521+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses LendingClub Corp.'s IPO performance and its impact on the peer-to-peer lending industry.",
+    "securities": [
+      {
+        "name": "LendingClub Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "LendingClub Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "peer-to-peer lending",
+        "basis": "explicit",
+        "quote": "peer-to-peer lending industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "LendingClub Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "source_id": "e507eb997b345d4a29b6d94f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_10_01_stock_Energy_cnbc.json",
+      "sha256": "94e7504f78d74e845c7b45ebcc15475e4761cda380136d09a480d02481c99e87",
+      "filename": "2018_10_01_stock_Energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "1e9343e2dff3e594de9abd7f4acc56a986a3e42510db6233209dc58f324072e3",
+  "input_hash": "165f78e2cb181176f393a41f8b3d8cd81e531e394a370b71e1606fda0fee9e07",
+  "matching_audit_hash": "61551a0662368a97094cf5a7d5b7e7312045561f8fa6b61d567fdc07d3e5e610",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "459170f53d8e460dd4deaad57ec0a5f429295f79f477e0d9a0ff1bb9ae0127e2",
+    "raw_sha256": "77c5e59df166de9e0361790f7a2d509e2718ff5c0420b581781f47c3fec02d7c",
+    "date_quote": "datePublished  Published Mon, Oct 1 2018 1:02 PM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "General Electric",
+      "ticker": null,
+      "exchange": null,
+      "quote": "General Electric"
+    },
+    {
+      "name": "Alstom",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Alstom"
+    }
+  ],
+  "record_hash": "cb49b432a5ccdb1728ccc31cb29bbf01bf3f01edf59a0589bc23a4432d61eab8",
+  "outputs": [
+    {
+      "path": "US\\2018_10_01_stock_Energy_cnbc.json",
+      "sha256": "683a6275709fcf34db2040cda3bc2c1bd7d122eca6e873addd4356c5ad75283f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-10-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:52.734922+00:00",
+    "fetched_at": "2026-11-11T11:48:32.303675+00:00",
+    "feature_available_at": "2026-11-11T11:49:02.442012+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:09:49.446781+00:00",
+  "feature_available_at": "2026-11-12T15:16:44.068360+00:00",
+  "commit_verified_at": "2026-11-12T15:16:44.068360+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Reports on GE's financial performance and operational challenges",
+    "securities": [
+      {
+        "name": "General Electric",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric's power unit"
+      },
+      {
+        "name": "Alstom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "its $10.6 billion acquisition of Alstom's power assets"
+      },
+      {
+        "name": "Gabelli & Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gabelli & Company noted the issue is"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Power generation",
+        "basis": "inferred",
+        "quote": "power unit"
+      },
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": "power plant equipment"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "General Electric": "company",
+      "Alstom": "company",
+      "Gabelli & Company": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:44.096820+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:09:49.446781+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Reports on GE's financial performance and operational challenges",
+      "securities": [
+        {
+          "name": "General Electric",
+          "ticker": null,
+          "exchange": null,
+          "quote": "General Electric's power unit"
+        },
+        {
+          "name": "Alstom",
+          "ticker": null,
+          "exchange": null,
+          "quote": "its $10.6 billion acquisition of Alstom's power assets"
+        },
+        {
+          "name": "Gabelli & Company",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Gabelli & Company noted the issue is"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Power generation",
+          "basis": "inferred",
+          "quote": "power unit"
+        },
+        {
+          "name": "Energy",
+          "basis": "inferred",
+          "quote": "power plant equipment"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "General Electric": "company",
+        "Alstom": "company",
+        "Gabelli & Company": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:09:49.471090+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:09:49.479623+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:09:49.463091+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about General Electric's financial performance, operational challenges, and strategic actions, including revenue decline, cost-",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:46:15.388374+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

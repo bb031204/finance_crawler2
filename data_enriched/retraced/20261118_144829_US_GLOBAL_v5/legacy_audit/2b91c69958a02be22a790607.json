@@ -1,0 +1,97 @@
+{
+  "source_id": "2b91c69958a02be22a790607",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_11_03_Finance_Government_treasury.json",
+      "sha256": "ac5726ccc3c7e9fe59ff106832f9e56056a2270990d27354af485a2589be7e08",
+      "filename": "2021_11_03_Finance_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "f9ec772fa502946bd9f836a2cd0c2ae06a9ea7a31d8bf9197423bec8ed371ca0",
+  "input_hash": "aad7b2198b6cbfd65a7a1b288ce36017980716c18a12acd74db2cdcfa0d107d3",
+  "matching_audit_hash": "328706880d9d452fae57ce5fe3c97747771bb97085275c6f080db976a14788e5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6b32fec225528ecd5ec33f75ed1e4a7d98a80c172178c9082cf79ba27dc506f1",
+    "raw_sha256": "9b711e13c436696bce23254d860660123706ceee43185f8e4277cac586cce63a",
+    "date_quote": "November 3, 2021",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "U.S. Department of the Treasury",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The U.S. Department of the Treasury is offering $120 billion of Treasury securities to refund approximately $75.9 billion of privately-held Treasury notes and bonds maturing on November 15, 2021."
+    }
+  ],
+  "record_hash": "4ca6d17dd322fa3b6acbe0d867d25285417342719385e2323b9b6c715830a1b0",
+  "outputs": [
+    {
+      "path": "US\\2021_11_03_Finance_Government_treasury.json",
+      "sha256": "a8393a0645f30fb0250ba463815cd400a9db78c331ca1fdc809b6b215cdf3869"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-11-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:14.305325+00:00",
+    "fetched_at": "2026-11-11T02:14:22.844885+00:00",
+    "feature_available_at": "2026-11-11T02:15:15.601764+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:38.938086+00:00",
+  "commit_verified_at": "2026-11-12T13:53:38.938086+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Department of the Treasury is offering $120 billion of Treasury securities to refund approximately $75.9 billion of privately-held Treasury notes and bonds maturing on November 15, 2021."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

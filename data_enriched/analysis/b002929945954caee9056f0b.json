@@ -1,0 +1,109 @@
+{
+  "source_id": "b002929945954caee9056f0b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_06_19_Financial-Report_Pharmaceutical-Retail_sec.json",
+      "sha256": "88adc1f4a4a18f3d374c4b0d131f9cd975b68fdff9fc198f5715f9133d691aed",
+      "filename": "2012_06_19_Financial-Report_Pharmaceutical-Retail_sec.json"
+    }
+  ],
+  "original_record_hash": "daea7deefbb378a5d35d9db68c9a07ed58aa60985a89e1df9d09f9e5f0d3a6c6",
+  "input_hash": "a7b221932b07654da69c2edb50228818773d2b9ee2524a8f292e422be513e7ee",
+  "matching_audit_hash": "455ae01fa8aadaa8518251c1c8b72d9f22237012d3ec0834f4d4672b705166da",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "231c6a72ba90b7188257a454b263a6baef5d6c4db18eae8fc5e97a86ec622687",
+    "raw_sha256": "4380eab893d4bfc148862799d305dae510b10831bed753fbcc52c4c0a653b843",
+    "date_quote": "Date of Report (Date of earliest event reported): June 19, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/104207/000119312512274469/d369203d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Walgreen Co.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Walgreen Co."
+    },
+    {
+      "name": "Alliance Boots",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Alliance Boots"
+    }
+  ],
+  "record_hash": "204b7f5cb73b90791f5efb0e4691fa3d801c311a91fadd5d7e67c33c0122bfce",
+  "outputs": [
+    {
+      "path": "US\\2012_06_19_Financial-Report_Pharmaceutical-Retail_sec.json",
+      "sha256": "70823253a63d9e4599e82542ed30a5e3cc12b88872afd280a24b8adaae8f0c39"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-06-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:23.494631+00:00",
+    "fetched_at": "2026-11-10T20:28:07.296616+00:00",
+    "feature_available_at": "2026-11-10T20:28:48.758611+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:40.818779+00:00",
+  "commit_verified_at": "2026-11-12T13:52:40.818779+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Walgreen Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Walgreen Co."
+      },
+      {
+        "name": "Alliance Boots",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alliance Boots"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceutical Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

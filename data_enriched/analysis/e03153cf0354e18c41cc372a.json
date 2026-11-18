@@ -1,0 +1,142 @@
+{
+  "source_id": "e03153cf0354e18c41cc372a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_08_21_Commodities_Metals_cnbc.json",
+      "sha256": "dbaf7151d6b4299e759affd02d2c99047194b098de79a353eda11ecf76b19e9a",
+      "filename": "2017_08_21_Commodities_Metals_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2017_08_21_Commodities_Metals_cnbc.json",
+      "sha256": "dbaf7151d6b4299e759affd02d2c99047194b098de79a353eda11ecf76b19e9a",
+      "filename": "2017_08_21_Commodities_Metals_cnbc.json"
+    }
+  ],
+  "original_record_hash": "2c61130c304a7987f285b7fd0bf8543e397b8ead79c775abe9b7508c3bb7785c",
+  "input_hash": "61f6f909f0aaeea76c2d90753bb7bb76f66920e57092913e237acd463f6453b3",
+  "matching_audit_hash": "72dad840ba4533a529a5521a8038f0ffe9650e8593020e859a46b85e2b113509",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5eb026e140d8f70832cd0b3f464af5476edeedb357840f8af79d947b03fe2f8f",
+    "raw_sha256": "0818c1399d55ce69fcccde102a3d240f8d351e0c2c7c3b164db4a792e9e21f37",
+    "date_quote": "article:published_time=2017-08-21T17:47:31+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "fbaf77b80fd247b0defdb34d367f801a9608c5592f9caeb8d546fbe1d78e3776",
+  "outputs": [
+    {
+      "path": "US\\2017_08_21_Commodities_Metals_cnbc.json",
+      "sha256": "e88c792e6979f592a9afd38802e286f39ae653c2f798727f9ab5a1b090b5df43"
+    },
+    {
+      "path": "GLOBAL\\2017_08_21_Commodities_Metals_cnbc.json",
+      "sha256": "e88c792e6979f592a9afd38802e286f39ae653c2f798727f9ab5a1b090b5df43"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-08-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:03:43.503437+00:00",
+    "fetched_at": "2026-11-10T16:16:13.461358+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.379769+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:40:50.936160+00:00",
+  "feature_available_at": "2026-11-12T14:40:50.994580+00:00",
+  "commit_verified_at": "2026-11-12T14:40:50.994580+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses copper prices, economic growth, and factors influencing the market, which are relevant for financial analysis.",
+    "securities": [
+      {
+        "name": "Freeport McMoRan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Freeport McMoRan"
+      },
+      {
+        "name": "BHP Billiton",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BHP Billiton"
+      },
+      {
+        "name": "Eurozone",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Eurozone"
+      },
+      {
+        "name": "European Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "European Commission"
+      },
+      {
+        "name": "Japan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Japan"
+      },
+      {
+        "name": "Trump administration",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Trump administration"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Manufacturing",
+        "basis": "inferred",
+        "quote": "manufacturing"
+      },
+      {
+        "name": "Economic Growth",
+        "basis": "inferred",
+        "quote": "economic growth"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Freeport McMoRan": "company",
+      "BHP Billiton": "company",
+      "Eurozone": "organization",
+      "European Commission": "organization",
+      "Japan": "organization",
+      "Trump administration": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

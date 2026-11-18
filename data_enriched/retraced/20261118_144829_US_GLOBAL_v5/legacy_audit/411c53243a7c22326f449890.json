@@ -1,0 +1,97 @@
+{
+  "source_id": "411c53243a7c22326f449890",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_12_Financial-Report_Technology_sec.json",
+      "sha256": "f260dfb5ef64e76f100d075737b56f8ac99ccf4dd426708fa52a0d32c6ed7138",
+      "filename": "2015_01_12_Financial-Report_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "e257ca8227df68eb3d820043b0a3968d3ffbf0b6b60d91a9b6f1d4abf34e3743",
+  "input_hash": "3dd8b70c3ccb2f162ae55fc85be7d75b7ef16fef4e38a544cd5c821882216389",
+  "matching_audit_hash": "f7570e420414e528e8351c6bc5cc6b1506cab4b2d10e30cf83c53f385d93885c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e5088c9712952332b56c5bda25e57faae7c45c6842b539cd4167a99a50edc74c",
+    "raw_sha256": "8b45a63483e6b524d726660955a7479ea41e66dd7832b23ffdca8fb1afae1e65",
+    "date_quote": "Date of Report (Date of earliest event reported): January 12, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018015000002/a2014-q48xkprexearningsrel.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation (the “Registrant”) issued a press release to report certain preliminary financial results for its fourth quarter ended December 28, 2014."
+    }
+  ],
+  "record_hash": "5698439f16fba015ca349835c58b5e8d167d485882a881d71893e52bc16fad2a",
+  "outputs": [
+    {
+      "path": "US\\2015_01_12_Financial-Report_Technology_sec.json",
+      "sha256": "2c230fd76e98d6b787d320ae2c110d7193e3ec6da00266f89dda0d5c44ff696f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:14:53.775941+00:00",
+    "feature_available_at": "2026-11-11T00:15:18.996424+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:53.727250+00:00",
+  "commit_verified_at": "2026-11-12T13:52:53.727250+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation (the “Registrant”) issued a press release to report certain preliminary financial results for its fourth quarter ended December 28, 2014."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

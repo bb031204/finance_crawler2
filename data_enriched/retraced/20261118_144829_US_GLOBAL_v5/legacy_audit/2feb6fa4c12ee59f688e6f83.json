@@ -1,0 +1,97 @@
+{
+  "source_id": "2feb6fa4c12ee59f688e6f83",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_03_29_financial_Banking_sec.json",
+      "sha256": "109320b5eb7c9b63c02765edb92081d898e07c8165d57abfb8ef08f60748958e",
+      "filename": "2012_03_29_financial_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "34386bde2107088a9882cfbce4052ccb281b8f1d1056f060d508740fcc15f761",
+  "input_hash": "4616f968e45db29e8e528e2b41aea5d5df8266ee24e37817bb31c5136512496c",
+  "matching_audit_hash": "0252b6b5c6d97f014d8c09c57514b0820686e4839f854f66abadd6a7af786619",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b5d13ff0397ba4d156baf8a68fad424da4fee6224262ae98664ffa9340895bca",
+    "raw_sha256": "1ddc6aa6248c92d77c55920bf1b492fa86355daf2c6c81f8b798521b80d1c40e",
+    "date_quote": "SEC filing datePublished=2012-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000234/000092708912000038/imp-8k0312.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "IMPERIAL CAPITAL BANCORP, INC.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "IMPERIAL CAPITAL BANCORP, INC."
+    }
+  ],
+  "record_hash": "3e1d17d227164eb67db9bbfc4dba995fac82fe90d0f97947fa23d5fa0037f35f",
+  "outputs": [
+    {
+      "path": "US\\2012_03_29_financial_Banking_sec.json",
+      "sha256": "d5a668b21b372e3294668d366a6796b072c5748e154c70eaca55d1c67c2d11bb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.194878+00:00",
+    "fetched_at": "2026-11-10T22:38:57.300413+00:00",
+    "feature_available_at": "2026-11-11T09:38:46.643810+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:40.268691+00:00",
+  "commit_verified_at": "2026-11-12T13:52:40.268691+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "IMPERIAL CAPITAL BANCORP, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IMPERIAL CAPITAL BANCORP, INC."
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial_services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

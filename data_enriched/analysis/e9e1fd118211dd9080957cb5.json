@@ -1,0 +1,347 @@
+{
+  "source_id": "e9e1fd118211dd9080957cb5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_12_03_Financial_Banking_federalreserve.json",
+      "sha256": "d3746e6a532b6a8f23fba6fcf45cb767221e747b28e6617424e7b285464ecfaa",
+      "filename": "2015_12_03_Financial_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "dcfdc7042db9f0441e009083bae9a26ac9dbce6b6d224d2821432506b5379604",
+  "input_hash": "05fc126e68ed2464cfcd142347ac64973edfe2fe5d5c50e16013b2e9762add8c",
+  "matching_audit_hash": "6ab605af87e730dafd3b1514aab060d2e3efca5635314b28d0b6876e4218a256",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ed196ec33ff3efee3c0e367a6ad90d257074ddbd77f55dbdaf44f19860d8b8fa",
+    "raw_sha256": "6f9a0c63362875ca5fae330714b65004ed09d934fda98ab6644d3e53f988a515",
+    "date_quote": "December 3, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b2614998ca3dab67db24801c63e5b026fbc659f37a16ebeda76423ea14acdbec",
+  "outputs": [
+    {
+      "path": "US\\2015_12_03_Financial_Banking_federalreserve.json",
+      "sha256": "b4314b193f5ee77ec8ecad329e96a0d1377027a5b31ee400e23e012e9ba01996"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-12-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:56.454118+00:00",
+    "fetched_at": "2026-11-10T11:30:37.539283+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.835308+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:04:16.085724+00:00",
+  "feature_available_at": "2026-11-12T15:16:38.406306+00:00",
+  "commit_verified_at": "2026-11-12T15:16:38.406306+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Analyzes credit-to-GDP trends and regulatory implications",
+    "securities": [
+      {
+        "name": "Federal Reserve Board",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Board's FEDS Notes"
+      },
+      {
+        "name": "Basel Committee on Banking Supervision",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Basel Committee on Banking Supervision (BCBS)"
+      },
+      {
+        "name": "European Union",
+        "ticker": null,
+        "exchange": null,
+        "quote": "European Union's Capital Requirements Directive (CRD) IV"
+      },
+      {
+        "name": "Insurance companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IF.PF.MF denoting insurance companies"
+      },
+      {
+        "name": "Pension funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IF.PF.MF denoting insurance companies, pension funds"
+      },
+      {
+        "name": "Long-term mutual funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IF.PF.MF denoting insurance companies, pension funds, and long-term mutual funds"
+      },
+      {
+        "name": "Finance companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Other nonbanks include finance companies"
+      },
+      {
+        "name": "Private label ABS issuers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Private label ABS issuers"
+      },
+      {
+        "name": "Mortgage REITS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mortgage REITS"
+      },
+      {
+        "name": "Funding corporations",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Funding corporations"
+      },
+      {
+        "name": "Broker-dealers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broker-dealers"
+      },
+      {
+        "name": "GSEs",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GSEs and other nonbanks account for most of the increase"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "Basel Committee on Banking Supervision (BCBS)"
+      },
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "insurance companies"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "finance companies"
+      },
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": "Mortgage REITS"
+      },
+      {
+        "name": "Securities",
+        "basis": "inferred",
+        "quote": "broker-dealers"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve Board": "organization",
+      "Basel Committee on Banking Supervision": "organization",
+      "European Union": "organization",
+      "Insurance companies": "organization",
+      "Pension funds": "organization",
+      "Long-term mutual funds": "organization",
+      "Finance companies": "organization",
+      "Private label ABS issuers": "organization",
+      "Mortgage REITS": "organization",
+      "Funding corporations": "organization",
+      "Broker-dealers": "organization",
+      "GSEs": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:38.433316+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:04:16.085724+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Analyzes credit-to-GDP trends and regulatory implications",
+      "securities": [
+        {
+          "name": "Federal Reserve Board",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Board's FEDS Notes"
+        },
+        {
+          "name": "Basel Committee on Banking Supervision",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Basel Committee on Banking Supervision (BCBS)"
+        },
+        {
+          "name": "European Union",
+          "ticker": null,
+          "exchange": null,
+          "quote": "European Union's Capital Requirements Directive (CRD) IV"
+        },
+        {
+          "name": "Insurance companies",
+          "ticker": null,
+          "exchange": null,
+          "quote": "IF.PF.MF denoting insurance companies"
+        },
+        {
+          "name": "Pension funds",
+          "ticker": null,
+          "exchange": null,
+          "quote": "IF.PF.MF denoting insurance companies, pension funds"
+        },
+        {
+          "name": "Long-term mutual funds",
+          "ticker": null,
+          "exchange": null,
+          "quote": "IF.PF.MF denoting insurance companies, pension funds, and long-term mutual funds"
+        },
+        {
+          "name": "Finance companies",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Other nonbanks include finance companies"
+        },
+        {
+          "name": "Private label ABS issuers",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Private label ABS issuers"
+        },
+        {
+          "name": "Mortgage REITS",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Mortgage REITS"
+        },
+        {
+          "name": "Funding corporations",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Funding corporations"
+        },
+        {
+          "name": "Broker-dealers",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Broker-dealers"
+        },
+        {
+          "name": "GSEs",
+          "ticker": null,
+          "exchange": null,
+          "quote": "GSEs and other nonbanks account for most of the increase"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Banking",
+          "basis": "explicit",
+          "quote": "Basel Committee on Banking Supervision (BCBS)"
+        },
+        {
+          "name": "Insurance",
+          "basis": "explicit",
+          "quote": "insurance companies"
+        },
+        {
+          "name": "Finance",
+          "basis": "inferred",
+          "quote": "finance companies"
+        },
+        {
+          "name": "Real Estate",
+          "basis": "inferred",
+          "quote": "Mortgage REITS"
+        },
+        {
+          "name": "Securities",
+          "basis": "inferred",
+          "quote": "broker-dealers"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Federal Reserve Board": "organization",
+        "Basel Committee on Banking Supervision": "organization",
+        "European Union": "organization",
+        "Insurance companies": "organization",
+        "Pension funds": "organization",
+        "Long-term mutual funds": "organization",
+        "Finance companies": "organization",
+        "Private label ABS issuers": "organization",
+        "Mortgage REITS": "organization",
+        "Funding corporations": "organization",
+        "Broker-dealers": "organization",
+        "GSEs": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:04:16.110640+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:04:16.135640+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:04:16.101639+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses credit-to-GDP trends and gaps, which are relevant to financial regulation and macroeconomic analysis. It references the Basel III countercyc-",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:29:24.614227+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

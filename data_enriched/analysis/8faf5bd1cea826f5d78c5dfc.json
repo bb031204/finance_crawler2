@@ -1,0 +1,121 @@
+{
+  "source_id": "8faf5bd1cea826f5d78c5dfc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_03_23_Franchise-Industry_Frozen-Yogurt-Franchise_cnbc.json",
+      "sha256": "319bcd4f0505040c451d41e0d80beae87e367f668934c22b3851fb02f263abed",
+      "filename": "2012_03_23_Franchise-Industry_Frozen-Yogurt-Franchise_cnbc.json"
+    }
+  ],
+  "original_record_hash": "afe8628d6e7712d69ab014e939bce530d5fc3ac2c95a74be0f47ffe4c3f74b83",
+  "input_hash": "f41cebecad4e95d0b142b6929c0dcd6ce4f7ffa944cc48ffaa1a9a1c05a8415a",
+  "matching_audit_hash": "430ba72784b80f77c44a3c5f00d2114a94f1d6f29466a5872220cab3c704d1f0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e9698b2e587cd4c2a4db30eb08120d6522bd2b919e300ab99e43bc3d14691dbe",
+    "raw_sha256": "fef638e6357e770e5f3a748822c2e35f7d7c8c824dcc57e75cd48f22f299e5e8",
+    "date_quote": "article:published_time=2012-03-23T14:27:32+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Red Mango",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Red Mango yogurt Source: Red Mango"
+    },
+    {
+      "name": "TCBY",
+      "ticker": null,
+      "exchange": null,
+      "quote": "the industry’s biggest player, TCBY"
+    },
+    {
+      "name": "Menchie’s",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Menchie’s also has its sights set on an extensive expansion this year."
+    }
+  ],
+  "record_hash": "667156f7b36a53b1ab2016288678e51e7eadfa3081350886aa06b9a44eb0969f",
+  "outputs": [
+    {
+      "path": "US\\2012_03_23_Franchise-Industry_Frozen-Yogurt-Franchise_cnbc.json",
+      "sha256": "a65bdae40c3d539143ddec81bd045e807d74e2f5ab3eb2d73a889de7e6e0885f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-03-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:27.582352+00:00",
+    "fetched_at": "2026-11-10T21:42:16.400470+00:00",
+    "feature_available_at": "2026-11-10T21:42:44.328779+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:40.102077+00:00",
+  "commit_verified_at": "2026-11-12T13:52:40.102077+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Red Mango",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Red Mango yogurt Source: Red Mango"
+      },
+      {
+        "name": "TCBY",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the industry’s biggest player, TCBY"
+      },
+      {
+        "name": "Menchie’s",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Menchie’s also has its sights set on an extensive expansion this year."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Frozen Yogurt Franchise",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

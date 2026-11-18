@@ -1,0 +1,96 @@
+{
+  "source_id": "a277a384387a07374978dcf2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_14_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "d6499f427d0354ffde9b9f9f3b3d19b307e1f38e094740288363860e38a5dc6c",
+      "filename": "2020_02_14_Corporate-Governance_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "8321e02e98f0670aa689b5a748ec932a09ccf42945fb22d2d5cd04e7713f8870",
+  "input_hash": "82819322b4f51124eb08cbdd056eda858f6befb509d74ad2e8f28a6100ef7808",
+  "matching_audit_hash": "1c0ac91c223bd72ab5831222c1ac9cfb7d286e76e8375c944884e8cc7d7beb72",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8ce64f37cbfacb7905928ea6476970a06c7ef1fbc46d050d3ed8332abc060103",
+    "raw_sha256": "b46c3a17cdc8aa27a36c6e3448a2a91cd7dc6f551e010aaeabde5221c77cffab",
+    "date_quote": "SEC filing datePublished=2020-02-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312520038600/d891664d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock"
+    }
+  ],
+  "record_hash": "1954b4c0bfd9a1400f588009c19c7820ea3fc91470f2af9beaf8d983d1245ca5",
+  "outputs": [
+    {
+      "path": "US\\2020_02_14_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "f8309e9b024a85af418c74cbbcb18c6ce72c68c80b2194bd96989d4ba1b685f3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:24:24.631026+00:00",
+    "feature_available_at": "2026-11-11T15:24:43.732336+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:32.071607+00:00",
+  "commit_verified_at": "2026-11-12T13:53:32.071607+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

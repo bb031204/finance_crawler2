@@ -1,0 +1,265 @@
+{
+  "source_id": "90f6d8cb758a613250cad89f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_11_21_Finance_Financial-Services_treasury.json",
+      "sha256": "004f1970382e83d319c2edcf4bb6ab4ccab6a80b4893453134fb95d7c7be7087",
+      "filename": "2019_11_21_Finance_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "51c1d33c0e9a15c520b67a2ab05d773b0c05c84d6182b86f900e5e7e7da76ea2",
+  "input_hash": "356826f94549842a7edce50d5322c884f0cd0a144691b5e3c806d223e82ad009",
+  "matching_audit_hash": "b3e58dae80d4dbae48df01baf417092b80bd5250055675b20a17c3ae31faf267",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "be9cb8fa01ebb215f444d7e24caf03151968ecf9b8075190048cee89cbea68a1",
+    "raw_sha256": "c464789593e6aea87b76c0c9f3064663676b05337773d65693064b767140a56c",
+    "date_quote": "November 21, 2019 8:00AM New York, NY",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ad4e6033b2541b309d44d7fb08f7ff0a35a042fd4f81779272f384f29ccfced3",
+  "outputs": [
+    {
+      "path": "US\\2019_11_21_Finance_Financial-Services_treasury.json",
+      "sha256": "a2f140fec9b793571c9a9bfb521923ad9c9f92f6aac9f7146beff48f7bf6c2eb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-11-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:45.964112+00:00",
+    "fetched_at": "2026-11-10T10:38:29.055288+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.549929+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:12:22.141660+00:00",
+  "feature_available_at": "2026-11-12T15:16:46.606256+00:00",
+  "commit_verified_at": "2026-11-12T15:16:46.606256+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses regulatory reforms, economic policy, and financial services landscape.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "TCH + BPI 2019 Annual Conference",
+        "ticker": null,
+        "exchange": null,
+        "quote": "TCH + BPI 2019 Annual Conference"
+      },
+      {
+        "name": "Deputy Secretary Muzinich",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Deputy Secretary Muzinich"
+      },
+      {
+        "name": "S.2155",
+        "ticker": null,
+        "exchange": null,
+        "quote": "S.2155"
+      },
+      {
+        "name": "Volcker Rule",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Volcker Rule"
+      },
+      {
+        "name": "PayPal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PayPal"
+      },
+      {
+        "name": "SoFi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SoFi"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial services",
+        "basis": "explicit",
+        "quote": "evolving financial services landscape"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "enhanced prudential standards for U.S. and foreign-owned banks"
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "impact of technology on payments, deposits, and credit"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "TCH + BPI 2019 Annual Conference": "organization",
+      "Deputy Secretary Muzinich": "organization",
+      "S.2155": "organization",
+      "Volcker Rule": "organization",
+      "PayPal": "organization",
+      "SoFi": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "excluded_non_entity_mentions": [
+      "Tax Cuts and Jobs Act of 2017"
+    ]
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:46.624272+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:12:22.141660+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses regulatory reforms, economic policy, and financial services landscape.",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "TCH + BPI 2019 Annual Conference",
+          "ticker": null,
+          "exchange": null,
+          "quote": "TCH + BPI 2019 Annual Conference"
+        },
+        {
+          "name": "Deputy Secretary Muzinich",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Deputy Secretary Muzinich"
+        },
+        {
+          "name": "S.2155",
+          "ticker": null,
+          "exchange": null,
+          "quote": "S.2155"
+        },
+        {
+          "name": "Volcker Rule",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Volcker Rule"
+        },
+        {
+          "name": "Tax Cuts and Jobs Act of 2017",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Tax Cuts and Jobs Act of 2017"
+        },
+        {
+          "name": "PayPal",
+          "ticker": null,
+          "exchange": null,
+          "quote": "PayPal"
+        },
+        {
+          "name": "SoFi",
+          "ticker": null,
+          "exchange": null,
+          "quote": "SoFi"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial services",
+          "basis": "explicit",
+          "quote": "evolving financial services landscape"
+        },
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "enhanced prudential standards for U.S. and foreign-owned banks"
+        },
+        {
+          "name": "Technology",
+          "basis": "inferred",
+          "quote": "impact of technology on payments, deposits, and credit"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "TCH + BPI 2019 Annual Conference": "organization",
+        "Deputy Secretary Muzinich": "organization",
+        "S.2155": "organization",
+        "Volcker Rule": "organization",
+        "Tax Cuts and Jobs Act of 2017": "organization",
+        "PayPal": "organization",
+        "SoFi": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:12:22.169186+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:12:22.178188+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:22.157180+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses financial regulatory reform, economic policy, national security, and the evolving financial services landscape, including topics like the Vol",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:51:18.351658+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

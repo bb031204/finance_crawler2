@@ -1,0 +1,114 @@
+{
+  "source_id": "16ef6bd6b51e1c73e7b07834",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_05_Corporate-Governance_Entertainment_sec.json",
+      "sha256": "4c1d82a90ad9cd7f81b158efb61d71df05b6c7c993115be9700f8429cb3700d4",
+      "filename": "2015_02_05_Corporate-Governance_Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "222eee08253d286a1fd33b73b70bcdb9a47de8c30d546dbbf5ce19f66d847c85",
+  "input_hash": "c38b5851edd59913c7d0b4ccc9fadb65b470ea2184d317987c3b86a5433dd45a",
+  "matching_audit_hash": "a6034217ce21c966e5252abc28b60a56afb3f879b69ec39c90a17bd10e319d9f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b137f0ee347ecbf74103f292d28ba3d60a2297e024674af69f8af24cb1b216d7",
+    "raw_sha256": "7f8f8c2e969fdcf47b0127a9b30f5df93225949f48f96cac5e032657fba1dc7c",
+    "date_quote": "Date of Report (Date of Earliest Event Reported): February 5, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103915000069/cooappointmentv05.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "The Walt Disney Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Walt Disney Company"
+    },
+    {
+      "name": "Mr. Staggs",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Mr. Staggs"
+    }
+  ],
+  "record_hash": "d283ac387d21a77455c0eb79991e7b5902d2b20ff899543f22b11adf0848afd8",
+  "outputs": [
+    {
+      "path": "US\\2015_02_05_Corporate-Governance_Entertainment_sec.json",
+      "sha256": "68f8793cccaa08f7c7fd89f58b7b8edfab85c445f5d3552a006fc793ad5078fa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:42:11.190945+00:00",
+    "feature_available_at": "2026-11-11T00:43:16.312356+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.895649+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.895649+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      },
+      {
+        "name": "Mr. Staggs",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mr. Staggs"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Corporate Governance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "source_id": "fdedca15766782068bd1131b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_04_Mergers-&-Acquisitions_Technology_sec.json",
+      "sha256": "eccb8cf5f21f244fec4e0169edc8fe02fca88f1b39f6c3f4a414d67cd7003038",
+      "filename": "2016_02_04_Mergers-&-Acquisitions_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "2c41dc049d96f1c51f3317b4c74497e736846a3a1a287011ab0728a0d5d2121c",
+  "input_hash": "ad26134c864a1a064d792c2d6f39ae46bbe0ab61ec142c85e934b62a649cfa0b",
+  "matching_audit_hash": "e57bc00fde29fab3867bb9e2bec75c008df3a8caf87add90e7cb5c25ae531f00",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "866902499e40a486febbc5de56e5a1b5b4f8553341de91ff6548cab7d9241c44",
+    "raw_sha256": "2389e8bb697a850aa22b41f4c46759d258dbdaefd01dbb3369bc934481131c87",
+    "date_quote": "Date of Report (Date of earliest event reported): February 4, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000110465916093887/a16-3583_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation"
+    },
+    {
+      "name": "Western Digital Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Western Digital Corporation"
+    },
+    {
+      "name": "Western Digital",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Western Digital"
+    }
+  ],
+  "record_hash": "30107a3239e4a4f06dd164fd58337e628200ca657c176aa8f7c6ce77bbabb53f",
+  "outputs": [
+    {
+      "path": "US\\2016_02_04_Mergers-&-Acquisitions_Technology_sec.json",
+      "sha256": "3ac736976ad61d82c1de150c0ff032a6227a6c1a093768244725189ef4ec3864"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.846742+00:00",
+    "fetched_at": "2026-11-11T00:53:40.118367+00:00",
+    "feature_available_at": "2026-11-11T00:54:41.151207+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:04.870281+00:00",
+  "commit_verified_at": "2026-11-12T13:53:04.870281+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      },
+      {
+        "name": "Western Digital Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Digital Corporation"
+      },
+      {
+        "name": "Western Digital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Digital"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Memory Storage",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

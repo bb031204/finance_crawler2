@@ -1,0 +1,717 @@
+{
+  "source_id": "0653be87772d5fc34b8022b9",
+  "status": "completed",
+  "source_record_hash": "da6d04630f979eaae763de26a0151053d8957af2ee4a383884ed19aa22d57c67",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2012/04/04/for-biotech-takeovers-timing-is-key.html",
+    "attempted_at": "2026-11-18T07:26:33.726455+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "016a19708b5d6932771539ab82268026794fac04c8684691e58bc5edfba8f761",
+    "summary_sha256": "0a954a9186eb34ed2049a6bd92d9f58b4c6df1fc0ccd9df5d1115a6f08a2bc01"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0653be87772d5fc34b8022b9.json",
+    "sha256": "a9057a97c000b930f417d7ccf076c273f2ca09a9b9ef9ea99a436bc5db986a0e",
+    "bundled_path": "legacy_audit/0653be87772d5fc34b8022b9.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4bee46e2fec12ce3ab8e07dfd4e0c26e662c62b7bb06206c6e4501dd6e6f62aa",
+      "llm_inferred_at": "2026-11-18T07:27:57.083132+00:00",
+      "model_duration_seconds": 19.7010959,
+      "prompt_tokens": 2124,
+      "completion_tokens": 825,
+      "selection": [
+        {
+          "source_id": "0653be87772d5fc34b8022b9",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Biotech and small drug companies are rarely acquired immediately before or after a drug approval or during the initial phase of a new drug launch.",
+              "rationale": "The article discusses the general pattern of acquisitions in the biotech and pharmaceutical industry, indicating that acquisitions are not common during early stages of drug development.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Vivus, which is awaiting FDA approval for its weight-loss drug Qnexa, may be in secret negotiations with a Big Pharma suitor.",
+              "rationale": "The article specifically mentions Vivus and its potential acquisition by a Big Pharma company, indicating a company-specific event.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Examples include Roche buying Inhibitex and Gilead Sciences acquiring Pharmasset.",
+              "rationale": "The article provides examples of acquisitions in the pharmaceutical industry, showing that acquisitions are more common during mid- to late-stage clinical trials or after drug approval.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2834",
+              "name": "PHARMACEUTICAL PREPARATIONS",
+              "basis": "explicit",
+              "quote": "Biotech and small drug companies are rarely acquired immediately before or after a drug approval or during the initial phase of a new drug launch."
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "Examples include Roche buying Inhibitex and Gilead Sciences acquiring Pharmasset."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Forest Laboratories bought Clinical Data weeks after its antidepressant Viibryd received FDA approval."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2834",
+              "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+              "industry_name_original": "PHARMACEUTICAL PREPARATIONS",
+              "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+              "confidence": 0.95,
+              "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales."
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+              "industry_name_original": "Major Pharmaceuticals",
+              "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+              "confidence": 0.95,
+              "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "63f19e94e149e75347749822bcf01d3e5f811e8f4d9b99d5668b253c325afc9e",
+      "llm_inferred_at": "2026-11-18T07:28:12.213045+00:00",
+      "model_duration_seconds": 15.1225411,
+      "prompt_tokens": 2168,
+      "completion_tokens": 804,
+      "selection": [
+        {
+          "source_id": "0653be87772d5fc34b8022b9",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Biotech and small drug companies are rarely acquired immediately before or after a drug approval or during the initial phase of a new drug launch.",
+              "rationale": "The article discusses the acquisition patterns of biotech and small drug companies, indicating that these are industry-wide behaviors rather than isolated company events.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Vivus, which is awaiting FDA approval for its weight-loss drug Qnexa, may be in secret negotiations with a Big Pharma suitor.",
+              "rationale": "The article specifically mentions Vivus and its potential acquisition, which is a company-specific event.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Examples include Roche buying Inhibitex and Gilead Sciences acquiring Pharmasset.",
+              "rationale": "These examples are used to illustrate industry-wide acquisition patterns, showing that the behavior is not limited to a single company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2834",
+              "name": "PHARMACEUTICAL PREPARATIONS",
+              "basis": "explicit",
+              "quote": "Biotech and small drug companies are rarely acquired immediately before or after a drug approval or during the initial phase of a new drug launch."
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "Examples include Roche buying Inhibitex and Gilead Sciences acquiring Pharmasset."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2834",
+              "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+              "industry_name_original": "PHARMACEUTICAL PREPARATIONS",
+              "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+              "confidence": 0.95,
+              "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales."
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+              "industry_name_original": "Major Pharmaceuticals",
+              "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+              "confidence": 0.95,
+              "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:28:12.234015+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0a954a9186eb34ed2049a6bd92d9f58b4c6df1fc0ccd9df5d1115a6f08a2bc01",
+    "raw_sha256": null,
+    "date_quote": "datePublished  Published Wed, Apr 4 2012 11:07 AM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Analyzes acquisition patterns in biotech and pharmaceutical sectors.",
+    "securities": [
+      {
+        "name": "Vivus",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vivus, which is awaiting FDA approval for its weight-loss drug Qnexa"
+      },
+      {
+        "name": "FDA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "awaiting FDA approval"
+      },
+      {
+        "name": "Roche",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Roche buying Inhibitex"
+      },
+      {
+        "name": "Gilead Sciences",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gilead Sciences acquiring Pharmasset"
+      },
+      {
+        "name": "Johnson & Johnson",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Johnson & Johnson buying Cougar Biotech"
+      },
+      {
+        "name": "Amgen",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amgen acquiring Micromet"
+      },
+      {
+        "name": "Eli Lilly",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Eli Lilly and Takeda Pharmaceutical"
+      },
+      {
+        "name": "Takeda Pharmaceutical",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Eli Lilly and Takeda Pharmaceutical"
+      },
+      {
+        "name": "Forest Laboratories",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Forest Laboratories bought Clinical Data"
+      },
+      {
+        "name": "Clinical Data",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Forest Laboratories bought Clinical Data"
+      },
+      {
+        "name": "Amylin Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amylin Pharmaceuticals, which recently launched Bydureon"
+      },
+      {
+        "name": "Bristol-Myers Squibb",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amylin Pharmaceuticals, which recently launched Bydureon, also reportedly spurned a takeout offer from Bristol-Myers Squibb"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:2834",
+        "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_name_original": "PHARMACEUTICAL PREPARATIONS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2834",
+        "industry_name_standard": "PHARMACEUTICAL PREPARATIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "PHARMACEUTICAL PREPARATIONS",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "TRSR:222c6919ed899305",
+        "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_name_original": "Major Pharmaceuticals",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "222c6919ed899305",
+        "industry_name_standard": "Major Pharmaceuticals",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Major Pharmaceuticals",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Vivus": "company",
+      "FDA": "organization",
+      "Roche": "company",
+      "Gilead Sciences": "company",
+      "Johnson & Johnson": "company",
+      "Amgen": "company",
+      "Eli Lilly": "company",
+      "Takeda Pharmaceutical": "company",
+      "Forest Laboratories": "company",
+      "Clinical Data": "company",
+      "Amylin Pharmaceuticals": "company",
+      "Bristol-Myers Squibb": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "0653be87772d5fc34b8022b9",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_04_04_takeover_Biotechnology_cnbc.json",
+        "sha256": "3065b60d8dc97278dffec4f8e6be055ef7ba22d452340a767e18defe415c958b",
+        "filename": "2012_04_04_takeover_Biotechnology_cnbc.json"
+      }
+    ],
+    "original_record_hash": "34ff685cd77295ee42923d534907c60cd3da2b6ba79ef0ac0e2941ae2a3b7f3f",
+    "input_hash": "8b8315f02d39c37f96d3c68feb8ad0194c641e8c6e6f2ffc8d838368f8e7e575",
+    "matching_audit_hash": "f82b3bf206be496df14b5cf74745a0ad5a77a32d905f5a37d31b5b112d547134",
+    "legacy_security_evidence": [
+      {
+        "name": "Vivus",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vivus"
+      },
+      {
+        "name": "Arena Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Arena Pharmaceuticals"
+      },
+      {
+        "name": "Discovery Laboratories",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Discovery Laboratories"
+      },
+      {
+        "name": "Roche",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Roche"
+      },
+      {
+        "name": "Johnson & Johnson",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Johnson & Johnson"
+      },
+      {
+        "name": "Amgen",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amgen"
+      },
+      {
+        "name": "GlaxoSmithKline",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GlaxoSmithKline"
+      },
+      {
+        "name": "Pfizer",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pfizer"
+      },
+      {
+        "name": "Eli Lilly",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Eli Lilly"
+      },
+      {
+        "name": "Takeda Pharmaceutical",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Takeda Pharmaceutical"
+      },
+      {
+        "name": "AstraZeneca",
+        "ticker": null,
+        "exchange": null,
+        "quote": "AstraZeneca"
+      },
+      {
+        "name": "Forest Laboratories",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Forest Laboratories"
+      },
+      {
+        "name": "Amylin Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amylin Pharmaceuticals"
+      }
+    ],
+    "record_hash": "da6d04630f979eaae763de26a0151053d8957af2ee4a383884ed19aa22d57c67",
+    "outputs": [
+      {
+        "path": "US\\2012_04_04_takeover_Biotechnology_cnbc.json",
+        "sha256": "8b662f101a34183ed71a6bfaf560f70569d85937e049bb344b649df4ef3e6d27"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2012-04-04",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:37:23.494631+00:00",
+      "fetched_at": "2026-11-11T07:07:06.787630+00:00",
+      "feature_available_at": "2026-11-11T07:08:04.381594+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:28:12.213045+00:00",
+    "feature_available_at": "2026-11-18T07:28:12.234015+00:00",
+    "commit_verified_at": "2026-11-12T15:16:33.322156+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:33.352054+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:00.146492+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Analyzes acquisition patterns in biotech and pharmaceutical sectors.",
+        "securities": [
+          {
+            "name": "Vivus",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Vivus, which is awaiting FDA approval for its weight-loss drug Qnexa"
+          },
+          {
+            "name": "FDA",
+            "ticker": null,
+            "exchange": null,
+            "quote": "awaiting FDA approval"
+          },
+          {
+            "name": "Roche",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Roche buying Inhibitex"
+          },
+          {
+            "name": "Gilead Sciences",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Gilead Sciences acquiring Pharmasset"
+          },
+          {
+            "name": "Johnson & Johnson",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Johnson & Johnson buying Cougar Biotech"
+          },
+          {
+            "name": "Amgen",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Amgen acquiring Micromet"
+          },
+          {
+            "name": "Eli Lilly",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Eli Lilly and Takeda Pharmaceutical"
+          },
+          {
+            "name": "Takeda Pharmaceutical",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Eli Lilly and Takeda Pharmaceutical"
+          },
+          {
+            "name": "Forest Laboratories",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Forest Laboratories bought Clinical Data"
+          },
+          {
+            "name": "Clinical Data",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Forest Laboratories bought Clinical Data"
+          },
+          {
+            "name": "Amylin Pharmaceuticals",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Amylin Pharmaceuticals, which recently launched Bydureon"
+          },
+          {
+            "name": "Bristol-Myers Squibb",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Amylin Pharmaceuticals, which recently launched Bydureon, also reportedly spurned a takeout offer from Bristol-Myers Squibb"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Biotechnology",
+            "basis": "inferred",
+            "quote": "Biotech and small drug companies"
+          },
+          {
+            "name": "Pharmaceuticals",
+            "basis": "inferred",
+            "quote": "small drug companies"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry"
+        ],
+        "entity_types": {
+          "Vivus": "company",
+          "FDA": "organization",
+          "Roche": "company",
+          "Gilead Sciences": "company",
+          "Johnson & Johnson": "company",
+          "Amgen": "company",
+          "Eli Lilly": "company",
+          "Takeda Pharmaceutical": "company",
+          "Forest Laboratories": "company",
+          "Clinical Data": "company",
+          "Amylin Pharmaceuticals": "company",
+          "Bristol-Myers Squibb": "company"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:59:00.182458+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T14:59:00.191120+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T14:59:00.171956+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses patterns in the acquisition of biotech and drug companies, particularly after drug approval or commercial launch, and provides examples of bi",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T13:57:14.321286+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:2834",
+        "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_name_original": "PHARMACEUTICAL PREPARATIONS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2834",
+        "industry_name_standard": "PHARMACEUTICAL PREPARATIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "TRSR:222c6919ed899305",
+        "industry_scope_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_name_original": "Major Pharmaceuticals",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Acquisition patterns in the pharmaceutical industry are influenced by the stage of drug development and commercial launch.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "222c6919ed899305",
+        "industry_name_standard": "Major Pharmaceuticals",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Companies like Eli Lilly and Takeda Pharmaceutical acquired firms after their drugs had years of sales.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Vivus, which is awaiting FDA approval for its weight-loss drug Qnexa, may be in secret negotiations with a Big Pharma suitor.",
+        "rationale": "The article specifically mentions Vivus and its potential acquisition, which is a company-specific event.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Vivus, which is awaiting FDA approval for its weight-loss drug Qnexa, may be in secret negotiations with a Big Pharma suitor."
+      },
+      {
+        "scope": "industry",
+        "quote": "Biotech and small drug companies are rarely acquired immediately before or after a drug approval or during the initial phase of a new drug launch.",
+        "rationale": "The article discusses the acquisition patterns of biotech and small drug companies, indicating that these are industry-wide behaviors rather than isolated company events.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Biotech and small drug companies are rarely acquired immediately before or after a drug approval or during the initial phase of a new drug launch."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.cnbc.com/2012/04/04/for-biotech-takeovers-timing-is-key.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "da6d04630f979eaae763de26a0151053d8957af2ee4a383884ed19aa22d57c67",
+    "content_hash": "0a954a9186eb34ed2049a6bd92d9f58b4c6df1fc0ccd9df5d1115a6f08a2bc01",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:28:12.215205+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0653be87772d5fc34b8022b9.json",
+      "sha256": "085bb00aae7927a134edd92944ce690aac9af6e7bfceae06743c4553ec15bdbb",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 98.5
+}

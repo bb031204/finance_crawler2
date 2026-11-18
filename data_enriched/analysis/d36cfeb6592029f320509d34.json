@@ -1,0 +1,107 @@
+{
+  "source_id": "d36cfeb6592029f320509d34",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_11_20_M&A_Utilities_prnewswire.json",
+      "sha256": "d4d1bec57e5e2395aadfc33be5b7c3c66c72b88fd500162e180e33d46afa316e",
+      "filename": "2019_11_20_M&A_Utilities_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "1282852c2069cf9514a205ee675c499d041560ec7b681f103ca0fd6993062463",
+  "input_hash": "ab509ce697f107449255d40e114b3ca053951efe24634c475d1a214aa7c7aab2",
+  "matching_audit_hash": "336e8e1932b443ce71403b8521b14053efdefa26f166900b349b22ad658f96f3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3285da687ad593a3cd97cce5276e9c96e5b09fd30a63285c3235b82da020a68f",
+    "raw_sha256": "6256048a38d8267782a2fea5aeb5ed34cbc0c77b5b5b03201bbac5b4033d873e",
+    "date_quote": "page.datePublished=2019-11-20T21:05:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Algonquin Power & Utilities Corp.",
+      "ticker": "AQN",
+      "exchange": null,
+      "quote": "Algonquin Power & Utilities Corp. (TSX/NYSE:AQN)"
+    },
+    {
+      "name": "American Water Works Company, Inc.",
+      "ticker": "AWK",
+      "exchange": null,
+      "quote": "American Water Works Company, Inc. (NYSE: AWK)"
+    }
+  ],
+  "record_hash": "e8467180c01221cbde5e87f7452104474c83a20c37188f0355e908d8b3a27a5c",
+  "outputs": [
+    {
+      "path": "US\\2019_11_20_M&A_Utilities_prnewswire.json",
+      "sha256": "e79dd77479fa5c4b3fc2d6dfbc4bb426aafc095ee3a88be431a4c1b8a2bbd681"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-11-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:30.493809+00:00",
+    "fetched_at": "2026-11-10T14:25:07.880757+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.492741+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:30.682477+00:00",
+  "commit_verified_at": "2026-11-12T13:53:30.682477+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Algonquin Power & Utilities Corp.",
+        "ticker": "AQN",
+        "exchange": null,
+        "quote": "Algonquin Power & Utilities Corp. (TSX/NYSE:AQN)"
+      },
+      {
+        "name": "American Water Works Company, Inc.",
+        "ticker": "AWK",
+        "exchange": null,
+        "quote": "American Water Works Company, Inc. (NYSE: AWK)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Utilities",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

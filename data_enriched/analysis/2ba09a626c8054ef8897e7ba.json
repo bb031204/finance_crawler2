@@ -1,0 +1,96 @@
+{
+  "source_id": "2ba09a626c8054ef8897e7ba",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_06_07_Tech_Information-Technology_cnbc.json",
+      "sha256": "4cbefe4ae7e89347a93fafb067a9cd10e53b9e891b6351cbb76cffeb64854e66",
+      "filename": "2019_06_07_Tech_Information-Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "4de0acc38826f1136bf44ee3bd8ab7061370f85c296fcc047b7a723fe91795f9",
+  "input_hash": "7abc9711df5ba9d96c9aabf9cd2c147491c39e6ef459468704dc98211c07fc7a",
+  "matching_audit_hash": "61538a20dffa12d5ce8db2f35e84703e2fe085f5ccada7e904a9e149d78df95c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8779509c25483db10951825888e61e4159e8a1414251feee87a319c14238a811",
+    "raw_sha256": "9c1068bed508eba683837b21c6f421c2957de285c0f9f7c0fe3e2cf6ea649e5a",
+    "date_quote": "article:published_time=2019-06-07T14:10:06+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Zoom Video Communications Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Zoom Video Communications Inc. founder and CEO Eric Yuan at the company's IPO at Nasdaq MarketSite in New York, April 18, 2019."
+    }
+  ],
+  "record_hash": "535f2e11675f20c631f020bf4c5c2a15a10ce94626abace1595b035d3be78a7c",
+  "outputs": [
+    {
+      "path": "US\\2019_06_07_Tech_Information-Technology_cnbc.json",
+      "sha256": "727badaa699d4e7063855256207c0cb62cb8157c9c44547c4aea8334152aa418"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-06-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:20.005603+00:00",
+    "fetched_at": "2026-11-11T04:44:24.198578+00:00",
+    "feature_available_at": "2026-11-11T04:44:52.928352+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:28.340999+00:00",
+  "commit_verified_at": "2026-11-12T13:53:28.340999+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Zoom Video Communications Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Zoom Video Communications Inc. founder and CEO Eric Yuan at the company's IPO at Nasdaq MarketSite in New York, April 18, 2019."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

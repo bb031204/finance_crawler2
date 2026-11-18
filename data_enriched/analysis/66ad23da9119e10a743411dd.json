@@ -1,0 +1,129 @@
+{
+  "source_id": "66ad23da9119e10a743411dd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_10_13_Regulatory_Financial-Services_treasury.json",
+      "sha256": "f6b40194386bd77f736dce4ebacfb7d2718ab200a22544ba7aef97e0c75e05ff",
+      "filename": "2016_10_13_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "3ac3c570b424b1f243fc4ca82b7c1183299f98b6a7343a2e676e7bd0da6ac676",
+  "input_hash": "bfacb7f0eec0a890dbe4fe910088445c6e50a19c43d3b3febcdab9c99af403d4",
+  "matching_audit_hash": "9a9ed017624c6a0199d59e96927a43e90ff8d432de8b231ff0071765852b9065",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "87299a4482e5248649ea80c8cb49a3f467259edcae0474805fc63731b6f83461",
+    "raw_sha256": "db59c541288bc8afe92c723b66a085e68dc406a221d375c9deab3bfeef996ea0",
+    "date_quote": "October 13, 2016 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "64bb75c42e69afba01a034d94465234790b49865ea65710c73f03669e1d7509e",
+  "outputs": [
+    {
+      "path": "US\\2016_10_13_Regulatory_Financial-Services_treasury.json",
+      "sha256": "3f76e182719ec2e8e08e30d0ec120a28bdac8fa70d52310a0236db2708a82052"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-10-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:33.560082+00:00",
+    "fetched_at": "2026-11-10T22:21:02.806350+00:00",
+    "feature_available_at": "2026-11-10T22:21:26.744162+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:33:05.043917+00:00",
+  "feature_available_at": "2026-11-12T14:33:05.054191+00:00",
+  "commit_verified_at": "2026-11-12T14:33:05.054191+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses U.S. Treasury regulations on earnings stripping, impacting financial instruments, corporations, and specific industries like financial,保险,和投资",
+    "securities": [
+      {
+        "name": "U.S. Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury"
+      },
+      {
+        "name": "regulated financial companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "regulated financial companies"
+      },
+      {
+        "name": "regulated insurance companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "regulated insurance companies"
+      },
+      {
+        "name": "mutual funds (RICs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "mutual funds (RICs)"
+      },
+      {
+        "name": "real estate investment trusts (REITs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "real estate investment trusts (REITs)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial",
+        "basis": "explicit",
+        "quote": "regulated financial companies"
+      },
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "regulated insurance companies"
+      },
+      {
+        "name": "Investment",
+        "basis": "explicit",
+        "quote": "mutual funds (RICs) and real estate investment trusts (REITs)"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Treasury": "organization",
+      "regulated financial companies": "organization",
+      "regulated insurance companies": "organization",
+      "mutual funds (RICs)": "organization",
+      "real estate investment trusts (REITs)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

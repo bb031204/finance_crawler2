@@ -1,0 +1,243 @@
+{
+  "source_id": "752190737751484e6fd20f25",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_11_Regulatory_Financial-Services_sec.json",
+      "sha256": "a463f9025733c22874c24ccc883570e542cc66204ec6db161f64a37e7a51e193",
+      "filename": "2019_03_11_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "df99a44dd2d3296022d8e04e5dfbc6b3560431ea2e552a2fffa11cd9af4b357c",
+  "input_hash": "f65e62a57652cdf4a39427d1caa6c34f01fc5985e95dfbc01f2bd82f05de5b56",
+  "matching_audit_hash": "e13786d995a599cd0d7953a520baddfe2c61ec57fd4714e782e1520dd7eb6e9d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e91a8259f7bb93e52d9a0667f186264d582687bbfee710d94bd9475ce734f414",
+    "raw_sha256": "20f0c5c3a306b0bf9c5e2c38d1971a3fe0b1040b0bcad028ed45a4136d50efad",
+    "date_quote": "For Immediate Release 2019-28 Washington D.C., March 11, 2019 —",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d1330e15124a6025898068d7de5ccfd5ff3d1a642b8ef1e93be3b7d3a74f7683",
+  "outputs": [
+    {
+      "path": "US\\2019_03_11_Regulatory_Financial-Services_sec.json",
+      "sha256": "5c457df3f4062052fae54da4a422d9b1f315b3000be926a75d3dbc068f1ab9a7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:26.928482+00:00",
+    "fetched_at": "2026-11-10T11:21:31.465797+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.052962+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:11:04.580406+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.226741+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.226741+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "SEC initiative addresses disclosure failures in investment advisory practices",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Ameritas Investment Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "numerous financial firms, including Ameritas Investment Corp."
+      },
+      {
+        "name": "AXA Advisors LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "AXA Advisors LLC"
+      },
+      {
+        "name": "BB&T Securities LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BB&T Securities LLC"
+      },
+      {
+        "name": "Jay Clayton",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC Chairman Jay Clayton"
+      },
+      {
+        "name": "Jason Burt",
+        "ticker": null,
+        "exchange": null,
+        "quote": "coordinated by SEC Assistant Director Jason Burt"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "numerous financial firms"
+      },
+      {
+        "name": "Investment Management",
+        "basis": "inferred",
+        "quote": "mutual fund share class selection"
+      },
+      {
+        "name": "Regulatory Compliance",
+        "basis": "inferred",
+        "quote": "SEC’s Share Class Selection Disclosure Initiative"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "Ameritas Investment Corp.": "organization",
+      "AXA Advisors LLC": "organization",
+      "BB&T Securities LLC": "organization",
+      "Jay Clayton": "organization",
+      "Jason Burt": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:45.259271+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:11:04.580406+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "SEC initiative addresses disclosure failures in investment advisory practices",
+      "securities": [
+        {
+          "name": "U.S. Securities and Exchange Commission",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The U.S. Securities and Exchange Commission (SEC)"
+        },
+        {
+          "name": "Ameritas Investment Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "numerous financial firms, including Ameritas Investment Corp."
+        },
+        {
+          "name": "AXA Advisors LLC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "AXA Advisors LLC"
+        },
+        {
+          "name": "BB&T Securities LLC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "BB&T Securities LLC"
+        },
+        {
+          "name": "Jay Clayton",
+          "ticker": null,
+          "exchange": null,
+          "quote": "SEC Chairman Jay Clayton"
+        },
+        {
+          "name": "Jason Burt",
+          "ticker": null,
+          "exchange": null,
+          "quote": "coordinated by SEC Assistant Director Jason Burt"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "numerous financial firms"
+        },
+        {
+          "name": "Investment Management",
+          "basis": "inferred",
+          "quote": "mutual fund share class selection"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "basis": "inferred",
+          "quote": "SEC’s Share Class Selection Disclosure Initiative"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Securities and Exchange Commission": "organization",
+        "Ameritas Investment Corp.": "organization",
+        "AXA Advisors LLC": "organization",
+        "BB&T Securities LLC": "organization",
+        "Jay Clayton": "organization",
+        "Jason Burt": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:11:04.607438+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:11:04.617437+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:11:04.597200+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses regulatory actions by the SEC against investment advisers for failing to disclose conflicts of interest, including 12b-1 fees, and the $12",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:48:13.962917+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

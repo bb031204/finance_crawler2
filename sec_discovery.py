@@ -236,7 +236,7 @@ def direct_discover(crawler, report, start, end):
                 prior = crawler.state["records"].get(identity, {})
                 if prior.get("status") == "rejected" and prior.get("scope") == crawler.scope:
                     info["already_rejected"] += 1; continue
-                old = crawler.state["pending"].get(identity, {})
+                old = crawler.state["pending"].get(identity) or crawler.state.get("deferred", {}).get(identity) or {}
                 info["already_pending" if old else "candidates_new"] += 1
                 candidate = dict(old, url=url, title=f"{row['company']} — {row['form']} — {row['filing_date']}",
                     snippet=f"SEC {row['form']} filing. CIK {row['cik']}. Official filing date {row['filing_date']}.",

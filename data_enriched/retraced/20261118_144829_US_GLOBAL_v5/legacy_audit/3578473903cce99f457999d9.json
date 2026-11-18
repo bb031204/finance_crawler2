@@ -1,0 +1,215 @@
+{
+  "source_id": "3578473903cce99f457999d9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_01_14_Corporate-Governance_Energy_cnbc.json",
+      "sha256": "7a6edbc90fba8ce5795db2a18145b664010e308a9ac9d8b5c5f5de36956e05e7",
+      "filename": "2022_01_14_Corporate-Governance_Energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "919f6d1e7b4ef4472265b46544a8303e94e637139eadc869fdeba141eb964640",
+  "input_hash": "364724ce79f2096bf471cd7fe17261faa332dd754d4e768fc434726440c8d0a7",
+  "matching_audit_hash": "bb05af189280f1a8a13417f17dce1f55aa6ed8a030a094f4464bd4fa36983014",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "725b8913272ffaf0863f13569c8a8e25830229d6249bb1178f8631a70bcc05e8",
+    "raw_sha256": "a18b309080f8b88059b6e0c2413f17dc7f1a8beae182759d0fe2a9655b9da0b4",
+    "date_quote": "article:published_time=2022-01-14T10:30:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "789d1e8eed0e011a411bcd57f9ab26d2ca6e7332714912be90a60429196f8479",
+  "outputs": [
+    {
+      "path": "US\\2022_01_14_Corporate-Governance_Energy_cnbc.json",
+      "sha256": "4e0c7818b5ad520f51ab185faf9e69d2d1c69711548fd75ba7bf1e22b3c2a3fb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-01-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:36:20.154025+00:00",
+    "fetched_at": "2026-11-10T15:11:19.568944+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.533845+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:14:51.764651+00:00",
+  "feature_available_at": "2026-11-12T15:16:48.940474+00:00",
+  "commit_verified_at": "2026-11-12T15:16:48.940474+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Senators urge BlackRock to intervene in coal strike",
+    "securities": [
+      {
+        "name": "BlackRock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BlackRock CEO Larry Fink"
+      },
+      {
+        "name": "Warrior Met Coal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Warrior Met Coal"
+      },
+      {
+        "name": "Berkshire Hathaway",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Warren Buffett, CEO of Berkshire Hathaway"
+      },
+      {
+        "name": "Special Metals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "striking steelworkers at Special Metals"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Coal mining",
+        "basis": "inferred",
+        "quote": "coal miners' strike"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "BlackRock, which manages over $9 trillion"
+      },
+      {
+        "name": "Investment management",
+        "basis": "inferred",
+        "quote": "BlackRock, which manages over $9 trillion"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "BlackRock": "organization",
+      "Warrior Met Coal": "company",
+      "Berkshire Hathaway": "company",
+      "Special Metals": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:48.966620+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:14:51.764651+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Senators urge BlackRock to intervene in coal strike",
+      "securities": [
+        {
+          "name": "BlackRock",
+          "ticker": null,
+          "exchange": null,
+          "quote": "BlackRock CEO Larry Fink"
+        },
+        {
+          "name": "Warrior Met Coal",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Warrior Met Coal"
+        },
+        {
+          "name": "Berkshire Hathaway",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Warren Buffett, CEO of Berkshire Hathaway"
+        },
+        {
+          "name": "Special Metals",
+          "ticker": null,
+          "exchange": null,
+          "quote": "striking steelworkers at Special Metals"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Coal mining",
+          "basis": "inferred",
+          "quote": "coal miners' strike"
+        },
+        {
+          "name": "Finance",
+          "basis": "inferred",
+          "quote": "BlackRock, which manages over $9 trillion"
+        },
+        {
+          "name": "Investment management",
+          "basis": "inferred",
+          "quote": "BlackRock, which manages over $9 trillion"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "BlackRock": "organization",
+        "Warrior Met Coal": "company",
+        "Berkshire Hathaway": "company",
+        "Special Metals": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:14:51.799218+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:14:51.808731+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:14:51.789770+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses BlackRock's financial stake in Warrior Met Coal and its potential influence over the company's negotiations with striking miners. It also del",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:56:24.789514+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

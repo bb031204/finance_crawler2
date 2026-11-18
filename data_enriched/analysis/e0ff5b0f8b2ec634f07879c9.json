@@ -1,0 +1,165 @@
+{
+  "source_id": "e0ff5b0f8b2ec634f07879c9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_07_Corporate-Governance_Healthcare_sec.json",
+      "sha256": "230fcbd9aae6391562907fc8ed74a2a98e54b8937997ea4a6c61b4dd0602eeb6",
+      "filename": "2013_01_07_Corporate-Governance_Healthcare_sec.json"
+    }
+  ],
+  "original_record_hash": "5587f3efe5b019e0987561a3c15a85f858b6d81f328a115f76394b9e9688c490",
+  "input_hash": "af3638540e3a0087038057a7d7c85a55f5ff532eabdaba42527152a115479821",
+  "matching_audit_hash": "545f717e0165c714cc5d237288b02f4021c52891e1dc08d9cc65b928c1986dff",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fd15b46c2889fa5a28f01010e48fbd090a246ded1bba3cef480bcfab592b3cd3",
+    "raw_sha256": "695aeaa219738248372155f8641ea269309572c192ed37f040d38fcfbe6984fa",
+    "date_quote": "SEC filing datePublished=2013-01-07",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000278/000114420413000952/v331525_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0364c842d9c37c002a1fe8d1037e81cfe9282240ca71ecc7f15ce288a5b68dfe",
+  "outputs": [
+    {
+      "path": "US\\2013_01_07_Corporate-Governance_Healthcare_sec.json",
+      "sha256": "da5a4abe27d180b535011dd7f7025e8b969f537e8cfd557cb9f8ecda867ae2be"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+    "fetched_at": "2026-11-10T23:19:24.598738+00:00",
+    "feature_available_at": "2026-11-11T09:53:08.267200+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:22.931580+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.470270+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.470270+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Termination of agreements and roles",
+    "securities": [
+      {
+        "name": "PACIFICHEALTH LABORATORIES, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PACIFICHEALTH LABORATORIES, INC."
+      },
+      {
+        "name": "Signal Nutrition LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Signal Nutrition LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "PACIFICHEALTH LABORATORIES, INC."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "PACIFICHEALTH LABORATORIES, INC.": "company",
+      "Signal Nutrition LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.493760+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:22.931580+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Termination of agreements and roles",
+      "securities": [
+        {
+          "name": "PACIFICHEALTH LABORATORIES, INC.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "PACIFICHEALTH LABORATORIES, INC."
+        },
+        {
+          "name": "Signal Nutrition LLC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Signal Nutrition LLC"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Healthcare",
+          "basis": "inferred",
+          "quote": "PACIFICHEALTH LABORATORIES, INC."
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "PACIFICHEALTH LABORATORIES, INC.": "company",
+        "Signal Nutrition LLC": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:22.956723+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:22.966043+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:22.947641+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about company actions and agreements, including termination of employment and consulting agreements, which are relevant for the",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:00:35.281761+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

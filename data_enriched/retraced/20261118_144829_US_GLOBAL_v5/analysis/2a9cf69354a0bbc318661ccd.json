@@ -1,0 +1,459 @@
+{
+  "source_id": "2a9cf69354a0bbc318661ccd",
+  "status": "completed",
+  "source_record_hash": "2286db402261813f718d15cd9072882e70eae79c28e17895851779139a705eff",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-14-058844-index.html",
+    "attempted_at": "2026-11-18T10:35:11.456765+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-14-058844-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312514058844/d679015d8k.htm",
+    "fetched_at": "2026-11-18T10:35:29.775327+00:00",
+    "source_body_hash": "e232cfdae583eda1707f6ac14f5f34477ff293cb4c77ee782616743f22b7e2b0",
+    "raw_sha256": "6977aa719466ab6c4db80481f3171e8bd775542aa4e09432c390fb49b6f607e9",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312514058844/d679015d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "6977aa719466ab6c4db80481f3171e8bd775542aa4e09432c390fb49b6f607e9",
+        "text_sha256": "bec5ed44f038b85876e840d81adfb2bd1be07b6680fbf5cc42b47b3b09b4f5d5",
+        "text_start": 0,
+        "text_end": 2568
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312514058844/d679015dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "ee5dea47965a69f92d5ae2ffcfa55e08a5d57a4358c61de8759dd3cdf26e37c7",
+        "text_sha256": "2ca0fe848f0b476c68be6eea20e1a084e10de8b8f3fbe483a776621790472499",
+        "text_start": 2570,
+        "text_end": 13666
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2014-02-19",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2a9cf69354a0bbc318661ccd.json",
+    "sha256": "c4c392101d05d74a829f4a3c6c5f2243abd61c020cc39456534d37b670c9fd0b",
+    "bundled_path": "legacy_audit/2a9cf69354a0bbc318661ccd.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "8c7781928a271093c257325d27762f7af8aeb6f5f2e41161fb885079bb73cbc8",
+      "llm_inferred_at": "2026-11-18T10:35:46.387679+00:00",
+      "model_duration_seconds": 16.5709027,
+      "prompt_tokens": 4398,
+      "completion_tokens": 734,
+      "selection": [
+        {
+          "source_id": "2a9cf69354a0bbc318661ccd",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Medallion Financial Corp.",
+              "rationale": "The company is a specialty finance company with a leading position servicing the taxicab industry and other niche markets.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Medallion Financial Corp.",
+              "rationale": "The company's financial results and operations are discussed in detail, including earnings, net investment income, and dividend information.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6159",
+              "name": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "expected to be auctioned over time, including the tranche expected to be auctioned in the next few weeks, said Mr. Murstein. The taxi industry remains extremely strong in New",
+              "industry_name_original": "Banks",
+              "mechanism": "The company's operations are tied to the taxi industry, which is a niche market, and the company's financial performance is influenced by the strength of this industry.",
+              "confidence": 0.85,
+              "quote": "The information in the press release is being furnished, not filed, pursuant to Item 2.02."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "expected to be auctioned over time, including the tranche expected to be auctioned in the next few weeks, said Mr. Murstein. The taxi industry remains extremely strong in New",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "The company's financial performance is influenced by the strength of the taxi industry, which is a niche market, and the company's operations are tied to this industry.",
+              "confidence": 0.85,
+              "quote": "The information in the press release is being furnished, not filed, pursuant to Item 2.02."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "2cd7aab64491256beb7c5a20375c7df8c8d0f378e500638a64f2ccdfd2c31c70",
+      "llm_inferred_at": "2026-11-18T10:36:00.138346+00:00",
+      "model_duration_seconds": 13.7306961,
+      "prompt_tokens": 4442,
+      "completion_tokens": 690,
+      "selection": [
+        {
+          "source_id": "2a9cf69354a0bbc318661ccd",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Medallion Financial Corp.",
+              "rationale": "The company is a specialty finance company with a leading position servicing the taxicab industry and other niche markets.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Medallion Financial Corp.",
+              "rationale": "The company's financial results and operations are discussed in detail.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6159",
+              "name": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "expected to be auctioned over time, including the tranche expected to be auctioned in the next few weeks, said Mr. Murstein. The taxi industry remains extremely strong in New",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "The company's operations are tied to the taxi industry, which is a niche market.",
+              "confidence": 0.85,
+              "quote": "The information in the press release is being furnished, not filed, pursuant to Item 2.02."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "expected to be auctioned over time, including the tranche expected to be auctioned in the next few weeks, said Mr. Murstein. The taxi industry remains extremely strong in New",
+              "industry_name_original": "Banks",
+              "mechanism": "The company's operations are tied to the taxi industry, which is a niche market.",
+              "confidence": 0.85,
+              "quote": "The information in the press release is being furnished, not filed, pursuant to Item 2.02."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "cde880f0755b87ba8eb9b2452acfa67965ed696ce47c65b56d9108fe883a30b0",
+      "llm_inferred_at": "2026-11-18T10:36:16.611249+00:00",
+      "model_duration_seconds": 16.453472,
+      "prompt_tokens": 3537,
+      "completion_tokens": 795,
+      "selection": [
+        {
+          "source_id": "2a9cf69354a0bbc318661ccd",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6189",
+              "name": "ASSET-BACKED SECURITIES",
+              "basis": "explicit",
+              "quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6189",
+              "industry_scope_quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses.",
+              "industry_name_original": "ASSET-BACKED SECURITIES",
+              "mechanism": "The company's lending activities to the taxicab industry and other small businesses indicate a significant presence in the asset-backed securities market, which is a key sector for such financial activities.",
+              "confidence": 0.95,
+              "quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses.",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "The company's lending activities to the taxicab industry and other small businesses indicate a significant presence in the commercial banking sector, which is a key sector for such financial activities.",
+              "confidence": 0.95,
+              "quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses.",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "The company's lending activities to the taxicab industry and other small businesses indicate a significant presence in the finance companies sector, which is a key sector for such financial activities.",
+              "confidence": 0.95,
+              "quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "8e538bf95402d431403cf01118d7bbd4487e1a8409245ffb4df64ff2b6d214f1",
+      "llm_inferred_at": "2026-11-18T10:36:31.731143+00:00",
+      "model_duration_seconds": 15.1064724,
+      "prompt_tokens": 3581,
+      "completion_tokens": 790,
+      "selection": [
+        {
+          "source_id": "2a9cf69354a0bbc318661ccd",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter.",
+              "rationale": "The dividend increase is a financial performance indicator that reflects the company's profitability and financial health, which can have an impact on the broader financial services industry.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter.",
+              "rationale": "The dividend increase is a direct financial performance indicator for Medallion Financial, reflecting its profitability and financial health.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses.",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "The company's lending activities in the taxicab industry and other small businesses indicate a significant presence in the commercial banking sector, which can influence the industry's financial dynamics.",
+              "confidence": 0.85,
+              "quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses.",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "The company's lending activities in the taxicab industry and other small businesses indicate a significant presence in the finance sector, which can influence the industry's financial dynamics.",
+              "confidence": 0.85,
+              "quote": "The Company and its subsidiaries have lent approximately $5 billion to the taxicab industry and other small businesses."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:36:31.749267+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e232cfdae583eda1707f6ac14f5f34477ff293cb4c77ee782616743f22b7e2b0",
+    "raw_sha256": "6977aa719466ab6c4db80481f3171e8bd775542aa4e09432c390fb49b6f607e9",
+    "date_quote": "SEC filing datePublished=2014-02-19",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312514058844/d679015d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary contains information about a company's financial results and a press release, indicating the company's operations and disclosure practices.",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "2a9cf69354a0bbc318661ccd",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_02_19_Financial-Results_Financial-Services_sec.json",
+        "sha256": "bc28ff43cecac1f77138dd6856738dd0d3d09c9cbb26c37507db17ecbefd7d2a",
+        "filename": "2014_02_19_Financial-Results_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "7464cac02258659245bddd77b91e195bbd1191f5c2cb20c23c1ec8522ca2021d",
+    "input_hash": "535281ac7c3ef9487bcfaeccaa5d4296d044ff0df85f5bba69294df892103a38",
+    "matching_audit_hash": "3d099f38db3cb1be98a5282564408dd2481bee0d0b62cc1a86f7bd9c277384af",
+    "legacy_security_evidence": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "record_hash": "2286db402261813f718d15cd9072882e70eae79c28e17895851779139a705eff",
+    "outputs": [
+      {
+        "path": "US\\2014_02_19_Financial-Results_Financial-Services_sec.json",
+        "sha256": "efca633346081937e8e51c738d31a6a34d0c0e213f54181e313a32435c467b06"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2014-02-19",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.918277+00:00",
+      "fetched_at": "2026-11-10T23:44:32.145929+00:00",
+      "feature_available_at": "2026-11-11T10:06:13.334437+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:36:31.731143+00:00",
+    "feature_available_at": "2026-11-18T10:36:31.749267+00:00",
+    "commit_verified_at": "2026-11-12T14:12:16.795409+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Medallion Financial Corp.",
+        "rationale": "The company's financial results and operations are discussed in detail.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Medallion Financial Corp.",
+        "summary_evidence_quote": "Medallion Financial Corp."
+      },
+      {
+        "scope": "company",
+        "quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter.",
+        "rationale": "The dividend increase is a direct financial performance indicator for Medallion Financial, reflecting its profitability and financial health.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Medallion Financial also announced a dividend of $0.23 per share for the 2013 fourth quarter, up from $0.22 per share in the 2012 fourth quarter.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-14-058844-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "2286db402261813f718d15cd9072882e70eae79c28e17895851779139a705eff",
+    "content_hash": "26f1a37b2b2ee03ce1f90b9f2e4530d0434e14a30c0e3c598d1a9359ccfdd88b",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:36:31.734450+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2a9cf69354a0bbc318661ccd.json",
+      "sha256": "32dad9d1485eb06dea206fa8e18f369949665275fac84187710e5fdc7158dbfc",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 80.31200000000536
+}

@@ -1,0 +1,121 @@
+{
+  "source_id": "2992eec442ec1490730a3d48",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_30_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "f695bfc0d9457c55cbdf40e179fd41774615f1653bffe9089c5841dd31b1f8ad",
+      "filename": "2019_10_30_Monetary-Policy_Central-Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "452e33cdf6f4a3378619faf38a75ff6dea1866a500be87eb61fce65b23017282",
+  "input_hash": "9d5327357e283b1b44007e0869e4bb9fc720cf945104b26d10cb202c2d576489",
+  "matching_audit_hash": "4844299ecc00a18c197c457089fad74d20d80a29809c2d68bb40a199f895a667",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "db4ae9b8c28898b4dcce9d895be509d0de0d16bf2b39d2bdcecc5e01bd44360a",
+    "raw_sha256": "ae8f359208d771b8e307e2b14a7d02d6fc35124fd7c2409a806a6604fa2c1f79",
+    "date_quote": "Implementation Note issued October 30, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a0e8474f65e9e66de6832568a636856932fde25642ccc55400767b9fdd04c189",
+  "outputs": [
+    {
+      "path": "US\\2019_10_30_Monetary-Policy_Central-Banking_federalreserve.json",
+      "sha256": "ab66da84023cc6c9c9633cc4f50a6a83fc01aa0caa380b565e46510ec6d75bd4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:26.928482+00:00",
+    "fetched_at": "2026-11-10T11:18:48.459221+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.389952+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:15.492007+00:00",
+  "feature_available_at": "2026-11-12T14:51:15.501420+00:00",
+  "commit_verified_at": "2026-11-12T14:51:15.501420+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses monetary policy decisions by the Federal Reserve Board, including changes to interest rates and operational tools used in open market actions",
+    "securities": [
+      {
+        "name": "Federal Reserve Board",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Board"
+      },
+      {
+        "name": "Federal Open Market Committee",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Open Market Committee"
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      },
+      {
+        "name": "Federal Reserve Banks of Boston, New York, Philadelphia, Cleveland, Richmond, Atlanta, Chicago, St. Louis, Kansas City, and Dallas",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Banks of Boston, New York, Philadelphia, Cleveland, Richmond, Atlanta, Chicago, St. Louis, Kansas City, and Dallas"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Monetary Policy",
+        "basis": "explicit",
+        "quote": "Monetary Policy"
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Federal Reserve Board"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "Federal Reserve Banks"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve Board": "organization",
+      "Federal Open Market Committee": "organization",
+      "Federal Reserve Bank of New York": "organization",
+      "Federal Reserve Banks of Boston, New York, Philadelphia, Cleveland, Richmond, Atlanta, Chicago, St. Louis, Kansas City, and Dallas": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

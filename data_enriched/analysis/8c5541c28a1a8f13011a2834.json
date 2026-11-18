@@ -1,0 +1,151 @@
+{
+  "source_id": "8c5541c28a1a8f13011a2834",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_26_Financial-Results_Financial-Services_sec.json",
+      "sha256": "3e50e86461b17131bd6684734f1e5d305b48308700a1d6aedd66827a06fe0789",
+      "filename": "2018_02_26_Financial-Results_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "6392d64c270d84d2884bed97b7446bf79b2c49f733b851dfda48861dd1eb3244",
+  "input_hash": "1023fd0527ed83c3ffe280682bca9ef53c949d64a7e3f3a9cc4f894d46bd206a",
+  "matching_audit_hash": "f44b6a544959ceaa7fb787e5ed08cc88f2848096bad9f52fe278a710775a0ef8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f8575328087272a024e945facc91bb1cf6f0d1ca8dc694847c06c65b5fda48c3",
+    "raw_sha256": "4828da769d7a3afae8e1aa41a5af9e4004ce28e040400c0c21b209eab74bbc7b",
+    "date_quote": "SEC filing datePublished=2018-02-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465918012201/a18-7119_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9275e0719408fb5fc8e429ead671851eb4661fb0f582fd357b7ecea0b8a72668",
+  "outputs": [
+    {
+      "path": "US\\2018_02_26_Financial-Results_Financial-Services_sec.json",
+      "sha256": "dad314113fc7bc12f7220424bb96054decb3133f25acf3ef7ea13f1c7b2eee7c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.047571+00:00",
+    "fetched_at": "2026-11-11T13:19:35.356063+00:00",
+    "feature_available_at": "2026-11-11T13:20:08.765774+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:08:35.340575+00:00",
+  "feature_available_at": "2026-11-12T15:16:42.859271+00:00",
+  "commit_verified_at": "2026-11-12T15:16:42.859271+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Provides financial results and insights into company performance",
+    "securities": [
+      {
+        "name": "Broadway Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Financial Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Financial Results"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Broadway Financial Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:42.889634+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:08:35.340575+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Provides financial results and insights into company performance",
+      "securities": [
+        {
+          "name": "Broadway Financial Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Broadway Financial Corporation"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Financial Results"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Broadway Financial Corporation": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:08:35.365455+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:08:35.374460+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:08:35.357447+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text contains financial results for Broadway Financial Corporation for the quarter and year ended December 31, 2017, which is relevant for understanding the",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:43:10.947550+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

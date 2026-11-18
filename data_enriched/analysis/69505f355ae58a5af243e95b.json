@@ -1,0 +1,126 @@
+{
+  "source_id": "69505f355ae58a5af243e95b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_03_15_Mergers-&-Acquisitions_Technology_sec.json",
+      "sha256": "bae59203a4f68cb5c643b651d6c16c923ee2642efd304f0d56e20b1f2a9ee468",
+      "filename": "2016_03_15_Mergers-&-Acquisitions_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "13758d7fc0967877cec6a73323447b3e8f1528d0283c3746b7e381bbc6ca837b",
+  "input_hash": "dc223eeefd370c064fd7a33a7c7313fffc556655d5b177f6c39a11c2edd108db",
+  "matching_audit_hash": "3ddfa06bba43a2007190760c5ed93deb52efb1e5692439e414f0e4c31df0ead0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "64bf2aa9fe262f534cfd1897536777e412816d0ee1d08943e4cfad9b9d6b3128",
+    "raw_sha256": "f0ba01c34cfc73407111e34b7b25088ca32683a525466091a3beecfe60532432",
+    "date_quote": "Date of Report (Date of earliest event reported): March 15, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000110465916105223/a16-6409_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation"
+    },
+    {
+      "name": "Western Digital Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Western Digital Corporation"
+    },
+    {
+      "name": "Western Digital",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Western Digital"
+    }
+  ],
+  "record_hash": "7a75d0e05c2deef11c3868aaf4e39151a317267091cc978fe525ab3d050dd5df",
+  "outputs": [
+    {
+      "path": "US\\2016_03_15_Mergers-&-Acquisitions_Technology_sec.json",
+      "sha256": "21333a34018c8f7cf3b554f61b567a8d46c2de33b263f6aca09cfb1dc7f829dc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-03-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.847323+00:00",
+    "fetched_at": "2026-11-11T00:56:02.976382+00:00",
+    "feature_available_at": "2026-11-11T00:57:09.820479+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:07.285450+00:00",
+  "commit_verified_at": "2026-11-12T13:53:07.285450+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      },
+      {
+        "name": "Western Digital Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Digital Corporation"
+      },
+      {
+        "name": "Western Digital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Digital"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Memory Storage",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

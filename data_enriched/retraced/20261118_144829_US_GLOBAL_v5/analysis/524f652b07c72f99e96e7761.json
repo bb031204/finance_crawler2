@@ -1,0 +1,304 @@
+{
+  "source_id": "524f652b07c72f99e96e7761",
+  "status": "completed",
+  "source_record_hash": "6b7045fc062c5bca5417144ba5b17b25982ba352f115b238f7152b07f9f9eb98",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2019/02/21/fidelity-investments-annual-report-2018.html",
+    "attempted_at": "2026-11-18T14:33:43.981180+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "925f3e9ca52c07a9e934427c1a72bb07a1d1b588a79a9a9d874e127ba5afa78f",
+    "summary_sha256": "7755d49a8e421e325429cef2e6503563689cad7997d74dd6633a62991e60c306"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/524f652b07c72f99e96e7761.json",
+    "sha256": "0c5c6dfd473b695f957324df95d4cc5f6b0c8cf0dbc330f19fe64e5c0660e1b9",
+    "bundled_path": "legacy_audit/524f652b07c72f99e96e7761.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "86b9ef1672af5829e373be7f2f2cf57ad251b4fd85db2563f22320174b0fc88c",
+      "llm_inferred_at": "2026-11-18T14:34:50.861252+00:00",
+      "model_duration_seconds": 10.8177656,
+      "prompt_tokens": 2214,
+      "completion_tokens": 540,
+      "selection": [
+        {
+          "source_id": "524f652b07c72f99e96e7761",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Fidelity's customer base grew to 31.1 million workplace and health care participants in 2018, a 6 percent increase from the previous year.",
+              "rationale": "The article discusses Fidelity's expansion into workplace benefits and health care, which are part of the broader health care industry. This indicates an industry-wide impact due to the company's diversification into these sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment.",
+              "rationale": "The article directly mentions Fidelity's financial performance and strategic initiatives, which are specific to the company and not generalized to the industry or market.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment."
+            },
+            {
+              "industry_key": "SEC-SIC:6321",
+              "name": "ACCIDENT & HEALTH INSURANCE",
+              "basis": "explicit",
+              "quote": "Fidelity's customer base grew to 31.1 million workplace and health care participants in 2018, a 6 percent increase from the previous year."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Fidelity, a family-controlled firm, reported record profit and revenue, with retail clients increasing by 7% year-over-year."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "13a4881714c9762462c938117f15273a5342763a3506555826d669844ab93dff",
+      "llm_inferred_at": "2026-11-18T14:35:00.389610+00:00",
+      "model_duration_seconds": 9.5135877,
+      "prompt_tokens": 2258,
+      "completion_tokens": 517,
+      "selection": [
+        {
+          "source_id": "524f652b07c72f99e96e7761",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Fidelity's customer base grew to 31.1 million workplace and health care participants in 2018, a 6 percent increase from the previous year.",
+              "rationale": "The article mentions Fidelity's expansion into workplace benefits and health care, which are part of the broader health care industry, indicating an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment.",
+              "rationale": "The article directly states Fidelity's financial performance, which is a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:dbe543231540c046",
+              "name": "Investment Managers",
+              "basis": "explicit",
+              "quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment."
+            },
+            {
+              "industry_key": "SEC-SIC:6321",
+              "name": "ACCIDENT & HEALTH INSURANCE",
+              "basis": "explicit",
+              "quote": "Fidelity's customer base grew to 31.1 million workplace and health care participants in 2018, a 6 percent increase from the previous year."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Fidelity, a family-controlled firm, reported record profit and revenue, with retail clients increasing by 7% year-over-year."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:35:00.401694+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7755d49a8e421e325429cef2e6503563689cad7997d74dd6633a62991e60c306",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2019-02-21T21:44:04+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Fidelity Investments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fidelity Investments had a historic 2018, even as stock markets saw their worst performance in a decade."
+      },
+      {
+        "name": "Fidelity",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fidelity"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:dbe543231540c046",
+        "name": "Investment Managers",
+        "basis": "inferred",
+        "quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "dbe543231540c046",
+        "industry_name_standard": "Investment Managers",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment."
+      },
+      {
+        "industry_key": "SEC-SIC:6321",
+        "name": "ACCIDENT & HEALTH INSURANCE",
+        "basis": "inferred",
+        "quote": "Fidelity's customer base grew to 31.1 million workplace and health care participants in 2018, a 6 percent increase from the previous year.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6321",
+        "industry_name_standard": "ACCIDENT & HEALTH INSURANCE",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Fidelity's customer base grew to 31.1 million workplace and health care participants in 2018, a 6 percent increase from the previous year."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "524f652b07c72f99e96e7761",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_02_21_Finance_Financial-Services_cnbc.json",
+        "sha256": "7dae1c4804d09d5181e4065c2fce75dc30359b4b17af33e820a1eb194c55889d",
+        "filename": "2019_02_21_Finance_Financial-Services_cnbc.json"
+      }
+    ],
+    "original_record_hash": "9ce82164f9ccc55548652b43bb05f7bf761577d485d82055feebf8514cd5b521",
+    "input_hash": "d6f9a379a855a8b69657f1c2cb8e0379448ace67a630d2fedb8accda231da7fd",
+    "matching_audit_hash": "2727aba8e54ad5cbf99fdd07e57f1183f8a1fd2f3e80e9e69d48566ce3c0d187",
+    "legacy_security_evidence": [
+      {
+        "name": "Fidelity Investments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fidelity Investments had a historic 2018, even as stock markets saw their worst performance in a decade."
+      },
+      {
+        "name": "Fidelity",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fidelity"
+      }
+    ],
+    "record_hash": "6b7045fc062c5bca5417144ba5b17b25982ba352f115b238f7152b07f9f9eb98",
+    "outputs": [
+      {
+        "path": "US\\2019_02_21_Finance_Financial-Services_cnbc.json",
+        "sha256": "9ef7407fc9f04ab49ffff6a0705a655d338de7350c6009572f450eb095f267df"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2019-02-21",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:30:20.006262+00:00",
+      "fetched_at": "2026-11-11T04:50:22.841798+00:00",
+      "feature_available_at": "2026-11-11T04:50:59.762809+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:35:00.389610+00:00",
+    "feature_available_at": "2026-11-18T14:35:00.401694+00:00",
+    "commit_verified_at": "2026-11-12T13:53:26.096138+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment.",
+        "rationale": "The article directly states Fidelity's financial performance, which is a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Fidelity Investments reported a record profit and revenue in 2018, despite a challenging market environment."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2019/02/21/fidelity-investments-annual-report-2018.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "6b7045fc062c5bca5417144ba5b17b25982ba352f115b238f7152b07f9f9eb98",
+    "content_hash": "7755d49a8e421e325429cef2e6503563689cad7997d74dd6633a62991e60c306",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:35:00.391887+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/524f652b07c72f99e96e7761.json",
+      "sha256": "9f857e1357f4b5e00dfa584f3bce9fe73c5186c3c71c3348e76cb2bb98f2ba6a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 76.43700000000536
+}

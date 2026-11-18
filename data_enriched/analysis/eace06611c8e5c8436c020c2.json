@@ -1,0 +1,243 @@
+{
+  "source_id": "eace06611c8e5c8436c020c2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_04_04_Climate-Change_Public-Policy_cnbc.json",
+      "sha256": "93e451e89010f4789e88258d09153c132a555da0d880935de7c116a5535367c4",
+      "filename": "2022_04_04_Climate-Change_Public-Policy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "bc840b1d4006a98ac902c7668faec7d840bfc8c13a646d1f0d29f294225b9f9f",
+  "input_hash": "f7a321812f8776389104f7573e8055c2274054d3b9cf748de5f825ad42bd3f26",
+  "matching_audit_hash": "496e483e1e1b05c03b1a7fb6f2ea713fd90c4754cf93ef930f7f0d60c8d232a6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5059841ffe31ccb1cfadb8e3f7caf5cf4d87153f27e6117ebbe58784df46a71b",
+    "raw_sha256": "41960c139b06fa81d2647f4f4db2a2d337355e4d883cb61c47a6f9e7934c1800",
+    "date_quote": "article:published_time=2022-04-04T18:50:04+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "8533a4f28e6c153b42d50480535c0144fafa2e944af79a6cce895f26f13c7a5e",
+  "outputs": [
+    {
+      "path": "US\\2022_04_04_Climate-Change_Public-Policy_cnbc.json",
+      "sha256": "cea658e3d062840665fe91e687fe0c8b938d777ec161a756d553bd888c88b7dd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-04-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+    "fetched_at": "2026-11-10T19:39:42.914327+00:00",
+    "feature_available_at": "2026-11-10T19:40:22.063736+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:15:18.479494+00:00",
+  "feature_available_at": "2026-11-12T15:16:49.341829+00:00",
+  "commit_verified_at": "2026-11-12T15:16:49.341829+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Highlights fiscal risks and policy responses to climate change",
+    "securities": [
+      {
+        "name": "White House",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The White House has warned that climate change could cost the U.S. federal budget about $2 trillion each year by the end of the century"
+      },
+      {
+        "name": "Office of Management and Budget (OMB)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Office of Management and Budget (OMB) highlighted the fiscal risks of climate change"
+      },
+      {
+        "name": "United Nations' climate science panel",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the United Nations' climate science panel's report, which warned that global warming must be slashed to 1.5 degrees Celsius above preindustrial levels"
+      },
+      {
+        "name": "U.S. National Oceanic and Atmospheric Administration",
+        "ticker": null,
+        "exchange": null,
+        "quote": "A 2021 report from the U.S. National Oceanic and Atmospheric Administration predicted sea level rise in the U.S."
+      },
+      {
+        "name": "President Joe Biden",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President Joe Biden's 2023 budget proposal includes nearly $45 billion in new funding for climate change"
+      },
+      {
+        "name": "Build Back Better Act",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Build Back Better Act, a $1.75 trillion House-passed bill, would be the largest federal clean energy investment"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Climate change",
+        "basis": "explicit",
+        "quote": "climate change"
+      },
+      {
+        "name": "Insurance",
+        "basis": "inferred",
+        "quote": "flood insurance, and crop insurance"
+      },
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": "clean energy"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "White House": "organization",
+      "Office of Management and Budget (OMB)": "organization",
+      "United Nations' climate science panel": "organization",
+      "U.S. National Oceanic and Atmospheric Administration": "organization",
+      "President Joe Biden": "organization",
+      "Build Back Better Act": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:49.359879+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:15:18.479494+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Highlights fiscal risks and policy responses to climate change",
+      "securities": [
+        {
+          "name": "White House",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The White House has warned that climate change could cost the U.S. federal budget about $2 trillion each year by the end of the century"
+        },
+        {
+          "name": "Office of Management and Budget (OMB)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Office of Management and Budget (OMB) highlighted the fiscal risks of climate change"
+        },
+        {
+          "name": "United Nations' climate science panel",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the United Nations' climate science panel's report, which warned that global warming must be slashed to 1.5 degrees Celsius above preindustrial levels"
+        },
+        {
+          "name": "U.S. National Oceanic and Atmospheric Administration",
+          "ticker": null,
+          "exchange": null,
+          "quote": "A 2021 report from the U.S. National Oceanic and Atmospheric Administration predicted sea level rise in the U.S."
+        },
+        {
+          "name": "President Joe Biden",
+          "ticker": null,
+          "exchange": null,
+          "quote": "President Joe Biden's 2023 budget proposal includes nearly $45 billion in new funding for climate change"
+        },
+        {
+          "name": "Build Back Better Act",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Build Back Better Act, a $1.75 trillion House-passed bill, would be the largest federal clean energy investment"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Climate change",
+          "basis": "explicit",
+          "quote": "climate change"
+        },
+        {
+          "name": "Insurance",
+          "basis": "inferred",
+          "quote": "flood insurance, and crop insurance"
+        },
+        {
+          "name": "Energy",
+          "basis": "inferred",
+          "quote": "clean energy"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "White House": "organization",
+        "Office of Management and Budget (OMB)": "organization",
+        "United Nations' climate science panel": "organization",
+        "U.S. National Oceanic and Atmospheric Administration": "organization",
+        "President Joe Biden": "organization",
+        "Build Back Better Act": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:15:18.505917+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:15:18.514915+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:15:18.495412+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the financial impact of climate change on the U.S. federal budget, including specific figures and projections, and mentions policy actions by",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:57:17.772671+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

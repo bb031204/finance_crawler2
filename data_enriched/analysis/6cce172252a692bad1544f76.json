@@ -1,0 +1,96 @@
+{
+  "source_id": "6cce172252a692bad1544f76",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_04_15_Automotive_Automotive_bloomberg.json",
+      "sha256": "8ec9baf8605c506d43eefcfc85ab39a993a47f219335a4ec876f0e99c387a8f7",
+      "filename": "2019_04_15_Automotive_Automotive_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "1911cd00c84154e5413a8b4471b24cbdcac1e36e36d69c3ef34b2acaed49535d",
+  "input_hash": "365142ff7436816a5acd91da7ca7c1b7028a1c12699095b3db3dc0f85d618598",
+  "matching_audit_hash": "574f853378bdb8c7dff41b9d908cc55795e1d4ac111e423e2e414b54399ffba9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9350efdc488f2405371c7aced35a85febfa8daed9fce460ae280912e3e6e0bb2",
+    "raw_sha256": "841704daa266fdc70b422a19812f35986a4238730656c1db9301f5df7c1158be",
+    "date_quote": "April 15, 2019 at 12:15 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Lincoln",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Lincoln Navigator"
+    }
+  ],
+  "record_hash": "e1ea43aa68b678fed3ccee0c49b21324eb4b663ffad6748047af01c4c379f054",
+  "outputs": [
+    {
+      "path": "US\\2019_04_15_Automotive_Automotive_bloomberg.json",
+      "sha256": "328583fb7e46f01b113c43de7323576b21d7723b48e75de5b43ebb31b29f8187"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-04-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:15.583211+00:00",
+    "fetched_at": "2026-11-10T21:34:57.253144+00:00",
+    "feature_available_at": "2026-11-10T21:35:04.156494+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:27.510795+00:00",
+  "commit_verified_at": "2026-11-12T13:53:27.510795+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Lincoln",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lincoln Navigator"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

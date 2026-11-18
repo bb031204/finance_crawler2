@@ -1,0 +1,102 @@
+{
+  "source_id": "e595bd6ee94ae7e2c28b5575",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_04_19_stock_Media-&-Entertainment_cnbc.json",
+      "sha256": "a1ebde842a188b761162f65d8ce4cfd3af8d4f3b1982007224671291be72ddc8",
+      "filename": "2022_04_19_stock_Media-&-Entertainment_cnbc.json"
+    }
+  ],
+  "original_record_hash": "1e131276e2d807a84a44a05dfd6fd9d4cf8113dba4a4109e775970b3bdf9dc80",
+  "input_hash": "68a7404a9360c5ae5b90eb6aa2b453a27dd713ef681bcc46ffd7cbe83506262d",
+  "matching_audit_hash": "2f59c9194a08ebbc97209076a9b44856d9c9b48e2e1b465952412b79a64e6860",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b68e96f4ef6b86e2065f7a8d83a068f97c718c6fe952292d0ef37e8f8960d3f2",
+    "raw_sha256": "63bb226aada50a953beb122b35dd0a739ef968a36d2358e06b486d06405a9a41",
+    "date_quote": "article:published_time=2022-04-19T19:32:55+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Netflix",
+      "ticker": "NFLX",
+      "exchange": null,
+      "quote": "Netflix (NFLX) earnings Q1 2022"
+    }
+  ],
+  "record_hash": "c6de529fb2a0495f04b19912a3773674bf7b312281ec52ef9c9253f87b12587e",
+  "outputs": [
+    {
+      "path": "US\\2022_04_19_stock_Media-&-Entertainment_cnbc.json",
+      "sha256": "e5375159bc67dea62af4263bf2200598437cfad94d0bf47af131194f1861dc47"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-04-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:19.442325+00:00",
+    "fetched_at": "2026-11-10T20:24:20.770574+00:00",
+    "feature_available_at": "2026-11-10T20:24:52.708144+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:40.848289+00:00",
+  "commit_verified_at": "2026-11-12T13:53:40.848289+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Netflix",
+        "ticker": "NFLX",
+        "exchange": null,
+        "quote": "Netflix (NFLX) earnings Q1 2022"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Streaming Services",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Media & Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

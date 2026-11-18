@@ -1,0 +1,99 @@
+{
+  "source_id": "f7d5f25d89e2b04284461576",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_08_02_Energy_Renewables_bloomberg.json",
+      "sha256": "4355be9e14f33ad9a6c5ed75d08feb5858ca37d30bc78d000519e8fbea2e05bc",
+      "filename": "2017_08_02_Energy_Renewables_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "610bca19bb4f97e6d3a260dedeffa466523b0174347b2241cea17d24166f66c6",
+  "input_hash": "9504123eff73399bb1cd66b65670cab07e6944333325bdc10c3782b909558107",
+  "matching_audit_hash": "3d4956b9f2e5d44b62ec903b1f8a1033c2e40912a6787277d80adb8badd80401",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5c8b3af969b96b5d2224cc94b0abf8bcdacd048d1082e158036b005f5e0f7802",
+    "raw_sha256": "f3aef9fe2b320f7c49d60f5becfc5b244e99a31bbab08534c25b1cec831e49f4",
+    "date_quote": "August 2, 2017 at 3:20 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2f61a40b019dd67a5904e0aa0d88d283dafa8f02fada024b1862db96891c752b",
+  "outputs": [
+    {
+      "path": "US\\2017_08_02_Energy_Renewables_bloomberg.json",
+      "sha256": "9bc71e0c61d1c051a53fbc3ac6ccbdcdb85ecbd04f12d419a91c4adc43a667f2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-08-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:23.556601+00:00",
+    "fetched_at": "2026-11-10T14:14:14.953115+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.726142+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:40:22.315005+00:00",
+  "feature_available_at": "2026-11-12T14:40:22.352792+00:00",
+  "commit_verified_at": "2026-11-12T14:40:22.352792+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses a patent dispute between General Electric Co. and Vestas Wind Systems A/S, and provides data on the U.S. wind industry's growth.",
+    "securities": [
+      {
+        "name": "General Electric Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Co."
+      },
+      {
+        "name": "Vestas Wind Systems A/S",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vestas Wind Systems A/S"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Wind energy",
+        "basis": "inferred",
+        "quote": "wind industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "General Electric Co.": "company",
+      "Vestas Wind Systems A/S": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

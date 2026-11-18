@@ -1,0 +1,114 @@
+{
+  "source_id": "7b36dbfabaf3c0fe13d1c279",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_04_29_13_02_Finance_Consumer-Goods_fool.json",
+      "sha256": "f2a836db412e7f5a6112af881327b2754e5a42e68f9924c925cc6ab76d4349a2",
+      "filename": "2014_04_29_13_02_Finance_Consumer-Goods_fool.json"
+    }
+  ],
+  "original_record_hash": "9cd37d076c2ce57a2e40215b77e6d1bea9b8774b636dd67916a19c2d42228d96",
+  "input_hash": "6f6cadd488be5e7848b65f47228a5552b0efc99cc9d0ad8568eeb9f8b8dd837a",
+  "matching_audit_hash": "2018402dd9aa894a3c1b15cbf03f2b2a7c7467c013bfd2ef364418d6e963dabb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4ff953ea6096c8d066fa9454e17b008b7dcb92a2b0a43ae7630553e22d7db21b",
+    "raw_sha256": "cc22c39e09ed61c0b5f13c3a8d8ab16d87de8765fd19da28e61f4c7c7059a5b7",
+    "date_quote": "article:published_time=2014-04-29T13:02:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Procter & Gamble",
+      "ticker": "PG",
+      "exchange": null,
+      "quote": "Procter & Gamble (PG +0.52%)"
+    },
+    {
+      "name": "Church & Dwight",
+      "ticker": "CHD",
+      "exchange": null,
+      "quote": "Church & Dwight (CHD +0.78%)"
+    }
+  ],
+  "record_hash": "6c383b752bc29259e15421e6d492821acf213ebe19ba3fb62d74c3c2b2c2d494",
+  "outputs": [
+    {
+      "path": "US\\2014_04_29_13_02_Finance_Consumer-Goods_fool.json",
+      "sha256": "8b79db2df07482cd20e2795389dc4c5e51613a11144ac67555fb9ca6f3249776"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-04-29T13:02:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:36:45.964790+00:00",
+    "fetched_at": "2026-11-10T19:45:09.094988+00:00",
+    "feature_available_at": "2026-11-10T19:46:05.641250+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:51.693798+00:00",
+  "commit_verified_at": "2026-11-12T13:52:51.693798+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Procter & Gamble",
+        "ticker": "PG",
+        "exchange": null,
+        "quote": "Procter & Gamble (PG +0.52%)"
+      },
+      {
+        "name": "Church & Dwight",
+        "ticker": "CHD",
+        "exchange": null,
+        "quote": "Church & Dwight (CHD +0.78%)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer Goods",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

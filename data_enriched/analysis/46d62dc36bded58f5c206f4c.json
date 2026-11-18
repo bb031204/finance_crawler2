@@ -1,0 +1,103 @@
+{
+  "source_id": "46d62dc36bded58f5c206f4c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_01_14_Other-Events_Biotechnology_sec.json",
+      "sha256": "f0bb53867124b302c78aee73f2829f39b9f44d235a45b41f9669341018443b7b",
+      "filename": "2021_01_14_Other-Events_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "f0112a28e96f6cb4a89a068622b4ba10f4f3d74a775f8e72f8fb6c433e620018",
+  "input_hash": "3f4f884a2cddbbf60cc8b77eee4b1c501e65fa47567ea2a785b41717ab485a1a",
+  "matching_audit_hash": "63bc29a63358490b5b2237586b53152d59a1faf4dde6b7f7c78d1621c87359ab",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ac517c88bc37d99149ef32af8b7a370f00611303ccbdb359865e44dc068dc85a",
+    "raw_sha256": "d8785655d27a9e070a002915a052d62ab33058e4d9504cc0ce59c06f934d4278",
+    "date_quote": "SEC filing datePublished=2021-01-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312521008664/d848448d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock, $0.01 par value per share",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock, $0.01 par value per share"
+    }
+  ],
+  "record_hash": "c66743e4e056c61255c36a95e28203fb6c087015c9176408a15bfe4c4dc4eb16",
+  "outputs": [
+    {
+      "path": "US\\2021_01_14_Other-Events_Biotechnology_sec.json",
+      "sha256": "5771fcba84d8a086196d5d225c80f823c5773338c0b69f7e74237627f1a5c1d8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-01-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.586595+00:00",
+    "fetched_at": "2026-11-11T16:27:33.602703+00:00",
+    "feature_available_at": "2026-11-11T16:28:10.137645+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:54:27.320682+00:00",
+  "feature_available_at": "2026-11-12T14:54:27.338216+00:00",
+  "commit_verified_at": "2026-11-12T14:54:27.338216+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a company's filing, a clinical study, and a conference presentation, which are relevant for the StockMixer pipeline.",
+    "securities": [
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      },
+      {
+        "name": null,
+        "ticker": "SGMO",
+        "exchange": null,
+        "quote": "ticker symbol SGMO"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "explicit",
+        "quote": "biotechnology firm"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Sangamo Therapeutics, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

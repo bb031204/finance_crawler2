@@ -1,0 +1,153 @@
+{
+  "source_id": "d54bfc39e4b1c6f2b05f8308",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_18_Policy_Government_treasury.json",
+      "sha256": "864996193098659cca55541e59ab92f5961d20817e00865b0a1ff07d3637dbf6",
+      "filename": "2021_03_18_Policy_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "4dbe6dff8a04709ca991b4c060996bb2423517664f2be506615e249b6af72c46",
+  "input_hash": "a15e6086b0d2ef76a88cbcf19bc5e52c14b49558b62d43e709c479d9d56d80aa",
+  "matching_audit_hash": "811262b3debedf39024d8246f7078a8802afea51a115d9e5f556aaf8d1feebd3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dacb367c992aa0497db39a31e0c0eafd606f6b8794efaa0365bf9fd871974e57",
+    "raw_sha256": "f469993808626d15f38c590914060d257cf3c2181ca6c46fd789b1d86442b6fd",
+    "date_quote": "March 18, 2021",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2f92453a36c43cb37288be2b60a29f0a5ff6700a5822d3f7f1aa6287a9cc40ee",
+  "outputs": [
+    {
+      "path": "US\\2021_03_18_Policy_Government_treasury.json",
+      "sha256": "d5fb754c9e602c1d8c10e83fe5d895270a9bf3ff36e656f94603ce8b159575f7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:14.502875+00:00",
+    "fetched_at": "2026-11-10T19:31:42.421856+00:00",
+    "feature_available_at": "2026-11-10T19:33:33.218456+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:14:21.630085+00:00",
+  "feature_available_at": "2026-11-12T15:16:48.429253+00:00",
+  "commit_verified_at": "2026-11-12T15:16:48.429253+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Describes economic relief measures and policy impacts on households and public",
+    "securities": [
+      {
+        "name": "Treasury Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Department"
+      },
+      {
+        "name": "IRS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IRS"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Treasury Department": "organization",
+      "IRS": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:48.449688+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:14:21.630085+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Describes economic relief measures and policy impacts on households and public",
+      "securities": [
+        {
+          "name": "Treasury Department",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Treasury Department"
+        },
+        {
+          "name": "IRS",
+          "ticker": null,
+          "exchange": null,
+          "quote": "IRS"
+        }
+      ],
+      "industries": [],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "Treasury Department": "organization",
+        "IRS": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:14:21.655998+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:14:21.666000+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:14:21.645707+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the American Rescue Plan, which includes economic relief measures, tax credits, and funding for various sectors, indicating policy and macroe",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:55:03.280052+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

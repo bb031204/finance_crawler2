@@ -1,0 +1,116 @@
+{
+  "source_id": "56995b5cfda9119d7838e0fb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_03_10_Government_Financial-Education_treasury.json",
+      "sha256": "5737c3c7bae1685a7153a0770e34b7db5e3a7a76f0fb87e1274688196cdcbdce",
+      "filename": "2014_03_10_Government_Financial-Education_treasury.json"
+    }
+  ],
+  "original_record_hash": "d6165bcd50ae63e0af2b5bc581808e686ff4d96e2a4147d799b4b7575e334396",
+  "input_hash": "af3496ebaf2113f0df59607780f20758c4ac0612fd36bbb8697408d4bf93e4b8",
+  "matching_audit_hash": "d4eca6a573ad676119afd84718dbe6768c5b9b167c27c1dc6a448edbac1497ea",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c648e46a043d0e4c32f16ef6f655828e16da706025dd3286ee48b7ff0327b647",
+    "raw_sha256": "01157d880b2a770a983042079e7d67d4358089f087c39f71808a72346143b693",
+    "date_quote": "Weekly Schedule Updates March 10, 2014: Inaugural Public Meeting of the President’s Advisory Council on Financial Capability for Young Americans March 6, 2014 (Archived Content) ",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0092e31b80fcf591efcd78f1b0a55c2a6915b7f1c69f49b1e3ef641b9fccec03",
+  "outputs": [
+    {
+      "path": "US\\2014_03_10_Government_Financial-Education_treasury.json",
+      "sha256": "c97b745b4562353eb931a738f7eca6f5b7ed91d24996dedf33e07e11cc4b26a1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-03-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:09:21.477091+00:00",
+    "fetched_at": "2026-11-10T19:01:22.363027+00:00",
+    "feature_available_at": "2026-11-10T19:01:30.112801+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:13:04.897374+00:00",
+  "feature_available_at": "2026-11-12T14:13:04.925519+00:00",
+  "commit_verified_at": "2026-11-12T14:13:04.925519+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a government event related to financial capability for young Americans, involving key officials and media access.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "President’s Advisory Council on Financial Capability for Young Americans",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President’s Advisory Council on Financial Capability for Young Americans"
+      },
+      {
+        "name": "Department of Education",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Department of Education"
+      },
+      {
+        "name": "Consumer Financial Protection Bureau",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Consumer Financial Protection Bureau"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Education",
+        "basis": "inferred",
+        "quote": "Department of Education"
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Consumer Financial Protection Bureau"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "President’s Advisory Council on Financial Capability for Young Americans": "organization",
+      "Department of Education": "organization",
+      "Consumer Financial Protection Bureau": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

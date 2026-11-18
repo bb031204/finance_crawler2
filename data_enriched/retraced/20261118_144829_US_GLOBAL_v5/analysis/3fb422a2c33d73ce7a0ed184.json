@@ -1,0 +1,338 @@
+{
+  "source_id": "3fb422a2c33d73ce7a0ed184",
+  "status": "completed",
+  "source_record_hash": "da1c7a8793b9838809bf91949233c92e38ae32030072d19c695524df0c321deb",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2017/10/12/trump-to-issue-new-order-that-could-undercut-obamacare-markets.html",
+    "attempted_at": "2026-11-18T12:45:27.366496+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2017/10/12/trump-to-issue-new-order-that-could-undercut-obamacare-markets.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T12:45:39.644319+00:00",
+    "source_body_hash": "0eb800b901316b55deef068354c7bfcfc17ad31a1480ca7128970b23df234d34",
+    "raw_sha256": "75260afaa92d8e3c3741f3d0d2e9e902e42a008188c140057185337f3a8e0de8",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Trump to issue new order that could undercut Obamacare markets",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2017-10-12T15:14:30+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3fb422a2c33d73ce7a0ed184.json",
+    "sha256": "2a6e0ce234e7973b95d1a63fcece965657bfa88a82befc753bb4d8bc811b0863",
+    "bundled_path": "legacy_audit/3fb422a2c33d73ce7a0ed184.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b1c494c037a36f2f98dfdcfe159b7f655886ccc5c7f1d213b91d979f06ad6324",
+      "llm_inferred_at": "2026-11-18T12:45:59.265152+00:00",
+      "model_duration_seconds": 19.5788049,
+      "prompt_tokens": 3451,
+      "completion_tokens": 938,
+      "selection": [
+        {
+          "source_id": "3fb422a2c33d73ce7a0ed184",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months.",
+              "rationale": "The executive order targets changes in the health insurance industry, specifically affecting short-term insurance plans and their enrollment rules, which are part of the broader health care industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Trump, who still wants such legislation to happen, on Thursday blamed congressional Democrats for universally opposing repeal-and-replace bills.",
+              "rationale": "The article discusses the actions of the Trump administration, which is a company (government entity), and its impact on health insurance policies.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "Trump to issue new order that could undercut Obamacare markets Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu"
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "explicit",
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "actions that could increase competition. Officials said the administration is concerned about the large volume consolidation in the health-care sector since the adoption of the",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "actions that could increase competition. Officials said the administration is concerned about the large volume consolidation in the health-care sector since the adoption of the",
+              "industry_name_original": "Health Care",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "industry_scope_quote": "actions that could increase competition. Officials said the administration is concerned about the large volume consolidation in the health-care sector since the adoption of the",
+              "industry_name_original": "Property-Casualty Insurers",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "6d073281a40e36331d008bc8bf4ee512320e6a9cbfe284a6931e8fede74f3d42",
+      "llm_inferred_at": "2026-11-18T12:46:17.275936+00:00",
+      "model_duration_seconds": 17.9895174,
+      "prompt_tokens": 3495,
+      "completion_tokens": 957,
+      "selection": [
+        {
+          "source_id": "3fb422a2c33d73ce7a0ed184",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months.",
+              "rationale": "The executive order targets changes in the rules for short-term insurance plans, which are part of the health insurance industry. This indicates an industry-wide impact as the order affects the structure and availability of health insurance plans.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Trump, who still wants such legislation to happen, on Thursday blamed congressional Democrats for universally opposing repeal-and-replace bills.",
+              "rationale": "The article mentions specific companies or entities, such as the Kaiser Family Foundation and the Society of Actuaries, which are involved in analyzing the impact of the executive order. These entities are directly affected by the changes in health insurance rules.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "name": "Property-Casualty Insurers",
+              "basis": "explicit",
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "name": "Health Care",
+              "basis": "explicit",
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "actions that could increase competition. Officials said the administration is concerned about the large volume consolidation in the health-care sector since the adoption of the",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            },
+            {
+              "industry_key": "TRSR:7e3652abb196c007",
+              "industry_scope_quote": "actions that could increase competition. Officials said the administration is concerned about the large volume consolidation in the health-care sector since the adoption of the",
+              "industry_name_original": "Property-Casualty Insurers",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            },
+            {
+              "industry_key": "SP500-SECTOR:04b0a88a87070712",
+              "industry_scope_quote": "actions that could increase competition. Officials said the administration is concerned about the large volume consolidation in the health-care sector since the adoption of the",
+              "industry_name_original": "Health Care",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:46:17.318686+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0eb800b901316b55deef068354c7bfcfc17ad31a1480ca7128970b23df234d34",
+    "raw_sha256": "75260afaa92d8e3c3741f3d0d2e9e902e42a008188c140057185337f3a8e0de8",
+    "date_quote": "article:published_time=2017-10-12T15:14:30+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The text discusses policy changes related to healthcare, including executive orders, industry-specific regulations, and potential impacts on insurance markets.",
+    "securities": [
+      {
+        "name": "Kaiser Family Foundation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kaiser Family Foundation"
+      },
+      {
+        "name": "Affordable Care Act",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Affordable Care Act"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:0a83766bd3c3abfe",
+        "name": "Accident &Health Insurance",
+        "basis": "inferred",
+        "quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0a83766bd3c3abfe",
+        "industry_name_standard": "Accident &Health Insurance",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The order also directs several federal agencies to consider reversing an Obama administration directive that limited enrollment in short-term insurance plans to just three months.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Kaiser Family Foundation": "organization",
+      "Affordable Care Act": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "3fb422a2c33d73ce7a0ed184",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_10_12_Healthcare_Health-Insurance_cnbc.json",
+        "sha256": "021cc9586f525b2d63153e9b522fc7a0aa8e6ba8875d9ad29601d8e10a805c0b",
+        "filename": "2017_10_12_Healthcare_Health-Insurance_cnbc.json"
+      }
+    ],
+    "original_record_hash": "522536f307b8c4a96f47ae1fc416a6cfc74e7caf470c58e93ac95ca986cd7073",
+    "input_hash": "0b5e02b581f5783e7571cb5827c50eb349434186e2419be426bc2c82b3915ef6",
+    "matching_audit_hash": "11cb17278d939b7fe9319867ac7c1b2880e60f90ea2a390996f40e2456123723",
+    "legacy_security_evidence": [],
+    "record_hash": "da1c7a8793b9838809bf91949233c92e38ae32030072d19c695524df0c321deb",
+    "outputs": [
+      {
+        "path": "US\\2017_10_12_Healthcare_Health-Insurance_cnbc.json",
+        "sha256": "399378ed2e3a67ff19037db8d5e663ceaceab9b6d62537526cf9a5f5caabb124"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2017-10-12",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T09:59:03.317223+00:00",
+      "fetched_at": "2026-11-10T11:43:15.923947+00:00",
+      "feature_available_at": "2026-11-10T17:53:19.163722+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T12:46:17.275936+00:00",
+    "feature_available_at": "2026-11-18T12:46:17.318686+00:00",
+    "commit_verified_at": "2026-11-12T14:41:09.612911+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Trump, who still wants such legislation to happen, on Thursday blamed congressional Democrats for universally opposing repeal-and-replace bills.",
+        "rationale": "The article mentions specific companies or entities, such as the Kaiser Family Foundation and the Society of Actuaries, which are involved in analyzing the impact of the executive order. These entities are directly affected by the changes in health insurance rules.",
+        "confidence": 0.85,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Trump, who still wants such legislation to happen, on Thursday blamed congressional Democrats for universally opposing repeal-and-replace bills.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2017/10/12/trump-to-issue-new-order-that-could-undercut-obamacare-markets.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "da1c7a8793b9838809bf91949233c92e38ae32030072d19c695524df0c321deb",
+    "content_hash": "0eb800b901316b55deef068354c7bfcfc17ad31a1480ca7128970b23df234d34",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:46:17.282247+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3fb422a2c33d73ce7a0ed184.json",
+      "sha256": "09bcc3e32c240e55312d4fec3cf03ebdad9b26a03691f17354a69bfa41c834d0",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 49.969000000011874
+}

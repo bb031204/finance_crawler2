@@ -1,0 +1,98 @@
+{
+  "source_id": "dcda8a0f1cc597fe810cbcea",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_03_18_Risk_Beauty_sec.json",
+      "sha256": "a3792bedb0269b2b1df91720a3cb85fa8cd428c47512ca87bd863e8173c8ffea",
+      "filename": "2020_03_18_Risk_Beauty_sec.json"
+    }
+  ],
+  "original_record_hash": "8f9eccfe8c30bac6ebcd9a76627030e8f9cbd599d4736fa78b17fc26c84fad16",
+  "input_hash": "9b0928a764cc16faf8144e2d83866b44872a51f46fd10dcbfd31522c58fa9e56",
+  "matching_audit_hash": "bbc2ec41f1469061b3a71a3aa5a63f000efdcc208eab628228b384baacf9eabb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4cd74cd53afab116778aea33b1cbbc4d6330faf148b11bfd8c9b2e5a74bc1cc4",
+    "raw_sha256": "989ac358be791a3c076995c0293b40c09af5ceabe47fbeb3177a1f4f7f4f6ca4",
+    "date_quote": "SEC filing datePublished=2020-03-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465920035404/tm2013056d1_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "ESTEE LAUDER COMPANIES INC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ESTEE LAUDER COMPANIES INC"
+    }
+  ],
+  "record_hash": "ef96b309d37b331339aafc08c02603943255c4656075e6024fa657a6afbbcad7",
+  "outputs": [
+    {
+      "path": "US\\2020_03_18_Risk_Beauty_sec.json",
+      "sha256": "673ff1ba097feec58c592594fc4fc1d4efd281d2b30421e5aaa19fd353bcf603"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-03-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:27:48.772782+00:00",
+    "feature_available_at": "2026-11-11T15:28:04.781897+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:26.162482+00:00",
+  "feature_available_at": "2026-11-12T14:52:26.171027+00:00",
+  "commit_verified_at": "2026-11-12T14:52:26.171027+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the impact of the COVID-19 pandemic on The Estée Lauder Companies Inc.'s global business, including store closures and the company's plans",
+    "securities": [
+      {
+        "name": "The Estée Lauder Companies Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Estée Lauder Companies Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty and Personal Care",
+        "basis": "inferred",
+        "quote": "The Estée Lauder Companies Inc."
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "The Estée Lauder Companies Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

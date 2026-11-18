@@ -1,0 +1,90 @@
+{
+  "source_id": "563c74051d6b8e3fb7c0194f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_06_25_Regulatory_Banking_federalreserve.json",
+      "sha256": "218af5a5367e0973b2ac587f9936ebb17419521693e1a0e256c37ba8f4dc88a1",
+      "filename": "2015_06_25_Regulatory_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "ac5c384a782f00bef15b0368938977b95ec17fe8527cd704923aa23ea93046d3",
+  "input_hash": "40accead9809946f76c77224f5ed76ce650fd23bc64304affe02a46cbe13766c",
+  "matching_audit_hash": "4829cddf6ace15f6fccd4e2fdcd87cbd164a6bf14dfd072b33fbb72df7fd3e17",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f1eb0b731698668b7c695d9b4425bf0093fec7f09bc6a4c8ad4e5181d23a5bd2",
+    "raw_sha256": "89130cdd7c65ef3181673043984193c4292e844bba6d66e311fcbfd00ecad478",
+    "date_quote": "The Fed - Supervisory Letter SR 15-8 on Name Check Process for Domestic and International Applications -- June 25, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0d9b0ebbee96baf84a390cbec7d84a643ff9dc0fe7b0b680ebf12848807683a6",
+  "outputs": [
+    {
+      "path": "US\\2015_06_25_Regulatory_Banking_federalreserve.json",
+      "sha256": "2e5170c68d9a2f3fd3579085134c0f35444eef7ca903de8133cb13208f140176"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-06-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:31.088734+00:00",
+    "fetched_at": "2026-11-10T10:20:20.441238+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.365305+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:27:05.796456+00:00",
+  "feature_available_at": "2026-11-12T14:27:05.830439+00:00",
+  "commit_verified_at": "2026-11-12T14:27:05.830439+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses changes to the name check process by the Federal Reserve, which is a regulatory update affecting financial institutions and their compliance.",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Federal Reserve"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

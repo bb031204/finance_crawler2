@@ -1,0 +1,275 @@
+{
+  "source_id": "090cccfe3c5f0731e7d6c587",
+  "status": "completed",
+  "source_record_hash": "9e9727f6384fecec01f1b342609e2c433f602ba2efad4ef38f8a51925c137a34",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000177/0000919574-19-000990-index.html",
+    "attempted_at": "2026-11-18T07:41:10.802457+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "4a96e28e5bcc21f38630ac547d1d0355add81b5e3857ff3d4423a5a4e98f829e",
+    "summary_sha256": "27a2223c0399f68396341e6431a753b30323e6854a60ce36d1299995deb33c50"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/090cccfe3c5f0731e7d6c587.json",
+    "sha256": "689dc1f2f4b80fb19216bd656a6f43b499f0b57f97df6392ea3ddfa940994959",
+    "bundled_path": "legacy_audit/090cccfe3c5f0731e7d6c587.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "9bc1685d2537d4350509993be3b2340387f0b507db243f81218540a50a725dcf",
+      "llm_inferred_at": "2026-11-18T07:41:52.273393+00:00",
+      "model_duration_seconds": 11.199327,
+      "prompt_tokens": 2024,
+      "completion_tokens": 572,
+      "selection": [
+        {
+          "source_id": "090cccfe3c5f0731e7d6c587",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The loan will retire its existing Revolving Credit Facility and reduce the effective interest rate compared to 2018.",
+              "rationale": "The loan agreement and reduction in interest rate are financial activities that impact the broader financial services industry, particularly in terms of credit and financing mechanisms.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank.",
+              "rationale": "This is a direct financial action taken by the company, involving a loan agreement and reduction in interest rates, which is specific to the company's financial strategy.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The loan will retire its existing Revolving Credit Facility and reduce the effective interest rate compared to 2018."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The loan will retire its existing Revolving Credit Facility and reduce the effective interest rate compared to 2018."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "86df693c79dce8020e18ece37129aeeeb69fdf6d438f1e04e9b2872fa1a5e733",
+      "llm_inferred_at": "2026-11-18T07:42:02.302835+00:00",
+      "model_duration_seconds": 10.0219935,
+      "prompt_tokens": 2068,
+      "completion_tokens": 559,
+      "selection": [
+        {
+          "source_id": "090cccfe3c5f0731e7d6c587",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The loan will retire its existing Revolving Credit Facility and reduce the effective interest rate compared to 2018.",
+              "rationale": "The loan agreement and reduction in interest rate are financial activities that impact the broader financial services industry, particularly in terms of credit and lending practices.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank.",
+              "rationale": "This is a direct financial action taken by the company, which affects its operations and financial position.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The loan will retire its existing Revolving Credit Facility and reduce the effective interest rate compared to 2018."
+            },
+            {
+              "industry_key": "TRSR:6967f78a678a5536",
+              "name": "Investment Bankers/Brokers/Service",
+              "basis": "explicit",
+              "quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The loan will retire its existing Revolving Credit Facility and reduce the effective interest rate compared to 2018."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:42:02.315008+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "27a2223c0399f68396341e6431a753b30323e6854a60ce36d1299995deb33c50",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2019-02-12",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000177/000091957419000990/d8193853_6-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nordic American Tankers Ltd",
+        "ticker": "NAT",
+        "exchange": null,
+        "quote": "Nordic American Tankers Ltd (NYSE: NAT) - New capital structure."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:6967f78a678a5536",
+        "name": "Investment Bankers/Brokers/Service",
+        "basis": "inferred",
+        "quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "6967f78a678a5536",
+        "industry_name_standard": "Investment Bankers/Brokers/Service",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "090cccfe3c5f0731e7d6c587",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_02_12_Finance_Shipping_sec.json",
+        "sha256": "0e0bcf0349d283a0333e26b70b63fcb63237e0b1f5fcceb8cc1ea42db870f207",
+        "filename": "2019_02_12_Finance_Shipping_sec.json"
+      }
+    ],
+    "original_record_hash": "7f74c290670f54247e11ebe3e6f0ffe97ec5a8f3d5e2f81be167721f54a27c56",
+    "input_hash": "c917c35cf6959842f591c1e93ba7cd8b46c1ce45749e1c44a821affb26ca4665",
+    "matching_audit_hash": "3337a40ecd87c55822b1694bddabdb2e311f25f2879dba44af4339cf10f8e021",
+    "legacy_security_evidence": [
+      {
+        "name": "Nordic American Tankers Ltd",
+        "ticker": "NAT",
+        "exchange": null,
+        "quote": "Nordic American Tankers Ltd (NYSE: NAT) - New capital structure."
+      }
+    ],
+    "record_hash": "9e9727f6384fecec01f1b342609e2c433f602ba2efad4ef38f8a51925c137a34",
+    "outputs": [
+      {
+        "path": "US\\2019_02_12_Finance_Shipping_sec.json",
+        "sha256": "9d924261fb490ae606c14758d58a0756bf85ae2f50596a704794d102b4510037"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2019-02-12",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+      "fetched_at": "2026-11-11T13:32:08.645280+00:00",
+      "feature_available_at": "2026-11-11T13:33:00.897719+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:42:02.302835+00:00",
+    "feature_available_at": "2026-11-18T07:42:02.315008+00:00",
+    "commit_verified_at": "2026-11-12T13:53:25.824658+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank.",
+        "rationale": "This is a direct financial action taken by the company, which affects its operations and financial position.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Nordic American Tankers Ltd (NAT) secured a $306 million five-year senior secured credit agreement on February 12, 2019, arranged by CSG Investments, Inc., and funded by Beal Bank."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000177/0000919574-19-000990-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "9e9727f6384fecec01f1b342609e2c433f602ba2efad4ef38f8a51925c137a34",
+    "content_hash": "27a2223c0399f68396341e6431a753b30323e6854a60ce36d1299995deb33c50",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:42:02.303840+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/090cccfe3c5f0731e7d6c587.json",
+      "sha256": "fc84fddca1331335204c68a5918696f6232b1c06d020edc43c0b32f04ebb1644",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 51.51600000000326
+}

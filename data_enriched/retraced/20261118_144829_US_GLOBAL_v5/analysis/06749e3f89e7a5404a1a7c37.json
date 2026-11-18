@@ -1,0 +1,429 @@
+{
+  "source_id": "06749e3f89e7a5404a1a7c37",
+  "status": "completed",
+  "source_record_hash": "651e55e5567026dd3629c271b49f66c22f7dbba053e434199ea77f4e190041bf",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-19-202021-index.html",
+    "attempted_at": "2026-11-18T07:28:36.639246+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-19-202021-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312519202021/d777967d8k.htm",
+    "fetched_at": "2026-11-18T07:28:54.311011+00:00",
+    "source_body_hash": "4dacb8dfd510592dadaf66bf0d3e1a2358463f44ed24ade20f2df81418f1cbbb",
+    "raw_sha256": "de6c854046aa207d52bb827c11247217ccaaf95cdd2ac63dca92e89bac23ee2c",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312519202021/d777967d8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "de6c854046aa207d52bb827c11247217ccaaf95cdd2ac63dca92e89bac23ee2c",
+        "text_sha256": "231ced19bb8e2acb83f74b04775dcf87fc1056693c15154a225d85a872ce4bf8",
+        "text_start": 0,
+        "text_end": 2763
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312519202021/d777967dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "d6ea496539aa24736ff617bbcc8c08af2d7a8f56077f6044cd4edd2c8eb8cf8b",
+        "text_sha256": "5ef81ab0b019ae2e46cd647ed737ba447e538f03822c6d89f4144181c16b2a0f",
+        "text_start": 2765,
+        "text_end": 4540
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2019-07-25",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/06749e3f89e7a5404a1a7c37.json",
+    "sha256": "4edade342d13b1a342bbc0f99403dbfd1619242088d8df04755e674968dc05d0",
+    "bundled_path": "legacy_audit/06749e3f89e7a5404a1a7c37.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "a0379de68d2a30dddc348f41402933c02aeac1c706152e14ec8ca11c33d937ff",
+      "llm_inferred_at": "2026-11-18T07:29:07.871055+00:00",
+      "model_duration_seconds": 13.5363728,
+      "prompt_tokens": 3144,
+      "completion_tokens": 655,
+      "selection": [
+        {
+          "source_id": "06749e3f89e7a5404a1a7c37",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs.",
+              "rationale": "The company explicitly states that its primary market is the oil and gas industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Geospace Technologies Corporation principally designs and manufactures seismic instruments and equipment.",
+              "rationale": "The company's operations are described in the context of the broader US equity market, as it is a publicly traded company listed on NASDAQ.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "announced that it will release third quarter fiscal year 2019 financial results on Thursday, August 8, 2019 after the market closes. In conjunction with the release, Geospace has scheduled a conference call for Friday, August 9, 2019 at 10:00 a.m. Eastern Time (9:00 a.m. Central). What: Geospace Technologies Fiscal Year 2019 Third Quarter",
+              "rationale": "The company is a publicly traded company listed on NASDAQ, which is part of the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs."
+            },
+            {
+              "industry_key": "SEC-SIC:3532",
+              "name": "MINING MACHINERY & EQUIP (NO OIL & GAS FIELD MACH & EQUIP)",
+              "basis": "explicit",
+              "quote": "We design and manufacture other products of a non-seismic nature, including water meter products, imaging equipment and offshore cables."
+            },
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "name": "Water Supply",
+              "basis": "explicit",
+              "quote": "We design and manufacture other products of a non-seismic nature, including water meter products, imaging equipment and offshore cables."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "425c288c28085aedd9bbe5263fb76a7a9d7b0da4d620df32d84ffbf92197e1e2",
+      "llm_inferred_at": "2026-11-18T07:29:20.884203+00:00",
+      "model_duration_seconds": 12.999875,
+      "prompt_tokens": 3188,
+      "completion_tokens": 701,
+      "selection": [
+        {
+          "source_id": "06749e3f89e7a5404a1a7c37",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Geospace Technologies Corporation principally designs and manufactures seismic instruments and equipment.",
+              "rationale": "The article specifically mentions Geospace Technologies Corporation and its activities, indicating a company-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs.",
+              "rationale": "This statement confirms the company's primary market and the specific industry it serves, reinforcing the company-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We also market our seismic products to other industries for vibration monitoring, border and perimeter security and various geotechnical applications.",
+              "rationale": "This indicates the company's diversification into other industries, which is a company-level impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Technologies Announces Third Quarter Fiscal Year 2019 Earnings and Conference Call Schedule Houston, Texas  July 24, 2019  Geospace Technologies (NASDAQ: GEOS) today announced that it will release third quarter fiscal year 2019 financial results on Thursday, August 8, 2019 after the market closes. In conjunction with the release, Geospace has",
+              "rationale": "The article mentions the company's NASDAQ listing and its financial results, which are relevant to the US equity market.",
+              "confidence": 0.95
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3533",
+              "name": "OIL & GAS FIELD MACHINERY & EQUIPMENT",
+              "basis": "explicit",
+              "quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs."
+            },
+            {
+              "industry_key": "SEC-SIC:3576",
+              "name": "COMPUTER COMMUNICATIONS EQUIPMENT",
+              "basis": "explicit",
+              "quote": "We design and manufacture other products of a non-seismic nature, including water meter products, imaging equipment and offshore cables."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:29:20.901644+00:00",
+  "audit": {
+    "source_id": "06749e3f89e7a5404a1a7c37",
+    "url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-19-202021-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2019-07-25",
+    "date_quote": "SEC filing datePublished=2019-07-25",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "4dacb8dfd510592dadaf66bf0d3e1a2358463f44ed24ade20f2df81418f1cbbb",
+    "raw_sha256": "de6c854046aa207d52bb827c11247217ccaaf95cdd2ac63dca92e89bac23ee2c",
+    "first_seen_at": "2026-11-11T19:20:11.709092+00:00",
+    "fetched_at": "2026-11-14T18:43:41.222808+00:00",
+    "first_extracted_at": "2026-11-14T18:44:23.883455+00:00",
+    "extracted_at": "2026-11-18T07:29:20.888064+00:00",
+    "feature_available_at": "2026-11-18T07:29:20.901644+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Geospace Technologies",
+        "ticker": "GEOS",
+        "exchange": null,
+        "quote": "Geospace Technologies (NASDAQ: GEOS)"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:3533",
+        "name": "OIL & GAS FIELD MACHINERY & EQUIPMENT",
+        "basis": "inferred",
+        "quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3533",
+        "industry_name_standard": "OIL & GAS FIELD MACHINERY & EQUIPMENT",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:3576",
+        "name": "COMPUTER COMMUNICATIONS EQUIPMENT",
+        "basis": "inferred",
+        "quote": "We design and manufacture other products of a non-seismic nature, including water meter products, imaging equipment and offshore cables.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3576",
+        "industry_name_standard": "COMPUTER COMMUNICATIONS EQUIPMENT",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We design and manufacture other products of a non-seismic nature, including water meter products, imaging equipment and offshore cables.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:19801e128f3455fa",
+        "name": "Oil & Gas Production",
+        "basis": "inferred",
+        "quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "19801e128f3455fa",
+        "industry_name_standard": "Oil & Gas Production",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We primarily market our seismic products to the oil and gas industry to locate, characterize and monitor hydrocarbon producing reservoirs.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "651e55e5567026dd3629c271b49f66c22f7dbba053e434199ea77f4e190041bf",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2019_07_25_Financial_Oil-and-Gas_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\228d41b451be574284c8cc2e08f1a7324d1f1637ce58b5385406d49fea94dca0.json",
+      ".runtime\\simple\\model_cache\\3b024593a71df69cae383413e7015e45e843ad990c0cf757f13e2069d56f2e91.json",
+      ".runtime\\simple\\model_cache\\6b80e6f5a299b4371f2167143c9723a85d2131a4758833dacfd2918114a84767.json",
+      ".runtime\\simple\\model_cache\\ad2baddd6ea65b8fd929ded630baccc4ce70905de9e0fef0e9dd048498546ba5.json",
+      ".runtime\\simple\\model_cache\\b7b804e6f889fb84b2bbc59cb2970d15db9a4792e64eafd54ed4e5d55f96e99f.json",
+      ".runtime\\simple\\model_cache\\ee53ba5e20085737a21029d90e72afbe8211cd97e5580ee584df728dcf1ecd0e.json",
+      ".runtime\\simple\\pages\\06749e3f89e7a5404a1a7c37.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312519202021/d777967d8k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312519202021/d777967d8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "a714316cef6944a5960caf08e2fd93e63601544e74dbfcbcaf25239686cfb50a",
+        "text_sha256": "231ced19bb8e2acb83f74b04775dcf87fc1056693c15154a225d85a872ce4bf8",
+        "text_start": 0,
+        "text_end": 2763
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312519202021/d777967dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "7fa7b99231f130d3c8f6727f10c61a19aeaa29265950d70cb8df88ed248bd5df",
+        "text_sha256": "5ef81ab0b019ae2e46cd647ed737ba447e538f03822c6d89f4144181c16b2a0f",
+        "text_start": 2765,
+        "text_end": 4540
+      }
+    ],
+    "sec_document_version": 3,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "04fe46b6585f24624b67107ac592edeb20dbec193012c476d6cb5a663b197b85",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1001115/0001193125-19-202021-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T07:29:20.884203+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "bb613693984b8eb449142ce4b23acac9593bb48e1e4f4e860492fbaa9f0ff145",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Geospace Technologies",
+        "ticker": "GEOS",
+        "exchange": null,
+        "quote": "Geospace Technologies (NASDAQ: GEOS)",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "guidance",
+        "subject": null,
+        "action": null,
+        "object": "third quarter 2019 results and conference call schedule",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Geospace Technologies Corporation issued a press release announcing its third quarter 2019 results and conference call schedule."
+      },
+      {
+        "event_type": "earnings",
+        "subject": null,
+        "action": "release",
+        "object": "financial results",
+        "key_period": null,
+        "key_values": "Third Quarter Fiscal Year 2019",
+        "conditions": "after the market closes",
+        "evidence_type": "explicit",
+        "quote": "Geospace Technologies (NASDAQ: GEOS) today announced that it will release third quarter fiscal year 2019 financial results on Thursday, August 8, 2019 after the market closes."
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": "schedule",
+        "object": "conference call",
+        "key_period": null,
+        "key_values": "August 9, 2019 at 10:00 a.m. Eastern Time (9:00 a.m. Central)",
+        "conditions": "Friday",
+        "evidence_type": "explicit",
+        "quote": "Geospace has scheduled a conference call for Friday, August 9, 2019 at 10:00 a.m. Eastern Time (9:00 a.m. Central)."
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [],
+    "event_cluster_id": null,
+    "extraction_version": "1eaf49548578e61c4e047c5833b0fbca79a7d0da72611935a018f274bcb3a81e",
+    "commit_verified_at": "2026-11-14T18:44:23.977680+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-14T18:44:24.153635+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\06749e3f89e7a5404a1a7c37.json",
+      ".runtime\\simple\\model_cache\\6b80e6f5a299b4371f2167143c9723a85d2131a4758833dacfd2918114a84767.json",
+      ".runtime\\simple\\model_cache\\3b024593a71df69cae383413e7015e45e843ad990c0cf757f13e2069d56f2e91.json",
+      ".runtime\\simple\\model_cache\\ad2baddd6ea65b8fd929ded630baccc4ce70905de9e0fef0e9dd048498546ba5.json",
+      ".runtime\\simple\\model_cache\\b7b804e6f889fb84b2bbc59cb2970d15db9a4792e64eafd54ed4e5d55f96e99f.json",
+      ".runtime\\simple\\model_cache\\228d41b451be574284c8cc2e08f1a7324d1f1637ce58b5385406d49fea94dca0.json",
+      ".runtime\\simple\\model_cache\\ee53ba5e20085737a21029d90e72afbe8211cd97e5580ee584df728dcf1ecd0e.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Geospace Technologies Corporation principally designs and manufactures seismic instruments and equipment.",
+        "rationale": "The article specifically mentions Geospace Technologies Corporation and its activities, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Geospace Technologies Corporation principally designs and manufactures seismic instruments and equipment.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "651e55e5567026dd3629c271b49f66c22f7dbba053e434199ea77f4e190041bf",
+    "source_verification": "original_body_or_publication_revalidated",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "retrace_original",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/06749e3f89e7a5404a1a7c37.json",
+      "sha256": "31c0646de1ada586e58fc9bf18aa35bbefe6cb8ae809df95569ce68968b193ca",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 44.264999999984866
+}

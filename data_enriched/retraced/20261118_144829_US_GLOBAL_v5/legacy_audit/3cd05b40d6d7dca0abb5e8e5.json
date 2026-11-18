@@ -1,0 +1,108 @@
+{
+  "source_id": "3cd05b40d6d7dca0abb5e8e5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_26_Financial-Statement-Amendment_Textiles-and-Apparel_sec.json",
+      "sha256": "738a7d4afbefbf9aebbe09dec6971c5a2b3114499dd9107286cda8195d7fae52",
+      "filename": "2014_02_26_Financial-Statement-Amendment_Textiles-and-Apparel_sec.json"
+    }
+  ],
+  "original_record_hash": "58538bf42104e4af15c9b31e48f6a324f3ef677b9b233d6efc6faa9a8af941bc",
+  "input_hash": "e993508cebd7c4c2e99812887fe53003eb9c9deca0eb2a6050438fbb4190ea5b",
+  "matching_audit_hash": "f1eac99296f0cd06fc4054308893ba6dbb01f95cb59d3ab99f1d3f8deebedcfd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a91651b3e7475bf56c77289cd4e62892a180e2654135b0e1648286d5792fe8d6",
+    "raw_sha256": "8273e61e294c25c4db3a00d4b3a37e158d75869c97094164281eefc501ee075e",
+    "date_quote": "SEC filing datePublished=2014-02-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062314000023/form8-kdelstarproforma.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    },
+    {
+      "name": "DelStar, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DelStar, Inc."
+    }
+  ],
+  "record_hash": "4e72d4b97eba2af8c54e00c326c8cbe221d01d1690b1fcb045ca51c193a45dac",
+  "outputs": [
+    {
+      "path": "US\\2014_02_26_Financial-Statement-Amendment_Textiles-and-Apparel_sec.json",
+      "sha256": "92797b8b8c2c83f723b4d622d2adbd31e820d59c112eea646a59a6c2a0913ecc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+    "fetched_at": "2026-11-10T23:50:44.121655+00:00",
+    "feature_available_at": "2026-11-11T10:12:17.072405+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:50.105139+00:00",
+  "commit_verified_at": "2026-11-12T13:52:50.105139+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      },
+      {
+        "name": "DelStar, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DelStar, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Textiles and Apparel",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

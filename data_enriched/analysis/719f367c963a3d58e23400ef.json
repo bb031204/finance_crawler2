@@ -1,0 +1,95 @@
+{
+  "source_id": "719f367c963a3d58e23400ef",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_10_Financial-Report_Healthcare-Distribution_sec.json",
+      "sha256": "cca9f1c59c3e2e497552f3de2ed8ac37c1d2dfca59b324ff0cc8d7c4dcc79ba8",
+      "filename": "2016_02_10_Financial-Report_Healthcare-Distribution_sec.json"
+    }
+  ],
+  "original_record_hash": "a7bc84dce384c6e423d27fabfaafaa9e701215d9d6b3b164b1dc15450391bab9",
+  "input_hash": "3836c9e9b3d3f7fe99c16ce74d5ef16706ba17b51b459a737b27348c386dbe1f",
+  "matching_audit_hash": "2b44fd665bfac243b389db997daa51a5013fe723620a010efaaf36fc24e153f0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4121c7b8bc985a934981f6fcae2834c51ddd2ca008ada020e2126cd36268008b",
+    "raw_sha256": "acd943224b6faac626ad1f3940c8d962527c4d107774ffc5b3201e30da59a2e0",
+    "date_quote": "Date of Report (Date of earliest event reported) February 10, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000100022816000040/the8k_4q15.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Henry Schein, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "HENRY SCHEIN, INC."
+    }
+  ],
+  "record_hash": "0c24697734dae2a65cc150d8c6946c96bce4a507c38f92939e0dac1eaad7170f",
+  "outputs": [
+    {
+      "path": "US\\2016_02_10_Financial-Report_Healthcare-Distribution_sec.json",
+      "sha256": "35fbee2b84c9191efee0ba30fb0511f1c2b436bcec97e6826ba6a462e4e7576e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.847323+00:00",
+    "fetched_at": "2026-11-11T00:59:09.556812+00:00",
+    "feature_available_at": "2026-11-11T00:59:17.524350+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:05.235548+00:00",
+  "commit_verified_at": "2026-11-12T13:53:05.235548+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "HENRY SCHEIN, INC."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare Distribution",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

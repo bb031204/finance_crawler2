@@ -1,0 +1,112 @@
+{
+  "source_id": "79bcf825122ee7ffdb43f4f3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_25_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "9b93e68ea7c970d581d323bddd15ba5a6c6079a8a811b217be10d621e5c8b17d",
+      "filename": "2020_02_25_Mergers-&-Acquisitions_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "72a2c7fae97131605095b803a0e6155714c6266c04324c20ac186156f414f5d4",
+  "input_hash": "e11ecfae26dadc5df8ce1fdd360d551a573b03bd239f9e18d24cb737406881ea",
+  "matching_audit_hash": "7b3f0cc65924a78fa02d59597225f951726237b2e4c54567066e563cdce185e4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "65d5c6f2891cce3a47552f35bd1ae6473c498bef2055cd37dd5ab12939d11255",
+    "raw_sha256": "37844928acec5025726f8e60e21faf8f08a24c4b64c52ed8e83007346ada20fa",
+    "date_quote": "SEC filing datePublished=2020-02-25",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000045/000156459020006409/nick-8k_20200225.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nicholas Financial, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Nicholas Financial, Inc."
+    }
+  ],
+  "record_hash": "90beed375cc7a528f1978cde1ae2767549e4db9cef490df8d8e3e2c1f120130e",
+  "outputs": [
+    {
+      "path": "US\\2020_02_25_Mergers-&-Acquisitions_Financial-Services_sec.json",
+      "sha256": "1d1b7d6e8cfe6f5299692d72698ca67470b2dc60495457c2654c6c16688599fe"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.198958+00:00",
+    "fetched_at": "2026-11-11T14:25:19.843857+00:00",
+    "feature_available_at": "2026-11-11T14:25:33.681193+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:09.071884+00:00",
+  "feature_available_at": "2026-11-12T14:52:09.082169+00:00",
+  "commit_verified_at": "2026-11-12T14:52:09.082169+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a bulk portfolio purchase, which is relevant for understanding the company's strategy and market position.",
+    "securities": [
+      {
+        "name": "Nicholas Financial, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nicholas Financial, Inc."
+      },
+      {
+        "name": "Platinum Auto Finance of Tampa Bay, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Platinum Auto Finance of Tampa Bay, LLC (d/b/a Platinum)"
+      },
+      {
+        "name": "Finanza Acceptance LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Finanza Acceptance LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial services",
+        "basis": "explicit",
+        "quote": "financial services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Nicholas Financial, Inc.": "company",
+      "Platinum Auto Finance of Tampa Bay, LLC": "company",
+      "Finanza Acceptance LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

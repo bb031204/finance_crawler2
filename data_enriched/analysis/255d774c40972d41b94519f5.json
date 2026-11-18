@@ -1,0 +1,147 @@
+{
+  "source_id": "255d774c40972d41b94519f5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_01_Financial-Report_Technology_sec.json",
+      "sha256": "85cf6761d59a04d57d8f615bc7b73f7238ec45dda198ae6d181eb145a0d1fa05",
+      "filename": "2013_02_01_Financial-Report_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "328660ec206c04f0419dd2da43666608c7f92709431358130f42367e2f6736b2",
+  "input_hash": "d2f51d525474b43dc8af24725f4f5011b1bef6a008f79263434af56ae499a753",
+  "matching_audit_hash": "d69ae7d1799dd75b9f0bdec3ae07f6b2ca020e7be9e91399d963e403e96db161",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "329aa825ab18ff84e1b838d273669601eee6684e22918ebb4dcd8af52f4ff2e0",
+    "raw_sha256": "96f743ee21994ec4cff498f6b2146af498840dbd03996182f42176440f0bab0b",
+    "date_quote": "SEC filing datePublished=2013-02-01",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000118143113005952/rrd368427.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Geospace Technologies Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Geospace Technologies Corporation"
+    }
+  ],
+  "record_hash": "a8b417109af74c09fce60f5bee314b2f8aa11c3d20996fc21bd5f38e2b13319f",
+  "outputs": [
+    {
+      "path": "US\\2013_02_01_Financial-Report_Technology_sec.json",
+      "sha256": "f101e7617a61ec20f865284a505713549a4e708139fea3900f54f0e8506bf730"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+    "fetched_at": "2026-11-10T23:37:53.693530+00:00",
+    "feature_available_at": "2026-11-11T09:58:31.328365+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:34.243000+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.698208+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.698208+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Announces first quarter earnings and conference call schedule",
+    "securities": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Geospace Technologies Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.711728+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:34.243000+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Announces first quarter earnings and conference call schedule",
+      "securities": [
+        {
+          "name": "Geospace Technologies Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Geospace Technologies Corporation"
+        }
+      ],
+      "industries": [],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Geospace Technologies Corporation": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:34.267952+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:34.276484+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:34.258785+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text mentions Geospace Technologies Corporation's first quarter earnings and conference call schedule, indicating financial performance and communication.",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:02:13.565183+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

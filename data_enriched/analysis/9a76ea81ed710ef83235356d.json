@@ -1,0 +1,96 @@
+{
+  "source_id": "9a76ea81ed710ef83235356d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_12_Tech_Music-Streaming_cnbc.json",
+      "sha256": "60f694db9f422f39d8772fe411a567d1afb64d5cf72e4a5eccc3bd94e3f69cba",
+      "filename": "2017_10_12_Tech_Music-Streaming_cnbc.json"
+    }
+  ],
+  "original_record_hash": "57b0dfd40bc9f7236154adc3d6abda5f91177c1012dbd0e9e76a0ea45873b28e",
+  "input_hash": "ec7cd6da3fb322ea53709a40b66821a2ddd237342de9d0c52fe96ff23fcda40d",
+  "matching_audit_hash": "85faad1aec653d54e4c5699ca6acab02b8fc318c9fe2b635c92be69b39c46715",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ea85c0e2a7233521dd20105c72f2f1eceb873d9e5148d8acfb002b5bbfe2a99e",
+    "raw_sha256": "b63ca5adc35a26fa293c149213185b49ac6840f78a74eaba2b22a04d0ce7a275",
+    "date_quote": "article:published_time=2017-10-12T17:02:37+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Spotify",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Spotify's results for the first six months of the year: Revenue: $2.2 billion, on pace to grow 40 percent year over year by the end of the year Gross margins: 22 percent, up from 15 percent in all of 2016 Operating loss: Between 100 million and 200 million euros ($118.4 million and $236.8 million)"
+    }
+  ],
+  "record_hash": "0ac4da460e5dd0863d375b04bde8d6f9fac46ea401e04482b55dabaebc0437eb",
+  "outputs": [
+    {
+      "path": "US\\2017_10_12_Tech_Music-Streaming_cnbc.json",
+      "sha256": "47146f2f983de5e1ae3d3b022b478c1c04ed0e0a9897280c1e15ac36a66f1f53"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:37.378196+00:00",
+    "fetched_at": "2026-11-10T22:22:54.119674+00:00",
+    "feature_available_at": "2026-11-10T22:23:04.794028+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:17.182705+00:00",
+  "commit_verified_at": "2026-11-12T13:53:17.182705+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Spotify",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Spotify's results for the first six months of the year: Revenue: $2.2 billion, on pace to grow 40 percent year over year by the end of the year Gross margins: 22 percent, up from 15 percent in all of 2016 Operating loss: Between 100 million and 200 million euros ($118.4 million and $236.8 million)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Music Streaming",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

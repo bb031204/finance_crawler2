@@ -1,0 +1,95 @@
+{
+  "source_id": "ee73fddaa887b7d3611e04fe",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_09_Financial-Services_Banking_sec.json",
+      "sha256": "726611300b64e6b871d6c8bcca4fb67657c9dc95c591c38fe0e95a8035c98df5",
+      "filename": "2016_02_09_Financial-Services_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "188ca6bc2b26985c24de3761954ffa5c1bfe24327eb147e3a26a1561b3acc707",
+  "input_hash": "119a2be20496f41ec2cb66465ff24ea8ff505b8cea6586a32fa5c332ff36050a",
+  "matching_audit_hash": "7a3d96b285bbcaba9cfcf73854269ee40f703db01851cdec8063f995289019cd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "efd0539de4ff0f3f71018f2109a3f7968b165e15e1257127796c3a93f755af78",
+    "raw_sha256": "c30529680af0ec83e910fe1b46251d93bd8aac3f2342e46d6fc060dae1cc20df",
+    "date_quote": "Date of Report (Date of earliest event reported): February 9, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465916095016/a16-3836_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Broadway Financial Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Broadway Financial Corporation"
+    }
+  ],
+  "record_hash": "19de65601fab612edb4be4b254b7e8125ddc3985c4d51ce1c456af2499502100",
+  "outputs": [
+    {
+      "path": "US\\2016_02_09_Financial-Services_Banking_sec.json",
+      "sha256": "66549e15966d25463d5ce0362cd4e856763c6cb65bbbef2be4ee59921e0d9f7b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.850017+00:00",
+    "fetched_at": "2026-11-11T01:25:12.827176+00:00",
+    "feature_available_at": "2026-11-11T01:25:27.004122+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:05.172482+00:00",
+  "commit_verified_at": "2026-11-12T13:53:05.172482+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Broadway Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Financial Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "source_id": "0076065ceba585096b365f59",
+  "status": "completed",
+  "source_record_hash": "0910447b978446f8d62e2fc2356a37f0b4f5d2ec1f39e95aa7c26e4e2368c6fc",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2018/04/26/ford-is-basically-giving-up-on-us-car-business-and-gm-is-not-far-behind.html",
+    "attempted_at": "2026-11-18T07:02:19.421211+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "09ac11e01b3e8b5f42d196e4194a371989786f507ff4d69dd39837ec9738e97a"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0076065ceba585096b365f59.json",
+    "sha256": "b0ef2942d8cd5cf45576d1db5eb95dabadae769676ea70d3caffe8c7a6d41252",
+    "bundled_path": "legacy_audit/0076065ceba585096b365f59.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "1346201092970037a352e97f91425269879f0438e5435ff0ad5abc8241938713",
+      "llm_inferred_at": "2026-11-18T07:02:42.610396+00:00",
+      "model_duration_seconds": 18.1344031,
+      "prompt_tokens": 2265,
+      "completion_tokens": 987,
+      "selection": [
+        {
+          "source_id": "0076065ceba585096b365f59",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers.",
+              "rationale": "The article discusses a strategic shift in the U.S. automotive industry, where American automakers are prioritizing SUVs and trucks over traditional sedans. This indicates a sector-wide change in focus and product development.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Ford plans to reduce its North American passenger car lineup to just two models: the iconic Mustang and the Focus Active.",
+              "rationale": "This statement directly references Ford's specific strategy and product lineup changes, indicating a company-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Crossover sales have been a key driver for GM's earnings, and the company is investing in new truck models to support its margins.",
+              "rationale": "This highlights the industry-wide trend of crossover and truck sales driving earnings, indicating an industry-level impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3711",
+              "name": "MOTOR VEHICLES & PASSENGER CAR BODIES",
+              "basis": "explicit",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+            },
+            {
+              "industry_key": "TRSR:b975926e17dded7e",
+              "name": "Motor Vehicles",
+              "basis": "explicit",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:3711",
+              "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+              "industry_name_original": "MOTOR VEHICLES & PASSENGER CAR BODIES",
+              "mechanism": "Changing consumer preferences are driving a shift in product focus within the automotive industry, impacting the entire sector.",
+              "confidence": 0.85,
+              "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers."
+            },
+            {
+              "industry_key": "TRSR:b975926e17dded7e",
+              "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+              "industry_name_original": "Motor Vehicles",
+              "mechanism": "Changing consumer preferences are driving a shift in product focus within the automotive industry, impacting the entire sector.",
+              "confidence": 0.85,
+              "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "Changing consumer preferences are driving a shift in product focus within the automotive industry, impacting the entire sector.",
+              "confidence": 0.85,
+              "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "8faca84f05804e1ede8ca4383567c3ddb1fedf8030e32c64c0ed29750a2077fa",
+      "llm_inferred_at": "2026-11-18T07:03:01.085220+00:00",
+      "model_duration_seconds": 18.4624869,
+      "prompt_tokens": 2309,
+      "completion_tokens": 1013,
+      "selection": [
+        {
+          "source_id": "0076065ceba585096b365f59",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers.",
+              "rationale": "The article discusses a strategic shift in the U.S. automotive industry, where automakers are prioritizing SUVs and trucks over traditional sedans, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Ford plans to reduce its North American passenger car lineup to just two models: the iconic Mustang and the Focus Active.",
+              "rationale": "This statement directly references Ford's specific strategy, indicating a company-level impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Crossover sales have been a key driver for GM's earnings, and the company is investing in new truck models to support its margins.",
+              "rationale": "This indicates that the shift toward SUVs and crossovers is affecting the broader automotive industry, not just individual companies.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3711",
+              "name": "MOTOR VEHICLES & PASSENGER CAR BODIES",
+              "basis": "explicit",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+            },
+            {
+              "industry_key": "TRSR:b975926e17dded7e",
+              "name": "Motor Vehicles",
+              "basis": "explicit",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:3711",
+              "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+              "industry_name_original": "MOTOR VEHICLES & PASSENGER CAR BODIES",
+              "mechanism": "The shift in consumer preferences is affecting the entire automotive industry, leading to a decline in traditional passenger cars and an increase in SUVs and crossovers.",
+              "confidence": 0.85,
+              "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers."
+            },
+            {
+              "industry_key": "TRSR:b975926e17dded7e",
+              "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+              "industry_name_original": "Motor Vehicles",
+              "mechanism": "The shift in consumer preferences is affecting the entire automotive industry, leading to a decline in traditional passenger cars and an increase in SUVs and crossovers.",
+              "confidence": 0.85,
+              "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+              "industry_name_original": "Consumer Discretionary",
+              "mechanism": "The shift in consumer preferences is affecting the entire automotive industry, leading to a decline in traditional passenger cars and an increase in SUVs and crossovers.",
+              "confidence": 0.85,
+              "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:03:01.098115+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "09ac11e01b3e8b5f42d196e4194a371989786f507ff4d69dd39837ec9738e97a",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2018-04-26T17:20:22+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Ford",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ford said Wednesday it will only offer two new cars in North America over the coming years — its iconic Mustang and the Focus Active, a rugged-looking hatchback that has already debuted in Europe, and somewhat resembles the Subaru Crosstrek or the Buick Regal TourX."
+      },
+      {
+        "name": "Chrysler",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chrysler"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:3711",
+        "name": "MOTOR VEHICLES & PASSENGER CAR BODIES",
+        "basis": "inferred",
+        "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3711",
+        "industry_name_standard": "MOTOR VEHICLES & PASSENGER CAR BODIES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+      },
+      {
+        "industry_key": "TRSR:b975926e17dded7e",
+        "name": "Motor Vehicles",
+        "basis": "inferred",
+        "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "b975926e17dded7e",
+        "industry_name_standard": "Motor Vehicles",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+      },
+      {
+        "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+        "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+        "industry_name_original": "Consumer Discretionary",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The shift in consumer preferences is affecting the entire automotive industry, leading to a decline in traditional passenger cars and an increase in SUVs and crossovers.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "c2ef8c5fb4379b89",
+        "industry_name_standard": "Consumer Discretionary",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Consumer Discretionary",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "0076065ceba585096b365f59",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_04_26_Automotive_Automotive_cnbc.json",
+        "sha256": "97d61592a6b5e77573ac34a950c57190448caf4735418e6090f88c5b45ba4b0d",
+        "filename": "2018_04_26_Automotive_Automotive_cnbc.json"
+      }
+    ],
+    "original_record_hash": "3d68bbbafe8689ce93b9170e066e4431cd8d767741e6c6a91fc3551a11dc3344",
+    "input_hash": "5d20905af6a041881d66387e84193e6c417a7d53efa2aef2c6d5bf33c70eccef",
+    "matching_audit_hash": "e24f4c81849049849ab80abc057718e9caf182b9a2aedc26d9a6da94b7087c66",
+    "legacy_security_evidence": [
+      {
+        "name": "Ford",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ford said Wednesday it will only offer two new cars in North America over the coming years — its iconic Mustang and the Focus Active, a rugged-looking hatchback that has already debuted in Europe, and somewhat resembles the Subaru Crosstrek or the Buick Regal TourX."
+      },
+      {
+        "name": "Chrysler",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chrysler"
+      }
+    ],
+    "record_hash": "0910447b978446f8d62e2fc2356a37f0b4f5d2ec1f39e95aa7c26e4e2368c6fc",
+    "outputs": [
+      {
+        "path": "US\\2018_04_26_Automotive_Automotive_cnbc.json",
+        "sha256": "1f76b60b87937990d2b07b647dc305dad69c29464e118bd90272347107eead90"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2018-04-26",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:40:13.032994+00:00",
+      "fetched_at": "2026-11-10T21:28:48.872785+00:00",
+      "feature_available_at": "2026-11-10T21:29:19.066964+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:03:01.085220+00:00",
+    "feature_available_at": "2026-11-18T07:03:01.098115+00:00",
+    "commit_verified_at": "2026-11-12T13:53:22.086032+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+        "industry_scope_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+        "industry_name_original": "Consumer Discretionary",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The shift in consumer preferences is affecting the entire automotive industry, leading to a decline in traditional passenger cars and an increase in SUVs and crossovers.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "c2ef8c5fb4379b89",
+        "industry_name_standard": "Consumer Discretionary",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Both companies are adapting to changing consumer preferences, with a clear emphasis on SUVs and crossovers.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Ford plans to reduce its North American passenger car lineup to just two models: the iconic Mustang and the Focus Active.",
+        "rationale": "This statement directly references Ford's specific strategy, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Ford plans to reduce its North American passenger car lineup to just two models: the iconic Mustang and the Focus Active."
+      },
+      {
+        "scope": "industry",
+        "quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers.",
+        "rationale": "The article discusses a strategic shift in the U.S. automotive industry, where automakers are prioritizing SUVs and trucks over traditional sedans, indicating an industry-wide impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Ford and General Motors are shifting their focus away from traditional passenger cars toward trucks, SUVs, and crossovers."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.cnbc.com/2018/04/26/ford-is-basically-giving-up-on-us-car-business-and-gm-is-not-far-behind.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "0910447b978446f8d62e2fc2356a37f0b4f5d2ec1f39e95aa7c26e4e2368c6fc",
+    "content_hash": "09ac11e01b3e8b5f42d196e4194a371989786f507ff4d69dd39837ec9738e97a",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:03:01.088127+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0076065ceba585096b365f59.json",
+      "sha256": "1e4419c2eb2aca9ca946f47442b103e957855c42c2fa792b09e9452177bd9820",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 41.687999999994645
+}

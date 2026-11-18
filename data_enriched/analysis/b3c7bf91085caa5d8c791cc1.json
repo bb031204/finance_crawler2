@@ -1,0 +1,149 @@
+{
+  "source_id": "b3c7bf91085caa5d8c791cc1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_05_06_government-bond_Financial-Services_treasury.json",
+      "sha256": "80613d813f53b4c97cc1acdf1cf05423a8dd2c10a985e808249abc133739b0c0",
+      "filename": "2020_05_06_government-bond_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "e66c77ef0aa45f191770b8f0806c9e5a172f68a85216b23d55f56f249ac52173",
+  "input_hash": "04e4149196a9845d993664ec2094468f14ba0d1f85a5ead83b3654bc944b3a5d",
+  "matching_audit_hash": "c285af31060c2acb256bd8efc653f65f80a597c98cf05ad3b37f9fc6c28890eb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fbf6b82cca76b6289700e68f36fc24fc865699a824e8cc21bdc6dd669798c767",
+    "raw_sha256": "3290766c9a74b5827631a73e5ef309a322e0398bdccec6e843b69a819e123047",
+    "date_quote": "May 6, 2020",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Treasury securities",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Treasury securities"
+    },
+    {
+      "name": "3-year note",
+      "ticker": null,
+      "exchange": null,
+      "quote": "3-year note"
+    },
+    {
+      "name": "10-year note",
+      "ticker": null,
+      "exchange": null,
+      "quote": "10-year note"
+    },
+    {
+      "name": "30-year bond",
+      "ticker": null,
+      "exchange": null,
+      "quote": "30-year bond"
+    },
+    {
+      "name": "20-year nominal coupon bond",
+      "ticker": null,
+      "exchange": null,
+      "quote": "20-year nominal coupon bond"
+    }
+  ],
+  "record_hash": "5f72d5b8077c4a0ff9e33707fb7a0356f33d65d5468ef8e1196aafed72aa736e",
+  "outputs": [
+    {
+      "path": "US\\2020_05_06_government-bond_Financial-Services_treasury.json",
+      "sha256": "2bca1afeac1c184901cd6f1f7e6c6ee038e7f1edc93d21fdceba881dbd4e370f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-05-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:09.143950+00:00",
+    "fetched_at": "2026-11-11T02:11:09.329065+00:00",
+    "feature_available_at": "2026-11-11T02:12:18.649498+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:33.533896+00:00",
+  "commit_verified_at": "2026-11-12T13:53:33.533896+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Treasury securities",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury securities"
+      },
+      {
+        "name": "3-year note",
+        "ticker": null,
+        "exchange": null,
+        "quote": "3-year note"
+      },
+      {
+        "name": "10-year note",
+        "ticker": null,
+        "exchange": null,
+        "quote": "10-year note"
+      },
+      {
+        "name": "30-year bond",
+        "ticker": null,
+        "exchange": null,
+        "quote": "30-year bond"
+      },
+      {
+        "name": "20-year nominal coupon bond",
+        "ticker": null,
+        "exchange": null,
+        "quote": "20-year nominal coupon bond"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

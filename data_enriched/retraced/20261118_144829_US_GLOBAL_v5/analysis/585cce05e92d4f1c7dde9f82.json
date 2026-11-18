@@ -1,0 +1,292 @@
+{
+  "source_id": "585cce05e92d4f1c7dde9f82",
+  "status": "completed",
+  "source_record_hash": "7b67ce03ae52b1dfeefd43c073cb8aa75f29cc3b05023682906799877239b53a",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001176256-16-000395-index.html",
+    "attempted_at": "2026-11-18T15:27:50.996708+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "569054640691bbc48a4e9c329693143467a59a9decf3f634017045c8151bc111"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/585cce05e92d4f1c7dde9f82.json",
+    "sha256": "12167ec866be7a50170547c23330c7ff54e9ee2b6bd074d162176fa0cf174e52",
+    "bundled_path": "legacy_audit/585cce05e92d4f1c7dde9f82.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "c15a2cd5833cce9cf5ae8c0268f6de307329b53791ed34700d07887dd90289b5",
+      "llm_inferred_at": "2026-11-18T15:28:45.388946+00:00",
+      "model_duration_seconds": 9.3566139,
+      "prompt_tokens": 1973,
+      "completion_tokens": 462,
+      "selection": [
+        {
+          "source_id": "585cce05e92d4f1c7dde9f82",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The report is part of the bank's compliance with U.S.",
+              "rationale": "The report is part of the bank's compliance with U.S. securities regulations, which is a regulatory activity affecting the banking industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Royal Bank of Canada filed a Form 6-K report for the month of January 2016, which includes a notification of a meeting and record date.",
+              "rationale": "The Royal Bank of Canada is the specific company filing the report, which is a compliance activity.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "The report is part of the bank's compliance with U.S."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The report is part of the bank's compliance with U.S."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The report is part of the bank's compliance with U.S."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "3cf1235cbed322e10f6b4139a7df2e9e2dd65983132f0486f2a3e71d97b4a097",
+      "llm_inferred_at": "2026-11-18T15:28:53.830543+00:00",
+      "model_duration_seconds": 8.4357059,
+      "prompt_tokens": 2017,
+      "completion_tokens": 458,
+      "selection": [
+        {
+          "source_id": "585cce05e92d4f1c7dde9f82",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The report is part of the bank's compliance with U.S.",
+              "rationale": "The report is part of the bank's compliance with U.S. securities regulations, which relates to the broader financial services industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "The Royal Bank of Canada filed a Form 6-K report for the month of January 2016, which includes a notification of a meeting and record date.",
+              "rationale": "The report is specific to The Royal Bank of Canada, indicating a company-level event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "The report is part of the bank's compliance with U.S."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The report is part of the bank's compliance with U.S."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The report is part of the bank's compliance with U.S."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:28:53.841884+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "569054640691bbc48a4e9c329693143467a59a9decf3f634017045c8151bc111",
+    "raw_sha256": null,
+    "date_quote": "Published=2016-01-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000117625616000395/rbc6knomrd.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6022",
+        "name": "STATE COMMERCIAL BANKS",
+        "basis": "inferred",
+        "quote": "The report is part of the bank's compliance with U.S.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6022",
+        "industry_name_standard": "STATE COMMERCIAL BANKS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The report is part of the bank's compliance with U.S."
+      },
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "name": "Commercial Banks",
+        "basis": "inferred",
+        "quote": "The report is part of the bank's compliance with U.S.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The report is part of the bank's compliance with U.S."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "585cce05e92d4f1c7dde9f82",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_01_13_Financial_Banking_sec.json",
+        "sha256": "11a9295848e19d2b9d77300381c860f58ba975a0eb3e3b1b173795e56bc51fa8",
+        "filename": "2016_01_13_Financial_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "9cff84c73568aa8b5441c1ee03c9e7983062fc54d2b6ab0aa18f9035b03495c7",
+    "input_hash": "f0e1e560956a0663b34847a9433890ab5378f2375a313ba9cb973a8d30423d05",
+    "matching_audit_hash": "45a5263ddc4719af2a11f3a6bec1ec8e4559409baca3e4bc95a1539c5d5e48db",
+    "legacy_security_evidence": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "record_hash": "7b67ce03ae52b1dfeefd43c073cb8aa75f29cc3b05023682906799877239b53a",
+    "outputs": [
+      {
+        "path": "US\\2016_01_13_Financial_Banking_sec.json",
+        "sha256": "5fb81bbf9c378eaec4c86f0d62640b1d4fdb11de3a15e792e55ebdecd253898e"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2016-01-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:04.847853+00:00",
+      "fetched_at": "2026-11-11T01:02:27.895754+00:00",
+      "feature_available_at": "2026-11-11T01:02:34.740718+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:28:53.830543+00:00",
+    "feature_available_at": "2026-11-18T15:28:53.841884+00:00",
+    "commit_verified_at": "2026-11-12T13:53:03.023071+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The Royal Bank of Canada filed a Form 6-K report for the month of January 2016, which includes a notification of a meeting and record date.",
+        "rationale": "The report is specific to The Royal Bank of Canada, indicating a company-level event.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The Royal Bank of Canada filed a Form 6-K report for the month of January 2016, which includes a notification of a meeting and record date."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/0001176256-16-000395-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "7b67ce03ae52b1dfeefd43c073cb8aa75f29cc3b05023682906799877239b53a",
+    "content_hash": "569054640691bbc48a4e9c329693143467a59a9decf3f634017045c8151bc111",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:28:53.831090+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/585cce05e92d4f1c7dde9f82.json",
+      "sha256": "d36f2328cbdbcb0cb02eeee84203893a533c5029c9522d5d0cba5d40108e2d9e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 62.85999999998603
+}

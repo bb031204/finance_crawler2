@@ -1,0 +1,219 @@
+{
+  "source_id": "3abe9f3727c666e2cd39518e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_05_Politics_Mining_bloomberg.json",
+      "sha256": "815b4c83c1cdd60e6d0210359149c7113f9f17502d960245a17e5a68b376366f",
+      "filename": "2021_02_05_Politics_Mining_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2021_02_05_Politics_Mining_bloomberg.json",
+      "sha256": "815b4c83c1cdd60e6d0210359149c7113f9f17502d960245a17e5a68b376366f",
+      "filename": "2021_02_05_Politics_Mining_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "7cf3edaedaffdf9d977ba159c4e126b837404bb7789743299e5d390e5f59087f",
+  "input_hash": "f53ae13916d541eac9784b140989c4b7a9cf1e382bacdaa0e86efb144b3e9917",
+  "matching_audit_hash": "a5254198fedc05037f6a5a10be733582ceb85b6593c2e0c58d6a36d74bcd3cd9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "cae4c7b1ffb125a3f8776ffcb0735c66c320b80564232e593326f9ede6ed3179",
+    "raw_sha256": "737cebaa6e3dac3747f54c509a657fb5c6cb4e94c932f7551f1802c3a33cd78d",
+    "date_quote": "February 5, 2021 at 4:00 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ed109c62a5b0fe02ce630f6341b36da0d38e387452676fa3053c3579335c8ceb",
+  "outputs": [
+    {
+      "path": "US\\2021_02_05_Politics_Mining_bloomberg.json",
+      "sha256": "81107a9840ead1fdacf923df4097f7042b605421122c3a9034441e03c80181ed"
+    },
+    {
+      "path": "GLOBAL\\2021_02_05_Politics_Mining_bloomberg.json",
+      "sha256": "81107a9840ead1fdacf923df4097f7042b605421122c3a9034441e03c80181ed"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:00.947558+00:00",
+    "fetched_at": "2026-11-10T16:22:46.483290+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.946122+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:14:07.389166+00:00",
+  "feature_available_at": "2026-11-12T15:16:48.274974+00:00",
+  "commit_verified_at": "2026-11-12T15:16:48.274974+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "Clarifies Zambia's stance on mining sector nationalization",
+    "securities": [
+      {
+        "name": "Zambia",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Zambia has clarified that it is not planning to take over more mining companies or nationalize the industry"
+      },
+      {
+        "name": "Finance Minister Bwalya Ng’andu",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Finance Minister Bwalya Ng’andu"
+      },
+      {
+        "name": "Glencore Plc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "government has already acquired Glencore Plc’s and Vedanta Ltd.’s local operations"
+      },
+      {
+        "name": "Vedanta Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "government has already acquired Glencore Plc’s and Vedanta Ltd.’s local operations"
+      },
+      {
+        "name": "President Edgar Lungu",
+        "ticker": null,
+        "exchange": null,
+        "quote": "remarks by President Edgar Lungu in December"
+      }
+    ],
+    "industries": [
+      {
+        "name": "mining",
+        "basis": "explicit",
+        "quote": "take over more mining companies or nationalize the industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Zambia": "organization",
+      "Finance Minister Bwalya Ng’andu": "issuer",
+      "Glencore Plc": "company",
+      "Vedanta Ltd.": "company",
+      "President Edgar Lungu": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:48.296041+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:14:07.389166+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Clarifies Zambia's stance on mining sector nationalization",
+      "securities": [
+        {
+          "name": "Zambia",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Zambia has clarified that it is not planning to take over more mining companies or nationalize the industry"
+        },
+        {
+          "name": "Finance Minister Bwalya Ng’andu",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Finance Minister Bwalya Ng’andu"
+        },
+        {
+          "name": "Glencore Plc",
+          "ticker": null,
+          "exchange": null,
+          "quote": "government has already acquired Glencore Plc’s and Vedanta Ltd.’s local operations"
+        },
+        {
+          "name": "Vedanta Ltd.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "government has already acquired Glencore Plc’s and Vedanta Ltd.’s local operations"
+        },
+        {
+          "name": "President Edgar Lungu",
+          "ticker": null,
+          "exchange": null,
+          "quote": "remarks by President Edgar Lungu in December"
+        }
+      ],
+      "industries": [
+        {
+          "name": "mining",
+          "basis": "explicit",
+          "quote": "take over more mining companies or nationalize the industry"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Zambia": "organization",
+        "Finance Minister Bwalya Ng’andu": "issuer",
+        "Glencore Plc": "company",
+        "Vedanta Ltd.": "company",
+        "President Edgar Lungu": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:14:07.418018+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:14:07.427838+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:14:07.406354+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses Zambia's stance on nationalizing the mining industry and its past actions regarding mining companies, which is relevant to understanding the国",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:54:31.788977+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

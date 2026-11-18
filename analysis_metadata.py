@@ -18,6 +18,7 @@ def validate_industries(items, source_text):
         if basis == "explicit" and compact(name) not in compact(quote):
             raise ValueError("explicit行业名称须在引文中出现；语义归类使用inferred")
         normalized = {"name": name, "basis": basis, "quote": quote}
+        if 'industry_key' in item:normalized['industry_key']=item['industry_key']
         if normalized not in result: result.append(normalized)
     return result
 
@@ -39,6 +40,7 @@ def grounded_industries(items, source_text):
             match=re.search(pattern,source_text,re.I)
             if not match:continue
             exact=dict(name=item['name'],basis='explicit',quote=match[0])
+            if 'industry_key' in item:exact['industry_key']=item['industry_key']
             result.extend(validate_industries([exact],source_text))
     return result
 
@@ -63,12 +65,12 @@ def preserve_analysis(final, notes, source_text):
 def public_analysis(note):
     entities = []
     for item in note.get("securities", []):
-        if not item.get('ticker'):continue
+        if not (item.get('ticker') or item.get('name')):continue
         entity = {"名称": item.get("name"), "股票代码": item.get("ticker"), "交易所": item.get("exchange")}
         if entity not in entities: entities.append(entity)
     industries = []
     for item in note.get("industries", []):
-        industry = {"名称": item["name"], "依据": item["basis"]}
+        industry = {"名称": item.get("industry_name_standard") or item["name"], "依据": item["basis"]}
         if industry not in industries: industries.append(industry)
     return {"股票实体": entities, "涉及行业": industries, "影响范围": validate_scopes(note.get("impact_scope", []))}
 

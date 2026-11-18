@@ -1,0 +1,114 @@
+{
+  "source_id": "f39a5155a61d2a7a955d64e9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_07_02_gold_commodities_cnbc.json",
+      "sha256": "742b5de9b351146018a060776a44dcab5f8d153f63fb1f7a6550b4fafe7dd15b",
+      "filename": "2013_07_02_gold_commodities_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d2084389f7a24dc0a4c0042b6951f6d3115d8b77119b132f615b63164d616da6",
+  "input_hash": "9d5c455c7b9613b05a9ccfbf6d9040148b7ac85ba0e033a23a90d5bf52c94e73",
+  "matching_audit_hash": "44e60c7c7e3517d0177a63f3a798d55a2b4d43c24d405ad3f4bbd9c9c7bc4b9b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "76aa8cfe90ecffca83c0b7005228cea74925ac268e8ba5322763bcc8d000ace9",
+    "raw_sha256": "052c39619bf91a9459fc0ced1b674fb58ae8929cb2489ff9be77d369edecb07a",
+    "date_quote": "article:published_time=2013-07-02T21:24:03+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Gold",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Gold slipped from earlier highs on Tuesday, ending lower as the dollar strengthened and investors looked for further indications that the U.S. Federal Reserve may soon end or taper its economic stimulus program."
+    },
+    {
+      "name": "SPDR Gold Trust",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SPDR Gold Trust"
+    }
+  ],
+  "record_hash": "d8cb12767d8335118642851b320e6eb9aefa11a929ad4088b40f620bcbf7e37e",
+  "outputs": [
+    {
+      "path": "US\\2013_07_02_gold_commodities_cnbc.json",
+      "sha256": "f4348a8449cc5e6fa3723716fd81ca402e8b3e02f3cf5cd02e87a505e9cad941"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-07-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:30.721107+00:00",
+    "fetched_at": "2026-11-10T21:44:02.635176+00:00",
+    "feature_available_at": "2026-11-10T21:44:40.133613+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:47.050806+00:00",
+  "commit_verified_at": "2026-11-12T13:52:47.050806+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Gold",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gold slipped from earlier highs on Tuesday, ending lower as the dollar strengthened and investors looked for further indications that the U.S. Federal Reserve may soon end or taper its economic stimulus program."
+      },
+      {
+        "name": "SPDR Gold Trust",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SPDR Gold Trust"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Precious Metals",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Gold",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

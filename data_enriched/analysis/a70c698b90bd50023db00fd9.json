@@ -1,0 +1,145 @@
+{
+  "source_id": "a70c698b90bd50023db00fd9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_01_07_financial_financial-services_sec.json",
+      "sha256": "912916bbcd1fb7cd2979f1979d4384114c91ccca1254b9360f6100c609074ac2",
+      "filename": "2014_01_07_financial_financial-services_sec.json"
+    }
+  ],
+  "original_record_hash": "58170d5484ebaba9e9bf1b46f69690766ef090f82c8cc7de2684ced756c9e3ae",
+  "input_hash": "1d24e4136122886f2e7a22d31479fb630f1bbecd284beb2539e0c06234b67bd6",
+  "matching_audit_hash": "829dbb695779d33ddb3d7574f6a1796ef7eebd254d07b8f0053c55d9cc33bd3a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "609d43fb1319487568e3945d1558e6d3abea8916985b43fb6175961d4aacd00b",
+    "raw_sha256": "0cfe339eee09408ef137f792d5da7cecc66638e6bb474c6748afd96b1e9072ff",
+    "date_quote": "SEC filing datePublished=2014-01-07",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000119312514004144/d653463d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Asta Funding, Inc.",
+      "ticker": "ASFI",
+      "exchange": null,
+      "quote": "Asta Funding, Inc. (NASDAQ: ASFI)"
+    },
+    {
+      "name": "CBC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CBC"
+    },
+    {
+      "name": "CBC Acquisition",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CBC Acquisition"
+    },
+    {
+      "name": "CBC Settlement Funding, LLC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CBC Settlement Funding, LLC"
+    },
+    {
+      "name": "CBC Management Services, LLC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CBC Management Services, LLC"
+    }
+  ],
+  "record_hash": "e3f76fd1dd7672e94ba53cc500994ab522cf69a3000c6ff68cf1d022753dcbc0",
+  "outputs": [
+    {
+      "path": "US\\2014_01_07_financial_financial-services_sec.json",
+      "sha256": "3b186d2421045b067e22d410243f0b846e0b039a4408185874aa43ec1aba992e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-01-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:13:16.819146+00:00",
+    "feature_available_at": "2026-11-11T10:24:57.406865+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:48.269137+00:00",
+  "commit_verified_at": "2026-11-12T13:52:48.269137+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": "ASFI",
+        "exchange": null,
+        "quote": "Asta Funding, Inc. (NASDAQ: ASFI)"
+      },
+      {
+        "name": "CBC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CBC"
+      },
+      {
+        "name": "CBC Acquisition",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CBC Acquisition"
+      },
+      {
+        "name": "CBC Settlement Funding, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CBC Settlement Funding, LLC"
+      },
+      {
+        "name": "CBC Management Services, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CBC Management Services, LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source_id": "6f015917e1d23a6c7bb1d075",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_05_09_Biotechnology_Biotechnology_cnbc.json",
+      "sha256": "a7c0bb7a00a3e4b48ad3d04823d760816347b192684c33e0d168a6338fa0ac31",
+      "filename": "2022_05_09_Biotechnology_Biotechnology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d8182147fe6d2bdc0393a886e1ce341ae4591384b563cf3eb8d5d15e93d37cd8",
+  "input_hash": "424e7081a70e2560838831a4644ebc66092be7f0e5b29b5d4eb56f450cf81e8e",
+  "matching_audit_hash": "a07c4a0b83bbe14f5674025ffa45efcbb99f0a5deb92da25d467a8477fa1e583",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "84bc7c3b253d0bc118d510c0815ad0a3b9071c05c09803381615546b8b28e0fd",
+    "raw_sha256": "5d2656b733f508eff36dc07223bd6d6c08419d0aa62c0bf76a80ab8a19e3e300",
+    "date_quote": "Mon, May 9 20226:49 AM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "NASDAQ Biotech Index",
+      "ticker": null,
+      "exchange": null,
+      "quote": "more than 20% of NASDAQ Biotech Index's members are trading for less than cash"
+    }
+  ],
+  "record_hash": "4827f5ffbe1847226c8820d1262ba9d397f32d361ce4db8d99a32be6f43537a7",
+  "outputs": [
+    {
+      "path": "US\\2022_05_09_Biotechnology_Biotechnology_cnbc.json",
+      "sha256": "7ef162736fe27d192f78a5ca2a78bafb3e16485a94f9e4083415be9d092206eb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-05-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:38:01.991764+00:00",
+    "fetched_at": "2026-11-10T20:57:09.615675+00:00",
+    "feature_available_at": "2026-11-10T20:57:17.168811+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:41.277389+00:00",
+  "commit_verified_at": "2026-11-12T13:53:41.277389+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "NASDAQ Biotech Index",
+        "ticker": null,
+        "exchange": null,
+        "quote": "more than 20% of NASDAQ Biotech Index's members are trading for less than cash"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

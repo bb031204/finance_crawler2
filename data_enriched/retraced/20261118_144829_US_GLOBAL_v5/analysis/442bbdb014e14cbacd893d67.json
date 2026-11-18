@@ -1,0 +1,910 @@
+{
+  "source_id": "442bbdb014e14cbacd893d67",
+  "status": "completed",
+  "source_record_hash": "6e643481e0e78eabfec2b6c2468123e0c24652570ce6add39035bbe6f45de1d4",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/40545/0000040545-15-000036-index.html",
+    "attempted_at": "2026-11-18T13:08:04.420859+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/40545/0000040545-15-000036-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054515000036/ge8kpkh0415.htm",
+    "fetched_at": "2026-11-18T13:08:15.939110+00:00",
+    "source_body_hash": "2dba3c6c7467f990c06fe1fbd445887f17ef6d28203672b523a18d3e44d6fcc6",
+    "raw_sha256": "7c447187d9f26a303a97b2e989eead45c1fdfc2130ac55c266fe35eac8ac3526",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054515000036/ge8kpkh0415.htm",
+        "type": "8-K",
+        "description": "",
+        "raw_sha256": "7c447187d9f26a303a97b2e989eead45c1fdfc2130ac55c266fe35eac8ac3526",
+        "text_sha256": "a6f0d304b5d6ea9e93f3f9cf7ccaacb064c47a62a61b0b00a6d07399c7415870",
+        "text_start": 0,
+        "text_end": 12077
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054515000036/ge8kex99apr10.htm",
+        "type": "EX-99",
+        "description": "",
+        "raw_sha256": "7b6fb7b7c2840765ac7d500b3224485e3ac9f6790402db31eafee22ce4d32c8e",
+        "text_sha256": "f0b9006d3a0d8a7feaa64a7876dc04426d926394f0f365292cd026512320d50e",
+        "text_start": 12079,
+        "text_end": 25994
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-04-10",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/442bbdb014e14cbacd893d67.json",
+    "sha256": "7e5a240c8ea1b8845515c5fc647e84d12f7b3ae198587da15f36048b415d5e1e",
+    "bundled_path": "legacy_audit/442bbdb014e14cbacd893d67.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "0a4739e1f18f6ec7239cdc4e0adab906436c8bd3128ee55d1c2d0d586e319866",
+      "llm_inferred_at": "2026-11-18T13:08:30.040565+00:00",
+      "model_duration_seconds": 14.0584773,
+      "prompt_tokens": 3675,
+      "completion_tokens": 542,
+      "selection": [
+        {
+          "source_id": "442bbdb014e14cbacd893d67",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The information included under Item 1.01 is incorporated herein by reference.",
+              "rationale": "The article discusses the sale of GECC's Real Estate debt and equity portfolio, which is part of the financial services sector, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "On April 10, 2015, the Company issued a press release announcing the Company's plan described above to dispose of most of its financial services assets.",
+              "rationale": "The article specifically mentions General Electric Company's actions, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely"
+            },
+            {
+              "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+              "name": "Industrials",
+              "basis": "explicit",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "143dca07e951a6e34b01e2e8a67ab21f9d822fb1490572c255ca43d999b6cd81",
+      "llm_inferred_at": "2026-11-18T13:08:40.634971+00:00",
+      "model_duration_seconds": 10.5781523,
+      "prompt_tokens": 3719,
+      "completion_tokens": 543,
+      "selection": [
+        {
+          "source_id": "442bbdb014e14cbacd893d67",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely",
+              "rationale": "The plan involves regulatory review and approval, which is a sector-wide policy event affecting the financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely",
+              "rationale": "The plan is directly related to General Electric Company's financial services businesses and their regulatory compliance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "explicit",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely"
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "4305c2ce6acfc897d3517f93bcbec2b0a3f96635d78ba5573421fd9defe35486",
+      "llm_inferred_at": "2026-11-18T13:09:02.538880+00:00",
+      "model_duration_seconds": 21.878338,
+      "prompt_tokens": 3698,
+      "completion_tokens": 1079,
+      "selection": [
+        {
+          "source_id": "442bbdb014e14cbacd893d67",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+              "rationale": "The article discusses GE's strategic shift to focus on its industrial businesses, indicating a significant industry-wide impact on the industrial sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+              "rationale": "The article directly references GE's strategic direction and its impact on its own operations and financial performance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+              "rationale": "The article discusses the impact of the financial services industry on GE's operations and strategic decisions.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "and credit markets on the availability and cost of GECC's funding, and GECC's exposure to counterparties; the impact of conditions in the housing market and unemployment rates on the level of commercial and consumer credit defaults; pending and future mortgage loan repurchase claims and other litigation claims in connection with WMC, which may",
+              "rationale": "The article discusses the impact of macroeconomic conditions and financial market conditions on GE's operations, which are relevant to the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+              "name": "Industrials",
+              "basis": "explicit",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+              "industry_scope_quote": "and technology company with businesses in essential infrastructure industries. These businesses are leaders in technology, the Industrial Internet and advanced manufacturing. They",
+              "industry_name_original": "Industrials",
+              "mechanism": "strategic shift to focus on industrial businesses",
+              "confidence": 0.95,
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "and technology company with businesses in essential infrastructure industries. These businesses are leaders in technology, the Industrial Internet and advanced manufacturing. They",
+              "industry_name_original": "Financials",
+              "mechanism": "strategic shift to focus on industrial businesses",
+              "confidence": 0.95,
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "industry_scope_quote": "and technology company with businesses in essential infrastructure industries. These businesses are leaders in technology, the Industrial Internet and advanced manufacturing. They",
+              "industry_name_original": "Real Estate",
+              "mechanism": "strategic shift to focus on industrial businesses",
+              "confidence": 0.95,
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "7e6df5529e00722f101c7f43358f1c636c9545ffc71bf2b4bbb84c5884a9023f",
+      "llm_inferred_at": "2026-11-18T13:09:22.838549+00:00",
+      "model_duration_seconds": 20.2630987,
+      "prompt_tokens": 3742,
+      "completion_tokens": 1070,
+      "selection": [
+        {
+          "source_id": "442bbdb014e14cbacd893d67",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+              "rationale": "The article discusses GE's strategic shift to focus on its industrial businesses, which are described as high-value and essential infrastructure industries. This indicates a sector-wide impact on the industrial sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+              "rationale": "The article directly refers to GE as a company and outlines its strategic plan to focus on its industrial businesses, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+              "rationale": "The article discusses GE's strategic shift and its impact on the broader financial and industrial markets, indicating a market-wide impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "and credit markets on the availability and cost of GECC's funding, and GECC's exposure to counterparties; the impact of conditions in the housing market and unemployment rates on the level of commercial and consumer credit defaults; pending and future mortgage loan repurchase claims and other litigation claims in connection with WMC, which may",
+              "rationale": "The article discusses the impact of conditions in the financial and credit markets, which are broad macroeconomic factors affecting the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+              "name": "Industrials",
+              "basis": "explicit",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "TRSR:0784e9faad7180ba",
+              "name": "Real Estate Investment Trusts",
+              "basis": "explicit",
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+              "industry_scope_quote": "and technology company with businesses in essential infrastructure industries. These businesses are leaders in technology, the Industrial Internet and advanced manufacturing. They",
+              "industry_name_original": "Industrials",
+              "mechanism": "strategic shift to focus on industrial businesses",
+              "confidence": 0.95,
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "and technology company with businesses in essential infrastructure industries. These businesses are leaders in technology, the Industrial Internet and advanced manufacturing. They",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "strategic shift to focus on industrial businesses",
+              "confidence": 0.95,
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            },
+            {
+              "industry_key": "TRSR:0784e9faad7180ba",
+              "industry_scope_quote": "and technology company with businesses in essential infrastructure industries. These businesses are leaders in technology, the Industrial Internet and advanced manufacturing. They",
+              "industry_name_original": "Real Estate Investment Trusts",
+              "mechanism": "strategic shift to focus on industrial businesses",
+              "confidence": 0.95,
+              "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "319afb821c78dc5b46d442ea30f4afe2b03999a7d63d9df5fbe41601afa71be8",
+      "llm_inferred_at": "2026-11-18T13:09:48.802785+00:00",
+      "model_duration_seconds": 25.9374229,
+      "prompt_tokens": 3627,
+      "completion_tokens": 1308,
+      "selection": [
+        {
+          "source_id": "442bbdb014e14cbacd893d67",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The separation of Synchrony Financial, which is targeted by the end of 2015, and other recently announced dispositions, account for another $75 billion in ENI reduction (the",
+              "rationale": "The article discusses the separation of Synchrony Financial and other dispositions, which are part of a broader industry-wide strategy to reduce financial services businesses. This indicates an industry-level impact on financial institutions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "GE expects to reduce its share count to 8-8.5 billion by 2018.",
+              "rationale": "The article specifically mentions GE's plans to reduce its share count, which is a company-specific action.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "GE has amended its income maintenance agreement to guarantee all tradable senior and subordinated debt securities and all commercial paper issued or guaranteed by GECC.",
+              "rationale": "This indicates an industry-wide impact on financial institutions, as it involves the restructuring of financial obligations and guarantees, which are common in the financial services sector.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "availability and cost of GECC's funding, and GECC's exposure to counterparties; the impact of conditions in the housing market and unemployment rates on the level of commercial and consumer credit defaults; pending and future mortgage loan repurchase claims and other litigation claims in connection with WMC, which may affect our estimates of",
+              "rationale": "The article discusses the impact of macroeconomic conditions on the financial market, including housing, credit defaults, and litigation claims, which are relevant to the US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "The separation of Synchrony Financial, which is targeted by the end of 2015, and other recently announced dispositions, account for another $75 billion in ENI reduction (the"
+            },
+            {
+              "industry_key": "SEC-SIC:6532",
+              "name": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "basis": "inferred",
+              "quote": "For the Real Estate deal, Bank of America and Kimberlite Advisors provided financial advice and Hogan Lovells provided legal advice."
+            },
+            {
+              "industry_key": "TRSR:0780938707f106d7",
+              "name": "Savings Institutions",
+              "basis": "inferred",
+              "quote": "The separation of Synchrony Financial, which is targeted by the end of 2015, and other recently announced dispositions, account for another $75 billion in ENI reduction (the"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "aircraft retirements or reduced energy demand and other factors that may affect the level of demand and financial performance of the major industries and customers we serve; the",
+              "industry_name_original": "Financials",
+              "mechanism": "The article discusses the impact of macroeconomic conditions on the financial services sector, including the potential for reduced demand and financial performance in major industries, which affects the financial sector.",
+              "confidence": 0.85,
+              "quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other"
+            },
+            {
+              "industry_key": "SEC-SIC:6532",
+              "industry_scope_quote": "aircraft retirements or reduced energy demand and other factors that may affect the level of demand and financial performance of the major industries and customers we serve; the",
+              "industry_name_original": "REAL ESTATE DEALERS (FOR THEIR OWN ACCOUNT)",
+              "mechanism": "The article discusses the impact of macroeconomic conditions on the real estate sector, including the potential for reduced demand and financial performance in major industries, which affects the real estate sector.",
+              "confidence": 0.85,
+              "quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other"
+            },
+            {
+              "industry_key": "TRSR:0780938707f106d7",
+              "industry_scope_quote": "aircraft retirements or reduced energy demand and other factors that may affect the level of demand and financial performance of the major industries and customers we serve; the",
+              "industry_name_original": "Savings Institutions",
+              "mechanism": "The article discusses the impact of macroeconomic conditions on the savings institutions sector, including the potential for reduced demand and financial performance in major industries, which affects the savings sector.",
+              "confidence": 0.85,
+              "quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "f414b43aac07c3df1a7fb132316d93b5b0981becbe0d8aebeefba47790e4b065",
+      "llm_inferred_at": "2026-11-18T13:10:09.364404+00:00",
+      "model_duration_seconds": 20.5398487,
+      "prompt_tokens": 3671,
+      "completion_tokens": 1081,
+      "selection": [
+        {
+          "source_id": "442bbdb014e14cbacd893d67",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The separation of Synchrony Financial, which is targeted by the end of 2015, and other recently announced dispositions, account for another $75 billion in ENI reduction (the",
+              "rationale": "The article discusses the separation of Synchrony Financial and other dispositions, which are part of a broader industry-wide strategy to reduce financial services businesses. This indicates an industry-level impact on financial institutions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "GE expects to reduce its share count to 8-8.5 billion by 2018.",
+              "rationale": "The article specifically mentions GE's plans to reduce its share count, which is a company-specific action.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "GE has amended its income maintenance agreement to guarantee all tradable senior and subordinated debt securities and all commercial paper issued or guaranteed by GECC.",
+              "rationale": "This action affects the broader financial services industry, particularly in terms of debt guarantees and liquidity management.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "availability and cost of GECC's funding, and GECC's exposure to counterparties; the impact of conditions in the housing market and unemployment rates on the level of commercial and consumer credit defaults; pending and future mortgage loan repurchase claims and other litigation claims in connection with WMC, which may affect our estimates of",
+              "rationale": "The article discusses macroeconomic conditions and financial market impacts that affect the broader US equity market, including housing, credit defaults, and litigation claims.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "GE brings together the physical and digital worlds in ways no other company can."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "GE has amended its income maintenance agreement to guarantee all tradable senior and subordinated debt securities and all commercial paper issued or guaranteed by GECC."
+            },
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "For the Real Estate deal, Bank of America and Kimberlite Advisors provided financial advice and Hogan Lovells provided legal advice."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "aircraft retirements or reduced energy demand and other factors that may affect the level of demand and financial performance of the major industries and customers we serve; the",
+              "industry_name_original": "Financials",
+              "mechanism": "The article discusses the impact of economic conditions on the financial performance of major industries and customers, which affects the financial services sector broadly.",
+              "confidence": 0.85,
+              "quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other"
+            },
+            {
+              "industry_key": "SP500-SECTOR:5226954feafeae18",
+              "industry_scope_quote": "aircraft retirements or reduced energy demand and other factors that may affect the level of demand and financial performance of the major industries and customers we serve; the",
+              "industry_name_original": "Real Estate",
+              "mechanism": "The article discusses the impact of economic conditions on the financial performance of major industries and customers, which affects the real estate sector broadly.",
+              "confidence": 0.85,
+              "quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "2d128297040292cc459115797a7b7b375b96e240ece232da8f846fd4d1e25738",
+      "llm_inferred_at": "2026-11-18T13:10:15.036094+00:00",
+      "model_duration_seconds": 5.6577704,
+      "prompt_tokens": 879,
+      "completion_tokens": 305,
+      "selection": [
+        {
+          "source_id": "442bbdb014e14cbacd893d67",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6799",
+              "name": "INVESTORS, NEC",
+              "basis": "explicit",
+              "quote": "Investor Contact: Matt Cribbins, 203.373.2424 matthewg.cribbins@ge.com Media Contact: Seth Martin, 203.572.3567 seth.martin@ge.com (4)"
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "Investor Contact: Matt Cribbins, 203.373.2424 matthewg.cribbins@ge.com Media Contact: Seth Martin, 203.572.3567 seth.martin@ge.com (4)"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:10:15.075381+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2dba3c6c7467f990c06fe1fbd445887f17ef6d28203672b523a18d3e44d6fcc6",
+    "raw_sha256": "7c447187d9f26a303a97b2e989eead45c1fdfc2130ac55c266fe35eac8ac3526",
+    "date_quote": "SEC filing datePublished=2015-04-10",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054515000036/ge8kpkh0415.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "General Electric Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Company"
+      },
+      {
+        "name": "General Electric Capital Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Capital Corporation"
+      },
+      {
+        "name": "Synchrony Financial",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Synchrony Financial"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "name": "Financials",
+        "basis": "inferred",
+        "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+        "name": "Industrials",
+        "basis": "inferred",
+        "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "cb8757a58a3ca860",
+        "industry_name_standard": "Industrials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:5226954feafeae18",
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "For the Real Estate deal, Bank of America and Kimberlite Advisors provided financial advice and Hogan Lovells provided legal advice.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5226954feafeae18",
+        "industry_name_standard": "Real Estate",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "For the Real Estate deal, Bank of America and Kimberlite Advisors provided financial advice and Hogan Lovells provided legal advice.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "industry_scope_quote": "aircraft retirements or reduced energy demand and other factors that may affect the level of demand and financial performance of the major industries and customers we serve; the",
+        "industry_name_original": "Financials",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the impact of economic conditions on the financial performance of major industries and customers, which affects the financial services sector broadly.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Financials",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "SEC-SIC:6799",
+        "name": "INVESTORS, NEC",
+        "basis": "inferred",
+        "quote": "Investor Contact: Matt Cribbins, 203.373.2424 matthewg.cribbins@ge.com Media Contact: Seth Martin, 203.572.3567 seth.martin@ge.com (4)",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6799",
+        "industry_name_standard": "INVESTORS, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Investor Contact: Matt Cribbins, 203.373.2424 matthewg.cribbins@ge.com Media Contact: Seth Martin, 203.572.3567 seth.martin@ge.com (4)",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:b77d150d2b7cc6d3",
+        "name": "Finance/Investors Services",
+        "basis": "inferred",
+        "quote": "Investor Contact: Matt Cribbins, 203.373.2424 matthewg.cribbins@ge.com Media Contact: Seth Martin, 203.572.3567 seth.martin@ge.com (4)",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "b77d150d2b7cc6d3",
+        "industry_name_standard": "Finance/Investors Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Investor Contact: Matt Cribbins, 203.373.2424 matthewg.cribbins@ge.com Media Contact: Seth Martin, 203.572.3567 seth.martin@ge.com (4)",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "442bbdb014e14cbacd893d67",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_04_10_financial_Financial-Services_sec.json",
+        "sha256": "fe3771964c40af30a6a973ad54531c2d1df5ad62d038abd5f3202d4fee9f1dec",
+        "filename": "2015_04_10_financial_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "b068230a6ddd8c98ff4188faf50d3dd4df9b9fef6fcebb47fedc147f1ff3c875",
+    "input_hash": "f418d1b6be49cd28cdae9a659242ac6b7175e725d4928d0e09612e9e42f57848",
+    "matching_audit_hash": "1db7172269666422fa4f30efeb6d764d2738c1c08898732b4cc06df6957e3595",
+    "legacy_security_evidence": [
+      {
+        "name": "General Electric Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Company"
+      },
+      {
+        "name": "General Electric Capital Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Capital Corporation"
+      },
+      {
+        "name": "Synchrony Financial",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Synchrony Financial"
+      }
+    ],
+    "record_hash": "6e643481e0e78eabfec2b6c2468123e0c24652570ce6add39035bbe6f45de1d4",
+    "outputs": [
+      {
+        "path": "US\\2015_04_10_financial_Financial-Services_sec.json",
+        "sha256": "a8b37bfde4c757d431be515a3c4c5db0e6d599348054e94dfddc18d841ddf7df"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-04-10",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:31:01.055111+00:00",
+      "fetched_at": "2026-11-11T11:29:43.827385+00:00",
+      "feature_available_at": "2026-11-11T11:30:42.866054+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:10:15.036094+00:00",
+    "feature_available_at": "2026-11-18T13:10:15.075381+00:00",
+    "commit_verified_at": "2026-11-12T13:52:58.151492+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "SP500-SECTOR:cb8757a58a3ca860",
+        "industry_scope_quote": "and technology company with businesses in essential infrastructure industries. These businesses are leaders in technology, the Industrial Internet and advanced manufacturing. They",
+        "industry_name_original": "Industrials",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "strategic shift to focus on industrial businesses",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "cb8757a58a3ca860",
+        "industry_name_standard": "Industrials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "industry_scope_quote": "aircraft retirements or reduced energy demand and other factors that may affect the level of demand and financial performance of the major industries and customers we serve; the",
+        "industry_name_original": "Financials",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article discusses the impact of economic conditions on the financial performance of major industries and customers, which affects the financial services sector broadly.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.85,
+        "quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "the value of financial assets, including the impact of these conditions on our ability to sell or the value of incremental assets to be sold as part of this plan as well as other",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely",
+        "rationale": "The plan is directly related to General Electric Company's financial services businesses and their regulatory compliance.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the plan, aspects of which are subject to regulatory review and approval, with its regulators and staff of the Financial Stability Oversight Council (\"FSOC\") and will work closely",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "rationale": "The article directly refers to GE as a company and outlines its strategic plan to focus on its industrial businesses, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "rationale": "The article discusses GE's strategic shift to focus on its industrial businesses, which are described as high-value and essential infrastructure industries. This indicates a sector-wide impact on the industrial sector.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "GE is a fast-growth, high-tech industrial company, built on the capabilities of the GE Store.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "GE expects to reduce its share count to 8-8.5 billion by 2018.",
+        "rationale": "The article specifically mentions GE's plans to reduce its share count, which is a company-specific action.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "GE expects to reduce its share count to 8-8.5 billion by 2018.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "The separation of Synchrony Financial, which is targeted by the end of 2015, and other recently announced dispositions, account for another $75 billion in ENI reduction (the",
+        "rationale": "The article discusses the separation of Synchrony Financial and other dispositions, which are part of a broader industry-wide strategy to reduce financial services businesses. This indicates an industry-level impact on financial institutions.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The separation of Synchrony Financial, which is targeted by the end of 2015, and other recently announced dispositions, account for another $75 billion in ENI reduction (the",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_dictionary_code_quote_conflict"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/40545/0000040545-15-000036-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "6e643481e0e78eabfec2b6c2468123e0c24652570ce6add39035bbe6f45de1d4",
+    "content_hash": "983db8d95674e8642e8882b8614bcac350af3f667123df68c1ab1869331cc186",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:10:15.038152+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/442bbdb014e14cbacd893d67.json",
+      "sha256": "cdd13f454d29e1d7dd8fbccc7c3025918c2004b6b34d08f74301bc5003a82e4a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 130.6720000000205
+}

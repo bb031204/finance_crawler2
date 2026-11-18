@@ -1,0 +1,96 @@
+{
+  "source_id": "e57572215335822f507fc5ed",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_10_06_Investing_Financial-Services_cnbc.json",
+      "sha256": "aeec48dcbf266c8c3105f260cf2ffef6c50b577131e2a0df561539769877bab5",
+      "filename": "2017_10_06_Investing_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "8f530327d7810fc9a25185fa10b521e36ac4679a16ab6354000644e0e37241a0",
+  "input_hash": "57f50dd017761a2886c39336082ea55fbfffa7d2c38dbe6f42a3b3fb521e5291",
+  "matching_audit_hash": "45c5955f7fee1a2ad20c22ae8cb79b652e4b844782316fd2d46f7d6f9260a003",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "00fc1a53d31284fe108acdb46849bb21b44caaae522f1c43f298052106948990",
+    "raw_sha256": "0e41eccc004c88f90cc64ef7b1c0f2002ae0bf566fbfcaa32b756bc53bd60244",
+    "date_quote": "article:published_time=2017-10-06T19:41:51+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Piper Jaffray",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Piper Jaffray, a firm that employs dozens of research analysts itself."
+    }
+  ],
+  "record_hash": "c3ce1636e136006b245e48ab276f2dd41c59c327646f87caeff79b00e31de83c",
+  "outputs": [
+    {
+      "path": "US\\2017_10_06_Investing_Financial-Services_cnbc.json",
+      "sha256": "631621ab27bdbdc7e0d5220be8fab832ff5faf7c09a3d08e209a231ece92baea"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-10-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:46.064972+00:00",
+    "fetched_at": "2026-11-10T21:52:55.676277+00:00",
+    "feature_available_at": "2026-11-10T21:53:04.002247+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:17.048655+00:00",
+  "commit_verified_at": "2026-11-12T13:53:17.048655+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Piper Jaffray",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Piper Jaffray, a firm that employs dozens of research analysts itself."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

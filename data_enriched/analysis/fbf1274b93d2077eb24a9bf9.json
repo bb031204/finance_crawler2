@@ -1,0 +1,97 @@
+{
+  "source_id": "fbf1274b93d2077eb24a9bf9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_12_stock_Social-Media_cnbc.json",
+      "sha256": "9ae9405255a69345541891e9c5c1bdcc997033a61496edea1ac01d2b0886d387",
+      "filename": "2018_01_12_stock_Social-Media_cnbc.json"
+    }
+  ],
+  "original_record_hash": "8785ebfbc4331a519d983779fdf4e9493b258b0ee2a2067f5e3334bc7383c70d",
+  "input_hash": "a3980b331fc9e81e7de237a79b63497eaf157c9df93d0df27d2281c3e1d5320e",
+  "matching_audit_hash": "b6d75d42a72d99cecb22b15d74c9f0bdc927a2e62c964452d565f3762b6b3219",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "72b4b59c81e1183dc502c3f0ccaa3729c29c2739f0a0217e5f7e6f0e16d1fa14",
+    "raw_sha256": "8bc4887348cb1737de144b5c9b031b898d8947dc180dbd10d15d79946646ee90",
+    "date_quote": "article:published_time=2018-01-12T18:30:38+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Facebook",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Facebook"
+    }
+  ],
+  "record_hash": "a0ae804f14be34d0eab853ef590621f079b73e2e433b79c763cd84e86034a7ad",
+  "outputs": [
+    {
+      "path": "US\\2018_01_12_stock_Social-Media_cnbc.json",
+      "sha256": "44b1ba6c70ccda20ab066da923334c019b00d2b99c0f655da71ecffacaaf4e63"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:49.553218+00:00",
+    "fetched_at": "2026-11-10T21:56:57.038411+00:00",
+    "feature_available_at": "2026-11-10T21:57:26.553621+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:19.042536+00:00",
+  "commit_verified_at": "2026-11-12T13:53:19.042536+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Facebook",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Facebook"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Social Media",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

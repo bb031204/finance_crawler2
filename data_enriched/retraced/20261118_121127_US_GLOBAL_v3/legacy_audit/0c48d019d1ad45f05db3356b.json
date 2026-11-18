@@ -1,0 +1,112 @@
+{
+  "source_id": "0c48d019d1ad45f05db3356b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_11_02_Consumer-Goods_Retail_cnbc.json",
+      "sha256": "e0df42edffeea80d43480919f2e7f210d6987b96bdc0e86b9000f24db4c2e417",
+      "filename": "2017_11_02_Consumer-Goods_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "7ec007bb364efec328eea7e27859b088c7de2bbb81a71922ee0f3a4a0bc3a844",
+  "input_hash": "af7f1de9924bbad268cf5cf8c691b9b8ff6e0e3272db87629630a2184d346fa5",
+  "matching_audit_hash": "9eefe8f6b34c063d9ec815ce17c8c29cd10cc0b2407553fa6c3cbfe5fb373ace",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8ccb458ad5017fc85f8a3142898ea0d895f87f55bda45251e84fc9740547b061",
+    "raw_sha256": "1f4d95701ffc7f7867b41ef4c760c3906b1642c4a565ced69ed8ad8ef137a846",
+    "date_quote": "article:published_time=2017-11-02T19:32:53+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9e6bf46acc4cc5c4cf9d13469dee6f1d94b001fb1b23a5dbadbbc68ec857bfd1",
+  "outputs": [
+    {
+      "path": "US\\2017_11_02_Consumer-Goods_Retail_cnbc.json",
+      "sha256": "d9d76e15e297184f27fe6845de224dc5b1bb51439b26e82360427674fea90aeb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-11-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:06.516610+00:00",
+    "fetched_at": "2026-11-10T17:28:00.602930+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.332916+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:41:28.337438+00:00",
+  "feature_available_at": "2026-11-12T14:41:28.382685+00:00",
+  "commit_verified_at": "2026-11-12T14:41:28.382685+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary includes financial results, guidance changes, and strategic moves such as the sale of Tazo tea brand and dividend increase.",
+    "securities": [
+      {
+        "name": "Starbucks",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Starbucks"
+      },
+      {
+        "name": "Unilever",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Unilever"
+      },
+      {
+        "name": "Thomson Reuters",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Thomson Reuters"
+      },
+      {
+        "name": "Chase",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chase"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Food and Beverage",
+        "basis": "inferred",
+        "quote": "Starbucks"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Starbucks": "company",
+      "Unilever": "company",
+      "Thomson Reuters": "company",
+      "Chase": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

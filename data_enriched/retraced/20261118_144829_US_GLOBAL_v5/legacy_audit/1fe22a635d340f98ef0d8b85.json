@@ -1,0 +1,215 @@
+{
+  "source_id": "1fe22a635d340f98ef0d8b85",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_20_Regulatory_Financial-Services_sec.json",
+      "sha256": "d78ff9f8e3281ba424212b21324142a396eb994337c635b39c607d4e57008db1",
+      "filename": "2019_03_20_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "28c30d89d88e28c92249a5f25d0696599d2f5709aec52fe86879244d088a3465",
+  "input_hash": "e4411b77f84b97e9c9bcbdf194bfed173560314831a651ab9f20cd16d9948a2a",
+  "matching_audit_hash": "4cbbc9965193c4d7549d23ceec6d740614249254ae942cb21bd2b77e7a8b5313",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "672f38b20f0f7ebbac1cc05f86c7ee9a98d3bb35626824eaa06fdf88ae7bc38d",
+    "raw_sha256": "28cacf75381f11ea761839c9188123f267d63f40879c8e32b21b455f75b8533a",
+    "date_quote": "For Immediate Release 2019-39 Washington D.C., March 20, 2019 —",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ac279654c64b98f4a676e0b556de5b5702c3e0e5d7f3c82d519e9ebf307ae2ee",
+  "outputs": [
+    {
+      "path": "US\\2019_03_20_Regulatory_Financial-Services_sec.json",
+      "sha256": "ac62a3dad05b62593ba996019a53ff922489c32de635d9b8264ba20f0538cc40"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:45.964112+00:00",
+    "fetched_at": "2026-11-10T10:41:17.627454+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.103501+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:11:14.112594+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.395815+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.395815+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Reforms aim to modernize offering processes for financial funds.",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Business Development Companies (BDCs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Business Development Companies (BDCs)"
+      },
+      {
+        "name": "Registered Closed-End Funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Registered Closed-End Funds"
+      },
+      {
+        "name": "Well-Known Seasoned Issuers (WKSIs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Well-Known Seasoned Issuers (WKSIs)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "U.S. Securities and Exchange Commission"
+      },
+      {
+        "name": "Investment Management",
+        "basis": "inferred",
+        "quote": "Business Development Companies (BDCs)"
+      },
+      {
+        "name": "Securities Regulation",
+        "basis": "inferred",
+        "quote": "U.S. Securities and Exchange Commission"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "Business Development Companies (BDCs)": "organization",
+      "Registered Closed-End Funds": "organization",
+      "Well-Known Seasoned Issuers (WKSIs)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:45.424044+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:11:14.112594+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Reforms aim to modernize offering processes for financial funds.",
+      "securities": [
+        {
+          "name": "U.S. Securities and Exchange Commission",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The U.S. Securities and Exchange Commission (SEC)"
+        },
+        {
+          "name": "Business Development Companies (BDCs)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Business Development Companies (BDCs)"
+        },
+        {
+          "name": "Registered Closed-End Funds",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Registered Closed-End Funds"
+        },
+        {
+          "name": "Well-Known Seasoned Issuers (WKSIs)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Well-Known Seasoned Issuers (WKSIs)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "U.S. Securities and Exchange Commission"
+        },
+        {
+          "name": "Investment Management",
+          "basis": "inferred",
+          "quote": "Business Development Companies (BDCs)"
+        },
+        {
+          "name": "Securities Regulation",
+          "basis": "inferred",
+          "quote": "U.S. Securities and Exchange Commission"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Securities and Exchange Commission": "organization",
+        "Business Development Companies (BDCs)": "organization",
+        "Registered Closed-End Funds": "organization",
+        "Well-Known Seasoned Issuers (WKSIs)": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:11:14.136978+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:11:14.146972+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:11:14.127922+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses regulatory reforms for Business Development Companies (BDCs) and Registered Closed-End Funds, including changes to registration processes,",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:48:22.843237+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

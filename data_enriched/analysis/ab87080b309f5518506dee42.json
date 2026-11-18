@@ -1,0 +1,179 @@
+{
+  "source_id": "ab87080b309f5518506dee42",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_12_05_Fast-Food_Restaurants_cnbc.json",
+      "sha256": "3070a4268728f2f2a5255448a1d48b9ff86d1e9e11a2094e860660c8bc02815c",
+      "filename": "2017_12_05_Fast-Food_Restaurants_cnbc.json"
+    }
+  ],
+  "original_record_hash": "61530b754e2137ea648b07fb42de97ab90f97812d2b78297c3e0e4ef19a33a18",
+  "input_hash": "6695fded4a93e18372e1531c1ccae8bfdba800aaa59c581448b846a0dc870a67",
+  "matching_audit_hash": "3cf161083d7646fc1c25d7a29052c5346d7c2adf7000e510043e03877d75ae87",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "43686401f53d076bca18fb51a6685e37251e0df85e1f722bcfe1dd41e597cb33",
+    "raw_sha256": "d59048ad980363c02b9002ac2a9398d4483eeeeb96137e6180c02c75c3935896",
+    "date_quote": "article:published_time=2017-12-05T13:00:20+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2746f6b935c3a4b8854191b8ca97092123035185a83fe490b1b85bf495d48442",
+  "outputs": [
+    {
+      "path": "US\\2017_12_05_Fast-Food_Restaurants_cnbc.json",
+      "sha256": "6a69bfbd05a43811b213d8c9f5dfc02c498732e8e4649b091ea699ade850878c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-12-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:24.936362+00:00",
+    "fetched_at": "2026-11-10T16:50:54.207133+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.420904+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:07:47.160238+00:00",
+  "feature_available_at": "2026-11-12T15:16:41.983660+00:00",
+  "commit_verified_at": "2026-11-12T15:16:41.983660+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Analyst highlights sales growth and business model shifts",
+    "securities": [
+      {
+        "name": "McDonald's",
+        "ticker": null,
+        "exchange": null,
+        "quote": "McDonald's"
+      },
+      {
+        "name": "Jefferies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Jefferies"
+      },
+      {
+        "name": "UberEats",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UberEats"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Food Delivery",
+        "basis": "inferred",
+        "quote": "delivery through UberEats"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "McDonald's": "company",
+      "Jefferies": "issuer",
+      "UberEats": "brand"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:42.013468+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:07:47.160238+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Analyst highlights sales growth and business model shifts",
+      "securities": [
+        {
+          "name": "McDonald's",
+          "ticker": null,
+          "exchange": null,
+          "quote": "McDonald's"
+        },
+        {
+          "name": "Jefferies",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Jefferies"
+        },
+        {
+          "name": "UberEats",
+          "ticker": null,
+          "exchange": null,
+          "quote": "UberEats"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Food Delivery",
+          "basis": "inferred",
+          "quote": "delivery through UberEats"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "McDonald's": "company",
+        "Jefferies": "issuer",
+        "UberEats": "brand"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:07:47.186877+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:07:47.196483+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:07:47.177739+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses McDonald's stock performance, initiatives in digital sales, store remodeling, delivery through UberEats, same-store sales results, and new",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:41:39.205268+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

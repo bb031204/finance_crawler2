@@ -1,0 +1,96 @@
+{
+  "source_id": "571be444d9d54c21a5e212d8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_06_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "63af21effa4ef5261b49246da3d6536cd731ef3b24597226883e8869fbea2987",
+      "filename": "2020_02_06_Corporate-Governance_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "c3a14e3606492f75c3f20750364d520f0c82f264adee5ca25b64e3d35b586930",
+  "input_hash": "6f15e5865c5743e4042f06e4e4cacb1f4b5c19f6a505ca9ff702f607109c910b",
+  "matching_audit_hash": "ceac6ac8e876abecd6af9e8e4075959ac85860e89693b532ee169de384bb7129",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "59a5e12965e1dfe7a331af151ae9709b7a64d01746007e7cf441ebe48f58e306",
+    "raw_sha256": "209f10b1f6c961163604c3fbdd8641f02d5a661f31fba2a2cba9a6666ad4dc80",
+    "date_quote": "SEC filing datePublished=2020-02-06",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001290/000110465920011539/tm206934d1_6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "CREDICORP LTD",
+      "ticker": null,
+      "exchange": null,
+      "quote": "CREDICORP LTD"
+    }
+  ],
+  "record_hash": "240cbad13cb6acac51cd01dc6d71897f0063bae12592961f29c7d699829970c7",
+  "outputs": [
+    {
+      "path": "US\\2020_02_06_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "724d8bde8867d506b911817d36c723790eecfef0fb8b3fb8caddb3821c7b30d2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:32:05.899485+00:00",
+    "feature_available_at": "2026-11-11T15:32:25.524633+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:31.684912+00:00",
+  "commit_verified_at": "2026-11-12T13:53:31.684912+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "CREDICORP LTD",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CREDICORP LTD"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

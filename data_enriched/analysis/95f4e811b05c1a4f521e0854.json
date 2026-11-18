@@ -1,0 +1,116 @@
+{
+  "source_id": "95f4e811b05c1a4f521e0854",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_08_18_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "f7d289fcdbdaa36d082c8b7f29739c1331ade5ccea69c8339327cbf0be90fc08",
+      "filename": "2018_08_18_Real-Estate_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f4727915448d5866250ec6f87fb028c465251f7c48a552f180f78bcd22e8ce64",
+  "input_hash": "27948f4c1acb7345e10d0705159ebd61dd726ef9d23c4250ee8ed1844ae7ec9d",
+  "matching_audit_hash": "f30f4c114b10e69c7522d18321bf2794788a55d369faf09aab80dd9c6b75f4cb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4dfac7a13ecb2f80dc9917bbbbdd064003b7ae8d1b5687a81f3e66f4d7804c90",
+    "raw_sha256": "f8454a8ba22debbe614cd566c9c6f4a0e6d9c53d0ced1622dc0f7b883e4923da",
+    "date_quote": "article:published_time=2018-08-18T17:00:33+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "8ba70ddf5854157ab06681371cb176af79ca5b03f2eb669b8700347b29c8ed4e",
+  "outputs": [
+    {
+      "path": "US\\2018_08_18_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "9f0adde4791845f36fa70c30ec217798cc4760d8b87afcc8c59f33f24ebeb013"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-08-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:43.789064+00:00",
+    "fetched_at": "2026-11-10T12:52:34.998006+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.108553+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:44.949219+00:00",
+  "feature_available_at": "2026-11-12T14:45:44.958983+00:00",
+  "commit_verified_at": "2026-11-12T14:45:44.958983+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses foreign investment trends in New York City's real estate market, highlighting specific neighborhoods and investor preferences.",
+    "securities": [
+      {
+        "name": "New York City",
+        "ticker": null,
+        "exchange": null,
+        "quote": "New York City"
+      },
+      {
+        "name": "DJK Residential",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DJK Residential"
+      },
+      {
+        "name": "The Boyd Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Boyd Company"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "real estate market"
+      },
+      {
+        "name": "Investment",
+        "basis": "inferred",
+        "quote": "foreign investors"
+      },
+      {
+        "name": "Construction",
+        "basis": "inferred",
+        "quote": "new construction"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "New York City": "company",
+      "DJK Residential": "company",
+      "The Boyd Company": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

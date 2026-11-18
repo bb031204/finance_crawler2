@@ -1,0 +1,368 @@
+{
+  "source_id": "58577192424017f8574a37f5",
+  "status": "completed",
+  "source_record_hash": "59c3f6514360e26feb221b1ec655fe5b428838d1beb8c8845b486c89e5daf7a8",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-17-000175-index.html",
+    "attempted_at": "2026-11-18T15:26:49.485404+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "a01e227b1056df897875c204198848c6203778142d09275af50dbf0e50c19723"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/58577192424017f8574a37f5.json",
+    "sha256": "06e765dd4fb96baf158428dc3aae2a5674d094f13d27f411babbcbf610241c32",
+    "bundled_path": "legacy_audit/58577192424017f8574a37f5.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "08def040c7393ae88127deb22755aa8a373e73291c0ebc3d930b9ff38647894d",
+      "llm_inferred_at": "2026-11-18T15:27:43.055016+00:00",
+      "model_duration_seconds": 8.5430884,
+      "prompt_tokens": 1985,
+      "completion_tokens": 413,
+      "selection": [
+        {
+          "source_id": "58577192424017f8574a37f5",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets.",
+              "rationale": "The acquisition is directly related to the renewable energy sector, specifically solar energy, which is a key industry impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company. This move signifies a strategic",
+              "rationale": "The acquisition is a direct action by Brookfield Asset Management Inc., indicating a company-specific strategic shift.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "name": "Power Generation",
+              "basis": "explicit",
+              "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "5907f64a75ae654905b4ac790499deb374b90c17258d76e80ca08a86778b64a7",
+      "llm_inferred_at": "2026-11-18T15:27:50.952611+00:00",
+      "model_duration_seconds": 7.8914659,
+      "prompt_tokens": 2029,
+      "completion_tokens": 427,
+      "selection": [
+        {
+          "source_id": "58577192424017f8574a37f5",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets.",
+              "rationale": "The acquisition is directly related to the renewable energy sector, specifically solar energy, which is a subset of the broader energy industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company. This move signifies a strategic",
+              "rationale": "The acquisition is a direct action by Brookfield Asset Management Inc. to expand its renewable energy holdings.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "name": "Power Generation",
+              "basis": "explicit",
+              "quote": "The acquisition is expected to enhance Brookfield's position in the solar energy sector, leveraging TerraForm Power's existing infrastructure and operational capabilities."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:27:50.964619+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a01e227b1056df897875c204198848c6203778142d09275af50dbf0e50c19723",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2017-03-07",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907317000175/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Acquisition highlights strategic shift to renewable energy and solar sector.",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+      },
+      {
+        "name": "TerraForm Power",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "f2fcd3f7dccadd19",
+        "industry_name_standard": "Energy",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets."
+      },
+      {
+        "industry_key": "TRSR:58ceba4958e0415d",
+        "name": "Power Generation",
+        "basis": "inferred",
+        "quote": "The acquisition is expected to enhance Brookfield's position in the solar energy sector, leveraging TerraForm Power's existing infrastructure and operational capabilities.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "58ceba4958e0415d",
+        "industry_name_standard": "Power Generation",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The acquisition is expected to enhance Brookfield's position in the solar energy sector, leveraging TerraForm Power's existing infrastructure and operational capabilities."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "organization",
+      "TerraForm Power": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "58577192424017f8574a37f5",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_03_07_acquisition_real-estate_sec.json",
+        "sha256": "b5a9074a2dcf33cc524e9badc711ef1f1b183af8d8feee17fe6b0fb6500df31c",
+        "filename": "2017_03_07_acquisition_real-estate_sec.json"
+      }
+    ],
+    "original_record_hash": "35b40edfe1f92f413f56c07b8bbe3b5d805e0089e062270881bce811864e539b",
+    "input_hash": "d863a8462148a4dc84776fcd451f7d13d8079ff7c0b1050c778b66c1f71d4f2c",
+    "matching_audit_hash": "dbfbb6bb177f18f21e2011c0fd944a070f65fc3826429c65b9a8ea6af73adc2b",
+    "legacy_security_evidence": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "record_hash": "59c3f6514360e26feb221b1ec655fe5b428838d1beb8c8845b486c89e5daf7a8",
+    "outputs": [
+      {
+        "path": "US\\2017_03_07_acquisition_real-estate_sec.json",
+        "sha256": "be37973d91ea1edc0ce1fce092d1cb7cb54b2f905a4faf350740107c037ee2fa"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2017-03-07",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+      "fetched_at": "2026-11-11T12:28:49.922966+00:00",
+      "feature_available_at": "2026-11-11T12:29:21.879314+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:27:50.952611+00:00",
+    "feature_available_at": "2026-11-18T15:27:50.964619+00:00",
+    "commit_verified_at": "2026-11-12T15:16:40.765849+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:40.782903+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:31.290794+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Acquisition highlights strategic shift to renewable energy and solar sector.",
+        "securities": [
+          {
+            "name": "Brookfield Asset Management Inc.",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+          },
+          {
+            "name": "TerraForm Power",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company."
+          }
+        ],
+        "industries": [
+          {
+            "name": "renewable energy",
+            "basis": "explicit",
+            "quote": "This move signifies a strategic shift in Brookfield's portfolio, focusing on renewable energy assets."
+          },
+          {
+            "name": "solar energy",
+            "basis": "explicit",
+            "quote": "solar energy"
+          },
+          {
+            "name": "clean energy",
+            "basis": "explicit",
+            "quote": "This acquisition reflects Brookfield's commitment to diversifying its investment portfolio and strengthening its presence in the clean energy market."
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry"
+        ],
+        "entity_types": {
+          "Brookfield Asset Management Inc.": "organization",
+          "TerraForm Power": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:06:31.314871+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:06:31.323582+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:06:31.305872+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary discusses an acquisition by Brookfield Asset Management Inc. of TerraForm Power, indicating a strategic shift towards renewable energy and solar. It",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:39:32.154392+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company. This move signifies a strategic",
+        "rationale": "The acquisition is a direct action by Brookfield Asset Management Inc. to expand its renewable energy holdings.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Brookfield Asset Management Inc. announced its intention to acquire a controlling stake in TerraForm Power and assume sponsorship of the company. This move signifies a strategic"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-17-000175-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "59c3f6514360e26feb221b1ec655fe5b428838d1beb8c8845b486c89e5daf7a8",
+    "content_hash": "a01e227b1056df897875c204198848c6203778142d09275af50dbf0e50c19723",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:27:50.953176+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/58577192424017f8574a37f5.json",
+      "sha256": "9f049f856e232c90cca5b3cb3bdde3a5794dc8f954c6c39102771350de287b68",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 61.5
+}

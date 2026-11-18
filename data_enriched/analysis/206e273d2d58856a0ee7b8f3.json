@@ -1,0 +1,97 @@
+{
+  "source_id": "206e273d2d58856a0ee7b8f3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_08_15_Financial-Report_Retail_cnbc.json",
+      "sha256": "cbc06c50aade0c1065d646f733e092c7445a41564b86f851e7e649188211808a",
+      "filename": "2019_08_15_Financial-Report_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3dff726be6efa180f725213ceb9fab24e07d9bea6e632e72dff1c5c212c0b02c",
+  "input_hash": "a443f60a0c8d9666fdb27d95a3952f52676f9de52717bf32ede2972810dcf2c2",
+  "matching_audit_hash": "ea6460b563a98db4fb2b32fb19f512885b26a4d00860626fbf797af3b4b78ff6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4f715f826e845b1ab9ea8aa4ae6168f1eb674c2b42262c6af9090d4fe3d5e316",
+    "raw_sha256": "37a2ccbfce3a21d0b0f86024c21925a2eef8572193a5e0327c5926ae93725d2c",
+    "date_quote": "article:published_time=2019-08-15T12:00:25+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "J.C. Penney",
+      "ticker": null,
+      "exchange": null,
+      "quote": "J.C. Penney reported mixed second-quarter results Thursday as sales eroded faster than expected and the department store chain struggled under the weight of its debt."
+    }
+  ],
+  "record_hash": "63b7a31a459b3dff683474a4a7be164849bbfb301c37ffc6d856fe5d23373c6a",
+  "outputs": [
+    {
+      "path": "US\\2019_08_15_Financial-Report_Retail_cnbc.json",
+      "sha256": "ac4339065dc37090900e960a4bc64ddfb7d8a927bc2a9e5083db892ba504e403"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-08-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:20.005603+00:00",
+    "fetched_at": "2026-11-11T04:42:07.746446+00:00",
+    "feature_available_at": "2026-11-11T04:42:45.838879+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:29.437252+00:00",
+  "commit_verified_at": "2026-11-12T13:53:29.437252+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "J.C. Penney",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J.C. Penney reported mixed second-quarter results Thursday as sales eroded faster than expected and the department store chain struggled under the weight of its debt."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

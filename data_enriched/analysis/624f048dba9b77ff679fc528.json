@@ -1,0 +1,84 @@
+{
+  "source_id": "624f048dba9b77ff679fc528",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_11_16_Consumer-Goods_Beverages_cnbc.json",
+      "sha256": "faf6a363eddcd369171f5f980cae5fe667f788bf3282ce5a3b58317b06e1dc45",
+      "filename": "2017_11_16_Consumer-Goods_Beverages_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3be0b99655c09b052d3b52d93371f3520ea66b723953987a1bdb8d44a6b59538",
+  "input_hash": "85e7ce47cd0d20e22d267e0184da62f37aa1d7d72e68a8a5983f54ab17aa9ace",
+  "matching_audit_hash": "8c194424e1232721db2d81c7540ce81c7d8e1f03cf8dd4c896a3bc140d77b081",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "610910ab6ea64ee7d5d7814cf9783264927a1ddd9a1e58bdc6309864d6315642",
+    "raw_sha256": "528cb3ae62c826ba391e0a1588b306c71dec334bbb74e43ba4cea1282122d5b8",
+    "date_quote": "article:published_time=2017-11-16T15:18:40+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "eb0aafa45882871590afed64f0a82d98111df0e2ebda6772a8ba96b9ccaf33d7",
+  "outputs": [
+    {
+      "path": "US\\2017_11_16_Consumer-Goods_Beverages_cnbc.json",
+      "sha256": "9e90950a2b1b3b01f9b717453e430dfd0045ba7865840da228ca26a2328a284b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-11-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:24.936362+00:00",
+    "fetched_at": "2026-11-10T16:52:51.700606+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.381855+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:41:37.976027+00:00",
+  "feature_available_at": "2026-11-12T14:41:38.009147+00:00",
+  "commit_verified_at": "2026-11-12T14:41:38.009147+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Coca-Cola's strategic focus, product innovation, and market positioning, including comments on expansion into alcoholic beverages, soda taxes",
+    "securities": [
+      {
+        "name": "Coca-Cola",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Coca-Cola"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Coca-Cola": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

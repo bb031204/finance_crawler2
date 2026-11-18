@@ -1,0 +1,356 @@
+{
+  "source_id": "4b03e22055c546be9d8a9971",
+  "status": "completed",
+  "source_record_hash": "2ed01d5796c702e5c554d535a75edf3e08a715d754a91972f736c0b148758189",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-18-055820-index.html",
+    "attempted_at": "2026-11-18T13:46:56.785112+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-18-055820-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312518055820/d525437d6k.htm",
+    "fetched_at": "2026-11-18T13:47:11.050603+00:00",
+    "source_body_hash": "f9e18df18b6a797b939257b09be20010b07232083c6a3f67ca6ec599366711df",
+    "raw_sha256": "7b8354223881a5efefa3a390bed84311df31b2134d13170ef3e9d40f5c6cbfbd",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312518055820/d525437d6k.htm",
+        "type": "6-K",
+        "description": "6-K",
+        "raw_sha256": "7b8354223881a5efefa3a390bed84311df31b2134d13170ef3e9d40f5c6cbfbd",
+        "text_sha256": "b50dbee852d96e7aeabfca863572951646b84c25d5f226c1e39b0638457c624f",
+        "text_start": 0,
+        "text_end": 1500
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312518055820/d525437dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "4c17f91c9c6fdfef2ea35fc6504551ecf57c2966fe234b1911d2de45de5acfeb",
+        "text_sha256": "5309884ee779ba0f97d6aa88f35ea2fe3c264d8d597d1a068da77995484937e7",
+        "text_start": 1502,
+        "text_end": 8156
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2018-02-23",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4b03e22055c546be9d8a9971.json",
+    "sha256": "657bd71b3e73e16adf7f8495f1052e1dc23aa6ca1283977ba7661b17e0e41191",
+    "bundled_path": "legacy_audit/4b03e22055c546be9d8a9971.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "11a46f6c283d413a28a292ebec1da132293fb37ab92aaf12d783e091d589512f",
+      "llm_inferred_at": "2026-11-18T13:47:37.725538+00:00",
+      "model_duration_seconds": 26.6460437,
+      "prompt_tokens": 3796,
+      "completion_tokens": 1319,
+      "selection": [
+        {
+          "source_id": "4b03e22055c546be9d8a9971",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float.",
+              "rationale": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float.",
+              "rationale": "The TSX rules are part of the broader US equity market framework, affecting all listed financial institutions and their share repurchase activities.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "behaviour, the end of quantitative easing, the Brexit vote, the business and economic conditions in the geographic regions in which we operate, the effects of changes in government fiscal, monetary and other policies, tax risk and transparency, and environmental and social risk. We caution that the foregoing list of risk factors is not exhaustive",
+              "rationale": "The press release discusses macroeconomic factors affecting the US equity market, including global uncertainty, fiscal and monetary policies, and economic conditions in regions where the Bank operates.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "with whom we interact, regulatory change, technological innovation and non-traditional competitors, global environmental policy and climate change, changes in consumer behaviour,",
+              "industry_name_original": "Banks",
+              "mechanism": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95,
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "with whom we interact, regulatory change, technological innovation and non-traditional competitors, global environmental policy and climate change, changes in consumer behaviour,",
+              "industry_name_original": "Financials",
+              "mechanism": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95,
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "industry_scope_quote": "with whom we interact, regulatory change, technological innovation and non-traditional competitors, global environmental policy and climate change, changes in consumer behaviour,",
+              "industry_name_original": "Finance/Investors Services",
+              "mechanism": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95,
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "45dce85c40a418377934847d1b5a418f2907cb2c2677d73303f162ba20b9495d",
+      "llm_inferred_at": "2026-11-18T13:48:02.496125+00:00",
+      "model_duration_seconds": 24.7530729,
+      "prompt_tokens": 3840,
+      "completion_tokens": 1316,
+      "selection": [
+        {
+          "source_id": "4b03e22055c546be9d8a9971",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float.",
+              "rationale": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float.",
+              "rationale": "The TSX rules are part of the broader US equity market framework, affecting all listed companies, which indicates a market-wide impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "behaviour, the end of quantitative easing, the Brexit vote, the business and economic conditions in the geographic regions in which we operate, the effects of changes in government fiscal, monetary and other policies, tax risk and transparency, and environmental and social risk. We caution that the foregoing list of risk factors is not exhaustive",
+              "rationale": "The text discusses macroeconomic factors affecting the US equity market, including global uncertainty, fiscal and monetary policies, and economic conditions, which are relevant to the broader US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "with whom we interact, regulatory change, technological innovation and non-traditional competitors, global environmental policy and climate change, changes in consumer behaviour,",
+              "industry_name_original": "Banks",
+              "mechanism": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95,
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "with whom we interact, regulatory change, technological innovation and non-traditional competitors, global environmental policy and climate change, changes in consumer behaviour,",
+              "industry_name_original": "Financials",
+              "mechanism": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95,
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "industry_scope_quote": "with whom we interact, regulatory change, technological innovation and non-traditional competitors, global environmental policy and climate change, changes in consumer behaviour,",
+              "industry_name_original": "Finance/Investors Services",
+              "mechanism": "The repurchase of shares by Royal Bank of Canada is part of a broader industry practice, as the TSX rules apply to all issuers listed on the exchange, indicating an industry-wide impact on financial institutions.",
+              "confidence": 0.95,
+              "quote": "The TSX limits annual normal course issuer bid purchases to the greater of 5% of the issuers outstanding common shares or 10% of the issuers public float."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:48:02.515141+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f9e18df18b6a797b939257b09be20010b07232083c6a3f67ca6ec599366711df",
+    "raw_sha256": "7b8354223881a5efefa3a390bed84311df31b2134d13170ef3e9d40f5c6cbfbd",
+    "date_quote": "SEC filing datePublished=2018-02-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312518055820/d525437d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "name": "Banks",
+        "basis": "inferred",
+        "quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Banks previous normal course issuer bid for the purchase of 30,000,000 shares commenced on March 14, 2017 and was completed on January 31, 2018.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "4b03e22055c546be9d8a9971",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_02_23_Share-Repurchase_Banking_sec.json",
+        "sha256": "274ba5990ca3ceff929f5bc52c8644c077d68e6e996599740afdb2acc9a5f19f",
+        "filename": "2018_02_23_Share-Repurchase_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "0108b0779533c39cfe68205321fd3875f37a0749e0897a88a58956ed030ad84a",
+    "input_hash": "6f528890848f351c0fdbe1614b07c81ee18bdb8188ab0f45b0d1609bac1c2e02",
+    "matching_audit_hash": "d9141dbd50d42c49de6992290f41a14433adfaed369416311f50df0c35a545ef",
+    "legacy_security_evidence": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "record_hash": "2ed01d5796c702e5c554d535a75edf3e08a715d754a91972f736c0b148758189",
+    "outputs": [
+      {
+        "path": "US\\2018_02_23_Share-Repurchase_Banking_sec.json",
+        "sha256": "48c20ffff15f73cc2118273631a94ee6aa569625938c9e26074f96abf6d3a335"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2018-02-23",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+      "fetched_at": "2026-11-11T13:04:08.325774+00:00",
+      "feature_available_at": "2026-11-11T13:04:15.724685+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:48:02.496125+00:00",
+    "feature_available_at": "2026-11-18T13:48:02.515141+00:00",
+    "commit_verified_at": "2026-11-12T13:53:20.350034+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-18-055820-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "2ed01d5796c702e5c554d535a75edf3e08a715d754a91972f736c0b148758189",
+    "content_hash": "de67656d186d0c80bbd70d488d115fbc9f88b7743b7a9f8dc608a1e37ebe8f22",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:48:02.502629+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4b03e22055c546be9d8a9971.json",
+      "sha256": "1e5873fc08afc9553c004f22e455ce3bd9aff76bc8c2562b9cd634568683f9db",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 65.75
+}

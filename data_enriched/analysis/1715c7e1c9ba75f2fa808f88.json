@@ -1,0 +1,95 @@
+{
+  "source_id": "1715c7e1c9ba75f2fa808f88",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_31_Financial_Financial-Services_sec.json",
+      "sha256": "615c2dc6a97fb06074af469bb2b7c13dafc00d9b4be606e57c89485f233b843d",
+      "filename": "2015_03_31_Financial_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "70d924ced4e270722633997d9ab72757fddbdb68fc0142454bd7a6031b43793f",
+  "input_hash": "1750f683ae9fe0eb941fb81157bdd9bdd808ed14a54f03fbaff241c023d0a43c",
+  "matching_audit_hash": "ce4d150931a67cd206234bfced8161c42b38f1450f776f9091a69f127e419c29",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d6d40f5b32a70086fe4bf8681fd47d9582e78d3736d6642d821bd68ec35db680",
+    "raw_sha256": "39cc583602069a278babc2719bbd535c3f230bcbde2fb929bc2097d07c80e5cc",
+    "date_quote": "SEC filing datePublished=2015-03-31",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262415000501/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    }
+  ],
+  "record_hash": "7855044e7bb569299ceb7d415ca530722429ca73bc68f4f95b9a7e11365f7030",
+  "outputs": [
+    {
+      "path": "US\\2015_03_31_Financial_Financial-Services_sec.json",
+      "sha256": "ebf05bd6891e98a8b1818bb91d856b27abb1b23ff5bc0f1879524b04ac226d1b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.826285+00:00",
+    "fetched_at": "2026-11-11T00:48:42.214750+00:00",
+    "feature_available_at": "2026-11-11T00:48:49.879492+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:57.783607+00:00",
+  "commit_verified_at": "2026-11-12T13:52:57.783607+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "source_id": "77913205c1a253dccb564250",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_09_Financial-Report_Entertainment_sec.json",
+      "sha256": "8a1a10943505e08a6bfb4aec98470a5aeec00c7537212eb957f50224628a9fe3",
+      "filename": "2016_02_09_Financial-Report_Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "b3e069ce3a589c62cde21c414bcff971c32f796700b2ce6802e27dcd825e2284",
+  "input_hash": "10aa4d8968f997cfaa2fb4fa33ab976cbfb90d13b882c942b5c4e18350610905",
+  "matching_audit_hash": "ff8822615b5e44f85b7046d6564522a088095185333075eb9205996ecedab809",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0e63ca932c8b363766a39e0f9349b62218c29b09a321660a8b0189fb986985ff",
+    "raw_sha256": "073bedd297a22429e96f57009d0b297461ef73eb5b924c231e63b49e3d68902e",
+    "date_quote": "Date of Report (Date of Earliest Event Reported): February 9, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103916000360/fy2016_q1x8kxcover.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "The Walt Disney Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Walt Disney Company"
+    }
+  ],
+  "record_hash": "c762523bbd96f04b678eefd2052b40d2c583955e9b228a19a920396c4a172317",
+  "outputs": [
+    {
+      "path": "US\\2016_02_09_Financial-Report_Entertainment_sec.json",
+      "sha256": "5a9c9f5276a71937d9075440120f5dc67bd0b0bafe9defe4a97ef8ce2d21e4a0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.849469+00:00",
+    "fetched_at": "2026-11-11T01:20:34.729722+00:00",
+    "feature_available_at": "2026-11-11T01:20:41.939713+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:05.110492+00:00",
+  "commit_verified_at": "2026-11-12T13:53:05.110492+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

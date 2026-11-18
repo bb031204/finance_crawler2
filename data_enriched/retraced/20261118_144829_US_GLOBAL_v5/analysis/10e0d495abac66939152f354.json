@@ -1,0 +1,278 @@
+{
+  "source_id": "10e0d495abac66939152f354",
+  "status": "completed",
+  "source_record_hash": "0d19022119d12a53f8a7ac859e635682ff2b758a224feca587c84d013d1a4ee6",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-12-075488-index.html",
+    "attempted_at": "2026-11-18T08:25:52.248252+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-12-075488-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312512075488/d305626d8k.htm",
+    "fetched_at": "2026-11-18T08:25:58.511034+00:00",
+    "source_body_hash": "7ed4b5c29a98e1e7c84c3627047f228d6211a8fcc56ad9f0b40e85c39f7bbcdd",
+    "raw_sha256": "3f07b579a105f8d0baea8a7df1f329f318d2ba68c24cf11aa0a7ef765f0323f1",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312512075488/d305626d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "3f07b579a105f8d0baea8a7df1f329f318d2ba68c24cf11aa0a7ef765f0323f1",
+        "text_sha256": "7ed4b5c29a98e1e7c84c3627047f228d6211a8fcc56ad9f0b40e85c39f7bbcdd",
+        "text_start": 0,
+        "text_end": 3440
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2012-02-23",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/10e0d495abac66939152f354.json",
+    "sha256": "432d981e2f300d9f94b780f34bad0d5fc22baef4eca1a8df13d279920b60dc4f",
+    "bundled_path": "legacy_audit/10e0d495abac66939152f354.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "2f3abb17699300f61b613f37334f33ee35378d1b8f3e6005f822e60d90fe82aa",
+      "llm_inferred_at": "2026-11-18T08:26:05.957184+00:00",
+      "model_duration_seconds": 7.4279359,
+      "prompt_tokens": 2879,
+      "completion_tokens": 313,
+      "selection": [
+        {
+          "source_id": "10e0d495abac66939152f354",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File",
+              "rationale": "The article discusses the compensation and bonus awards for the executive officers of Medallion Financial Corp., indicating a company-specific event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:fd10a146e9625bfd",
+              "name": "Materials",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "5970718d027205f583966d0b0857a998183c1004456f23a23749194aa740834b",
+      "llm_inferred_at": "2026-11-18T08:26:16.954125+00:00",
+      "model_duration_seconds": 10.9824277,
+      "prompt_tokens": 2923,
+      "completion_tokens": 578,
+      "selection": [
+        {
+          "source_id": "10e0d495abac66939152f354",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File",
+              "rationale": "The article discusses the compensation and bonuses awarded to executives of Medallion Financial Corp., which is a specific company.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "These shares of restricted common stock will vest in equal one-third increments on the first, second and third anniversaries of the date of grant.",
+              "rationale": "The article discusses the financial compensation and stock grants to executives, which are part of the broader financial services industry.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:fd10a146e9625bfd",
+              "name": "Materials",
+              "basis": "explicit",
+              "quote": "These shares of restricted common stock will vest in equal one-third increments on the first, second and third anniversaries of the date of grant."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "These shares of restricted common stock will vest in equal one-third increments on the first, second and third anniversaries of the date of grant."
+            },
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "explicit",
+              "quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:26:16.968218+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7ed4b5c29a98e1e7c84c3627047f228d6211a8fcc56ad9f0b40e85c39f7bbcdd",
+    "raw_sha256": "3f07b579a105f8d0baea8a7df1f329f318d2ba68c24cf11aa0a7ef765f0323f1",
+    "date_quote": "SEC filing datePublished=2012-02-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312512075488/d305626d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary contains information about executive compensation, including bonuses and stock grants, which is relevant for understanding the company's financials.",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6022",
+        "name": "STATE COMMERCIAL BANKS",
+        "basis": "inferred",
+        "quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6022",
+        "industry_name_standard": "STATE COMMERCIAL BANKS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "10e0d495abac66939152f354",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_02_23_Compensation_Financial-Services_sec.json",
+        "sha256": "70aef7514f03be2062306af29d6342432caff8259f8e816a66445a4359718f49",
+        "filename": "2012_02_23_Compensation_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "ee64232771cf518a1af7d9f3b9249603710bc9f0e8218bf2ca9992a0690f3baa",
+    "input_hash": "8fdc1b81f62b5aba56d39281a4d48c8b4d19870e9a35e290483c58da669afda9",
+    "matching_audit_hash": "93d5ebdc7ef7fa0b4f0e50a110d003c968352c8afe74f0124849a1b6169bc1a8",
+    "legacy_security_evidence": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "record_hash": "0d19022119d12a53f8a7ac859e635682ff2b758a224feca587c84d013d1a4ee6",
+    "outputs": [
+      {
+        "path": "US\\2012_02_23_Compensation_Financial-Services_sec.json",
+        "sha256": "4db4833a8cbe785111383f19d9e13700fc9dde01d0658bc2260df925c1a21cbd"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2012-02-23",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+      "fetched_at": "2026-11-10T22:32:57.522516+00:00",
+      "feature_available_at": "2026-11-11T09:31:28.520150+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T08:26:16.954125+00:00",
+    "feature_available_at": "2026-11-18T08:26:16.968218+00:00",
+    "commit_verified_at": "2026-11-12T13:56:02.621850+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File",
+        "rationale": "The article discusses the compensation and bonuses awarded to executives of Medallion Financial Corp., which is a specific company.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Medallion Financial Corp. (Exact name of registrant as specified in its charter) Delaware 814-00188 04-3291176 (State or other jurisdiction of incorporation) (Commission File",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000209/0001193125-12-075488-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "0d19022119d12a53f8a7ac859e635682ff2b758a224feca587c84d013d1a4ee6",
+    "content_hash": "7ed4b5c29a98e1e7c84c3627047f228d6211a8fcc56ad9f0b40e85c39f7bbcdd",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T08:26:16.955784+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/10e0d495abac66939152f354.json",
+      "sha256": "a88e4c581514ee5cf1af901afb66f0c0e32c20c7702c64a80416c2f191ba795a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 24.73499999998603
+}

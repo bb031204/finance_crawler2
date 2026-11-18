@@ -1,0 +1,206 @@
+{
+  "source_id": "229de6bd4de1fa29cfd7cc68",
+  "status": "completed",
+  "source_record_hash": "8150032360395f2bc374c3db3ae2c94e247177f470b6707f1c00c0dcb92a527a",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001104659-22-037478-index.html",
+    "attempted_at": "2026-11-18T10:01:03.053164+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "c16fa1da45d7ee17be8ef92473fc8b02ba9a225c4212fc5aec7549039ec061e6"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/229de6bd4de1fa29cfd7cc68.json",
+    "sha256": "4f44192a676c2e8720c65d69789ac7223e891db68f60737623b802a82fa536ad",
+    "bundled_path": "legacy_audit/229de6bd4de1fa29cfd7cc68.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "af1832f64c8b39f531177532d556f117171de6721d2efd830081f2e97ee275cd",
+      "llm_inferred_at": "2026-11-18T10:01:13.282847+00:00",
+      "model_duration_seconds": 5.1671562,
+      "prompt_tokens": 933,
+      "completion_tokens": 267,
+      "selection": [
+        {
+          "source_id": "229de6bd4de1fa29cfd7cc68",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "SAP SE announced that Luka Mucic, Chief Financial Officer and Executive Board Member, will leave the company on March 31, 2023."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "SAP SE announced that Luka Mucic, Chief Financial Officer and Executive Board Member, will leave the company on March 31, 2023."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:01:13.293236+00:00",
+  "audit": {
+    "source_id": "229de6bd4de1fa29cfd7cc68",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000184/0001104659-22-037478-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2022-03-24",
+    "date_quote": "SEC filing datePublished=2022-03-24",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "c16fa1da45d7ee17be8ef92473fc8b02ba9a225c4212fc5aec7549039ec061e6",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T04:55:58.999365+00:00",
+    "fetched_at": "2026-11-12T06:33:50.745081+00:00",
+    "first_extracted_at": "2026-11-12T06:34:06.224375+00:00",
+    "extracted_at": "2026-11-18T10:01:13.283579+00:00",
+    "feature_available_at": "2026-11-18T10:01:13.293236+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "SAP SE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP SE"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:7d8172e8794ecf56",
+        "name": "Diversified Financial Services",
+        "basis": "inferred",
+        "quote": "SAP SE announced that Luka Mucic, Chief Financial Officer and Executive Board Member, will leave the company on March 31, 2023.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7d8172e8794ecf56",
+        "industry_name_standard": "Diversified Financial Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "SAP SE announced that Luka Mucic, Chief Financial Officer and Executive Board Member, will leave the company on March 31, 2023."
+      },
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "name": "Financials",
+        "basis": "inferred",
+        "quote": "SAP SE announced that Luka Mucic, Chief Financial Officer and Executive Board Member, will leave the company on March 31, 2023.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "SAP SE announced that Luka Mucic, Chief Financial Officer and Executive Board Member, will leave the company on March 31, 2023."
+      }
+    ],
+    "impact_scope": [],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "8150032360395f2bc374c3db3ae2c94e247177f470b6707f1c00c0dcb92a527a",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2022_03_24_corporate-action_IT-Services_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\3e8e451545109e2eaaa26ce9daf935f814fb40b9a6f75d179b9f9258bf9682f8.json",
+      ".runtime\\simple\\model_cache\\9565e4755ed8ca47b268b7cc4dfc8c97534aa52d6f26f0fc590ec1120cb18075.json",
+      ".runtime\\simple\\model_cache\\fe0943c9b0360afd893d62eff04908638b147f0faf6b334090cacfa6c2fc1000.json",
+      ".runtime\\simple\\pages\\229de6bd4de1fa29cfd7cc68.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000110465922037478/tm2210180d1_6k.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001104659-22-037478-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T10:01:13.282847+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "c16fa1da45d7ee17be8ef92473fc8b02ba9a225c4212fc5aec7549039ec061e6",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "SAP SE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP SE",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [],
+    "event_cluster_id": null,
+    "extraction_version": "c4df37e718004b299372cd3d811f0c806830f47e88d3d17a91ceb86ab57810db",
+    "commit_verified_at": "2026-11-12T06:34:06.245369+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T06:34:06.283455+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\229de6bd4de1fa29cfd7cc68.json",
+      ".runtime\\simple\\model_cache\\3e8e451545109e2eaaa26ce9daf935f814fb40b9a6f75d179b9f9258bf9682f8.json",
+      ".runtime\\simple\\model_cache\\fe0943c9b0360afd893d62eff04908638b147f0faf6b334090cacfa6c2fc1000.json",
+      ".runtime\\simple\\model_cache\\9565e4755ed8ca47b268b7cc4dfc8c97534aa52d6f26f0fc590ec1120cb18075.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "8150032360395f2bc374c3db3ae2c94e247177f470b6707f1c00c0dcb92a527a",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/229de6bd4de1fa29cfd7cc68.json",
+      "sha256": "d5920e43e372c5fed12b95c52abd86b0e462a6d1a7990a728093aef22be48528",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 10.25
+}

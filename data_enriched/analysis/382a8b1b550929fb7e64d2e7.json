@@ -1,0 +1,98 @@
+{
+  "source_id": "382a8b1b550929fb7e64d2e7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_22_Finance_Commodities-Trading_cnbc.json",
+      "sha256": "f1eedd98d1578e5223e54ceb4fa9f3c7aa16ab81db16575639a1fdb530ff10e2",
+      "filename": "2018_03_22_Finance_Commodities-Trading_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f9e8401107854701ea15b3ecd9c8c42229bd98b3114047ce8a1ab160848fea38",
+  "input_hash": "e999b168c86339f5857ea8ac59c167a62ab33bc313849665bfbdb50ad5fc0fdc",
+  "matching_audit_hash": "b822cba6a72b006f30c44b8b82bc49e6bb355aaab98e38c6fcf1e6947787246e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d84fbcf75513a84af372b68502de0206baaba605b7ba72066f4254aae8fcc757",
+    "raw_sha256": "93abd002930fdd7a161857d3869118846dadf6518803ca830dade42aa409057f",
+    "date_quote": "article:published_time=2018-03-22T07:10:40+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "470d897f66d01779b1f65f52fba19daf45a0177804f12f20f172f4ed333a4edd",
+  "outputs": [
+    {
+      "path": "US\\2018_03_22_Finance_Commodities-Trading_cnbc.json",
+      "sha256": "32b31f4ac40a1639d981c83a607d73e0705002f9c739a3c337bfd0a2b878ee69"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:39.669939+00:00",
+    "fetched_at": "2026-11-10T13:52:01.418293+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.258310+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:52.808150+00:00",
+  "feature_available_at": "2026-11-12T14:43:52.819671+00:00",
+  "commit_verified_at": "2026-11-12T14:43:52.819671+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Noble Group's financial distress, debt restructuring, legal challenges, and market value decline, which are relevant for stock mixer data.",
+    "securities": [
+      {
+        "name": "Noble Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Noble Group"
+      },
+      {
+        "name": "Goldilocks Investment Co",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Goldilocks Investment Co"
+      }
+    ],
+    "industries": [
+      {
+        "name": "commodity trading",
+        "basis": "inferred",
+        "quote": "commodity trader"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Noble Group": "company",
+      "Goldilocks Investment Co": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

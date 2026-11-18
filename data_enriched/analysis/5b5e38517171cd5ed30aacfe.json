@@ -1,0 +1,186 @@
+{
+  "source_id": "5b5e38517171cd5ed30aacfe",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_27_CapitalRaising_Biotechnology_sec.json",
+      "sha256": "4985ac366960a8f5bc82a19660f7a22d1b1e18becb25044912325c99dd1ade49",
+      "filename": "2015_03_27_CapitalRaising_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "ce09883c4d604069094f42dbcb69285d72296b406dacca8f2779416cbec0ff6a",
+  "input_hash": "7043ae9bcd4e8c6ef2e702dec275a30f6e8e37dd93684a8f38c7c9a6a22aeb7c",
+  "matching_audit_hash": "3ed7df21c16dd73314b3efcb8e23120ad28fa5d5e12b82f1af5e52d4f7b5ad69",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "90fd24135853788744aa102097a08bad5b58924cd472127512a5eec6ba836b45",
+    "raw_sha256": "808ff07d0b36df7455128adc65f5d58a680901564e0d31e83d0b21a28ced0fb0",
+    "date_quote": "SEC filing datePublished=2015-03-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000114420415019048/v405810_8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock"
+    }
+  ],
+  "record_hash": "bd169b0560b2b90bb8fac428df1680a7d613b5e6c728058d6fe47341f5e19fcf",
+  "outputs": [
+    {
+      "path": "US\\2015_03_27_CapitalRaising_Biotechnology_sec.json",
+      "sha256": "19df61f0b374f5fc071eaf3c05c1272adf636b70b492c3ae6703c6a9bc19c29b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:26:34.544828+00:00",
+    "feature_available_at": "2026-11-11T10:39:15.714224+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:33.548455+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.876176+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.876176+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Company raised capital through public offering",
+    "securities": [
+      {
+        "name": "Novavax, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Novavax, Inc."
+      },
+      {
+        "name": "J.P. Morgan Securities LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J.P. Morgan Securities LLC"
+      },
+      {
+        "name": "Citigroup Global Markets Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Citigroup Global Markets Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": "public offering of 24,137,931 shares of its common stock"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Novavax, Inc.": "company",
+      "J.P. Morgan Securities LLC": "organization",
+      "Citigroup Global Markets Inc.": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.903203+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:33.548455+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Company raised capital through public offering",
+      "securities": [
+        {
+          "name": "Novavax, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Novavax, Inc."
+        },
+        {
+          "name": "J.P. Morgan Securities LLC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "J.P. Morgan Securities LLC"
+        },
+        {
+          "name": "Citigroup Global Markets Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Citigroup Global Markets Inc."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Biotechnology",
+          "basis": "inferred",
+          "quote": "public offering of 24,137,931 shares of its common stock"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Novavax, Inc.": "company",
+        "J.P. Morgan Securities LLC": "organization",
+        "Citigroup Global Markets Inc.": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:33.574760+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:33.583769+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:33.566522+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary details a public offering by Novavax, Inc., including the underwriters, number of shares, price, and closing conditions. It also mentions the filing",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:25:51.830265+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

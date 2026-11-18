@@ -1,0 +1,95 @@
+{
+  "source_id": "5a75dbf7f64a82317086fada",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_10_03_Financial_Real-Estate_cnbc.json",
+      "sha256": "6376ef5d3ff2b530fef3b06c3b8bf906020babb3241d171556e4fa5b98f7573f",
+      "filename": "2012_10_03_Financial_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "36465ec3212c48c03e8f31f5eedd4e45f91fe3138f3cfd46f55d64a7831881aa",
+  "input_hash": "4f9fdabd7c96658f4375e47c1120855c2b2264a0e4fcbd2d4da34be817925f39",
+  "matching_audit_hash": "c704a11acbd114c72b10d591f587f3df6b80012cca5dbeda54b53b0e4cb082ce",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d3bb547e2c47725971d440f805c1146de5f3034921d6d5c4011433568d2183db",
+    "raw_sha256": "1b2589752219d2947e7e2146e28c77c82132ce697f5e0b042e37e2d851d8df09",
+    "date_quote": "article:published_time=2012-10-03T12:00:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "CoreLogic",
+      "ticker": "CLGX",
+      "exchange": null,
+      "quote": "CoreLogic (NYSE: CLGX)"
+    }
+  ],
+  "record_hash": "98e835da714eae94e87550f6aa8860c9550d65e98ce8ebda29ae9a7e3cf1d9a5",
+  "outputs": [
+    {
+      "path": "US\\2012_10_03_Financial_Real-Estate_cnbc.json",
+      "sha256": "5b26334af64d3543404a4ff796cae173e643d37bcbd7ffb90558db0312a44922"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-10-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:23.543575+00:00",
+    "fetched_at": "2026-11-11T02:22:01.178187+00:00",
+    "feature_available_at": "2026-11-11T02:22:09.565444+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:41.626650+00:00",
+  "commit_verified_at": "2026-11-12T13:52:41.626650+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "CoreLogic",
+        "ticker": "CLGX",
+        "exchange": null,
+        "quote": "CoreLogic (NYSE: CLGX)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

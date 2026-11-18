@@ -1,0 +1,175 @@
+{
+  "source_id": "6b7335ece38283afe100eeda",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_04_09_Policy_Real-Estate_treasury.json",
+      "sha256": "bda62c5274773c0bc866b1d6a4f0bed3b1ca25fc7aaabf4f41c7f2f762445e82",
+      "filename": "2018_04_09_Policy_Real-Estate_treasury.json"
+    }
+  ],
+  "original_record_hash": "e1f69325441925f0d4d49a8007ad3231ec5010e137d4bd7d679351c134741a90",
+  "input_hash": "f7fd1a19110ab1b5beb911e0586ac0c649e6e939d311f7d1eaffeea401392e62",
+  "matching_audit_hash": "2ccf35380b65f52bac8104b39171341cb179574d7486445a3419330c34242517",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2773a79854edf7e47c392fdbde739e1ed7a696d3eade907292ec1e451dfedb4e",
+    "raw_sha256": "8b88acc38c69abfe87f2b0bbd8435773afe67149252611b9610f623db377a7f4",
+    "date_quote": "April 9, 2018 Washington–The U.S. Department of the Treasury and the Internal Revenue Service (IRS) today designated Opportunity Zones in 18 States.",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "807a04b0179d92aa9ad52b03b7e936a9d50fd3f4ff5bc10ff28b5f396b993f25",
+  "outputs": [
+    {
+      "path": "US\\2018_04_09_Policy_Real-Estate_treasury.json",
+      "sha256": "260ce78dc2f2c8a7f8f818877cc21889d99ccecd0c600a1585e0af775d254ff1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-04-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:42.630812+00:00",
+    "fetched_at": "2026-11-10T22:24:17.886014+00:00",
+    "feature_available_at": "2026-11-10T22:24:26.983294+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:09:02.279556+00:00",
+  "feature_available_at": "2026-11-12T15:16:43.351341+00:00",
+  "commit_verified_at": "2026-11-12T15:16:43.351341+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Policies affecting investment and tax treatment",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Internal Revenue Service (IRS)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Internal Revenue Service (IRS)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Tax Policy",
+        "basis": "inferred",
+        "quote": "Tax Cuts and Jobs Act"
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Qualified Opportunity Funds"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Internal Revenue Service (IRS)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:43.377347+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:09:02.279556+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Policies affecting investment and tax treatment",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "Internal Revenue Service (IRS)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Internal Revenue Service (IRS)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Tax Policy",
+          "basis": "inferred",
+          "quote": "Tax Cuts and Jobs Act"
+        },
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Qualified Opportunity Funds"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "Internal Revenue Service (IRS)": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:09:02.319706+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:09:02.328510+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:09:02.306732+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses the designation of Opportunity Zones by the U.S. Department of the Treasury and IRS, which is a policy initiative with macroeconomic and税务",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:44:17.119219+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

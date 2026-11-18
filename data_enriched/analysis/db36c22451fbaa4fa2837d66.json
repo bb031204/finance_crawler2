@@ -1,0 +1,172 @@
+{
+  "source_id": "db36c22451fbaa4fa2837d66",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_12_29_Market-Performance_Financial-Services_cnbc.json",
+      "sha256": "d886a97dec09bfda611ebac1a1d547efbbde7b755bd2a4d9ce7d3a2caa151259",
+      "filename": "2017_12_29_Market-Performance_Financial-Services_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2017_12_29_Market-Performance_Financial-Services_cnbc.json",
+      "sha256": "d886a97dec09bfda611ebac1a1d547efbbde7b755bd2a4d9ce7d3a2caa151259",
+      "filename": "2017_12_29_Market-Performance_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "8e0dbca805c2708f44c78f5e8be2a26b8ac877870875b86677aca450fc54f458",
+  "input_hash": "186024edb1d2317506b4ba1b23d5352612d0b706b43a9c48b6f35ee66a462511",
+  "matching_audit_hash": "580b55a73dcd30e9412e69a2d74cdecbf4dae3569ac971d34993ae1cfa428525",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b4bc6beef3b19185ab7407273802f79347b234d2cfb671a1c30931a9479bf0b8",
+    "raw_sha256": "0b23e679713ef33c3a224a75fabb58eef3999f01b86980d89c439ded62b7224c",
+    "date_quote": "article:published_time=2017-12-29T07:18:13+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Hang Seng Index",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Hang Seng Index outperformed other major Asian indexes in 2017"
+    },
+    {
+      "name": "Kospi",
+      "ticker": null,
+      "exchange": null,
+      "quote": "South Korea's Kospi was given a boost by earnings growth driven by the global economic recovery"
+    },
+    {
+      "name": "KSE 100 Index",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Last year's star performer, Pakistan's Karachi Stock Exchange KSE 100 Index, slumped this year on political uncertainty"
+    },
+    {
+      "name": "Tencent",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Tencent, the company behind popular app WeChat, for a period of time surpassed Facebook in terms of market value in November"
+    },
+    {
+      "name": "Samsung Electronics",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Samsung Electronics"
+    },
+    {
+      "name": "SK Hynix",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SK Hynix"
+    }
+  ],
+  "record_hash": "356e0ba589c8e87220802110d036ff35de673b9da20db9cd739736d10a0d52a7",
+  "outputs": [
+    {
+      "path": "US\\2017_12_29_Market-Performance_Financial-Services_cnbc.json",
+      "sha256": "25c511ea986ce9f7cfa3d243aa09b0ee4a0e8357dee231c8824f3c38e2c9a319"
+    },
+    {
+      "path": "GLOBAL\\2017_12_29_Market-Performance_Financial-Services_cnbc.json",
+      "sha256": "25c511ea986ce9f7cfa3d243aa09b0ee4a0e8357dee231c8824f3c38e2c9a319"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-12-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:33.083717+00:00",
+    "fetched_at": "2026-11-11T03:23:27.420461+00:00",
+    "feature_available_at": "2026-11-11T03:24:28.153021+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:18.365176+00:00",
+  "commit_verified_at": "2026-11-12T13:53:18.365176+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Hang Seng Index",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hang Seng Index outperformed other major Asian indexes in 2017"
+      },
+      {
+        "name": "Kospi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "South Korea's Kospi was given a boost by earnings growth driven by the global economic recovery"
+      },
+      {
+        "name": "KSE 100 Index",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Last year's star performer, Pakistan's Karachi Stock Exchange KSE 100 Index, slumped this year on political uncertainty"
+      },
+      {
+        "name": "Tencent",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tencent, the company behind popular app WeChat, for a period of time surpassed Facebook in terms of market value in November"
+      },
+      {
+        "name": "Samsung Electronics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Samsung Electronics"
+      },
+      {
+        "name": "SK Hynix",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SK Hynix"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Semiconductor",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

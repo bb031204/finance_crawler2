@@ -1,0 +1,110 @@
+{
+  "source_id": "0797fec04449b02ba835e292",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_05_02_agriculture_agriculture_cnbc.json",
+      "sha256": "da396c804c4f9562df2acc7cf3157ba60c7994652b5c27dd7e9dff924246b9fe",
+      "filename": "2020_05_02_agriculture_agriculture_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e8b52f3d1c2d5f65dd36f5506d372e90a09c3d880cc22c7992f6ac55b7d0ba03",
+  "input_hash": "a1cf80394e905816b3aaf35a3cfc5de3b8d5a6f375b5524146cdfba9e716d964",
+  "matching_audit_hash": "3618349f3e9a404d2eb7af6003c3e024ffb841eb1df3deb7c96d39eeab040344",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1d88c8109eb359525e1214f9de7d2fc783a62d13d1a27476c698c84271f15fb4",
+    "raw_sha256": "6e164e2503036e180a2c94bdcfb6f129668c4aeb1341cfdf9c2eeb845a4eb412",
+    "date_quote": "article:published_time=2020-05-02T14:40:18+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "cb182a4053e2043a7663b41734ec41675121ace754326827c1075a993254b951",
+  "outputs": [
+    {
+      "path": "US\\2020_05_02_agriculture_agriculture_cnbc.json",
+      "sha256": "a1bdd87cc96df39af45c368244bce0566e65d39fa3675c6eca266a9f3f6dc8b1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-05-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:43.599339+00:00",
+    "fetched_at": "2026-11-10T16:40:39.617266+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.152334+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:47.544539+00:00",
+  "feature_available_at": "2026-11-12T14:52:47.563251+00:00",
+  "commit_verified_at": "2026-11-12T14:52:47.563251+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the impact of the coronavirus pandemic on the U.S. agriculture sector, including specific companies and industries affected.",
+    "securities": [
+      {
+        "name": "Long & Scott Farms",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Long & Scott Farms"
+      },
+      {
+        "name": "Tyson Foods",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tyson Foods"
+      }
+    ],
+    "industries": [
+      {
+        "name": "agriculture",
+        "basis": "explicit",
+        "quote": "agriculture"
+      },
+      {
+        "name": "dairy",
+        "basis": "inferred",
+        "quote": "dairy farmers"
+      },
+      {
+        "name": "poultry",
+        "basis": "inferred",
+        "quote": "poultry farmers"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Long & Scott Farms": "company",
+      "Tyson Foods": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "source_id": "bea8c091e3efb8bafe84f74f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_10_16_Financial_Banking_federalreserve.json",
+      "sha256": "d981454ea58e719caaad3bdea999b179d37fec832961f489f8f92856e0f823b8",
+      "filename": "2013_10_16_Financial_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "6cdced844b4036f140c49119c98649dd5195c660bde011706b75bfd85b727c7a",
+  "input_hash": "8e98ddc416350402b4c5e74d8e1a9284edee982b588530a1cc36663b9082ea08",
+  "matching_audit_hash": "d044fd81cf47c08ee35c592e83339f7630b7d938ccf6430a3b92582d17d2b824",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4d21b52f595cc05195c7275db5d4589aa66dce2053f1851d7fc9c0d8e500bb4c",
+    "raw_sha256": "1cb6e2dfb76a5517809dcdfd2f9fe45ea169f7a30c28d7ee949dfe8f5a647ec9",
+    "date_quote": "October 16, 2013",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3a976d99fe9bfb4129b952d2f243afefd883b8f7539c08a7b600c3b07f316d44",
+  "outputs": [
+    {
+      "path": "US\\2013_10_16_Financial_Banking_federalreserve.json",
+      "sha256": "cbf9ba4629d5765664c83af4eb964399b92122684a8b9a8c20b1ac1d34d538ef"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-10-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:25.174125+00:00",
+    "fetched_at": "2026-11-10T12:12:37.319459+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.998994+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:10:31.130124+00:00",
+  "feature_available_at": "2026-11-12T14:10:31.163391+00:00",
+  "commit_verified_at": "2026-11-12T14:10:31.163391+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the impact of dealer balance sheet capacity on market liquidity during the 2013 fixed income selloff, including changes in dealer behavior,风险",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Federal Reserve's FEDS Notes"
+      },
+      {
+        "name": "Fixed Income Markets",
+        "basis": "inferred",
+        "quote": "2013 fixed income selloff"
+      },
+      {
+        "name": "Dealers and Market Makers",
+        "basis": "inferred",
+        "quote": "dealer balance sheet capacity"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "source_id": "254fb482243a6f3fac727d27",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_09_08_Media-&-Entertainment_Media-&-Entertainment_yahoo.json",
+      "sha256": "62578ce8937297fdff58b797342bf904cde1e05cb66e24c0916405e4e1b2b8b0",
+      "filename": "2015_09_08_Media-&-Entertainment_Media-&-Entertainment_yahoo.json"
+    }
+  ],
+  "original_record_hash": "f8f17950f77a3cd53d404a64946922a7dc933e47b6ffac85636f42a086269c65",
+  "input_hash": "e83c6b01e4cd70b435b8946265c6f7d8e1ee392c93977b94d627de91b996d66b",
+  "matching_audit_hash": "fb926595a2c26baf720995d3564b464acfe4201ad602f310e891b712ad426ecd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4a328eb7e356f725197e1b9d48a1ba75b72a1f91a097c972adf475a12743a550",
+    "raw_sha256": "13e426c5696d30d9b16e02e183223470b10a39bcf7740f71d723153ff3233153",
+    "date_quote": "page.datePublished=2015-09-08T12:50:06Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "21st Century Fox",
+      "ticker": "FOXA",
+      "exchange": null,
+      "quote": "21st Century Fox (FOXA)"
+    },
+    {
+      "name": "The Walt Disney Company",
+      "ticker": "DIS",
+      "exchange": null,
+      "quote": "The Walt Disney Company (DIS)"
+    },
+    {
+      "name": "Sky",
+      "ticker": "SKYAY",
+      "exchange": null,
+      "quote": "Sky (SKYAY)"
+    },
+    {
+      "name": "Discovery Communications",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Discovery Communications"
+    },
+    {
+      "name": "Consumer Discretionary SPDR ETF",
+      "ticker": "XLY",
+      "exchange": null,
+      "quote": "Consumer Discretionary SPDR ETF (XLY)"
+    }
+  ],
+  "record_hash": "9bd6e8ff915c806ffe62801c127006cdac30b00149a0d2c78a570cd39168b664",
+  "outputs": [
+    {
+      "path": "US\\2015_09_08_Media-&-Entertainment_Media-&-Entertainment_yahoo.json",
+      "sha256": "31b73492fa588b284b461514ec2f915c4ccece1f348d2c912811b0ea6ddb6d77"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-09-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:00.943467+00:00",
+    "fetched_at": "2026-11-11T04:35:24.827215+00:00",
+    "feature_available_at": "2026-11-11T04:35:42.691901+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:00.320995+00:00",
+  "commit_verified_at": "2026-11-12T13:53:00.320995+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "21st Century Fox",
+        "ticker": "FOXA",
+        "exchange": null,
+        "quote": "21st Century Fox (FOXA)"
+      },
+      {
+        "name": "The Walt Disney Company",
+        "ticker": "DIS",
+        "exchange": null,
+        "quote": "The Walt Disney Company (DIS)"
+      },
+      {
+        "name": "Sky",
+        "ticker": "SKYAY",
+        "exchange": null,
+        "quote": "Sky (SKYAY)"
+      },
+      {
+        "name": "Discovery Communications",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Discovery Communications"
+      },
+      {
+        "name": "Consumer Discretionary SPDR ETF",
+        "ticker": "XLY",
+        "exchange": null,
+        "quote": "Consumer Discretionary SPDR ETF (XLY)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Media & Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

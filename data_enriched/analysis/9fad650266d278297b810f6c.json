@@ -1,0 +1,95 @@
+{
+  "source_id": "9fad650266d278297b810f6c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_07_13_Financial-Report_Information-Technology_sec.json",
+      "sha256": "2334f13fbcd9c3c6a4ebbdab4a028aa2d8fbe4de262f4d5c1880308042aa3157",
+      "filename": "2020_07_13_Financial-Report_Information-Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "2e971dfc5b7f9f6b773e3747d0166c8199e7b00f555cf06c107dcd20c0c7f912",
+  "input_hash": "121ce5ab410f52cdfc92a30a3b4e870a038c138f7497fdcc63b39a6f42729aef",
+  "matching_audit_hash": "cd2b762578f8a8e7c2bd5b66b96aaf833d91ba6afe805c400fdc81ddc2477dae",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "16d1ae56ef97fb85e34d81d1b81dfcf1b9431c620bf45252794e8b6c6c09d0a8",
+    "raw_sha256": "58851f76b66e4cef47367cddfcd31a48a87f1e7e8aaa089d712632b25e600657",
+    "date_quote": "July 13, 2020",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465920082881/a20-6321_46k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Alibaba Group Holding Limited",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Alibaba Group Holding Limited"
+    }
+  ],
+  "record_hash": "38ae69a997ae298d7e427b7b8e59da7c124fd5108d44c1fa024f0ae5b1faee42",
+  "outputs": [
+    {
+      "path": "US\\2020_07_13_Financial-Report_Information-Technology_sec.json",
+      "sha256": "94b1974e64bd56c46462a1ab4fd24c16d13ff663719da49b16f79264e6ec4bbe"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-07-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:29:31.997044+00:00",
+    "fetched_at": "2026-11-11T04:26:25.745696+00:00",
+    "feature_available_at": "2026-11-11T04:26:36.073637+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:34.298426+00:00",
+  "commit_verified_at": "2026-11-12T13:53:34.298426+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Alibaba Group Holding Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alibaba Group Holding Limited"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

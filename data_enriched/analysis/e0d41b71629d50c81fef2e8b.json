@@ -1,0 +1,198 @@
+{
+  "source_id": "e0d41b71629d50c81fef2e8b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_05_07_Beauty-Industry_Beauty_cnbc.json",
+      "sha256": "264306b8f00b0dcecaa0edb9ed940e7a7ad74ed9a6f5ade375cdf0aad39e48cd",
+      "filename": "2018_05_07_Beauty-Industry_Beauty_cnbc.json"
+    }
+  ],
+  "original_record_hash": "4b0424361732d0c53e58c38f54099160cda4be58fd30ec7b61e912d9d0dba0a0",
+  "input_hash": "a3703d777a247f15b0caf56544f3377713b166d2621718e912a96bfb20a6c503",
+  "matching_audit_hash": "ef135c495c84fb0d8e76e695435da749c8803724476381291c6189790de6febf",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2918e2cba3a1c9a0a10cd86ff8ef1511b1e0b90831b424d8c48a4615bda16202",
+    "raw_sha256": "5000fbe52134b38194bfd740a155c00d44fc9676a6d7a356a49f502015aa062c",
+    "date_quote": "article:published_time=2018-05-07T19:56:25+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sephora",
+      "ticker": null,
+      "exchange": null,
+      "quote": "People want to touch and see lipstick and concealers before opening their wallets, sending them through the doors of Sephora, the French cosmetics chain owned by LVMH, or Target."
+    },
+    {
+      "name": "Target",
+      "ticker": null,
+      "exchange": null,
+      "quote": "People want to touch and see lipstick and concealers before opening their wallets, sending them through the doors of Sephora, the French cosmetics chain owned by LVMH, or Target."
+    },
+    {
+      "name": "Estee Lauder",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Cramer commends Estee Lauder's CEO, advises buying beauty stock into weakness"
+    },
+    {
+      "name": "Estée Lauder",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Estée Lauder has increased sales for 11 straight quarters."
+    },
+    {
+      "name": "L'Oréal",
+      "ticker": null,
+      "exchange": null,
+      "quote": "L'Oréal are reaping the benefits."
+    },
+    {
+      "name": "ecca Cosmetics",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ecca Cosmetics — after an endorsement for the latter by YouTuber Jaclyn Hill helped sell 25,000 rose-gold highlighters in 20 minutes at Sephora."
+    },
+    {
+      "name": "Ulta",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sephora and Ulta. Analysts say they have created unique store experiences, where shoppers test out products, have makeovers and hunt for the latest new brands."
+    },
+    {
+      "name": "LVMH",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The LVMH business unit that includes Sephora grew organic sales by 13 per cent last year"
+    },
+    {
+      "name": "Amazon",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Amazon is the fifth most popular destination for cosmetics purchases"
+    }
+  ],
+  "record_hash": "33ea2ff4cc2e503d7893788bca998279d37c60bfb9412c80e8e155b79337d1f8",
+  "outputs": [
+    {
+      "path": "US\\2018_05_07_Beauty-Industry_Beauty_cnbc.json",
+      "sha256": "742cf8063d584841ca1d5044ca762d2fb9d39304f8972f2f31a3233f5f6882da"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-05-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:03.621816+00:00",
+    "fetched_at": "2026-11-10T20:00:39.865130+00:00",
+    "feature_available_at": "2026-11-10T20:02:03.412061+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:22.243087+00:00",
+  "commit_verified_at": "2026-11-12T13:53:22.243087+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sephora",
+        "ticker": null,
+        "exchange": null,
+        "quote": "People want to touch and see lipstick and concealers before opening their wallets, sending them through the doors of Sephora, the French cosmetics chain owned by LVMH, or Target."
+      },
+      {
+        "name": "Target",
+        "ticker": null,
+        "exchange": null,
+        "quote": "People want to touch and see lipstick and concealers before opening their wallets, sending them through the doors of Sephora, the French cosmetics chain owned by LVMH, or Target."
+      },
+      {
+        "name": "Estee Lauder",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Cramer commends Estee Lauder's CEO, advises buying beauty stock into weakness"
+      },
+      {
+        "name": "Estée Lauder",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Estée Lauder has increased sales for 11 straight quarters."
+      },
+      {
+        "name": "L'Oréal",
+        "ticker": null,
+        "exchange": null,
+        "quote": "L'Oréal are reaping the benefits."
+      },
+      {
+        "name": "ecca Cosmetics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ecca Cosmetics — after an endorsement for the latter by YouTuber Jaclyn Hill helped sell 25,000 rose-gold highlighters in 20 minutes at Sephora."
+      },
+      {
+        "name": "Ulta",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sephora and Ulta. Analysts say they have created unique store experiences, where shoppers test out products, have makeovers and hunt for the latest new brands."
+      },
+      {
+        "name": "LVMH",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The LVMH business unit that includes Sephora grew organic sales by 13 per cent last year"
+      },
+      {
+        "name": "Amazon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amazon is the fifth most popular destination for cosmetics purchases"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Beauty Industry",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "source_id": "b4347e94fb9ddfeb8b9253a7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_11_27_Politics_Government_treasury.json",
+      "sha256": "fa80d5010811a27ff62f2bc8466dc1d438a78efe19387694755962fc41e7b227",
+      "filename": "2018_11_27_Politics_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "d2c7ea0588120cf6588dffeb68fb6b18b3189fd78444f51309854ce9e7611f5f",
+  "input_hash": "4f178f06c3cfb6f3c88cc6e808cf8acba5dfbc6d17b6ea7d95d74848d3653bde",
+  "matching_audit_hash": "b68d27b38a1459edc97ba98e58cfb7fc9ac55ea6faa8572b7ea99f2b16af92ec",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c0e401a621b3f62e9a19cdcf1c16a20f2e34156764dc3f07ddb8d4aea1a9d576",
+    "raw_sha256": "501d709b1e784477749b96f22124668fd399b0fb80c785d274ccfe74f074ba21",
+    "date_quote": "November 27, 2018",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b13fa9dbc752494488f0dd18de8ba883e4f7ea865c59bd908501d32c25b81fd8",
+  "outputs": [
+    {
+      "path": "US\\2018_11_27_Politics_Government_treasury.json",
+      "sha256": "13e302fc6c55d6fe422089a82c031c337db787d2c141e0466add8579d78cf395"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-11-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:43.643815+00:00",
+    "fetched_at": "2026-11-10T12:24:44.123248+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.673766+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:10:07.665652+00:00",
+  "feature_available_at": "2026-11-12T15:16:44.325672+00:00",
+  "commit_verified_at": "2026-11-12T15:16:44.325672+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses international economic policy and financial institutions",
+    "securities": [
+      {
+        "name": "U.S. Senate Foreign Relations Subcommittee",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Senate Foreign Relations Subcommittee"
+      },
+      {
+        "name": "Under Secretary David Malpass",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Under Secretary David Malpass"
+      },
+      {
+        "name": "Financial Stability Board (FSB)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Financial Stability Board (FSB)"
+      },
+      {
+        "name": "World Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "World Bank"
+      },
+      {
+        "name": "Foreign Investment Risk Review Modernization Act (FIRRMA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Foreign Investment Risk Review Modernization Act (FIRRMA)"
+      },
+      {
+        "name": "U.S.-Mexico-Canada Agreement (USMCA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S.-Mexico-Canada Agreement (USMCA)"
+      },
+      {
+        "name": "America Crece initiative",
+        "ticker": null,
+        "exchange": null,
+        "quote": "America Crece initiative"
+      },
+      {
+        "name": "Randy Quarles",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Randy Quarles"
+      }
+    ],
+    "industries": [
+      {
+        "name": "International economic policy",
+        "basis": "explicit",
+        "quote": "international economic policy"
+      },
+      {
+        "name": "Financial institutions",
+        "basis": "inferred",
+        "quote": "international financial institutions"
+      },
+      {
+        "name": "Trade and investment",
+        "basis": "inferred",
+        "quote": "trade, investment, and finance transactions"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S. Senate Foreign Relations Subcommittee": "organization",
+      "Under Secretary David Malpass": "issuer",
+      "Financial Stability Board (FSB)": "organization",
+      "World Bank": "organization",
+      "Foreign Investment Risk Review Modernization Act (FIRRMA)": "organization",
+      "U.S.-Mexico-Canada Agreement (USMCA)": "organization",
+      "America Crece initiative": "organization",
+      "Randy Quarles": "issuer"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:44.347140+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:10:07.665652+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses international economic policy and financial institutions",
+      "securities": [
+        {
+          "name": "U.S. Senate Foreign Relations Subcommittee",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Senate Foreign Relations Subcommittee"
+        },
+        {
+          "name": "Under Secretary David Malpass",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Under Secretary David Malpass"
+        },
+        {
+          "name": "Financial Stability Board (FSB)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Financial Stability Board (FSB)"
+        },
+        {
+          "name": "World Bank",
+          "ticker": null,
+          "exchange": null,
+          "quote": "World Bank"
+        },
+        {
+          "name": "Foreign Investment Risk Review Modernization Act (FIRRMA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Foreign Investment Risk Review Modernization Act (FIRRMA)"
+        },
+        {
+          "name": "U.S.-Mexico-Canada Agreement (USMCA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S.-Mexico-Canada Agreement (USMCA)"
+        },
+        {
+          "name": "America Crece initiative",
+          "ticker": null,
+          "exchange": null,
+          "quote": "America Crece initiative"
+        },
+        {
+          "name": "Randy Quarles",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Randy Quarles"
+        }
+      ],
+      "industries": [
+        {
+          "name": "International economic policy",
+          "basis": "explicit",
+          "quote": "international economic policy"
+        },
+        {
+          "name": "Financial institutions",
+          "basis": "inferred",
+          "quote": "international financial institutions"
+        },
+        {
+          "name": "Trade and investment",
+          "basis": "inferred",
+          "quote": "trade, investment, and finance transactions"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "U.S. Senate Foreign Relations Subcommittee": "organization",
+        "Under Secretary David Malpass": "issuer",
+        "Financial Stability Board (FSB)": "organization",
+        "World Bank": "organization",
+        "Foreign Investment Risk Review Modernization Act (FIRRMA)": "organization",
+        "U.S.-Mexico-Canada Agreement (USMCA)": "organization",
+        "America Crece initiative": "organization",
+        "Randy Quarles": "issuer"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:10:07.698829+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:10:07.707785+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:10:07.681658+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about policy developments, international economic policy, and discussions on multilateral institutions, which are relevant for ",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:46:51.019810+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

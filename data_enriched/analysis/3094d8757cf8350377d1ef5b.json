@@ -1,0 +1,215 @@
+{
+  "source_id": "3094d8757cf8350377d1ef5b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_11_26_17_48_Legal-Transaction_Legal-Services_prnewswire.json",
+      "sha256": "e036f07dd2fba72702d3f4902e89c068f47b9a2f224eec273f381b542e0000a2",
+      "filename": "2012_11_26_17_48_Legal-Transaction_Legal-Services_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "15767aed5a8d21b000cc6cd9f2bd573e33d585c66874254c8c179c7109e2508c",
+  "input_hash": "14acbd198b86fd7014683bf9a619e787109823f6f2566cd8ac0b76b7bdc0c737",
+  "matching_audit_hash": "524f6717abdf41c64d89985646ac10e0b2bb42c7837ee4f811862c78ff5d35da",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a8c7ff91b91a8309f0b4357f0166960ea184ca0beb42e468c519ec0e78cafdbe",
+    "raw_sha256": "d4e2970f6bed55dd95101ae0ba1b73544b7eff8b136254714d7582a951719864",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2012-11-26T17:48:00Z\ndate=2012-11-26T17:48:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d2326c6143f22686ba7aa9dda42d22775098f1a8b07bdfd537bbc7fcd201de97",
+  "outputs": [
+    {
+      "path": "US\\2012_11_26_17_48_Legal-Transaction_Legal-Services_prnewswire.json",
+      "sha256": "b6481cb45892bee058247a13babdbbfe57a18a5080b2e4427420cb0dd469d841"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-11-26T17:48:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:39:20.841751+00:00",
+    "fetched_at": "2026-11-10T21:17:57.083530+00:00",
+    "feature_available_at": "2026-11-11T08:28:37.624689+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:18.617559+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.373737+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.373737+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Hiring enhances transactional capabilities and private equity practice.",
+    "securities": [
+      {
+        "name": "Jenner & Block LLP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Jenner & Block LLP"
+      },
+      {
+        "name": "Wrapports, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Wrapports, LLC"
+      },
+      {
+        "name": "Chicago Sun-Times",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chicago Sun-Times"
+      },
+      {
+        "name": "Merge Healthcare",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Merge Healthcare"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Legal Services",
+        "basis": "inferred",
+        "quote": "M&A attorney"
+      },
+      {
+        "name": "Private Equity",
+        "basis": "inferred",
+        "quote": "Private Equity Practice"
+      },
+      {
+        "name": "Media",
+        "basis": "inferred",
+        "quote": "Chicago Sun-Times"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Jenner & Block LLP": "organization",
+      "Wrapports, LLC": "organization",
+      "Chicago Sun-Times": "organization",
+      "Merge Healthcare": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.396752+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:18.617559+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Hiring enhances transactional capabilities and private equity practice.",
+      "securities": [
+        {
+          "name": "Jenner & Block LLP",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Jenner & Block LLP"
+        },
+        {
+          "name": "Wrapports, LLC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Wrapports, LLC"
+        },
+        {
+          "name": "Chicago Sun-Times",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Chicago Sun-Times"
+        },
+        {
+          "name": "Merge Healthcare",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Merge Healthcare"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Legal Services",
+          "basis": "inferred",
+          "quote": "M&A attorney"
+        },
+        {
+          "name": "Private Equity",
+          "basis": "inferred",
+          "quote": "Private Equity Practice"
+        },
+        {
+          "name": "Media",
+          "basis": "inferred",
+          "quote": "Chicago Sun-Times"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Jenner & Block LLP": "organization",
+        "Wrapports, LLC": "organization",
+        "Chicago Sun-Times": "organization",
+        "Merge Healthcare": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:18.641584+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:18.651590+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:18.632643+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses Mark A. Harris joining Jenner & Block LLP as a partner and leading their Private Equity Practice, indicating a significant transactional andM",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:59:07.536951+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "1d974693584602662b7a4c7d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_03_07_SEC-Filings_Information-Technology-Services_sec.json",
+      "sha256": "4bacff79915802e6af8bc1042a84576f3b3a5f4e6fbb3a3f7809b9a60f79ce28",
+      "filename": "2013_03_07_SEC-Filings_Information-Technology-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "7eb734d7a42785f90025717df90ed34c8e517e1f27db6bfbe87b8bb774ea2e07",
+  "input_hash": "1640a7b2115e4230558148a15eef5c5256908317687e20e319d86a3fdca1489c",
+  "matching_audit_hash": "46a5238eeb6ebaf3146d1c7368cbcdd277e47eb6e9f41a69de3b276a785f3672",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "207e59aa2efbd1090e38244d283efaa977631b83ee4d3ab823e0c04dc09d48a6",
+    "raw_sha256": "791c59a1d81f9744b1d9b3995af8e96397f6077002ba65a51c02b86e1b702256",
+    "date_quote": "As filed with the Securities and Exchange Commission on March 7, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1571123/000119312513095961/d491894d1012b.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SAIC Gemini, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SAIC Gemini, Inc."
+    }
+  ],
+  "record_hash": "43094c67378be9b8fd9b2af391b1fa67def0ac2b1180260e5e3b4c8005a520d6",
+  "outputs": [
+    {
+      "path": "US\\2013_03_07_SEC-Filings_Information-Technology-Services_sec.json",
+      "sha256": "906b03cdeabbee95ca368610ffc40a457105e7bb34ca8457c238efa4bc2ee652"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-03-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:20.173645+00:00",
+    "fetched_at": "2026-11-10T22:16:36.107234+00:00",
+    "feature_available_at": "2026-11-10T22:17:09.760023+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:45.540999+00:00",
+  "commit_verified_at": "2026-11-12T13:52:45.540999+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAIC Gemini, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAIC Gemini, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Information Technology",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

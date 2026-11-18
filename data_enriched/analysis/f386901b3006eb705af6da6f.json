@@ -1,0 +1,120 @@
+{
+  "source_id": "f386901b3006eb705af6da6f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_10_21_financial_Recruiting-Services_prnewswire.json",
+      "sha256": "99a3e0cfd029477cfab44e120f32f203d8e9b101ad50a4b45014f0252547507a",
+      "filename": "2016_10_21_financial_Recruiting-Services_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "06a9084ed8baf26d874c5a1696bb1cb74fc86b13356f31763878c7769695f7c3",
+  "input_hash": "f165129d579d96b1eae1e1d5cefb403590e77cfa58572470e4d94b23e68ecd7c",
+  "matching_audit_hash": "c521d8d57240c7d34272f3e8a421bc23b108820a3dbe1503a47be5765fa67be3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c3d8a96f61e31c52946efa5763323f5c89002828f3e1c84b124870a205154708",
+    "raw_sha256": "739b1a8dc98074379c7b4139bd408f9e2249257a84e78e5a5089c25069a1bbc8",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2016-10-21T12:30:00+01:00\ndate=2016-10-21T12:30:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Monster Worldwide",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Monster Worldwide"
+    },
+    {
+      "name": "Monster Worldwide, Inc.",
+      "ticker": "MWW",
+      "exchange": "NYSE",
+      "quote": "Monster Worldwide, Inc. (NYSE: MWW)"
+    },
+    {
+      "name": "Randstad Holding nv",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Randstad Holding nv"
+    }
+  ],
+  "record_hash": "d692ab64443725a0d144b39d907fe8a682d1c2d172570bd8a0eb8f36489f3971",
+  "outputs": [
+    {
+      "path": "US\\2016_10_21_financial_Recruiting-Services_prnewswire.json",
+      "sha256": "ebacb6720b33c07941fdcd23149e42d619c36e4c9d06032eb52b5a00c7600ce7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-10-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:39:13.124713+00:00",
+    "fetched_at": "2026-11-10T21:14:57.668167+00:00",
+    "feature_available_at": "2026-11-11T08:21:29.363539+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:10.040466+00:00",
+  "commit_verified_at": "2026-11-12T13:53:10.040466+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Monster Worldwide",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Monster Worldwide"
+      },
+      {
+        "name": "Monster Worldwide, Inc.",
+        "ticker": "MWW",
+        "exchange": "NYSE",
+        "quote": "Monster Worldwide, Inc. (NYSE: MWW)"
+      },
+      {
+        "name": "Randstad Holding nv",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Randstad Holding nv"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Recruitment Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "source_id": "59e9d9eaf74791707a40946c",
+  "status": "completed",
+  "source_record_hash": "72d9088814ec3fb0b3001e8e5c91c01bf7e5c71f104db88beafa5a51eaa3af95",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2017/10/31/mondelez-ceo-irene-rosenfeld-says-food-is-changing-faster-than-before.html",
+    "attempted_at": "2026-11-18T15:47:38.458824+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "5fd14fddaa9615c9e8f955679bcf9bda0e5cddf438432ea11a11538a4a23f5eb"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/59e9d9eaf74791707a40946c.json",
+    "sha256": "95a291d8cfec8f8b59a0ed4fb92fda9ad63d9493fde138d403661f4d9838d9b4",
+    "bundled_path": "legacy_audit/59e9d9eaf74791707a40946c.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "1c31f4f5287ee5200978e496e950387fd0acc991c84117ec03df10ea6d0ca223",
+      "llm_inferred_at": "2026-11-18T15:48:42.320466+00:00",
+      "model_duration_seconds": 18.7724473,
+      "prompt_tokens": 2116,
+      "completion_tokens": 999,
+      "selection": [
+        {
+          "source_id": "59e9d9eaf74791707a40946c",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before.",
+              "rationale": "The CEO's statement directly references the food industry as undergoing significant and rapid changes, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "She highlighted significant shifts in consumer behavior, retail environments, and competitive dynamics.",
+              "rationale": "These shifts are described as affecting the entire food industry, not just Mondelez, indicating a broader industry impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Rosenfeld attributed the strong results to the recovery of emerging markets and stable foreign exchange rates.",
+              "rationale": "The recovery of emerging markets and stable foreign exchange rates are factors that affect the broader food industry, not just Mondelez.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "In her final quarter as CEO, Mondelez reported earnings of 57 cents per share, exceeding Wall Street's estimate of 54 cents, and revenue of $6.53 billion, surpassing the $6.45 billion forecast.",
+              "rationale": "The financial results of Mondelez are reported against Wall Street's estimates, which are part of the broader US equity market context.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2000",
+              "name": "FOOD AND KINDRED PRODUCTS",
+              "basis": "inferred",
+              "quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before."
+            },
+            {
+              "industry_key": "TRSR:d4906bc839979866",
+              "name": "Food Chains",
+              "basis": "inferred",
+              "quote": "She highlighted significant shifts in consumer behavior, retail environments, and competitive dynamics."
+            },
+            {
+              "industry_key": "TRSR:6a94466d770b6186",
+              "name": "Specialty Foods",
+              "basis": "inferred",
+              "quote": "She also noted that investments in brands and distribution channels are yielding positive returns."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2000",
+              "industry_scope_quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before. She highlighted significant shifts in consumer behavior, retail environments, and",
+              "industry_name_original": "FOOD AND KINDRED PRODUCTS",
+              "mechanism": "economic transmission",
+              "confidence": 0.9,
+              "quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before."
+            },
+            {
+              "industry_key": "TRSR:d4906bc839979866",
+              "industry_scope_quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before. She highlighted significant shifts in consumer behavior, retail environments, and",
+              "industry_name_original": "Food Chains",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "She highlighted significant shifts in consumer behavior, retail environments, and competitive dynamics."
+            },
+            {
+              "industry_key": "TRSR:6a94466d770b6186",
+              "industry_scope_quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before. She highlighted significant shifts in consumer behavior, retail environments, and",
+              "industry_name_original": "Specialty Foods",
+              "mechanism": "economic transmission",
+              "confidence": 0.8,
+              "quote": "She also noted that investments in brands and distribution channels are yielding positive returns."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "029421f97d22ee73607dc323e0016a5d968bb65cbb35ec62dda734a83c99008a",
+      "llm_inferred_at": "2026-11-18T15:49:00.091535+00:00",
+      "model_duration_seconds": 17.7476315,
+      "prompt_tokens": 2160,
+      "completion_tokens": 986,
+      "selection": [
+        {
+          "source_id": "59e9d9eaf74791707a40946c",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before.",
+              "rationale": "The statement directly references the food industry as undergoing significant changes, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "She highlighted significant shifts in consumer behavior, retail environments, and competitive dynamics.",
+              "rationale": "These shifts are described as affecting the entire food industry, not just Mondelez, indicating an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Rosenfeld attributed the strong results to the recovery of emerging markets and stable foreign exchange rates.",
+              "rationale": "The recovery of emerging markets and stable foreign exchange rates are factors that affect the broader food industry, not just Mondelez.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "In her final quarter as CEO, Mondelez reported earnings of 57 cents per share, exceeding Wall Street's estimate of 54 cents, and revenue of $6.53 billion, surpassing the $6.45 billion forecast.",
+              "rationale": "The financial results of Mondelez are reported against Wall Street's estimates, which are part of the broader US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2000",
+              "name": "FOOD AND KINDRED PRODUCTS",
+              "basis": "explicit",
+              "quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before."
+            },
+            {
+              "industry_key": "TRSR:d4906bc839979866",
+              "name": "Food Chains",
+              "basis": "explicit",
+              "quote": "She highlighted significant shifts in consumer behavior, retail environments, and competitive dynamics."
+            },
+            {
+              "industry_key": "TRSR:6a94466d770b6186",
+              "name": "Specialty Foods",
+              "basis": "explicit",
+              "quote": "She also noted that investments in brands and distribution channels are yielding positive returns."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2000",
+              "industry_scope_quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before. She highlighted significant shifts in consumer behavior, retail environments, and",
+              "industry_name_original": "FOOD AND KINDRED PRODUCTS",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before."
+            },
+            {
+              "industry_key": "TRSR:d4906bc839979866",
+              "industry_scope_quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before. She highlighted significant shifts in consumer behavior, retail environments, and",
+              "industry_name_original": "Food Chains",
+              "mechanism": "economic transmission",
+              "confidence": 0.9,
+              "quote": "She highlighted significant shifts in consumer behavior, retail environments, and competitive dynamics."
+            },
+            {
+              "industry_key": "TRSR:6a94466d770b6186",
+              "industry_scope_quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before. She highlighted significant shifts in consumer behavior, retail environments, and",
+              "industry_name_original": "Specialty Foods",
+              "mechanism": "economic transmission",
+              "confidence": 0.85,
+              "quote": "She also noted that investments in brands and distribution channels are yielding positive returns."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:49:00.126527+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5fd14fddaa9615c9e8f955679bcf9bda0e5cddf438432ea11a11538a4a23f5eb",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2017-10-31T16:14:53+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The text discusses changes in the food industry, Mondelez's performance, and strategic direction under CEO Irene Rosenfeld.",
+    "securities": [
+      {
+        "name": "Mondelez",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mondelez"
+      },
+      {
+        "name": "Kraft",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kraft"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:2000",
+        "name": "FOOD AND KINDRED PRODUCTS",
+        "basis": "inferred",
+        "quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2000",
+        "industry_name_standard": "FOOD AND KINDRED PRODUCTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Mondelez CEO Irene Rosenfeld stated that the food industry is changing faster than ever before."
+      }
+    ],
+    "impact_scope": [],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Mondelez": "company",
+      "Kraft": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "59e9d9eaf74791707a40946c",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_10_31_Consumer-Goods_Food-&-Beverage_cnbc.json",
+        "sha256": "d8c775ca8c593281538a43b6d2322e218f982b7c58712ed28de65099a2387fe6",
+        "filename": "2017_10_31_Consumer-Goods_Food-&-Beverage_cnbc.json"
+      }
+    ],
+    "original_record_hash": "a1b35c107f6203b226186db1c3771a7253a1bba674fe07a3e6837580a3675486",
+    "input_hash": "7b6da70d2007ae1a2e3a60f07e7942ca4ef4ac9a2d44197b0b5026f194914f66",
+    "matching_audit_hash": "5c5fe282effac8556011787a1e4b9698a219a13a5823177a7d2277d9b651bbd8",
+    "legacy_security_evidence": [],
+    "record_hash": "72d9088814ec3fb0b3001e8e5c91c01bf7e5c71f104db88beafa5a51eaa3af95",
+    "outputs": [
+      {
+        "path": "US\\2017_10_31_Consumer-Goods_Food-&-Beverage_cnbc.json",
+        "sha256": "a8b24f12c59970b1edd05551e750bb8f2a72406967016562cf14dbac52ad2bb7"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2017-10-31",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T16:05:24.936362+00:00",
+      "fetched_at": "2026-11-10T16:51:19.894114+00:00",
+      "feature_available_at": "2026-11-10T17:53:19.248723+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T15:49:00.091535+00:00",
+    "feature_available_at": "2026-11-18T15:49:00.126527+00:00",
+    "commit_verified_at": "2026-11-12T14:41:21.845120+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2017/10/31/mondelez-ceo-irene-rosenfeld-says-food-is-changing-faster-than-before.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "72d9088814ec3fb0b3001e8e5c91c01bf7e5c71f104db88beafa5a51eaa3af95",
+    "content_hash": "5fd14fddaa9615c9e8f955679bcf9bda0e5cddf438432ea11a11538a4a23f5eb",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:49:00.096542+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/59e9d9eaf74791707a40946c.json",
+      "sha256": "65f46eeb425ba40b3045efc0904939c90aa06308132d07a994648cc88549735e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 81.70300000000861
+}

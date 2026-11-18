@@ -1,0 +1,191 @@
+{
+  "source_id": "abd5d404eb095f09df4e774a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_01_Finance_Real-Estate_cnbc.json",
+      "sha256": "009b2bbb708300f31de68b051844baf0bfef03fe9096d9d1f6a0eca64491c58b",
+      "filename": "2018_03_01_Finance_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b590a10458342cc0a23422fc8a41bab0ba6b35581879530e08f598ff427d70da",
+  "input_hash": "b3128f5a325c6b73b02e63459992a031ca350e8c8a351f5af214f516dcc236e4",
+  "matching_audit_hash": "4052824032e5c658d50cc664dba88a5dba9b068b4d05d1f117d8444064d43012",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0182ec7a3c528e0d995a0a2829c5af3e77ea7ab446d6926dbfdfff36e0f70207",
+    "raw_sha256": "6be78d30ecd3af8dfaf8557de8d4b9858b1aa0d18fbdbfdd03a56a9ef63fe796",
+    "date_quote": "article:published_time=2018-03-01T23:25:58+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "c6330b13c795663e588950f2f616243e5b6cbce647f587d8f7f5ae67ca56049c",
+  "outputs": [
+    {
+      "path": "US\\2018_03_01_Finance_Real-Estate_cnbc.json",
+      "sha256": "f578383d256f63a55a4db9c2d26b8d184e00053b251e834f12366897aad50236"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:43.789064+00:00",
+    "fetched_at": "2026-11-10T12:53:15.337573+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.980862+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:08:40.138854+00:00",
+  "feature_available_at": "2026-11-12T15:16:42.919808+00:00",
+  "commit_verified_at": "2026-11-12T15:16:42.919808+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Analyzes risks of retail REITs amid retail decline and rising rates.",
+    "securities": [
+      {
+        "name": "Federal Realty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "companies like Federal Realty"
+      },
+      {
+        "name": "Credit Suisse",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Credit Suisse predicting"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "explicit",
+        "quote": "retail industry"
+      },
+      {
+        "name": "Real Estate Investment Trusts (REITs)",
+        "basis": "explicit",
+        "quote": "retail real estate investment trusts (REITs)"
+      },
+      {
+        "name": "Malls",
+        "basis": "inferred",
+        "quote": "malls"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Federal Realty": "company",
+      "Credit Suisse": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:42.945043+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:08:40.138854+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Analyzes risks of retail REITs amid retail decline and rising rates.",
+      "securities": [
+        {
+          "name": "Federal Realty",
+          "ticker": null,
+          "exchange": null,
+          "quote": "companies like Federal Realty"
+        },
+        {
+          "name": "Credit Suisse",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Credit Suisse predicting"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Retail",
+          "basis": "explicit",
+          "quote": "retail industry"
+        },
+        {
+          "name": "Real Estate Investment Trusts (REITs)",
+          "basis": "explicit",
+          "quote": "retail real estate investment trusts (REITs)"
+        },
+        {
+          "name": "Malls",
+          "basis": "inferred",
+          "quote": "malls"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "Federal Realty": "company",
+        "Credit Suisse": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:08:40.163040+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:08:40.172591+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:08:40.154576+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses risks and performance of retail REITs, including challenges from online shopping, rising interest rates, potential mall closures, and the uns",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:43:12.163601+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

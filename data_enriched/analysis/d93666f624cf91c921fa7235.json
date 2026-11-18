@@ -1,0 +1,145 @@
+{
+  "source_id": "d93666f624cf91c921fa7235",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_08_04_Mergers-&-Acquisitions_Healthcare_sec.json",
+      "sha256": "f3a2d93e5e5815cf28fb0e3c02861f5a0db428539f38f71c9a6775fcf7d619e8",
+      "filename": "2015_08_04_Mergers-&-Acquisitions_Healthcare_sec.json"
+    }
+  ],
+  "original_record_hash": "58be92258195c41ad07c35d5d6771353e103452d72758f0c0fed44a20ebb5f5c",
+  "input_hash": "5701431a9d415180b512c98d3db450d8b61674afb1a873d20b83a234929a529b",
+  "matching_audit_hash": "bec7b6eec525be99a805a53e78e9e1ce958963341566f2ff2bf0a694ff1a2f08",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "26ebc686982a7905b8586b3dadd0931bd3f3dae907ed3a00afb5f31ebb126ff8",
+    "raw_sha256": "77c1eb61f7e8693f43df74842b06f0a238eb7f7579ad69966a49742b716a92e5",
+    "date_quote": "Date of Report (Date of earliest event reported): August 4, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/936402/000110465915055842/a15-16905_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Shire plc",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Shire plc (Shire) issued a press release announcing a proposed combination with Baxalta Incorporated."
+    },
+    {
+      "name": "Baxalta Incorporated",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Shire plc (Shire) issued a press release announcing a proposed combination with Baxalta Incorporated."
+    },
+    {
+      "name": "Baxter International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Baxter International, Inc. (Baxter)"
+    },
+    {
+      "name": "Baxalta",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Baxalta"
+    },
+    {
+      "name": "Shire",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Shire"
+    }
+  ],
+  "record_hash": "e20b7b5bfffa3c742d6b9e3a342d7c55461a46634b75c6b9d76fe7a194e2fe2a",
+  "outputs": [
+    {
+      "path": "US\\2015_08_04_Mergers-&-Acquisitions_Healthcare_sec.json",
+      "sha256": "4bdb0385dddc5907524576302dbb36eeaa38eeeae0c98942ea550ab23138d741"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-08-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:34.228661+00:00",
+    "fetched_at": "2026-11-10T20:39:48.038220+00:00",
+    "feature_available_at": "2026-11-10T20:40:39.180533+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:59.980696+00:00",
+  "commit_verified_at": "2026-11-12T13:52:59.980696+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Shire plc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shire plc (Shire) issued a press release announcing a proposed combination with Baxalta Incorporated."
+      },
+      {
+        "name": "Baxalta Incorporated",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shire plc (Shire) issued a press release announcing a proposed combination with Baxalta Incorporated."
+      },
+      {
+        "name": "Baxter International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Baxter International, Inc. (Baxter)"
+      },
+      {
+        "name": "Baxalta",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Baxalta"
+      },
+      {
+        "name": "Shire",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shire"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceuticals",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

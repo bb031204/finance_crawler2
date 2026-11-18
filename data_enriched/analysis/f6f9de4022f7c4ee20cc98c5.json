@@ -1,0 +1,95 @@
+{
+  "source_id": "f6f9de4022f7c4ee20cc98c5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_03_16_dividend_oil-and-gas-services_sec.json",
+      "sha256": "ba218c0b7c90363081c21933e94033e37043241f86a0f995afc338ce0ccfa183",
+      "filename": "2020_03_16_dividend_oil-and-gas-services_sec.json"
+    }
+  ],
+  "original_record_hash": "9425eb4e9850272bdfaae9f8b30a14afe0c83cae75ff14ff72291cb3a5ecfdfa",
+  "input_hash": "be2456544957a5cb79837726104bd4abb1990bc96f20503b77ea57c4bae6a88f",
+  "matching_audit_hash": "835babf90c579c3ee4fd09f19233e2a3759f50f3f285495ce15e46dc499a03b8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "da2c1b29d2fcac743e861bf9356ecec3fab9575e14842e235bff8914236b47b0",
+    "raw_sha256": "7ff056313945736eb929b9c91eea5ffbc6bc37b8c6d49a1b8033521794673b25",
+    "date_quote": "SEC filing datePublished=2020-03-16",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000156459020011216/clb-8k_20200316.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V."
+    }
+  ],
+  "record_hash": "51f10529d464fd8d3457332ff90322147c8e85a54044597f8072e250e24ae1be",
+  "outputs": [
+    {
+      "path": "US\\2020_03_16_dividend_oil-and-gas-services_sec.json",
+      "sha256": "9af1728fde51d66c23a2c49676fd9befed728b3fac2ad38558363ebf48983ce3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-03-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.199957+00:00",
+    "fetched_at": "2026-11-11T14:32:09.181300+00:00",
+    "feature_available_at": "2026-11-11T14:32:22.103179+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:32.890385+00:00",
+  "commit_verified_at": "2026-11-12T13:53:32.890385+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "industries": [
+      {
+        "name": "oil_and_gas_services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "source_id": "cd80dfe476b72225c7fb087b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_09_09_Construction-Materials_Building-Materials_bloomberg.json",
+      "sha256": "d44ccd751e813a5443d40e9f34737bf0a7cb73782656f53a93ea2a620098bca1",
+      "filename": "2019_09_09_Construction-Materials_Building-Materials_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2019_09_09_Construction-Materials_Building-Materials_bloomberg.json",
+      "sha256": "d44ccd751e813a5443d40e9f34737bf0a7cb73782656f53a93ea2a620098bca1",
+      "filename": "2019_09_09_Construction-Materials_Building-Materials_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "57ccca1c275d2594e9b787e4f0805c9504bc9a793b576db2c621423f1870da6e",
+  "input_hash": "8d73a0ad93c3e1fe64e6a6dca23cab2baf5d4220bc3cd50f5055049166569295",
+  "matching_audit_hash": "c21f3b888de8813005cbf78819ead98ff85cac1f5e323939e4a9686b24d3c9e6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "620e4d5ed3214f22f5c77a0158594f3457a9205e676140f16b0aa1b96491c97c",
+    "raw_sha256": "4121e92e68632585f07c7670ed7fb5719f0a3daab07584ab672a6ff56a01f92f",
+    "date_quote": "By Tara Patel and Leonard Kehnscherper September 9, 2019 at 4:00 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "70017d39d150738afe6a37250a74e7196e186638ebf5e3e46cd01b6cafe1d85c",
+  "outputs": [
+    {
+      "path": "US\\2019_09_09_Construction-Materials_Building-Materials_bloomberg.json",
+      "sha256": "15b1937d53486a4ae5a7479daeeda1bacf5d7740175e8764da256540840333da"
+    },
+    {
+      "path": "GLOBAL\\2019_09_09_Construction-Materials_Building-Materials_bloomberg.json",
+      "sha256": "15b1937d53486a4ae5a7479daeeda1bacf5d7740175e8764da256540840333da"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-09-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:01:28.632702+00:00",
+    "fetched_at": "2026-11-10T13:10:20.687383+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.849688+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:50:14.101069+00:00",
+  "feature_available_at": "2026-11-12T14:50:14.112495+00:00",
+  "commit_verified_at": "2026-11-12T14:50:14.112495+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses LafargeHolcim Ltd.'s restructuring and potential acquisitions, indicating strategic moves in the construction materials industry.",
+    "securities": [
+      {
+        "name": "LafargeHolcim Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "LafargeHolcim Ltd."
+      },
+      {
+        "name": "Lafarge SA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lafarge SA"
+      },
+      {
+        "name": "Holcim Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Holcim Ltd."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "LafargeHolcim Ltd.": "company",
+      "Lafarge SA": "company",
+      "Holcim Ltd.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

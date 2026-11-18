@@ -1,0 +1,95 @@
+{
+  "source_id": "3b9f8b99e7b82622ffdc80ec",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_08_Other-Events_Financial-Services_sec.json",
+      "sha256": "338dec963bdf1b40a62f4181c3e9ab276d0579396119b525c293b28a9d99834c",
+      "filename": "2021_03_08_Other-Events_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "4043ca574ce2af07aa71a54d5e5f685d1a0156623178cca26750f71e553d61dc",
+  "input_hash": "7c5aa291db26aa472c2175cecf637877321e997dd690d28283cce246fdda1015",
+  "matching_audit_hash": "e33a2ef9a69e0e7021986c00208b90202b20b52a89a0e4f7cc230dea3462c207",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "96f25f8a635dcb9d1f9ab1b80eec6bedaafabc50144b4a22a9c9e1e017891492",
+    "raw_sha256": "f19a3c9a37c9542832ab23cf895c44ae96e242aa342dd447e3667787ac5c7b62",
+    "date_quote": "SEC filing datePublished=2021-03-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000045/000156459021011365/nick-8k_20210308.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock"
+    }
+  ],
+  "record_hash": "1e1ee685219e49cf2929e69a1d8647e2679160cba714fb266b1fcde4f9d84be8",
+  "outputs": [
+    {
+      "path": "US\\2021_03_08_Other-Events_Financial-Services_sec.json",
+      "sha256": "3f42e8215d92ab5f83cc14428cc03f61a69b9c7e2916e3d5700f1d46997816af"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.583594+00:00",
+    "fetched_at": "2026-11-11T15:34:08.896378+00:00",
+    "feature_available_at": "2026-11-11T15:34:23.058733+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.896231+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.896231+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

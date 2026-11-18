@@ -1,0 +1,343 @@
+{
+  "source_id": "59526d1944b8fab11b281fc3",
+  "status": "completed",
+  "source_record_hash": "9adc987ddb84415b9e1277a4bea6589f3e96d1e275526be706bb1ffcea450f8f",
+  "source_trace": {
+    "requested_url": "https://www.prnewswire.com/news-releases/company-updates-upcoming-results-stock-updates-performance-reports-and-earnings-releases---analyst-notes-on-ibm-applied-materials-qihoo-360-yandex-and-windstream-259038031.html",
+    "attempted_at": "2026-11-18T15:40:53.701649+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "5078ed3f47e4c7dde296ea00bcb54706a140e879b0bc732c5010d215246a0248"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/59526d1944b8fab11b281fc3.json",
+    "sha256": "582510738338fd90a70cceb0fdab6c8edf0d85eb4e913a01a8a87c91b0dabcb6",
+    "bundled_path": "legacy_audit/59526d1944b8fab11b281fc3.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "5f0984c657feea94c8e92c52f7a0de825f950f39f4b886e29612cff10fb377c5",
+      "llm_inferred_at": "2026-11-18T15:41:49.734295+00:00",
+      "model_duration_seconds": 10.9632801,
+      "prompt_tokens": 2221,
+      "completion_tokens": 561,
+      "selection": [
+        {
+          "source_id": "59526d1944b8fab11b281fc3",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Windstream Holdings, Inc. reported Q1 2014 financial results, with total revenues and sales of $1.5 billion, down 2.1% YoY. The company reported adjusted EPS of $0.04, below",
+              "rationale": "Windstream Holdings, Inc. is a specific company that reported its financial results, indicating a company-specific impact.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "Jeff Gardner, President and CEO, stated, \"Total revenue trends improved both year-over-year and sequentially as wholesale pressures began to abate.",
+              "rationale": "The mention of wholesale pressures and improvements in the consumer business suggests an industry-wide impact on the business services sector.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "Jeff Gardner, President and CEO, stated, \"Total revenue trends improved both year-over-year and sequentially as wholesale pressures began to abate."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Jeff Gardner, President and CEO, stated, \"Total revenue trends improved both year-over-year and sequentially as wholesale pressures began to abate."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Windstream Holdings, Inc. reported Q1 2014 financial results, with total revenues and sales of $1.5 billion, down 2.1% YoY. The company reported adjusted EPS of $0.04, below"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "eea9f6b81d96ca90467936f41b25a124855ee290f93144a81c7c889538fe21d4",
+      "llm_inferred_at": "2026-11-18T15:41:59.554809+00:00",
+      "model_duration_seconds": 9.787047,
+      "prompt_tokens": 2265,
+      "completion_tokens": 536,
+      "selection": [
+        {
+          "source_id": "59526d1944b8fab11b281fc3",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Windstream Holdings, Inc. reported Q1 2014 financial results, with total revenues and sales of $1.5 billion, down 2.1% YoY. The company reported adjusted EPS of $0.04, below",
+              "rationale": "Windstream Holdings, Inc. is a specific company that reported its financial results, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Jeff Gardner, President and CEO, stated, \"Total revenue trends improved both year-over-year and sequentially as wholesale pressures began to abate.",
+              "rationale": "The statement refers to wholesale pressures, which is an industry-wide issue affecting the business services sector.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "Jeff Gardner, President and CEO, stated, \"Total revenue trends improved both year-over-year and sequentially as wholesale pressures began to abate."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Jeff Gardner, President and CEO, stated, \"Total revenue trends improved both year-over-year and sequentially as wholesale pressures began to abate."
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Applied Materials announced a webcast for Q2 FY 2014 results, with revenue up 10.1% QoQ."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:41:59.614757+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5078ed3f47e4c7dde296ea00bcb54706a140e879b0bc732c5010d215246a0248",
+    "raw_sha256": null,
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2014-05-13T12:20:00+01:00\ndate=2014-05-13T12:20:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary includes financial results, guidance, and statements from company leadership, as well as mentions of other companies and their activities.",
+    "securities": [
+      {
+        "name": "Windstream Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Windstream Holdings, Inc."
+      },
+      {
+        "name": "IBM",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IBM"
+      },
+      {
+        "name": "Applied Materials Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Applied Materials Inc."
+      },
+      {
+        "name": "Qihoo 360 Technology Co. Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Qihoo 360 Technology Co. Ltd."
+      },
+      {
+        "name": "Yandex N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Yandex N.V."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Windstream Holdings, Inc.": "company",
+      "IBM": "company",
+      "Applied Materials Inc.": "company",
+      "Qihoo 360 Technology Co. Ltd.": "company",
+      "Yandex N.V.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "59526d1944b8fab11b281fc3",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_05_13_12_20_stock_Information-Technology_prnewswire.json",
+        "sha256": "0d1948b3a7c65a22e715c37f9c9bc6c179e8cc14ed510adaabf3f1d1f8b1bb9d",
+        "filename": "2014_05_13_12_20_stock_Information-Technology_prnewswire.json"
+      }
+    ],
+    "original_record_hash": "7dac6b6cfe915405d7371af3c4c73c7cefb3f6035bf2c287b30dcf0b01e0b0ad",
+    "input_hash": "c2f4f76c461053c3f6e2cbef3aed69573a1b6f7d3bc2c02358987c92cd0b47c8",
+    "matching_audit_hash": "7f5af6b9040ccd9cdd4ed825660cc4344a3cd6ef9529db58eddb66a12623816f",
+    "legacy_security_evidence": [
+      {
+        "name": "International Business Machines Corporation",
+        "ticker": "IBM",
+        "exchange": "NYSE",
+        "quote": "International Business Machines Corporation (NYSE: IBM)"
+      },
+      {
+        "name": "Applied Materials Inc.",
+        "ticker": "AMAT",
+        "exchange": "NASDAQ",
+        "quote": "Applied Materials Inc. (NASDAQ: AMAT)"
+      },
+      {
+        "name": "Qihoo 360 Technology Co. Ltd.",
+        "ticker": "QIHU",
+        "exchange": "NYSE",
+        "quote": "Qihoo 360 Technology Co. Ltd. (NYSE: QIHU)"
+      },
+      {
+        "name": "Yandex N.V.",
+        "ticker": "YNDX",
+        "exchange": "NASDAQ",
+        "quote": "Yandex N.V. (NASDAQ: YNDX)"
+      },
+      {
+        "name": "Windstream Holdings, Inc.",
+        "ticker": "WIN",
+        "exchange": "NASDAQ",
+        "quote": "Windstream Holdings, Inc. (NASDAQ: WIN)"
+      },
+      {
+        "name": "IBM",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IBM"
+      },
+      {
+        "name": "Applied Materials",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Applied Materials"
+      },
+      {
+        "name": "Qihoo 360",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Qihoo 360"
+      },
+      {
+        "name": "Yandex",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Yandex"
+      },
+      {
+        "name": "Windstream",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Windstream"
+      }
+    ],
+    "record_hash": "9adc987ddb84415b9e1277a4bea6589f3e96d1e275526be706bb1ffcea450f8f",
+    "outputs": [
+      {
+        "path": "US\\2014_05_13_12_20_stock_Information-Technology_prnewswire.json",
+        "sha256": "50ab2263468347a7a162981c92b301d1ed8c3a115acc6b10bc20e7a903feb002"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2014-05-13T12:20:00+01:00",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": "+01:00",
+    "original_time_information": {
+      "publication_precision": "second",
+      "first_seen_at": "2026-11-10T18:36:45.964790+00:00",
+      "fetched_at": "2026-11-10T19:47:23.484066+00:00",
+      "feature_available_at": "2026-11-11T06:24:55.229165+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:41:59.554809+00:00",
+    "feature_available_at": "2026-11-18T15:41:59.614757+00:00",
+    "commit_verified_at": "2026-11-12T14:15:23.819540+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Windstream Holdings, Inc. reported Q1 2014 financial results, with total revenues and sales of $1.5 billion, down 2.1% YoY. The company reported adjusted EPS of $0.04, below",
+        "rationale": "Windstream Holdings, Inc. is a specific company that reported its financial results, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Windstream Holdings, Inc. reported Q1 2014 financial results, with total revenues and sales of $1.5 billion, down 2.1% YoY. The company reported adjusted EPS of $0.04, below"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.prnewswire.com/news-releases/company-updates-upcoming-results-stock-updates-performance-reports-and-earnings-releases---analyst-notes-on-ibm-applied-materials-qihoo-360-yandex-and-windstream-259038031.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "9adc987ddb84415b9e1277a4bea6589f3e96d1e275526be706bb1ffcea450f8f",
+    "content_hash": "5078ed3f47e4c7dde296ea00bcb54706a140e879b0bc732c5010d215246a0248",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:41:59.559455+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/59526d1944b8fab11b281fc3.json",
+      "sha256": "5ad5f2ffa71aac893bc5bf22b4a5c0293060dbda27eee661d383c60fc60a7a7d",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 65.98399999999674
+}

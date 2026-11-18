@@ -1,0 +1,200 @@
+{
+  "source_id": "52a17bf7c3902b7ad11c9734",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_11_board-changes_telecommunications_sec.json",
+      "sha256": "470dc645233ad460b617e8335ac44f2d8c2a35d7a502e6fd7435ea3577b0bbca",
+      "filename": "2019_03_11_board-changes_telecommunications_sec.json"
+    }
+  ],
+  "original_record_hash": "d5505aecf2022bbbdaf5cf788605a58baad84f236f7648cf5526a5e3ad240c96",
+  "input_hash": "251283b666c1a19d984ed6669a3cffb6a3bf553619b5a41c767ec6bbc2ef44ea",
+  "matching_audit_hash": "243ad82f566841052100e577ab92fae89fb3118b6073338701910a4ac068647a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d089e4eb9887989d33a02984c48004d8a4c5244fc3fc4b44668dced7d31fea9e",
+    "raw_sha256": "2beb9099e03b5db19486b09ea85b129c1c8d49650a4a5f6faa684e6928b21948",
+    "date_quote": "SEC filing datePublished=2019-03-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000100108219000003/dish-20190311x8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "DISH Network Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH Network Corporation"
+    }
+  ],
+  "record_hash": "e55d48e441ad45426fc8f0927c03cb897115505fb3cd46c3643ff500b409d462",
+  "outputs": [
+    {
+      "path": "US\\2019_03_11_board-changes_telecommunications_sec.json",
+      "sha256": "e8d08b9b95de138edb9b2e2e5d29f5c8264642ffaa3914a007fb55e825a52deb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.618622+00:00",
+    "fetched_at": "2026-11-11T14:13:21.645756+00:00",
+    "feature_available_at": "2026-11-11T14:13:37.801267+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:10:56.620564+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.138815+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.138815+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Board appointment with regulatory expertise",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation appointed Kathleen Q. Abernathy as an independent member of its Board of Directors"
+      },
+      {
+        "name": "NASDAQ",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the independence requirements of NASDAQ and SEC rules"
+      },
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the independence requirements of NASDAQ and SEC rules"
+      },
+      {
+        "name": "Frontier Communications Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "She previously served as Executive Vice President, External Affairs for Frontier Communications Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "telecommunications industry",
+        "basis": "explicit",
+        "quote": "regulatory and managerial experience in the telecommunications industry"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "DISH Network Corporation": "company",
+      "NASDAQ": "organization",
+      "SEC": "organization",
+      "Frontier Communications Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:45.165320+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:10:56.620564+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Board appointment with regulatory expertise",
+      "securities": [
+        {
+          "name": "DISH Network Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "DISH Network Corporation appointed Kathleen Q. Abernathy as an independent member of its Board of Directors"
+        },
+        {
+          "name": "NASDAQ",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the independence requirements of NASDAQ and SEC rules"
+        },
+        {
+          "name": "SEC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the independence requirements of NASDAQ and SEC rules"
+        },
+        {
+          "name": "Frontier Communications Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "She previously served as Executive Vice President, External Affairs for Frontier Communications Inc."
+        }
+      ],
+      "industries": [
+        {
+          "name": "telecommunications industry",
+          "basis": "explicit",
+          "quote": "regulatory and managerial experience in the telecommunications industry"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "DISH Network Corporation": "company",
+        "NASDAQ": "organization",
+        "SEC": "organization",
+        "Frontier Communications Inc.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:10:56.645572+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:10:56.654564+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:10:56.636565+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a board change at DISH Network Corporation, including the appointment of a new independent director and her background, which provides key",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:48:12.515146+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

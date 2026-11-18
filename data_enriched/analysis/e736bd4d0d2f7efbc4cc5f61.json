@@ -1,0 +1,99 @@
+{
+  "source_id": "e736bd4d0d2f7efbc4cc5f61",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_08_Regulation-FD-Disclosure_Biotechnology_sec.json",
+      "sha256": "cffe08096fa176a5ae91b25a575685afaaac71e1681c282b07664a7307af491d",
+      "filename": "2018_01_08_Regulation-FD-Disclosure_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "fb1ed12fc655195923884509e249ffb30c5c7b80d58d5bc8685fba74ff899a0a",
+  "input_hash": "e02026b78421e6273bc6c0f31702ef09c6f8c748924f6ef4329dd39a2c5f377c",
+  "matching_audit_hash": "bee999d6cac91e608e7e9b55fe8e18cd146b3493416b205786b9831b3b5dbd2d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2be3dc57600813d860c77bdfcd0fb34ac85101581b8ca43adef14842139f7c5e",
+    "raw_sha256": "5b7c0fd7537355df3434ebda7d45ad4c48ac900b68844c0c1544d5b905e8ab38",
+    "date_quote": "SEC filing datePublished=2018-01-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312518005226/d522217d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SANGAMO THERAPEUTICS, INC.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SANGAMO THERAPEUTICS, INC."
+    }
+  ],
+  "record_hash": "393e231e1b0537e5ff2cd3c3dc3f637f8cf9c10feaa30b3cb6df1d3576937cbe",
+  "outputs": [
+    {
+      "path": "US\\2018_01_08_Regulation-FD-Disclosure_Biotechnology_sec.json",
+      "sha256": "ef65df597f26cee84c72557d69a8aab5dba7864c298fccca0f4c50ca99e7066f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.048576+00:00",
+    "fetched_at": "2026-11-11T13:21:28.801865+00:00",
+    "feature_available_at": "2026-11-11T13:22:07.217773+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:04.527953+00:00",
+  "feature_available_at": "2026-11-12T14:42:04.537904+00:00",
+  "commit_verified_at": "2026-11-12T14:42:04.537904+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Sangamo Therapeutics, Inc.'s intention to use a presentation at the J.P. Morgan Healthcare Conference, indicating the company's involvement.",
+    "securities": [
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "explicit",
+        "quote": "J.P. Morgan Healthcare Conference"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Sangamo Therapeutics, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

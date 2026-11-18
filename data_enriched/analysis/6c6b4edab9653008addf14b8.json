@@ -1,0 +1,114 @@
+{
+  "source_id": "6c6b4edab9653008addf14b8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_25_Financial-Report_Utilities_sec.json",
+      "sha256": "ed6d1d6ccd7f68a2c4e7a28362668bd3e314ed6a7e675a358ab6931891d373e0",
+      "filename": "2014_02_25_Financial-Report_Utilities_sec.json"
+    }
+  ],
+  "original_record_hash": "367329adcfbd6c6ef0c164a60c195f723fcf40cbb6f0fbb49280c22184af6bab",
+  "input_hash": "95a42131266fc67610868cd60e28fc33701a8655a4a3feff1213f46fd48aeef5",
+  "matching_audit_hash": "9b8efefea27a7c6f1c715fa2d46ccd776131d92920a129ed21ff3a4fe3883870",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c72ba2f767ff8cd5fb2797bfd240e93b2b293d7dfee16e40c66d69ab337cd63d",
+    "raw_sha256": "7fffbaf2254847f36533e2c8684ea61f122a8082f74e9be0c818eedc93120431",
+    "date_quote": "DATE OF REPORT (DATE OF EARLIEST EVENT REPORTED): February 25, 2014",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/100122/000094113814000042/coverpage12312013.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "UNS Energy Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "UNS Energy Corporation"
+    },
+    {
+      "name": "Tucson Electric Power Company",
+      "ticker": "TEP",
+      "exchange": null,
+      "quote": "UNS Energy Corporation (UNS Energy) issued a press release announcing earnings for the year ended December 31, 2013 for UNS Energy and Tucson Electric Power Company (TEP)."
+    }
+  ],
+  "record_hash": "b7b9de821e4e9f9f2e2e5d50bab9ccd090f681dfe76017735b10681b5a923ff6",
+  "outputs": [
+    {
+      "path": "US\\2014_02_25_Financial-Report_Utilities_sec.json",
+      "sha256": "25e2c7ac20eb24974a99cbcac6524217075c66ba51fac8707547cbf8e6d808f5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:08:51.208552+00:00",
+    "feature_available_at": "2026-11-11T00:09:33.057830+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:50.067766+00:00",
+  "commit_verified_at": "2026-11-12T13:52:50.067766+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "UNS Energy Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UNS Energy Corporation"
+      },
+      {
+        "name": "Tucson Electric Power Company",
+        "ticker": "TEP",
+        "exchange": null,
+        "quote": "UNS Energy Corporation (UNS Energy) issued a press release announcing earnings for the year ended December 31, 2013 for UNS Energy and Tucson Electric Power Company (TEP)."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Utilities",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

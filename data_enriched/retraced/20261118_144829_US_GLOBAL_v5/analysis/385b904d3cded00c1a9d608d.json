@@ -1,0 +1,381 @@
+{
+  "source_id": "385b904d3cded00c1a9d608d",
+  "status": "completed",
+  "source_record_hash": "0caa10189cf58e0ed7a056b013edbb78661d3b66add4bab27ea7c110c3d304f3",
+  "source_trace": {
+    "requested_url": "https://www.fool.com/investing/general/2014/11/29/deere-and-company-de-stock-earnings-no-bottom-seen.aspx",
+    "attempted_at": "2026-11-18T11:56:40.106510+00:00",
+    "status": "summary_only",
+    "reason": "refetched_source_identity_date_or_historical_body_unverified",
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.fool.com/investing/general/2014/11/29/deere-and-company-de-stock-earnings-no-bottom-seen.aspx",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T11:56:46.258460+00:00",
+    "source_body_hash": "4444730b02a2b6a83624709f43aa54a53501b055f9e34d75fa2c48875a32faf7",
+    "raw_sha256": "8c0410619199508c9784ef7d63d8c099d629015fb982a0875ae1d68b6d3f751c",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Deere and Company (DE) Stock Earnings: No Bottom Seen Yet | The Motley Fool",
+    "title_origin": "bound_metadata",
+    "publication_evidence": "article:published_time=2014-11-29T13:33:00Z",
+    "historical_body_basis": "unproven_current_webpage_version",
+    "summary_sha256": "8538ab66387fc1ad71e0225e15c632d8e6ee7f67722e2761d0fcc70d2a577b61"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/385b904d3cded00c1a9d608d.json",
+    "sha256": "1779ae9e8ab67dd270be50cff79e9598b593bd46ea51c605761a21c9beecdc5e",
+    "bundled_path": "legacy_audit/385b904d3cded00c1a9d608d.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "923067a41b2806f99ee6d0812d52ce1cbfd179d8321a0acd5d93df51ac847589",
+      "llm_inferred_at": "2026-11-18T11:57:04.528363+00:00",
+      "model_duration_seconds": 18.2526852,
+      "prompt_tokens": 2054,
+      "completion_tokens": 863,
+      "selection": [
+        {
+          "source_id": "385b904d3cded00c1a9d608d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "rationale": "The article mentions that ACGO Corporation (AGCO) lowered its forecasts, which indicates potential increased price competition in the industry, suggesting an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Deere and Company fourth-quarter net sales decreased 7% to $8.04 billion, below analyst consensus of $7.75 billion.",
+              "rationale": "The article directly reports on Deere and Company's financial performance, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3523",
+              "name": "FARM MACHINERY & EQUIPMENT",
+              "basis": "explicit",
+              "quote": "Deere's crop price outlook worsened, with corn and wheat prices forecast to decline further."
+            },
+            {
+              "industry_key": "SEC-SIC:3531",
+              "name": "CONSTRUCTION MACHINERY & EQUIP",
+              "basis": "explicit",
+              "quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%."
+            },
+            {
+              "industry_key": "SEC-SIC:3530",
+              "name": "CONSTRUCTION, MINING & MATERIALS HANDLING MACHINERY & EQUIP",
+              "basis": "explicit",
+              "quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:3523",
+              "industry_scope_quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "industry_name_original": "FARM MACHINERY & EQUIPMENT",
+              "mechanism": "price competition",
+              "confidence": 0.95,
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry."
+            },
+            {
+              "industry_key": "SEC-SIC:3531",
+              "industry_scope_quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "industry_name_original": "CONSTRUCTION MACHINERY & EQUIP",
+              "mechanism": "price competition",
+              "confidence": 0.95,
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry."
+            },
+            {
+              "industry_key": "SEC-SIC:3530",
+              "industry_scope_quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "industry_name_original": "CONSTRUCTION, MINING & MATERIALS HANDLING MACHINERY & EQUIP",
+              "mechanism": "price competition",
+              "confidence": 0.95,
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "923067a41b2806f99ee6d0812d52ce1cbfd179d8321a0acd5d93df51ac847589",
+      "llm_inferred_at": "2026-11-18T11:57:20.029052+00:00",
+      "model_duration_seconds": 15.4935556,
+      "prompt_tokens": 2098,
+      "completion_tokens": 866,
+      "selection": [
+        {
+          "source_id": "385b904d3cded00c1a9d608d",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "rationale": "The article mentions that ACGO Corporation (AGCO) lowered its forecasts, which indicates potential increased price competition in the industry, suggesting an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Deere and Company fourth-quarter net sales decreased 7% to $8.04 billion, below analyst consensus of $7.75 billion.",
+              "rationale": "The article directly reports on Deere and Company's financial performance, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3523",
+              "name": "FARM MACHINERY & EQUIPMENT",
+              "basis": "explicit",
+              "quote": "Deere's crop price outlook worsened, with corn and wheat prices forecast to decline further."
+            },
+            {
+              "industry_key": "SEC-SIC:3531",
+              "name": "CONSTRUCTION MACHINERY & EQUIP",
+              "basis": "explicit",
+              "quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%."
+            },
+            {
+              "industry_key": "SEC-SIC:3530",
+              "name": "CONSTRUCTION, MINING & MATERIALS HANDLING MACHINERY & EQUIP",
+              "basis": "explicit",
+              "quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:3523",
+              "industry_scope_quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "industry_name_original": "FARM MACHINERY & EQUIPMENT",
+              "mechanism": "price competition",
+              "confidence": 0.95,
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry."
+            },
+            {
+              "industry_key": "SEC-SIC:3531",
+              "industry_scope_quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "industry_name_original": "CONSTRUCTION MACHINERY & EQUIP",
+              "mechanism": "price competition",
+              "confidence": 0.95,
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry."
+            },
+            {
+              "industry_key": "SEC-SIC:3530",
+              "industry_scope_quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry.",
+              "industry_name_original": "CONSTRUCTION, MINING & MATERIALS HANDLING MACHINERY & EQUIP",
+              "mechanism": "price competition",
+              "confidence": 0.95,
+              "quote": "ACGO Corporation (AGCO) also lowered its forecasts, indicating potential increased price competition in the industry."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:57:20.041101+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8538ab66387fc1ad71e0225e15c632d8e6ee7f67722e2761d0fcc70d2a577b61",
+    "raw_sha256": null,
+    "date_quote": "article:published_time=2014-11-29T13:33:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary contains financial results, guidance, and industry-related forecasts for Deere & Company and ACGO Corporation, indicating market and industry trends",
+    "securities": [
+      {
+        "name": "Deere and Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Deere and Company"
+      },
+      {
+        "name": "ACGO Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ACGO Corporation (AGCO)"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:3531",
+        "name": "CONSTRUCTION MACHINERY & EQUIP",
+        "basis": "inferred",
+        "quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3531",
+        "industry_name_standard": "CONSTRUCTION MACHINERY & EQUIP",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%."
+      },
+      {
+        "industry_key": "SEC-SIC:3530",
+        "name": "CONSTRUCTION, MINING & MATERIALS HANDLING MACHINERY & EQUIP",
+        "basis": "inferred",
+        "quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "3530",
+        "industry_name_standard": "CONSTRUCTION, MINING & MATERIALS HANDLING MACHINERY & EQUIP",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Deere's guidance for 2015 shows a decline in agriculture and turf segment sales by 20%, while construction and forestry sales are expected to increase by 5%."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Deere and Company": "company",
+      "ACGO Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "385b904d3cded00c1a9d608d",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_11_29_13_33_stock_agricultural-equipment_fool.json",
+        "sha256": "0c0a6786585f8eef695e94110164ba6eafe2a768507fea66036b88e0086805f6",
+        "filename": "2014_11_29_13_33_stock_agricultural-equipment_fool.json"
+      }
+    ],
+    "original_record_hash": "9289305fdd44cc37f99b9098f7a0bc5528a86544ec834b2588be59bd278beff1",
+    "input_hash": "6ceac1412b2cf0d8e9e040e412e3096790455289e01ddb194fbd90eb1086b5ec",
+    "matching_audit_hash": "3b8211f28989a2fbd48767f1cbf3f8d5b0cb2eb407161c02f69be90c9d29f004",
+    "legacy_security_evidence": [
+      {
+        "name": "Deere and Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Deere and Company"
+      },
+      {
+        "name": "Deere & Company",
+        "ticker": "DE",
+        "exchange": "NYSE",
+        "quote": "Deere & Company NYSE: DE"
+      },
+      {
+        "name": "Agco",
+        "ticker": "AGCO",
+        "exchange": "NYSE",
+        "quote": "Agco NYSE: AGCO"
+      },
+      {
+        "name": "ACGO Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ACGO Corporation"
+      }
+    ],
+    "record_hash": "0caa10189cf58e0ed7a056b013edbb78661d3b66add4bab27ea7c110c3d304f3",
+    "outputs": [
+      {
+        "path": "US\\2014_11_29_13_33_stock_agricultural-equipment_fool.json",
+        "sha256": "c9c36927a4273b40596ecec794fff092e96b16584cb067fa53d16c9b5900070d"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2014-11-29T13:33:00+00:00",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": "+00:00",
+    "original_time_information": {
+      "publication_precision": "second",
+      "first_seen_at": "2026-11-10T18:36:45.964790+00:00",
+      "fetched_at": "2026-11-10T19:48:07.803975+00:00",
+      "feature_available_at": "2026-11-11T06:27:13.105492+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:57:20.029052+00:00",
+    "feature_available_at": "2026-11-18T11:57:20.041101+00:00",
+    "commit_verified_at": "2026-11-12T14:18:48.064798+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Deere and Company fourth-quarter net sales decreased 7% to $8.04 billion, below analyst consensus of $7.75 billion.",
+        "rationale": "The article directly reports on Deere and Company's financial performance, indicating a company-specific impact.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Deere and Company fourth-quarter net sales decreased 7% to $8.04 billion, below analyst consensus of $7.75 billion."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.fool.com/investing/general/2014/11/29/deere-and-company-de-stock-earnings-no-bottom-seen.aspx",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "0caa10189cf58e0ed7a056b013edbb78661d3b66add4bab27ea7c110c3d304f3",
+    "content_hash": "8538ab66387fc1ad71e0225e15c632d8e6ee7f67722e2761d0fcc70d2a577b61",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:57:20.030172+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/385b904d3cded00c1a9d608d.json",
+      "sha256": "a2448dd276f155834826d768321630c7f68439085e3bf0c9a1717815ee82a2cc",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 39.98399999999674
+}

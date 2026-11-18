@@ -1,0 +1,235 @@
+{
+  "source_id": "0cc1346b431b1b10a5049d1c",
+  "status": "completed",
+  "source_record_hash": "091b5c17b6d57636b3c12dcede8dbff89d32902b5c6d207a6f1a93f49372203f",
+  "source_trace": {
+    "requested_url": "https://stg2.ofac.treasury.gov/faqs/652",
+    "attempted_at": "2026-11-18T08:04:59.917903+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "74bf6d706135bf8185295dfa8d3f442fdef9f9d265e93b57e1c97999ace6db4f",
+    "summary_sha256": "7233457790427bfa99e31443f1473c85151a4d338667bd0ad67fc738a539fdc5"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/0cc1346b431b1b10a5049d1c.json",
+    "sha256": "b9c24b0e0b7142223f9011c44ee2f528535927a6238f53ec0709641cc2ce7940",
+    "bundled_path": "legacy_audit/0cc1346b431b1b10a5049d1c.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "8da78c35cab35caaac5642176c1b01f9e0803edc9ab5025ee18a1d7564934274",
+      "llm_inferred_at": "2026-11-18T08:05:13.872348+00:00",
+      "model_duration_seconds": 9.7156178,
+      "prompt_tokens": 2010,
+      "completion_tokens": 484,
+      "selection": [
+        {
+          "source_id": "0cc1346b431b1b10a5049d1c",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "market",
+              "quote": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has issued guidance stating that mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted",
+              "rationale": "The guidance issued by OFAC affects U.S. persons and mutual funds, which are part of the broader U.S. equity market. The regulation impacts how these funds can operate and interact with certain entities, which has implications for the market as a whole.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has issued guidance stating that mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted to buy, sell, or engage in transactions related to debt, equity, or other holdings in entities listed on the SDN List, or entities owned 50% or more by such listed",
+              "rationale": "The guidance directly impacts U.S. equity market participants, such as mutual funds and ETFs, by restricting their transactions with certain entities. This has broad implications for the U.S. equity market.",
+              "confidence": 0.95
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted to buy, sell, or engage in transactions related to debt, equity, or other holdings in"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:05:13.885107+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7233457790427bfa99e31443f1473c85151a4d338667bd0ad67fc738a539fdc5",
+    "raw_sha256": null,
+    "date_quote": "Date Released January 31, 2019",
+    "date_kind": null,
+    "source_document_url": null,
+    "publication_validation_version": null,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The text discusses regulatory guidance from OFAC regarding U.S. mutual funds and ETFs and their restrictions on transactions involving entities on the SDN List.",
+    "securities": [
+      {
+        "name": "U.S. Treasury's Office of Foreign Assets Control (OFAC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury's Office of Foreign Assets Control (OFAC)"
+      },
+      {
+        "name": "mutual funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "mutual funds"
+      },
+      {
+        "name": "exchange traded funds (ETFs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "exchange traded funds (ETFs)"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6200",
+        "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+        "basis": "inferred",
+        "quote": "mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted to buy, sell, or engage in transactions related to debt, equity, or other holdings in",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6200",
+        "industry_name_standard": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted to buy, sell, or engage in transactions related to debt, equity, or other holdings in"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S. Treasury's Office of Foreign Assets Control (OFAC)": "organization",
+      "mutual funds": "company",
+      "exchange traded funds (ETFs)": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "0cc1346b431b1b10a5049d1c",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_01_31_Regulatory_Financial-Services_treasury.json",
+        "sha256": "4bc21d405d4fda6efc752e5fffbe2eb7764e6125c3f3c45802e95a9629e02f57",
+        "filename": "2019_01_31_Regulatory_Financial-Services_treasury.json"
+      }
+    ],
+    "original_record_hash": "0a9b560d99256aee989712b680c3e1c70744636d9070914f0c48d103da6eca53",
+    "input_hash": "c1ca905df8b4e6b00dfeaa5075659ace11223c36b8b5b0bdcbb560b8e5dd2988",
+    "matching_audit_hash": "2973aa14169b29a7936cf85570fc6954dd6c0f19b05a173ec19005728cae9b94",
+    "legacy_security_evidence": [],
+    "record_hash": "091b5c17b6d57636b3c12dcede8dbff89d32902b5c6d207a6f1a93f49372203f",
+    "outputs": [
+      {
+        "path": "US\\2019_01_31_Regulatory_Financial-Services_treasury.json",
+        "sha256": "b54446410a5f82d0bd379f1dfdb4d2df3184990bf89d72e8a39495e0a8f53531"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2019-01-31",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": null,
+      "fetched_at": "2026-11-10T07:42:01.352128+00:00",
+      "feature_available_at": "2026-11-10T17:53:21.913259+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T08:05:13.872348+00:00",
+    "feature_available_at": "2026-11-18T08:05:13.885107+00:00",
+    "commit_verified_at": "2026-11-12T14:47:39.583065+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [
+      "US_EQUITY"
+    ],
+    "scope_evidence": [
+      {
+        "scope": "US_EQUITY",
+        "evidence_quote": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has issued guidance stating that mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted to buy, sell, or engage in transactions related to debt, equity, or other holdings in entities listed on the SDN List, or entities owned 50% or more by such listed",
+        "rationale": "The guidance directly impacts U.S. equity market participants, such as mutual funds and ETFs, by restricting their transactions with certain entities. This has broad implications for the U.S. equity market.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has issued guidance stating that mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted to buy, sell, or engage in transactions related to debt, equity, or other holdings in entities listed on the SDN List, or entities owned 50% or more by such listed",
+        "scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "confidence_interpretation": "uncalibrated_model_self_assessment"
+      }
+    ],
+    "impact_scope_evidence": [
+      {
+        "scope": "market",
+        "quote": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has issued guidance stating that mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted",
+        "rationale": "The guidance issued by OFAC affects U.S. persons and mutual funds, which are part of the broader U.S. equity market. The regulation impacts how these funds can operate and interact with certain entities, which has implications for the market as a whole.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has issued guidance stating that mutual funds and exchange traded funds (ETFs) that are U.S. persons are not permitted"
+      }
+    ],
+    "relation_quality_flags": [],
+    "url": "https://stg2.ofac.treasury.gov/faqs/652",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "091b5c17b6d57636b3c12dcede8dbff89d32902b5c6d207a6f1a93f49372203f",
+    "content_hash": "7233457790427bfa99e31443f1473c85151a4d338667bd0ad67fc738a539fdc5",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T08:05:13.872860+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/0cc1346b431b1b10a5049d1c.json",
+      "sha256": "ec30aa81ca665a91f2c84588f7b76d1978e8e893d113a6002e1b6f1eb42620bf",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 13.985000000015134
+}

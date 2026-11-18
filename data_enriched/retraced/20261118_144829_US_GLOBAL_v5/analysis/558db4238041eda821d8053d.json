@@ -1,0 +1,200 @@
+{
+  "source_id": "558db4238041eda821d8053d",
+  "status": "completed",
+  "source_record_hash": "285c663accc922957f6c4a373707c74552da6be7f0534366303dcf7333713429",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000683/0001213900-20-001840-index.html",
+    "attempted_at": "2026-11-18T14:55:51.861234+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "19227ff2d52833d5f10f40928dfb2192cb516a320bafd6d5cc33eb11a253213f"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/558db4238041eda821d8053d.json",
+    "sha256": "2a277a9e572933fee54a3529fdb124051db3b1542ba0758a056c13c331a11a95",
+    "bundled_path": "legacy_audit/558db4238041eda821d8053d.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "0d2a19d7edb0404b3409303c48ceb36c05a4a41bf2d7f3f9360f53a402aecec5",
+      "llm_inferred_at": "2026-11-18T14:56:43.446600+00:00",
+      "model_duration_seconds": 6.4963243,
+      "prompt_tokens": 2011,
+      "completion_tokens": 304,
+      "selection": [
+        {
+          "source_id": "558db4238041eda821d8053d",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "On January 23, 2020, Blonder Tongue Laboratories, Inc. appointed John Burke as a director. Mr. Burke has served since 2017 as a Managing Partner of Vetust Advisors, providing",
+              "rationale": "The article discusses a specific company, Blonder Tongue Laboratories, Inc., and its appointment of a new director. This is a company-specific event and does not indicate broader industry or market impacts.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8700",
+              "name": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+              "basis": "inferred",
+              "quote": "Mr. Burke has served since 2017 as a Managing Partner of Vetust Advisors, providing strategic and management consulting services. Previously, he was Executive Vice President and"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:56:43.509578+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "19227ff2d52833d5f10f40928dfb2192cb516a320bafd6d5cc33eb11a253213f",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2020-01-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390020001840/f8k012320_blondertongue.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:8700",
+        "name": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+        "basis": "inferred",
+        "quote": "Mr. Burke has served since 2017 as a Managing Partner of Vetust Advisors, providing strategic and management consulting services. Previously, he was Executive Vice President and",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8700",
+        "industry_name_standard": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Mr. Burke has served since 2017 as a Managing Partner of Vetust Advisors, providing strategic and management consulting services. Previously, he was Executive Vice President and"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "558db4238041eda821d8053d",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_01_27_Corporate-Governance_Technology_sec.json",
+        "sha256": "e3a773aa381297b84a571d18363be53b4e985840ba2c3b76b704daa7eb9b29e1",
+        "filename": "2020_01_27_Corporate-Governance_Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "2f27efa0af57a8f4642913b614ee6f3df860ac87cbd1f60419686aff9a77d1f4",
+    "input_hash": "6e9b326df1b377818540763018a10695e810e475cde570a523357e027f956590",
+    "matching_audit_hash": "4431e548fd1f0d400679dd0614fecd99cd3b4e856226c64044171677d5259991",
+    "legacy_security_evidence": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      }
+    ],
+    "record_hash": "285c663accc922957f6c4a373707c74552da6be7f0534366303dcf7333713429",
+    "outputs": [
+      {
+        "path": "US\\2020_01_27_Corporate-Governance_Technology_sec.json",
+        "sha256": "2b561c788608996bc1c2d794d497106c4b83b45e4892a4afb41b2747f06cea05"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2020-01-27",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:24.200963+00:00",
+      "fetched_at": "2026-11-11T15:04:56.615299+00:00",
+      "feature_available_at": "2026-11-11T15:05:21.019549+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:56:43.446600+00:00",
+    "feature_available_at": "2026-11-18T14:56:43.509578+00:00",
+    "commit_verified_at": "2026-11-12T13:53:31.553610+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "On January 23, 2020, Blonder Tongue Laboratories, Inc. appointed John Burke as a director. Mr. Burke has served since 2017 as a Managing Partner of Vetust Advisors, providing",
+        "rationale": "The article discusses a specific company, Blonder Tongue Laboratories, Inc., and its appointment of a new director. This is a company-specific event and does not indicate broader industry or market impacts.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On January 23, 2020, Blonder Tongue Laboratories, Inc. appointed John Burke as a director. Mr. Burke has served since 2017 as a Managing Partner of Vetust Advisors, providing"
+      }
+    ],
+    "relation_quality_flags": [],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000683/0001213900-20-001840-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "285c663accc922957f6c4a373707c74552da6be7f0534366303dcf7333713429",
+    "content_hash": "19227ff2d52833d5f10f40928dfb2192cb516a320bafd6d5cc33eb11a253213f",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:56:43.448815+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/558db4238041eda821d8053d.json",
+      "sha256": "34b590a6e7a3af56c565f7767ed019adc8415b00bcbf949f9a731fa9d0aa9929",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 51.735000000015134
+}

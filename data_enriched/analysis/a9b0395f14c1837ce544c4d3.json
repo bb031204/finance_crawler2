@@ -1,0 +1,84 @@
+{
+  "source_id": "a9b0395f14c1837ce544c4d3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_29_Compensation_Financial-Services_sec.json",
+      "sha256": "31602dc1fc3e9740431734ed16bd22ca9765bd5016f8b914e8ccfce09efb6c04",
+      "filename": "2021_03_29_Compensation_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "e001e12840cbc5ee4811b0f431d910e2580e74d93e215eb233d6a44527a93a13",
+  "input_hash": "4a7c690be20cb6108bfd24aaec84d38a73eed8811ef11b4d4204ee9239d9cd1d",
+  "matching_audit_hash": "f1391dece3373d6aa62934d3ee7323dd49ac2fe21a9cc216fa69f13a313d000d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "16f1bd15bda316608e22e55fac9666de61770a6f4ddd481b30586917a1e5e8e3",
+    "raw_sha256": "bf79ede3cc722689a9d6f2a2fc6429e54a7042a3a5d9ade04e0063c4f5d2879d",
+    "date_quote": "SEC filing datePublished=2021-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000114036121010368/brhc10022424_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e956fe46583f925ba1ef0dec9e576fecfc926fb68b9748e90976d4f59a1713c6",
+  "outputs": [
+    {
+      "path": "US\\2021_03_29_Compensation_Financial-Services_sec.json",
+      "sha256": "f2dc560f43aa6aed95eb381b1424e7c8313edff801d83a356d984f2e1a1e7306"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.585595+00:00",
+    "fetched_at": "2026-11-11T16:26:02.040038+00:00",
+    "feature_available_at": "2026-11-11T16:26:12.708936+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:14.470632+00:00",
+  "feature_available_at": "2026-11-12T14:55:14.480259+00:00",
+  "commit_verified_at": "2026-11-12T14:55:14.480259+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a compensatory settlement between Broadway Financial Corporation and a director, indicating a company-specific event with financial terms.",
+    "securities": [
+      {
+        "name": "Broadway Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Financial Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Broadway Financial Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

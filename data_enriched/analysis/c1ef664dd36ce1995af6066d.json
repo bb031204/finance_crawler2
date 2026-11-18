@@ -1,0 +1,109 @@
+{
+  "source_id": "c1ef664dd36ce1995af6066d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_12_12_Sanctions_Government_treasury.json",
+      "sha256": "fbfb1c7b3bde9959950399c6ccdbb28027865f5d34bf6e55303ab5528ebd3af3",
+      "filename": "2016_12_12_Sanctions_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "fd9b578af2131c0e4d8a5c2b5b79adfbf5cd4f0feff716efb3d927d8a4987dd3",
+  "input_hash": "3e8fc412443818b246592a601a08a4f8ec2f19736883785df6c00765ab9f7fe1",
+  "matching_audit_hash": "18def93f62433bb8d72d33d6c6f0953d647577891e9f26c7a7447dced74727a6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "13dbdabb7295d3fa5b7736996c754c9a421b23e38161e7f9159681931b58d2d1",
+    "raw_sha256": "5f0facd3ca001caaf63447b012062201b1ea1c9c1690d4a8140b780957e289f8",
+    "date_quote": "December 12, 2016 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7051cdb599beb6402794c93281a449372faff124b62dcb1621314d6115a10753",
+  "outputs": [
+    {
+      "path": "US\\2016_12_12_Sanctions_Government_treasury.json",
+      "sha256": "84da2e0ee92fd5524c3cb5efa8fb86ab0719e9b8519e348221a8266c9bcfc222"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-12-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:20.551066+00:00",
+    "fetched_at": "2026-11-10T14:13:44.494239+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.078936+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:33:32.727097+00:00",
+  "feature_available_at": "2026-11-12T14:33:32.783796+00:00",
+  "commit_verified_at": "2026-11-12T14:33:32.783796+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses sanctions imposed on officials from the Democratic Republic of the Congo (DRC) by the U.S. Treasury, relating to human rights violations, ",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)"
+      },
+      {
+        "name": "Democratic Republic of the Congo (DRC) government",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Democratic Republic of the Congo (DRC) government"
+      },
+      {
+        "name": "Global Magnitsky Human Rights Accountability Act",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Global Magnitsky Human Rights Accountability Act"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Government and Politics",
+        "basis": "inferred",
+        "quote": "Democratic Republic of the Congo (DRC) government"
+      },
+      {
+        "name": "Human Rights and International Law",
+        "basis": "inferred",
+        "quote": "Global Magnitsky Human Rights Accountability Act"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC)": "organization",
+      "Democratic Republic of the Congo (DRC) government": "organization",
+      "Global Magnitsky Human Rights Accountability Act": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

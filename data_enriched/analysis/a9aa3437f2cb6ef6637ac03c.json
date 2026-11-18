@@ -1,0 +1,114 @@
+{
+  "source_id": "a9aa3437f2cb6ef6637ac03c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_04_07_Regulatory_Financial-Services_sec.json",
+      "sha256": "556265e128540b1db350b48c66788cd5f13e6a308e8b3f1c54c748ab0cf3227d",
+      "filename": "2017_04_07_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "0adb76887a8b5dddc2801b185c02d207c9b05e86a01ee73d75fcf5d588121ad6",
+  "input_hash": "234d0e7d2e3e0fee7fe8b82812acb247f483e53e34200cd6b20db4608735ea7f",
+  "matching_audit_hash": "a05bf93b3de56b64f2961828ace5a864be6564d75a1cccfb8ab6d40d70836166",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d039ac05bbab24cea3625e640d49eb4e70b5565ed5c623544125b4678771ecb2",
+    "raw_sha256": "f1d07c993bbb5ddc290754761bd56df2a373de648770eda8ff47bdf61f717942",
+    "date_quote": "SEC Division of Corporation Finance Washington D.C. April 7, 2017",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "736a6b80990216b4ae39625e085da772fbb620fcc9572796920f7ca47ff620f0",
+  "outputs": [
+    {
+      "path": "US\\2017_04_07_Regulatory_Financial-Services_sec.json",
+      "sha256": "504a7dbd83d13427e906e592ebcce8ee6e638d7c61a5408ab45cefd75068fc40"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-04-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:23.556601+00:00",
+    "fetched_at": "2026-11-10T14:16:55.732436+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.350039+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:51.248727+00:00",
+  "feature_available_at": "2026-11-12T14:39:51.287203+00:00",
+  "commit_verified_at": "2026-11-12T14:39:51.287203+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the impact of a court decision on the Conflict Minerals Rule and the SEC's response, which relates to regulatory changes affecting companies'",
+    "securities": [
+      {
+        "name": "SEC Division of Corporation Finance",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC Division of Corporation Finance"
+      },
+      {
+        "name": "U.S. Court of Appeals for the District of Columbia Circuit",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Court of Appeals for the District of Columbia Circuit"
+      },
+      {
+        "name": "U.S. District Court for the District of Columbia",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. District Court for the District of Columbia"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Regulatory compliance",
+        "basis": "inferred",
+        "quote": "Conflict Minerals Rule"
+      },
+      {
+        "name": "Corporate governance",
+        "basis": "inferred",
+        "quote": "Securities Exchange Act"
+      },
+      {
+        "name": "Legal and compliance",
+        "basis": "inferred",
+        "quote": "First Amendment"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "SEC Division of Corporation Finance": "organization",
+      "U.S. Court of Appeals for the District of Columbia Circuit": "organization",
+      "U.S. District Court for the District of Columbia": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

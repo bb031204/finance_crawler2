@@ -1,0 +1,116 @@
+{
+  "source_id": "f400a1360119dd89ab22a464",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_07_29_Banking_Banking_bloomberg.json",
+      "sha256": "c2a2d5b9203f201897d99ec3fa85bb8ee04a4445a0bddd5bf90f03eb00c0548f",
+      "filename": "2015_07_29_Banking_Banking_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2015_07_29_Banking_Banking_bloomberg.json",
+      "sha256": "c2a2d5b9203f201897d99ec3fa85bb8ee04a4445a0bddd5bf90f03eb00c0548f",
+      "filename": "2015_07_29_Banking_Banking_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "8ee8761cbd2eac8d082f4e334e49e05f319c4559aa1a7ef35d89e8ac2c29fd30",
+  "input_hash": "e9e75c912a592e773f58829a0206e561efa895baf4ada01e052bcf515da3a14f",
+  "matching_audit_hash": "1ad349fa81b69629ddfdc2146a947a51c735b27020f9fd376407758c54039a60",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3783234a1dcb53ab594e82c4326931d70d491e2fbe7661c839fddc0aaac1da30",
+    "raw_sha256": "5f81a716bd50a6df773ea2b3daa70cfe3da979a31112f7c43763fd92c9d52d72",
+    "date_quote": "July 29, 2015 at 9:00 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "98334facb83ecefc3617afbe3a953b3e807794a4efc6471cbb4fb4dea26eb9fd",
+  "outputs": [
+    {
+      "path": "US\\2015_07_29_Banking_Banking_bloomberg.json",
+      "sha256": "aa4481235d4007be9d2b01bb737aad5a2c8249bc1205b588cac9765840b88e54"
+    },
+    {
+      "path": "GLOBAL\\2015_07_29_Banking_Banking_bloomberg.json",
+      "sha256": "aa4481235d4007be9d2b01bb737aad5a2c8249bc1205b588cac9765840b88e54"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-07-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:59.154188+00:00",
+    "fetched_at": "2026-11-10T17:17:04.093178+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.138190+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:28:17.306557+00:00",
+  "feature_available_at": "2026-11-12T14:28:17.349494+00:00",
+  "commit_verified_at": "2026-11-12T14:28:17.349494+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses competitive positioning between Hang Seng Bank and HSBC Holdings, including their strategies, operational challenges, and analyst comments",
+    "securities": [
+      {
+        "name": "Hang Seng Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hang Seng Bank"
+      },
+      {
+        "name": "HSBC Holdings",
+        "ticker": null,
+        "exchange": null,
+        "quote": "HSBC Holdings"
+      },
+      {
+        "name": "Macquarie Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Macquarie Group"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "Banking"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Hang Seng Bank": "company",
+      "HSBC Holdings": "company",
+      "Macquarie Group": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

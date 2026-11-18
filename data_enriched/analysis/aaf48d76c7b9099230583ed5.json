@@ -1,0 +1,92 @@
+{
+  "source_id": "aaf48d76c7b9099230583ed5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_11_Compensation_Entertainment_sec.json",
+      "sha256": "df2c768f54e57e120ce9c767c54705e9311b85a374d8df29cc3aafaacc505b9e",
+      "filename": "2013_01_11_Compensation_Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "3c364b459658e4ce015a1b8ab50d34d23df771f6a5a501fb1e1111981cb59590",
+  "input_hash": "8c6279ef98ce06d074a4c90f90fa7cd44d424d32d676ac193742f0d191b60ef4",
+  "matching_audit_hash": "4c6015c4eec7df44a554f682e055c085e3eacf3686b08a2dbce956bbd662dcf5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e5a6a95d8a9840ebf8340150b230341eae655751904a2196d58b346750cd08cd",
+    "raw_sha256": "fd290f256a6b061d8d9d9f9bf1b003c6379c48b97481761bedb5783b1b48ba5b",
+    "date_quote": "SEC filing datePublished=2013-01-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103913000003/fy2013_8kxrsu.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "The Walt Disney Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Walt Disney Company"
+    }
+  ],
+  "record_hash": "5054e743bbe70ed774db7ae1ea35c1daff02a5a5fa33190a572327aaaa73de19",
+  "outputs": [
+    {
+      "path": "US\\2013_01_11_Compensation_Entertainment_sec.json",
+      "sha256": "4f8b2eac433260ad63a4db7c807ee69bc1962c75048330202021423796247875"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+    "fetched_at": "2026-11-10T23:31:46.236894+00:00",
+    "feature_available_at": "2026-11-11T09:54:56.173325+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:00:57.695392+00:00",
+  "feature_available_at": "2026-11-12T14:00:57.727043+00:00",
+  "commit_verified_at": "2026-11-12T14:00:57.727043+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses changes in the performance-based stock unit award agreement for executive officers at The Walt Disney Company, including vesting criteria,",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "The Walt Disney Company": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

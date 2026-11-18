@@ -1,0 +1,97 @@
+{
+  "source_id": "d76699689d02cfb48497b93b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_11_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "ef4ffb5139a37771cc18985b7c5217c918f07a7d7f1b227090d5754209de9b77",
+      "filename": "2016_01_11_Energy_Coal-Mining_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "85136c268e9e61ab001350032296a7594b4ad07f64f919b39eabea1c3f133a52",
+  "input_hash": "71372e80449b920c6a7c425f99acaff983b506de2e6c3eeb8a5c1c8833c5d7c2",
+  "matching_audit_hash": "083f98fdf3fca7ca24b3d444fe5fb5b3b19eef66dd87e63b3a137a4d995e6091",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "14b7d8a01cf71b4f1e03cce46ac8446b1c05b01e7572ca18914670bf8142018b",
+    "raw_sha256": "87087cb70d8067bd5fb2140fc6c5056de6fff7dd3146b48e29a410f74aa42f1e",
+    "date_quote": "January 11, 2016 at 7:43 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "c042ea758451e5b3cf0a3f8b4fbf7e54e51cd8423bf5992f47137616f9dee76c",
+  "outputs": [
+    {
+      "path": "US\\2016_01_11_Energy_Coal-Mining_bloomberg.json",
+      "sha256": "a12d398baa048aa7ed507257dee1701018661a427d1d45f962f6f7a4514c7136"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:35:59.257976+00:00",
+    "fetched_at": "2026-11-10T15:06:09.456695+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.011223+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:29:51.250280+00:00",
+  "feature_available_at": "2026-11-12T14:29:51.279407+00:00",
+  "commit_verified_at": "2026-11-12T14:29:51.279407+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Arch Coal Inc.'s bankruptcy filing, industry challenges, and the impact of natural gas and regulations on the coal sector.",
+    "securities": [
+      {
+        "name": "Arch Coal Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Arch Coal Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Coal industry",
+        "basis": "explicit",
+        "quote": "coal industry"
+      },
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "Energy"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Arch Coal Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

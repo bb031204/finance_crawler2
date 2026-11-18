@@ -1,0 +1,107 @@
+{
+  "source_id": "16cd312f8126cf37f22d8d31",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_03_20_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "01fd5cbb38db16269c48ab2ba0ef923f5c25ee4db6c60ce505b040696e7e6bc8",
+      "filename": "2014_03_20_Corporate-Governance_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "909d26157224af779eccefc55ab18dd284e49a5b8e68f6da336e58e0b6b688a0",
+  "input_hash": "0984712233809bf80c9c7d05e376d7eede0b9f1efaaaf380b2639b8d837dbe7b",
+  "matching_audit_hash": "21620f1829487c074d0cc9bc122a6ce3198475ee1a46b6790bf2b814878a58b5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0f3a7b3f504fa682542104b95be33ee77747526d94e5c5fdbe994f4be0e57ad1",
+    "raw_sha256": "5feb6e732df476509ce9ae1ddba6b334a5090b957d5c7fe305ef26752e8109a8",
+    "date_quote": "SEC filing datePublished=2014-03-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103914000108/fy2014_q2x8kxannualmeeting.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "WaterhouseCoopers LLP",
+      "ticker": null,
+      "exchange": null,
+      "quote": "WaterhouseCoopers LLP"
+    },
+    {
+      "name": "Registrant",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Registrant"
+    }
+  ],
+  "record_hash": "00ee1e649e452cad8d651db010ae123814509d0cc6bf547026b69ba6238d05d2",
+  "outputs": [
+    {
+      "path": "US\\2014_03_20_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "9ba5f11d8451c2718def15d5684df933c25f5f5f2c7745d313286ab0e2a270c4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-03-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+    "fetched_at": "2026-11-11T00:02:57.953528+00:00",
+    "feature_available_at": "2026-11-11T10:14:10.408019+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:50.890294+00:00",
+  "commit_verified_at": "2026-11-12T13:52:50.890294+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "WaterhouseCoopers LLP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "WaterhouseCoopers LLP"
+      },
+      {
+        "name": "Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Registrant"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

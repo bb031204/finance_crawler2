@@ -1,0 +1,98 @@
+{
+  "source_id": "b61888e0f12c3b168468c056",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_06_11_Regulatory_Financial-Services_sec.json",
+      "sha256": "cbf407ee6d301114d82b7e414984a6e7b88ed6ed7df2ac5473dd6616d984d7f8",
+      "filename": "2013_06_11_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "db0e4201f918d2d437e69348c87c97a0b8815bac8e31553337fe991ee9003e8c",
+  "input_hash": "2fdc618e68c0f7d4e236f6adf539dabf6149b843f974f1399e603241d41401aa",
+  "matching_audit_hash": "89114b3b08d8d53dea00054121924605cfb61c207b1f9c6d04e023e4144839a5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4e95dc1e92b0fde42f06fa9bbd0077f63a91da3f70adf24539f5077a868f4964",
+    "raw_sha256": "ba42612d67ef8fe1f3bce552b174cc5c6b0738c38181997f68e69f6651ad1858",
+    "date_quote": "For Immediate Release 2013-107 Washington, D.C., June 11, 2013 —",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "883be64bd28582010521223ae15ff9beebe22b548457bf6a4c78d47b50c8a096",
+  "outputs": [
+    {
+      "path": "US\\2013_06_11_Regulatory_Financial-Services_sec.json",
+      "sha256": "4321ab136bda7ef6402639a780847605c1f671203d8a109a2dbc690624709479"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-06-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:25.954834+00:00",
+    "fetched_at": "2026-11-10T10:14:04.131291+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.315996+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:08:40.760227+00:00",
+  "feature_available_at": "2026-11-12T14:08:40.799516+00:00",
+  "commit_verified_at": "2026-11-12T14:08:40.799516+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details regulatory actions against CBOE and its affiliate for compliance failures, including financial penalties and remedial measures.",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission (SEC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Chicago Board Options Exchange (CBOE)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chicago Board Options Exchange (CBOE)"
+      },
+      {
+        "name": "C2 Options Exchange",
+        "ticker": null,
+        "exchange": null,
+        "quote": "C2 Options Exchange"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission (SEC)": "organization",
+      "Chicago Board Options Exchange (CBOE)": "organization",
+      "C2 Options Exchange": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

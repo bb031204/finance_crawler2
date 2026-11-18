@@ -1,0 +1,207 @@
+{
+  "source_id": "83df879e31abff133f096554",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_07_13_Economic-Data_Economic-Statistics_bea.json",
+      "sha256": "55eecf10d4f31132bbd73ad1865a3a2ca0dd617c3ff13b5e24f23ac8b8249a68",
+      "filename": "2020_07_13_Economic-Data_Economic-Statistics_bea.json"
+    }
+  ],
+  "original_record_hash": "aaac1c8bcaf6438b494f90665db92f4b4edea6d18ebe49fe661390ebc7ebdb9f",
+  "input_hash": "44ef6d9f1660bff25bc125536cb4b2ec47dab1cdf5b69f2d6a23aa712bf5d929",
+  "matching_audit_hash": "35576f958dec816b8359814d8f584e35507f1b0a6cacd9a4301784ad8eac5878",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9b1986a924ebd1adad14c3499f83367bab67f66f8dc133a8c2d1cc37816b2427",
+    "raw_sha256": "7ba902733aac75f599b2c9f9fdc5a0d82ca329c77c77b431659cdc378c9d7a2c",
+    "date_quote": "July 13, 2020",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3596977a7a14e4024293e2ff6d81ae9162a21b84679d150bd02edb139687ef4b",
+  "outputs": [
+    {
+      "path": "US\\2020_07_13_Economic-Data_Economic-Statistics_bea.json",
+      "sha256": "23e63c4ea822ea58fb537217dc0ede8dce0502a3dd23f925637c8c3b1dd70d31"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-07-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:51.169982+00:00",
+    "fetched_at": "2026-11-10T13:01:05.264892+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.456678+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:13:18.567783+00:00",
+  "feature_available_at": "2026-11-12T15:16:47.567252+00:00",
+  "commit_verified_at": "2026-11-12T15:16:47.567252+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "GDP update includes methodological improvements and data sources.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Bureau of Economic Analysis (BEA) is scheduled to release its annual GDP statistics update on July 30, 2020."
+      },
+      {
+        "name": "Census Bureau",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Census Bureau"
+      },
+      {
+        "name": "federal budget",
+        "ticker": null,
+        "exchange": null,
+        "quote": "federal budget"
+      },
+      {
+        "name": "IRS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IRS"
+      },
+      {
+        "name": "Agricultural Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Agricultural Department"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Government statistics",
+        "basis": "inferred",
+        "quote": "The BEA will also provide downloadable resources, including Acrobat Reader for accessing the detailed reports."
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Economic Analysis (BEA)": "organization",
+      "Census Bureau": "organization",
+      "federal budget": "organization",
+      "IRS": "organization",
+      "Agricultural Department": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:47.595349+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:13:18.567783+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "GDP update includes methodological improvements and data sources.",
+      "securities": [
+        {
+          "name": "U.S. Bureau of Economic Analysis (BEA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The U.S. Bureau of Economic Analysis (BEA) is scheduled to release its annual GDP statistics update on July 30, 2020."
+        },
+        {
+          "name": "Census Bureau",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Census Bureau"
+        },
+        {
+          "name": "federal budget",
+          "ticker": null,
+          "exchange": null,
+          "quote": "federal budget"
+        },
+        {
+          "name": "IRS",
+          "ticker": null,
+          "exchange": null,
+          "quote": "IRS"
+        },
+        {
+          "name": "Agricultural Department",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Agricultural Department"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Government statistics",
+          "basis": "inferred",
+          "quote": "The BEA will also provide downloadable resources, including Acrobat Reader for accessing the detailed reports."
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Bureau of Economic Analysis (BEA)": "organization",
+        "Census Bureau": "organization",
+        "federal budget": "organization",
+        "IRS": "organization",
+        "Agricultural Department": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:13:18.597801+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:13:18.606325+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:13:18.588302+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the U.S. Bureau of Economic Analysis (BEA) releasing GDP statistics and includes details about the update's scope, data sources, and methodol",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:53:16.129280+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

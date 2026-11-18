@@ -1,0 +1,179 @@
+{
+  "source_id": "95dee15136f2aaff9858be93",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_02_16_Finance_Credit-Fund-Management_cnbc.json",
+      "sha256": "28665079461cddf4dd2c81f87c2401522fd680a04d883dd5621f65a99736340f",
+      "filename": "2022_02_16_Finance_Credit-Fund-Management_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f996ecde6f45d02171982b69d67ee37e72855d3a26ebe47c44c2084e409527e3",
+  "input_hash": "15fad0ae06529679f1cffe3e82c40df7ad0dc32220b45a23e251637ab5ba68f9",
+  "matching_audit_hash": "040c0f8086537fe08178a916b2e9cfcf2c440ebfef138af0b88b8af7f0ac787a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "784271b3a61a6e903fcec2554ac3ed88900e06a745dd9c061597d48e7c042992",
+    "raw_sha256": "324196cf0cc2077666b511022f2bcaf659fa0639be2b692ca96f93d59d9b7abb",
+    "date_quote": "article:published_time=2022-02-16T17:07:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "30b554bc8a566aa7a67c0502b5e59815e2448ec8450e74336b0c64f75f485923",
+  "outputs": [
+    {
+      "path": "US\\2022_02_16_Finance_Credit-Fund-Management_cnbc.json",
+      "sha256": "de7471d632282db4d6b21fdd6f2ae3ee7c91c986e5d38bdf7f84ec75c8c47349"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-02-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:56.864110+00:00",
+    "fetched_at": "2026-11-10T12:31:18.805544+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.635864+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:15:02.634317+00:00",
+  "feature_available_at": "2026-11-12T15:16:49.106687+00:00",
+  "commit_verified_at": "2026-11-12T15:16:49.106687+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses Fed's inflation response and economic risks.",
+    "securities": [
+      {
+        "name": "Golub Capital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Golub Capital"
+      },
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "credit fund manager"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "private credit"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Golub Capital": "organization",
+      "Federal Reserve": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:49.138300+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:15:02.634317+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses Fed's inflation response and economic risks.",
+      "securities": [
+        {
+          "name": "Golub Capital",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Golub Capital"
+        },
+        {
+          "name": "Federal Reserve",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the Federal Reserve"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "credit fund manager"
+        },
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "private credit"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Golub Capital": "organization",
+        "Federal Reserve": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:15:02.660381+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:15:02.668916+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:15:02.649572+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the Federal Reserve's response to inflation, mentions Golub Capital as a credit fund manager, and touches on economic indicators and market-r",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:56:41.595183+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

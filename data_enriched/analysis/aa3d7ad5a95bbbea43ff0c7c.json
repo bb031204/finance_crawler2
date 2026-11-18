@@ -1,0 +1,109 @@
+{
+  "source_id": "aa3d7ad5a95bbbea43ff0c7c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_05_21_Finance_Beauty_cnbc.json",
+      "sha256": "a5f0f86de471d42d1704bb4a5beba73dd021001de1c3751158d3780d3d7d3ab3",
+      "filename": "2020_05_21_Finance_Beauty_cnbc.json"
+    }
+  ],
+  "original_record_hash": "457e182ce47d7c0cdcbeb9be6800a4f235bd248cab3df718df865205917aa998",
+  "input_hash": "13f9834c1c57fb027e3983f5d28f731682ed1df433ff3c7ea5a90d5ca430c2e7",
+  "matching_audit_hash": "de1a5a13d741d39b5881c1bde7153e6ee7610255f9df78db3d49c69f0cc3c75f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a53f301758b6e7777d3c7e09fefb9e17b14301cb88f04aa06908ac8f0b75a008",
+    "raw_sha256": "0d82183bf1366f63916b8a8385f96c7f50a45d67c11ab71ee01e3efcca570067",
+    "date_quote": "article:published_time=2020-05-21T21:04:20+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "E.l.f. Beauty",
+      "ticker": "ELF",
+      "exchange": null,
+      "quote": "E.l.f. Beauty (ELF)"
+    },
+    {
+      "name": "Ulta Beauty",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Its quarter-to-date performance has outpaced main competitor Ulta Beauty's 26% advance."
+    }
+  ],
+  "record_hash": "9d690046df20ca9610e0cebd16374b09bfb578374cbc1b6d8baab8714675e9ce",
+  "outputs": [
+    {
+      "path": "US\\2020_05_21_Finance_Beauty_cnbc.json",
+      "sha256": "4d6c38d7b5ed7ab0862145a79fc318f63e93eace6b2e0dc05b25668b0ab24b7c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-05-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:12.457175+00:00",
+    "fetched_at": "2026-11-10T20:08:03.391056+00:00",
+    "feature_available_at": "2026-11-10T20:08:41.294437+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:33.740622+00:00",
+  "commit_verified_at": "2026-11-12T13:53:33.740622+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "E.l.f. Beauty",
+        "ticker": "ELF",
+        "exchange": null,
+        "quote": "E.l.f. Beauty (ELF)"
+      },
+      {
+        "name": "Ulta Beauty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Its quarter-to-date performance has outpaced main competitor Ulta Beauty's 26% advance."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

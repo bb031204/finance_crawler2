@@ -1,0 +1,255 @@
+{
+  "source_id": "5264c6dfb0c33c8011789c25",
+  "status": "completed",
+  "source_record_hash": "c296a5aa374f43e837629dc2b4fec6b4a61fea0e2820dd8d7bcfe62cda8840fb",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-16-609605-index.html",
+    "attempted_at": "2026-11-18T14:35:24.750002+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "de2ed8560ce074f96ba44d9e55737d34b400efa3fd076a89db86cf7435c203a5"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/5264c6dfb0c33c8011789c25.json",
+    "sha256": "34aef4770fa63bb8b520f3ec39cb5b0695caeb6dd299100532e3d5cfa596dfc6",
+    "bundled_path": "legacy_audit/5264c6dfb0c33c8011789c25.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "c03fcc74b8cf575f8894c0a4615479c76b08a60f3d7d4e707d1d6c1e20f6f9bf",
+      "llm_inferred_at": "2026-11-18T14:35:42.594237+00:00",
+      "model_duration_seconds": 9.588521,
+      "prompt_tokens": 1428,
+      "completion_tokens": 500,
+      "selection": [
+        {
+          "source_id": "5264c6dfb0c33c8011789c25",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "HENRY SCHEIN, INC approved the 2015 compensation paid to its Named Executive Officers, known as the 'say-on-pay' proposal, by non-binding vote.",
+              "rationale": "The article discusses a specific company's internal governance decision, which is a company-level event and does not affect the broader industry or market.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "HENRY SCHEIN, INC approved the 2015 compensation paid to its Named Executive Officers, known as the 'say-on-pay' proposal, by non-binding vote. The vote results were: For 63,408,834, Against 3,283,223, Abstain 2,724,970, Broker Non-Votes 5,956,941. The selection of BDO USA, LLP as the independent registered public accounting firm for the fiscal",
+              "rationale": "The article discusses a company's internal governance and financial reporting decisions, which are relevant to the broader US equity market as they reflect corporate governance practices and financial transparency.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8700",
+              "name": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+              "basis": "inferred",
+              "quote": "The vote results were: For 63,408,834, Against 3,283,223, Abstain 2,724,970, Broker Non-Votes 5,956,941."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "2c9be80f74dd99f2c5a4a48e7e0d1f652963df1ba300c10ddc213188d46bbc07",
+      "llm_inferred_at": "2026-11-18T14:35:54.811034+00:00",
+      "model_duration_seconds": 12.2123567,
+      "prompt_tokens": 1472,
+      "completion_tokens": 688,
+      "selection": [
+        {
+          "source_id": "5264c6dfb0c33c8011789c25",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "HENRY SCHEIN, INC approved the 2015 compensation paid to its Named Executive Officers, known as the 'say-on-pay' proposal, by non-binding vote.",
+              "rationale": "The article discusses a specific company's internal governance decision, which is a company-level event.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "company",
+              "quote": "The vote results were: For 63,408,834, Against 3,283,223, Abstain 2,724,970, Broker Non-Votes 5,956,941.",
+              "rationale": "This is a company-specific voting outcome, indicating a company-level impact.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "company",
+              "quote": "The vote results were: For 63,408,834, Against 3,283,223, Abstain 2,724,970, Broker Non-Votes 5,956,941.",
+              "rationale": "This is a company-specific voting outcome, indicating a company-level impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "HENRY SCHEIN, INC approved the 2015 compensation paid to its Named Executive Officers, known as the 'say-on-pay' proposal, by non-binding vote. The vote results were: For 63,408,834, Against 3,283,223, Abstain 2,724,970, Broker Non-Votes 5,956,941. The selection of BDO USA, LLP as the independent registered public accounting firm for the fiscal",
+              "rationale": "The article discusses a company's governance and financial reporting, which are relevant to the US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8700",
+              "name": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+              "basis": "inferred",
+              "quote": "The vote results were: For 63,408,834, Against 3,283,223, Abstain 2,724,970, Broker Non-Votes 5,956,941."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:35:54.822185+00:00",
+  "audit": {
+    "source_id": "5264c6dfb0c33c8011789c25",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-16-609605-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2016-06-01",
+    "date_quote": "SEC filing datePublished=2016-06-01",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "de2ed8560ce074f96ba44d9e55737d34b400efa3fd076a89db86cf7435c203a5",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T05:11:43.423609+00:00",
+    "fetched_at": "2026-11-12T19:17:35.410752+00:00",
+    "first_extracted_at": "2026-11-12T19:17:54.603933+00:00",
+    "extracted_at": "2026-11-18T14:35:54.811739+00:00",
+    "feature_available_at": "2026-11-18T14:35:54.822185+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "c296a5aa374f43e837629dc2b4fec6b4a61fea0e2820dd8d7bcfe62cda8840fb",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2016_06_01_corporate-action_Healthcare-Distribution_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\3c2dd6fa7b94c758ff08c34eb2a8138d3c4947597cbbcae29fb9f83494672948.json",
+      ".runtime\\simple\\model_cache\\ba5165105b82a9c406ef3daa4824596048a44deb30a017daa9b91c5dd3fdce14.json",
+      ".runtime\\simple\\model_cache\\d0fc0e1c7feba182c8450f663d34ec281b8f009a7bd1f36bffc81c990265a4a7.json",
+      ".runtime\\simple\\pages\\5264c6dfb0c33c8011789c25.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312516609605/d191496d8k.htm",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312516609605/d191496d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "3890eacb57766954d5a50747cbe0acf0923d5c834d799a1ecab998781671704b",
+        "text_sha256": "6f2624d6657d84bda480832ab1b59897550e526f191a6354fc32300e10539068",
+        "text_start": 0,
+        "text_end": 3858
+      }
+    ],
+    "sec_document_version": 2,
+    "sec_document_policy": {
+      "include_exhibits": true,
+      "max_exhibits_per_filing": 3
+    },
+    "sec_index_sha256": "aba7727b7dbc03bbca06c6d9e53670d09698826501885b3646c949180e256af1",
+    "sec_unread_exhibits": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-16-609605-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T14:35:54.811034+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "de2ed8560ce074f96ba44d9e55737d34b400efa3fd076a89db86cf7435c203a5",
+    "source_type": "sec",
+    "entity_details": [],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "3eb57580a43394ab6815e3961abd27e700cc122d8414d951fb7bdce1edb9d5a6",
+    "commit_verified_at": "2026-11-12T19:17:54.684954+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T19:17:54.804513+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\5264c6dfb0c33c8011789c25.json",
+      ".runtime\\simple\\model_cache\\3c2dd6fa7b94c758ff08c34eb2a8138d3c4947597cbbcae29fb9f83494672948.json",
+      ".runtime\\simple\\model_cache\\ba5165105b82a9c406ef3daa4824596048a44deb30a017daa9b91c5dd3fdce14.json",
+      ".runtime\\simple\\model_cache\\d0fc0e1c7feba182c8450f663d34ec281b8f009a7bd1f36bffc81c990265a4a7.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "HENRY SCHEIN, INC approved the 2015 compensation paid to its Named Executive Officers, known as the 'say-on-pay' proposal, by non-binding vote.",
+        "rationale": "The article discusses a specific company's internal governance decision, which is a company-level event.",
+        "confidence": 1.0,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "HENRY SCHEIN, INC approved the 2015 compensation paid to its Named Executive Officers, known as the 'say-on-pay' proposal, by non-binding vote."
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "c296a5aa374f43e837629dc2b4fec6b4a61fea0e2820dd8d7bcfe62cda8840fb",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/5264c6dfb0c33c8011789c25.json",
+      "sha256": "3a5b95c2cd66c844b3377f9312b330f9715b02e839f4c9f865b6e5a3f337ed78",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 30.078000000008615
+}

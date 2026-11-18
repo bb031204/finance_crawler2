@@ -1,0 +1,107 @@
+{
+  "source_id": "20a9f5620cb9e8fd33afd8c3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_02_26_management-change_Business-Services_sec.json",
+      "sha256": "1fd6192369daa3a3c6a24e67d267c71bacfbdf90be87ea96370534746ac4c166",
+      "filename": "2021_02_26_management-change_Business-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "f5643e5d5214d0c7736cecb06c88e5cdaf0f8d8289e37f629c079eb3f45ca66b",
+  "input_hash": "908f2879bc59b12fdaefe1a4acedff7cf5ccdfac17bebea3d62302d4cbdce1bc",
+  "matching_audit_hash": "6559e9a6ca4df4a4d50cd6aeb3841f236cfff646cbaba23dc0aa8e14fc046de1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f48063ee118de81a2733d8d2b55af88c8d58b2012ab8237db69c74c1aae6bca6",
+    "raw_sha256": "8ced46302aa45159f64bdb475c2e8af14935cefe4467c294b163b4b8f6ec4819",
+    "date_quote": "SEC filing datePublished=2021-02-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075321000014/nsp-20210226.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock, $.01 par value per share",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock, $.01 par value per share"
+    },
+    {
+      "name": "Rights to Purchase Series A Junior Participating Preferred Stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Rights to Purchase Series A Junior Participating Preferred Stock"
+    }
+  ],
+  "record_hash": "0f49178e5964b703e79ccee46738bef85d8a24afe669bb051be9a58ff713eb37",
+  "outputs": [
+    {
+      "path": "US\\2021_02_26_management-change_Business-Services_sec.json",
+      "sha256": "f0111ae679a8b01d53d0dc66f3ea6bef86ae14838b075a70bdfe0c443906e836"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-02-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.585595+00:00",
+    "fetched_at": "2026-11-11T16:08:34.840559+00:00",
+    "feature_available_at": "2026-11-11T16:08:52.777539+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.616322+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.616322+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock, $.01 par value per share",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock, $.01 par value per share"
+      },
+      {
+        "name": "Rights to Purchase Series A Junior Participating Preferred Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rights to Purchase Series A Junior Participating Preferred Stock"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Business Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

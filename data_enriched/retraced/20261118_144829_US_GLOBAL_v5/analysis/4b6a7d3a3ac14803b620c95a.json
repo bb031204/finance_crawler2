@@ -1,0 +1,441 @@
+{
+  "source_id": "4b6a7d3a3ac14803b620c95a",
+  "status": "completed",
+  "source_record_hash": "ef4b1d73ac6acf656a7b68ddc088b26f47cf4c18c6f89627e21a3505a3e59cda",
+  "source_trace": {
+    "requested_url": "https://www.cnbc.com/2016/05/03/bhp-and-vale-face-44-billion-civil-claim-in-brazil-over-dam-disaster.html",
+    "attempted_at": "2026-11-18T13:52:40.047204+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.cnbc.com/2016/05/03/bhp-and-vale-face-44-billion-civil-claim-in-brazil-over-dam-disaster.html",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T13:52:56.941130+00:00",
+    "source_body_hash": "0cc01e0bb591cce6f3ff807db5118933c9809260b328c241ae075edc2c87fe05",
+    "raw_sha256": "13ad59d5b824a8682d61c419c269d5f3152624b4916f8414858f1677ca596ea4",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "BHP and Vale face $44 billion civil claim in Brazil over dam disaster",
+    "title_origin": "heading",
+    "publication_evidence": "article:published_time=2016-05-04T03:38:09+0000",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4b6a7d3a3ac14803b620c95a.json",
+    "sha256": "07b74d802bd4611a7ecd2329b4cbfdff34adc57c4ee8119aec9dbdeb886437d2",
+    "bundled_path": "legacy_audit/4b6a7d3a3ac14803b620c95a.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "499acb33755a0c9a3f03bbaf01e3c5cd540332c571e0d26fef2152145cb564e5",
+      "llm_inferred_at": "2026-11-18T13:53:17.197558+00:00",
+      "model_duration_seconds": 20.1723814,
+      "prompt_tokens": 2847,
+      "completion_tokens": 987,
+      "selection": [
+        {
+          "source_id": "4b6a7d3a3ac14803b620c95a",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Vale's shares slumped more than 6 per cent in São Paulo late on Tuesday while the company's American depository receipts in New York were later down almost 8 per cent.",
+              "rationale": "The article discusses the impact of the dam disaster on Vale and BHP, which are part of the iron ore and mining industry. The financial repercussions of the lawsuit are industry-wide, affecting the mining sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Vale's shares slumped more than 6 per cent in São Paulo late on Tuesday while the company's American depository receipts in New York were later down almost 8 per cent.",
+              "rationale": "The article directly mentions the financial impact on Vale and BHP, which are specific companies involved in the iron ore and mining industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1000",
+              "name": "METAL MINING",
+              "basis": "explicit",
+              "quote": "Vale's shares slumped more than 6 per cent in São Paulo late on Tuesday while the company's American depository receipts in New York were later down almost 8 per cent."
+            },
+            {
+              "industry_key": "TRSR:f6449956bf83360f",
+              "name": "Steel/Iron Ore",
+              "basis": "explicit",
+              "quote": "BHP and Vale face $44 billion civil claim in Brazil over dam disaster Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO"
+            },
+            {
+              "industry_key": "TRSR:f8d458c9d754750d",
+              "name": "Environmental Services",
+              "basis": "explicit",
+              "quote": "They have said they may file further criminal charges after the conclusion of their investigation."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1000",
+              "industry_scope_quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt",
+              "industry_name_original": "METAL MINING",
+              "mechanism": "economic impact",
+              "confidence": 0.95,
+              "quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt"
+            },
+            {
+              "industry_key": "TRSR:f6449956bf83360f",
+              "industry_scope_quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt",
+              "industry_name_original": "Steel/Iron Ore",
+              "mechanism": "economic impact",
+              "confidence": 0.95,
+              "quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt"
+            },
+            {
+              "industry_key": "TRSR:f8d458c9d754750d",
+              "industry_scope_quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt",
+              "industry_name_original": "Environmental Services",
+              "mechanism": "economic impact",
+              "confidence": 0.95,
+              "quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "889c27437137be46eada7c585e29e13999936b7339eb9a438dbc601abeeeace8",
+      "llm_inferred_at": "2026-11-18T13:53:38.200648+00:00",
+      "model_duration_seconds": 20.9528093,
+      "prompt_tokens": 2891,
+      "completion_tokens": 1127,
+      "selection": [
+        {
+          "source_id": "4b6a7d3a3ac14803b620c95a",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Vale's shares slumped more than 6 per cent in São Paulo late on Tuesday while the company's American depository receipts in New York were later down almost 8 per cent.",
+              "rationale": "The lawsuit and its financial impact are affecting the broader mining industry, particularly iron ore and metal mining sectors, as the companies involved are major players in these industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Vale's shares slumped more than 6 per cent in São Paulo late on Tuesday while the company's American depository receipts in New York were later down almost 8 per cent.",
+              "rationale": "The lawsuit directly impacts Vale's stock performance, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "BHP and Vale face $44 billion civil claim in Brazil over dam disaster Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO",
+              "rationale": "The lawsuit involves major mining companies and has implications for the iron ore and metal mining industry, which is a significant sector.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1000",
+              "name": "METAL MINING",
+              "basis": "explicit",
+              "quote": "BHP and Vale face $44 billion civil claim in Brazil over dam disaster Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO"
+            },
+            {
+              "industry_key": "TRSR:f6449956bf83360f",
+              "name": "Steel/Iron Ore",
+              "basis": "explicit",
+              "quote": "BHP and Vale face $44 billion civil claim in Brazil over dam disaster Skip Navigation Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO"
+            },
+            {
+              "industry_key": "SEC-SIC:4955",
+              "name": "HAZARDOUS WASTE MANAGEMENT",
+              "basis": "explicit",
+              "quote": "They have said they may file further criminal charges after the conclusion of their investigation."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:1000",
+              "industry_scope_quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt",
+              "industry_name_original": "METAL MINING",
+              "mechanism": "The lawsuit and its financial implications affect the broader mining industry, particularly iron ore and metal mining sectors, as the companies involved are major players in these industries.",
+              "confidence": 0.95,
+              "quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt"
+            },
+            {
+              "industry_key": "TRSR:f6449956bf83360f",
+              "industry_scope_quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt",
+              "industry_name_original": "Steel/Iron Ore",
+              "mechanism": "The lawsuit and its financial implications affect the broader mining industry, particularly iron ore and metal mining sectors, as the companies involved are major players in these industries.",
+              "confidence": 0.95,
+              "quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt"
+            },
+            {
+              "industry_key": "SEC-SIC:4955",
+              "industry_scope_quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt",
+              "industry_name_original": "HAZARDOUS WASTE MANAGEMENT",
+              "mechanism": "The lawsuit and its financial implications affect the broader mining industry, particularly iron ore and metal mining sectors, as the companies involved are major players in these industries.",
+              "confidence": 0.95,
+              "quote": "in a deal that was expected to cost the companies as little as R$10 billion. At the time, analysts questioned whether the unusually swift resolution of the crisis was an attempt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:53:38.275581+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0cc01e0bb591cce6f3ff807db5118933c9809260b328c241ae075edc2c87fe05",
+    "raw_sha256": "13ad59d5b824a8682d61c419c269d5f3152624b4916f8414858f1677ca596ea4",
+    "date_quote": "article:published_time=2016-05-04T03:38:09+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Legal claim highlights mining industry safety and environmental responsibility",
+    "securities": [
+      {
+        "name": "BHP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+      },
+      {
+        "name": "Vale",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+      },
+      {
+        "name": "Samarco",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+      },
+      {
+        "name": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state"
+      },
+      {
+        "name": "Brazilian government",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brazilian government"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "BHP": "company",
+      "Vale": "company",
+      "Samarco": "company",
+      "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state": "organization",
+      "Brazilian government": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "4b6a7d3a3ac14803b620c95a",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_05_04_Legal_Mining_cnbc.json",
+        "sha256": "c36bf50c51801e627c09cd9aec26a4fdc9defd5664e669abe2f26198c982ab73",
+        "filename": "2016_05_04_Legal_Mining_cnbc.json"
+      }
+    ],
+    "original_record_hash": "9eee897a81adf9c691b4e0df4a2aa591d193f954720af3a9b706ff13b3d3af6d",
+    "input_hash": "531eed1273f8fa70aef4ce24c4134e14566d90cedcd6069b66e8ab663b13b1f3",
+    "matching_audit_hash": "6fcaa2e8a10c0c038b56dfa1c6f1429d7730ed735ec843898135e1a003efefe0",
+    "legacy_security_evidence": [],
+    "record_hash": "ef4b1d73ac6acf656a7b68ddc088b26f47cf4c18c6f89627e21a3505a3e59cda",
+    "outputs": [
+      {
+        "path": "US\\2016_05_04_Legal_Mining_cnbc.json",
+        "sha256": "6a8700530cf07c6c972c0c9050a06ff59cd27c80a124ec52fbf87f9714140eff"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2016-05-04",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T13:34:56.866577+00:00",
+      "fetched_at": "2026-11-10T14:46:13.248340+00:00",
+      "feature_available_at": "2026-11-10T17:53:17.662624+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T13:53:38.200648+00:00",
+    "feature_available_at": "2026-11-18T13:53:38.275581+00:00",
+    "commit_verified_at": "2026-11-12T15:16:39.537772+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:39.563948+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:05:27.258021+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Legal claim highlights mining industry safety and environmental responsibility",
+        "securities": [
+          {
+            "name": "BHP",
+            "ticker": null,
+            "exchange": null,
+            "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+          },
+          {
+            "name": "Vale",
+            "ticker": null,
+            "exchange": null,
+            "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+          },
+          {
+            "name": "Samarco",
+            "ticker": null,
+            "exchange": null,
+            "quote": "BHP and Vale are facing a $44 billion civil claim in Brazil over the dam disaster at their joint venture Samarco."
+          },
+          {
+            "name": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state"
+          },
+          {
+            "name": "Brazilian government",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Brazilian government"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Mining",
+            "basis": "explicit",
+            "quote": "mining"
+          },
+          {
+            "name": "Legal",
+            "basis": "explicit",
+            "quote": "legal"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry"
+        ],
+        "entity_types": {
+          "BHP": "company",
+          "Vale": "company",
+          "Samarco": "company",
+          "Federal prosecutors in Minas Gerais and neighboring Espírito Santo state": "organization",
+          "Brazilian government": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:05:27.282760+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:05:27.291368+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:05:27.272726+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The text discusses a legal claim against BHP and Vale related to a dam disaster, which involves significant financial implications and highlights issues in the矿",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:31:55.563653+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Vale's shares slumped more than 6 per cent in São Paulo late on Tuesday while the company's American depository receipts in New York were later down almost 8 per cent.",
+        "rationale": "The lawsuit directly impacts Vale's stock performance, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Vale's shares slumped more than 6 per cent in São Paulo late on Tuesday while the company's American depository receipts in New York were later down almost 8 per cent.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.cnbc.com/2016/05/03/bhp-and-vale-face-44-billion-civil-claim-in-brazil-over-dam-disaster.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "ef4b1d73ac6acf656a7b68ddc088b26f47cf4c18c6f89627e21a3505a3e59cda",
+    "content_hash": "0cc01e0bb591cce6f3ff807db5118933c9809260b328c241ae075edc2c87fe05",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:53:38.218216+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4b6a7d3a3ac14803b620c95a.json",
+      "sha256": "c3ee2690ff1404a38d669c822ed043c6e90e0b03d8be50d53456beb5165d2c36",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 58.25
+}

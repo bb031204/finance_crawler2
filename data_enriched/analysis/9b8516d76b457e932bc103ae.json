@@ -1,0 +1,108 @@
+{
+  "source_id": "9b8516d76b457e932bc103ae",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_23_Regulation-FD-Disclosure_Healthcare_sec.json",
+      "sha256": "187cf1a1a1c02297bf23d10b0a2fd597317e4870f831ca0a54b671a097a49793",
+      "filename": "2019_01_23_Regulation-FD-Disclosure_Healthcare_sec.json"
+    }
+  ],
+  "original_record_hash": "9fa17fae305ff72cf9d6b3fbb7b053222bc54ae77570354c91cd005a6fdf86fb",
+  "input_hash": "124e05acf9c9bc6ab21bf5f89c6173cab288ddb240c27f8e1bea10bc2c026b87",
+  "matching_audit_hash": "c2e2eac2b45e3a3ffd02731200dd56f6cac14ee03b14ab00676300400772b527",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ebd0d8689b2cbe46cff0efcbd0d39ae0cd1489df4870fd1a83d8d804e5b861da",
+    "raw_sha256": "6c6c38cd31bb8b394bf4dda1b3a54d2ddacc7774ceb0b1150c65316e2bcf066d",
+    "date_quote": "SEC filing datePublished=2019-01-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312519014864/d686975d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Henry Schein, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Henry Schein, Inc."
+    },
+    {
+      "name": "Mars, Incorporated",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Mars, Incorporated"
+    }
+  ],
+  "record_hash": "4b21eb8b5468092327d5709c238c7011166c349ac6cc7a24d63ee07515904e43",
+  "outputs": [
+    {
+      "path": "US\\2019_01_23_Regulation-FD-Disclosure_Healthcare_sec.json",
+      "sha256": "9806358172422d8b9215b6f8cbe98b88ca35f2b8d0d000d0885601742e99564f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+    "fetched_at": "2026-11-11T13:38:36.359100+00:00",
+    "feature_available_at": "2026-11-11T13:39:19.234556+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:25.033517+00:00",
+  "commit_verified_at": "2026-11-12T13:53:25.033517+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      },
+      {
+        "name": "Mars, Incorporated",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mars, Incorporated"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

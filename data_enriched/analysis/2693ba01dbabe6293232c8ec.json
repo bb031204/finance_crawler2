@@ -1,0 +1,97 @@
+{
+  "source_id": "2693ba01dbabe6293232c8ec",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_06_16_debt-restructuring_government-finance_cnbc.json",
+      "sha256": "72c6b5c2cd20505f8b33b9072029a3a372b19ff09688040a7f94c1a103f9bc12",
+      "filename": "2019_06_16_debt-restructuring_government-finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "61b0c6dc0847f79b7b43080208273c527d6b359043379efa81264ec1ce5377c6",
+  "input_hash": "9b2e859438506036a9b374ad70fbb2a81fcf066de4b0bc1953bb0dd87abf1470",
+  "matching_audit_hash": "dbd2610fc13b32654cda2a493644e814ab34c661f16e7b734bba8bcbc3c2cf2b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8c578594baf9216ef8d2ee4ba00092673694e42d5b7926e749d38ecbed1c1e04",
+    "raw_sha256": "4d91588d953ceff7c6716e64d7926e51bf9139aa71946a70f10dc62c4f2526da",
+    "date_quote": "datePublished  Published Sun, Jun 16 2019 7:10 PM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Puerto Rico",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Puerto Rico"
+    }
+  ],
+  "record_hash": "f4aeefccaf072ef05199f9e8ad2d9914321e2091eb985bd8f549dd33518306eb",
+  "outputs": [
+    {
+      "path": "US\\2019_06_16_debt-restructuring_government-finance_cnbc.json",
+      "sha256": "2ec496ada26f84304d65a030e02d654ab5c7a644ad7fee4961790e200b500d2c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-06-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:18.531813+00:00",
+    "fetched_at": "2026-11-11T11:39:11.791556+00:00",
+    "feature_available_at": "2026-11-11T11:39:44.504257+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:28.484766+00:00",
+  "commit_verified_at": "2026-11-12T13:53:28.484766+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Puerto Rico",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Puerto Rico"
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "source_id": "c406d3b5f66570bd60440ae6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_18_management-changes_Textiles_sec.json",
+      "sha256": "ad47d85d46519a2852ffa4bcebee766853a7170971d16ae00a32f40a57f8ea4c",
+      "filename": "2015_03_18_management-changes_Textiles_sec.json"
+    }
+  ],
+  "original_record_hash": "1e52886d999956f0987570e58794c798bc869ac351c1a19d75ac7ef6ffe3b6ea",
+  "input_hash": "045e22658ee71d175708b2407a900de2796b7c3fd5b1f62e7c68d15d97f63747",
+  "matching_audit_hash": "0ac9983300a93297f315cc57030d7133c27bb2f28b07e8c3bfc21b514eda0fb6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f0d0df4585e20a1a22bcfdfabf58662b4e82f3b784ece08c1a49613c01b03d66",
+    "raw_sha256": "cbae69c49a6ce2a41ed6268668b73cbdf18b11e606c57388189c3997963615aa",
+    "date_quote": "SEC filing datePublished=2015-03-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062315000037/cookdunmead8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    }
+  ],
+  "record_hash": "f45be5c4300d08b70391dbce5b5343c80b9a5264a18071e0efe696338eba51d6",
+  "outputs": [
+    {
+      "path": "US\\2015_03_18_management-changes_Textiles_sec.json",
+      "sha256": "56ef3ace4aeae464085c34bcd9b84d4f3a5667318dfd4b6cb09e9a33cc0ad065"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:25:09.456348+00:00",
+    "feature_available_at": "2026-11-11T10:37:26.525470+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:24:27.387093+00:00",
+  "feature_available_at": "2026-11-12T14:24:27.414623+00:00",
+  "commit_verified_at": "2026-11-12T14:24:27.414623+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details management changes within Schweitzer-Mauduit International, Inc., including retirements and resignations of senior executives, and the roles",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Schweitzer-Mauduit International, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

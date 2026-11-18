@@ -1,0 +1,161 @@
+{
+  "source_id": "05be865a2bd81a264297308d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_03_02_Dividend_Financial-Services_sec.json",
+      "sha256": "5633198e6885e70ab4c2b940a7f8746ac8fd8963d179f214c87f1dee79c050bf",
+      "filename": "2020_03_02_Dividend_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "a70d9431fae01fb29d1a59165eb628daee4ee84ad4fcffe1d71266191acae843",
+  "input_hash": "c70d121c3d037702f22454f9292df138692ec26043247e58c26fa63d42aad79b",
+  "matching_audit_hash": "1f4df7bd15c66d5e4925e3ec5fd25c845187de72601c027e55a39de89248af70",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5dbc82589747748477a496a77781d74a9f291404187a51c53932ccf838136f8c",
+    "raw_sha256": "2594f8ca167165345b633b5d4c45cbfdcfdb3d648aae111cbc603084929d9b6b",
+    "date_quote": "SEC filing datePublished=2020-03-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000117184320001425/f6k_030220.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    }
+  ],
+  "record_hash": "a324ad7384de93c45313c8aa0e3d2becc0e3a7b3452d1ee075df7b828097bd28",
+  "outputs": [
+    {
+      "path": "US\\2020_03_02_Dividend_Financial-Services_sec.json",
+      "sha256": "37ff8abcb29b5d24c40747d097b14e06427ddb5bb222de18026c342d81fb1c5b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-03-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:18:31.358309+00:00",
+    "feature_available_at": "2026-11-11T15:19:06.381656+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:12:45.955292+00:00",
+  "feature_available_at": "2026-11-12T15:16:47.019488+00:00",
+  "commit_verified_at": "2026-11-12T15:16:47.019488+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Company adjusts dividend rate, affects equity structure and shareholder returns.",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      },
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "company",
+      "U.S. Securities and Exchange Commission": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:47.049701+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:12:45.955292+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Company adjusts dividend rate, affects equity structure and shareholder returns.",
+      "securities": [
+        {
+          "name": "Brookfield Asset Management Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Brookfield Asset Management Inc."
+        },
+        {
+          "name": "U.S. Securities and Exchange Commission",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Securities and Exchange Commission (SEC)"
+        }
+      ],
+      "industries": [],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Brookfield Asset Management Inc.": "company",
+        "U.S. Securities and Exchange Commission": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:12:45.978461+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:12:45.988479+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:45.970493+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a corporate action involving a dividend rate adjustment by Brookfield Asset Management Inc., which affects its equity structure and股东回报. 该",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:52:12.718405+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

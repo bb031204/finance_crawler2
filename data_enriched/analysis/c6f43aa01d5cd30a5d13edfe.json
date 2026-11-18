@@ -1,0 +1,195 @@
+{
+  "source_id": "c6f43aa01d5cd30a5d13edfe",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_03_07_Regulatory_Financial-Services_sec.json",
+      "sha256": "fb8c2060f021c0af0f4e85f1af73d8d887ffc6f343a0c878a23de29f3212abff",
+      "filename": "2014_03_07_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "0bfbf98355078fd301444cd6b2a8f9137a8bb4b08a441607e25842c888caee72",
+  "input_hash": "6faa0906b1b161069b93da1d07dc1a90e03e9a34aa79f3a7bba516793f768490",
+  "matching_audit_hash": "9eb45c0c191b5eff491c596e7c0fa7b422c7e4602278f337ad97bc2ce4b89ba4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ef3b74684b48079711ef75ee7d0699ffe725a55c246e8e45c822446698be0276",
+    "raw_sha256": "66a8b2df38331916e12c2e66975ecf080979c3ea329bdbc9d3f7c5184f91a4fa",
+    "date_quote": "Speech Remarks to the 2014 IAA Investment Adviser Compliance Conference Norm Champ Director, Division of Investment Management Washington, D.C. March 7, 2014",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0bf1dec23a1229d523a3d223d526e5c8ef1901719e2eea39d791e4123ee3eb25",
+  "outputs": [
+    {
+      "path": "US\\2014_03_07_Regulatory_Financial-Services_sec.json",
+      "sha256": "d7828550675454be42cf706593d86090037f7b9d3bc175bd0d41334734100d46"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-03-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:01.285178+00:00",
+    "fetched_at": "2026-11-11T03:40:19.356212+00:00",
+    "feature_available_at": "2026-11-11T03:43:21.104865+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:02:07.159849+00:00",
+  "feature_available_at": "2026-11-12T15:16:36.165369+00:00",
+  "commit_verified_at": "2026-11-12T15:16:36.165369+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses regulatory priorities and changes in investment management sector",
+    "securities": [
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Division of Investment Management at the SEC"
+      },
+      {
+        "name": "Division of Investment Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Division of Investment Management at the SEC"
+      },
+      {
+        "name": "Risk and Examinations Office (REO)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Risk and Examinations Office (REO)"
+      },
+      {
+        "name": "Office of Compliance Inspections and Examinations (OCIE)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Office of Compliance Inspections and Examinations (OCIE)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Investment Management",
+        "basis": "explicit",
+        "quote": "investment management sector"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "SEC": "organization",
+      "Division of Investment Management": "organization",
+      "Risk and Examinations Office (REO)": "organization",
+      "Office of Compliance Inspections and Examinations (OCIE)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:36.197032+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:02:07.159849+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses regulatory priorities and changes in investment management sector",
+      "securities": [
+        {
+          "name": "SEC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Division of Investment Management at the SEC"
+        },
+        {
+          "name": "Division of Investment Management",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Division of Investment Management at the SEC"
+        },
+        {
+          "name": "Risk and Examinations Office (REO)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Risk and Examinations Office (REO)"
+        },
+        {
+          "name": "Office of Compliance Inspections and Examinations (OCIE)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Office of Compliance Inspections and Examinations (OCIE)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Investment Management",
+          "basis": "explicit",
+          "quote": "investment management sector"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "SEC": "organization",
+        "Division of Investment Management": "organization",
+        "Risk and Examinations Office (REO)": "organization",
+        "Office of Compliance Inspections and Examinations (OCIE)": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:02:07.186608+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:02:07.196178+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:07.176084+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses regulatory priorities, compliance programs, and rulemaking efforts by the SEC, including the reorganization of the Division of Investment and",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:12:54.912124+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

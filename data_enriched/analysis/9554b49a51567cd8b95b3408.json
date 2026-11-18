@@ -1,0 +1,108 @@
+{
+  "source_id": "9554b49a51567cd8b95b3408",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_23_Banking_Banking_sec.json",
+      "sha256": "a14f69f48dc9f46556826bc2b4eaaa7f4698cbbe59a938b43be9780bb031d9c0",
+      "filename": "2015_01_23_Banking_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "0c23a308dafadf1c86807094448f6a332c1610c7f499038e0eabf7dc8ded83fc",
+  "input_hash": "241d2149ce10c90abd45912248877197489fc15d036d485e446f7d7caa0a15ee",
+  "matching_audit_hash": "35f32649cf727e9455f775b8d965a074a442aef461644575002ae0b79c299238",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e86ca74a6a67260d31cd8405a5ba4f7fa413ac38b2bf55541e95a4fbda9d7b17",
+    "raw_sha256": "c8c90fc2b711a529a9635666bfc946f056b43ab4371dca94964df3de841eb760",
+    "date_quote": "Published=2015-01-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000121465915000551/s1221506k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Royal Bank of Canada",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Royal Bank of Canada"
+    },
+    {
+      "name": "City National Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "City National Corporation"
+    }
+  ],
+  "record_hash": "ec7574383418d5fcc1c9acaa3c48b4bfef4c8a5222bce4a604971cbb660d7bf6",
+  "outputs": [
+    {
+      "path": "US\\2015_01_23_Banking_Banking_sec.json",
+      "sha256": "cb1f1054b89b04926032199b4ea539929d2363e3e54175bdbc7fde81435ce231"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:22:28.421495+00:00",
+    "feature_available_at": "2026-11-11T00:22:36.612107+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.361656+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.361656+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      },
+      {
+        "name": "City National Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "City National Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

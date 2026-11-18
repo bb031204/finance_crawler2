@@ -1,0 +1,215 @@
+{
+  "source_id": "26c121b07c78c408e7ed5a67",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_04_30_Policy_Social-Security_cnbc.json",
+      "sha256": "fdf82aa24b8aba5a5bed1c2c7686ecb95afd3ea31f24bdaf3a25d682b93383d2",
+      "filename": "2022_04_30_Policy_Social-Security_cnbc.json"
+    }
+  ],
+  "original_record_hash": "630c4dce0a56b1fc0212dff0e4cb971d2d115c27c9a8feef3f64640afb02bb99",
+  "input_hash": "0ff0cb0d6de3a64144aa6048cf7f439af475576b04ecc4009be2fe434dd11cd4",
+  "matching_audit_hash": "af02922e4e3be27bb7c2b586645047928daee9c21d691d8cc99b9d6e48dd013d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1ac8730fa6abae5b571e46309db744fe2d9a3c204a683b5abed0d760ef130e11",
+    "raw_sha256": "351949e5ad5b1163a8c5592f4d362d9a43b2558e82625da1e58ca15371486ed7",
+    "date_quote": "article:published_time=2022-04-30T13:00:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2e8259317aa6b85b9ce893d8de85d68b6f1174ff1f0d14b689cf45d93e9ad818",
+  "outputs": [
+    {
+      "path": "US\\2022_04_30_Policy_Social-Security_cnbc.json",
+      "sha256": "94509b24d199d5cea6446964490bfaa2318337d40ac62d94a8b39f74aa5d8432"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-04-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+    "fetched_at": "2026-11-10T19:36:26.092870+00:00",
+    "feature_available_at": "2026-11-10T19:37:03.154079+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:15:33.488635+00:00",
+  "feature_available_at": "2026-11-12T15:16:49.616320+00:00",
+  "commit_verified_at": "2026-11-12T15:16:49.616320+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Discusses Social Security tax reforms and their implications for funding and pay",
+    "securities": [
+      {
+        "name": "Social Security Board of Trustees",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Social Security Board of Trustees estimates that the program's funds could be depleted by 2034"
+      },
+      {
+        "name": "Social Security Works",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nancy Altman, president of Social Security Works, highlights the public's support for raising the wage base"
+      },
+      {
+        "name": "Center on Budget and Policy Priorities",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kathleen Romig, director of Social Security and disability policy at the Center on Budget and Policy Priorities, notes that these changes could help close the financing gap"
+      },
+      {
+        "name": "Covisum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Joe Elsasser, founder of Covisum, highlights that even if all wages are taxed, it would only cover 60% to 70% of the shortfall"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Social Security",
+        "basis": "explicit",
+        "quote": "potential changes to Social Security taxes"
+      },
+      {
+        "name": "Public Policy",
+        "basis": "inferred",
+        "quote": "Lawmakers are considering options such as raising taxes, cutting benefits, or a combination of both to ensure the program's sustainability"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "addressing the funding gap to maintain the promised benefits for future retirees"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Social Security Board of Trustees": "organization",
+      "Social Security Works": "organization",
+      "Center on Budget and Policy Priorities": "organization",
+      "Covisum": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:49.649740+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:15:33.488635+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Discusses Social Security tax reforms and their implications for funding and pay",
+      "securities": [
+        {
+          "name": "Social Security Board of Trustees",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Social Security Board of Trustees estimates that the program's funds could be depleted by 2034"
+        },
+        {
+          "name": "Social Security Works",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Nancy Altman, president of Social Security Works, highlights the public's support for raising the wage base"
+        },
+        {
+          "name": "Center on Budget and Policy Priorities",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Kathleen Romig, director of Social Security and disability policy at the Center on Budget and Policy Priorities, notes that these changes could help close the financing gap"
+        },
+        {
+          "name": "Covisum",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Joe Elsasser, founder of Covisum, highlights that even if all wages are taxed, it would only cover 60% to 70% of the shortfall"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Social Security",
+          "basis": "explicit",
+          "quote": "potential changes to Social Security taxes"
+        },
+        {
+          "name": "Public Policy",
+          "basis": "inferred",
+          "quote": "Lawmakers are considering options such as raising taxes, cutting benefits, or a combination of both to ensure the program's sustainability"
+        },
+        {
+          "name": "Finance",
+          "basis": "inferred",
+          "quote": "addressing the funding gap to maintain the promised benefits for future retirees"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Social Security Board of Trustees": "organization",
+        "Social Security Works": "organization",
+        "Center on Budget and Policy Priorities": "organization",
+        "Covisum": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:15:33.515355+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:15:33.524329+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:15:33.506269+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses potential changes to Social Security taxes in the United States, including proposals to increase the wage base for tax contributions and the ",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:57:41.445728+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

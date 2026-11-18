@@ -1,0 +1,122 @@
+{
+  "source_id": "9bfea77fdef0845225ab9b93",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_07_09_14_00_Financing_Renewable-Energy_prnewswire.json",
+      "sha256": "2196ed81502a89c3075ad25b02a5c7ed6e23ffb33f886e9fbd5d6d16900e47e1",
+      "filename": "2019_07_09_14_00_Financing_Renewable-Energy_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "dd1ca5297f1aef273f81f98a77b25fcbd8e42f47d89355f524a19684e9479074",
+  "input_hash": "1ef4918a2798379f52cd280803dd628c520ce2b5ff29832eef12059fe1e87052",
+  "matching_audit_hash": "44076cc04f42348ec9e79496873c91211753204855ed07510ea170399c8bd9bd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6216e3da11994bef14eae3a3c4f65677cb2b72947865ad685b3a6144368586a1",
+    "raw_sha256": "af1da189fa0f7b23cef6525d7ce05e434f597d78276b59f13ff11b742af62a60",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2019-07-09T14:00:00+01:00\ndate=2019-07-09T14:00:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "GameChange Solar",
+      "ticker": null,
+      "exchange": null,
+      "quote": "GameChange Solar"
+    },
+    {
+      "name": "Citi Commercial Banking",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Citi Commercial Banking"
+    }
+  ],
+  "record_hash": "ee2004d8bc7048df5df8afe594dcdbea5f20916bfef4d9afcdd00463cba818c0",
+  "outputs": [
+    {
+      "path": "US\\2019_07_09_14_00_Financing_Renewable-Energy_prnewswire.json",
+      "sha256": "db42a0fc155f0e6802802afe800e895af6eb0ef6b15b38de861418ce613a6f83"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-07-09T14:00:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-11T01:31:55.143661+00:00",
+    "fetched_at": "2026-11-11T11:49:25.867072+00:00",
+    "feature_available_at": "2026-11-11T11:49:37.196326+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:49:50.795405+00:00",
+  "feature_available_at": "2026-11-12T14:49:50.804405+00:00",
+  "commit_verified_at": "2026-11-12T14:49:50.804405+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a financing deal, company growth, market leadership, and strategic goals.",
+    "securities": [
+      {
+        "name": "GameChange Solar",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GameChange Solar"
+      },
+      {
+        "name": "Citi Commercial Banking",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Citi Commercial Banking"
+      }
+    ],
+    "industries": [
+      {
+        "name": "renewable energy",
+        "basis": "explicit",
+        "quote": "renewable energy"
+      },
+      {
+        "name": "solar energy",
+        "basis": "explicit",
+        "quote": "solar energy"
+      },
+      {
+        "name": "financial services",
+        "basis": "inferred",
+        "quote": "Citi Commercial Banking"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "GameChange Solar": "company",
+      "Citi Commercial Banking": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

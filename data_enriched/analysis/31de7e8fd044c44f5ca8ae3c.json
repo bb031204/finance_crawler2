@@ -1,0 +1,97 @@
+{
+  "source_id": "31de7e8fd044c44f5ca8ae3c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_22_Government_Public-Policy_treasury.json",
+      "sha256": "912a100ca8ce62db1bd40fc2340e454492c2e5a42c9a15c4aa5d746e260c0246",
+      "filename": "2021_03_22_Government_Public-Policy_treasury.json"
+    }
+  ],
+  "original_record_hash": "a6ac6cfd8684270852fae5525540583bf2193a30d5e3288e1653e42eb561dc91",
+  "input_hash": "f209553cf4f8e93d1ceeb014f32fac7b738bb777258f96d158e715a94974ee9e",
+  "matching_audit_hash": "f6c2af4e2285b65a2a86ae37e0b6d13f39152ea56e1fba0d44f5b140c4b34df8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2abf90d4fda73cc9d2c9d1205f8dba9bce77e1eff7016967fbf4f9a9b55ac037",
+    "raw_sha256": "c212ce1abbf840298044c8108e88d58d1ddf54fb36faa4da69c5a18a4be8f579",
+    "date_quote": "March 22, 2021 WASHINGTON – Today, the U.S. Department of the Treasury and the U.S. Department of Labor are awarding the New York State Energy Research and Development Authority (N",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "New York State Energy Research and Development Authority",
+      "ticker": null,
+      "exchange": null,
+      "quote": "New York State Energy Research and Development Authority (NYSERDA)"
+    }
+  ],
+  "record_hash": "efb0370f18b1c504a0f4585479637a6c12ca0a35dfacc2dde77f125ef45add9b",
+  "outputs": [
+    {
+      "path": "US\\2021_03_22_Government_Public-Policy_treasury.json",
+      "sha256": "232d440f43e01e233fc7b685e43563c305b819d05a70aa9cc9cfe78ddbb46613"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:14.502875+00:00",
+    "fetched_at": "2026-11-10T19:33:37.943241+00:00",
+    "feature_available_at": "2026-11-10T19:34:18.233159+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:37.228557+00:00",
+  "commit_verified_at": "2026-11-12T13:53:37.228557+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "New York State Energy Research and Development Authority",
+        "ticker": null,
+        "exchange": null,
+        "quote": "New York State Energy Research and Development Authority (NYSERDA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

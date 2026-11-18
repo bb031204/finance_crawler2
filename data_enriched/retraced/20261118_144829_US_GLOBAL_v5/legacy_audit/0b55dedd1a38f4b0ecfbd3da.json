@@ -1,0 +1,95 @@
+{
+  "source_id": "0b55dedd1a38f4b0ecfbd3da",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_11_Legal_Banking_sec.json",
+      "sha256": "1961d05e03f7b9c4473be5840c2d5b29b0619961065156e94658715aa045133a",
+      "filename": "2016_01_11_Legal_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "14c6ca35385d4cc3341e4e7e8e95123b9ae35a8c43ec3f86866ae4454e6db235",
+  "input_hash": "3ebbd1820a9abc1a1e8001338d3eee951aa9caafd224b59c50ac044c8f10b595",
+  "matching_audit_hash": "42dc28c4a6cc88403d117aea84a6e44f28a8fdb3a5ab1711db00d20f683fdd11",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b228c0b29018e94e068bb2a36a2817da62118f1f70b30770eb8feadf0082b497",
+    "raw_sha256": "94349cdaabb9066fa15752805ae4172d18a0f727ad540bd0099b345034c05aca",
+    "date_quote": "SEC filing datePublished=2016-01-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000114036116047406/form6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Senior Global Medium-Term Notes, Series G",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Senior Global Medium-Term Notes, Series G"
+    }
+  ],
+  "record_hash": "f439dee09088b16cf4c14cf24291fd0d3016a5e19f953260a7d458b57f22de1f",
+  "outputs": [
+    {
+      "path": "US\\2016_01_11_Legal_Banking_sec.json",
+      "sha256": "f18f86ceae1a7fd24ebe1b6e6371372b4c11b7b21e3d20772199b4d0462ffc8a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.847853+00:00",
+    "fetched_at": "2026-11-11T01:02:22.088642+00:00",
+    "feature_available_at": "2026-11-11T11:03:46.923520+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:02.666131+00:00",
+  "commit_verified_at": "2026-11-12T13:53:02.666131+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Senior Global Medium-Term Notes, Series G",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Senior Global Medium-Term Notes, Series G"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

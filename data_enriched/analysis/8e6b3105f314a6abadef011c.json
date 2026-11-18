@@ -1,0 +1,102 @@
+{
+  "source_id": "8e6b3105f314a6abadef011c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_08_13_18_55_Politics_Postal-Service_cnbc.json",
+      "sha256": "75e66250a0ad9d8f5c7d884517c0b27454a84e253417427b59e59eee58bed0d6",
+      "filename": "2020_08_13_18_55_Politics_Postal-Service_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a06a35b89a8b53c3c856f08c73a59241c0e48489d9af224b85e2f3d458e028ee",
+  "input_hash": "de1dbdae3bb5219b8600a5c848f3703ee74898cfaf7bbde620d89a9f97c0487e",
+  "matching_audit_hash": "6aefe6aeb637dd676d572d8fc7131a23feefd58779dc4afd3645c328b03d4d9a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1b3b8c1b9fdffae7e62ee6d204715d336da627fded6496ece33618a7078f12b4",
+    "raw_sha256": "5ba56c4b05bf39bb660db49b88bab90f8351e1208f03c9459e7ce0b0496655f9",
+    "date_quote": "article:published_time=2020-08-13T18:55:18+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "U.S. Postal Service",
+      "ticker": null,
+      "exchange": null,
+      "quote": "U.S. Postal Service"
+    }
+  ],
+  "record_hash": "5f001b27fe3097a4091e77f776c7635acf9e5dc2ad28afc52529a74b738a9e6e",
+  "outputs": [
+    {
+      "path": "US\\2020_08_13_18_55_Politics_Postal-Service_cnbc.json",
+      "sha256": "cab47522aa4b1b7c2cb5adf8f67405fa2c6c04ce7cdf086e7f3084c175cb9e90"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-08-13T18:55:18+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:36:11.056924+00:00",
+    "fetched_at": "2026-11-10T19:24:46.064254+00:00",
+    "feature_available_at": "2026-11-11T06:11:42.626541+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:34.506033+00:00",
+  "commit_verified_at": "2026-11-12T13:53:34.506033+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "U.S. Postal Service",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Postal Service"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Postal Service",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Public Administration",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

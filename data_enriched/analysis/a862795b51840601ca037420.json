@@ -1,0 +1,109 @@
+{
+  "source_id": "a862795b51840601ca037420",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_02_26_stock_Retail_cnbc.json",
+      "sha256": "42cd15052ce2160d50fb31e45663596f5b8b4c83be0d366c240d63cdb3639711",
+      "filename": "2019_02_26_stock_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "af08b5b869825fd17ff34c3a11720d170afab00a70ea8d6a3e940a68c27d2627",
+  "input_hash": "70aa17cb360ee18527bd5978a5bc7676d067a73fe7e3e91dbb85979e858e722e",
+  "matching_audit_hash": "a013ada92cabe6ec352a59804d146f0c8f4d927fec7e4a022b1faeae45364fd6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "14916fd9c4ec2ec3e27270116861fffc3d2b968f6c67d947b7b3704b976ca85f",
+    "raw_sha256": "c7370b89dfe40fe3061bf8fd7ef75e81300518de5181d10018fce48d7c0a62f4",
+    "date_quote": "article:published_time=2019-02-26T10:29:53+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Home Depot",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Home Depot"
+    },
+    {
+      "name": "Lowe's",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Lowe's, which has a market cap of about $84.3 billion, has seen its shares rise roughly 14 percent this year."
+    }
+  ],
+  "record_hash": "4dd471194e05e27b73d2307a11b3a3138423c57647a434aa2f92e6c1ccffc6af",
+  "outputs": [
+    {
+      "path": "US\\2019_02_26_stock_Retail_cnbc.json",
+      "sha256": "4419a89900e09f8b9986bdec861c5b01adb00d7fe9fcdefcc12dbd9c21e0ccdf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-02-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:08.297631+00:00",
+    "fetched_at": "2026-11-10T20:07:30.199436+00:00",
+    "feature_available_at": "2026-11-10T20:07:58.926920+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:26.285170+00:00",
+  "commit_verified_at": "2026-11-12T13:53:26.285170+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Home Depot",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Home Depot"
+      },
+      {
+        "name": "Lowe's",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lowe's, which has a market cap of about $84.3 billion, has seen its shares rise roughly 14 percent this year."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "source_id": "8e42dfd09e371a158290a615",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_07_23_Regulatory_Financial-Services_sec.json",
+      "sha256": "69ecae01869c93bc7348a5277ec1371a9df0f5dba53f055079f5257d06e61b2b",
+      "filename": "2014_07_23_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "7e34f5aedf0618d4c8fce4848ab4480242bddd7db99d3a8f6a255954967b4acc",
+  "input_hash": "b4e78eb5f2f86bcd5cc7dadb4ee56d51728cb064c337dd97777ec18639c287bc",
+  "matching_audit_hash": "13fc206ce33d12cd8c6dc4637c87173c7f6e47996f789888973d83189b45d545",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1f2bb8991fda2726de3142126972174895967233f22b63c1f815be5190d96ef2",
+    "raw_sha256": "6e97672c32814bb4ddd6d63ac310f675e98ed43a3a5a3d6cb93a1cc157e0f3f1",
+    "date_quote": "Washington D.C., July 23, 2014 — The Securities and Exchange Commission today adopted amendments to the rules that govern money market mutual funds.",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "8ca7dbcf27ae331cec7e23799deb6f2c5059961e4a08e99ae677aa064097388d",
+  "outputs": [
+    {
+      "path": "US\\2014_07_23_Regulatory_Financial-Services_sec.json",
+      "sha256": "fa1c3007f64217d41c415db0a08cf06f4d21cf78b729bc5cdfd37eca59430d88"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-07-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:07.672469+00:00",
+    "fetched_at": "2026-11-10T10:52:54.610557+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.645133+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:17:19.558416+00:00",
+  "feature_available_at": "2026-11-12T14:17:19.567184+00:00",
+  "commit_verified_at": "2026-11-12T14:17:19.567184+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory reforms by the SEC related to money market mutual funds, including changes to NAV, liquidity fees, redemption gates, and stress测试.",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "money market mutual funds"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

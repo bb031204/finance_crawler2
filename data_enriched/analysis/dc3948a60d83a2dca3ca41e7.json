@@ -1,0 +1,133 @@
+{
+  "source_id": "dc3948a60d83a2dca3ca41e7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_12_Corporate-Finance_Finance_cnbc_dc3948a60d83a2dca3ca41e7.json",
+      "sha256": "4cb535726292e1cab154535af14ff4462d09109425e443449a1e60569561418d",
+      "filename": "2018_03_12_Corporate-Finance_Finance_cnbc_dc3948a60d83a2dca3ca41e7.json"
+    }
+  ],
+  "original_record_hash": "e6e5f9d8033e9c056420cf2e26440df71d25a82f0f45496d9978de450467942a",
+  "input_hash": "dbe037b7f15891ef1c50ded9fff774b06d09c0e63056f57ad9bad77b38f24d3f",
+  "matching_audit_hash": "076bbc787b012e5f940f30e35b904067da66e4034b470a805e4c6d20afa9ebad",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4b998394ea249b758b800e02587a9d7580f59342dba7849435489570268363de",
+    "raw_sha256": "320104122fbaa8c2c3bf2388277dc2dff2d895d9d46755cb62d38d8c6daf5011",
+    "date_quote": "article:published_time=2018-03-12T17:06:43+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "TrimTabs",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Share buybacks in 2018 have averaged $4.8 billion a day, double the pace for the same period last year, according to market data firm TrimTabs."
+    },
+    {
+      "name": "J. P. Morgan",
+      "ticker": null,
+      "exchange": null,
+      "quote": "J. P. Morgan recently predicted that share repurchases would total about $800 billion this year, a new record."
+    },
+    {
+      "name": "Bank of America Merrill Lynch",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The share repurchases have helped keep the market afloat, as investors have pulled $23.5 billion out of funds that focus on U.S. stocks this year, according to Bank of America Merrill Lynch."
+    },
+    {
+      "name": "David Santschi",
+      "ticker": null,
+      "exchange": null,
+      "quote": "\"The feverish buyback activity suggests companies plan to use a hefty chunk of the money they expect to save on taxes to buy back stock,\" David Santschi, director of liquidity research at TrimTabs, said in his weekly report."
+    }
+  ],
+  "record_hash": "d2892023311281ea3db26ede19e57db8484d9ac3974ec6e78bce1111091df4a7",
+  "outputs": [
+    {
+      "path": "US\\2018_03_12_Corporate-Finance_Finance_cnbc_dc3948a60d83a2dca3ca41e7.json",
+      "sha256": "a875cd2ea7d0ae4a3b11725003266646eae164806f83c967f6562490249f2fd6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:39:20.841751+00:00",
+    "fetched_at": "2026-11-10T21:16:44.941892+00:00",
+    "feature_available_at": "2026-11-10T21:16:45.206510+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:21.039740+00:00",
+  "commit_verified_at": "2026-11-12T13:53:21.039740+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "TrimTabs",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Share buybacks in 2018 have averaged $4.8 billion a day, double the pace for the same period last year, according to market data firm TrimTabs."
+      },
+      {
+        "name": "J. P. Morgan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J. P. Morgan recently predicted that share repurchases would total about $800 billion this year, a new record."
+      },
+      {
+        "name": "Bank of America Merrill Lynch",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The share repurchases have helped keep the market afloat, as investors have pulled $23.5 billion out of funds that focus on U.S. stocks this year, according to Bank of America Merrill Lynch."
+      },
+      {
+        "name": "David Santschi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "\"The feverish buyback activity suggests companies plan to use a hefty chunk of the money they expect to save on taxes to buy back stock,\" David Santschi, director of liquidity research at TrimTabs, said in his weekly report."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

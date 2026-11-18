@@ -1,0 +1,110 @@
+{
+  "source_id": "3bdc23f5da493df8f9d188b4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_07_03_Fashion_Apparel_cnbc.json",
+      "sha256": "1aaf5593fcc917d4919229c6620654be84f35a2afc5061fb0aefcf44de5d655e",
+      "filename": "2015_07_03_Fashion_Apparel_cnbc.json"
+    }
+  ],
+  "original_record_hash": "7f8e37f90266a57890b35300557ada9680ce5739e3ffffee745436f6d852d47c",
+  "input_hash": "eeaf1e8f8bafb070eee7cecc3a6983ea03628d99fa750a9d265aec49fef25100",
+  "matching_audit_hash": "cb168959719bad5008b098c1ad9d7a21d99bf686f48836762e2e7d1362ac27e1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9c2b8f3debcc51d33ff3e088d74f7ea68e983ead8fbf4a95c6fda01b0f051388",
+    "raw_sha256": "607f62c776c8320b3d90a3c8bf1548de03d35dceebe22e78f3ce4cabb7d0097c",
+    "date_quote": "article:published_time=2015-07-03T11:00:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1a63d939b2d7f76b0bec87a792fc1fb5a9807524eec11caec3caf74d15cfaa79",
+  "outputs": [
+    {
+      "path": "US\\2015_07_03_Fashion_Apparel_cnbc.json",
+      "sha256": "bb1dd67e3177a641f5b42f8262a0525f4d2126ad7bf57a802f577f96681cb8e4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-07-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:47.669994+00:00",
+    "fetched_at": "2026-11-10T17:50:10.169867+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.402801+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:27:18.192786+00:00",
+  "feature_available_at": "2026-11-12T14:27:18.223584+00:00",
+  "commit_verified_at": "2026-11-12T14:27:18.223584+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the environmental and social impacts of the fast fashion industry, including its growth, production shifts, and sustainability efforts.",
+    "securities": [
+      {
+        "name": "Zady",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Zady"
+      },
+      {
+        "name": "United States",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United States"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Fashion industry",
+        "basis": "explicit",
+        "quote": "fashion industry"
+      },
+      {
+        "name": "Apparel industry",
+        "basis": "explicit",
+        "quote": "apparel industry"
+      },
+      {
+        "name": "Textile industry",
+        "basis": "explicit",
+        "quote": "textile industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Zady": "company",
+      "United States": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

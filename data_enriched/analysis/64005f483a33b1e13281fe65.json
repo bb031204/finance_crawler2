@@ -1,0 +1,97 @@
+{
+  "source_id": "64005f483a33b1e13281fe65",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_26_Corporate-Governance_Consumer-Goods_sec.json",
+      "sha256": "fc900bcc3225f7b3e79b72213f2972199e5a32e9e39f3d06e4a12e28703f558c",
+      "filename": "2020_02_26_Corporate-Governance_Consumer-Goods_sec.json"
+    }
+  ],
+  "original_record_hash": "821afb276c7d2945d9c9bdc06f869882f0efdd3338dc8345faa48250f275f143",
+  "input_hash": "5b69fd71c7cb3146b82334ac0b867c744da32269f7989511b9829357cc83fa69",
+  "matching_audit_hash": "6fd074bbce1c3f6d6c4d5c06511562b915a549cae515bb9bfd8a56f9d1a07e82",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "477d3f980fda1cb8c4565ae32da27fefef39e70e908903e4b89301e637c9a3ce",
+    "raw_sha256": "e9831878e72a963d838bc32774891b406c2722d1e4ead9d27c5cba62059ad706",
+    "date_quote": "SEC filing datePublished=2020-02-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465920025412/tm2010801-1_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "ESTEE LAUDER COMPANIES INC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ESTEE LAUDER COMPANIES INC"
+    }
+  ],
+  "record_hash": "026b8c000acd2cd84142844b64b40e89be321185351c9282fb579bcafff23786",
+  "outputs": [
+    {
+      "path": "US\\2020_02_26_Corporate-Governance_Consumer-Goods_sec.json",
+      "sha256": "447e65ca831a38fb60dabccf5c03eb8bc765f3acaedd238bc8a2c12b7a620bec"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:26:49.253542+00:00",
+    "feature_available_at": "2026-11-11T15:27:43.409210+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:32.566695+00:00",
+  "commit_verified_at": "2026-11-12T13:53:32.566695+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "ESTEE LAUDER COMPANIES INC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ESTEE LAUDER COMPANIES INC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer Goods",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "source_id": "33ac544a252c43e2ae776f57",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_23_Leadership-Change_Telecommunications_sec.json",
+      "sha256": "37f1524cd06758d272f92ec14ae19772977ba67d6de11aa922c769e30237f9f6",
+      "filename": "2015_02_23_Leadership-Change_Telecommunications_sec.json"
+    }
+  ],
+  "original_record_hash": "426248aa3c668de5471487a82ab6e86f4e13912e3615021bc7defd2ed07e1141",
+  "input_hash": "9c7365a60ea300b41931f42db7323999c394569c10f8eaf7f69094689347abf8",
+  "matching_audit_hash": "97d8a7feb7743d444aba64f0e52e43b7c7c64bab030af86fb13121b64b3a8527",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0476822cf2130999946adc44f33f59cb39429708e6724f93cc7da5c5a03be0f3",
+    "raw_sha256": "c80afa258b4065406cf32d726d06f0edf30dbc88a868758fa0a9cafe5874c9b1",
+    "date_quote": "Date of Report (Date of earliest event reported): February 23, 2015 (February 20, 2015)",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465915012778/a15-5043_38k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "DISH Network Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH Network Corporation"
+    },
+    {
+      "name": "EchoStar Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "EchoStar Corporation"
+    },
+    {
+      "name": "DISH DBS Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH DBS Corporation"
+    }
+  ],
+  "record_hash": "0c0d8f7cd7d250bec0381d3c17ac4fe6a3e47af911b170a718f9cb41c552cf2d",
+  "outputs": [
+    {
+      "path": "US\\2015_02_23_Leadership-Change_Telecommunications_sec.json",
+      "sha256": "56e3e1b79aeaed6847054423a81b6cb63e33f8100f691c435d6b718dc67eb5b9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:44:20.566530+00:00",
+    "feature_available_at": "2026-11-11T00:44:51.510454+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:55.743250+00:00",
+  "commit_verified_at": "2026-11-12T13:52:55.743250+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      },
+      {
+        "name": "EchoStar Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EchoStar Corporation"
+      },
+      {
+        "name": "DISH DBS Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH DBS Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Broadcasting & Telecommunications",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

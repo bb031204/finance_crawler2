@@ -1,0 +1,102 @@
+{
+  "source_id": "c57db58b8271cd9c106723ea",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_07_30_Finance_Consumer-Goods_cnbc.json",
+      "sha256": "4090e250cf20dae37ca61334c95982510b417d22262b2c3cb01df198409a67cf",
+      "filename": "2019_07_30_Finance_Consumer-Goods_cnbc.json"
+    }
+  ],
+  "original_record_hash": "880d8aee09812e317bf0f7ea5a309de1bb530833c7be3ca87aaf21b69b090d14",
+  "input_hash": "a3e4e1e1bc0558a6e5ae966231cf6dcf2857e19e752a4ab8ba320bcbe789a81f",
+  "matching_audit_hash": "2803da6b53e705a1d8779fa4e07a763cfa8fd4f8fe01d641bf47b22974c57f04",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "38f866feadadf55f86e3df1acdc3a611e70738f025a11565f24fb21bd08da55c",
+    "raw_sha256": "b7bc867e3a3b9fca2cbdb9c95c32e3e432d536eae3b888d63a35b5b514b02d11",
+    "date_quote": "article:published_time=2019-07-30T10:50:32+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Procter & Gamble",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Procter & Gamble reports adjusted earnings per share of $1.10, topping analyst estimates of $1.05."
+    }
+  ],
+  "record_hash": "13770868ef6adb17af092d8fd40afa72d9883eda69229ec8312b1423be855a5c",
+  "outputs": [
+    {
+      "path": "US\\2019_07_30_Finance_Consumer-Goods_cnbc.json",
+      "sha256": "81ec8bc1cbc328fb9bf77b6e38da796cae5adc2996dda1b77e1f3bd4ca67e51e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-07-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:08.297631+00:00",
+    "fetched_at": "2026-11-10T20:03:16.978371+00:00",
+    "feature_available_at": "2026-11-10T20:03:57.061206+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:29.148234+00:00",
+  "commit_verified_at": "2026-11-12T13:53:29.148234+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Procter & Gamble",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Procter & Gamble reports adjusted earnings per share of $1.10, topping analyst estimates of $1.05."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer Products",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Consumer Goods",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

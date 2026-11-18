@@ -1,0 +1,91 @@
+{
+  "source_id": "1e319e1160af3463e06d1ae2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_08_16_stock_consumer-goods_cnbc.json",
+      "sha256": "f652188e95a4bd1fb1109e7b6680e8c23b7c3fd93615da8654085942f855da73",
+      "filename": "2016_08_16_stock_consumer-goods_cnbc.json"
+    }
+  ],
+  "original_record_hash": "3b77dbd4586f46a5c70405b0132aabf6a423aed2fa36a7f794f51653410e0694",
+  "input_hash": "675db9eb7eb09694a7d715caa2ef29afdcc9eb0cf93c78caa8a9d39af64e6a60",
+  "matching_audit_hash": "d1221f4a4a0f75c83e952dee401a61bdfc2cf7f736e23a3e227701a971ea7183",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9ec58e270ae0545144a44bf2cbba41802e3b8b466dc2cf209d0b9fe58b97e5e4",
+    "raw_sha256": "ed95f7858700ddfef63e977a20afb031f045d9df686dc157242fc697cf8b5944",
+    "date_quote": "article:published_time=2016-08-16T17:39:31+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "fa9cb6b60d2798350fb19210d5d10ecbcb1388ae69047eb643c8c1c74c92a74a",
+  "outputs": [
+    {
+      "path": "US\\2016_08_16_stock_consumer-goods_cnbc.json",
+      "sha256": "c01202e1175a3f0bd73405e58cccefa846eeeb258d0ac0993b6302b1f9a82a12"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-08-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:21.047860+00:00",
+    "fetched_at": "2026-11-10T16:49:05.649496+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.791397+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:24.519225+00:00",
+  "feature_available_at": "2026-11-12T14:32:24.557051+00:00",
+  "commit_verified_at": "2026-11-12T14:32:24.557051+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Hain Celestial Group's financial issues, including delayed results, missed guidance, and accounting concerns, which impact its stock price",
+    "securities": [
+      {
+        "name": "Hain Celestial Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hain Celestial Group"
+      }
+    ],
+    "industries": [
+      {
+        "name": "health and wellness",
+        "basis": "explicit",
+        "quote": "health and wellness"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Hain Celestial Group": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source_id": "7e8f34c6932ebec4e63603b2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_10_02_11_30_Sales-Performance_Automotive-Retail_prnewswire.json",
+      "sha256": "d7980bdfd87d0e8b57b36de35944560a295b53e8876196976d6342d85ca28b7a",
+      "filename": "2015_10_02_11_30_Sales-Performance_Automotive-Retail_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "cac5e6bc93b23aded0b6d101ab20fea9a1d27d8342596a606311764d32eb5f86",
+  "input_hash": "31b583cdb0ecdf83ac32734225a87e30b96c71f66e1fc26e7fcb26b6c2fa8cd6",
+  "matching_audit_hash": "62f8b22b52bf30d304d3197de07cbea84bced3797d8da8eb7cbd83fa5554ef7e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "bad9666404da85a2fa3574be9b665d7f84f26bdb8f9145c1a7039cff9d857a79",
+    "raw_sha256": "f25a4fe8c04cb8f4ddf7f004fbed8d96bccc080e402e78a1e976309217ea754e",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2015-10-02T11:30:00+01:00\ndate=2015-10-02T11:30:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "AutoNation, Inc.",
+      "ticker": "AN",
+      "exchange": null,
+      "quote": "AutoNation, Inc. (NYSE: AN)"
+    }
+  ],
+  "record_hash": "b6635793e1e219ed3f4fee7230a624ab2ed6623a068fabf705327303c0b6717c",
+  "outputs": [
+    {
+      "path": "US\\2015_10_02_11_30_Sales-Performance_Automotive-Retail_prnewswire.json",
+      "sha256": "d302f4c1b433e6429b5667825b598e3f5c9930f699f9d820048d75e188533af5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-10-02T11:30:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T16:08:44.551235+00:00",
+    "fetched_at": "2026-11-10T19:01:16.198278+00:00",
+    "feature_available_at": "2026-11-11T05:52:58.158405+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:00.739304+00:00",
+  "commit_verified_at": "2026-11-12T13:53:00.739304+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "AutoNation, Inc.",
+        "ticker": "AN",
+        "exchange": null,
+        "quote": "AutoNation, Inc. (NYSE: AN)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive Retail",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

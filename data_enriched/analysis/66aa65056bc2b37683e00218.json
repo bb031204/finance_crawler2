@@ -1,0 +1,158 @@
+{
+  "source_id": "66aa65056bc2b37683e00218",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_18_Corporate-Governance_Mortgage_sec.json",
+      "sha256": "4beff85a8f719982d5011b4ad21ece7b13541a095db80bdef145f7af1d9e6988",
+      "filename": "2019_01_18_Corporate-Governance_Mortgage_sec.json"
+    }
+  ],
+  "original_record_hash": "5a4a547cd8fa9dd81352c7a48056afecebc74b884b14c6abf9b84d5d74a3d762",
+  "input_hash": "74ec427b606402260aa37880e0b408c61f7627fa1409a86420e3a75385995b8d",
+  "matching_audit_hash": "25fb3d5447c8a75afa87094438e5cd51b89358c0c9d314cc7e8dfdede3d02918",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "24f6c1e5c25d0e7a2616f69182fd1a103c0c4f95d8c361b509584d1e392e9a55",
+    "raw_sha256": "e9c5b0b3b9b76a17c7d03f4fc6bff5f9e0dc4710d3c3c4a92dbe599b272560eb",
+    "date_quote": "SEC filing datePublished=2019-01-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465919002333/a19-3134_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Impac Mortgage Holdings, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Impac Mortgage Holdings, Inc."
+    }
+  ],
+  "record_hash": "7447fa11753d7f1dce6ef8bc3a7e5a5962573ab00b5128a39e80a006e9b14b9b",
+  "outputs": [
+    {
+      "path": "US\\2019_01_18_Corporate-Governance_Mortgage_sec.json",
+      "sha256": "ea79230a3a2e019370d5f695c74a2c37b49613f2dfc623e204f4f46bcad0cc5a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.617623+00:00",
+    "fetched_at": "2026-11-11T13:48:56.821922+00:00",
+    "feature_available_at": "2026-11-11T13:49:07.138168+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:10:23.869602+00:00",
+  "feature_available_at": "2026-11-12T15:16:44.585082+00:00",
+  "commit_verified_at": "2026-11-12T15:16:44.585082+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Severance terms and benefits for executive resignation",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc. (the \"Company\")"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Mortgage",
+        "basis": "explicit",
+        "quote": "Impac Mortgage Holdings, Inc."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Impac Mortgage Holdings, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:44.605983+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:10:23.869602+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Severance terms and benefits for executive resignation",
+      "securities": [
+        {
+          "name": "Impac Mortgage Holdings, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Impac Mortgage Holdings, Inc. (the \"Company\")"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Mortgage",
+          "basis": "explicit",
+          "quote": "Impac Mortgage Holdings, Inc."
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Impac Mortgage Holdings, Inc.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:10:23.893083+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:10:23.902547+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:10:23.884184+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about a severance agreement, including financial compensation and benefits, which is relevant for understanding the company's M",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:47:12.418706+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

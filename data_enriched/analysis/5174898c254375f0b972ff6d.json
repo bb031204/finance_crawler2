@@ -1,0 +1,101 @@
+{
+  "source_id": "5174898c254375f0b972ff6d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_15_Financial_Media-&-Entertainment_sec.json",
+      "sha256": "6d64dcf618c3a875f96bd329a0e0923dbbb53f618ade789307013686b9d6e28a",
+      "filename": "2013_02_15_Financial_Media-&-Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "b31a68b07d18f54f803bff4f81c3f7ea669d711ccfb0f1ad9cfe8356f16e5ad6",
+  "input_hash": "6562267ae51394183cec72952f09fc56c09ff0c98e80da30e88d1250c33bbcb0",
+  "matching_audit_hash": "47bb781171cfc75f2eb5f3bfa5ff6dafa433de8700055d0b7986b9eb7bcf8d2a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "57a3ac30cfc35068a9876e7aad524136e999c690453bd34211ff5d78b0c7f29a",
+    "raw_sha256": "bf7fa1a4d0a3e115eb1ed031f432141f31a45b3ae38a8c0bb3acc660f15de0d6",
+    "date_quote": "Date of Report (Date of earliest event reported): February 15, 2013 (February 12, 2013)",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465913011091/a13-5313_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "DISH Network Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH NETWORK CORPORATION"
+    }
+  ],
+  "record_hash": "0401bd2738d91892a499c052693dfe93e2cf9af254ab8fb185f624b728299e5b",
+  "outputs": [
+    {
+      "path": "US\\2013_02_15_Financial_Media-&-Entertainment_sec.json",
+      "sha256": "edc2af756c66d6d29f4bdd1859602f2ea92d373266e17893169d4d7c752d7025"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+    "fetched_at": "2026-11-10T23:32:45.142294+00:00",
+    "feature_available_at": "2026-11-10T23:33:19.189989+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:44.704470+00:00",
+  "commit_verified_at": "2026-11-12T13:52:44.704470+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH NETWORK CORPORATION"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Media & Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Telecommunications",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

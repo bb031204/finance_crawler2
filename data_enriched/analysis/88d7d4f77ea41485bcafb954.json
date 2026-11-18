@@ -1,0 +1,102 @@
+{
+  "source_id": "88d7d4f77ea41485bcafb954",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_09_04_Corporate-Restructuring_Aviation-Services_prnewswire.json",
+      "sha256": "1c951b50c545cffa7ce8486ab61bf17bcc012b4c9512aeffa12a486f4693d214",
+      "filename": "2019_09_04_Corporate-Restructuring_Aviation-Services_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "f3697b6324fde10a28063cf0eaa0a7a883fdb5c802d34d0ea7c39c14c51ca8ca",
+  "input_hash": "5d6d3a3d0e977ed8aad6356d611259973b5f61d1bae3ceb3c7dc4c8816fcf524",
+  "matching_audit_hash": "4e72aff3fd7057ae7381779850c1c306c88a994021ce356015b3688d4ecd8289",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d99d23af1ea98cfb7db1dba174ef4c5a4039bfe2af1480076db8f6a30286d88c",
+    "raw_sha256": "402e0cdd6c82e13557cd8b607609b7fe43241e0285896d17467602209112aeeb",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2019-09-04T21:15:00+01:00\ndate=2019-09-04T21:15:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "PHI, Inc.",
+      "ticker": "PHIIQ",
+      "exchange": "OTC",
+      "quote": "PHI, Inc. (OTC: PHIIQ; PHIKQ)"
+    }
+  ],
+  "record_hash": "5bcf01471c51815af6e02ed31c19bb8874315ad28be5e6f1848e53c2f00a9332",
+  "outputs": [
+    {
+      "path": "US\\2019_09_04_Corporate-Restructuring_Aviation-Services_prnewswire.json",
+      "sha256": "e954b561d67ea67d929540e4829be765d862f84a8aa6b335287f57c546823012"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-09-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:18.531813+00:00",
+    "fetched_at": "2026-11-11T11:35:50.345914+00:00",
+    "feature_available_at": "2026-11-11T11:36:49.952041+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:29.617386+00:00",
+  "commit_verified_at": "2026-11-12T13:53:29.617386+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "PHI, Inc.",
+        "ticker": "PHIIQ",
+        "exchange": "OTC",
+        "quote": "PHI, Inc. (OTC: PHIIQ; PHIKQ)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare Services",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Helicopter Services",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

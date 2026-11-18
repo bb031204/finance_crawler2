@@ -1,0 +1,98 @@
+{
+  "source_id": "9ed9961129b82bf432bc6903",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_18_Financing_Financial-Services_sec.json",
+      "sha256": "5494a6f45c08a1d735a2f804959e071573c3366daf4657cea4ea342c17f29a00",
+      "filename": "2020_02_18_Financing_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "b90992ca1a39c9f53d0fe5556f693e28012356ab72efff9bf890f9ac39bae59e",
+  "input_hash": "b384addd64edaf86ca72d79815f393ee675feaaa3ec7d4ec2650ec80235c84cf",
+  "matching_audit_hash": "174034c706101dfecb966dc03d565adef0c631287e8139845965cac59d3d0d05",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5dd6522db2695719d744522db72012d4752ec5a245ddc4fd69d8105dec9116b6",
+    "raw_sha256": "2875f0af1fd6bbd1657d91f22adfdff1a821cf2a8c55ad572db0ca9fb61f51c5",
+    "date_quote": "SEC filing datePublished=2020-02-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000117184320001043/f6k_021820.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    }
+  ],
+  "record_hash": "ed4f310634a21d78c178e39a3e626944e69451238b3d9c76927f705c275a31bb",
+  "outputs": [
+    {
+      "path": "US\\2020_02_18_Financing_Financial-Services_sec.json",
+      "sha256": "4cd98d1a0d26c0c361173f71c1bf7a2b3fcf379673da0495cb667ae0f76b19ac"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:16:12.607962+00:00",
+    "feature_available_at": "2026-11-11T15:16:47.629543+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:49.872368+00:00",
+  "feature_available_at": "2026-11-12T14:51:49.883375+00:00",
+  "commit_verified_at": "2026-11-12T14:51:49.883375+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Brookfield Asset Management Inc.'s financing activity through a note offering, which is relevant to its financial operations and capital结构",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial services",
+        "basis": "explicit",
+        "quote": "financial services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

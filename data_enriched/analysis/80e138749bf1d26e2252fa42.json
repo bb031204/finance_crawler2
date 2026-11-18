@@ -1,0 +1,110 @@
+{
+  "source_id": "80e138749bf1d26e2252fa42",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_06_28_09_00_Medical-Device_Healthcare_prnewswire.json",
+      "sha256": "b40d9a2c1cfae062d85ba024d6fb0c20de8ef77152eb843978353a5fcce61607",
+      "filename": "2019_06_28_09_00_Medical-Device_Healthcare_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "462116da13cd6761c10bdcacbb7b078e261c8545a3efea36f2ab75ee01761937",
+  "input_hash": "1715a2476381bd44924891236744905b0f68d3ccc715a77876912bde5082b464",
+  "matching_audit_hash": "a238a0d7519bceb88147953277e83c1805ac23bb9bd9c2259c03e11a2f160cc5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9c2436ea8b7793cec86f8aedddc3353f97f095ebfa55171205506672d8e978b4",
+    "raw_sha256": "8841ca202a605d8f21c2e1bff534f8b97b53b140d1bedbe7512db69191746801",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2019-06-28T09:00:00+01:00\ndate=2019-06-28T09:00:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e22d06ecda86918107628654809b0a59e08600c593328c1912fb85d409413242",
+  "outputs": [
+    {
+      "path": "US\\2019_06_28_09_00_Medical-Device_Healthcare_prnewswire.json",
+      "sha256": "ef0994404feacf7a7de08ae29f48b7bb1167d15db559626f70ca3d2b9753aac1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-06-28T09:00:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T16:04:39.130701+00:00",
+    "fetched_at": "2026-11-10T16:39:27.423534+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.728660+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:49:42.351213+00:00",
+  "feature_available_at": "2026-11-12T14:49:42.368069+00:00",
+  "commit_verified_at": "2026-11-12T14:49:42.368069+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a medical device company's financing, product development, and clinical study results.",
+    "securities": [
+      {
+        "name": "Saluda Medical",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Saluda Medical, a global medical device company"
+      },
+      {
+        "name": "Boston Scientific Corporation",
+        "ticker": "BSX",
+        "exchange": "NYSE",
+        "quote": "Boston Scientific Corporation (NYSE: BSX)"
+      },
+      {
+        "name": "Redmile Group LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Redmile Group LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Medical Device",
+        "basis": "explicit",
+        "quote": "Saluda Medical, a global medical device company"
+      },
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "The Evoke system is designed to be the first closed-loop SCS system that measures the spinal cord's response to stimulation"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Saluda Medical": "company",
+      "Boston Scientific Corporation": "company",
+      "Redmile Group LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

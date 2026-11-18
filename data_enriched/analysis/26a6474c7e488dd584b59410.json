@@ -1,0 +1,117 @@
+{
+  "source_id": "26a6474c7e488dd584b59410",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_29_executive-appointment_Industrial_sec.json",
+      "sha256": "a623a67c0758b0761e4f6c762063217a7724aaff3c0179ed1839299a15b6b638",
+      "filename": "2019_03_29_executive-appointment_Industrial_sec.json"
+    }
+  ],
+  "original_record_hash": "b615ea542d8912ae20a142544300a75ab8faea5a9fc4a82065b03c25327d4f9e",
+  "input_hash": "de21aebd320d9ebc76465b4c883db49357e17c41a58b779a946212734b596139",
+  "matching_audit_hash": "17742b25367396389ec09c9f4ef34fe2a27db696c227098a6647d3b28d123835",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "08c086291b99acc22b831b1ea91d62a22d825be2e6fa1b1b580e6d3bc2375417",
+    "raw_sha256": "1542f504beb22a177314c21d1957cca55d16ca2a80374a3e4760d85bb5da3943",
+    "date_quote": "SEC filing datePublished=2019-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062319000050/caohire8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    },
+    {
+      "name": null,
+      "ticker": "GTLS",
+      "exchange": "NASDAQ",
+      "quote": "NASDAQ:GTLS"
+    }
+  ],
+  "record_hash": "86914c6f546f66c2eed182a72e647a95821bcc40e3d058bf736b907048d674ab",
+  "outputs": [
+    {
+      "path": "US\\2019_03_29_executive-appointment_Industrial_sec.json",
+      "sha256": "3d15aa379152184aa16be6b513a072c50464448e48abae6e3b7fca34507bd0bb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.617623+00:00",
+    "fetched_at": "2026-11-11T13:51:11.684058+00:00",
+    "feature_available_at": "2026-11-11T13:51:28.912258+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:32.892241+00:00",
+  "feature_available_at": "2026-11-12T14:48:32.918124+00:00",
+  "commit_verified_at": "2026-11-12T14:48:32.918124+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a corporate appointment and compensation details, which are relevant for understanding internal leadership changes and potential impacts on ",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      },
+      {
+        "name": "Chart Industries, Inc.",
+        "ticker": "GTLS",
+        "exchange": "NASDAQ",
+        "quote": "Chart Industries, Inc. (NASDAQ:GTLS)"
+      },
+      {
+        "name": "Georgia-Pacific, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Georgia-Pacific, LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance and accounting",
+        "basis": "inferred",
+        "quote": "Finance and accounting"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Schweitzer-Mauduit International, Inc.": "company",
+      "Chart Industries, Inc.": "company",
+      "Georgia-Pacific, LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

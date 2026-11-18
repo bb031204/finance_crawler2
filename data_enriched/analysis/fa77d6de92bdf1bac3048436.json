@@ -1,0 +1,212 @@
+{
+  "source_id": "fa77d6de92bdf1bac3048436",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_01_09_Corporate-Governance_Banking_sec.json",
+      "sha256": "78b46a6919861672dc262cbc6e0c605cf2f0eb702071e19fc51d2dff513136ff",
+      "filename": "2020_01_09_Corporate-Governance_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "e2023fdb50af71129a5cc4095936978f9059f07e7f8c4f704af5a6274cc7a676",
+  "input_hash": "28128d5b75fe6c69ac8d12a9dcf7ebab48576a2c2d86daa8dd57e443259e3b92",
+  "matching_audit_hash": "a1e38f0c448585a7e3cb097564e01f10725cdc08594004fc80f5c01d8b56e956",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7aa61b8a389684be519bd40f32da0943ac3d50ea050c8b0b485428a86bbddea4",
+    "raw_sha256": "6e37b5630564d53bcdab1b7c3f9a830ef41ecc9b404a516e82b2af88fe17ffbd",
+    "date_quote": "SEC filing datePublished=2020-01-09",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000117625620000002/191220rbc6knomrd.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Royal Bank of Canada",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Royal Bank of Canada"
+    }
+  ],
+  "record_hash": "0bd72eca4cc94fd4acaded732246ad8299891039d6b5e5c1f309658821a157c6",
+  "outputs": [
+    {
+      "path": "US\\2020_01_09_Corporate-Governance_Banking_sec.json",
+      "sha256": "401fcaaf01a626b2a9c5681ac34cd8682834d422364e612fe65bfc385b38e8f2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-01-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.199957+00:00",
+    "fetched_at": "2026-11-11T14:34:15.103486+00:00",
+    "feature_available_at": "2026-11-11T14:34:47.207023+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:12:31.497245+00:00",
+  "feature_available_at": "2026-11-12T15:16:46.751006+00:00",
+  "commit_verified_at": "2026-11-12T15:16:46.751006+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Regulatory compliance and filing details for a Canadian bank",
+    "securities": [
+      {
+        "name": "The Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Royal Bank of Canada"
+      },
+      {
+        "name": "U.S. Securities and Exchange Commission (SEC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "e3 Filing",
+        "ticker": null,
+        "exchange": null,
+        "quote": "e3 Filing"
+      },
+      {
+        "name": "Computershare",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Computershare"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "The Royal Bank of Canada"
+      },
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "foreign private issuer"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "The Royal Bank of Canada": "organization",
+      "U.S. Securities and Exchange Commission (SEC)": "organization",
+      "e3 Filing": "organization",
+      "Computershare": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:46.776066+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:12:31.497245+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Regulatory compliance and filing details for a Canadian bank",
+      "securities": [
+        {
+          "name": "The Royal Bank of Canada",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Royal Bank of Canada"
+        },
+        {
+          "name": "U.S. Securities and Exchange Commission (SEC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Securities and Exchange Commission (SEC)"
+        },
+        {
+          "name": "e3 Filing",
+          "ticker": null,
+          "exchange": null,
+          "quote": "e3 Filing"
+        },
+        {
+          "name": "Computershare",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Computershare"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Banking",
+          "basis": "inferred",
+          "quote": "The Royal Bank of Canada"
+        },
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "foreign private issuer"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "The Royal Bank of Canada": "organization",
+        "U.S. Securities and Exchange Commission (SEC)": "organization",
+        "e3 Filing": "organization",
+        "Computershare": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:12:31.524457+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:12:31.533456+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:31.513649+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about a regulatory filing by The Royal Bank of Canada, including its compliance with U.S. securities regulations and details of",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:51:27.823847+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -5,7 +5,7 @@ from time import monotonic
 import httpx
 from finance_agent.core import digest
 from finance_agent.progress import log, short
-from qwen_agent import COVERAGE_PROMPT, ModelBudget, OutputError, LEGACY_COVERAGE_PROMPT, PLANNING_SCOPE_VERSION
+from qwen_agent import COVERAGE_PROMPT, ModelBudget, ModelServiceError, OutputError, LEGACY_COVERAGE_PROMPT, PLANNING_SCOPE_VERSION
 from record_files import source_id
 
 
@@ -32,7 +32,7 @@ def broad_discover(crawler, report, start, end):
     markets = cfg.monitoring.markets
     pairs = [(direction, market) for direction in directions for market in markets]
     windows = date_windows(start, end, cfg.search.date_window_days)
-    inputs=[cfg.monitoring.model_dump(),directions,start,end,cfg.search.model_dump(exclude={"discovery_mode", "sec_edgar"})]
+    inputs=[cfg.monitoring.model_dump(),directions,start,end,cfg.search.model_dump(exclude={"discovery_mode", "sec_edgar", "history_refinement_passes"})]
     scope = digest(inputs+[PLANNING_SCOPE_VERSION])
     histories=crawler.state.setdefault('discovery',{})
     legacy=digest(inputs+[LEGACY_COVERAGE_PROMPT])
@@ -71,6 +71,8 @@ def broad_discover(crawler, report, start, end):
                 report["discovery"]["paused"] = True
                 log("搜索规划暂停", str(error) + "；已保存轮转位置，先处理已有候选")
                 break
+            except ModelServiceError:
+                raise
             except (ValueError, httpx.HTTPError) as error:
                 plans[group_start] = None
                 report["errors"].append({"phase":"planning","url":None,"reason":short(error,220)})
@@ -87,6 +89,8 @@ def broad_discover(crawler, report, start, end):
             except ModelBudget as error:
                 report['discovery']['paused']=True
                 log('搜索规划暂停',str(error)+'；保留当前任务，下次续跑');break
+            except ModelServiceError:
+                raise
             except (ValueError,httpx.HTTPError) as error:
                 report['errors'].append({'phase':'planning','url':None,'reason':short(error,220)})
                 log('搜索规划失败',short(error,180));progress['cursor']=position+1;crawler.persist();continue

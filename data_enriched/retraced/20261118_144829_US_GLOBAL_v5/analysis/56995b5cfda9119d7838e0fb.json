@@ -1,0 +1,298 @@
+{
+  "source_id": "56995b5cfda9119d7838e0fb",
+  "status": "completed",
+  "source_record_hash": "0092e31b80fcf591efcd78f1b0a55c2a6915b7f1c69f49b1e3ef641b9fccec03",
+  "source_trace": {
+    "requested_url": "https://home.treasury.gov/news/weekly-public-schedule/03062014",
+    "attempted_at": "2026-11-18T15:10:13.912107+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "419bfed07b69a9a545ebb57f2795e84f296ab27be9ca5e6b1884162ce78fd422"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/56995b5cfda9119d7838e0fb.json",
+    "sha256": "ab6989a7aeb8fbf3544c9eac3846628092af55c830a25c5d23ff44f559cbba73",
+    "bundled_path": "legacy_audit/56995b5cfda9119d7838e0fb.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "63443e99aaaa013bebd5b1dc1f488d42453feaae71830cb3657eeb03e5ca795c",
+      "llm_inferred_at": "2026-11-18T15:11:10.970218+00:00",
+      "model_duration_seconds": 12.0077726,
+      "prompt_tokens": 2027,
+      "completion_tokens": 605,
+      "selection": [
+        {
+          "source_id": "56995b5cfda9119d7838e0fb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Secretary Jacob J.",
+              "rationale": "The event involved key officials from the Department of Education and the Consumer Financial Protection Bureau, indicating a focus on financial capability and consumer services, which are part of the broader financial services industry.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "market",
+              "quote": "The event was open to the press, with media required to RSVP by March 7 and provide personal details for access.",
+              "rationale": "The event's public nature and media involvement suggest a broader impact on the financial services industry, which is a significant sector in the U.S. economy.",
+              "confidence": 0.6
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "On March 10, 2014, the U.S. Department of the Treasury hosted an inaugural public meeting of the President’s Advisory Council on Financial Capability for Young Americans. Secretary Jacob J. Lew delivered opening remarks, emphasizing the importance of promoting financial capability among young Americans to increase upward economic mobility. The",
+              "rationale": "The event was hosted by the U.S. Department of the Treasury and involved key officials from the Department of Education and the Consumer Financial Protection Bureau, indicating a focus on financial capability and consumer services, which are part of the broader financial services industry. This is a",
+              "confidence": 0.7
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "Secretary Jacob J."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Secretary Jacob J."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Secretary Jacob J."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "653e0f08dcc81f546f17805d3a46896ce2b02582de9c21a9154124fc13023cb4",
+      "llm_inferred_at": "2026-11-18T15:11:20.401454+00:00",
+      "model_duration_seconds": 9.4248529,
+      "prompt_tokens": 2071,
+      "completion_tokens": 516,
+      "selection": [
+        {
+          "source_id": "56995b5cfda9119d7838e0fb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "market",
+              "quote": "The event was open to the press, with media required to RSVP by March 7 and provide personal details for access.",
+              "rationale": "The event's openness to the press and the requirement for media to RSVP and provide personal details indicates a broader market-level engagement, suggesting a public policy event with potential market implications.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "On March 10, 2014, the U.S. Department of the Treasury hosted an inaugural public meeting of the President’s Advisory Council on Financial Capability for Young Americans. Secretary Jacob J. Lew delivered opening remarks, emphasizing the importance of promoting financial capability among young Americans to increase upward economic mobility. The",
+              "rationale": "The event was hosted by the U.S. Department of the Treasury, which is a federal agency, and the discussion involved financial capability and economic mobility, which are broad macroeconomic topics that can influence the U.S. equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "Secretary Jacob J."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "inferred",
+              "quote": "Secretary Jacob J."
+            },
+            {
+              "industry_key": "SEC-SIC:6141",
+              "name": "PERSONAL CREDIT INSTITUTIONS",
+              "basis": "inferred",
+              "quote": "Secretary Jacob J."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:11:20.411409+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "419bfed07b69a9a545ebb57f2795e84f296ab27be9ca5e6b1884162ce78fd422",
+    "raw_sha256": null,
+    "date_quote": "Weekly Schedule Updates March 10, 2014: Inaugural Public Meeting of the President’s Advisory Council on Financial Capability for Young Americans March 6, 2014 (Archived Content) ",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": true,
+    "reason": "The summary discusses a government event related to financial capability for young Americans, involving key officials and media access.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "President’s Advisory Council on Financial Capability for Young Americans",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President’s Advisory Council on Financial Capability for Young Americans"
+      },
+      {
+        "name": "Department of Education",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Department of Education"
+      },
+      {
+        "name": "Consumer Financial Protection Bureau",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Consumer Financial Protection Bureau"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "President’s Advisory Council on Financial Capability for Young Americans": "organization",
+      "Department of Education": "organization",
+      "Consumer Financial Protection Bureau": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "56995b5cfda9119d7838e0fb",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_03_10_Government_Financial-Education_treasury.json",
+        "sha256": "5737c3c7bae1685a7153a0770e34b7db5e3a7a76f0fb87e1274688196cdcbdce",
+        "filename": "2014_03_10_Government_Financial-Education_treasury.json"
+      }
+    ],
+    "original_record_hash": "d6165bcd50ae63e0af2b5bc581808e686ff4d96e2a4147d799b4b7575e334396",
+    "input_hash": "af3496ebaf2113f0df59607780f20758c4ac0612fd36bbb8697408d4bf93e4b8",
+    "matching_audit_hash": "d4eca6a573ad676119afd84718dbe6768c5b9b167c27c1dc6a448edbac1497ea",
+    "legacy_security_evidence": [],
+    "record_hash": "0092e31b80fcf591efcd78f1b0a55c2a6915b7f1c69f49b1e3ef641b9fccec03",
+    "outputs": [
+      {
+        "path": "US\\2014_03_10_Government_Financial-Education_treasury.json",
+        "sha256": "c97b745b4562353eb931a738f7eca6f5b7ed91d24996dedf33e07e11cc4b26a1"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2014-03-10",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T16:09:21.477091+00:00",
+      "fetched_at": "2026-11-10T19:01:22.363027+00:00",
+      "feature_available_at": "2026-11-10T19:01:30.112801+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T15:11:20.401454+00:00",
+    "feature_available_at": "2026-11-18T15:11:20.411409+00:00",
+    "commit_verified_at": "2026-11-12T14:13:04.925519+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [
+      "US_EQUITY"
+    ],
+    "scope_evidence": [
+      {
+        "scope": "US_EQUITY",
+        "evidence_quote": "On March 10, 2014, the U.S. Department of the Treasury hosted an inaugural public meeting of the President’s Advisory Council on Financial Capability for Young Americans. Secretary Jacob J. Lew delivered opening remarks, emphasizing the importance of promoting financial capability among young Americans to increase upward economic mobility. The",
+        "rationale": "The event was hosted by the U.S. Department of the Treasury, which is a federal agency, and the discussion involved financial capability and economic mobility, which are broad macroeconomic topics that can influence the U.S. equity market.",
+        "confidence": 0.9,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "On March 10, 2014, the U.S. Department of the Treasury hosted an inaugural public meeting of the President’s Advisory Council on Financial Capability for Young Americans. Secretary Jacob J. Lew delivered opening remarks, emphasizing the importance of promoting financial capability among young Americans to increase upward economic mobility. The",
+        "scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "confidence_interpretation": "uncalibrated_model_self_assessment"
+      }
+    ],
+    "impact_scope_evidence": [
+      {
+        "scope": "market",
+        "quote": "The event was open to the press, with media required to RSVP by March 7 and provide personal details for access.",
+        "rationale": "The event's openness to the press and the requirement for media to RSVP and provide personal details indicates a broader market-level engagement, suggesting a public policy event with potential market implications.",
+        "confidence": 0.8,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The event was open to the press, with media required to RSVP by March 7 and provide personal details for access."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://home.treasury.gov/news/weekly-public-schedule/03062014",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "0092e31b80fcf591efcd78f1b0a55c2a6915b7f1c69f49b1e3ef641b9fccec03",
+    "content_hash": "419bfed07b69a9a545ebb57f2795e84f296ab27be9ca5e6b1884162ce78fd422",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:11:20.402494+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/56995b5cfda9119d7838e0fb.json",
+      "sha256": "8dae1c65c15d6564dc84d4b713a0bf79b96506db1a9f375425eeed1459db5003",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 66.51600000000326
+}

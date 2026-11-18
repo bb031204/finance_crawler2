@@ -1,0 +1,373 @@
+{
+  "source_id": "52a17bf7c3902b7ad11c9734",
+  "status": "completed",
+  "source_record_hash": "e55d48e441ad45426fc8f0927c03cb897115505fb3cd46c3643ff500b409d462",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001082/0001001082-19-000003-index.html",
+    "attempted_at": "2026-11-18T14:36:47.309469+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001082/0001001082-19-000003-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000100108219000003/dish-20190311x8k.htm",
+    "fetched_at": "2026-11-18T14:36:57.817372+00:00",
+    "source_body_hash": "d089e4eb9887989d33a02984c48004d8a4c5244fc3fc4b44668dced7d31fea9e",
+    "raw_sha256": "1fef6e4bcb5d0171118c215b81ad034d083c5c9eedc0fd22bc0c92826d96c81f",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001082/000100108219000003/dish-20190311x8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "1fef6e4bcb5d0171118c215b81ad034d083c5c9eedc0fd22bc0c92826d96c81f",
+        "text_sha256": "d089e4eb9887989d33a02984c48004d8a4c5244fc3fc4b44668dced7d31fea9e",
+        "text_start": 0,
+        "text_end": 3805
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2019-03-11",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/52a17bf7c3902b7ad11c9734.json",
+    "sha256": "37381a2ee6d9c4c06807b3c5b02f53c72d78c7f9eeade1fc051ca49b7d810a8a",
+    "bundled_path": "legacy_audit/52a17bf7c3902b7ad11c9734.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b68a4e4f8cb50121000ef1cdef18139bfc0b6614a78454177cc2daab0b862d6b",
+      "llm_inferred_at": "2026-11-18T14:37:08.688383+00:00",
+      "model_duration_seconds": 10.8540356,
+      "prompt_tokens": 2870,
+      "completion_tokens": 413,
+      "selection": [
+        {
+          "source_id": "52a17bf7c3902b7ad11c9734",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Board concluded that Ms.",
+              "rationale": "The appointment of a new director with experience in the telecommunications and related industries indicates an industry-specific impact.",
+              "confidence": 0.8
+            },
+            {
+              "scope": "company",
+              "quote": "DISH NETWORK CORPORATION Date: March 11, 2019 By: /s/Timothy A.",
+              "rationale": "The event is directly related to DISH NETWORK CORPORATION, indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4813",
+              "name": "TELEPHONE COMMUNICATIONS (NO RADIOTELEPHONE)",
+              "basis": "explicit",
+              "quote": "The Board concluded that Ms."
+            },
+            {
+              "industry_key": "TRSR:7664f68f90787500",
+              "name": "Telecommunications Equipment",
+              "basis": "explicit",
+              "quote": "The Board concluded that Ms."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "The Board concluded that Ms."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "de13784def5ae0bb6842a0400308d9b844f95e4d7c27c2e4e7683a1eed03f4ff",
+      "llm_inferred_at": "2026-11-18T14:37:18.099680+00:00",
+      "model_duration_seconds": 9.3952405,
+      "prompt_tokens": 2914,
+      "completion_tokens": 405,
+      "selection": [
+        {
+          "source_id": "52a17bf7c3902b7ad11c9734",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "DISH NETWORK CORPORATION Date: March 11, 2019 By: /s/Timothy A.",
+              "rationale": "The article discusses the appointment of a new director to DISH Network Corporation, which is a specific company event.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4813",
+              "name": "TELEPHONE COMMUNICATIONS (NO RADIOTELEPHONE)",
+              "basis": "explicit",
+              "quote": "DISH NETWORK CORPORATION Date: March 11, 2019 By: /s/Timothy A."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "DISH NETWORK CORPORATION Date: March 11, 2019 By: /s/Timothy A."
+            },
+            {
+              "industry_key": "SEC-SIC:4899",
+              "name": "COMMUNICATIONS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "DISH NETWORK CORPORATION Date: March 11, 2019 By: /s/Timothy A."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:37:18.121534+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d089e4eb9887989d33a02984c48004d8a4c5244fc3fc4b44668dced7d31fea9e",
+    "raw_sha256": "1fef6e4bcb5d0171118c215b81ad034d083c5c9eedc0fd22bc0c92826d96c81f",
+    "date_quote": "SEC filing datePublished=2019-03-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000100108219000003/dish-20190311x8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Board appointment with regulatory expertise",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation appointed Kathleen Q. Abernathy as an independent member of its Board of Directors"
+      },
+      {
+        "name": "NASDAQ",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the independence requirements of NASDAQ and SEC rules"
+      },
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the independence requirements of NASDAQ and SEC rules"
+      },
+      {
+        "name": "Frontier Communications Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "She previously served as Executive Vice President, External Affairs for Frontier Communications Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "DISH Network Corporation": "company",
+      "NASDAQ": "organization",
+      "SEC": "organization",
+      "Frontier Communications Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "52a17bf7c3902b7ad11c9734",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_03_11_board-changes_telecommunications_sec.json",
+        "sha256": "470dc645233ad460b617e8335ac44f2d8c2a35d7a502e6fd7435ea3577b0bbca",
+        "filename": "2019_03_11_board-changes_telecommunications_sec.json"
+      }
+    ],
+    "original_record_hash": "d5505aecf2022bbbdaf5cf788605a58baad84f236f7648cf5526a5e3ad240c96",
+    "input_hash": "251283b666c1a19d984ed6669a3cffb6a3bf553619b5a41c767ec6bbc2ef44ea",
+    "matching_audit_hash": "243ad82f566841052100e577ab92fae89fb3118b6073338701910a4ac068647a",
+    "legacy_security_evidence": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      }
+    ],
+    "record_hash": "e55d48e441ad45426fc8f0927c03cb897115505fb3cd46c3643ff500b409d462",
+    "outputs": [
+      {
+        "path": "US\\2019_03_11_board-changes_telecommunications_sec.json",
+        "sha256": "e8d08b9b95de138edb9b2e2e5d29f5c8264642ffaa3914a007fb55e825a52deb"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2019-03-11",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:19.618622+00:00",
+      "fetched_at": "2026-11-11T14:13:21.645756+00:00",
+      "feature_available_at": "2026-11-11T14:13:37.801267+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:37:18.099680+00:00",
+    "feature_available_at": "2026-11-18T14:37:18.121534+00:00",
+    "commit_verified_at": "2026-11-12T15:16:45.138815+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:45.165320+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:10:56.620564+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Board appointment with regulatory expertise",
+        "securities": [
+          {
+            "name": "DISH Network Corporation",
+            "ticker": null,
+            "exchange": null,
+            "quote": "DISH Network Corporation appointed Kathleen Q. Abernathy as an independent member of its Board of Directors"
+          },
+          {
+            "name": "NASDAQ",
+            "ticker": null,
+            "exchange": null,
+            "quote": "the independence requirements of NASDAQ and SEC rules"
+          },
+          {
+            "name": "SEC",
+            "ticker": null,
+            "exchange": null,
+            "quote": "the independence requirements of NASDAQ and SEC rules"
+          },
+          {
+            "name": "Frontier Communications Inc.",
+            "ticker": null,
+            "exchange": null,
+            "quote": "She previously served as Executive Vice President, External Affairs for Frontier Communications Inc."
+          }
+        ],
+        "industries": [
+          {
+            "name": "telecommunications industry",
+            "basis": "explicit",
+            "quote": "regulatory and managerial experience in the telecommunications industry"
+          }
+        ],
+        "impact_scope": [
+          "company"
+        ],
+        "entity_types": {
+          "DISH Network Corporation": "company",
+          "NASDAQ": "organization",
+          "SEC": "organization",
+          "Frontier Communications Inc.": "company"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:10:56.645572+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:10:56.654564+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:10:56.636565+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary discusses a board change at DISH Network Corporation, including the appointment of a new independent director and her background, which provides key",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:48:12.515146+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "DISH NETWORK CORPORATION Date: March 11, 2019 By: /s/Timothy A.",
+        "rationale": "The article discusses the appointment of a new director to DISH Network Corporation, which is a specific company event.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "DISH NETWORK CORPORATION Date: March 11, 2019 By: /s/Timothy A.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001082/0001001082-19-000003-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "e55d48e441ad45426fc8f0927c03cb897115505fb3cd46c3643ff500b409d462",
+    "content_hash": "d089e4eb9887989d33a02984c48004d8a4c5244fc3fc4b44668dced7d31fea9e",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:37:18.101345+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/52a17bf7c3902b7ad11c9734.json",
+      "sha256": "895575cf6c6cea64e2cc65a147fbf66aa4836bf1d0f5fda5013f242db9f1ceae",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 30.828000000008615
+}

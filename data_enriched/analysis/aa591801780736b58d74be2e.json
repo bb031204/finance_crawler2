@@ -1,0 +1,145 @@
+{
+  "source_id": "aa591801780736b58d74be2e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_12_19_11_02_stock_healthcare_fool.json",
+      "sha256": "30d9ddfdf6a9595b32e0eb8c7fcffcf1a35b9d8ad0681f39cfec60a82e9a4695",
+      "filename": "2017_12_19_11_02_stock_healthcare_fool.json"
+    }
+  ],
+  "original_record_hash": "35b5e4b25aa9c2bfc16350e8f626f24b07a484303962c770a238b41c23f04e2c",
+  "input_hash": "1fadd20f1fb16eb09387d67678f1845f1a1f3b24304e5bf2a4496875d250a0bb",
+  "matching_audit_hash": "c3e7fdf355add53a429a8b3ba04f91f21ee78fbe003c98a3385533561c0020d0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a324523c2e8705331da3f5252372381c73e86ccb2cb3479e4d11b1161328c787",
+    "raw_sha256": "f73ff998df4f98c314ed0b556063d110a1cc02c5ad3ffaaccd5e307185be31a3",
+    "date_quote": "article:published_time=2017-12-19T11:02:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Johnson & Johnson",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Johnson & Johnson"
+    },
+    {
+      "name": "Pfizer",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Pfizer"
+    },
+    {
+      "name": "Abbott Laboratories",
+      "ticker": "ABT",
+      "exchange": "NYSE",
+      "quote": "Abbott Laboratories NYSE: ABT"
+    },
+    {
+      "name": null,
+      "ticker": "JNJ",
+      "exchange": "NYSE",
+      "quote": "NYSE: JNJ"
+    },
+    {
+      "name": null,
+      "ticker": "PFE",
+      "exchange": "NYSE",
+      "quote": "NYSE: PFE"
+    }
+  ],
+  "record_hash": "4d0e5a1ada21ab078ad609ae86951794d4f39a935c799e8126436d11c95a3cec",
+  "outputs": [
+    {
+      "path": "US\\2017_12_19_11_02_stock_healthcare_fool.json",
+      "sha256": "24ee62a7e19249ff4a0da2eeb4067df3c3ff1ff031d7503d268c3ef8d7aca32b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-12-19T11:02:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:37:42.404543+00:00",
+    "fetched_at": "2026-11-10T20:44:35.189758+00:00",
+    "feature_available_at": "2026-11-11T07:24:42.583690+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:18.172518+00:00",
+  "commit_verified_at": "2026-11-12T13:53:18.172518+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Johnson & Johnson",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Johnson & Johnson"
+      },
+      {
+        "name": "Pfizer",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pfizer"
+      },
+      {
+        "name": "Abbott Laboratories",
+        "ticker": "ABT",
+        "exchange": "NYSE",
+        "quote": "Abbott Laboratories NYSE: ABT"
+      },
+      {
+        "name": null,
+        "ticker": "JNJ",
+        "exchange": "NYSE",
+        "quote": "NYSE: JNJ"
+      },
+      {
+        "name": null,
+        "ticker": "PFE",
+        "exchange": "NYSE",
+        "quote": "NYSE: PFE"
+      }
+    ],
+    "industries": [
+      {
+        "name": "healthcare",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source_id": "b9cceccc620b83a311608b1d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_21_Financial-Results_Tobacco_sec.json",
+      "sha256": "3ca1b051149402460d9fed8e3b2e26fb6b2b0f371fc4247a9c69288fa7cab600",
+      "filename": "2018_02_21_Financial-Results_Tobacco_sec.json"
+    }
+  ],
+  "original_record_hash": "ba96a6cb447a80e14906f2d5b80c69be6dd68aafc9d48db6eeedd54c6f4d8116",
+  "input_hash": "46ad1eb6f05c52310f823305fd0b6848f1983446966c3b89991e56cdf1853e43",
+  "matching_audit_hash": "95532a17b946f9e8c9d2a63982c4791dcc9738c0b845e59c4fc085b6fad66ee0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7cc9c86f0c9c2ea45b0e1d7d96492bcf54451c6b2ba0bb8ae02b253284892850",
+    "raw_sha256": "e51e38a6371dc6f480c94ada84fe41f459f94481789cf7d9cf95381b325825b8",
+    "date_quote": "SEC filing datePublished=2018-02-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062318000016/q42017form8-kearnings.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    }
+  ],
+  "record_hash": "b39abee7291473b5814805739e4ca625ec21161d12a59110719ab4cf503b26db",
+  "outputs": [
+    {
+      "path": "US\\2018_02_21_Financial-Results_Tobacco_sec.json",
+      "sha256": "6d2c7b16a0f53454097c0115c867339d18a293b5a1403d8f29510ab6abff6bd4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+    "fetched_at": "2026-11-11T13:07:46.675682+00:00",
+    "feature_available_at": "2026-11-11T13:08:19.806294+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:20.154683+00:00",
+  "commit_verified_at": "2026-11-12T13:53:20.154683+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Tobacco",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

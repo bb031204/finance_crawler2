@@ -1,0 +1,106 @@
+{
+  "source_id": "5d9a7672289b87a881024cfd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_05_21_Technology_Semiconductor-Manufacturing_cnbc.json",
+      "sha256": "016556796905f003a7a5d637a4ed46cc6538f2a5c88bfe80440d29cc59b8e577",
+      "filename": "2021_05_21_Technology_Semiconductor-Manufacturing_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2021_05_21_Technology_Semiconductor-Manufacturing_cnbc.json",
+      "sha256": "016556796905f003a7a5d637a4ed46cc6538f2a5c88bfe80440d29cc59b8e577",
+      "filename": "2021_05_21_Technology_Semiconductor-Manufacturing_cnbc.json"
+    }
+  ],
+  "original_record_hash": "248ea34723b64b4a628029cf3944673b69affac10dcc33f79e01b316bdaba0e4",
+  "input_hash": "06baf5429ef9b80033684d6540eddd8e08ca5550ce6b378fe34449aabf9ed015",
+  "matching_audit_hash": "0a08f903f9f328d71c61fb6aa680e0d9f9ff57116b96482194da52fd118ffe8d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "36cff1439d64e50a4401e9450cc5d82b4148b8c22494b0637132be54127cf154",
+    "raw_sha256": "956851eda3987d63a77e328ed3f1e5470768b08bb119d56c299f9ee77ed1c15c",
+    "date_quote": "article:published_time=2021-05-21T04:40:22+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Taiwan Semiconductor Manufacturing Co",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Taiwan Semiconductor Manufacturing Co"
+    }
+  ],
+  "record_hash": "492becc7efdec6bf66c783376652f3b697a4b2a934a700bd483cda798474733f",
+  "outputs": [
+    {
+      "path": "US\\2021_05_21_Technology_Semiconductor-Manufacturing_cnbc.json",
+      "sha256": "4325e69ae4528d1222ece8e677e5c077df221c51739c48774c7d0390f47afac9"
+    },
+    {
+      "path": "GLOBAL\\2021_05_21_Technology_Semiconductor-Manufacturing_cnbc.json",
+      "sha256": "4325e69ae4528d1222ece8e677e5c077df221c51739c48774c7d0390f47afac9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-05-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:01.040542+00:00",
+    "fetched_at": "2026-11-11T02:50:22.958655+00:00",
+    "feature_available_at": "2026-11-11T02:50:34.886999+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:37.877322+00:00",
+  "commit_verified_at": "2026-11-12T13:53:37.877322+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Taiwan Semiconductor Manufacturing Co",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Taiwan Semiconductor Manufacturing Co"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor Manufacturing",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

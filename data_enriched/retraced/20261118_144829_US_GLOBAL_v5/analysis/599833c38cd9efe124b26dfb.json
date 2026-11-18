@@ -1,0 +1,295 @@
+{
+  "source_id": "599833c38cd9efe124b26dfb",
+  "status": "completed",
+  "source_record_hash": "ed021ad5996d2feec331bd68cbba80302857e3401aa9f0a3f1b32f6976d1024c",
+  "source_trace": {
+    "requested_url": "https://www.bls.gov/opub/ted/2015/consumer-price-index-down-over-the-year-ended-january-2015.htm",
+    "attempted_at": "2026-11-18T15:43:21.681729+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "a7fbe8faa2196c5d3859443f5f3aa8920a1d3bb4efe6fec52d921b18e3b5ed62"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/599833c38cd9efe124b26dfb.json",
+    "sha256": "f35bdd699679cc323e6f0f03b3a7c1012128047c585465ebc9b1d6b11131609d",
+    "bundled_path": "legacy_audit/599833c38cd9efe124b26dfb.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4a04cdd4f8c88cbf279a5ce3ff3f904174cf428f21a6df06efc356491a26d1e7",
+      "llm_inferred_at": "2026-11-18T15:44:17.806683+00:00",
+      "model_duration_seconds": 11.0666159,
+      "prompt_tokens": 2089,
+      "completion_tokens": 559,
+      "selection": [
+        {
+          "source_id": "599833c38cd9efe124b26dfb",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The gasoline index dropped 35.4 percent, and the fuel oil index fell 29.7 percent.",
+              "rationale": "The significant drop in energy prices directly impacts the Energy industry, as these indices are part of the energy sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The Consumer Price Index (CPI) for All Urban Consumers declined by 0.1 percent from January 2014 to January 2015, marking the first over-the-year decline since the 12-month period",
+              "rationale": "The decline in the CPI indicates a broad macroeconomic impact on the US equity and financial markets, affecting overall consumer spending and inflation expectations.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "The index for all items less food and energy rose 1.6 percent, the same as for the period ended December 2014."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "The food index rose 3.2 percent, with prices for food at home increasing 3.3 percent and prices for food away from home rising 3.1 percent."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "The gasoline index dropped 35.4 percent, and the fuel oil index fell 29.7 percent."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "3a78da10156e336c9f5038ced31cbdfaf0a33047ededc53f3e6561c6b80da0bc",
+      "llm_inferred_at": "2026-11-18T15:44:27.929655+00:00",
+      "model_duration_seconds": 10.1171908,
+      "prompt_tokens": 2133,
+      "completion_tokens": 550,
+      "selection": [
+        {
+          "source_id": "599833c38cd9efe124b26dfb",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The gasoline index dropped 35.4 percent, and the fuel oil index fell 29.7 percent.",
+              "rationale": "The significant drop in energy prices directly impacts the Energy industry, as these indices are part of the energy sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "The Consumer Price Index (CPI) for All Urban Consumers declined by 0.1 percent from January 2014 to January 2015, marking the first over-the-year decline since the 12-month period",
+              "rationale": "The CPI data reflects a broad economic trend affecting the overall market, including macroeconomic conditions and consumer behavior.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "The index for all items less food and energy rose 1.6 percent, the same as for the period ended December 2014."
+            },
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "The food index rose 3.2 percent, with prices for food at home increasing 3.3 percent and prices for food away from home rising 3.1 percent."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "The gasoline index dropped 35.4 percent, and the fuel oil index fell 29.7 percent."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T15:44:27.942014+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a7fbe8faa2196c5d3859443f5f3aa8920a1d3bb4efe6fec52d921b18e3b5ed62",
+    "raw_sha256": null,
+    "date_quote": "March 02, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Provides insights into inflation trends and price changes across key sectors.",
+    "securities": [],
+    "industries": [],
+    "impact_scope": [],
+    "entity_types": {},
+    "method": "local_qwen_legacy_summary",
+    "source_id": "599833c38cd9efe124b26dfb",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_03_02_Economics_Consumer-Price-Index_bls.json",
+        "sha256": "a1398a50df4708d33c88139bea1f7be0a419189c8bdb5fd496efb3d9e1f5da3e",
+        "filename": "2015_03_02_Economics_Consumer-Price-Index_bls.json"
+      }
+    ],
+    "original_record_hash": "a237c2cfd2f0229f667bd08f326e06619a15e3c04a512a5404c9d9e095205dd2",
+    "input_hash": "be6c73c592b7d37bce52347fdd56bd3b9d8c79db852a51fda6c7222edacfa333",
+    "matching_audit_hash": "c938017e71858431491ce79d8d9d3efa1cec78ebd26f8145caa7307dcddefc88",
+    "legacy_security_evidence": [],
+    "record_hash": "ed021ad5996d2feec331bd68cbba80302857e3401aa9f0a3f1b32f6976d1024c",
+    "outputs": [
+      {
+        "path": "US\\2015_03_02_Economics_Consumer-Price-Index_bls.json",
+        "sha256": "a1e1f330492015ace350df4bb90594d46a74c3900cec18040e332c608d0ee177"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2015-03-02",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T09:58:56.454118+00:00",
+      "fetched_at": "2026-11-10T11:30:11.195996+00:00",
+      "feature_available_at": "2026-11-10T17:53:16.044928+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T15:44:27.929655+00:00",
+    "feature_available_at": "2026-11-18T15:44:27.942014+00:00",
+    "commit_verified_at": "2026-11-12T15:16:37.472247+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "no_verified_company_entity",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:37.501573+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:12.267376+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Provides insights into inflation trends and price changes across key sectors.",
+        "securities": [],
+        "industries": [
+          {
+            "name": "Energy",
+            "basis": "explicit",
+            "quote": "energy prices"
+          },
+          {
+            "name": "Food and Beverage",
+            "basis": "inferred",
+            "quote": "food index"
+          },
+          {
+            "name": "Housing",
+            "basis": "inferred",
+            "quote": "shelter index"
+          }
+        ],
+        "impact_scope": [
+          "market"
+        ],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:03:12.291448+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:03:12.299387+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:03:12.282427+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary provides macroeconomic data on the Consumer Price Index (CPI) and its components, including energy, food, and shelter, which are relevant for market",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:23:08.153430+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "market_scope_without_typed_scope"
+    ],
+    "url": "https://www.bls.gov/opub/ted/2015/consumer-price-index-down-over-the-year-ended-january-2015.htm",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "ed021ad5996d2feec331bd68cbba80302857e3401aa9f0a3f1b32f6976d1024c",
+    "content_hash": "a7fbe8faa2196c5d3859443f5f3aa8920a1d3bb4efe6fec52d921b18e3b5ed62",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T15:44:27.930484+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/599833c38cd9efe124b26dfb.json",
+      "sha256": "0876bc4d99a51f1a29789e2e25461a78eac9a1cb42a9447c056e89d33347f88a",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 66.3289999999979
+}

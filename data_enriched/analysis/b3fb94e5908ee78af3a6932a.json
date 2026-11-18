@@ -1,0 +1,109 @@
+{
+  "source_id": "b3fb94e5908ee78af3a6932a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_12_Finance_Technology_sec.json",
+      "sha256": "395420304624feba423428418a1ffd5dbf269e315a8b291b1a952f0e069ce3d6",
+      "filename": "2016_02_12_Finance_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "6925a71238c3516dea478031c7337bceadb5333727fc8b13686fc2da42f0db0d",
+  "input_hash": "2b14dee545f7e6b928e948629b28820dd9509309ded6272cbbdc0d3746b6e9a2",
+  "matching_audit_hash": "8afae54886c8f718bbd62b7839acc493fcc49e0fb81d4c7bdf8a22654e609024",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8a86203106aec9ed8c3918d0a10099553039789b0d568d2634e72aff0f04ebfa",
+    "raw_sha256": "fb4d1c3c0cc8ab8086d145fa2be0b18336fbde75c7b7a266b9e2bb380f1951f9",
+    "date_quote": "SEC filing datePublished=2016-02-12",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794216000035/blonder8k021216.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    },
+    {
+      "name": "Santander Bank, N.A.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Santander Bank, N.A."
+    }
+  ],
+  "record_hash": "6d1838e3f9cf32a1e1361b09299791354b597b9987e3a8f658448af3c2e8c8af",
+  "outputs": [
+    {
+      "path": "US\\2016_02_12_Finance_Technology_sec.json",
+      "sha256": "f8a5e1b8e23d7ef6287c8ba8b0a5f52ab786904c9b7127c9cd17a6a6fade6ac5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.848379+00:00",
+    "fetched_at": "2026-11-11T01:05:57.075508+00:00",
+    "feature_available_at": "2026-11-11T11:08:29.486372+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:05.300378+00:00",
+  "commit_verified_at": "2026-11-12T13:53:05.300378+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      },
+      {
+        "name": "Santander Bank, N.A.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Santander Bank, N.A."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

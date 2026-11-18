@@ -1,0 +1,218 @@
+{
+  "source_id": "e939cc84fda277447fdadb36",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_23_automotive_Automotive_prnewswire.json",
+      "sha256": "cc7cfdea17ecc1002b6b6b0c6f922ee82868d59b0142f684d4a1d478fe606d17",
+      "filename": "2015_01_23_automotive_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "3c0d719cbec6db002115d21a6cd3f6c83254ffa2a5692386fce3a3d1c2ae40c8",
+  "input_hash": "e60bb1b9d03fd98168d1dfce4ab0df9458a54e55c7c7363bd279ef075c8e54c3",
+  "matching_audit_hash": "4aaa165ec6c013693b6b088d801e3e8ad1d7986f95dadc03d350346a9071aece",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0867d4d7ff391f851777928bafb3a6cf706d0efc66cee4830458499cfb27ff86",
+    "raw_sha256": "35dbaf6cd84538e4b5c98a9e41af6876863b3df5f00c8d4043c9c64e09f3d6a4",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2015-01-23T10:30:00Z\ndate=2015-01-23T10:30:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Subaru of America, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Subaru of America, Inc."
+    },
+    {
+      "name": "Kelley Blue Book",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Kelley Blue Book"
+    }
+  ],
+  "record_hash": "82d8e799996e5cc20e9877d1e531cf8690a1cb939f1cd9723fdef67d9532345a",
+  "outputs": [
+    {
+      "path": "US\\2015_01_23_automotive_Automotive_prnewswire.json",
+      "sha256": "67ed074955d0711d75c5b8e4ffc4443060cc317eafeebd2b461fe41333a23632"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:02.572514+00:00",
+    "fetched_at": "2026-11-10T21:26:13.801250+00:00",
+    "feature_available_at": "2026-11-11T08:52:37.849526+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:02:55.775743+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.056625+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.056625+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Awards reflect brand value and environmental commitment.",
+    "securities": [
+      {
+        "name": "Subaru of America, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of America, Inc. won the 2015 Best Resale Value Brand Award from Kelley Blue Book."
+      },
+      {
+        "name": "Kelley Blue Book",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of America, Inc. won the 2015 Best Resale Value Brand Award from Kelley Blue Book."
+      },
+      {
+        "name": "Subaru of Indiana Automotive, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of Indiana Automotive, Inc. is the only U.S. plant designated a backyard wildlife habitat by the National Wildlife Federation, highlighting its environmental commitment."
+      },
+      {
+        "name": "National Wildlife Federation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of Indiana Automotive, Inc. is the only U.S. plant designated a backyard wildlife habitat by the National Wildlife Federation, highlighting its environmental commitment."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "explicit",
+        "quote": "Automotive"
+      },
+      {
+        "name": "Environmental Sustainability",
+        "basis": "inferred",
+        "quote": "Subaru of Indiana Automotive, Inc. is the only U.S. plant designated a backyard wildlife habitat by the National Wildlife Federation, highlighting its environmental commitment."
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Subaru of America, Inc.": "organization",
+      "Kelley Blue Book": "organization",
+      "Subaru of Indiana Automotive, Inc.": "organization",
+      "National Wildlife Federation": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.079765+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:02:55.775743+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Awards reflect brand value and environmental commitment.",
+      "securities": [
+        {
+          "name": "Subaru of America, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Subaru of America, Inc. won the 2015 Best Resale Value Brand Award from Kelley Blue Book."
+        },
+        {
+          "name": "Kelley Blue Book",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Subaru of America, Inc. won the 2015 Best Resale Value Brand Award from Kelley Blue Book."
+        },
+        {
+          "name": "Subaru of Indiana Automotive, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Subaru of Indiana Automotive, Inc. is the only U.S. plant designated a backyard wildlife habitat by the National Wildlife Federation, highlighting its environmental commitment."
+        },
+        {
+          "name": "National Wildlife Federation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Subaru of Indiana Automotive, Inc. is the only U.S. plant designated a backyard wildlife habitat by the National Wildlife Federation, highlighting its environmental commitment."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Automotive",
+          "basis": "explicit",
+          "quote": "Automotive"
+        },
+        {
+          "name": "Environmental Sustainability",
+          "basis": "inferred",
+          "quote": "Subaru of Indiana Automotive, Inc. is the only U.S. plant designated a backyard wildlife habitat by the National Wildlife Federation, highlighting its environmental commitment."
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Subaru of America, Inc.": "organization",
+        "Kelley Blue Book": "organization",
+        "Subaru of Indiana Automotive, Inc.": "organization",
+        "National Wildlife Federation": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:02:55.801057+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:02:55.809499+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:55.792039+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about Subaru of America, Inc. and Subaru of Indiana Automotive, Inc., including their recognition in the automotive industry, a",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:19:44.448564+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

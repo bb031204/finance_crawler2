@@ -1,0 +1,120 @@
+{
+  "source_id": "64f5a0013e0e9ab9e31762ff",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_29_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "ce2d26b8cf5333a2d9b2691977f1d5e249d4844444d3062f631064ef028941ee",
+      "filename": "2017_03_29_Corporate-Governance_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "a77695efb7d5c91688675f94a6c49ee6507657fc55ae9374aed0bfada7e4d1e9",
+  "input_hash": "1093a797e30247e019406025488821ad8f5a040a84f8534ec7b625fc46822754",
+  "matching_audit_hash": "8f2cffb722b7e3f690ed68bb2a5992069b8dda4d93c0a4d5ed34fd5fe570abd6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d7bcd599616046f5996a1075285abbfdaa2da888d50758b9ebeeacf69c640edc",
+    "raw_sha256": "6b688886004b7b6aa038a50624336980040c4cac8982fd1f423aa55e184feefb",
+    "date_quote": "SEC filing datePublished=2017-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774917005532/occ20170329_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Optical Cable Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Optical Cable Corporation"
+    },
+    {
+      "name": "Common Shares",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Shares"
+    },
+    {
+      "name": "ipant",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ipant"
+    }
+  ],
+  "record_hash": "91f3c05badc3337c6650f1d51299de08647431ee22db2d85d8e22e54f89a13ad",
+  "outputs": [
+    {
+      "path": "US\\2017_03_29_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "6d48d34cd5c0a0da89284c9b6057970ad49e9ba5b9235e222831fb03198c4fc2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+    "fetched_at": "2026-11-11T12:03:20.571692+00:00",
+    "feature_available_at": "2026-11-11T12:06:22.133372+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:14.257558+00:00",
+  "commit_verified_at": "2026-11-12T13:53:14.257558+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      },
+      {
+        "name": "Common Shares",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Shares"
+      },
+      {
+        "name": "ipant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ipant"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

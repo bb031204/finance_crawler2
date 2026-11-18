@@ -1,0 +1,120 @@
+{
+  "source_id": "03f848bee2ba276a9d752322",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_08_04_Consumer-Goods_Tobacco_cnbc.json",
+      "sha256": "42c7174da461831d9152d0d63a7b260ff3f924dff21d2ef9e347930e9476a354",
+      "filename": "2018_08_04_Consumer-Goods_Tobacco_cnbc.json"
+    }
+  ],
+  "original_record_hash": "de4c0598e095e579fc415a9e08baca6d04bcf4d0e7741d43b17fcfe3f26a9d7a",
+  "input_hash": "c0a7229a2fe68b5cb240ae13069a63a593f4840358614a2e57c4253725605a91",
+  "matching_audit_hash": "ceb9483bac96e0343d683fdc5572c92688f7dcade07c3aded1330f257f8f45a4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "07fb57bf49816455feafef26846505eea8f902931827e89d0e48282acd4f1bc4",
+    "raw_sha256": "dccd8d8d8bb540364404c53d2a423894b4a1df4b18bb5fb1532985d4459bf9ad",
+    "date_quote": "article:published_time=2018-08-04T18:00:21+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "41e817b575b0af3c4b6c3d03b6d101be921be280ed03e143ca96783b2f127715",
+  "outputs": [
+    {
+      "path": "US\\2018_08_04_Consumer-Goods_Tobacco_cnbc.json",
+      "sha256": "72480b9a1326df75700d23371efa21d2af37ef9bdf48f1bb0c4782a55acbc361"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-08-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:37:43.519016+00:00",
+    "fetched_at": "2026-11-10T15:40:43.495182+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.027842+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:30.597280+00:00",
+  "feature_available_at": "2026-11-12T14:45:30.608280+00:00",
+  "commit_verified_at": "2026-11-12T14:45:30.608280+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Juul's market growth, regulatory scrutiny, and impact on youth vaping, providing relevant financial and industry information.",
+    "securities": [
+      {
+        "name": "Juul",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Juul"
+      },
+      {
+        "name": "FDA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FDA"
+      },
+      {
+        "name": "CDC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CDC"
+      },
+      {
+        "name": "Soter Technologies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Soter Technologies"
+      },
+      {
+        "name": "Plainedge High School",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Plainedge High School"
+      }
+    ],
+    "industries": [
+      {
+        "name": "E-cigarettes",
+        "basis": "inferred",
+        "quote": "e-cigarettes"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Juul": "company",
+      "FDA": "organization",
+      "CDC": "organization",
+      "Soter Technologies": "company",
+      "Plainedge High School": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

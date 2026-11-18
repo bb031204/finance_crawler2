@@ -1,0 +1,96 @@
+{
+  "source_id": "982d886dd74267669250b632",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_02_04_Finance_Beauty-&-Personal-Care_cnbc.json",
+      "sha256": "326348448a63c72610e3f36596ee6583e7bb19cccdbb6dfda97f02152ccbc51d",
+      "filename": "2022_02_04_Finance_Beauty-&-Personal-Care_cnbc.json"
+    }
+  ],
+  "original_record_hash": "46eb80c7c3957e3b6a1c3e23b692fb0b90864b87dee9ce076cd2597a003a419b",
+  "input_hash": "4e08461b38cc61e67bf0d9775d5d89c296c8849fd5ddb503036fc3f53e080758",
+  "matching_audit_hash": "49227dbd840ee14f35cb5a9ccd71d9131aad410445587333effe41ece036814d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f77b341a1489fdc00434abb1e6658e1346a18e528d31a63f18976f3909f6a070",
+    "raw_sha256": "06e1547fbc7b1d92f62ee5b67575f3aa55dc98e617f26be0c4e1deff0493f38e",
+    "date_quote": "article:published_time=2022-02-04T00:09:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Estee Lauder",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Estee Lauder"
+    }
+  ],
+  "record_hash": "89bed26acc22416b418716dd6ef56a26f797a7c2c9954bfc2cc1c5e51b3fbd66",
+  "outputs": [
+    {
+      "path": "US\\2022_02_04_Finance_Beauty-&-Personal-Care_cnbc.json",
+      "sha256": "ac1f1ae9dea8f822ebab4a580703218e34248531372decd7d238e17f5994de17"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-02-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:19.441771+00:00",
+    "fetched_at": "2026-11-10T20:22:53.850235+00:00",
+    "feature_available_at": "2026-11-10T20:23:02.727059+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:39.722929+00:00",
+  "commit_verified_at": "2026-11-12T13:53:39.722929+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Estee Lauder",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Estee Lauder"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty & Personal Care",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

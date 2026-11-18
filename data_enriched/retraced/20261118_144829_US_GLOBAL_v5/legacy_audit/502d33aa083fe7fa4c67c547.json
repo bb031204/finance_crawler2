@@ -1,0 +1,138 @@
+{
+  "source_id": "502d33aa083fe7fa4c67c547",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_13_Investment-Strategies_Financial-Services_cnbc.json",
+      "sha256": "3bb3b4a61ee6a4a4dfa39d66c18e68f5a1dbcd8ca0b7baec2bda8624246604d4",
+      "filename": "2015_02_13_Investment-Strategies_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d05ff7db08ed62477583d3d578d659da743fb5cc897407bd9f1105cd57bece4d",
+  "input_hash": "35b4ab282a39cc883fc2634f595bc470d123ad649c17d16de61066656d1884af",
+  "matching_audit_hash": "4ddf7b43dcc93ce365be26f830d2dbf328351bd41f7d83f053fcfa0a21a076b8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "12e2cc2069672a6e6281dacdc0424f9ddfa907b2f2bea4ef9bff906a986337c7",
+    "raw_sha256": "994de6e8f5ad961ac02ef012308deb56caa2e91887b1ef1344c5201b3c912b3c",
+    "date_quote": "article:published_time=2015-02-13T19:25:08+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Pershing Square Capital Management",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Pershing Square Capital Management"
+    },
+    {
+      "name": "Bridgewater Associates",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Bridgewater Associates"
+    },
+    {
+      "name": "Pershing Square",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Pershing Square's International fund gained 1.61 percent net of fees this year through Feb. 3, following a monster 37.24 percent return in 2014."
+    },
+    {
+      "name": "Bridgewater",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Bridgewater's largest hedge fund, Pure Alpha II, gained 8.3 percent in January after rising 3.5 percent over 2014."
+    }
+  ],
+  "record_hash": "3eb26d4e1f95bcb6abe9554cc8efa1fd14d50ff2744a06ef8f3683c17b28cbdc",
+  "outputs": [
+    {
+      "path": "US\\2015_02_13_Investment-Strategies_Financial-Services_cnbc.json",
+      "sha256": "8dd4153be89fecae8168fd93231348d22823f6a3df02f28069f516bbd305d556"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:04.758168+00:00",
+    "fetched_at": "2026-11-11T03:46:02.428607+00:00",
+    "feature_available_at": "2026-11-11T03:46:38.667982+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:55.493337+00:00",
+  "commit_verified_at": "2026-11-12T13:52:55.493337+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Pershing Square Capital Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pershing Square Capital Management"
+      },
+      {
+        "name": "Bridgewater Associates",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bridgewater Associates"
+      },
+      {
+        "name": "Pershing Square",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pershing Square's International fund gained 1.61 percent net of fees this year through Feb. 3, following a monster 37.24 percent return in 2014."
+      },
+      {
+        "name": "Bridgewater",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bridgewater's largest hedge fund, Pure Alpha II, gained 8.3 percent in January after rising 3.5 percent over 2014."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "source_id": "56d0bb10a54a19dc4a7c7541",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_04_04_Regulation_Finance_bloomberg.json",
+      "sha256": "867a2fe4b12222886e08735b3569795dc138c1ed64e10634b090077b3176e8d6",
+      "filename": "2019_04_04_Regulation_Finance_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2019_04_04_Regulation_Finance_bloomberg.json",
+      "sha256": "867a2fe4b12222886e08735b3569795dc138c1ed64e10634b090077b3176e8d6",
+      "filename": "2019_04_04_Regulation_Finance_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "d1c607aab2f296ca3810dcddc9dfc1f353868f61db6e76087a0bbcc6d0842185",
+  "input_hash": "96bf325d013639f90735fcd4fe5f1532ffd7c5eb3edfd26f2d01fcfd5ad6fca9",
+  "matching_audit_hash": "329f9ab4a0e7e8fb335fc3d938b6d07c17bb16a10a7f0f14e72dde0ef621bbba",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ab53e7b72db407e2e293c87408f4412c4fbac94e68da62de135c617646f0e299",
+    "raw_sha256": "6b2e4eb2270dc8154de7ea46fa2c22776cb74ccf1cceaa4b17dccca721beaff4",
+    "date_quote": "Published: April 4, 2019, 12:00 AM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "6eb774df7d859997437b5bf3a6eb505fdfd5de6d9980944be9499d7171d46a38",
+  "outputs": [
+    {
+      "path": "US\\2019_04_04_Regulation_Finance_bloomberg.json",
+      "sha256": "9a47b3e2030150d67238d2bb4b0bd0585f78c4afed4b6c7a5e8b888016551868"
+    },
+    {
+      "path": "GLOBAL\\2019_04_04_Regulation_Finance_bloomberg.json",
+      "sha256": "9a47b3e2030150d67238d2bb4b0bd0585f78c4afed4b6c7a5e8b888016551868"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-04-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:36:53.128983+00:00",
+    "fetched_at": "2026-11-10T15:28:18.902143+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.711049+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:41.016061+00:00",
+  "feature_available_at": "2026-11-12T14:48:41.036590+00:00",
+  "commit_verified_at": "2026-11-12T14:48:41.036590+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the U.K. gender pay gap reporting, which includes data from companies with at least 250 employees. It highlights the pay gap between men and ",
+    "securities": [
+      {
+        "name": "U.K.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.K."
+      },
+      {
+        "name": "companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "companies with at least 250 employees"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Corporate Governance",
+        "basis": "inferred",
+        "quote": "gender pay gap reporting"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.K.": "organization",
+      "companies": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

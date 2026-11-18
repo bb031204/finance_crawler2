@@ -1,0 +1,145 @@
+{
+  "source_id": "5140dd2af16e594d9ccaa024",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_04_05_cybersecurity_energy_cnbc.json",
+      "sha256": "d8e940e14ebfe47cdf1f7b5d273483e370df96458e0af66a62f153e540f3f233",
+      "filename": "2018_04_05_cybersecurity_energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f71da5a5683235359e63a87d165bb57439342f51fb36969828089e75be6e8a67",
+  "input_hash": "ebc96e8de7b3201449aec6e366432b459815a92a9ad21d28f097939668920ad3",
+  "matching_audit_hash": "72b390d10eb1bf8d9d4d6ff068b2633bed9d84d465d5d217698be9bebda7c92e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2d57ee852ea15eec3805f4470f89866db864220bdb7db78c56549d014370c4a6",
+    "raw_sha256": "576569bacfe8da5970c16302487c73e804784392f7b1ab3f03b2fa1dd2a3da60",
+    "date_quote": "article:published_time=2018-04-05T13:34:29+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b00b649c6434314dfba97643b79ad7c501e5a82443b68e3535afade7d7560018",
+  "outputs": [
+    {
+      "path": "US\\2018_04_05_cybersecurity_energy_cnbc.json",
+      "sha256": "1573f0ae93fe0ab0579991a3965d2488336d5caeabf3003303c0466c1cfcc87d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-04-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:27.179894+00:00",
+    "fetched_at": "2026-11-10T14:22:30.303406+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.345795+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:44:15.773298+00:00",
+  "feature_available_at": "2026-11-12T14:44:15.786708+00:00",
+  "commit_verified_at": "2026-11-12T14:44:15.786708+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a cyberattack on U.S. natural-gas pipeline operators, highlighting cybersecurity vulnerabilities in the energy sector and potential risks.",
+    "securities": [
+      {
+        "name": "Oneok",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Oneok"
+      },
+      {
+        "name": "Energy Transfer Partners",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Energy Transfer Partners"
+      },
+      {
+        "name": "Boardwalk Pipeline Partners",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Boardwalk Pipeline Partners"
+      },
+      {
+        "name": "Eastern Shore Natural Gas",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Eastern Shore Natural Gas"
+      },
+      {
+        "name": "Latitude Technologies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Latitude Technologies"
+      },
+      {
+        "name": "Department of Homeland Security",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Department of Homeland Security"
+      },
+      {
+        "name": "House Committee on Science, Space and Technology",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House Committee on Science, Space and Technology"
+      }
+    ],
+    "industries": [
+      {
+        "name": "cybersecurity",
+        "basis": "explicit",
+        "quote": "cybersecurity"
+      },
+      {
+        "name": "energy",
+        "basis": "inferred",
+        "quote": "natural-gas pipeline operators"
+      },
+      {
+        "name": "information technology",
+        "basis": "inferred",
+        "quote": "digital systems for pipeline infrastructure"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Oneok": "company",
+      "Energy Transfer Partners": "company",
+      "Boardwalk Pipeline Partners": "company",
+      "Eastern Shore Natural Gas": "company",
+      "Latitude Technologies": "company",
+      "Department of Homeland Security": "organization",
+      "House Committee on Science, Space and Technology": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

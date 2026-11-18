@@ -1,0 +1,90 @@
+{
+  "source_id": "e005762aeb57c07fa060b974",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_01_18_Energy_Oil-&-Gas-Equipment_bloomberg.json",
+      "sha256": "c9d74236461dbfc2937e6c13b2ab2c314d2fb802b40c3f76fdbec4e188a80e81",
+      "filename": "2020_01_18_Energy_Oil-&-Gas-Equipment_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "f20f78434e623706a4e45631f777b371c2edd9950a993ac94760e03153c082bd",
+  "input_hash": "31945e68a6c90cf520680fa3f17fbae154ddd67b85c6829d514bc95f9098a9c0",
+  "matching_audit_hash": "ffd4926c7971481929d34057af84b67f8a9b414378f30f5d6be37a976b2a1840",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e5405fdf51b52b86f0f3246b46fe5f7a1585a3ddf72e09f8b982f5f6937a171c",
+    "raw_sha256": "461f6fb4369df048770b967815abdc97969eb9bd6ed1c76c18955489555899bd",
+    "date_quote": "January 18, 2020 at 12:45 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d4e09ed1a71c42d87e374c506c7cd63dffc67034646e4aebad53c34d96c54053",
+  "outputs": [
+    {
+      "path": "US\\2020_01_18_Energy_Oil-&-Gas-Equipment_bloomberg.json",
+      "sha256": "cea0a9eb8a84da6a52df5229b7a98717bbebfad462445c2e019b02802a140606"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-01-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:46.082687+00:00",
+    "fetched_at": "2026-11-10T13:57:32.539739+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.730236+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:33.333829+00:00",
+  "feature_available_at": "2026-11-12T14:51:33.345109+00:00",
+  "commit_verified_at": "2026-11-12T14:51:33.345109+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a company's financial distress, potential bankruptcy filing, and restructuring plan, which are relevant to its financial status and market",
+    "securities": [
+      {
+        "name": "McDermott International Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "McDermott International Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "energy producers"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "McDermott International Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

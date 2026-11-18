@@ -1,0 +1,109 @@
+{
+  "source_id": "806fcb1498b9c49fb600eb77",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_10_12_Market-Analysis_Finance_bloomberg.json",
+      "sha256": "2a5e3870db90e46f6856449546b8d3bd1a0d0b2abd84b7fc46a9daf917b996b6",
+      "filename": "2021_10_12_Market-Analysis_Finance_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "7f16a0db2a65dead457bb49d9e2c3062572cfef245915467b04cdd698ea0357a",
+  "input_hash": "f8d17a316ddf07f31be77a08624c1b8eda1ea9fd3958c7b4a7474d5ae9780df1",
+  "matching_audit_hash": "db838f4c65447b745cc60105184b1df74cce16b7aa9e5e7e8db168b7316d2098",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "533979f7c5e0bd3fd828a12c98e54e6a9902353917d57f794232f64a1e25cf27",
+    "raw_sha256": "6702c1558764a860a75fbdc4ae37cb86a900583603481835ad14ebcc794677dc",
+    "date_quote": "October 12, 2021 at 9:54 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "65b8c342e01721a5886f9b713a41beedc0ad2e0d1f8aa33113c0ccc2cc7a21c3",
+  "outputs": [
+    {
+      "path": "US\\2021_10_12_Market-Analysis_Finance_bloomberg.json",
+      "sha256": "821048f5bee849408c136714b19235436eec1e1b091a78d597830c97e7e8819c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-10-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:34.340016+00:00",
+    "fetched_at": "2026-11-10T11:23:16.327194+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.393225+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:56:07.510093+00:00",
+  "feature_available_at": "2026-11-12T14:56:07.518422+00:00",
+  "commit_verified_at": "2026-11-12T14:56:07.518422+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses market trends, inflation, and Federal Reserve policy, which are relevant to financial analysis and market behavior.",
+    "securities": [
+      {
+        "name": "UBS Global Wealth Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UBS Global Wealth Management"
+      },
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Federal Reserve"
+      },
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": "oil, coal, energy stocks"
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "technology shares"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "UBS Global Wealth Management": "company",
+      "Federal Reserve": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

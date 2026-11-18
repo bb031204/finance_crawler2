@@ -1,0 +1,96 @@
+{
+  "source_id": "7793067eacd86379b30665f7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_08_Education_Education_cnbc.json",
+      "sha256": "d4f2e107df533501b74579c080faff8b92cab12c819f8959b99f8387e9f1c65c",
+      "filename": "2017_02_08_Education_Education_cnbc.json"
+    }
+  ],
+  "original_record_hash": "8e3b5746ebc271acc4bd5b4ae79819bbe331dcde57c1c51e9fd110f325716650",
+  "input_hash": "a300c7de4ae55c1a014dcfb35c6a742470238dc092cb9f79bcb1fc63a278985e",
+  "matching_audit_hash": "7161153b607bd35cff04ab383bcd7fcab270de8cc390bc9b86a990989c198a4a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c0233cf6b160b17015775c19e1860503a512e03b8281b210d64cf38472bec16f",
+    "raw_sha256": "7b7d35fd4b8239ab6af70e196eac18e0a3f5d1992a17c8e4d22b4c35c5fff87a",
+    "date_quote": "article:published_time=2017-02-08T22:04:17+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "City College of San Francisco",
+      "ticker": null,
+      "exchange": null,
+      "quote": "City College of San Francisco"
+    }
+  ],
+  "record_hash": "d29b65277d58832dd5cf64571c5be6aa30fd96b1e18db3b5de369db9e1adee96",
+  "outputs": [
+    {
+      "path": "US\\2017_02_08_Education_Education_cnbc.json",
+      "sha256": "f13b3ad796cc8abb1a9e24910eb9f6a60c5362d37c3a3ffae7f7b81576037a02"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:35:59.661160+00:00",
+    "fetched_at": "2026-11-10T19:22:11.502545+00:00",
+    "feature_available_at": "2026-11-10T19:22:22.889164+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:12.158203+00:00",
+  "commit_verified_at": "2026-11-12T13:53:12.158203+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "City College of San Francisco",
+        "ticker": null,
+        "exchange": null,
+        "quote": "City College of San Francisco"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Education",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

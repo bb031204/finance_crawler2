@@ -1,0 +1,119 @@
+{
+  "source_id": "193cde60b0b5c4bdc946f29c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_10_30_Financial_Technology_cnbc.json",
+      "sha256": "b366b0de6e735a45c3d6a0fcccde765c53450e607a14a7ae5a057b8c1e362555",
+      "filename": "2012_10_30_Financial_Technology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d2d0061de1acc91926a6c93e9958ca1c15ec64d9a0448a88c7015ccb3f4253c1",
+  "input_hash": "f348d551580ed3b994b50ce2055ffba15067c89d48b9d6724c2461f61b2e0dbe",
+  "matching_audit_hash": "396d1d21d03a90861692c73dd044b1b684a552a23697683841e84982b5a7f9a3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1abe6589f12476ccdcd674c50cd3025e8ef802c2b352fa546dbc91f45f048bcf",
+    "raw_sha256": "f55e0a163dd89cdb9612d11db83807cef19647f1602769c871803ceac062aae2",
+    "date_quote": "article:published_time=2012-10-30T20:05:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "GigOptix, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "GigOptix, Inc."
+    },
+    {
+      "name": "GigOptix",
+      "ticker": null,
+      "exchange": null,
+      "quote": "GigOptix"
+    }
+  ],
+  "record_hash": "3e22b87c21dc782ac1b54f7c08e12ce007eb4f40003c51dade4e3962bb9db646",
+  "outputs": [
+    {
+      "path": "US\\2012_10_30_Financial_Technology_cnbc.json",
+      "sha256": "4ffdaf0d4e8f34126866b5e781a374ead0b89072ccb562596c8e6abce2b67e10"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-10-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:23.543575+00:00",
+    "fetched_at": "2026-11-11T02:20:11.136774+00:00",
+    "feature_available_at": "2026-11-11T02:21:56.414878+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:41.768575+00:00",
+  "commit_verified_at": "2026-11-12T13:52:41.768575+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "GigOptix, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GigOptix, Inc."
+      },
+      {
+        "name": "GigOptix",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GigOptix"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor & Optical Components",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Semiconductor",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

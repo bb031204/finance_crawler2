@@ -1,0 +1,113 @@
+{
+  "source_id": "b3b7126b83d529d3b5eeea9c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_09_22_13_00_Finance_Automotive-Retail_yahoo.json",
+      "sha256": "bf924d7cb116b1aad3ee3d52347bb0fa88095225f2a4349b160b8881639009de",
+      "filename": "2016_09_22_13_00_Finance_Automotive-Retail_yahoo.json"
+    }
+  ],
+  "original_record_hash": "ee784b9fb3db5f617be352a9c2891ef53a185ecc9da94577d1f7a7fe083f65dd",
+  "input_hash": "79a8b639065b769f8ee7218bac1eb7c6951f736bb6efec3d544534d7e2a90f78",
+  "matching_audit_hash": "742e7197c022acb1f2a5d5194263575fe03fc2380ef3102431c0cbaf9fe90c6e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dae3b5b3532725baa1330f5eef07ad54250e57b1d7b3dfdd6834e5cc31fdba52",
+    "raw_sha256": "82ccfe41fce706553a8f694334f6d412fa32be371b42d65f85707f809d909eb5",
+    "date_quote": "page.datePublished=2016-09-22T13:00:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "81b04b8d3e2af4d5c3b3adb2fab8a6eadbb5940ef2e7d8826e823d7bb823b4dc",
+  "outputs": [
+    {
+      "path": "US\\2016_09_22_13_00_Finance_Automotive-Retail_yahoo.json",
+      "sha256": "4bb4255269d369d9ceb84af639891832e2e80385f1c1181a7297f461be88be46"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-09-22T13:00:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:40:06.427870+00:00",
+    "fetched_at": "2026-11-10T21:26:57.463252+00:00",
+    "feature_available_at": "2026-11-11T18:02:33.311557+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:38.190346+00:00",
+  "feature_available_at": "2026-11-12T14:32:38.221311+00:00",
+  "commit_verified_at": "2026-11-12T14:32:38.221311+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses CAF's new company and initiatives, including the launch of CARS, and mentions Brookfield Property Partners as the owner of Capital Auto.",
+    "securities": [
+      {
+        "name": "Capital Automotive Financial",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Capital Automotive Financial (CAF)"
+      },
+      {
+        "name": "Two Sigma Private Investments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Two Sigma Private Investments (TSPI)"
+      },
+      {
+        "name": "Brookfield Property Partners",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Property Partners"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Retail automotive industry",
+        "basis": "explicit",
+        "quote": "retail automotive industry"
+      },
+      {
+        "name": "Real estate",
+        "basis": "explicit",
+        "quote": "real estate"
+      },
+      {
+        "name": "Finance",
+        "basis": "explicit",
+        "quote": "finance"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Capital Automotive Financial": "company",
+      "Two Sigma Private Investments": "company",
+      "Brookfield Property Partners": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

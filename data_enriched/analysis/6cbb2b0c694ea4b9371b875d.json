@@ -1,0 +1,100 @@
+{
+  "source_id": "6cbb2b0c694ea4b9371b875d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_03_25_Financing_Biotechnology_sec.json",
+      "sha256": "e2dcb2048d15ff638fcd434836ff5c1193ec603f1695bbe29bc5df73616f4ced",
+      "filename": "2014_03_25_Financing_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "4c38028c13e144d8dba315fb76c9d656222fc49c902e45d240135d54ab9e23a2",
+  "input_hash": "f9fd6118ca0d209438a5b7873bfff24d9512d6af5cda72080b80b18f67e24eb5",
+  "matching_audit_hash": "598c4dbd0229d345c47b54d635ce2cd6cabc8dc2ddd34b35319545f929556a83",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "559d00b39e17dac7fb8ba6249b4bd0ef515174b3d0464240ddc9610336f96b23",
+    "raw_sha256": "7748f28c0d34c381a50d5e46ea4762057b110fb3c46c9e2f97727e961b863479",
+    "date_quote": "SEC filing datePublished=2014-03-25",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312514114603/d698236d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sangamo BioSciences, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo BioSciences, Inc."
+    }
+  ],
+  "record_hash": "a4972c46edd88417c80a9e5e2d9f3ff28fd4579c8f5399dcad263b34cda4701b",
+  "outputs": [
+    {
+      "path": "US\\2014_03_25_Financing_Biotechnology_sec.json",
+      "sha256": "1267af83da0736d1d2e5e0a2ddc47ca76731a6f1a47b08073370032eac6b9e54"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-03-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:10:27.914026+00:00",
+    "feature_available_at": "2026-11-11T10:21:03.422136+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:14:00.054855+00:00",
+  "feature_available_at": "2026-11-12T14:14:00.076233+00:00",
+  "commit_verified_at": "2026-11-12T14:14:00.076233+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a public offering by Sangamo BioSciences, including the number of shares issued, price per share, net proceeds, and underwriting terms.",
+    "securities": [
+      {
+        "name": "Sangamo BioSciences, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo BioSciences, Inc."
+      },
+      {
+        "name": "J.P. Morgan Securities LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J.P. Morgan Securities LLC"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Sangamo BioSciences, Inc.": "company",
+      "J.P. Morgan Securities LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

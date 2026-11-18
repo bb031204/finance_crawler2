@@ -1,0 +1,335 @@
+{
+  "source_id": "401254a381b54bfddababa6a",
+  "status": "completed",
+  "source_record_hash": "49c220dfa202a885ec9dc8bccf39eec938f2be4e7ba72ed9993cdc2fd249974e",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001258/0001437749-18-003061-index.html",
+    "attempted_at": "2026-11-18T12:48:18.172794+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001258/0001437749-18-003061-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918003061/asta20180221_8k.htm",
+    "fetched_at": "2026-11-18T12:48:36.143122+00:00",
+    "source_body_hash": "8bd85e2a5c67949986ceac2131be3efc8156b66833370575a99c2512027ff9b8",
+    "raw_sha256": "83e53fb8c8506c72183840c579d222d430cd6f8fbb9dd830f67c157eb9e19d1b",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918003061/asta20180221_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "83e53fb8c8506c72183840c579d222d430cd6f8fbb9dd830f67c157eb9e19d1b",
+        "text_sha256": "b92502727085e1023f4339770c2f445b2f0a5ea72feefe753f01a4c5b788f94a",
+        "text_start": 0,
+        "text_end": 3383
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918003061/ex_105669.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "fab9d95b81796b3a820f34741c92c81a7868fd308ce437c7a12be8aa479aff3f",
+        "text_sha256": "fc58dd5315e85b4eed3ae3a5ea0ef3e23294f3ba33adfbca805a4224cd455084",
+        "text_start": 3385,
+        "text_end": 7963
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2018-02-22",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/401254a381b54bfddababa6a.json",
+    "sha256": "d4910c7fbf547bf183c415a4dbd8402b675357af37ecc371aaee67e746a57c17",
+    "bundled_path": "legacy_audit/401254a381b54bfddababa6a.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "9ae4d7148a6124e2d2f469731bd8049bc814aafeb8a11c3253fe8bce770a241c",
+      "llm_inferred_at": "2026-11-18T12:48:56.959941+00:00",
+      "model_duration_seconds": 20.7953134,
+      "prompt_tokens": 3866,
+      "completion_tokens": 994,
+      "selection": [
+        {
+          "source_id": "401254a381b54bfddababa6a",
+          "market_scope": [
+            "NASDAQ_LISTED"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Asta Funding, Inc.",
+              "rationale": "The article discusses the specific actions and compliance issues of Asta Funding, Inc., which is a company listed on NASDAQ.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Nasdaq continued listing requirements upon the filing of the Form 10-K and Form 10-Q, which the Company will file as soon as reasonably practicable. About Asta Funding, Inc. Asta",
+              "rationale": "The article discusses the company's compliance issues with Nasdaq listing rules, which is a market-wide regulatory body.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "NASDAQ_LISTED",
+              "evidence_quote": "The Company will file a plan to regain compliance with the Nasdaq prior to the March 19, 2018 due date, and expects that it will fully regain compliance with the Nasdaq continued listing requirements upon the filing of the Form 10-K and Form 10-Q, which the Company will file as soon as reasonably practicable.",
+              "rationale": "The article discusses the company's compliance issues with Nasdaq listing rules, which is a market-wide regulatory body.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7320",
+              "name": "SERVICES-CONSUMER CREDIT REPORTING, COLLECTION AGENCIES",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:7320",
+              "industry_scope_quote": "markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a negative impact on a debtor's",
+              "industry_name_original": "SERVICES-CONSUMER CREDIT REPORTING, COLLECTION AGENCIES",
+              "mechanism": "economic transmission",
+              "confidence": 0.75,
+              "quote": "markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a negative impact on a debtor's"
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "industry_scope_quote": "markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a negative impact on a debtor's",
+              "industry_name_original": "Finance: Consumer Services",
+              "mechanism": "economic transmission",
+              "confidence": 0.75,
+              "quote": "markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a negative impact on a debtor's"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a negative impact on a debtor's",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "economic transmission",
+              "confidence": 0.75,
+              "quote": "markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a negative impact on a debtor's"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "e170991c787cddecd9b0f7f2987b740c9e810642cbd3067d9c272ae801cade1f",
+      "llm_inferred_at": "2026-11-18T12:49:07.948610+00:00",
+      "model_duration_seconds": 10.9692491,
+      "prompt_tokens": 3910,
+      "completion_tokens": 573,
+      "selection": [
+        {
+          "source_id": "401254a381b54bfddababa6a",
+          "market_scope": [
+            "NASDAQ_LISTED"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Asta Funding, Inc.",
+              "rationale": "The article discusses the specific actions and compliance issues of Asta Funding, Inc., which is a company listed on NASDAQ.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Nasdaq continued listing requirements upon the filing of the Form 10-K and Form 10-Q, which the Company will file as soon as reasonably practicable. About Asta Funding, Inc. Asta",
+              "rationale": "The article discusses the company's compliance issues with Nasdaq listing rules, which is a market-wide listing exchange.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "NASDAQ_LISTED",
+              "evidence_quote": "The Company will file a plan to regain compliance with the Nasdaq prior to the March 19, 2018 due date, and expects that it will fully regain compliance with the Nasdaq continued listing requirements upon the filing of the Form 10-K and Form 10-Q, which the Company will file as soon as reasonably practicable.",
+              "rationale": "The article discusses the company's compliance issues with Nasdaq listing rules, which is a market-wide listing exchange.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7320",
+              "name": "SERVICES-CONSUMER CREDIT REPORTING, COLLECTION AGENCIES",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            },
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:49:07.964674+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8bd85e2a5c67949986ceac2131be3efc8156b66833370575a99c2512027ff9b8",
+    "raw_sha256": "83e53fb8c8506c72183840c579d222d430cd6f8fbb9dd830f67c157eb9e19d1b",
+    "date_quote": "SEC filing datePublished=2018-02-22",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918003061/asta20180221_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary discusses a regulatory compliance issue involving Asta Funding, Inc. and its failure to file required financial reports, which impacts its listing合规",
+    "securities": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asta Funding, Inc."
+      },
+      {
+        "name": "Nasdaq",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nasdaq"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Asta Funding, Inc.": "company",
+      "Nasdaq": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "401254a381b54bfddababa6a",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_02_22_Regulatory-Compliance_Financial-Services_sec.json",
+        "sha256": "eb074a334cf3c31496b20a8a0a8c83137e2c24f8ca69e4d6cc0383a9dfd35a52",
+        "filename": "2018_02_22_Regulatory-Compliance_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "08f7a7e87ca74ee5a6d9da542e0315eef74ee9ff9832ffda430b8196271c8a9a",
+    "input_hash": "c27868c1c14a3849f2968b1acb209b32a12c3c9cf05898c8931bf06918edac09",
+    "matching_audit_hash": "c64191fb877cb717a98a23d5647cf3a88cd4f3e7db5f59c02fe9d2908a62d1fe",
+    "legacy_security_evidence": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asta Funding, Inc."
+      }
+    ],
+    "record_hash": "49c220dfa202a885ec9dc8bccf39eec938f2be4e7ba72ed9993cdc2fd249974e",
+    "outputs": [
+      {
+        "path": "US\\2018_02_22_Regulatory-Compliance_Financial-Services_sec.json",
+        "sha256": "847e13c5fc8ef24739bcbd8ea57ba5b62bc9bd0b8d2d20b8ef607fa1c8a64565"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2018-02-22",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:15.048576+00:00",
+      "fetched_at": "2026-11-11T13:27:56.204898+00:00",
+      "feature_available_at": "2026-11-11T13:28:07.207161+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:49:07.948610+00:00",
+    "feature_available_at": "2026-11-18T12:49:07.964674+00:00",
+    "commit_verified_at": "2026-11-12T14:43:09.789807+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Asta Funding, Inc.",
+        "rationale": "The article discusses the specific actions and compliance issues of Asta Funding, Inc., which is a company listed on NASDAQ.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Asta Funding, Inc.",
+        "summary_evidence_quote": "Asta Funding, Inc."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001258/0001437749-18-003061-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "49c220dfa202a885ec9dc8bccf39eec938f2be4e7ba72ed9993cdc2fd249974e",
+    "content_hash": "b69e07b2cff03c6699844a7a1e9f3a518042d02a0d271f53463fb849581c9be7",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:49:07.951866+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/401254a381b54bfddababa6a.json",
+      "sha256": "0a4f89354746c2d0f64d552b297808ad43906d5cc09f9efdf08d3fa0916ea4b8",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 49.812999999994645
+}

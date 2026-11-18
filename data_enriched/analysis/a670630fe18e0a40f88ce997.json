@@ -1,0 +1,92 @@
+{
+  "source_id": "a670630fe18e0a40f88ce997",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_11_Financial_Energy-Services_sec.json",
+      "sha256": "3b0b178f5ca02252be9b5311d7cf55829b36879ac09804eedc0b94e915bd1a29",
+      "filename": "2016_01_11_Financial_Energy-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "e7fdf874d5ccb87007eef8c80f59474528a7dd255d340a8e5df2eaf1090ad561",
+  "input_hash": "4988d7df30497eb3946bc508c2ed8b71a1ce51ed04a0f1496d4cb8a74962a42f",
+  "matching_audit_hash": "40729bfdc45de854bf0c44de38b64695168aef22ded682c4345dcf1f2756d715",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ed40d0325cadb3e72561c98824fe1576b67f057ef93729e8b087b4721a7e8a27",
+    "raw_sha256": "df58811e991c6a98cd1c25b0a9bf10b40d0aff67276d37a02e60a634b5b44fdf",
+    "date_quote": "Date of report (date of earliest event reported): January 11, 2016",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022916000140/clb-8k_dividend1q2016.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V. issued a press release announcing a quarterly cash dividend of $0.55 per share of common stock for shareholders of record on January 22, 2016 and payable February 19, 2016."
+    }
+  ],
+  "record_hash": "a00059c1281fb88febddc6fe63e5c13d64a1dd1cbe261c8e41eed590f5970656",
+  "outputs": [
+    {
+      "path": "US\\2016_01_11_Financial_Energy-Services_sec.json",
+      "sha256": "da5faf7e7e40df71a836895db5df0bad71c1a548663bf6fe86fc6e20ffdf8538"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.847323+00:00",
+    "fetched_at": "2026-11-11T00:59:31.257769+00:00",
+    "feature_available_at": "2026-11-11T00:59:41.892427+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:29:54.547765+00:00",
+  "feature_available_at": "2026-11-12T14:29:54.589119+00:00",
+  "commit_verified_at": "2026-11-12T14:29:54.589119+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a dividend announcement, which is a financial event with implications for shareholders and the company's financial status",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Core Laboratories N.V.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

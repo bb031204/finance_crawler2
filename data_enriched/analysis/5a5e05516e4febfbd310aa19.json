@@ -1,0 +1,84 @@
+{
+  "source_id": "5a5e05516e4febfbd310aa19",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_06_29_Commodities_Energy,-Metals_bloomberg.json",
+      "sha256": "c63c9fd4d32da559412e0cfb2dc905aee2d41401730dc7a561cb411061add61a",
+      "filename": "2021_06_29_Commodities_Energy,-Metals_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "1d35988d2ddbfafc19c76c987e0da543685527b47dbd3b9f966412c8c21dec9d",
+  "input_hash": "fa74154e93405c2abcf45cd61247cbd0976ee2d4a5c29e8e6712161b1fad92db",
+  "matching_audit_hash": "e9264accba681b3a980b6c60d3a742a4efd4f7aed7e116462d9906b564967be9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "60940a5e454fac10b7de990b3bfc59b512606dfadce9a87346bb2b9c08ecee50",
+    "raw_sha256": "a43faa6f6512728bf986099b2f067252820fe0a4752c748ffeba068bf556eba5",
+    "date_quote": "By Javier Blas June 29, 2021 at 4:01 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7a4487c6613d8ae3a578d6b05d0fdc1dc4d499eba0f2d5d92d701fad2753ed57",
+  "outputs": [
+    {
+      "path": "US\\2021_06_29_Commodities_Energy,-Metals_bloomberg.json",
+      "sha256": "5faa751e8b3d3201b694314985153106cb9e438cd1ac8cd2ee1530fb2766acb4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-06-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:00.947558+00:00",
+    "fetched_at": "2026-11-10T16:22:32.664948+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.193861+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:44.677950+00:00",
+  "feature_available_at": "2026-11-12T14:55:44.687074+00:00",
+  "commit_verified_at": "2026-11-12T14:55:44.687074+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses commodity price surges and historical cycles, indicating market trends and investment behavior relevant to the commodities industry.",
+    "securities": [
+      {
+        "name": "Merchant Commodity Fund",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Merchant Commodity Fund"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Merchant Commodity Fund": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

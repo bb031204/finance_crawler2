@@ -1,0 +1,86 @@
+{
+  "source_id": "6de394377661144e45f722f1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_06_03_Real-Estate_Construction_investing.json",
+      "sha256": "aef2372adcaaa5e4655283aecd9a9d533c84738e29518c2c3ddc588f93ce448c",
+      "filename": "2014_06_03_Real-Estate_Construction_investing.json"
+    }
+  ],
+  "original_record_hash": "3ba6fe25ee7eda13ef038a3efa59920aa541bb26d1c42db262146ce166937fa5",
+  "input_hash": "34a6052d59b78b26ea11841f11a7e685e4a33ebedc478c16ca53ed065bd1e8f7",
+  "matching_audit_hash": "36cd7d5827cdc74dd15a6a12717c2691b41320f91816d47cfe5c879e072c3357",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4ba86b939e416433e765eab971c87b4a8f8639d847358f0dbaeeb29e3de34385",
+    "raw_sha256": "5269954e0232822c6a471f949e320723cd43657e7d9ff475d4ba9157c8b318ba",
+    "date_quote": "page.datePublished=2014-06-03T11:17:00.000+00:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "75925774d052651a46ea4ffb446f38e43ee4772bd3a2ef41c6c0ca46741341e5",
+  "outputs": [
+    {
+      "path": "US\\2014_06_03_Real-Estate_Construction_investing.json",
+      "sha256": "48e5d350234bdc024d93228877019aa42544a1b4a0d56beabba31dfda5f9f3ce"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-06-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:13.832562+00:00",
+    "fetched_at": "2026-11-10T12:41:26.858127+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.519252+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:16:00.224312+00:00",
+  "feature_available_at": "2026-11-12T14:16:00.254509+00:00",
+  "commit_verified_at": "2026-11-12T14:16:00.254509+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the US housing market's recovery, price trends, and underlying economic factors, providing insights into market dynamics and potential risks.",
+    "securities": [
+      {
+        "name": "US housing market",
+        "ticker": null,
+        "exchange": null,
+        "quote": "US housing market"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "US housing market": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

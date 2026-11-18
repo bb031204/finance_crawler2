@@ -1,0 +1,102 @@
+{
+  "source_id": "3ea4895812dd8b3448bc0032",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_05_05_Economy_Employment_bls.json",
+      "sha256": "4e041eed08e308b980c010821ff4cc6b7ea7566de729ff13c68cb904cef47069",
+      "filename": "2014_05_05_Economy_Employment_bls.json"
+    }
+  ],
+  "original_record_hash": "96003a2b89b44dbfb063a0e3e15463ae2436990e6ada04893d24766b6d178651",
+  "input_hash": "113c4d329ee3f4961bed0cadd402e026640dfb9233a01a73e5e7c82485049fc8",
+  "matching_audit_hash": "08d529fb42be565931c80e14cf7ade6e475b0c78c1dc5d6688e60144c8adc656",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2bc7b861df43f8dfaa1e732589e0dd3cc9870afcf80ee61e05cccd4aa4531aa6",
+    "raw_sha256": "f0568fa6c0974f2861eafa1cc7bdff73e9048a5352f913bca1116f106b0d6ead",
+    "date_quote": "May 05, 2014 Total nonfarm payroll employment rose by 288,000 in April.",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b68735c4d47c16482daa75df41494d74495554a5bfd1d920bd5e4a3762b95dd3",
+  "outputs": [
+    {
+      "path": "US\\2014_05_05_Economy_Employment_bls.json",
+      "sha256": "5a73224504ef367dddec654652d5cc454baec944ae23694435c411c9f38252dc"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-05-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:13.372158+00:00",
+    "fetched_at": "2026-11-10T16:46:54.083373+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.407533+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:14:46.480802+00:00",
+  "feature_available_at": "2026-11-12T14:14:46.517038+00:00",
+  "commit_verified_at": "2026-11-12T14:14:46.517038+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "no_verified_company_entity",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides data on employment growth across various sectors, indicating macroeconomic trends and industry-specific job market activity.",
+    "securities": [],
+    "industries": [
+      {
+        "name": "Professional and business services",
+        "basis": "explicit",
+        "quote": "Professional and business services added 75,000 jobs"
+      },
+      {
+        "name": "Retail trade",
+        "basis": "explicit",
+        "quote": "retail trade employment rose by 35,000"
+      },
+      {
+        "name": "Construction",
+        "basis": "explicit",
+        "quote": "Construction employment grew by 32,000"
+      },
+      {
+        "name": "Health care",
+        "basis": "explicit",
+        "quote": "Health care employment increased by 19,000"
+      },
+      {
+        "name": "Mining",
+        "basis": "explicit",
+        "quote": "mining added 10,000 jobs"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {},
+    "method": "local_qwen_legacy_summary"
+  }
+}

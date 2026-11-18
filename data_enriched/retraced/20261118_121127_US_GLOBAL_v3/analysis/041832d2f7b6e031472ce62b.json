@@ -1,0 +1,232 @@
+{
+  "source_id": "041832d2f7b6e031472ce62b",
+  "status": "completed",
+  "source_record_hash": "7439f736a5d552af876ae090328b18c8492a8bdd6273e078d47d54047b4eee71",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-16-000373-index.html",
+    "attempted_at": "2026-11-18T04:24:13.297401+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "f1b1019216a0d28b11597fc0fbabcb9bd45f764d15972923c2eec34df5cc1b44"
+  },
+  "fingerprint": "cf1b5b879ca85dfa48c4f3cde3621d463e4cbb0d75a065b1f5359e9d98ff4f83",
+  "old_audit": {
+    "path": "data_enriched/analysis/041832d2f7b6e031472ce62b.json",
+    "sha256": "9c2fb83f905f7b9bd0612f5879b4494100ca12bf52fdbc7838afc023a8c7879d",
+    "bundled_path": "legacy_audit/041832d2f7b6e031472ce62b.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "831a64e295035ec5bf0d0d3d6492dc3ce01b6ee619daf10a286f164a3b0ef8a8",
+  "code_version": "902c3a61190d45fda77ed6d7da70a5aa9b28b309340dfff5240465422a3fb7a1",
+  "responses": [
+    {
+      "response_sha256": "180f41fc7b09fba1e4f262188a25d4045188bdfc9b31fc6d89d005e6217daff9",
+      "llm_inferred_at": "2026-11-18T04:24:23.426019+00:00",
+      "model_duration_seconds": 5.0726742,
+      "prompt_tokens": 751,
+      "completion_tokens": 257
+    },
+    {
+      "response_sha256": "84c8b102e9ad92c524f5780d7877bf58c38aebe19dd0281f903a932f5930cf9f",
+      "llm_inferred_at": "2026-11-18T04:24:28.014947+00:00",
+      "model_duration_seconds": 4.5816538,
+      "prompt_tokens": 795,
+      "completion_tokens": 256
+    }
+  ],
+  "feature_available_at": "2026-11-18T04:24:28.026742+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f1b1019216a0d28b11597fc0fbabcb9bd45f764d15972923c2eec34df5cc1b44",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2016-03-04",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000100103916000373/fy2016_q2x8kxannualmeeting.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Corporate governance changes and shareholder voting outcomes",
+    "securities": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      },
+      {
+        "name": "PricewaterhouseCoopers LLP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PricewaterhouseCoopers LLP"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "The Walt Disney Company": "company",
+      "PricewaterhouseCoopers LLP": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "041832d2f7b6e031472ce62b",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_03_04_Corporate-Governance_Entertainment_sec.json",
+        "sha256": "7da27496086f56dafc62c602b3895c1afc033270383b08e308cf8a3788fe1ffc",
+        "filename": "2016_03_04_Corporate-Governance_Entertainment_sec.json"
+      }
+    ],
+    "original_record_hash": "26d02a2bb367886e0431c2f8377c459b353ec77c467ec0bca4067d6b749ace0e",
+    "input_hash": "1d53dd4bdd3455fc280f89b3308f4b8bca4138a6902541ec370a26ba318b1fad",
+    "matching_audit_hash": "3032bf4c5282a903ae82754a6c131aa2355f481ae732e67459db807b16c489f2",
+    "legacy_security_evidence": [
+      {
+        "name": "The Walt Disney Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Walt Disney Company"
+      }
+    ],
+    "record_hash": "7439f736a5d552af876ae090328b18c8492a8bdd6273e078d47d54047b4eee71",
+    "outputs": [
+      {
+        "path": "US\\2016_03_04_Corporate-Governance_Entertainment_sec.json",
+        "sha256": "10fd1f87b73a513e7d01a49c043e8d4500160a05cb391da4c00f1b2537510bf5"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2016-03-04",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:04.849469+00:00",
+      "fetched_at": "2026-11-11T01:20:45.399388+00:00",
+      "feature_available_at": "2026-11-11T11:11:36.174018+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T04:24:28.014947+00:00",
+    "feature_available_at": "2026-11-18T04:24:28.026742+00:00",
+    "commit_verified_at": "2026-11-12T15:16:39.222032+00:00",
+    "prompt_version": "831a64e295035ec5bf0d0d3d6492dc3ce01b6ee619daf10a286f164a3b0ef8a8",
+    "code_version": "902c3a61190d45fda77ed6d7da70a5aa9b28b309340dfff5240465422a3fb7a1",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:39.244981+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:04:59.553964+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Corporate governance changes and shareholder voting outcomes",
+        "securities": [
+          {
+            "name": "The Walt Disney Company",
+            "ticker": null,
+            "exchange": null,
+            "quote": "The Walt Disney Company"
+          },
+          {
+            "name": "PricewaterhouseCoopers LLP",
+            "ticker": null,
+            "exchange": null,
+            "quote": "PricewaterhouseCoopers LLP"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Entertainment",
+            "basis": "inferred",
+            "quote": "The Walt Disney Company"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry"
+        ],
+        "entity_types": {
+          "The Walt Disney Company": "company",
+          "PricewaterhouseCoopers LLP": "company"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:04:59.579308+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:04:59.588143+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:04:59.570057+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary contains information about corporate governance actions, shareholder votes, and amendments to the company's charter, which are relevant for the news",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:31:11.113048+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_impact_key_not_offered",
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001039/0001001039-16-000373-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "7439f736a5d552af876ae090328b18c8492a8bdd6273e078d47d54047b4eee71",
+    "content_hash": "f1b1019216a0d28b11597fc0fbabcb9bd45f764d15972923c2eec34df5cc1b44",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-market-industry-1",
+    "extracted_at": "2026-11-18T04:24:28.015957+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/041832d2f7b6e031472ce62b.json",
+      "sha256": "b50f3e24692bcce838086c5ffa4cc5e8da0f386f381d5d6d281c060204a26f78",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 14.73399999999674
+}

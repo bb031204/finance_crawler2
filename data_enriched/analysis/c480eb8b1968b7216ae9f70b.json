@@ -1,0 +1,92 @@
+{
+  "source_id": "c480eb8b1968b7216ae9f70b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_11_Corporate-Governance_Technology_sec.json",
+      "sha256": "87c11ba02dcdb95b1d0d7af932a2cedd43a131dc8b77c40077470740bcef10cb",
+      "filename": "2015_02_11_Corporate-Governance_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "bcf3808e297ee8b074c1a192ff905b30347bdc6b6141459479e44fdedb4984d1",
+  "input_hash": "c9a798d9111af0f6d8df74afbaaeb4a2f48d3d45a1f555a6079bcdcbfba18231",
+  "matching_audit_hash": "e74bcab1eaad3f0763c04f8b327349bbb60c655762c12acd797c1dac111109c4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ac04dac6dd88de5ac16904c5f4ac644fa13c216e70f1b042ec242b8688ac3081",
+    "raw_sha256": "dfc32178fda88bf825d23100f30bf0782b18dc41fe0aa5d8647ee1edbe0edb0c",
+    "date_quote": "SEC filing datePublished=2015-02-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000113743915000023/blonder8k02112015.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    }
+  ],
+  "record_hash": "af39b7385f3e7ad2712ea90dad05f5d0f68116af4455135fccd10f0df0d85b39",
+  "outputs": [
+    {
+      "path": "US\\2015_02_11_Corporate-Governance_Technology_sec.json",
+      "sha256": "06caa824af4ee2e952656479f54406ed6311546a818641daf56782c664525fdd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:25:54.563919+00:00",
+    "feature_available_at": "2026-11-11T10:37:55.261998+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:20:47.998099+00:00",
+  "feature_available_at": "2026-11-12T14:20:48.017963+00:00",
+  "commit_verified_at": "2026-11-12T14:20:48.017963+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a director's compensation, equity awards, and company actions related to governance.",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Blonder Tongue Laboratories, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

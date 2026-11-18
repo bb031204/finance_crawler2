@@ -1,0 +1,122 @@
+{
+  "source_id": "03be74a39db58331dc3f7209",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_12_01_Regulatory_Banking_federalreserve.json",
+      "sha256": "5b62519b7a717be3a08bc1a52924db2bacb925ab6b8527cc1f03144f82451665",
+      "filename": "2016_12_01_Regulatory_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "259006705ca1b710019d8e8ba8115fb0b402508943f7676d2a72f8e9230fd747",
+  "input_hash": "739c44d9545062e3acce942f455eccbc3180c05377903ef2a015841d8e4e1ce6",
+  "matching_audit_hash": "2c47e33223f7fb3b89b5f0d96432cb532cd97ff5254b432e9d8f80e6117ed0c7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "717b3da45e5635720d353049ae9e178d3b36d140569b198f6335882c24376ba1",
+    "raw_sha256": "cce12f6d2d15b91d110ca64205c3e9160fcf1d923d01f3ade6b8a41697f49727",
+    "date_quote": "The Fed - Supervisory Letter SR 16-17 on Supervisory Expectations for Risk Management of Reserve-Based Energy Lending Risk -- December 1, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "4ecaa60613018a6db6e0208a2f028419172f281f6c9c3af7388db5a81b2a65cf",
+  "outputs": [
+    {
+      "path": "US\\2016_12_01_Regulatory_Banking_federalreserve.json",
+      "sha256": "2374375a1b43687cf0b04e4dde775ca1a8914d5fec3751a8235c9156ae87b482"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-12-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:34.505883+00:00",
+    "fetched_at": "2026-11-10T10:32:09.673747+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.041247+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:33:26.680586+00:00",
+  "feature_available_at": "2026-11-12T14:33:26.721177+00:00",
+  "commit_verified_at": "2026-11-12T14:33:26.721177+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory guidance on reserve-based energy lending, including risk management practices, market conditions, and capital planning for banks.",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      },
+      {
+        "name": "state member banks",
+        "ticker": null,
+        "exchange": null,
+        "quote": "state member banks"
+      },
+      {
+        "name": "U.S. branches of foreign banking organizations",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. branches of foreign banking organizations"
+      },
+      {
+        "name": "depository institution holding companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "depository institution holding companies"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy lending",
+        "basis": "explicit",
+        "quote": "reserve-based energy lending"
+      },
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "state member banks, U.S. branches of foreign banking organizations, and depository institution holding companies"
+      },
+      {
+        "name": "Oil and gas",
+        "basis": "explicit",
+        "quote": "oil and gas reserves"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization",
+      "state member banks": "organization",
+      "U.S. branches of foreign banking organizations": "organization",
+      "depository institution holding companies": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

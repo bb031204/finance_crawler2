@@ -1,0 +1,104 @@
+{
+  "source_id": "6adac214b027ef927adb81e5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_09_Debt-Financing_Consumer-Goods_sec.json",
+      "sha256": "96038ff3b48db1fa1a49a238fbdae8530cc0a2b53f9ae75616d2f352f93376f5",
+      "filename": "2017_02_09_Debt-Financing_Consumer-Goods_sec.json"
+    }
+  ],
+  "original_record_hash": "3cd4b802957a55de5d6668a23c76d30e0c95bf1d2d9b50765cc2a6583b3c6952",
+  "input_hash": "56ae4225eedeec9be474855654fc11272544f56870d4361d9b591bc1cf7f3c4a",
+  "matching_audit_hash": "0fb1535c570bcd0d473723c09ce89baaa0fb2911dfcbd8dc4fa66e68a3a4098c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "95797b299db4e4d508d1aec5bc1c7d0055f9fbae30a3955ed2865ba509440b89",
+    "raw_sha256": "c1ea1b0f3f0cd9adcc4ab6a718290525856f2831a9449dcac742f0552aa9e0f2",
+    "date_quote": "SEC filing datePublished=2017-02-09",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465917007809/a17-4017_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Estée Lauder Companies Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Estée Lauder Companies Inc."
+    }
+  ],
+  "record_hash": "9d3aede4dc29fa85ed169b1ead9f0e1171ecc3778bea2fb6e63020cb613190c0",
+  "outputs": [
+    {
+      "path": "US\\2017_02_09_Debt-Financing_Consumer-Goods_sec.json",
+      "sha256": "973a2a4a777ba45c255020d0fc62782a53ecad54e7c19c61c70b02b1501bc18d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:38:12.031901+00:00",
+    "feature_available_at": "2026-11-11T12:38:56.214133+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:04.123305+00:00",
+  "feature_available_at": "2026-11-12T14:39:04.165831+00:00",
+  "commit_verified_at": "2026-11-12T14:39:04.165831+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a debt financing activity involving The Estée Lauder Companies Inc., including the issuance of senior notes with specific terms and maturity",
+    "securities": [
+      {
+        "name": "The Estée Lauder Companies Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Estée Lauder Companies Inc."
+      },
+      {
+        "name": "U.S. Bank Trust National Association",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bank Trust National Association"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Consumer Goods",
+        "basis": "inferred",
+        "quote": "The Estée Lauder Companies Inc."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "The Estée Lauder Companies Inc.": "company",
+      "U.S. Bank Trust National Association": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

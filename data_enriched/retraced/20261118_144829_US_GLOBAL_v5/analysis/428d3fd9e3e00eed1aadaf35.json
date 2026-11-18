@@ -1,0 +1,395 @@
+{
+  "source_id": "428d3fd9e3e00eed1aadaf35",
+  "status": "completed",
+  "source_record_hash": "f9833093d732c91f9fd5910c4975715f34ad13dce0edf5f0c2e1789f0a9bad30",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001258/0001437749-18-000820-index.html",
+    "attempted_at": "2026-11-18T12:59:16.705096+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001258/0001437749-18-000820-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918000820/asta20180119_8k.htm",
+    "fetched_at": "2026-11-18T12:59:33.060349+00:00",
+    "source_body_hash": "43faa4fe564ff90282ab78683d10376c8434d6c08e0e3cdd212edde0662b7389",
+    "raw_sha256": "86f4a2535134e760a1bc2e3e691358a69d1afacec4d1a58c75496f25bbdca1e3",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918000820/asta20180119_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "86f4a2535134e760a1bc2e3e691358a69d1afacec4d1a58c75496f25bbdca1e3",
+        "text_sha256": "18d2c40c2ff6d1190e31dce2b3ac9ff7acd63a90da9ff9a1e2771dfb29b186e6",
+        "text_start": 0,
+        "text_end": 3280
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918000820/ex_103279.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "ffece08f0c454f610d2d036a6d3331d11f554ac97b674bf9ce8b82d85661dba0",
+        "text_sha256": "d657f6f8dc187e69c9a837eae42e5ca090a697265469020359b1a0336c2ee65a",
+        "text_start": 3282,
+        "text_end": 7818
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2018-01-19",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/428d3fd9e3e00eed1aadaf35.json",
+    "sha256": "b08642a20af5142b8dd4cae739b31ad7bc07c35b93ad73180ae3bc0cc45b8cf5",
+    "bundled_path": "legacy_audit/428d3fd9e3e00eed1aadaf35.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "33e8d4883dcd8720626fea1e75a80bba146de35c0341094d3d52c3bd399a269f",
+      "llm_inferred_at": "2026-11-18T12:59:44.767406+00:00",
+      "model_duration_seconds": 11.6855671,
+      "prompt_tokens": 3788,
+      "completion_tokens": 478,
+      "selection": [
+        {
+          "source_id": "428d3fd9e3e00eed1aadaf35",
+          "market_scope": [
+            "NASDAQ_LISTED"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Asta Funding, Inc.",
+              "rationale": "The event is specific to Asta Funding, Inc., which is a company and not a broader industry or market.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "NASDAQ_LISTED",
+              "evidence_quote": "The Company expects that it will fully regain compliance with the Nasdaq continued listing requirements upon the filing of the Form 10-K.",
+              "rationale": "The event involves Nasdaq, which is a stock exchange, and the company is listed on Nasdaq.",
+              "confidence": 0.95
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "industry_scope_quote": ", changes in the credit or capital markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a",
+              "industry_name_original": "Finance: Consumer Services",
+              "mechanism": "The company is in the finance and consumer services industry, and the event involves compliance with Nasdaq listing rules, which could affect its operations and financial performance.",
+              "confidence": 0.85,
+              "quote": "changes in government regulations that affect our ability to collect sufficient amounts on our defaulted consumer receivables, our ability to employ and retain qualified employees"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "08d05ba9b9df22d47b1adb9fbcd290d16e52b082524c0190a77b176860a4a73e",
+      "llm_inferred_at": "2026-11-18T13:00:04.055092+00:00",
+      "model_duration_seconds": 19.2693708,
+      "prompt_tokens": 3832,
+      "completion_tokens": 1003,
+      "selection": [
+        {
+          "source_id": "428d3fd9e3e00eed1aadaf35",
+          "market_scope": [
+            "NASDAQ_LISTED"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Asta Funding, Inc.",
+              "rationale": "The event is specific to Asta Funding, Inc., which is a company and not a broader industry or market.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "market",
+              "quote": "the Securities Act (17 CFR 230.425) ☐ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) ☐ Pre-commencement communications pursuant to Rule 14d",
+              "rationale": "The event involves Nasdaq, which is a market exchange, and the company's compliance with listing rules.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "NASDAQ_LISTED",
+              "evidence_quote": "the submission of a compliance plan will be necessary because the Company anticipates that it will file the Form 10-K prior to the expiration of the 60-day period. The Company expects that it will fully regain compliance with the Nasdaq continued listing requirements upon the filing of the Form 10-K. As previously stated, the Company will file the",
+              "rationale": "The event involves Nasdaq, which is a market exchange, and the company's compliance with listing rules.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "name": "Finance: Consumer Services",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "name": "Consumer Staples",
+              "basis": "explicit",
+              "quote": "Asta Funding, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:49486f0e20b712e1",
+              "industry_scope_quote": ", changes in the credit or capital markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a",
+              "industry_name_original": "Finance: Consumer Services",
+              "mechanism": "economic transmission",
+              "confidence": 0.75,
+              "quote": "changes in government regulations that affect our ability to collect sufficient amounts on our defaulted consumer receivables, our ability to employ and retain qualified employees"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": ", changes in the credit or capital markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "economic transmission",
+              "confidence": 0.75,
+              "quote": "changes in government regulations that affect our ability to collect sufficient amounts on our defaulted consumer receivables, our ability to employ and retain qualified employees"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4d635f128d2fa099",
+              "industry_scope_quote": ", changes in the credit or capital markets, changes in interest rates, deterioration in economic conditions, negative press regarding the debt collection industry which may have a",
+              "industry_name_original": "Consumer Staples",
+              "mechanism": "economic transmission",
+              "confidence": 0.75,
+              "quote": "changes in government regulations that affect our ability to collect sufficient amounts on our defaulted consumer receivables, our ability to employ and retain qualified employees"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:00:04.072699+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "43faa4fe564ff90282ab78683d10376c8434d6c08e0e3cdd212edde0662b7389",
+    "raw_sha256": "86f4a2535134e760a1bc2e3e691358a69d1afacec4d1a58c75496f25bbdca1e3",
+    "date_quote": "SEC filing datePublished=2018-01-19",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918000820/asta20180119_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Regulatory compliance issue and filing deadline",
+    "securities": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asta Funding, Inc."
+      },
+      {
+        "name": "Nasdaq",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nasdaq"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Asta Funding, Inc.": "company",
+      "Nasdaq": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "428d3fd9e3e00eed1aadaf35",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_01_19_Regulatory-Compliance_Financial-Services_sec.json",
+        "sha256": "b778a31c3b9655fe520f35e80638ecabe3fcc076cfcd8509e0648fc26404ff01",
+        "filename": "2018_01_19_Regulatory-Compliance_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "40e87545f25d4ca683e55d0f0a1f5b516cdf1476962bacb228bd3f311ffbab89",
+    "input_hash": "9519c8604d38008099e8fea3a42f765679eda01d8448a00e8eb75f8f675773cf",
+    "matching_audit_hash": "696a7459fb844b9a727a9a7933d232e485397d80cea2915f4181e875a638d19d",
+    "legacy_security_evidence": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asta Funding, Inc."
+      }
+    ],
+    "record_hash": "f9833093d732c91f9fd5910c4975715f34ad13dce0edf5f0c2e1789f0a9bad30",
+    "outputs": [
+      {
+        "path": "US\\2018_01_19_Regulatory-Compliance_Financial-Services_sec.json",
+        "sha256": "02ecf480d50dc2bdba49572cf25b59f4a78a418c153dca6f27ed2d20a2e4c1df"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2018-01-19",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:15.048576+00:00",
+      "fetched_at": "2026-11-11T13:27:09.341325+00:00",
+      "feature_available_at": "2026-11-11T13:27:19.724828+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:00:04.055092+00:00",
+    "feature_available_at": "2026-11-18T13:00:04.072699+00:00",
+    "commit_verified_at": "2026-11-12T15:16:42.468222+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:42.486534+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:08:16.679988+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Regulatory compliance issue and filing deadline",
+        "securities": [
+          {
+            "name": "Asta Funding, Inc.",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Asta Funding, Inc."
+          },
+          {
+            "name": "Nasdaq",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Nasdaq"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Financial Services",
+            "basis": "inferred",
+            "quote": "Nasdaq Listing Rule 5250(c)(1)"
+          }
+        ],
+        "impact_scope": [
+          "company"
+        ],
+        "entity_types": {
+          "Asta Funding, Inc.": "company",
+          "Nasdaq": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:08:16.705282+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:08:16.713524+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:08:16.695280+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary discusses a regulatory compliance issue involving Asta Funding, Inc. and Nasdaq, including the company's non-compliance with listing rules and the 6",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:42:20.977885+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Asta Funding, Inc.",
+        "rationale": "The event is specific to Asta Funding, Inc., which is a company and not a broader industry or market.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Asta Funding, Inc.",
+        "summary_evidence_quote": "Asta Funding, Inc."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001258/0001437749-18-000820-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "f9833093d732c91f9fd5910c4975715f34ad13dce0edf5f0c2e1789f0a9bad30",
+    "content_hash": "fa4d852b40fc0926cf1beba29b521f90e54bc1eef4cab7088ac81d173a9f426c",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:00:04.059395+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/428d3fd9e3e00eed1aadaf35.json",
+      "sha256": "8ad5d82a22621c3b5f797f82fca614c19b041c35f36af2272e07003369304eb6",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 47.39000000001397
+}

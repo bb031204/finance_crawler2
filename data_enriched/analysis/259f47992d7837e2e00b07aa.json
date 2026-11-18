@@ -1,0 +1,102 @@
+{
+  "source_id": "259f47992d7837e2e00b07aa",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_02_01_Corporate-Governance_Textiles-&-Apparel_sec.json",
+      "sha256": "9ef9ac9cce5e30630826d1de895dc7a96a353fe088ed9065eb283d2ee7e9bc35",
+      "filename": "2012_02_01_Corporate-Governance_Textiles-&-Apparel_sec.json"
+    }
+  ],
+  "original_record_hash": "3b63ffb4e6653fb59d47e6183b1690fc96114bec1ae991670e87f85fe2cd0876",
+  "input_hash": "54bae3779098229227c7dcf92483dd174ada23b3d5b0a62e0fdf2688d84b5156",
+  "matching_audit_hash": "e50aa5aeb466eb35987ccd9dc710bbccfe2fa4660c2e638a1ef343af45fa3249",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b6e2c6bc0bfd4f9ff6412ec3e4db76bc385f58aceabb000aceea331c5e68ea40",
+    "raw_sha256": "c4ecbc02b8fe5033c3900c807d566ae61af6b555b303ab64cb11c6692f23789b",
+    "date_quote": "February 1, 2012 Date of Report (Date of earliest event reported)",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062312000021/form8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    }
+  ],
+  "record_hash": "9232d6607d5aa5fc6b944e43f1e64e4dcd2aa84bcbf15104a4b5d8d622a4aecd",
+  "outputs": [
+    {
+      "path": "US\\2012_02_01_Corporate-Governance_Textiles-&-Apparel_sec.json",
+      "sha256": "26263b974ce4ad9f6934e00b0f350cf74d4802796dfb9d1de489eecce6c987c4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-02-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.195879+00:00",
+    "fetched_at": "2026-11-10T22:47:56.322313+00:00",
+    "feature_available_at": "2026-11-10T22:48:19.159111+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:37.916332+00:00",
+  "commit_verified_at": "2026-11-12T13:52:37.916332+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Manufacturing",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Tobacco",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

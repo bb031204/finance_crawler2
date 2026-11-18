@@ -1,0 +1,157 @@
+{
+  "source_id": "3bfd2e423e63eb93a788fcdc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_11_18_Mergers-&-Acquisitions_Semiconductor_sec.json",
+      "sha256": "be1b139bce72b7172b914a17fc2ae252257e7e99390265fa4cd9c1e3e1302648",
+      "filename": "2015_11_18_Mergers-&-Acquisitions_Semiconductor_sec.json"
+    }
+  ],
+  "original_record_hash": "2df52249d68122c1f0cd31198c765306dd0022789d39a04d4b5a081994792875",
+  "input_hash": "0a3b26af7e93d58e00ecb65273adda445cfe7cac216517d56236af64e65a3dcb",
+  "matching_audit_hash": "3cfd37b07b729bd40ea93aa1928298147da9543107583361e66cbb83c95656bb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3e77a64af752117d2c8c6ef3bd847c45b73a606d2dd1b5aae7a7e5dd657e7fd9",
+    "raw_sha256": "240341bb2fa2be67507d8803b9ba8d52d7b16103dd42b10d6db408fea11d6868",
+    "date_quote": "SEC filing datePublished=2015-11-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1036960/000119312515380198/d27668d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Fairchild Semiconductor International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Fairchild Semiconductor International, Inc."
+    },
+    {
+      "name": "ON Semiconductor Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ON Semiconductor Corporation"
+    },
+    {
+      "name": "Company common stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Company common stock"
+    },
+    {
+      "name": "ON Semiconductor",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ON Semiconductor"
+    },
+    {
+      "name": "Change in Control Severance Plan",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Change in Control Severance Plan"
+    },
+    {
+      "name": "Amendment to Employment Agreement with Mark S. Thompson",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Amendment to Employment Agreement with Mark S. Thompson"
+    }
+  ],
+  "record_hash": "50ec41325ca42680d7437a59ec5cf21cadea4c16ad9d852fa47642c7113109a6",
+  "outputs": [
+    {
+      "path": "US\\2015_11_18_Mergers-&-Acquisitions_Semiconductor_sec.json",
+      "sha256": "a734943ed95491737b3cf123cfe366377c025bb367802ea478ac0ddadfb33d5e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-11-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:34.467712+00:00",
+    "fetched_at": "2026-11-11T02:23:18.978439+00:00",
+    "feature_available_at": "2026-11-11T17:17:13.267527+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:01.104314+00:00",
+  "commit_verified_at": "2026-11-12T13:53:01.104314+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Fairchild Semiconductor International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fairchild Semiconductor International, Inc."
+      },
+      {
+        "name": "ON Semiconductor Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ON Semiconductor Corporation"
+      },
+      {
+        "name": "Company common stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Company common stock"
+      },
+      {
+        "name": "ON Semiconductor",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ON Semiconductor"
+      },
+      {
+        "name": "Change in Control Severance Plan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Change in Control Severance Plan"
+      },
+      {
+        "name": "Amendment to Employment Agreement with Mark S. Thompson",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amendment to Employment Agreement with Mark S. Thompson"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

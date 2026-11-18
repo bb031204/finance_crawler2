@@ -1,0 +1,109 @@
+{
+  "source_id": "8a741a8071bc1e4f81fc1f00",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_18_Corporate-Action_Media-&-Entertainment_sec.json",
+      "sha256": "b2c5e0091380ed73475d7bba5561a9077461e1c19c8b338ed030424abcf56a15",
+      "filename": "2019_01_18_Corporate-Action_Media-&-Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "7eaa1517895ab74f1bd3865fc11087cf0a7132a96a68182f4625f6f69ff39599",
+  "input_hash": "bf34e27d6af71cc0273dc46850e38cbb1ee604a40c80b33a8f6d3bea75a2ebfd",
+  "matching_audit_hash": "d61794251ce9f46a2e5cfb43c337ac7656362386ac8313c94f19964516763a7e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "58ba5d611db8bd30f640d51127bdf0e015688ea315ca831a6cf84ed6a9edbfa4",
+    "raw_sha256": "e24fedded85ef811e1a1641245e1b8ce1ff5fe975cc4de1bd105d65232125d97",
+    "date_quote": "SEC filing datePublished=2019-01-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000095015719000072/form8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "21CFA Notes",
+      "ticker": null,
+      "exchange": null,
+      "quote": "21CFA Notes"
+    },
+    {
+      "name": "TWDC Holdco 613 Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "TWDC Holdco 613 Corp."
+    }
+  ],
+  "record_hash": "1a5ffc92f44a9962ab56b2a8003b4737690a1ea575cde8dc7b78fa5604a811be",
+  "outputs": [
+    {
+      "path": "US\\2019_01_18_Corporate-Action_Media-&-Entertainment_sec.json",
+      "sha256": "d10bf5311980ef317f1edf895f7260b14dd530117c7fd99e13374ab1879b9e15"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.618622+00:00",
+    "fetched_at": "2026-11-11T13:59:09.174602+00:00",
+    "feature_available_at": "2026-11-11T13:59:59.608336+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:24.833435+00:00",
+  "commit_verified_at": "2026-11-12T13:53:24.833435+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "21CFA Notes",
+        "ticker": null,
+        "exchange": null,
+        "quote": "21CFA Notes"
+      },
+      {
+        "name": "TWDC Holdco 613 Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "TWDC Holdco 613 Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

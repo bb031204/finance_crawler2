@@ -1,0 +1,284 @@
+{
+  "source_id": "31733b8f35012cfec504c6d7",
+  "status": "completed",
+  "source_record_hash": "1912fbc7378d7066c234b8d0771b700cb768dbb964f12c26c2584b5f30d735da",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/749098/0001193125-18-099856-index.html",
+    "attempted_at": "2026-11-18T11:18:23.863008+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "082bd86ed002a5820330273b75d2f304683aae5a92e7644ef54be971ac27a4a0"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/31733b8f35012cfec504c6d7.json",
+    "sha256": "e950217ad0fad04049e5e2ba86db5c68f244ffb1af570b4630c591802b172256",
+    "bundled_path": "legacy_audit/31733b8f35012cfec504c6d7.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "f239636019ff7eec0b98b72e3591ec04757507bb310d661202256d84acba68b9",
+      "llm_inferred_at": "2026-11-18T11:18:44.316543+00:00",
+      "model_duration_seconds": 11.1782301,
+      "prompt_tokens": 2371,
+      "completion_tokens": 555,
+      "selection": [
+        {
+          "source_id": "31733b8f35012cfec504c6d7",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Magna International Inc.",
+              "rationale": "The article discusses the annual report and corporate governance practices of Magna International Inc., a specific company, indicating that the information is related to the company itself rather than the industry or market.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The document titled '40-F' is an annual report filed by Magna International Inc. with the U.S. Securities and Exchange Commission (SEC) on March 29, 2018. The report covers the fiscal year ended December 31, 2017. Magna International Inc. is a Canadian company incorporated in the Province of Ontario. The report includes audited annual financial",
+              "rationale": "The article discusses the filing of an annual report with the U.S. Securities and Exchange Commission (SEC), which is a U.S. equity-related activity. This indicates that the information is relevant to the U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8741",
+              "name": "SERVICES-MANAGEMENT SERVICES",
+              "basis": "inferred",
+              "quote": "The company has designated these members as 'audit committee financial experts' and confirmed their independence and financial literacy."
+            },
+            {
+              "industry_key": "SEC-SIC:8742",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "inferred",
+              "quote": "The company has designated these members as 'audit committee financial experts' and confirmed their independence and financial literacy."
+            },
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "inferred",
+              "quote": "The company has designated these members as 'audit committee financial experts' and confirmed their independence and financial literacy."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "d90269a30b5cea0b4880eff26d6cc6ea9eebc4955f3e67569f70a3fea17f541d",
+      "llm_inferred_at": "2026-11-18T11:18:54.016041+00:00",
+      "model_duration_seconds": 9.691282,
+      "prompt_tokens": 2415,
+      "completion_tokens": 529,
+      "selection": [
+        {
+          "source_id": "31733b8f35012cfec504c6d7",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Magna International Inc.",
+              "rationale": "The article discusses the annual report and financial statements of Magna International Inc., a specific company, and its compliance with SEC filings and NYSE listing standards.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The document titled '40-F' is an annual report filed by Magna International Inc. with the U.S. Securities and Exchange Commission (SEC) on March 29, 2018. The report covers the fiscal year ended December 31, 2017. Magna International Inc. is a Canadian company incorporated in the Province of Ontario. The report includes audited annual financial",
+              "rationale": "The document is a SEC filing by Magna International Inc., which is a U.S. registrant, indicating the company's compliance with U.S. financial reporting requirements.",
+              "confidence": 0.95
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8741",
+              "name": "SERVICES-MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The company has designated these members as 'audit committee financial experts' and confirmed their independence and financial literacy."
+            },
+            {
+              "industry_key": "SEC-SIC:8742",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The company has designated these members as 'audit committee financial experts' and confirmed their independence and financial literacy."
+            },
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The company has designated these members as 'audit committee financial experts' and confirmed their independence and financial literacy."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:18:54.029044+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "082bd86ed002a5820330273b75d2f304683aae5a92e7644ef54be971ac27a4a0",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2018-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/749098/000119312518099856/d481059d40f.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Magna International Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Magna International Inc. (Exact name of Registrant as specified in its charter)"
+      },
+      {
+        "name": "Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Registrant"
+      },
+      {
+        "name": "The Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Registrant"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "31733b8f35012cfec504c6d7",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_03_29_SEC-Filing_Automotive-Components_sec.json",
+        "sha256": "02d7bc9d2823b3e73233fb5212b814debd9866ddf461642dcd864fa50d1e5a8c",
+        "filename": "2018_03_29_SEC-Filing_Automotive-Components_sec.json"
+      }
+    ],
+    "original_record_hash": "a22ece027a2ea6808a091472a85d7d3af9f14ebd6beb2125464fe929017c44ca",
+    "input_hash": "ea978eea09298f1f213367f5b7c87118c0d6014a3ed08bc680681b568839d611",
+    "matching_audit_hash": "cff0e1a16e1acb0ceb414aff9f32e9ad85feb95e12791b494e5d7a103625ad43",
+    "legacy_security_evidence": [
+      {
+        "name": "Magna International Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Magna International Inc. (Exact name of Registrant as specified in its charter)"
+      },
+      {
+        "name": "Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Registrant"
+      },
+      {
+        "name": "The Registrant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Registrant"
+      }
+    ],
+    "record_hash": "1912fbc7378d7066c234b8d0771b700cb768dbb964f12c26c2584b5f30d735da",
+    "outputs": [
+      {
+        "path": "US\\2018_03_29_SEC-Filing_Automotive-Components_sec.json",
+        "sha256": "4196935059f6149315d04475055130c5157e8d956dfa7dc52d38e0a8c22ab975"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2018-03-29",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:40:13.032994+00:00",
+      "fetched_at": "2026-11-10T21:29:25.880390+00:00",
+      "feature_available_at": "2026-11-10T21:31:18.519344+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:18:54.016041+00:00",
+    "feature_available_at": "2026-11-18T11:18:54.029044+00:00",
+    "commit_verified_at": "2026-11-12T13:53:21.638376+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Magna International Inc.",
+        "rationale": "The article discusses the annual report and financial statements of Magna International Inc., a specific company, and its compliance with SEC filings and NYSE listing standards.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Magna International Inc."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/749098/0001193125-18-099856-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "1912fbc7378d7066c234b8d0771b700cb768dbb964f12c26c2584b5f30d735da",
+    "content_hash": "082bd86ed002a5820330273b75d2f304683aae5a92e7644ef54be971ac27a4a0",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:18:54.017045+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/31733b8f35012cfec504c6d7.json",
+      "sha256": "f4f278ac98e2c6e7198059a40424b2028211fde8a7456cb327e4542dcc349e63",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 30.187000000005355
+}

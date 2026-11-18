@@ -1,0 +1,97 @@
+{
+  "source_id": "526d2b5810d9ffa9ee29ab38",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_03_27_Politics_Government_cnbc.json",
+      "sha256": "401fe65b41978e9620ff1e56401be6d133ef208632387ad7840cd77e644cbc55",
+      "filename": "2020_03_27_Politics_Government_cnbc.json"
+    }
+  ],
+  "original_record_hash": "69ef397cff26327dfe7a670d6d065fa7d7caef686eb2b7cc23ddd20749e8a765",
+  "input_hash": "6f9269b3cd4006d6a46e0a122b274d88883ca387de079c744f521d5ff2831c8a",
+  "matching_audit_hash": "6b4dfb08d177ef820d571385e41ae6d28e5809bbef573f0fdf623c095ff89c83",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ae20abed2f30d357d94f44e7e7862c02fdf508a81e951176cab7f15ffef62764",
+    "raw_sha256": "10933141385c300bc6ba85e0fa1a791a0cbf8d9f8781a0502b16d66a54320fac",
+    "date_quote": "article:published_time=2020-03-27T17:28:09+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "United States",
+      "ticker": null,
+      "exchange": null,
+      "quote": "United States"
+    }
+  ],
+  "record_hash": "d2c8880087e2cfa79bef5f5cf828faad40f47ee3527a6b11b01b8d30acf812ce",
+  "outputs": [
+    {
+      "path": "US\\2020_03_27_Politics_Government_cnbc.json",
+      "sha256": "0148e1ff8dc27123f8a8d73494f002c1c75645f78e881b1b5176f4b8e0c739f1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-03-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:11.057561+00:00",
+    "fetched_at": "2026-11-10T19:28:22.153659+00:00",
+    "feature_available_at": "2026-11-10T19:28:59.118710+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:33.134408+00:00",
+  "commit_verified_at": "2026-11-12T13:53:33.134408+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "United States",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United States"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

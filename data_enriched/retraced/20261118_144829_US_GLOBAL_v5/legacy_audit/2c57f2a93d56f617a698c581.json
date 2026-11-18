@@ -1,0 +1,114 @@
+{
+  "source_id": "2c57f2a93d56f617a698c581",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_03_14_Corporate-Finance_Utilities_sec.json",
+      "sha256": "a07c1b2f3d7652becc91c7df1a1c1dd3506bc8199714d01798582f5415035283",
+      "filename": "2013_03_14_Corporate-Finance_Utilities_sec.json"
+    }
+  ],
+  "original_record_hash": "98eb6abfd04ff5f77674411cfbd39db4532e3d6555d4c3964f1332b95fba939e",
+  "input_hash": "43a38de7928402b4672298318186ad109c7ed10b6f128c1556efb44fa4f2a16f",
+  "matching_audit_hash": "e3c629f54f572bc955e9e7589dc5afd281deb12f478d3caf23484a9de7bf67ba",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e33eabc8216b33c46fd5bf6d77c8e87e76d4df8cbc598584b8875167d36c2257",
+    "raw_sha256": "61d4db2d29c5a442ee8c3bdb2308eeebf6806a206049f41d56986737294bd0a5",
+    "date_quote": "DATE OF REPORT (DATE OF EARLIEST EVENT REPORTED): March 14, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/100122/000119312513106924/d502506d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Tucson Electric Power Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Tucson Electric Power Company (TEP)"
+    },
+    {
+      "name": "Uns Energy Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "UNs ENERGY CORPORATION (Registrant)"
+    }
+  ],
+  "record_hash": "0ca81e030c1010d2c10ee2869b332c6e0a1b1b8b46b4e39ad5b1709ff9bd46ff",
+  "outputs": [
+    {
+      "path": "US\\2013_03_14_Corporate-Finance_Utilities_sec.json",
+      "sha256": "03106e64ce0e533d11c110db7fe1328ccfcf07882ea33cd926ca409bc1798450"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-03-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.191892+00:00",
+    "fetched_at": "2026-11-10T23:40:00.542896+00:00",
+    "feature_available_at": "2026-11-10T23:40:26.326697+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:45.794149+00:00",
+  "commit_verified_at": "2026-11-12T13:52:45.794149+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Tucson Electric Power Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tucson Electric Power Company (TEP)"
+      },
+      {
+        "name": "Uns Energy Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "UNs ENERGY CORPORATION (Registrant)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Utilities",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

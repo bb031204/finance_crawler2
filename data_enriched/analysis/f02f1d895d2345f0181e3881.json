@@ -1,0 +1,92 @@
+{
+  "source_id": "f02f1d895d2345f0181e3881",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_20_dividend_Information-Technology_sec.json",
+      "sha256": "b54bcb39916ee5ff293dd18f46e038970e8f7bbb8de51a0c75b9d4cbea49d9b8",
+      "filename": "2020_02_20_dividend_Information-Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "6b483474dd63cf0842934874725474361a54c28e2ac4fe1dd209bff56dbf09ad",
+  "input_hash": "eec85feec6de0eb42f9b87a62168697087c98eba68a4146e0c4d3ef2025faa38",
+  "matching_audit_hash": "d4c753d452df28c9ce67387e090986e148ca7040efae5b6172a298b2bb3f2702",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d9df7306655b786613184f7e7d65d742d9e7fc0c76a2afca4ff002381452388d",
+    "raw_sha256": "fbd16a39d24d77d45194e76f7b82a9fd3b8870e8385623034008b8bb79d9ee01",
+    "date_quote": "SEC filing datePublished=2020-02-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000110465920023043/a20-9514_16k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SAP SE",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SAP SE"
+    }
+  ],
+  "record_hash": "32bb59af59f538bb8e7e2860d53c9661369b3d12e825a222e0bf3ecf1b6f84ad",
+  "outputs": [
+    {
+      "path": "US\\2020_02_20_dividend_Information-Technology_sec.json",
+      "sha256": "8086706c183923ac7b1602cb2779420cfaae1135ddeea5d54dabb4166467b004"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.199957+00:00",
+    "fetched_at": "2026-11-11T14:26:35.255551+00:00",
+    "feature_available_at": "2026-11-11T14:26:42.749698+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:52.401678+00:00",
+  "feature_available_at": "2026-11-12T14:51:52.410895+00:00",
+  "commit_verified_at": "2026-11-12T14:51:52.410895+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about SAP SE's dividend announcement and capital return strategy, which is relevant for financial analysis.",
+    "securities": [
+      {
+        "name": "SAP SE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP SE"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "SAP SE": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

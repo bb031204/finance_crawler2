@@ -1,0 +1,230 @@
+{
+  "source_id": "4e759f52a3f3210774b75ac5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_12_29_15_20_Energy_Renewable-Energy_prnewswire.json",
+      "sha256": "979f0d8d44526cc85e79781c1e94fd5e4ca749daf71663297d31f51366f256a8",
+      "filename": "2020_12_29_15_20_Energy_Renewable-Energy_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "5b5ca11197153c1e0e8ea27fcf0c4146870d870021ac0c75f99e90edf76351ce",
+  "input_hash": "9e0cd112f4b4335a42a0102206838f0879c517f5a553173eb94583b509dcf0d7",
+  "matching_audit_hash": "94208bc384e4f4ff5f7c36245e0ee76b6d466f67b3ec0779a11d4c143707e23b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7a50c5481354fb3bd972361942f89c1b1b30732387bb1cf01e59b8e4532b7673",
+    "raw_sha256": "f3fac9b67acf075dada078572c55ca25cb32bfbec3191ca3777a890bd4fa37f0",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2020-12-29T15:20:00Z\ndate=2020-12-29T15:20:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Global Infrastructure Partners",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Global Infrastructure Partners"
+    },
+    {
+      "name": "MAP® Energy",
+      "ticker": null,
+      "exchange": null,
+      "quote": "MAP® Energy"
+    },
+    {
+      "name": "MAP® RE/ES",
+      "ticker": null,
+      "exchange": null,
+      "quote": "MAP® RE/ES"
+    },
+    {
+      "name": "Global Infrastructure Partners (GIP)",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Global Infrastructure Partners (GIP)"
+    }
+  ],
+  "record_hash": "38d1113d456f784c46811b14d559e414f7d1cd8407132a875f58f9ca6f2e1af3",
+  "outputs": [
+    {
+      "path": "US\\2020_12_29_15_20_Energy_Renewable-Energy_prnewswire.json",
+      "sha256": "9c0aa8d8e66a6b126ad5e74614844729a25474f1b787eac2efa02553fd9a90d8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-12-29T15:20:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-11T01:32:01.204139+00:00",
+    "fetched_at": "2026-11-11T11:51:47.957104+00:00",
+    "feature_available_at": "2026-11-11T11:52:50.908708+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:13:41.167810+00:00",
+  "feature_available_at": "2026-11-12T15:16:47.880613+00:00",
+  "commit_verified_at": "2026-11-12T15:16:47.880613+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Acquisition highlights renewable energy trends and strategic importance",
+    "securities": [
+      {
+        "name": "Global Infrastructure Partners (GIP)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Global Infrastructure Partners (GIP)"
+      },
+      {
+        "name": "MAP® RE/ES",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MAP® RE/ES"
+      },
+      {
+        "name": "MAP® Energy",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MAP® Energy"
+      },
+      {
+        "name": "GIP IV",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GIP IV"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "energy sector"
+      },
+      {
+        "name": "Renewable Energy",
+        "basis": "inferred",
+        "quote": "renewable energy investments"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Global Infrastructure Partners (GIP)": "organization",
+      "MAP® RE/ES": "organization",
+      "MAP® Energy": "organization",
+      "GIP IV": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:47.904749+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:13:41.167810+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Acquisition highlights renewable energy trends and strategic importance",
+      "securities": [
+        {
+          "name": "Global Infrastructure Partners (GIP)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Global Infrastructure Partners (GIP)"
+        },
+        {
+          "name": "MAP® RE/ES",
+          "ticker": null,
+          "exchange": null,
+          "quote": "MAP® RE/ES"
+        },
+        {
+          "name": "MAP® Energy",
+          "ticker": null,
+          "exchange": null,
+          "quote": "MAP® Energy"
+        },
+        {
+          "name": "GIP IV",
+          "ticker": null,
+          "exchange": null,
+          "quote": "GIP IV"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Energy",
+          "basis": "explicit",
+          "quote": "energy sector"
+        },
+        {
+          "name": "Renewable Energy",
+          "basis": "inferred",
+          "quote": "renewable energy investments"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Global Infrastructure Partners (GIP)": "organization",
+        "MAP® RE/ES": "organization",
+        "MAP® Energy": "organization",
+        "GIP IV": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:13:41.192143+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:13:41.201144+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:13:41.182599+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a significant acquisition in the renewable energy sector, highlighting the strategic importance of renewable assets and the shift toward绿色",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:54:11.343587+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

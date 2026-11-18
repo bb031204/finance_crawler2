@@ -1,0 +1,108 @@
+{
+  "source_id": "b49badf5b93b7131332d13ca",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_03_21_operational_Technology_sec.json",
+      "sha256": "a1c2e0bfb2193f0905bf8f82b77776c1904fd3663f4a302a21666471ffcce322",
+      "filename": "2014_03_21_operational_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "dbb3c629c636b783d3d4effac26adb524e55cb151180017fb6341f08de9cbcb6",
+  "input_hash": "aacbbb8290fb077fd6a798550f61258e74c33777f0b5e7553274aca6311b0b47",
+  "matching_audit_hash": "39ccee1eb2a0653a0dc971584053545f5da62e3535d162830b44aa53670a959d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7b724a031f456b1a8d398108fb682be3e028a1a946d2e0e57d7a2f9a458ff0c1",
+    "raw_sha256": "5aa5153f6daa1885a1a0aef82bf88115e7868e1846af2d2f6ea64fc5e90ca9d6",
+    "date_quote": "SEC filing datePublished=2014-03-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000118143114013656/rrd405981.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Geospace Technologies Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Geospace Technologies Corporation"
+    },
+    {
+      "name": "Seafloor Geophysical Solutions",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Seafloor Geophysical Solutions"
+    }
+  ],
+  "record_hash": "4335c07c558453689a07e820bbb9f481ecc49e5972782dfa871f08fdd42e4438",
+  "outputs": [
+    {
+      "path": "US\\2014_03_21_operational_Technology_sec.json",
+      "sha256": "987865a9a1012a6c4963e3a30881205fff9f34508c8a076f7207c1ad60b991e4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-03-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:08:09.053016+00:00",
+    "feature_available_at": "2026-11-11T10:18:10.771441+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:51.253910+00:00",
+  "commit_verified_at": "2026-11-12T13:52:51.253910+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      },
+      {
+        "name": "Seafloor Geophysical Solutions",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Seafloor Geophysical Solutions"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

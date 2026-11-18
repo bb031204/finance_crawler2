@@ -1,0 +1,343 @@
+{
+  "source_id": "336b5b334028b27cb279293f",
+  "status": "completed",
+  "source_record_hash": "1f2ce8b29955a1913b2618404fd3b8d8a4204bcb9ca4c4963fa9125d6bf27b87",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-13-071191-index.html",
+    "attempted_at": "2026-11-18T11:33:43.187990+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-13-071191-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312513071191/d490173d8k.htm",
+    "fetched_at": "2026-11-18T11:33:51.767227+00:00",
+    "source_body_hash": "2d4ff7024adaecc2aa659787be279db880437b4ed894af93879ea4d56b2df3de",
+    "raw_sha256": "8c6383599bbafc3062f1bb29e2d761ade53d90adb1900ebc569443c88fa7e402",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312513071191/d490173d8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "8c6383599bbafc3062f1bb29e2d761ade53d90adb1900ebc569443c88fa7e402",
+        "text_sha256": "2d4ff7024adaecc2aa659787be279db880437b4ed894af93879ea4d56b2df3de",
+        "text_start": 0,
+        "text_end": 2431
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2013-02-22",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/336b5b334028b27cb279293f.json",
+    "sha256": "ce1138e090f28cffe16ffee983c43e2ecc41776789f4316697e033c57f11b5f3",
+    "bundled_path": "legacy_audit/336b5b334028b27cb279293f.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "c72bf9f61fee6c1125e59967bddcf1e5ed7c44f6cf2bb3c06e4e8af794926a1e",
+      "llm_inferred_at": "2026-11-18T11:34:14.035781+00:00",
+      "model_duration_seconds": 22.2307277,
+      "prompt_tokens": 2575,
+      "completion_tokens": 1155,
+      "selection": [
+        {
+          "source_id": "336b5b334028b27cb279293f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),",
+              "rationale": "The termination of the Butler Credit Agreement, which was part of the financial operations of Henry Schein, Inc., indicates a significant event within the financial services industry, particularly in the context of credit facilities and corporate financing.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),",
+              "rationale": "The event directly pertains to Butler Animal Health Supply, LLC, a majority-owned subsidiary of Henry Schein, Inc., indicating a company-specific financial action.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "name": "Water Supply",
+              "basis": "explicit",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),"
+            },
+            {
+              "industry_key": "TRSR:63413103cd2e9419",
+              "name": "Office Equipment/Supplies/Services",
+              "basis": "explicit",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "industry_scope_quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were",
+              "industry_name_original": "Water Supply",
+              "mechanism": "financial restructuring",
+              "confidence": 0.85,
+              "quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "financial restructuring",
+              "confidence": 0.85,
+              "quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were"
+            },
+            {
+              "industry_key": "TRSR:63413103cd2e9419",
+              "industry_scope_quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were",
+              "industry_name_original": "Office Equipment/Supplies/Services",
+              "mechanism": "financial restructuring",
+              "confidence": 0.85,
+              "quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "c72bf9f61fee6c1125e59967bddcf1e5ed7c44f6cf2bb3c06e4e8af794926a1e",
+      "llm_inferred_at": "2026-11-18T11:34:35.189576+00:00",
+      "model_duration_seconds": 21.1455339,
+      "prompt_tokens": 2619,
+      "completion_tokens": 1155,
+      "selection": [
+        {
+          "source_id": "336b5b334028b27cb279293f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),",
+              "rationale": "The termination of the Butler Credit Agreement, which was part of the financial operations of Henry Schein, Inc., indicates a significant event within the financial services industry, particularly in the context of credit facilities and corporate financing.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),",
+              "rationale": "The event directly pertains to Butler Animal Health Supply, LLC, a majority-owned subsidiary of Henry Schein, Inc., indicating a company-specific financial action.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "name": "Water Supply",
+              "basis": "explicit",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),"
+            },
+            {
+              "industry_key": "TRSR:63413103cd2e9419",
+              "name": "Office Equipment/Supplies/Services",
+              "basis": "explicit",
+              "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5a1ca96aff27fa15",
+              "industry_scope_quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were",
+              "industry_name_original": "Water Supply",
+              "mechanism": "financial restructuring",
+              "confidence": 0.85,
+              "quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "financial restructuring",
+              "confidence": 0.85,
+              "quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were"
+            },
+            {
+              "industry_key": "TRSR:63413103cd2e9419",
+              "industry_scope_quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were",
+              "industry_name_original": "Office Equipment/Supplies/Services",
+              "mechanism": "financial restructuring",
+              "confidence": 0.85,
+              "quote": "Lenders, and the Butler Credit Agreement was terminated. The Butler Credit Agreement provided for a $50 million revolving credit facility and a $100 million term loan which were"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:34:35.202637+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2d4ff7024adaecc2aa659787be279db880437b4ed894af93879ea4d56b2df3de",
+    "raw_sha256": "8c6383599bbafc3062f1bb29e2d761ade53d90adb1900ebc569443c88fa7e402",
+    "date_quote": "SEC filing datePublished=2013-02-22",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312513071191/d490173d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The summary discusses financial management, debt restructuring, and the termination of a credit agreement, which are relevant to the company's financial status.",
+    "securities": [
+      {
+        "name": "Butler Animal Health Supply, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Butler Animal Health Supply, LLC"
+      },
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Butler Animal Health Supply, LLC": "company",
+      "Henry Schein, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "336b5b334028b27cb279293f",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_02_22_Debt-Settlement_Healthcare-Distribution_sec.json",
+        "sha256": "d8e4a96c89254ac1a69d8adb5d6a34889362beaa390cd3502d3b8d62d113ffb6",
+        "filename": "2013_02_22_Debt-Settlement_Healthcare-Distribution_sec.json"
+      }
+    ],
+    "original_record_hash": "9d74c12404675298bd4bc8de3345f7ced52c1b69f7d451606d0d4f6304d2b787",
+    "input_hash": "bc6e6436028181d36d773908c359a33ce846606cbfc683e65cededf553fd09cd",
+    "matching_audit_hash": "6554aa0b735e79c86b770d723cce90d65c4037f403031ada89b80e455dc8b7c6",
+    "legacy_security_evidence": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      },
+      {
+        "name": "Butler Animal Health Supply, LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Butler Animal Health Supply, LLC"
+      }
+    ],
+    "record_hash": "1f2ce8b29955a1913b2618404fd3b8d8a4204bcb9ca4c4963fa9125d6bf27b87",
+    "outputs": [
+      {
+        "path": "US\\2013_02_22_Debt-Settlement_Healthcare-Distribution_sec.json",
+        "sha256": "db5d798618409b29a31caab896039234b56bf2b519699998110cb58d6c03dcdd"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-02-22",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+      "fetched_at": "2026-11-10T23:13:52.406049+00:00",
+      "feature_available_at": "2026-11-11T09:49:01.372642+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:34:35.189576+00:00",
+    "feature_available_at": "2026-11-18T11:34:35.202637+00:00",
+    "commit_verified_at": "2026-11-12T14:04:08.351232+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),",
+        "rationale": "The event directly pertains to Butler Animal Health Supply, LLC, a majority-owned subsidiary of Henry Schein, Inc., indicating a company-specific financial action.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "all of the outstanding obligations under the Credit Agreement, dated as of December 31, 2009, as amended on December 21, 2010 and May 27, 2011 (the Butler Credit Agreement),",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_impact_unverified",
+      "industry_mention_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000228/0001193125-13-071191-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "1f2ce8b29955a1913b2618404fd3b8d8a4204bcb9ca4c4963fa9125d6bf27b87",
+    "content_hash": "2d4ff7024adaecc2aa659787be279db880437b4ed894af93879ea4d56b2df3de",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:34:35.191495+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/336b5b334028b27cb279293f.json",
+      "sha256": "879714980db442011194221b77f4491350e9fc5194ad1340d5b4cdfb80812d8b",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 52.03100000001723
+}

@@ -1,0 +1,108 @@
+{
+  "source_id": "1c55fe15e134d09c128bc98b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_12_01_Acquisition_Transportation_sec.json",
+      "sha256": "7994bb9bd8fc3dc5f6decce38adce2b6c400e8152e0ecb86cbab7e045bc9bdcc",
+      "filename": "2016_12_01_Acquisition_Transportation_sec.json"
+    }
+  ],
+  "original_record_hash": "fa64f77abc766b9c3fe34e254b75e534261d5f8d6021658ae250a91a21267515",
+  "input_hash": "035b5feb689143d966895d8ecd8b14d9d03a8679881c3bfd1ba12d90b41ca360",
+  "matching_audit_hash": "3d4696f97856e7d514711f5f7ca79aad083746857744014c245408b30a2261bd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "93999a14471aa3e848bfdbd6347f17ba7337f99801c11655ae2bd68e6c215d74",
+    "raw_sha256": "77aa6f4c85a6b65a1a8b6e534af06cf2295f29b67d1f9e9a310b56c326177c58",
+    "date_quote": "SEC filing datePublished=2016-12-01",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/943452/000119312516781600/d303727d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Westinghouse Air Brake Technologies Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Westinghouse Air Brake Technologies Corporation"
+    },
+    {
+      "name": "Faiveley Transport",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Faiveley Transport"
+    }
+  ],
+  "record_hash": "e0ab22e07a0a6d089e1b0cf9e217df4791fa05ce44acde4547b0e7404887da72",
+  "outputs": [
+    {
+      "path": "US\\2016_12_01_Acquisition_Transportation_sec.json",
+      "sha256": "057a77f612d8db4311e5bc630a2af91f2f2e251a2697240b5f80db396e276181"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-12-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:06.146425+00:00",
+    "fetched_at": "2026-11-11T11:30:55.809486+00:00",
+    "feature_available_at": "2026-11-11T11:31:24.415515+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:10.439912+00:00",
+  "commit_verified_at": "2026-11-12T13:53:10.439912+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Westinghouse Air Brake Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Westinghouse Air Brake Technologies Corporation"
+      },
+      {
+        "name": "Faiveley Transport",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Faiveley Transport"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Transportation",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

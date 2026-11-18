@@ -1,0 +1,107 @@
+{
+  "source_id": "0af50b848fa1d1ec01b29877",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_07_18_Finance_Entertainment_cnbc.json",
+      "sha256": "8fe817d4786b412cec6c735d05fb053c8a311d2f0eb3c8d4ad50c4c2238b31ea",
+      "filename": "2016_07_18_Finance_Entertainment_cnbc.json"
+    }
+  ],
+  "original_record_hash": "ae36b3831d05618fddbc7cdab97dbb06f50cf41da5d1629edf4b48ffc861ff01",
+  "input_hash": "3b4605aa4bc277f59446950da4b825783dad6c2844a215baf8c334240acf0d83",
+  "matching_audit_hash": "93ab1abc2dec3dff8c0bb7806ecd9e416cd3b88f590d125fdcf2b760a12e8d42",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6f38f8c82658fbf7dcdf4f5da91cdd77c769a97db1dfedd5577e78a1fcc23472",
+    "raw_sha256": "5d28d1037b932864b8c90f5a8d8f757aba5cb7c5928d8f50c1d500e15c628434",
+    "date_quote": "article:published_time=2016-07-18T22:04:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Netflix",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Netflix"
+    }
+  ],
+  "record_hash": "1fc8b0b2a7f401bfb9fab5a477384eb13bb79b68842670a47ec656afcaf345c5",
+  "outputs": [
+    {
+      "path": "US\\2016_07_18_Finance_Entertainment_cnbc.json",
+      "sha256": "4fe49753508b0fb1fd12bebcaf765e5178cbb105055b10e60491b0eb6def7e96"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-07-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:04.923930+00:00",
+    "fetched_at": "2026-11-11T04:36:55.802634+00:00",
+    "feature_available_at": "2026-11-11T04:37:28.213596+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:08.850916+00:00",
+  "commit_verified_at": "2026-11-12T13:53:08.850916+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Netflix",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Netflix"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Streaming Services",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Media",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

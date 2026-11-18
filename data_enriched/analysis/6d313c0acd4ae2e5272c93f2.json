@@ -1,0 +1,136 @@
+{
+  "source_id": "6d313c0acd4ae2e5272c93f2",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_03_24_Water-Infrastructure_Public-Utilities_cnbc.json",
+      "sha256": "37d4a8efcdcdf48a1204ebd546a91606a40fc3031a60c4b97b59db3b2c6d73e1",
+      "filename": "2016_03_24_Water-Infrastructure_Public-Utilities_cnbc.json"
+    }
+  ],
+  "original_record_hash": "bfdd2a012f100a4073376fa4031ff47ae373440cf1783dcac3bdd5f5785a0cca",
+  "input_hash": "060eac85e793e9a9c21b7978075fe09cfe1fa9b125abac018913e9d72e4db7d8",
+  "matching_audit_hash": "3fa0ba388430480ed5d4bb5bc19c670bf6ca713a246ce04affb05c08da6f6086",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ca3f911d5f40458027272ad5acf6d43ad22c6a9852b03a5e1d2f5e39729c574f",
+    "raw_sha256": "5155f7dfadb858e3632b16143a4f932178a90183e66247f1651acae1c047b746",
+    "date_quote": "article:published_time=2016-03-24T14:31:41+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d15b56eb3ad7cf58e302c950b8522f7c5a383e4175381751934e06cd93135a56",
+  "outputs": [
+    {
+      "path": "US\\2016_03_24_Water-Infrastructure_Public-Utilities_cnbc.json",
+      "sha256": "e7cb44f7f9cdf0636e0e2888b51b1225e3cb8925efa2265305d61045ba205f42"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-03-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:56.866577+00:00",
+    "fetched_at": "2026-11-10T14:49:45.931281+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.391273+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:31:22.594775+00:00",
+  "feature_available_at": "2026-11-12T14:31:22.628299+00:00",
+  "commit_verified_at": "2026-11-12T14:31:22.628299+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the water crisis in the United States, focusing on infrastructure issues, lead contamination, and the need for investment and policy changes.",
+    "securities": [
+      {
+        "name": "White House",
+        "ticker": null,
+        "exchange": null,
+        "quote": "White House"
+      },
+      {
+        "name": "Environmental Protection Agency (EPA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Environmental Protection Agency (EPA)"
+      },
+      {
+        "name": "American Society of Civil Engineers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American Society of Civil Engineers"
+      },
+      {
+        "name": "Brookings Institution",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookings Institution"
+      },
+      {
+        "name": "Clean Water Action",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Clean Water Action"
+      },
+      {
+        "name": "Natural Resources Defense Council",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Natural Resources Defense Council"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Water Infrastructure",
+        "basis": "explicit",
+        "quote": "Water Infrastructure"
+      },
+      {
+        "name": "Environmental Regulation",
+        "basis": "inferred",
+        "quote": "Environmental Protection Agency (EPA)"
+      },
+      {
+        "name": "Public Health",
+        "basis": "inferred",
+        "quote": "public health"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "White House": "organization",
+      "Environmental Protection Agency (EPA)": "organization",
+      "American Society of Civil Engineers": "organization",
+      "Brookings Institution": "organization",
+      "Clean Water Action": "organization",
+      "Natural Resources Defense Council": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

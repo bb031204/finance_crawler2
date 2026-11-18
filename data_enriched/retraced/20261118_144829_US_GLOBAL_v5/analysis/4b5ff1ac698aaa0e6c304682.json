@@ -1,0 +1,415 @@
+{
+  "source_id": "4b5ff1ac698aaa0e6c304682",
+  "status": "completed",
+  "source_record_hash": "080c48e8b00431d8efd861c5df6f92702651fb9d32f9eeeccbe5f7f6f1412813",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000683/0001213900-22-016431-index.html",
+    "attempted_at": "2026-11-18T13:51:38.994994+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000683/0001213900-22-016431-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390022016431/ea157632-8k_blondertong.htm",
+    "fetched_at": "2026-11-18T13:51:51.880012+00:00",
+    "source_body_hash": "8db1db8ae6b1096d68de577fb27bf6b6d62bf48c6ff41f88a6b0c37d2b8dc33a",
+    "raw_sha256": "f8263d02babe8a0236c75be3fc17632911d96e9ef7d0e3d0b6a62892b7b5111a",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390022016431/ea157632-8k_blondertong.htm",
+        "type": "8-K",
+        "description": "CURRENT REPORT",
+        "raw_sha256": "f8263d02babe8a0236c75be3fc17632911d96e9ef7d0e3d0b6a62892b7b5111a",
+        "text_sha256": "05e1197344f3ddb4bd0174c68dfb5b39805ae28ab81e570671ff7f6c1a045856",
+        "text_start": 0,
+        "text_end": 3127
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390022016431/ea157632ex99-1_blonder.htm",
+        "type": "EX-99.1",
+        "description": "PRESS RELEASE DATED MARCH 31, 2022",
+        "raw_sha256": "29cc61faa9d189f6dfee5674a49bfc245dbdd1a0dd373f08692b2fec5eaac9ca",
+        "text_sha256": "4a290ea897d7449dda324a49759e61b89f2e663256ce7ca0483265ee331bf892",
+        "text_start": 3129,
+        "text_end": 15186
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2022-03-31",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/4b5ff1ac698aaa0e6c304682.json",
+    "sha256": "a87252983e31e0a1585976ca0518e7bb67c9e1d5cac59a6952516ade1101abae",
+    "bundled_path": "legacy_audit/4b5ff1ac698aaa0e6c304682.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "8965d48c1f6f766808123836ab96a7d68b1b7932b329b0bdea53f661b4ba62b5",
+      "llm_inferred_at": "2026-11-18T13:52:08.294125+00:00",
+      "model_duration_seconds": 16.3826339,
+      "prompt_tokens": 4258,
+      "completion_tokens": 645,
+      "selection": [
+        {
+          "source_id": "4b5ff1ac698aaa0e6c304682",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022.",
+              "rationale": "The reduction in CPE products is attributed to a shift in the industry's focus, indicating an industry-wide impact on product demand.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022.",
+              "rationale": "The reduction in CPE products is directly linked to the company's strategic decision to deemphasize this product line.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company experienced a reduction in analog modulation products due to the continued market shift away from analog modulation solutions.",
+              "rationale": "The market shift away from analog modulation solutions indicates an industry-wide trend affecting product demand.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "name": "Semiconductors",
+              "basis": "explicit",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022."
+            },
+            {
+              "industry_key": "TRSR:4fb8be5e521154e9",
+              "name": "Consumer Electronics/Video Chains",
+              "basis": "explicit",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022."
+            },
+            {
+              "industry_key": "TRSR:8ac751df05daf05e",
+              "name": "Electronics Distribution",
+              "basis": "explicit",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "c5d5b6d42393976ad88df8c571d29efd5bb7a966a688c140324ae9134157b6bf",
+      "llm_inferred_at": "2026-11-18T13:52:20.875382+00:00",
+      "model_duration_seconds": 12.5633794,
+      "prompt_tokens": 4302,
+      "completion_tokens": 637,
+      "selection": [
+        {
+          "source_id": "4b5ff1ac698aaa0e6c304682",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022.",
+              "rationale": "The reduction in CPE products is attributed to a shift in the industry's focus, indicating an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022.",
+              "rationale": "The reduction in CPE products is directly tied to the company's strategic decisions and market conditions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company experienced a reduction in analog modulation products due to the continued market shift away from analog modulation solutions.",
+              "rationale": "The market shift away from analog modulation solutions indicates an industry-wide trend affecting the company.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:903e395633396020",
+              "name": "Semiconductors",
+              "basis": "explicit",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022."
+            },
+            {
+              "industry_key": "TRSR:4fb8be5e521154e9",
+              "name": "Consumer Electronics/Video Chains",
+              "basis": "explicit",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022."
+            },
+            {
+              "industry_key": "TRSR:8ac751df05daf05e",
+              "name": "Electronics Distribution",
+              "basis": "explicit",
+              "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "4b537fc000720574a4a6293e697f3816cc62734ce117533571519a1d483d60e0",
+      "llm_inferred_at": "2026-11-18T13:52:31.215244+00:00",
+      "model_duration_seconds": 10.315776,
+      "prompt_tokens": 3600,
+      "completion_tokens": 460,
+      "selection": [
+        {
+          "source_id": "4b5ff1ac698aaa0e6c304682",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Blonder Tongue Labs offers U.S.-based engineering and manufacturing excellence with an industry reputation for delivering ultra-high reliability products.",
+              "rationale": "The text explicitly mentions the industry reputation of Blonder Tongue Labs, which is in the telecommunications and cable television video transmission technology sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company had approximately $92,000 and approximately $609,000 availability for borrowing under the MidCap Facility, as of December 31 2021 and 2020, respectively.",
+              "rationale": "The text refers to the company's financial position and borrowing availability, which is specific to Blonder Tongue Laboratories, Inc.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7664f68f90787500",
+              "name": "Telecommunications Equipment",
+              "basis": "explicit",
+              "quote": "Blonder Tongue Labs offers U.S.-based engineering and manufacturing excellence with an industry reputation for delivering ultra-high reliability products."
+            },
+            {
+              "industry_key": "SEC-SIC:4841",
+              "name": "CABLE & OTHER PAY TELEVISION SERVICES",
+              "basis": "explicit",
+              "quote": "Blonder Tongue Labs offers U.S.-based engineering and manufacturing excellence with an industry reputation for delivering ultra-high reliability products."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "501075d74fa28ff6cd2361042a97c300e4819f88d00b0a64cf0c51716a6a12bc",
+      "llm_inferred_at": "2026-11-18T13:52:39.971339+00:00",
+      "model_duration_seconds": 8.7418229,
+      "prompt_tokens": 3644,
+      "completion_tokens": 450,
+      "selection": [
+        {
+          "source_id": "4b5ff1ac698aaa0e6c304682",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Blonder Tongue Labs offers U.S.-based engineering and manufacturing excellence with an industry reputation for delivering ultra-high reliability products.",
+              "rationale": "The text explicitly mentions the industry of telecommunications and cable television video transmission technology, which is a sector-wide description.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Company had approximately $92,000 and approximately $609,000 availability for borrowing under the MidCap Facility, as of December 31 2021 and 2020, respectively.",
+              "rationale": "The text refers to the company's financial position and borrowing availability, which is specific to the company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7664f68f90787500",
+              "name": "Telecommunications Equipment",
+              "basis": "explicit",
+              "quote": "Blonder Tongue Labs offers U.S.-based engineering and manufacturing excellence with an industry reputation for delivering ultra-high reliability products."
+            },
+            {
+              "industry_key": "SEC-SIC:4841",
+              "name": "CABLE & OTHER PAY TELEVISION SERVICES",
+              "basis": "explicit",
+              "quote": "Blonder Tongue Labs offers U.S.-based engineering and manufacturing excellence with an industry reputation for delivering ultra-high reliability products."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:52:39.996511+00:00",
+  "audit": {
+    "source_id": "4b5ff1ac698aaa0e6c304682",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000683/0001213900-22-016431-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2022-03-31",
+    "date_quote": "SEC filing datePublished=2022-03-31",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "8db1db8ae6b1096d68de577fb27bf6b6d62bf48c6ff41f88a6b0c37d2b8dc33a",
+    "raw_sha256": "f8263d02babe8a0236c75be3fc17632911d96e9ef7d0e3d0b6a62892b7b5111a",
+    "first_seen_at": "2026-11-11T04:55:59.000366+00:00",
+    "fetched_at": "2026-11-12T07:02:10.405841+00:00",
+    "first_extracted_at": "2026-11-12T07:02:22.049589+00:00",
+    "extracted_at": "2026-11-18T13:52:39.977344+00:00",
+    "feature_available_at": "2026-11-18T13:52:39.996511+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "080c48e8b00431d8efd861c5df6f92702651fb9d32f9eeeccbe5f7f6f1412813",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2022_03_31_regulation-policy_Electronics_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\52e112f653af52c5a213eb1e7c0701f550c17cf72ae7407af8649aa6af7f1388.json",
+      ".runtime\\simple\\model_cache\\d5b94992bc486559b85527aba35d46d95e5fafafa05a729eacc9c3e5e5877e37.json",
+      ".runtime\\simple\\pages\\4b5ff1ac698aaa0e6c304682.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000121390022016431/ea157632-8k_blondertong.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1000683/0001213900-22-016431-index.html",
+    "title": null,
+    "title_origin": "unknown",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T13:52:39.971339+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "d11c632400681692efc886eff2c11c964b80d659f3e58f21d0065173263d378f",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "earnings",
+        "subject": "Blonder Tongue Laboratories, Inc.",
+        "action": null,
+        "object": "Financial Results",
+        "key_period": null,
+        "key_values": "Fourth Quarter and Year Ended December 31, 2021",
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Blonder Tongue Laboratories, Inc. issued a press release announcing its financial results for the fourth quarter and year ended December 31, 2021."
+      }
+    ],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "082bd003d1f5cd7a7c486a2f430cace5bd48de79c65c12efdfaecc4e5e0c1087",
+    "commit_verified_at": "2026-11-12T07:02:22.069273+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T07:02:22.147931+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\4b5ff1ac698aaa0e6c304682.json",
+      ".runtime\\simple\\model_cache\\52e112f653af52c5a213eb1e7c0701f550c17cf72ae7407af8649aa6af7f1388.json",
+      ".runtime\\simple\\model_cache\\d5b94992bc486559b85527aba35d46d95e5fafafa05a729eacc9c3e5e5877e37.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022.",
+        "rationale": "The reduction in CPE products is directly tied to the company's strategic decisions and market conditions.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Company experienced a reduction in CPE products during 2021 due to the deemphasis of this product line, which the Company expects to continue into 2022.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The Company had approximately $92,000 and approximately $609,000 availability for borrowing under the MidCap Facility, as of December 31 2021 and 2020, respectively.",
+        "rationale": "The text refers to the company's financial position and borrowing availability, which is specific to the company.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Company had approximately $92,000 and approximately $609,000 availability for borrowing under the MidCap Facility, as of December 31 2021 and 2020, respectively.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "080c48e8b00431d8efd861c5df6f92702651fb9d32f9eeeccbe5f7f6f1412813",
+    "source_verification": "original_body_or_publication_revalidated",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "retrace_original",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/4b5ff1ac698aaa0e6c304682.json",
+      "sha256": "8385ce22c30cd09d64088489521c834fb2fd3f07b49e08f37a168d4f93f30ba9",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 61.01600000000326
+}

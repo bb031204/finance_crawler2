@@ -1,0 +1,97 @@
+{
+  "source_id": "cbb211e3c294ee086c4c7ecd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_02_02_Finance_Semiconductor_cnbc.json",
+      "sha256": "e92ba97c154122dbd2802aa82edbc000c77139f83de9eef7dd052e2b4eb18baa",
+      "filename": "2022_02_02_Finance_Semiconductor_cnbc.json"
+    }
+  ],
+  "original_record_hash": "eca687a8d0dec100072f16d80eff8b4a36ca3b2f2c4bc55f4e087251a97484b9",
+  "input_hash": "c54d93ed9a2dd393a2bd3c53e3f1a5a924ad60e4d6d0825ab391b65ac9644d21",
+  "matching_audit_hash": "a95ed5596168018e9d16e06e35ebfbffbf0f79a5ca5954413ea45299e07900a8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a02fa2d3da515829bc187ebdead30b45c5188a3fb90d54f98995bbfe4578d0d3",
+    "raw_sha256": "51b6be93c536845155467f074cbb370c294a2e36d96e3ec3792ed3e63ada8986",
+    "date_quote": "article:published_time=2022-02-02T21:08:44+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Qualcomm",
+      "ticker": "QCOM",
+      "exchange": null,
+      "quote": "Qualcomm (QCOM) earnings Q1 2022"
+    }
+  ],
+  "record_hash": "2faf6cdbd7213001a23a9af2c758a9a72efa321428b8c449a95e2db87decb27e",
+  "outputs": [
+    {
+      "path": "US\\2022_02_02_Finance_Semiconductor_cnbc.json",
+      "sha256": "8b251e0ec8f9988e094e17a4aa52831b4bed3c181af056dd6cadecd02c14284c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-02-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:19.442325+00:00",
+    "fetched_at": "2026-11-10T20:25:50.640584+00:00",
+    "feature_available_at": "2026-11-10T20:26:18.613175+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:39.640253+00:00",
+  "commit_verified_at": "2026-11-12T13:53:39.640253+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Qualcomm",
+        "ticker": "QCOM",
+        "exchange": null,
+        "quote": "Qualcomm (QCOM) earnings Q1 2022"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "source_id": "1cfc91602d6e4e7adccf7257",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_10_30_Bankruptcy_Energy_cnbc.json",
+      "sha256": "7fa054156fc4a3ac228b3467416cefd13e901914ada6327e155cd5cc67f31443",
+      "filename": "2013_10_30_Bankruptcy_Energy_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2013_10_30_Bankruptcy_Energy_cnbc.json",
+      "sha256": "7fa054156fc4a3ac228b3467416cefd13e901914ada6327e155cd5cc67f31443",
+      "filename": "2013_10_30_Bankruptcy_Energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "0f024185c7c513ca46481d5db2235a497d33f295934fdcf4d603cc05e6e4db54",
+  "input_hash": "ca28472ebffa95c28fc081b934b67d9abbd9af6ef7658654dc1265d30cac26df",
+  "matching_audit_hash": "81f284aeeffc82dff774a89795e84dcf371cbd5b478a5f438816ec4683e8210c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d2785673b8a1928bc682d11803d978a16b9fa94efedfb9c8dba402b5d4dd2ba9",
+    "raw_sha256": "7a18c09c38964d4255418b94c5f23f07bde2b6908b28228cdc126901b7bfe8ea",
+    "date_quote": "article:published_time=2013-10-30T19:12:23+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "225c134918e5b83819d950bca5949b1cba61e9d5f9481dc9285c9078ec556ef5",
+  "outputs": [
+    {
+      "path": "US\\2013_10_30_Bankruptcy_Energy_cnbc.json",
+      "sha256": "e522b5f834ada5ea372e144669444294c59df26122673c50ce8aefa95fd259bb"
+    },
+    {
+      "path": "GLOBAL\\2013_10_30_Bankruptcy_Energy_cnbc.json",
+      "sha256": "e522b5f834ada5ea372e144669444294c59df26122673c50ce8aefa95fd259bb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-10-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:02:38.478184+00:00",
+    "fetched_at": "2026-11-10T13:31:32.258562+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.032116+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:10:58.869262+00:00",
+  "feature_available_at": "2026-11-12T14:10:58.916335+00:00",
+  "commit_verified_at": "2026-11-12T14:10:58.916335+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses OGX's bankruptcy filing, its debt restructuring crisis, and the impact on Brazil's economy.",
+    "securities": [
+      {
+        "name": "OGX",
+        "ticker": null,
+        "exchange": null,
+        "quote": "OGX"
+      },
+      {
+        "name": "EBX Group Co. Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EBX Group Co. Ltd."
+      },
+      {
+        "name": "Pimco",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pimco"
+      },
+      {
+        "name": "BlackRock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "BlackRock"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": "OGX"
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": "Pimco and BlackRock"
+      },
+      {
+        "name": "Economy",
+        "basis": "inferred",
+        "quote": "Brazil's economy"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "OGX": "company",
+      "EBX Group Co. Ltd.": "company",
+      "Pimco": "company",
+      "BlackRock": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

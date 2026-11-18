@@ -1,0 +1,233 @@
+{
+  "source_id": "14d2af68c6d5b938c0e3bac6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_07_12_Beauty_Beauty_cnbc.json",
+      "sha256": "5ef79500db09e42724504b43871eac90811c0449500df2ccf87c984eb3cf3d95",
+      "filename": "2019_07_12_Beauty_Beauty_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2019_07_12_Beauty_Beauty_cnbc.json",
+      "sha256": "5ef79500db09e42724504b43871eac90811c0449500df2ccf87c984eb3cf3d95",
+      "filename": "2019_07_12_Beauty_Beauty_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d548ae703eb78e509eb08126d3c21751d9ba9f73614adfd09e07a7da6b0fa97b",
+  "input_hash": "20ebac08061ea2f01edd118b6d079fbf500ba637cb6826865d090fa430d7b5e7",
+  "matching_audit_hash": "f42671a99b75f622dd976acf3f7d1f51565d0f6c2688c0adbc056b98ee06e2ba",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "12f571075452c86b741ae725db7d8d6911a978eefcb9b7507bf54163b839e4a9",
+    "raw_sha256": "1217b72717e223963430c631679e837b706cf7fc496c38e2d34ffa9a7b367917",
+    "date_quote": "article:published_time=2019-07-12T11:17:13+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7831cee7f12f0effb1fe68d32a59e76f9ec5c6c862dc9ce9e6c4b080b9f8da6b",
+  "outputs": [
+    {
+      "path": "US\\2019_07_12_Beauty_Beauty_cnbc.json",
+      "sha256": "8b45bd6220ce20817a1efb084260246cff7472f550b9f51d21e2fe2794b862c3"
+    },
+    {
+      "path": "GLOBAL\\2019_07_12_Beauty_Beauty_cnbc.json",
+      "sha256": "8b45bd6220ce20817a1efb084260246cff7472f550b9f51d21e2fe2794b862c3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-07-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:08.297631+00:00",
+    "fetched_at": "2026-11-10T20:05:49.911061+00:00",
+    "feature_available_at": "2026-11-10T20:05:56.997984+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:11:47.660109+00:00",
+  "feature_available_at": "2026-11-12T15:16:45.986606+00:00",
+  "commit_verified_at": "2026-11-12T15:16:45.986606+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "Highlights growth and global influence of K-beauty in skin care",
+    "securities": [
+      {
+        "name": "K-beauty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "K-beauty"
+      },
+      {
+        "name": "Kylie Skin",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kylie Skin"
+      },
+      {
+        "name": "Sephora",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sephora"
+      },
+      {
+        "name": "Amazon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Amazon"
+      },
+      {
+        "name": "Canopy Growth",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Canopy Growth"
+      }
+    ],
+    "industries": [
+      {
+        "name": "skin care",
+        "basis": "explicit",
+        "quote": "skin care"
+      },
+      {
+        "name": "beauty industry",
+        "basis": "explicit",
+        "quote": "beauty industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "K-beauty": "brand",
+      "Kylie Skin": "brand",
+      "Sephora": "brand",
+      "Amazon": "company",
+      "Canopy Growth": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:46.016570+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:11:47.660109+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Highlights growth and global influence of K-beauty in skin care",
+      "securities": [
+        {
+          "name": "K-beauty",
+          "ticker": null,
+          "exchange": null,
+          "quote": "K-beauty"
+        },
+        {
+          "name": "Kylie Skin",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Kylie Skin"
+        },
+        {
+          "name": "Sephora",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Sephora"
+        },
+        {
+          "name": "Amazon",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Amazon"
+        },
+        {
+          "name": "Canopy Growth",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Canopy Growth"
+        }
+      ],
+      "industries": [
+        {
+          "name": "skin care",
+          "basis": "explicit",
+          "quote": "skin care"
+        },
+        {
+          "name": "beauty industry",
+          "basis": "explicit",
+          "quote": "beauty industry"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "K-beauty": "brand",
+        "Kylie Skin": "brand",
+        "Sephora": "brand",
+        "Amazon": "company",
+        "Canopy Growth": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:11:47.703320+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:11:47.718243+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:11:47.686103+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the growth of the skin care industry, mentions K-beauty's global influence, and references major brands entering the market, which provides a",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:49:51.954479+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

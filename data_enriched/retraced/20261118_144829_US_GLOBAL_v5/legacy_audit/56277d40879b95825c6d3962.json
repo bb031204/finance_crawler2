@@ -1,0 +1,98 @@
+{
+  "source_id": "56277d40879b95825c6d3962",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_01_20_Compensation-and-Agreements_Healthcare-Distribution_sec.json",
+      "sha256": "d9b45079a02e474558dcfa0ebadb9f98a1fa152a1e38f026acaedc35dc344440",
+      "filename": "2012_01_20_Compensation-and-Agreements_Healthcare-Distribution_sec.json"
+    }
+  ],
+  "original_record_hash": "f52ff52c183b985bcad592ae3ba49fc579c24150da6ea1b7ece1f4e210f0dc33",
+  "input_hash": "f75aa57367da40d2f6357a863338bfff3681a1886cf2afe31cfed99b723688a4",
+  "matching_audit_hash": "d9f683cd82055d02f62ba13f5f52e51a6a74ee9cb2c0334449378590ea7283fe",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9dc0487dd1aa7df2502ff33317c5a36404f013daf05b7d5dd8d49ebca270c094",
+    "raw_sha256": "81426fac79518c8832cccfc5feddc09b87d087fcc8244924ff2ed1a00b4f3583",
+    "date_quote": "SEC filing datePublished=2012-01-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000228/000119312512018752/d285204d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Henry Schein, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Henry Schein, Inc."
+    }
+  ],
+  "record_hash": "97d974154951559fb2775d375cb20522eb79aefb9159fbc7f756d8e6d697309d",
+  "outputs": [
+    {
+      "path": "US\\2012_01_20_Compensation-and-Agreements_Healthcare-Distribution_sec.json",
+      "sha256": "91d201845831618c2efc0cff45a2a2edc10af81ba6b692bb96dd8282a22a7663"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-01-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:33:21.605138+00:00",
+    "feature_available_at": "2026-11-11T09:32:24.980839+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T13:54:03.065710+00:00",
+  "feature_available_at": "2026-11-12T13:54:03.099771+00:00",
+  "commit_verified_at": "2026-11-12T13:54:03.099771+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses amendments to compensation agreements affecting executive officers in the healthcare distribution industry, including changes to incentive",
+    "securities": [
+      {
+        "name": "Henry Schein, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Henry Schein, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "healthcare distribution industry",
+        "basis": "explicit",
+        "quote": "healthcare distribution industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Henry Schein, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

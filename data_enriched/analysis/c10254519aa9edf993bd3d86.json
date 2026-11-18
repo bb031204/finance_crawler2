@@ -1,0 +1,95 @@
+{
+  "source_id": "c10254519aa9edf993bd3d86",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_05_Finance_Beauty_sec.json",
+      "sha256": "219c75c34478f54f9c4e30d53d5c4bb24c77fcb9b0544268e46ac39ae9bba700",
+      "filename": "2014_02_05_Finance_Beauty_sec.json"
+    }
+  ],
+  "original_record_hash": "93e114d4fa2deefd89966c37fdaf5492b19e46b537c60e934993be6e422d6ecd",
+  "input_hash": "095965e2c22fa5fcf6b21c8685e148fca30003250f211b6b892ccf0785cf9274",
+  "matching_audit_hash": "26f0fded678f0cceb6cf62ae7916bec54d46961a6b74fa71123379b686314bf8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7405bf5461370b4958f41c71fb8c75dfe70a41630b9c28b17ea7ea4a2aa50f5a",
+    "raw_sha256": "745bcf99a139a1210edb6a584960f3bd967458e61dff570d81aad50c02f8a241",
+    "date_quote": "Date of Report (Date of earliest event reported) February 5, 2014",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000110465914006534/a14-4848_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Estée Lauder Companies Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Estée Lauder Companies Inc. (the Company)"
+    }
+  ],
+  "record_hash": "cf30850f87f30f112f2db2a69811993aeff4a69c8e55c9c70114439e40f7c2f0",
+  "outputs": [
+    {
+      "path": "US\\2014_02_05_Finance_Beauty_sec.json",
+      "sha256": "3b21a4cd4986ce899d906fae28b0482d8020acdaecfb7d2a3da76d4f61336f19"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.920249+00:00",
+    "fetched_at": "2026-11-11T00:10:36.081872+00:00",
+    "feature_available_at": "2026-11-11T00:10:50.501973+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:49.212554+00:00",
+  "commit_verified_at": "2026-11-12T13:52:49.212554+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Estée Lauder Companies Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Estée Lauder Companies Inc. (the Company)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

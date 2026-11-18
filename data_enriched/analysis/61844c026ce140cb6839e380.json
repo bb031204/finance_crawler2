@@ -1,0 +1,158 @@
+{
+  "source_id": "61844c026ce140cb6839e380",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_23_Compensation_Technology_sec.json",
+      "sha256": "e8853f1ae32076924b4802fabbcb7f445d103e1f9f4f49378b502b44f622c78e",
+      "filename": "2015_02_23_Compensation_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "55df5f10d34f93feae9c88748992e723df7510759b552ebb87c5268f361145f9",
+  "input_hash": "47cadb250bcbd23fa1d7f01d60ca4048e33fccec326f1172b61d41ec49eb3755",
+  "matching_audit_hash": "00e5e0f06ef2bb0bfc375983e418877e65f3db00a57008f5e70a66bf6627e2aa",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "16339f611ef1c5fdad7a44e33e8835304ecb72d47e385932428c2eefeef56c20",
+    "raw_sha256": "2e6443c62ca4388dc412ab0e70c8ea4015eb57ba21401e34081050302992ca70",
+    "date_quote": "SEC filing datePublished=2015-02-23",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000180/000100018015000018/a2015-q18xkexeccomp.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SanDisk Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SanDisk Corporation"
+    }
+  ],
+  "record_hash": "721da0f3c077a3acebe5119f3b297e685d1de51aa3988cea417e460620767a8b",
+  "outputs": [
+    {
+      "path": "US\\2015_02_23_Compensation_Technology_sec.json",
+      "sha256": "dad181483699f7151ead9db762250d4ff854f93baf815e41e574ee21f5e94ca4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:16:04.873004+00:00",
+    "feature_available_at": "2026-11-11T10:28:45.601802+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:07.399166+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.285129+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.285129+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Compensation changes for executives at SanDisk Corporation",
+    "securities": [
+      {
+        "name": "SanDisk Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "SanDisk Corporation"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "SanDisk Corporation": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.313673+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:07.399166+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Compensation changes for executives at SanDisk Corporation",
+      "securities": [
+        {
+          "name": "SanDisk Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "SanDisk Corporation"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Technology",
+          "basis": "inferred",
+          "quote": "SanDisk Corporation"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "SanDisk Corporation": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:07.423409+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:07.432759+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:07.414636+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary contains information about officer compensation, including bonuses, base salaries, and target bonus percentages for fiscal year 2015 for the Named-1",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:21:47.675061+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

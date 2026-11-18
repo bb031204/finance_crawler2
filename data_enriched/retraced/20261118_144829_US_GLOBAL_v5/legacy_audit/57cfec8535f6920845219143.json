@@ -1,0 +1,129 @@
+{
+  "source_id": "57cfec8535f6920845219143",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_04_07_Real-Estate_Senior-Living_yahoo.json",
+      "sha256": "e7dc2607e1d9c209f6ae2ad5d6311f347b05a29ec25c90ed80a28605ce40089b",
+      "filename": "2017_04_07_Real-Estate_Senior-Living_yahoo.json"
+    }
+  ],
+  "original_record_hash": "45c19d362564ddb65aa76016ea20e65f8c13672a3f45880fb675b85fa588c457",
+  "input_hash": "87550927fa62fcad16d4ca26f47ab95d78705161f68800494817562de31942e7",
+  "matching_audit_hash": "576638f56be8f58b78728448ab0d5e4d6e5d144a1955dea3b0c1746d69cb6477",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "926826bdfcbe632dd9909a302d503f1c197dd77ed76a666dca7f000912db863a",
+    "raw_sha256": "84d4ff736cb037f4eddb932d70c9ee41eee1c60cd25c7147d469339d477d8b93",
+    "date_quote": "Marketwired - April 07, 2017",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "fbbb156c2d49ef1fefae7aee28f711238254b8eef3cb6501040faeb9dfcd879b",
+  "outputs": [
+    {
+      "path": "US\\2017_04_07_Real-Estate_Senior-Living_yahoo.json",
+      "sha256": "b6e8a735b86b8aac845ba770014f27f17a5bd5aa6dd768c52383be4c74da707f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-04-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:25.704739+00:00",
+    "fetched_at": "2026-11-10T12:49:33.125260+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.304433+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:45.594454+00:00",
+  "feature_available_at": "2026-11-12T14:39:45.636218+00:00",
+  "commit_verified_at": "2026-11-12T14:39:45.636218+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses LCS's real estate expansion, acquisitions, and partnerships, providing details on the company's operations and industry involvement.",
+    "securities": [
+      {
+        "name": "LCS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "LCS"
+      },
+      {
+        "name": "Ryan Companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ryan Companies"
+      },
+      {
+        "name": "Harrison Street Real Estate Capital",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Harrison Street Real Estate Capital"
+      },
+      {
+        "name": "LCS Real Estate",
+        "ticker": null,
+        "exchange": null,
+        "quote": "LCS Real Estate"
+      },
+      {
+        "name": "Life Care Services",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Life Care Services"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "Real Estate"
+      },
+      {
+        "name": "Senior Living",
+        "basis": "inferred",
+        "quote": "senior living community"
+      },
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "insurance"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "LCS": "company",
+      "Ryan Companies": "company",
+      "Harrison Street Real Estate Capital": "company",
+      "LCS Real Estate": "company",
+      "Life Care Services": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

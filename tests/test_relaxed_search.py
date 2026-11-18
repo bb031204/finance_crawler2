@@ -90,7 +90,7 @@ class RelaxedSearchTests(unittest.TestCase):
         cfg=config();cfg.monitoring.directions=['银行业'];cfg.search.strategy='broad'
         crawler=Crawler(cfg,self.root,WideSources(cfg,empty=True),WideModel())
         start,end=crawler.window()
-        inputs=[VERSION,cfg.monitoring.model_dump(),start,end,cfg.search.model_dump(exclude={'complete_history','discovery_mode','sec_edgar'})]
+        inputs=[VERSION,cfg.monitoring.model_dump(),start,end,cfg.search.model_dump(exclude={'complete_history','discovery_mode','sec_edgar','history_refinement_passes'})]
         oldkey=digest(inputs+[LEGACY_COVERAGE_PROMPT])
         old={'version':VERSION,'cursor':1,'done':{'0':{'at':'fixture'}},'failed':{},'plans':{'0':[{'direction':'银行业','market':'CN','query':'银行 经营'}]},
             'year_stats':{'2026':{'searches':1}},'active':{'index':1,'stage':'undated'}}
@@ -145,7 +145,7 @@ class RelaxedSearchTests(unittest.TestCase):
     def test_realtime_legacy_cursor_is_preserved(self):
         from discovery import date_windows
         crawler=self.partial_crawler(realtime=True);cfg=crawler.cfg;start,end=crawler.window()
-        inputs=[cfg.monitoring.model_dump(),cfg.monitoring.resolved_directions,start,end,cfg.search.model_dump(exclude={'discovery_mode','sec_edgar'})]
+        inputs=[cfg.monitoring.model_dump(),cfg.monitoring.resolved_directions,start,end,cfg.search.model_dump(exclude={'discovery_mode','sec_edgar','history_refinement_passes'})]
         oldkey=digest(inputs+[LEGACY_COVERAGE_PROMPT]);crawler.state['discovery']={oldkey:{'cursor':3}}
         result=crawler.collect()
         self.assertEqual(result['discovery']['cursor_start'],3)

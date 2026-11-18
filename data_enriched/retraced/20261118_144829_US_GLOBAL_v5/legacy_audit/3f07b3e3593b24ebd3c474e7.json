@@ -1,0 +1,103 @@
+{
+  "source_id": "3f07b3e3593b24ebd3c474e7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_29_Regulatory_Banking_federalreserve.json",
+      "sha256": "2f78194b7591ee435930cca8bb1b0ffb76252bbd5e97ec361ad8908eec230831",
+      "filename": "2016_02_29_Regulatory_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "045ddbd5416d092eb4336e52f266c7e44d2d2641918baa1184227d3bdb49b200",
+  "input_hash": "88e977b6a0abe67fc377dcc673da37e1ef936d601e495c0d4c74c5894ce24c62",
+  "matching_audit_hash": "62ae732f6876ac701365871f2a8cbe0d55d20a55fb3a1164469d31136a8e5d63",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "42faba01f5de33de0226c82389325ebbb827c8c42527b70e4de092695d1f6266",
+    "raw_sha256": "971a9b2d4cdc5b02a4f00ee40df04ebd026b19ab7074c35f655075cb5a472211",
+    "date_quote": "The Fed - Supervisory Letter SR 16-3 on Interagency Guidance on Funds Transfer Pricing Related to Funding and Contingent Liquidity Risks -- February 29, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "349b906a2de17ca02a2b05b42ee4a4926fb458f74b9cf3ee8355d70a052a2621",
+  "outputs": [
+    {
+      "path": "US\\2016_02_29_Regulatory_Banking_federalreserve.json",
+      "sha256": "1a2ef4261545e5845d27f6979e0c1fdbc59966cef445f68a7c9dc77bf69090de"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:34.505883+00:00",
+    "fetched_at": "2026-11-10T10:24:25.514744+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.304446+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:59.501026+00:00",
+  "feature_available_at": "2026-11-12T14:30:59.536491+00:00",
+  "commit_verified_at": "2026-11-12T14:30:59.536491+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory guidance on funds transfer pricing (FTP) and its implications for financial institutions, including risk management and business模型",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      },
+      {
+        "name": "Basel Committee",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Basel Committee"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial institutions"
+      },
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "bank holding companies"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization",
+      "Basel Committee": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

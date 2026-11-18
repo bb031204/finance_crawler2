@@ -1,0 +1,205 @@
+{
+  "source_id": "182046d47ce4e28420b42ed3",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_10_18_Mining_Mining_cnbc.json",
+      "sha256": "d2d04e2154820a7a61ef835ff92fa6868c8ae4619e8fbac2d7d364f444d0f093",
+      "filename": "2021_10_18_Mining_Mining_cnbc.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2021_10_18_Mining_Mining_cnbc.json",
+      "sha256": "d2d04e2154820a7a61ef835ff92fa6868c8ae4619e8fbac2d7d364f444d0f093",
+      "filename": "2021_10_18_Mining_Mining_cnbc.json"
+    }
+  ],
+  "original_record_hash": "9eb327fbd46cb2640b71573fcf7057d7512d16df0ddcf05f9b35a6bfb3801d1b",
+  "input_hash": "6ce85996aa9f64681773cd9154624612965a705ebae4e0f1df8bc8bc32314e67",
+  "matching_audit_hash": "18af68d02ffeb67f45079299f51e80baa70acc487def5795d263be151a827b4d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "49f7c8904e9983a94235cdd6d3fc599f1b32cae9eeb11cb349c92252aa0de436",
+    "raw_sha256": "33cb541a60054234035f94e3103486bed8edcd8d7cb2e0cfd76e172c7ca84134",
+    "date_quote": "article:published_time=2021-10-18T07:39:05+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9396229658602979ff2bb79a2dc8a0b7e2a06c6b0569913d130816cf153acb4e",
+  "outputs": [
+    {
+      "path": "US\\2021_10_18_Mining_Mining_cnbc.json",
+      "sha256": "5a102dfd123e60caee8f86cf2dc5ec8b8649095307dd4729d28054695de035bd"
+    },
+    {
+      "path": "GLOBAL\\2021_10_18_Mining_Mining_cnbc.json",
+      "sha256": "5a102dfd123e60caee8f86cf2dc5ec8b8649095307dd4729d28054695de035bd"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-10-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:00.947558+00:00",
+    "fetched_at": "2026-11-10T16:18:32.384505+00:00",
+    "feature_available_at": "2026-11-10T17:53:10.053165+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:14:40.098278+00:00",
+  "feature_available_at": "2026-11-12T15:16:48.758333+00:00",
+  "commit_verified_at": "2026-11-12T15:16:48.758333+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "Mongolia criticizes Rio Tinto's mine management and operations delays",
+    "securities": [
+      {
+        "name": "Mongolia",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mongolia"
+      },
+      {
+        "name": "Rio Tinto",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rio Tinto's management"
+      },
+      {
+        "name": "Turquoise Hill Resources",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Turquoise Hill Resources"
+      },
+      {
+        "name": "Solongoo Bayarsaikhan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "government official, Solongoo Bayarsaikhan"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Mining",
+        "basis": "explicit",
+        "quote": "open-pit and underground mining project"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Mongolia": "organization",
+      "Rio Tinto": "organization",
+      "Turquoise Hill Resources": "organization",
+      "Solongoo Bayarsaikhan": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:48.795809+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:14:40.098278+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Mongolia criticizes Rio Tinto's mine management and operations delays",
+      "securities": [
+        {
+          "name": "Mongolia",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Mongolia"
+        },
+        {
+          "name": "Rio Tinto",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Rio Tinto's management"
+        },
+        {
+          "name": "Turquoise Hill Resources",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Turquoise Hill Resources"
+        },
+        {
+          "name": "Solongoo Bayarsaikhan",
+          "ticker": null,
+          "exchange": null,
+          "quote": "government official, Solongoo Bayarsaikhan"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Mining",
+          "basis": "explicit",
+          "quote": "open-pit and underground mining project"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Mongolia": "organization",
+        "Rio Tinto": "organization",
+        "Turquoise Hill Resources": "organization",
+        "Solongoo Bayarsaikhan": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:14:40.129033+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:14:40.139551+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:14:40.116828+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses operational delays, cost overruns, and management issues at Oyu Tolgoi, a joint venture between Mongolia and Rio Tinto. It also mentions a",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:56:12.216145+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

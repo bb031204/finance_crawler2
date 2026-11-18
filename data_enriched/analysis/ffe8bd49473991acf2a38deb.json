@@ -1,0 +1,132 @@
+{
+  "source_id": "ffe8bd49473991acf2a38deb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_07_09_Market_Finance_cnbc.json",
+      "sha256": "9370093f24fef781788e0cd7ab1ddbc34ca09870dccb2fbd1ab8f11867022ff0",
+      "filename": "2013_07_09_Market_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "7d3c9ce50d2e978723c266fa9d490ff66f7d7558375def83262ad07a80e0fe33",
+  "input_hash": "56aded7f841702d00ec992a8b77d14d2b81c9ddc339d88cb2dba16ca1040c937",
+  "matching_audit_hash": "68b45afd1f2090fcdba5a75df958716c813f17d46bd55e900c6c65b573ef2337",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7c749ea119e22b7b84f6cea261878aa4179ea904cceb0d2944d0b35ea7812b37",
+    "raw_sha256": "6c43b0272b5e885345c80534b04df139a77fa8b6f920b53dcceac3c13cedfd26",
+    "date_quote": "article:published_time=2013-07-09T10:00:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "S&P 500",
+      "ticker": null,
+      "exchange": null,
+      "quote": "S&P 500 gain by early July"
+    },
+    {
+      "name": "Raymond James",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Jeffrey D. Saut, chief investment strategist at Raymond James"
+    },
+    {
+      "name": "Bespoke Investment Group",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Bespoke Investment Group breaks out the S&P 500 in 10 50-stock groups"
+    },
+    {
+      "name": "Wells Capital Management",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Jim Paulsen, the chief market strategist at Wells Capital Management"
+    }
+  ],
+  "record_hash": "36c3b11d13ab286432ddc1d4ba03c0fb77c99a7f3c854ef5d118c34af54f17e4",
+  "outputs": [
+    {
+      "path": "US\\2013_07_09_Market_Finance_cnbc.json",
+      "sha256": "1dc4bc5c83963afa189b36b0e6b500840bf0641f15492ca7ff4b651caa859b90"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-07-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:38.027645+00:00",
+    "fetched_at": "2026-11-10T19:44:40.696052+00:00",
+    "feature_available_at": "2026-11-10T19:44:57.593043+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:47.160277+00:00",
+  "commit_verified_at": "2026-11-12T13:52:47.160277+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "S&P 500",
+        "ticker": null,
+        "exchange": null,
+        "quote": "S&P 500 gain by early July"
+      },
+      {
+        "name": "Raymond James",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Jeffrey D. Saut, chief investment strategist at Raymond James"
+      },
+      {
+        "name": "Bespoke Investment Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bespoke Investment Group breaks out the S&P 500 in 10 50-stock groups"
+      },
+      {
+        "name": "Wells Capital Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Jim Paulsen, the chief market strategist at Wells Capital Management"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

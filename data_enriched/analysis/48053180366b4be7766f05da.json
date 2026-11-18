@@ -1,0 +1,191 @@
+{
+  "source_id": "48053180366b4be7766f05da",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_16_Franchising_Franchise-Industry_cnbc.json",
+      "sha256": "a7dd2bba64f6b05d87e3f2f53464e99acce561afd30f17dff126497c095f1f5c",
+      "filename": "2013_01_16_Franchising_Franchise-Industry_cnbc.json"
+    }
+  ],
+  "original_record_hash": "013ff9d8d5b7e2f9652d35281ed684ae42b75abe6b8808110da76a98c8780c25",
+  "input_hash": "cf2f705ea7d9bb71bc2510e71ea712b8598755256dd88b6fa067e5f1a53a18a6",
+  "matching_audit_hash": "07884a366cc68ea2f0edf7a004894e7afaac56717e6bddd85de0ca69b8fdc45b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ad2b8282747a4a5327671e4496a990a05755cf2e2bd419264303520d4d9f27d5",
+    "raw_sha256": "d0227f283755bcace459d520445ca5d84efba46f79398007e6b3cc2af95f18fb",
+    "date_quote": "article:published_time=2013-01-16T15:12:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9222f8a71f2166714cf94aa938f763e93d67e7b68aef2743d30adcbe37d40b06",
+  "outputs": [
+    {
+      "path": "US\\2013_01_16_Franchising_Franchise-Industry_cnbc.json",
+      "sha256": "8cbfa6660984aa6a99f93d805ba36d0bc7667581dcc31884f3ea87cc51dcc1a5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:18.026664+00:00",
+    "fetched_at": "2026-11-11T03:12:38.307311+00:00",
+    "feature_available_at": "2026-11-11T03:13:10.663871+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:31.988735+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.624533+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.624533+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Highlights industry growth, policy concerns, and economic trends",
+    "securities": [
+      {
+        "name": "International Franchise Association (IFA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The International Franchise Association (IFA) survey highlights that franchisors are more optimistic about the future than franchisees"
+      },
+      {
+        "name": "Aziz Hashim",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Aziz Hashim, a multiunit quick-service franchisee, who stated that franchisees are being hit from every angle and will expand at a slower rate in 2013"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Franchising",
+        "basis": "inferred",
+        "quote": "The franchise industry in 2013 is expected to show cautious optimism"
+      },
+      {
+        "name": "Real estate",
+        "basis": "inferred",
+        "quote": "Real estate franchises are expected to perform well due to the recovering housing market"
+      },
+      {
+        "name": "Quick-service restaurants",
+        "basis": "inferred",
+        "quote": "quick-service restaurants will continue to lead in growth"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "International Franchise Association (IFA)": "organization",
+      "Aziz Hashim": "brand"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.644751+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:31.988735+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Highlights industry growth, policy concerns, and economic trends",
+      "securities": [
+        {
+          "name": "International Franchise Association (IFA)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The International Franchise Association (IFA) survey highlights that franchisors are more optimistic about the future than franchisees"
+        },
+        {
+          "name": "Aziz Hashim",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Aziz Hashim, a multiunit quick-service franchisee, who stated that franchisees are being hit from every angle and will expand at a slower rate in 2013"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Franchising",
+          "basis": "inferred",
+          "quote": "The franchise industry in 2013 is expected to show cautious optimism"
+        },
+        {
+          "name": "Real estate",
+          "basis": "inferred",
+          "quote": "Real estate franchises are expected to perform well due to the recovering housing market"
+        },
+        {
+          "name": "Quick-service restaurants",
+          "basis": "inferred",
+          "quote": "quick-service restaurants will continue to lead in growth"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "International Franchise Association (IFA)": "organization",
+        "Aziz Hashim": "brand"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:32.022698+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:32.030698+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:32.011437+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the franchise industry's growth, challenges, and trends in 2013, including factors like public policy, economic recovery, and sector-specific",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:01:21.680017+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

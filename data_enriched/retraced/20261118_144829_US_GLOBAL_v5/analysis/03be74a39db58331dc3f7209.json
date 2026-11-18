@@ -1,0 +1,325 @@
+{
+  "source_id": "03be74a39db58331dc3f7209",
+  "status": "completed",
+  "source_record_hash": "4ecaa60613018a6db6e0208a2f028419172f281f6c9c3af7388db5a81b2a65cf",
+  "source_trace": {
+    "requested_url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1617.htm",
+    "attempted_at": "2026-11-18T07:19:20.706475+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "e24c3657bfcf7caa199f92e5c1aa366ec3ea8b53fb5ff6b0e07704500c22d183"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/03be74a39db58331dc3f7209.json",
+    "sha256": "e666088feace84b47547103beabd110a28d90c9ec3a0fa1a32f95074f932e8fb",
+    "bundled_path": "legacy_audit/03be74a39db58331dc3f7209.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "faa5305fd6af8879273dc640c36d32f248857cd2abd51a842ba2e6a57995d189",
+      "llm_inferred_at": "2026-11-18T07:19:36.724585+00:00",
+      "model_duration_seconds": 10.9773837,
+      "prompt_tokens": 2298,
+      "completion_tokens": 549,
+      "selection": [
+        {
+          "source_id": "03be74a39db58331dc3f7209",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The guidance emphasizes the need for robust risk management programs, including timely market condition analysis to support credit risk management and underwriting practices.",
+              "rationale": "The guidance is specifically about risk management in reserve-based energy lending, which is an industry-specific activity involving oil and gas reserves. The focus on market condition analysis and credit risk management indicates an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Prolonged declines in crude oil prices can significantly impact reserve collateral values and cash flows, affecting the repayment ability of borrowers.",
+              "rationale": "The statement about crude oil prices affecting collateral values and cash flows indicates a broader market impact, as it relates to macroeconomic conditions affecting the energy sector and financial institutions.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "Reserve-based lending involves financing secured by oil and gas reserves, with loan amounts determined by the borrower's proved reserves, adjusted for risk factors."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "Reserve-based lending involves financing secured by oil and gas reserves, with loan amounts determined by the borrower's proved reserves, adjusted for risk factors."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The guidance emphasizes the need for robust risk management programs, including timely market condition analysis to support credit risk management and underwriting practices."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "3d547dd2e4ef479a8b2123edc7e030a33fb3258f33feab1f6e3218e9172c4847",
+      "llm_inferred_at": "2026-11-18T07:19:46.629059+00:00",
+      "model_duration_seconds": 9.894099,
+      "prompt_tokens": 2342,
+      "completion_tokens": 536,
+      "selection": [
+        {
+          "source_id": "03be74a39db58331dc3f7209",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The guidance emphasizes the need for robust risk management programs, including timely market condition analysis to support credit risk management and underwriting practices.",
+              "rationale": "The guidance is directed at financial institutions involved in energy lending, which is a sector-specific activity. The focus on market condition analysis and risk management in reserve-based lending indicates an industry-wide impact on the energy sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Prolonged declines in crude oil prices can significantly impact reserve collateral values and cash flows, affecting the repayment ability of borrowers.",
+              "rationale": "The statement refers to the impact on borrowers, which are companies involved in oil and gas production or related sectors. This indicates a company-level impact on the financial health of these entities.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "Reserve-based lending involves financing secured by oil and gas reserves, with loan amounts determined by the borrower's proved reserves, adjusted for risk factors."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "The letter aims to enhance existing energy lending guidance and update financial institutions on key risks and risk management factors for reserve-based lending activities."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "This guidance applies to state member banks, U.S."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:19:46.642626+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e24c3657bfcf7caa199f92e5c1aa366ec3ea8b53fb5ff6b0e07704500c22d183",
+    "raw_sha256": null,
+    "date_quote": "The Fed - Supervisory Letter SR 16-17 on Supervisory Expectations for Risk Management of Reserve-Based Energy Lending Risk -- December 1, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The text discusses regulatory guidance on reserve-based energy lending, including risk management practices, market conditions, and capital planning for banks.",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      },
+      {
+        "name": "state member banks",
+        "ticker": null,
+        "exchange": null,
+        "quote": "state member banks"
+      },
+      {
+        "name": "U.S. branches of foreign banking organizations",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. branches of foreign banking organizations"
+      },
+      {
+        "name": "depository institution holding companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "depository institution holding companies"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:19801e128f3455fa",
+        "name": "Oil & Gas Production",
+        "basis": "inferred",
+        "quote": "Reserve-based lending involves financing secured by oil and gas reserves, with loan amounts determined by the borrower's proved reserves, adjusted for risk factors.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "19801e128f3455fa",
+        "industry_name_standard": "Oil & Gas Production",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Reserve-based lending involves financing secured by oil and gas reserves, with loan amounts determined by the borrower's proved reserves, adjusted for risk factors."
+      },
+      {
+        "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "The letter aims to enhance existing energy lending guidance and update financial institutions on key risks and risk management factors for reserve-based lending activities.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "f2fcd3f7dccadd19",
+        "industry_name_standard": "Energy",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The letter aims to enhance existing energy lending guidance and update financial institutions on key risks and risk management factors for reserve-based lending activities."
+      },
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "name": "Banks",
+        "basis": "explicit",
+        "quote": "This guidance applies to state member banks, U.S.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "This guidance applies to state member banks, U.S."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization",
+      "state member banks": "organization",
+      "U.S. branches of foreign banking organizations": "organization",
+      "depository institution holding companies": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "03be74a39db58331dc3f7209",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_12_01_Regulatory_Banking_federalreserve.json",
+        "sha256": "5b62519b7a717be3a08bc1a52924db2bacb925ab6b8527cc1f03144f82451665",
+        "filename": "2016_12_01_Regulatory_Banking_federalreserve.json"
+      }
+    ],
+    "original_record_hash": "259006705ca1b710019d8e8ba8115fb0b402508943f7676d2a72f8e9230fd747",
+    "input_hash": "739c44d9545062e3acce942f455eccbc3180c05377903ef2a015841d8e4e1ce6",
+    "matching_audit_hash": "2c47e33223f7fb3b89b5f0d96432cb532cd97ff5254b432e9d8f80e6117ed0c7",
+    "legacy_security_evidence": [],
+    "record_hash": "4ecaa60613018a6db6e0208a2f028419172f281f6c9c3af7388db5a81b2a65cf",
+    "outputs": [
+      {
+        "path": "US\\2016_12_01_Regulatory_Banking_federalreserve.json",
+        "sha256": "2374375a1b43687cf0b04e4dde775ca1a8914d5fec3751a8235c9156ae87b482"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2016-12-01",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T09:57:34.505883+00:00",
+      "fetched_at": "2026-11-10T10:32:09.673747+00:00",
+      "feature_available_at": "2026-11-10T17:53:18.041247+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T07:19:46.629059+00:00",
+    "feature_available_at": "2026-11-18T07:19:46.642626+00:00",
+    "commit_verified_at": "2026-11-12T14:33:26.721177+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Prolonged declines in crude oil prices can significantly impact reserve collateral values and cash flows, affecting the repayment ability of borrowers.",
+        "rationale": "The statement refers to the impact on borrowers, which are companies involved in oil and gas production or related sectors. This indicates a company-level impact on the financial health of these entities.",
+        "confidence": 0.85,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Prolonged declines in crude oil prices can significantly impact reserve collateral values and cash flows, affecting the repayment ability of borrowers."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1617.htm",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "4ecaa60613018a6db6e0208a2f028419172f281f6c9c3af7388db5a81b2a65cf",
+    "content_hash": "e24c3657bfcf7caa199f92e5c1aa366ec3ea8b53fb5ff6b0e07704500c22d183",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:19:46.631709+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/03be74a39db58331dc3f7209.json",
+      "sha256": "ec436804e8c843ed56008be8528e32debea25427985a859eaf9d0a000653e9b1",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 25.937999999994645
+}

@@ -1,0 +1,95 @@
+{
+  "source_id": "923ad6be4836acb883ae880b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_02_Corporate-Action_Financial-Services_sec.json",
+      "sha256": "c1bb08dcafde8e4b784ab783f60629d1b1816aedaf1a5c6adcbcea7c893466d7",
+      "filename": "2017_02_02_Corporate-Action_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "9da86c5568aa3344f50428b660956e947279aaf87e9c9301ba9a861edc79f637",
+  "input_hash": "74d53239aae2dcfd5370106482e35e19909bf9f577b88c0e35b25ddbcfd033fc",
+  "matching_audit_hash": "17d9a30bb7a7cf065aa3c122c7f27fa4aab62e0bdd7aec13c8296357b5465ef9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c9a5ad88c3eb29f4e1f2489e6f083f67d460107406a23d83fe25c236c11382eb",
+    "raw_sha256": "854f33fb7288540688c0b3eff52b0a5d6739c7eba4a8611b3389f4d7ad36251d",
+    "date_quote": "SEC filing datePublished=2017-02-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774917001500/asta20170201_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Asta Funding, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Asta Funding, Inc."
+    }
+  ],
+  "record_hash": "b2727106678561ac034596ae13f4e6010f6c72b1e0327a559ace322b37351c99",
+  "outputs": [
+    {
+      "path": "US\\2017_02_02_Corporate-Action_Financial-Services_sec.json",
+      "sha256": "bddc289b5793a7f93470e3dc51cd6f6e8fabc89d2bc99aadbc00df1a121d6558"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.448076+00:00",
+    "fetched_at": "2026-11-11T12:41:04.285562+00:00",
+    "feature_available_at": "2026-11-11T12:41:38.006318+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:11.856648+00:00",
+  "commit_verified_at": "2026-11-12T13:53:11.856648+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asta Funding, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

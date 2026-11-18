@@ -1,0 +1,21 @@
+# 固定1948篇US/GLOBAL去重快照；不搜索、不启动生产爬虫、不改原JSON。
+markets: [US, GLOBAL]
+expected_unique_articles: 1948
+output: data_enriched/retraced/20261118_144829_US_GLOBAL_v5
+dictionary_directory: industry_data
+active_standards: [SEC-SIC, TRSR-INDUSTRY, SP500-SECTOR]
+candidate_limit: 24
+ollama_url: http://127.0.0.1:11434
+model: qwen3:8b
+num_ctx: 8192
+num_predict: 2000
+timeout_seconds: 240
+service_attempts: 2
+semantic_repair_attempts: 1
+min_confidence: 0.75
+refetch_originals: true
+chunk_characters: 9000
+checkpoint_every: 1
+export_every: 100
+
+# 三种分类各自保留代码；无日期成员仅供下游显式回溯探索，不能冒充历史行业主数据。

@@ -1,0 +1,262 @@
+{
+  "source_id": "45acbf217f3bf4f011356827",
+  "status": "completed",
+  "source_record_hash": "02dc323f86de5a5a7ec93863ddc0c790c25497690b0fd6ee78a397a0666351d0",
+  "source_trace": {
+    "requested_url": "https://www.bloomberg.com/news/articles/2015-08-03/coal-miner-alpha-natural-resources-files-for-bankruptcy",
+    "attempted_at": "2026-11-18T13:11:17.954370+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://www.bloomberg.com/news/articles/2015-08-03/coal-miner-alpha-natural-resources-files-for-bankruptcy",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T13:11:27.636805+00:00",
+    "source_body_hash": "24e08223cfe39ecca2536ac558f8c5bbd23201ab9f6fa771837586648ff79ef1",
+    "raw_sha256": "1897abf6c3709d295243e0abb220579665d2c2cf42264460d5f29dab27af5bdd",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Coal Miner Alpha Natural Resources Files for Bankruptcy - Bloomberg",
+    "title_origin": "heading",
+    "publication_evidence": "August 3, 2015 at 12:47 PM UTC",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/45acbf217f3bf4f011356827.json",
+    "sha256": "c956925a8a07b591ed479d8e2a8119b719ad4cf7d2758194666dcadcf8bc11f7",
+    "bundled_path": "legacy_audit/45acbf217f3bf4f011356827.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "f36d604ad50c3ba4bb3ee87cac9ff6ff8c9303b3d7f971a482407493b1908517",
+      "llm_inferred_at": "2026-11-18T13:11:36.230450+00:00",
+      "model_duration_seconds": 8.56725,
+      "prompt_tokens": 2076,
+      "completion_tokens": 416,
+      "selection": [
+        {
+          "source_id": "45acbf217f3bf4f011356827",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The second-largest U.S.",
+              "rationale": "The article discusses the coal industry's worst downturn, which directly impacts the entire industry, not just a single company.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Alpha Natural Resources Inc.",
+              "rationale": "The article specifically mentions Alpha Natural Resources Inc. as the company that filed for bankruptcy, indicating a direct impact on the company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1220",
+              "name": "BITUMINOUS COAL & LIGNITE MINING",
+              "basis": "explicit",
+              "quote": "The second-largest U.S."
+            },
+            {
+              "industry_key": "TRSR:c8c069916d145266",
+              "name": "Coal Mining",
+              "basis": "explicit",
+              "quote": "The second-largest U.S."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "The second-largest U.S."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "a512c1c22a84e44622f79b7080c25a8e157306a281a0573d2f369642a80de025",
+      "llm_inferred_at": "2026-11-18T13:11:43.039220+00:00",
+      "model_duration_seconds": 6.8017586,
+      "prompt_tokens": 2120,
+      "completion_tokens": 360,
+      "selection": [
+        {
+          "source_id": "45acbf217f3bf4f011356827",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The second-largest U.S.",
+              "rationale": "The article discusses the coal industry's downturn and the impact on Alpha Natural Resources Inc., which is part of the coal industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Alpha Natural Resources Inc.",
+              "rationale": "The article specifically mentions Alpha Natural Resources Inc. and its bankruptcy filing, which is a company-specific event.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:1220",
+              "name": "BITUMINOUS COAL & LIGNITE MINING",
+              "basis": "explicit",
+              "quote": "The second-largest U.S."
+            },
+            {
+              "industry_key": "SEC-SIC:1221",
+              "name": "BITUMINOUS COAL & LIGNITE SURFACE MINING",
+              "basis": "explicit",
+              "quote": "The second-largest U.S."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:11:43.051837+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "24e08223cfe39ecca2536ac558f8c5bbd23201ab9f6fa771837586648ff79ef1",
+    "raw_sha256": "1897abf6c3709d295243e0abb220579665d2c2cf42264460d5f29dab27af5bdd",
+    "date_quote": "August 3, 2015 at 12:47 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The summary discusses the bankruptcy of Alpha Natural Resources Inc., the coal industry's downturn, and the impact of declining demand and prices on the sector.",
+    "securities": [
+      {
+        "name": "Alpha Natural Resources Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alpha Natural Resources Inc."
+      },
+      {
+        "name": "Massey Energy Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Massey Energy Co."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Alpha Natural Resources Inc.": "company",
+      "Massey Energy Co.": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "45acbf217f3bf4f011356827",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_08_03_Energy_Coal-Mining_bloomberg.json",
+        "sha256": "e5ffc026a43b139349173fb01177aaaac2c8cf593e601491a30cc7de1ecfa31e",
+        "filename": "2015_08_03_Energy_Coal-Mining_bloomberg.json"
+      }
+    ],
+    "original_record_hash": "9f6a88aa6d0f4564a05020f3a52f7d8582007935739c249214147456eed76d64",
+    "input_hash": "a3c2c1fb3e5eea1822e642474a9bfeec4ac6a417d78d10e9376d88ab40977b5f",
+    "matching_audit_hash": "4a27f3f64a025b7e5bf44f4d9f740fc1109369350bfc3aa948049726fe53e06b",
+    "legacy_security_evidence": [],
+    "record_hash": "02dc323f86de5a5a7ec93863ddc0c790c25497690b0fd6ee78a397a0666351d0",
+    "outputs": [
+      {
+        "path": "US\\2015_08_03_Energy_Coal-Mining_bloomberg.json",
+        "sha256": "53060d4e25d97756a1d3240a9b2dc8331fd2485968a4a97e722a25aa686a68d1"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-08-03",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T13:35:55.925272+00:00",
+      "fetched_at": "2026-11-10T15:05:25.604842+00:00",
+      "feature_available_at": "2026-11-10T17:53:16.578740+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T13:11:43.039220+00:00",
+    "feature_available_at": "2026-11-18T13:11:43.051837+00:00",
+    "commit_verified_at": "2026-11-12T14:28:32.977792+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Alpha Natural Resources Inc.",
+        "rationale": "The article specifically mentions Alpha Natural Resources Inc. and its bankruptcy filing, which is a company-specific event.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Alpha Natural Resources Inc.",
+        "summary_evidence_quote": "Alpha Natural Resources Inc."
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.bloomberg.com/news/articles/2015-08-03/coal-miner-alpha-natural-resources-files-for-bankruptcy",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "02dc323f86de5a5a7ec93863ddc0c790c25497690b0fd6ee78a397a0666351d0",
+    "content_hash": "24e08223cfe39ecca2536ac558f8c5bbd23201ab9f6fa771837586648ff79ef1",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:11:43.040659+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/45acbf217f3bf4f011356827.json",
+      "sha256": "d783b226bf111258e1067cec89533d1416606aff9d2f79f5d97e4e500f78de80",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 25.125
+}

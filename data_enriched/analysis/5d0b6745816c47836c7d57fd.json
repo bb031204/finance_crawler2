@@ -1,0 +1,131 @@
+{
+  "source_id": "5d0b6745816c47836c7d57fd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_06_11_stock_biotech_cnbc.json",
+      "sha256": "96d6b15dbee90bba51e894fd8a02aba64cf57ce1a0ba2f3e7d5cb4a5f0a98577",
+      "filename": "2015_06_11_stock_biotech_cnbc.json"
+    }
+  ],
+  "original_record_hash": "9c3b71fdd0229bc854952b66d861fccbef186b71f01c6fc79481c1a7185801ac",
+  "input_hash": "c283267d9a55f0dc0e3d8104c1317a4b3b143113e3976c78e31c79d09d272d24",
+  "matching_audit_hash": "f15514d9a231b65238901a4e66155defcd25e9cd3775685a1cb6f180545d581b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e901961d2ff9dad24dc98d0a0ae8e1e2b19db5af2f8185b45efa4f6e00118b5a",
+    "raw_sha256": "d34124e87097f112554cb395dde2e5800bb06201e2a1691f1b2b54c682c9e557",
+    "date_quote": "article:published_time=2015-06-11T22:23:35+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Axovant Sciences",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Axovant Sciences"
+    },
+    {
+      "name": "GlaxoSmithKline",
+      "ticker": null,
+      "exchange": null,
+      "quote": "GlaxoSmithKline"
+    },
+    {
+      "name": "Axovant",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Axovant"
+    }
+  ],
+  "record_hash": "b2a18289aff75cec16e09a49755b5aa20668d7d1a772444a1eb1d5473b96dd24",
+  "outputs": [
+    {
+      "path": "US\\2015_06_11_stock_biotech_cnbc.json",
+      "sha256": "3a03feb2809f5703cb3fcc76b4dc18521c8fe3def7cdc76cd422051537744f6c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-06-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:34.228661+00:00",
+    "fetched_at": "2026-11-10T20:38:49.089543+00:00",
+    "feature_available_at": "2026-11-10T20:39:15.515374+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:58.969431+00:00",
+  "commit_verified_at": "2026-11-12T13:52:58.969431+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Axovant Sciences",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Axovant Sciences"
+      },
+      {
+        "name": "GlaxoSmithKline",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GlaxoSmithKline"
+      },
+      {
+        "name": "Axovant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Axovant"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Pharmaceuticals",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "biotech",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

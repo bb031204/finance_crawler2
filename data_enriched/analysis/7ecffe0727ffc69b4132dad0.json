@@ -1,0 +1,110 @@
+{
+  "source_id": "7ecffe0727ffc69b4132dad0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_11_15_Regulatory_Banking_federalreserve.json",
+      "sha256": "56362c337f38023b8745cc8dc8f977e61b7fb171c41e491efc63bae6d7c1ee5f",
+      "filename": "2012_11_15_Regulatory_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "ec42a11dc1d5d35599ec85a8bc93359756627d974b0321043b7d2cc4584468d7",
+  "input_hash": "02741d5305f74aab14fd2819f8f90d29eaca1318a0efe40de3fe4c211144c7d0",
+  "matching_audit_hash": "d4836ca4f27e7d55e2b80ee60984bf7cd273e67ce0f913240659b911e18d7e72",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a409399c7b7eab3637c53c98af1a093008fe0d61634e88b6124f31d9772efb17",
+    "raw_sha256": "7631b95e14a15595d8020ba51e371e90ac809086f499bff1758f2de896395a01",
+    "date_quote": "The Fed - Supervisory Letter SR 12-15 on Investing in Securities without Reliance on Nationally Recognized Statistical Rating Organization Ratings -- November 15, 2012",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3e3255cbbd3e43e15e64c65b907b4d72255dbe979d43895d6e25c6789a7a70a0",
+  "outputs": [
+    {
+      "path": "US\\2012_11_15_Regulatory_Banking_federalreserve.json",
+      "sha256": "9ae5cffd823762277c7a4d5e954b0b4ed73705c14edfdad2c7004ecdaaa9ecfb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-11-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:22.014270+00:00",
+    "fetched_at": "2026-11-10T10:08:12.870717+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.244425+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T13:58:59.693109+00:00",
+  "feature_available_at": "2026-11-12T13:58:59.702869+00:00",
+  "commit_verified_at": "2026-11-12T13:58:59.702869+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory changes related to credit ratings and investment-grade securities, impacting banks and financial institutions.",
+    "securities": [
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      },
+      {
+        "name": "Office of the Comptroller of the Currency (OCC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Office of the Comptroller of the Currency (OCC)"
+      },
+      {
+        "name": "State member banks",
+        "ticker": null,
+        "exchange": null,
+        "quote": "state member banks"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "state member banks"
+      },
+      {
+        "name": "Regulatory Compliance",
+        "basis": "inferred",
+        "quote": "Dodd-Frank Act"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve": "organization",
+      "Office of the Comptroller of the Currency (OCC)": "organization",
+      "State member banks": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_id": "974e99796aed6d04bbb33b25",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_08_Corporate-Action_Media-&-Entertainment_sec.json",
+      "sha256": "cbd28472f7be3a5e281d88107abd845a191e46c0550d841858ef688e3eaa4ef9",
+      "filename": "2019_03_08_Corporate-Action_Media-&-Entertainment_sec.json"
+    }
+  ],
+  "original_record_hash": "3d3e7beaa2f135f2391cd911b22fe42dead97d31e5a9adb8c36a18496896cf0d",
+  "input_hash": "7732a428a93399be4f966c0270311e6e0791579f00952b0bec64f28c748b7821",
+  "matching_audit_hash": "01baf36e305fdd81a8b03718c62f9944ef8b1af70ece0222d03d31eabaf415a1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "09bbfe24cb943c436b7ec9e115ae2d73db27750920ca184b9f5391412ff2f9de",
+    "raw_sha256": "ac0c163f3ce27883a6fa4e86bce07aef00ca48f2acf25eb3e654c0234bffb17a",
+    "date_quote": "SEC filing datePublished=2019-03-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001039/000095015719000245/form8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "21CFA Notes",
+      "ticker": null,
+      "exchange": null,
+      "quote": "21CFA Notes"
+    }
+  ],
+  "record_hash": "b3cf594c75943ce288ff239875535631df699876fca27f75b7526c9e835d6cce",
+  "outputs": [
+    {
+      "path": "US\\2019_03_08_Corporate-Action_Media-&-Entertainment_sec.json",
+      "sha256": "5588df68ff64395636b406a77bacad9657a45d6f1e3ee580db764029adc699b6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.618622+00:00",
+    "fetched_at": "2026-11-11T14:09:47.477342+00:00",
+    "feature_available_at": "2026-11-11T14:10:44.413430+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:26.727349+00:00",
+  "commit_verified_at": "2026-11-12T13:53:26.727349+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "21CFA Notes",
+        "ticker": null,
+        "exchange": null,
+        "quote": "21CFA Notes"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Entertainment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

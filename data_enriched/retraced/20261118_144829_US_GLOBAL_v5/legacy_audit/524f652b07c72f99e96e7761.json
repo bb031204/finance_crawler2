@@ -1,0 +1,109 @@
+{
+  "source_id": "524f652b07c72f99e96e7761",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_02_21_Finance_Financial-Services_cnbc.json",
+      "sha256": "7dae1c4804d09d5181e4065c2fce75dc30359b4b17af33e820a1eb194c55889d",
+      "filename": "2019_02_21_Finance_Financial-Services_cnbc.json"
+    }
+  ],
+  "original_record_hash": "9ce82164f9ccc55548652b43bb05f7bf761577d485d82055feebf8514cd5b521",
+  "input_hash": "d6f9a379a855a8b69657f1c2cb8e0379448ace67a630d2fedb8accda231da7fd",
+  "matching_audit_hash": "2727aba8e54ad5cbf99fdd07e57f1183f8a1fd2f3e80e9e69d48566ce3c0d187",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a802f4f407bba8a65b9f060d1d254415a81d2bc505a9df3ecd48ffe14012f144",
+    "raw_sha256": "71c28a173050a9fac4df133d9ed3910bb37c4aa6a71ae39407e74e305631e49a",
+    "date_quote": "article:published_time=2019-02-21T21:44:04+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Fidelity Investments",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Fidelity Investments had a historic 2018, even as stock markets saw their worst performance in a decade."
+    },
+    {
+      "name": "Fidelity",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Fidelity"
+    }
+  ],
+  "record_hash": "6b7045fc062c5bca5417144ba5b17b25982ba352f115b238f7152b07f9f9eb98",
+  "outputs": [
+    {
+      "path": "US\\2019_02_21_Finance_Financial-Services_cnbc.json",
+      "sha256": "9ef7407fc9f04ab49ffff6a0705a655d338de7350c6009572f450eb095f267df"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:20.006262+00:00",
+    "fetched_at": "2026-11-11T04:50:22.841798+00:00",
+    "feature_available_at": "2026-11-11T04:50:59.762809+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:26.096138+00:00",
+  "commit_verified_at": "2026-11-12T13:53:26.096138+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Fidelity Investments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fidelity Investments had a historic 2018, even as stock markets saw their worst performance in a decade."
+      },
+      {
+        "name": "Fidelity",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Fidelity"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

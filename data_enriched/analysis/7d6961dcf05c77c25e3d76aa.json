@@ -1,0 +1,95 @@
+{
+  "source_id": "7d6961dcf05c77c25e3d76aa",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_29_Corporate-Governance_Textiles-and-Apparel_sec.json",
+      "sha256": "b2ebaa5f0408368b2c1a6daa59c4464c39a43312fdd399391805be9faa488654",
+      "filename": "2019_01_29_Corporate-Governance_Textiles-and-Apparel_sec.json"
+    }
+  ],
+  "original_record_hash": "9666fcd627beebf271b66fa5a6cfbefddfd240c61a9bc9fe106db662d294bf42",
+  "input_hash": "c54d5f44a7baf0f48c21a0cfd876f02be0ab2fbabe081dc13133904e91bacc81",
+  "matching_audit_hash": "183bdcd20e29e3f616251db6e94ff023ef6a1a3b0d6cc07033d98348abd84945",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d2dd309ef929e25850bb2797501f487c0abe9f8b4d45e2de80f25daae91b5b08",
+    "raw_sha256": "bad59d8ea267789bb54001b8ace269ebde38997c504b54a0481e7449094587de",
+    "date_quote": "SEC filing datePublished=2019-01-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000100062319000014/cardinresignation8-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Schweitzer-Mauduit International, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Schweitzer-Mauduit International, Inc."
+    }
+  ],
+  "record_hash": "6015fc862b0e5e8cb4bf6293aa539e57f2dba7f5fd40730be3695d6d87c0b84b",
+  "outputs": [
+    {
+      "path": "US\\2019_01_29_Corporate-Governance_Textiles-and-Apparel_sec.json",
+      "sha256": "2b4894aaae1a2d49294ddf44e69e36aaa8bd992904e298b6cb47c420ea20ff22"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.617623+00:00",
+    "fetched_at": "2026-11-11T13:49:31.728338+00:00",
+    "feature_available_at": "2026-11-11T13:50:08.372328+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:25.212950+00:00",
+  "commit_verified_at": "2026-11-12T13:53:25.212950+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Schweitzer-Mauduit International, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Schweitzer-Mauduit International, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Textiles and Apparel",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

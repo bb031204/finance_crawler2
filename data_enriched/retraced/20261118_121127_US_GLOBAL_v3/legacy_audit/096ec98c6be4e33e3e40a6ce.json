@@ -1,0 +1,114 @@
+{
+  "source_id": "096ec98c6be4e33e3e40a6ce",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_05_06_agriculture_agriculture_cnbc.json",
+      "sha256": "03ed328b28a527edfceae34ecc95dafb776a256a6e2a9f254349324e1fe91857",
+      "filename": "2014_05_06_agriculture_agriculture_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e42e6be7cb2e58ba6fc355933ff0fcb5bc65e43a32164b6d60b0d267d6598050",
+  "input_hash": "d649b741bb1d8f388d17feac4ce36aa21973a74c943b1e0284a8922694cecee2",
+  "matching_audit_hash": "7c9a1ff5b8169fcd5493d75449ea93cdfa96b5015b0fc0ccc2de82cd1dfdf049",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7ea7d89a865a8bb777bb80de1f231c30c8b4c8de78e7d6d859cbf80b09de507b",
+    "raw_sha256": "0ec2928686ec1992597c8fd579050ac71fb771b24ca3f252a94a185263862f71",
+    "date_quote": "article:published_time=2014-05-06T15:46:15+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e019be65c7b3b35ba93e20a8fb63094c5fa6b75863eee84008ff2e938822cd9e",
+  "outputs": [
+    {
+      "path": "US\\2014_05_06_agriculture_agriculture_cnbc.json",
+      "sha256": "754982dc078d981cbeff1f414ca6b1932a8bfe3dfb0c054b1a19c70dcf1013b6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-05-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:18.470815+00:00",
+    "fetched_at": "2026-11-10T16:30:57.354121+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.451538+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:15:06.400787+00:00",
+  "feature_available_at": "2026-11-12T14:15:06.441278+00:00",
+  "commit_verified_at": "2026-11-12T14:15:06.441278+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses changes in U.S. agriculture, including trends in farm sizes, sales, and demographics, as well as the role of the USDA and the impact of the 2",
+    "securities": [
+      {
+        "name": "USDA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "USDA"
+      },
+      {
+        "name": "Texas Tech University",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Texas Tech University"
+      },
+      {
+        "name": "Middle Tennessee State University",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Middle Tennessee State University"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Agriculture",
+        "basis": "explicit",
+        "quote": "agriculture"
+      },
+      {
+        "name": "Food Production",
+        "basis": "inferred",
+        "quote": "food"
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "Internet access"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "USDA": "organization",
+      "Texas Tech University": "organization",
+      "Middle Tennessee State University": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

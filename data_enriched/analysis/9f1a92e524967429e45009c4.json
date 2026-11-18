@@ -1,0 +1,95 @@
+{
+  "source_id": "9f1a92e524967429e45009c4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_03_Financial-Services_Banking_sec.json",
+      "sha256": "ba5468f450fdf256eb970f3343ed94a25642177435950ef9d91506c7d7126237",
+      "filename": "2013_01_03_Financial-Services_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "02dbff1c72b8888e589a0aa2f6046deba4843244c6e042219219e2647de89f9a",
+  "input_hash": "54eda8263c1a08009fb03dc37ab65b55f542d0a87f078d6fc98ae97d3b1b122d",
+  "matching_audit_hash": "f8a6f30c6503ce58f36b8ab590394906277f71cf86281449474d4f1401593500",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "55da46ccbc14db472f6c08198565c0245e1b0e6cbcf0843f6b697ef1f0c6ea32",
+    "raw_sha256": "73b6f6697d9c1ab444debb83e39c648f002636aebad0ad41374fc7c30ce163f0",
+    "date_quote": "Date of Report (Date of earliest event reported): January 3, 2013",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023213000001/form8k010413.txt",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Kentucky Bancshares, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Kentucky Bancshares, Inc."
+    }
+  ],
+  "record_hash": "4dd10227076bfd41451c88968ac2e4a5ec406e3dac9bbeafbdc39fc769dafef4",
+  "outputs": [
+    {
+      "path": "US\\2013_01_03_Financial-Services_Banking_sec.json",
+      "sha256": "7cfd1bd03469f750506f0393be6508c7571fea16b6794e0cc6f0d539e87c0a46"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+    "fetched_at": "2026-11-10T23:16:34.842595+00:00",
+    "feature_available_at": "2026-11-10T23:16:49.200869+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:42.849950+00:00",
+  "commit_verified_at": "2026-11-12T13:52:42.849950+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Kentucky Bancshares, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kentucky Bancshares, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "source_id": "6e9e32c0eaad0dd5b47d0bd0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_02_02_Regulatory_Financial-Services_treasury.json",
+      "sha256": "7406ec12530fd651c5149e4106b72830c8ed7a5046683e2cff520190a01e3659",
+      "filename": "2012_02_02_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "3f62837865570b5ad9913dc4227e2aa6dc962399f8e96aba11ddd4c61198e1ce",
+  "input_hash": "b5b9af57571dee7b12f9db14db2c83f3df4db7886ac185276e1f68d6abf06723",
+  "matching_audit_hash": "123496332062364ae4d67f33061e81ff9dd5f6917fdae598ea9a672424e40f68",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3a5fd780f210d822e96ab441fe58581354d0c95bd4f74bcd366c95dfbef295ff",
+    "raw_sha256": "561931eab523d1476bd317c4d3e8bdd4ce1c787a3e3ec8020752b1227a4db631",
+    "date_quote": "February 2, 2012 (Archived Content) Executive Actions Broaden Options, Increase Transparency for 401(k) Savers",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0553cbb426d28b47cd79b3233e57a713e43eda6b636eb1cf094bbf5817d66d99",
+  "outputs": [
+    {
+      "path": "US\\2012_02_02_Regulatory_Financial-Services_treasury.json",
+      "sha256": "8bdb88424e55ebc09b01454564dd850cb80f1cbecc70cd6562294584ff80b38d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-02-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:59.652976+00:00",
+    "fetched_at": "2026-11-10T10:48:40.200657+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.166041+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:58:22.223509+00:00",
+  "feature_available_at": "2026-11-12T15:16:32.815987+00:00",
+  "commit_verified_at": "2026-11-12T15:16:32.815987+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Regulatory actions to improve retirement transparency and options.",
+    "securities": [
+      {
+        "name": "U.S. Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury"
+      },
+      {
+        "name": "Labor Departments",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Labor Departments"
+      },
+      {
+        "name": "Treasury Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Department"
+      },
+      {
+        "name": "Department of Labor",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Department of Labor"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "401(k) plan marketplace"
+      },
+      {
+        "name": "Retirement Services",
+        "basis": "inferred",
+        "quote": "retirement security"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Treasury": "organization",
+      "Labor Departments": "organization",
+      "Treasury Department": "organization",
+      "Department of Labor": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:32.835156+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:58:22.223509+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Regulatory actions to improve retirement transparency and options.",
+      "securities": [
+        {
+          "name": "U.S. Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Treasury"
+        },
+        {
+          "name": "Labor Departments",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Labor Departments"
+        },
+        {
+          "name": "Treasury Department",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Treasury Department"
+        },
+        {
+          "name": "Department of Labor",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Department of Labor"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "401(k) plan marketplace"
+        },
+        {
+          "name": "Retirement Services",
+          "basis": "inferred",
+          "quote": "retirement security"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Treasury": "organization",
+        "Labor Departments": "organization",
+        "Treasury Department": "organization",
+        "Department of Labor": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:58:22.258973+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:58:22.267599+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:58:22.249894+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses regulatory actions by the U.S. Treasury and Labor Departments aimed at enhancing retirement security, including transparency in 401(k) plans,",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:55:25.109444+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

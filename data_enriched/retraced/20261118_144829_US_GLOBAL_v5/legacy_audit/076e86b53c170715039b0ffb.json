@@ -1,0 +1,100 @@
+{
+  "source_id": "076e86b53c170715039b0ffb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_09_12_Labor-Costs_Private-Industry_bls.json",
+      "sha256": "b6d079702daeb3adb18be2ce1d78f9323b49f2c25a6d05d9e7027f64fb0c0ecb",
+      "filename": "2014_09_12_Labor-Costs_Private-Industry_bls.json"
+    }
+  ],
+  "original_record_hash": "efce4568f796da5ffa4bb42a4ebd2fe4a4bbb9e33516bcc7f704b073d10d3e2e",
+  "input_hash": "1fc4052eb6b6914c191bfa283e3af0710acaac476faa59b748b506a63e9a561a",
+  "matching_audit_hash": "17bcb0f2a4c20c1e8088297d8b1e9833d500cc16481c272f12a9ca8ba557d397",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f0749727fc01caf74dcaa353df3f9231d2effd0fa169ece3722871186e5878b8",
+    "raw_sha256": "1fa7a36e9fb923bb43c920fdea6ebb98fe1a46feae297116ac7cbef409a808e2",
+    "date_quote": "September 12, 2014",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "705c7a353abf5091d23ed5aeecb28fcade52bbb80c1ebba01493a9a3334453fe",
+  "outputs": [
+    {
+      "path": "US\\2014_09_12_Labor-Costs_Private-Industry_bls.json",
+      "sha256": "a2ae02ce9cb71f4870d27a32c72685877abaa26bfb5e6d5ddc3b9c371a39f3f4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-09-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:53.640994+00:00",
+    "fetched_at": "2026-11-10T11:28:15.892369+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.829356+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:18:35.249381+00:00",
+  "feature_available_at": "2026-11-12T14:18:35.283735+00:00",
+  "commit_verified_at": "2026-11-12T14:18:35.283735+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text provides detailed data on employer costs for employee compensation across different occupational groups, including wages and benefits, which is useful.",
+    "securities": [
+      {
+        "name": "Employment Cost Trends program",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Employment Cost Trends program"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Private industry employers",
+        "basis": "explicit",
+        "quote": "private industry employers"
+      },
+      {
+        "name": "Management, professional, and related occupations",
+        "basis": "explicit",
+        "quote": "management, professional, and related occupations"
+      },
+      {
+        "name": "Service occupations",
+        "basis": "explicit",
+        "quote": "service occupations"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Employment Cost Trends program": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

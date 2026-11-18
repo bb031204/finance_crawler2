@@ -1,0 +1,91 @@
+{
+  "source_id": "e7f5e81f1ff269513edebbc5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_15_Financial-Results_Biotechnology_sec.json",
+      "sha256": "cb87ce8d61fc82043cdc7187abad569803ad7a5a5a77b3ae52908ceb0a193616",
+      "filename": "2018_03_15_Financial-Results_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "a5b66dbe7636c54fcbac418785117b190386c1ae2f3c2fa16f5766c02ec02d56",
+  "input_hash": "043119e0066e252d5a657f585c2a65fc899ed66a0239d00e20a49fcf0ffe7d8a",
+  "matching_audit_hash": "8d3a3eb6f55fbce9415921207b9f81ce1c3f7dad16f47e151ab857478abcb7f1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "26e352afb6f811bee2e76533334e42e45d500518524879e136fbe6faac63b454",
+    "raw_sha256": "b92249e8d660018062408d643d01d6a61f3382dbb6f83f4e1b4e3a92ea18d481",
+    "date_quote": "SEC filing datePublished=2018-03-15",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000114420418014982/tv488645_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5b94d1d33ec7309efb64243e2541016d6cd39fdf8c04e82289243878f7957a1c",
+  "outputs": [
+    {
+      "path": "US\\2018_03_15_Financial-Results_Biotechnology_sec.json",
+      "sha256": "7d1ccc8021086f2eaa993ff2e876f9259b236f46468783e1fbcdca677af6f188"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+    "fetched_at": "2026-11-11T13:11:51.292811+00:00",
+    "feature_available_at": "2026-11-11T13:12:06.973160+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:48.360233+00:00",
+  "feature_available_at": "2026-11-12T14:43:48.369641+00:00",
+  "commit_verified_at": "2026-11-12T14:43:48.369641+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text contains information about company appointments and financial results, which are relevant to the biotechnology industry and the company's operations.",
+    "securities": [
+      {
+        "name": "Novavax, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Novavax, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "biotechnology industry",
+        "basis": "explicit",
+        "quote": "biotechnology industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Novavax, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

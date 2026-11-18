@@ -1,0 +1,169 @@
+{
+  "source_id": "8eb9912491d188935694ab63",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_22_stock_biotechnology_cnbc.json",
+      "sha256": "c3e2bfe07f473fe95bb1feb21f88b31a8783de0d8d7c0f916be76b36152e2d92",
+      "filename": "2019_10_22_stock_biotechnology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b36c3898ed13113e1d1ee73cb6d65b2cd5962f9cd7f6dfa4f0dd2ca83aed3785",
+  "input_hash": "75ddcedec80f8ce1a916aa786524ee49f92813ebbb297f067fafe21aa249ec85",
+  "matching_audit_hash": "3fb1f3411209a182292a0c56a7ad95f70d2a7e4ccba3c347fd01efc904ba00f2",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9292df988009cca313fe48e6fb4731b4289f5bff711c6956b774e5a466a3d90a",
+    "raw_sha256": "cbee5f39e1a19757a987a61628bb912d452e1451df5b05cf268ed32c6a75e7f8",
+    "date_quote": "article:published_time=2019-10-22T15:45:59+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Biogen",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Biogen"
+    },
+    {
+      "name": "iShares NASDAQ Biotechnology ETF",
+      "ticker": null,
+      "exchange": null,
+      "quote": "iShares NASDAQ Biotechnology ETF"
+    },
+    {
+      "name": "Vertex Pharmaceuticals",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Vertex Pharmaceuticals"
+    },
+    {
+      "name": "Gilead",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Gilead"
+    },
+    {
+      "name": "Celgene",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Celgene"
+    },
+    {
+      "name": "Regeneron",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Regeneron"
+    },
+    {
+      "name": "Endo International",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Endo International"
+    }
+  ],
+  "record_hash": "3d4adffc27db82591ef75a4ddf0018c36c06f162114b55f73e995978e42497cb",
+  "outputs": [
+    {
+      "path": "US\\2019_10_22_stock_biotechnology_cnbc.json",
+      "sha256": "98be0ecf954aa26e481254199d1a3257f7df8575d73d5b836056b1983762c0c4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:51.353665+00:00",
+    "fetched_at": "2026-11-10T20:48:30.616631+00:00",
+    "feature_available_at": "2026-11-11T07:32:36.069432+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:30.360024+00:00",
+  "commit_verified_at": "2026-11-12T13:53:30.360024+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Biogen",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Biogen"
+      },
+      {
+        "name": "iShares NASDAQ Biotechnology ETF",
+        "ticker": null,
+        "exchange": null,
+        "quote": "iShares NASDAQ Biotechnology ETF"
+      },
+      {
+        "name": "Vertex Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vertex Pharmaceuticals"
+      },
+      {
+        "name": "Gilead",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gilead"
+      },
+      {
+        "name": "Celgene",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Celgene"
+      },
+      {
+        "name": "Regeneron",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Regeneron"
+      },
+      {
+        "name": "Endo International",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Endo International"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

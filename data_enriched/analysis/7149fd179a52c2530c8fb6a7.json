@@ -1,0 +1,188 @@
+{
+  "source_id": "7149fd179a52c2530c8fb6a7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_09_24_Regulatory_Insurance_treasury.json",
+      "sha256": "ed0535d5b6b0d86430206ebf335d291360991fdd7338b505bc122d55d8ce221a",
+      "filename": "2014_09_24_Regulatory_Insurance_treasury.json"
+    }
+  ],
+  "original_record_hash": "e18b2f3480b88bbc1763b37e262640b1c7261d72dae52691f557e855ec554c52",
+  "input_hash": "0a36f43d40137326fb0144ece46507c8963f3e032bc230c1e82d8ca348bb13bd",
+  "matching_audit_hash": "707894182d77f1dbf13cc416a05b007c9cf73cac663c99c09b9122d32788101c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "688ec3d97359476e24cbe6565ac565579f6ee00096003024082a1bc14b1ec0dd",
+    "raw_sha256": "33f30c79cc0728ca344d791068828c9e2798e5119981a83d8de633df06520c5c",
+    "date_quote": "Press Releases Treasury’s Federal Insurance Office Releases Second Annual Report September 24, 2014 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e593b6c3638f4ec6ba7d95371fe2edf23fa7b2f3100ea451d7a107651f689dce",
+  "outputs": [
+    {
+      "path": "US\\2014_09_24_Regulatory_Insurance_treasury.json",
+      "sha256": "686aa21c2ff46ff331bd2326bb15fc08e0c2cbdfcdb796631120dcbab8596759"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-09-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:24.680856+00:00",
+    "fetched_at": "2026-11-10T22:18:34.380456+00:00",
+    "feature_available_at": "2026-11-10T22:18:42.356007+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:02:48.317819+00:00",
+  "feature_available_at": "2026-11-12T15:16:36.968636+00:00",
+  "commit_verified_at": "2026-11-12T15:16:36.968636+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Report highlights insurance industry resilience and regulatory developments.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury’s Federal Insurance Office (FIO)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury’s Federal Insurance Office (FIO)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "Insurance Industry"
+      },
+      {
+        "name": "Insurance Industry",
+        "basis": "explicit",
+        "quote": "Insurance Industry"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury’s Federal Insurance Office (FIO)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:36.990625+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:02:48.317819+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Report highlights insurance industry resilience and regulatory developments.",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury’s Federal Insurance Office (FIO)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury’s Federal Insurance Office (FIO)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Insurance",
+          "basis": "explicit",
+          "quote": "Insurance Industry"
+        },
+        {
+          "name": "Insurance Industry",
+          "basis": "explicit",
+          "quote": "Insurance Industry"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury’s Federal Insurance Office (FIO)": "organization",
+        "Insurance Industry": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:02:48.342086+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:02:48.350274+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:02:48.332928+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses regulatory developments, financial performance, and the role of non-U.S. reinsurers in the insurance industry, providing relevant industry",
+        "securities": [
+          {
+            "name": "U.S. Department of the Treasury’s Federal Insurance Office (FIO)",
+            "ticker": null,
+            "exchange": null,
+            "quote": "U.S. Department of the Treasury’s Federal Insurance Office (FIO)"
+          },
+          {
+            "name": "Insurance Industry",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Insurance Industry"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Insurance",
+            "basis": "explicit",
+            "quote": "Insurance Industry"
+          }
+        ],
+        "impact_scope": [
+          "industry"
+        ],
+        "entity_types": {
+          "U.S. Department of the Treasury’s Federal Insurance Office (FIO)": "organization",
+          "Insurance Industry": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:18:43.063673+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

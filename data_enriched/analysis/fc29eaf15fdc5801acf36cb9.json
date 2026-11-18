@@ -1,0 +1,179 @@
+{
+  "source_id": "fc29eaf15fdc5801acf36cb9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_10_31_Finance_Investment_treasury.json",
+      "sha256": "a79a3de894d1822e9ae9a1c72fa9f18e7dabd33f408b1975593f1ef290abc0fa",
+      "filename": "2012_10_31_Finance_Investment_treasury.json"
+    }
+  ],
+  "original_record_hash": "bc20aa5718f3a80c9b3687d55f99005729632e8a2e7e906eb0892b4490e28163",
+  "input_hash": "9107cf06fcde8bbddf1cb650628415f5f232d2b15840ece189fa281ac013ce04",
+  "matching_audit_hash": "da869e51aef61146a33c7c7d8eb7556dd53f9af8ca384075a30cb55f36493c77",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8cb838e8134fa6f0f6b516617a7b3b2aff5341586002b14f0e72bef0baaa7292",
+    "raw_sha256": "c9e80f053c360574568f010d05825016dd459c3e94b62ab30f987ce7e837e13d",
+    "date_quote": "October 31, 2012",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a0c2ab9754e2167d4e89718ab71bda8c54f0d530dcebf7994c287f2064d46ba8",
+  "outputs": [
+    {
+      "path": "US\\2012_10_31_Finance_Investment_treasury.json",
+      "sha256": "ccaa3c707cea392a76c3e47aaa0802b74c215e8b84d637fab703fb4b3554d560"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-10-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:59.652976+00:00",
+    "fetched_at": "2026-11-10T10:48:27.263571+00:00",
+    "feature_available_at": "2026-11-10T17:53:13.072519+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:08.742676+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.191254+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.191254+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Provides macroeconomic insights on U.S. foreign securities holdings.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      },
+      {
+        "name": "Board of Governors of the Federal Reserve System",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Board of Governors of the Federal Reserve System"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Investment Management",
+        "basis": "inferred",
+        "quote": "portfolio holdings"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Federal Reserve Bank of New York": "organization",
+      "Board of Governors of the Federal Reserve System": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.217300+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:08.742676+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Provides macroeconomic insights on U.S. foreign securities holdings.",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "Federal Reserve Bank of New York",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Bank of New York"
+        },
+        {
+          "name": "Board of Governors of the Federal Reserve System",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Board of Governors of the Federal Reserve System"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Investment Management",
+          "basis": "inferred",
+          "quote": "portfolio holdings"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "Federal Reserve Bank of New York": "organization",
+        "Board of Governors of the Federal Reserve System": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:08.768206+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:08.776945+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:08.758841+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text provides data on U.S. portfolio holdings of foreign securities, including breakdowns by asset type and major holding countries, which is relevant for a",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:58:23.153787+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

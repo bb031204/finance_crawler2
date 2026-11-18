@@ -1,0 +1,133 @@
+{
+  "source_id": "fc04b08558f288aa2482b1ee",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_01_stock_Broadcasting-&-Telecommunications_sec.json",
+      "sha256": "509572651699b955cda55e6a7a0c89d0c2736af1333535307481d527a5945e16",
+      "filename": "2017_02_01_stock_Broadcasting-&-Telecommunications_sec.json"
+    }
+  ],
+  "original_record_hash": "cc8a13b05d6c2c8d66f285c36ee8f7beabe8bb880fb6f18442e8991757a79058",
+  "input_hash": "2c383e169970cf03cfcbca3667b5d32a131ead32a8e6b53307157577b8d919b1",
+  "matching_audit_hash": "2b8b28b5be0b5ada0b4d4844cbd2cec364cf68a83c64d4741583f7845d3e57c8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5d37c36ab101e4053d1623271c2db6950c9fde878bc94ce6089bf556eaf42531",
+    "raw_sha256": "b623f2de441f1d0bccd35efd08473752a6217fd06ad35306c5d16ab03b8cf71c",
+    "date_quote": "SEC filing datePublished=2017-02-01",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465917005598/a17-3599_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "EchoStar Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "EchoStar Corporation"
+    },
+    {
+      "name": "EchoStar",
+      "ticker": null,
+      "exchange": null,
+      "quote": "EchoStar"
+    },
+    {
+      "name": "DISH Network Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH Network Corporation"
+    },
+    {
+      "name": "Hughes Satellite Systems Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Hughes Satellite Systems Corporation"
+    }
+  ],
+  "record_hash": "c4619d573f73dafc9a595197818e71fbc60f93858239482b81c3dffddf2474f6",
+  "outputs": [
+    {
+      "path": "US\\2017_02_01_stock_Broadcasting-&-Telecommunications_sec.json",
+      "sha256": "474bd0d33c9cc5b610b57241d6e2d52798b1e0ad32be3d78b5a8e465cc84622f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:22:36.615056+00:00",
+    "feature_available_at": "2026-11-11T12:24:25.607259+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:11.786228+00:00",
+  "commit_verified_at": "2026-11-12T13:53:11.786228+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "EchoStar Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EchoStar Corporation"
+      },
+      {
+        "name": "EchoStar",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EchoStar"
+      },
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      },
+      {
+        "name": "Hughes Satellite Systems Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hughes Satellite Systems Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Telecommunications",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "source_id": "9d482ebe3b3f5133fc99dd02",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_06_15_Commodities_Mining_bloomberg.json",
+      "sha256": "5c7507761d8d827e878da8a0a03fbe35f8eaf79ef0c9c68b09f04f05b67a5d3f",
+      "filename": "2018_06_15_Commodities_Mining_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "cb1832fdb0433420648637836d0f65d9c032909d5afd7e358da880196d434099",
+  "input_hash": "63b01c60cbd781836003b5bcc4b5c43f03574a7fb7ea318ec6fd93a74ebcc0a2",
+  "matching_audit_hash": "c9e2021becfd2ecc47cc1e5e4243933ee41aed2ddc2ee35d904fe7768d826df4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3fa725d1afda14d7dd6f77c45beb15ad146c5593b0581d0cb805c458c2f49711",
+    "raw_sha256": "0758314f6609ee4f66c7a96b34292b4b2b6b163fcbfc981be3410d92de4ab2e1",
+    "date_quote": "June 15, 2018 at 6:02 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a17cc6e0208519280a2842fdb96c50faa742c70020c9cf6946c7f41d2404e6e3",
+  "outputs": [
+    {
+      "path": "US\\2018_06_15_Commodities_Mining_bloomberg.json",
+      "sha256": "40ad020fd240ba975abf7a90de3807b3e32ff9e9a4047c67e3b7c6d7df4c8718"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-06-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:02:15.691071+00:00",
+    "fetched_at": "2026-11-10T13:24:16.423422+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.749122+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:04.215836+00:00",
+  "feature_available_at": "2026-11-12T14:45:04.223835+00:00",
+  "commit_verified_at": "2026-11-12T14:45:04.223835+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Glencore's actions regarding U.S. sanctions and its operations in the Democratic Republic of Congo, including financial settlements and子公司",
+    "securities": [
+      {
+        "name": "Glencore Plc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Glencore Plc"
+      },
+      {
+        "name": "Democratic Republic of Congo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Democratic Republic of Congo"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Commodities trading",
+        "basis": "inferred",
+        "quote": "commodities trader"
+      },
+      {
+        "name": "Mining",
+        "basis": "inferred",
+        "quote": "mining assets"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Glencore Plc": "company",
+      "Democratic Republic of Congo": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

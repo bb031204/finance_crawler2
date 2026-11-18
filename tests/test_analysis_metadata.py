@@ -98,10 +98,10 @@ class AnalysisTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_securities([dict(ENTITY,exchange='NYSE',quote=text)],text)
 
-    def test_company_without_ticker_keeps_internal_name_and_empty_public_stocks(self):
+    def test_company_without_ticker_keeps_name_without_guessing_stock_identity(self):
         entities = validate_securities([{'name': 'Apple', 'ticker': None, 'quote': 'Apple reported results'}], 'Apple reported results')
         fields = public_analysis({'securities': entities})
-        self.assertEqual(entities[0]['name'],'Apple');self.assertEqual(fields['股票实体'],[])
+        self.assertEqual(entities[0]['name'],'Apple');self.assertEqual(fields['股票实体'],[{'名称':'Apple','股票代码':None,'交易所':None}])
 
     def test_cross_company_pairing_and_substring_ticker_are_rejected(self):
         text = 'Apple Inc. (NASDAQ: AAPL) and NVIDIA Corp. (NASDAQ: NVDA) reported results.'

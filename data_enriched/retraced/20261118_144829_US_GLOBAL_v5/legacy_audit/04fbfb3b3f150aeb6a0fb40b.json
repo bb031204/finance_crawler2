@@ -1,0 +1,109 @@
+{
+  "source_id": "04fbfb3b3f150aeb6a0fb40b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_03_stock_Pharmaceuticals_cnbc.json",
+      "sha256": "144a57f5ea1abf7f64ec74a3da5027dd87817441bcacb8b04e7b5504e6eec0c0",
+      "filename": "2019_01_03_stock_Pharmaceuticals_cnbc.json"
+    }
+  ],
+  "original_record_hash": "9cbbbf976413571919f9b8190a96e5643a7ee67021a046440fc98753591a1b6f",
+  "input_hash": "fed837eabf5398d18dbc0335e92626d3e765908b5933713d04106296c789974b",
+  "matching_audit_hash": "b306d1343ad4e8cd7345ac6dec26e8e5d70876cc1a2bc8252344fae6a031719e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e988f50febd6bea31afa620a44cdcb40a88f703325c92c94ba0168868aeaadd2",
+    "raw_sha256": "537e9893019bd302ddbd24ba19827a599d2ba5c02a87bc6c62e21a8e02cc8861",
+    "date_quote": "article:published_time=2019-01-03T19:18:59+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Bristol-Myers Squibb",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Bristol-Myers Squibb"
+    },
+    {
+      "name": "Celgene",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Celgene"
+    }
+  ],
+  "record_hash": "6da141e9a57c6ff44669300f63bcc4b99a3c34a1c0f12042a24a2a854558d5b6",
+  "outputs": [
+    {
+      "path": "US\\2019_01_03_stock_Pharmaceuticals_cnbc.json",
+      "sha256": "e81fda5dbe952cb870eb80ef2a0831a82814013d7613d1e846b07b3b104bb724"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:51.353665+00:00",
+    "fetched_at": "2026-11-10T20:50:29.970320+00:00",
+    "feature_available_at": "2026-11-10T20:51:27.949811+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:24.536450+00:00",
+  "commit_verified_at": "2026-11-12T13:53:24.536450+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Bristol-Myers Squibb",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bristol-Myers Squibb"
+      },
+      {
+        "name": "Celgene",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Celgene"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceuticals",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

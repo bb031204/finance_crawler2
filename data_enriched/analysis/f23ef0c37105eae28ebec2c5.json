@@ -1,0 +1,106 @@
+{
+  "source_id": "f23ef0c37105eae28ebec2c5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_14_Financial-Agreement_Financial-Services_sec.json",
+      "sha256": "f63436b960a31c224decdcb51836e145c3ade57b252668a58e16c7a58421c9ab",
+      "filename": "2018_03_14_Financial-Agreement_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "793bf47f13867ccdaf7a608d298c9e24cf8ceec845588d43fca53ac9dbb8a55b",
+  "input_hash": "37fb1d7e1a13a88f2f5e6e9e5c3dee9b9d3e471c649c2a5bc72c3b3bb70b2c3f",
+  "matching_audit_hash": "ef81a6dd834fd5870b9ed2d5d2384294300d10d29080cd5cec2f2db5f9d9048c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "80576eff3bc28558b4e319ca54cf9b0876565f68e285ea26ae50fed456de31da",
+    "raw_sha256": "98fb9c50f36831030871845224af426c018d281eeef5e708f46a26078e0c2b2c",
+    "date_quote": "SEC filing datePublished=2018-03-14",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312518081819/d426064d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    },
+    {
+      "name": "Taxi Medallion Loan Trust III",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Taxi Medallion Loan Trust III"
+    }
+  ],
+  "record_hash": "2baee84d9beda6340a69ca859c20e7c0da942f80fff95b2bc65e003d53582517",
+  "outputs": [
+    {
+      "path": "US\\2018_03_14_Financial-Agreement_Financial-Services_sec.json",
+      "sha256": "7aeab89aa3cf876e90bb349431e1d34c75b47af24e58f2f5a44067a771fc1331"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-14",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.045565+00:00",
+    "fetched_at": "2026-11-11T12:54:00.136089+00:00",
+    "feature_available_at": "2026-11-11T12:54:42.224842+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:45.091902+00:00",
+  "feature_available_at": "2026-11-12T14:43:45.100969+00:00",
+  "commit_verified_at": "2026-11-12T14:43:45.100969+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses a financial agreement amendment affecting the company's operations and financial flexibility.",
+    "securities": [
+      {
+        "name": "Taxi Medallion Loan Trust III",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Taxi Medallion Loan Trust III"
+      },
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Taxi Medallion Loan Trust III": "company",
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

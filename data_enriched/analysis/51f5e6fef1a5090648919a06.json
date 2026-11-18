@@ -1,0 +1,102 @@
+{
+  "source_id": "51f5e6fef1a5090648919a06",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_04_25_Real-Estate_Real-Estate_bloomberg.json",
+      "sha256": "396dd4d86070a73537caea0bd4d0f5f21c92f3bd406af1af5f14f63c32832a5f",
+      "filename": "2018_04_25_Real-Estate_Real-Estate_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "25b7839141b4c7ee27d7c84d300b09b5ac7bbad54bcd7c654bc07c165316cb18",
+  "input_hash": "8862aca8966ed207418c4c91d22047cc05039ca7a8db71d30c1e441735b1f29d",
+  "matching_audit_hash": "efb132d90efedc09cf0af7f0a653e4370a7779a6c82b68e038815ba10825be0a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "347b7c3181e2f349dd38534c777c900547bfb740ac7a8309dbbaa74384eca159",
+    "raw_sha256": "1c512d3b124187ef4da2e567c4b800d69c8928d00891475391a8a8efc0457f3e",
+    "date_quote": "April 25, 2018 at 8:00 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d38cb25e28f96abc610cb03f2b4eb0121498f798aaf4e9c6f2d239026bd94cc4",
+  "outputs": [
+    {
+      "path": "US\\2018_04_25_Real-Estate_Real-Estate_bloomberg.json",
+      "sha256": "b516a2f3571c93ace1261e1bb1e23ecd7c15307a55e1897e9d9e4e2ae89bc8b6"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-04-25",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:35:04.379923+00:00",
+    "fetched_at": "2026-11-10T14:52:37.767893+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.442910+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:44:26.655552+00:00",
+  "feature_available_at": "2026-11-12T14:44:26.666045+00:00",
+  "commit_verified_at": "2026-11-12T14:44:26.666045+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses legal and ownership challenges related to real estate affected by climate change, particularly in coastal areas.",
+    "securities": [
+      {
+        "name": "Dauphin Island",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Dauphin Island, Alabama"
+      },
+      {
+        "name": "Louisiana",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Louisiana"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "Real Estate"
+      },
+      {
+        "name": "Legal Services",
+        "basis": "inferred",
+        "quote": "legal and ownership challenges"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Dauphin Island": "organization",
+      "Louisiana": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "source_id": "ab9aa7c1ea17eadd9e3f33b7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_29_Economic-Data_Professional,-scientific,-and-technical_bea.json",
+      "sha256": "2b5d04d34ff72cea42437ec8ffcbce2f8151b298a712168f9db9fe228d7c6434",
+      "filename": "2019_10_29_Economic-Data_Professional,-scientific,-and-technical_bea.json"
+    }
+  ],
+  "original_record_hash": "fee5dbd01e4f2e67f47c6b0c3e94c8a8ef97605648001ca4dff054da45a3cc19",
+  "input_hash": "1c0746da57a3bf77bbe23596b549de7adb954202721efe5f6660e5d474f30c2f",
+  "matching_audit_hash": "2e28848debf3a613cebe6dc66f3f922071e29a2b560c9bb7fad6e79e42232f10",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1f2160e50e8597cd4b391e2912dab45a32d54722cfa6f106eb521ef7048c2421",
+    "raw_sha256": "9dbb02d2cb6663c4174f971d86819188c9cf433325caf9b27b4b8d061e704cc9",
+    "date_quote": "EMBARGOED UNTIL RELEASE AT 8:30 A.M. EDT, TUESDAY, October 29, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "bf346797c972e3cd1ea059759c3bbc255e820764c80402789d009ae116652a45",
+  "outputs": [
+    {
+      "path": "US\\2019_10_29_Economic-Data_Professional,-scientific,-and-technical_bea.json",
+      "sha256": "dfc1667cbb7642686cb6439defe7d07bb8d191473f9fbbc38fd346a287d1aa8d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:22.409700+00:00",
+    "fetched_at": "2026-11-11T03:53:46.024754+00:00",
+    "feature_available_at": "2026-11-11T03:55:00.081038+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:05.755497+00:00",
+  "feature_available_at": "2026-11-12T14:51:05.765506+00:00",
+  "commit_verified_at": "2026-11-12T14:51:05.765506+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text provides detailed information on GDP growth by industry, including specific industry contributions and updates to economic data sources.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Economic Analysis (BEA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Professional, scientific, and technical services",
+        "basis": "explicit",
+        "quote": "Professional, scientific, and technical services"
+      },
+      {
+        "name": "Real estate and rental and leasing",
+        "basis": "explicit",
+        "quote": "Real estate and rental and leasing"
+      },
+      {
+        "name": "Mining",
+        "basis": "explicit",
+        "quote": "Mining"
+      },
+      {
+        "name": "Retail trade",
+        "basis": "explicit",
+        "quote": "Retail trade"
+      },
+      {
+        "name": "Finance and insurance",
+        "basis": "explicit",
+        "quote": "Finance and insurance"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Economic Analysis (BEA)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

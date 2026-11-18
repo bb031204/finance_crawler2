@@ -1,0 +1,105 @@
+{
+  "source_id": "83993dc1515b33c0f36a9c2c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_28_11_30_Brand-Reputation_Automotive_prnewswire.json",
+      "sha256": "387a3b61ff2787256f4645b3cef4052593412ff131f722ff433fd58840825eb7",
+      "filename": "2018_03_28_11_30_Brand-Reputation_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "89f62aa2e0b0cc8109d7e4df3fff72a2622bc1e667c127cf062f81b92905b51e",
+  "input_hash": "8ea3b9eabdb22307cef51b90a37fba1d8478dadcea71fb59fc6d0dccdac3100b",
+  "matching_audit_hash": "fbe14b66cb8076643b520ffff601ac1c8c000efcf174b9e0066e91ec8f0be660",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6f2067f330a483f0c2ffa615533522a5f6be8d09cc363236d82a394de9f2851b",
+    "raw_sha256": "4d4eadfde983548b6cb71691fa437986e3c3ade68a2b45f04e766f0d39edecfb",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2018-03-28T11:30:00+01:00\ndate=2018-03-28T11:30:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "023ac3afd7ac41930b2370f8a413e258bd03ac6495dfd402900e735ad24e156b",
+  "outputs": [
+    {
+      "path": "US\\2018_03_28_11_30_Brand-Reputation_Automotive_prnewswire.json",
+      "sha256": "2190ac74f0107375e9ca65ff4cf42f89ef674626fce7170a5a5be0e709483d6a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-28T11:30:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:40:13.032994+00:00",
+    "fetched_at": "2026-11-10T21:31:29.471475+00:00",
+    "feature_available_at": "2026-11-11T08:55:09.437561+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:44:00.743269+00:00",
+  "feature_available_at": "2026-11-12T14:44:00.752495+00:00",
+  "commit_verified_at": "2026-11-12T14:44:00.752495+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides information about Subaru of America, Inc.'s recognition in the automotive industry, its brand reputation, and its corporate initiatives.",
+    "securities": [
+      {
+        "name": "Subaru of America, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of America, Inc."
+      },
+      {
+        "name": "Subaru Corporation of Japan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru Corporation of Japan"
+      },
+      {
+        "name": "Kelley Blue Book",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kelley Blue Book"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive industry",
+        "basis": "explicit",
+        "quote": "automotive industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Subaru of America, Inc.": "company",
+      "Subaru Corporation of Japan": "company",
+      "Kelley Blue Book": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

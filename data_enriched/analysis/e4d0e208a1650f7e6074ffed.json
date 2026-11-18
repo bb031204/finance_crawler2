@@ -1,0 +1,97 @@
+{
+  "source_id": "e4d0e208a1650f7e6074ffed",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_10_11_Finance_Retail_cnbc.json",
+      "sha256": "8884a7d551e97e1d01b65c12df45ffa18dd16c727e6cf784becb59d711bbe2e8",
+      "filename": "2018_10_11_Finance_Retail_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e1157e0048425c6b23734ff848064fb6def01acf6db42c6d276adf052c25a7df",
+  "input_hash": "ebc214de727153f8fbc7b656a93e85899f8def1cc643fc3efb8ada1ca3310b56",
+  "matching_audit_hash": "27b34fe8ce2ca195718be68bc3cebfeddc58bd6273051f5e2f4bbe588bf3cf77",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "02bab2d472aad795a123d117f9574eca16fd6bf25e29c445a46964919d7ab993",
+    "raw_sha256": "d5ecc5bbd69d0a7b6232bd5aeab939c1f887e24e64dda647d5da2921b405b24d",
+    "date_quote": "article:published_time=2018-10-11T11:05:06+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Walgreens Boots Alliance",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Walgreens Boots Alliance"
+    }
+  ],
+  "record_hash": "ad822d5a70267b55a58f2311f610f48d96cbef8073a4b3f928c7785b0d271b94",
+  "outputs": [
+    {
+      "path": "US\\2018_10_11_Finance_Retail_cnbc.json",
+      "sha256": "ea3a0536ad6554a7f8d983370052e2a8dea1f89464ce95bf961f7a8be5d74580"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-10-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:03.621816+00:00",
+    "fetched_at": "2026-11-10T20:00:03.353233+00:00",
+    "feature_available_at": "2026-11-10T20:00:34.934644+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:23.876497+00:00",
+  "commit_verified_at": "2026-11-12T13:53:23.876497+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Walgreens Boots Alliance",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Walgreens Boots Alliance"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceutical Retail",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

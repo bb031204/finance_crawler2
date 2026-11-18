@@ -1,0 +1,117 @@
+{
+  "source_id": "b1e56d122670874d1d1fe49a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_11_29_Fashion_Apparel_bloomberg.json",
+      "sha256": "3b68b3115e9128535d8ca271be42fb0fae4887dcc9b0419123fa4a0b29c26428",
+      "filename": "2017_11_29_Fashion_Apparel_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2017_11_29_Fashion_Apparel_bloomberg.json",
+      "sha256": "3b68b3115e9128535d8ca271be42fb0fae4887dcc9b0419123fa4a0b29c26428",
+      "filename": "2017_11_29_Fashion_Apparel_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "20946b75ee5239e98f3fd7fddd659d75c89279cdb92f0dad2e624ac81f1b0430",
+  "input_hash": "f49ce41a28c7de22f48783328c75bd7983f93b699aa1caf69f2507954ef14e0c",
+  "matching_audit_hash": "49a682c43b24c47dcd54c5d22f096b9f5cfa8e358f9735e661df63f051c4a369",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "091b495ca6705b4106c046c87c2325d1911ca4e961f07929862b27ee41d1523c",
+    "raw_sha256": "f626ec9ca6e5d591eada3e6e9991a9d84c3d3b34ea3b7c3c3e885930e4dc9c10",
+    "date_quote": "November 29, 2017 at 8:00 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Hansae Co.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Hansae Co. has a favorite boast: One in every three Americans is wearing its clothes."
+    },
+    {
+      "name": "Sae-A Trading Co.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "If you’ve never heard of it, or Sae-A Trading Co., or Youngone Corp., you’d know them better by the labels they stitch on: Zara, Abercrombie & Fitch, Nike, Patagonia and many more."
+    }
+  ],
+  "record_hash": "af8bafe9358bb2b91666fdd389c6ac9da2aac03f75ea2f6441e99c5194627092",
+  "outputs": [
+    {
+      "path": "US\\2017_11_29_Fashion_Apparel_bloomberg.json",
+      "sha256": "20d7d4003bde22472b773f1f7013e39789da090ee72a1c72e70abd0fde33b163"
+    },
+    {
+      "path": "GLOBAL\\2017_11_29_Fashion_Apparel_bloomberg.json",
+      "sha256": "20d7d4003bde22472b773f1f7013e39789da090ee72a1c72e70abd0fde33b163"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-11-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:54.368496+00:00",
+    "fetched_at": "2026-11-10T17:52:18.811872+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.499438+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:17.800254+00:00",
+  "commit_verified_at": "2026-11-12T13:53:17.800254+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Hansae Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hansae Co. has a favorite boast: One in every three Americans is wearing its clothes."
+      },
+      {
+        "name": "Sae-A Trading Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "If you’ve never heard of it, or Sae-A Trading Co., or Youngone Corp., you’d know them better by the labels they stitch on: Zara, Abercrombie & Fitch, Nike, Patagonia and many more."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Apparel",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

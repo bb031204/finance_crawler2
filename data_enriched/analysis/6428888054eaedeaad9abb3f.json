@@ -1,0 +1,111 @@
+{
+  "source_id": "6428888054eaedeaad9abb3f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_04_21_Corporate_Renewable-Energy_sec.json",
+      "sha256": "1aebbdc8654fa82b0a169e1aab30e868579ac009631c8b363851b79fcc11b7f5",
+      "filename": "2016_04_21_Corporate_Renewable-Energy_sec.json"
+    }
+  ],
+  "original_record_hash": "2f8b785f4f8607e2884ac8d64e78056f3660e5ec2f566bb1fbac286fc0c77475",
+  "input_hash": "86a176571fca8cf8d1405abe86cd8058bc8d8331c3fefa9272e081bde2c63d89",
+  "matching_audit_hash": "fb9d038740aac15ffb462e161ee5ca45afd57f7d6316ad9cf74f25e57b721d8c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "66301b1f243d2324816c68a134717d6ff089b650f8518d0713ebea70d473699a",
+    "raw_sha256": "8d2947213290df218cee9047a11bfc03e175334ef84af613586e056e8b674985",
+    "date_quote": "BETHESDA, Md., April 21, 2016 (GLOBE NEWSWIRE) --",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "92992761fd0ec7eb2371cbd58e97fb89fa9e17007f4d6290fa08770b4118fc9d",
+  "outputs": [
+    {
+      "path": "US\\2016_04_21_Corporate_Renewable-Energy_sec.json",
+      "sha256": "fbe105a7fcbc20557ef798ed112bfc08eeb9e9b892db3b81a6678457aa39c9cf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-04-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:32.574852+00:00",
+    "fetched_at": "2026-11-10T13:45:21.921438+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.524282+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:31:39.536817+00:00",
+  "feature_available_at": "2026-11-12T14:31:39.593459+00:00",
+  "commit_verified_at": "2026-11-12T14:31:39.593459+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses TerraForm Global's operations, liquidity, and its relationship with SunEdison during its bankruptcy filing, including implications for its",
+    "securities": [
+      {
+        "name": "TerraForm Global, Inc.",
+        "ticker": "GLBL",
+        "exchange": "Nasdaq",
+        "quote": "TerraForm Global, Inc. (Nasdaq: GLBL)"
+      },
+      {
+        "name": "SunEdison, Inc.",
+        "ticker": "SUNE",
+        "exchange": "NYSE",
+        "quote": "SunEdison, Inc. (NYSE: SUNE)"
+      },
+      {
+        "name": "TerraForm Power, Inc.",
+        "ticker": "TERP",
+        "exchange": "Nasdaq",
+        "quote": "TerraForm Power, Inc. (Nasdaq: TERP)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Renewable Energy",
+        "basis": "inferred",
+        "quote": "clean electricity"
+      },
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": "power plants"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "TerraForm Global, Inc.": "company",
+      "SunEdison, Inc.": "company",
+      "TerraForm Power, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "source_id": "679aa99ffc06dadf40386156",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_16_executive-appointment_Financial-Services_sec.json",
+      "sha256": "0dc234ff507f2650d35202036558150fc1b3a0305e2eab1774e62a581f644066",
+      "filename": "2015_03_16_executive-appointment_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "332fe31585679e56ab55286d0e33a21173ab5453358bd0a8871bb7f4dfbfefe2",
+  "input_hash": "8e7a631b8da19ad58332dc839c61da7c0cc3c5584d02edab2f9d602995c8333c",
+  "matching_audit_hash": "ef2b406135119feb78e0c218e3eaf96150714ac50e2a43cbbf0355d460dc4834",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "bfaacc210522df7d8192693669f689f122f7dcf73e427b8c3bf6c00720073ad7",
+    "raw_sha256": "47f40fd81d505c523ef5818094e895d7d8d9d42dabcdde9bfa34bbf0f5f71cb2",
+    "date_quote": "SEC filing datePublished=2015-03-16",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312515093733/d890275d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    }
+  ],
+  "record_hash": "379529dad249ffec20cf3a7410a4be53f7c0e7ee35332ed9a08002b0426288bc",
+  "outputs": [
+    {
+      "path": "US\\2015_03_16_executive-appointment_Financial-Services_sec.json",
+      "sha256": "2fa25154b0d98cd4f15d64a2513f2ad93a17884707c93c11d1d7bfa447f1f5c0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:19:02.133817+00:00",
+    "feature_available_at": "2026-11-11T10:30:55.238714+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:24:14.443955+00:00",
+  "feature_available_at": "2026-11-12T14:24:14.473902+00:00",
+  "commit_verified_at": "2026-11-12T14:24:14.473902+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about executive appointments, employment agreements, and compensation details, which are relevant for the StockMixer news pipel",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      },
+      {
+        "name": "Medallion Business Credit",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Business Credit"
+      },
+      {
+        "name": "Capital Business Credit",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Capital Business Credit"
+      },
+      {
+        "name": "GetzerHenrich & Associates",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GetzerHenrich & Associates"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company",
+      "Medallion Business Credit": "company",
+      "Capital Business Credit": "company",
+      "GetzerHenrich & Associates": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

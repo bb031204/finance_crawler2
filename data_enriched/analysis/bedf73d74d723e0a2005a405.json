@@ -1,0 +1,92 @@
+{
+  "source_id": "bedf73d74d723e0a2005a405",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_28_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "4059c617bb9c0efb9ef0ec7b7ae55181594d7a9da7066ed0842fbc0cbe23d17e",
+      "filename": "2017_02_28_Corporate-Governance_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "d09c235b407ed196773153ac54bd8d03d918e759ac117491aa23af95bfd9a3d8",
+  "input_hash": "6ab50cb0e6e9e8de2bb9bc39357b0f8b85760cd540800b95a989a9060429bd5b",
+  "matching_audit_hash": "69cb090a85d7ad685b0bf2950c0b0a56c01d4068e11bed89a5a115e94e617e52",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b09bea42c3331f6f5ec05c0c9a12b4d67c04975c9a0e8d71860b243e867d44cc",
+    "raw_sha256": "171dff7e9a848a14777a25b9c2576254b575fca9cc991b1c2ea826b523eb4685",
+    "date_quote": "SEC filing datePublished=2017-02-28",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312517060202/d340168d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sangamo Therapeutics, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo Therapeutics, Inc."
+    }
+  ],
+  "record_hash": "1b76af795da1b48b18ae130cbd8eb2fbdb57dd4cc8d930da2e2c080b913173a4",
+  "outputs": [
+    {
+      "path": "US\\2017_02_28_Corporate-Governance_Biotechnology_sec.json",
+      "sha256": "69ae133719bd654048560ac92453ee736b48ed57b16caedc03165e26c0c56baa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:34:53.306468+00:00",
+    "feature_available_at": "2026-11-11T12:35:50.225846+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:21.331636+00:00",
+  "feature_available_at": "2026-11-12T14:39:21.378487+00:00",
+  "commit_verified_at": "2026-11-12T14:39:21.378487+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Contains information about executive appointments, stock options, and employment agreements relevant to corporate governance and compensation.",
+    "securities": [
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Sangamo Therapeutics, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

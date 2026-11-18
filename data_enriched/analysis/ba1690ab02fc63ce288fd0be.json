@@ -1,0 +1,99 @@
+{
+  "source_id": "ba1690ab02fc63ce288fd0be",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_04_09_Consumer_Automotive_cnbc.json",
+      "sha256": "c5718b10219b5bea8129c41fb5e9470f941c4ed2c78d280f83af50e256a33f09",
+      "filename": "2022_04_09_Consumer_Automotive_cnbc.json"
+    }
+  ],
+  "original_record_hash": "1812c9b01ea00f773a39d2ce529d3eb5fef877729f9667e737502526588cf138",
+  "input_hash": "478d56aeb782f3d4fecc2bc0070b592b53194d9c68a0f9bad58c780a882adefb",
+  "matching_audit_hash": "d204a6cc9403c2b37468ebf286625e94b4618e3ad86dcf6a58411d8cec7ef206",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "541936e82356eb55a60ece2063d50855b499c7919b40c7540afe002c8e2e924e",
+    "raw_sha256": "a99edf58eb88422db0f7dc9a9576286051e28cfabafd77b14b2fde39619e0cb7",
+    "date_quote": "article:published_time=2022-04-09T13:00:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "754d8795318604d131b82b88c91a081f3b0c549b3a60104c02f05dda0a5f32bc",
+  "outputs": [
+    {
+      "path": "US\\2022_04_09_Consumer_Automotive_cnbc.json",
+      "sha256": "c7d373697de9c6b064531e64ab955d280226fd5ce6b6f6efe1622ea13c2d6990"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-04-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:24.731324+00:00",
+    "fetched_at": "2026-11-10T21:38:25.194298+00:00",
+    "feature_available_at": "2026-11-10T21:39:58.513437+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:57:30.107972+00:00",
+  "feature_available_at": "2026-11-12T14:57:30.119518+00:00",
+  "commit_verified_at": "2026-11-12T14:57:30.119518+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the used car market, including all-electric vehicles, certified pre-owned vehicles, loan terms, credit scores, dealerships, private sellers, ",
+    "securities": [
+      {
+        "name": "CarMax",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CarMax"
+      },
+      {
+        "name": "Vroom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vroom"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "explicit",
+        "quote": "automotive market"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "CarMax": "company",
+      "Vroom": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

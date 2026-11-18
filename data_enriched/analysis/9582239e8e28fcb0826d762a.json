@@ -1,0 +1,107 @@
+{
+  "source_id": "9582239e8e28fcb0826d762a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_04_04_Corporate-Action_Energy_sec.json",
+      "sha256": "706276d45753dddc55aa4f5f0c5c5c2ef718e0e88051da99bc9ae037b4cd8856",
+      "filename": "2012_04_04_Corporate-Action_Energy_sec.json"
+    }
+  ],
+  "original_record_hash": "143a760899b78cd745f8b7b515f77313afd764a59c7f54e8b64da5f9a107bb4f",
+  "input_hash": "0d25af802cc519f5bc0cef35e96cba2f5fe640117cd394ad2dc43618d8db3936",
+  "matching_audit_hash": "2437ce5da50f4e601c4c64168718b614468e30a990478d816d2f05a2775c5d5f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "859e84267522bf6bf54c613fca9aa418c82b5f5c273f026bea7e380152610217",
+    "raw_sha256": "5790045f70a57b6a797619f7f0648724ea8378304b801d0d704bcf296524efd1",
+    "date_quote": "HOUSTON, April 4, 2012ConocoPhillips [NYSE:COP] announced today that its board of directors has given final approval for the spin-off of its downstream businesses.",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "ConocoPhillips",
+      "ticker": "COP",
+      "exchange": null,
+      "quote": "ConocoPhillips [NYSE:COP] announced today that its board of directors has given final approval for the spin-off of its downstream businesses."
+    },
+    {
+      "name": "Phillips 66",
+      "ticker": "PSX",
+      "exchange": null,
+      "quote": "Phillips 66 has received approval for the listing of its common stock on the New York Stock Exchange under the symbol PSX."
+    }
+  ],
+  "record_hash": "34dca9cc5f539e979b93cc77714c92bae1fcf131a936e720c488500e01021c2c",
+  "outputs": [
+    {
+      "path": "US\\2012_04_04_Corporate-Action_Energy_sec.json",
+      "sha256": "5d9af95ed2eaa2e53803895abf41f791f37970f65c3b0dc9b11dade5d62a4b0e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-04-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:44.471087+00:00",
+    "fetched_at": "2026-11-10T14:32:43.207024+00:00",
+    "feature_available_at": "2026-11-10T17:53:12.487381+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:40.361742+00:00",
+  "commit_verified_at": "2026-11-12T13:52:40.361742+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "ConocoPhillips",
+        "ticker": "COP",
+        "exchange": null,
+        "quote": "ConocoPhillips [NYSE:COP] announced today that its board of directors has given final approval for the spin-off of its downstream businesses."
+      },
+      {
+        "name": "Phillips 66",
+        "ticker": "PSX",
+        "exchange": null,
+        "quote": "Phillips 66 has received approval for the listing of its common stock on the New York Stock Exchange under the symbol PSX."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

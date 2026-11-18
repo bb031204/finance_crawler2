@@ -1,0 +1,97 @@
+{
+  "source_id": "86d5ee4ea7e2359ce168136f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_08_23_Market_Finance_cnbc.json",
+      "sha256": "e764db9046d8cc8b0fdb840eb8d002ef09c86275740ae0960ee97db21925492c",
+      "filename": "2019_08_23_Market_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e8153e132b710a56ade7d32a4f957ce13a358dfba6db49dd3efca8a3b20fad79",
+  "input_hash": "34de5184a7aca553f75bfbf0f5bcfca0142904d00a3036adf324e253ea786fae",
+  "matching_audit_hash": "8f3797dfc81dca1d9fe83750d2ceaf08f53ca21fcc8f7650e52ec4f08aec5a01",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7a4eeefb3af4359524350509a4d9eecddaca0ced124f84234dcc3a1a26b43d54",
+    "raw_sha256": "ff802f4e92d12948e5553522cdd52369753190da215a2f04c49b4f61ee7bd01c",
+    "date_quote": "article:published_time=2019-08-23T06:20:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "VanEck Vectors Semiconductor ETF",
+      "ticker": "SMH",
+      "exchange": null,
+      "quote": "The VanEck Vectors Semiconductor ETF (SMH) slid 4.1% as Nvidia and Broadcom both fell around 5%."
+    }
+  ],
+  "record_hash": "ac41e42afcfebb5cf37ce9e847d8dedaf849a0a3003a7713684ccb1dda89593a",
+  "outputs": [
+    {
+      "path": "US\\2019_08_23_Market_Finance_cnbc.json",
+      "sha256": "6078924d9b32e5d22cc5459fd13cb50e6bf90f0e96771876140024ddd7903140"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-08-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:27:40.791736+00:00",
+    "fetched_at": "2026-11-11T03:25:41.199071+00:00",
+    "feature_available_at": "2026-11-11T03:26:20.966860+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:29.488280+00:00",
+  "commit_verified_at": "2026-11-12T13:53:29.488280+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "VanEck Vectors Semiconductor ETF",
+        "ticker": "SMH",
+        "exchange": null,
+        "quote": "The VanEck Vectors Semiconductor ETF (SMH) slid 4.1% as Nvidia and Broadcom both fell around 5%."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

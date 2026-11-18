@@ -1,0 +1,107 @@
+{
+  "source_id": "3f2bea76d376f2afa9975acf",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_03_27_Regulatory-Filings_Information-Technology_sec.json",
+      "sha256": "9ddc769fe1188b9fb89ad196376ffbb95bcd33149e0b5536bd908de45cb9e9ab",
+      "filename": "2012_03_27_Regulatory-Filings_Information-Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "188dcc43978932315d53d1661340b3702c21a488bd4380040b12d79c4422b97f",
+  "input_hash": "f1cc863fb7cf1e58b3f80647e0adfe4e54bbae8527db8285a85ba9f10b772acc",
+  "matching_audit_hash": "89df748864a2ac401770a1eae224f5d1a4d62cb3ff71f812b7abc53e8ffc8b7a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "18aeda9d21e5e730b2a7666d22ff0ad8a479b45d1f811f13e98aed6c08bca3d6",
+    "raw_sha256": "f32eda68c1050706ae8e8c79e9ea2c4d12e2a5625375edbaeef7e59335dc8223",
+    "date_quote": "March 27, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312512133531/d323675d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SAP AG",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SAP AG"
+    },
+    {
+      "name": "Christoph Huetten",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Christoph Huetten"
+    }
+  ],
+  "record_hash": "b5cb353f3928b56eee34fd2adbbd1c711f853f50924b51ea171b33c069ba8f30",
+  "outputs": [
+    {
+      "path": "US\\2012_03_27_Regulatory-Filings_Information-Technology_sec.json",
+      "sha256": "1800f379fa47f24663edfd0db04342190a4ca6ccd520a47a066f2f9f30185f33"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-03-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:32:19.545403+00:00",
+    "feature_available_at": "2026-11-10T22:32:43.182287+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:40.172651+00:00",
+  "commit_verified_at": "2026-11-12T13:52:40.172651+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAP AG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP AG"
+      },
+      {
+        "name": "Christoph Huetten",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Christoph Huetten"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

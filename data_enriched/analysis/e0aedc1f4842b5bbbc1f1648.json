@@ -1,0 +1,357 @@
+{
+  "source_id": "e0aedc1f4842b5bbbc1f1648",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_10_16_Finance_Finance_cnbc.json",
+      "sha256": "078e14cb06118a3505987a5901307ed75c5d515f06f9e76efcb6f995f21576f1",
+      "filename": "2013_10_16_Finance_Finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "015b02fe48f5d44f9ea052d3145abdd015f1a492870cebbc5f1b0091d589bd3c",
+  "input_hash": "8d27aece690633a887b2b3996c0ff4d53d6553376918e12437b2404eebb428e8",
+  "matching_audit_hash": "72e737589e018d4c63cef5d021953d8ae033e3ec7855fcf16bca2a4281442d4a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3a8ef29f896b4b92f6bbcbaa6279106d72a8a7a40e1e51b315b51e479c970f28",
+    "raw_sha256": "8ab59194347f60cac050734f106a61117501a6991cd4d44a83f192c1cec37411",
+    "date_quote": "article:published_time=2013-10-16T16:24:19+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0a7f8823ea34ddf78898ca2778493550eecda6f697a95a7ec9ba0f002d4276f5",
+  "outputs": [
+    {
+      "path": "US\\2013_10_16_Finance_Finance_cnbc.json",
+      "sha256": "122a5cfd2af74dfa0bfe1b599688b49e7901af810ecea1f6e38a73ee9d5f6489"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-10-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:01:56.271280+00:00",
+    "fetched_at": "2026-11-10T13:18:22.618453+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.915567+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:01:34.582793+00:00",
+  "feature_available_at": "2026-11-12T15:16:35.569264+00:00",
+  "commit_verified_at": "2026-11-12T15:16:35.569264+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Identifies debt-free companies and sector debt ratios.",
+    "securities": [
+      {
+        "name": "Chipotle",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chipotle (CMG)"
+      },
+      {
+        "name": "MasterCard",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MasterCard (MA)"
+      },
+      {
+        "name": "Bed Bath & Beyond",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bed Bath & Beyond (BBBY)"
+      },
+      {
+        "name": "Paychex",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Paychex (PAYX)"
+      },
+      {
+        "name": "Visa",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Visa (V)"
+      },
+      {
+        "name": "Akamai",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Akamai (AKAM)"
+      },
+      {
+        "name": "Robert Half",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Robert Half (RHI)"
+      },
+      {
+        "name": "Forest Labs",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Forest Labs (FRX)"
+      },
+      {
+        "name": "Garmin",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Garmin (GRMN)"
+      },
+      {
+        "name": "Cognizant Technology",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Cognizant Technology"
+      },
+      {
+        "name": "T. Rowe Price",
+        "ticker": null,
+        "exchange": null,
+        "quote": "T. Rowe Price (TROW)"
+      },
+      {
+        "name": "LSI Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "LSI Corp. (LSI)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "explicit",
+        "quote": "technology sector"
+      },
+      {
+        "name": "Financials",
+        "basis": "explicit",
+        "quote": "Financials"
+      },
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "Energy"
+      },
+      {
+        "name": "Industrials",
+        "basis": "explicit",
+        "quote": "Industrials"
+      },
+      {
+        "name": "Telecom",
+        "basis": "explicit",
+        "quote": "Telecom"
+      },
+      {
+        "name": "Utilities",
+        "basis": "explicit",
+        "quote": "Utilities"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Chipotle": "company",
+      "MasterCard": "company",
+      "Bed Bath & Beyond": "company",
+      "Paychex": "company",
+      "Visa": "company",
+      "Akamai": "company",
+      "Robert Half": "company",
+      "Forest Labs": "company",
+      "Garmin": "company",
+      "Cognizant Technology": "company",
+      "T. Rowe Price": "company",
+      "LSI Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:35.597556+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:01:34.582793+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Identifies debt-free companies and sector debt ratios.",
+      "securities": [
+        {
+          "name": "Chipotle",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Chipotle (CMG)"
+        },
+        {
+          "name": "MasterCard",
+          "ticker": null,
+          "exchange": null,
+          "quote": "MasterCard (MA)"
+        },
+        {
+          "name": "Bed Bath & Beyond",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Bed Bath & Beyond (BBBY)"
+        },
+        {
+          "name": "Paychex",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Paychex (PAYX)"
+        },
+        {
+          "name": "Visa",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Visa (V)"
+        },
+        {
+          "name": "Akamai",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Akamai (AKAM)"
+        },
+        {
+          "name": "Robert Half",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Robert Half (RHI)"
+        },
+        {
+          "name": "Forest Labs",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Forest Labs (FRX)"
+        },
+        {
+          "name": "Garmin",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Garmin (GRMN)"
+        },
+        {
+          "name": "Cognizant Technology",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Cognizant Technology"
+        },
+        {
+          "name": "T. Rowe Price",
+          "ticker": null,
+          "exchange": null,
+          "quote": "T. Rowe Price (TROW)"
+        },
+        {
+          "name": "LSI Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "LSI Corp. (LSI)"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Technology",
+          "basis": "explicit",
+          "quote": "technology sector"
+        },
+        {
+          "name": "Financials",
+          "basis": "explicit",
+          "quote": "Financials"
+        },
+        {
+          "name": "Energy",
+          "basis": "explicit",
+          "quote": "Energy"
+        },
+        {
+          "name": "Industrials",
+          "basis": "explicit",
+          "quote": "Industrials"
+        },
+        {
+          "name": "Telecom",
+          "basis": "explicit",
+          "quote": "Telecom"
+        },
+        {
+          "name": "Utilities",
+          "basis": "explicit",
+          "quote": "Utilities"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Chipotle": "company",
+        "MasterCard": "company",
+        "Bed Bath & Beyond": "company",
+        "Paychex": "company",
+        "Visa": "company",
+        "Akamai": "company",
+        "Robert Half": "company",
+        "Forest Labs": "company",
+        "Garmin": "company",
+        "Cognizant Technology": "company",
+        "T. Rowe Price": "company",
+        "LSI Corp.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:01:34.616701+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:01:34.631310+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:01:34.600470+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses debt-free companies, their stock performance, and debt-to-equity ratios across various sectors, providing relevant financial and industry-mac",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:10:19.261871+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

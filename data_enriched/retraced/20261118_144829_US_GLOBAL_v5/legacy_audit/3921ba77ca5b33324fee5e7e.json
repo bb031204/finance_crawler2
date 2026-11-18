@@ -1,0 +1,112 @@
+{
+  "source_id": "3921ba77ca5b33324fee5e7e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_11_Financial-Agreement_Financial-Services_sec.json",
+      "sha256": "12d9b5ccad463cd25a81a0c5564c075e0f30486634224a33f0837406410eb203",
+      "filename": "2013_01_11_Financial-Agreement_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "6d1c89189ee9deed38298f06fd75f7944d97c78edea2640e1df6475d6e22d72f",
+  "input_hash": "17f8978c9d330554bc40ade0a5cd8f88442ef979cb664a2e52c885ee2bb9c626",
+  "matching_audit_hash": "c8d71bb02bdaee82f26cae46bbf536951103afd23140841e0011942ca0493494",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1e1c30d50c9eacad4618a7ced38fad1762012ecf0d8c4016b3df56213693dfd0",
+    "raw_sha256": "5785840dbdaf129acd1ab33f49bccae17505754f4a3d7c4051557743ae9d3737",
+    "date_quote": "SEC filing datePublished=2013-01-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312513010765/d465868d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    }
+  ],
+  "record_hash": "829d6d66eaf3972fe0856df05c7144ade2d392f8cac25eb0eef52fc766a939d6",
+  "outputs": [
+    {
+      "path": "US\\2013_01_11_Financial-Agreement_Financial-Services_sec.json",
+      "sha256": "460da419800e569b8eba5b060716d8d59b7dd32522a9c8c01713c448dac484ae"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+    "fetched_at": "2026-11-10T23:13:12.182119+00:00",
+    "feature_available_at": "2026-11-11T09:47:49.968745+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:01:10.915665+00:00",
+  "feature_available_at": "2026-11-12T14:01:10.951942+00:00",
+  "commit_verified_at": "2026-11-12T14:01:10.951942+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a loan amendment affecting Medallion Financial Corp.'s financial obligations and its relationship with Sterling National Bank, with an行业影响",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      },
+      {
+        "name": "Sterling National Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sterling National Bank"
+      },
+      {
+        "name": "Medallion Funding LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Funding LLC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services industry",
+        "basis": "explicit",
+        "quote": "financial services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company",
+      "Sterling National Bank": "company",
+      "Medallion Funding LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

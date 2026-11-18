@@ -1,0 +1,84 @@
+{
+  "source_id": "25ea72513b4d083dd3264123",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_28_Financial-Results_Mortgage_sec.json",
+      "sha256": "d36b79e20ececce9fd73ad15b6f2999d7eddbd48bf5429a0983e9bbda895c065",
+      "filename": "2013_02_28_Financial-Results_Mortgage_sec.json"
+    }
+  ],
+  "original_record_hash": "1156efc8c6c9d25ad76d2be7cc5115e69096d7fe891d6310147b3797a564ffee",
+  "input_hash": "b61b51a909b0c348e6ce7c00a07a20fe4c3de1fcccb57ef3f0e09cd315b77322",
+  "matching_audit_hash": "9187807749920bfec4a5583c02594f61ec852ec902bfa409e46e799477cf0373",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "dbd2c67802e52b805fc76da612a2dd4df213f924a8b0e913d7298df9529a48d9",
+    "raw_sha256": "b866035ae7289bd5c45ef4099663d1986a856953be4c476eb678999fe90c29fe",
+    "date_quote": "SEC filing datePublished=2013-02-28",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465913015370/a13-6254_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "30b2cd09ef8ac83bb762df0b1eacb40a82d3f3055e6554765ffeb7b577e3b9b5",
+  "outputs": [
+    {
+      "path": "US\\2013_02_28_Financial-Results_Mortgage_sec.json",
+      "sha256": "a12579b791edec12eae2e6a4ed53b5910f7fbcd404afa581616294c2ddd8d629"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+    "fetched_at": "2026-11-10T23:19:33.048187+00:00",
+    "feature_available_at": "2026-11-11T09:53:48.961883+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:04:15.010947+00:00",
+  "feature_available_at": "2026-11-12T14:04:15.041987+00:00",
+  "commit_verified_at": "2026-11-12T14:04:15.041987+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text contains financial results disclosure and references to a press release and regulatory filings, indicating substantive information about the company's ",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Impac Mortgage Holdings, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "source_id": "18f343463ade2ab0e4610994",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_11_09_Corporate-Restructuring_Industrial_cnbc.json",
+      "sha256": "537becb6070dd4f38a1b79d9c05bb26e9402d012583866f0b2eba689c87c333a",
+      "filename": "2021_11_09_Corporate-Restructuring_Industrial_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b8864cb39328838c8dd19cac4bb1bc1e3ab59a09793c7319898fb7f437e70478",
+  "input_hash": "8ec94c0a38dec4bc74f2715249ce129889e25225e7744cec69d9af6c76c44f66",
+  "matching_audit_hash": "3aafaf904356760c9c5dc1d8bff915dabfd2bc04fbbe6796bc58bf386c64dcc3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8cad6ad2be83533b119aca148e3bc6be39798cda08a742e49d727cb1fe3085cc",
+    "raw_sha256": "f0c7d8df8cbf15d5bb1db7cdfbfa5540fb51216fae621f1a3e0b009d14bb9d92",
+    "date_quote": "article:published_time=2021-11-09T11:34:48+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "bdbf1bd00a5d6fc957dac2e63de5785d2288bc78cc9b5c3d13b2c5062f986c5c",
+  "outputs": [
+    {
+      "path": "US\\2021_11_09_Corporate-Restructuring_Industrial_cnbc.json",
+      "sha256": "fd165a5ace87ef8b85f08e13b08c2aa1a0b02875e6fd2f34affeedb0ff133cd0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-11-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:49.940689+00:00",
+    "fetched_at": "2026-11-10T13:59:13.389823+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.439745+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:56:19.229314+00:00",
+  "feature_available_at": "2026-11-12T14:56:19.237315+00:00",
+  "commit_verified_at": "2026-11-12T14:56:19.237315+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses GE's restructuring plans, including spinoffs of its healthcare and energy units, financial performance, and strategic implications.",
+    "securities": [
+      {
+        "name": "General Electric",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric (GE)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "aviation",
+        "basis": "explicit",
+        "quote": "aviation"
+      },
+      {
+        "name": "health care",
+        "basis": "explicit",
+        "quote": "health care"
+      },
+      {
+        "name": "energy",
+        "basis": "explicit",
+        "quote": "energy"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "General Electric": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

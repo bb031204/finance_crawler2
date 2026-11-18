@@ -6,7 +6,7 @@ from time import monotonic
 import httpx
 from finance_agent.core import digest,now
 from finance_agent.progress import log,short
-from qwen_agent import COVERAGE_PROMPT,ModelBudget,LEGACY_COVERAGE_PROMPT,PLANNING_SCOPE_VERSION
+from qwen_agent import COVERAGE_PROMPT,ModelBudget,ModelServiceError,LEGACY_COVERAGE_PROMPT,PLANNING_SCOPE_VERSION
 from record_files import source_id
 
 VERSION="year_balanced_v2"
@@ -40,13 +40,29 @@ def historical_jobs(cfg,start,end):
                     jobs.append(dict(phase="window",year=year,direction=directions[window_index%len(directions)],
                         market=market,range=windows[year][slot],source_turn=window_index))
                 window_index+=1
+    # Preserve the exact old task prefix and append bounded coverage passes.
+    # A different industry/site gets a chance in the same month without replay.
+    base=[job for job in jobs if job['phase']=='window']
+    def refinement_key(job):
+        domains=cfg.search.market_domains.get(job['market'],[]) if cfg.search.website_mode=='restricted' else []
+        allowed=[d for d in domains if not any(d==x or d.endswith('.'+x) for x in cfg.search.exclude_domains)]
+        target=[allowed[job['source_turn']%len(allowed)]] if allowed and cfg.search.rotate_sources else allowed
+        return (job['market'],tuple(job['range']),job['direction'],tuple(target))
+    requested={refinement_key(job) for job in base}
+    for turn in range(1,cfg.search.history_refinement_passes):
+        for original in base:
+            index=original['source_turn']
+            job=dict(original,direction=directions[(index+17*turn)%len(directions)],
+                source_turn=index+turn,refinement_pass=turn+1)
+            key=refinement_key(job)
+            if key not in requested:jobs.append(job);requested.add(key)
     return jobs
 
 
 def history_context(crawler,start,end):
     cfg=crawler.cfg
     inputs=[VERSION,cfg.monitoring.model_dump(),start,end,
-        cfg.search.model_dump(exclude={"complete_history", "discovery_mode", "sec_edgar"})]
+        cfg.search.model_dump(exclude={"complete_history", "discovery_mode", "sec_edgar", "history_refinement_passes"})]
     scope=digest(inputs+[PLANNING_SCOPE_VERSION])
     jobs=historical_jobs(cfg,start,end)
     histories=crawler.state.setdefault('discovery',{})
@@ -78,8 +94,10 @@ def broad_historical_discover(crawler,report,start,end):
                 info["planning_rollovers"]+=1;rolls+=1
                 log("规划续批","本批模型额度已到；保留搜索进度，开启下一本地规划批次，不重放已完成搜索")
     while report["searched"]<cfg.collection.max_queries_per_cycle:
+        if callable(getattr(crawler,'pause_checkpoint',None)):crawler.pause_checkpoint()
         active=progress.get("active")
-        eligible=[int(k) for k,v in progress["failed"].items() if v["attempts"]<3 and k not in retried]
+        if active and active['index']>=len(jobs):active=None
+        eligible=[int(k) for k,v in progress["failed"].items() if int(k)<len(jobs) and v["attempts"]<3 and k not in retried]
         if active:
             index=active["index"];stage=active["stage"]
         elif eligible:
@@ -89,8 +107,10 @@ def broad_historical_discover(crawler,report,start,end):
         else:
             break
         job=jobs[index];key=str(index);market=job["market"];direction=job["direction"]
-        step_started = monotonic(); done_before = len(progress["done"])
-        progress["active"]={"index":index,"stage":stage};crawler.persist()
+        step_started = monotonic(); done_before = sum(int(k)<len(jobs) for k in progress['done'])
+        # Results/queue additions and the stage advance are committed together
+        # below. A pause also persists the in-memory active stage in the owner.
+        progress["active"]={"index":index,"stage":stage}
         allowed=[d for d in crawler.sources.domains(market) if not any(d==x or d.endswith("."+x) for x in cfg.search.exclude_domains)]
         domains=allowed
         if job["phase"]=="window" and allowed and cfg.search.rotate_sources:
@@ -104,6 +124,8 @@ def broad_historical_discover(crawler,report,start,end):
                 try:
                     rows=plan_with_budget(crawler.model.coverage_plan,cfg.monitoring,directions[group:group+2],start,end)
                     progress["plans"][plan_key]=rows;crawler.persist()
+                except ModelServiceError:
+                    raise
                 except (ValueError,httpx.HTTPError) as error:
                     if not hasattr(crawler.model,"plan"):raise
                     progress["plans"][plan_key]=[]
@@ -126,10 +148,15 @@ def broad_historical_discover(crawler,report,start,end):
             report["found"]+=len(results)
             report["queries"].append(dict(job,query=query,domains=domains,stage=stage,returned=len(results)))
             stats["returned"]+=len(results)
-            new=saved=pending=0
+            new=saved=pending=rejected=0
             for candidate in results:
                 identity=source_id(candidate["url"])
-                if identity in crawler.dataset.rows:saved+=1;continue
+                prior=crawler.state['records'].get(identity,{})
+                if identity in crawler.dataset.rows:
+                    saved+=1;continue
+                if prior.get('status')=='rejected' and prior.get('scope')==crawler.scope:
+                    rejected+=1;continue
+                if identity in crawler.state.get('deferred',{}):pending+=1;continue
                 old=crawler.state["pending"].get(identity,{})
                 if old:pending+=1
                 else:new+=1
@@ -139,14 +166,18 @@ def broad_historical_discover(crawler,report,start,end):
                 crawler.queue(candidate)
             report["candidates_new"]+=new;report["already_saved"]+=saved;report["already_pending"]+=pending
             stats["new"]+=new;covered.add(direction);domains_seen.update(domains);errors_in_row=0
-            log("搜索结果",f"返回{len(results)}条 | 新增{new} | 已保存忽略{saved} | 已有候选{pending}")
-            if stage=="dated" and not results and cfg.search.undated_fallback:
+            info['already_rejected']=info.get('already_rejected',0)+rejected
+            log("搜索结果",f"返回{len(results)}条 | 新增{new} | 已保存忽略{saved} | 已有候选{pending} | 此前剔除{rejected}")
+            if stage=="dated" and new==0 and cfg.search.undated_fallback:
                 progress["active"]={"index":index,"stage":"undated"}
-                log("日期回退","严格日期检索为空，单独保留宽检索任务；来源日期仍须由正文确认")
+                log("日期回退","严格日期检索未新增候选，保留一次宽检索补查；来源日期仍须由正文确认，不重放已提交严格检索")
             else:
                 progress["done"][key]={"year":job["year"],"range":job["range"],"at":now()}
                 progress["failed"].pop(key,None);progress["active"]=None
                 progress["cursor"]=max(progress["cursor"],index+1)
+        except ModelServiceError:
+            crawler.persist()
+            raise
         except (ValueError,httpx.HTTPError,ModelBudget) as error:
             message=short(error,220);old=progress["failed"].get(key,{})
             progress["failed"][key]={"attempts":old.get("attempts",0)+1,"stage":stage,"reason":message,"at":now()}
@@ -161,13 +192,16 @@ def broad_historical_discover(crawler,report,start,end):
         crawler.persist()
         tracker = getattr(crawler, "_progress", None)
         if tracker:
-            tracker.phase("历史搜索", len(progress["done"]), len(jobs) - len(progress["done"]),
-                monotonic() - step_started, units=len(progress["done"]) - done_before)
-    complete=len(progress["done"])==len(jobs)
-    info.update(cursor_end=progress["cursor"],tasks_done=len(progress["done"]),tasks_remaining=len(jobs)-len(progress["done"]),
-        failed_tasks=len(progress["failed"]),complete=complete,year_stats=deepcopy(progress["year_stats"]),
+            done=sum(int(k)<len(jobs) for k in progress['done'])
+            tracker.phase("历史搜索", done, len(jobs) - done,
+                monotonic() - step_started, units=done - done_before)
+    done=sum(int(k)<len(jobs) for k in progress['done'])
+    complete=done==len(jobs)
+    info.update(cursor_end=progress["cursor"],tasks_done=done,tasks_remaining=len(jobs)-done,
+        refinement_passes=cfg.search.history_refinement_passes,
+        failed_tasks=sum(int(k)<len(jobs) for k in progress["failed"]),complete=complete,year_stats=deepcopy(progress["year_stats"]),
         directions=sorted(covered),domains=sorted(domains_seen))
     if not complete and report["searched"]<cfg.collection.max_queries_per_cycle and not info["paused"]:
         info.update(paused=True,pause_reason="failed_tasks_need_review")
     progress["complete"]=complete;crawler.persist()
-    log("历史发现",f"本轮搜索{report['searched']}次 | 年份覆盖={','.join(sorted(progress['year_stats'])) or '尚无'} | 搜索任务{len(progress['done'])}/{len(jobs)} | {'计划已遍历' if complete else '仍未完成，断点已保存'}")
+    log("历史发现",f"本轮搜索{report['searched']}次 | 年份覆盖={','.join(sorted(progress['year_stats'])) or '尚无'} | 搜索任务{done}/{len(jobs)} | 月度覆盖{cfg.search.history_refinement_passes}轮 | {'计划已遍历' if complete else '仍未完成，断点已保存'}")

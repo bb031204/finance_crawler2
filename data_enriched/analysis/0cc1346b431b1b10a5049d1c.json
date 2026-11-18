@@ -1,0 +1,107 @@
+{
+  "source_id": "0cc1346b431b1b10a5049d1c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_31_Regulatory_Financial-Services_treasury.json",
+      "sha256": "4bc21d405d4fda6efc752e5fffbe2eb7764e6125c3f3c45802e95a9629e02f57",
+      "filename": "2019_01_31_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "0a9b560d99256aee989712b680c3e1c70744636d9070914f0c48d103da6eca53",
+  "input_hash": "c1ca905df8b4e6b00dfeaa5075659ace11223c36b8b5b0bdcbb560b8e5dd2988",
+  "matching_audit_hash": "2973aa14169b29a7936cf85570fc6954dd6c0f19b05a173ec19005728cae9b94",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "287ae20266db4f3a317ad7d7123c7c8aa77dc8c3392ff52516e667ab6246cd50",
+    "raw_sha256": "4965db0d407ba0b2ca5fd10c7a4d1501be0ca11275b4d4b727eed8bad6e091da",
+    "date_quote": "Date Released January 31, 2019",
+    "date_kind": null,
+    "source_document_url": null,
+    "publication_validation_version": null,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "091b5c17b6d57636b3c12dcede8dbff89d32902b5c6d207a6f1a93f49372203f",
+  "outputs": [
+    {
+      "path": "US\\2019_01_31_Regulatory_Financial-Services_treasury.json",
+      "sha256": "b54446410a5f82d0bd379f1dfdb4d2df3184990bf89d72e8a39495e0a8f53531"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": null,
+    "fetched_at": "2026-11-10T07:42:01.352128+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.913259+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:47:39.574421+00:00",
+  "feature_available_at": "2026-11-12T14:47:39.583065+00:00",
+  "commit_verified_at": "2026-11-12T14:47:39.583065+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory guidance from OFAC regarding U.S. mutual funds and ETFs and their restrictions on transactions involving entities on the SDN List.",
+    "securities": [
+      {
+        "name": "U.S. Treasury's Office of Foreign Assets Control (OFAC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury's Office of Foreign Assets Control (OFAC)"
+      },
+      {
+        "name": "mutual funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "mutual funds"
+      },
+      {
+        "name": "exchange traded funds (ETFs)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "exchange traded funds (ETFs)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services",
+        "basis": "inferred",
+        "quote": "mutual funds and exchange traded funds (ETFs)"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "U.S. Treasury's Office of Foreign Assets Control (OFAC)": "organization",
+      "mutual funds": "company",
+      "exchange traded funds (ETFs)": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "source_id": "8b321259c9939345e82f7629",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_29_financial_Technology_sec.json",
+      "sha256": "8dbbfe069e532d20ef9316af2bb9d44da0e71d4bf1867320dda68f4ac7c4adce",
+      "filename": "2021_03_29_financial_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "b9e11cac2892b353c525f0808cabc658f0adc6f7f306239eae587c1193ebce6a",
+  "input_hash": "f1622eb01ad38f0d2152d587a40e382a484b10663723b0001b4f1d5703f10dd1",
+  "matching_audit_hash": "99d1d6163dde94b4fcef00001e1523c1197afbfa6c91f90653fd101db1714abc",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "596188c054bebce37ec2fbf3258d1901aec61b18e55b96dc950ffb81fad4aeaa",
+    "raw_sha256": "edf43e31f0ca52fddddfb69e36fe62e810cee52aa2a1f652063de9d3d9cf499c",
+    "date_quote": "SEC filing datePublished=2021-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312521097686/d156005d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock"
+    },
+    {
+      "name": "Geospace Technologies Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Geospace Technologies Corporation"
+    }
+  ],
+  "record_hash": "61d0afd2ef1a495313409aa097ddca4aaf0ebdeda64cf7d16311bb2d3a413c52",
+  "outputs": [
+    {
+      "path": "US\\2021_03_29_financial_Technology_sec.json",
+      "sha256": "6583543c0e3406671ce9e3a9274f2473dfc0c8d53d9fee18e9de4a78394f4325"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.585595+00:00",
+    "fetched_at": "2026-11-11T16:18:29.997702+00:00",
+    "feature_available_at": "2026-11-11T16:18:56.033645+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:37.484165+00:00",
+  "commit_verified_at": "2026-11-12T13:53:37.484165+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      },
+      {
+        "name": "Geospace Technologies Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Geospace Technologies Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

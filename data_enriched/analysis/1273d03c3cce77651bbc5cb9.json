@@ -1,0 +1,98 @@
+{
+  "source_id": "1273d03c3cce77651bbc5cb9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_08_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "1f257fbfdbe9a6417c2717306cc56000062b3dcffd5301fb000a9faef135f5c8",
+      "filename": "2018_03_08_Corporate-Governance_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "0c72fded3d7560a16443fddde3fff46857a5dd057ed826ae8348d803f98592ec",
+  "input_hash": "de70035d98d95cdb209434b4b9827849c84928e64c89e2969e6b16976fce22f5",
+  "matching_audit_hash": "bbf2b96fd2f77251000a2aa96227b154f03781dceed19326b7ab890391d19101",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "289b06d22a4509c46f166c93ad78be0e193a64e188022ed9fb24db3fa60372bd",
+    "raw_sha256": "74a069b6118c46a23882f7b4598a5995ddbd097c135addce78a4f38f3386d8b7",
+    "date_quote": "SEC filing datePublished=2018-03-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312518074279/d529606d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "MEDALLION FINANCIAL CORP.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "MEDALLION FINANCIAL CORP."
+    }
+  ],
+  "record_hash": "558ece10686b6739167b22b7186d38e954a6abe837eb5d76068d8c56bf95d430",
+  "outputs": [
+    {
+      "path": "US\\2018_03_08_Corporate-Governance_Financial-Services_sec.json",
+      "sha256": "59de1d0d69c6804f9e4f9adde661b71c2a620691a9c1ac67e57880060f5ebb1b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.045565+00:00",
+    "fetched_at": "2026-11-11T12:53:34.509991+00:00",
+    "feature_available_at": "2026-11-11T12:53:42.940705+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:35.391963+00:00",
+  "feature_available_at": "2026-11-12T14:43:35.400181+00:00",
+  "commit_verified_at": "2026-11-12T14:43:35.400181+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a regulatory change affecting Medallion Financial Corp.'s status as a business development company under the Investment Company Act of 194",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services industry",
+        "basis": "explicit",
+        "quote": "financial services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

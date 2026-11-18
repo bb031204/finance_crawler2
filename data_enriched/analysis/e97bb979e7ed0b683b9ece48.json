@@ -1,0 +1,103 @@
+{
+  "source_id": "e97bb979e7ed0b683b9ece48",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_22_Energy_Utilities_bloomberg.json",
+      "sha256": "0bb6a7089e2769475626c2599755277a537129e9a05bedaa551bf21f38b12d4b",
+      "filename": "2018_01_22_Energy_Utilities_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "66522633a8d80422a14d5008c705dff9c285f1cb1136916fcc8c5d6194fd7ebf",
+  "input_hash": "c93f250c8b356abf31d579fc937575afaa5fef9fd4787d388199fea23028da99",
+  "matching_audit_hash": "4e1a55741d14fa3a4b45c815524073d96c60e579e53912e5864a6364656a6fa1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "eb8fc1279cc13941b99cab8fa267526d02d90212d8ab7f5d5d40de4a15b576ee",
+    "raw_sha256": "71f0f43ac4d5e4ab3c1fe3c6445d4ecbf2d5c130f6752f2dc79879caa056350b",
+    "date_quote": "January 22, 2018 at 2:24 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "ab1a8a0f684e24ff2a9aa42409fe2570c6c40b606fe34e7399e3eb0269a4ecfb",
+  "outputs": [
+    {
+      "path": "US\\2018_01_22_Energy_Utilities_bloomberg.json",
+      "sha256": "1ef87b1f3aa628e243c2a71b382e35bf31b552d35c11097a2eb8d3cc500107d3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:02:15.691071+00:00",
+    "fetched_at": "2026-11-10T13:23:14.557448+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.720999+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:25.675530+00:00",
+  "feature_available_at": "2026-11-12T14:42:25.686548+00:00",
+  "commit_verified_at": "2026-11-12T14:42:25.686548+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a significant equity investment, restructuring plans, and the impact on a specific business unit of FirstEnergy Corp.",
+    "securities": [
+      {
+        "name": "FirstEnergy Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FirstEnergy Corp."
+      },
+      {
+        "name": "Elliott Management Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Elliott Management Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Electric utility",
+        "basis": "inferred",
+        "quote": "utility owner"
+      },
+      {
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "Energy"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "FirstEnergy Corp.": "company",
+      "Elliott Management Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "source_id": "9efa041cfe45c40a51ca601c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_01_05_Economic-Indicators_Supply-Chain_bloomberg.json",
+      "sha256": "448cd675870dbf3de163cba71d3d978e40e91b95c3a05cc9ac3007397745d97e",
+      "filename": "2022_01_05_Economic-Indicators_Supply-Chain_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2022_01_05_Economic-Indicators_Supply-Chain_bloomberg.json",
+      "sha256": "448cd675870dbf3de163cba71d3d978e40e91b95c3a05cc9ac3007397745d97e",
+      "filename": "2022_01_05_Economic-Indicators_Supply-Chain_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "18762485f2f0519454815cfa7a95090294c2fe7cfac32e79e4161526c9f64c8c",
+  "input_hash": "61bb78bcc398b324b6882964a86cc1f146370e2a499787e53c3d33498429c51d",
+  "matching_audit_hash": "4c748f97c39de97cfe57c86330a128c6d059a051f4a352e77c2ba8af37423967",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "83ddf866a5e20bad1943770a058a0d2120f6d7322468e2dd4a1cea09798a977b",
+    "raw_sha256": "969f9535f8399063f5a134076d9120eafb40e60db86e16ee3061c858a2021d3c",
+    "date_quote": "By Ana Monteiro January 5, 2022 at 12:00 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "f09fb41a5e70b9809a1d50832fefb928c6213c8d671a6d1d447f6e3895e7afb5",
+  "outputs": [
+    {
+      "path": "US\\2022_01_05_Economic-Indicators_Supply-Chain_bloomberg.json",
+      "sha256": "253048b7d97cc27eb066df6ce35773c737d1a2a5ff322ecbea31814571f18e34"
+    },
+    {
+      "path": "GLOBAL\\2022_01_05_Economic-Indicators_Supply-Chain_bloomberg.json",
+      "sha256": "253048b7d97cc27eb066df6ce35773c737d1a2a5ff322ecbea31814571f18e34"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-01-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:36:20.154025+00:00",
+    "fetched_at": "2026-11-10T15:12:37.661029+00:00",
+    "feature_available_at": "2026-11-10T17:53:10.107657+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:14:45.441669+00:00",
+  "feature_available_at": "2026-11-12T15:16:48.844059+00:00",
+  "commit_verified_at": "2026-11-12T15:16:48.844059+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "Provides insight into global supply chain pressures and their potential future",
+    "securities": [
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of New York"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Supply Chain Management",
+        "basis": "inferred",
+        "quote": "supply-chain pressures"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "Federal Reserve Bank of New York": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:48.871012+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:14:45.441669+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Provides insight into global supply chain pressures and their potential future",
+      "securities": [
+        {
+          "name": "Federal Reserve Bank of New York",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Federal Reserve Bank of New York"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Supply Chain Management",
+          "basis": "inferred",
+          "quote": "supply-chain pressures"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "Federal Reserve Bank of New York": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:14:45.470230+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:14:45.480236+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:14:45.458681+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses a new Global Supply Chain Pressure Index and its implications for supply-chain pressures, which is relevant to economic indicators and market",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:56:20.297036+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source_id": "b618e939a1628378bb0ba3ca",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_13_Financial-Results_Business-Services_sec.json",
+      "sha256": "b0a66c8acfb3791211720e1e27a314bf6b7b7b7f77ca4604af9250a4443efba2",
+      "filename": "2017_02_13_Financial-Results_Business-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "468dd7abc49e547221ebf431bcb85e560ca0db847cef874bc77f6cc85baa7483",
+  "input_hash": "3c6773d2a5754aed0e74b4378d94d35d8ef412350cb0f4928189bf51ecdd4a6c",
+  "matching_audit_hash": "e77246df1297043fe3bd95ef232c0a80c25d260ad9a2d204e7e3e08edfac87d6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7cba1196ac54aea340dee6231abd1249235fcfc3abf1051c5566c5a959638967",
+    "raw_sha256": "ee37f885828d6ae8a8323e56907036f6484fe42c51c113b9a87d6e521191eef3",
+    "date_quote": "SEC filing datePublished=2017-02-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075317000005/a12312016-8xkearningsrelea.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Insperity, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Insperity, Inc."
+    }
+  ],
+  "record_hash": "7d0b85f6fd4536e4c563a32333fbf14b7885a932c141a9e6ce6099093f0c5082",
+  "outputs": [
+    {
+      "path": "US\\2017_02_13_Financial-Results_Business-Services_sec.json",
+      "sha256": "25428ad671d0913c5a8a3b02124c378a9dea481a9d979e3e51c70a0b9495ba7b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.446085+00:00",
+    "fetched_at": "2026-11-11T12:17:03.291363+00:00",
+    "feature_available_at": "2026-11-11T12:17:38.862254+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:12.349503+00:00",
+  "commit_verified_at": "2026-11-12T13:53:12.349503+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Business Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

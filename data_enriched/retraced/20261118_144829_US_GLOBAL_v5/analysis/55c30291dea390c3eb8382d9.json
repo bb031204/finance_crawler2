@@ -1,0 +1,323 @@
+{
+  "source_id": "55c30291dea390c3eb8382d9",
+  "status": "completed",
+  "source_record_hash": "f3e68bcafaefc0554a02cc52ed9b371e44f4a4d5b5a07a8ba4332422b8391f34",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001001085-19-000012-index.html",
+    "attempted_at": "2026-11-18T14:57:58.828386+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "04780b3d293beda9537f6e1fc7d0700a7df963358455faa8790634b2219bc569",
+    "summary_sha256": "cd7f795548e618ea948c5208951e9f521863e71711b1c90c4bbc4c75d3b48aa3"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/55c30291dea390c3eb8382d9.json",
+    "sha256": "bbf4def130bc67c1811dbbe50db121fbe118a7a5cc2dc05027db30103888f64a",
+    "bundled_path": "legacy_audit/55c30291dea390c3eb8382d9.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "d8d0a5eb4765681a196f1874a2125f223864298ad6cd70992982992e42bbaa04",
+      "llm_inferred_at": "2026-11-18T14:58:54.151713+00:00",
+      "model_duration_seconds": 10.2600213,
+      "prompt_tokens": 2058,
+      "completion_tokens": 434,
+      "selection": [
+        {
+          "source_id": "55c30291dea390c3eb8382d9",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Brookfield Asset Management Inc. reported no material changes in internal control over financial reporting during its fiscal year ended December 31, 2018. The company confirmed",
+              "rationale": "The information is specific to Brookfield Asset Management Inc., indicating company-level internal control and governance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The company confirmed that Mr.",
+              "rationale": "The company's governance and compliance practices are relevant to the broader financial services industry, particularly in terms of audit standards and ethics.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The company confirmed that Mr."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The company confirmed that Mr."
+            },
+            {
+              "industry_key": "SP500-SECTOR:fd10a146e9625bfd",
+              "name": "Materials",
+              "basis": "explicit",
+              "quote": "The company confirmed that Mr."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "2a86fb2b83e04b0b0a5cc6e26a51a32e1314355c617396da5f5c23ebfeb08f71",
+      "llm_inferred_at": "2026-11-18T14:58:59.802275+00:00",
+      "model_duration_seconds": 5.6270894,
+      "prompt_tokens": 2102,
+      "completion_tokens": 302,
+      "selection": [
+        {
+          "source_id": "55c30291dea390c3eb8382d9",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2761",
+              "name": "MANIFOLD BUSINESS FORMS",
+              "basis": "explicit",
+              "quote": "Brookfield Asset Management Inc. reported no material changes in internal control over financial reporting during its fiscal year ended December 31, 2018. The company confirmed"
+            },
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "BAM adopted a Code of Business Conduct and Ethics applicable to its senior officers and key employees, available on its website."
+            },
+            {
+              "industry_key": "SEC-SIC:8741",
+              "name": "SERVICES-MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "The company has no off-balance sheet arrangements."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T14:58:59.817113+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "cd7f795548e618ea948c5208951e9f521863e71711b1c90c4bbc4c75d3b48aa3",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2019-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000100108519000012/a2018-40xfcover.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "Discloses internal controls, audit committee details, and code of conduct.",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      },
+      {
+        "name": "NYSE",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NYSE standards"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:7389",
+        "name": "SERVICES-BUSINESS SERVICES, NEC",
+        "basis": "inferred",
+        "quote": "BAM adopted a Code of Business Conduct and Ethics applicable to its senior officers and key employees, available on its website.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "7389",
+        "industry_name_standard": "SERVICES-BUSINESS SERVICES, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "BAM adopted a Code of Business Conduct and Ethics applicable to its senior officers and key employees, available on its website."
+      }
+    ],
+    "impact_scope": [],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "company",
+      "NYSE": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "55c30291dea390c3eb8382d9",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2019_03_29_Corporate-Governance_Real-Estate-&-Asset-Management_sec.json",
+        "sha256": "06626abdebd7c361542706f4d5e42ddd01612f85f83a1092e7401f7f9cec21f6",
+        "filename": "2019_03_29_Corporate-Governance_Real-Estate-&-Asset-Management_sec.json"
+      }
+    ],
+    "original_record_hash": "666e1be4ac3629fbe98deeea9825a20e2b452e50a521ba1399872dfff9d23d3f",
+    "input_hash": "1bdca1960b4b379aab0642ca97a01c8da4cb4a77c55b22e9d40183e4976a78bc",
+    "matching_audit_hash": "38369af85246f0e8492aa8581c38d848acf55994e9f0f3418f86454c6f3949f1",
+    "legacy_security_evidence": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "record_hash": "f3e68bcafaefc0554a02cc52ed9b371e44f4a4d5b5a07a8ba4332422b8391f34",
+    "outputs": [
+      {
+        "path": "US\\2019_03_29_Corporate-Governance_Real-Estate-&-Asset-Management_sec.json",
+        "sha256": "5cc5aa5482739ab14113c1e3dabdcc2d6ed06223a43fd7ec9d5eb8fb98d2db79"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2019-03-29",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:19.618622+00:00",
+      "fetched_at": "2026-11-11T14:13:40.419060+00:00",
+      "feature_available_at": "2026-11-11T14:14:26.252653+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T14:58:59.802275+00:00",
+    "feature_available_at": "2026-11-18T14:58:59.817113+00:00",
+    "commit_verified_at": "2026-11-12T15:16:45.555097+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:45.582095+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:11:19.659633+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Discloses internal controls, audit committee details, and code of conduct.",
+        "securities": [
+          {
+            "name": "Brookfield Asset Management Inc.",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Brookfield Asset Management Inc."
+          },
+          {
+            "name": "NYSE",
+            "ticker": null,
+            "exchange": null,
+            "quote": "NYSE standards"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Financial Services",
+            "basis": "inferred",
+            "quote": "internal control over financial reporting"
+          }
+        ],
+        "impact_scope": [
+          "company"
+        ],
+        "entity_types": {
+          "Brookfield Asset Management Inc.": "company",
+          "NYSE": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:11:19.685336+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:11:19.694422+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:11:19.675596+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary contains information about Brookfield Asset Management Inc.'s internal controls, audit committee, code of conduct, and governance structure, which p",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:48:27.984321+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001001085-19-000012-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "f3e68bcafaefc0554a02cc52ed9b371e44f4a4d5b5a07a8ba4332422b8391f34",
+    "content_hash": "cd7f795548e618ea948c5208951e9f521863e71711b1c90c4bbc4c75d3b48aa3",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T14:58:59.803922+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/55c30291dea390c3eb8382d9.json",
+      "sha256": "000e941a0d36acf0dfc695631080f70f195c257d0e45bb099bf072f8f3d8f6a4",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 61.03200000000652
+}

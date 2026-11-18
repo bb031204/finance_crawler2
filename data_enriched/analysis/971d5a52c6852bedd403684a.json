@@ -1,0 +1,177 @@
+{
+  "source_id": "971d5a52c6852bedd403684a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_07_20_Politics_Government_treasury.json",
+      "sha256": "23f410e96ac4acd04e5efd84632e14194686ff7bad14c8b48d3689e2e11090fe",
+      "filename": "2012_07_20_Politics_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "0c780fc6f40c2d86f6e521702641507af266e077ff4c6ec45f1c3880f53d8547",
+  "input_hash": "3be40b610f437efe2b21363db9666b28fda8a31602766a654de18fe7bbff7944",
+  "matching_audit_hash": "6e6eb9eba3c4979b28553ef732e783318f4428344ead102713ef40944201f062",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7942c32ad91cd65bdc178f108184bf31a836359c31c14ca98f46d814bacf64af",
+    "raw_sha256": "a87d65ffad1dfbcf04643685e5a2b3cea7366744793faaf09763b7ba0e1d74c0",
+    "date_quote": "July 20, 2012 (Archived Content) WASHINGTON – Today, President Obama signed an Executive Order",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "6a53ac8066f5d8991ed748f21b6d8159ac5cebf9ea65f6a852e054eeb23f85e1",
+  "outputs": [
+    {
+      "path": "US\\2012_07_20_Politics_Government_treasury.json",
+      "sha256": "ba6c27dc7ba716a6ab2231d264ec18b0a339ef7d108ab440b42763a4c368a1ad"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-07-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:15.523963+00:00",
+    "fetched_at": "2026-11-10T22:15:36.818287+00:00",
+    "feature_available_at": "2026-11-10T22:15:57.245777+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:59:25.534463+00:00",
+  "feature_available_at": "2026-11-12T15:16:33.642993+00:00",
+  "commit_verified_at": "2026-11-12T15:16:33.642993+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "U.S. sanctions and environmental impact on Somalia",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "al-Shabaab",
+        "ticker": null,
+        "exchange": null,
+        "quote": "al-Shabaab, a U.S.-designated Foreign Terrorist Organization"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Security and Defense",
+        "basis": "inferred",
+        "quote": "security deterioration and violence in Somalia"
+      },
+      {
+        "name": "Charcoal Production",
+        "basis": "inferred",
+        "quote": "importation of charcoal from Somalia"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "al-Shabaab": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:33.668513+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:59:25.534463+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "U.S. sanctions and environmental impact on Somalia",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "al-Shabaab",
+          "ticker": null,
+          "exchange": null,
+          "quote": "al-Shabaab, a U.S.-designated Foreign Terrorist Organization"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Security and Defense",
+          "basis": "inferred",
+          "quote": "security deterioration and violence in Somalia"
+        },
+        {
+          "name": "Charcoal Production",
+          "basis": "inferred",
+          "quote": "importation of charcoal from Somalia"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "al-Shabaab": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:59:25.568324+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:59:25.577277+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:25.559275+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses U.S. sanctions against entities contributing to security issues in Somalia, targeting specific activities like charcoal importation and al",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:58:14.558210+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "source_id": "db1bfb8f9626472a254314a9",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_26_Debt-Financing_Financial-Services_sec.json",
+      "sha256": "1e059812f91d6ed2a9d7835b0602f50ec704937731be6e19885dc98d096715dd",
+      "filename": "2019_03_26_Debt-Financing_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "b45eb5038e85dbd2392979ef57fcfe574bea9e89ddf924e31e1f781541b913fb",
+  "input_hash": "56f23bbb4d91b8ac5cbb2b5a4c68c9d28548ecfa021a9eaaaee5cca674a0f3d0",
+  "matching_audit_hash": "03804b2096f1fb70a11da2b3a5d515182c1bf638b421f7205d4502aa77262402",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "07849930d36ad404a633feab12115d81ca247bf5675c13bdcec168d1f32e9bb9",
+    "raw_sha256": "e13e6833c7ae5b83b06d98d4cf222a1804ca386132fa9dc26105ad679905ff3f",
+    "date_quote": "SEC filing datePublished=2019-03-26",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312519086063/d724547d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "8.25% Senior Notes due March 22, 2024",
+      "ticker": null,
+      "exchange": null,
+      "quote": "8.25% Senior Notes due March 22, 2024"
+    }
+  ],
+  "record_hash": "2ee7a6f1e5e51954f9d6f1e401e89353267655aed04b93c3bbdf7bb6c0804604",
+  "outputs": [
+    {
+      "path": "US\\2019_03_26_Debt-Financing_Financial-Services_sec.json",
+      "sha256": "0bdf837a19a48ea86156e5a7945ae86dd4c322ea3ff12e59b8bb52e50030da0f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+    "fetched_at": "2026-11-11T13:36:48.242227+00:00",
+    "feature_available_at": "2026-11-11T13:37:02.822553+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:26.847444+00:00",
+  "feature_available_at": "2026-11-12T14:48:26.856453+00:00",
+  "commit_verified_at": "2026-11-12T14:48:26.856453+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a debt financing transaction involving Medallion Financial Corp., including the terms of the notes, interest rate, maturity, and use of net,",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

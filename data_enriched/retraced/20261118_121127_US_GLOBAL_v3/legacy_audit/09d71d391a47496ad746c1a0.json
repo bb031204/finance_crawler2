@@ -1,0 +1,108 @@
+{
+  "source_id": "09d71d391a47496ad746c1a0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_04_09_Regulatory_Financial-Services_treasury.json",
+      "sha256": "fa36ff54abafe1efe55f5db20b8a0d9e0c971c475bc22dafa0cd4f0a98cb3177",
+      "filename": "2018_04_09_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "0e48fdc17580f796947c124bb249a53b406d764abee094d8d2861b92ffbb56ed",
+  "input_hash": "942df4133fec320e8d1672bf4dc94040061067bb3229b94fd77c5d39c9bbcacd",
+  "matching_audit_hash": "a73625eb02e6822887e14193623c7c7483364691da8f243a547fd44e835dba32",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0d68fb0de5032aedf609d8f0b2594b6538abdb43640a3b20f65b2123786f176e",
+    "raw_sha256": "8888e322c7fbfd922db01e5135cfa3bebbb6e85e4d108057e54c558a4ab42464",
+    "date_quote": "Press Releases Treasury Calls For Large Position Reports April 9, 2018",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "U.S. Department of the Treasury",
+      "ticker": null,
+      "exchange": null,
+      "quote": "U.S. Department of the Treasury"
+    },
+    {
+      "name": "Federal Reserve Bank of New York",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Entities with positions in this note equal to or exceeding the $4.58 billion threshold must report these positions to the Federal Reserve Bank of New York."
+    }
+  ],
+  "record_hash": "3ffd53a4e1c7b12cf53ccb1901654c3dc0e74d5ec3aef0476dea1800425473b5",
+  "outputs": [
+    {
+      "path": "US\\2018_04_09_Regulatory_Financial-Services_treasury.json",
+      "sha256": "e40b67ca90e0e5b42dcde7be1a06b6565c2a102ea9cc7f4b14fc9fd725b2a71f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-04-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:42.630812+00:00",
+    "fetched_at": "2026-11-10T22:24:03.423399+00:00",
+    "feature_available_at": "2026-11-10T22:24:14.445722+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:21.808961+00:00",
+  "commit_verified_at": "2026-11-12T13:53:21.808961+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Federal Reserve Bank of New York",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Entities with positions in this note equal to or exceeding the $4.58 billion threshold must report these positions to the Federal Reserve Bank of New York."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

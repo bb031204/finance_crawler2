@@ -1,0 +1,122 @@
+{
+  "source_id": "fff4fb156ba48074f12d3383",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_05_22_47_Government_Defense_cnbc.json",
+      "sha256": "52ba958a979233890bcd351710dd36d3ca8934dc6bd3762b463d071f0d557fac",
+      "filename": "2018_02_05_22_47_Government_Defense_cnbc.json"
+    }
+  ],
+  "original_record_hash": "7f31b89112180fd8d4cd37dfd503314f0bc45d2ed261b3e2c9bb1c4d6d0c2617",
+  "input_hash": "3c15fa69b465836a628fabe96373a2a3cfb10a34bd12f015c64ad55162868c9f",
+  "matching_audit_hash": "8426023e075fc84f43209d258c4141534deeafa854ccec711d470f76309aa433",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b211b653043383d5b8968ec65c6b55d6b1543df5b8833ddcfa5c379e47c2a68e",
+    "raw_sha256": "6930427707177ce1e73561adfbb44b0f72eb0f15ca450cc723074ae94dd85e03",
+    "date_quote": "article:published_time=2018-02-05T22:47:25+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "f35f3a74a3c51a0610d1c2195411cb690260ffbd42676ce0265f28ec1e3b06d7",
+  "outputs": [
+    {
+      "path": "US\\2018_02_05_22_47_Government_Defense_cnbc.json",
+      "sha256": "dfa2c30bc9e6d073ecbd9a664f1f48f7d4be8b48c9ae719844768c7bb8a4c6c2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-05T22:47:25+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:41:42.630812+00:00",
+    "fetched_at": "2026-11-10T22:23:22.756332+00:00",
+    "feature_available_at": "2026-11-11T09:25:06.547014+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:53.473401+00:00",
+  "feature_available_at": "2026-11-12T14:42:53.482461+00:00",
+  "commit_verified_at": "2026-11-12T14:42:53.482461+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses audit findings related to financial misstatements, documentation issues, and asset tracking within defense agencies, providing concrete,审计",
+    "securities": [
+      {
+        "name": "Ernst & Young",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ernst & Young"
+      },
+      {
+        "name": "Defense Logistics Agency (DLA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Defense Logistics Agency (DLA)"
+      },
+      {
+        "name": "Army Corps of Engineers",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Army Corps of Engineers"
+      },
+      {
+        "name": "Pentagon",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pentagon"
+      },
+      {
+        "name": "Army",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Army"
+      },
+      {
+        "name": "Air Force",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Air Force"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Ernst & Young": "company",
+      "Defense Logistics Agency (DLA)": "organization",
+      "Army Corps of Engineers": "organization",
+      "Pentagon": "organization",
+      "Army": "organization",
+      "Air Force": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

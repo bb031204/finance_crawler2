@@ -1,0 +1,120 @@
+{
+  "source_id": "90fbadcf82b9125f3f4ee3bb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_09_21_Politics-&-Policy_Biotechnology_cnbc.json",
+      "sha256": "638aba72fa1366398a42e351ca65f41ced23821b97815e82fdeeb6cf61493b9c",
+      "filename": "2015_09_21_Politics-&-Policy_Biotechnology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "654963bdd8289b72a7303e9039a53f2e6b6cd442d8210c3ae0782a36d78931ef",
+  "input_hash": "569861e0c1554e89aed8fa73cced64c4570d393c130a1f54870054c481828220",
+  "matching_audit_hash": "eb0883a9ffb75221595a93d1e19c23a4b8bdd6398e561a90a0787ae9825ea5b8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4b1b601774cba04ffea7895b1972be24740768c9642f4293ea6419f0d82e8a5f",
+    "raw_sha256": "295c2db66bc79aeea653812e89281add2ce8191f71a0b2a77bedb5788ceaac06",
+    "date_quote": "article:published_time=2015-09-21T19:38:19+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "iShares Nasdaq Biotechnology ETF",
+      "ticker": null,
+      "exchange": null,
+      "quote": "iShares Nasdaq Biotechnology ETF"
+    },
+    {
+      "name": "Retrophin",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Shares of Retrophin, started by Martin Shkreli, traded down more than 11 percent following Clinton's tweet."
+    },
+    {
+      "name": "Turing Pharmaceuticals",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Shkreli is also the founder and Turing Pharmaceuticals, which was the subject of the Times article."
+    }
+  ],
+  "record_hash": "8b103bc544488b828e2a92a348fb2d39b8a2ec37945bdeb780c2e19bdd12e167",
+  "outputs": [
+    {
+      "path": "US\\2015_09_21_Politics-&-Policy_Biotechnology_cnbc.json",
+      "sha256": "00f3d0edbffa766826d41c5463b3340fad8e12af2febe081cc043a78a517aee7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-09-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:34.228661+00:00",
+    "fetched_at": "2026-11-10T20:39:19.968652+00:00",
+    "feature_available_at": "2026-11-10T20:39:35.817879+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:00.562149+00:00",
+  "commit_verified_at": "2026-11-12T13:53:00.562149+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "iShares Nasdaq Biotechnology ETF",
+        "ticker": null,
+        "exchange": null,
+        "quote": "iShares Nasdaq Biotechnology ETF"
+      },
+      {
+        "name": "Retrophin",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shares of Retrophin, started by Martin Shkreli, traded down more than 11 percent following Clinton's tweet."
+      },
+      {
+        "name": "Turing Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Shkreli is also the founder and Turing Pharmaceuticals, which was the subject of the Times article."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

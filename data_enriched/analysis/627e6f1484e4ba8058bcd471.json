@@ -1,0 +1,187 @@
+{
+  "source_id": "627e6f1484e4ba8058bcd471",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_07_09_Real-Estate_Logistics_cnbc.json",
+      "sha256": "914e393c65a725642be3e6eb69a8e0a25455c1821acf3c40bdfc4fc732516573",
+      "filename": "2020_07_09_Real-Estate_Logistics_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d2dcece6c8c59858e67e416f11d1f77c92e9a3484689310743bdce0e5e7a0bd3",
+  "input_hash": "78dbb56cca3936593eafa4455eb44c97e0698304480e3c30be675e50bc169602",
+  "matching_audit_hash": "7e1db6464475ab11933d1f1820bee67d3991d70997fdd7edfa98274978b6cd32",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1e8cbf17ebc22d7b54e7395556144db60ebe82716dcc38e307eb7713a71e1541",
+    "raw_sha256": "a54c8e95e0d62c6891a4b5ac29ede361035d92301b5c831da5a9e39d9722c9b1",
+    "date_quote": "article:published_time=2020-07-09T12:00:01+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "efd5ef3a689cf00e6e7b8439acc0e9f9db425109b8a6a2e53db9db7dcb8422f0",
+  "outputs": [
+    {
+      "path": "US\\2020_07_09_Real-Estate_Logistics_cnbc.json",
+      "sha256": "4f64178920a074e7636fbf90e6ea86bbe7b0c53526876e00183aada93ce84b6d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-07-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:51.169437+00:00",
+    "fetched_at": "2026-11-10T12:57:36.896832+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.406754+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:13:10.864465+00:00",
+  "feature_available_at": "2026-11-12T15:16:47.489811+00:00",
+  "commit_verified_at": "2026-11-12T15:16:47.489811+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "E-commerce growth drives demand for warehouse and cold-storage space",
+    "securities": [
+      {
+        "name": "JLL",
+        "ticker": null,
+        "exchange": null,
+        "quote": "commercial real estate services firm JLL"
+      },
+      {
+        "name": "Prologis",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Prologis"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "commercial real estate services firm JLL"
+      },
+      {
+        "name": "E-commerce",
+        "basis": "inferred",
+        "quote": "rise in e-commerce has led to increased demand for industrial real estate"
+      },
+      {
+        "name": "Logistics",
+        "basis": "inferred",
+        "quote": "converted into logistics hubs"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "JLL": "organization",
+      "Prologis": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:47.517346+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:13:10.864465+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "E-commerce growth drives demand for warehouse and cold-storage space",
+      "securities": [
+        {
+          "name": "JLL",
+          "ticker": null,
+          "exchange": null,
+          "quote": "commercial real estate services firm JLL"
+        },
+        {
+          "name": "Prologis",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Prologis"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Real Estate",
+          "basis": "explicit",
+          "quote": "commercial real estate services firm JLL"
+        },
+        {
+          "name": "E-commerce",
+          "basis": "inferred",
+          "quote": "rise in e-commerce has led to increased demand for industrial real estate"
+        },
+        {
+          "name": "Logistics",
+          "basis": "inferred",
+          "quote": "converted into logistics hubs"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "JLL": "organization",
+        "Prologis": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:13:10.889797+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:13:10.898785+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:13:10.881780+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses the impact of e-commerce growth on real estate demand, including warehouse and cold-storage space requirements, and mentions specific real",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:53:14.821580+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

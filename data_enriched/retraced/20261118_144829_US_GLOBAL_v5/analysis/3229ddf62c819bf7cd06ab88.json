@@ -1,0 +1,229 @@
+{
+  "source_id": "3229ddf62c819bf7cd06ab88",
+  "status": "completed",
+  "source_record_hash": "568b80715a8f7539459a00369f24f30142826ae4816512b3bfd09d17cf6b2f69",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000694/0001144204-18-001248-index.html",
+    "attempted_at": "2026-11-18T11:26:22.433829+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "4df3e6df61132a9f4d4fef1c593127f8963657701106d3a1e3e41055a0604529"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3229ddf62c819bf7cd06ab88.json",
+    "sha256": "b799acf2151507ec47cbb0556169672774b85e008840bc1919d5242cf38613b5",
+    "bundled_path": "legacy_audit/3229ddf62c819bf7cd06ab88.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "dab55c98f62742188c53cf8420d7f4d6d0605c3358ddb974b6c6a8c4e427c843",
+      "llm_inferred_at": "2026-11-18T11:26:38.094898+00:00",
+      "model_duration_seconds": 6.9796021,
+      "prompt_tokens": 2002,
+      "completion_tokens": 335,
+      "selection": [
+        {
+          "source_id": "3229ddf62c819bf7cd06ab88",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6799",
+              "name": "INVESTORS, NEC",
+              "basis": "explicit",
+              "quote": "Novavax, Inc. filed a Form 8-K on January 8, 2018, with the Securities and Exchange Commission (SEC). The filing includes an investor presentation and is signed by John A. Herrmann"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The filing is part of the company's regular disclosure obligations under the Securities Exchange Act of 1934."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The filing is part of the company's regular disclosure obligations under the Securities Exchange Act of 1934."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "dab55c98f62742188c53cf8420d7f4d6d0605c3358ddb974b6c6a8c4e427c843",
+      "llm_inferred_at": "2026-11-18T11:26:43.904269+00:00",
+      "model_duration_seconds": 5.8040058,
+      "prompt_tokens": 2046,
+      "completion_tokens": 324,
+      "selection": [
+        {
+          "source_id": "3229ddf62c819bf7cd06ab88",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6799",
+              "name": "INVESTORS, NEC",
+              "basis": "explicit",
+              "quote": "Novavax, Inc. filed a Form 8-K on January 8, 2018, with the Securities and Exchange Commission (SEC). The filing includes an investor presentation and is signed by John A. Herrmann"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The filing is part of the company's regular disclosure obligations under the Securities Exchange Act of 1934."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The filing is part of the company's regular disclosure obligations under the Securities Exchange Act of 1934."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:26:43.916474+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4df3e6df61132a9f4d4fef1c593127f8963657701106d3a1e3e41055a0604529",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2018-01-08",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000114420418001248/tv482885_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Novavax, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Novavax, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6799",
+        "name": "INVESTORS, NEC",
+        "basis": "inferred",
+        "quote": "Novavax, Inc. filed a Form 8-K on January 8, 2018, with the Securities and Exchange Commission (SEC). The filing includes an investor presentation and is signed by John A. Herrmann",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6799",
+        "industry_name_standard": "INVESTORS, NEC",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Novavax, Inc. filed a Form 8-K on January 8, 2018, with the Securities and Exchange Commission (SEC). The filing includes an investor presentation and is signed by John A. Herrmann"
+      }
+    ],
+    "impact_scope": [],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3229ddf62c819bf7cd06ab88",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_01_08_Corporate-Governance_Biotechnology_sec.json",
+        "sha256": "7439e55abf4169cedd152d33b8cb0f6cd6cefa9f4c7af28d1ab68f24853b9bc5",
+        "filename": "2018_01_08_Corporate-Governance_Biotechnology_sec.json"
+      }
+    ],
+    "original_record_hash": "3a02ba2d6bd12bfceac1fc0ebc4bbcadb821a29bfdfa48fb5ed75c65b73a5b2c",
+    "input_hash": "2be657dcf6efad38bc84958771c0e995e946492047040e0950ec3ffe7bdf2d40",
+    "matching_audit_hash": "ab2ef9ee00856df39041f2af388b781a1ae6c4a22228fcd3e07a64f0b984cd77",
+    "legacy_security_evidence": [
+      {
+        "name": "Novavax, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Novavax, Inc."
+      }
+    ],
+    "record_hash": "568b80715a8f7539459a00369f24f30142826ae4816512b3bfd09d17cf6b2f69",
+    "outputs": [
+      {
+        "path": "US\\2018_01_08_Corporate-Governance_Biotechnology_sec.json",
+        "sha256": "31ccd9f0519f1131590cf9ef1f774c2ccf8749664a7912a63d3ed7cdd40f0183"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2018-01-08",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+      "fetched_at": "2026-11-11T13:10:43.802211+00:00",
+      "feature_available_at": "2026-11-11T13:11:26.191883+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:26:43.904269+00:00",
+    "feature_available_at": "2026-11-18T11:26:43.916474+00:00",
+    "commit_verified_at": "2026-11-12T13:53:18.668988+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000694/0001144204-18-001248-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "568b80715a8f7539459a00369f24f30142826ae4816512b3bfd09d17cf6b2f69",
+    "content_hash": "4df3e6df61132a9f4d4fef1c593127f8963657701106d3a1e3e41055a0604529",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:26:43.904847+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3229ddf62c819bf7cd06ab88.json",
+      "sha256": "ccd4412ef6ae8af1f994eb5b92f2895eefe81ac3907ba9b042f9f5bdd1db2bd5",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 21.5
+}

@@ -1,0 +1,125 @@
+{
+  "source_id": "f24ba706f6a7761d70eb7997",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_09_22_Corporate-Governance_Food-Technology_bloomberg.json",
+      "sha256": "0698d8e35e8e1982d21139b9ee9957fc9f726d5deff2e7822ba4a6cfde3f90da",
+      "filename": "2016_09_22_Corporate-Governance_Food-Technology_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "a43db619b94eafd32329acc87c0884d5c6e2d8ab12311d186147964bcea93210",
+  "input_hash": "0baad65d930c52119bb74801b00a98899beeda324420c98c21e3bbc84d182269",
+  "matching_audit_hash": "f657ab85d9e31ba1973b7106866e0c0cfb60f9d47139a5546649cc37bda714b7",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "23dfe66cf8df6c1ecc8e409a1c678619600d7cc649bda443f37378a024dc92e1",
+    "raw_sha256": "143dbf663193aefd5ac5e30193edb0a6a844ab0b1835f6948df92f4bf992f8a8",
+    "date_quote": "By Olivia Zaleski, Peter Waldman and Ellen Huet | September 22, 2016",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "3ba59017977cd003454b17558fe8c053079859c29a32fcea80f5144a481a52d9",
+  "outputs": [
+    {
+      "path": "US\\2016_09_22_Corporate-Governance_Food-Technology_bloomberg.json",
+      "sha256": "6b5cee81649359e284f9c5b0ee72e2d3c6a6db16f800e69777b61af47decbdaa"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-09-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:56.866577+00:00",
+    "fetched_at": "2026-11-10T14:46:59.051669+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.870095+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:47.288744+00:00",
+  "feature_available_at": "2026-11-12T14:32:47.334118+00:00",
+  "commit_verified_at": "2026-11-12T14:32:47.334118+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Hampton Creek's internal sustainability claims, audit findings, SEC and Justice Department investigations, financial practices, and internal/",
+    "securities": [
+      {
+        "name": "Hampton Creek",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hampton Creek, a vegan food company based in San Francisco"
+      },
+      {
+        "name": "Lux Research",
+        "ticker": null,
+        "exchange": null,
+        "quote": "A consulting firm, Lux Research"
+      },
+      {
+        "name": "U.S. Securities and Exchange Commission (SEC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Justice Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Justice Department"
+      },
+      {
+        "name": "Bloomberg",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bloomberg article"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Food and Beverage",
+        "basis": "inferred",
+        "quote": "vegan food company"
+      },
+      {
+        "name": "Investment and Venture Capital",
+        "basis": "inferred",
+        "quote": "raised nearly $220 million in venture capital"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Hampton Creek": "company",
+      "Lux Research": "company",
+      "U.S. Securities and Exchange Commission (SEC)": "organization",
+      "Justice Department": "organization",
+      "Bloomberg": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

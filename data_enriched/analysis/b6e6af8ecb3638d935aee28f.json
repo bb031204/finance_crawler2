@@ -1,0 +1,172 @@
+{
+  "source_id": "b6e6af8ecb3638d935aee28f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_09_03_Financial-Risk_Banking_federalreserve.json",
+      "sha256": "b935947266886a375767b55598976d5bdfd976407c0d21d5c57c43a6ed054fce",
+      "filename": "2015_09_03_Financial-Risk_Banking_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "cf4d609f32692a49ac69253f4b99f97d706a4135469102e5128415f9375be8ac",
+  "input_hash": "e04b2aeca8f1dd712137daab9d9746caebbf8a951ed5255b1f2d5821b129e89f",
+  "matching_audit_hash": "24d382c74de9b63305032f930c1ab2ee66e2589ecac784c8c28ecf52969dc753",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c4acd55258dee70aa4ebafc575e9439669eab8ba8734f8bc9fc82a9b91e414cc",
+    "raw_sha256": "0220afdb3c6f7b52500a9c500ad755d41c0999d577c8f64ed4f1865d9ca6f5a4",
+    "date_quote": "September 3, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "FRB: FEDS Notes",
+      "ticker": null,
+      "exchange": null,
+      "quote": "FRB: FEDS Notes"
+    },
+    {
+      "name": "Money Market Mutual Funds",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Money Market Mutual Funds"
+    },
+    {
+      "name": "Repurchase Agreements",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Repurchase Agreements"
+    },
+    {
+      "name": "Securities Lending",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Securities Lending"
+    },
+    {
+      "name": "Federal Funds",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Federal Funds"
+    },
+    {
+      "name": "Federal Reserve",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Federal Reserve"
+    }
+  ],
+  "record_hash": "83fc18299223967aabd5ce99e6b157dc5cc9beca919341e47c8ec2229ce5595d",
+  "outputs": [
+    {
+      "path": "US\\2015_09_03_Financial-Risk_Banking_federalreserve.json",
+      "sha256": "4ad79daf5c850135999fdededcc4f3a8b1ae18d2c6c46fdfbe238d0786e6897c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-09-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:57:31.088734+00:00",
+    "fetched_at": "2026-11-10T10:20:58.522119+00:00",
+    "feature_available_at": "2026-11-11T05:16:01.687549+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:00.213880+00:00",
+  "commit_verified_at": "2026-11-12T13:53:00.213880+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "FRB: FEDS Notes",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FRB: FEDS Notes"
+      },
+      {
+        "name": "Money Market Mutual Funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Money Market Mutual Funds"
+      },
+      {
+        "name": "Repurchase Agreements",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Repurchase Agreements"
+      },
+      {
+        "name": "Securities Lending",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Securities Lending"
+      },
+      {
+        "name": "Federal Funds",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Funds"
+      },
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Financial Intermediaries",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Finance",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "source_id": "1b4fc96ae231db3bd2402cb1",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_11_29_cybersecurity_transportation_cnbc.json",
+      "sha256": "c5294ba354ccc9cdcdd40413a41ccd1850d861de14fea4fe81178964bc7d40b3",
+      "filename": "2016_11_29_cybersecurity_transportation_cnbc.json"
+    }
+  ],
+  "original_record_hash": "f85972bf7e99fb7480e16b4a5669c304ba0738e7fd53038048e250e29347bf4b",
+  "input_hash": "6a816465d6289917e738b5eb54e4df74b8dd02291ff85d1b71bd085e628be714",
+  "matching_audit_hash": "0c8f96427e7776f54527b84813b2435917ed246aafddd940cf112c3ac3ce0006",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8a2872437a36562cb973015b39b52dc798228042dcb100df79c86654f2f8fc91",
+    "raw_sha256": "413f1eb2e96ea9a3f527f325a114252ad03986ede3c67a22c6d0303f40e28725",
+    "date_quote": "article:published_time=2016-11-29T22:37:11+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "San Francisco Municipal Transportation Agency",
+      "ticker": null,
+      "exchange": null,
+      "quote": "San Francisco Municipal Transportation Agency"
+    },
+    {
+      "name": "PhishMe",
+      "ticker": null,
+      "exchange": null,
+      "quote": "PhishMe"
+    }
+  ],
+  "record_hash": "329555f869994974477737f6af0ae25a125df52a4123ef8d216512a1c7b2424c",
+  "outputs": [
+    {
+      "path": "US\\2016_11_29_cybersecurity_transportation_cnbc.json",
+      "sha256": "3d913a91a03e3c59a4d48718f99a9f0859641bbb8801d4841cc4f2db36268d1a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-11-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:42.312667+00:00",
+    "fetched_at": "2026-11-10T21:48:55.542053+00:00",
+    "feature_available_at": "2026-11-10T21:49:23.768702+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:10.368753+00:00",
+  "commit_verified_at": "2026-11-12T13:53:10.368753+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "San Francisco Municipal Transportation Agency",
+        "ticker": null,
+        "exchange": null,
+        "quote": "San Francisco Municipal Transportation Agency"
+      },
+      {
+        "name": "PhishMe",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PhishMe"
+      }
+    ],
+    "industries": [
+      {
+        "name": "transportation",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "information technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

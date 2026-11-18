@@ -1,0 +1,217 @@
+{
+  "source_id": "a93def5e86a539d76713e107",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_08_Trade-Policy_Steel,-Aluminum_cnbc.json",
+      "sha256": "e7b71dce6c155b527c4cf6819f7ba51c8b3f89dfe57a757f28447821fbebccbb",
+      "filename": "2018_03_08_Trade-Policy_Steel,-Aluminum_cnbc.json"
+    }
+  ],
+  "original_record_hash": "66f2e1446feefce7b2710674472e892a6e8cbe44aecade63f48cf55f231b896e",
+  "input_hash": "5e2a99ee036a90175783460d7f006bca0b5b4664150efe432edd58ae62582055",
+  "matching_audit_hash": "4a00696f9e1aba85b50851b21d2b0fb7839394b4b44afed2a11dd7a66a22468d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "014f6b6c9b37e0dbe4587d28f465cf38018ee4f6529ed9791599c64fc1d05e8d",
+    "raw_sha256": "03e92020751c3e651952d28db08beb3895389f785b69cb573b2f4ad2a8f88158",
+    "date_quote": "article:published_time=2018-03-08T21:03:49+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "c2f3a43142f1dda1c7934df50398cf9c09c291455e4d7854b943662d1771d738",
+  "outputs": [
+    {
+      "path": "US\\2018_03_08_Trade-Policy_Steel,-Aluminum_cnbc.json",
+      "sha256": "3f8aaca3dc4827e19b913ac171b19de1320462091e57ab14f65605c78a312ce9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:28.583846+00:00",
+    "fetched_at": "2026-11-10T15:48:55.460938+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.206433+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:08:45.807737+00:00",
+  "feature_available_at": "2026-11-12T15:16:43.022070+00:00",
+  "commit_verified_at": "2026-11-12T15:16:43.022070+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Trade policy impacts domestic manufacturing and employment",
+    "securities": [
+      {
+        "name": "U.S. Steel",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Steel has announced it is reopening a plant in Illinois"
+      },
+      {
+        "name": "Century Aluminum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Century Aluminum officials have indicated that the tariffs could generate 300 new jobs in Kentucky"
+      },
+      {
+        "name": "President Donald Trump",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President Donald Trump signed two proclamations imposing tariffs on steel and aluminum imports"
+      },
+      {
+        "name": "White House",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The White House as essential for domestic and economic security"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Steel industry",
+        "basis": "inferred",
+        "quote": "steel and aluminum imports"
+      },
+      {
+        "name": "Aluminum industry",
+        "basis": "inferred",
+        "quote": "steel and aluminum imports"
+      },
+      {
+        "name": "Manufacturing",
+        "basis": "inferred",
+        "quote": "domestic manufacturing and employment"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Steel": "company",
+      "Century Aluminum": "company",
+      "President Donald Trump": "issuer",
+      "White House": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:43.054224+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:08:45.807737+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Trade policy impacts domestic manufacturing and employment",
+      "securities": [
+        {
+          "name": "U.S. Steel",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Steel has announced it is reopening a plant in Illinois"
+        },
+        {
+          "name": "Century Aluminum",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Century Aluminum officials have indicated that the tariffs could generate 300 new jobs in Kentucky"
+        },
+        {
+          "name": "President Donald Trump",
+          "ticker": null,
+          "exchange": null,
+          "quote": "President Donald Trump signed two proclamations imposing tariffs on steel and aluminum imports"
+        },
+        {
+          "name": "White House",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The White House as essential for domestic and economic security"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Steel industry",
+          "basis": "inferred",
+          "quote": "steel and aluminum imports"
+        },
+        {
+          "name": "Aluminum industry",
+          "basis": "inferred",
+          "quote": "steel and aluminum imports"
+        },
+        {
+          "name": "Manufacturing",
+          "basis": "inferred",
+          "quote": "domestic manufacturing and employment"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Steel": "company",
+        "Century Aluminum": "company",
+        "President Donald Trump": "issuer",
+        "White House": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:08:45.834733+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:08:45.842734+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:08:45.824726+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses trade policy impacts, including tariffs on steel and aluminum, exemptions for Canada and Mexico, and potential effects on domestic steel/铝",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:43:41.897292+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

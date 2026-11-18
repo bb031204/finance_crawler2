@@ -1,0 +1,284 @@
+{
+  "source_id": "2f37eddd5c1981e2b11e1532",
+  "status": "completed",
+  "source_record_hash": "24a4faedbff3d404fb2b63922cb8c3542ded662c47b39f65f4e130998411cdbe",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001171/0001104659-20-019546-index.html",
+    "attempted_at": "2026-11-18T11:07:49.358650+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001171/0001104659-20-019546-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465920019546/tm207812-1_8k.htm",
+    "fetched_at": "2026-11-18T11:08:01.454176+00:00",
+    "source_body_hash": "4a2cfb73e99f8d95ad1800bc91a2b3cdac0be504a913212236a75f687bbe3d5d",
+    "raw_sha256": "2172ad63327f2eff02be664238b8b64d9315f1d2b7271a5e6b8374c04c51202e",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465920019546/tm207812-1_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "2172ad63327f2eff02be664238b8b64d9315f1d2b7271a5e6b8374c04c51202e",
+        "text_sha256": "6d6dcc82d494e43bb9d94c41a06dcd99c7681dc007e10d0d2097afbfc99d0168",
+        "text_start": 0,
+        "text_end": 3274
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465920019546/tm207812d1_ex99-1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "fc753359c83f361509dc1f6144438ec9a40f9e6fabd4fc03e70077670361d027",
+        "text_sha256": "059f0c91c2c4c3e535c94fb9393b68cab17e842e7727de333c3d021ac6beb7e8",
+        "text_start": 3276,
+        "text_end": 6591
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2020-02-13",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/2f37eddd5c1981e2b11e1532.json",
+    "sha256": "5ec7ea03e34ca86dddaacf0894ca88f573babfb81f946bf818124345fde1ecc4",
+    "bundled_path": "legacy_audit/2f37eddd5c1981e2b11e1532.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "1f204468ade377844af099fa3862031e323de23826425b6e4dfd9226d7a7bc8d",
+      "llm_inferred_at": "2026-11-18T11:08:15.500552+00:00",
+      "model_duration_seconds": 14.0260667,
+      "prompt_tokens": 3453,
+      "completion_tokens": 556,
+      "selection": [
+        {
+          "source_id": "2f37eddd5c1981e2b11e1532",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities.",
+              "rationale": "The letter is addressed to the board of directors of Broadway Financial Corporation, indicating that the event is related to the financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities.",
+              "rationale": "The event is directly related to the company, Broadway Financial Corporation, as it involves a shareholder's communication with the board.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "4833819b5995e408878cadedb3e7a457b08e3c157681279966347f7d888578a4",
+      "llm_inferred_at": "2026-11-18T11:08:25.889108+00:00",
+      "model_duration_seconds": 10.3729341,
+      "prompt_tokens": 3497,
+      "completion_tokens": 544,
+      "selection": [
+        {
+          "source_id": "2f37eddd5c1981e2b11e1532",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "A report of stock ownership on Schedule 13D was filed with the Securities and Exchange Commission on February 10, 2020 by Steven A.",
+              "rationale": "The event is specific to the company, Broadway Financial Corporation, and involves a shareholder's report of stock ownership.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities.",
+              "rationale": "The event involves the financial services industry, as it relates to stock ownership and corporate governance.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities."
+            },
+            {
+              "industry_key": "TRSR:9da7f76bc81d2f4e",
+              "name": "Books",
+              "basis": "explicit",
+              "quote": "The Schedule 13D included as an exhibit a letter addressed to the board of directors of Broadway and signed by officers of two of the Sugarman Entities."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T11:08:25.904502+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4a2cfb73e99f8d95ad1800bc91a2b3cdac0be504a913212236a75f687bbe3d5d",
+    "raw_sha256": "2172ad63327f2eff02be664238b8b64d9315f1d2b7271a5e6b8374c04c51202e",
+    "date_quote": "SEC filing datePublished=2020-02-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465920019546/tm207812-1_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "2f37eddd5c1981e2b11e1532",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2020_02_13_Other-Events_Financial-Services_sec.json",
+        "sha256": "a67084264c628baf1109a1e16213c39b1903396d448b83156539809af8dbc328",
+        "filename": "2020_02_13_Other-Events_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "d7b2721d10b6271000ab00cf0977fcaba198f012ad5e72a631a219ce4ce9eb18",
+    "input_hash": "d4553ab19be4c2c84399cd646f2caa96734c3e7e818731632f017b69a2d59918",
+    "matching_audit_hash": "d28a7f5b3c54a7fb137c076dfcb6958f8e5f6499cc6c35159ab28c589c78933d",
+    "legacy_security_evidence": [
+      {
+        "name": "Common Stock",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Common Stock"
+      }
+    ],
+    "record_hash": "24a4faedbff3d404fb2b63922cb8c3542ded662c47b39f65f4e130998411cdbe",
+    "outputs": [
+      {
+        "path": "US\\2020_02_13_Other-Events_Financial-Services_sec.json",
+        "sha256": "ee2809893dacf05871129d37d3594099475ee92ced734d54ccec4ed44b00c00e"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2020-02-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+      "fetched_at": "2026-11-11T15:22:37.620965+00:00",
+      "feature_available_at": "2026-11-11T15:23:13.026382+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T11:08:25.889108+00:00",
+    "feature_available_at": "2026-11-18T11:08:25.904502+00:00",
+    "commit_verified_at": "2026-11-12T13:53:32.026452+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "A report of stock ownership on Schedule 13D was filed with the Securities and Exchange Commission on February 10, 2020 by Steven A.",
+        "rationale": "The event is specific to the company, Broadway Financial Corporation, and involves a shareholder's report of stock ownership.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "A report of stock ownership on Schedule 13D was filed with the Securities and Exchange Commission on February 10, 2020 by Steven A.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001171/0001104659-20-019546-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "24a4faedbff3d404fb2b63922cb8c3542ded662c47b39f65f4e130998411cdbe",
+    "content_hash": "1d48dd38b069884dba887d1102c5ee6881458f5f042992b6ecc693edd46b63b9",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T11:08:25.891976+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/2f37eddd5c1981e2b11e1532.json",
+      "sha256": "286daf49d351d31624d38fbc740c27dc54b7416cab7596fb52950a68e9068052",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 36.562000000005355
+}

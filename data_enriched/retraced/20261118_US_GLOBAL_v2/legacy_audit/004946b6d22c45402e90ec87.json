@@ -1,0 +1,99 @@
+{
+  "source_id": "004946b6d22c45402e90ec87",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_21_Agriculture-Equipment_Agricultural-Machinery_cnbc.json",
+      "sha256": "56edf38a749d0bc7f71a80bcf71c613fe62c5a5a4fbfaae8e6b12da9b7e1ab95",
+      "filename": "2020_02_21_Agriculture-Equipment_Agricultural-Machinery_cnbc.json"
+    }
+  ],
+  "original_record_hash": "4580a3d7ec1c839f16c3713b3f0eca4ff7d7ec839cefbdd0c4f3206da4adb10b",
+  "input_hash": "58b96c1ce0800ddf106e9c11ca87639b82dba40c2aeffc4d5cd4254b40c4fb68",
+  "matching_audit_hash": "0b229856ebeee4688f10d281bfc3ae13960332311c6dcca52977441c5a20ef98",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9c6eee2c740d203c0ddcae3d70e5a66cdc74bbb7256f296a3706a0a47f860601",
+    "raw_sha256": "19af5ec075673a64c0884ffd8b9602799df73d7d70a144e33d2c7189a0d5c350",
+    "date_quote": "article:published_time=2020-02-21T11:49:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Deere",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Deere"
+    }
+  ],
+  "record_hash": "02591741fa66b6c5c6387af7b38839b711bff1be96ad559ca2a8889911687383",
+  "outputs": [
+    {
+      "path": "US\\2020_02_21_Agriculture-Equipment_Agricultural-Machinery_cnbc.json",
+      "sha256": "3850cb943f0c04eddf2eed30a4d1d9e4ae8305a94210715702de3d3a9d4a8e94"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:43.598510+00:00",
+    "fetched_at": "2026-11-10T16:40:20.395109+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.865233+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:59.302415+00:00",
+  "feature_available_at": "2026-11-12T14:51:59.312144+00:00",
+  "commit_verified_at": "2026-11-12T14:51:59.312144+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "legacy_security_attribute_unverified",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about Deere's financial performance, including profit increase, analyst estimates, and factors affecting earnings such as the U",
+    "securities": [
+      {
+        "name": "Deere",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Deere"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Construction Equipment",
+        "basis": "inferred",
+        "quote": "construction machines"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Deere": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

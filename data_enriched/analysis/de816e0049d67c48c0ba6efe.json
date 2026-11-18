@@ -1,0 +1,121 @@
+{
+  "source_id": "de816e0049d67c48c0ba6efe",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_22_Corporate-Action_Biotechnology_sec.json",
+      "sha256": "66ae4f7d67c440844a4f80f4414e46ff86418d4ed6da51ea69eab96301449e71",
+      "filename": "2018_02_22_Corporate-Action_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "8fb9bdc9659fb4f927e173daf99261def4c975f7f12d0532284ee9818b09ee97",
+  "input_hash": "d58a5c7de7796c73c3bda141fe5f06fb1926b22ab5df3b11ff15919e09934149",
+  "matching_audit_hash": "a84841da7a34b599c19da0d9e13f8262d45fe52d32acd1bcfff45d86a42f87cd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "af131689baf3c4d8e8f03c5be4c7134479a0bbf3a67dd5aec1ded6a2ba9584e9",
+    "raw_sha256": "72a331f2600c219a6fad5b81c70a86f289f2c99b83edaa91c8d8cb3215b928cb",
+    "date_quote": "SEC filing datePublished=2018-02-22",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312518053085/d527765d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sangamo Therapeutics, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo Therapeutics, Inc."
+    },
+    {
+      "name": "Kite Pharma, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Kite Pharma, Inc."
+    },
+    {
+      "name": "Gilead Sciences, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Gilead Sciences, Inc."
+    }
+  ],
+  "record_hash": "d7ce36d8b7a808e2a297ccda85091d7906cd2455a8adb811fdd06a677d49c62b",
+  "outputs": [
+    {
+      "path": "US\\2018_02_22_Corporate-Action_Biotechnology_sec.json",
+      "sha256": "0ea0e6310764e51c8cb802840b0a634db8fd1df419a3476e9a2e0fa5ee7894f2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.048576+00:00",
+    "fetched_at": "2026-11-11T13:22:09.761539+00:00",
+    "feature_available_at": "2026-11-11T13:23:38.115357+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:20.204199+00:00",
+  "commit_verified_at": "2026-11-12T13:53:20.204199+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      },
+      {
+        "name": "Kite Pharma, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kite Pharma, Inc."
+      },
+      {
+        "name": "Gilead Sciences, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gilead Sciences, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

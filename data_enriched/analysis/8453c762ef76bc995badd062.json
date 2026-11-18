@@ -1,0 +1,116 @@
+{
+  "source_id": "8453c762ef76bc995badd062",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_06_26_11_19_stock_Industrial_cnbc.json",
+      "sha256": "610842ec525da5a0bde7517d0b96fc39a2af0cf8473bea6a6cf60b82137f4e59",
+      "filename": "2018_06_26_11_19_stock_Industrial_cnbc.json"
+    }
+  ],
+  "original_record_hash": "087fa0c58699611e7b73c007332dc8a78971b1506503b57a14fd28c49d6eaceb",
+  "input_hash": "791ccb73bf57a8ba9715871354f29991e555c97e69fda7de6497be7ffbbe76cb",
+  "matching_audit_hash": "81797a229da6515e1b62dac31a06ba34756d97648baa34ef6aabb96099cbcf99",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "666b9fc223552d638495d85426cb84fe234e41400f7fb963899ee4b35d55d2b3",
+    "raw_sha256": "a4dfb15848fcdb71ac141ddd84b92725ca22c6231763ae32ef115a88c56060b0",
+    "date_quote": "article:publisher=https://www.facebook.com/cnbc\narticle:published_time=2018-06-26T11:19:43+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "65a457f16bdcf74de7def903f3a75e1d2b5abdd50ab74ee5cd86b4d96fa17f1e",
+  "outputs": [
+    {
+      "path": "US\\2018_06_26_11_19_stock_Industrial_cnbc.json",
+      "sha256": "9f65ba0ae8dcfff700f1a8b2505e5eebdc798603407bc60cc89303d1af90380e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-06-26T11:19:43+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T13:33:39.669939+00:00",
+    "fetched_at": "2026-11-10T13:50:30.350621+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.829512+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:15.774521+00:00",
+  "feature_available_at": "2026-11-12T14:45:15.784373+00:00",
+  "commit_verified_at": "2026-11-12T14:45:15.784373+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about General Electric's strategic moves, including the spin-off of its health-care unit, financial targets, and Moody's rating",
+    "securities": [
+      {
+        "name": "General Electric",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric (GE)"
+      },
+      {
+        "name": "GE Healthcare",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GE Healthcare"
+      },
+      {
+        "name": "Baker Hughes",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Baker Hughes, a GE company (BHGE)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "inferred",
+        "quote": "health-care unit"
+      },
+      {
+        "name": "Aviation",
+        "basis": "inferred",
+        "quote": "aviation, power, and renewable energy businesses"
+      },
+      {
+        "name": "Oil and Gas",
+        "basis": "explicit",
+        "quote": "oil and gas servicing and equipment player"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "General Electric": "company",
+      "GE Healthcare": "company",
+      "Baker Hughes": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

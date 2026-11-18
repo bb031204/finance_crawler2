@@ -1,0 +1,105 @@
+{
+  "source_id": "bb74e7439b2c48c9372a16be",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_01_23_Energy_Utilities_cnbc.json",
+      "sha256": "664e811563be3cfefba260f3c56631fdab235b8bcdeb8d80518646f8a981daa8",
+      "filename": "2020_01_23_Energy_Utilities_cnbc.json"
+    }
+  ],
+  "original_record_hash": "08819338c0e4ec8dccbcb90d6d1f0c8f581365cd5dcd08f8cebe7246cf10652d",
+  "input_hash": "5e885d7a51e0f1bb45cf83b18f26b5e208fb34419faa6a0963e3af7613cb2132",
+  "matching_audit_hash": "8959c1ee7c41c8585076164e7fe06970d6f69bab7eede0e2df19f2d2caeddad5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "54481a2bf98ae99a640f8b0b048a9791d81f977be150a0833df419d357c3cb12",
+    "raw_sha256": "54c60386a0c46a14b05b4ab0a53230d1f341a305349f01e92009166f381bbcf8",
+    "date_quote": "article:published_time=2020-01-23T22:13:53+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "a62e3bee6bd72b5e11cd4c3d16c1eeb7749308eade66ecde629b388dd97dbe86",
+  "outputs": [
+    {
+      "path": "US\\2020_01_23_Energy_Utilities_cnbc.json",
+      "sha256": "bcdb6b272fab47f895afedf75e5befb7f7b5e6784c12ae586fae55652239b690"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-01-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:46.082687+00:00",
+    "fetched_at": "2026-11-10T13:57:17.975693+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.783239+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:51:37.932287+00:00",
+  "feature_available_at": "2026-11-12T14:51:37.951107+00:00",
+  "commit_verified_at": "2026-11-12T14:51:37.951107+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about PG&E's restructuring plan, creditor agreements, potential liabilities, and regulatory concerns.",
+    "securities": [
+      {
+        "name": "PG&E",
+        "ticker": null,
+        "exchange": null,
+        "quote": "PG&E"
+      },
+      {
+        "name": "Elliott Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Elliott Management"
+      },
+      {
+        "name": "Pacific Investment Management Co",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pacific Investment Management Co"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Electric utility",
+        "basis": "inferred",
+        "quote": "utility company"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "PG&E": "company",
+      "Elliott Management": "company",
+      "Pacific Investment Management Co": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

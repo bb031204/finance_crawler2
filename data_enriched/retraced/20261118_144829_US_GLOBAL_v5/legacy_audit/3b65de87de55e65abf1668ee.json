@@ -1,0 +1,108 @@
+{
+  "source_id": "3b65de87de55e65abf1668ee",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_24_Energy_Power-Generation_cnbc.json",
+      "sha256": "4330a5ad4cf68ceb9cb3541bbeb62d041f1547f7f027ccac4d4358fe1ca9c938",
+      "filename": "2018_01_24_Energy_Power-Generation_cnbc.json"
+    }
+  ],
+  "original_record_hash": "cd6fbdd27755c85a05e779b97f73c4a2c357e18d5311bb42178fd1d52f55af77",
+  "input_hash": "f62fd34319ffcf7d2853a1538ff5370ccb19a9eae76474b58ce48faab8ba955a",
+  "matching_audit_hash": "da548bce156cf4608e2bb10ee80514be4491f383476d5898a0608560f8735e06",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "05809ff13c1bbec41fc436d1898369609c2aef61ac5d40603d837771cc9c45e5",
+    "raw_sha256": "2f7698b301a2113a669ed67abedae435a01fbdae9366a18f28ccf1f15c027885",
+    "date_quote": "article:published_time=2018-01-24T15:58:20+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2baf13c470b62354dce84650fb06a646e93a482e9487eafbdf1ae411a75d6df4",
+  "outputs": [
+    {
+      "path": "US\\2018_01_24_Energy_Power-Generation_cnbc.json",
+      "sha256": "a4b97ae46b26b21afa442a93a2e22ef16aac503e736396c66ccaa463a89f7e37"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:27.179894+00:00",
+    "fetched_at": "2026-11-10T14:18:59.717900+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.799440+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:33.279131+00:00",
+  "feature_available_at": "2026-11-12T14:42:33.289129+00:00",
+  "commit_verified_at": "2026-11-12T14:42:33.289129+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about GE's power business challenges, market conditions, financial performance, and strategic actions.",
+    "securities": [
+      {
+        "name": "General Electric",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric (GE)"
+      },
+      {
+        "name": "GE Power",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GE Power"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Power generation",
+        "basis": "inferred",
+        "quote": "power business"
+      },
+      {
+        "name": "Renewable energy",
+        "basis": "explicit",
+        "quote": "renewable energy sources like wind and solar"
+      },
+      {
+        "name": "Energy equipment",
+        "basis": "inferred",
+        "quote": "gas turbines"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "General Electric": "company",
+      "GE Power": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

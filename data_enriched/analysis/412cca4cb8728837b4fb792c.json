@@ -1,0 +1,100 @@
+{
+  "source_id": "412cca4cb8728837b4fb792c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_05_20_Technology_Technology_bloomberg.json",
+      "sha256": "d6ac31b6c1d6004c90905feadf222828f77b1614c59a4c56b906f7320f67c659",
+      "filename": "2020_05_20_Technology_Technology_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2020_05_20_Technology_Technology_bloomberg.json",
+      "sha256": "d6ac31b6c1d6004c90905feadf222828f77b1614c59a4c56b906f7320f67c659",
+      "filename": "2020_05_20_Technology_Technology_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "79836014250c14dabf2cd5bcc9f3fd46672fc8d6e555423e55790cc0b41efed8",
+  "input_hash": "1a3c449ae9efb91b7bdaeb249c73a7af5856729a8ad355baf4330e637c9b9995",
+  "matching_audit_hash": "953fa3f75dbb7540f2af7ad9cbbe67f06bc5e52864818b1f4317c469e2c399d0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "486fbe72d6e7adafccbe2c5bb753cd3e236881e31ca2f26f65744328223ef0f6",
+    "raw_sha256": "244917ce2345572e34ed1476b690baa1e35800cce5e35c7d0e3139dab5b81c5c",
+    "date_quote": "May 20, 2020 at 9:00 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9adac5c8acfd86865aa3c3790068648b8ff7bcd7c6e487520ce074167070b630",
+  "outputs": [
+    {
+      "path": "US\\2020_05_20_Technology_Technology_bloomberg.json",
+      "sha256": "c2716b24e5ce44f41780067bdaa3a2c89ea34504bc51e3f6ae0233c6debf3370"
+    },
+    {
+      "path": "GLOBAL\\2020_05_20_Technology_Technology_bloomberg.json",
+      "sha256": "c2716b24e5ce44f41780067bdaa3a2c89ea34504bc51e3f6ae0233c6debf3370"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-05-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:27.131694+00:00",
+    "fetched_at": "2026-11-11T04:00:37.531747+00:00",
+    "feature_available_at": "2026-11-11T04:00:47.974992+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:52.773093+00:00",
+  "feature_available_at": "2026-11-12T14:52:52.792158+00:00",
+  "commit_verified_at": "2026-11-12T14:52:52.792158+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses China's strategic plan to enhance technological capabilities and reduce reliance on foreign technologies, which has implications for the tech",
+    "securities": [
+      {
+        "name": "China",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "key technologies, including artificial intelligence and wireless networks"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "China": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

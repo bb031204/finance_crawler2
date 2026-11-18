@@ -1,0 +1,96 @@
+{
+  "source_id": "ca03a31313bd15cd4b60e189",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_21_Financial-Services_Banking_sec.json",
+      "sha256": "c56c201ea5e48a2ce3e34ba37192a29c0d24df627ac60072e5cab16bd573ce6f",
+      "filename": "2015_01_21_Financial-Services_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "a644c84c77ff32f1fba59db871d3a9d30fd806d9ac7f486c9dc2d0ed818745f5",
+  "input_hash": "0cdf5b3f28a23f1adb6b15913f1d601e684c5b23fbe48d7688bb5040404d4a8a",
+  "matching_audit_hash": "2bc543279f156217b0cdfdcace2e85c6f273dba2153b027189bfe7ba5e09ac3b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "10dcc4a81e7467e062b898382aceb141c31b61446b24ca0dcb0115f8dd2ab053",
+    "raw_sha256": "b40edc7e43e328e5dbaa80a6bb1d878f792350d8d17ed7ba4bd86ad37412f45e",
+    "date_quote": "Date of Report (Date of earliest event reported): January 21, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023215000001/form8k012115.txt",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Madison Financial Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Madison Financial Corporation"
+    }
+  ],
+  "record_hash": "bdad667637892b9d7dc67abcb4c5698fe58c2341d539829d93ef5b03ae4e81c4",
+  "outputs": [
+    {
+      "path": "US\\2015_01_21_Financial-Services_Banking_sec.json",
+      "sha256": "7484902c693f2e68c0f701eeb1ebeae001adb48a4aa34ffc0acc1dfa1a79950c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.824285+00:00",
+    "fetched_at": "2026-11-11T00:20:58.084331+00:00",
+    "feature_available_at": "2026-11-11T00:21:06.238007+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.178446+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.178446+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Madison Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Madison Financial Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "source_id": "4cc3d8e7ccef073d32253091",
+  "status": "completed",
+  "source_record_hash": "f4b453f38e37cdf73a805b16f2f2e96842746abfde578604bd33665acad6c6a2",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-17-015826-index.html",
+    "attempted_at": "2026-11-18T13:58:07.824488+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-17-015826-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312517015826/d316512d8k.htm",
+    "fetched_at": "2026-11-18T13:58:25.049807+00:00",
+    "source_body_hash": "3eef4cff41861ec07c661f743157dca758d41af77e93af0d9b2500e38dde8442",
+    "raw_sha256": "d565f5a87450002795924c0d1b2744e59442f5864e3488f171dfacf3899fd36f",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312517015826/d316512d8k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "d565f5a87450002795924c0d1b2744e59442f5864e3488f171dfacf3899fd36f",
+        "text_sha256": "9647025c29687ee9b51af8f58cae7ca24cd6a74e94a05b91eaa470c6593a58c1",
+        "text_start": 0,
+        "text_end": 2110
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312517015826/d316512dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "ec0b1a274d1f5be63a80ff14c667ad6da63b6f4af6343c9c8414bb7b7cde80bb",
+        "text_sha256": "18faa24a1ee1b670e7b5a20eab7896aaf6117130a78349f128f40a2af50a4611",
+        "text_start": 2112,
+        "text_end": 21059
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2017-01-24",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4cc3d8e7ccef073d32253091.json",
+    "sha256": "c1f43dbdc1f6c55b8bb2e5571cb8d60c68a99cd6e122fd1812358a9f18b9f395",
+    "bundled_path": "legacy_audit/4cc3d8e7ccef073d32253091.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b98860f4f729ac901bcd496d20ef3c4bf54a4a5841057fb652c31805804859b1",
+      "llm_inferred_at": "2026-11-18T13:58:37.788105+00:00",
+      "model_duration_seconds": 12.6916284,
+      "prompt_tokens": 4070,
+      "completion_tokens": 534,
+      "selection": [
+        {
+          "source_id": "4cc3d8e7ccef073d32253091",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Companys definition of these non-GAAP measures may differ from similarly titled measures used by others.",
+              "rationale": "The article discusses financial measures that are specific to the company's industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial",
+              "rationale": "The article discusses the company's financial performance and its comparison to competitors, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3826",
+              "name": "LABORATORY ANALYTICAL INSTRUMENTS",
+              "basis": "explicit",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial"
+            },
+            {
+              "industry_key": "TRSR:2ab3f73a7de22138",
+              "name": "Biotechnology: Laboratory Analytical Instruments",
+              "basis": "explicit",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial"
+            },
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "c8cd07b0917a8bb775232395f6c4cda3cc9faaadbdd26661793c40b962e0aa65",
+      "llm_inferred_at": "2026-11-18T13:58:48.489783+00:00",
+      "model_duration_seconds": 10.6826674,
+      "prompt_tokens": 4114,
+      "completion_tokens": 533,
+      "selection": [
+        {
+          "source_id": "4cc3d8e7ccef073d32253091",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Companys definition of these non-GAAP measures may differ from similarly titled measures used by others.",
+              "rationale": "The text discusses financial measures that are specific to the company's industry, indicating an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial",
+              "rationale": "The text discusses the company's financial performance and its comparison to competitors, indicating a company-specific impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3826",
+              "name": "LABORATORY ANALYTICAL INSTRUMENTS",
+              "basis": "explicit",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial"
+            },
+            {
+              "industry_key": "TRSR:2ab3f73a7de22138",
+              "name": "Biotechnology: Laboratory Analytical Instruments",
+              "basis": "explicit",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "ef7cca228d02dd67cbfb9651a6d2b49f20b73e3e3f8c23bffc1f430ac6804af9",
+      "llm_inferred_at": "2026-11-18T13:59:09.024030+00:00",
+      "model_duration_seconds": 20.5136667,
+      "prompt_tokens": 4698,
+      "completion_tokens": 954,
+      "selection": [
+        {
+          "source_id": "4cc3d8e7ccef073d32253091",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation",
+              "rationale": "The text discusses factors that affect the Company's financial results, including foreign exchange rate fluctuations, which can impact the translation of the Company's future non-U.S. operating results. This indicates an industry-wide impact, particularly in the context of international operations.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation",
+              "rationale": "The text is discussing the Company's financial results and the factors that may affect them, which is a company-specific impact.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:17c0779058f2abbe",
+              "name": "Multi-Sector Companies",
+              "basis": "explicit",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:17c0779058f2abbe",
+              "industry_scope_quote": "share; pressures on prices from competitors and/or customers; regulatory, economic and competitive obstacles to new product introductions; other changes in demand from the effect",
+              "industry_name_original": "Multi-Sector Companies",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "share; pressures on prices from competitors and/or customers; regulatory, economic and competitive obstacles to new product introductions; other changes in demand from the effect",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "industry_scope_quote": "share; pressures on prices from competitors and/or customers; regulatory, economic and competitive obstacles to new product introductions; other changes in demand from the effect",
+              "industry_name_original": "Major Pharmaceuticals",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "23de49e8fe7c826fbe98af587281b3f2bbf7506233b4e6023066f8f783dc7f6f",
+      "llm_inferred_at": "2026-11-18T13:59:27.376585+00:00",
+      "model_duration_seconds": 18.3374873,
+      "prompt_tokens": 4742,
+      "completion_tokens": 937,
+      "selection": [
+        {
+          "source_id": "4cc3d8e7ccef073d32253091",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation",
+              "rationale": "The text discusses the impact of foreign exchange rate fluctuations on the Company's non-U.S. operating results, which is an industry-wide issue affecting the financial performance of companies operating in international markets.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation",
+              "rationale": "The text discusses the impact of foreign exchange rate fluctuations on the Company's non-U.S. operating results, which is a company-specific issue affecting the financial performance of the Company.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:17c0779058f2abbe",
+              "name": "Multi-Sector Companies",
+              "basis": "explicit",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "name": "Major Pharmaceuticals",
+              "basis": "explicit",
+              "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:17c0779058f2abbe",
+              "industry_scope_quote": "companies; introduction of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and",
+              "industry_name_original": "Multi-Sector Companies",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "companies; introduction of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "industry_scope_quote": "companies; introduction of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and",
+              "industry_name_original": "Finance Companies",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "companies; introduction of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and"
+            },
+            {
+              "industry_key": "TRSR:222c6919ed899305",
+              "industry_scope_quote": "companies; introduction of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and",
+              "industry_name_original": "Major Pharmaceuticals",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "companies; introduction of competing products by other companies and loss of market share; pressures on prices from competitors and/or customers; regulatory, economic and"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a78a11029aad839c22d0ee7602f30bc7d715758a82fd9a6e20d3af7209e86baf",
+      "llm_inferred_at": "2026-11-18T13:59:43.405740+00:00",
+      "model_duration_seconds": 16.0119555,
+      "prompt_tokens": 3752,
+      "completion_tokens": 759,
+      "selection": [
+        {
+          "source_id": "4cc3d8e7ccef073d32253091",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Purchased intangibles amortization (b) (2,576 )  2,576 0.4 % 2,576 729 1,847 0.02 Restructuring costs, asset impairments, acquisition-related costs & certain other items (d) (2,",
+              "rationale": "The article discusses adjustments to financial statements, including items like purchased intangibles amortization, restructuring costs, and litigation provisions, which are typically associated with business services and management consulting. These adjustments are part of the company's financials,",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "Waters Corporation and Subsidiaries Reconciliation of GAAP to Adjusted Non-GAAP Financials Quarters and Twelve Months Ended December 31, 2016 and December 31, 2015 (In thousands,",
+              "rationale": "The article is specifically about Waters Corporation's financials, including adjustments to GAAP and non-GAAP financials. This indicates a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Purchased intangibles amortization (b) (2,576 )  2,576 0.4 % 2,576 729 1,847 0.02 Restructuring costs, asset impairments, acquisition-related costs & certain other items (d) (2,"
+            },
+            {
+              "industry_key": "SEC-SIC:8742",
+              "name": "SERVICES-MANAGEMENT CONSULTING SERVICES",
+              "basis": "explicit",
+              "quote": "Purchased intangibles amortization (b) (2,576 )  2,576 0.4 % 2,576 729 1,847 0.02 Restructuring costs, asset impairments, acquisition-related costs & certain other items (d) (2,"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Purchased intangibles amortization (b) (2,576 )  2,576 0.4 % 2,576 729 1,847 0.02 Restructuring costs, asset impairments, acquisition-related costs & certain other items (d) (2,"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "aac05b3752960348ed78f9e024a558c4c6697a6567b61d3f7681bba8a0169418",
+      "llm_inferred_at": "2026-11-18T13:59:51.082180+00:00",
+      "model_duration_seconds": 7.6653481,
+      "prompt_tokens": 3796,
+      "completion_tokens": 392,
+      "selection": [
+        {
+          "source_id": "4cc3d8e7ccef073d32253091",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Waters Corporation and Subsidiaries Reconciliation of GAAP to Adjusted Non-GAAP Financials Quarters and Twelve Months Ended December 31, 2016 and December 31, 2015 (In thousands,",
+              "rationale": "The article discusses financial data and adjustments for Waters Corporation, indicating a company-specific focus.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8731",
+              "name": "SERVICES-COMMERCIAL PHYSICAL & BIOLOGICAL RESEARCH",
+              "basis": "explicit",
+              "quote": "Research & development expenses include acquired in-process research and development."
+            },
+            {
+              "industry_key": "SEC-SIC:8700",
+              "name": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+              "basis": "explicit",
+              "quote": "Research & development expenses include acquired in-process research and development."
+            },
+            {
+              "industry_key": "SEC-SIC:7380",
+              "name": "SERVICES-MISCELLANEOUS BUSINESS SERVICES",
+              "basis": "explicit",
+              "quote": "Research & development expenses include acquired in-process research and development."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:59:51.103458+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3eef4cff41861ec07c661f743157dca758d41af77e93af0d9b2500e38dde8442",
+    "raw_sha256": "d565f5a87450002795924c0d1b2744e59442f5864e3488f171dfacf3899fd36f",
+    "date_quote": "SEC filing datePublished=2017-01-24",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000697/000119312517015826/d316512d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The text contains financial results and filings related to Waters Corporation, indicating its financial performance and potential impact on its industry and市场.",
+    "securities": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "name": "Financials",
+        "basis": "inferred",
+        "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:8731",
+        "name": "SERVICES-COMMERCIAL PHYSICAL & BIOLOGICAL RESEARCH",
+        "basis": "inferred",
+        "quote": "Research & development expenses include acquired in-process research and development.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8731",
+        "industry_name_standard": "SERVICES-COMMERCIAL PHYSICAL & BIOLOGICAL RESEARCH",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Research & development expenses include acquired in-process research and development.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:8700",
+        "name": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+        "basis": "inferred",
+        "quote": "Research & development expenses include acquired in-process research and development.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8700",
+        "industry_name_standard": "SERVICES-ENGINEERING, ACCOUNTING, RESEARCH, MANAGEMENT",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Research & development expenses include acquired in-process research and development.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Waters Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "4cc3d8e7ccef073d32253091",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_01_24_Financial-Results_Biotechnology-Equipment_sec.json",
+        "sha256": "ad73845d358577a2cd33d808f59eb30bba699d227abc9623690770d5cdb6db63",
+        "filename": "2017_01_24_Financial-Results_Biotechnology-Equipment_sec.json"
+      }
+    ],
+    "original_record_hash": "8d821caea8fe45eab471152c79b53af861ff714c1095cac2147f742c336a3f86",
+    "input_hash": "c7ccfdd3fe81171b3f930993c5a8cb5c748dbd6818776b82bba247b72b2c33c0",
+    "matching_audit_hash": "53ccb463547c34f99d7ed2dd65eee4390fb7a3d2de938004c4d26c95fb0f343f",
+    "legacy_security_evidence": [
+      {
+        "name": "Waters Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Waters Corporation"
+      }
+    ],
+    "record_hash": "f4b453f38e37cdf73a805b16f2f2e96842746abfde578604bd33665acad6c6a2",
+    "outputs": [
+      {
+        "path": "US\\2017_01_24_Financial-Results_Biotechnology-Equipment_sec.json",
+        "sha256": "098e1591df1b2a5bda5a70aa380dbf046c331c589af27b99a909de12745dd95a"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2017-01-24",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.446085+00:00",
+      "fetched_at": "2026-11-11T12:16:21.432761+00:00",
+      "feature_available_at": "2026-11-11T12:16:31.400898+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:59:51.082180+00:00",
+    "feature_available_at": "2026-11-18T13:59:51.103458+00:00",
+    "commit_verified_at": "2026-11-12T14:38:55.834415+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial",
+        "rationale": "The text discusses the company's financial performance and its comparison to competitors, indicating a company-specific impact.",
+        "confidence": 0.9,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Waters Corporations historical operating results, comparison to competitors operating results and determination of management incentive compensation. These non-GAAP financial",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation",
+        "rationale": "The text discusses the impact of foreign exchange rate fluctuations on the Company's non-U.S. operating results, which is a company-specific issue affecting the financial performance of the Company.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the forward-looking statements within this release for a variety of reasons, including and without limitation, foreign exchange rate fluctuations potentially affecting translation",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Waters Corporation and Subsidiaries Reconciliation of GAAP to Adjusted Non-GAAP Financials Quarters and Twelve Months Ended December 31, 2016 and December 31, 2015 (In thousands,",
+        "rationale": "The article discusses financial data and adjustments for Waters Corporation, indicating a company-specific focus.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Waters Corporation and Subsidiaries Reconciliation of GAAP to Adjusted Non-GAAP Financials Quarters and Twelve Months Ended December 31, 2016 and December 31, 2015 (In thousands,",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000697/0001193125-17-015826-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "f4b453f38e37cdf73a805b16f2f2e96842746abfde578604bd33665acad6c6a2",
+    "content_hash": "270a055d2b0e6acef5d114149ad9469032dc50162630b034c55f97723e77d9d4",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:59:51.085184+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4cc3d8e7ccef073d32253091.json",
+      "sha256": "636fc0734faad4f84a63402e7259ee88263046f79e671fc2ed5bd08bce088c96",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 103.2960000000021
+}

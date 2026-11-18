@@ -1,0 +1,95 @@
+{
+  "source_id": "4bf5e71be7ab8421058a2468",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_08_Corporate-Filings_Semiconductor-Equipment_sec.json",
+      "sha256": "1921d946125e714fbfc1810d3dcc934a631ddace05a2189a22792b6496103178",
+      "filename": "2017_02_08_Corporate-Filings_Semiconductor-Equipment_sec.json"
+    }
+  ],
+  "original_record_hash": "bfe41419ff0f986638348c1b820bda185a36299b4a0ede9a7c8979ce8aaa7731",
+  "input_hash": "4c02821102ae016fec94e25f28ceb4da27b11791802d72a65f4e568337174020",
+  "matching_audit_hash": "dc08341a074aae6044b4949249822857894d4d559afa8aa2680a13ba81ab9cda",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9492c5cf882563c8ba146506b7ffb8260b6deadc2b318fe7b496874b86e6d5c6",
+    "raw_sha256": "911f7d716cfbfd2597064e4f010eb77f203f6383390f00e58c2a0e0a7aefb445",
+    "date_quote": "For February 8, 2017",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/937966/000093796617000005/form6-kannualreports2016.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "ASML Holding N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "ASML Holding N.V."
+    }
+  ],
+  "record_hash": "e3de224209ddb12ffd3563e09c8db45cd066bb8318ee467d6ed0c0ea4557840e",
+  "outputs": [
+    {
+      "path": "US\\2017_02_08_Corporate-Filings_Semiconductor-Equipment_sec.json",
+      "sha256": "acedab90cadaa8070e2d45932d52f51dfde5a6215ac5ebca547cbefbefaa1a17"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:39.735825+00:00",
+    "fetched_at": "2026-11-11T02:27:24.476668+00:00",
+    "feature_available_at": "2026-11-11T02:27:32.898320+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:12.090397+00:00",
+  "commit_verified_at": "2026-11-12T13:53:12.090397+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "ASML Holding N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ASML Holding N.V."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor Equipment",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

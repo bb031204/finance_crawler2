@@ -1,0 +1,109 @@
+{
+  "source_id": "eed052a1866a548b597b6d2e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_01_17_Financial-Report_Information-Technology_sec.json",
+      "sha256": "2f90d6255ead1efea5b5c9e26204fb0c83da2436f7b2addb212db6a1206a5bac",
+      "filename": "2012_01_17_Financial-Report_Information-Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "b4cc26ce68eafc7a7f9fb95fc48184d6ea220465a25be2b8fe2da9ef563ebac7",
+  "input_hash": "dc97095b87b5448b650340d9a848c7a2e70afaa3c82a6456ca832455b6cc46e9",
+  "matching_audit_hash": "d780c24ca569e2021234c99862cbea90e4ffc66e32b8c41677333b482976b27f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "57e56847df5d5f9f6809b9718f84524e77efbfa1a5ef168eba786fabaf7bb8a1",
+    "raw_sha256": "afde947ae11917145cd8c4d8543ce6a1e893b07919e74b8b5f676271dfdb3b8c",
+    "date_quote": "January 17, 2012",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312512012799/d283799d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SAP AG",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SAP AG (Exact name of registrant as specified in its charter)"
+    },
+    {
+      "name": "SAP CORPORATION",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SAP CORPORATION (Translation of registrants name into English)"
+    }
+  ],
+  "record_hash": "60453eb9b9d53ea0a68ddf109e4c60e298ad2e4e735baf171e02390fb90383bf",
+  "outputs": [
+    {
+      "path": "US\\2012_01_17_Financial-Report_Information-Technology_sec.json",
+      "sha256": "e7287174a1b5e1b4f7e215e8aba023f49a4a651aa8d538fa4d74ae3236bfa20e"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-01-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:30:26.276830+00:00",
+    "feature_available_at": "2026-11-10T22:30:49.130477+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:37.017340+00:00",
+  "commit_verified_at": "2026-11-12T13:52:37.017340+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAP AG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP AG (Exact name of registrant as specified in its charter)"
+      },
+      {
+        "name": "SAP CORPORATION",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP CORPORATION (Translation of registrants name into English)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Information Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

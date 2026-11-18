@@ -1,0 +1,95 @@
+{
+  "source_id": "03f38655747e64d020d9790b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_01_28_management_biotechnology_sec.json",
+      "sha256": "e4e23b7cdb65ae6715a1b2e7336f233f2e311bd4081cba908c19a8e168a0e66f",
+      "filename": "2021_01_28_management_biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "c8bf18f8db4f2225e2aef75777442fc7bb47305f01374a8f4c5652f5a625efb8",
+  "input_hash": "53976dccb1004d0e0daa20db1e019046944fd942cb04c64ddce7c20b6631e27e",
+  "matching_audit_hash": "45a0bf34ffe2d9cfb655bd21eb5ec68a4539d41f0d055ac3f2b87c45437e5700",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3ae7ba5fc478c5d54e283d27cabf1b1d57e31cb416f5ba4dad46a10b08632034",
+    "raw_sha256": "62fc12513a642daa6b3f4b5fe0c76c158f6275d4c92f1c9f635f89a5d47d2983",
+    "date_quote": "SEC filing datePublished=2021-01-28",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000162828021000921/sgmo-20210122.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sangamo Therapeutics, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo Therapeutics, Inc."
+    }
+  ],
+  "record_hash": "5a69e9cfa7c70022fbca8841d595bf0fe31ead78c165cb3e60acb9167749c599",
+  "outputs": [
+    {
+      "path": "US\\2021_01_28_management_biotechnology_sec.json",
+      "sha256": "dbc5569062576f972342c13e68599d44991f1fce5d3f3d4ea935ed6e031b45c7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-01-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.586595+00:00",
+    "fetched_at": "2026-11-11T16:28:15.435296+00:00",
+    "feature_available_at": "2026-11-11T16:28:32.640246+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:36.018709+00:00",
+  "commit_verified_at": "2026-11-12T13:53:36.018709+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

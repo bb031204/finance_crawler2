@@ -1,0 +1,110 @@
+{
+  "source_id": "ea779ea200ff8b9dcc251d10",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_04_06_Economic-Report_Finance-and-Insurance_bea.json",
+      "sha256": "9e9054f97d8af32b6443f11736e7f92b532a97b3e6d1163ac7b513baecf70c1d",
+      "filename": "2020_04_06_Economic-Report_Finance-and-Insurance_bea.json"
+    }
+  ],
+  "original_record_hash": "7940f31898908c8aae981a3063dfe0d277229747cf2d195b7e321bec25800793",
+  "input_hash": "a535c619af294b125fd8aaa3c4076ffe18ff73a717d7edd2f548d429dc2a1209",
+  "matching_audit_hash": "7ccee354f7f95a67f3d501bc422fb3794aadb851f30e274c54ecf45a157955f8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "870edb8652c6792c92c7b525f1324d1b52af243292a3c04412f2b3d0f39dac41",
+    "raw_sha256": "7a840209ba21185013498510d66de0d46871ad341c7dd92ede959a4ae9ade761",
+    "date_quote": "EMBARGOED UNTIL RELEASE AT 8:30 A.M. EDT, MONDAY, APRIL 6, 2020",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "53612084344f9f1d7ab9b2f3a25e3662cd177517ee4d789ab0aea4a746efd30a",
+  "outputs": [
+    {
+      "path": "US\\2020_04_06_Economic-Report_Finance-and-Insurance_bea.json",
+      "sha256": "e71f993e3ffa3231471db27bdb6f005975e8e32d2400ded2d68a04905b26ea56"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-04-06",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:05:35.577832+00:00",
+    "fetched_at": "2026-11-10T17:00:08.287354+00:00",
+    "feature_available_at": "2026-11-10T17:53:24.104825+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:37.451312+00:00",
+  "feature_available_at": "2026-11-12T14:52:37.471946+00:00",
+  "commit_verified_at": "2026-11-12T14:52:37.471946+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text provides detailed information on the contributors to real GDP growth in the U.S. in 2019, including specific industry groups and their performance.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Economic Analysis (BEA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "retail trade",
+        "basis": "explicit",
+        "quote": "retail trade"
+      },
+      {
+        "name": "finance and insurance",
+        "basis": "explicit",
+        "quote": "finance and insurance"
+      },
+      {
+        "name": "utilities",
+        "basis": "explicit",
+        "quote": "utilities"
+      },
+      {
+        "name": "professional, scientific, and technical services",
+        "basis": "explicit",
+        "quote": "professional, scientific, and technical services"
+      },
+      {
+        "name": "information",
+        "basis": "explicit",
+        "quote": "information"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Economic Analysis (BEA)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

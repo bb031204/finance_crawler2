@@ -1,0 +1,130 @@
+{
+  "source_id": "84ae70ad5d5c89cd624b2632",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_07_29_Sanctions_Financial-Services_treasury.json",
+      "sha256": "5d40f197c4e9fa7a38d7df5bdb3ca179a26702abf53d9d540b40aef48c948591",
+      "filename": "2014_07_29_Sanctions_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "fd7d4719534360d0803e7885f6e5fbdb291979779338e4f10e41b3a9e9ab5187",
+  "input_hash": "498238193f5409f2495394c674aca6e0ea835e5eb97354966cfd9ded25a4aa01",
+  "matching_audit_hash": "e5e12e2f68935de33afc52e2687de61426e6305b963096b22f7511047a3f6e5b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ff4906edd45778e1cfb1f0979fe3795394a33c50712d6ce564e5e32f2d473af9",
+    "raw_sha256": "37f0a2bdc7bd5788ec81f8d8ce669a91773f51558a4e4f7d7fd79efd9c8a8dba",
+    "date_quote": "July 29, 2014 (Archived Content) * * Actions Target Three Russian State-Owned Banks, and one Russian State-Owned Defense Technology Entity * * WASHINGTON – In response to Russia’s",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "19d18c91be4b62fe28cc07ed87e1d0f96294955f983c03000770f2668f656c9b",
+  "outputs": [
+    {
+      "path": "US\\2014_07_29_Sanctions_Financial-Services_treasury.json",
+      "sha256": "df94f18afe09a1ce795cdc30925d79dc9f3ea5f89b5876b2838c2de0a034ad1f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-07-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:04:18.470815+00:00",
+    "fetched_at": "2026-11-10T16:30:09.421971+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.676190+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:17:39.054336+00:00",
+  "feature_available_at": "2026-11-12T14:17:39.064657+00:00",
+  "commit_verified_at": "2026-11-12T14:17:39.064657+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about sanctions imposed by the U.S. Treasury on Russian entities, including their industries and the scope of the sanctions.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      },
+      {
+        "name": "Bank of Moscow",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bank of Moscow"
+      },
+      {
+        "name": "Russian Agricultural Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Russian Agricultural Bank"
+      },
+      {
+        "name": "VTB Bank OAO",
+        "ticker": null,
+        "exchange": null,
+        "quote": "VTB Bank OAO"
+      },
+      {
+        "name": "United Shipbuilding Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Shipbuilding Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial services",
+        "basis": "inferred",
+        "quote": "financial institutions"
+      },
+      {
+        "name": "Defense technology",
+        "basis": "inferred",
+        "quote": "arms and related materiel sector"
+      },
+      {
+        "name": "Shipbuilding",
+        "basis": "inferred",
+        "quote": "designs and constructs ships for the Russian Navy"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "Bank of Moscow": "company",
+      "Russian Agricultural Bank": "company",
+      "VTB Bank OAO": "company",
+      "United Shipbuilding Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

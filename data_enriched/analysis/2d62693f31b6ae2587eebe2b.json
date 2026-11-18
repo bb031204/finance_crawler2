@@ -1,0 +1,90 @@
+{
+  "source_id": "2d62693f31b6ae2587eebe2b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_08_17_Healthcare_Healthcare_bea.json",
+      "sha256": "265e298cfdd640fa4a0a8e2745e4c20d418549e6f615d777590fe439dcc1dddf",
+      "filename": "2017_08_17_Healthcare_Healthcare_bea.json"
+    }
+  ],
+  "original_record_hash": "5125dd9a47bcebeaf6daddc587c50bb0d2684ad30095317b7b1664c6ca814a75",
+  "input_hash": "eaeda175e1ee764c422dfc42073a81a62a93855043be839ff37a7207aeb69fc4",
+  "matching_audit_hash": "6d210beac3e7b5fc330d58756f70ce2a874d2a4225db87bb5fe99a89168ce495",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5c2a69214fd638d0a68e10f60a30dab1579e3fca9142610729d223caefed7fef",
+    "raw_sha256": "6635d6ba639d47b8c8e1654702d00812df5ec76f89fc458f47b39416993b5900",
+    "date_quote": "BEA Releases New Health Care Statistics for 2014 August 17, 2017",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "13571ee036dd3f79279d98cddede1833a7a809f065d562a3b62df0fe0e1d1c0b",
+  "outputs": [
+    {
+      "path": "US\\2017_08_17_Healthcare_Healthcare_bea.json",
+      "sha256": "e9826106ad741f356e88cf90f45d59777469cdc82cc35f5d645e495a1bc3ecbb"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-08-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:03.317223+00:00",
+    "fetched_at": "2026-11-10T11:47:05.639989+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.936613+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:40:43.995856+00:00",
+  "feature_available_at": "2026-11-12T14:40:44.041589+00:00",
+  "commit_verified_at": "2026-11-12T14:40:44.041589+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides detailed health care spending statistics, including categories, growth rates, and factors influencing spending changes.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Economic Analysis (BEA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Health care",
+        "basis": "explicit",
+        "quote": "health care"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Economic Analysis (BEA)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

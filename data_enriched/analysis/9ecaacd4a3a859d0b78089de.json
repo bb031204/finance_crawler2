@@ -1,0 +1,244 @@
+{
+  "source_id": "9ecaacd4a3a859d0b78089de",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_09_24_Regulatory_Energy_treasury.json",
+      "sha256": "1095b71c681fc0209c53d45a7bd2dc28523ff6306c2bc53b126062e9bf66abd9",
+      "filename": "2012_09_24_Regulatory_Energy_treasury.json"
+    }
+  ],
+  "original_record_hash": "76567489f9143a6b1aa75594e8d5e7486fec22d2d6c75fb212a1732ebe91f5c4",
+  "input_hash": "d9dab296f9c4f6da99ed8b8bc0be5e35e406dccf29af137488fccdb6aa15a9cd",
+  "matching_audit_hash": "12c89af00d7428d84ff117fd51ce700384c453b1fa13a04142f6242f196cbf3a",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "19949dde4cf069490962b937bedf5a9f97d3aa8e08f647401535b84f5d7decf2",
+    "raw_sha256": "e1cb4ebd5735aa10d9eadb82bc912b97d04b82324c97b4ba42ab700e715dc2a4",
+    "date_quote": "Press Releases Treasury Submits Report To Congress On NIOC And NITC September 24, 2012 (Archived Content) *Report Announces Determination that the National Iranian Oil Company *Is",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "National Iranian Oil Company (NIOC)",
+      "ticker": null,
+      "exchange": null,
+      "quote": "National Iranian Oil Company (NIOC)"
+    },
+    {
+      "name": "National Iranian Tanker Company (NITC)",
+      "ticker": null,
+      "exchange": null,
+      "quote": "National Iranian Tanker Company (NITC)"
+    }
+  ],
+  "record_hash": "18a57c7bd8c518ea757e19416ee0bbe366638d86797ea448b288ee7adde78776",
+  "outputs": [
+    {
+      "path": "US\\2012_09_24_Regulatory_Energy_treasury.json",
+      "sha256": "acceaeb4141a616cdf7079ae703c487f4891c86d1164c5533ebaccf57d6f4d87"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-09-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:15.523963+00:00",
+    "fetched_at": "2026-11-10T22:10:37.880736+00:00",
+    "feature_available_at": "2026-11-11T09:20:42.117906+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:59:58.349421+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.044239+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.044239+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Report identifies IRGC's economic influence and sanctions implications",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Department of the Treasury submitted a report to Congress"
+      },
+      {
+        "name": "National Iranian Oil Company (NIOC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The report determined that the National Iranian Oil Company (NIOC) is an agent or affiliate of Iran’s Islamic Revolutionary Guard Corps (IRGC)"
+      },
+      {
+        "name": "National Iranian Tanker Company (NITC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "there is insufficient information to determine whether the National Iranian Tanker Company (NITC) is an agent or affiliate of the IRGC"
+      },
+      {
+        "name": "Iran’s Islamic Revolutionary Guard Corps (IRGC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Iran’s Islamic Revolutionary Guard Corps (IRGC)"
+      },
+      {
+        "name": "Rostam Qasemi",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the appointment of Rostam Qasemi, a Brigadier General in the IRGC, as Minister of Petroleum"
+      }
+    ],
+    "industries": [
+      {
+        "name": "energy",
+        "basis": "explicit",
+        "quote": "dominating sectors such as energy, construction, and banking"
+      },
+      {
+        "name": "banking",
+        "basis": "explicit",
+        "quote": "dominating sectors such as energy, construction, and banking"
+      },
+      {
+        "name": "construction",
+        "basis": "explicit",
+        "quote": "dominating sectors such as energy, construction, and banking"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization",
+      "National Iranian Oil Company (NIOC)": "organization",
+      "National Iranian Tanker Company (NITC)": "organization",
+      "Iran’s Islamic Revolutionary Guard Corps (IRGC)": "organization",
+      "Rostam Qasemi": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.063784+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T14:59:58.349421+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Report identifies IRGC's economic influence and sanctions implications",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The U.S. Department of the Treasury submitted a report to Congress"
+        },
+        {
+          "name": "National Iranian Oil Company (NIOC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The report determined that the National Iranian Oil Company (NIOC) is an agent or affiliate of Iran’s Islamic Revolutionary Guard Corps (IRGC)"
+        },
+        {
+          "name": "National Iranian Tanker Company (NITC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "there is insufficient information to determine whether the National Iranian Tanker Company (NITC) is an agent or affiliate of the IRGC"
+        },
+        {
+          "name": "Iran’s Islamic Revolutionary Guard Corps (IRGC)",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Iran’s Islamic Revolutionary Guard Corps (IRGC)"
+        },
+        {
+          "name": "Rostam Qasemi",
+          "ticker": null,
+          "exchange": null,
+          "quote": "the appointment of Rostam Qasemi, a Brigadier General in the IRGC, as Minister of Petroleum"
+        }
+      ],
+      "industries": [
+        {
+          "name": "energy",
+          "basis": "explicit",
+          "quote": "dominating sectors such as energy, construction, and banking"
+        },
+        {
+          "name": "banking",
+          "basis": "explicit",
+          "quote": "dominating sectors such as energy, construction, and banking"
+        },
+        {
+          "name": "construction",
+          "basis": "explicit",
+          "quote": "dominating sectors such as energy, construction, and banking"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization",
+        "National Iranian Oil Company (NIOC)": "organization",
+        "National Iranian Tanker Company (NITC)": "organization",
+        "Iran’s Islamic Revolutionary Guard Corps (IRGC)": "organization",
+        "Rostam Qasemi": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T14:59:58.376700+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T14:59:58.387432+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T14:59:58.366720+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the classification of entities under sanctions acts and their affiliations with the IRGC, providing information on economic influence and the",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T13:58:20.918544+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "source_id": "ceb71a188b63711fe4697383",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_03_29_tax-policy_government_cnbc.json",
+      "sha256": "6ccbf01b5c7308c9eb2f51f65ec8f77ef0a831113c1c48c4c1efaec2baa5f6b4",
+      "filename": "2022_03_29_tax-policy_government_cnbc.json"
+    }
+  ],
+  "original_record_hash": "9dd1d426accfe123423162916f581853ca2b9c35c473b8fcfca9e7517e389981",
+  "input_hash": "ba841314a7e604caf31ddec96d6b1602c5826cf5c7cfccc20b4e86b9c4789b5a",
+  "matching_audit_hash": "2c4b6525f032a6568f05da94364044d02f62c59c9f85d4ecf85b2887fe07bda3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3d4c624270655252a7f08aa543a51ccb8095a888a4821590255fa6f0d5b940ae",
+    "raw_sha256": "dfee6579f0fe39bcec9ac446b92310697178c13bd6d56a77ac0c708a23b6e83d",
+    "date_quote": "article:published_time=2022-03-29T12:47:26+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "29dff3c432663e196d5dba8c9afb51f3fd2ccfe638318b0fba9e5ac4d48200a5",
+  "outputs": [
+    {
+      "path": "US\\2022_03_29_tax-policy_government_cnbc.json",
+      "sha256": "6b4380f158ad2e239455016c04b18a617712e97fa692fb7ea863860679e54b8a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+    "fetched_at": "2026-11-10T19:38:33.473451+00:00",
+    "feature_available_at": "2026-11-10T19:39:02.865924+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:57:16.428185+00:00",
+  "feature_available_at": "2026-11-12T14:57:16.437192+00:00",
+  "commit_verified_at": "2026-11-12T14:57:16.437192+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "no_verified_company_entity",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses tax policy changes proposed by President Joe Biden, including a tax rate increase and a billionaire minimum tax, which are relevant to fiscal",
+    "securities": [],
+    "industries": [],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {},
+    "method": "local_qwen_legacy_summary"
+  }
+}

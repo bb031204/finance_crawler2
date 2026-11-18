@@ -1,0 +1,141 @@
+{
+  "source_id": "0bf61832bf9902f6f29dbeeb",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_04_01_Economic-Report_Leisure-and-Hospitality;-Professional-an_cnbc.json",
+      "sha256": "7664012ba741ceff15bbde70a4a5f5e51c7f32b20cc90ca36ccf0a1cf625461a",
+      "filename": "2022_04_01_Economic-Report_Leisure-and-Hospitality;-Professional-an_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e3a3ae50cf7891148f828f7a698d662d41325cefcc67237c92bc91393b063078",
+  "input_hash": "92c9efc6f150f760873147e93964ecb9afbb5bfc29f28665d864c0b352643764",
+  "matching_audit_hash": "f931a1278f72be0fad3ab6cb069a52214176f2c14fe672df0e5de65196a6525c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4be2bd628ac0cda928941be7ebed2b12b7bd646a474053fb9151651f994be396",
+    "raw_sha256": "ad2a8ccd1f1003223a2d5d1b36c6b99729c043e0d9304c7c5adc1e0238937802",
+    "date_quote": "article:published_time=2022-04-01T17:21:08+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Leisure and Hospitality",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The leisure and hospitality industry, which includes hotels, restaurants and amusement parks, added a net 112,000 jobs."
+    },
+    {
+      "name": "Professional and Business Services",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The wide-ranging professional and business services sector also posted a robust March with a net addition of 102,000 positions."
+    },
+    {
+      "name": "Retail",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Retail had a decent month with a gain of 49,000, thanks to healthy hiring at grocery stores (+17,800) and warehouse clubs and supercenters (+21,400)."
+    }
+  ],
+  "record_hash": "effe050f216c5ce770f92fb5c56052ead1a94578dd47e27f833a29e9d10d1106",
+  "outputs": [
+    {
+      "path": "US\\2022_04_01_Economic-Report_Leisure-and-Hospitality;-Professional-an_cnbc.json",
+      "sha256": "55e647f2a651a247e476976403d60bfe6523b05e4e7a924c4df38788f731b18a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-04-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:36:17.702520+00:00",
+    "fetched_at": "2026-11-10T19:37:07.540632+00:00",
+    "feature_available_at": "2026-11-10T19:37:46.830696+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:40.528732+00:00",
+  "commit_verified_at": "2026-11-12T13:53:40.528732+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Leisure and Hospitality",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The leisure and hospitality industry, which includes hotels, restaurants and amusement parks, added a net 112,000 jobs."
+      },
+      {
+        "name": "Professional and Business Services",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The wide-ranging professional and business services sector also posted a robust March with a net addition of 102,000 positions."
+      },
+      {
+        "name": "Retail",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Retail had a decent month with a gain of 49,000, thanks to healthy hiring at grocery stores (+17,800) and warehouse clubs and supercenters (+21,400)."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Leisure and Hospitality",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Professional and Business Services",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Retail",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Health and Social Services",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Transportation",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

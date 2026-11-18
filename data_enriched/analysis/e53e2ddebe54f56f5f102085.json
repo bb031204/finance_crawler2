@@ -1,0 +1,88 @@
+{
+  "source_id": "e53e2ddebe54f56f5f102085",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_26_economic_Technology_federalreserve.json",
+      "sha256": "93262f1e5f68ad56277477937817b594642b0da2cafc1efe636be12fd1a90df2",
+      "filename": "2015_03_26_economic_Technology_federalreserve.json"
+    }
+  ],
+  "original_record_hash": "59122190e250510dc4723ac34bdbff24c0aa1e56c5eb1889650a61bfcb9e483f",
+  "input_hash": "d623960584b18e930091ab4a9b119fc5c37368e180b7ba387c3de87979083993",
+  "matching_audit_hash": "11c456bd96aec050ed75e3a24ba70dac5c60a8e4898fc7c42168f37448e45d14",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "91e4a3063ec4fc3bc64f2893acd1e3157ba40656c6ad13dfc365c406929d6ab2",
+    "raw_sha256": "f5db309c6caa9f0f082aeec2d34e2c3b454beeb0d88935f3ea659ae1a1723e79",
+    "date_quote": "FEDS Notes Print March 26, 2015 The recent slowdown in high-tech equipment price declines a",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "9f2bcd737fa2e2aa10cf4aa9eff71c08a9d255fc358e5a9bfce8d5f92e244393",
+  "outputs": [
+    {
+      "path": "US\\2015_03_26_economic_Technology_federalreserve.json",
+      "sha256": "314220afc49eced7ff98c6c5a3f0fd8bbec36c32b534c0ceddee26bed94a3585"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:26:34.468371+00:00",
+    "fetched_at": "2026-11-11T02:24:59.071401+00:00",
+    "feature_available_at": "2026-11-11T18:21:01.312583+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:25:20.893970+00:00",
+  "feature_available_at": "2026-11-12T14:25:20.927216+00:00",
+  "commit_verified_at": "2026-11-12T14:25:20.927216+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses economic indicators related to high-tech equipment price declines, business investment, labor productivity, and measurement issues in NIPAs, ",
+    "securities": [
+      {
+        "name": "Federal Reserve Bank of San Francisco",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve Bank of San Francisco (FRB)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "High-tech equipment",
+        "basis": "explicit",
+        "quote": "high-tech equipment"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "Federal Reserve Bank of San Francisco": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

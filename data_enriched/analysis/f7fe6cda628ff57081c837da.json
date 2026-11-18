@@ -1,0 +1,178 @@
+{
+  "source_id": "f7fe6cda628ff57081c837da",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_04_Insurance_Healthcare_bls.json",
+      "sha256": "18674748b6abec0543515058813fba32e37058df2dd0fb29c3eec1972d972217",
+      "filename": "2015_03_04_Insurance_Healthcare_bls.json"
+    }
+  ],
+  "original_record_hash": "b6a9236638d2dbf7db8f95c34980a569b7545f701e0b0d464f69ce2fc90f5bae",
+  "input_hash": "b5af145980449f0159e28a4f6725a0f78116768582d91c8ea67c23b05bfeebe1",
+  "matching_audit_hash": "258fc79fcd5f75bde0f036067e406e66c52c1e20877a9a741f75d1c4273610c0",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c0ebe12a8b23bb4cdc73914ce0662f0287c91d71fbc064c4d0d21764aba16304",
+    "raw_sha256": "6480d43b7af9ff36656f6a27aa8bffeaf816e9d44281bad29326d63caa8d3412",
+    "date_quote": "March 04, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b8a397d8b97268701dbeb77b844f6857a87153f2294277ddb2e36fe21a2abcca",
+  "outputs": [
+    {
+      "path": "US\\2015_03_04_Insurance_Healthcare_bls.json",
+      "sha256": "ad63575d09a205a8328b6a19f37359beb3f58f49c11c48a3c14d7aed6f7190a8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:56.454118+00:00",
+    "fetched_at": "2026-11-10T11:29:42.436061+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.082309+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:17.791385+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.557435+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.557435+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Provides data on disability insurance coverage trends across industries and job",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Labor Statistics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The U.S. Bureau of Labor Statistics reported on March 4, 2015"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "short- and long-term disability insurance programs"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Labor Statistics": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "excluded_non_entity_mentions": [
+      "National Compensation Survey-Benefits program"
+    ]
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.580102+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:17.791385+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Provides data on disability insurance coverage trends across industries and job",
+      "securities": [
+        {
+          "name": "U.S. Bureau of Labor Statistics",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The U.S. Bureau of Labor Statistics reported on March 4, 2015"
+        },
+        {
+          "name": "National Compensation Survey-Benefits program",
+          "ticker": null,
+          "exchange": null,
+          "quote": "These data are from the National Compensation Survey-Benefits program"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Insurance",
+          "basis": "explicit",
+          "quote": "short- and long-term disability insurance programs"
+        },
+        {
+          "name": "Private industry",
+          "basis": "explicit",
+          "quote": "36% of private industry workers had short-term disability insurance"
+        },
+        {
+          "name": "Service occupations",
+          "basis": "explicit",
+          "quote": "Workers in service occupations had the lowest rates of coverage"
+        },
+        {
+          "name": "Management, professional, and related occupations",
+          "basis": "explicit",
+          "quote": "Workers in management, professional, and related occupations had the highest rates"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Bureau of Labor Statistics": "organization",
+        "National Compensation Survey-Benefits program": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:17.824012+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:17.833018+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:17.815008+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses disability insurance coverage trends and provides statistics on short- and long-term disability insurance rates across different worker occup",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:23:31.242146+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

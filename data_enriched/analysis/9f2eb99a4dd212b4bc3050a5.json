@@ -1,0 +1,114 @@
+{
+  "source_id": "9f2eb99a4dd212b4bc3050a5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_08_27_Finance_Fitness-Equipment_cnbc.json",
+      "sha256": "6b27c0f0b1cdb7572944cadd568b92ad69ad792c8b3dd401b88cbf7690cfd97e",
+      "filename": "2019_08_27_Finance_Fitness-Equipment_cnbc.json"
+    }
+  ],
+  "original_record_hash": "9e4d5a0975b232afd24edca7f278de5fa4025f7d0b133729bf3ed4ca41c9b292",
+  "input_hash": "42365f4a5b187e1332b186e356d688a3c8766265a0c8789271feef71e90f812a",
+  "matching_audit_hash": "9008c9ad62a922246386c5e6fccd967e8a29bc760b07302e0d43662fac45de7d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "785da7c4a85937fe3f80a54ff59ae3585dab94b6c48ef6ab6bf61be4cb30e155",
+    "raw_sha256": "5f3103fd00514d32670d3c35c4dabecc204a748e6b10bfe8687a27e64e923181",
+    "date_quote": "article:published_time=2019-08-27T21:03:23+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Peloton",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Peloton"
+    },
+    {
+      "name": null,
+      "ticker": "PTON",
+      "exchange": null,
+      "quote": "ticker PTON"
+    }
+  ],
+  "record_hash": "fbab0500a4166095f5e19e9d426ba99fdc5926a826aa81170cbec0dda51283b6",
+  "outputs": [
+    {
+      "path": "US\\2019_08_27_Finance_Fitness-Equipment_cnbc.json",
+      "sha256": "f9ef05f3b2cbe7e84d1ab5f02b2e9ee51c36366ca02dbc8fefee779186aad4d8"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-08-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:30:20.005603+00:00",
+    "fetched_at": "2026-11-11T04:46:43.386591+00:00",
+    "feature_available_at": "2026-11-11T04:47:23.003163+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:29.521409+00:00",
+  "commit_verified_at": "2026-11-12T13:53:29.521409+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Peloton",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Peloton"
+      },
+      {
+        "name": null,
+        "ticker": "PTON",
+        "exchange": null,
+        "quote": "ticker PTON"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Fitness Equipment",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Fitness Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

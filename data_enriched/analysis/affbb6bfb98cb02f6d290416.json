@@ -1,0 +1,104 @@
+{
+  "source_id": "affbb6bfb98cb02f6d290416",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_31_Corporate-Governance_Technology_sec.json",
+      "sha256": "5db5d41e3119cbc204922794970fd90db8f221cd69c0257da3c8347ec1ab787d",
+      "filename": "2018_01_31_Corporate-Governance_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "f0ed641d876c410a11bd2aefa68ea5de745bb20e3360d47caf9920f36728d534",
+  "input_hash": "170e3e7593869581b23acd456c176c74065c45143abfeb96f5cdb9eb74062623",
+  "matching_audit_hash": "610cf115af4867fc3b66170be80704d68c873280d4239bd64b69801e0ae8efaa",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "74a54e54566060d0a37802a669783bab4de6b0f56b6aa92063328d725fd88205",
+    "raw_sha256": "947ce4af5cd85cd6b26f5a4ea60c3bfb3a7224039e10404c6d9e0007eff90711",
+    "date_quote": "SEC filing datePublished=2018-01-31",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000683/000130794218000002/blonder8k013018.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Blonder Tongue Laboratories, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Blonder Tongue Laboratories, Inc."
+    }
+  ],
+  "record_hash": "fd37064005142c10af15a1416499e4128909d8987212d5ad0ae806d6c93e08aa",
+  "outputs": [
+    {
+      "path": "US\\2018_01_31_Corporate-Governance_Technology_sec.json",
+      "sha256": "161b7e810231cae2dd30e344e11713721880c5bfa638e3b82b65fb0d704656b7"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+    "fetched_at": "2026-11-11T13:09:12.143084+00:00",
+    "feature_available_at": "2026-11-11T13:09:37.939884+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:37.103607+00:00",
+  "feature_available_at": "2026-11-12T14:42:37.112894+00:00",
+  "commit_verified_at": "2026-11-12T14:42:37.112894+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary includes information about a director appointment, which is relevant for corporate governance and may impact company operations and board structure.",
+    "securities": [
+      {
+        "name": "Blonder Tongue Laboratories, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Blonder Tongue Laboratories, Inc."
+      },
+      {
+        "name": "Cox Communications",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Cox Communications"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Telecommunications",
+        "basis": "inferred",
+        "quote": "Cox Communications"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Blonder Tongue Laboratories, Inc.": "company",
+      "Cox Communications": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

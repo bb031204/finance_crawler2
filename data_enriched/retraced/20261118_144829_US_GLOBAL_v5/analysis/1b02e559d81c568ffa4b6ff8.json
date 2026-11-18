@@ -1,0 +1,803 @@
+{
+  "source_id": "1b02e559d81c568ffa4b6ff8",
+  "status": "completed",
+  "source_record_hash": "94e0aa673fd00e618b968526a8ae98db70c3eaa4185778f460f57c51932c9356",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-18-000010-index.html",
+    "attempted_at": "2026-11-18T09:15:27.391639+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-18-000010-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075318000010/a12312017-8xkearningsrelea.htm",
+    "fetched_at": "2026-11-18T09:15:39.297619+00:00",
+    "source_body_hash": "439a2a95e3e10f87724c55fdf42b7863815a7cc25ede2ff32b47dab227149572",
+    "raw_sha256": "7b55a692cd109740f18bdc9122bed19a236c280e62c57088eafe69d1e6968653",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075318000010/a12312017-8xkearningsrelea.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "7b55a692cd109740f18bdc9122bed19a236c280e62c57088eafe69d1e6968653",
+        "text_sha256": "5abab7245084a000c396f851ed64d57148f3c3ffed84a472d66f5d9e9a24e145",
+        "text_start": 0,
+        "text_end": 4964
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075318000010/a12312017-ex991earningsrel.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "d0dc45750621b090a5075729c9887951fe0fb756553df876713728f3242c1fad",
+        "text_sha256": "9316b1c0865c7835694bf634af2ef7e42dba61c5f0b02394a56ef05180680e71",
+        "text_start": 4966,
+        "text_end": 30968
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2018-02-12",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/1b02e559d81c568ffa4b6ff8.json",
+    "sha256": "3c3a6a9a88b84c21d90da67e0f5fb3ec4b488c2507750cd26764af3b4a16e64d",
+    "bundled_path": "legacy_audit/1b02e559d81c568ffa4b6ff8.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "122554537a7a326162b9a025d317689b480c30e6bafa0562a3de768f2fa8c77a",
+      "llm_inferred_at": "2026-11-18T09:16:06.211203+00:00",
+      "model_duration_seconds": 26.8825986,
+      "prompt_tokens": 4324,
+      "completion_tokens": 1286,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business",
+              "rationale": "The article discusses the financial results of Insperity, Inc., a specific company, and its performance in the fourth quarter and full year of 2017. This indicates a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business",
+              "rationale": "The article mentions the company's stock (NYSE: NSP), which is a U.S. equity market entity. The financial results and performance of the company can have an impact on the broader U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The alternate base rate is the highest of (x) the prime rate most recently published in The Wall Street Journal, (y) the federal funds rate plus 0.50% and (z) the 30-day LIBOR rate plus 2%.",
+              "rationale": "The Wall Street Journal is a major U.S. financial publication, and the mention of the prime rate and LIBOR rate indicates a connection to U.S. equity and financial markets.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business"
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "institutions, as lenders. The Credit Agreement amends and restates the Company’s existing credit agreement, dated as of September 15, 2011 (as amended, the “Existing Credit",
+              "industry_name_original": "Banks",
+              "mechanism": "The company has entered into a credit agreement with banks, indicating a direct impact on the banking industry.",
+              "confidence": 0.85,
+              "quote": "The Facility is available for working capital and general corporate purposes.",
+              "impact_role": "supply_exposure"
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "institutions, as lenders. The Credit Agreement amends and restates the Company’s existing credit agreement, dated as of September 15, 2011 (as amended, the “Existing Credit",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "The company has entered into a credit agreement with commercial banks, indicating a direct impact on the commercial banking industry.",
+              "confidence": 0.85,
+              "quote": "The Facility is available for working capital and general corporate purposes.",
+              "impact_role": "supply_exposure"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "institutions, as lenders. The Credit Agreement amends and restates the Company’s existing credit agreement, dated as of September 15, 2011 (as amended, the “Existing Credit",
+              "industry_name_original": "Business Services",
+              "mechanism": "The company's financial performance and credit agreement may influence the business services industry, particularly in terms of financial services and corporate operations.",
+              "confidence": 0.75,
+              "quote": "The Facility is available for working capital and general corporate purposes.",
+              "impact_role": "supply_exposure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a0279b95a3484156cd3d98a822ea4a26c70065a34c0b25b5c2ea41eeafe2620d",
+      "llm_inferred_at": "2026-11-18T09:16:27.984316+00:00",
+      "model_duration_seconds": 21.7482443,
+      "prompt_tokens": 4368,
+      "completion_tokens": 1133,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business",
+              "rationale": "The article discusses the financial results of Insperity, Inc., a specific company, and its performance in the fourth quarter and full year of 2017. This is a company-specific event and does not represent an industry or market-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "The alternate base rate is the highest of (x) the prime rate most recently published in The Wall Street Journal, (y) the federal funds rate plus 0.50% and (z) the 30-day LIBOR rate plus 2%.",
+              "rationale": "The article references The Wall Street Journal and LIBOR rates, which are broad financial market indicators. This indicates a potential impact on the US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business"
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "institutions, as lenders. The Credit Agreement amends and restates the Company’s existing credit agreement, dated as of September 15, 2011 (as amended, the “Existing Credit",
+              "industry_name_original": "Business Services",
+              "mechanism": "The company's financial activities, including credit agreements and financial performance, are relevant to the business services industry.",
+              "confidence": 0.85,
+              "quote": "The Facility is available for working capital and general corporate purposes."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "institutions, as lenders. The Credit Agreement amends and restates the Company’s existing credit agreement, dated as of September 15, 2011 (as amended, the “Existing Credit",
+              "industry_name_original": "Banks",
+              "mechanism": "The company's financial activities, including credit agreements and financial performance, are relevant to the banking industry.",
+              "confidence": 0.85,
+              "quote": "The Facility is available for working capital and general corporate purposes."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "institutions, as lenders. The Credit Agreement amends and restates the Company’s existing credit agreement, dated as of September 15, 2011 (as amended, the “Existing Credit",
+              "industry_name_original": "Financials",
+              "mechanism": "The company's financial activities, including credit agreements and financial performance, are relevant to the financials industry.",
+              "confidence": 0.85,
+              "quote": "The Facility is available for working capital and general corporate purposes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "935222eb83d429bc33463a8b5e8c3206d0419f1d2d3e6ac2e1c5ef949394f972",
+      "llm_inferred_at": "2026-11-18T09:16:51.229440+00:00",
+      "model_duration_seconds": 23.2177591,
+      "prompt_tokens": 3667,
+      "completion_tokens": 1163,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Adjusted EBITDA per worksite employee per month increased 14% from $71 in 2016 to a record high of $81 in 2017 primarily as a result of double-digit worksite employee growth,",
+              "rationale": "The article discusses the company's financial performance and operational metrics, which are specific to the company and not indicative of broader industry or market trends.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution.",
+              "rationale": "The article describes the company's offerings in the business services industry, which includes services like Workforce Optimization, Human Capital Management, Payroll Services, etc., indicating an industry-wide impact.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "market",
+              "quote": "The credit facility is available for general corporate purposes and is subject to various covenants that are customary for facilities of this nature.",
+              "rationale": "The article discusses the company's credit facility and its implications for the broader financial market, including the availability of credit and corporate borrowing practices.",
+              "confidence": 0.75
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ") failure to manage growth of our operations and the effectiveness of our sales and marketing efforts; (viii) the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits costs; (x) our liability for disclosure of sensitive or private",
+              "rationale": "The article discusses the competitive environment in the PEO industry and the impact on the company's growth and profitability, which are relevant to the broader US equity market.",
+              "confidence": 0.7
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "inferred",
+              "quote": "Insperity delivers administrative relief, better benefits, reduced liabilities and a systematic way to improve productivity through its premier Workforce Optimization® solution."
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "inferred",
+              "quote": "Insperity, Inc."
+            },
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "inferred",
+              "quote": "Insperity, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits",
+              "industry_name_original": "Business Services",
+              "mechanism": "competitive environment and liability for payroll and benefits costs",
+              "confidence": 0.75,
+              "quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits"
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "liability for payroll and benefits costs",
+              "confidence": 0.7,
+              "quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits"
+            },
+            {
+              "industry_key": "SEC-SIC:8744",
+              "industry_scope_quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits",
+              "industry_name_original": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "mechanism": "competitive environment and liability for payroll and benefits costs",
+              "confidence": 0.7,
+              "quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "43ddbc4bd3ee4757c2cedaf80b0a6d638c2abf60a98a8af8c43f975c3560cbc8",
+      "llm_inferred_at": "2026-11-18T09:17:09.264131+00:00",
+      "model_duration_seconds": 18.0142929,
+      "prompt_tokens": 3711,
+      "completion_tokens": 948,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Adjusted EBITDA per worksite employee per month increased 14% from $71 in 2016 to a record high of $81 in 2017 primarily as a result of double-digit worksite employee growth,",
+              "rationale": "The text discusses the company's financial performance and operational metrics, which are specific to the company and not indicative of broader industry or market trends.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We also had capital expenditures of $33.3 million.",
+              "rationale": "This statement is about the company's capital expenditures, which are specific to the company and not indicative of broader industry or market trends.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The credit facility is available for general corporate purposes and is subject to various covenants that are customary for facilities of this nature.",
+              "rationale": "This statement is about the company's credit facility, which is specific to the company and not indicative of broader industry or market trends.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ") failure to manage growth of our operations and the effectiveness of our sales and marketing efforts; (viii) the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits costs; (x) our liability for disclosure of sensitive or private",
+              "rationale": "The text discusses the competitive environment in the PEO industry, which is a sector-specific factor that could impact the broader US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8744",
+              "name": "SERVICES-FACILITIES SUPPORT MANAGEMENT SERVICES",
+              "basis": "explicit",
+              "quote": "Insperity, Inc."
+            },
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "Insperity, Inc."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Insperity, Inc."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "industry_scope_quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits",
+              "industry_name_original": "Accident &Health Insurance",
+              "mechanism": "competitive environment",
+              "confidence": 0.85,
+              "quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits",
+              "industry_name_original": "Business Services",
+              "mechanism": "competitive environment",
+              "confidence": 0.85,
+              "quote": "the impact of the competitive environment in the PEO industry on our growth and/or profitability; (ix) our liability for worksite employee payroll, payroll taxes and benefits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "143eb151445ab37a8453b8c7854ebeeceefd16784c3a4be2389b8d54b100d128",
+      "llm_inferred_at": "2026-11-18T09:17:34.341105+00:00",
+      "model_duration_seconds": 25.0553164,
+      "prompt_tokens": 5068,
+      "completion_tokens": 1176,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481",
+              "rationale": "The article discusses the financials of Insperity, Inc., which is involved in the provision of workers’ compensation costs and payroll services. This indicates an impact on the insurance and financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481",
+              "rationale": "The article discusses the financials of Insperity, Inc., which is involved in the provision of workers’ compensation costs and payroll services. This indicates an impact on the insurance and financial services industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481",
+              "rationale": "The article discusses the financials of Insperity, Inc., which is involved in the provision of workers’ compensation costs and payroll services. This indicates an impact on the insurance and financial services industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Payroll cost (GAAP) $ 4,691,773 $ 4,163,210 12.7 % $ 16,873,589 $ 14,991,510 12.6 % Less: Bonus payroll cost 725,226 598,288 21.2 % 1,959,053 1,648,936 18.8 % Non-bonus payroll cost $ 3,966,547 $ 3,564,922 11.3 % $ 14,914,536 $ 13,342,574 11.8 % Payroll cost per worksite employee per month (GAAP) $ 8,252 $ 8,041 2.6 % $ 7,697 $ 7,533 2.2 % Less:",
+              "rationale": "The article discusses the financials of Insperity, Inc., which is involved in the provision of workers’ compensation costs and payroll services. This indicates an impact on the US equity market.",
+              "confidence": 0.95
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "explicit",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481"
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "name": "Advertising",
+              "basis": "explicit",
+              "quote": "Adjusted operating expenses represent operating expenses excluding the impact of charitable contributions related to Hurricane Harvey relief efforts and stockholder advisory"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "43b2bf4daee8ce9ee33cb82bb8ab85b8cf2a2718ce762c31920c83226258269d",
+      "llm_inferred_at": "2026-11-18T09:17:56.308702+00:00",
+      "model_duration_seconds": 21.9454883,
+      "prompt_tokens": 5112,
+      "completion_tokens": 1119,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481",
+              "rationale": "The article discusses the company's accrued workers’ compensation costs, which are directly related to the insurance industry, specifically accident and health insurance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481",
+              "rationale": "The article discusses the company's accrued workers’ compensation costs, which are directly related to the insurance industry, specifically accident and health insurance.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481",
+              "rationale": "The article discusses the company's accrued workers’ compensation costs, which are directly related to the insurance industry, specifically accident and health insurance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Payroll cost (GAAP) $ 4,691,773 $ 4,163,210 12.7 % $ 16,873,589 $ 14,991,510 12.6 % Less: Bonus payroll cost 725,226 598,288 21.2 % 1,959,053 1,648,936 18.8 % Non-bonus payroll cost $ 3,966,547 $ 3,564,922 11.3 % $ 14,914,536 $ 13,342,574 11.8 % Payroll cost per worksite employee per month (GAAP) $ 8,252 $ 8,041 2.6 % $ 7,697 $ 7,533 2.2 % Less:",
+              "rationale": "The article discusses payroll cost and its impact on the company's financials, which is relevant to the broader US equity market as it reflects the company's operational and financial performance.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0a83766bd3c3abfe",
+              "name": "Accident &Health Insurance",
+              "basis": "inferred",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481"
+            },
+            {
+              "industry_key": "SEC-SIC:6321",
+              "name": "ACCIDENT & HEALTH INSURANCE",
+              "basis": "inferred",
+              "quote": "Accrued workers’ compensation costs 42,974 44,231 Accrued corporate payroll and commissions 52,595 40,761 Other accrued liabilities 27,741 22,437 Total current liabilities 726,481"
+            },
+            {
+              "industry_key": "TRSR:7c50f8a38a76f3e1",
+              "name": "Advertising",
+              "basis": "inferred",
+              "quote": "Adjusted operating expenses represent operating expenses excluding the impact of charitable contributions related to Hurricane Harvey relief efforts and stockholder advisory"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "1d292846113404383b0d2cfcc1276130810dfe247e7ab1e35cfe70844634476d",
+      "llm_inferred_at": "2026-11-18T09:18:14.054032+00:00",
+      "model_duration_seconds": 17.7264067,
+      "prompt_tokens": 3957,
+      "completion_tokens": 849,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Net income (GAAP) $ 15,554 $ 9,520 63.4 % $ 84,402 $ 65,991 27.9 % Stock-based compensation 7,955 4,116 93.3 % 24,345 16,643 46.3 % Charitable donations to Hurricane Harvey relief",
+              "rationale": "The article provides detailed financial metrics for the company, including net income, stock-based compensation, and charitable donations, indicating a focus on the company's financial performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Non-bonus payroll, adjusted cash, cash equivalents and marketable securities, adjusted operating expenses, EBITDA, adjusted EBITDA, adjusted net income and adjusted diluted net income per share of common stock are not financial measures prepared in accordance with GAAP and may be different from similar measures used by other companies.",
+              "rationale": "The article discusses financial measures that are not in accordance with GAAP and may differ from measures used by other companies, indicating a broader impact on the US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:9995",
+              "name": "NON-OPERATING ESTABLISHMENTS",
+              "basis": "inferred",
+              "quote": "Net income (GAAP) $ 15,554 $ 9,520 63.4 % $ 84,402 $ 65,991 27.9 % Stock-based compensation 7,955 4,116 93.3 % 24,345 16,643 46.3 % Charitable donations to Hurricane Harvey relief"
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "Adjusted EBITDA (non-GAAP) $ 38,531 $ 23,073 67.0 % $ 177,681 $ 141,183 25.9 % Net income per worksite employee per month (GAAP) $ 27 $ 18 50.0 % $ 38 $ 33 15.2 % Income tax"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "Adjusted EBITDA (non-GAAP) $ 38,531 $ 23,073 67.0 % $ 177,681 $ 141,183 25.9 % Net income per worksite employee per month (GAAP) $ 27 $ 18 50.0 % $ 38 $ 33 15.2 % Income tax"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "b40a9301905572354447627f3fb7a275649afaf69c69fcd57c989bea0b63de44",
+      "llm_inferred_at": "2026-11-18T09:18:27.105081+00:00",
+      "model_duration_seconds": 13.0346162,
+      "prompt_tokens": 4001,
+      "completion_tokens": 676,
+      "selection": [
+        {
+          "source_id": "1b02e559d81c568ffa4b6ff8",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Net income (GAAP) $ 15,554 $ 9,520 63.4 % $ 84,402 $ 65,991 27.9 % Stock-based compensation 7,955 4,116 93.3 % 24,345 16,643 46.3 % Charitable donations to Hurricane Harvey relief",
+              "rationale": "The article provides financial metrics and performance data for the company, indicating its operational and financial results.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Dec. 31, Year Ended Dec. 31, 2017 2016 Change 2017 2016 Change Diluted net income per share of common stock (GAAP) $ 0.36 $ 0.23 56.5 % $ 2.01 $ 1.54 30.5 % Stock-based"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Dec. 31, Year Ended Dec. 31, 2017 2016 Change 2017 2016 Change Diluted net income per share of common stock (GAAP) $ 0.36 $ 0.23 56.5 % $ 2.01 $ 1.54 30.5 % Stock-based"
+            },
+            {
+              "industry_key": "TRSR:4ac441610083c210",
+              "name": "Hospital/Nursing Management",
+              "basis": "explicit",
+              "quote": "Dec. 31, Year Ended Dec. 31, 2017 2016 Change 2017 2016 Change Diluted net income per share of common stock (GAAP) $ 0.36 $ 0.23 56.5 % $ 2.01 $ 1.54 30.5 % Stock-based"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T09:18:27.127158+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "439a2a95e3e10f87724c55fdf42b7863815a7cc25ede2ff32b47dab227149572",
+    "raw_sha256": "7b55a692cd109740f18bdc9122bed19a236c280e62c57088eafe69d1e6968653",
+    "date_quote": "SEC filing datePublished=2018-02-12",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000753/000100075318000010/a12312017-8xkearningsrelea.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:df01973c2ce9dd88",
+        "name": "Business Services",
+        "basis": "inferred",
+        "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "df01973c2ce9dd88",
+        "industry_name_standard": "Business Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "1b02e559d81c568ffa4b6ff8",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2018_02_12_Credit-Agreement_Business-Services_sec.json",
+        "sha256": "abc4bb98a2e86c82e1823f7bab3171bcafca6043c8fac4ae3185a5fa36696274",
+        "filename": "2018_02_12_Credit-Agreement_Business-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "ebd3853bb31974143d0a515864fd1f7cf5019943efd02fcc022c7e56a976cfa4",
+    "input_hash": "7513ae1ae098b74016655584e4059205ebd015e7ca454178055fed7b76d1e3ce",
+    "matching_audit_hash": "edc0074c8d64a28a9dbe16436074f6903f8abb8ea35ebe9f0554426ed10410ed",
+    "legacy_security_evidence": [
+      {
+        "name": "Insperity, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Insperity, Inc."
+      }
+    ],
+    "record_hash": "94e0aa673fd00e618b968526a8ae98db70c3eaa4185778f460f57c51932c9356",
+    "outputs": [
+      {
+        "path": "US\\2018_02_12_Credit-Agreement_Business-Services_sec.json",
+        "sha256": "f2bdb3f3289cd44d910eba61e19ccd0bd29245bab174da12faac752cd8662b08"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2018-02-12",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:15.046576+00:00",
+      "fetched_at": "2026-11-11T13:13:06.158814+00:00",
+      "feature_available_at": "2026-11-11T13:13:43.716765+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T09:18:27.105081+00:00",
+    "feature_available_at": "2026-11-18T09:18:27.127158+00:00",
+    "commit_verified_at": "2026-11-12T13:53:19.921262+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business",
+        "rationale": "The article discusses the financial results of Insperity, Inc., a specific company, and its performance in the fourth quarter and full year of 2017. This is a company-specific event and does not represent an industry or market-wide impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Insperity Announces Record Fourth Quarter and Full Year 2017 Results HOUSTON – Feb. 12, 2018 – Insperity, Inc. (NYSE: NSP), a leading provider of human resources and business",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Adjusted EBITDA per worksite employee per month increased 14% from $71 in 2016 to a record high of $81 in 2017 primarily as a result of double-digit worksite employee growth,",
+        "rationale": "The text discusses the company's financial performance and operational metrics, which are specific to the company and not indicative of broader industry or market trends.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Adjusted EBITDA per worksite employee per month increased 14% from $71 in 2016 to a record high of $81 in 2017 primarily as a result of double-digit worksite employee growth,",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Net income (GAAP) $ 15,554 $ 9,520 63.4 % $ 84,402 $ 65,991 27.9 % Stock-based compensation 7,955 4,116 93.3 % 24,345 16,643 46.3 % Charitable donations to Hurricane Harvey relief",
+        "rationale": "The article provides financial metrics and performance data for the company, indicating its operational and financial results.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Net income (GAAP) $ 15,554 $ 9,520 63.4 % $ 84,402 $ 65,991 27.9 % Stock-based compensation 7,955 4,116 93.3 % 24,345 16,643 46.3 % Charitable donations to Hurricane Harvey relief",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only",
+      "industry_scope_without_approved_impact",
+      "market_scope_evidence_missing_or_ambiguous"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000753/0001000753-18-000010-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "94e0aa673fd00e618b968526a8ae98db70c3eaa4185778f460f57c51932c9356",
+    "content_hash": "f7891342106a6c494af245bdbec9d93a1a56183ad21920dc999e86427cbb278f",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T09:18:27.109149+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/1b02e559d81c568ffa4b6ff8.json",
+      "sha256": "422589a44d0d9ecfd896de68748e5a53402f998f1a86e0bb4e651a265c9e7c1b",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 179.73399999999674
+}

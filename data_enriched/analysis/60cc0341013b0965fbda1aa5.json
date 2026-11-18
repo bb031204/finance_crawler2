@@ -1,0 +1,278 @@
+{
+  "source_id": "60cc0341013b0965fbda1aa5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_10_01_Financial-Services_Cannabis_cnbc.json",
+      "sha256": "a2c64617528b8fd73417916d69c86fea055cdcd29a23cc57d437e8de72e03b9a",
+      "filename": "2019_10_01_Financial-Services_Cannabis_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d1c1895e8302ac0b6636fe88539006471f63ae92b1efc209cd25227aeb743fee",
+  "input_hash": "de9105058a253e5e1757a2753e9d980198f215ab95b3b60c03418158909e15ca",
+  "matching_audit_hash": "5e98662a69b15332c2b113600a10cf2e9ca7431d2391b9cb56700503183c97ce",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "241e27d894a64cbe5f3b6a1e802b3eb7bac0d52aebc38ce45b5a6d438022e370",
+    "raw_sha256": "8ba9f027dbae2dc891a1c24cd8cc43f60a33d3ae3a0dcdf7bd88164f166f3a1a",
+    "date_quote": "article:published_time=2019-10-01T14:22:26+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "97b08518fbd977add2f0273f3c6d8315cd3777d567afbc20a95367d83ffdeb01",
+  "outputs": [
+    {
+      "path": "US\\2019_10_01_Financial-Services_Cannabis_cnbc.json",
+      "sha256": "4d8981d231caa2765becc9f5949d7fd176404e282afa438b9f6b5014daccc753"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-10-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:46.797537+00:00",
+    "fetched_at": "2026-11-10T12:29:11.452439+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.144313+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:12:08.231312+00:00",
+  "feature_available_at": "2026-11-12T15:16:46.376008+00:00",
+  "commit_verified_at": "2026-11-12T15:16:46.376008+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Cannabis banking challenges and alternative financial solutions",
+    "securities": [
+      {
+        "name": "Harmony Dispensary",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Harmony Dispensary"
+      },
+      {
+        "name": "Marijuana Policy Project",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Marijuana Policy Project"
+      },
+      {
+        "name": "Visa",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Visa, and Mastercard"
+      },
+      {
+        "name": "Mastercard",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Visa, and Mastercard"
+      },
+      {
+        "name": "CanPay",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CanPay, which works with over 50 financial institutions and 400 operators"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "explicit",
+        "quote": "Financial Services"
+      },
+      {
+        "name": "Cannabis industry",
+        "basis": "explicit",
+        "quote": "The cannabis industry in the United States"
+      },
+      {
+        "name": "Banking",
+        "basis": "explicit",
+        "quote": "banking services"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Harmony Dispensary": "company",
+      "Marijuana Policy Project": "organization",
+      "Visa": "company",
+      "Mastercard": "company",
+      "CanPay": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:46.398521+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:12:08.231312+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Cannabis banking challenges and alternative financial solutions",
+      "securities": [
+        {
+          "name": "Harmony Dispensary",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Harmony Dispensary"
+        },
+        {
+          "name": "Marijuana Policy Project",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Marijuana Policy Project"
+        },
+        {
+          "name": "Visa",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Visa, and Mastercard"
+        },
+        {
+          "name": "Mastercard",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Visa, and Mastercard"
+        },
+        {
+          "name": "CanPay",
+          "ticker": null,
+          "exchange": null,
+          "quote": "CanPay, which works with over 50 financial institutions and 400 operators"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "explicit",
+          "quote": "Financial Services"
+        },
+        {
+          "name": "Cannabis industry",
+          "basis": "explicit",
+          "quote": "The cannabis industry in the United States"
+        },
+        {
+          "name": "Banking",
+          "basis": "explicit",
+          "quote": "banking services"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "cannabis industry": "company",
+        "Harmony Dispensary": "company",
+        "Marijuana Policy Project": "organization",
+        "Visa": "company",
+        "Mastercard": "company",
+        "CanPay": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:12:08.257119+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:12:08.266424+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:08.248110+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the challenges faced by the cannabis industry in accessing traditional banking services, the impact of federal law, and the emergence of new,",
+        "securities": [
+          {
+            "name": "cannabis industry",
+            "ticker": null,
+            "exchange": null,
+            "quote": "cannabis industry"
+          },
+          {
+            "name": "Harmony Dispensary",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Harmony Dispensary"
+          },
+          {
+            "name": "Marijuana Policy Project",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Marijuana Policy Project"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Financial Services",
+            "basis": "explicit",
+            "quote": "Financial Services"
+          },
+          {
+            "name": "Cannabis industry",
+            "basis": "explicit",
+            "quote": "cannabis industry"
+          },
+          {
+            "name": "Banking",
+            "basis": "explicit",
+            "quote": "banking services"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry",
+          "market"
+        ],
+        "company_scope_basis": "literal_corporate_entity_mention",
+        "entity_types": {
+          "cannabis industry": "company",
+          "Harmony Dispensary": "company",
+          "Marijuana Policy Project": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:50:36.345060+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

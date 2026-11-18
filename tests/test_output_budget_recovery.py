@@ -133,6 +133,8 @@ class OutputBudgetRecoveryTests(unittest.TestCase):
                     note.update(content=f'{name} ({exchange}: {code}) reported revenue growth in 2021Q1 in {sector}.',
                         keywords=[name,code,sector],securities=[dict(name=name,ticker=code,exchange=exchange,quote=f'{name} ({exchange}: {code})')],
                         industries=[dict(name=sector,basis='explicit',quote=sector)])
+                if purpose=='段落合并':
+                    note['content']='Example Bank (NYSE: EXB) in Regional banking and Example Chip (NASDAQ: EXCP) in Semiconductor equipment reported revenue growth in 2021Q1.'
                 return validate(note) if validate else note
         model=Adaptive(self.cfg.ollama,self.root);prepared=self.prepared(model,source)
         original=copy.deepcopy(prepared)

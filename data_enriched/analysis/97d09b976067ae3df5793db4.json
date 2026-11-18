@@ -1,0 +1,315 @@
+{
+  "source_id": "97d09b976067ae3df5793db4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_01_14_08_28_Finance_Mining_cnbc.json",
+      "sha256": "4cecfe17daac1fc78803fc50bd8156476b12a27cd45081300b26644d4afa28b1",
+      "filename": "2020_01_14_08_28_Finance_Mining_cnbc.json"
+    }
+  ],
+  "original_record_hash": "b24728639d2726b74ec15beb64ac790e61da1dbd103802b01cc0d88f19a4718d",
+  "input_hash": "549a7f16d720e686a0fded4af9cbdaff99763039ac03bfb6cd72a69629413b1c",
+  "matching_audit_hash": "d50ddce5ba77b7c583fd1562ac3a0012ec38ad405649f86e4784d4586cb4f92e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4df1de39d4d0ecf6be672ec5d23cfb9a973e094649dee1f0be719430d3501da1",
+    "raw_sha256": "631efb4e4a044c00cf48f0e03a9a10544f606588e7eb0ae811ae60baf041f74c",
+    "date_quote": "article:published_time=2020-01-14T08:28:03+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "642424189e18c3f057619a94448ce13bda40a778c2af70a4862684c4fa52357e",
+  "outputs": [
+    {
+      "path": "US\\2020_01_14_08_28_Finance_Mining_cnbc.json",
+      "sha256": "41bbe52731fc2e1b51247ef725175283acffa442700bc6273678626b1e2ff385"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-01-14T08:28:03+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T10:02:22.207504+00:00",
+    "fetched_at": "2026-11-10T13:25:32.635776+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.644212+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:12:39.892608+00:00",
+  "feature_available_at": "2026-11-12T15:16:46.838820+00:00",
+  "commit_verified_at": "2026-11-12T15:16:46.838820+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Zambia's debt crisis and Chinese financial involvement in Africa",
+    "securities": [
+      {
+        "name": "Zambia",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Zambia's spiraling debt"
+      },
+      {
+        "name": "China",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China"
+      },
+      {
+        "name": "EXX Africa",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Recent research from EXX Africa"
+      },
+      {
+        "name": "Intesa Sanpaolo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "$107 million loan from Italian bank Intesa Sanpaolo"
+      },
+      {
+        "name": "International Monetary Fund",
+        "ticker": null,
+        "exchange": null,
+        "quote": "International Monetary Fund has withheld credit facilities"
+      },
+      {
+        "name": "China Civil Engineering Construction Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chinese companies, including China Civil Engineering Construction Corporation"
+      },
+      {
+        "name": "China Exim Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Negotiations are likely being conducted by China Exim Bank"
+      },
+      {
+        "name": "Sinosure",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sinosure (China Export & Credit Corporation)"
+      },
+      {
+        "name": "ZNBC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "China retains a highly contentious stake in Zambia's national broadcaster, ZNBC"
+      },
+      {
+        "name": "StarTimes",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Chinese media conglomerate StarTimes"
+      },
+      {
+        "name": "TopStar",
+        "ticker": null,
+        "exchange": null,
+        "quote": "called TopStar"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Mining",
+        "basis": "explicit",
+        "quote": "Chinese firms are seeking control of Zambian mining assets"
+      },
+      {
+        "name": "Broadcasting",
+        "basis": "inferred",
+        "quote": "Zambia's national broadcaster, ZNBC"
+      },
+      {
+        "name": "Infrastructure",
+        "basis": "explicit",
+        "quote": "China has provided billions of dollars in loans for infrastructure projects"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Zambia": "organization",
+      "China": "organization",
+      "EXX Africa": "organization",
+      "Intesa Sanpaolo": "organization",
+      "International Monetary Fund": "organization",
+      "China Civil Engineering Construction Corporation": "organization",
+      "China Exim Bank": "organization",
+      "Sinosure": "organization",
+      "ZNBC": "organization",
+      "StarTimes": "organization",
+      "TopStar": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:46.865814+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:12:39.892608+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Zambia's debt crisis and Chinese financial involvement in Africa",
+      "securities": [
+        {
+          "name": "Zambia",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Zambia's spiraling debt"
+        },
+        {
+          "name": "China",
+          "ticker": null,
+          "exchange": null,
+          "quote": "China"
+        },
+        {
+          "name": "EXX Africa",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Recent research from EXX Africa"
+        },
+        {
+          "name": "Intesa Sanpaolo",
+          "ticker": null,
+          "exchange": null,
+          "quote": "$107 million loan from Italian bank Intesa Sanpaolo"
+        },
+        {
+          "name": "International Monetary Fund",
+          "ticker": null,
+          "exchange": null,
+          "quote": "International Monetary Fund has withheld credit facilities"
+        },
+        {
+          "name": "China Civil Engineering Construction Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Chinese companies, including China Civil Engineering Construction Corporation"
+        },
+        {
+          "name": "China Exim Bank",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Negotiations are likely being conducted by China Exim Bank"
+        },
+        {
+          "name": "Sinosure",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Sinosure (China Export & Credit Corporation)"
+        },
+        {
+          "name": "ZNBC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "China retains a highly contentious stake in Zambia's national broadcaster, ZNBC"
+        },
+        {
+          "name": "StarTimes",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Chinese media conglomerate StarTimes"
+        },
+        {
+          "name": "TopStar",
+          "ticker": null,
+          "exchange": null,
+          "quote": "called TopStar"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Mining",
+          "basis": "explicit",
+          "quote": "Chinese firms are seeking control of Zambian mining assets"
+        },
+        {
+          "name": "Broadcasting",
+          "basis": "inferred",
+          "quote": "Zambia's national broadcaster, ZNBC"
+        },
+        {
+          "name": "Infrastructure",
+          "basis": "explicit",
+          "quote": "China has provided billions of dollars in loans for infrastructure projects"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Zambia": "organization",
+        "China": "organization",
+        "EXX Africa": "organization",
+        "Intesa Sanpaolo": "organization",
+        "International Monetary Fund": "organization",
+        "China Civil Engineering Construction Corporation": "organization",
+        "China Exim Bank": "organization",
+        "Sinosure": "organization",
+        "ZNBC": "organization",
+        "StarTimes": "organization",
+        "TopStar": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:12:39.935771+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:12:39.963662+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:12:39.910585+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses Zambia's debt crisis, Chinese loan financing, and potential collateralization of mining assets, which are relevant to financial and market",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:51:29.095839+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

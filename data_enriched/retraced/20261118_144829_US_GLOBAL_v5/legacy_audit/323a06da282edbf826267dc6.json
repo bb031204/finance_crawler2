@@ -1,0 +1,195 @@
+{
+  "source_id": "323a06da282edbf826267dc6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_07_02_Regulatory_Financial-Services_sec.json",
+      "sha256": "be1a54ab6f94b37d392694f923555421536ccf004e866d4436e0bd43a8223dea",
+      "filename": "2013_07_02_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "51a1c02854250f097c436e9050b85037299684deb78e4bea131b4cbe2bd3e4e0",
+  "input_hash": "c0b9b582d10e9fadd6afd2ac86aef39201ba5d2d5a409e5e56d15e2219f25936",
+  "matching_audit_hash": "e3585efe4f7e6b3c84a03119bad15ad4aca62a65993f9b2fa5cce012f7be7b57",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "68dffe0f96fc736ce1ae9ccb90d111f8e79423e8dbcc55bcf193f7740069e584",
+    "raw_sha256": "74323854c0e59411ae5dc36a731b3c71899331dbd905dcadf30fb90f7d5458b7",
+    "date_quote": "Washington, D.C., July 2, 2013 — The Securities and Exchange Commission today announced three new initiatives",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "206f0b22699e9d0d198c4f49c2fa42a6b44602c6dd9d406aac7ddc61d5eafeb9",
+  "outputs": [
+    {
+      "path": "US\\2013_07_02_Regulatory_Financial-Services_sec.json",
+      "sha256": "4970601aed07609327f179a3b4823f41cc89317c26bca47fc0a9eaaedab58739"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-07-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:03.148109+00:00",
+    "fetched_at": "2026-11-10T10:50:33.569578+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.382172+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:01:09.807852+00:00",
+  "feature_available_at": "2026-11-12T15:16:35.242275+00:00",
+  "commit_verified_at": "2026-11-12T15:16:35.242275+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "SEC introduces new initiatives to combat fraud and enhance risk analysis in the ",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "Financial Reporting and Audit Task Force",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Financial Reporting and Audit Task Force"
+      },
+      {
+        "name": "Microcap Fraud Task Force",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Microcap Fraud Task Force"
+      },
+      {
+        "name": "Center for Risk and Quantitative Analytics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Center for Risk and Quantitative Analytics"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "financial market"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "Financial Reporting and Audit Task Force": "organization",
+      "Microcap Fraud Task Force": "organization",
+      "Center for Risk and Quantitative Analytics": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:35.267796+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:01:09.807852+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "SEC introduces new initiatives to combat fraud and enhance risk analysis in the ",
+      "securities": [
+        {
+          "name": "U.S. Securities and Exchange Commission",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Securities and Exchange Commission (SEC)"
+        },
+        {
+          "name": "Financial Reporting and Audit Task Force",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Financial Reporting and Audit Task Force"
+        },
+        {
+          "name": "Microcap Fraud Task Force",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Microcap Fraud Task Force"
+        },
+        {
+          "name": "Center for Risk and Quantitative Analytics",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Center for Risk and Quantitative Analytics"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "financial market"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Securities and Exchange Commission": "organization",
+        "Financial Reporting and Audit Task Force": "organization",
+        "Microcap Fraud Task Force": "organization",
+        "Center for Risk and Quantitative Analytics": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:01:09.829147+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:01:09.837447+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:01:09.819011+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses new initiatives by the SEC aimed at combating financial reporting fraud, microcap fraud, and enhancing risk analysis. These initiatives are a",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:08:52.983532+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

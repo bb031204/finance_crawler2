@@ -1,0 +1,154 @@
+{
+  "source_id": "06c103d51c1e172850b15afd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_05_31_Sanctions_Energy_treasury.json",
+      "sha256": "c16d20b6a90100ba6c366f0d0e2d9987297c5a73bf154bb0845349ed19369779",
+      "filename": "2013_05_31_Sanctions_Energy_treasury.json"
+    }
+  ],
+  "original_record_hash": "d5cae2304b0e58ab8a7a9a4334e8498bf7fb742a65997b3d172636d7ccef4349",
+  "input_hash": "3b0a44ee298d5178014e390e8e8bad9ab2266fbbba1aad641d3291663b46bfcc",
+  "matching_audit_hash": "3e5a4fb3277713efe0262d06f811e186189df06bff36c06a23628d6e9e4ad0c4",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "373bcccd50d5611ee56f47082b304b60fb67b590dafca874f4dfc395b52ea8e8",
+    "raw_sha256": "4d44cd64e9ddb0d2942332d4b4dcd667946db09da4c3b94f5fa53c92fabb4287",
+    "date_quote": "Press Releases Treasury Announces New Sanctions Against Iran May 31, 2013 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "25ba040c771c1e6b1d5c4d68ca560a92312a24f283a54fe0620099507f70e76e",
+  "outputs": [
+    {
+      "path": "US\\2013_05_31_Sanctions_Energy_treasury.json",
+      "sha256": "1d79e1559e3fd3563e69c59bba8471908427377d91374b0d75b78acebe299f89"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-05-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:05.724591+00:00",
+    "fetched_at": "2026-11-10T14:02:05.320412+00:00",
+    "feature_available_at": "2026-11-10T17:53:14.249053+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:08:19.459146+00:00",
+  "feature_available_at": "2026-11-12T14:08:19.505021+00:00",
+  "commit_verified_at": "2026-11-12T14:08:19.505021+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about sanctions targeting specific companies and industries related to Iran's petrochemical sector and aircraft procurement.",
+    "securities": [
+      {
+        "name": "Ferland Company Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ferland Company Limited"
+      },
+      {
+        "name": "National Iranian Tanker Company (NITC)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "National Iranian Tanker Company (NITC)"
+      },
+      {
+        "name": "Bandar Imam Petrochemical Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bandar Imam Petrochemical Company"
+      },
+      {
+        "name": "Pars Petrochemical Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pars Petrochemical Company"
+      },
+      {
+        "name": "Kyrgyz Trans Avia (KTA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kyrgyz Trans Avia (KTA)"
+      },
+      {
+        "name": "Ukrainian-Mediterranean Airlines (Um Air)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ukrainian-Mediterranean Airlines (Um Air)"
+      },
+      {
+        "name": "Sirjanco Trading L.L.C.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sirjanco Trading L.L.C."
+      },
+      {
+        "name": "Mahan Air",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mahan Air"
+      },
+      {
+        "name": "Iran Air",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Iran Air"
+      }
+    ],
+    "industries": [
+      {
+        "name": "petrochemical industry",
+        "basis": "explicit",
+        "quote": "petrochemical industry"
+      },
+      {
+        "name": "aircraft procurement",
+        "basis": "explicit",
+        "quote": "aircraft procurement networks"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Ferland Company Limited": "company",
+      "National Iranian Tanker Company (NITC)": "company",
+      "Bandar Imam Petrochemical Company": "company",
+      "Pars Petrochemical Company": "company",
+      "Kyrgyz Trans Avia (KTA)": "company",
+      "Ukrainian-Mediterranean Airlines (Um Air)": "company",
+      "Sirjanco Trading L.L.C.": "company",
+      "Mahan Air": "company",
+      "Iran Air": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

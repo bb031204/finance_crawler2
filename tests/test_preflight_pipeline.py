@@ -80,7 +80,8 @@ class PreflightPipelineTests(unittest.TestCase):
 
     def test_valid_article_uses_prepared_publication_once(self):
         c=self.crawler();c.queue(candidate());r=c.collect(resume=True)
-        self.assertEqual(c.model.purposes,['来源发布时间','搜索筛选','正文整理'])
+        self.assertEqual(c.model.purposes,['来源发布时间','正文整理'])
+        self.assertEqual(r['screen_calls_avoided'],1)
         self.assertEqual(r['preflight_checked'],1);self.assertEqual(r['preflight_passed'],1);self.assertEqual(r['saved'],1)
         self.assertEqual(r['summary']['components']['preflight_passed'],1)
 
@@ -123,7 +124,7 @@ class PreflightPipelineTests(unittest.TestCase):
     def test_large_merge_compacts_before_safe_request(self):
         m=OfflineQwen(self.cfg.ollama,self.root)
         paragraph='The international semiconductor manufacturer reported consolidated quarterly financial performance and operational restructuring. '
-        group=[content(paragraph*25),content(paragraph*25)]
+        group=[content(paragraph*25),content('A different manufacturer reported its quarterly results. '+paragraph*25)]
         context={'origin_market':'US','output_language':'en','date_context':'datePublished=2021-06-17'}
         self.assertGreater(m.request_cost(MERGE_PROMPT,m.merge_payload(context,group)),self.cfg.ollama.num_ctx)
         originals=copy.deepcopy(group);result=m.merge_pair(group,context,lambda note:note)

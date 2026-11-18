@@ -1,0 +1,85 @@
+{
+  "source_id": "7d22397943859e446e08f6ca",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_02_Technology_Textile_cnbc.json",
+      "sha256": "24e704d4180627fa1c10d730e6a5eed8913c08ef3fc2872b97ddc4732a2353e7",
+      "filename": "2018_03_02_Technology_Textile_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a1cc44792ee4a23576607f3be484b8b03e9c506b5a5454a7490eefbbc393c444",
+  "input_hash": "fe7a41db8bf50fdef4b024af9a2ccedb3770609dcccedfccb8771241333750bb",
+  "matching_audit_hash": "cf99a34fb7218b9e3bff717ec307e47ba7887e1ed6255c4cf7b90e29f23ce1ea",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4885bfa787f30f6fe3a8c86073a38d33e66c573efca9243ad881798b160707d5",
+    "raw_sha256": "440d46fdc3f2e00725ade2930276367a92e37b0c95a23cc8365d9915459d8452",
+    "date_quote": "article:published_time=2018-03-02T17:30:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "32f4605c3ace7697a038ec226a16214726847d068ab9a1b46917d9ec2996655c",
+  "outputs": [
+    {
+      "path": "US\\2018_03_02_Technology_Textile_cnbc.json",
+      "sha256": "0c731abd56a40a7711572c46b5d0e396d5db979404ce5074d2e14355d76571ba"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:37:43.519016+00:00",
+    "fetched_at": "2026-11-10T15:37:00.532583+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.111891+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:26.915870+00:00",
+  "feature_available_at": "2026-11-12T14:43:26.925866+00:00",
+  "commit_verified_at": "2026-11-12T14:43:26.925866+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Levi's implementation of laser technology for denim distressing, which involves environmental and operational changes in their manufacturing.",
+    "securities": [
+      {
+        "name": "Levi's",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Levi's"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Levi's": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

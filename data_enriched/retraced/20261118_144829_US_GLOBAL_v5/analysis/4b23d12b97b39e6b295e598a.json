@@ -1,0 +1,429 @@
+{
+  "source_id": "4b23d12b97b39e6b295e598a",
+  "status": "completed",
+  "source_record_hash": "2b11b11da6c4c79cc11b18356ca9f33259ac793a632a1775b50263c47f1bf809",
+  "source_trace": {
+    "requested_url": "https://home.treasury.gov/news/press-releases/jl0417",
+    "attempted_at": "2026-11-18T13:48:02.553097+00:00",
+    "status": "summary_only",
+    "reason": "refetched_source_identity_date_or_historical_body_unverified",
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://home.treasury.gov/news/press-releases/jl0417",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T13:48:13.162734+00:00",
+    "source_body_hash": "13bbb9c2d2de184f028d7b07d560d5814c66664c5ffbd62bff90e824a4aff41f",
+    "raw_sha256": "d03de5a15356c84c78181dde3e3eba74a60697d491d866d9d6ec11485c6798ed",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Testimony of Counselor Antonio Weiss Before the House Committee on Natural Resources on a Discussion Draft of the Puerto Rico Oversight, Management, and Economic Stability Act | U.S. Department of the Treasury",
+    "title_origin": "html_title",
+    "publication_evidence": "April 13, 2016",
+    "historical_body_basis": "unproven_current_webpage_version",
+    "summary_sha256": "3fad56a3cf4c6b954ddbdbe9aa1bf3ee6791107b5baceb69e9a96aebcb689979"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4b23d12b97b39e6b295e598a.json",
+    "sha256": "e46d4ef212b82791cfefc778b0fe3c0482ab3c67718003d71cd93d61ff7fc254",
+    "bundled_path": "legacy_audit/4b23d12b97b39e6b295e598a.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "8fab69ec7394465a581e6c6d3b204af52122dbae65771600a13555774b7dd3ea",
+      "llm_inferred_at": "2026-11-18T13:48:26.332538+00:00",
+      "model_duration_seconds": 13.1432874,
+      "prompt_tokens": 2259,
+      "completion_tokens": 647,
+      "selection": [
+        {
+          "source_id": "4b23d12b97b39e6b295e598a",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Health, education, and public safety services have been curtailed due to a lack of funds.",
+              "rationale": "The article discusses the impact of financial constraints on essential services, which are part of the broader health and education sectors.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers.",
+              "rationale": "The specific mention of a private hospital system indicates a company-level impact due to financial difficulties.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:8000",
+              "name": "SERVICES-HEALTH SERVICES",
+              "basis": "explicit",
+              "quote": "Health, education, and public safety services have been curtailed due to a lack of funds."
+            },
+            {
+              "industry_key": "SEC-SIC:8060",
+              "name": "SERVICES-HOSPITALS",
+              "basis": "explicit",
+              "quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:8000",
+              "industry_scope_quote": ". The debt trades at prices between 10 and 70 cents on the dollar. Health, education, and public safety services have been curtailed due to a lack of funds. Suppliers are owed over",
+              "industry_name_original": "SERVICES-HEALTH SERVICES",
+              "mechanism": "Financial constraints impacting essential services",
+              "confidence": 0.95,
+              "quote": "Health, education, and public safety services have been curtailed due to a lack of funds."
+            },
+            {
+              "industry_key": "SEC-SIC:8060",
+              "industry_scope_quote": ". The debt trades at prices between 10 and 70 cents on the dollar. Health, education, and public safety services have been curtailed due to a lack of funds. Suppliers are owed over",
+              "industry_name_original": "SERVICES-HOSPITALS",
+              "mechanism": "Financial constraints impacting hospital operations",
+              "confidence": 0.9,
+              "quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:48:26.346859+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3fad56a3cf4c6b954ddbdbe9aa1bf3ee6791107b5baceb69e9a96aebcb689979",
+    "raw_sha256": null,
+    "date_quote": "April 13, 2016",
+    "date_kind": null,
+    "source_document_url": null,
+    "publication_validation_version": null,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "Highlights Puerto Rico's financial crisis and policy concerns",
+    "securities": [
+      {
+        "name": "House Committee on Natural Resources",
+        "ticker": null,
+        "exchange": null,
+        "quote": "House Committee on Natural Resources"
+      },
+      {
+        "name": "Puerto Rico",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Puerto Rico"
+      },
+      {
+        "name": "Counselor Antonio Weiss",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Counselor Antonio Weiss"
+      },
+      {
+        "name": "Vieques National Wildlife Refuge",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Vieques National Wildlife Refuge"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:8000",
+        "name": "SERVICES-HEALTH SERVICES",
+        "basis": "inferred",
+        "quote": "Health, education, and public safety services have been curtailed due to a lack of funds.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8000",
+        "industry_name_standard": "SERVICES-HEALTH SERVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Health, education, and public safety services have been curtailed due to a lack of funds."
+      },
+      {
+        "industry_key": "SEC-SIC:8060",
+        "name": "SERVICES-HOSPITALS",
+        "basis": "inferred",
+        "quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8060",
+        "industry_name_standard": "SERVICES-HOSPITALS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers."
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "House Committee on Natural Resources": "organization",
+      "Puerto Rico": "organization",
+      "Counselor Antonio Weiss": "organization",
+      "Vieques National Wildlife Refuge": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "4b23d12b97b39e6b295e598a",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_04_13_Politics_Government_treasury.json",
+        "sha256": "1de590dc5e68e0c8fdf7de98b8753ae2deb03214c948a95d72381749a6d22721",
+        "filename": "2016_04_13_Politics_Government_treasury.json"
+      }
+    ],
+    "original_record_hash": "daf97cbb867cb45c018f5457e924f24f449d2882bdaa5c01cabb22ec0661ea30",
+    "input_hash": "3acdcb314a2dbe3dec5c2fb04c52c9a71d9f76c1c29ea4286e9e637021ded481",
+    "matching_audit_hash": "50e90b74f55f22e6b089a89d4bc24e9d197211cd1c10df0c3b186323c1944af4",
+    "legacy_security_evidence": [],
+    "record_hash": "2b11b11da6c4c79cc11b18356ca9f33259ac793a632a1775b50263c47f1bf809",
+    "outputs": [
+      {
+        "path": "US\\2016_04_13_Politics_Government_treasury.json",
+        "sha256": "9bba8cfe6205f2902f8fa6c70d743ee980c7870da9e2b1d87b5ec6171ab4826f"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2016-04-13",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": null,
+      "fetched_at": "2026-11-10T07:42:50.430333+00:00",
+      "feature_available_at": "2026-11-10T17:53:17.485513+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T13:48:26.332538+00:00",
+    "feature_available_at": "2026-11-18T13:48:26.346859+00:00",
+    "commit_verified_at": "2026-11-12T15:16:39.291560+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:16:39.309584+00:00",
+      "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:05:05.178743+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "Highlights Puerto Rico's financial crisis and policy concerns",
+        "securities": [
+          {
+            "name": "House Committee on Natural Resources",
+            "ticker": null,
+            "exchange": null,
+            "quote": "House Committee on Natural Resources"
+          },
+          {
+            "name": "Puerto Rico",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Puerto Rico"
+          },
+          {
+            "name": "Counselor Antonio Weiss",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Counselor Antonio Weiss"
+          },
+          {
+            "name": "Vieques National Wildlife Refuge",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Vieques National Wildlife Refuge"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Healthcare",
+            "basis": "inferred",
+            "quote": "hospitals have closed floors and terminated employees"
+          },
+          {
+            "name": "Education",
+            "basis": "explicit",
+            "quote": "Health, education, and public safety services have been curtailed"
+          },
+          {
+            "name": "Public Safety",
+            "basis": "explicit",
+            "quote": "Health, education, and public safety services have been curtailed"
+          }
+        ],
+        "impact_scope": [
+          "company",
+          "industry",
+          "market"
+        ],
+        "entity_types": {
+          "House Committee on Natural Resources": "organization",
+          "Puerto Rico": "organization",
+          "Counselor Antonio Weiss": "organization",
+          "Vieques National Wildlife Refuge": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T15:05:05.203765+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1,
+      "prior_refinement": {
+        "status": "completed",
+        "at": "2026-11-12T15:05:05.213259+00:00",
+        "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+        "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+        "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+        "model": "qwen3:8b",
+        "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "llm_inferred_at": "2026-11-12T15:05:05.194003+00:00",
+        "prior_analysis": {
+          "useful": true,
+          "reason": "The summary discusses Puerto Rico's financial crisis, including debt defaults, litigation, and challenges in public services, which are relevant to economic and",
+          "securities": [],
+          "industries": [],
+          "impact_scope": [],
+          "entity_types": {},
+          "method": "local_qwen_legacy_summary"
+        },
+        "prior_feature_available_at": "2026-11-12T14:31:32.413838+00:00",
+        "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+        "chunks": 1
+      }
+    },
+    "industry_impacts": [
+      {
+        "industry_key": "SEC-SIC:8000",
+        "industry_scope_quote": ". The debt trades at prices between 10 and 70 cents on the dollar. Health, education, and public safety services have been curtailed due to a lack of funds. Suppliers are owed over",
+        "industry_name_original": "SERVICES-HEALTH SERVICES",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Financial constraints impacting essential services",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Health, education, and public safety services have been curtailed due to a lack of funds.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8000",
+        "industry_name_standard": "SERVICES-HEALTH SERVICES",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "Health, education, and public safety services have been curtailed due to a lack of funds.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SEC-SIC:8060",
+        "industry_scope_quote": ". The debt trades at prices between 10 and 70 cents on the dollar. Health, education, and public safety services have been curtailed due to a lack of funds. Suppliers are owed over",
+        "industry_name_original": "SERVICES-HOSPITALS",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Financial constraints impacting hospital operations",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.9,
+        "quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "8060",
+        "industry_name_standard": "SERVICES-HOSPITALS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": null,
+        "original_evidence_verified": false,
+        "evidence_basis": "stored_summary_only",
+        "summary_evidence_quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers.",
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers.",
+        "rationale": "The specific mention of a private hospital system indicates a company-level impact due to financial difficulties.",
+        "confidence": 0.9,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The largest private hospital system in Puerto Rico recently announced layoffs of nearly 500 workers."
+      },
+      {
+        "scope": "industry",
+        "quote": "Health, education, and public safety services have been curtailed due to a lack of funds.",
+        "rationale": "The article discusses the impact of financial constraints on essential services, which are part of the broader health and education sectors.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Health, education, and public safety services have been curtailed due to a lack of funds."
+      }
+    ],
+    "relation_quality_flags": [],
+    "url": "https://home.treasury.gov/news/press-releases/jl0417",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "2b11b11da6c4c79cc11b18356ca9f33259ac793a632a1775b50263c47f1bf809",
+    "content_hash": "3fad56a3cf4c6b954ddbdbe9aa1bf3ee6791107b5baceb69e9a96aebcb689979",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:48:26.335870+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4b23d12b97b39e6b295e598a.json",
+      "sha256": "46633e80b340b0b500031d57af9c0c47f4386c9804854334e651d751f7dd0148",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 23.796999999991385
+}

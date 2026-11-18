@@ -1,0 +1,121 @@
+{
+  "source_id": "d94ace91b23b325d26c926de",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_06_03_Regulatory_Financial-Services_sec.json",
+      "sha256": "a6f0e4e8d3933612367658f57a97075240ed6d8fba0f1e87a1292462f640e34e",
+      "filename": "2019_06_03_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "a13517e4c142139c1d97a5024df2178bd5c11c1e84e86837286c0aec0a8e50d2",
+  "input_hash": "3c2459b9da8fc973e4fe086d3799f699736eead19b49a2bfceba762bca52570d",
+  "matching_audit_hash": "c086d43e68433b8193f344e66acdd01fce78227eed3bfae2f45d8798f97e5848",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c37bda83f67e2b23b6dd5693e9482ec80da877de5fcc4b4716816ccfd04cb9ec",
+    "raw_sha256": "55ee026eb4ce63d15799dae9e836c7d21e3de894c883be785225e53728b414d7",
+    "date_quote": "Phoenix, Arizona June 3, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d47fee9bed31057dccd40c55f8db1bc39eb38b2b8969548740d7ec92854dd425",
+  "outputs": [
+    {
+      "path": "US\\2019_06_03_Regulatory_Financial-Services_sec.json",
+      "sha256": "218b5cf3769d9a5537b28781261b41412f4a7107250147db60770964774261fe"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-06-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:26.928482+00:00",
+    "fetched_at": "2026-11-10T11:16:28.076057+00:00",
+    "feature_available_at": "2026-11-10T17:53:22.479888+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:49:24.532289+00:00",
+  "feature_available_at": "2026-11-12T14:49:24.543515+00:00",
+  "commit_verified_at": "2026-11-12T14:49:24.543515+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory changes, market structure, and fee caps in U.S. equity markets, which are relevant to the financial industry and market operations",
+    "securities": [
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC's Brett Redfearn"
+      },
+      {
+        "name": "National Investor Relations Institute",
+        "ticker": null,
+        "exchange": null,
+        "quote": "National Investor Relations Institute"
+      },
+      {
+        "name": "Equity Market Structure Advisory Committee",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Equity Market Structure Advisory Committee"
+      },
+      {
+        "name": "Treasury Report",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Treasury Report"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "U.S. equity markets"
+      },
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": "technology and competition"
+      },
+      {
+        "name": "Trading and Markets",
+        "basis": "inferred",
+        "quote": "equity market structure"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "SEC": "organization",
+      "National Investor Relations Institute": "organization",
+      "Equity Market Structure Advisory Committee": "organization",
+      "Treasury Report": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

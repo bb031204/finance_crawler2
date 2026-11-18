@@ -1,0 +1,92 @@
+{
+  "source_id": "36bfcfcb433ea0783063bd22",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_05_12_Research-Report_Financial-Services_businesswire.json",
+      "sha256": "6cf1ec6ab21b582baa0ccab5e771a45a497b5b9d12d2b62b4a12700beb400607",
+      "filename": "2020_05_12_Research-Report_Financial-Services_businesswire.json"
+    }
+  ],
+  "original_record_hash": "08e5347cfd9975c71202c563d86a7c74e605c942f08e4869b5aba52beb09e7ab",
+  "input_hash": "7e7950d7d1652c5de9c12f495c062d62df02962f032f38d91ffc7dca12143942",
+  "matching_audit_hash": "a395a46fa224cafbc66f511dab68fc526434eb8a9592ef30a573bba7871665c6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0373c6ef9efd435c3be187651b7a526f1c7f266097e3f28895762ee4775fe04b",
+    "raw_sha256": "e24cf91546b2199973a61f8ecc3e83e9a924624e67d31b81959a6f591fbca6dc",
+    "date_quote": "page.datePublished=2020-05-12T08:46:00+00:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "832c78e6f0602574db8d582bb4345805ab73a85cf5f5c0b134c1264167d5ea08",
+  "outputs": [
+    {
+      "path": "US\\2020_05_12_Research-Report_Financial-Services_businesswire.json",
+      "sha256": "36fc09fc7837bdba5bac5da63e80269971c7c9bce503b695f44b1bca7c92c949"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-05-12",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:39:32.967846+00:00",
+    "fetched_at": "2026-11-10T21:18:58.957909+00:00",
+    "feature_available_at": "2026-11-10T21:19:05.750567+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:50.143196+00:00",
+  "feature_available_at": "2026-11-12T14:52:50.152213+00:00",
+  "commit_verified_at": "2026-11-12T14:52:50.152213+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses M&A and investment trends in the financial sector, providing insights into deal-making dynamics.",
+    "securities": [
+      {
+        "name": "ResearchAndMarkets.com",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ResearchAndMarkets.com"
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial research services",
+        "basis": "explicit",
+        "quote": "financial research services"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "ResearchAndMarkets.com": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

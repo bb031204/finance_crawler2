@@ -1,0 +1,138 @@
+{
+  "source_id": "056737df56401f2d46d4f8ee",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_11_17_Mergers-&-Acquisitions_Pharmaceuticals_sec.json",
+      "sha256": "28850474d910971e00edaf87c1df6309c6b6091804eefd1f5c77e88b81cedcef",
+      "filename": "2014_11_17_Mergers-&-Acquisitions_Pharmaceuticals_sec.json"
+    }
+  ],
+  "original_record_hash": "7a93709ff8c0c4ed75cfef1265cd3b70bc4df452e3b84385cec0d2077f3633a9",
+  "input_hash": "5c3b86aab80c0f79f6a1e0e41f3f9b8194f261865d72420717665249ec009587",
+  "matching_audit_hash": "3dd77075910af95ce1e3cb29928aae2c90738916a5c68459c8dc19042f3373bd",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e0eddb408dd5b0652804e6a4e5bc23a6a24d227936b1350694ef15d6d9e7fac4",
+    "raw_sha256": "a1b858d41c41c5d0fac869115c0600e3fa7ce78a095b6c9bd7d405c8eebd4078",
+    "date_quote": "Date of Report (Date of earliest event reported): November 17, 2014",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1578845/000119312514414436/d822504d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Actavis plc",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Actavis plc"
+    },
+    {
+      "name": "Allergan, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Allergan, Inc."
+    },
+    {
+      "name": "Actavis",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Actavis and Allergan"
+    },
+    {
+      "name": "Allergan",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Actavis and Allergan"
+    }
+  ],
+  "record_hash": "74db23d87b46f28caa005b2059ed051f6655a91d04b4274b7c5640bdad241d3e",
+  "outputs": [
+    {
+      "path": "US\\2014_11_17_Mergers-&-Acquisitions_Pharmaceuticals_sec.json",
+      "sha256": "a24d43c7b15eb926eb0f0eac00108c3a420cf0ca82ba18eb6343c51017474af5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-11-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:30.633274+00:00",
+    "fetched_at": "2026-11-10T20:36:02.639600+00:00",
+    "feature_available_at": "2026-11-10T20:37:09.452167+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:53.275527+00:00",
+  "commit_verified_at": "2026-11-12T13:52:53.275527+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Actavis plc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Actavis plc"
+      },
+      {
+        "name": "Allergan, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Allergan, Inc."
+      },
+      {
+        "name": "Actavis",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Actavis and Allergan"
+      },
+      {
+        "name": "Allergan",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Actavis and Allergan"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceuticals",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Pharmaceutical",
+        "basis": "explicit",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

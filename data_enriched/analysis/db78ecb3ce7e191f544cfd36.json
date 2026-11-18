@@ -1,0 +1,114 @@
+{
+  "source_id": "db78ecb3ce7e191f544cfd36",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2012_01_18_Finance_Marine-Transportation_sec.json",
+      "sha256": "f185e575d6632f9eb3ba23da1f019c2458bafbdc059fe845b99f40314420f933",
+      "filename": "2012_01_18_Finance_Marine-Transportation_sec.json"
+    }
+  ],
+  "original_record_hash": "0ed52fcb352e1929822681915c06b68ae8d4aeea4a95f17c04fdfa1fa4057a56",
+  "input_hash": "d17fb2bfc27dd571d530373389c415cb68b8403fb3544f4f017658259880c2db",
+  "matching_audit_hash": "7a55fe8cbd50645bf54e967372892523103f83c6618fa46baddf5fdb15c97bcc",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1e691f09367be098ce2c1a426250af9629a3774c6a9d2a16269db405cf26ab2b",
+    "raw_sha256": "7574bc9a0824fa9fe7f16d40eeb7265fae0e7a0540e20f2a0ecc31d4855d2ca5",
+    "date_quote": "Published=2012-01-18",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000177/000119312512015725/d282669d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nordic American Tankers Limited",
+      "ticker": "NAT",
+      "exchange": null,
+      "quote": "Nordic American Tankers Limited (NYSE:NAT)"
+    },
+    {
+      "name": "Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The Company expects to achieve a spot market rate of about $11,000 per day for the fourth quarter of 2011"
+    }
+  ],
+  "record_hash": "53b9a275ca7da7a25dbe5fe786c8d9edc39ee286cdca194730c2ebfdddeb036b",
+  "outputs": [
+    {
+      "path": "US\\2012_01_18_Finance_Marine-Transportation_sec.json",
+      "sha256": "965001d398bf6c5a291305a593537a5fb4826aecc0267ddef55c5a6c19e0f949"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2012-01-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:49.193880+00:00",
+    "fetched_at": "2026-11-10T22:25:53.318823+00:00",
+    "feature_available_at": "2026-11-10T22:27:03.371097+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:37.117434+00:00",
+  "commit_verified_at": "2026-11-12T13:52:37.117434+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nordic American Tankers Limited",
+        "ticker": "NAT",
+        "exchange": null,
+        "quote": "Nordic American Tankers Limited (NYSE:NAT)"
+      },
+      {
+        "name": "Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Company expects to achieve a spot market rate of about $11,000 per day for the fourth quarter of 2011"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Marine Transportation",
+        "basis": "inferred",
+        "quote": ""
+      },
+      {
+        "name": "Shipping",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

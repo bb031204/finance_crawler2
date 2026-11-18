@@ -1,0 +1,96 @@
+{
+  "source_id": "8270e067ef56c32e4ea0f27c",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_29_Financial-Report_Technology_sec.json",
+      "sha256": "1b96c7d880d81615ff785e616e480830592707a06a00cbf6d9aab30ed096d2c6",
+      "filename": "2019_01_29_Financial-Report_Technology_sec.json"
+    }
+  ],
+  "original_record_hash": "bed7a07ab5e55fa42dca49d5a6eef27b86632e5b3f544504dcdf5b1b1ca92d6b",
+  "input_hash": "79a0195dc7569fbbbfe9c5adf79d818c5de6064d1192be038034d2cadba17cf3",
+  "matching_audit_hash": "c9d7a60d8a143a2588c91ed8d73709318185935844d70335abec07f43e1154b6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0af7e0091a910d0bdd3ca1515875a04dc1ef2bee77ee6c523443b3cf75a59511",
+    "raw_sha256": "37576c1f0bfe1d2fd7bdd11fea59b74e423926cbfcdec80bd62577eeb6d6306f",
+    "date_quote": "SEC filing datePublished=2019-01-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001115/000119312519019971/d688817d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "GEOSPACE TECHNOLOGIES CORPORATION",
+      "ticker": null,
+      "exchange": null,
+      "quote": "GEOSPACE TECHNOLOGIES CORPORATION"
+    }
+  ],
+  "record_hash": "25f49123a05b6ec7e38aaf9e49aa6b94eadc6d4aff3c64c034a0a3502a1d4d45",
+  "outputs": [
+    {
+      "path": "US\\2019_01_29_Financial-Report_Technology_sec.json",
+      "sha256": "cf9854360da384e5f895b9f6c2463495bbf5f3ac8142939709a511d44c54ed46"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.619621+00:00",
+    "fetched_at": "2026-11-11T14:20:03.456726+00:00",
+    "feature_available_at": "2026-11-11T14:20:36.807913+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:25.255940+00:00",
+  "commit_verified_at": "2026-11-12T13:53:25.255940+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "GEOSPACE TECHNOLOGIES CORPORATION",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GEOSPACE TECHNOLOGIES CORPORATION"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

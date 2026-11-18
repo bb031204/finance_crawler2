@@ -1,0 +1,139 @@
+{
+  "source_id": "5e55d5d61d10f33e2c07afb6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_04_19_Debt-Relief-Programs_Financial-Services_yahoo.json",
+      "sha256": "285c424c6bef627364701ba4647dc2f1e5180e5485c6007325a6b1ec0606526a",
+      "filename": "2021_04_19_Debt-Relief-Programs_Financial-Services_yahoo.json"
+    }
+  ],
+  "original_record_hash": "96f34d98b34dc099bdc332c950c2a88f529483a71beadc6640d14cd5bcae792d",
+  "input_hash": "23cb811ecc3c5fd699007da2b3d4b4762639ded32c8bd2e553f1688e092c08ae",
+  "matching_audit_hash": "21f2a6a6844880148df2c70384996ec3a0ccef4e2930ba43a6d9d823511f44b1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a3d4dbc01daa68864fa51f5780ccae105d825ac6e3963200bb38b0c24a9ee127",
+    "raw_sha256": "993e2d3b154e3871c8907fd96f7f3c3e192e6d243521353fe30e864594525fe6",
+    "date_quote": "San Diego, CA, April 19, 2021 (GLOBE NEWSWIRE) -- MagnoliaMediaNetwork announces the release of the review \"Best Debt Relief Programs 2021\"",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d3895e76ff5c36ca71a72e613c2d6d869314d9711184cf0a6a807861ba18c4c2",
+  "outputs": [
+    {
+      "path": "US\\2021_04_19_Debt-Relief-Programs_Financial-Services_yahoo.json",
+      "sha256": "0f9753aa47486c3b9599bcf261036b15f71842cdf1faddf3fc4d1ddc84f07fdf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-04-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:02:25.916126+00:00",
+    "fetched_at": "2026-11-10T13:26:30.341590+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.080151+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:30.933748+00:00",
+  "feature_available_at": "2026-11-12T14:55:30.943750+00:00",
+  "commit_verified_at": "2026-11-12T14:55:30.943750+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses debt relief programs and their features, including companies offering services, their strengths, and limitations. It provides information on ",
+    "securities": [
+      {
+        "name": "MagnoliaMediaNetwork",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MagnoliaMediaNetwork"
+      },
+      {
+        "name": "National Debt Relief",
+        "ticker": null,
+        "exchange": null,
+        "quote": "National Debt Relief"
+      },
+      {
+        "name": "CuraDebt",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CuraDebt"
+      },
+      {
+        "name": "DMB Financial",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DMB Financial"
+      },
+      {
+        "name": "New Era Debt Solutions",
+        "ticker": null,
+        "exchange": null,
+        "quote": "New Era Debt Solutions"
+      },
+      {
+        "name": "Accredited Debt Relief",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Accredited Debt Relief"
+      },
+      {
+        "name": "Freedom Debt Relief",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Freedom Debt Relief"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Debt Relief Services",
+        "basis": "inferred",
+        "quote": "debt relief programs"
+      },
+      {
+        "name": "Consumer Finance",
+        "basis": "inferred",
+        "quote": "debt settlement programs"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "MagnoliaMediaNetwork": "company",
+      "National Debt Relief": "company",
+      "CuraDebt": "company",
+      "DMB Financial": "company",
+      "New Era Debt Solutions": "company",
+      "Accredited Debt Relief": "company",
+      "Freedom Debt Relief": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

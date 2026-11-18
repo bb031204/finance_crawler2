@@ -1,0 +1,863 @@
+{
+  "source_id": "4232b4c412be6a77d3ee177b",
+  "status": "completed",
+  "source_record_hash": "bab50ade3eb63265868e85c2ac99591f9064a311d08489cd6532189d7a3c3a97",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000623/0001104659-21-016819-index.html",
+    "attempted_at": "2026-11-18T12:56:11.820669+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000623/0001104659-21-016819-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000110465921016819/tm215842d1_8k.htm",
+    "fetched_at": "2026-11-18T12:56:25.099326+00:00",
+    "source_body_hash": "20b087e67bd177bcaf07433f2e07569dc501c9a585f01cd212dba573f041fe96",
+    "raw_sha256": "eb2bdcd468c8fff7aca4f73f304987eea176ca67889c989a5fc268769e4d1d4d",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000623/000110465921016819/tm215842d1_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "eb2bdcd468c8fff7aca4f73f304987eea176ca67889c989a5fc268769e4d1d4d",
+        "text_sha256": "9db1cf6454faec90074562cc0c4b69724ed8880b5bb16360dfad6234c1d5f201",
+        "text_start": 0,
+        "text_end": 8763
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000623/000110465921016819/tm215842d1_ex99-1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99-1",
+        "raw_sha256": "f645ba4fc82891714b1477bcbd04cadb34adbb2688318a3f79d5851962237bda",
+        "text_sha256": "510b76519af499f176c223ccfc8f8c3318439ce849a19eb5980eaf3b4580a288",
+        "text_start": 8765,
+        "text_end": 27099
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2021-02-10",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4232b4c412be6a77d3ee177b.json",
+    "sha256": "3cc3999d34140b294f2e23be0451a33f3df76b9ab6960cf4c3dc650c2ff31280",
+    "bundled_path": "legacy_audit/4232b4c412be6a77d3ee177b.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "3ac69d9a790db9b9a68dc0e3e118edf73be6e3dfb65364aaece06c12998a7490",
+      "llm_inferred_at": "2026-11-18T12:56:45.930242+00:00",
+      "model_duration_seconds": 20.7750855,
+      "prompt_tokens": 3988,
+      "completion_tokens": 994,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment.",
+              "rationale": "The amendment to the credit agreement is part of the financial operations of the company, which is in the financial services industry, and the amendment affects the financial structure of the company, which is part of the financial services industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Schweitzer-Mauduit International, Inc.",
+              "rationale": "The company is directly involved in the financial operations and the amendment to the credit agreement is a direct financial obligation of the company.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "to the Credit Agreement, dated September 25, 2018, by and among Schweitzer-Mauduit International, Inc., SWM Luxembourg, the other loan parties party thereto, the lenders party",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "The amendment to the credit agreement is part of the financial operations of the company, which is in the financial services industry, and the amendment affects the financial structure of the company, which is part of a ",
+              "confidence": 0.85,
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "to the Credit Agreement, dated September 25, 2018, by and among Schweitzer-Mauduit International, Inc., SWM Luxembourg, the other loan parties party thereto, the lenders party",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "The amendment to the credit agreement is part of the financial operations of the company, which is in the financial services industry, and the amendment affects the financial structure of the company, which is part of a ",
+              "confidence": 0.85,
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "to the Credit Agreement, dated September 25, 2018, by and among Schweitzer-Mauduit International, Inc., SWM Luxembourg, the other loan parties party thereto, the lenders party",
+              "industry_name_original": "Banks",
+              "mechanism": "The amendment to the credit agreement is part of the financial operations of the company, which is in the financial services industry, and the amendment affects the financial structure of the company, which is part of a ",
+              "confidence": 0.85,
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "a2bc824585cf5b11e28d4cc3f766c07d9549c8c3abc490775a12e625bfe88424",
+      "llm_inferred_at": "2026-11-18T12:57:03.458320+00:00",
+      "model_duration_seconds": 17.5054561,
+      "prompt_tokens": 4032,
+      "completion_tokens": 905,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Schweitzer-Mauduit International, Inc.",
+              "rationale": "The company is directly involved in the credit agreement amendment and the acquisition of Scapa Group Plc.",
+              "confidence": 1.0
+            },
+            {
+              "scope": "industry",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment.",
+              "rationale": "The amendment to the credit agreement and the acquisition of Scapa Group Plc are part of the financial services industry.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "amended by the First Amendment, the “Amended Credit Agreement”), by and among the Company, certain of its subsidiaries and the lenders party thereto, to, among other things, add a",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "The amendment to the credit agreement and the acquisition of Scapa Group Plc are part of the financial services industry.",
+              "confidence": 0.85,
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "amended by the First Amendment, the “Amended Credit Agreement”), by and among the Company, certain of its subsidiaries and the lenders party thereto, to, among other things, add a",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "The amendment to the credit agreement and the acquisition of Scapa Group Plc are part of the financial services industry.",
+              "confidence": 0.85,
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "amended by the First Amendment, the “Amended Credit Agreement”), by and among the Company, certain of its subsidiaries and the lenders party thereto, to, among other things, add a",
+              "industry_name_original": "Banks",
+              "mechanism": "The amendment to the credit agreement and the acquisition of Scapa Group Plc are part of the financial services industry.",
+              "confidence": 0.85,
+              "quote": "The Company will pay certain customary fees and expenses as described in the First Amendment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "e92542652b5c934c4e50303ca52162401e38ad83a5450e2ac427ab1dd93e0d56",
+      "llm_inferred_at": "2026-11-18T12:57:14.975258+00:00",
+      "model_duration_seconds": 11.4919819,
+      "prompt_tokens": 3777,
+      "completion_tokens": 527,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor.",
+              "rationale": "The article explicitly lists the industries and end markets served by SWM, indicating a sector-wide impact on these industries.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "SWM and its subsidiaries manufacture on four continents, conduct business in over 80 countries and employ approximately 3,600 people worldwide.",
+              "rationale": "The article provides specific details about SWM's operations and business activities, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "Our highly engineered films, nets, nonwovens and papers are designed and manufactured using resins, polymers, and natural fibers for a variety of industries and applications."
+            },
+            {
+              "industry_key": "TRSR:e6342b6ec276df75",
+              "name": "Auto Parts:O.E.M.",
+              "basis": "explicit",
+              "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor."
+            },
+            {
+              "industry_key": "TRSR:2510232a8915045a",
+              "name": "Fluid Controls",
+              "basis": "explicit",
+              "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "70c0a6e674d2428ad94b99f963a88bf9bbc3c5456e1edd22b1e30f370dc4075a",
+      "llm_inferred_at": "2026-11-18T12:57:24.690727+00:00",
+      "model_duration_seconds": 9.6982416,
+      "prompt_tokens": 3821,
+      "completion_tokens": 506,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SWM and its subsidiaries manufacture on four continents, conduct business in over 80 countries and employ approximately 3,600 people worldwide.",
+              "rationale": "The quote directly describes SWM's operations and scale, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor.",
+              "rationale": "The quote identifies the industries served by SWM, indicating an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:35045eff549e30b5",
+              "name": "Paper",
+              "basis": "explicit",
+              "quote": "Our highly engineered films, nets, nonwovens and papers are designed and manufactured using resins, polymers, and natural fibers for a variety of industries and applications."
+            },
+            {
+              "industry_key": "TRSR:ff739ad43aef50c1",
+              "name": "Transportation Services",
+              "basis": "explicit",
+              "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor."
+            },
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "05807891a08649449e1b32ebf125279ccc0a7b3acf6b7599b895f727c69badb7",
+      "llm_inferred_at": "2026-11-18T12:57:46.834316+00:00",
+      "model_duration_seconds": 22.1193873,
+      "prompt_tokens": 3474,
+      "completion_tokens": 1081,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company has provided a reconciliation of its estimated Adjusted EBITDA to estimated GAAP operating profit, but has not provided a reconciliation to estimated GAAP net income,",
+              "rationale": "The text discusses the Company's financial measures and their reconciliation to GAAP, which is relevant to the financial industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "the impact thereof on our Chinese joint ventures); • New reports as to the effect of smoking on human health or the environment; • Changes in general economic, financial and",
+              "rationale": "The text discusses changes in general economic conditions, which can affect the broader US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "in the oil, gas, automotive, construction and infrastructure, and mining sectors impacting key AMS segment customers; • Increases in operating costs due to inflation or otherwise, such as labor expense, compensation and benefits costs; • Employee retention and labor shortages; • Changes in employment, wage and hour laws and regulations in the U.S.,",
+              "rationale": "The text discusses changes in economic conditions and sectors that affect the broader US equity market.",
+              "confidence": 0.9
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "inferred",
+              "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products."
+            },
+            {
+              "industry_key": "SEC-SIC:2111",
+              "name": "CIGARETTES",
+              "basis": "inferred",
+              "quote": "The Company has provided a reconciliation of its estimated Adjusted EBITDA to estimated GAAP operating profit, but has not provided a reconciliation to estimated GAAP net income,"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "inferred",
+              "quote": "The Company has provided a reconciliation of its estimated Adjusted EBITDA to estimated GAAP operating profit, but has not provided a reconciliation to estimated GAAP net income,"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "and the Company's understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition in our commercial segments. We operate in",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "The text discusses the Company's entry into new industries and technologies, which can impact the tobacco industry.",
+              "confidence": 0.85,
+              "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products."
+            },
+            {
+              "industry_key": "SEC-SIC:2111",
+              "industry_scope_quote": "and the Company's understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition in our commercial segments. We operate in",
+              "industry_name_original": "CIGARETTES",
+              "mechanism": "The text discusses the Company's entry into new industries and technologies, which can impact the cigarette industry.",
+              "confidence": 0.85,
+              "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "and the Company's understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition in our commercial segments. We operate in",
+              "industry_name_original": "Financials",
+              "mechanism": "The text discusses the Company's financial measures and their reconciliation to GAAP, which is relevant to the financial industry.",
+              "confidence": 0.85,
+              "quote": "The Company has provided a reconciliation of its estimated Adjusted EBITDA to estimated GAAP operating profit, but has not provided a reconciliation to estimated GAAP net income,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "dda376deac809beab0c489efd66ac2eb3e72cf97901f6de5bfc85b13f39f938f",
+      "llm_inferred_at": "2026-11-18T12:58:06.360158+00:00",
+      "model_duration_seconds": 19.4988827,
+      "prompt_tokens": 3518,
+      "completion_tokens": 1020,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry",
+            "market"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The Company has provided a reconciliation of its estimated Adjusted EBITDA to estimated GAAP operating profit, but has not provided a reconciliation to estimated GAAP net income,",
+              "rationale": "The quote indicates the company's financial reporting practices, which are relevant to the industry's financial transparency and reporting standards.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "market",
+              "quote": "the impact thereof on our Chinese joint ventures); • New reports as to the effect of smoking on human health or the environment; • Changes in general economic, financial and",
+              "rationale": "The quote refers to changes in general economic conditions and their impact on the company's operations, which are relevant to the broader market.",
+              "confidence": 0.8
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "in the oil, gas, automotive, construction and infrastructure, and mining sectors impacting key AMS segment customers; • Increases in operating costs due to inflation or otherwise, such as labor expense, compensation and benefits costs; • Employee retention and labor shortages; • Changes in employment, wage and hour laws and regulations in the U.S.,",
+              "rationale": "The quote discusses changes in economic conditions and labor laws in the U.S., which are relevant to the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "name": "TOBACCO PRODUCTS",
+              "basis": "explicit",
+              "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products."
+            },
+            {
+              "industry_key": "SEC-SIC:2111",
+              "name": "CIGARETTES",
+              "basis": "explicit",
+              "quote": "The Company has provided a reconciliation of its estimated Adjusted EBITDA to estimated GAAP operating profit, but has not provided a reconciliation to estimated GAAP net income,"
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "the impact thereof on our Chinese joint ventures); • New reports as to the effect of smoking on human health or the environment; • Changes in general economic, financial and"
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:2100",
+              "industry_scope_quote": "and the Company's understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition in our commercial segments. We operate in",
+              "industry_name_original": "TOBACCO PRODUCTS",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products."
+            },
+            {
+              "industry_key": "SEC-SIC:2111",
+              "industry_scope_quote": "and the Company's understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition in our commercial segments. We operate in",
+              "industry_name_original": "CIGARETTES",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "and the Company's understanding of, and entry into, new industries and technologies; • Changes in the source and intensity of competition in our commercial segments. We operate in",
+              "industry_name_original": "Financials",
+              "mechanism": "Conditional economic transmission",
+              "confidence": 0.85,
+              "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "d693331db9b9938d1e060dec8362389b06b1962a5ea9087315b677135f99dd57",
+      "llm_inferred_at": "2026-11-18T12:58:16.737497+00:00",
+      "model_duration_seconds": 10.3607388,
+      "prompt_tokens": 2039,
+      "completion_tokens": 537,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "non-GAAP financial measures used in this release may be different from the measures used by other companies. For further information, please contact: Andrew Wamser Chief Financial",
+              "rationale": "The text discusses non-GAAP financial measures and their differences from measures used by other companies, indicating an industry-wide impact on financial reporting standards.",
+              "confidence": 0.85
+            },
+            {
+              "scope": "company",
+              "quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition.",
+              "rationale": "The text is directly related to the company's financial reporting and its impact on investors' understanding of its performance.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "inferred",
+              "quote": "non-GAAP financial measures used in this release may be different from the measures used by other companies. For further information, please contact: Andrew Wamser Chief Financial"
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "inferred",
+              "quote": "non-GAAP financial measures used in this release may be different from the measures used by other companies. For further information, please contact: Andrew Wamser Chief Financial"
+            },
+            {
+              "industry_key": "TRSR:bf4cb0f1ea50584f",
+              "name": "Integrated oil Companies",
+              "basis": "inferred",
+              "quote": "non-GAAP financial measures used in this release may be different from the measures used by other companies. For further information, please contact: Andrew Wamser Chief Financial"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "c06b00522fca2e9270bfaa34b8a88e9667dcca1ae5c35d1105cdfa02d8951120",
+      "llm_inferred_at": "2026-11-18T12:58:22.103980+00:00",
+      "model_duration_seconds": 5.3603741,
+      "prompt_tokens": 2083,
+      "completion_tokens": 296,
+      "selection": [
+        {
+          "source_id": "4232b4c412be6a77d3ee177b",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition."
+            },
+            {
+              "industry_key": "TRSR:b77d150d2b7cc6d3",
+              "name": "Finance/Investors Services",
+              "basis": "explicit",
+              "quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:58:22.148775+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "20b087e67bd177bcaf07433f2e07569dc501c9a585f01cd212dba573f041fe96",
+    "raw_sha256": "eb2bdcd468c8fff7aca4f73f304987eea176ca67889c989a5fc268769e4d1d4d",
+    "date_quote": "SEC filing datePublished=2021-02-10",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000623/000110465921016819/tm215842d1_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:35045eff549e30b5",
+        "name": "Paper",
+        "basis": "explicit",
+        "quote": "Our highly engineered films, nets, nonwovens and papers are designed and manufactured using resins, polymers, and natural fibers for a variety of industries and applications.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "35045eff549e30b5",
+        "industry_name_standard": "Paper",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Our highly engineered films, nets, nonwovens and papers are designed and manufactured using resins, polymers, and natural fibers for a variety of industries and applications.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:ff739ad43aef50c1",
+        "name": "Transportation Services",
+        "basis": "inferred",
+        "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "ff739ad43aef50c1",
+        "industry_name_standard": "Transportation Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:2100",
+        "name": "TOBACCO PRODUCTS",
+        "basis": "inferred",
+        "quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2100",
+        "industry_name_standard": "TOBACCO PRODUCTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "End markets served include filtration, transportation, infrastructure and construction, medical, industrial, tobacco, energy, food services and home décor.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:2100",
+        "name": "TOBACCO PRODUCTS",
+        "basis": "inferred",
+        "quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2100",
+        "industry_name_standard": "TOBACCO PRODUCTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We operate in highly competitive markets in which alternative supplies and technologies may attract our customers away from our products.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "name": "Financials",
+        "basis": "inferred",
+        "quote": "the impact thereof on our Chinese joint ventures); • New reports as to the effect of smoking on human health or the environment; • Changes in general economic, financial and",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the impact thereof on our Chinese joint ventures); • New reports as to the effect of smoking on human health or the environment; • Changes in general economic, financial and",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:7d8172e8794ecf56",
+        "name": "Diversified Financial Services",
+        "basis": "inferred",
+        "quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7d8172e8794ecf56",
+        "industry_name_standard": "Diversified Financial Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:b77d150d2b7cc6d3",
+        "name": "Finance/Investors Services",
+        "basis": "inferred",
+        "quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "b77d150d2b7cc6d3",
+        "industry_name_standard": "Finance/Investors Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Management believes that providing this information enables investors to better understand the Company’s operating performance and financial condition.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "4232b4c412be6a77d3ee177b",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2021_02_10_Corporate-Finance_Textiles-and-Apparel_sec.json",
+        "sha256": "dd1646429332bbb19f58b4099dd1234a364a45519d75504deb6718b533f5637f",
+        "filename": "2021_02_10_Corporate-Finance_Textiles-and-Apparel_sec.json"
+      }
+    ],
+    "original_record_hash": "49ea4ff3483e0dbd9d149fc2cc8d64bed0b388a74ee5bb3e1a3ccb99095d84f9",
+    "input_hash": "c2fc2c17c958f90bc9f911be6cf77da6f8d44b7f8a4f1198141013204e2c1e8c",
+    "matching_audit_hash": "c3b01fb731289665c145a2ebdbaf011fb9260c389a15fcb000e29d28bff6e5e3",
+    "legacy_security_evidence": [
+      {
+        "name": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SCHWEITZER-MAUDUIT INTERNATIONAL, INC."
+      }
+    ],
+    "record_hash": "bab50ade3eb63265868e85c2ac99591f9064a311d08489cd6532189d7a3c3a97",
+    "outputs": [
+      {
+        "path": "US\\2021_02_10_Corporate-Finance_Textiles-and-Apparel_sec.json",
+        "sha256": "9eb6526c1e2030a61af99de04ea29f25e3c1e3aaef2ec26a6a2636eccdc70542"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2021-02-10",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:28.584595+00:00",
+      "fetched_at": "2026-11-11T15:55:38.935318+00:00",
+      "feature_available_at": "2026-11-11T15:56:48.605799+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:58:22.103980+00:00",
+    "feature_available_at": "2026-11-18T12:58:22.148775+00:00",
+    "commit_verified_at": "2026-11-12T13:53:36.215112+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [
+      "US_EQUITY"
+    ],
+    "scope_evidence": [
+      {
+        "scope": "US_EQUITY",
+        "evidence_quote": "in the oil, gas, automotive, construction and infrastructure, and mining sectors impacting key AMS segment customers; • Increases in operating costs due to inflation or otherwise, such as labor expense, compensation and benefits costs; • Employee retention and labor shortages; • Changes in employment, wage and hour laws and regulations in the U.S.,",
+        "rationale": "The quote discusses changes in economic conditions and labor laws in the U.S., which are relevant to the US equity market.",
+        "confidence": 0.8,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "in the oil, gas, automotive, construction and infrastructure, and mining sectors impacting key AMS segment customers; • Increases in operating costs due to inflation or otherwise, such as labor expense, compensation and benefits costs; • Employee retention and labor shortages; • Changes in employment, wage and hour laws and regulations in the U.S.,",
+        "summary_evidence_quote": null,
+        "scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "confidence_interpretation": "uncalibrated_model_self_assessment"
+      }
+    ],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Schweitzer-Mauduit International, Inc.",
+        "rationale": "The company is directly involved in the credit agreement amendment and the acquisition of Scapa Group Plc.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Schweitzer-Mauduit International, Inc.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "SWM and its subsidiaries manufacture on four continents, conduct business in over 80 countries and employ approximately 3,600 people worldwide.",
+        "rationale": "The quote directly describes SWM's operations and scale, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SWM and its subsidiaries manufacture on four continents, conduct business in over 80 countries and employ approximately 3,600 people worldwide.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "market",
+        "quote": "the impact thereof on our Chinese joint ventures); • New reports as to the effect of smoking on human health or the environment; • Changes in general economic, financial and",
+        "rationale": "The quote refers to changes in general economic conditions and their impact on the company's operations, which are relevant to the broader market.",
+        "confidence": 0.8,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "the impact thereof on our Chinese joint ventures); • New reports as to the effect of smoking on human health or the environment; • Changes in general economic, financial and",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000623/0001104659-21-016819-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "bab50ade3eb63265868e85c2ac99591f9064a311d08489cd6532189d7a3c3a97",
+    "content_hash": "90e24ecac757887157302e1607b1bd2b84b38ef2b300681476766f1d5c7d6932",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:58:22.105600+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4232b4c412be6a77d3ee177b.json",
+      "sha256": "733619ad758ce6070f1f6faebbe16d73b9d2c82efeff0dd802dc626aedd37068",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 130.34299999999348
+}

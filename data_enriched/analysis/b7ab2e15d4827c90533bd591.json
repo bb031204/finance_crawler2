@@ -1,0 +1,97 @@
+{
+  "source_id": "b7ab2e15d4827c90533bd591",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_13_dividend_shipping_sec.json",
+      "sha256": "4e6c4a22fb1153a21b57029115bc9d4fdf556660004a48667b5e4797b66acaeb",
+      "filename": "2016_01_13_dividend_shipping_sec.json"
+    }
+  ],
+  "original_record_hash": "db55bb80d2a796459dca3956e354e6c905e07f846a9770d9abc579e738e44832",
+  "input_hash": "4e546e62c137176e400af5df1866d20ba583767356ab83bc9a1886a617f603dd",
+  "matching_audit_hash": "2da303c0c210337bcdbd071230a36aad09466e895e9fcd624e2ed49d6e59ef33",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9d6e3348c99dea1d635882c83d6b59f25c0d05645959dc6400a79fd78d1c6996",
+    "raw_sha256": "fa5f219d4182ae72e1658c4d76895758bb54f056ef55eafcc5d4f8b92702f7ed",
+    "date_quote": "SEC filing datePublished=2016-01-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000177/000091957416009202/d6998218_6-k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Nordic American Tankers Limited",
+      "ticker": "NAT",
+      "exchange": null,
+      "quote": "Nordic American Tankers Limited (NYSE:NAT) – Declaration of Dividend for the 74th consecutive quarter in a strong tanker market for NAT."
+    }
+  ],
+  "record_hash": "3430d6453bfa5a62ecd701836134c7904393d084dd43aa7190d4db722bca9613",
+  "outputs": [
+    {
+      "path": "US\\2016_01_13_dividend_shipping_sec.json",
+      "sha256": "13d65d65b866f6c57de6e6d70e6b79caa89f48a0eb871abe40ef6c05f8fb1b74"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.846742+00:00",
+    "fetched_at": "2026-11-11T00:50:33.167208+00:00",
+    "feature_available_at": "2026-11-11T10:52:32.928379+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:02.799026+00:00",
+  "commit_verified_at": "2026-11-12T13:53:02.799026+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nordic American Tankers Limited",
+        "ticker": "NAT",
+        "exchange": null,
+        "quote": "Nordic American Tankers Limited (NYSE:NAT) – Declaration of Dividend for the 74th consecutive quarter in a strong tanker market for NAT."
+      }
+    ],
+    "industries": [
+      {
+        "name": "shipping",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

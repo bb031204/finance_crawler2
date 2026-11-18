@@ -1,0 +1,127 @@
+{
+  "source_id": "2fee26e45454d8519105abfe",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_07_24_Economic_Finance_bea.json",
+      "sha256": "9bb44bb2869ce78bb92d8ec0fb8972b2c0d03e2c5d087cdea01f0ef11afd463a",
+      "filename": "2019_07_24_Economic_Finance_bea.json"
+    }
+  ],
+  "original_record_hash": "29f6fc30ad705b12816c9629868f349a4094af3db2e38de0208c79abb40fcbda",
+  "input_hash": "01dcacba02ba0fb21fecfaebcd6694465b9b7a70864715f994cfc2b861205115",
+  "matching_audit_hash": "660c1ba9acd81b4fa4d3d945ac3a3fc377e38c416e9705454c3aefbfe8373217",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "12d86b967b118f66ba09559c4cf87bd5a1cdb03e30128f187b8fe8886f446df3",
+    "raw_sha256": "967d5ab361d311ad57fe5ddadefb0e5c3884502825bcd8cf10dc603d738cf66b",
+    "date_quote": "EMBARGOED UNTIL RELEASE AT 8:30 A.M. EDT, WEDNESDAY, JULY 24, 2019",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "b973a7dec350501dd565ccfda6ea6a3c5e6a2c2ed155b8c56e8b1a460b9322c7",
+  "outputs": [
+    {
+      "path": "US\\2019_07_24_Economic_Finance_bea.json",
+      "sha256": "035a2e532f0d888b3081311650b855188b5aee0bd1e7a2a563cc1b002f5a8480"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-07-24",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:28:22.408616+00:00",
+    "fetched_at": "2026-11-11T03:51:59.088912+00:00",
+    "feature_available_at": "2026-11-11T03:53:41.342977+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:50:03.764870+00:00",
+  "feature_available_at": "2026-11-12T14:50:03.776027+00:00",
+  "commit_verified_at": "2026-11-12T14:50:03.776027+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses changes in U.S. direct investment abroad and foreign direct investment in the U.S., including industry-specific impacts and the role of U.",
+    "securities": [
+      {
+        "name": "Bureau of Economic Analysis (BEA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bureau of Economic Analysis (BEA)"
+      },
+      {
+        "name": "U.S. multinationals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. multinationals"
+      },
+      {
+        "name": "United Kingdom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Kingdom"
+      },
+      {
+        "name": "Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Canada"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Manufacturing",
+        "basis": "explicit",
+        "quote": "manufacturing"
+      },
+      {
+        "name": "Finance and Insurance",
+        "basis": "explicit",
+        "quote": "finance and insurance"
+      },
+      {
+        "name": "Retail Trade",
+        "basis": "explicit",
+        "quote": "retail trade"
+      },
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "real estate"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Bureau of Economic Analysis (BEA)": "organization",
+      "U.S. multinationals": "organization",
+      "United Kingdom": "organization",
+      "Canada": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "source_id": "4732bdb9b5171e96b44460c1",
+  "status": "completed",
+  "source_record_hash": "b02d842059255d40b2c20bb235a507bea702970ed5cd5c00de8e0790f5ed8dac",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001082/0001104659-14-012032-index.html",
+    "attempted_at": "2026-11-18T13:28:00.425225+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001082/0001104659-14-012032-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465914012032/a14-6476_18k.htm",
+    "fetched_at": "2026-11-18T13:28:18.617259+00:00",
+    "source_body_hash": "03ba2eb289bbbd8a5bbfa0baafdafa98e05cc1107f4eb1239f15c5851abee612",
+    "raw_sha256": "cafdb8de910428d7f7b717f5c02d24dc0950b8a2f7444ac0236e7d8d85be8041",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465914012032/a14-6476_18k.htm",
+        "type": "8-K",
+        "description": "8-K",
+        "raw_sha256": "cafdb8de910428d7f7b717f5c02d24dc0950b8a2f7444ac0236e7d8d85be8041",
+        "text_sha256": "fdfa7ccfa2b2e1c4c5179c5c9be9cc3820bf245aa64dd15eefc5e710760d951c",
+        "text_start": 0,
+        "text_end": 3281
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465914012032/a14-6476_1ex99d1.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "ecc1a8207278fc31d21893c1e4e45eff7e877d95c0c7f31b5a24dd6a903302e3",
+        "text_sha256": "ee3dd0f8a74d0317be73289911c894ebee4660e9977fa384018edcf062d7004d",
+        "text_start": 3283,
+        "text_end": 6445
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465914012032/a14-6476_1ex99d2.htm",
+        "type": "EX-99.2",
+        "description": "EX-99.2",
+        "raw_sha256": "18316f1b7214f31bb77fc11bb8c9579392e657ce2f79df4ee39913b00f28bc32",
+        "text_sha256": "17e932cf54d7c35b1cf4bcb0284f12eb4159eda5145d4db1d8d0b4123eb1213b",
+        "text_start": 6447,
+        "text_end": 18111
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2014-02-21",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/4732bdb9b5171e96b44460c1.json",
+    "sha256": "8f68312f8b0b487efd27b03af86a9f26e0f0436cd4440fb2064acc147d91eff0",
+    "bundled_path": "legacy_audit/4732bdb9b5171e96b44460c1.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "6022037ef0c77c19c333c88e9372760265d01756b46f4669a54b232403cab41f",
+      "llm_inferred_at": "2026-11-18T13:28:27.132350+00:00",
+      "model_duration_seconds": 8.4781244,
+      "prompt_tokens": 3747,
+      "completion_tokens": 338,
+      "selection": [
+        {
+          "source_id": "4732bdb9b5171e96b44460c1",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article identifies DISH Network Corporation as a Fortune 200 company, which is a recognized industry classification for large corporations in the communication services sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article directly refers to DISH Network Corporation as a Fortune 200 company, indicating its status as a major player in its industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "DISH Network Corporation is a Fortune 200 company."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "29a7b47e48e8b5e78a70bb7a74d20ce9482aae951871b8a3c67289a345441284",
+      "llm_inferred_at": "2026-11-18T13:28:33.538293+00:00",
+      "model_duration_seconds": 6.3937201,
+      "prompt_tokens": 3791,
+      "completion_tokens": 323,
+      "selection": [
+        {
+          "source_id": "4732bdb9b5171e96b44460c1",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article identifies DISH Network Corporation as a Fortune 200 company, which is a recognized industry-level designation.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article directly refers to DISH Network Corporation as a Fortune 200 company, indicating a company-level impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "DISH Network Corporation is a Fortune 200 company."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "ee930fcd8450819728d5ca563455e0528ba23805097d60831bace0f846a16dbe",
+      "llm_inferred_at": "2026-11-18T13:28:44.143253+00:00",
+      "model_duration_seconds": 10.5818295,
+      "prompt_tokens": 4154,
+      "completion_tokens": 465,
+      "selection": [
+        {
+          "source_id": "4732bdb9b5171e96b44460c1",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article mentions DISH Network Corporation as a Fortune 200 company, which is a large and influential company in the consumer discretionary sector, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article directly mentions DISH Network Corporation as a Fortune 200 company, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "DISH Network Corporation is a Fortune 200 company."
+            },
+            {
+              "industry_key": "SEC-SIC:5731",
+              "name": "RETAIL-RADIO, TV & CONSUMER ELECTRONICS STORES",
+              "basis": "explicit",
+              "quote": "DISH Network Corporation is a Fortune 200 company."
+            },
+            {
+              "industry_key": "TRSR:7555736bd02b64df",
+              "name": "Computer Software: Programming, Data Processing",
+              "basis": "explicit",
+              "quote": "DISH Network Corporation is a Fortune 200 company."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "307d22ae5f8e4418bdb83a58bce800718c352bab6d8eee2a2669084127d19ba5",
+      "llm_inferred_at": "2026-11-18T13:28:50.863885+00:00",
+      "model_duration_seconds": 6.7024057,
+      "prompt_tokens": 4198,
+      "completion_tokens": 335,
+      "selection": [
+        {
+          "source_id": "4732bdb9b5171e96b44460c1",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article mentions DISH Network Corporation as a Fortune 200 company, which is a recognized industry classification for companies in the consumer discretionary sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "DISH Network Corporation is a Fortune 200 company.",
+              "rationale": "The article directly refers to DISH Network Corporation as a Fortune 200 company, indicating its status as a company within the consumer discretionary sector.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:c2ef8c5fb4379b89",
+              "name": "Consumer Discretionary",
+              "basis": "explicit",
+              "quote": "DISH Network Corporation is a Fortune 200 company."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "543c65e1e71b3ebfa860cd43a40f77d279b036813c1efbf540d0840b8cf3521e",
+      "llm_inferred_at": "2026-11-18T13:28:59.696640+00:00",
+      "model_duration_seconds": 8.8160622,
+      "prompt_tokens": 2641,
+      "completion_tokens": 416,
+      "selection": [
+        {
+          "source_id": "4732bdb9b5171e96b44460c1",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Included in Subscriber-related expenses was $143 million and $51 million of expense related to our broadband services for the years ended December 31, 2013 and 2012, respectively.",
+              "rationale": "The article discusses expenses related to broadband services, which is a key part of the cable and pay television services industry. This indicates an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Net Income Net income (loss) attributable to DISH Network for the years ended December 31, 2013 and 2012 was $807 million and $637 million, respectively.",
+              "rationale": "The article specifically mentions DISH Network's net income, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4841",
+              "name": "CABLE & OTHER PAY TELEVISION SERVICES",
+              "basis": "explicit",
+              "quote": "Included in Subscriber-related expenses was $143 million and $51 million of expense related to our broadband services for the years ended December 31, 2013 and 2012, respectively."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "8817c50e0ca5db31bdb737dbb92c5bc839de398addc41db1df7c8c340d147ba0",
+      "llm_inferred_at": "2026-11-18T13:29:07.587258+00:00",
+      "model_duration_seconds": 7.8763253,
+      "prompt_tokens": 2685,
+      "completion_tokens": 414,
+      "selection": [
+        {
+          "source_id": "4732bdb9b5171e96b44460c1",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Included in Subscriber-related expenses was $143 million and $51 million of expense related to our broadband services for the years ended December 31, 2013 and 2012, respectively.",
+              "rationale": "The article discusses expenses related to broadband services, which is a sector within the broader telecommunications and media industry. This indicates an industry-wide impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Net Income Net income (loss) attributable to DISH Network for the years ended December 31, 2013 and 2012 was $807 million and $637 million, respectively.",
+              "rationale": "The article specifically mentions DISH Network's net income, which is a company-specific financial result.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4841",
+              "name": "CABLE & OTHER PAY TELEVISION SERVICES",
+              "basis": "explicit",
+              "quote": "Included in Subscriber-related expenses was $143 million and $51 million of expense related to our broadband services for the years ended December 31, 2013 and 2012, respectively."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:29:07.625259+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "03ba2eb289bbbd8a5bbfa0baafdafa98e05cc1107f4eb1239f15c5851abee612",
+    "raw_sha256": "cafdb8de910428d7f7b717f5c02d24dc0950b8a2f7444ac0236e7d8d85be8041",
+    "date_quote": "SEC filing datePublished=2014-02-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465914012032/a14-6476_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": true,
+    "reason": "The text contains financial results and filings related to DISH Network Corporation, indicating substantive information about the company's financial reporting.",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      },
+      {
+        "name": "DISH DBS Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH DBS Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "DISH Network Corporation": "company",
+      "DISH DBS Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "4732bdb9b5171e96b44460c1",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_02_21_Financial-Results_Telecommunications_sec.json",
+        "sha256": "11508c861411af6f815513d34dd8be4b0cf320076198e62f7867035bccfd1ae5",
+        "filename": "2014_02_21_Financial-Results_Telecommunications_sec.json"
+      }
+    ],
+    "original_record_hash": "372b5c5c487474168f5028f70435a9fd63a13dd44b73a1847e5af72625141c49",
+    "input_hash": "7796dbda32ae3827725d76e50872a332b9ec96bbcebbb385a2d618ff2ae6f58d",
+    "matching_audit_hash": "90137fb975681a4499141990f25ccdc26eeff1903143f28898face63724efec5",
+    "legacy_security_evidence": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      },
+      {
+        "name": "DISH DBS Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH DBS Corporation"
+      }
+    ],
+    "record_hash": "b02d842059255d40b2c20bb235a507bea702970ed5cd5c00de8e0790f5ed8dac",
+    "outputs": [
+      {
+        "path": "US\\2014_02_21_Financial-Results_Telecommunications_sec.json",
+        "sha256": "eb300f3c7b4f528158986eca1fc143c85317d5ec527ca83b738c9adedb19526f"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2014-02-21",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.919592+00:00",
+      "fetched_at": "2026-11-11T00:03:27.900123+00:00",
+      "feature_available_at": "2026-11-11T10:14:52.123630+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T13:29:07.587258+00:00",
+    "feature_available_at": "2026-11-18T13:29:07.625259+00:00",
+    "commit_verified_at": "2026-11-12T14:12:25.044148+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "industry_unknown",
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "DISH Network Corporation is a Fortune 200 company.",
+        "rationale": "The article directly refers to DISH Network Corporation as a Fortune 200 company, indicating a company-level impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "DISH Network Corporation is a Fortune 200 company.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "DISH Network Corporation is a Fortune 200 company.",
+        "rationale": "The article directly refers to DISH Network Corporation as a Fortune 200 company, indicating its status as a company within the consumer discretionary sector.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "DISH Network Corporation is a Fortune 200 company.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Net Income Net income (loss) attributable to DISH Network for the years ended December 31, 2013 and 2012 was $807 million and $637 million, respectively.",
+        "rationale": "The article specifically mentions DISH Network's net income, which is a company-specific financial result.",
+        "confidence": 1.0,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Net Income Net income (loss) attributable to DISH Network for the years ended December 31, 2013 and 2012 was $807 million and $637 million, respectively.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001082/0001104659-14-012032-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "b02d842059255d40b2c20bb235a507bea702970ed5cd5c00de8e0790f5ed8dac",
+    "content_hash": "57d616b869f7151b50702d42ae59d276c2d1c101464979f83d5f816173ad6b1d",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:29:07.592587+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/4732bdb9b5171e96b44460c1.json",
+      "sha256": "1a652d97149d202f00bfc1d467932476b9f16a7d071ff2c5bf8e3a64b7e0fe6d",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 67.21900000001187
+}

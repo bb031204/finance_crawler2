@@ -1,0 +1,188 @@
+{
+  "source_id": "11adb1b912bf635e3b3ad620",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_01_09_Delisting-Risk_Financial-Services_sec.json",
+      "sha256": "71c4199c917851266819e1210a56f158081e68123331ddc394312d6acda9202c",
+      "filename": "2013_01_09_Delisting-Risk_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "3bd749be87927932854dccd7fc0e4957f4346c5aef5ce96c51f88d3a8028364b",
+  "input_hash": "f437acbba2ff383eb0671e3c7274296764c50752646947d461c3eb75f750b704",
+  "matching_audit_hash": "3ce2b0b430102921bdd2eb276bec96f31d5add4c92efee053b9cccb0d6046de6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "30c13a67b8a7111ae5026ceaf0abe323201756c7792781f1bc32f42deebc9dd3",
+    "raw_sha256": "e58ac0acec8461793ba7f7dbd8c92ede571ecade6cf8fb05f8f4a26e1c2d8b63",
+    "date_quote": "SEC filing datePublished=2013-01-09",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000119312513007971/d464791d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Broadway Financial Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Broadway Financial Corporation"
+    }
+  ],
+  "record_hash": "827cae3edf1750dde5ee850006adc2047a3bae9cd117eeae8bdc17b99ab4a265",
+  "outputs": [
+    {
+      "path": "US\\2013_01_09_Delisting-Risk_Financial-Services_sec.json",
+      "sha256": "b2d317ada5c0cc8a231e251a6ce821207dc9ff9bd4a1d8b42507c14982204b12"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-01-09",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+    "fetched_at": "2026-11-10T23:38:22.930703+00:00",
+    "feature_available_at": "2026-11-11T09:59:59.402427+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:00:26.513962+00:00",
+  "feature_available_at": "2026-11-12T15:16:34.545870+00:00",
+  "commit_verified_at": "2026-11-12T15:16:34.545870+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Nasdaq delisting risk due to stock price below $1.00",
+    "securities": [
+      {
+        "name": "Broadway Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Financial Corporation"
+      },
+      {
+        "name": "Nasdaq",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nasdaq"
+      },
+      {
+        "name": "The Nasdaq Capital Market",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The Nasdaq Capital Market"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Broadway Financial Corporation"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Broadway Financial Corporation": "company",
+      "Nasdaq": "organization",
+      "The Nasdaq Capital Market": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:34.572487+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:00:26.513962+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Nasdaq delisting risk due to stock price below $1.00",
+      "securities": [
+        {
+          "name": "Broadway Financial Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Broadway Financial Corporation"
+        },
+        {
+          "name": "Nasdaq",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Nasdaq"
+        },
+        {
+          "name": "The Nasdaq Capital Market",
+          "ticker": null,
+          "exchange": null,
+          "quote": "The Nasdaq Capital Market"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Broadway Financial Corporation"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Broadway Financial Corporation": "company",
+        "Nasdaq": "organization",
+        "The Nasdaq Capital Market": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:00:26.539631+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:00:26.549138+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:00:26.530623+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses delisting risk for Broadway Financial Corporation due to failing to meet Nasdaq's bid price requirement, along with the company's plan for",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:00:42.114867+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

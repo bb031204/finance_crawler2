@@ -1,0 +1,105 @@
+{
+  "source_id": "486a8a624ed725c6b91aea65",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_17_Material-Definitive-Agreement_Financial-Services_sec.json",
+      "sha256": "f4889282b30ee3abae350748b0ff17722d528c4265c7466795b7a561d08b55f6",
+      "filename": "2017_02_17_Material-Definitive-Agreement_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "59f51a65f09df6971c5a63f9df0ffc0f8eb654fac06edb71118c9f5d9408fecc",
+  "input_hash": "a33c5a8a3ecdf5b89af245dfbde9c7ede67dfa6abfce7d7aca1310fa48758df4",
+  "matching_audit_hash": "8dd3653ac64f44963a4fec4f9c4e7ccc0978b7987a30e97d4fb925823577e614",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f5920ee6fff5c8b909ba67dc958469b90292b7170f35d2d17239e49733c6927d",
+    "raw_sha256": "9a199fb1ee2942fe8bf07171954758d4ed409278761aa45efe9485972524c731",
+    "date_quote": "SEC filing datePublished=2017-02-17",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312517047422/d341235d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    }
+  ],
+  "record_hash": "5a969b22a64eb9b13411893a9378f7585fe249da16952df7e97ba7c4869900d9",
+  "outputs": [
+    {
+      "path": "US\\2017_02_17_Material-Definitive-Agreement_Financial-Services_sec.json",
+      "sha256": "7fbd21710227e41ce7cb0eebb1bd474395612111566d2142589db16bd1b25db4"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+    "fetched_at": "2026-11-11T11:58:24.653216+00:00",
+    "feature_available_at": "2026-11-11T11:58:32.894059+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:07.778935+00:00",
+  "feature_available_at": "2026-11-12T14:39:07.824231+00:00",
+  "commit_verified_at": "2026-11-12T14:39:07.824231+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The amendment to the loan agreement may affect the Trust’s operational flexibility and financial structure within the broader financial services industry.",
+    "securities": [
+      {
+        "name": "Taxi Medallion Loan Trust III",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Taxi Medallion Loan Trust III"
+      },
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services industry",
+        "basis": "explicit",
+        "quote": "broader financial services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Taxi Medallion Loan Trust III": "company",
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

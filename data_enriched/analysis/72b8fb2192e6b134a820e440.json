@@ -1,0 +1,195 @@
+{
+  "source_id": "72b8fb2192e6b134a820e440",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_01_22_Energy_Renewables_bloomberg.json",
+      "sha256": "e8462eb074166c19df9f8d40690208ef96c019dee48f86deb60d757d3cd53cab",
+      "filename": "2018_01_22_Energy_Renewables_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "08d1212f7c33e8b1d2b2efe99b80fb13183fbf4aa5faad9c26e8704e155031e5",
+  "input_hash": "3613d772ef22b5735a7b46cbb426beee8bcd4c6cf08e7615cf9fee85f5641d67",
+  "matching_audit_hash": "938fe5869e371dda68be253a07263825ffccace4868c8184bb7ffae37d1b3a3d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "f096239d040c4cd9e5dcbfd041f359b3403c1baa91d54171ca532855f6145ab0",
+    "raw_sha256": "94209a40c41b43196ef2925d01b171b6a24419eb9545827d043ca3c16f65a355",
+    "date_quote": "January 22, 2018 at 9:45 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "edb7a7d6a01ea84082af5b62d86b5477fe46ad796d11c3347f7d35bf0bdd7163",
+  "outputs": [
+    {
+      "path": "US\\2018_01_22_Energy_Renewables_bloomberg.json",
+      "sha256": "daa2dcd7b192cc6d0d5d9777e8027ee564d7f9c10b279f1c3f4e51362eea7b9d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-01-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:27.179894+00:00",
+    "fetched_at": "2026-11-10T14:24:34.266415+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.685551+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:08:21.726605+00:00",
+  "feature_available_at": "2026-11-12T15:16:42.543350+00:00",
+  "commit_verified_at": "2026-11-12T15:16:42.543350+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Tariffs impact solar industry costs and global competitiveness",
+    "securities": [
+      {
+        "name": "President Donald Trump",
+        "ticker": null,
+        "exchange": null,
+        "quote": "President Donald Trump"
+      },
+      {
+        "name": "Bloomberg",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bloomberg’s Lynn Doan"
+      }
+    ],
+    "industries": [
+      {
+        "name": "renewable energy",
+        "basis": "explicit",
+        "quote": "renewable energy industry"
+      },
+      {
+        "name": "solar",
+        "basis": "explicit",
+        "quote": "solar equipment"
+      },
+      {
+        "name": "manufacturing",
+        "basis": "inferred",
+        "quote": "domestic manufacturing"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "President Donald Trump": "issuer",
+      "Bloomberg": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "excluded_non_entity_mentions": [
+      "renewable energy industry"
+    ]
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:42.569361+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:08:21.726605+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Tariffs impact solar industry costs and global competitiveness",
+      "securities": [
+        {
+          "name": "President Donald Trump",
+          "ticker": null,
+          "exchange": null,
+          "quote": "President Donald Trump"
+        },
+        {
+          "name": "Bloomberg",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Bloomberg’s Lynn Doan"
+        }
+      ],
+      "industries": [
+        {
+          "name": "renewable energy",
+          "basis": "explicit",
+          "quote": "renewable energy industry"
+        },
+        {
+          "name": "solar",
+          "basis": "explicit",
+          "quote": "solar equipment"
+        },
+        {
+          "name": "manufacturing",
+          "basis": "inferred",
+          "quote": "domestic manufacturing"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "company_scope_basis": "literal_corporate_entity_mention",
+      "entity_types": {
+        "President Donald Trump": "issuer",
+        "Bloomberg": "organization",
+        "renewable energy industry": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:08:21.752858+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:08:21.761196+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:08:21.743865+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses the impact of tariffs on the renewable energy industry, particularly solar, and includes details about the industry's reliance on foreign-",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:42:22.092441+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

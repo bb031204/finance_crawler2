@@ -1,0 +1,126 @@
+{
+  "source_id": "7902cca813465817718b34da",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_05_07_Finance_Pharmaceuticals_cnbc.json",
+      "sha256": "1e6588cd61bfb68ea2ee03ae79598a248d7788da8fa75604ad7abc36609baeaa",
+      "filename": "2019_05_07_Finance_Pharmaceuticals_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d58c68b0687c3e60940c8bfbabb785549bd06180039131fe3f1bf6be9ebbda75",
+  "input_hash": "ae7bd2b84013d67dec49f073235ccfc2b1c63f9fcb2e32df8ad6cbe34c6b0551",
+  "matching_audit_hash": "b3f3ea131fd152e4b035f517e779fbaf22307a7e4675a98f4d830420667c9108",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "261c6e1e9b16077ea525d16e432090ace43a984f951f3ec542eb609d56e755a7",
+    "raw_sha256": "724aea87677f481a702cbd9d60f2d002d7956d1342d0430e64c3422a56283847",
+    "date_quote": "article:published_time=2019-05-07T12:22:25+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Mallinckrodt Pharmaceuticals",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Mallinckrodt Pharmaceuticals generated $790.6 million in revenue for the first quarter of 2019, beating estimates of $767.2 million."
+    },
+    {
+      "name": "Mallinckrodt",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Mallinckrodt"
+    },
+    {
+      "name": "Questcor Pharmaceuticals",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Questcor Pharmaceuticals"
+    }
+  ],
+  "record_hash": "c12f2a3fe734bf6977af19aa3a3354b9eed8c26008538fe1537c3dc99f2920e2",
+  "outputs": [
+    {
+      "path": "US\\2019_05_07_Finance_Pharmaceuticals_cnbc.json",
+      "sha256": "f17fd34e31b8040b8a9325eb616c9d6b1fba1ed9178d7cfc2ac538c564692388"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-05-07",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:51.353665+00:00",
+    "fetched_at": "2026-11-10T20:53:10.388955+00:00",
+    "feature_available_at": "2026-11-10T20:53:47.595161+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:27.799904+00:00",
+  "commit_verified_at": "2026-11-12T13:53:27.799904+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Mallinckrodt Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mallinckrodt Pharmaceuticals generated $790.6 million in revenue for the first quarter of 2019, beating estimates of $767.2 million."
+      },
+      {
+        "name": "Mallinckrodt",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Mallinckrodt"
+      },
+      {
+        "name": "Questcor Pharmaceuticals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Questcor Pharmaceuticals"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Pharmaceuticals",
+        "basis": "explicit",
+        "quote": ""
+      },
+      {
+        "name": "Pharmaceutical",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

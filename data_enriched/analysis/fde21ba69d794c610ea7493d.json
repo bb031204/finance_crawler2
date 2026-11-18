@@ -1,0 +1,96 @@
+{
+  "source_id": "fde21ba69d794c610ea7493d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_26_Finance_Real-Estate_sec.json",
+      "sha256": "a41c54e4c23a358bd8956702f99066a431dcbd86e5d52e7232ab03bda64cabaa",
+      "filename": "2015_03_26_Finance_Real-Estate_sec.json"
+    }
+  ],
+  "original_record_hash": "b35638198a14d49fadb8be4403a2f30f5571ef0dfb13563337cc4c1b9f3e5b03",
+  "input_hash": "3d77229b51a0980cc0aedfaad22c46c02eae933f6e1651a16138f99c7acc00a3",
+  "matching_audit_hash": "3b993eb64ea6140c20ac431c90e61285346ff288261d1085134c48e21d74414c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1065a42b81edea7277852268308c4486582cd28c3501cc3c3aeff0415ce54e8b",
+    "raw_sha256": "bf7101c6c044c7e4aae10869a8ca61bcecf9cb74bddf5cb6086012a1fec4a58f",
+    "date_quote": "Date of Report (Date of earliest event reported): March 26, 2015",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000955/000147793215001916/sthc_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "SouthCorp Capital, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "SouthCorp Capital, Inc."
+    }
+  ],
+  "record_hash": "c88a236f2df3845204262de5186adf4e66511f9c8d5200e5dc8c1c906481e1ef",
+  "outputs": [
+    {
+      "path": "US\\2015_03_26_Finance_Real-Estate_sec.json",
+      "sha256": "73bd3d47a93a456f039aa2244ef99377b5992af29717ccd8b5b1318e4b64e160"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-26",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.825282+00:00",
+    "fetched_at": "2026-11-11T00:29:50.951914+00:00",
+    "feature_available_at": "2026-11-11T00:29:58.537267+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:57.417554+00:00",
+  "commit_verified_at": "2026-11-12T13:52:57.417554+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SouthCorp Capital, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SouthCorp Capital, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

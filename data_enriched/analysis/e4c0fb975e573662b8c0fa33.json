@@ -1,0 +1,108 @@
+{
+  "source_id": "e4c0fb975e573662b8c0fa33",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_11_16_Mining_Metals_bloomberg.json",
+      "sha256": "b9c17e7da91855dc4a5baca54cf7ac2f8e1ddababbde81f165b8ee48f69a858f",
+      "filename": "2018_11_16_Mining_Metals_bloomberg.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2018_11_16_Mining_Metals_bloomberg.json",
+      "sha256": "b9c17e7da91855dc4a5baca54cf7ac2f8e1ddababbde81f165b8ee48f69a858f",
+      "filename": "2018_11_16_Mining_Metals_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "3cde3b0bb4703465140c268a513b0ad7a7ffd927d6351b236ad7afaf8aec7ef9",
+  "input_hash": "b7c7adf26432ae038e07b9fcd523cd06bd9897746af29464342afe23e4e415fe",
+  "matching_audit_hash": "70af893a81d6f705e1a151600911038d064ac3ced7247f03e0bba15a7fee80d1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9d8a2e2d16bc7557dad17165faaa9900970b5d5a6a0cd4e0af8625e3d05b507c",
+    "raw_sha256": "d94418d16a9369222c223a46694777513b25949ca75cf4d51db7ecb2899b3ab7",
+    "date_quote": "November 16, 2018 at 5:01 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "62b1e7d34d8abdfc63a5bf0ac816aa9e3555ed6b79864ba94b99b212e0f334bb",
+  "outputs": [
+    {
+      "path": "US\\2018_11_16_Mining_Metals_bloomberg.json",
+      "sha256": "92841049ede993f0de49be85b4200f2e563680df0a3fa18421ced7c9d708e889"
+    },
+    {
+      "path": "GLOBAL\\2018_11_16_Mining_Metals_bloomberg.json",
+      "sha256": "92841049ede993f0de49be85b4200f2e563680df0a3fa18421ced7c9d708e889"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-11-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:03:48.318854+00:00",
+    "fetched_at": "2026-11-10T16:16:48.000719+00:00",
+    "feature_available_at": "2026-11-10T17:53:09.625078+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:46:39.979013+00:00",
+  "feature_available_at": "2026-11-12T14:46:39.992156+00:00",
+  "commit_verified_at": "2026-11-12T14:46:39.992156+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Glencore's exploration of cobalt in the DRC, highlighting the industry and challenges related to cobalt mining.",
+    "securities": [
+      {
+        "name": "Glencore Plc",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Glencore Plc"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Mining",
+        "basis": "explicit",
+        "quote": "Mining"
+      },
+      {
+        "name": "Electric vehicle batteries",
+        "basis": "inferred",
+        "quote": "electric vehicle batteries"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Glencore Plc": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

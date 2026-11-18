@@ -1,0 +1,122 @@
+{
+  "source_id": "fdfbfc0ecf1984b04ba421d6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_12_10_Economic_Government_bls.json",
+      "sha256": "9fa3b37d4d77eeac254e02b3181598ec9441f8e15848dcd58c074b4861c76499",
+      "filename": "2015_12_10_Economic_Government_bls.json"
+    }
+  ],
+  "original_record_hash": "a45082ad9f6a2be28a4eb9e1fa916859cce294148b3a6621943f11092fbe7710",
+  "input_hash": "c458386f6c820214b3b37ceac9344f58eeae1050daa48a495e8907a0c6fe2649",
+  "matching_audit_hash": "8043c53f7b3eb40492ec2ee48c375cfdf68cdbec63ec5b1c6575a5bc2253da11",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "84891f7026947855f224d1a95e8fea6424835d78d8e6e378ca4eede62588af73",
+    "raw_sha256": "8b9c31db347176898ce7d0bebce32393d454fbbfbd50b771c4c3ea8449b47caf",
+    "date_quote": "This article was corrected on December 10, 2015.",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "d5cc66171a9c41188be38c6cd26f4069d6917337bc723c3432db1881ac71f48a",
+  "outputs": [
+    {
+      "path": "US\\2015_12_10_Economic_Government_bls.json",
+      "sha256": "0e2ce324390d9aab4bd6cee814ccd776c12dd6c1cdc1021071ffb668e9525271"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-12-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:56.454118+00:00",
+    "fetched_at": "2026-11-10T11:33:20.751571+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.882314+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:29:36.404219+00:00",
+  "feature_available_at": "2026-11-12T14:29:36.442395+00:00",
+  "commit_verified_at": "2026-11-12T14:29:36.442395+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the accuracy of BLS projections and compares them with other agencies, providing insights into macroeconomic indicators and their errors.",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Labor Statistics (BLS)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Labor Statistics (BLS)"
+      },
+      {
+        "name": "Congressional Budget Office (CBO)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Congressional Budget Office (CBO)"
+      },
+      {
+        "name": "Office of Management and Budget (OMB)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Office of Management and Budget (OMB)"
+      },
+      {
+        "name": "Energy Information Administration (EIA)",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Energy Information Administration (EIA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Construction",
+        "basis": "explicit",
+        "quote": "construction employment"
+      },
+      {
+        "name": "Manufacturing",
+        "basis": "explicit",
+        "quote": "manufacturing employment"
+      },
+      {
+        "name": "Energy",
+        "basis": "inferred",
+        "quote": "oil prices"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Labor Statistics (BLS)": "organization",
+      "Congressional Budget Office (CBO)": "organization",
+      "Office of Management and Budget (OMB)": "organization",
+      "Energy Information Administration (EIA)": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "source_id": "550077ad9502e325a04f9ca7",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_04_01_Regulatory_Financial-Services_sec.json",
+      "sha256": "7947cc1078be0785893c5c2e4ae7ad8c96d1dd226f932c1b6ae28eab2edae652",
+      "filename": "2015_04_01_Regulatory_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "4fd33456ef4c7214af81a3bc58ba903caa716baeacc1150e1f5bf3f95d4809ad",
+  "input_hash": "2a7df99e675e8f056713d0d0fe47f2d8032d6388243ac1b835670134889dfe92",
+  "matching_audit_hash": "3648875f92757643e306f9b9557ec9cf633e3a0a60882d3fc32d2d164a8754e2",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "812b8b255e8d050ba5a2f848f9027ce0d18b9e8677ff11efaa67d64f5a994f2a",
+    "raw_sha256": "faba220d5e36108ceb4a4c84ea94ccb58bef38e87c429d074c1d8e174466027a",
+    "date_quote": "For Immediate Release 2015-54 Washington D.C., April 1, 2015 —",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e39c10830d1080e70061b51666cbaa9d15f4421b00f490abcd40223e2bc7919f",
+  "outputs": [
+    {
+      "path": "US\\2015_04_01_Regulatory_Financial-Services_sec.json",
+      "sha256": "496f12cd9f2b488e2335c599ba5abcd8c5c84a02a700f7e0369aba26a21d8489"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-04-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:17.365112+00:00",
+    "fetched_at": "2026-11-10T14:12:19.551910+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.156008+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:26:06.886656+00:00",
+  "feature_available_at": "2026-11-12T14:26:06.921044+00:00",
+  "commit_verified_at": "2026-11-12T14:26:06.921044+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a regulatory enforcement action against KBR Inc. for violating whistleblower protection rules, which has implications for corporate policy",
+    "securities": [
+      {
+        "name": "U.S. Securities and Exchange Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Securities and Exchange Commission (SEC)"
+      },
+      {
+        "name": "KBR Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Houston-based global technology and engineering firm KBR Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Technology",
+        "basis": "explicit",
+        "quote": "global technology and engineering firm"
+      },
+      {
+        "name": "Engineering",
+        "basis": "explicit",
+        "quote": "global technology and engineering firm"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Securities and Exchange Commission": "organization",
+      "KBR Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

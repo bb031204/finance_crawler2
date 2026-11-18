@@ -1,0 +1,267 @@
+{
+  "source_id": "00bc5984e4c2c3fa0beb1408",
+  "status": "completed",
+  "source_record_hash": "d639c2589f5fbd7a25b4271a6a99ad73a977cbb2946b4f1905e7ddbc302a7617",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000045/0001193125-17-028419-index.html",
+    "attempted_at": "2026-11-18T07:03:01.132199+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "FetchError",
+    "error_fingerprint": "3c977ab21e18875f09f43d7d124ae85e5ad6b192b88db4be3bfb8a442eeeba8f",
+    "summary_sha256": "c8211c7aaaa2cf78807cf11b3707ac8486b31e255c9715938eb915e3d5d3c16f"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/00bc5984e4c2c3fa0beb1408.json",
+    "sha256": "b933e9cd0d1e84d5f6b95be8a5bff3ac8b2ea7c92f6fd5edc5ede6836e14b8ea",
+    "bundled_path": "legacy_audit/00bc5984e4c2c3fa0beb1408.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "b9df28701bf42793b508135f4faff0838f966a82ea99033dc532f9b9a0b791a5",
+      "llm_inferred_at": "2026-11-18T07:03:16.184806+00:00",
+      "model_duration_seconds": 10.0267183,
+      "prompt_tokens": 1718,
+      "completion_tokens": 510,
+      "selection": [
+        {
+          "source_id": "00bc5984e4c2c3fa0beb1408",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The results reflect the company's performance in its financial services operations during the quarter.",
+              "rationale": "The article explicitly mentions the company's financial services operations, which are part of the broader financial services industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Nicholas Financial, Inc. (NASDAQ: NICK) reported its financial results for the three months ended December 31, 2016. Diluted earnings per share decreased by 40% to $0.21, compared",
+              "rationale": "The article directly reports the financial results of Nicholas Financial, Inc., indicating a company-specific impact.",
+              "confidence": 1.0
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:4ac441610083c210",
+              "name": "Hospital/Nursing Management",
+              "basis": "explicit",
+              "quote": "The results reflect the company's performance in its financial services operations during the quarter."
+            },
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "The results reflect the company's performance in its financial services operations during the quarter."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The results reflect the company's performance in its financial services operations during the quarter."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "0663bbdd85a7264a8213a927b5e707ef7e7ff15eb2db54bdf9b4fc94c8448522",
+      "llm_inferred_at": "2026-11-18T07:03:24.324516+00:00",
+      "model_duration_seconds": 8.1292835,
+      "prompt_tokens": 1762,
+      "completion_tokens": 439,
+      "selection": [
+        {
+          "source_id": "00bc5984e4c2c3fa0beb1408",
+          "market_scope": [],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Nicholas Financial, Inc. (NASDAQ: NICK) reported its financial results for the three months ended December 31, 2016. Diluted earnings per share decreased by 40% to $0.21, compared",
+              "rationale": "The article discusses the financial results of Nicholas Financial, Inc., which is a specific company, and the performance is tied to its financial services operations.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:4ac441610083c210",
+              "name": "Hospital/Nursing Management",
+              "basis": "explicit",
+              "quote": "The results reflect the company's performance in its financial services operations during the quarter."
+            },
+            {
+              "industry_key": "SEC-SIC:6200",
+              "name": "SECURITY & COMMODITY BROKERS, DEALERS, EXCHANGES & SERVICES",
+              "basis": "explicit",
+              "quote": "The results reflect the company's performance in its financial services operations during the quarter."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The results reflect the company's performance in its financial services operations during the quarter."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:03:24.336918+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c8211c7aaaa2cf78807cf11b3707ac8486b31e255c9715938eb915e3d5d3c16f",
+    "raw_sha256": null,
+    "date_quote": "SEC filing datePublished=2017-02-02",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000045/000119312517028419/d332913d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Nicholas Financial, Inc.",
+        "ticker": "NICK",
+        "exchange": null,
+        "quote": "Nicholas Financial, Inc. (NASDAQ: NICK) announced that for the three months ended December 31, 2016, diluted earnings per share decreased 40% to $0.21 as compared to $0.35 for the three months ended December 31, 2015."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+        "name": "Financials",
+        "basis": "inferred",
+        "quote": "The results reflect the company's performance in its financial services operations during the quarter.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "4e4f1565fb7c9f2a",
+        "industry_name_standard": "Financials",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The results reflect the company's performance in its financial services operations during the quarter."
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "00bc5984e4c2c3fa0beb1408",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2017_02_02_Financial-Results_Financial-Services_sec.json",
+        "sha256": "06f775e9cdba5611282e287b2525e456d518d1db1b8ad630a1f7219e9597de1a",
+        "filename": "2017_02_02_Financial-Results_Financial-Services_sec.json"
+      }
+    ],
+    "original_record_hash": "27531b8601a9f4907938b44b07a5f384c888d4ed6c1840c9c309fd58ed943a0d",
+    "input_hash": "ffe7572e2923ca6e62eb320312198533ae0a0882091b65a3748a8b33dddb5792",
+    "matching_audit_hash": "89904a87352f1f87cc2623b82cafbd2195505dcd24d87a2577de8a57d2e42339",
+    "legacy_security_evidence": [
+      {
+        "name": "Nicholas Financial, Inc.",
+        "ticker": "NICK",
+        "exchange": null,
+        "quote": "Nicholas Financial, Inc. (NASDAQ: NICK) announced that for the three months ended December 31, 2016, diluted earnings per share decreased 40% to $0.21 as compared to $0.35 for the three months ended December 31, 2015."
+      }
+    ],
+    "record_hash": "d639c2589f5fbd7a25b4271a6a99ad73a977cbb2946b4f1905e7ddbc302a7617",
+    "outputs": [
+      {
+        "path": "US\\2017_02_02_Financial-Results_Financial-Services_sec.json",
+        "sha256": "edd82b476e5d6dd46e9ea870fc5e8aa9bc734f1eb16097920026fe2f8f2acf64"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2017-02-02",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-11T01:32:10.445072+00:00",
+      "fetched_at": "2026-11-11T11:55:57.548799+00:00",
+      "feature_available_at": "2026-11-11T11:56:08.324750+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:03:24.324516+00:00",
+    "feature_available_at": "2026-11-18T07:03:24.336918+00:00",
+    "commit_verified_at": "2026-11-12T13:53:12.008540+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Nicholas Financial, Inc. (NASDAQ: NICK) reported its financial results for the three months ended December 31, 2016. Diluted earnings per share decreased by 40% to $0.21, compared",
+        "rationale": "The article discusses the financial results of Nicholas Financial, Inc., which is a specific company, and the performance is tied to its financial services operations.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "Nicholas Financial, Inc. (NASDAQ: NICK) reported its financial results for the three months ended December 31, 2016. Diluted earnings per share decreased by 40% to $0.21, compared"
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000045/0001193125-17-028419-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "d639c2589f5fbd7a25b4271a6a99ad73a977cbb2946b4f1905e7ddbc302a7617",
+    "content_hash": "c8211c7aaaa2cf78807cf11b3707ac8486b31e255c9715938eb915e3d5d3c16f",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:03:24.325248+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/00bc5984e4c2c3fa0beb1408.json",
+      "sha256": "8f91e74f53b46566c7bea095632121c7ec3722a64bad13c9075a6c0093c2918f",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 23.21899999998277
+}

@@ -1,0 +1,99 @@
+{
+  "source_id": "401254a381b54bfddababa6a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_22_Regulatory-Compliance_Financial-Services_sec.json",
+      "sha256": "eb074a334cf3c31496b20a8a0a8c83137e2c24f8ca69e4d6cc0383a9dfd35a52",
+      "filename": "2018_02_22_Regulatory-Compliance_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "08f7a7e87ca74ee5a6d9da542e0315eef74ee9ff9832ffda430b8196271c8a9a",
+  "input_hash": "c27868c1c14a3849f2968b1acb209b32a12c3c9cf05898c8931bf06918edac09",
+  "matching_audit_hash": "c64191fb877cb717a98a23d5647cf3a88cd4f3e7db5f59c02fe9d2908a62d1fe",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b92502727085e1023f4339770c2f445b2f0a5ea72feefe753f01a4c5b788f94a",
+    "raw_sha256": "d9e3c4530dc75bd306c05b48e01dffc26126de8cf2af200124e26a0e804e4bec",
+    "date_quote": "SEC filing datePublished=2018-02-22",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001258/000143774918003061/asta20180221_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Asta Funding, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Asta Funding, Inc."
+    }
+  ],
+  "record_hash": "49c220dfa202a885ec9dc8bccf39eec938f2be4e7ba72ed9993cdc2fd249974e",
+  "outputs": [
+    {
+      "path": "US\\2018_02_22_Regulatory-Compliance_Financial-Services_sec.json",
+      "sha256": "847e13c5fc8ef24739bcbd8ea57ba5b62bc9bd0b8d2d20b8ef607fa1c8a64565"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-22",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:15.048576+00:00",
+    "fetched_at": "2026-11-11T13:27:56.204898+00:00",
+    "feature_available_at": "2026-11-11T13:28:07.207161+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:09.780327+00:00",
+  "feature_available_at": "2026-11-12T14:43:09.789807+00:00",
+  "commit_verified_at": "2026-11-12T14:43:09.789807+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a regulatory compliance issue involving Asta Funding, Inc. and its failure to file required financial reports, which impacts its listing合规",
+    "securities": [
+      {
+        "name": "Asta Funding, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Asta Funding, Inc."
+      },
+      {
+        "name": "Nasdaq",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Nasdaq"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Asta Funding, Inc.": "company",
+      "Nasdaq": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

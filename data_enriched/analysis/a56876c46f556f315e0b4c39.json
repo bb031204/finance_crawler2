@@ -1,0 +1,99 @@
+{
+  "source_id": "a56876c46f556f315e0b4c39",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_20_Consumer-Electronics_Appliance-Manufacturing_bloomberg.json",
+      "sha256": "b7e8b9f55aeddb891a81f00e2f119ea9c1d272f08f703e8d47eeb42ff0b6ece6",
+      "filename": "2016_01_20_Consumer-Electronics_Appliance-Manufacturing_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "1e02a7621eb4e2836cf0f8ea01a6ccb3f6b64d59f7e91d9b9dcf090b9f84c52b",
+  "input_hash": "37b8e89b6690fda77409ad14fb521a22f370308e1746f384f627a0a5f5dd7eea",
+  "matching_audit_hash": "d99af07f244e7e838c1db85588feed227da8ccf4448f29725037162833ba6a54",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4f070a1e1413345f493c3c33aa99ecf2b513b954a61fc43c62404e34fce911fc",
+    "raw_sha256": "bfdb1e26a5bd2e2b2c324464a46c39954496685bfa043ea24cdfe4410d731540",
+    "date_quote": "January 20, 2016 at 10:00 PM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "80a853bf2a087506003bbeb40eccbee592f3702c62386f677d865de556fe33a3",
+  "outputs": [
+    {
+      "path": "US\\2016_01_20_Consumer-Electronics_Appliance-Manufacturing_bloomberg.json",
+      "sha256": "7336df67b40e6293789340bf7946720accf98c3c450e5bea4b2380a753b35b6b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:02.702921+00:00",
+    "fetched_at": "2026-11-10T17:25:06.327659+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.101802+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:09.683972+00:00",
+  "feature_available_at": "2026-11-12T14:30:09.712453+00:00",
+  "commit_verified_at": "2026-11-12T14:30:09.712453+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Haier Group's expansion strategy into the U.S. market and its challenges, including consumer skepticism and efforts to secure partnerships.",
+    "securities": [
+      {
+        "name": "Haier Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Haier Group"
+      },
+      {
+        "name": "Wal-Mart Stores Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Wal-Mart Stores Inc."
+      },
+      {
+        "name": "Suning home appliances store",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Suning home appliances store"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Haier Group": "company",
+      "Wal-Mart Stores Inc.": "company",
+      "Suning home appliances store": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

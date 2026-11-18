@@ -1,0 +1,96 @@
+{
+  "source_id": "623fef8bfed19afedfd3541f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_09_20_Finance_Investment_bloomberg.json",
+      "sha256": "a23b67bfdb3a5af2dc239f2428c60ba75fa936ee9f89f1d5c15c07a7a394b212",
+      "filename": "2019_09_20_Finance_Investment_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "9e0e07cd4fc9df749e8c9823e87450b1396b7e805a02e5a27cb04dd473dd4221",
+  "input_hash": "394390e3ece13d79de72a82e960b2cdf6e67344192d03572e0a4cb348d15a6e1",
+  "matching_audit_hash": "c42b0a1dd4486129b8b204f88748c585523a92750804d7392cd93e1361a6756c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c819767a07d11b39e095778a5dbdc9a9abf8035752875445a8e414a8994deacf",
+    "raw_sha256": "04adf482ff9b71b7b2ed93bebf33753b08762a4fa0addab16cfd22673afea727",
+    "date_quote": "September 20, 2019 at 8:00 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "4feea7e63ae8f3d5a7eb8708337f50916560ca4b9eb4edf202dc1ab7e2e8d091",
+  "outputs": [
+    {
+      "path": "US\\2019_09_20_Finance_Investment_bloomberg.json",
+      "sha256": "64e4f99db3787df3b54040d23335db2043a9da3355bc5432fe3216ca76b09552"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-09-20",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:36:08.956889+00:00",
+    "fetched_at": "2026-11-10T15:09:45.681438+00:00",
+    "feature_available_at": "2026-11-10T17:53:23.070379+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:50:29.480076+00:00",
+  "feature_available_at": "2026-11-12T14:50:29.488078+00:00",
+  "commit_verified_at": "2026-11-12T14:50:29.488078+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses Tom Steyer's financial interests in hydrocarbons and his environmental advocacy, highlighting the tension between his public stance and his持股",
+    "securities": [
+      {
+        "name": "Farallon Capital Management",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Farallon Capital Management"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Hydrocarbons",
+        "basis": "explicit",
+        "quote": "hydrocarbons"
+      },
+      {
+        "name": "Investment Management",
+        "basis": "inferred",
+        "quote": "investment company"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Farallon Capital Management": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

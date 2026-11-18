@@ -1,0 +1,97 @@
+{
+  "source_id": "6b9e26b3665b373208e8e135",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_28_Other-Events_Banking_sec.json",
+      "sha256": "50d42a196ddd0a2635275e2499cf8e8b0cfbce8f9e4bc85f4b74dc9e7534452f",
+      "filename": "2013_02_28_Other-Events_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "dc7dddbcebbe7826379b5c746e1ee3a3af751e534fa638e7fd74fa10a157b087",
+  "input_hash": "10d6dbc1509063ed568951b551d7938dc18cfbdd4031b8921f30a02092f095bd",
+  "matching_audit_hash": "03eeb35c7366e2740e9084f59233c363ce7b9f3a1368be22472ea6deff75f8cb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0be555088cb42243a10d14834b237eead438d579576dbbdea0d81a285d440003",
+    "raw_sha256": "ff34face4856fab8e80fe1bbf641c51321f5094dfaf9ebda5744e9d3e4f330e1",
+    "date_quote": "SEC filing datePublished=2013-02-28",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023213000004/form8k22513.txt",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "2c87b16754ea35d40428e433f11d7e67aaa0322b7cffa8e3a270e5d27469b96f",
+  "outputs": [
+    {
+      "path": "US\\2013_02_28_Other-Events_Banking_sec.json",
+      "sha256": "984f86b818433b6e55963d795fc0cfb8a6557b1f53a8746f0fa4a6cde29c332d"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-28",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.189896+00:00",
+    "fetched_at": "2026-11-10T23:17:25.790399+00:00",
+    "feature_available_at": "2026-11-11T09:51:55.316251+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:04:18.374139+00:00",
+  "feature_available_at": "2026-11-12T14:04:18.408411+00:00",
+  "commit_verified_at": "2026-11-12T14:04:18.408411+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a bank's expansion plans, which is relevant for understanding the company's strategic moves.",
+    "securities": [
+      {
+        "name": "Kentucky Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kentucky Bank"
+      },
+      {
+        "name": "Kentucky Bancshares, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Kentucky Bancshares, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": "bank"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Kentucky Bank": "company",
+      "Kentucky Bancshares, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

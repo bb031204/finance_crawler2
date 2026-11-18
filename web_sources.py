@@ -3,13 +3,14 @@ import json
 import os
 import re
 from datetime import datetime, timedelta, timezone, date
-from urllib.parse import urlsplit, urljoin, quote, parse_qs, unquote
+from urllib.parse import urlsplit, urljoin, quote
 from lxml import html as lh, etree
 import httpx
 from finance_agent.core import digest, now
 from finance_agent.safety import PublicHTTP, canonical, FetchError
 from finance_agent.progress import log, short
 from record_quality import primary_article_text
+from sec_documents import SEC_DOCUMENT_VERSION,document_policy,accession_document_url,filing_documents
 
 
 def decode_html(raw, content_type=""):
@@ -115,19 +116,33 @@ def bound_article_payloads(tree,payloads,url,title):
     return strong or fallback
 
 
-def usable_page_cache(page,url):
+def usable_page_cache(page,url,sec=None):
     if not isinstance(page,dict) or not isinstance(page.get('text'),str) or not page['text'].strip():return False
     linked=canonical(page.get('url',''))==canonical(url) or page.get('request_url')==canonical(url)
     if not linked:return False
     # Older versioned caches may contain unrelated cards matched by a title prefix.
     if page.get('article_binding_version') is not None and page.get('article_binding_version',0)<4:return False
+    if page.get('sec_filing_date') and page.get('document_url'):
+        if page.get('sec_document_version')!=SEC_DOCUMENT_VERSION:return False
+        if sec is not None and page.get('sec_document_policy')!=document_policy(sec):return False
     return not any(unrelated_payload_path(line.partition('=')[0]) for line in page.get('date_context','').splitlines())
 
 
 def read_html(raw, url, use_crawl4ai=True, content_type=""):
     text = re.sub(r"^\s*<\?xml[^>]*\?>", "", decode_html(raw, content_type), count=1, flags=re.I)
     tree = lh.fromstring(text)
-    title = " ".join(tree.xpath("//title/text()")).strip()
+    hidden_headers=0
+    host=(urlsplit(url).hostname or '').lower()
+    if (host=='sec.gov' or host.endswith('.sec.gov')) and '/Archives/edgar/' in urlsplit(url).path:
+        # Inline XBRL's ix:header contains non-visible resources/hidden facts,
+        # not the article body. Keep every visible nonfraction/nonnumeric node.
+        for node in list(tree.iter()):
+            if isinstance(node.tag,str) and node.tag.lower() in {'ix:header','{http://www.xbrl.org/2013/inlinexbrl}header'}:
+                if node.getparent() is not None:node.drop_tree();hidden_headers+=1
+        if hidden_headers:
+            text=lh.tostring(tree,encoding='unicode')
+    # SVG accessibility <title> nodes (e.g. a lock icon) are not the document title.
+    title = " ".join(tree.xpath("/html/head/title/text()")).strip()
     payloads = list(json_objects(tree))
     primary = bound_article_payloads(tree,payloads,url,title)
     drop_secondary_sections(tree)
@@ -151,6 +166,14 @@ def read_html(raw, url, use_crawl4ai=True, content_type=""):
         elif re.search(r'datePublished|publish|pubdate|发布|发表|刊发',label,re.I):key='datePublished'
         else:key='article_time_datetime'
         clues.append(key+'='+node.get('datetime')+' | '+label.strip())
+    # Fed press releases expose a visible publisher-specific date outside generic meta tags.
+    # Bind only this known publication node in the main document; never borrow a footer date.
+    host=(urlsplit(url).hostname or '').lower()
+    if host=='federalreserve.gov' or host.endswith('.federalreserve.gov'):
+        dates=[node for node in tree.iter() if 'article__time' in (node.get('class') or '').split()]
+        if len(dates)==1:
+            value=' '.join(dates[0].itertext()).strip()
+            if re.fullmatch(r'[A-Za-z]+\s+\d{1,2},?\s+\d{4}',value):clues.insert(0,'datePublished='+value)
     for prefix, payload in data:
         for path, item in [(prefix, payload)]:
             for key, value in item.items():
@@ -208,6 +231,7 @@ def read_html(raw, url, use_crawl4ai=True, content_type=""):
         raise ValueError("正文存在大量无法解码字符，保留URL待检查")
     date_context = "\n".join(dict.fromkeys(clues))[:1050]
     return {"title": title, "source_title":source_title,'title_origin':title_origin,"text": combined, "date_context": date_context, "cleaning": cleaning,
+        'removed_inline_xbrl_headers':hidden_headers,
         'article_binding_version':4,'article_binding':'matched_payload' if primary else 'visible_only'}
 
 
@@ -249,13 +273,15 @@ class Sources:
         return url
 
     def sec_page(self, candidate):
-        """The filing index is the stable source URL; only its primary document is read."""
-        from sec_discovery import filing_identity
+        """Use one accession's main document and bounded financial exhibits as one source."""
+        from sec_discovery import filing_identity,filing_url
         match = re.fullmatch(r"/Archives/edgar/data/(\d+)/(\d{10}-\d{2}-\d{6})-index\.html", urlsplit(candidate["url"]).path)
         if not match: raise ValueError("SEC申报索引地址格式异常")
         cik, accession = match.groups()
         index_url = filing_identity(cik, accession)
-        raw, _ = self.sec_get(index_url)
+        raw, index_info = self.sec_get(index_url)
+        if index_info.get('url') and filing_url(index_info['url'])!=index_url:
+            raise ValueError('SEC申报索引重定向到另一申报，保留待复核')
         tree = lh.fromstring(raw)
         # The date belongs to this exact accession, never to a search hit or another filing.
         def labeled(label):
@@ -266,43 +292,51 @@ class Sources:
         expected = candidate.get("sec_filing", {})
         if expected.get("filing_date") and expected["filing_date"] != filing_date:
             raise ValueError("SEC目录与申报索引日期不一致，保留待复核")
-        form = expected.get("form")
-        documents = []
-        for tr in tree.xpath("//table[contains(concat(' ',normalize-space(@class),' '),' tableFile ')]//tr"):
-            cells = tr.xpath("./td")
-            if len(cells) < 4: continue
-            links = cells[2].xpath(".//a/@href")
-            kind = " ".join(cells[3].itertext()).strip()
-            sequence = " ".join(cells[0].itertext()).strip()
-            if links and (not form or kind == form) and sequence.isdigit():
-                documents.append((int(sequence), links[0], kind))
-        if not documents: raise ValueError("SEC索引未找到对应类型的主文档，未把目录页冒充正文")
-        _, href, form = min(documents)
-        document_url = urljoin(index_url, href)
-        parts = urlsplit(document_url)
-        if parts.path in {"/ix", "/ix.xhtml", "/ixviewer/doc/action"}:
-            document = parse_qs(parts.query).get("doc", [None])[0]
-            if not document: raise ValueError("SEC iXBRL链接缺少文档路径")
-            document_url = urljoin(index_url, document)
-        parts = urlsplit(document_url)
-        prefix = f"/Archives/edgar/data/{int(cik)}/{accession.replace('-', '')}/"
-        decoded_path = unquote(parts.path)
-        if (parts.scheme != "https" or parts.hostname != "www.sec.gov" or not parts.path.startswith(prefix)
-                or parts.query or parts.fragment or "\\" in decoded_path or any(p in {".", ".."} for p in decoded_path.split("/"))):
-            raise ValueError("SEC主文档不属于当前申报目录，未读取其他链接")
+        main,exhibits=filing_documents(tree,expected.get('form'))
+        document_url=accession_document_url(index_url,main.href,cik,accession)
         # Cross-check primaryDocument when the company API supplied it.
         primary = expected.get("primary_document")
-        if primary and parts.path != prefix + quote(primary, safe="/"):
+        if primary and document_url != accession_document_url(index_url,urljoin(document_url,quote(primary,safe='/')),cik,accession):
             raise ValueError("SEC公司目录与申报索引的主文档不一致，保留待复核")
-        body, info = self.sec_get(document_url)
-        page = self.page_from_bytes(body, document_url, "US", info.get("content_type", ""), candidate["title"],
-            candidate.get('title_is_source',candidate.get('discovery_source')!='sec_edgar'))
-        page.update(url=index_url, document_url=document_url, sec_filing_date=filing_date,
+        sec=self.cfg.search.sec_edgar
+        selected=[];seen={document_url}
+        if sec.include_exhibits:
+            for exhibit in exhibits:
+                url=accession_document_url(index_url,exhibit.href,cik,accession)
+                if url not in seen:
+                    selected.append((exhibit,url));seen.add(url)
+        unread=selected[sec.max_exhibits_per_filing:]
+        selected=selected[:sec.max_exhibits_per_filing]
+        texts=[];provenance=[];page=None;byte_count=len(raw);offset=0
+        for document,url in [(main,document_url)]+selected:
+            body,info=self.sec_get(url)
+            if info.get('url') and accession_document_url(index_url,info['url'],cik,accession)!=url:
+                raise ValueError('SEC文档重定向与申报索引不一致，保留待复核')
+            byte_count+=len(body)
+            if byte_count>self.cfg.fetch.max_bytes:
+                raise ValueError('SEC主文档及附件合计超过max_bytes，保留待处理')
+            part=self.page_from_bytes(body,url,'US',info.get('content_type',''),candidate['title'],
+                candidate.get('title_is_source',candidate.get('discovery_source')!='sec_edgar') if page is None else False)
+            if page is None:page=part
+            separator='\n\n' if texts else ''
+            offset+=len(separator)
+            texts.append(separator+part['text'])
+            provenance.append(dict(url=url,type=document.kind,description=document.description,
+                raw_sha256=part['raw_sha256'],text_sha256=digest(part['text'].encode('utf-8')),
+                text_start=offset,text_end=offset+len(part['text'])))
+            offset+=len(part['text'])
+            if offset>self.cfg.fetch.max_text_chars:
+                raise ValueError('SEC主文档及附件正文合计超过max_text_chars，保留待处理')
+        page.update(text=''.join(texts),sec_documents=provenance,sec_document_version=SEC_DOCUMENT_VERSION,
+            sec_document_policy=document_policy(sec),sec_unread_exhibits=[{'url':url,'type':doc.kind} for doc,url in unread],
+            sec_index_sha256=digest(raw))
+        page.update(url=index_url, request_url=canonical(candidate['url']), document_url=document_url, sec_filing_date=filing_date,
                     date_context="SEC filing datePublished=" + filing_date, fetched_at=now())
-        log("抓取", f"SEC主文档 | {form} | 官方申报日期={filing_date} | 正文{len(page['text'])}字符")
+        log("抓取", f"SEC主文档 | {main.kind} | 附件{len(selected)}份，超本次上限{len(unread)}份 | 官方申报日期={filing_date} | 正文{len(page['text'])}字符")
         return page
 
     def search(self, query, market, start, end, domains=None,strict_dates=None):
+        if callable(getattr(self,'pause_check',None)):self.pause_check()
         limit = self.cfg.collection.max_candidates_per_query
         if self.cfg.search.provider == "rss":
             return self.rss(market, limit)
@@ -374,10 +408,11 @@ class Sources:
         return result
 
     def fetch(self, candidate):
+        if callable(getattr(self,'pause_check',None)):self.pause_check()
         market = candidate["origin_market"]
         if not self.allowed(candidate["url"], market):
             raise ValueError("URL超出当前市场的网站范围")
-        if (urlsplit(candidate["url"]).hostname == "www.sec.gov" and
+        if (urlsplit(candidate["url"]).hostname in {"www.sec.gov","sec.gov"} and
                 re.fullmatch(r"/Archives/edgar/data/\d+/\d{10}-\d{2}-\d{6}-index\.html", urlsplit(candidate["url"]).path)):
             return self.sec_page(candidate)
         host = urlsplit(candidate["url"]).hostname or ""

@@ -1,0 +1,272 @@
+{
+  "source_id": "3b2a87f2ea6b06927232e2de",
+  "status": "completed",
+  "source_record_hash": "abaa6ef1f56db48878699fa0f7bc9a69b2701f2e08ca82f35c7a171e45bdc30f",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-14-109334-index.html",
+    "attempted_at": "2026-11-18T12:10:04.240201+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-14-109334-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312514109334/d697598d6k.htm",
+    "fetched_at": "2026-11-18T12:10:16.037523+00:00",
+    "source_body_hash": "e7a71629594f8ac8ac4efb1e7b1575ade2d9926ea7f6b7535d258f217557d7e1",
+    "raw_sha256": "e4aa92c152d498a6c987053a0f5873c787c37adbff0aa1b9560846145bf6474a",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312514109334/d697598d6k.htm",
+        "type": "6-K",
+        "description": "FORM 6-K",
+        "raw_sha256": "e4aa92c152d498a6c987053a0f5873c787c37adbff0aa1b9560846145bf6474a",
+        "text_sha256": "47c41e7b83cc4e5ca980b2806563ffaecc4bc20203e2f1bfeeb3769f0390fac5",
+        "text_start": 0,
+        "text_end": 3262
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312514109334/d697598dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "3158f3698d7455c2c75c88721e2eb7fab479eb972be854a4202c5040bb0087e0",
+        "text_sha256": "ff6b393307cfddefff2206f4801ec9d52162bfc68a3450f5d7474aea33360ae1",
+        "text_start": 3264,
+        "text_end": 8731
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2014-03-21",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/3b2a87f2ea6b06927232e2de.json",
+    "sha256": "11b95e5d39930f95783863299cb9a91e2652968425d3e2c8c483ca6e00e5b0b0",
+    "bundled_path": "legacy_audit/3b2a87f2ea6b06927232e2de.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "aa5fbf8d7de7ca35a590838928a4fa9a12678f4b29be678a29a3eaba67a63a77",
+      "llm_inferred_at": "2026-11-18T12:10:27.758905+00:00",
+      "model_duration_seconds": 11.67466,
+      "prompt_tokens": 4134,
+      "completion_tokens": 491,
+      "selection": [
+        {
+          "source_id": "3b2a87f2ea6b06927232e2de",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "The article discusses SAP AG's decision to recommend a dividend and its conversion into a European Company (SE), which are specific actions taken by the company.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "The article discusses SAP AG's dividend and its conversion into a European Company (SE), which are actions that could have an impact on the broader financial services industry.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "TRSR:5b3de93d166bcde7",
+              "name": "Home Furnishings",
+              "basis": "explicit",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            },
+            {
+              "industry_key": "TRSR:2c7efa2df04b9379",
+              "name": "Finance Companies",
+              "basis": "explicit",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "073541dc7bf28db7d30f1102ba7d1d2d871db8b53cffa0decee13837d2c68fc5",
+      "llm_inferred_at": "2026-11-18T12:10:34.582091+00:00",
+      "model_duration_seconds": 6.8033591,
+      "prompt_tokens": 4178,
+      "completion_tokens": 334,
+      "selection": [
+        {
+          "source_id": "3b2a87f2ea6b06927232e2de",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "The document is a filing by SAP AG, indicating the company's actions and decisions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+              "rationale": "SAP is a market leader in enterprise application software, which is part of the Information Technology industry.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:222a36f3f602dee0",
+              "name": "Information Technology",
+              "basis": "explicit",
+              "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:10:34.599468+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e7a71629594f8ac8ac4efb1e7b1575ade2d9926ea7f6b7535d258f217557d7e1",
+    "raw_sha256": "e4aa92c152d498a6c987053a0f5873c787c37adbff0aa1b9560846145bf6474a",
+    "date_quote": "March 21, 2014",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000184/000119312514109334/d697598d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "SAP AG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP AG"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "3b2a87f2ea6b06927232e2de",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2014_03_21_Finance_Information-Technology_sec.json",
+        "sha256": "fb95f7e6546b3072093e16c3e9e6960c2ded172a75549ba8e5c34624c2bded5b",
+        "filename": "2014_03_21_Finance_Information-Technology_sec.json"
+      }
+    ],
+    "original_record_hash": "38d5754619cca9ac81a13df7081cb5f0f59b46264add0326595c46f1b2b9e624",
+    "input_hash": "a112c5ba7179a370014a6472db6fe62868b60e633aa1b5e4ed3cfc8703428ea4",
+    "matching_audit_hash": "b68c12880b53b42ef6da904c8920f6e6b6ab7d5e57c4cf93a7e9ba14a9ce581e",
+    "legacy_security_evidence": [
+      {
+        "name": "SAP AG",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SAP AG"
+      }
+    ],
+    "record_hash": "abaa6ef1f56db48878699fa0f7bc9a69b2701f2e08ca82f35c7a171e45bdc30f",
+    "outputs": [
+      {
+        "path": "US\\2014_03_21_Finance_Information-Technology_sec.json",
+        "sha256": "cf913172f1fb6c10959098bb6228ce3166f8afc79edd38fee44f8ce14adb6858"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2014-03-21",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:56.918277+00:00",
+      "fetched_at": "2026-11-10T23:43:42.833416+00:00",
+      "feature_available_at": "2026-11-10T23:43:56.935306+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T12:10:34.582091+00:00",
+    "feature_available_at": "2026-11-18T12:10:34.599468+00:00",
+    "commit_verified_at": "2026-11-12T13:52:51.153452+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+        "rationale": "The document is a filing by SAP AG, indicating the company's actions and decisions.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "SAP AG (Registrant) By: /s/ Christoph Huetten Name: Dr.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000184/0001193125-14-109334-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "abaa6ef1f56db48878699fa0f7bc9a69b2701f2e08ca82f35c7a171e45bdc30f",
+    "content_hash": "a0e4b7c35f29c8ca5f7b8a4cbf80e01a3c623570183f065678845733f38cd33e",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T12:10:34.585190+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/3b2a87f2ea6b06927232e2de.json",
+      "sha256": "50fa530a807880224208d21e476e73f7f6a74a9d6a59e05a3055930abe4ef50e",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 30.39000000001397
+}

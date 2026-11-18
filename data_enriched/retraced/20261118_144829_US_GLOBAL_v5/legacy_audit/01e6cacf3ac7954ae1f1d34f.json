@@ -1,0 +1,101 @@
+{
+  "source_id": "01e6cacf3ac7954ae1f1d34f",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_01_Corporate-History_Industrial-Equipment_bloomberg.json",
+      "sha256": "2da21247a7ac3c6b146cd6a69d17c81a8e3ef475ed95ac6a1f3ead8328e11d90",
+      "filename": "2018_02_01_Corporate-History_Industrial-Equipment_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "d3542759e087711e5d6dc05a3fc055fb88689eaade3d5b1e6197fa5d03cb2479",
+  "input_hash": "b646808b4b00f0f90f1134653dee8764d2d089d997607fe65487d76e67b0e3a2",
+  "matching_audit_hash": "b6bb75345b4542c23dd2ab569f67e6958609de9a98841ce219b6ad93a268b67e",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "26f642061f2b0eb8733dcc3a2b06849fad899b97769e6795f56e3db27b6875d1",
+    "raw_sha256": "f7036d8838ded341bc674ec5def490057f38f96fc40665e2c5bcef385db71474",
+    "date_quote": "February 1, 2018 at 10:00 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5c6c375e5d092d9aa203dfee0803103b1e3748dc16f97c897541e3fa69862fdb",
+  "outputs": [
+    {
+      "path": "US\\2018_02_01_Corporate-History_Industrial-Equipment_bloomberg.json",
+      "sha256": "acac33dc8cd4a6a1f93c2e1acc8fa0e45ae9604620607a575d4d311c9acc24b9"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-01",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:37:43.519016+00:00",
+    "fetched_at": "2026-11-10T15:42:05.959889+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.847451+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:42:44.341027+00:00",
+  "feature_available_at": "2026-11-12T14:42:44.352035+00:00",
+  "commit_verified_at": "2026-11-12T14:42:44.352035+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses General Electric Co.'s historical role and transformation, providing context on its industry and corporate impact.",
+    "securities": [
+      {
+        "name": "General Electric Co.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "General Electric Co."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Industrial machinery",
+        "basis": "explicit",
+        "quote": "industrial machinery"
+      },
+      {
+        "name": "Consumer products",
+        "basis": "explicit",
+        "quote": "consumer products"
+      },
+      {
+        "name": "Technology",
+        "basis": "explicit",
+        "quote": "modern technology"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "General Electric Co.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

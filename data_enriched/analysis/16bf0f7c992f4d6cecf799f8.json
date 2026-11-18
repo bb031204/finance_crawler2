@@ -1,0 +1,92 @@
+{
+  "source_id": "16bf0f7c992f4d6cecf799f8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_07_16_Economic_Consumer_cnbc.json",
+      "sha256": "a9ded44b2330216f6ca08107d0965dc7262badf1a7d1bbc886c255465e09e059",
+      "filename": "2021_07_16_Economic_Consumer_cnbc.json"
+    }
+  ],
+  "original_record_hash": "340fc5f72d504193852ac78de832f42593a85fd49b3ef1b7c07e284633bde570",
+  "input_hash": "804a71347f3296973ff2cbe211f8a5e43e1931053fae722425936b1e72265e65",
+  "matching_audit_hash": "8d4daa0325da7f61482c6ad5b18ab3dd2d1fa3be04026fa50d941da9092f5ff1",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0f27b7db63629e2bfddfdb15c5554b471a6a0385f6d518779f381f2114f6513a",
+    "raw_sha256": "b1201fec35a43308a5cac6b0611727a2dabddcfe81102d73b72a16825c7637d5",
+    "date_quote": "article:published_time=2021-07-16T12:37:51+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "8f80a54d8782a5fca89cf60a98b7dcce6fe6a848b8ff0f8d433548878d03cefd",
+  "outputs": [
+    {
+      "path": "US\\2021_07_16_Economic_Consumer_cnbc.json",
+      "sha256": "9fbf45747d2d4e6c2e6108ac1b7c9db05ac92697d6e9a604b88524dd30b64ff0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-07-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:06:19.911030+00:00",
+    "fetched_at": "2026-11-10T17:36:55.381658+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.243862+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:51.191756+00:00",
+  "feature_available_at": "2026-11-12T14:55:51.199757+00:00",
+  "commit_verified_at": "2026-11-12T14:55:51.199757+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "no_verified_company_entity",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary provides data on U.S. retail sales, indicating a rebound in consumer spending, and mentions specific industries such as automotive, electronics, and",
+    "securities": [],
+    "industries": [
+      {
+        "name": "Retail",
+        "basis": "explicit",
+        "quote": "retail sales"
+      },
+      {
+        "name": "Automotive",
+        "basis": "explicit",
+        "quote": "automotive sector"
+      },
+      {
+        "name": "Electronics",
+        "basis": "explicit",
+        "quote": "electronics"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {},
+    "method": "local_qwen_legacy_summary"
+  }
+}

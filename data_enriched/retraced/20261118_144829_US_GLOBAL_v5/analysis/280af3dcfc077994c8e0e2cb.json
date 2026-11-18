@@ -1,0 +1,427 @@
+{
+  "source_id": "280af3dcfc077994c8e0e2cb",
+  "status": "completed",
+  "source_record_hash": "b1cc5ca1e33af223639a1781b41c9412e9fab74e28ce11c074897701ff5d095b",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-13-000142-index.html",
+    "attempted_at": "2026-11-18T10:21:36.667631+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-13-000142-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907313000142/bam6kform.htm",
+    "fetched_at": "2026-11-18T10:21:45.038968+00:00",
+    "source_body_hash": "e3c0d38a6a47a54f57e93ee2ea65b6f66af8efc87655c518476cbd74b71e6883",
+    "raw_sha256": "b0b5079ea4e0f43c8c9229c16f69a2945f3362d4222b0d8087455b8d1038836c",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907313000142/bam6kform.htm",
+        "type": "6-K",
+        "description": "BROOKFIELD ASSET MANAGEMENT FORM 6-K",
+        "raw_sha256": "b0b5079ea4e0f43c8c9229c16f69a2945f3362d4222b0d8087455b8d1038836c",
+        "text_sha256": "756fd19f3e0af05ef52567354a373414f5f084de72753c5fab7db7d92267e3c8",
+        "text_start": 0,
+        "text_end": 2119
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907313000142/exhb99_1.htm",
+        "type": "EX-99.1",
+        "description": "NEWS RELEASE DATED FEBRUARY 11, 2013",
+        "raw_sha256": "1cebd89758f5d28b615e6a3cac8e57aabddfb3d92538345047d5c2cdb9c024ea",
+        "text_sha256": "7eee4cfb1dcfd7cd3eca8e50df20604c7a180acae064b9c4f1ebfa9649965594",
+        "text_start": 2121,
+        "text_end": 9048
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2013-02-11",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/280af3dcfc077994c8e0e2cb.json",
+    "sha256": "7ec114e187c64ef765c42c720a10f5f31210d79e728d2fd93f074269ab6c7500",
+    "bundled_path": "legacy_audit/280af3dcfc077994c8e0e2cb.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "04c5e334e59c64566064815aa7b0c1109842dcd4c44b726bff321bece95814de",
+      "llm_inferred_at": "2026-11-18T10:22:07.096051+00:00",
+      "model_duration_seconds": 21.9499786,
+      "prompt_tokens": 3739,
+      "completion_tokens": 1056,
+      "selection": [
+        {
+          "source_id": "280af3dcfc077994c8e0e2cb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Brookfield Asset Management Inc.",
+              "rationale": "The acquisition of apartment communities by Brookfield Asset Management Inc. is a significant event in the real estate industry, indicating a strategic move within the sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Brookfield Asset Management Inc.",
+              "rationale": "The acquisition is part of a broader trend in the U.S. real estate market, reflecting changes in investment strategies and market dynamics.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ", targets, goals, ongoing objectives, strategies and outlook of Brookfield and Verde, as well as the outlook for North American and international economies for the current fiscal year and subsequent periods, and include words such as “expects”, “intends” or negative versions thereof and other similar expressions, or future or conditional verbs such",
+              "rationale": "The text discusses the outlook for North American and international economies, which is relevant to the U.S. equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "Brookfield Asset Management Inc."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Brookfield Asset Management Inc."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Fairfield Residential, an affiliate of Brookfield, has an existing geographic footprint in these same markets and will manage the assets in the portfolio."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "The acquisition of apartment communities by Brookfield Asset Management Inc. represents a strategic move within the real estate industry, indicating a focus on expanding its multifamily portfolio and increasing its share",
+              "confidence": 0.95,
+              "quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &",
+              "industry_name_original": "Real Estate",
+              "mechanism": "The acquisition of apartment communities by Brookfield Asset Management Inc. represents a strategic move within the real estate industry, indicating a focus on expanding its multifamily portfolio and increasing its share",
+              "confidence": 0.95,
+              "quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &",
+              "industry_name_original": "Business Services",
+              "mechanism": "The acquisition of apartment communities by Brookfield Asset Management Inc. represents a strategic move within the real estate industry, indicating a focus on expanding its multifamily portfolio and increasing its share",
+              "confidence": 0.95,
+              "quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "68f47a783b02f3c37bb81c40d122a73890712eea44a9ef57efcf085a6df10ad1",
+      "llm_inferred_at": "2026-11-18T10:22:25.757755+00:00",
+      "model_duration_seconds": 18.6420525,
+      "prompt_tokens": 3783,
+      "completion_tokens": 966,
+      "selection": [
+        {
+          "source_id": "280af3dcfc077994c8e0e2cb",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Brookfield Asset Management Inc.",
+              "rationale": "The acquisition of apartment communities by Brookfield Asset Management Inc. is a significant event in the real estate industry, indicating a strategic move within the sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "Brookfield Asset Management Inc.",
+              "rationale": "The acquisition is part of a broader trend in the U.S. real estate market, reflecting changes in investment and property management strategies.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": ", targets, goals, ongoing objectives, strategies and outlook of Brookfield and Verde, as well as the outlook for North American and international economies for the current fiscal year and subsequent periods, and include words such as “expects”, “intends” or negative versions thereof and other similar expressions, or future or conditional verbs such",
+              "rationale": "The text discusses the outlook for North American and international economies, which is relevant to the U.S. equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "name": "REAL ESTATE",
+              "basis": "explicit",
+              "quote": "Brookfield Asset Management Inc."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Brookfield Asset Management Inc."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "Fairfield Residential, an affiliate of Brookfield, has an existing geographic footprint in these same markets and will manage the assets in the portfolio."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6500",
+              "industry_scope_quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &",
+              "industry_name_original": "REAL ESTATE",
+              "mechanism": "strategic expansion and investment in multifamily real estate",
+              "confidence": 0.95,
+              "quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &"
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "industry_scope_quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &",
+              "industry_name_original": "Real Estate",
+              "mechanism": "strategic expansion and investment in multifamily real estate",
+              "confidence": 0.95,
+              "quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &",
+              "industry_name_original": "Business Services",
+              "mechanism": "strategic expansion and investment in multifamily real estate",
+              "confidence": 0.95,
+              "quote": "’s significant multi-family platform and positions us for continued growth in this property sector,” said David Arthur, managing partner at Brookfield Asset Management. Babcock &"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5ee2177d79cae377101b124c115ce0adff2964a46fe99429a6cdc5eed4523cab",
+      "llm_inferred_at": "2026-11-18T10:22:32.808783+00:00",
+      "model_duration_seconds": 7.0379205,
+      "prompt_tokens": 1951,
+      "completion_tokens": 345,
+      "selection": [
+        {
+          "source_id": "280af3dcfc077994c8e0e2cb",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2711",
+              "name": "NEWSPAPERS: PUBLISHING OR PUBLISHING & PRINTING",
+              "basis": "explicit",
+              "quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that"
+            },
+            {
+              "industry_key": "SEC-SIC:2721",
+              "name": "PERIODICALS: PUBLISHING OR PUBLISHING & PRINTING",
+              "basis": "explicit",
+              "quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that"
+            },
+            {
+              "industry_key": "SEC-SIC:2731",
+              "name": "BOOKS: PUBLISHING OR PUBLISHING & PRINTING",
+              "basis": "explicit",
+              "quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T10:22:32.822859+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "e3c0d38a6a47a54f57e93ee2ea65b6f66af8efc87655c518476cbd74b71e6883",
+    "raw_sha256": "b0b5079ea4e0f43c8c9229c16f69a2945f3362d4222b0d8087455b8d1038836c",
+    "date_quote": "SEC filing datePublished=2013-02-11",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907313000142/bam6kform.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:2711",
+        "name": "NEWSPAPERS: PUBLISHING OR PUBLISHING & PRINTING",
+        "basis": "inferred",
+        "quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2711",
+        "industry_name_standard": "NEWSPAPERS: PUBLISHING OR PUBLISHING & PRINTING",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:2721",
+        "name": "PERIODICALS: PUBLISHING OR PUBLISHING & PRINTING",
+        "basis": "inferred",
+        "quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2721",
+        "industry_name_standard": "PERIODICALS: PUBLISHING OR PUBLISHING & PRINTING",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:2731",
+        "name": "BOOKS: PUBLISHING OR PUBLISHING & PRINTING",
+        "basis": "inferred",
+        "quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "2731",
+        "industry_name_standard": "BOOKS: PUBLISHING OR PUBLISHING & PRINTING",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Except as required by law, Brookfield and Verde undertake no obligation to publicly update or revise any forward-looking statements or information, whether written or oral, that",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "280af3dcfc077994c8e0e2cb",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2013_02_11_Financial_Real-Estate_sec.json",
+        "sha256": "066720e91c10d23d392a03928d495c3f14b024e96c1d309c3467e961cb1dfeb1",
+        "filename": "2013_02_11_Financial_Real-Estate_sec.json"
+      }
+    ],
+    "original_record_hash": "3a6c3550d58f26cea61e72a161fb50c785532065f39f05e8213a0a11a89e8267",
+    "input_hash": "5edf361ed609293756d2a65d9f8c4b1737abc13bf00371c1bfd5b67f68b8b74e",
+    "matching_audit_hash": "402832f0a6d4287ae64a0c203b932acd74584e8f4d907bef5881394980ffd356",
+    "legacy_security_evidence": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "record_hash": "b1cc5ca1e33af223639a1781b41c9412e9fab74e28ce11c074897701ff5d095b",
+    "outputs": [
+      {
+        "path": "US\\2013_02_11_Financial_Real-Estate_sec.json",
+        "sha256": "1f4a5350118a7817797d962f4935b765ccbffeeafe146c70365a9d2b96a05141"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2013-02-11",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:53.190893+00:00",
+      "fetched_at": "2026-11-10T23:34:04.247388+00:00",
+      "feature_available_at": "2026-11-10T23:34:12.180194+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T10:22:32.808783+00:00",
+    "feature_available_at": "2026-11-18T10:22:32.822859+00:00",
+    "commit_verified_at": "2026-11-12T13:52:44.575756+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1001085/0001199073-13-000142-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "b1cc5ca1e33af223639a1781b41c9412e9fab74e28ce11c074897701ff5d095b",
+    "content_hash": "0b0b31548e4eda1c0ea8a3bdcb19c1bb86980bb4c5f1c056da00b0deb6501e21",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T10:22:32.809908+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/280af3dcfc077994c8e0e2cb.json",
+      "sha256": "df5d4921069fceb6437a814eb41a0486988902b008d065d451cc6e39abcb370b",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 56.17200000002049
+}

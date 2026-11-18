@@ -1,0 +1,92 @@
+{
+  "source_id": "f81d52ccd9f4139678ffc557",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_03_28_15_05_automotive_Automotive_prnewswire.json",
+      "sha256": "7138e818188504ccb89d0f2fa0992b48987965ac8d8223977e2e6884199df661",
+      "filename": "2013_03_28_15_05_automotive_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "04cc027a5de591235989012bc16d0a5f05ace536ec7d6e424929c5261678f626",
+  "input_hash": "b17ec098d772ce7ed81980ea45bf8a5b1a0f2f1eb3f6241d35c963e8f983be33",
+  "matching_audit_hash": "61dd93d6661368866ab979fbed93bb6f7e510365f5659346c130411b47a7f86d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "176e3087f3feb4d291f1736ad9f427b071566ce557f670435c3c324b4a9cbc89",
+    "raw_sha256": "bd38cd829296d69440a6d13e6efa97ed69f0d839a6acac258947ea681285ce99",
+    "date_quote": "page.datePublished=2013-03-28T15:05:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Subaru of America, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Subaru of America, Inc."
+    }
+  ],
+  "record_hash": "5ec5ff8bca97ce823c3942a6fbe4ec850cb6a41787ec993c9823ed03e8df0385",
+  "outputs": [
+    {
+      "path": "US\\2013_03_28_15_05_automotive_Automotive_prnewswire.json",
+      "sha256": "2a3d10cd0efe406e7ff6666de16431836d8f148939ecc6ead4919605418b296a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-03-28T15:05:00+00:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+00:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T16:07:21.577558+00:00",
+    "fetched_at": "2026-11-10T19:00:01.195019+00:00",
+    "feature_available_at": "2026-11-11T05:50:30.587374+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:06:22.981089+00:00",
+  "feature_available_at": "2026-11-12T14:06:23.020952+00:00",
+  "commit_verified_at": "2026-11-12T14:06:23.020952+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses the introduction of a new hybrid model by Subaru of America, Inc., including technical specifications and features of the vehicle.",
+    "securities": [
+      {
+        "name": "Subaru of America, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Subaru of America, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Subaru of America, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

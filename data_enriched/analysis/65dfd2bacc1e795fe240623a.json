@@ -1,0 +1,235 @@
+{
+  "source_id": "65dfd2bacc1e795fe240623a",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_08_02_Healthcare_Health-Insurance_cnbc.json",
+      "sha256": "737d7e95db667c81dba3ef3ef8741273e5b7b6e59cbcbf135b517c4b8819e680",
+      "filename": "2017_08_02_Healthcare_Health-Insurance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e6bf603f72a6a864d9b2efb2060e87ee8dcf3cd108d0eea52a46a528deb1283c",
+  "input_hash": "a9b5efc3d70e89e46da691d0c56d1f61eb28e3275b1447fa5d97334637954c3c",
+  "matching_audit_hash": "cf162adee5701821bb5a1b4bfbf33c900a04981799265a33ad08c9f27f593add",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4f6c6f2d13cd7c388edb737ee784892488c1ea3f074eda83f628c0bc5eabb132",
+    "raw_sha256": "1340b43d1651e13b6ca5b841c110aa0768e30cb67b9e09df2f474c75948d0493",
+    "date_quote": "article:published_time=2017-08-02T15:45:45+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0a170c3a7f086b264c14763fdd7e776f5792207c407087cf1936768de83a764d",
+  "outputs": [
+    {
+      "path": "US\\2017_08_02_Healthcare_Health-Insurance_cnbc.json",
+      "sha256": "ec6f9f0ee7bf0b848482a27acd1244caf22db9caad6ebc732d5776e6fb4dca49"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-08-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:59:03.317223+00:00",
+    "fetched_at": "2026-11-10T11:46:39.818449+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.812787+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:07:29.928061+00:00",
+  "feature_available_at": "2026-11-12T15:16:41.721570+00:00",
+  "commit_verified_at": "2026-11-12T15:16:41.721570+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Hospitals challenge insurance industry with own plans, impacting market dynamics",
+    "securities": [
+      {
+        "name": "Hospitals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Hospitals"
+      },
+      {
+        "name": "Northwell Health",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Northwell Health"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Healthcare",
+        "basis": "explicit",
+        "quote": "healthcare costs"
+      },
+      {
+        "name": "Insurance",
+        "basis": "explicit",
+        "quote": "health insurance"
+      },
+      {
+        "name": "Health insurance",
+        "basis": "explicit",
+        "quote": "health insurance industry"
+      },
+      {
+        "name": "Healthcare services",
+        "basis": "explicit",
+        "quote": "healthcare services"
+      }
+    ],
+    "impact_scope": [
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Hospitals": "organization",
+      "Northwell Health": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:41.748820+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:07:29.928061+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Hospitals challenge insurance industry with own plans, impacting market dynamics",
+      "securities": [
+        {
+          "name": "Hospitals",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Hospitals"
+        },
+        {
+          "name": "Northwell Health",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Northwell Health"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Healthcare",
+          "basis": "explicit",
+          "quote": "healthcare costs"
+        },
+        {
+          "name": "Insurance",
+          "basis": "explicit",
+          "quote": "health insurance"
+        },
+        {
+          "name": "Health insurance",
+          "basis": "explicit",
+          "quote": "health insurance industry"
+        },
+        {
+          "name": "Healthcare services",
+          "basis": "explicit",
+          "quote": "healthcare services"
+        }
+      ],
+      "impact_scope": [
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Hospitals": "organization",
+        "Health insurance industry": "organization",
+        "Northwell Health": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:07:29.956191+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:07:29.966330+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:07:29.946191+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses the disruption in the healthcare industry due to hospitals entering the insurance market, highlighting the impact on the traditional health保险",
+        "securities": [
+          {
+            "name": "Hospitals",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Hospitals"
+          },
+          {
+            "name": "Health insurance industry",
+            "ticker": null,
+            "exchange": null,
+            "quote": "health insurance industry"
+          },
+          {
+            "name": "Northwell Health",
+            "ticker": null,
+            "exchange": null,
+            "quote": "Northwell Health"
+          }
+        ],
+        "industries": [
+          {
+            "name": "Healthcare",
+            "basis": "explicit",
+            "quote": "Healthcare"
+          },
+          {
+            "name": "Insurance",
+            "basis": "explicit",
+            "quote": "health insurance"
+          }
+        ],
+        "impact_scope": [
+          "industry",
+          "market"
+        ],
+        "entity_types": {
+          "Hospitals": "organization",
+          "Health insurance industry": "organization",
+          "Northwell Health": "organization"
+        },
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:40:28.819194+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

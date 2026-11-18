@@ -1,0 +1,231 @@
+{
+  "source_id": "82c7dde28abe416380ce45da",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_07_10_economic_energy_cnbc.json",
+      "sha256": "4cecc567be0e23d0218e42fb8bef432752ca2ca14a3878d3f5a5e2655c329d4b",
+      "filename": "2018_07_10_economic_energy_cnbc.json"
+    }
+  ],
+  "original_record_hash": "e63ec98a0b128c73e5bf75b3896d66e60a3173ea6c0ea8696ac9d7dfaca19502",
+  "input_hash": "53819839f4c6b273edc905a124478a8be2c6a42731d815228c7c9b2edf09ddaa",
+  "matching_audit_hash": "0a79150dbb8abf0e9fe1d6c6686b8ee63d7708c1fe1d8f69f5ad12ed7a0467c8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "aa4e52312dfb99dad3fdfdb1a4013407d0203ad2c7c4ffbd4eca70d2f50e974c",
+    "raw_sha256": "8bba3546b4ace7b2fefffabcb70a425c32f903ed24d944be0237a801095f915d",
+    "date_quote": "article:published_time=2018-07-10T12:45:13+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "e46ec3d53d314d31ba391210bd9caba6e4878fa110a391d3ad69f011437baa9a",
+  "outputs": [
+    {
+      "path": "US\\2018_07_10_economic_energy_cnbc.json",
+      "sha256": "7ee2c22d827f8440b07c99c9624d12f1af193089266457219fda6bce2d0f64a0"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-07-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:28.583846+00:00",
+    "fetched_at": "2026-11-10T15:49:23.462249+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.884850+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:09:21.902259+00:00",
+  "feature_available_at": "2026-11-12T15:16:43.643819+00:00",
+  "commit_verified_at": "2026-11-12T15:16:43.643819+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Texas' energy sector and economic growth impact business rankings",
+    "securities": [
+      {
+        "name": "Texas",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Texas has claimed the top spot in CNBC's 2018 America’s Top States for Business rankings"
+      },
+      {
+        "name": "AT&T",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Texas is home to major companies such as AT&T, ExxonMobil, and Dell"
+      },
+      {
+        "name": "ExxonMobil",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Texas is home to major companies such as AT&T, ExxonMobil, and Dell"
+      },
+      {
+        "name": "Dell",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Texas is home to major companies such as AT&T, ExxonMobil, and Dell"
+      },
+      {
+        "name": "Governor Greg Abbott",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Governor Greg Abbott emphasized the importance of minimizing taxes"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Energy sector",
+        "basis": "explicit",
+        "quote": "The state's energy sector, particularly the rising prices of West Texas Intermediate Crude Oil"
+      },
+      {
+        "name": "Infrastructure",
+        "basis": "explicit",
+        "quote": "Infrastructure"
+      },
+      {
+        "name": "Business environment",
+        "basis": "inferred",
+        "quote": "Texas was ranked as America's top state for business in 2018"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Texas": "organization",
+      "AT&T": "company",
+      "ExxonMobil": "company",
+      "Dell": "company",
+      "Governor Greg Abbott": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:43.673080+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:09:21.902259+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Texas' energy sector and economic growth impact business rankings",
+      "securities": [
+        {
+          "name": "Texas",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Texas has claimed the top spot in CNBC's 2018 America’s Top States for Business rankings"
+        },
+        {
+          "name": "AT&T",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Texas is home to major companies such as AT&T, ExxonMobil, and Dell"
+        },
+        {
+          "name": "ExxonMobil",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Texas is home to major companies such as AT&T, ExxonMobil, and Dell"
+        },
+        {
+          "name": "Dell",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Texas is home to major companies such as AT&T, ExxonMobil, and Dell"
+        },
+        {
+          "name": "Governor Greg Abbott",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Governor Greg Abbott emphasized the importance of minimizing taxes"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Energy sector",
+          "basis": "explicit",
+          "quote": "The state's energy sector, particularly the rising prices of West Texas Intermediate Crude Oil"
+        },
+        {
+          "name": "Infrastructure",
+          "basis": "explicit",
+          "quote": "Infrastructure"
+        },
+        {
+          "name": "Business environment",
+          "basis": "inferred",
+          "quote": "Texas was ranked as America's top state for business in 2018"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry",
+        "market"
+      ],
+      "entity_types": {
+        "Texas": "organization",
+        "AT&T": "company",
+        "ExxonMobil": "company",
+        "Dell": "company",
+        "Governor Greg Abbott": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:09:21.928740+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:09:21.937255+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:09:21.918739+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses Texas' economic performance, including its energy sector, job growth, GDP increase, and business environment, which are relevant to financial",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:45:16.974063+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

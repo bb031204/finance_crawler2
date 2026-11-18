@@ -1,0 +1,108 @@
+{
+  "source_id": "bff22c1885ce56e1a58f0d62",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_01_19_Real-Estate_Real-Estate_sec.json",
+      "sha256": "1158d6f64a15410c50727cf4397457a880eca349f45015ad983b05c2faf10b0d",
+      "filename": "2016_01_19_Real-Estate_Real-Estate_sec.json"
+    }
+  ],
+  "original_record_hash": "41c4daaff08d2d4fba8a2a7b42ec7a5f7f12dc68ce97ec7a21d5a27e093f9530",
+  "input_hash": "6b52e3f9ad3d80018d0e3c8e4d00d770e11c77365745350d25172debc476bc99",
+  "matching_audit_hash": "2986f0127f2dc401d9ce271e6a04e1fb87a57a6319bed1109acd35009d601cc2",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "2a9791bf44a14cfd7a0a4583fcfad07a4d21f3f6e4c607ce1a5e3a27a4f5879c",
+    "raw_sha256": "47485b813543a616b30a92bb2b8f4c6a8adf97d15a7cd3dbf28e479bb5548db1",
+    "date_quote": "SEC filing datePublished=2016-01-19",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110262416001964/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    },
+    {
+      "name": "Rouse Properties, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Rouse Properties, Inc."
+    }
+  ],
+  "record_hash": "c318d3cd42bb612bd1f0e6339094c9bbff250a954b678d9a8ed3cd33fbdcf566",
+  "outputs": [
+    {
+      "path": "US\\2016_01_19_Real-Estate_Real-Estate_sec.json",
+      "sha256": "818ca87960be256fe0a6a9e8d05c2a21dadc0fd0c4b97e00449aff53576d8a53"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-01-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.849469+00:00",
+    "fetched_at": "2026-11-11T01:22:32.021162+00:00",
+    "feature_available_at": "2026-11-11T01:22:41.913002+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:03.310305+00:00",
+  "commit_verified_at": "2026-11-12T13:53:03.310305+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      },
+      {
+        "name": "Rouse Properties, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Rouse Properties, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

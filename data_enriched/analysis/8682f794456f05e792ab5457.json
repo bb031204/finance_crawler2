@@ -1,0 +1,113 @@
+{
+  "source_id": "8682f794456f05e792ab5457",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_05_03_financial_public-finance_cnbc.json",
+      "sha256": "4d4dbe3c0fe14e5214e11a1072b97584656d353b56b706445661439bc9c38d35",
+      "filename": "2017_05_03_financial_public-finance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "90cb1bba9f18cb1f0c3f520831764f7a6d8477dbcefd958dd62339b6b75e7109",
+  "input_hash": "b8cd8d4a1fd51596d2287b9edadb431aad1c26b1e5b48003b8fec3258a4615a9",
+  "matching_audit_hash": "d9735ce8bc8e9c617e7c1096e2e724d83aab40061a39289c43d86e886214b2ff",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "ddf40afc5e7a2c4c2d361c6f93073f57f30de1aaa8278d09283f87f16d7414dc",
+    "raw_sha256": "bba92fbaa63fa9963d8109fd362a4e43576263fdc9f1b423082782d9a3406e42",
+    "date_quote": "datePublished  Published Wed, May 3 2017 2:33 PM EDT",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Puerto Rico",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Puerto Rico"
+    }
+  ],
+  "record_hash": "87651e8d118765ba4526c1038318abb7f1c845d8e609e365aaeb3fc5e4bd923d",
+  "outputs": [
+    {
+      "path": "US\\2017_05_03_financial_public-finance_cnbc.json",
+      "sha256": "7384b68903d58d3c5962835a9b7718593a1e95a8818e1e912a07296ab659b25a"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-05-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:31:09.899886+00:00",
+    "fetched_at": "2026-11-11T11:32:27.662746+00:00",
+    "feature_available_at": "2026-11-11T11:33:39.828037+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:58.777879+00:00",
+  "feature_available_at": "2026-11-12T14:39:58.818428+00:00",
+  "commit_verified_at": "2026-11-12T14:39:58.818428+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses Puerto Rico's financial restructuring under the Promesa Act, involving debt restructuring, legal actions, and implications for bondholders",
+    "securities": [
+      {
+        "name": "Puerto Rico",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Puerto Rico"
+      },
+      {
+        "name": "Moody's",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Moody's"
+      },
+      {
+        "name": "Ad Hoc Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ad Hoc Group"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Municipal bond market",
+        "basis": "explicit",
+        "quote": "municipal bond market"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Puerto Rico": "company",
+      "Moody's": "company",
+      "Ad Hoc Group": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

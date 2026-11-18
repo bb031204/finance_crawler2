@@ -1,0 +1,92 @@
+{
+  "source_id": "97fefa4c9deb4c9f2830c9e8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_03_02_Politics-&-Policy_Government_cnbc.json",
+      "sha256": "27f59bc46c58ea08e8cc51bb867d1fd6c007669b3f326874deb3ebdcb1c284ca",
+      "filename": "2018_03_02_Politics-&-Policy_Government_cnbc.json"
+    }
+  ],
+  "original_record_hash": "a8f8925d27b93717941c18c5fca01dc19a1f359bc7a92ef9c10344c04306145b",
+  "input_hash": "8c944ed9e7272f5aeccf790195ac63cc1bcc809d76e1d6e2f5b45cedbdf2f4d2",
+  "matching_audit_hash": "82b96f79b834f8f59235181bef786096086e61ca1ac2f2bbded3e65a3de75302",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0057fbf5fbcb7e808f869fc4fe5dd1b5a72f614f9c2873e76baa09d5e492f9f7",
+    "raw_sha256": "a72f0ef31c29c31eff141f9b70147c7d9c023ba5fb14f8cea7bafd45470f22a4",
+    "date_quote": "article:published_time=2018-03-02T15:07:00+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "34037843b4ae7797d7471c6732c3874efc7f59ac619786dbf4eb0a7932a9591d",
+  "outputs": [
+    {
+      "path": "US\\2018_03_02_Politics-&-Policy_Government_cnbc.json",
+      "sha256": "dd6b42efb0c579efc72f754d21fe89a1c2b3a5c9ea090cd3b34c0c899ab931b5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-03-02",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:38:28.583846+00:00",
+    "fetched_at": "2026-11-10T15:51:35.205347+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.067551+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:23.608003+00:00",
+  "feature_available_at": "2026-11-12T14:43:23.654040+00:00",
+  "commit_verified_at": "2026-11-12T14:43:23.654040+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "no_verified_company_entity",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses policy decisions and internal disagreements within the Trump administration regarding trade policies, which are relevant to macroeconomic/",
+    "securities": [],
+    "industries": [
+      {
+        "name": "Steel industry",
+        "basis": "inferred",
+        "quote": "steel"
+      },
+      {
+        "name": "Aluminum industry",
+        "basis": "inferred",
+        "quote": "aluminum"
+      },
+      {
+        "name": "Trade policy",
+        "basis": "inferred",
+        "quote": "trade policies"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {},
+    "method": "local_qwen_legacy_summary"
+  }
+}

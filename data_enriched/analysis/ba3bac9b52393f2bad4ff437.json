@@ -1,0 +1,158 @@
+{
+  "source_id": "ba3bac9b52393f2bad4ff437",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_03_dividend_Financial-Services_sec.json",
+      "sha256": "2a8071cce880ac5b650bef0f420a4d621f7e663fba2de1bd41a6c9b02317d611",
+      "filename": "2017_03_03_dividend_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "c7877b4c668419c11d19e2607c9f965e33c9b719c1160aebc9a516090df35ec4",
+  "input_hash": "b2de29911722dc5f0b60ad965c37d0637022893e64759a859bb95f894f69b73d",
+  "matching_audit_hash": "963e7795275c91aa5e4ffac7a0689f722c90b4be08aa6d311450bfe51f06460c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9c197c29843feadc3417dbffed028ea3c50a64fe98dd827c02c28b817aa18803",
+    "raw_sha256": "407fe1001a1ebf113e6ed04920cad9bb68add2d55dbe59c73e6903a3e960e6a9",
+    "date_quote": "SEC filing datePublished=2017-03-03",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000119907317000167/brookfieldasset6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    }
+  ],
+  "record_hash": "cc1e9d43a900912b29a3d01e4bc6714a29aeb386616d3a5f37619f697b7f7650",
+  "outputs": [
+    {
+      "path": "US\\2017_03_03_dividend_Financial-Services_sec.json",
+      "sha256": "33db3471a7fe3f57d61f7a57381b119589d672d413f796d7b9e08541b3ee8629"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-03",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:27:37.828557+00:00",
+    "feature_available_at": "2026-11-11T12:28:09.962622+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:06:25.903904+00:00",
+  "feature_available_at": "2026-11-12T15:16:40.701847+00:00",
+  "commit_verified_at": "2026-11-12T15:16:40.701847+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Announced dividend rate adjustment for preference shares",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial services",
+        "basis": "explicit",
+        "quote": "The company is a financial services firm based in Canada"
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:40.723665+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:06:25.903904+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Announced dividend rate adjustment for preference shares",
+      "securities": [
+        {
+          "name": "Brookfield Asset Management Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Brookfield Asset Management Inc."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial services",
+          "basis": "explicit",
+          "quote": "The company is a financial services firm based in Canada"
+        }
+      ],
+      "impact_scope": [
+        "company"
+      ],
+      "entity_types": {
+        "Brookfield Asset Management Inc.": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:06:25.933537+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:06:25.941783+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:06:25.924536+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a change in dividend policy by Brookfield Asset Management Inc., which is a financial services firm based in Canada. The change reflects a",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:39:28.217775+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

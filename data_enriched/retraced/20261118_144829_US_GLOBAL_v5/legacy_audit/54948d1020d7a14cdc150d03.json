@@ -1,0 +1,177 @@
+{
+  "source_id": "54948d1020d7a14cdc150d03",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_06_15_Health-&-Safety_Semiconductor-Manufacturing_bloomberg.json",
+      "sha256": "43d4d3f195e5a13b1b70e843f37116011a9afc3095b04e8a927bc33b2c576765",
+      "filename": "2017_06_15_Health-&-Safety_Semiconductor-Manufacturing_bloomberg.json"
+    }
+  ],
+  "original_record_hash": "f9c700a10e5089eb7bec9d67a8173627e951eac2f40f0a09e0601c5265147ab1",
+  "input_hash": "c957696e2f4dcf6817e3a75597a1e47b068d39127ca78b29f78284f65bd78d51",
+  "matching_audit_hash": "53a28fd75afe5e5d92b2d60fe07f6c4f71fc56ddfd325a9f4b8385ebfdfe5020",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "8d671b620461384e093b066f4e1e414db5e4854b3e2d39581d5590f869dfb88d",
+    "raw_sha256": "a2a3fb2d6b82524ddabe44e45beefda3b3939ecaf0d54db8eb647ba2d4610848",
+    "date_quote": "Businessweek Features By Cam Simpson June 15, 2017 at 9:00 AM UTC",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "cd589dd0c155205a491a88291cce26ceb161c393eec0d2b3ae0339c4ae581f69",
+  "outputs": [
+    {
+      "path": "US\\2017_06_15_Health-&-Safety_Semiconductor-Manufacturing_bloomberg.json",
+      "sha256": "8708dd6762335ba894b0c3bd0e6f314c50d76e4dc0036b7cc3266e8b57487341"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-06-15",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:35:00.586278+00:00",
+    "fetched_at": "2026-11-10T14:52:00.933959+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.536045+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:07:10.178979+00:00",
+  "feature_available_at": "2026-11-12T15:16:41.329327+00:00",
+  "commit_verified_at": "2026-11-12T15:16:41.329327+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Identifies health risks in semiconductor manufacturing and reproductive health",
+    "securities": [
+      {
+        "name": "Samsung",
+        "ticker": null,
+        "exchange": null,
+        "quote": "companies like Samsung"
+      },
+      {
+        "name": "Digital Equipment Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Digital Equipment Corp."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor manufacturing",
+        "basis": "explicit",
+        "quote": "semiconductor manufacturing"
+      },
+      {
+        "name": "Tech industry",
+        "basis": "inferred",
+        "quote": "U.S. tech industry’s production jobs"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Samsung": "company",
+      "Digital Equipment Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:41.357744+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:07:10.178979+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Identifies health risks in semiconductor manufacturing and reproductive health",
+      "securities": [
+        {
+          "name": "Samsung",
+          "ticker": null,
+          "exchange": null,
+          "quote": "companies like Samsung"
+        },
+        {
+          "name": "Digital Equipment Corp.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Digital Equipment Corp."
+        }
+      ],
+      "industries": [
+        {
+          "name": "Semiconductor manufacturing",
+          "basis": "explicit",
+          "quote": "semiconductor manufacturing"
+        },
+        {
+          "name": "Tech industry",
+          "basis": "inferred",
+          "quote": "U.S. tech industry’s production jobs"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Samsung": "company",
+        "Digital Equipment Corp.": "company"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:07:10.203030+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:07:10.213137+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:07:10.195289+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses health risks in semiconductor manufacturing, specifically mentioning companies like Samsung and Digital Equipment Corp. It references a 1984案",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:40:10.893737+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

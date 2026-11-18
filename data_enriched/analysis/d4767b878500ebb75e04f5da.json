@@ -1,0 +1,97 @@
+{
+  "source_id": "d4767b878500ebb75e04f5da",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_13_securities_telecommunications_sec.json",
+      "sha256": "1650ca526e4c8324134322c34204d6c0cce1a5731b714b541e8d21c312a6f494",
+      "filename": "2017_03_13_securities_telecommunications_sec.json"
+    }
+  ],
+  "original_record_hash": "853998a88fe842f9ab21ff3106d2a95bb732e0d975a0f11f1fd0a6285c7a3250",
+  "input_hash": "f3f4d9f7bc3bacbf1a4407655b74330ee12583c827eba7d6f653384a8d6eb00c",
+  "matching_audit_hash": "b68cd63004d300346778576b9a0b57d37e3bbb5567737db9f71217cd4e144310",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3bba5c7d33173632d2e19df616426e79207ba887a796f0a52edf9f78fba67a6c",
+    "raw_sha256": "5438be6f6fce38f7772b870f6ad300fc6f70ea33ea6b199e85cc681808af9f11",
+    "date_quote": "SEC filing datePublished=2017-03-13",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000110465917015950/a17-8131_28k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "DISH Network Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH Network Corporation"
+    }
+  ],
+  "record_hash": "c650a9942b864dda9993e2e7a4fde9739b63fcfc7536f189ef862f7c09dd3439",
+  "outputs": [
+    {
+      "path": "US\\2017_03_13_securities_telecommunications_sec.json",
+      "sha256": "5e2f01cdb445c7e8fc78fdfce72f909d3116a9700ea53d3bc275d0faeffd7a8f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-13",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:24:40.498677+00:00",
+    "feature_available_at": "2026-11-11T12:25:05.417898+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:13.945315+00:00",
+  "commit_verified_at": "2026-11-12T13:53:13.945315+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Telecommunications",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

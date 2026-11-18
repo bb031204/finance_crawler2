@@ -118,10 +118,10 @@ class RichRecordTests(unittest.TestCase):
         ds,row,page,page_path,raw_path=self.fixture_source();raw_path.write_bytes(b'Different source')
         audit=finalize_record(self.root,ds,row,{},page,{'url':page['url']},FakeQwen(),page_path)
         self.assertFalse(page_path.exists());self.assertTrue(raw_path.exists());self.assertEqual(len(audit['raw_deleted']),1)
-    def test_disable_raw_deletion_keeps_verified_cache(self):
+    def test_success_raw_retention_cannot_be_enabled(self):
         ds,row,page,page_path,raw_path=self.fixture_source()
-        audit=finalize_record(self.root,ds,row,{},page,{'url':page['url']},FakeQwen(),page_path,False)
-        self.assertTrue(page_path.exists());self.assertTrue(raw_path.exists());self.assertEqual(audit['raw_deleted'],[])
+        with self.assertRaises(ValueError):finalize_record(self.root,ds,row,{},page,{'url':page['url']},FakeQwen(),page_path,False)
+        self.assertTrue(page_path.exists());self.assertTrue(raw_path.exists())
     def test_bad_formal_copy_prevents_cleanup(self):
         ds,row,page,page_path,raw_path=self.fixture_source();dump(ds.replicas[row['source_id']]['US'],dict(row,主要内容='Different view'))
         with self.assertRaises(ValueError):finalize_record(self.root,ds,row,{},page,{'url':page['url']},FakeQwen(),page_path)

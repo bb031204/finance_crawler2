@@ -1,0 +1,102 @@
+{
+  "source_id": "561252f6d610d5e051191d4d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_02_18_Economic-Data_Statistics_bls.json",
+      "sha256": "15ec6112dd88cdf63ac56bcba8d2e523970624c6af874bec5df6a011e7f0b9e7",
+      "filename": "2015_02_18_Economic-Data_Statistics_bls.json"
+    }
+  ],
+  "original_record_hash": "ec15a53666f21c0d1405e573a218d953c4c1c64e0dc037553506612b333e00b1",
+  "input_hash": "1569cb5a261e7fd6e85a9c8a07e5df239d4784d2d5888d04f57c2a897426e43d",
+  "matching_audit_hash": "17eeb9c2d78b23111894d12b5df33fb4223d00c2e86cbc72bcb2f20ccc14d246",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "4a314709dc6d38c9c39a2ca7f0c432b3c76a4c42462b40c906eb4f47e003b239",
+    "raw_sha256": "c55c7ab6e79c36225937bd3430a2fadfcf718623e31d881e0b3fa8aacfcce76e",
+    "date_quote": "Notice Effective with the release of January 2015 data on February 18, 2015",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "aab8df0b4e2c05e52d1903e0c8e042f4a4aa2c1bf1faffed289e10af423d117e",
+  "outputs": [
+    {
+      "path": "US\\2015_02_18_Economic-Data_Statistics_bls.json",
+      "sha256": "6c431503b2f5b7786189deacc9a0347edcc6b033e5edd6a1eb2d3822fe4ca356"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-02-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T16:03:36.538123+00:00",
+    "fetched_at": "2026-11-10T16:10:02.998588+00:00",
+    "feature_available_at": "2026-11-10T17:53:16.003635+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:21:16.845052+00:00",
+  "feature_available_at": "2026-11-12T14:21:16.876139+00:00",
+  "commit_verified_at": "2026-11-12T14:21:16.876139+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses updates to the PPI FD-ID system, which involves changes in commodity weight allocations and industry stage assignments based on 2007 I-O data",
+    "securities": [
+      {
+        "name": "U.S. Bureau of Labor Statistics",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Bureau of Labor Statistics (BLS)"
+      },
+      {
+        "name": "Bureau of Economic Analysis",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Bureau of Economic Analysis (BEA)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Statistics and data collection",
+        "basis": "inferred",
+        "quote": "U.S. Bureau of Labor Statistics"
+      },
+      {
+        "name": "Economic indicators",
+        "basis": "inferred",
+        "quote": "producer price indexes (PPI)"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Bureau of Labor Statistics": "organization",
+      "Bureau of Economic Analysis": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

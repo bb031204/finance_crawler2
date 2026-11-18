@@ -1,0 +1,273 @@
+{
+  "source_id": "38fc1aae2869be777640b23d",
+  "status": "completed",
+  "source_record_hash": "9fa63553a3d9816d07dc6963a26001fa5b848d06983f300c0e46e74a66a6e59b",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-20-000112-index.html",
+    "attempted_at": "2026-11-18T12:00:19.643956+00:00",
+    "status": "summary_only",
+    "reason": "fetch_failed_or_access_restricted",
+    "original_hash_matches_previous": null,
+    "date_reverified": false,
+    "error_type": "ValueError",
+    "error_fingerprint": "5f84c36b49c35e957dcfab3ccb7511e1bac1fac73f54f41c97cfc7aabc926d5d",
+    "summary_sha256": "e884e3f25435d35a983ed9562b0f3bccac3160f70f06aa7ac47a48532ecb844a"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/38fc1aae2869be777640b23d.json",
+    "sha256": "2df0e7f3b5b70b799db43c63c825c456b42706dd61a61507bdffbed301bb526e",
+    "bundled_path": "legacy_audit/38fc1aae2869be777640b23d.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "a2ed82ff5f63b239b37c3e776d0c97a2c694acfbaf9b02b425ec4fe4aa05843c",
+      "llm_inferred_at": "2026-11-18T12:00:58.215430+00:00",
+      "model_duration_seconds": 10.1847915,
+      "prompt_tokens": 1882,
+      "completion_tokens": 486,
+      "selection": [
+        {
+          "source_id": "38fc1aae2869be777640b23d",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "T-Mobile US, Inc. completed its business combination with Sprint Corporation on April 1, 2020. The Current Report on Form 8-K includes historical audited consolidated financial",
+              "rationale": "The report discusses the financial statements of Sprint and T-Mobile US, Inc. post-merger, indicating a company-specific event.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The financial statements do not represent the consolidated results of operations or financial condition of the combined company.",
+              "rationale": "The report discusses the impact of the merger on the financial statements, which may affect the broader telecommunications industry.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2761",
+              "name": "MANIFOLD BUSINESS FORMS",
+              "basis": "explicit",
+              "quote": "The financial statements do not represent the consolidated results of operations or financial condition of the combined company."
+            },
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "The financial statements do not represent the consolidated results of operations or financial condition of the combined company."
+            },
+            {
+              "industry_key": "SEC-SIC:7380",
+              "name": "SERVICES-MISCELLANEOUS BUSINESS SERVICES",
+              "basis": "explicit",
+              "quote": "The financial statements do not represent the consolidated results of operations or financial condition of the combined company."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f231ac555fe5aedda8c38707b6930c9de0275f5af28f930ccb80e8f0b28372be",
+      "llm_inferred_at": "2026-11-18T12:01:05.882926+00:00",
+      "model_duration_seconds": 7.6617328,
+      "prompt_tokens": 1926,
+      "completion_tokens": 416,
+      "selection": [
+        {
+          "source_id": "38fc1aae2869be777640b23d",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "T-Mobile US, Inc. completed its business combination with Sprint Corporation on April 1, 2020. The Current Report on Form 8-K includes historical audited consolidated financial",
+              "rationale": "The text discusses the financial statements of Sprint and T-Mobile US, Inc. post-merger, indicating a company-specific event.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The financial statements do not represent the consolidated results of operations or financial condition of the combined company.",
+              "rationale": "The text refers to the financial statements of the combined company, which implies an impact on the telecommunications industry.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:2761",
+              "name": "MANIFOLD BUSINESS FORMS",
+              "basis": "explicit",
+              "quote": "The financial statements do not represent the consolidated results of operations or financial condition of the combined company."
+            },
+            {
+              "industry_key": "SEC-SIC:7389",
+              "name": "SERVICES-BUSINESS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "The financial statements do not represent the consolidated results of operations or financial condition of the combined company."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T12:01:05.895488+00:00",
+  "audit": {
+    "source_id": "38fc1aae2869be777640b23d",
+    "url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-20-000112-index.html",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2020-05-18",
+    "date_quote": "SEC filing datePublished=2020-05-18",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "e884e3f25435d35a983ed9562b0f3bccac3160f70f06aa7ac47a48532ecb844a",
+    "raw_sha256": null,
+    "first_seen_at": "2026-11-11T01:29:31.997615+00:00",
+    "fetched_at": "2026-11-12T05:53:10.966434+00:00",
+    "first_extracted_at": "2026-11-12T05:53:45.264237+00:00",
+    "extracted_at": "2026-11-18T12:01:05.883579+00:00",
+    "feature_available_at": "2026-11-18T12:01:05.895488+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "T-Mobile US, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "T-Mobile US, Inc."
+      },
+      {
+        "name": "Sprint Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sprint Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "9fa63553a3d9816d07dc6963a26001fa5b848d06983f300c0e46e74a66a6e59b",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2020_05_18_Financial_Telecom_sec.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\3442651f500ea960865aa96ed6d6f86f001140da03ff35b8704acb8f19581822.json",
+      ".runtime\\simple\\model_cache\\7103d283727e952cb174f51a0a4d26ded98997629b5a7e7eea501e4d13f1b35f.json",
+      ".runtime\\simple\\model_cache\\75e1422336377cfe0cf2e8940da1b1a673fb4f41aa31f08d351bf9581d1f1399.json",
+      ".runtime\\simple\\model_cache\\9f8651a4d1974d0007e7f071b577f8ad99d6822de2de8dab44f59972c9c5bbdc.json",
+      ".runtime\\simple\\pages\\38fc1aae2869be777640b23d.json"
+    ],
+    "cleanup_errors": [],
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369920000112/tmus05182020form8-k.htm",
+    "request_url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-20-000112-index.html",
+    "title": "Document",
+    "title_origin": "html_title",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "llm_inferred_at": "2026-11-18T12:01:05.882926+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "e884e3f25435d35a983ed9562b0f3bccac3160f70f06aa7ac47a48532ecb844a",
+    "source_type": "sec",
+    "entity_details": [
+      {
+        "name": "T-Mobile US, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "T-Mobile US, Inc.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Sprint Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sprint Corporation",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [],
+    "industry_impacts": [],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "ff1db7f6fb8316d7b515805d9c7aa8f98629d0db9ebb5f79963377992096b0bb",
+    "commit_verified_at": "2026-11-12T05:53:45.312709+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-12T05:53:45.374357+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\38fc1aae2869be777640b23d.json",
+      ".runtime\\simple\\model_cache\\9f8651a4d1974d0007e7f071b577f8ad99d6822de2de8dab44f59972c9c5bbdc.json",
+      ".runtime\\simple\\model_cache\\7103d283727e952cb174f51a0a4d26ded98997629b5a7e7eea501e4d13f1b35f.json",
+      ".runtime\\simple\\model_cache\\3442651f500ea960865aa96ed6d6f86f001140da03ff35b8704acb8f19581822.json",
+      ".runtime\\simple\\model_cache\\75e1422336377cfe0cf2e8940da1b1a673fb4f41aa31f08d351bf9581d1f1399.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "T-Mobile US, Inc. completed its business combination with Sprint Corporation on April 1, 2020. The Current Report on Form 8-K includes historical audited consolidated financial",
+        "rationale": "The text discusses the financial statements of Sprint and T-Mobile US, Inc. post-merger, indicating a company-specific event.",
+        "confidence": 0.95,
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "T-Mobile US, Inc. completed its business combination with Sprint Corporation on April 1, 2020. The Current Report on Form 8-K includes historical audited consolidated financial"
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "9fa63553a3d9816d07dc6963a26001fa5b848d06983f300c0e46e74a66a6e59b",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "legacy_summary",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/38fc1aae2869be777640b23d.json",
+      "sha256": "801400a0909ff770fc180adb3e6e5a056cdcbfdb2980f75251a9f043c20d5ac7",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 46.264999999984866
+}

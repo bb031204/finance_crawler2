@@ -1,0 +1,116 @@
+{
+  "source_id": "617bcbe8e07e4f414aae40dc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_08_Real-Estate_Homebuilding_cnbc.json",
+      "sha256": "f2a9ab56cbb43705b21beb86a4b9f9444b2f20d54050b62ae0a4d9cc7642f397",
+      "filename": "2016_02_08_Real-Estate_Homebuilding_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d7c216f34e4c467a8ad1e48d0cd1431ed54a2a38c0d12bb27ceef2dd9fc3a652",
+  "input_hash": "242e01f7da2e71d0d9b08017d27faf86b40236b1ed36f9050d3d306300eeb104",
+  "matching_audit_hash": "c0e2652282ec25d42329c90fa52477f3c9a95c1fc1a57a2ff1134a41ff5e7b1d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a1987defc3d7947f5c4c473c231772508683e24f554326f329d4d8b0fe960116",
+    "raw_sha256": "fcf692765ff1ef25c58eee3d48d2561c483d3328d989bd74988e098a50f6dad1",
+    "date_quote": "article:published_time=2016-02-08T15:08:03+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "c65a0baae542ad1759cf48874a18e9f7d6d73bd94588dc6bba65de774f954e4b",
+  "outputs": [
+    {
+      "path": "US\\2016_02_08_Real-Estate_Homebuilding_cnbc.json",
+      "sha256": "1a73350feedc89a17bccdd46d5d0b3cb8f3f30fb077090f9ba841f9cca252e32"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-08",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:21.561731+00:00",
+    "fetched_at": "2026-11-10T12:48:20.664518+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.219796+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:33.004351+00:00",
+  "feature_available_at": "2026-11-12T14:30:33.039348+00:00",
+  "commit_verified_at": "2026-11-12T14:30:33.039348+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses trends in multigenerational housing, including economic and cultural factors, and mentions specific builders and market data.",
+    "securities": [
+      {
+        "name": "Lennar",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Lennar"
+      },
+      {
+        "name": "Pardee Homes",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pardee Homes"
+      },
+      {
+        "name": "John Burns Real Estate Consulting",
+        "ticker": null,
+        "exchange": null,
+        "quote": "John Burns Real Estate Consulting"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "Real Estate"
+      },
+      {
+        "name": "Homebuilding",
+        "basis": "inferred",
+        "quote": "homebuilders"
+      },
+      {
+        "name": "Construction",
+        "basis": "inferred",
+        "quote": "builders"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Lennar": "company",
+      "Pardee Homes": "company",
+      "John Burns Real Estate Consulting": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

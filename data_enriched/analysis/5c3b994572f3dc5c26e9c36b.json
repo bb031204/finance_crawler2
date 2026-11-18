@@ -1,0 +1,96 @@
+{
+  "source_id": "5c3b994572f3dc5c26e9c36b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_01_23_Corporate-Event_Automotive_prnewswire.json",
+      "sha256": "649e17f449e98b3130e4f847677a9eef7b79fb167c08a831be1ed51766b3e8c1",
+      "filename": "2015_01_23_Corporate-Event_Automotive_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "1c831ce85752c4e6f04f07a3c3852ae04171ad2188404dafd645a5c6b7ab9aa6",
+  "input_hash": "19715ec129752373a184ea0922c25eff81ede3db40016c7864e410530608da15",
+  "matching_audit_hash": "85bbc0d8b2159d154331478f2f56f05bfcb818d18d9aaa338b6802746bec3388",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "b2de1b17e1f975147b508c9ea89c541b09dd59c7594c38a2dc94fafe65439e8a",
+    "raw_sha256": "18120bea2381b099c751bf0aaba85489baad7cb328c10d5807ad9da451456d8b",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2015-01-23T13:51:00Z\ndate=2015-01-23T13:51:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Ally Financial Inc.",
+      "ticker": "ALLY",
+      "exchange": null,
+      "quote": "Ally Financial Inc. (NYSE: ALLY) is a leading automotive financial services company powered by a top direct banking franchise."
+    }
+  ],
+  "record_hash": "6a60a887da34eebccff7400df40bbc36dd06cf9df814159a9ebf59e71dcc2cfa",
+  "outputs": [
+    {
+      "path": "US\\2015_01_23_Corporate-Event_Automotive_prnewswire.json",
+      "sha256": "103ff79242f5be12c81eddcb4bc163a0f8460fbb773fbc57d20e7d3a7cafdd5f"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-01-23",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:02.572514+00:00",
+    "fetched_at": "2026-11-10T21:26:50.143447+00:00",
+    "feature_available_at": "2026-11-11T08:54:02.613691+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:54.413228+00:00",
+  "commit_verified_at": "2026-11-12T13:52:54.413228+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Ally Financial Inc.",
+        "ticker": "ALLY",
+        "exchange": null,
+        "quote": "Ally Financial Inc. (NYSE: ALLY) is a leading automotive financial services company powered by a top direct banking franchise."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

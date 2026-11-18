@@ -1,0 +1,662 @@
+{
+  "source_id": "01605e2f2f450e354387c25b",
+  "status": "completed",
+  "source_record_hash": "9e1ff9a78667bbc23c55b188686efedd073a16048d238b68ad53633a1e4f7134",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-15-004873-index.html",
+    "attempted_at": "2026-11-18T07:04:58.651909+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-15-004873-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774915004873/occ20150311_8k.htm",
+    "fetched_at": "2026-11-18T07:05:24.633540+00:00",
+    "source_body_hash": "381e35cad6ce7e5e99b8f3d480eec6ce093e2c3e02ab94ab67e7daf3d4950871",
+    "raw_sha256": "2f8c42c6be3fbe9b04e7f645d806653e132eecc93cc12db45ec1fb707d2fee1c",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774915004873/occ20150311_8k.htm",
+        "type": "8-K",
+        "description": "FORM 8-K",
+        "raw_sha256": "2f8c42c6be3fbe9b04e7f645d806653e132eecc93cc12db45ec1fb707d2fee1c",
+        "text_sha256": "cd204d0610d4cac42f34352783225ce4feaa48fb1a13fa66016dfd57a2c3d1d5",
+        "text_start": 0,
+        "text_end": 2502
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774915004873/ex99-1.htm",
+        "type": "EX-99.1",
+        "description": "EXHIBIT 99.1",
+        "raw_sha256": "f5abc240343e3c289a5d0169993b305ca89fb31ac8e6108f4361d570c5ddc169",
+        "text_sha256": "a85e683e13966c01738f54a32dae2a483b2231eae31c0579107649d8d9a48a27",
+        "text_start": 2504,
+        "text_end": 12234
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774915004873/ex99-2.htm",
+        "type": "EX-99.2",
+        "description": "EXHIBIT 99.2",
+        "raw_sha256": "0157848218fdb8e9dbf9633627faa76c0e1d9a4408d7c7666f93bfdd9a84e54a",
+        "text_sha256": "2e5dcfdb8fbdb8da1c9aa3c935ceb6799261db90863efdf2daf42101cc66e09d",
+        "text_start": 12236,
+        "text_end": 32668
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2015-03-12",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/01605e2f2f450e354387c25b.json",
+    "sha256": "01fe7cdfcd97280c0c17f7c00b34270522d25b8b072be93aadb5b04753895444",
+    "bundled_path": "legacy_audit/01605e2f2f450e354387c25b.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "4006444dc007cd77501008a7444c04869ce83929905ef72e0daa946647986dfe",
+      "llm_inferred_at": "2026-11-18T07:05:38.414860+00:00",
+      "model_duration_seconds": 13.7271293,
+      "prompt_tokens": 4156,
+      "completion_tokens": 609,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Optical Cable Corp. – First Quarter 2015 Earnings Release Page 3 of 5 Founded in 1983, OCC is headquartered in Roanoke, Virginia with offices, manufacturing and warehouse",
+              "rationale": "The article discusses the financial results of Optical Cable Corporation, which is a specific company, and does not provide information about broader industry or market impacts.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Net sales to customers in the United States increased 11.9% in the first quarter of fiscal year 2015, compared to the same period last year, and net sales to customers outside of the United States decreased 14.0%.",
+              "rationale": "The article discusses the performance of Optical Cable Corporation in the United States and international markets, which is relevant to the US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7373",
+              "name": "SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN",
+              "basis": "explicit",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "def7a35ed8a1037c671175002b73312b4c7ba1669d16e3554b28ec9390276070",
+      "llm_inferred_at": "2026-11-18T07:05:49.825418+00:00",
+      "model_duration_seconds": 11.3923886,
+      "prompt_tokens": 4200,
+      "completion_tokens": 581,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Optical Cable Corp. – First Quarter 2015 Earnings Release Page 3 of 5 Founded in 1983, OCC is headquartered in Roanoke, Virginia with offices, manufacturing and warehouse",
+              "rationale": "The text discusses the financial results and operations of Optical Cable Corporation, which is a specific company, and does not provide information about broader industry or market impacts.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Net sales to customers in the United States increased 11.9% in the first quarter of fiscal year 2015, compared to the same period last year, and net sales to customers outside of the United States decreased 14.0%.",
+              "rationale": "The text discusses the performance of Optical Cable Corporation in the United States and international markets, which is relevant to the US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:7373",
+              "name": "SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN",
+              "basis": "explicit",
+              "quote": "OCC’s facilities are ISO 9001:2008 registered and OCC’s Roanoke and Dallas facilities are MIL-STD-790F certified."
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "OCC products are designed to meet the most demanding needs of end-users, delivering a high degree of reliability and outstanding performance characteristics."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "OCC also is internationally recognized for its role in establishing copper connectivity data communications standards, through its innovative and patented technologies."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "f130c220d3e58a1af465341ef582ea4305578f4d50f50b3fe766fd78117e9916",
+      "llm_inferred_at": "2026-11-18T07:06:02.452540+00:00",
+      "model_duration_seconds": 12.6053475,
+      "prompt_tokens": 3929,
+      "completion_tokens": 551,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "OCC also continues to invest in expanding our manufacturing capabilities in areas of expected growth.",
+              "rationale": "The article discusses the company's investment in manufacturing capabilities in areas of expected growth, which indicates an industry-wide impact on the manufacturing sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "Optical Cable Corporation and its subsidiaries, the Company’s future results of operations and future financial condition, and/or the future equity value of the Company. A partial",
+              "rationale": "The article discusses the company's financial results and future outlook, which is specific to the company itself.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4899",
+              "name": "COMMUNICATIONS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "Optical Cable Corporation and its subsidiaries, the Company’s future results of operations and future financial condition, and/or the future equity value of the Company. A partial"
+            },
+            {
+              "industry_key": "TRSR:6a41bf6143c2f87e",
+              "name": "Computer Communications Equipment",
+              "basis": "explicit",
+              "quote": "OCC's family of passive optical LAN products, as well as OCC's new Procyon Blade system of spliced modules and enclosures—a system which simplifies fiber splicing in high density"
+            },
+            {
+              "industry_key": "SP500-SECTOR:1c05eb170427b940",
+              "name": "Communication Services",
+              "basis": "explicit",
+              "quote": "OCC's family of passive optical LAN products, as well as OCC's new Procyon Blade system of spliced modules and enclosures—a system which simplifies fiber splicing in high density"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "313057708bd575b4eaaf52ef3c416ef9ff11dd86e49f4f196908293550e6a3bd",
+      "llm_inferred_at": "2026-11-18T07:06:09.958413+00:00",
+      "model_duration_seconds": 7.488473,
+      "prompt_tokens": 3973,
+      "completion_tokens": 372,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [],
+          "impact_scope": [
+            "company",
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "Optical Cable Corporation and its subsidiaries, the Company’s future results of operations and future financial condition, and/or the future equity value of the Company. A partial",
+              "rationale": "The text directly references Optical Cable Corporation and its subsidiaries, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Optical Cable Corporation and its subsidiaries, the Company’s future results of operations and future financial condition, and/or the future equity value of the Company. A partial",
+              "rationale": "The text discusses the impact on the broader industry through the mention of the company's operations and financial condition, which are industry-wide factors.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:4899",
+              "name": "COMMUNICATIONS SERVICES, NEC",
+              "basis": "explicit",
+              "quote": "Optical Cable Corporation and its subsidiaries, the Company’s future results of operations and future financial condition, and/or the future equity value of the Company. A partial"
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "229ef4c8053f56cf0a72bc63831bbdb5d2332a17a089ba0a7fa224ad487ce3f4",
+      "llm_inferred_at": "2026-11-18T07:06:29.084826+00:00",
+      "model_duration_seconds": 19.1032653,
+      "prompt_tokens": 3789,
+      "completion_tokens": 920,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The Company achieved consolidated net sales of $17.4 million during the first quarter of fiscal year 2015, compared to net sales of $16.5 million for the same period last year.",
+              "rationale": "The quote directly references the company's financial performance, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We sell fairly diversely internationally.",
+              "rationale": "The quote indicates the company's international sales strategy, which is a company-specific impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "OCC's product offering is very broad and is subject to a fair amount of volatility once you get past the top line.",
+              "rationale": "The quote describes the company's product offering and volatility, which are company-specific impacts.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Sales to customers in the United States increased 11.9% in the first quarter of fiscal year 2015, compared to last year, while net sales to customers outside of the United States decreased 14%, compared to the same period last year.",
+              "rationale": "The quote provides evidence of the impact on US equity markets due to changes in sales performance.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3231",
+              "name": "GLASS PRODUCTS, MADE OF PURCHASED GLASS",
+              "basis": "inferred",
+              "quote": "The Company achieved consolidated net sales of $17.4 million during the first quarter of fiscal year 2015, compared to net sales of $16.5 million for the same period last year."
+            },
+            {
+              "industry_key": "TRSR:b116f51b6e6e3cfd",
+              "name": "Catalog/Specialty Distribution",
+              "basis": "inferred",
+              "quote": "We sell fairly diversely internationally."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "inferred",
+              "quote": "We've talked about this a little bit before."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:b116f51b6e6e3cfd",
+              "industry_scope_quote": "Could you explain the difference between those two companies and your company in terms of the SG&A percentages to sales?",
+              "industry_name_original": "Catalog/Specialty Distribution",
+              "mechanism": "SG&A expenses as a percentage of sales are a key metric for the industry, and the discussion highlights the differences in operational efficiency.",
+              "confidence": 0.85,
+              "quote": "We have our normal seasonality, but then we have a lot of volatility."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "Could you explain the difference between those two companies and your company in terms of the SG&A percentages to sales?",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "The discussion about volatility and market conditions in the oil and gas sector indicates an industry-wide impact.",
+              "confidence": 0.8,
+              "quote": "We've talked about this a little bit before."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "d673ba310c9d9c2ab365098b81b3f20155596a415a171af57aa10096823d50bb",
+      "llm_inferred_at": "2026-11-18T07:06:44.536450+00:00",
+      "model_duration_seconds": 15.4307233,
+      "prompt_tokens": 3833,
+      "completion_tokens": 797,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "company",
+              "quote": "The Company achieved consolidated net sales of $17.4 million during the first quarter of fiscal year 2015, compared to net sales of $16.5 million for the same period last year.",
+              "rationale": "The quote directly references the company's financial performance, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We sell fairly diversely internationally.",
+              "rationale": "The quote indicates the company's international sales strategy, which is a company-specific impact.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "company",
+              "quote": "We've talked about this a little bit before.",
+              "rationale": "The quote refers to the company's diversification strategy, which is a company-specific impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Sales to customers in the United States increased 11.9% in the first quarter of fiscal year 2015, compared to last year, while net sales to customers outside of the United States decreased 14%, compared to the same period last year.",
+              "rationale": "The quote provides evidence of the impact on US equity markets due to changes in sales performance.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:3231",
+              "name": "GLASS PRODUCTS, MADE OF PURCHASED GLASS",
+              "basis": "explicit",
+              "quote": "The Company achieved consolidated net sales of $17.4 million during the first quarter of fiscal year 2015, compared to net sales of $16.5 million for the same period last year."
+            },
+            {
+              "industry_key": "TRSR:b116f51b6e6e3cfd",
+              "name": "Catalog/Specialty Distribution",
+              "basis": "explicit",
+              "quote": "We sell fairly diversely internationally."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "We've talked about this a little bit before."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:b116f51b6e6e3cfd",
+              "industry_scope_quote": "a percentage of sales of about 7%, I noticed that General Cable is about 8%, you're around 30%. Could you explain the difference between those two companies and your company in",
+              "industry_name_original": "Catalog/Specialty Distribution",
+              "mechanism": "SG&A expenses as a percentage of sales",
+              "confidence": 0.75,
+              "quote": "And just another question about -- do you think the foreign -- your foreign sales will pick up because of the Mario Draghi's QE thing that's just beginning in Europe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "792007d318c13f48acf88b6078e44ce96cb3ff36a9acb8e4b030efc7c2d097f3",
+      "llm_inferred_at": "2026-11-18T07:06:55.020270+00:00",
+      "model_duration_seconds": 10.4612145,
+      "prompt_tokens": 3142,
+      "completion_tokens": 480,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "OCC has a strong presence particularly in the fiber optic cable market despite the smaller size.",
+              "rationale": "The company's focus on fiber optic cable market indicates an industry-specific impact, as it highlights the sector where the company operates and its competitive position.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "There's a lot more dollars that drop to the bottom line more quickly.",
+              "rationale": "This statement directly relates to the company's financial performance and operational efficiency, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:6ec58c23670f495f",
+              "name": "Building operators",
+              "basis": "explicit",
+              "quote": "OCC has a strong presence particularly in the fiber optic cable market despite the smaller size."
+            },
+            {
+              "industry_key": "TRSR:6eb1c8f1ea586d37",
+              "name": "Engineering & Construction",
+              "basis": "explicit",
+              "quote": "OCC has a strong presence particularly in the fiber optic cable market despite the smaller size."
+            },
+            {
+              "industry_key": "TRSR:17c0779058f2abbe",
+              "name": "Multi-Sector Companies",
+              "basis": "explicit",
+              "quote": "OCC has a strong presence particularly in the fiber optic cable market despite the smaller size."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "07c44a1eced6c924ddb74e4a84fecaefd5450f74be95f63f0e9d9e0339743cd3",
+      "llm_inferred_at": "2026-11-18T07:07:00.470336+00:00",
+      "model_duration_seconds": 5.4353003,
+      "prompt_tokens": 3186,
+      "completion_tokens": 281,
+      "selection": [
+        {
+          "source_id": "01605e2f2f450e354387c25b",
+          "market_scope": [],
+          "impact_scope": [],
+          "impact_scope_evidence": [],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:6eb1c8f1ea586d37",
+              "name": "Engineering & Construction",
+              "basis": "explicit",
+              "quote": "We do have some R&D that we described in our reports that you can see."
+            },
+            {
+              "industry_key": "TRSR:6ec58c23670f495f",
+              "name": "Building operators",
+              "basis": "explicit",
+              "quote": "Our margins tend to go up."
+            },
+            {
+              "industry_key": "TRSR:5226954feafeae18",
+              "name": "Real Estate",
+              "basis": "explicit",
+              "quote": "Our margins tend to go up."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T07:07:00.491417+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "381e35cad6ce7e5e99b8f3d480eec6ce093e2c3e02ab94ab67e7daf3d4950871",
+    "raw_sha256": "2f8c42c6be3fbe9b04e7f645d806653e132eecc93cc12db45ec1fb707d2fee1c",
+    "date_quote": "SEC filing datePublished=2015-03-12",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000230/000143774915004873/occ20150311_8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "01605e2f2f450e354387c25b",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2015_03_12_Financial-Results_Telecommunications-Equipment_sec.json",
+        "sha256": "6591d62aa73cb532ddf34422e332b0eee6ea305656cd3f5329f44cded4121a71",
+        "filename": "2015_03_12_Financial-Results_Telecommunications-Equipment_sec.json"
+      }
+    ],
+    "original_record_hash": "81f223e901acbe02142a43c0bb6ae20d97813f33bfd8166d3aaa30731c49ec52",
+    "input_hash": "f836354ccb51491453ce363b729d531f59b420b5fbe963eb209cb8816e665fbc",
+    "matching_audit_hash": "c46a71d8afe1d7f08ad624949ef5797f58264da830e8e634d293723fec4ef75c",
+    "legacy_security_evidence": [
+      {
+        "name": "Optical Cable Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Optical Cable Corporation"
+      }
+    ],
+    "record_hash": "9e1ff9a78667bbc23c55b188686efedd073a16048d238b68ad53633a1e4f7134",
+    "outputs": [
+      {
+        "path": "US\\2015_03_12_Financial-Results_Telecommunications-Equipment_sec.json",
+        "sha256": "4b823578a2f6dfc8663b5ff13da116808d5778a427db54a5ac9c6d7cd446c10e"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2015-03-12",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+      "fetched_at": "2026-11-11T00:20:48.270130+00:00",
+      "feature_available_at": "2026-11-11T10:34:53.027766+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T07:07:00.470336+00:00",
+    "feature_available_at": "2026-11-18T07:07:00.491417+00:00",
+    "commit_verified_at": "2026-11-12T13:52:56.401347+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Optical Cable Corp. – First Quarter 2015 Earnings Release Page 3 of 5 Founded in 1983, OCC is headquartered in Roanoke, Virginia with offices, manufacturing and warehouse",
+        "rationale": "The text discusses the financial results and operations of Optical Cable Corporation, which is a specific company, and does not provide information about broader industry or market impacts.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Optical Cable Corp. – First Quarter 2015 Earnings Release Page 3 of 5 Founded in 1983, OCC is headquartered in Roanoke, Virginia with offices, manufacturing and warehouse",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "Optical Cable Corporation and its subsidiaries, the Company’s future results of operations and future financial condition, and/or the future equity value of the Company. A partial",
+        "rationale": "The text directly references Optical Cable Corporation and its subsidiaries, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Optical Cable Corporation and its subsidiaries, the Company’s future results of operations and future financial condition, and/or the future equity value of the Company. A partial",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The Company achieved consolidated net sales of $17.4 million during the first quarter of fiscal year 2015, compared to net sales of $16.5 million for the same period last year.",
+        "rationale": "The quote directly references the company's financial performance, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The Company achieved consolidated net sales of $17.4 million during the first quarter of fiscal year 2015, compared to net sales of $16.5 million for the same period last year.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact",
+      "industry_dictionary_code_quote_conflict"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000230/0001437749-15-004873-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "9e1ff9a78667bbc23c55b188686efedd073a16048d238b68ad53633a1e4f7134",
+    "content_hash": "2de7e29d2ce9d17438bcb7dfb721a1c4b62a5bcb0e81eae0b7b74aceacb30a04",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T07:07:00.473118+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/01605e2f2f450e354387c25b.json",
+      "sha256": "9208644e3b162ca40440580a1dcac79ecab11d39d757ef48ff21f366bbdbda23",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 121.85899999999674
+}

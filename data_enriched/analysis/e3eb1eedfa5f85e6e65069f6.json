@@ -1,0 +1,96 @@
+{
+  "source_id": "e3eb1eedfa5f85e6e65069f6",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_01_31_executive-changes_Banking_sec.json",
+      "sha256": "9fc4f704bf7faa157b29ec86a8011aadcc009ae5eb1b1d404a7cc54488cb7ae9",
+      "filename": "2019_01_31_executive-changes_Banking_sec.json"
+    }
+  ],
+  "original_record_hash": "98a4a4c1e566aae2c3cd8f8a6f71f75fef215249e7f62c69783a2b5ed819cd31",
+  "input_hash": "a6308ef6ff5aadb19e317b33e091882ebc9f769994c7212001bccb8762e68f06",
+  "matching_audit_hash": "1c2a5442c3e0afadc0f3223dd7fea30ec0a9a4d98b1bae65f6fd65c27a4b554c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fe72133b05b36d8eaef5707ad5e351f2ab4fc32f015f3c03b0c70dc347cba92c",
+    "raw_sha256": "105635d06804db51c42521d661243b65fb3e61a92c99dd79f178dcd44eb64696",
+    "date_quote": "SEC filing datePublished=2019-01-31",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000232/000100023219000002/ktyb-20190131x8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "KENTUCKY BANCSHARES, INC.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "KENTUCKY BANCSHARES, INC."
+    }
+  ],
+  "record_hash": "dae11ebd232182221a1cc0efeff16e9479f2e2268d7bac9a873e1c275da51bdc",
+  "outputs": [
+    {
+      "path": "US\\2019_01_31_executive-changes_Banking_sec.json",
+      "sha256": "e42365723f98c0d64f95155cd5f8a6ab9074d22cc7fb8bb70d133e0a28b61bbe"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-01-31",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.617623+00:00",
+    "fetched_at": "2026-11-11T13:45:40.614402+00:00",
+    "feature_available_at": "2026-11-11T13:45:49.704217+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:25.470838+00:00",
+  "commit_verified_at": "2026-11-12T13:53:25.470838+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "KENTUCKY BANCSHARES, INC.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "KENTUCKY BANCSHARES, INC."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Banking",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

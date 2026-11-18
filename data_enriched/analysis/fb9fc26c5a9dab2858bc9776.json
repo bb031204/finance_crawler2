@@ -1,0 +1,99 @@
+{
+  "source_id": "fb9fc26c5a9dab2858bc9776",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_03_17_management-change_biotechnology_sec.json",
+      "sha256": "f62fe778dd16869bae0e5be6b4debd4a566085d94d3ea1208e8e907be860a7d4",
+      "filename": "2021_03_17_management-change_biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "fe40fef9bb0bd077055b901c0a40b3e35cf713888407ac66397e2634b0dcdd2e",
+  "input_hash": "7042a081ff56ce72c9e2259a723ca070f6251a671ec4df5ea14bf3a4b590494e",
+  "matching_audit_hash": "316110ca510fe57ebd95682f809b32c660062bc8c44468dba1f07519ea849fd6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "321c671f8398f0c1183aeb51c4357dd7effc06fa6bd03226515fc9462f344078",
+    "raw_sha256": "5730daba94f215c1948f46caa007d4d80d70ae62d5ac44856fd8252523b13d00",
+    "date_quote": "SEC filing datePublished=2021-03-17",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000162828021005022/sgmo-20210311.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sangamo Therapeutics, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo Therapeutics, Inc."
+    }
+  ],
+  "record_hash": "319b44fcc603156ebe7d48d4488f476b84c972b73e569a751860e1d14a86cd7c",
+  "outputs": [
+    {
+      "path": "US\\2021_03_17_management-change_biotechnology_sec.json",
+      "sha256": "56ecc44c200bb14b4552e2383a16f99fd3a8c0b7d5a7aa7fd32a4007d678a1c1"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-03-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.586595+00:00",
+    "fetched_at": "2026-11-11T16:29:00.811062+00:00",
+    "feature_available_at": "2026-11-11T16:29:18.147979+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:01.722939+00:00",
+  "feature_available_at": "2026-11-12T14:55:01.734644+00:00",
+  "commit_verified_at": "2026-11-12T14:55:01.734644+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a management change at Sangamo Therapeutics, including the appointment of a new principal financial officer and her background.",
+    "securities": [
+      {
+        "name": "Sangamo Therapeutics, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sangamo Therapeutics, Inc."
+      },
+      {
+        "name": "Pacific Biosciences of California, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pacific Biosciences of California, Inc."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Sangamo Therapeutics, Inc.": "company",
+      "Pacific Biosciences of California, Inc.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

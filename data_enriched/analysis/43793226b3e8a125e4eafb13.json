@@ -1,0 +1,85 @@
+{
+  "source_id": "43793226b3e8a125e4eafb13",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_03_27_Compensation_Financial-Services_sec.json",
+      "sha256": "4801093eb688889143662cb27c58e941b7d39833386fd1ac30021aedcbc43bba",
+      "filename": "2017_03_27_Compensation_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "1b861bedd48c2b066da96e508da718c73d5c7be393ed6f9f5aad280f1b50034c",
+  "input_hash": "2fd63452326189bdf2edf8f1cd02faf12924dc94420b950db16f878e89bf940e",
+  "matching_audit_hash": "5f7dcc4c3835759983a0b349491e56443b693512122a3b0a8932e15430d6ca75",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "7f8aef7b9b13fe7e2caff38a6615c012c172a3d854eb33bf103bf4eca71f48ca",
+    "raw_sha256": "5adad81838f3407b5d9708b722abb3268878193acf420dd7676d5848b4f24a19",
+    "date_quote": "SEC filing datePublished=2017-03-27",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001171/000110465917019358/a17-9896_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "98f459a3a3af6e8d89603935f1d4b7cb67b0e8308017cffa05344f3104aa26cb",
+  "outputs": [
+    {
+      "path": "US\\2017_03_27_Compensation_Financial-Services_sec.json",
+      "sha256": "46969e35cc504e4812a9a5ec98d587e62007a354cc6230e64aef8d7458b71c00"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-03-27",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.447076+00:00",
+    "fetched_at": "2026-11-11T12:33:44.221935+00:00",
+    "feature_available_at": "2026-11-11T12:34:00.316757+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:39:39.088623+00:00",
+  "feature_available_at": "2026-11-12T14:39:39.132925+00:00",
+  "commit_verified_at": "2026-11-12T14:39:39.132925+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains details about an employment agreement involving a company and its executive, including compensation structure and equity incentives.",
+    "securities": [
+      {
+        "name": "Broadway Financial Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Broadway Financial Corporation"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Broadway Financial Corporation": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

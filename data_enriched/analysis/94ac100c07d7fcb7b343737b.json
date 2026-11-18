@@ -1,0 +1,132 @@
+{
+  "source_id": "94ac100c07d7fcb7b343737b",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2017_02_16_Financing_Real-Estate_sec.json",
+      "sha256": "6976184345fb7d40ecaa2dce968a59edbedd021e6d825df12ee27bff094d831d",
+      "filename": "2017_02_16_Financing_Real-Estate_sec.json"
+    }
+  ],
+  "original_record_hash": "13449ea1af0e365cf78af21080c4208bcc8af76434b809a4ee5966d037682769",
+  "input_hash": "42e68a7ef1d9bcaee5505005e4f11b3db3ec9a6916a3d36d9cbc82b2a695ad18",
+  "matching_audit_hash": "bc4d5e41581d9fd637eed0d515fc4a7e8c3eb83998ee2dccf95cb713762cf294",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "a657a14123c9d111b0b2e1d3f40312561587fe64b205787aba9f76acd38b23aa",
+    "raw_sha256": "7aaa19b9774392ba71206a708bf16f09c4bb510a323aded17b651d45b68195e9",
+    "date_quote": "SEC filing datePublished=2017-02-16",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000298/000110465917009903/a17-4586_18k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Impac Mortgage Holdings, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Impac Mortgage Holdings, Inc."
+    },
+    {
+      "name": "Impac Mortgage Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Impac Mortgage Corp."
+    },
+    {
+      "name": "Western Alliance Bank",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Western Alliance Bank"
+    },
+    {
+      "name": "Macquarie Alpine Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Macquarie Alpine Inc."
+    }
+  ],
+  "record_hash": "2b3549f32e4801ca57ff405aec6cc835dfc62e466afd7c72afaeb0ad57a00e38",
+  "outputs": [
+    {
+      "path": "US\\2017_02_16_Financing_Real-Estate_sec.json",
+      "sha256": "0f6b2bc5f4b6a77aad2f28bfd072cb6a31b847d6e6a6ffc467fa4e024c89303b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2017-02-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:10.446085+00:00",
+    "fetched_at": "2026-11-11T12:08:41.541394+00:00",
+    "feature_available_at": "2026-11-11T12:09:01.038016+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:12.472893+00:00",
+  "commit_verified_at": "2026-11-12T13:53:12.472893+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Impac Mortgage Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Holdings, Inc."
+      },
+      {
+        "name": "Impac Mortgage Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Impac Mortgage Corp."
+      },
+      {
+        "name": "Western Alliance Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Western Alliance Bank"
+      },
+      {
+        "name": "Macquarie Alpine Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Macquarie Alpine Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

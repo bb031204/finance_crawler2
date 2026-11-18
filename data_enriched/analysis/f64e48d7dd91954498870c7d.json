@@ -1,0 +1,107 @@
+{
+  "source_id": "f64e48d7dd91954498870c7d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_06_18_Healthcare_Health-Insurance_cnbc.json",
+      "sha256": "6893bcd3002bdcd485275074523b74fd73191b9ac795b7699abff2b8b738c16b",
+      "filename": "2021_06_18_Healthcare_Health-Insurance_cnbc.json"
+    }
+  ],
+  "original_record_hash": "90c32c808498d76ca7edb3b1ba3c3fae6c635442cecc6708444496198d3d08dd",
+  "input_hash": "aa92e2ff8f405abbe156c90d88966bfa452af83056b90958e500e2b60dc867a0",
+  "matching_audit_hash": "53c08a890c269e4ec7257bcd1c150ce46fb10ad64ec6f4d77f76d254094510e6",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "9ece3c7717714049d71241e6adf0aafdee66c6fedf06f30d47cf7c7df33c649b",
+    "raw_sha256": "61a1ea5b75db7f7ccb71fdeeda9333be96798eefd1b817227faff234ee669e7b",
+    "date_quote": "article:published_time=2021-06-18T14:00:22+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "bbb1bc1a9e96048a23187a8b5e78c162c5a0cb7f43b42dd53a79be208af55bfe",
+  "outputs": [
+    {
+      "path": "US\\2021_06_18_Healthcare_Health-Insurance_cnbc.json",
+      "sha256": "495c1d09e07833b90d8b399d040a8a52eb7a4e9c29fc301e6b1f7ef441df8285"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-06-18",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:35.774338+00:00",
+    "fetched_at": "2026-11-10T14:30:53.183881+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.161860+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:55:41.568123+00:00",
+  "feature_available_at": "2026-11-12T14:55:41.577120+00:00",
+  "commit_verified_at": "2026-11-12T14:55:41.577120+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses legislative proposals affecting health insurance companies and patient rights, including arbitration clauses and potential legal reforms.",
+    "securities": [
+      {
+        "name": "Justice for Patients Act",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Justice for Patients Act"
+      },
+      {
+        "name": "Health insurance companies",
+        "ticker": null,
+        "exchange": null,
+        "quote": "health insurance companies"
+      },
+      {
+        "name": "Economic Policy Institute",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Economic Policy Institute"
+      },
+      {
+        "name": "FAIR Act",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FAIR Act"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Justice for Patients Act": "organization",
+      "Health insurance companies": "company",
+      "Economic Policy Institute": "organization",
+      "FAIR Act": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "source_id": "8669c97273778a8380093e69",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_02_05_Financing_Biotechnology_sec.json",
+      "sha256": "e1a84f831ff63a85b5e2823637c88d4ad93407e9ab100fc041236c751d6f4130",
+      "filename": "2016_02_05_Financing_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "dfa3a1a9f28432ca51da85f19990ce87c2b7a75f5111faaf43e2a78c70057353",
+  "input_hash": "85c93dd3074d4e9406501e325410887a05fc907bcc99b26fb2be29645eda7f65",
+  "matching_audit_hash": "f40ded068f7bb82a386db5b28b0200be1692cb036a494c14c315d3c0b252893b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d9022f3d3fecd29307ad6671f7fbba7539a59ff518cdc332a106f32fd4e27040",
+    "raw_sha256": "8e205ca80b0c64e1ff3547e3abb3625f5d0622d3117f6cb221bc2d777ec29881",
+    "date_quote": "SEC filing datePublished=2016-02-05",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000694/000110465916094331/a16-2829_48k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "3.75% Convertible Senior Notes due 2023",
+      "ticker": null,
+      "exchange": null,
+      "quote": "3.75% Convertible Senior Notes due 2023"
+    },
+    {
+      "name": "Capped Call Transactions",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Capped Call Transactions"
+    }
+  ],
+  "record_hash": "eb57cebe25bf69f218df976607a83594424b5c6923baaa0ddb7c9482b791cd6e",
+  "outputs": [
+    {
+      "path": "US\\2016_02_05_Financing_Biotechnology_sec.json",
+      "sha256": "8dd2130e99b663375bfeae6177da7844e4011ce465b777b42f6b5bbe9422f947"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:04.848931+00:00",
+    "fetched_at": "2026-11-11T01:07:51.150166+00:00",
+    "feature_available_at": "2026-11-11T11:09:37.962214+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:30:26.248129+00:00",
+  "feature_available_at": "2026-11-12T14:30:26.282877+00:00",
+  "commit_verified_at": "2026-11-12T14:30:26.282877+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary details a financing activity involving the issuance of convertible senior notes and capped call transactions, which are substantive financial events",
+    "securities": [
+      {
+        "name": "Citibank Global Markets Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Citibank Global Markets Inc."
+      },
+      {
+        "name": "J.P. Morgan Securities LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "J.P. Morgan Securities LLC"
+      },
+      {
+        "name": "Novavax, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Novavax, Inc."
+      },
+      {
+        "name": "JPMorgan Chase Bank, National Association, London Branch",
+        "ticker": null,
+        "exchange": null,
+        "quote": "JPMorgan Chase Bank, National Association, London Branch"
+      },
+      {
+        "name": "Morgan Stanley & Co. LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Morgan Stanley & Co. LLC"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry",
+      "market"
+    ],
+    "entity_types": {
+      "Citibank Global Markets Inc.": "company",
+      "J.P. Morgan Securities LLC": "company",
+      "Novavax, Inc.": "company",
+      "JPMorgan Chase Bank, National Association, London Branch": "company",
+      "Morgan Stanley & Co. LLC": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

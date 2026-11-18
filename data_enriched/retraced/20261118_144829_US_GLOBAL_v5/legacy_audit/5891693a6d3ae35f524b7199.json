@@ -1,0 +1,96 @@
+{
+  "source_id": "5891693a6d3ae35f524b7199",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_06_08_09_18_Acquisition-&-Asset-Sale_Hospitality_prnewswire.json",
+      "sha256": "2eaaa3b19fb3fd94aba36334e7075b266b1fb0e5f0a29d14ee18b48e1102944b",
+      "filename": "2015_06_08_09_18_Acquisition-&-Asset-Sale_Hospitality_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "54ecf816609a3502b40f7025e663fbec5f5603afc7a5c3e412fd940368c18ce2",
+  "input_hash": "64ca5047dd1bdbe12610e5c5eb4de5fb159e7aebd8ef18effc79f92ae8a90795",
+  "matching_audit_hash": "aec27365a205c4c3ccd2e94fc0e4157dd8b731cf859f71166bed86fcdff30289",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0527c7cbc9f48300b530f07898092c9595247f2734b3fd460cbb063bedb7b730",
+    "raw_sha256": "edea2cae863c3498f82d52d53f682e655b0f43e783457b66baabf4d65b4f7045",
+    "date_quote": "Publisher=Cision PR Newswire\npage.datePublished=2015-06-08T09:18:00+01:00\ndate=2015-06-08T09:18:00+01:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Host Hotels & Resorts, Inc.",
+      "ticker": "HST",
+      "exchange": null,
+      "quote": "Host Hotels & Resorts, Inc. (NYSE: HST)"
+    }
+  ],
+  "record_hash": "5485047e073d02feb1a563de0781bf0f23a8db17dcbccb4efbb630fc5dad5a31",
+  "outputs": [
+    {
+      "path": "US\\2015_06_08_09_18_Acquisition-&-Asset-Sale_Hospitality_prnewswire.json",
+      "sha256": "3a3456ad8b5732da79f493023627a2fbf3d0e0be42d7f352ea97f90652345d95"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-06-08T09:18:00+01:00",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": "+01:00",
+  "original_time_information": {
+    "publication_precision": "second",
+    "first_seen_at": "2026-11-10T18:38:27.520170+00:00",
+    "fetched_at": "2026-11-10T21:05:15.093696+00:00",
+    "feature_available_at": "2026-11-11T07:47:13.194833+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:58.778257+00:00",
+  "commit_verified_at": "2026-11-12T13:52:58.778257+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Host Hotels & Resorts, Inc.",
+        "ticker": "HST",
+        "exchange": null,
+        "quote": "Host Hotels & Resorts, Inc. (NYSE: HST)"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Hospitality",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

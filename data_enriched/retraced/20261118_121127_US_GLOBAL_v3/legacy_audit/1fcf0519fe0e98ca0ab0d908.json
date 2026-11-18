@@ -1,0 +1,103 @@
+{
+  "source_id": "1fcf0519fe0e98ca0ab0d908",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_02_19_Commodities_Commodities-Trading_cnbc.json",
+      "sha256": "36efb02733d8d2fb827f3284381917b87c235f61dc942bed849d6ebc52281b63",
+      "filename": "2018_02_19_Commodities_Commodities-Trading_cnbc.json"
+    }
+  ],
+  "original_record_hash": "d9896d8d4b35aa21ab01ae411414d6d3759e11adea8f1ac03e66358676594ee8",
+  "input_hash": "7114e6dbc26e3d4a6a0476895c2dfa426bdb4ff60403e0ed035c189cdccf9061",
+  "matching_audit_hash": "68e8cbcad4c7d7d6c795d37cde3490187d99ba6eb68873fe20a21631cd10710f",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "108caf4d321147bf6369df4fb89ef029ee81ae11b6a7cb0c0b298770ca324b67",
+    "raw_sha256": "f87de51a7794c5b7fd0f5720f7d17c66489ab07f43bbe5540c5c0c1e02d12726",
+    "date_quote": "article:published_time=2018-02-19T09:38:29+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "137c3ddcdb1652810dabd64c3a963f3ee67affc4d28d585781409284b02cb608",
+  "outputs": [
+    {
+      "path": "US\\2018_02_19_Commodities_Commodities-Trading_cnbc.json",
+      "sha256": "41cb2bc0bbea9e3a6e4faebb95ce6d9e5514afff7f4939cc251eaa8bb34bbdae"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-02-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:33:39.669939+00:00",
+    "fetched_at": "2026-11-10T13:51:38.331349+00:00",
+    "feature_available_at": "2026-11-10T17:53:19.930728+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:43:04.756124+00:00",
+  "feature_available_at": "2026-11-12T14:43:04.766245+00:00",
+  "commit_verified_at": "2026-11-12T14:43:04.766245+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about Noble Group's financial situation, restructuring efforts, and industry focus.",
+    "securities": [
+      {
+        "name": "Noble Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Noble Group"
+      },
+      {
+        "name": "Ad Hoc Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ad Hoc Group"
+      }
+    ],
+    "industries": [
+      {
+        "name": "commodities trading",
+        "basis": "inferred",
+        "quote": "commodities trader"
+      },
+      {
+        "name": "financial services",
+        "basis": "inferred",
+        "quote": "debt-for-equity swap"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Noble Group": "company",
+      "Ad Hoc Group": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

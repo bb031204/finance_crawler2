@@ -1,0 +1,91 @@
+{
+  "source_id": "6d49891b21f36dbcddafdb53",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_04_04_Regulatory_Finance_treasury.json",
+      "sha256": "0650cc234553504546f414760912118a7c79a845e0673b83c36bf2d37e43b006",
+      "filename": "2016_04_04_Regulatory_Finance_treasury.json"
+    }
+  ],
+  "original_record_hash": "9153c963f6bb0d52b3ec20a3c70db555ecd2f5e07a8461b33f9dccd1dffcf3dd",
+  "input_hash": "1585530d9626512beb0d18908f97fefda08b2ec8ac6ddff5c938e6a0121f3482",
+  "matching_audit_hash": "4d032bf19a07cbeed818b8a175ac5f7a5d8537ff8acbf05ec9e2405e3b87b0a3",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "edaa13bca98ed3aa61c60b94ab2dc20a7c04131909214898225e58ae895d0344",
+    "raw_sha256": "31d598809a6d1a9f8a835893923d2437a2a41f9fbe04441cf1554a4f2e734059",
+    "date_quote": "April 4, 2016 (Archived Content)",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "73af52f6c63e007ab2e60952150af2568fff3822fb81a02c218e03ab06d97d8a",
+  "outputs": [
+    {
+      "path": "US\\2016_04_04_Regulatory_Finance_treasury.json",
+      "sha256": "baf74ff36ec787e32a6f525852019ebdee2c7d1a8da0c1953d6b31c77542cf00"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-04-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:15.033215+00:00",
+    "fetched_at": "2026-11-10T11:06:29.877523+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.437497+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:31:31.051985+00:00",
+  "feature_available_at": "2026-11-12T14:31:31.077517+00:00",
+  "commit_verified_at": "2026-11-12T14:31:31.077517+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory changes related to corporate inversions and earnings stripping, which have implications for tax strategies and financial reporting",
+    "securities": [
+      {
+        "name": "U.S. Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury"
+      },
+      {
+        "name": "IRS",
+        "ticker": null,
+        "exchange": null,
+        "quote": "IRS"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Treasury": "organization",
+      "IRS": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

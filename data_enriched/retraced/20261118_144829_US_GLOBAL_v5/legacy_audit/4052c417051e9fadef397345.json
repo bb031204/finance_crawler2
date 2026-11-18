@@ -1,0 +1,110 @@
+{
+  "source_id": "4052c417051e9fadef397345",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_12_30_Energy_Utilities_prnewswire.json",
+      "sha256": "60aac5bacad7b332dfa1408d2f75cdb9c0574532e0ab4b6ac51122e892d76c22",
+      "filename": "2016_12_30_Energy_Utilities_prnewswire.json"
+    }
+  ],
+  "original_record_hash": "ff6fc1f2fbe2971cddb3b47bc643c862c24bb5d7381029bcce2c672e9809f072",
+  "input_hash": "29eb1a6b73f849f1cfafefbd607a6dbdb49276fc2ddc2fc134c1d10f70643981",
+  "matching_audit_hash": "23835aee576fa9c7afb9002f40f294c4fcc11a1f1476ac4ed7601ada3a2be2a9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "5a202fc3846b5ded90901503e9e89f4318e7108ba686819e62f5295f39c5b6fd",
+    "raw_sha256": "4e5e896fb60c9fb321f25c56c5081dc67353d3a51712061ed6787e1ebb9fb361",
+    "date_quote": "page.datePublished=2016-12-30T15:00:00Z",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Southern Company",
+      "ticker": "SO",
+      "exchange": null,
+      "quote": "Southern Company (NYSE: SO)"
+    },
+    {
+      "name": "Southern Power",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Southern Power"
+    }
+  ],
+  "record_hash": "fbde1dadf70634cfd20f637efbf0ae9b005e9fc0ce97894e720dc5805fd9c965",
+  "outputs": [
+    {
+      "path": "US\\2016_12_30_Energy_Utilities_prnewswire.json",
+      "sha256": "44377f7b8546071712a99d9ad483afdc6a1b57e92af9fc130afbe89f1ca41873"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-12-30",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:20.551066+00:00",
+    "fetched_at": "2026-11-10T14:12:59.493046+00:00",
+    "feature_available_at": "2026-11-10T17:53:18.208613+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:11.045009+00:00",
+  "commit_verified_at": "2026-11-12T13:53:11.045009+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "legacy_security_attribute_unverified",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Southern Company",
+        "ticker": "SO",
+        "exchange": null,
+        "quote": "Southern Company (NYSE: SO)"
+      },
+      {
+        "name": "Southern Power",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Southern Power"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Utilities",
+        "basis": "legacy_metadata",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "legacy_security_attribute_unverified"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "source_id": "30ae7053b6cd3c8e03bdbc06",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_09_21_Consumer-Goods_Beauty-&-Personal-Care_cnbc.json",
+      "sha256": "82ac9d823b6586d055d057c8fc559e6d92e192cf158004d8c88865e8919b0b3d",
+      "filename": "2018_09_21_Consumer-Goods_Beauty-&-Personal-Care_cnbc.json"
+    }
+  ],
+  "original_record_hash": "eeb2ab06248c9064cf0cad72a7a86c6b705f7a550e94824ee495923a1bd23a47",
+  "input_hash": "7f77f92b6e0b64f5d86bf3663f602f5c403f24542ea4ba1877ce84ef1f95cfde",
+  "matching_audit_hash": "9a5d216cf22c949c49232bad80467d8a27afd5e53e82415a7d8f2110383996bb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "d45ff05e63cf6333138f5c5dbe2cc97e6b59e3ecbf2fe64fb435743b909aac5b",
+    "raw_sha256": "c81c56acef192a76294bb797e984400d0c545374a8b88b91d0a3c379b0f8a227",
+    "date_quote": "article:published_time=2018-09-21T12:44:21+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Sephora",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sephora began with a focus on luxury cosmetics in urban areas"
+    },
+    {
+      "name": "Ulta Beauty",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Ulta Beauty"
+    }
+  ],
+  "record_hash": "5d26e9aa985e8c69f73360617eef5f59f7691faa3e5f6dc38231ec730ddb782e",
+  "outputs": [
+    {
+      "path": "US\\2018_09_21_Consumer-Goods_Beauty-&-Personal-Care_cnbc.json",
+      "sha256": "d46cdd50e900ec86b57bfa52c079a159d0ae17697248c8b2165aa2508f3d5072"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-09-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:03.622322+00:00",
+    "fetched_at": "2026-11-10T20:02:13.388352+00:00",
+    "feature_available_at": "2026-11-10T20:02:21.459011+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:53:23.584908+00:00",
+  "commit_verified_at": "2026-11-12T13:53:23.584908+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Sephora",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sephora began with a focus on luxury cosmetics in urban areas"
+      },
+      {
+        "name": "Ulta Beauty",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ulta Beauty"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Beauty & Personal Care",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

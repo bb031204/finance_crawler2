@@ -1,0 +1,292 @@
+{
+  "source_id": "204577bb8aa5012a8ddd90e5",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_01_05_Corporate-Action_Telecom_sec.json",
+      "sha256": "b7f501b5e633d915dca4b5bbd1e338b8a0c3c836e621e7375338a809a6e97be5",
+      "filename": "2021_01_05_Corporate-Action_Telecom_sec.json"
+    }
+  ],
+  "original_record_hash": "1e3eb3d0bde3aeac655df245400bacd5f0274ecb8a5d4b43e861eea3a61c380f",
+  "input_hash": "dd909ef37fa737a5c57540185e545039730c36101e43ab8ea24fe6168e39fb27",
+  "matching_audit_hash": "87b5b1d3e21ea0661321d6a43a104b284e004db1302036eee7ac853e0c1f2733",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "0a6a8e185bf0cabc87be89e2197df979639f2581adb1da04ad79262c8f4385d1",
+    "raw_sha256": "ce473988f82271e71050abacce41d6047ad5a2cd9e9dc07a8fb1e8814e13ef08",
+    "date_quote": "SEC filing datePublished=2021-01-05",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001082/000100108221000008/dish-20201230x8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "DISH Network Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH Network Corporation"
+    },
+    {
+      "name": "DISH DBS Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH DBS Corporation (Exact name of registrant as specified in its charter)"
+    },
+    {
+      "name": "Northstar Spectrum",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Northstar Spectrum"
+    },
+    {
+      "name": "DISH Network",
+      "ticker": null,
+      "exchange": null,
+      "quote": "DISH Network"
+    },
+    {
+      "name": "Northstar Manager",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Northstar Manager"
+    }
+  ],
+  "record_hash": "48bbc6d4478c31198c4a94f3ae6d1c79c94f33acde64ac93365fda49ee1812e9",
+  "outputs": [
+    {
+      "path": "US\\2021_01_05_Corporate-Action_Telecom_sec.json",
+      "sha256": "56887415d064114d674c5f93fbb1956c49198251339f103f88c711aa8a1151d3"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2021-01-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.585595+00:00",
+    "fetched_at": "2026-11-11T16:09:10.731132+00:00",
+    "feature_available_at": "2026-11-11T16:10:25.004463+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:13:48.216818+00:00",
+  "feature_available_at": "2026-11-12T15:16:47.963343+00:00",
+  "commit_verified_at": "2026-11-12T15:16:47.963343+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Ownership changes and regulatory rulings affect control and operations.",
+    "securities": [
+      {
+        "name": "DISH Network Corporation",
+        "ticker": null,
+        "exchange": null,
+        "quote": "DISH Network Corporation"
+      },
+      {
+        "name": "American II",
+        "ticker": null,
+        "exchange": null,
+        "quote": "American II"
+      },
+      {
+        "name": "Northstar Manager",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Northstar Manager"
+      },
+      {
+        "name": "Northstar Spectrum",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Northstar Spectrum"
+      },
+      {
+        "name": "Northstar Wireless",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Northstar Wireless"
+      },
+      {
+        "name": "SNR Wireless",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SNR Wireless"
+      },
+      {
+        "name": "FCC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FCC"
+      },
+      {
+        "name": "D.C. Circuit Court of Appeals",
+        "ticker": null,
+        "exchange": null,
+        "quote": "D.C. Circuit Court of Appeals"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Telecommunications",
+        "basis": "inferred",
+        "quote": "Northstar Wireless, a subsidiary of Northstar Spectrum, participated in Auction 97 and received 261 AWS-3 Licenses in 2015."
+      },
+      {
+        "name": "Media and Entertainment",
+        "basis": "inferred",
+        "quote": "DISH Network Corporation"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "DISH Network Corporation": "company",
+      "American II": "company",
+      "Northstar Manager": "company",
+      "Northstar Spectrum": "company",
+      "Northstar Wireless": "company",
+      "SNR Wireless": "company",
+      "FCC": "organization",
+      "D.C. Circuit Court of Appeals": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:47.989485+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:13:48.216818+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Ownership changes and regulatory rulings affect control and operations.",
+      "securities": [
+        {
+          "name": "DISH Network Corporation",
+          "ticker": null,
+          "exchange": null,
+          "quote": "DISH Network Corporation"
+        },
+        {
+          "name": "American II",
+          "ticker": null,
+          "exchange": null,
+          "quote": "American II"
+        },
+        {
+          "name": "Northstar Manager",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Northstar Manager"
+        },
+        {
+          "name": "Northstar Spectrum",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Northstar Spectrum"
+        },
+        {
+          "name": "Northstar Wireless",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Northstar Wireless"
+        },
+        {
+          "name": "SNR Wireless",
+          "ticker": null,
+          "exchange": null,
+          "quote": "SNR Wireless"
+        },
+        {
+          "name": "FCC",
+          "ticker": null,
+          "exchange": null,
+          "quote": "FCC"
+        },
+        {
+          "name": "D.C. Circuit Court of Appeals",
+          "ticker": null,
+          "exchange": null,
+          "quote": "D.C. Circuit Court of Appeals"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Telecommunications",
+          "basis": "inferred",
+          "quote": "Northstar Wireless, a subsidiary of Northstar Spectrum, participated in Auction 97 and received 261 AWS-3 Licenses in 2015."
+        },
+        {
+          "name": "Media and Entertainment",
+          "basis": "inferred",
+          "quote": "DISH Network Corporation"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "DISH Network Corporation": "company",
+        "American II": "company",
+        "Northstar Manager": "company",
+        "Northstar Spectrum": "company",
+        "Northstar Wireless": "company",
+        "SNR Wireless": "company",
+        "FCC": "organization",
+        "D.C. Circuit Court of Appeals": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:13:48.243146+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:13:48.252663+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:13:48.231885+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses corporate actions involving DISH Network Corporation, its subsidiaries, and related entities, including acquisitions, ownership changes, и",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:54:12.458870+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

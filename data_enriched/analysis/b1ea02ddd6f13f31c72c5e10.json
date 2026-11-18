@@ -1,0 +1,116 @@
+{
+  "source_id": "b1ea02ddd6f13f31c72c5e10",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_07_10_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "343d44b8f53728a5c033db53f8b7f402bec173fa4129d98d33ef019cc2b00579",
+      "filename": "2014_07_10_Real-Estate_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "554543b6a8e41f1c39a331b76cd957a840cece4b68a8852f1dcddb9bcb132fab",
+  "input_hash": "a4720b698a83bec869b9f53bb7e0c84ddd10369bff4b50805cd33e49ae45930c",
+  "matching_audit_hash": "daf91c347044734eb153d714ead99a90fe7f336f34a5be91dc09757fc820e264",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "872247d95d47f225b9e0b41ac7baa0ff9da678711202bdb4e100f5c3eaf53303",
+    "raw_sha256": "364f840d468ec09c93199aa1418c7484325d0e877fb205228d977ccb6633fe31",
+    "date_quote": "article:published_time=2014-07-10T15:13:45+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "7176e4d45323f20e519cfb0aaa013e248c07790ee84cccaf349ab5529612bba4",
+  "outputs": [
+    {
+      "path": "US\\2014_07_10_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "c105d3bc58b0347a6065ec8b4a51312a29a67810dc83a51d96f2463638eb5cb2"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-07-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:13.832562+00:00",
+    "fetched_at": "2026-11-10T12:40:52.205125+00:00",
+    "feature_available_at": "2026-11-10T17:53:15.618215+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:16:51.479412+00:00",
+  "feature_available_at": "2026-11-12T14:16:51.518205+00:00",
+  "commit_verified_at": "2026-11-12T14:16:51.518205+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses U.S. housing market trends, affordability issues, and rental market conditions, providing insights into the real estate industry's challenges",
+    "securities": [
+      {
+        "name": "Trulia",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Trulia"
+      },
+      {
+        "name": "Redfin",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Redfin"
+      },
+      {
+        "name": "Federal Reserve",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Federal Reserve"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "Real Estate"
+      },
+      {
+        "name": "Housing Market",
+        "basis": "inferred",
+        "quote": "U.S. housing market"
+      },
+      {
+        "name": "Rental Market",
+        "basis": "inferred",
+        "quote": "rental market"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Trulia": "company",
+      "Redfin": "company",
+      "Federal Reserve": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

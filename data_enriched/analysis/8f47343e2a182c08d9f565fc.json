@@ -1,0 +1,111 @@
+{
+  "source_id": "8f47343e2a182c08d9f565fc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_09_05_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "182b78283242d20a53d4a311baf4933ba66d3237c418caacb798035fe0099ef1",
+      "filename": "2018_09_05_Real-Estate_Real-Estate_cnbc.json"
+    }
+  ],
+  "original_record_hash": "03c1e63efd0cb5226029e708e535a61542abb7c3fafeba0d6e084125679738f1",
+  "input_hash": "81055e3fe6a1be7fc85cf6c94fdeb8a56adce59cd7b181a321621ac7e2db960a",
+  "matching_audit_hash": "608dcf04a0260db471b6d0ffa11edf70a10aa2f5a18651e7e213b02d5da186f8",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fcf1219471ffdb68c72abb99e9e11fddc90eb89ae45a915dc9627bea50614e39",
+    "raw_sha256": "37c7600f8afb5253c83a9f54c7e6917d5c1ea42a836af27c8af4852b50b05948",
+    "date_quote": "article:published_time=2018-09-05T14:26:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0c31e2b783796bffb71d5bf9baf94d5756ee79a62409334fc88ebd86b21a337e",
+  "outputs": [
+    {
+      "path": "US\\2018_09_05_Real-Estate_Real-Estate_cnbc.json",
+      "sha256": "6a7bd03894ea6075c57f1270530a67d04bd7d54f1227a09802861da60d0f92af"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-09-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T10:00:43.789064+00:00",
+    "fetched_at": "2026-11-10T12:50:51.876753+00:00",
+    "feature_available_at": "2026-11-10T17:53:21.337637+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:46:05.519275+00:00",
+  "feature_available_at": "2026-11-12T14:46:05.529656+00:00",
+  "commit_verified_at": "2026-11-12T14:46:05.529656+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses trends in the housing market, including the shift from buying to renting, cost comparisons, and factors influencing the market such as home价格",
+    "securities": [
+      {
+        "name": "Realtor.com",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Realtor.com"
+      },
+      {
+        "name": "Florida Atlantic University",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Florida Atlantic University"
+      },
+      {
+        "name": "Florida International University",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Florida International University"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Real Estate",
+        "basis": "explicit",
+        "quote": "Real Estate"
+      },
+      {
+        "name": "Housing Market",
+        "basis": "inferred",
+        "quote": "housing market"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "market"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "Realtor.com": "company",
+      "Florida Atlantic University": "organization",
+      "Florida International University": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "source_id": "a14a0701a0ac847bd150efcc",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2018_06_17_Legal_Beverages_cnbc.json",
+      "sha256": "95f9127d880ca3f2010bae0242bb059ffaa24e9ae8ace05d934a7ecd0d52a9a8",
+      "filename": "2018_06_17_Legal_Beverages_cnbc.json"
+    }
+  ],
+  "original_record_hash": "6baafed34f98d2580c01a9fb1e60a402987852ddf4a4e4bb8b62c243a453d176",
+  "input_hash": "f4da2ed55a7f2d3b56f2e4f4679f2677ef0906950afd07e652cc97664fc67873",
+  "matching_audit_hash": "15c71f4d7392a9c9520adf350ffafb2f6a568f23069c8212940f7ae59bde84b5",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3825093b7ff08564b883c4906db7d030965c456e926b8a139d05997051615a7d",
+    "raw_sha256": "b2c1e037ffca7364ed83c1b66a0e45e126f3252b370204326a26553b98e9f2dc",
+    "date_quote": "article:published_time=2018-06-17T14:00:32+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "1245a5d7e7f222286db91aac0eb2a0b78eacca7c47a394a2d020b17f5a44fbd4",
+  "outputs": [
+    {
+      "path": "US\\2018_06_17_Legal_Beverages_cnbc.json",
+      "sha256": "8215834cea1bd7bb5e9838d5e3d955df3f3bfc6d01422eb082eeff9c4878ee99"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2018-06-17",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T13:34:27.179894+00:00",
+    "fetched_at": "2026-11-10T14:23:18.119881+00:00",
+    "feature_available_at": "2026-11-10T17:53:20.791512+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:45:09.314533+00:00",
+  "feature_available_at": "2026-11-12T14:45:09.324744+00:00",
+  "commit_verified_at": "2026-11-12T14:45:09.324744+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses a legal dispute between MillerCoors and Pabst Brewing over a brewing agreement, including potential brewery closures and business strategy",
+    "securities": [
+      {
+        "name": "MillerCoors",
+        "ticker": null,
+        "exchange": null,
+        "quote": "MillerCoors"
+      },
+      {
+        "name": "Pabst Brewing",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Pabst Brewing"
+      },
+      {
+        "name": "Molson Coors",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Molson Coors"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Brewing",
+        "basis": "explicit",
+        "quote": "brewing agreement"
+      },
+      {
+        "name": "Legal",
+        "basis": "inferred",
+        "quote": "lawsuit"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "MillerCoors": "company",
+      "Pabst Brewing": "company",
+      "Molson Coors": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

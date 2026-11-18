@@ -1,0 +1,180 @@
+{
+  "source_id": "3c7af7d99de8ffb35071f3f8",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_03_16_Debt-Financing_Energy-Services_sec.json",
+      "sha256": "b17a057a07f195ec00b82494c5b705fd6a50a620ef4b02dd940fe793c224a2eb",
+      "filename": "2015_03_16_Debt-Financing_Energy-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "d0be05fe583dd6a813739444b526f8f93813102ca46fd2c84af2f555e64a69a1",
+  "input_hash": "4dcb2f181a43ec040ae26c1d5100713e100bd41e6d84a5ed435118191281a678",
+  "matching_audit_hash": "ee49efb3526ef6bb80a8f4a3a1c2327b33622f1105aa2454c7b6e0f7555d071d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "cc2fb432e37c44742d9a21feab88ba4cffd21398d1b87b7896ca5cf9f580a2b8",
+    "raw_sha256": "cf7e84a4270ecd180461d23f4bd973a9eeeec5ea02c4c3d5a92d41a748032fb1",
+    "date_quote": "SEC filing datePublished=2015-03-16",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000229/000100022915000047/a8k_clb-debtannouncementx0.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Core Laboratories N.V.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories N.V."
+    },
+    {
+      "name": "Core Laboratories (U.S.) Interests Holdings, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Core Laboratories (U.S.) Interests Holdings, Inc."
+    }
+  ],
+  "record_hash": "80393f9056b60d2045dcb0bf06bdf955a905c34a6ad22f2a3e2170fa4a72e25d",
+  "outputs": [
+    {
+      "path": "US\\2015_03_16_Debt-Financing_Energy-Services_sec.json",
+      "sha256": "28e077b25e68a055f09c2900b7d03c97081a6378507399e662ec7a1e63ac1d84"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-03-16",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:42:00.823285+00:00",
+    "fetched_at": "2026-11-11T00:19:58.390584+00:00",
+    "feature_available_at": "2026-11-11T10:32:14.200006+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T15:03:25.817685+00:00",
+  "feature_available_at": "2026-11-12T15:16:37.716886+00:00",
+  "commit_verified_at": "2026-11-12T15:16:37.716886+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Credit facility expansion impacts financial obligations and operations.",
+    "securities": [
+      {
+        "name": "Core Laboratories N.V.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories N.V."
+      },
+      {
+        "name": "Core Laboratories (U.S.) Interests Holdings, Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Core Laboratories (U.S.) Interests Holdings, Inc."
+      }
+    ],
+    "industries": [
+      {
+        "name": "energy services industry",
+        "basis": "explicit",
+        "quote": "energy services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Core Laboratories N.V.": "organization",
+      "Core Laboratories (U.S.) Interests Holdings, Inc.": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:37.736891+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:03:25.817685+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Credit facility expansion impacts financial obligations and operations.",
+      "securities": [
+        {
+          "name": "Core Laboratories N.V.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Core Laboratories N.V."
+        },
+        {
+          "name": "Core Laboratories (U.S.) Interests Holdings, Inc.",
+          "ticker": null,
+          "exchange": null,
+          "quote": "Core Laboratories (U.S.) Interests Holdings, Inc."
+        }
+      ],
+      "industries": [
+        {
+          "name": "energy services industry",
+          "basis": "explicit",
+          "quote": "energy services industry"
+        }
+      ],
+      "impact_scope": [
+        "company",
+        "industry"
+      ],
+      "entity_types": {
+        "Core Laboratories N.V.": "organization",
+        "Core Laboratories (U.S.) Interests Holdings, Inc.": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:03:25.842099+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:03:25.849702+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:03:25.833094+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The summary discusses a debt financing amendment affecting Core Laboratories N.V. and Core Laboratories (U.S.) Interests Holdings, Inc., with implications for a",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:24:02.614534+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

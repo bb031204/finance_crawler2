@@ -1,0 +1,1191 @@
+{
+  "source_id": "0f7137b87f19a7752309f44f",
+  "status": "completed",
+  "source_record_hash": "8fecf8a6d1e30b9f0609296fd4e5cf5cf911867415f219b9855c73668aa720fd",
+  "source_trace": {
+    "requested_url": "https://home.treasury.gov/news/press-releases/sm0338",
+    "attempted_at": "2026-11-18T08:17:16.293261+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": true,
+    "date_reverified": true,
+    "final_url": "https://home.treasury.gov/news/press-releases/sm0338",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T08:17:20.287029+00:00",
+    "source_body_hash": "34bdf49888e70ae95d36563145ba8a69b37a7cb4eadd15252c1550e34d3dad67",
+    "raw_sha256": "07646f963bb8c08b0b28bea8c35f6be06de73f05bf1e799b5581fa54279678b4",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "Treasury Designates Russian Oligarchs, Officials, and Entities in Response to Worldwide Malign Activity | U.S. Department of the Treasury",
+    "title_origin": "html_title",
+    "publication_evidence": "article_time_datetime=2018-04-06T08:30:00-04:00 | datetime April 6, 2018",
+    "historical_body_basis": "matched_previous_body_hash"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": ".runtime/simple/audit/0f7137b87f19a7752309f44f.json",
+    "sha256": "9154398d6d51f8ff2d6b9169b830009dd6eee648321937413a0759585ad02792",
+    "bundled_path": "legacy_audit/0f7137b87f19a7752309f44f.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "2a547a136d89dadc8d08b3885697dd05354bb95b3e761169d7e5771b995c8819",
+      "llm_inferred_at": "2026-11-18T08:17:42.721184+00:00",
+      "model_duration_seconds": 22.4060919,
+      "prompt_tokens": 3752,
+      "completion_tokens": 1100,
+      "selection": [
+        {
+          "source_id": "0f7137b87f19a7752309f44f",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Viktor Vekselberg is being designated for operating in the energy sector of the Russian Federation economy.",
+              "rationale": "The article explicitly mentions the energy sector of the Russian Federation economy, indicating an industry-wide impact due to the sanctions on entities within this sector.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Oleg Deripaska is being designated pursuant to E.O.",
+              "rationale": "The article discusses the energy sector of the Russian Federation economy, which is a key industry impacted by the sanctions.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "Kirill Shamalov is being designated for operating in the energy sector of the Russian Federation economy.",
+              "rationale": "The energy sector is directly mentioned as being impacted by the sanctions on individuals and companies within this sector.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "Russian oligarchs and 12 companies they own or control, 17 senior Russian government officials, and a state-owned Russian weapons trading company and its subsidiary, a Russian bank. “The Russian government operates for the disproportionate benefit of oligarchs and government elites,” said Treasury Secretary Steven T. Mnuchin. “The Russian",
+              "rationale": "The actions taken by the U.S. Department of the Treasury affect U.S. persons and the broader U.S. equity market, as the sanctions impact entities with ties to the Russian economy, which can have macroeconomic implications for U.S. financial markets.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "Viktor Vekselberg is being designated for operating in the energy sector of the Russian Federation economy."
+            },
+            {
+              "industry_key": "TRSR:bf61918ceda355fa",
+              "name": "Aluminum",
+              "basis": "explicit",
+              "quote": "United Company RUSAL PLC is being designated for being owned or controlled by, directly or indirectly, EN+ Group."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "name": "Oil & Gas Production",
+              "basis": "explicit",
+              "quote": "Oleg Deripaska is being designated pursuant to E.O."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "The Renova Group is comprised of asset management companies and investment funds that own and manage assets in several sectors of the Russian economy, including energy.",
+              "industry_name_original": "Energy",
+              "mechanism": "Sectoral sanctions on energy-related entities in the Russian Federation economy, which can affect global energy markets and supply chains.",
+              "confidence": 0.95,
+              "quote": "Viktor Vekselberg is being designated for operating in the energy sector of the Russian Federation economy."
+            },
+            {
+              "industry_key": "TRSR:bf61918ceda355fa",
+              "industry_scope_quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+              "industry_name_original": "Aluminum",
+              "mechanism": "Sanctions on entities involved in aluminum production can impact global aluminum supply chains and prices.",
+              "confidence": 0.9,
+              "quote": "United Company RUSAL PLC is being designated for being owned or controlled by, directly or indirectly, EN+ Group."
+            },
+            {
+              "industry_key": "TRSR:19801e128f3455fa",
+              "industry_scope_quote": "The Renova Group is comprised of asset management companies and investment funds that own and manage assets in several sectors of the Russian economy, including energy.",
+              "industry_name_original": "Oil & Gas Production",
+              "mechanism": "Sanctions on oil and gas production entities can affect global energy markets and supply chains.",
+              "confidence": 0.9,
+              "quote": "Oleg Deripaska is being designated pursuant to E.O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "4bbfc0dbe5bb0b2650cb13c53339d6f97980eb23bbb1f2cf45fe6c90eae09420",
+      "llm_inferred_at": "2026-11-18T08:18:04.461592+00:00",
+      "model_duration_seconds": 21.7135915,
+      "prompt_tokens": 3796,
+      "completion_tokens": 1137,
+      "selection": [
+        {
+          "source_id": "0f7137b87f19a7752309f44f",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "OFAC imposed sectoral sanctions on Surgutneftegaz pursuant to Directive 4 issued under E.O.",
+              "rationale": "The sanctions on Surgutneftegaz, an energy company, indicate an industry-wide impact on the energy sector due to its association with Russian oligarchs and the government's actions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Oleg Deripaska is being designated pursuant to E.O.",
+              "rationale": "Deripaska's involvement in the energy sector and the sanctions on his companies indicate an industry-wide impact on the energy sector.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "EuroSibEnergo is one of the largest independent power companies in Russia, operating power plants across Russia and producing around nine percent of Russia’s total electricity.",
+              "rationale": "EuroSibEnergo's designation as part of the sanctions indicates an industry-wide impact on the energy sector.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "“The Russian government operates for the disproportionate benefit of oligarchs and government elites,” said Treasury Secretary Steven T.",
+              "rationale": "The actions taken by the U.S. Treasury and the sanctions on Russian entities have implications for U.S. equity markets, as they affect international trade and financial relations.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "OFAC imposed sectoral sanctions on Surgutneftegaz pursuant to Directive 4 issued under E.O."
+            },
+            {
+              "industry_key": "TRSR:bf61918ceda355fa",
+              "name": "Aluminum",
+              "basis": "explicit",
+              "quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "name": "Power Generation",
+              "basis": "explicit",
+              "quote": "EuroSibEnergo is one of the largest independent power companies in Russia, operating power plants across Russia and producing around nine percent of Russia’s total electricity."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "The Renova Group is comprised of asset management companies and investment funds that own and manage assets in several sectors of the Russian economy, including energy.",
+              "industry_name_original": "Energy",
+              "mechanism": "Sectoral sanctions on energy companies and oligarchs indicate an impact on the energy industry due to the involvement of sanctioned entities.",
+              "confidence": 0.85,
+              "quote": "OFAC imposed sectoral sanctions on Surgutneftegaz pursuant to Directive 4 issued under E.O."
+            },
+            {
+              "industry_key": "TRSR:bf61918ceda355fa",
+              "industry_scope_quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+              "industry_name_original": "Aluminum",
+              "mechanism": "Sanctions on RUSAL PLC, an aluminum producer, indicate an impact on the aluminum industry due to its association with sanctioned entities.",
+              "confidence": 0.8,
+              "quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production."
+            },
+            {
+              "industry_key": "TRSR:58ceba4958e0415d",
+              "industry_scope_quote": "The Renova Group is comprised of asset management companies and investment funds that own and manage assets in several sectors of the Russian economy, including energy.",
+              "industry_name_original": "Power Generation",
+              "mechanism": "Sanctions on EuroSibEnergo, a power company, indicate an impact on the power generation industry due to its association with sanctioned entities.",
+              "confidence": 0.8,
+              "quote": "EuroSibEnergo is one of the largest independent power companies in Russia, operating power plants across Russia and producing around nine percent of Russia’s total electricity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "5092a11d9a7466a14b51104040fe64da5df2ab93a9bd0e591e5abfe724555510",
+      "llm_inferred_at": "2026-11-18T08:18:25.381386+00:00",
+      "model_duration_seconds": 20.8903791,
+      "prompt_tokens": 3180,
+      "completion_tokens": 1047,
+      "selection": [
+        {
+          "source_id": "0f7137b87f19a7752309f44f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Ladoga Menedzhment, OOO is located in Russia and engaged in deposit banking.",
+              "rationale": "The article explicitly mentions that Ladoga Menedzhment, OOO is engaged in deposit banking, which is a sector-specific activity. This indicates an industry impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "NPV Engineering Open Joint Stock Company provides management and consulting services in Russia.",
+              "rationale": "The article directly states that NPV Engineering Open Joint Stock Company provides management and consulting services, which is a specific company activity.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "rationale": "The article explicitly states that Renova Group operates in the energy sector, which is an industry-specific activity. This indicates an industry impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Ladoga Menedzhment, OOO is located in Russia and engaged in deposit banking."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "RFC Bank incorporated in Moscow, Russia and its operations include deposit banking activities."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "industry_name_original": "Banks",
+              "mechanism": "The article indicates that Renova Group operates in the energy sector, which is a sector-wide activity, and this is part of the broader financial services industry.",
+              "confidence": 0.95,
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "The article indicates that Renova Group operates in the energy sector, which is a sector-wide activity, and this is part of the broader financial services industry.",
+              "confidence": 0.95,
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy."
+            },
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "industry_name_original": "Energy",
+              "mechanism": "The article explicitly states that Renova Group operates in the energy sector, which is a sector-wide activity.",
+              "confidence": 0.95,
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "558a757e3b9668c84412e5a3a4fe7aa17bc7235d6e993460b006f6092452acf2",
+      "llm_inferred_at": "2026-11-18T08:18:44.262374+00:00",
+      "model_duration_seconds": 18.859288,
+      "prompt_tokens": 3224,
+      "completion_tokens": 993,
+      "selection": [
+        {
+          "source_id": "0f7137b87f19a7752309f44f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "rationale": "The article explicitly mentions that Renova Group operates in the energy sector, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "NPV Engineering Open Joint Stock Company provides management and consulting services in Russia.",
+              "rationale": "The article directly states that NPV Engineering Open Joint Stock Company provides management and consulting services, indicating a company-specific impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "Ladoga Menedzhment, OOO is located in Russia and engaged in deposit banking.",
+              "rationale": "The article explicitly states that Ladoga Menedzhment, OOO is engaged in deposit banking, indicating an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "name": "Energy",
+              "basis": "explicit",
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Ladoga Menedzhment, OOO is located in Russia and engaged in deposit banking."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "name": "Military/Government/Technical",
+              "basis": "explicit",
+              "quote": "Rosoboroneksport is being designated under E.O."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+              "industry_scope_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "industry_name_original": "Energy",
+              "mechanism": "The article indicates that Renova Group operates in the energy sector, which is a sector-wide impact.",
+              "confidence": 0.95,
+              "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "industry_name_original": "Banks",
+              "mechanism": "The article indicates that Ladoga Menedzhment, OOO is engaged in deposit banking, which is a sector-wide impact.",
+              "confidence": 0.95,
+              "quote": "Ladoga Menedzhment, OOO is located in Russia and engaged in deposit banking."
+            },
+            {
+              "industry_key": "TRSR:8fb987d55323ad3b",
+              "industry_scope_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+              "industry_name_original": "Military/Government/Technical",
+              "mechanism": "The article indicates that Rosoboroneksport is a state-owned Russian weapons trading company, which is a sector-wide impact.",
+              "confidence": 0.95,
+              "quote": "Rosoboroneksport is being designated under E.O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T08:18:44.287019+00:00",
+  "audit": {
+    "source_id": "0f7137b87f19a7752309f44f",
+    "url": "https://home.treasury.gov/news/press-releases/sm0338",
+    "canonical_market": "US",
+    "origin_market": "US",
+    "source_published_at": "2018-04-06T08:30:00-04:00",
+    "date_quote": "article_time_datetime=2018-04-06T08:30:00-04:00 | datetime April 6, 2018",
+    "date_kind": "published",
+    "publication_validation_version": 3,
+    "source_body_hash": "34bdf49888e70ae95d36563145ba8a69b37a7cb4eadd15252c1550e34d3dad67",
+    "raw_sha256": "07646f963bb8c08b0b28bea8c35f6be06de73f05bf1e799b5581fa54279678b4",
+    "first_seen_at": "2026-11-11T17:39:08.134813+00:00",
+    "fetched_at": "2026-11-13T19:47:08.208984+00:00",
+    "first_extracted_at": "2026-11-13T22:39:37.804288+00:00",
+    "extracted_at": "2026-11-18T08:18:44.268267+00:00",
+    "feature_available_at": "2026-11-18T08:18:44.287019+00:00",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "language": "en",
+    "securities": [
+      {
+        "name": "Surgutneftegaz",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Surgutneftegaz, a vertically integrated oil company operating in Russia"
+      },
+      {
+        "name": "Oleg Deripaska",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Oleg Deripaska"
+      },
+      {
+        "name": "Igor Rotenberg",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Igor Rotenberg is being designated for operating in the energy sector of the Russian Federation economy."
+      },
+      {
+        "name": "Gazprom Burenie",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Arkady Rotenberg sold Igor Rotenberg 79 percent of the Russian oil and gas drilling company Gazprom Burenie."
+      },
+      {
+        "name": "Sibur",
+        "ticker": null,
+        "exchange": null,
+        "quote": "acquired a large portion of shares of Sibur, a Russia-based company involved in oil and gas exploration, production, processing, and refining."
+      },
+      {
+        "name": "Gazprombank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gazprombank"
+      },
+      {
+        "name": "Renova Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the founder and Chairman of the Board of Directors of the Renova Group"
+      },
+      {
+        "name": "B-Finance Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "B-Finance Ltd., based in the British Virgin Islands, is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska."
+      },
+      {
+        "name": "Basic Element Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Basic Element Limited is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska."
+      },
+      {
+        "name": "EN+ Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EN+ Group is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska, B-Finance Ltd., and Basic Element Limited."
+      },
+      {
+        "name": "EuroSibEnergo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EuroSibEnergo is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and EN+ Group."
+      },
+      {
+        "name": "United Company RUSAL PLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Company RUSAL PLC is being designated for being owned or controlled by, directly or indirectly, EN+ Group. United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production."
+      },
+      {
+        "name": "Russian Machines",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Russian Machines is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and Basic Element Limited. Russian Machines was established to manage the machinery assets of Basic Element Limited."
+      },
+      {
+        "name": "GAZ Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GAZ Group is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and Russian Machines. GAZ Group is Russia’s leading manufacturer of commercial vehicles."
+      },
+      {
+        "name": "Agroholding Kuban",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Agroholding Kuban, located in Russia, is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and Basic Element Limited."
+      },
+      {
+        "name": "Gazprom Burenie, OOO",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gazprom Burenie, OOO is being designated for being owned or controlled by Igor Rotenberg."
+      },
+      {
+        "name": "NPV Engineering Open Joint Stock Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NPV Engineering Open Joint Stock Company is being designated for being owned or controlled by Igor Rotenberg."
+      },
+      {
+        "name": "Ladoga Menedzhment, OOO",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ladoga Menedzhment, OOO is being designated for being owned or controlled by Kirill Shamalov."
+      },
+      {
+        "name": "Gazprom Neft",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sergey Fursenko is a member of the board of directors of Gazprom Neft, a subsidiary of state-owned Gazprom."
+      },
+      {
+        "name": "VTB Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Andrey Kostin is the President, Chairman of the Management Board, and Member of the Supervisory Council of state-owned VTB Bank."
+      },
+      {
+        "name": "Gazprom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alexey Miller is the Chairman of the Management Committee and Deputy Chairman of the Board of Directors of state-owned company Gazprom."
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:bf61918ceda355fa",
+        "name": "Aluminum",
+        "basis": "explicit",
+        "quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "bf61918ceda355fa",
+        "industry_name_standard": "Aluminum",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:58ceba4958e0415d",
+        "name": "Power Generation",
+        "basis": "inferred",
+        "quote": "EuroSibEnergo is one of the largest independent power companies in Russia, operating power plants across Russia and producing around nine percent of Russia’s total electricity.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "58ceba4958e0415d",
+        "industry_name_standard": "Power Generation",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "EuroSibEnergo is one of the largest independent power companies in Russia, operating power plants across Russia and producing around nine percent of Russia’s total electricity.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+        "name": "Energy",
+        "basis": "explicit",
+        "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "f2fcd3f7dccadd19",
+        "industry_name_standard": "Energy",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "analysis_schema_version": 1,
+    "security_validation_version": "security_grounding_v3_optional_codes",
+    "security_cleanup": [],
+    "record_hash": "8fecf8a6d1e30b9f0609296fd4e5cf5cf911867415f219b9855c73668aa720fd",
+    "summary_cleanup": [],
+    "record_paths": [
+      "data\\US\\2018_04_06_08_30_Sanctions_Energy_treasury.json"
+    ],
+    "raw_deleted": [
+      ".runtime\\simple\\model_cache\\0e9109c96169d185bb025717e8d94f7b7d87630df8de7f57cf421790833a10c6.json",
+      ".runtime\\simple\\model_cache\\16a77ef27794853ee856ef6ed8c673c99d4ef4cfbceb8697395574a91b11093d.json",
+      ".runtime\\simple\\model_cache\\17c5bc654c675c0d1ec720133cfcb5a6671e2937c3fd897f0031edbb48657fdd.json",
+      ".runtime\\simple\\model_cache\\201c43b7e122c34984830199e9ea3da57093aa9a5757fe8e9fe8e7b64b0855af.json",
+      ".runtime\\simple\\model_cache\\24292f5dbe9b5228f066d7fd21e448cd1d57522e4530672840c3243d3c4995b2.json",
+      ".runtime\\simple\\model_cache\\34ab09835cded23a23ea79ea0477bd272d32a3bb1efdf34ba2ca8d210e8cfbd8.json",
+      ".runtime\\simple\\model_cache\\46e70fd649124a2f93c6800c22b31341add117fe0f96ea37f0669f8b716e013f.json",
+      ".runtime\\simple\\model_cache\\47cfcd980ba59da038e281c0d6f28fb517dd5d4a92e03a1cd4f72a2ae022e803.json",
+      ".runtime\\simple\\model_cache\\48e19863fb6f13e0b6693e2492cbd7684f85194cbc198845b4420262b56af211.json",
+      ".runtime\\simple\\model_cache\\5da6fbbb2bc7be41117fdd6291b65323e91ef64b7d0a78eeb2ff8674f59db62a.json",
+      ".runtime\\simple\\model_cache\\919c0279f3ccd2a09405ed8f2554f952db8f162bf0bc8e732dfab9d4c65f51fe.json",
+      ".runtime\\simple\\model_cache\\98583a8cea0eb81df03bd6cf9602e04ff311a1fec428915968b59d6fed2afece.json",
+      ".runtime\\simple\\model_cache\\a0d5a95653fb0bcf0379329225403b1dc123fd15769c0c90dc7da3a6fdb11471.json",
+      ".runtime\\simple\\model_cache\\a6c926f0fa4d906f150e432574d6242baae98ffe5c22b39c8e215f5903de4c72.json",
+      ".runtime\\simple\\model_cache\\b0611d9b8367f28f14449ffbc83287f8b88b78af92908f03b155184c350fd636.json",
+      ".runtime\\simple\\model_cache\\b5b99d63637e0a79bb321290400e0e1e43d5e78383a0a77b7e9417451e56339a.json",
+      ".runtime\\simple\\model_cache\\bf048f56c52db9af119641debef3b5829fd31c07fc432670323fe569884585b2.json",
+      ".runtime\\simple\\model_cache\\c532e8a8ea54310e72e0f4cabb932fa9890857ea4e23f89727e0162acaabbdb6.json",
+      ".runtime\\simple\\model_cache\\c900bb030994c8842575193cbe8c7bc9eae3db22a6844c35ba040681aee745b8.json",
+      ".runtime\\simple\\model_cache\\cae2ffa7871413c90a92e56cff0fdbd25b1727ac51d669a9b40934f2514123f1.json",
+      ".runtime\\simple\\model_cache\\d190fe5745ed4ceb191e1eeb2bfdfe15714a01e3cea5d8496a28d6a18ab0c31d.json",
+      ".runtime\\simple\\model_cache\\d625c2009c5c01af86bc8130d0989dba8a188191d1af5681192f2156df8f45ef.json",
+      ".runtime\\simple\\model_cache\\e7bb4629bf3488eafada4938e4c0fdaeaf138544dfa670d38d8a75d971813353.json",
+      ".runtime\\simple\\model_cache\\eb04ff8dc8fed1ea0971c9c4b3dcb7567a5320feffc53dbc83a7fb2f26ef79f2.json",
+      ".runtime\\simple\\model_cache\\f556b601f0da4d5bf9ef3ee32dc732a47bfa2129d9c7da4eb020cc8a3b0441b5.json",
+      ".runtime\\simple\\model_cache\\f5709716d711a9e5687cec0a691062de1e3b316aaf72a0064cde138b97fa705c.json",
+      ".runtime\\simple\\model_cache\\fa092097f789e2863b85e0b8b0b3800e402440334513c8e7f2dbbbe2591fa2ec.json",
+      ".runtime\\simple\\pages\\0f7137b87f19a7752309f44f.json"
+    ],
+    "cleanup_errors": [],
+    "numeric_evidence_version": "numeric-evidence-1",
+    "request_url": "https://home.treasury.gov/news/press-releases/sm0338",
+    "title": "Treasury Designates Russian Oligarchs, Officials, and Entities in Response to Worldwide Malign Activity | U.S. Department of the Treasury",
+    "title_origin": "html_title",
+    "article_binding_version": 4,
+    "schema_version": "1.1",
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "extraction_fingerprint": "1dd9c1a50898339b04fd290dd9ce55233dcc4bad7e205251823c6819bf82d2d9",
+    "llm_inferred_at": "2026-11-18T08:18:44.262374+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "content_hash": "34bdf49888e70ae95d36563145ba8a69b37a7cb4eadd15252c1550e34d3dad67",
+    "source_type": "web",
+    "entity_details": [
+      {
+        "name": "Surgutneftegaz",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Surgutneftegaz, a vertically integrated oil company operating in Russia",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Oleg Deripaska",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Oleg Deripaska",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Igor Rotenberg",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Igor Rotenberg is being designated for operating in the energy sector of the Russian Federation economy.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Gazprom Burenie",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Arkady Rotenberg sold Igor Rotenberg 79 percent of the Russian oil and gas drilling company Gazprom Burenie.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Sibur",
+        "ticker": null,
+        "exchange": null,
+        "quote": "acquired a large portion of shares of Sibur, a Russia-based company involved in oil and gas exploration, production, processing, and refining.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Gazprombank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gazprombank",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Renova Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "the founder and Chairman of the Board of Directors of the Renova Group",
+        "entity_type": "company",
+        "entity_role": "unknown",
+        "role_quote": "founder and Chairman of the Board of Directors of the Renova Group"
+      },
+      {
+        "name": "B-Finance Ltd.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "B-Finance Ltd., based in the British Virgin Islands, is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Basic Element Limited",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Basic Element Limited is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "EN+ Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EN+ Group is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska, B-Finance Ltd., and Basic Element Limited.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "EuroSibEnergo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "EuroSibEnergo is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and EN+ Group.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "United Company RUSAL PLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "United Company RUSAL PLC is being designated for being owned or controlled by, directly or indirectly, EN+ Group. United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Russian Machines",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Russian Machines is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and Basic Element Limited. Russian Machines was established to manage the machinery assets of Basic Element Limited.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "GAZ Group",
+        "ticker": null,
+        "exchange": null,
+        "quote": "GAZ Group is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and Russian Machines. GAZ Group is Russia’s leading manufacturer of commercial vehicles.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Agroholding Kuban",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Agroholding Kuban, located in Russia, is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska and Basic Element Limited.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Gazprom Burenie, OOO",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Gazprom Burenie, OOO is being designated for being owned or controlled by Igor Rotenberg.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "NPV Engineering Open Joint Stock Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "NPV Engineering Open Joint Stock Company is being designated for being owned or controlled by Igor Rotenberg.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Ladoga Menedzhment, OOO",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Ladoga Menedzhment, OOO is being designated for being owned or controlled by Kirill Shamalov.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Gazprom Neft",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Sergey Fursenko is a member of the board of directors of Gazprom Neft, a subsidiary of state-owned Gazprom.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "VTB Bank",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Andrey Kostin is the President, Chairman of the Management Board, and Member of the Supervisory Council of state-owned VTB Bank.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      },
+      {
+        "name": "Gazprom",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Alexey Miller is the Chairman of the Management Committee and Deputy Chairman of the Board of Directors of state-owned company Gazprom.",
+        "entity_type": "unknown",
+        "entity_role": "unknown",
+        "role_quote": null
+      }
+    ],
+    "events": [
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Russian oligarchs and elites who profit from this corrupt system will no longer be insulated from the consequences of their government’s destabilizing activities."
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": null,
+        "object": "CAATSA Section 241 Report",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "These actions follow the Department of the Treasury’s issuance of the CAATSA Section 241 report in late January 2018."
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": "designated",
+        "object": "Vladimir Bogdanov",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Designated Russian Oligarchs Vladimir Bogdanov is being designated for operating in the energy sector of the Russian Federation economy."
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": "assets",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Rotenberg acquired significant assets from his father, Arkady Rotenberg, after OFAC designated the latter in March 2014."
+      },
+      {
+        "event_type": "product_business",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Arkady Rotenberg sold Igor Rotenberg 79 percent of the Russian oil and gas drilling company Gazprom Burenie."
+      },
+      {
+        "event_type": "corporate_action",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Shamalov married Putin’s daughter Katerina Tikhonova in February 2013 and his fortunes drastically improved following the marriage; within 18 months, he acquired a large portion of"
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": null,
+        "object": "loan",
+        "key_period": null,
+        "key_values": "more than one $1 billion",
+        "conditions": "state-owned entity subject to sectoral sanctions pursuant to E.O. 13662",
+        "evidence_type": "explicit",
+        "quote": "A year later, he was able to borrow more than one $1 billion through a loan from Gazprombank, a state-owned entity subject to sectoral sanctions pursuant to E.O. 13662"
+      },
+      {
+        "event_type": "product_business",
+        "subject": null,
+        "action": "sold",
+        "object": "shares",
+        "key_period": null,
+        "key_values": "17 percent of Sibur’s shares",
+        "conditions": "long-time Putin associate Gennady Timchenko, who is himself designated pursuant to E.O. 13661",
+        "evidence_type": "explicit",
+        "quote": "That same year, long-time Putin associate Gennady Timchenko, who is himself designated pursuant to E.O. 13661, sold an additional 17 percent of Sibur’s shares to Shamalov"
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": "designated",
+        "object": "operating in the energy sector",
+        "key_period": null,
+        "key_values": "energy sector of the Russian Federation economy",
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Viktor Vekselberg is being designated for operating in the energy sector of the Russian Federation economy"
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": "designated",
+        "object": "B-Finance Ltd.",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "B-Finance Ltd., based in the British Virgin Islands, is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska."
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": "designated",
+        "object": "Basic Element Limited",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Basic Element Limited is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska."
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": "designated",
+        "object": "EN+ Group",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "EN+ Group is being designated for being owned or controlled by, directly or indirectly, Oleg Deripaska, B-Finance Ltd., and Basic Element Limited."
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Russia has contributed to the instability of the Government of Syria through the sales and transfer of Russian-origin military equipment in support of Assad’s regime"
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": null,
+        "object": null,
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Rosoboroneksport is being designated under E.O."
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": "designated",
+        "object": "Russian Financial Corporation Bank",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "The Russian Financial Corporation Bank (RFC Bank) is being designated for being owned by Rosoboroneksport."
+      },
+      {
+        "event_type": "unknown",
+        "subject": null,
+        "action": null,
+        "object": "Official",
+        "key_period": null,
+        "key_values": null,
+        "conditions": null,
+        "evidence_type": "explicit",
+        "quote": "Fradkov is being designated pursuant E.O. 13661 for being an official of the Government of the Russian Federation."
+      }
+    ],
+    "industry_impacts": [
+      {
+        "industry_key": "TRSR:bf61918ceda355fa",
+        "industry_scope_quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+        "industry_name_original": "Aluminum",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Sanctions on RUSAL PLC, an aluminum producer, indicate an impact on the aluminum industry due to its association with sanctioned entities.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.8,
+        "quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "bf61918ceda355fa",
+        "industry_name_standard": "Aluminum",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "United Company RUSAL PLC is based in Jersey and is one of the world’s largest aluminum producers, responsible for seven percent of global aluminum production.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "TRSR:58ceba4958e0415d",
+        "industry_scope_quote": "The Renova Group is comprised of asset management companies and investment funds that own and manage assets in several sectors of the Russian economy, including energy.",
+        "industry_name_original": "Power Generation",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "Sanctions on EuroSibEnergo, a power company, indicate an impact on the power generation industry due to its association with sanctioned entities.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.8,
+        "quote": "EuroSibEnergo is one of the largest independent power companies in Russia, operating power plants across Russia and producing around nine percent of Russia’s total electricity.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "58ceba4958e0415d",
+        "industry_name_standard": "Power Generation",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "EuroSibEnergo is one of the largest independent power companies in Russia, operating power plants across Russia and producing around nine percent of Russia’s total electricity.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "SP500-SECTOR:f2fcd3f7dccadd19",
+        "industry_scope_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+        "industry_name_original": "Energy",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "The article indicates that Renova Group operates in the energy sector, which is a sector-wide impact.",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+        "industry_standard": "SP500-SECTOR",
+        "industry_version": "released-reference-v1",
+        "industry_code": "f2fcd3f7dccadd19",
+        "industry_name_standard": "Energy",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "Renova Group, based in Russia, is comprised of investment funds and management companies operating in the energy sector, among others, in Russia’s economy.",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified"
+    ],
+    "event_cluster_id": null,
+    "extraction_version": "38b406e9c2d01dbd76fc74ea3943a9b9da578c243a63cb725b82b47fc07e3023",
+    "commit_verified_at": "2026-11-13T22:39:37.861648+00:00",
+    "raw_cleanup_status": "deleted",
+    "raw_deleted_at": "2026-11-13T22:39:37.970385+00:00",
+    "raw_deleted_paths": [
+      ".runtime\\simple\\pages\\0f7137b87f19a7752309f44f.json",
+      ".runtime\\simple\\model_cache\\fa092097f789e2863b85e0b8b0b3800e402440334513c8e7f2dbbbe2591fa2ec.json",
+      ".runtime\\simple\\model_cache\\16a77ef27794853ee856ef6ed8c673c99d4ef4cfbceb8697395574a91b11093d.json",
+      ".runtime\\simple\\model_cache\\919c0279f3ccd2a09405ed8f2554f952db8f162bf0bc8e732dfab9d4c65f51fe.json",
+      ".runtime\\simple\\model_cache\\b5b99d63637e0a79bb321290400e0e1e43d5e78383a0a77b7e9417451e56339a.json",
+      ".runtime\\simple\\model_cache\\46e70fd649124a2f93c6800c22b31341add117fe0f96ea37f0669f8b716e013f.json",
+      ".runtime\\simple\\model_cache\\0e9109c96169d185bb025717e8d94f7b7d87630df8de7f57cf421790833a10c6.json",
+      ".runtime\\simple\\model_cache\\c900bb030994c8842575193cbe8c7bc9eae3db22a6844c35ba040681aee745b8.json",
+      ".runtime\\simple\\model_cache\\34ab09835cded23a23ea79ea0477bd272d32a3bb1efdf34ba2ca8d210e8cfbd8.json",
+      ".runtime\\simple\\model_cache\\e7bb4629bf3488eafada4938e4c0fdaeaf138544dfa670d38d8a75d971813353.json",
+      ".runtime\\simple\\model_cache\\201c43b7e122c34984830199e9ea3da57093aa9a5757fe8e9fe8e7b64b0855af.json",
+      ".runtime\\simple\\model_cache\\b0611d9b8367f28f14449ffbc83287f8b88b78af92908f03b155184c350fd636.json",
+      ".runtime\\simple\\model_cache\\5da6fbbb2bc7be41117fdd6291b65323e91ef64b7d0a78eeb2ff8674f59db62a.json",
+      ".runtime\\simple\\model_cache\\48e19863fb6f13e0b6693e2492cbd7684f85194cbc198845b4420262b56af211.json",
+      ".runtime\\simple\\model_cache\\cae2ffa7871413c90a92e56cff0fdbd25b1727ac51d669a9b40934f2514123f1.json",
+      ".runtime\\simple\\model_cache\\a6c926f0fa4d906f150e432574d6242baae98ffe5c22b39c8e215f5903de4c72.json",
+      ".runtime\\simple\\model_cache\\f5709716d711a9e5687cec0a691062de1e3b316aaf72a0064cde138b97fa705c.json",
+      ".runtime\\simple\\model_cache\\bf048f56c52db9af119641debef3b5829fd31c07fc432670323fe569884585b2.json",
+      ".runtime\\simple\\model_cache\\f556b601f0da4d5bf9ef3ee32dc732a47bfa2129d9c7da4eb020cc8a3b0441b5.json",
+      ".runtime\\simple\\model_cache\\d190fe5745ed4ceb191e1eeb2bfdfe15714a01e3cea5d8496a28d6a18ab0c31d.json",
+      ".runtime\\simple\\model_cache\\24292f5dbe9b5228f066d7fd21e448cd1d57522e4530672840c3243d3c4995b2.json",
+      ".runtime\\simple\\model_cache\\eb04ff8dc8fed1ea0971c9c4b3dcb7567a5320feffc53dbc83a7fb2f26ef79f2.json",
+      ".runtime\\simple\\model_cache\\d625c2009c5c01af86bc8130d0989dba8a188191d1af5681192f2156df8f45ef.json",
+      ".runtime\\simple\\model_cache\\17c5bc654c675c0d1ec720133cfcb5a6671e2937c3fd897f0031edbb48657fdd.json",
+      ".runtime\\simple\\model_cache\\c532e8a8ea54310e72e0f4cabb932fa9890857ea4e23f89727e0162acaabbdb6.json",
+      ".runtime\\simple\\model_cache\\98583a8cea0eb81df03bd6cf9602e04ff311a1fec428915968b59d6fed2afece.json",
+      ".runtime\\simple\\model_cache\\a0d5a95653fb0bcf0379329225403b1dc123fd15769c0c90dc7da3a6fdb11471.json",
+      ".runtime\\simple\\model_cache\\47cfcd980ba59da038e281c0d6f28fb517dd5d4a92e03a1cd4f72a2ae022e803.json"
+    ],
+    "raw_cleanup_errors": [],
+    "raw_cleanup_reason": "success",
+    "raw_policy_version": "raw-transient-1",
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "industry",
+        "quote": "OFAC imposed sectoral sanctions on Surgutneftegaz pursuant to Directive 4 issued under E.O.",
+        "rationale": "The sanctions on Surgutneftegaz, an energy company, indicate an industry-wide impact on the energy sector due to its association with Russian oligarchs and the government's actions.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "OFAC imposed sectoral sanctions on Surgutneftegaz pursuant to Directive 4 issued under E.O.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "NPV Engineering Open Joint Stock Company provides management and consulting services in Russia.",
+        "rationale": "The article directly states that NPV Engineering Open Joint Stock Company provides management and consulting services, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "NPV Engineering Open Joint Stock Company provides management and consulting services in Russia.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "Ladoga Menedzhment, OOO is located in Russia and engaged in deposit banking.",
+        "rationale": "The article explicitly states that Ladoga Menedzhment, OOO is engaged in deposit banking, indicating an industry-wide impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Ladoga Menedzhment, OOO is located in Russia and engaged in deposit banking.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "8fecf8a6d1e30b9f0609296fd4e5cf5cf911867415f219b9855c73668aa720fd",
+    "source_verification": "original_body_or_publication_revalidated",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "classification_contract": "dictionary-scope-replacement-1",
+    "analysis_input": "retrace_original",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "evidence_pack": {
+      "path": "evidence/0f7137b87f19a7752309f44f.json",
+      "sha256": "419cb4a1a59a8f5661336f6b7f1bb45c6d24a6c5bd2d0eb84fb6f49f90c95748",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 88.01600000000326
+}

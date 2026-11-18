@@ -1,0 +1,949 @@
+{
+  "source_id": "1b696d08f08939da6e3f001f",
+  "status": "completed",
+  "source_record_hash": "0999777f59b41a6a3f9df4277a8f9ba78b59665748ee782029411ea7282e23c6",
+  "source_trace": {
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-12-018390-index.html",
+    "attempted_at": "2026-11-18T09:24:26.110626+00:00",
+    "status": "original_refetched",
+    "reason": null,
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-12-018390-index.html",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312512018390/d285197d6k.htm",
+    "fetched_at": "2026-11-18T09:24:37.734994+00:00",
+    "source_body_hash": "c8ab56fc963fe75f1606dc2c4d2d5d1eaf4987b663c7dfbdf7d51d56c3b71a8c",
+    "raw_sha256": "27e1aa4f4b792e1fd34fcfd6207d4759a9aab5918426314b16a35f1b4e99b9cf",
+    "source_documents": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312512018390/d285197d6k.htm",
+        "type": "6-K",
+        "description": "FORM 6-K",
+        "raw_sha256": "27e1aa4f4b792e1fd34fcfd6207d4759a9aab5918426314b16a35f1b4e99b9cf",
+        "text_sha256": "a6d8fc157ecb5f5d96d6f0dd04a207e81e6ad0b60c2bc0c692648b2fd2b36924",
+        "text_start": 0,
+        "text_end": 1876
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312512018390/d285197dex991.htm",
+        "type": "EX-99.1",
+        "description": "EX-99.1",
+        "raw_sha256": "f86a5064b44153c04a16ec036bb1cd16b028dbfbbce14ea3f89cf9f8ddd936fb",
+        "text_sha256": "f1246fedbdcbbc74e14548c91cfa6910ba22bdf4f8dada60ce8d9530742cf23c",
+        "text_start": 1878,
+        "text_end": 31652
+      }
+    ],
+    "sec_unread_exhibits": [],
+    "title": "",
+    "title_origin": "unknown",
+    "publication_evidence": "SEC filing datePublished=2012-01-20",
+    "historical_body_basis": "same_immutable_sec_accession"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/1b696d08f08939da6e3f001f.json",
+    "sha256": "1c90d2f8b5b198057b830b1c2e94d3c05e895ce9109ff7461d597165d03d1967",
+    "bundled_path": "legacy_audit/1b696d08f08939da6e3f001f.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "56a68add15767f47e7ce4fcc52f02acfa5c60c7fc7c8ee5f1c764c2fca0bbb3f",
+      "llm_inferred_at": "2026-11-18T09:24:50.545983+00:00",
+      "model_duration_seconds": 12.788875,
+      "prompt_tokens": 4327,
+      "completion_tokens": 565,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The impact of the initial adoption of IFRS on our 2011 comparative results is presented below.",
+              "rationale": "The adoption of IFRS is a sector-wide accounting standard that affects financial reporting across the financial services industry, particularly for institutions like Royal Bank of Canada.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+              "rationale": "The company is directly impacted by the adoption of IFRS, as it is the entity reporting its financial results under the new standard.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "The impact of the initial adoption of IFRS on our 2011 comparative results is presented below."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "The impact of the initial adoption of IFRS on our 2011 comparative results is presented below."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "39b259240fea7be6cd1b7672cd5494cfdf83721e5085d2d604f5c9c7581b5db8",
+      "llm_inferred_at": "2026-11-18T09:25:02.321148+00:00",
+      "model_duration_seconds": 11.7557844,
+      "prompt_tokens": 4371,
+      "completion_tokens": 598,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The impact of the initial adoption of IFRS on our 2011 comparative results is presented below.",
+              "rationale": "The adoption of IFRS is a sector-wide accounting standard that affects financial reporting across the financial services industry, particularly for institutions like Royal Bank of Canada.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+              "rationale": "The company specifically mentions its own financial reporting under IFRS, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012."
+            },
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "d3eada6766bb8d65f76e78ad10665893bced5fc5cdb2b6f9284c9ca4bd3fb3ba",
+      "llm_inferred_at": "2026-11-18T09:25:16.002080+00:00",
+      "model_duration_seconds": 13.6408452,
+      "prompt_tokens": 3672,
+      "completion_tokens": 635,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Net income for 2011 under IFRS was $23 million lower than under Canadian GAAP as a result of the change in the recognition requirement.",
+              "rationale": "The impact of the change in the recognition of income taxes on intercompany transfers is primarily affecting the International Banking industry due to the nature of intercompany transactions and their accounting treatment under IFRS.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "Net income for 2011 under IFRS was $23 million lower than under Canadian GAAP as a result of the change in the recognition requirement.",
+              "rationale": "The specific impact of the change in the recognition of income taxes on intercompany transfers is directly related to the company's financial reporting and its intercompany transactions.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The impact going forward will be dependent on the degree and circumstances of any securities impairment.",
+              "rationale": "The change in the impairment framework under IFRS affects the Capital Markets industry, as it involves the valuation and impairment of securities, which are significant in this sector.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:90f2dfe71cd4510c",
+              "name": "Medical/Dental Instruments",
+              "basis": "explicit",
+              "quote": "The impact going forward will be dependent on the degree and circumstances of any securities impairment."
+            },
+            {
+              "industry_key": "TRSR:9da7f76bc81d2f4e",
+              "name": "Books",
+              "basis": "explicit",
+              "quote": "Under IFRS, when reward points are earned, a portion of interchange revenue is deferred based on the fair value of the points granted."
+            },
+            {
+              "industry_key": "TRSR:1a6cc151cbaf00f5",
+              "name": "Biotechnology: Biological Products (No Diagnostic Substances)",
+              "basis": "explicit",
+              "quote": "Under IFRS, when reward points are earned, a portion of interchange revenue is deferred based on the fair value of the points granted."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "728dcc61e0010f60779fe4fa6a73fcf3a93eb589b07c1748e86567b884ce5ca5",
+      "llm_inferred_at": "2026-11-18T09:25:27.702126+00:00",
+      "model_duration_seconds": 11.6814235,
+      "prompt_tokens": 3716,
+      "completion_tokens": 603,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "Net income for 2011 under IFRS was $23 million lower than under Canadian GAAP as a result of the change in the recognition requirement.",
+              "rationale": "The impact of the change in the recognition requirement for income taxes is primarily attributed to the financial sector, specifically affecting International Banking.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "We expect this impact to be minimal going forward.",
+              "rationale": "The statement is made by the company regarding the impact of the transition to IFRS on its financial reporting and earnings.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The impact going forward will be dependent on the degree and circumstances of any securities impairment.",
+              "rationale": "The change in the impairment framework under IFRS affects the financial sector, particularly Capital Markets, as it relates to the valuation and impairment of securities.",
+              "confidence": 0.9
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:9da7f76bc81d2f4e",
+              "name": "Books",
+              "basis": "explicit",
+              "quote": "Under IFRS, when reward points are earned, a portion of interchange revenue is deferred based on the fair value of the points granted."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "Net income for 2011 under IFRS was $23 million lower than under Canadian GAAP as a result of the change in the recognition requirement."
+            },
+            {
+              "industry_key": "SEC-SIC:6162",
+              "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+              "basis": "explicit",
+              "quote": "Most assets transferred in our securitization transactions, which are mainly Canadian residential mortgages, do not qualify for derecognition under IFRS."
+            }
+          ],
+          "industry_impacts": []
+        }
+      ]
+    },
+    {
+      "response_sha256": "146584bd70c129158b35fe0b4aa623923fb768ec43a4f930ac5d6e0d907dccf8",
+      "llm_inferred_at": "2026-11-18T09:25:46.300904+00:00",
+      "model_duration_seconds": 18.5737114,
+      "prompt_tokens": 4306,
+      "completion_tokens": 862,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The impact reflected in this table relates to Equity attributable to shareholders.",
+              "rationale": "The text discusses the impact of IFRS adoption on equity, which is a sector-wide financial reporting standard affecting the banking industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The following table shows the quarterly impact to shareholders equity from adoption of IFRS.",
+              "rationale": "The text specifically refers to the impact on shareholders' equity for the company, indicating a company-specific impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The following table shows the quarterly impact to shareholders equity from adoption of IFRS."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The impact reflected in this table relates to Equity attributable to shareholders."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The impact reflected in this table relates to Equity attributable to shareholders."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "regulatory capital reporting under IFRS",
+              "confidence": 0.95,
+              "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for"
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+              "industry_name_original": "Banks",
+              "mechanism": "regulatory capital reporting under IFRS",
+              "confidence": 0.95,
+              "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+              "industry_name_original": "Business Services",
+              "mechanism": "regulatory capital reporting under IFRS",
+              "confidence": 0.95,
+              "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "4206e9d7d8e6ae2a9891ef6ba96e7cfc5bf3d33950538d31475cdf294716dc36",
+      "llm_inferred_at": "2026-11-18T09:26:03.067913+00:00",
+      "model_duration_seconds": 16.7462491,
+      "prompt_tokens": 4350,
+      "completion_tokens": 864,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [],
+          "impact_scope": [
+            "industry",
+            "company"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The impact reflected in this table relates to Equity attributable to shareholders.",
+              "rationale": "The text discusses the impact of IFRS adoption on equity, which is a sector-wide financial reporting standard affecting the banking industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "company",
+              "quote": "The following table shows the quarterly impact to shareholders equity from adoption of IFRS.",
+              "rationale": "The text specifically refers to the impact on shareholders' equity from the adoption of IFRS, which is a company-specific financial reporting change.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [],
+          "industries": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "name": "Commercial Banks",
+              "basis": "explicit",
+              "quote": "The following table shows the quarterly impact to shareholders equity from adoption of IFRS."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "The impact reflected in this table relates to Equity attributable to shareholders."
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "name": "Business Services",
+              "basis": "explicit",
+              "quote": "The impact reflected in this table relates to Equity attributable to shareholders."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:5cb1f4aac7515026",
+              "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+              "industry_name_original": "Commercial Banks",
+              "mechanism": "regulatory capital reporting under IFRS",
+              "confidence": 0.95,
+              "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for"
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+              "industry_name_original": "Banks",
+              "mechanism": "regulatory capital reporting under IFRS",
+              "confidence": 0.95,
+              "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for"
+            },
+            {
+              "industry_key": "TRSR:df01973c2ce9dd88",
+              "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+              "industry_name_original": "Business Services",
+              "mechanism": "regulatory capital reporting under IFRS",
+              "confidence": 0.95,
+              "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "05fd22c8f0de69af29fe515c645af0d7970f49528b761b7873db36c4496d6c76",
+      "llm_inferred_at": "2026-11-18T09:26:21.786281+00:00",
+      "model_duration_seconds": 18.6971095,
+      "prompt_tokens": 2999,
+      "completion_tokens": 934,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization.",
+              "rationale": "The text explicitly identifies RBC as a bank and describes its operations as part of the financial services industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "the effects of which can be difficult to predict  include: credit, market, operational, and liquidity and funding risks, and other risks discussed in the Risk management and",
+              "rationale": "The text discusses market risks and their potential impact on financial institutions, which is relevant to the broader US equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "and valuations; the effects of changes in government fiscal, monetary and other policies; changes to and new interpretations of risk-based capital and liquidity guidelines; the impact of changes in laws and regulations including relating to the payments system in Canada, consumer protection measures and the Dodd-Frank Wall Street Reform and",
+              "rationale": "The text discusses macroeconomic and regulatory factors that affect the broader financial market, which is relevant to the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6022",
+              "name": "STATE COMMERCIAL BANKS",
+              "basis": "inferred",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            },
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "inferred",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            },
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "name": "Other Consumer Services",
+              "basis": "inferred",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "leading diversified financial services companies, and provide personal and commercial banking, wealth management services, insurance, corporate and investment banking and",
+              "industry_name_original": "Banks",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            },
+            {
+              "industry_key": "TRSR:53784145af657a70",
+              "industry_scope_quote": "leading diversified financial services companies, and provide personal and commercial banking, wealth management services, insurance, corporate and investment banking and",
+              "industry_name_original": "Other Consumer Services",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "b9443ca3159129e88db0aeb28ff25e8a007a6317c8d6d3c743fee73a47fb1db4",
+      "llm_inferred_at": "2026-11-18T09:26:42.013417+00:00",
+      "model_duration_seconds": 20.211182,
+      "prompt_tokens": 3043,
+      "completion_tokens": 1079,
+      "selection": [
+        {
+          "source_id": "1b696d08f08939da6e3f001f",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization.",
+              "rationale": "The text explicitly identifies RBC as a bank and describes its operations as part of the financial services industry, indicating an industry-wide impact.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "market",
+              "quote": "the effects of which can be difficult to predict  include: credit, market, operational, and liquidity and funding risks, and other risks discussed in the Risk management and",
+              "rationale": "The text discusses market risks and their potential impact on financial markets, which is a broad market-wide concern.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "and valuations; the effects of changes in government fiscal, monetary and other policies; changes to and new interpretations of risk-based capital and liquidity guidelines; the impact of changes in laws and regulations including relating to the payments system in Canada, consumer protection measures and the Dodd-Frank Wall Street Reform and",
+              "rationale": "The text discusses the impact of changes in government fiscal, monetary, and regulatory policies, which are relevant to the US equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "name": "Banks",
+              "basis": "explicit",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "name": "Financials",
+              "basis": "explicit",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "name": "Diversified Financial Services",
+              "basis": "explicit",
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "TRSR:0959e9bdd3051a41",
+              "industry_scope_quote": "leading diversified financial services companies, and provide personal and commercial banking, wealth management services, insurance, corporate and investment banking and",
+              "industry_name_original": "Banks",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            },
+            {
+              "industry_key": "SP500-SECTOR:4e4f1565fb7c9f2a",
+              "industry_scope_quote": "leading diversified financial services companies, and provide personal and commercial banking, wealth management services, insurance, corporate and investment banking and",
+              "industry_name_original": "Financials",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            },
+            {
+              "industry_key": "TRSR:7d8172e8794ecf56",
+              "industry_scope_quote": "leading diversified financial services companies, and provide personal and commercial banking, wealth management services, insurance, corporate and investment banking and",
+              "industry_name_original": "Diversified Financial Services",
+              "mechanism": "economic transmission",
+              "confidence": 0.95,
+              "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T09:26:42.052962+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "c8ab56fc963fe75f1606dc2c4d2d5d1eaf4987b663c7dfbdf7d51d56c3b71a8c",
+    "raw_sha256": "27e1aa4f4b792e1fd34fcfd6207d4759a9aab5918426314b16a35f1b4e99b9cf",
+    "date_quote": "Published=2012-01-20",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312512018390/d285197d6k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2",
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "name": "Banks",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "name": "Commercial Banks",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:7d8172e8794ecf56",
+        "name": "Diversified Financial Services",
+        "basis": "inferred",
+        "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "7d8172e8794ecf56",
+        "industry_name_standard": "Diversified Financial Services",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "SEC-SIC:6162",
+        "name": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "basis": "inferred",
+        "quote": "Most assets transferred in our securitization transactions, which are mainly Canadian residential mortgages, do not qualify for derecognition under IFRS.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6162",
+        "industry_name_standard": "MORTGAGE BANKERS & LOAN CORRESPONDENTS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Most assets transferred in our securitization transactions, which are mainly Canadian residential mortgages, do not qualify for derecognition under IFRS.",
+        "summary_evidence_quote": null
+      },
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_name_original": "Commercial Banks",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "regulatory capital reporting under IFRS",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Commercial Banks",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_name_original": "Banks",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "regulatory capital reporting under IFRS",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true,
+        "name": "Banks",
+        "basis": "inferred",
+        "mapping_status": "dictionary_selected_not_stock_membership"
+      },
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "name": "Banks",
+        "basis": "explicit",
+        "quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization.",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We are one of Canadas largest bank as measured by assets and market capitalization, and are among the largest banks in the world, based on market capitalization.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "source_id": "1b696d08f08939da6e3f001f",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2012_01_20_Financial-Services_Banking_sec.json",
+        "sha256": "02455a8dd411af9d198431c2e35677bf2ea90f3d78d81f571cb52420d1e35a62",
+        "filename": "2012_01_20_Financial-Services_Banking_sec.json"
+      }
+    ],
+    "original_record_hash": "79e915e826184fc84ef89a1a06a29d56d5d9baae74a47a4dfc83cebfe044d7ed",
+    "input_hash": "53f69607badd47759a4b93fd120796c73124061cb991d83fced98a5be6c17e53",
+    "matching_audit_hash": "c3fdc2ed179d6a1cc7f853aefcaebab8e4d9b16ff2a93b69722df67714007ae6",
+    "legacy_security_evidence": [
+      {
+        "name": "Royal Bank of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Royal Bank of Canada"
+      }
+    ],
+    "record_hash": "0999777f59b41a6a3f9df4277a8f9ba78b59665748ee782029411ea7282e23c6",
+    "outputs": [
+      {
+        "path": "US\\2012_01_20_Financial-Services_Banking_sec.json",
+        "sha256": "0a091ba4727cf557cdc490d286f286a53ce748606405ff57ec9987e4bca34891"
+      }
+    ],
+    "analysis_input": "retrace_original",
+    "source_verification": "original_body_or_publication_revalidated",
+    "published_at": "2012-01-20",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "original_article_quote_verified_before_raw_cleanup"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T18:41:49.194878+00:00",
+      "fetched_at": "2026-11-10T22:40:37.573707+00:00",
+      "feature_available_at": "2026-11-10T22:40:51.993782+00:00",
+      "availability_basis": "extraction"
+    },
+    "llm_inferred_at": "2026-11-18T09:26:42.013417+00:00",
+    "feature_available_at": "2026-11-18T09:26:42.052962+00:00",
+    "commit_verified_at": "2026-11-12T13:52:37.350431+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [
+      {
+        "industry_key": "TRSR:5cb1f4aac7515026",
+        "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_name_original": "Commercial Banks",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "regulatory capital reporting under IFRS",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "5cb1f4aac7515026",
+        "industry_name_standard": "Commercial Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      },
+      {
+        "industry_key": "TRSR:0959e9bdd3051a41",
+        "industry_scope_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_name_original": "Banks",
+        "event_index": null,
+        "impact_role": "unknown",
+        "direction": "uncertain",
+        "mechanism": "regulatory capital reporting under IFRS",
+        "horizon": "unknown",
+        "evidence_type": "inferred",
+        "confidence": 0.95,
+        "quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "industry_standard": "TRSR-INDUSTRY",
+        "industry_version": "released-reference-v1",
+        "industry_code": "0959e9bdd3051a41",
+        "industry_name_standard": "Banks",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "original_evidence_quote": "for Canadian banks are regulated pursuant to guidelines issued by Office of the Superintendent of Financial Institutions (OSFI), based on standards issued by the Bank for",
+        "original_evidence_verified": true,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "summary_evidence_quote": null,
+        "industry_scope_status": "automated_evidence_gate_passed_not_human_reviewed",
+        "propagation_approved": true
+      }
+    ],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [
+      {
+        "scope": "company",
+        "quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "rationale": "The company specifically mentions its own financial reporting under IFRS, indicating a company-specific impact.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "Royal Bank of Canada will present its financial statements in accordance with IFRS for the first quarter ended January 31, 2012 when it releases these results on March 1, 2012.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "We expect this impact to be minimal going forward.",
+        "rationale": "The statement is made by the company regarding the impact of the transition to IFRS on its financial reporting and earnings.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "We expect this impact to be minimal going forward.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "company",
+        "quote": "The following table shows the quarterly impact to shareholders equity from adoption of IFRS.",
+        "rationale": "The text specifically refers to the impact on shareholders' equity from the adoption of IFRS, which is a company-specific financial reporting change.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The following table shows the quarterly impact to shareholders equity from adoption of IFRS.",
+        "summary_evidence_quote": null
+      },
+      {
+        "scope": "industry",
+        "quote": "The impact reflected in this table relates to Equity attributable to shareholders.",
+        "rationale": "The text discusses the impact of IFRS adoption on equity, which is a sector-wide financial reporting standard affecting the banking industry.",
+        "confidence": 0.95,
+        "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+        "original_evidence_verified": true,
+        "original_evidence_quote": "The impact reflected in this table relates to Equity attributable to shareholders.",
+        "summary_evidence_quote": null
+      }
+    ],
+    "relation_quality_flags": [
+      "industry_scope_without_approved_impact",
+      "industry_mention_unverified",
+      "industry_dictionary_code_quote_conflict",
+      "industry_impact_unverified",
+      "industry_rejection_mechanism_label_only"
+    ],
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/0001193125-12-018390-index.html",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+    "retrace_source_record_hash": "0999777f59b41a6a3f9df4277a8f9ba78b59665748ee782029411ea7282e23c6",
+    "content_hash": "27fdb95803d7eba5fdb7fbcef62b8865384d7611308fe629993c902a366088e7",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T09:26:42.018350+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/1b696d08f08939da6e3f001f.json",
+      "sha256": "2ab2db2ae1bb0ff84af9520060834e4b7254e7938803fe2a87d55c6cf9586e22",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 135.9539999999979
+}

@@ -1,0 +1,395 @@
+{
+  "source_id": "43171c4dd9e4259e5900a63d",
+  "status": "completed",
+  "source_record_hash": "290153aefa2ec6157d1e865ed97e70745d6b2d80e0f8858e2efa603cb42d1556",
+  "source_trace": {
+    "requested_url": "https://home.treasury.gov/news/press-releases/jl0452",
+    "attempted_at": "2026-11-18T13:02:00.928874+00:00",
+    "status": "summary_only",
+    "reason": "refetched_source_identity_date_or_historical_body_unverified",
+    "original_hash_matches_previous": false,
+    "date_reverified": true,
+    "final_url": "https://home.treasury.gov/news/press-releases/jl0452",
+    "source_document_url": null,
+    "fetched_at": "2026-11-18T13:02:04.083546+00:00",
+    "source_body_hash": "ce1c2af43d236a98d2f38884ba3b86a4457111b2b1fa4282e7af676184e41f65",
+    "raw_sha256": "eb650ea05b4201b84e3fcdeac4255fae2a907c9c4806e565b714bc28adeb30ad",
+    "source_documents": [],
+    "sec_unread_exhibits": [],
+    "title": "U.S. Treasury Department Issues White Paper on Online Marketplace Lending Industry | U.S. Department of the Treasury",
+    "title_origin": "html_title",
+    "publication_evidence": "May 10, 2016 (Archived Content) “Opportunities and Challenges in Online Marketplace Lending” WASHINGTON – The U.S. Treasury Department today issued a white paper regarding its",
+    "historical_body_basis": "unproven_current_webpage_version",
+    "summary_sha256": "1a9372e20a61caf1cff2571f72c02d8b6557cbb04ef31192b4d9ef742559882d"
+  },
+  "fingerprint": "0129139fb5b41fcff7a7c06dd982915bd74f0fddf8dd388ab0bc1174b9294f5c",
+  "old_audit": {
+    "path": "data_enriched/analysis/43171c4dd9e4259e5900a63d.json",
+    "sha256": "3b9464a2c158d2f5d617637ba254b25dc5187ba599a9112f89e65c0d68c233fb",
+    "bundled_path": "legacy_audit/43171c4dd9e4259e5900a63d.json"
+  },
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "model": "qwen3:8b",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "responses": [
+    {
+      "response_sha256": "a395da73f01feb2d1c16ad0d97010a407b8ac54d03f9fcce1e3aeb3c94309e96",
+      "llm_inferred_at": "2026-11-18T13:02:25.661135+00:00",
+      "model_duration_seconds": 21.5627733,
+      "prompt_tokens": 2165,
+      "completion_tokens": 1156,
+      "selection": [
+        {
+          "source_id": "43171c4dd9e4259e5900a63d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk.",
+              "rationale": "The document discusses the industry's benefits and risks, indicating a sector-wide impact on the online marketplace lending industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Treasury received approximately 100 responses to the RFI, which included insights from various stakeholders such as lenders, trade associations, and financial institutions.",
+              "rationale": "The involvement of multiple stakeholders across the industry indicates a sector-wide impact on the online lending industry.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency.",
+              "rationale": "The document addresses the current state and needs of the online lending industry, indicating a sector-wide impact.",
+              "confidence": 0.85
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the use of data and modeling techniques for underwriting, which is both an innovation and a risk. It also discusses the potential for expanding credit access, the need for enhanced safeguards for small business borrowers, and the importance of greater transparency for all market participants. The Treasury received approximately 100 responses to",
+              "rationale": "The white paper discusses the online lending industry's impact on the broader financial market, including regulatory clarity and transparency, which are relevant to the U.S. equity market.",
+              "confidence": 0.8
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6159",
+              "name": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "basis": "inferred",
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "inferred",
+              "quote": "The Treasury received approximately 100 responses to the RFI, which included insights from various stakeholders such as lenders, trade associations, and financial institutions."
+            },
+            {
+              "industry_key": "SEC-SIC:6141",
+              "name": "PERSONAL CREDIT INSTITUTIONS",
+              "basis": "inferred",
+              "quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6159",
+              "industry_scope_quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk.",
+              "industry_name_original": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "mechanism": "The paper discusses the industry's benefits and risks, indicating a sector-wide impact on the online marketplace lending industry.",
+              "confidence": 0.95,
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "industry_scope_quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk.",
+              "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "mechanism": "The paper discusses the industry's benefits and risks, indicating a sector-wide impact on the online marketplace lending industry.",
+              "confidence": 0.9,
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk."
+            },
+            {
+              "industry_key": "SEC-SIC:6141",
+              "industry_scope_quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency.",
+              "industry_name_original": "PERSONAL CREDIT INSTITUTIONS",
+              "mechanism": "The document addresses the current state and needs of the online lending industry, indicating a sector-wide impact.",
+              "confidence": 0.85,
+              "quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "response_sha256": "e5d86d6d062dc07da9ab5a49065a06588ae821a580500b44b94e89a5cc0bb67c",
+      "llm_inferred_at": "2026-11-18T13:02:46.672394+00:00",
+      "model_duration_seconds": 21.0009893,
+      "prompt_tokens": 2209,
+      "completion_tokens": 1170,
+      "selection": [
+        {
+          "source_id": "43171c4dd9e4259e5900a63d",
+          "market_scope": [
+            "US_EQUITY"
+          ],
+          "impact_scope": [
+            "industry"
+          ],
+          "impact_scope_evidence": [
+            {
+              "scope": "industry",
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk.",
+              "rationale": "The document discusses the industry's benefits and risks, indicating a sector-wide impact on the online marketplace lending industry.",
+              "confidence": 0.95
+            },
+            {
+              "scope": "industry",
+              "quote": "The Treasury received approximately 100 responses to the RFI, which included insights from various stakeholders such as lenders, trade associations, and financial institutions.",
+              "rationale": "The responses from various stakeholders suggest a broad industry impact, as the online lending industry is the focus of the discussion.",
+              "confidence": 0.9
+            },
+            {
+              "scope": "industry",
+              "quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency.",
+              "rationale": "The paper's focus on the current state and needs of the online lending industry indicates an industry-wide impact.",
+              "confidence": 0.95
+            }
+          ],
+          "scope_evidence": [
+            {
+              "scope": "US_EQUITY",
+              "evidence_quote": "the use of data and modeling techniques for underwriting, which is both an innovation and a risk. It also discusses the potential for expanding credit access, the need for enhanced safeguards for small business borrowers, and the importance of greater transparency for all market participants. The Treasury received approximately 100 responses to",
+              "rationale": "The white paper discusses the online lending industry, which is part of the broader financial services sector, and the U.S. Treasury's involvement indicates a potential impact on the U.S. equity market.",
+              "confidence": 0.85
+            }
+          ],
+          "industries": [
+            {
+              "industry_key": "SEC-SIC:6159",
+              "name": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "basis": "inferred",
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "name": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "basis": "inferred",
+              "quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency."
+            },
+            {
+              "industry_key": "SEC-SIC:6141",
+              "name": "PERSONAL CREDIT INSTITUTIONS",
+              "basis": "inferred",
+              "quote": "The Treasury received approximately 100 responses to the RFI, which included insights from various stakeholders such as lenders, trade associations, and financial institutions."
+            }
+          ],
+          "industry_impacts": [
+            {
+              "industry_key": "SEC-SIC:6159",
+              "industry_scope_quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk.",
+              "industry_name_original": "MISCELLANEOUS BUSINESS CREDIT INSTITUTION",
+              "mechanism": "The paper discusses the benefits and risks of the industry, indicating a sector-wide impact on the online marketplace lending industry.",
+              "confidence": 0.95,
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk."
+            },
+            {
+              "industry_key": "SEC-SIC:6153",
+              "industry_scope_quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency.",
+              "industry_name_original": "SHORT-TERM BUSINESS CREDIT INSTITUTIONS",
+              "mechanism": "The paper's focus on the current state and needs of the online lending industry indicates an industry-wide impact.",
+              "confidence": 0.95,
+              "quote": "The paper outlines the current state of the online lending industry, highlighting the need for regulatory clarity and market transparency."
+            },
+            {
+              "industry_key": "SEC-SIC:6141",
+              "industry_scope_quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk.",
+              "industry_name_original": "PERSONAL CREDIT INSTITUTIONS",
+              "mechanism": "The document discusses the industry's benefits and risks, indicating a sector-wide impact on the online marketplace lending industry.",
+              "confidence": 0.9,
+              "quote": "The white paper highlights the benefits and risks of the industry, including the use of data and modeling techniques for underwriting, which is both an innovation and a risk."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "feature_available_at": "2026-11-18T13:02:46.684926+00:00",
+  "audit": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "1a9372e20a61caf1cff2571f72c02d8b6557cbb04ef31192b4d9ef742559882d",
+    "raw_sha256": null,
+    "date_quote": "May 10, 2016 (Archived Content) “Opportunities and Challenges in Online Marketplace Lending” WASHINGTON – The U.S. Treasury Department today issued a white paper regarding its",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null,
+    "useful": true,
+    "reason": "The text discusses regulatory actions and industry trends related to online marketplace lending, including risks, benefits, and recommendations for regulatory, ",
+    "securities": [
+      {
+        "name": "U.S. Treasury Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury Department"
+      },
+      {
+        "name": "CFPB",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CFPB"
+      },
+      {
+        "name": "FDIC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FDIC"
+      },
+      {
+        "name": "FRB",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FRB"
+      },
+      {
+        "name": "FTC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FTC"
+      },
+      {
+        "name": "OCC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "OCC"
+      },
+      {
+        "name": "SBA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SBA"
+      },
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC"
+      }
+    ],
+    "industries": [
+      {
+        "industry_key": "SEC-SIC:6141",
+        "name": "PERSONAL CREDIT INSTITUTIONS",
+        "basis": "inferred",
+        "quote": "The Treasury received approximately 100 responses to the RFI, which included insights from various stakeholders such as lenders, trade associations, and financial institutions.",
+        "industry_standard": "SEC-SIC",
+        "industry_version": "EDGAR-SIC",
+        "industry_code": "6141",
+        "industry_name_standard": "PERSONAL CREDIT INSTITUTIONS",
+        "dictionary_sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+        "dictionary_version": "20261117_v1",
+        "mapping_status": "dictionary_selected_not_stock_membership",
+        "evidence_basis": "stored_summary_only",
+        "original_evidence_verified": false,
+        "original_evidence_quote": null,
+        "summary_evidence_quote": "The Treasury received approximately 100 responses to the RFI, which included insights from various stakeholders such as lenders, trade associations, and financial institutions."
+      }
+    ],
+    "impact_scope": [],
+    "entity_types": {
+      "U.S. Treasury Department": "organization",
+      "CFPB": "organization",
+      "FDIC": "organization",
+      "FRB": "organization",
+      "FTC": "organization",
+      "OCC": "organization",
+      "SBA": "organization",
+      "SEC": "organization"
+    },
+    "method": "local_qwen_legacy_summary",
+    "source_id": "43171c4dd9e4259e5900a63d",
+    "status": "completed",
+    "schema_version": "1.1",
+    "original_files": [
+      {
+        "market": "US",
+        "path": "data\\US_original\\US\\2016_05_10_Regulatory_Financial-Services_treasury.json",
+        "sha256": "b3bcbf87deaffa932e0fa6531f7506f1f029961b3c86fb3980c3b4b9edab33ee",
+        "filename": "2016_05_10_Regulatory_Financial-Services_treasury.json"
+      }
+    ],
+    "original_record_hash": "12edf7b6b17461509fa0d1c969facac3dfa94068b092b13855f869a4ae64bd81",
+    "input_hash": "4f0a4c619013ba3dde149a746e96c7c49f65bcc97e798f443caab1bad30623e0",
+    "matching_audit_hash": "bb6b3adb9508e3d2a8e4af7800d970d1a5d4370a7941c2d34e344bb2c6ae5d49",
+    "legacy_security_evidence": [],
+    "record_hash": "290153aefa2ec6157d1e865ed97e70745d6b2d80e0f8858e2efa603cb42d1556",
+    "outputs": [
+      {
+        "path": "US\\2016_05_10_Regulatory_Financial-Services_treasury.json",
+        "sha256": "df72bc05bff124b57e3d81d13c12f3c449af7f27d21dcaf22d0216e581cde21c"
+      }
+    ],
+    "analysis_input": "legacy_summary",
+    "source_verification": "stored_summary_only_original_unavailable",
+    "published_at": "2016-05-10",
+    "evidence_sources": {
+      "legacy_entities": "pinned_legacy_audit",
+      "new_relations": "stored_summary_only"
+    },
+    "publication_basis": "unchanged_legacy_record",
+    "timezone": null,
+    "original_time_information": {
+      "publication_precision": "date",
+      "first_seen_at": "2026-11-10T09:58:15.033215+00:00",
+      "fetched_at": "2026-11-10T11:06:57.118401+00:00",
+      "feature_available_at": "2026-11-10T17:53:17.709160+00:00",
+      "availability_basis": "migration"
+    },
+    "llm_inferred_at": "2026-11-18T13:02:46.672394+00:00",
+    "feature_available_at": "2026-11-18T13:02:46.684926+00:00",
+    "commit_verified_at": "2026-11-12T14:32:02.675382+00:00",
+    "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+    "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+    "economic_direction_is_not_return_label": true,
+    "quality_flags": [
+      "title_unavailable_offline"
+    ],
+    "event_and_economic_inference": "local_qwen_current_retrace",
+    "canonical_market": "US",
+    "industry_impacts": [],
+    "market_scope": [],
+    "scope_evidence": [],
+    "impact_scope_evidence": [],
+    "relation_quality_flags": [
+      "industry_dictionary_code_quote_conflict",
+      "industry_mention_unverified",
+      "industry_scope_without_approved_impact"
+    ],
+    "url": "https://home.treasury.gov/news/press-releases/jl0452",
+    "market_scope_version": "market-proof-1",
+    "analysis_basis": "stored_summary_only",
+    "retrace_source_record_hash": "290153aefa2ec6157d1e865ed97e70745d6b2d80e0f8858e2efa603cb42d1556",
+    "content_hash": "1a9372e20a61caf1cff2571f72c02d8b6557cbb04ef31192b4d9ef742559882d",
+    "industry_dictionary": {
+      "schema_version": "industry_dictionary_v1",
+      "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+      "version": "20261117_v1",
+      "selection_method": "qwen_source_retrace"
+    },
+    "extraction_logic_version": "source-retrace-replacement-2",
+    "classification_contract": "dictionary-scope-replacement-1",
+    "extracted_at": "2026-11-18T13:02:46.674522+00:00",
+    "language": "en",
+    "evidence_pack": {
+      "path": "evidence/43171c4dd9e4259e5900a63d.json",
+      "sha256": "36866b2e583f8ea71451fab13ce3bf785c33bd1a314fed7dcd144b385c80a5c4",
+      "schema_version": "market-proof-1"
+    }
+  },
+  "seconds": 45.76600000000326
+}

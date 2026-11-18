@@ -1,0 +1,106 @@
+{
+  "source_id": "02e9d0c3df5a54cc960e41e0",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2013_02_05_Regulatory_Utilities_sec.json",
+      "sha256": "5dc0d3e5bfdbdcd6c2cfb248c48f6b72438f27b3bc847736d5fea2330ef26ca3",
+      "filename": "2013_02_05_Regulatory_Utilities_sec.json"
+    }
+  ],
+  "original_record_hash": "be76489a7665ab77cb17141f4ac30275c37ce6010c93eeafcd6d4fd59eafd026",
+  "input_hash": "6a251f08d71735a4164a164d883a5792500baac5952f32e36bdbc28704ddbb3f",
+  "matching_audit_hash": "ab2265114ef0c6f746b14c17d085ed993b87a6b0843d903e400cf43f32100b7d",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "55feb02023a789ad043321720d8674a1735ac56102158bcbee894bc8fc00d065",
+    "raw_sha256": "ec476e0f3309da9427d3d1616526fd1cde3b497431ad77a8ee9498f00cd9c77d",
+    "date_quote": "SEC filing datePublished=2013-02-05",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/100122/000119312513037559/d479502d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Tucson Electric Power Company",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Tucson Electric Power Company"
+    },
+    {
+      "name": "UNS Energy Corporation",
+      "ticker": null,
+      "exchange": null,
+      "quote": "UNS Energy Corporation"
+    }
+  ],
+  "record_hash": "08f06600753d0ad2d8f3e83c3ad08fb7bc5067dad85c23d0e991c5f37c098566",
+  "outputs": [
+    {
+      "path": "US\\2013_02_05_Regulatory_Utilities_sec.json",
+      "sha256": "4a66347ca4268891bd7c1220827bc43071e41ac3706b78c8ec2a553a3e40b9bf"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2013-02-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:53.191892+00:00",
+    "fetched_at": "2026-11-10T23:39:22.462698+00:00",
+    "feature_available_at": "2026-11-11T10:02:12.140332+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:02:28.315845+00:00",
+  "feature_available_at": "2026-11-12T14:02:28.350785+00:00",
+  "commit_verified_at": "2026-11-12T14:02:28.350785+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains details about regulatory agreements, rate changes, and financial terms related to Tucson Electric Power Company's operations and compliance",
+    "securities": [
+      {
+        "name": "Tucson Electric Power Company",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Tucson Electric Power Company"
+      },
+      {
+        "name": "Arizona Corporation Commission",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Arizona Corporation Commission"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Tucson Electric Power Company": "company",
+      "Arizona Corporation Commission": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

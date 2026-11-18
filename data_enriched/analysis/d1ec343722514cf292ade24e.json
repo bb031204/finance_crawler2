@@ -1,0 +1,108 @@
+{
+  "source_id": "d1ec343722514cf292ade24e",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2015_06_11_Biotechnology_Biotechnology_cnbc.json",
+      "sha256": "b37ca43e617cc46600ba85a403ce752fdb71cc3ccaca73080e9e7ffd87995a4b",
+      "filename": "2015_06_11_Biotechnology_Biotechnology_cnbc.json"
+    }
+  ],
+  "original_record_hash": "932225743beb29c7b4aeb9dd2432d355872a696beb93e9458cac234823856908",
+  "input_hash": "1a4d35819edc1a650aad0fc287dc7ede0b4ad61e2a92c3200d53e227729c0247",
+  "matching_audit_hash": "224dec62b0f9a0be0a0794b57ac0aa8c200cae9c7940f06111bc15e3407e7e5b",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "6f37cc431b526b19375b3bddbfbb38c81fea0e3a95105b9de8072c96c7eaaff5",
+    "raw_sha256": "c8984ee81a68591de87f4cdb1b0b300e7fd3a82420abb2c5c73eb5997caa6322",
+    "date_quote": "article:published_time=2015-06-11T22:16:28+0000",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Axovant",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Axovant priced 21 million shares at $15 on the NYSE, the high end of the price talk of $13-$15."
+    },
+    {
+      "name": "Glaxo",
+      "ticker": null,
+      "exchange": null,
+      "quote": "The CEO, Vivek Ramaswamy, bought this drug from Glaxo for $5 million (Glaxo will get contingent payments if the drug gets approved)."
+    }
+  ],
+  "record_hash": "b9209261c742204689e5e62fdefeaf9c794f75619848c516face9a034559597e",
+  "outputs": [
+    {
+      "path": "US\\2015_06_11_Biotechnology_Biotechnology_cnbc.json",
+      "sha256": "b51569e5fde750ee140c07335bbe650330b9644230518ae6b3ae4cd4d88ac2db"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2015-06-11",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:37:34.228661+00:00",
+    "fetched_at": "2026-11-10T20:37:21.954058+00:00",
+    "feature_available_at": "2026-11-10T20:37:39.532936+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": null,
+  "feature_available_at": "2026-11-12T13:52:58.869682+00:00",
+  "commit_verified_at": "2026-11-12T13:52:58.869682+00:00",
+  "model": null,
+  "model_digest": null,
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": null,
+    "reason": "Recovered from unchanged legacy record and matching audit",
+    "securities": [
+      {
+        "name": "Axovant",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Axovant priced 21 million shares at $15 on the NYSE, the high end of the price talk of $13-$15."
+      },
+      {
+        "name": "Glaxo",
+        "ticker": null,
+        "exchange": null,
+        "quote": "The CEO, Vivek Ramaswamy, bought this drug from Glaxo for $5 million (Glaxo will get contingent payments if the drug gets approved)."
+      }
+    ],
+    "industries": [
+      {
+        "name": "Biotechnology",
+        "basis": "inferred",
+        "quote": ""
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "method": "verified_legacy_metadata",
+    "quality_flags": []
+  }
+}

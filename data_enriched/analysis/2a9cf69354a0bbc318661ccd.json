@@ -1,0 +1,92 @@
+{
+  "source_id": "2a9cf69354a0bbc318661ccd",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2014_02_19_Financial-Results_Financial-Services_sec.json",
+      "sha256": "bc28ff43cecac1f77138dd6856738dd0d3d09c9cbb26c37507db17ecbefd7d2a",
+      "filename": "2014_02_19_Financial-Results_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "7464cac02258659245bddd77b91e195bbd1191f5c2cb20c23c1ec8522ca2021d",
+  "input_hash": "535281ac7c3ef9487bcfaeccaa5d4296d044ff0df85f5bba69294df892103a38",
+  "matching_audit_hash": "3d099f38db3cb1be98a5282564408dd2481bee0d0b62cc1a86f7bd9c277384af",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "bec5ed44f038b85876e840d81adfb2bd1be07b6680fbf5cc42b47b3b09b4f5d5",
+    "raw_sha256": "80d18611176a6dfdad622ed764d5670ea1bbe88a4de646f05eb12249c42346fb",
+    "date_quote": "SEC filing datePublished=2014-02-19",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312514058844/d679015d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    }
+  ],
+  "record_hash": "2286db402261813f718d15cd9072882e70eae79c28e17895851779139a705eff",
+  "outputs": [
+    {
+      "path": "US\\2014_02_19_Financial-Results_Financial-Services_sec.json",
+      "sha256": "efca633346081937e8e51c738d31a6a34d0c0e213f54181e313a32435c467b06"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2014-02-19",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:41:56.918277+00:00",
+    "fetched_at": "2026-11-10T23:44:32.145929+00:00",
+    "feature_available_at": "2026-11-11T10:06:13.334437+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:12:16.760723+00:00",
+  "feature_available_at": "2026-11-12T14:12:16.795409+00:00",
+  "commit_verified_at": "2026-11-12T14:12:16.795409+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a company's financial results and a press release, indicating the company's operations and disclosure practices.",
+    "securities": [
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Medallion Financial Corp.": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

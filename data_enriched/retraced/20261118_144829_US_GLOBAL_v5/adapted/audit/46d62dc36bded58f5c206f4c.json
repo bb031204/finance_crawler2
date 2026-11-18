@@ -1,0 +1,156 @@
+{
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "source_body_hash": "b0c73454c6360c05e02ce2954ef22a51ab722376960461598696e0c34815e8c3",
+  "raw_sha256": "28a9fb27f831f9af71deb42731322454e3407c458e300773d351058029936264",
+  "date_quote": "SEC filing datePublished=2021-01-14",
+  "date_kind": "published",
+  "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001233/000119312521008664/d848448d8k.htm",
+  "publication_validation_version": 3,
+  "security_validation_version": "security_grounding_v3_optional_codes",
+  "useful": true,
+  "reason": "The summary contains information about a company's filing, a clinical study, and a conference presentation, which are relevant for the StockMixer pipeline.",
+  "securities": [
+    {
+      "name": "Sangamo Therapeutics, Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Sangamo Therapeutics, Inc."
+    },
+    {
+      "name": null,
+      "ticker": "SGMO",
+      "exchange": null,
+      "quote": "ticker symbol SGMO"
+    }
+  ],
+  "industries": [],
+  "impact_scope": [
+    "company"
+  ],
+  "entity_types": {
+    "Sangamo Therapeutics, Inc.": "company"
+  },
+  "method": "local_qwen_legacy_summary",
+  "source_id": "46d62dc36bded58f5c206f4c",
+  "status": "completed",
+  "schema_version": "1.1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2021_01_14_Other-Events_Biotechnology_sec.json",
+      "sha256": "f0bb53867124b302c78aee73f2829f39b9f44d235a45b41f9669341018443b7b",
+      "filename": "2021_01_14_Other-Events_Biotechnology_sec.json"
+    }
+  ],
+  "original_record_hash": "f0112a28e96f6cb4a89a068622b4ba10f4f3d74a775f8e72f8fb6c433e620018",
+  "input_hash": "3f4f884a2cddbbf60cc8b77eee4b1c501e65fa47567ea2a785b41717ab485a1a",
+  "matching_audit_hash": "63bc29a63358490b5b2237586b53152d59a1faf4dde6b7f7c78d1621c87359ab",
+  "legacy_security_evidence": [
+    {
+      "name": "Common Stock, $0.01 par value per share",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Common Stock, $0.01 par value per share"
+    }
+  ],
+  "record_hash": "0bba91f8af0840f1649fb021ab77e9de7f1724969274966b24d9fa5361745005",
+  "outputs": [
+    {
+      "path": "US\\2021_01_14_Other-Events_Biotechnology_sec.json",
+      "sha256": "5771fcba84d8a086196d5d225c80f823c5773338c0b69f7e74237627f1a5c1d8"
+    }
+  ],
+  "analysis_input": "retrace_original",
+  "source_verification": "original_body_or_publication_revalidated",
+  "published_at": "2021-01-14",
+  "evidence_sources": {
+    "legacy_entities": "pinned_legacy_audit",
+    "new_relations": "original_article_quote_verified_before_raw_cleanup"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:28.586595+00:00",
+    "fetched_at": "2026-11-11T16:27:33.602703+00:00",
+    "feature_available_at": "2026-11-11T16:28:10.137645+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-18T13:26:36.793366+00:00",
+  "feature_available_at": "2026-11-18T13:26:36.862471+00:00",
+  "commit_verified_at": "2026-11-18T13:26:36.862471+00:00",
+  "prompt_version": "1c90c016a30be81dec9b030d3e76b97955581643a0ce8047118abdd1606dc581",
+  "code_version": "0a234d248a65de3d9fb8ed4e55016ae35c52a13292cc298b3dab8d94095e84ad",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "local_qwen_current_retrace",
+  "canonical_market": "US",
+  "industry_impacts": [],
+  "market_scope": [],
+  "scope_evidence": [],
+  "impact_scope_evidence": [
+    {
+      "scope": "company",
+      "quote": "Sangamo Therapeutics, Inc.",
+      "rationale": "The article is about Sangamo Therapeutics, Inc., which is a specific company involved in gene therapy for hemophilia A. The company's activities and events are the focus of the report.",
+      "confidence": 1.0,
+      "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+      "original_evidence_verified": true,
+      "original_evidence_quote": "Sangamo Therapeutics, Inc.",
+      "summary_evidence_quote": "Sangamo Therapeutics, Inc."
+    },
+    {
+      "scope": "company",
+      "quote": "The investigators acknowledge and thank all study participants.",
+      "rationale": "The article mentions the study participants and acknowledges the contributions of the study teams, indicating a direct impact on the company conducting the study.",
+      "confidence": 0.9,
+      "evidence_basis": "original_article_quote_verified_before_raw_cleanup",
+      "original_evidence_verified": true,
+      "original_evidence_quote": "The investigators acknowledge and thank all study participants.",
+      "summary_evidence_quote": null
+    }
+  ],
+  "relation_quality_flags": [
+    "industry_mention_unverified",
+    "industry_scope_without_approved_impact"
+  ],
+  "url": "https://www.sec.gov/Archives/edgar/data/1001233/0001193125-21-008664-index.html",
+  "market_scope_version": "market-proof-1",
+  "analysis_basis": "original_article_quote_verified_before_raw_cleanup",
+  "retrace_source_record_hash": "c66743e4e056c61255c36a95e28203fb6c087015c9176408a15bfe4c4dc4eb16",
+  "content_hash": "41b64819b36d2dd553a75f13c9c2af7e7d4edc615c23d1599ec623d84a0cfad0",
+  "industry_dictionary": {
+    "schema_version": "industry_dictionary_v1",
+    "sha256": "0a2ff3ea0ccfcc93c928c40a72f59d11f8d096204bcea7db6eba6abf60272758",
+    "version": "20261117_v1",
+    "selection_method": "qwen_source_retrace"
+  },
+  "extraction_logic_version": "source-retrace-replacement-2",
+  "classification_contract": "dictionary-scope-replacement-1",
+  "extracted_at": "2026-11-18T13:26:36.805281+00:00",
+  "language": "en",
+  "evidence_pack": {
+    "path": "adapted/evidence/46d62dc36bded58f5c206f4c.json",
+    "sha256": "c5583c1452ed5631b0ff0a755dd7deabde712acba293301986775a7aadd44655",
+    "schema_version": "market-proof-1"
+  },
+  "classification_replacement": {
+    "policy": "dictionary-scope-replacement-1",
+    "source_record_hash": "c66743e4e056c61255c36a95e28203fb6c087015c9176408a15bfe4c4dc4eb16",
+    "previous_industries": [
+      {
+        "名称": "Biotechnology",
+        "依据": "explicit"
+      }
+    ],
+    "previous_impact_scope": [
+      "company",
+      "industry"
+    ],
+    "previous_labels_used_for_classification": false
+  },
+  "title_origin": "retrace_verified_source_heading"
+}

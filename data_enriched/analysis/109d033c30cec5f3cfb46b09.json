@@ -1,0 +1,102 @@
+{
+  "source_id": "109d033c30cec5f3cfb46b09",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_08_05_Automotive_Automotive-IGBT_businesswire.json",
+      "sha256": "482e641067d353ed3550e785e3fd68e807f4330c63769858501185d92e8e1485",
+      "filename": "2020_08_05_Automotive_Automotive-IGBT_businesswire.json"
+    },
+    {
+      "market": "GLOBAL",
+      "path": "data\\GLOBAL_original\\GLOBAL\\2020_08_05_Automotive_Automotive-IGBT_businesswire.json",
+      "sha256": "482e641067d353ed3550e785e3fd68e807f4330c63769858501185d92e8e1485",
+      "filename": "2020_08_05_Automotive_Automotive-IGBT_businesswire.json"
+    }
+  ],
+  "original_record_hash": "7507c21bf831949021c9b08bd0138c786efa2b9765deed9b83845dde20b4bf7a",
+  "input_hash": "4b2e49aa5c042d8475c3ca95e52144874d083f9baa1c306f541297d016a5b5ca",
+  "matching_audit_hash": "c8cdfeb3e26ff6228924a4b69818de792e1ecba67d04a3fb0cb863f3bae53c7c",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fca4118c52701c343de5cfc891fd9747beafd8fe2267d010df6a9a4471739c3a",
+    "raw_sha256": "fec9d93461ee0bdeb19910540939dd1761281f203308101545ce9f9aab5135a1",
+    "date_quote": "page.datePublished=2020-08-05T15:47:00+00:00",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v2"
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "0524ab02ff301028edf3fc0a41818ee32b66e399cdf2d79d0852fcac51373e7c",
+  "outputs": [
+    {
+      "path": "US\\2020_08_05_Automotive_Automotive-IGBT_businesswire.json",
+      "sha256": "4101a584d68432ddac58f030cfaf72eaac6332df58f5b8c2d51aca2d6ec2f4c5"
+    },
+    {
+      "path": "GLOBAL\\2020_08_05_Automotive_Automotive-IGBT_businesswire.json",
+      "sha256": "4101a584d68432ddac58f030cfaf72eaac6332df58f5b8c2d51aca2d6ec2f4c5"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-08-05",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T18:40:19.461988+00:00",
+    "fetched_at": "2026-11-10T21:35:38.382991+00:00",
+    "feature_available_at": "2026-11-10T21:35:45.720502+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:53:18.819166+00:00",
+  "feature_available_at": "2026-11-12T14:53:18.830241+00:00",
+  "commit_verified_at": "2026-11-12T14:53:18.830241+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "GLOBAL",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary discusses the automotive IGBT industry, including market trends, growth drivers, challenges, and key players.",
+    "securities": [
+      {
+        "name": "ResearchAndMarkets.com",
+        "ticker": null,
+        "exchange": null,
+        "quote": "ResearchAndMarkets.com"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Automotive IGBT Industry",
+        "basis": "explicit",
+        "quote": "Automotive IGBT Industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "company_scope_basis": "literal_corporate_entity_mention",
+    "entity_types": {
+      "ResearchAndMarkets.com": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "source_id": "43171c4dd9e4259e5900a63d",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2016_05_10_Regulatory_Financial-Services_treasury.json",
+      "sha256": "b3bcbf87deaffa932e0fa6531f7506f1f029961b3c86fb3980c3b4b9edab33ee",
+      "filename": "2016_05_10_Regulatory_Financial-Services_treasury.json"
+    }
+  ],
+  "original_record_hash": "12edf7b6b17461509fa0d1c969facac3dfa94068b092b13855f869a4ae64bd81",
+  "input_hash": "4f0a4c619013ba3dde149a746e96c7c49f65bcc97e798f443caab1bad30623e0",
+  "matching_audit_hash": "bb6b3adb9508e3d2a8e4af7800d970d1a5d4370a7941c2d34e344bb2c6ae5d49",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "62b321f47e6b4eb247932dc18a62e54cab900d2ac461488166e858247b105b93",
+    "raw_sha256": "d140c3b6c0393a9486a9e71d6d64d6acc5a0ac95bf45b0334aecf5a3bc353eb3",
+    "date_quote": "May 10, 2016 (Archived Content) “Opportunities and Challenges in Online Marketplace Lending” WASHINGTON – The U.S. Treasury Department today issued a white paper regarding its",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "290153aefa2ec6157d1e865ed97e70745d6b2d80e0f8858e2efa603cb42d1556",
+  "outputs": [
+    {
+      "path": "US\\2016_05_10_Regulatory_Financial-Services_treasury.json",
+      "sha256": "df72bc05bff124b57e3d81d13c12f3c449af7f27d21dcaf22d0216e581cde21c"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2016-05-10",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T09:58:15.033215+00:00",
+    "fetched_at": "2026-11-10T11:06:57.118401+00:00",
+    "feature_available_at": "2026-11-10T17:53:17.709160+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T14:32:02.640379+00:00",
+  "feature_available_at": "2026-11-12T14:32:02.675382+00:00",
+  "commit_verified_at": "2026-11-12T14:32:02.675382+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses regulatory actions and industry trends related to online marketplace lending, including risks, benefits, and recommendations for regulatory, ",
+    "securities": [
+      {
+        "name": "U.S. Treasury Department",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Treasury Department"
+      },
+      {
+        "name": "CFPB",
+        "ticker": null,
+        "exchange": null,
+        "quote": "CFPB"
+      },
+      {
+        "name": "FDIC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FDIC"
+      },
+      {
+        "name": "FRB",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FRB"
+      },
+      {
+        "name": "FTC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "FTC"
+      },
+      {
+        "name": "OCC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "OCC"
+      },
+      {
+        "name": "SBA",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SBA"
+      },
+      {
+        "name": "SEC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "SEC"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Online marketplace lending",
+        "basis": "explicit",
+        "quote": "Online marketplace lending"
+      },
+      {
+        "name": "Financial services",
+        "basis": "inferred",
+        "quote": "Financial institutions"
+      },
+      {
+        "name": "Credit scoring",
+        "basis": "inferred",
+        "quote": "evolving credit scoring"
+      }
+    ],
+    "impact_scope": [
+      "industry"
+    ],
+    "entity_types": {
+      "U.S. Treasury Department": "organization",
+      "CFPB": "organization",
+      "FDIC": "organization",
+      "FRB": "organization",
+      "FTC": "organization",
+      "OCC": "organization",
+      "SBA": "organization",
+      "SEC": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

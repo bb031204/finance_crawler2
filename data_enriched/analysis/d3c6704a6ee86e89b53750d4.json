@@ -1,0 +1,161 @@
+{
+  "source_id": "d3c6704a6ee86e89b53750d4",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2022_05_04_Finance_Government_treasury.json",
+      "sha256": "c7eea7272cc3329b976f4597442ed3276b089edb68318e6e020e9b95799c0432",
+      "filename": "2022_05_04_Finance_Government_treasury.json"
+    }
+  ],
+  "original_record_hash": "3496f9beaf220fe41335c7ade4014afb07505a1bed48f4a4fba70e72c02c00ee",
+  "input_hash": "a2059deea741126b3ae44cbb2deafcb611e80dcac60db72e33a26925ce031117",
+  "matching_audit_hash": "69202f3a1ae491d0b125a5bbe96592fe1045b36b600d9cf5b895eef996bfa6eb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "89a339bdafbd0b4f0f5769f1f986a5966bb2c06eecf87e35d411a57204dadd51",
+    "raw_sha256": "fe6f9b8c68775121db5b2e26ae9199485bea28a1cee6e07ac2ca3032470057bf",
+    "date_quote": "May 4, 2022",
+    "date_kind": "published",
+    "source_document_url": null,
+    "publication_validation_version": 3,
+    "security_validation_version": null
+  },
+  "legacy_security_evidence": [],
+  "record_hash": "5fd17979591a45b30937dc978d4a1cca96dd6a7d77935c9ed39bdcbd61d8e1f6",
+  "outputs": [
+    {
+      "path": "US\\2022_05_04_Finance_Government_treasury.json",
+      "sha256": "8d198d4154a0e68fdcbadbe272bed76ed107d7b3afa5ad3232fe5321c304734b"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2022-05-04",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-10T07:10:00.130950+00:00",
+    "fetched_at": "2026-11-10T10:04:17.466748+00:00",
+    "feature_available_at": "2026-11-10T17:53:25.945549+00:00",
+    "availability_basis": "migration"
+  },
+  "llm_inferred_at": "2026-11-12T15:15:43.280729+00:00",
+  "feature_available_at": "2026-11-12T15:16:49.742230+00:00",
+  "commit_verified_at": "2026-11-12T15:16:49.742230+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "Describes Treasury's financial operations and market strategies.",
+    "securities": [
+      {
+        "name": "U.S. Department of the Treasury",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Department of the Treasury"
+      }
+    ],
+    "industries": [
+      {
+        "name": "Financial Services",
+        "basis": "inferred",
+        "quote": "Treasury securities"
+      },
+      {
+        "name": "Government",
+        "basis": "inferred",
+        "quote": "U.S. Department of the Treasury"
+      }
+    ],
+    "impact_scope": [
+      "market"
+    ],
+    "entity_types": {
+      "U.S. Department of the Treasury": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  },
+  "refinement": {
+    "status": "completed",
+    "at": "2026-11-12T15:16:49.760552+00:00",
+    "code_version": "8cfb36cfeff19aabd7ac4f95f6043dd099faa42b07aff6d093c69c07630ec9b7",
+    "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+    "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "llm_inferred_at": "2026-11-12T15:15:43.280729+00:00",
+    "prior_analysis": {
+      "useful": true,
+      "reason": "Describes Treasury's financial operations and market strategies.",
+      "securities": [
+        {
+          "name": "U.S. Department of the Treasury",
+          "ticker": null,
+          "exchange": null,
+          "quote": "U.S. Department of the Treasury"
+        }
+      ],
+      "industries": [
+        {
+          "name": "Financial Services",
+          "basis": "inferred",
+          "quote": "Treasury securities"
+        },
+        {
+          "name": "Government",
+          "basis": "inferred",
+          "quote": "U.S. Department of the Treasury"
+        }
+      ],
+      "impact_scope": [
+        "market"
+      ],
+      "entity_types": {
+        "U.S. Department of the Treasury": "organization"
+      },
+      "method": "local_qwen_legacy_summary"
+    },
+    "prior_feature_available_at": "2026-11-12T15:15:43.306104+00:00",
+    "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+    "chunks": 1,
+    "prior_refinement": {
+      "status": "completed",
+      "at": "2026-11-12T15:15:43.314622+00:00",
+      "code_version": "2654bf09be7d3f02aac3cfd2f2014a1551d6a59fc6c085afa85f00dd9315e7b4",
+      "prompt_version": "ea21fce7cb63371810ff129fa53d601eca4c751c7e696c0fd94576c06202798f",
+      "schema_hash": "5ad0500549a23cbec05b366ac59503a030ccac3ae7b73fc8213ce3a37cb904f7",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "llm_inferred_at": "2026-11-12T15:15:43.297104+00:00",
+      "prior_analysis": {
+        "useful": true,
+        "reason": "The text discusses U.S. Treasury's financial operations, including the issuance of securities, auction schedules, and plans for market efficiency and regulatory",
+        "securities": [],
+        "industries": [],
+        "impact_scope": [],
+        "entity_types": {},
+        "method": "local_qwen_legacy_summary"
+      },
+      "prior_feature_available_at": "2026-11-12T14:57:43.988364+00:00",
+      "prior_prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,14 @@
+Classify the supplied historical news SUMMARY, not a newly downloaded original.
+Use only industry_key values from candidates; never invent an industry code, name or ticker.
+Return mentions=[] if the candidates do not fit. A company's own earnings, financing,
+appointments, delisting or product announcement is company_only, even when its industry is named.
+industry_wide requires an explicit statement affecting multiple independent companies or a
+sector-wide policy, supply/demand or competitive mechanism. Mentioning the word industry alone
+does not prove industry-wide impact. Do not infer peer effects from company membership.
+quote and scope_quote must be exact contiguous substrings of SUMMARY (not the title).
+For company_only, scope_quote and mechanism must be empty strings. For industry_wide,
+scope_quote must explicitly demonstrate the multi-company/sector scope, and mechanism must
+explain the economic transmission. Confidence is a self-assessment, not calibrated accuracy.
+Do not predict returns, revise the summary, infer a publication date or resolve stock identities.
+Output JSON only. /no_think
+Confidence MUST be a number between 0 and 1 inclusive, such as 0.95. NEVER output 95, 90, or a percent value. If uncertain use 0.0; do not invent an industry.

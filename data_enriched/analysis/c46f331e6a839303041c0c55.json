@@ -1,0 +1,126 @@
+{
+  "source_id": "c46f331e6a839303041c0c55",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2020_02_21_Legal_Financial-Services_sec.json",
+      "sha256": "62a1a6dbec30341b4e9534ba17726cf33e7100157081ab21a2a7b11560aa75d9",
+      "filename": "2020_02_21_Legal_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "cc91581a08d2b1ea85271549c9aea5dec5e976c2d7cdd6b8ba767ab75167eaf7",
+  "input_hash": "5450d407ac3661c247ec135a851031084ddb3460ebc09e346dabf4b9a31e2c76",
+  "matching_audit_hash": "de53af798e562686b6bc80658253484f5397c7d7c9893aa1dafa24ddabf6b2d9",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "fb0785fdf3a4c2f2d3883707134d257820a3b303f4ddecd76f16ed03b748cbf4",
+    "raw_sha256": "89d8638f155f30fdd2c8e87ec783c7fb3e547a5ab71706075ef8a99c54ec9b86",
+    "date_quote": "SEC filing datePublished=2020-02-21",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1001085/000110465920023772/a20-9195_56k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Brookfield Asset Management Inc.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Asset Management Inc."
+    },
+    {
+      "name": "Brookfield Finance LLC",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Brookfield Finance LLC"
+    }
+  ],
+  "record_hash": "d4c06f62f8f048710cade352a3898a36fb598f667b8c0684223548c223e50105",
+  "outputs": [
+    {
+      "path": "US\\2020_02_21_Legal_Financial-Services_sec.json",
+      "sha256": "4bd3d73ca83aa0e2b6e3da36912b92a5ce601d0a8c38d599d1b3e9b79636fd39"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2020-02-21",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:24.201956+00:00",
+    "fetched_at": "2026-11-11T15:17:09.688549+00:00",
+    "feature_available_at": "2026-11-11T15:17:46.596896+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:52:04.969233+00:00",
+  "feature_available_at": "2026-11-12T14:52:04.978837+00:00",
+  "commit_verified_at": "2026-11-12T14:52:04.978837+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "industry_unknown",
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The summary contains information about a filing by Brookfield Asset Management Inc. and related entities, including legal documents and a registration statement",
+    "securities": [
+      {
+        "name": "Brookfield Asset Management Inc.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Asset Management Inc."
+      },
+      {
+        "name": "Brookfield Finance LLC",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Brookfield Finance LLC"
+      },
+      {
+        "name": "Computershare Trust Company of Canada",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Computershare Trust Company of Canada"
+      },
+      {
+        "name": "Computershare Trust Company, N.A.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Computershare Trust Company, N.A."
+      },
+      {
+        "name": "Torys LLP",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Torys LLP"
+      }
+    ],
+    "industries": [],
+    "impact_scope": [
+      "company"
+    ],
+    "entity_types": {
+      "Brookfield Asset Management Inc.": "company",
+      "Brookfield Finance LLC": "company",
+      "Computershare Trust Company of Canada": "company",
+      "Computershare Trust Company, N.A.": "company",
+      "Torys LLP": "company"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}

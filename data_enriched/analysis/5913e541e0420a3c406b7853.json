@@ -1,0 +1,118 @@
+{
+  "source_id": "5913e541e0420a3c406b7853",
+  "status": "completed",
+  "schema_version": "legacy-offline-enrichment-1",
+  "original_files": [
+    {
+      "market": "US",
+      "path": "data\\US_original\\US\\2019_03_29_Financial-Agreement_Financial-Services_sec.json",
+      "sha256": "2991141d05200e0ebf2601acc019195bfe78a9dea764595907aa6cc4d06aa008",
+      "filename": "2019_03_29_Financial-Agreement_Financial-Services_sec.json"
+    }
+  ],
+  "original_record_hash": "3d898946e7465b67a0ea7d7aa23eea7b75566ca221248655aadd3dd32b74121c",
+  "input_hash": "3cbf57f861fba1b7a6e6b0f9408b8893c0fe42be41ebd4f67b41c8c3caa0b3eb",
+  "matching_audit_hash": "f3669f3e44b5b6e35eb45df1e7d8c0f59eca5eac1569de95ff78bd05f0819afb",
+  "legacy_producer": {
+    "model": "qwen3:8b",
+    "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "source_body_hash": "3158e01fcab6a3f896eac8af6fc36e6ab49ec3c17d549895ca5aaccb994a12af",
+    "raw_sha256": "07e4e03eb5302f479779cd29cf08830c3a7dcde8f0558940882a7c5eda3a97bd",
+    "date_quote": "SEC filing datePublished=2019-03-29",
+    "date_kind": "published",
+    "source_document_url": "https://www.sec.gov/Archives/edgar/data/1000209/000119312519091708/d730983d8k.htm",
+    "publication_validation_version": 3,
+    "security_validation_version": "security_grounding_v3_optional_codes"
+  },
+  "legacy_security_evidence": [
+    {
+      "name": "Medallion Financial Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Medallion Financial Corp."
+    },
+    {
+      "name": "Freshstart Venture Capital Corp.",
+      "ticker": null,
+      "exchange": null,
+      "quote": "Freshstart Venture Capital Corp."
+    }
+  ],
+  "record_hash": "125364023e517afe82ab11c4970af5431bf64bf468f790b66a5535cf3bc0e367",
+  "outputs": [
+    {
+      "path": "US\\2019_03_29_Financial-Agreement_Financial-Services_sec.json",
+      "sha256": "17906d86ae11951eadd4cf7467a3cbc99c2d32d8c2b9c75fdb272606af677f52"
+    }
+  ],
+  "analysis_input": "legacy_summary",
+  "source_verification": "original_webpage_not_revisited",
+  "published_at": "2019-03-29",
+  "evidence_sources": {
+    "legacy_metadata": "original_record_and_matching_audit",
+    "new_semantic_quotes": "legacy_summary"
+  },
+  "publication_basis": "unchanged_legacy_record",
+  "timezone": null,
+  "original_time_information": {
+    "publication_precision": "date",
+    "first_seen_at": "2026-11-11T01:32:19.616617+00:00",
+    "fetched_at": "2026-11-11T13:37:08.695136+00:00",
+    "feature_available_at": "2026-11-11T13:37:20.719717+00:00",
+    "availability_basis": "extraction"
+  },
+  "llm_inferred_at": "2026-11-12T14:48:37.116120+00:00",
+  "feature_available_at": "2026-11-12T14:48:37.127071+00:00",
+  "commit_verified_at": "2026-11-12T14:48:37.127071+00:00",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "0e124369f02f5d2003a0feb16cbcd71d14aee459f05f471835532ca34550efcc",
+  "code_version": "498435bc2f59c5e21b6eb0d9a496ccdc380df7ee0bbcd4b79ba1db9f628d33af",
+  "economic_direction_is_not_return_label": true,
+  "quality_flags": [
+    "title_unavailable_offline"
+  ],
+  "event_and_economic_inference": "separate_downstream_stage",
+  "canonical_market": "US",
+  "analysis": {
+    "useful": true,
+    "reason": "The text discusses amendments to financial agreements involving Medallion Financial Corp. and its subsidiary, Freshstart Venture Capital Corp., with the U.S. S.",
+    "securities": [
+      {
+        "name": "Freshstart Venture Capital Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Freshstart Venture Capital Corp."
+      },
+      {
+        "name": "Medallion Financial Corp.",
+        "ticker": null,
+        "exchange": null,
+        "quote": "Medallion Financial Corp."
+      },
+      {
+        "name": "U.S. Small Business Administration",
+        "ticker": null,
+        "exchange": null,
+        "quote": "U.S. Small Business Administration"
+      }
+    ],
+    "industries": [
+      {
+        "name": "financial services industry",
+        "basis": "explicit",
+        "quote": "financial services industry"
+      }
+    ],
+    "impact_scope": [
+      "company",
+      "industry"
+    ],
+    "entity_types": {
+      "Freshstart Venture Capital Corp.": "company",
+      "Medallion Financial Corp.": "company",
+      "U.S. Small Business Administration": "organization"
+    },
+    "method": "local_qwen_legacy_summary"
+  }
+}
